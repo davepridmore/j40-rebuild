@@ -19,7 +19,7 @@ REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_repo
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_b"
 MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev B - LHD Hardtop Detail Pass"
 MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev B"
-DETAIL_REVISION = "lhd_detail_pass"
+DETAIL_REVISION = "lhd_reference_detail_pass"
 DRIVER_SIDE = "left"
 DRIVER_Y_SIGN = -1
 DRIVER_Y = -420
@@ -75,17 +75,23 @@ PartType = BoxPart | WheelPart | CylinderPart
 
 COLORS = {
     "body_sand": "#cfc6aa",
+    "body_shadow": "#9d967e",
+    "body_highlight": "#e4dcc7",
     "roof_white": "#f1eee4",
     "black_trim": "#111315",
     "frame": "#2d3033",
     "rubber": "#1d1d1d",
     "metal": "#b8b8b8",
+    "chrome": "#d9d5c8",
     "interior": "#b87b55",
     "glass": "#6fa5b8",
+    "glass_dark": "#26383f",
     "engine": "#3f4245",
     "spring": "#222222",
     "reference": "#e8e8e8",
     "electrical": "#d64737",
+    "amber": "#d97824",
+    "grille_yellow": "#d6bf47",
     "fluid": "#4f7f55",
     "brass": "#c49a3d",
     "datum": "#7c6fcb",
@@ -431,6 +437,190 @@ def parts() -> list[PartType]:
     box("hard_top", "rear_hardtop_window", 3485, 0, 1470, 18, 780, 275, COLORS["glass"], "L2 visible-detail primitive", "rear hardtop window")
     for y in [-555, -275, 275, 555]:
         box("hard_top", f"rear_corner_glass_or_seal_{int(y + 600)}", 3500, y, 1415, 28, 170, 300, COLORS["glass"], "L2 visible-detail primitive", "rear corner hardtop glass/seal datum")
+
+    # Exterior fidelity pass guided by the 1979 hard-top reference: separated
+    # paint, trim, glass, lamp, and seal objects rather than a single shell.
+    for idx, z in enumerate([860, 895, 930, 965], start=1):
+        box("front_detail", f"front_grille_black_mesh_horizontal_texture_{idx}", 64, 0, z, 18, 560, 12, COLORS["glass_dark"], "L3 exterior material reference", "separate grille mesh row from hard-top reference render")
+    for idx, y in enumerate([-260, -170, -80, 80, 170, 260], start=1):
+        box("front_detail", f"front_grille_black_mesh_vertical_texture_{idx}", 62, y, 852, 20, 12, 145, COLORS["glass_dark"], "L3 exterior material reference", "separate grille mesh column from hard-top reference render")
+    for idx, y in enumerate([-325, -230, 230, 325], start=1):
+        cyl("front_detail", f"grille_surround_screw_{idx}", 58, y, 812 if abs(y) > 300 else 1008, "x", 28, 20, COLORS["chrome"], "L3 exterior material reference", "front grille surround screw/head datum")
+
+    def grille_badge_bar(name: str, y: float, z: float, width: float, height: float) -> None:
+        box("front_detail", f"toyota_grille_letter_{name}", 52, y, z, 16, width, height, COLORS["grille_yellow"], "L3 exterior material reference", "raised yellow TOYOTA grille lettering reference")
+
+    grille_badge_bar("t_top", -190, 940, 58, 12)
+    grille_badge_bar("t_stem", -190, 895, 13, 54)
+    for suffix, y_center in [("o1", -98), ("o2", 98)]:
+        grille_badge_bar(f"{suffix}_top", y_center, 938, 52, 12)
+        grille_badge_bar(f"{suffix}_bottom", y_center, 893, 52, 12)
+        grille_badge_bar(f"{suffix}_left", y_center - 23, 900, 11, 42)
+        grille_badge_bar(f"{suffix}_right", y_center + 23, 900, 11, 42)
+    grille_badge_bar("y_left_upper", -21, 928, 18, 12)
+    grille_badge_bar("y_right_upper", 21, 928, 18, 12)
+    grille_badge_bar("y_stem", 0, 895, 12, 42)
+    grille_badge_bar("a_left", 184, 895, 11, 55)
+    grille_badge_bar("a_right", 228, 895, 11, 55)
+    grille_badge_bar("a_top", 206, 938, 52, 12)
+    grille_badge_bar("a_bar", 206, 915, 42, 10)
+
+    for side, sign, y_sign in side_pairs:
+        side_name = "left" if y_sign < 0 else "right"
+        # Front fender top indicators and lamps are separate amber/chrome objects on the reference render.
+        box("front_detail", f"{side_name}_front_fender_turn_signal_base", 290, 642 * y_sign, 1058, 155, 80, 24, COLORS["chrome"], "L3 exterior material reference", "front fender turn signal chrome base")
+        cyl("front_detail", f"{side_name}_front_fender_turn_signal_lens", 298, 642 * y_sign, 1075, "z", 78, 32, COLORS["amber"], "L3 exterior material reference", "front fender amber turn-signal lens")
+        cyl("front_detail", f"{side_name}_headlamp_glass_highlight", 64, 445 * y_sign, 1035, "x", 126, 18, COLORS["body_highlight"], "L3 exterior material reference", "headlamp glass highlight disk")
+        cyl("front_detail", f"{side_name}_headlamp_mount_screw_upper", 58, 445 * y_sign - 70 * y_sign, 1094, "x", 22, 18, COLORS["chrome"], "L3 exterior material reference", "headlamp bezel screw datum")
+        cyl("front_detail", f"{side_name}_headlamp_mount_screw_lower", 58, 445 * y_sign + 70 * y_sign, 876, "x", 22, 18, COLORS["chrome"], "L3 exterior material reference", "headlamp bezel screw datum")
+
+        # Side vents, badges, trim strips, door outlines, and weather seals.
+        for vent_idx, z in enumerate([890, 925, 960, 995, 1030], start=1):
+            box("body", f"{side_name}_front_quarter_louver_slot_{vent_idx}", 885, 826 * y_sign, z, 175, 24, 14, COLORS["glass_dark"], "L3 exterior material reference", "stacked side louver slot behind front fender")
+            box("body", f"{side_name}_front_quarter_louver_highlight_{vent_idx}", 880, 812 * y_sign, z + 16, 160, 16, 8, COLORS["body_highlight"], "L3 exterior material reference", "raised louver upper edge")
+        box("body", f"{side_name}_beltline_trim_front_door", 1140, 834 * y_sign, 1118, 780, 22, 28, COLORS["chrome"], "L3 exterior material reference", "thin beltline trim along front door")
+        box("body", f"{side_name}_beltline_trim_rear_tub", 1965, 834 * y_sign, 1118, 1390, 22, 28, COLORS["chrome"], "L3 exterior material reference", "thin beltline trim along rear quarter")
+        box("body", f"{side_name}_door_outer_skin_upper_pressing", 1235, 789 * y_sign, 1040, 725, 34, 70, COLORS["body_shadow"], "L3 exterior material reference", "recessed upper door skin panel shadow")
+        box("body", f"{side_name}_door_skin_lower_recess_shadow", 1235, 789 * y_sign, 885, 725, 32, 76, COLORS["body_shadow"], "L3 exterior material reference", "recessed lower door skin panel shadow")
+        box("body", f"{side_name}_door_window_front_vertical_frame", 1115, 812 * y_sign, 1192, 34, 35, 385, COLORS["black_trim"], "L3 exterior material reference", "front door window vertical frame")
+        box("body", f"{side_name}_door_window_rear_vertical_frame", 1642, 812 * y_sign, 1192, 34, 35, 385, COLORS["black_trim"], "L3 exterior material reference", "front door window rear frame")
+        box("body", f"{side_name}_door_window_top_frame", 1115, 812 * y_sign, 1546, 560, 35, 34, COLORS["black_trim"], "L3 exterior material reference", "front door window top frame")
+        box("body", f"{side_name}_door_window_bottom_frame", 1115, 812 * y_sign, 1186, 560, 35, 30, COLORS["black_trim"], "L3 exterior material reference", "front door window bottom frame")
+        cyl("body", f"{side_name}_door_lock_cylinder", 1645, 835 * y_sign, 1032, "y", 36, 22, COLORS["chrome"], "L3 exterior material reference", "round door lock cylinder")
+        for hinge_idx, z in enumerate([820, 930, 1180, 1290], start=1):
+            cyl("body", f"{side_name}_door_hinge_pin_cap_{hinge_idx}", 1126, 843 * y_sign, z, "y", 32, 26, COLORS["chrome"], "L3 exterior material reference", "visible exterior hinge screw/cap")
+
+        # Hard-top glass has separate rubber seals, sliding window split lines, and rounded corner caps.
+        for window_name, x_center, window_length in [("front", 1420, 500), ("rear", 2190, 610)]:
+            box("hard_top", f"{side_name}_hardtop_{window_name}_window_upper_inner_shadow", x_center, 854 * y_sign, 1732, window_length, 18, 22, COLORS["glass_dark"], "L3 exterior material reference", "dark hardtop window upper interior shadow")
+            box("hard_top", f"{side_name}_hardtop_{window_name}_window_lower_inner_shadow", x_center, 854 * y_sign, 1360, window_length, 18, 22, COLORS["glass_dark"], "L3 exterior material reference", "dark hardtop window lower interior shadow")
+            box("hard_top", f"{side_name}_hardtop_{window_name}_window_sliding_mullion", x_center + window_length * 0.18, 858 * y_sign, 1438, 28, 24, 300, COLORS["black_trim"], "L3 exterior material reference", "sliding hardtop side-window mullion")
+            for corner_idx, (dx, dz) in enumerate([(-window_length / 2, 0), (window_length / 2, 0), (-window_length / 2, 320), (window_length / 2, 320)], start=1):
+                cyl("hard_top", f"{side_name}_hardtop_{window_name}_window_rounded_corner_{corner_idx}", x_center + dx, 862 * y_sign, 1360 + dz, "y", 54, 24, COLORS["rubber"], "L3 exterior material reference", "rounded rubber window corner approximation")
+        box("hard_top", f"{side_name}_roof_drip_rail_outer_shadow", 1235, 862 * y_sign, 1784, 2275, 28, 30, COLORS["body_shadow"], "L3 exterior material reference", "drip rail shadow under white roof gutter")
+        for rib_idx, x in enumerate([1420, 1840, 2260, 2680, 3100], start=1):
+            box("hard_top", f"{side_name}_roof_side_panel_subtle_vertical_pressing_{rib_idx}", x, 804 * y_sign, 1325, 20, 18, 520, COLORS["body_shadow"], "L3 exterior material reference", "subtle hardtop side panel vertical pressing")
+
+        # Black fender flares are approximated with short separated arc facets.
+        for axle_name, axle_x, arch_radius in [("front", front_axle_x, 378), ("rear", rear_axle_x, 365)]:
+            for arc_idx, angle_deg in enumerate([24, 38, 52, 66, 80, 94, 108, 122, 136, 150], start=1):
+                angle = math.radians(angle_deg)
+                x = axle_x + math.cos(angle) * arch_radius - 34
+                z = wheel_z + math.sin(angle) * arch_radius
+                box("body", f"{side_name}_{axle_name}_black_fender_flare_arc_{arc_idx}", x, 823 * y_sign, z, 68, 46, 34, COLORS["black_trim"], "L3 exterior material reference", "faceted black wheel-arch flare from hard-top reference")
+
+        # Step boards and mud flaps have separate tread/slat and bracket details.
+        for tread_idx, x in enumerate([1120, 1320, 1520, 1720, 1920], start=1):
+            box("body", f"{side_name}_side_step_tread_strip_{tread_idx}", x, 872 * y_sign, 674, 130, 162, 12, COLORS["chrome"], "L3 exterior material reference", "ribbed step-board tread strip")
+        for bracket_idx, x in enumerate([1180, 1540, 1900], start=1):
+            box("body", f"{side_name}_side_step_drop_bracket_{bracket_idx}", x, 760 * y_sign, 530, 52, 38, 155, COLORS["frame"], "L3 exterior material reference", "side-step drop bracket")
+        box("body", f"{side_name}_front_mud_flap", front_axle_x - 315, 780 * y_sign, 190, 42, 135, 280, COLORS["rubber"], "L3 exterior material reference", "front rubber mud flap")
+        box("body", f"{side_name}_rear_mud_flap", rear_axle_x + 330, 780 * y_sign, 185, 42, 135, 300, COLORS["rubber"], "L3 exterior material reference", "rear rubber mud flap")
+
+    # Rear hard-top and spare-carrier details visible in the back-view render.
+    box("hard_top", "rear_split_door_center_seal", 3505, 0, 1180, 30, 36, 650, COLORS["rubber"], "L3 exterior material reference", "rear barn-door center seal")
+    box("hard_top", "rear_door_left_glass_dark_inset", 3502, -250, 1470, 24, 340, 252, COLORS["glass_dark"], "L3 exterior material reference", "rear door glass dark inset")
+    box("hard_top", "rear_door_right_glass_dark_inset", 3502, 250, 1470, 24, 340, 252, COLORS["glass_dark"], "L3 exterior material reference", "rear door glass dark inset")
+    box("hard_top", "rear_door_window_center_mullion", 3496, 0, 1462, 34, 34, 304, COLORS["black_trim"], "L3 exterior material reference", "rear window center mullion")
+    for side_name, y_sign in [("left", -1), ("right", 1)]:
+        for hinge_idx, z in enumerate([1180, 1510], start=1):
+            cyl("hard_top", f"rear_{side_name}_door_hinge_barrel_{hinge_idx}", 3520, 650 * y_sign, z, "z", 42, 165, COLORS["chrome"], "L3 exterior material reference", "rear door hinge barrel")
+        box("hard_top", f"rear_{side_name}_door_pull_handle", 3526, 110 * y_sign, 1205, 28, 120, 44, COLORS["chrome"], "L3 exterior material reference", "rear door pull handle")
+        cyl("hard_top", f"rear_{side_name}_door_lock_button", 3536, 190 * y_sign, 1190, "x", 38, 22, COLORS["chrome"], "L3 exterior material reference", "rear door lock button")
+    cyl("body", "rear_spare_sidewall_highlight_ring", 3628, 0, 1020, "x", 585, 18, COLORS["body_shadow"], "L3 exterior material reference", "rear spare sidewall highlight ring")
+    for spoke_idx, angle_deg in enumerate([0, 60, 120, 180, 240, 300], start=1):
+        y = math.cos(math.radians(angle_deg)) * 142
+        z = 1020 + math.sin(math.radians(angle_deg)) * 142
+        box("body", f"rear_spare_wheel_spoke_{spoke_idx}", 3650, y, z - 12, 28, 205, 24, COLORS["chrome"], "L3 exterior material reference", "rear spare wheel spoke")
+
+    # Second reference-detail pass: more of the separated exterior hardware and
+    # material breaks visible on the 1979 hard-top reference model.
+    box("body", "windshield_center_divider_bar", 1116, 0, 1570, 30, 42, 420, COLORS["black_trim"], "L3 exterior material reference", "split windshield center divider bar")
+    box("body", "windshield_upper_inner_glare_band", 1112, 0, 1588, 20, 1210, 28, COLORS["glass_dark"], "L3 exterior material reference", "dark upper reflection band across windshield glass")
+    box("body", "windshield_lower_inner_glare_band", 1112, 0, 1420, 20, 1185, 24, COLORS["glass_dark"], "L3 exterior material reference", "dark lower reflection band across windshield glass")
+    box("body", "hood_front_lip_shadow", 42, 0, 1222, 36, 1320, 34, COLORS["body_shadow"], "L3 exterior material reference", "front hood lip shadow above grille")
+    box("body", "hood_rear_cowl_gap_shadow", 1012, 0, 1287, 28, 1310, 28, COLORS["rubber"], "L3 exterior material reference", "hood-to-cowl panel gap")
+    box("body", "front_apron_lower_shadow", 92, 0, 710, 28, 1280, 42, COLORS["body_shadow"], "L3 exterior material reference", "lower front apron crease below grille")
+    box("front_detail", "front_license_plate_upper_screw_left", -8, -155, 730, 18, 24, 24, COLORS["chrome"], "L3 exterior material reference", "front license plate screw head")
+    box("front_detail", "front_license_plate_upper_screw_right", -8, 155, 730, 18, 24, 24, COLORS["chrome"], "L3 exterior material reference", "front license plate screw head")
+    box("front_detail", "front_license_plate_lower_screw_left", -8, -155, 585, 18, 24, 24, COLORS["chrome"], "L3 exterior material reference", "front license plate screw head")
+    box("front_detail", "front_license_plate_lower_screw_right", -8, 155, 585, 18, 24, 24, COLORS["chrome"], "L3 exterior material reference", "front license plate screw head")
+    for bolt_idx, y in enumerate([-680, -485, 485, 680], start=1):
+        cyl("front_detail", f"front_bumper_face_bolt_{bolt_idx}", 4, y, 558, "x", 34, 20, COLORS["chrome"], "L3 exterior material reference", "front bumper face bolt")
+    for bolt_idx, y in enumerate([-660, -360, 360, 660], start=1):
+        cyl("body", f"rear_bumper_face_bolt_{bolt_idx}", 3742, y, 558, "x", 34, 20, COLORS["chrome"], "L3 exterior material reference", "rear bumper face bolt")
+
+    for side, sign, y_sign in side_pairs:
+        side_name = "left" if y_sign < 0 else "right"
+        # Windshield, cowl, and hood perimeter hardware.
+        cyl("body", f"{side_name}_windshield_wiper_pivot", 1100, 358 * y_sign, 1372, "x", 42, 26, COLORS["chrome"], "L3 exterior material reference", "round wiper pivot cap")
+        box("body", f"{side_name}_windshield_wiper_blade_rubber", 1092, 165 * y_sign, 1508, 24, 480, 16, COLORS["rubber"], "L3 exterior material reference", "separate black windshield wiper blade")
+        box("body", f"{side_name}_windshield_wiper_arm_chrome", 1094, 252 * y_sign, 1456, 18, 340, 14, COLORS["chrome"], "L3 exterior material reference", "thin chrome windshield wiper arm")
+        cyl("body", f"{side_name}_cowl_vent_screw_front", 1044, 278 * y_sign, 1360, "z", 20, 12, COLORS["chrome"], "L3 exterior material reference", "cowl vent screw head")
+        cyl("body", f"{side_name}_cowl_vent_screw_rear", 1018, 422 * y_sign, 1360, "z", 20, 12, COLORS["chrome"], "L3 exterior material reference", "cowl vent screw head")
+        box("body", f"{side_name}_hood_side_gap_shadow", 420, 684 * y_sign, 1235, 760, 24, 24, COLORS["body_shadow"], "L3 exterior material reference", "hood side panel gap above fender")
+        cyl("body", f"{side_name}_hood_latch_round_pin", 820, 645 * y_sign, 1238, "y", 28, 22, COLORS["chrome"], "L3 exterior material reference", "round hood latch pin cap")
+
+        # Fender, lamp, mirror, and side-panel fasteners.
+        cyl("front_detail", f"{side_name}_front_fender_turn_signal_screw_front", 238, 642 * y_sign, 1078, "z", 18, 12, COLORS["chrome"], "L3 exterior material reference", "fender turn-signal screw head")
+        cyl("front_detail", f"{side_name}_front_fender_turn_signal_screw_rear", 350, 642 * y_sign, 1078, "z", 18, 12, COLORS["chrome"], "L3 exterior material reference", "fender turn-signal screw head")
+        cyl("front_detail", f"{side_name}_side_marker_chrome_bezel", 190, 682 * y_sign, 1005, "y", 112, 18, COLORS["chrome"], "L3 exterior material reference", "side marker chrome bezel ring")
+        cyl("front_detail", f"{side_name}_fog_lamp_inner_glass", 16, 360 * y_sign, 620, "x", 118, 18, COLORS["body_highlight"], "L3 exterior material reference", "fog lamp inner glass highlight")
+        box("front_detail", f"{side_name}_fog_lamp_drop_bracket", 42, 360 * y_sign, 548, 38, 34, 85, COLORS["frame"], "L3 exterior material reference", "fog lamp mounting bracket")
+        for screw_idx, (x, z) in enumerate([(1328, 1248), (1328, 1142), (1484, 1248), (1484, 1142)], start=1):
+            cyl("body", f"{side_name}_mirror_mount_screw_{screw_idx}", x, 842 * y_sign, z, "y", 20, 16, COLORS["chrome"], "L3 exterior material reference", "door mirror base screw head")
+        box("body", f"{side_name}_door_handle_shadow_gap", 1575, 834 * y_sign, 1016, 175, 18, 18, COLORS["body_shadow"], "L3 exterior material reference", "door handle recess shadow")
+        box("body", f"{side_name}_door_handle_chrome_face", 1575, 858 * y_sign, 1055, 140, 18, 22, COLORS["chrome"], "L3 exterior material reference", "separate chrome face on door handle")
+        box("body", f"{side_name}_front_door_lower_weather_strip", 1228, 836 * y_sign, 742, 760, 20, 22, COLORS["rubber"], "L3 exterior material reference", "door lower rubber weather strip")
+        box("body", f"{side_name}_rear_quarter_vertical_rear_seam", 2828, 832 * y_sign, 980, 24, 20, 560, COLORS["rubber"], "L3 exterior material reference", "rear quarter vertical panel seam")
+        cyl("body", f"{side_name}_fuel_filler_outer_ring", 2935, 842 * y_sign, 1065, "y", 145, 18, COLORS["chrome"], "L3 exterior material reference", "round fuel/body plug outer trim ring")
+
+        # Hardtop gutter fasteners and sliding-window screws.
+        for rivet_idx, x in enumerate([1240, 1485, 1730, 1975, 2220, 2465, 2710, 2955, 3200], start=1):
+            cyl("hard_top", f"{side_name}_roof_gutter_rivet_{rivet_idx}", x, 864 * y_sign, 1828, "y", 18, 16, COLORS["chrome"], "L3 exterior material reference", "roof gutter rivet/fastener")
+        for x_center, window_name, window_length in [(1420, "front", 500), (2190, "rear", 610)]:
+            for screw_idx, dx in enumerate([-window_length / 2 + 70, window_length / 2 - 70], start=1):
+                cyl("hard_top", f"{side_name}_hardtop_{window_name}_window_upper_screw_{screw_idx}", x_center + dx, 870 * y_sign, 1724, "y", 18, 16, COLORS["chrome"], "L3 exterior material reference", "hardtop sliding-window frame screw")
+                cyl("hard_top", f"{side_name}_hardtop_{window_name}_window_lower_screw_{screw_idx}", x_center + dx, 870 * y_sign, 1368, "y", 18, 16, COLORS["chrome"], "L3 exterior material reference", "hardtop sliding-window frame screw")
+            box("hard_top", f"{side_name}_hardtop_{window_name}_window_center_track", x_center, 868 * y_sign, 1435, window_length - 70, 14, 18, COLORS["chrome"], "L3 exterior material reference", "bright sliding-window track")
+        box("hard_top", f"{side_name}_roof_gutter_front_end_cap", 1128, 862 * y_sign, 1812, 52, 34, 42, COLORS["chrome"], "L3 exterior material reference", "front roof gutter end cap")
+        box("hard_top", f"{side_name}_roof_gutter_rear_end_cap", 3358, 862 * y_sign, 1812, 52, 34, 42, COLORS["chrome"], "L3 exterior material reference", "rear roof gutter end cap")
+
+        # Wheels: separated rim slots and tire sidewall ticks keep the silhouette from reading as a plain cylinder.
+        for axle_x, axle_name in [(front_axle_x, "front"), (rear_axle_x, "rear")]:
+            face_y = 860 * y_sign
+            for slot_idx, angle_deg in enumerate([30, 90, 150, 210, 270, 330], start=1):
+                angle = math.radians(angle_deg)
+                slot_x = axle_x + math.cos(angle) * 165
+                slot_z = wheel_z + math.sin(angle) * 165
+                box("running_gear", f"{axle_name}_{side_name}_rim_vent_slot_{slot_idx}", slot_x, face_y, slot_z, 54, 20, 34, COLORS["glass_dark"], "L3 exterior material reference", "dark wheel rim vent slot")
+            for tick_idx, angle_deg in enumerate(range(15, 360, 30), start=1):
+                angle = math.radians(angle_deg)
+                tick_x = axle_x + math.cos(angle) * 336
+                tick_z = wheel_z + math.sin(angle) * 336
+                box("running_gear", f"{axle_name}_{side_name}_tire_sidewall_tick_{tick_idx}", tick_x, face_y + 5 * y_sign, tick_z, 38, 18, 18, COLORS["body_shadow"], "L3 exterior material reference", "raised tire sidewall tick detail")
+            cyl("running_gear", f"{axle_name}_{side_name}_hub_cap_center_button", axle_x, face_y + 48 * y_sign, wheel_z, "y", 74, 24, COLORS["chrome"], "L3 exterior material reference", "bright hub-cap center button")
+
+    # Rear door, lighting, license plate, and spare carrier hardware.
+    box("hard_top", "rear_window_upper_inner_shadow", 3492, 0, 1608, 20, 760, 24, COLORS["glass_dark"], "L3 exterior material reference", "dark upper reflection band in rear glass")
+    box("hard_top", "rear_window_lower_inner_shadow", 3492, 0, 1342, 20, 760, 24, COLORS["glass_dark"], "L3 exterior material reference", "dark lower reflection band in rear glass")
+    for hinge_idx, y in enumerate([-620, -520, 520, 620], start=1):
+        box("hard_top", f"rear_door_hinge_mount_plate_{hinge_idx}", 3528, y, 1510 if abs(y) > 570 else 1180, 24, 84, 96, COLORS["chrome"], "L3 exterior material reference", "rear door hinge mounting plate")
+    for screw_idx, (y, z) in enumerate([(-590, 1555), (-590, 1470), (590, 1555), (590, 1470), (-590, 1225), (-590, 1138), (590, 1225), (590, 1138)], start=1):
+        cyl("hard_top", f"rear_door_hinge_plate_screw_{screw_idx}", 3544, y, z, "x", 18, 16, COLORS["chrome"], "L3 exterior material reference", "rear hinge plate screw")
+    box("body", "rear_spare_carrier_latch_plate", 3530, 315, 1042, 36, 132, 92, COLORS["metal"], "L3 exterior material reference", "spare carrier latch plate")
+    cyl("body", "rear_spare_carrier_latch_pin", 3552, 315, 1042, "x", 28, 36, COLORS["chrome"], "L3 exterior material reference", "spare carrier latch pin")
+    box("body", "rear_spare_carrier_lower_hinge_plate", 3528, -320, 760, 36, 126, 88, COLORS["metal"], "L3 exterior material reference", "spare carrier lower hinge plate")
+    box("body", "rear_spare_carrier_upper_hinge_plate", 3528, -320, 1088, 36, 126, 88, COLORS["metal"], "L3 exterior material reference", "spare carrier upper hinge plate")
+    for screw_idx, (y, z) in enumerate([(-320, 724), (-320, 796), (-320, 1052), (-320, 1124), (315, 1006), (315, 1078)], start=1):
+        cyl("body", f"rear_spare_carrier_hardware_screw_{screw_idx}", 3550, y, z, "x", 18, 16, COLORS["chrome"], "L3 exterior material reference", "spare carrier hardware screw")
+    box("body", "rear_license_plate_upper_lamp_left", 3508, -145, 810, 28, 90, 34, COLORS["chrome"], "L3 exterior material reference", "rear license plate lamp")
+    box("body", "rear_license_plate_upper_lamp_right", 3508, 145, 810, 28, 90, 34, COLORS["chrome"], "L3 exterior material reference", "rear license plate lamp")
+    for screw_idx, (y, z) in enumerate([(-160, 770), (160, 770), (-160, 630), (160, 630)], start=1):
+        cyl("body", f"rear_license_plate_screw_{screw_idx}", 3534, y, z, "x", 18, 16, COLORS["chrome"], "L3 exterior material reference", "rear license plate screw")
+    for side_name, y_sign in [("left", -1), ("right", 1)]:
+        cyl("body", f"rear_{side_name}_tail_lamp_chrome_bezel", 3488, 675 * y_sign, 930, "x", 122, 18, COLORS["chrome"], "L3 exterior material reference", "rear tail lamp chrome bezel")
+        cyl("body", f"rear_{side_name}_tail_lamp_inner_lens", 3502, 675 * y_sign, 930, "x", 72, 18, COLORS["electrical"], "L3 exterior material reference", "rear tail lamp inner lens")
 
     # Interior: controls, seat structure, belts, floor mats, and dash detail.
     box("interior", "dashboard_glovebox_door", 1212, PASSENGER_Y, 1115, 35, 335, 150, COLORS["reference"], "L2 visible-detail primitive", "glovebox door on passenger/right side for LHD cabin")
@@ -939,6 +1129,32 @@ def vec_neg(a: tuple[float, float, float]) -> tuple[float, float, float]:
     return (-a[0], -a[1], -a[2])
 
 
+def vec_normalize(a: tuple[float, float, float]) -> tuple[float, float, float]:
+    length = math.sqrt(a[0] * a[0] + a[1] * a[1] + a[2] * a[2])
+    if length <= 0:
+        return (0.0, 0.0, 1.0)
+    return (a[0] / length, a[1] / length, a[2] / length)
+
+
+def box_bevel_mm(part: BoxPart) -> float:
+    min_dimension = min(part.length, part.width, part.height)
+    if min_dimension < 28 or part.group in {"datum", "brake_system", "fuel_system", "exhaust"}:
+        return 0.0
+    if "datum" in part.confidence.lower() or "routing" in part.confidence.lower():
+        return 0.0
+    group_bevels = {
+        "body": 36.0,
+        "hard_top": 38.0,
+        "front_detail": 18.0,
+        "interior": 20.0,
+        "engine_bay": 12.0,
+        "chassis": 10.0,
+        "running_gear": 8.0,
+    }
+    target = group_bevels.get(part.group, 8.0)
+    return min(target, min_dimension * 0.42)
+
+
 def add_gltf_triangle(
     positions: list[tuple[float, float, float]],
     normals: list[tuple[float, float, float]],
@@ -951,6 +1167,15 @@ def add_gltf_triangle(
 ) -> None:
     positions.extend([p1, p2, p3])
     normals.extend([n1, n2 or n1, n3 or n1])
+
+
+def add_gltf_chamfer_quad(
+    positions: list[tuple[float, float, float]],
+    normals: list[tuple[float, float, float]],
+    points: tuple[tuple[float, float, float], tuple[float, float, float], tuple[float, float, float], tuple[float, float, float]],
+    normal: tuple[float, float, float],
+) -> None:
+    add_gltf_quad(positions, normals, *points, vec_normalize(normal))
 
 
 def add_gltf_quad(
@@ -969,12 +1194,120 @@ def add_gltf_quad(
 def gltf_box_mesh(part: BoxPart) -> tuple[list[tuple[float, float, float]], list[tuple[float, float, float]]]:
     positions: list[tuple[float, float, float]] = []
     normals: list[tuple[float, float, float]] = []
+    bevel = box_bevel_mm(part)
     x0 = part.x
     x1 = part.x + part.length
     y0 = part.y - part.width / 2
     y1 = part.y + part.width / 2
     z0 = part.z
     z1 = part.z + part.height
+    if bevel > 0:
+        cx = (x0 + x1) / 2
+        cy = part.y
+        cz = (z0 + z1) / 2
+        hx = part.length / 2
+        hy = part.width / 2
+        hz = part.height / 2
+        bevel = min(bevel, hx * 0.42, hy * 0.42, hz * 0.42)
+        if bevel <= 0:
+            return positions, normals
+
+        def point(x: float, y: float, z: float) -> tuple[float, float, float]:
+            return (cx + x, cy + y, cz + z)
+
+        # Six broad faces.
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(hx, -hy + bevel, -hz + bevel), point(hx, hy - bevel, -hz + bevel), point(hx, hy - bevel, hz - bevel), point(hx, -hy + bevel, hz - bevel)),
+            (1.0, 0.0, 0.0),
+        )
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(-hx, -hy + bevel, -hz + bevel), point(-hx, -hy + bevel, hz - bevel), point(-hx, hy - bevel, hz - bevel), point(-hx, hy - bevel, -hz + bevel)),
+            (-1.0, 0.0, 0.0),
+        )
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(-hx + bevel, hy, -hz + bevel), point(-hx + bevel, hy, hz - bevel), point(hx - bevel, hy, hz - bevel), point(hx - bevel, hy, -hz + bevel)),
+            (0.0, 1.0, 0.0),
+        )
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(-hx + bevel, -hy, -hz + bevel), point(hx - bevel, -hy, -hz + bevel), point(hx - bevel, -hy, hz - bevel), point(-hx + bevel, -hy, hz - bevel)),
+            (0.0, -1.0, 0.0),
+        )
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(-hx + bevel, -hy + bevel, hz), point(hx - bevel, -hy + bevel, hz), point(hx - bevel, hy - bevel, hz), point(-hx + bevel, hy - bevel, hz)),
+            (0.0, 0.0, 1.0),
+        )
+        add_gltf_chamfer_quad(
+            positions,
+            normals,
+            (point(-hx + bevel, -hy + bevel, -hz), point(-hx + bevel, hy - bevel, -hz), point(hx - bevel, hy - bevel, -hz), point(hx - bevel, -hy + bevel, -hz)),
+            (0.0, 0.0, -1.0),
+        )
+
+        # Twelve edge chamfers.
+        for sx in (-1.0, 1.0):
+            for sy in (-1.0, 1.0):
+                add_gltf_chamfer_quad(
+                    positions,
+                    normals,
+                    (
+                        point(sx * hx, sy * (hy - bevel), -hz + bevel),
+                        point(sx * (hx - bevel), sy * hy, -hz + bevel),
+                        point(sx * (hx - bevel), sy * hy, hz - bevel),
+                        point(sx * hx, sy * (hy - bevel), hz - bevel),
+                    ),
+                    (sx, sy, 0.0),
+                )
+        for sx in (-1.0, 1.0):
+            for sz in (-1.0, 1.0):
+                add_gltf_chamfer_quad(
+                    positions,
+                    normals,
+                    (
+                        point(sx * hx, -hy + bevel, sz * (hz - bevel)),
+                        point(sx * (hx - bevel), -hy + bevel, sz * hz),
+                        point(sx * (hx - bevel), hy - bevel, sz * hz),
+                        point(sx * hx, hy - bevel, sz * (hz - bevel)),
+                    ),
+                    (sx, 0.0, sz),
+                )
+        for sy in (-1.0, 1.0):
+            for sz in (-1.0, 1.0):
+                add_gltf_chamfer_quad(
+                    positions,
+                    normals,
+                    (
+                        point(-hx + bevel, sy * hy, sz * (hz - bevel)),
+                        point(-hx + bevel, sy * (hy - bevel), sz * hz),
+                        point(hx - bevel, sy * (hy - bevel), sz * hz),
+                        point(hx - bevel, sy * hy, sz * (hz - bevel)),
+                    ),
+                    (0.0, sy, sz),
+                )
+
+        # Eight corner chamfers.
+        for sx in (-1.0, 1.0):
+            for sy in (-1.0, 1.0):
+                for sz in (-1.0, 1.0):
+                    add_gltf_triangle(
+                        positions,
+                        normals,
+                        point(sx * hx, sy * (hy - bevel), sz * (hz - bevel)),
+                        point(sx * (hx - bevel), sy * hy, sz * (hz - bevel)),
+                        point(sx * (hx - bevel), sy * (hy - bevel), sz * hz),
+                        vec_normalize((sx, sy, sz)),
+                    )
+        return positions, normals
+
     p000 = (x0, y0, z0)
     p001 = (x0, y0, z1)
     p010 = (x0, y1, z0)
@@ -1133,12 +1466,23 @@ def write_gltf(model_parts: list[PartType]) -> Path:
     def material_for(color: str) -> int:
         if color not in material_lookup:
             alpha = 0.45 if color == COLORS["glass"] else 1.0
+            metallic = 0.0
+            roughness = 0.72
+            if color in {COLORS["metal"], COLORS["chrome"], COLORS["brass"]}:
+                metallic = 0.75
+                roughness = 0.34 if color == COLORS["chrome"] else 0.48
+            elif color in {COLORS["black_trim"], COLORS["rubber"], COLORS["glass_dark"]}:
+                roughness = 0.88
+            elif color in {COLORS["body_sand"], COLORS["body_shadow"], COLORS["body_highlight"], COLORS["roof_white"]}:
+                roughness = 0.58
+            elif color in {COLORS["amber"], COLORS["electrical"], COLORS["grille_yellow"]}:
+                roughness = 0.42
             material: dict[str, object] = {
                 "name": next((name for name, value in COLORS.items() if value == color), color),
                 "pbrMetallicRoughness": {
                     "baseColorFactor": hex_to_rgba_factor(color, alpha),
-                    "metallicFactor": 0.0,
-                    "roughnessFactor": 0.72,
+                    "metallicFactor": metallic,
+                    "roughnessFactor": roughness,
                 },
             }
             if alpha < 1.0:
@@ -1300,6 +1644,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
         "",
         "- Toyota representative FJ40 dimensions: 3840 mm length, 1665 mm width, 1950 mm height, 2285 mm wheelbase.",
         "- Open-source visual reference: 1976 Toyota Land Cruiser FJ40 by tonielpro520 on Sketchfab, CC Attribution 4.0.",
+        "- Commercial visual benchmark only: Toyota Land Cruiser (J40) Hard Top 1979 on 3DModels.org, used for visible exterior detail targets such as separated materials, grille/trim/lamp treatment, hardtop glazing, side vents, fender flares, rear-door hardware, and spare-carrier presentation. No mesh data or paid asset files are copied.",
         "- Project-photo visual target: sand/beige diesel hardtop J40 with white roof, black bumper/trim, round auxiliary lamps, black window seals, side step boards, and mud-terrain tires.",
         "- Driving layout: left-hand drive. Negative Y is the driver side in this coordinate system.",
         "- This scaffold does not extract or reproduce hidden source mesh data.",
@@ -1317,6 +1662,8 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "- L0 envelope: boxes/cylinders that locate major vehicle systems.",
             "- L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.",
             "- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, LHD dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
+            "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, rubber window corner caps, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
+            "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
             "- LHD-specific references: left steering wheel/column, left pedal box, left-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, and steering damper.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",
             "- Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.",
@@ -1341,6 +1688,10 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
         "driver_side_y_sign": DRIVER_Y_SIGN,
         "driver_side": DRIVER_SIDE,
         "basis_dimensions_mm": {"length": 3840, "width": 1665, "height": 1950, "wheelbase": 2285},
+        "visual_benchmarks": [
+            "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+            "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
+        ],
         "part_count": len(model_parts),
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],
     }

@@ -5,6 +5,25 @@
   const tabButtons = Array.from(document.querySelectorAll("[data-view]"));
   const STORAGE_KEY = "j40.photo_recategorization_overrides.v3";
   const FALLBACK_IMAGE_PATH = "./assets/image-needed.svg";
+  const VEHICLE_MAP_VIEWER_URL = "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html?v=rev-b-984-reference-detail";
+  const VEHICLE_MAP_EXPORT_LINKS = [
+    {
+      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf",
+      label: "glTF",
+    },
+    {
+      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv",
+      label: "Parts CSV",
+    },
+    {
+      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_notes.md",
+      label: "Notes",
+    },
+    {
+      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_manifest.json",
+      label: "Manifest",
+    },
+  ];
 
   if (!data || !root) {
     if (root) {
@@ -6604,6 +6623,26 @@
     `;
   }
 
+  function renderVehicleMap() {
+    root.innerHTML = `
+      <section class="vehicle-map-view">
+        <div class="vehicle-map-head">
+          <div>
+            <h2 class="section-title">3D Vehicle Map</h2>
+            <p class="section-subtitle">Orbitable full-car scaffold with part search, group toggles, part focus, and export links for the generated CAD map.</p>
+          </div>
+          <div class="vehicle-map-links">
+            <a class="item-link" href="${escapeHtml(VEHICLE_MAP_VIEWER_URL)}" target="_blank" rel="noopener noreferrer">Open Viewer</a>
+            ${VEHICLE_MAP_EXPORT_LINKS.map((link, index) => renderItemLink(link, index)).join("")}
+          </div>
+        </div>
+        <div class="vehicle-map-frame-shell">
+          <iframe class="vehicle-map-frame" src="${escapeHtml(VEHICLE_MAP_VIEWER_URL)}" title="J40 full vehicle 3D map"></iframe>
+        </div>
+      </section>
+    `;
+  }
+
   function renderWorkstreams() {
     const workstreams = data.workstreams || [];
     const active = workstreams.find((ws) => ws.id === state.activeWorkstreamId) || workstreams[0];
@@ -9439,6 +9478,8 @@
     let renderer = renderOverview;
     if (state.activeView === "workstreams") {
       renderer = renderWorkstreams;
+    } else if (state.activeView === "vehicle-map") {
+      renderer = renderVehicleMap;
     } else if (state.activeView === "parts") {
       renderer = renderParts;
     } else if (state.activeView === "scout") {

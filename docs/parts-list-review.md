@@ -1,20 +1,20 @@
 # Parts List Review
 
-- Generated: 2026-05-29 19:07:56
+- Generated: 2026-05-29 19:56:01
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 124 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 28
+- `buy_now`: 25
 - `cancelled_or_not_required`: 22
 - `completed_or_received`: 33
 - `deferred`: 5
 - `needs_confirmation`: 5
 - `needs_spec_before_order`: 10
 - `ordered_waiting_arrival`: 9
-- `runner_spec_controlled`: 2
+- `runner_spec_controlled`: 5
 - `spec_ready_release_hold`: 2
 - `unclear`: 8
 
@@ -30,7 +30,7 @@
 - `chassis_fixing`: 3
 - `optional_upgrades`: 2
 - `chassis_rubbers`: 1
-- `gearbox_top_cover`: 1
+- `gearbox_oil_service`: 1
 
 ## Price Coverage
 
@@ -58,13 +58,10 @@
 - `part_hvac_r134a_oil_oring_charge_kit_20260514` [mechanical_baseline] HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup
 - `part_hvac_receiver_drier_20260514` [mechanical_baseline] Receiver-drier matched to R134a A/C layout
 - `part_hvac_trinary_switch_20260514` [mechanical_baseline] Trinary pressure switch for A/C compressor and fan control
-- `part_mech_accessory_belt_set` [mechanical_baseline] Accessory belt set
 - `part_mech_engine_oil_filter_service` [mechanical_baseline] Engine oil + oil filter service pack
-- `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
 - `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines
 - `part_mech_heat_glow_plugs_set` [mechanical_baseline] Toyota OE glow plugs 19850-68030 x6 - diesel 2H
 - `part_mech_heater_hose_set` [mechanical_baseline] Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID
-- `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather
 

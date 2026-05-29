@@ -3,6 +3,7 @@
 This UI provides a navigable view over:
 
 - core workstreams and their status
+- full-car 3D vehicle map
 - part-ordering queue and in-flight deliveries
 - project package steps (`WP01` .. `WP06`)
 - linked image evidence from the photo inventory
@@ -26,7 +27,7 @@ so video controls and media loading behave like the deployed dashboard.
 
 The portal supports stable hash links:
 
-- `#overview`, `#parts`, `#scout`, `#tasks`, `#photos-needed`, `#steps`, `#other-builds`
+- `#overview`, `#vehicle-map`, `#parts`, `#scout`, `#tasks`, `#photos-needed`, `#steps`, `#other-builds`
 - `#workstreams/<workstream_id>` for a specific workstream
 - `#parts/item/<entry_id>` for a specific part or inventory row
 - `#<view>/section/<section_id>` and `#workstreams/<workstream_id>/section/<section_id>` for page sections

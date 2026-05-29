@@ -54,6 +54,8 @@ def get_wiring_stock_signal() -> tuple[int, int]:
 
 def sourcing_mode(item: str, workstream: str) -> str:
     item_lower = item.lower()
+    if workstream == "gearbox_oil_service":
+        return "local_toyota_gearbox_service"
     if re.search(r"glove|nitrile|\bppe\b", item_lower):
         return "local_hardware_common"
     if re.search(r"masking|solvent-safe|lint-free|wipes?|tape", item_lower) or re.search(
@@ -82,7 +84,7 @@ def sourcing_mode(item: str, workstream: str) -> str:
         return "local_fastener_hardware"
     if re.search(r"washer|bolt|nut|grommet|relay|connector|wire|sleev|fuse", item_lower):
         return "local_electrical_common"
-    if workstream in {"mechanical_baseline", "steering_brakes_suspension"}:
+    if workstream in {"mechanical_baseline", "gearbox_oil_service", "steering_brakes_suspension"}:
         return "local_toyota_common"
     return "mixed_local_or_online"
 
@@ -268,6 +270,22 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Buy exact Toyota-labelled plugs: 19850-68030 x6 for HJ47-style 2H 12V/8.5V, or 19850-68060 x6 only if old plug/system confirms 24V/superglow.",
         )
 
+    if entry_id == "part_mech_engine_oil_filter_service":
+        return (
+            "online_click_buy_approved",
+            "online_click_buy_now",
+            "direct_online_buy",
+            "User selected online click-to-buy: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub and Guard Oil Filter GDO-135 from Automize; treat these as engine oil/filter, not gearbox oil.",
+        )
+
+    if entry_id in {"part_mech_fuel_filter", "part_mech_accessory_belt_set", "part_mech_radiator_cap"}:
+        return (
+            "amir_mechanical_runner_exact_or_sample",
+            "amir_local_mechanical_run",
+            "runner_exact_spec_or_quote",
+            "List under Amir/local runner: buy only exact written spec or sample match; otherwise collect shop photos, price, and label/part-number evidence before payment.",
+        )
+
     if entry_id == "part_chassis_masking_plugs_tape_solvent_wipes":
         return (
             "buy_chassis_masking_consumables",
@@ -295,6 +313,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "clutch_hydraulic_inspection",
             "hydraulic_exact_order_hold",
             "Inspect for leakage, pedal sink, seized seals, and line corrosion first; exact order is master refresh/replacement, slave refresh/replacement, clutch flex hose by end fittings if failed, and a 1500 mm 4.75 mm brake/clutch hard-line allowance only if the hard line is replaced.",
+        )
+
+    if entry_id == "part_mech_transmission_oil_service":
+        return (
+            "gearbox_oil_spec_then_buy",
+            "gearbox_oil_service_gate",
+            "spec_hold",
+            "WhatsApp history confirms 2H engine with 5-speed gear; quote H55F candidate oil only until case/top-cover marks confirm: SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L. Drain inspection can stop the refill if water or heavy metal is found.",
         )
 
     if entry_id == "part_mech_brake_flex_hose_set":
@@ -426,6 +452,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Send the Longman pipe/hose order spec to Longman Mills; quote by material, ID/OD, rating, listed length, sample requirement, and reject rule."
     if decision == "clutch_hydraulic_inspect_then_exact_order":
         return "Use a Toyota/clutch hydraulic supplier after inspection; match master/slave bore, port thread, flare/seat, pushrod style, and flex-hose end fittings before payment."
+    if decision == "gearbox_oil_spec_then_buy":
+        return "WhatsApp history confirms 2H engine with 5-speed gear; use a Toyota/manual gearbox oil supplier to quote H55F candidate SAE75W-90 API GL-4/GL-5, 5 L, plug washers, and refill method. Payment still waits for case/top-cover mark confirmation."
     if decision in {
         "capture_brake_specs_then_order",
         "open_inspect_then_order_standard_brake_parts",
@@ -439,8 +467,14 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
     if decision == "source_toyota_oe_glow_plugs_by_part_number":
         return "Ask HYA/Hamza Younas Autos or Bilal Ganj Toyota diesel suppliers for Toyota 19850-68030 x6; use Toyota 19850-68060 x6 only after 24V/superglow confirmation."
+    if decision == "online_click_buy_approved":
+        return "Online buy: Autohub Liqui Moly Touring High Tech SHPD 15W-40 5L and Automize Guard GDO-135 oil filter are approved click-to-buy links."
+    if decision == "amir_mechanical_runner_exact_or_sample":
+        return "Amir/local runner task: use local Toyota diesel parts, belt, or radiator suppliers; pay only for exact written spec/sample match."
     if mode == "local_toyota_common":
         return "Use local Toyota/common parts markets; buy as one batch after inspection."
+    if mode == "local_toyota_gearbox_service":
+        return "Use local Toyota/manual transmission oil suppliers or the workshop's gearbox service supplier after exact gearbox oil spec and plug washers are confirmed."
     if mode == "local_hardware_common":
         return "Use local timber or hardware supplier; confirm sound hardwood/timber dimensions before purchase."
     if mode == "local_fastener_hardware":
@@ -485,10 +519,16 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_runner_spec_controlled"
     if decision == "buy_chassis_masking_consumables":
         return "basket_chassis_coating_consumables"
+    if decision == "online_click_buy_approved":
+        return "basket_engine_oil_filter_online"
+    if decision == "amir_mechanical_runner_exact_or_sample":
+        return "basket_amir_mechanical_runner"
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
         return "basket_longman_hose_pipe_order_ready"
     if decision == "clutch_hydraulic_inspect_then_exact_order":
         return "basket_clutch_hydraulic_inspection"
+    if decision == "gearbox_oil_spec_then_buy":
+        return "basket_gearbox_oil_service"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer", "hold_until_body_closed"}:
         return "basket_deferred"
     if decision.startswith("not_required"):

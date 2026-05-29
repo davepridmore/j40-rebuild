@@ -1,13 +1,24 @@
-# EPS Kit Market Checklist (Bilal Ganj)
+# Yaris-First EPS Kit Market Checklist (Bilal Ganj / Montgomery Road)
 
 Date: 2026-05-22  
 Scope: Market scouting and pre-payment buy/no-buy decision only.
 
+## Current Sourcing Decision
+
+Active local plan: **Yaris-first**, because imported FJ40-specific EPS kits are outside the target spend and Vitz donor sets are proving harder to find cleanly.
+
+Priority order:
+
+1. **Pakistan Yaris sedan 2020+ local donor / installer package** - acceptable only if the seller can prove the actual EPS assist unit, controller/control module, plugs, shafts/couplers, and wiring needed for standalone bench operation. Reject if the assist depends on a locked body ECU, immobilizer, VSC/CAN messages, or scan-tool calibration that the J40 cannot provide.
+2. **Older Toyota Yaris/Belta XP90-family donor, 2005-2011** - still the preferred Toyota donor family if a complete set appears locally, because it is closer to the original Vitz/Yaris conversion plan and easier to judge against known column-assist examples.
+3. **Toyota Vitz XP90 donor** - now fallback, not the only target. Buy only if it is the same complete matched package and passes the same bench-test gates.
+4. **Generic "EPS for all cars" kits** - installer/contact leads only. Do not buy as parts unless donor identity, controller independence, shaft hardware, mounting strategy, and bench test are proven.
+
 ## What To Ask For
 
-Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
+Plain stall request: **"I need one complete Toyota Yaris electric EPS conversion package for an old Land Cruiser: column/motor or assist unit, matching EPS controller/control module, original plugs with wiring tails, shafts, U-joints, couplers, brackets, support plates, and a working bench test. Prefer Pakistan Yaris sedan if it can run standalone; otherwise 2005-2011 Yaris/Belta/Vitz XP90 family with complete matched electronics."**
 
-Ask for **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are not buy candidates for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found.
+Ask for **one complete Toyota Yaris EPS conversion package**, not loose parts. Local Pakistan Yaris sedan parts can be considered first for availability, but only if the seller proves the EPS assist can run outside the donor car with the supplied controller/module and wiring. Older **2005-2011 Yaris/Belta/Vitz XP90** sets remain strong candidates when complete. Corolla/Axio, Prius, and other Toyota EPS columns are not buy candidates for this build unless explicitly approved later; collect quote/photos only if no Yaris-family set is found.
 
 Quantity: **1 complete matched EPS kit**. Do not split the column, EPS ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
 
@@ -31,10 +42,12 @@ Use this as a hard gate before payment.
 
 | Item | Required | Check |
 | --- | --- | --- |
-| 2005-2011 Toyota Vitz/Yaris 90-series donor, SCP90 or NCP90 | Yes | ☐ |
-| EPS motorized steering column assembly | Yes | ☐ |
+| Toyota Yaris-family donor clearly identified: Pakistan Yaris sedan, older Yaris/Belta XP90, or Vitz XP90 fallback | Yes | ☐ |
+| Assist type visible and suitable for the J40 adapter route: column-assist preferred; rack-assist-only units are quote-only | Yes | ☐ |
+| EPS motorized steering column assembly or complete assist unit | Yes | ☐ |
 | Torque sensor integrated in column | Yes | ☐ |
 | EPS ECU/controller from the donor set, or seller-proven integrated control on the column | Yes | ☐ |
+| Standalone bench operation proven without donor body ECU/immobilizer/VSC/CAN dependency | Yes | ☐ |
 | Main EPS connectors with pigtails (>=150mm, not cut flush; identification/bench-test leads only) | Yes | ☐ |
 | Power/ground and ignition-trigger wires identifiable | Yes | ☐ |
 | Upper intermediate shaft section | Yes | ☐ |
@@ -61,6 +74,8 @@ Use this as a hard gate before payment.
 
 - ECU/controller is missing and the unit is not proven integrated.
 - Seller claims the J40 has no ECU so the EPS ECU/controller is not needed.
+- Seller cannot prove standalone assist because the unit needs the donor body ECU, immobilizer, VSC/CAN messages, or scan-tool calibration.
+- The available Yaris part is rack-assist-only and no safe column-assist adapter path is demonstrated.
 - Connectors are missing, cut flush, melted, or badly repaired.
 - Motor housing, column tube, mounting ears, or gearbox casting is cracked.
 - Shaft has visible bend, accident damage, heavy rust, or excessive play.
@@ -71,7 +86,9 @@ Use this as a hard gate before payment.
 
 - Donor vehicle/model claimed by seller: `________________`
 - Donor year claimed by seller: `________________`
-- Donor chassis code, must be SCP90 or NCP90: `________________`
+- Donor chassis/body code if known: `________________`
+- Donor type: Pakistan Yaris sedan / Yaris-Belta XP90 / Vitz XP90 / other quote-only: `________________`
+- Standalone control proof: `________________`
 - EPS unit part number label: `________________`
 - ECU/controller part number label: `________________`
 - Input spline/shaft details: `________________`

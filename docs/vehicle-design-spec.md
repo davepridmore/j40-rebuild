@@ -7,9 +7,17 @@ This document defines the intended end-state of the J40 as a vehicle, not just a
 ## Design Position
 
 - Vehicle: 1978 Toyota Land Cruiser J40
+- Chat-confirmed basis: ex-military J40, converted to diesel, Toyota 2H engine, 5-speed gearbox, previously associated with/sold by Jahanzeb.
 - Design mode: OE-adjacent restoration with selective usability upgrades
 - Intended use: reliable road-going classic 4x4 with improved drivability, lower cabin noise, cleaner wiring, and a more coherent interior
 - Design rule: preserve the character of the truck while removing obvious hacks, noise, water ingress, and avoidable drivability pain
+
+Evidence basis:
+
+- `mcp_whatsapp_j40_messages.csv:1780` / `2026-05-17T11:05:54Z`, TLC 40 Series Owners: owner note says "1978 ex military, converted to diesel".
+- `mcp_whatsapp_j40_messages.csv:1781` / `2026-05-17T11:06:16Z`, TLC 40 Series Owners: group member says it belonged to Jahanzaib from Lahore.
+- `mcp_whatsapp_j40_messages.csv:1797` / `2026-05-17T11:47:47Z`, TLC 40 Series Owners: group member says "Your J40 has 2h engine with 5 speed gear. It was sold by Jahanzeb".
+- `mcp_whatsapp_j40_messages.csv:1802` / `2026-05-17T12:10:28Z`, TLC 40 Series Owners: group member says Jahanzeb left the group after selling it.
 
 ## Design North Star
 

@@ -112,6 +112,7 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "interior_controls",
     "mechanical_baseline",
     "gearbox_top_cover",
+    "gearbox_oil_service",
     "replacement_pipes",
     "brake_system",
     "eps_vitz_upgrade",
@@ -125,6 +126,7 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "chassis_rubbers": "Chassis Rubbers",
     "fabrication_handoff": "Fabrication",
     "gearbox_top_cover": "Gearbox",
+    "gearbox_oil_service": "Gearbox Oil",
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
     "paint_refinish": "Paint",
@@ -342,6 +344,22 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
         "stages": {"baseline_walkaround", "underside_inspection", "mechanical_inspection", "mechanical_cleaning"},
         "keywords": {"engine", "service", "cooling", "maintenance", "hose", "bay", "mechanical"},
     },
+    "gearbox_oil_service": {
+        "component_groups": {"engine_bay", "chassis_underside"},
+        "stages": {"mechanical_baseline", "mechanical_inspection", "mechanical_cleaning", "underside_inspection"},
+        "keywords": {
+            "gearbox",
+            "transmission",
+            "oil",
+            "service",
+            "drain",
+            "fill",
+            "plug",
+            "magnet",
+            "bellhousing",
+            "powertrain",
+        },
+    },
     "replacement_pipes": {
         "component_groups": {"engine_bay", "chassis_underside"},
         "stages": {
@@ -405,6 +423,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "body_chassis": 18,
     "paint_refinish": 18,
     "mechanical_baseline": 18,
+    "gearbox_oil_service": 18,
     "replacement_pipes": 18,
     "brake_system": 18,
     "eps_vitz_upgrade": 18,
@@ -425,6 +444,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "electrical_reset": 1,
     "fabrication_handoff": 1,
     "mechanical_baseline": 2,
+    "gearbox_oil_service": 2,
     "replacement_pipes": 1,
     "brake_system": 2,
     "eps_vitz_upgrade": 2,
@@ -441,6 +461,7 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "window_refurbishment": False,
     "electrical_reset": True,
     "mechanical_baseline": True,
+    "gearbox_oil_service": False,
     "replacement_pipes": True,
     "brake_system": False,
     "eps_vitz_upgrade": False,
@@ -449,7 +470,7 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "final_assembly_validation": True,
 }
 WORKBOOK_SECTION_HEADING_RE = re.compile(r"^\d+\)\s+")
-URL_PATTERN = re.compile(r"https?://[^\s<>()\"']+")
+URL_PATTERN = re.compile(r"https?://[^\s<>()\"'|]+")
 
 STRIPDOWN_CURATED_MEDIA_IDS: tuple[str, ...] = (
     "20260323_201950",
@@ -667,6 +688,13 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Run leak and condition checks", "Check cooling, fuel, vacuum, and visible engine leak points before refit."),
         ("Log post-service defects", "Record any unresolved mechanical issues for gated follow-up."),
         ("Close baseline gate before upgrades", "Do not start optional upgrades until baseline reliability is signed off."),
+    ],
+    "gearbox_oil_service": [
+        ("Identify fitted gearbox", "Record gearbox code/casting or manual match before buying oil."),
+        ("Confirm fill plug opens", "Open the fill plug before draining so the gearbox cannot be stranded empty."),
+        ("Drain and inspect oil", "Capture oil sample, plug magnet, water, glitter, sludge, and debris before refill."),
+        ("Buy and fill exact oil", "Use only the manual-approved gearbox oil and matched drain/fill plug washers."),
+        ("Close shift and leak checks", "Static/yard shift checks and post-test leak checks must pass."),
     ],
     "replacement_pipes": [
         ("Lock the replacement locations", "Keep only vehicle places where pipes, hoses, or hard lines will be replaced; exclude body rubbers and generic context photos."),
@@ -1443,6 +1471,66 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
             },
         ],
     },
+    "gearbox_oil_service": {
+        "title": "Gearbox Oil Drain Inspect Refill",
+        "summary": "Fitted gearbox identification, oil-spec buying gate, drain inspection, correct refill, and leak/shift closeout.",
+        "default_tools": ["Drain pan", "Clear sample cup", "Inspection light", "Filler pump or hose", "Correct plug socket"],
+        "default_supplies": ["Manual-approved gearbox oil", "Drain/fill plug washers", "Labels", "Rags", "Nitrile gloves"],
+        "subtasks": [
+            {
+                "title": "Identify Gearbox And Oil Spec",
+                "priority": "P0",
+                "remaining": "before payment",
+                "instruction": "Do not buy oil until the fitted gearbox and manual oil requirement are known.",
+                "process_steps": [
+                    "Photograph gearbox casting/code areas, shift layout, bellhousing area, and transfer interface.",
+                    "Match the fitted gearbox to the manual or workshop spec sheet.",
+                    "WhatsApp history confirms 2H engine with 5-speed gear; treat H55F as the active candidate until case/top-cover marks prove otherwise.",
+                    "If H55F is confirmed, use SAE75W-90 API GL-4/GL-5, 4.9 L gearbox capacity, buy 5 L.",
+                    "Record oil grade, fill quantity, fill level method, and plug torque if available.",
+                    "Reject generic axle, transfer-case, engine, brake, or LSD oil substitutes unless the fitted gearbox manual explicitly allows them.",
+                ],
+                "tools": ["Camera", "Inspection light", "Manual/spec sheet"],
+                "supplies": ["Label tag", "Parts request note"],
+                "hold_point": "Runner or vendor may collect quotes only until gearbox model, grade, capacity, and washer style are confirmed.",
+                "image_tokens": ["gearbox", "transmission", "bellhousing", "case"],
+            },
+            {
+                "title": "Drain And Inspect Oil",
+                "priority": "P0",
+                "remaining": "before refill",
+                "instruction": "Treat the drain as a condition inspection, not just a fluid change.",
+                "process_steps": [
+                    "Clean around the drain and fill plugs before opening either plug.",
+                    "Open the fill plug before the drain plug; stop if the fill plug will not open.",
+                    "Drain into a clean pan and take a clear sample cup photo.",
+                    "Photograph oil color, water separation, glitter, sludge, drain plug, magnet, and debris.",
+                    "Stop and escalate if water, heavy metal, chunks, burnt oil, thread damage, or abnormal gearbox noise is found.",
+                ],
+                "tools": ["Correct plug socket", "Drain pan", "Clear sample cup", "Camera", "Inspection light"],
+                "supplies": ["Labels", "Rags", "Gloves"],
+                "hold_point": "Do not refill as routine service if the oil or plug evidence shows water or heavy metal.",
+                "image_tokens": ["drain", "oil", "plug", "magnet", "debris"],
+            },
+            {
+                "title": "Refill And Close Checks",
+                "priority": "P0",
+                "remaining": "after acceptable inspection",
+                "instruction": "Refill only after the inspection passes and the correct oil is present.",
+                "process_steps": [
+                    "Refit the drain plug with correct washer/gasket and torque basis.",
+                    "Fill through the correct fill port to the manual quantity or fill-level method.",
+                    "Refit the fill plug with correct washer/gasket and torque basis.",
+                    "Static-shift through all gears, then yard-test only when clutch and brakes are safe.",
+                    "Recheck for leaks after first movement, after 24 hours, and at the next mechanical review.",
+                ],
+                "tools": ["Filler pump or hose", "Torque wrench if torque basis exists", "Inspection light"],
+                "supplies": ["Correct gearbox oil", "Drain/fill plug washers", "Cleanup rags"],
+                "hold_point": "Close only after grade, quantity, oil findings, plug sealing, shift checks, and leak checks are recorded.",
+                "image_tokens": ["fill", "gearbox", "oil", "leak", "service"],
+            },
+        ],
+    },
     "brake_system": {
         "title": "Brake Safety Work",
         "summary": "Brake architecture confirmation, hydraulic refresh, bias/safety checks, and final brake gate.",
@@ -1479,7 +1567,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Open rear drums only after exterior photos, then photograph shoe layout, springs, adjusters, parking-brake lever, wheel cylinders, and drum wear before disassembly.",
                     "Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias hardware, and all line ports before buying system parts.",
                 ],
-                "tools": ["Camera with flash", "Labels", "Paint marker", "Ruler/tape", "Digital caliper", "Inspection light"],
+                "tools": ["Camera with flash", "Labels", "Paint marker", "Ruler/tape", "Inspection light"],
                 "supplies": ["Clean background board or cloth", "Zip bags for clips", "Line caps/plugs", "Tags"],
                 "hold_point": "No front pads, flex hoses, rear cables, rear wheel cylinders, shoes, hard-line fittings, or master/proportioning parts are ordered from broad vehicle-year logic alone.",
                 "image_tokens": ["brake", "closeup", "caliper", "line", "cable"],
@@ -2542,6 +2630,43 @@ def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
             if link
         ]
         specs.append(spec)
+    if clean(workstream_id) == "gearbox_oil_service":
+        specs.append(
+            {
+                "id": "gearbox_oil_service_pack",
+                "title": "Gearbox Oil Service Pack",
+                "scope": "Quote only until gearbox/oil spec is confirmed",
+                "quantity": "1 complete gearbox drain-inspect-refill consumables pack",
+                "plain_stall_request": (
+                    "Need manual gearbox oil service consumables for the gearbox currently fitted to a 1978 Toyota Land Cruiser J40 "
+                    "with 2H diesel. Quote only until the gearbox code, manual oil spec, and capacity are confirmed. "
+                    "WhatsApp history confirms 2H engine with 5-speed gear; H55F candidate is SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L only after confirmation."
+                ),
+                "buy_target": (
+                    "Supply correct manual-transmission gearbox oil for the fitted gearbox, enough for fill plus a small top-up allowance, "
+                    "new drain/fill plug sealing washers matched to the plugs, and a filler pump or hose if the workshop does not supply one. "
+                    "If case marks prove a different 5-speed swap, use the matching manual row instead. Do not substitute differential/hypoid GL-5/LSD oil, "
+                    "transfer-case oil, engine oil, or brake fluid unless the fitted gearbox manual explicitly allows it."
+                ),
+                "must_include": [
+                    "Fitted gearbox identification before payment",
+                    "Manual oil grade and fill quantity",
+                    "Correct gearbox oil quantity plus top-up allowance",
+                    "Drain and fill plug sealing washers matched to actual plugs",
+                    "Clear oil sample cup or bottle",
+                    "Clean drain pan and filler pump/hose if workshop stock is not used",
+                    "Stop condition for water, heavy metal, burnt oil, chunks, damaged threads, or abnormal noise",
+                ],
+                "links": [
+                    link
+                    for link in [
+                        file_link("docs/gearbox-oil-service-workstream.md", "Gearbox oil service workstream"),
+                        file_link("docs/gearbox-top-cover-workstream.md", "Gearbox top-cover workstream"),
+                    ]
+                    if link
+                ],
+            }
+        )
     return specs
 
 
@@ -5634,6 +5759,32 @@ def build_workstream_evidence_sets(
                 },
             )
 
+    if workstream_id == "gearbox_oil_service":
+        gearbox_context_rows = [
+            row
+            for row in photo_rows
+            if is_photo_row(row)
+            and norm(row.get("specific_component"))
+            in {
+                "bellhousing_clutch_linkage_and_gearbox_case",
+                "engine_powertrain_cleaning_baseline",
+                "transmission_crossmember_and_driveline_mounts",
+            }
+        ]
+        gearbox_context_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in gearbox_context_rows]
+        )
+        if gearbox_context_images:
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "gearbox_oil_service_context",
+                    "title": "Gearbox Case And Drain-Service Context",
+                    "description": "Gearbox case, bellhousing, powertrain underside, and crossmember context before fill-plug, drain-plug, oil-sample, and refill photos are captured.",
+                    "images": gearbox_context_images,
+                },
+            )
+
     return {
         "primary_images": primary_images,
         "evidence_sets": evidence_sets,
@@ -6082,6 +6233,7 @@ def infer_inventory_group(
     mechanical_workstreams = {
         "mechanical_baseline",
         "gearbox_top_cover",
+        "gearbox_oil_service",
         "replacement_pipes",
         "chassis_rubbers",
         "brake_system",
@@ -8634,8 +8786,6 @@ def choose_supply_reference_image(
         )
     if has("drill", "chuck"):
         return ref("drill_chuck", f"{item} · drill chuck reference image", "drill", "chuck")
-    if has("digital", "caliper"):
-        return ref("digital_caliper", f"{item} · digital caliper reference image", "caliper")
     if has_any("chassis punch", "hole cutter"):
         return ref("hole_cutter", f"{item} · hole cutter reference image", "hole", "cutter")
     if has("car", "cover"):

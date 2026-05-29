@@ -334,6 +334,15 @@ def build_procurement_decisions(
                 "or mechanic-labelled sample. If free length, end fittings, bracket groove, thread/seat, hose rating, "
                 "or route clearance are uncertain, collect photos and price only."
             )
+        elif entry_id == "part_mech_transmission_oil_service":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "gearbox_identification_and_oil_spec"
+            action = "identify_gearbox_open_fill_plug_then_quote_oil_pack"
+            reason = (
+                "WhatsApp history confirms 2H engine with 5-speed gear, making H55F the active candidate until "
+                "case/top-cover marks prove otherwise. Exact purchase still waits for manual oil grade/fill quantity, "
+                "fill-plug access proof, drain/fill plug washer match, and clean oil-sample capture."
+            )
         elif entry_id == "part_front_disc_pads_hardware":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
@@ -438,7 +447,7 @@ def build_component_disposition(
         pre_reassembly_action = "confirm_state_and_tag"
         dependency_lane = "body_and_trim"
 
-        if row.get("component_group", "") in {"rear_axle", "brakes", "suspension_upgrade", "steering_procurement", "steering_column"}:
+        if row.get("component_group", "") in {"rear_axle", "brakes", "gearbox", "suspension_upgrade", "steering_procurement", "steering_column"}:
             dependency_lane = "mechanical_safety"
             pre_reassembly_action = "inspect_measure_and_close_before_road_validation"
         if status == "planned_send_out":
@@ -510,7 +519,8 @@ def count_mechanical_buy_actions(decision_rows: list[dict[str, str]]) -> int:
     return sum(
         1
         for row in decision_rows
-        if row.get("workstream") in {"mechanical_baseline", "steering_brakes_suspension", "brake_system"} and row.get("decision") in actions
+        if row.get("workstream") in {"mechanical_baseline", "gearbox_oil_service", "steering_brakes_suspension", "brake_system"}
+        and row.get("decision") in actions
     )
 
 

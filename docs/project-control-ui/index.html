@@ -4,20 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J40 Project Control UI</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=20260529-vehicle-map-detail">
 </head>
 <body>
   <header class="app-header">
     <div class="header-title-wrap">
       <p class="eyebrow">J40 Rebuild Control</p>
       <h1>Project Operations Dashboard</h1>
-      <p class="subtitle">Workstreams, scout lists, part ordering, guided steps, and image evidence in one place.</p>
+      <p class="subtitle">Workstreams, scout lists, part ordering, guided steps, 3D vehicle map, and image evidence in one place.</p>
     </div>
     <div class="header-meta" id="generated-at">Loading tracker data...</div>
   </header>
 
   <nav class="tabs" aria-label="Primary navigation">
     <button class="tab is-active" data-view="overview" type="button">Overview</button>
+    <button class="tab" data-view="vehicle-map" type="button">3D Vehicle Map</button>
     <button class="tab" data-view="workstreams" type="button">Workstreams</button>
     <button class="tab" data-view="tasks" type="button">Tasks</button>
     <button class="tab" data-view="photos-needed" type="button">Photos Needed</button>
@@ -30,10 +31,10 @@
   <main id="view-root" class="view-root" aria-live="polite"></main>
 
   <footer class="app-footer">
-    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code>, <code>data/manual/other_build_reference_media.csv</code>, <code>data/reference/other_j40_builds/</code></p>
+    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code>, <code>data/manual/other_build_reference_media.csv</code>, <code>data/reference/other_j40_builds/</code>, <code>data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/</code></p>
   </footer>
 
   <script src="./data.js"></script>
-  <script src="./app.js"></script>
+  <script src="./app.js?v=20260529-vehicle-map-detail"></script>
 </body>
 </html>

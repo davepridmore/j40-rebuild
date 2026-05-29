@@ -336,6 +336,7 @@ HTML_TEMPLATE = Template(
         <h1>$MODEL_TITLE</h1>
         <div class="meta">Left-hand-drive orbitable reference scaffold. Units: mm. Part count: <span id="partCount"></span>.</div>
         <div class="meta">Visual reference: <a href="https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d">1976 Toyota Land Cruiser FJ40</a> by <a href="https://sketchfab.com/tonielpro520">tonielpro520</a>, licensed <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>. Generated scaffold is project-owned primitive geometry.</div>
+        <div class="meta">Exterior benchmark: <a href="https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/">3DModels.org Toyota Land Cruiser (J40) Hard Top 1979</a>; used only for visible detail guidance, material separation, and hard-top exterior cues.</div>
       </section>
       <section class="section">
         <h2>Display</h2>
@@ -478,7 +479,96 @@ function addFace(out, a, b, c, d, normal, color) {
   pushLine(out, d, a);
 }
 
+function boxBevelMm(part) {
+  const minDimension = Math.min(part.length, part.width, part.height);
+  if (minDimension < 28 || ["datum", "brake_system", "fuel_system", "exhaust"].includes(part.group)) return 0;
+  const confidence = String(part.confidence || "").toLowerCase();
+  if (confidence.includes("datum") || confidence.includes("routing")) return 0;
+  const groupBevels = {
+    body: 36,
+    hard_top: 38,
+    front_detail: 18,
+    interior: 20,
+    engine_bay: 12,
+    chassis: 10,
+    running_gear: 8
+  };
+  return Math.min(groupBevels[part.group] || 8, minDimension * 0.42);
+}
+
+function pushChamferQuad(out, point, normalModel, color, a, b, c, d) {
+  addFace(out, point(a), point(b), point(c), point(d), normalize(modelVector(normalModel)), color);
+}
+
 function boxMesh(part, color) {
+  let bevel = boxBevelMm(part);
+  const out = { positions: [], normals: [], colors: [], lines: [] };
+  if (bevel > 0) {
+    const cx = part.x + part.length / 2;
+    const cy = part.y;
+    const cz = part.z + part.height / 2;
+    const hx = part.length / 2;
+    const hy = part.width / 2;
+    const hz = part.height / 2;
+    bevel = Math.min(bevel, hx * 0.42, hy * 0.42, hz * 0.42);
+    if (bevel > 0) {
+      const point = ([x, y, z]) => modelToWorld([cx + x, cy + y, cz + z]);
+      const x = hx;
+      const y = hy;
+      const z = hz;
+      const b = bevel;
+
+      pushChamferQuad(out, point, [1, 0, 0], color, [x, -y + b, -z + b], [x, y - b, -z + b], [x, y - b, z - b], [x, -y + b, z - b]);
+      pushChamferQuad(out, point, [-1, 0, 0], color, [-x, -y + b, -z + b], [-x, -y + b, z - b], [-x, y - b, z - b], [-x, y - b, -z + b]);
+      pushChamferQuad(out, point, [0, 1, 0], color, [-x + b, y, -z + b], [-x + b, y, z - b], [x - b, y, z - b], [x - b, y, -z + b]);
+      pushChamferQuad(out, point, [0, -1, 0], color, [-x + b, -y, -z + b], [x - b, -y, -z + b], [x - b, -y, z - b], [-x + b, -y, z - b]);
+      pushChamferQuad(out, point, [0, 0, 1], color, [-x + b, -y + b, z], [x - b, -y + b, z], [x - b, y - b, z], [-x + b, y - b, z]);
+      pushChamferQuad(out, point, [0, 0, -1], color, [-x + b, -y + b, -z], [-x + b, y - b, -z], [x - b, y - b, -z], [x - b, -y + b, -z]);
+
+      for (const sx of [-1, 1]) {
+        for (const sy of [-1, 1]) {
+          pushChamferQuad(out, point, [sx, sy, 0], color,
+            [sx * x, sy * (y - b), -z + b],
+            [sx * (x - b), sy * y, -z + b],
+            [sx * (x - b), sy * y, z - b],
+            [sx * x, sy * (y - b), z - b]);
+        }
+      }
+      for (const sx of [-1, 1]) {
+        for (const sz of [-1, 1]) {
+          pushChamferQuad(out, point, [sx, 0, sz], color,
+            [sx * x, -y + b, sz * (z - b)],
+            [sx * (x - b), -y + b, sz * z],
+            [sx * (x - b), y - b, sz * z],
+            [sx * x, y - b, sz * (z - b)]);
+        }
+      }
+      for (const sy of [-1, 1]) {
+        for (const sz of [-1, 1]) {
+          pushChamferQuad(out, point, [0, sy, sz], color,
+            [-x + b, sy * y, sz * (z - b)],
+            [-x + b, sy * (y - b), sz * z],
+            [x - b, sy * (y - b), sz * z],
+            [x - b, sy * y, sz * (z - b)]);
+        }
+      }
+      for (const sx of [-1, 1]) {
+        for (const sy of [-1, 1]) {
+          for (const sz of [-1, 1]) {
+            pushTriangle(
+              out,
+              point([sx * x, sy * (y - b), sz * (z - b)]),
+              point([sx * (x - b), sy * y, sz * (z - b)]),
+              point([sx * (x - b), sy * (y - b), sz * z]),
+              normalize(modelVector([sx, sy, sz])),
+              color
+            );
+          }
+        }
+      }
+      return out;
+    }
+  }
   const x0 = part.x;
   const x1 = part.x + part.length;
   const y0 = part.y - part.width / 2;
@@ -493,7 +583,6 @@ function boxMesh(part, color) {
   const p101 = modelToWorld([x1, y0, z1]);
   const p110 = modelToWorld([x1, y1, z0]);
   const p111 = modelToWorld([x1, y1, z1]);
-  const out = { positions: [], normals: [], colors: [], lines: [] };
   addFace(out, p100, p110, p111, p101, modelVector([1, 0, 0]), color);
   addFace(out, p000, p001, p011, p010, modelVector([-1, 0, 0]), color);
   addFace(out, p010, p011, p111, p110, modelVector([0, 1, 0]), color);

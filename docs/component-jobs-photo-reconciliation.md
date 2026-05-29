@@ -1,15 +1,15 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-29 19:07:41
+- Generated: 2026-05-29 19:32:32
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
 
 ## Status Summary
 
-- `direct_photo_evidence`: 60
+- `direct_photo_evidence`: 62
 - `indirect_photo_evidence_only`: 2
-- `no_photo_evidence`: 8
+- `no_photo_evidence`: 7
 
 ## Per-Component Results
 
@@ -20,7 +20,6 @@
 | `eps_vitz_complete_kit_market_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_connector_wire_id_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_static_and_road_validation` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
-| `gearbox_top_cover_shift_tower_20260518` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_dash_switch_fitup` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_diesel_cutoff_ignition_security` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `indirect_photo_evidence_only` | 0 | 37 | `-` | Current photo inventory has no dedicated exhaust mock-up evidence; chassis and engine-bay photos only support routing context. |
@@ -59,6 +58,8 @@
 | `front_vent_window_assemblies` | `direct_photo_evidence` | 3 | 6 | `front_vent_window_assemblies` | Detached paired vent/quarter window assemblies are directly documented and should close through the windows refurbishment gate. |
 | `front_windows` | `direct_photo_evidence` | 2 | 20 | `hood_and_front_windshield_overview` | Front windshield is explicitly captured in dedicated front overview shots; May 17 side-window glass photos support the broader windows workstream. |
 | `front_wings` | `direct_photo_evidence` | 6 | 38 | `detached_body_panels_and_doors|detached_doors_and_panels` | Front wings are tracked to paint from the April 23 send-day detached-parts batch; wing-removal photos are supporting context only. |
+| `gearbox_oil_service_drain_inspect_refill_20260529` | `direct_photo_evidence` | 22 | 4 | `bellhousing_clutch_linkage_and_gearbox_case|engine_powertrain_cleaning_baseline` | Existing gearbox and powertrain photos establish location and access context. Closeout still needs fill plug, drain plug, oil sample, drain plug debris, oil product, refill, and leak-check photos. |
+| `gearbox_top_cover_shift_tower_20260518` | `direct_photo_evidence` | 22 | 4 | `bellhousing_clutch_linkage_and_gearbox_case|engine_powertrain_cleaning_baseline` | Gearbox case, bellhousing, linkage, underside, and May 12 powertrain views support top-cover identification and shift-tower planning; open-top inspection photos are still required before parts release. |
 | `hood` | `direct_photo_evidence` | 2 | 16 | `hood_and_front_windshield_overview` | Hood panel/latches are explicitly visible in front overview shots. |
 | `interior` | `direct_photo_evidence` | 47 | 4 | `cabin_overview|dashboard_and_cabin_stripdown|dashboard_lower_structure|dashboard_shell_and_cabin|driver_footwell_firewall_and_wiring|floor_pan_and_firewall|rear_cargo_floor` | Interior strip-down and cabin state are well documented. |
 | `issue_body_mount_captive_thread_repair` | `direct_photo_evidence` | 22 | 58 | `body_mount_and_crossmember_detail|frame_and_mount_points|frame_rail_body_mount_and_crossmember_detail` | Body-mount pedestal and mount-point photos cover captive-nut and sleeve/thread repair planning. |

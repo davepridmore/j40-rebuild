@@ -73,6 +73,7 @@ Only chat content related to this build should be included. The importer treats 
 - `docs/suspension-workstream.md`: start-here tracker and installation control sheet for the incoming Ironman Foam Cell suspension set
 - `docs/replacement-pipes-workstream.md`: start-here tracker for replacement pipes, hoses, hard lines, and made-to-order pipe samples
 - `docs/gearbox-top-cover-workstream.md`: controlled teardown, inspection, repair/replace, and validation workstream for the gearbox top cover and shift tower
+- `docs/gearbox-oil-service-workstream.md`: specific gearbox oil drain, inspection, refill, and buying requirement gate
 - `docs/fabrication-handoff-index.md`: send-out index for rubber and electrical fabrication packages
 - `photos/index/`: generated lookup folders by component group, specific component, and stage
 - `scripts/import_whatsapp.py`: parses chats, extracts media, filters relevance

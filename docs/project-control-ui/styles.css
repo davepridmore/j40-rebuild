@@ -99,6 +99,53 @@ h1 {
   padding: 0 1.2rem 1.4rem;
 }
 
+.vehicle-map-view {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.vehicle-map-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.85rem;
+}
+
+.vehicle-map-head .section-title,
+.vehicle-map-head .section-subtitle {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.vehicle-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  min-width: min(360px, 100%);
+}
+
+.vehicle-map-frame-shell {
+  height: min(78vh, 920px);
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid #202428;
+  border-radius: 10px;
+  background: #111315;
+}
+
+.vehicle-map-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #111315;
+}
+
 .metrics-grid,
 .cards-grid,
 .parts-workstream-grid,
@@ -2103,6 +2150,20 @@ code {
 }
 
 @media (max-width: 960px) {
+  .vehicle-map-head {
+    display: grid;
+  }
+
+  .vehicle-map-links {
+    justify-content: flex-start;
+    min-width: 0;
+  }
+
+  .vehicle-map-frame-shell {
+    height: 72vh;
+    min-height: 520px;
+  }
+
   .scout-spec-layout {
     grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
   }
@@ -2166,5 +2227,10 @@ code {
 
   .view-root {
     padding-inline: 0.8rem;
+  }
+
+  .vehicle-map-frame-shell {
+    height: 68vh;
+    min-height: 460px;
   }
 }

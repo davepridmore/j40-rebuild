@@ -480,6 +480,16 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "rear_mid_frame_rail_and_hard_line_detail"),
         notes="May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection.",
     ),
+    "gearbox_top_cover_shift_tower_20260518": EvidenceRule(
+        direct_specific_components=("bellhousing_clutch_linkage_and_gearbox_case", "engine_powertrain_cleaning_baseline"),
+        indirect_specific_components=("transmission_crossmember_and_driveline_mounts",),
+        notes="Gearbox case, bellhousing, linkage, underside, and May 12 powertrain views support top-cover identification and shift-tower planning; open-top inspection photos are still required before parts release.",
+    ),
+    "gearbox_oil_service_drain_inspect_refill_20260529": EvidenceRule(
+        direct_specific_components=("bellhousing_clutch_linkage_and_gearbox_case", "engine_powertrain_cleaning_baseline"),
+        indirect_specific_components=("transmission_crossmember_and_driveline_mounts",),
+        notes="Existing gearbox and powertrain photos establish location and access context. Closeout still needs fill plug, drain plug, oil sample, drain plug debris, oil product, refill, and leak-check photos.",
+    ),
     "wheel_tyre_condition_assessment_20260512": EvidenceRule(
         direct_specific_components=("wheel_tire_neolin_mt_tread_detail", "wheel_tire_neolin_mt_sidewall_rim_detail"),
         indirect_specific_components=("wheel_and_tire_detail", "steering_and_suspension_linkages"),

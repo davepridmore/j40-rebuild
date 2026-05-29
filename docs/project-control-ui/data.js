@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T19:13:02+05:00",
+  "generated_at": "2026-05-29T20:34:10+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -47,16 +47,16 @@ window.J40_DASHBOARD_DATA = {
     "j40_wiring_diagram_graffle": "data/raw/imports/J40.graffle"
   },
   "summary": {
-    "workstreams_in_scope": 17,
+    "workstreams_in_scope": 18,
     "workstreams_active": 13,
-    "workstream_evidence_images": 787,
+    "workstream_evidence_images": 809,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 69,
     "parts_ordered_pending_delivery": 9,
     "urgent_part_actions": 15,
-    "capture_data_tasks": 109,
-    "capture_data_tasks_now": 94,
-    "supply_rows_tracked": 276,
+    "capture_data_tasks": 110,
+    "capture_data_tasks_now": 95,
+    "supply_rows_tracked": 275,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
     "whatsapp_j40_media_items": 285,
@@ -37808,7 +37808,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -37870,7 +37870,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -37895,7 +37895,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "11 part rows still require price confirmation/order placement."
+          "detail": "8 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -37964,12 +37964,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Amir runner / verified Toyota diesel parts counter",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38004,12 +38004,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_barrier_hose_fittings_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22",
-          "notes": "Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38043,12 +38043,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221",
-          "notes": "Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38072,45 +38072,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_accessory_belt_set",
-          "workstream": "mechanical_baseline",
-          "item": "Accessory belt set",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_accessory_belt_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
-            "caption": "Accessory belt set \u00b7 accessory belt reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "accessory_belt",
-            "matched_tokens": [
-              "belt"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
           "entry_id": "part_mech_engine_oil_filter_service",
           "workstream": "mechanical_baseline",
           "item": "Engine oil + oil filter service pack",
@@ -38121,13 +38082,22 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Autohub online / Automize online",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_engine_oil_filter_service",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "links": [],
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+              "label": "automize.pk"
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -38135,45 +38105,6 @@ window.J40_DASHBOARD_DATA = {
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
             "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "filter_service",
-            "matched_tokens": [
-              "filter"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_mech_fuel_filter",
-          "workstream": "mechanical_baseline",
-          "item": "Fuel filter",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_fuel_filter",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-            "caption": "Fuel filter \u00b7 filter/service reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -38199,12 +38130,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024",
-          "notes": "Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38238,12 +38169,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_parallel_flow_condenser_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217",
-          "notes": "Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38268,45 +38199,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_radiator_cap",
-          "workstream": "mechanical_baseline",
-          "item": "Radiator cap",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_cap",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
-            "caption": "Radiator cap - current car cropped radiator neck and overflow context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_cap"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_hvac_receiver_drier_20260514",
           "workstream": "mechanical_baseline",
           "item": "Receiver-drier matched to R134a A/C layout",
@@ -38317,12 +38209,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_receiver_drier_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218",
-          "notes": "Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38356,12 +38248,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_trinary_switch_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219",
-          "notes": "Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38395,12 +38287,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local diesel hose supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_fuel_hose_and_clamps",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -38455,12 +38347,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [
             {
               "url": "../../docs/pipe-fabrication-spec-20260502.md",
@@ -38520,12 +38412,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local hose supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_heater_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38559,12 +38451,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local hose supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_vacuum_hose_refresh",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -38729,6 +38621,123 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "semantic_reference_image",
             "match_score": 700
           }
+        },
+        {
+          "entry_id": "part_mech_accessory_belt_set",
+          "workstream": "mechanical_baseline",
+          "item": "Accessory belt set",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / local belt supplier / Toyota diesel parts counter",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_accessory_belt_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
+            "caption": "Accessory belt set \u00b7 accessory belt reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "accessory_belt",
+            "matched_tokens": [
+              "belt"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_mech_fuel_filter",
+          "workstream": "mechanical_baseline",
+          "item": "Fuel filter",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / local Toyota diesel parts counter",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_fuel_filter",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+            "caption": "Fuel filter \u00b7 filter/service reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "filter_service",
+            "matched_tokens": [
+              "filter"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_mech_radiator_cap",
+          "workstream": "mechanical_baseline",
+          "item": "Radiator cap",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / local radiator shop / Toyota parts counter",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_radiator_cap",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+            "caption": "Radiator cap - current car cropped radiator neck and overflow context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_radiator_cap"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
         }
       ],
       "operation_panels": [],
@@ -38864,12 +38873,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "Trinary pressure switch for A/C compressor and fan control (purchase_ready; delivery not_ordered; amount missing)",
-                "A/C barrier hose and refrigerant-compatible fittings (purchase_ready; delivery not_ordered; amount missing)",
-                "A/C firewall bulkhead fittings and sealing grommets (purchase_ready; delivery not_ordered; amount missing)",
-                "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)"
+                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Trinary pressure switch for A/C compressor and fan control (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -39005,7 +39014,7 @@ window.J40_DASHBOARD_DATA = {
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
                 "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (received; delivery received; amount confirmed)",
-                "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
+                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "A/C barrier hose and refrigerant-compatible fittings (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
@@ -39136,8 +39145,8 @@ window.J40_DASHBOARD_DATA = {
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
                 "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
-                "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)",
+                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
               ]
             },
@@ -39266,9 +39275,9 @@ window.J40_DASHBOARD_DATA = {
                 "A/C barrier hose and refrigerant-compatible fittings (purchase_ready; delivery not_ordered; amount missing)",
                 "A/C firewall bulkhead fittings and sealing grommets (purchase_ready; delivery not_ordered; amount missing)",
                 "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
-                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (received; delivery received; amount confirmed)",
                 "Parallel-flow A/C condenser sized to core support (purchase_ready; delivery not_ordered; amount missing)",
-                "Receiver-drier matched to R134a A/C layout (purchase_ready; delivery not_ordered; amount missing)"
+                "Receiver-drier matched to R134a A/C layout (purchase_ready; delivery not_ordered; amount missing)",
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -39394,11 +39403,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
-                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
+                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
+                "Parallel-flow A/C condenser sized to core support (purchase_ready; delivery not_ordered; amount missing)",
+                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -44824,6 +44833,1025 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Run GB-TOP-CAPTURE-001, identify gearbox and top-cover variant, remove and bench-inspect the shift tower/top cover, then repair/replace the cover before buying detents, bushes, shift-seat parts, boots, gaskets, or cover hardware Notes: Dedicated component job for the reported poor gearbox top cover. Treat as a condition gate, not a blind parts order or full gearbox rebuild."
         },
         {
+          "label": "Close workstream exit gate",
+          "status": "queued",
+          "detail": "No linked package rows found. Exit gate: Top cover and shift tower are inspected, repaired or replaced as needed, refitted with correct gasket/sealant and oil, and static plus yard shift validation passes with post-test leak checks"
+        }
+      ],
+      "involved_parts": [],
+      "operation_panels": [],
+      "subtask_groups": [],
+      "electrical_spec_layout": null
+    },
+    {
+      "id": "gearbox_oil_service",
+      "title": "Gearbox Oil",
+      "phase": "05c_gearbox_oil_service",
+      "status": "queued",
+      "priority": "high",
+      "primary_location": "workshop",
+      "owner_mode": "pro_led",
+      "depends_on": [
+        "mechanical_baseline",
+        "gearbox_top_cover"
+      ],
+      "next_action": "Identify the fitted gearbox and manual oil spec, confirm the fill plug opens, drain into a clean pan, inspect oil and plug debris, then refill only with the correct gearbox oil and matched plug sealing washers",
+      "exit_gate": "Gearbox oil grade and quantity are recorded, oil/debris inspection is acceptable or escalated, correct oil is filled, drain/fill plugs are sealed, static and yard shift checks pass, and post-test leak checks are clear",
+      "notes": "Dedicated drain-inspect-refill track split from the top-cover repair track. WhatsApp history confirms 2H engine with 5-speed gear, so H55F is the active oil candidate until case/top-cover marks prove a different 5-speed swap. This is a specific buying requirement for oil, plug washers, sample capture, and refill tools; do not buy generic differential or transfer-case oil as a substitute.",
+      "evidence_source": [
+        "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid",
+        "docs_gearbox_oil_service_workstream",
+        "docs_gearbox_top_cover_workstream",
+        "20260430_215915_gp_ycQ395Gg",
+        "20260430_215939_gp_EjZ7u1ow",
+        "20260430_233755_gp_DO69MLAA",
+        "20260422_004319_gp_Ttqz46Sw",
+        "20260422_004338_gp_35uwfApA",
+        "20260512_072812_gp_gZLxKAXA",
+        "20260512_072817_gp_MkI6uZkA",
+        "20260512_073344_gp_EH3pnE2Q"
+      ],
+      "images": [
+        {
+          "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+          "captured_date": "2026-05-12",
+          "captured_time": "07:33:44",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_baseline",
+          "media_id": "20260512_073344_gp_EH3pnE2Q",
+          "matched_tokens": [
+            "20260512_073344_gp_eh3pne2q"
+          ]
+        },
+        {
+          "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+          "captured_date": "2026-05-12",
+          "captured_time": "07:28:17",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_baseline",
+          "media_id": "20260512_072817_gp_MkI6uZkA",
+          "matched_tokens": [
+            "20260512_072817_gp_mki6uzka"
+          ]
+        },
+        {
+          "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+          "captured_date": "2026-05-12",
+          "captured_time": "07:28:12",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_baseline",
+          "media_id": "20260512_072812_gp_gZLxKAXA",
+          "matched_tokens": [
+            "20260512_072812_gp_gzlxkaxa"
+          ]
+        },
+        {
+          "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+          "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+          "captured_date": "2026-04-30",
+          "captured_time": "21:59:39",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+          "stage": "mechanical_inspection",
+          "media_id": "20260430_215939_gp_EjZ7u1ow",
+          "matched_tokens": [
+            "20260430_215939_gp_ejz7u1ow"
+          ]
+        },
+        {
+          "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+          "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+          "captured_date": "2026-04-30",
+          "captured_time": "21:59:15",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+          "stage": "mechanical_inspection",
+          "media_id": "20260430_215915_gp_ycQ395Gg",
+          "matched_tokens": [
+            "20260430_215915_gp_ycq395gg"
+          ]
+        },
+        {
+          "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+          "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+          "captured_date": "2026-04-30",
+          "captured_time": "23:37:55",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+          "stage": "mechanical_inspection",
+          "media_id": "20260430_233755_gp_DO69MLAA",
+          "matched_tokens": [
+            "20260430_233755_gp_do69mlaa"
+          ]
+        },
+        {
+          "path": "../../photos/20260422_004338_gp_35uwfApA_2.jpg",
+          "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:38",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "transmission_crossmember_and_driveline_mounts",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004338_gp_35uwfApA_2",
+          "matched_tokens": [
+            "20260422_004338_gp_35uwfapa"
+          ]
+        },
+        {
+          "path": "../../photos/20260422_004319_gp_Ttqz46Sw_2.jpg",
+          "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:19",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "transmission_crossmember_and_driveline_mounts",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004319_gp_Ttqz46Sw_2",
+          "matched_tokens": [
+            "20260422_004319_gp_ttqz46sw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_220352_gp_ZpTWaO5Q.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "22:03:52",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_220352_gp_ZpTWaO5Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_215603_gp_p8KX4pAw.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "21:56:03",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_215603_gp_p8KX4pAw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194535_gp_mZ25Ou4A.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:45:35",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194535_gp_mZ25Ou4A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194508_gp_aSPxPLDw.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:45:08",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194508_gp_aSPxPLDw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194458_gp_wd1x56gQ.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:58",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194458_gp_wd1x56gQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194451_gp_gDugUCjQ.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:51",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194451_gp_gDugUCjQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194435_gp_ewUJAfPA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:35",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194435_gp_ewUJAfPA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194427_gp_QjfOBtTQ.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:27",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194427_gp_QjfOBtTQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194421_gp_toAeFYqg.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:21",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194421_gp_toAeFYqg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194414_gp_gdDllc8Q.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:14",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194414_gp_gdDllc8Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194402_gp_W9J4rcsw.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:44:02",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194402_gp_W9J4rcsw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194344_gp_V7P0qatA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:44",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194344_gp_V7P0qatA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194338_gp_81Nj4SVA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:38",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194338_gp_81Nj4SVA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260501_194330_gp_CogcrEXA.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:30",
+          "media_type": "photo",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_cleaning",
+          "media_id": "20260501_194330_gp_CogcrEXA",
+          "matched_tokens": []
+        }
+      ],
+      "evidence_sets": [
+        {
+          "key": "gearbox_oil_service_context",
+          "title": "Gearbox Case And Drain-Service Context",
+          "description": "Gearbox case, bellhousing, powertrain underside, and crossmember context before fill-plug, drain-plug, oil-sample, and refill photos are captured.",
+          "images": [
+            {
+              "path": "../../photos/20260422_004319_gp_Ttqz46Sw.jpg",
+              "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:19",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "transmission_crossmember_and_driveline_mounts",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004319_gp_Ttqz46Sw",
+              "matched_tokens": [
+                "20260422_004319_gp_ttqz46sw"
+              ]
+            },
+            {
+              "path": "../../photos/20260422_004338_gp_35uwfApA.jpg",
+              "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:38",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "transmission_crossmember_and_driveline_mounts",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004338_gp_35uwfApA",
+              "matched_tokens": [
+                "20260422_004338_gp_35uwfapa"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "21:59:15",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_215915_gp_ycQ395Gg",
+              "matched_tokens": [
+                "20260430_215915_gp_ycq395gg"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "21:59:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_215939_gp_EjZ7u1ow",
+              "matched_tokens": [
+                "20260430_215939_gp_ejz7u1ow"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "23:37:55",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_233755_gp_DO69MLAA",
+              "matched_tokens": [
+                "20260430_233755_gp_do69mlaa"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194330_gp_CogcrEXA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:30",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194330_gp_CogcrEXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194338_gp_81Nj4SVA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:38",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194338_gp_81Nj4SVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194344_gp_V7P0qatA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194344_gp_V7P0qatA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194402_gp_W9J4rcsw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:02",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194402_gp_W9J4rcsw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194414_gp_gdDllc8Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:14",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194414_gp_gdDllc8Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194421_gp_toAeFYqg.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:21",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194421_gp_toAeFYqg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194427_gp_QjfOBtTQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:27",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194427_gp_QjfOBtTQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194435_gp_ewUJAfPA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:35",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194435_gp_ewUJAfPA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194451_gp_gDugUCjQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:51",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194451_gp_gDugUCjQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194458_gp_wd1x56gQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:58",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194458_gp_wd1x56gQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194508_gp_aSPxPLDw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:45:08",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194508_gp_aSPxPLDw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194535_gp_mZ25Ou4A.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:45:35",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194535_gp_mZ25Ou4A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_215603_gp_p8KX4pAw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "21:56:03",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_215603_gp_p8KX4pAw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_220352_gp_ZpTWaO5Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "22:03:52",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_220352_gp_ZpTWaO5Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:28:12",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_072812_gp_gZLxKAXA",
+              "matched_tokens": [
+                "20260512_072812_gp_gzlxkaxa"
+              ]
+            },
+            {
+              "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:28:17",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_072817_gp_MkI6uZkA",
+              "matched_tokens": [
+                "20260512_072817_gp_mki6uzka"
+              ]
+            },
+            {
+              "path": "../../photos/20260512_073204_gp_sNfDSHdg.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:32:04",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_073204_gp_sNfDSHdg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:33:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_073344_gp_EH3pnE2Q",
+              "matched_tokens": [
+                "20260512_073344_gp_eh3pne2q"
+              ]
+            },
+            {
+              "path": "../../photos/20260512_073509_gp_NvDRwYrQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:35:09",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_073509_gp_NvDRwYrQ",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "key": "primary",
+          "title": "Primary Evidence Set",
+          "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
+          "images": [
+            {
+              "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:33:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_073344_gp_EH3pnE2Q",
+              "matched_tokens": [
+                "20260512_073344_gp_eh3pne2q"
+              ]
+            },
+            {
+              "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:28:17",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_072817_gp_MkI6uZkA",
+              "matched_tokens": [
+                "20260512_072817_gp_mki6uzka"
+              ]
+            },
+            {
+              "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+              "captured_date": "2026-05-12",
+              "captured_time": "07:28:12",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_baseline",
+              "media_id": "20260512_072812_gp_gZLxKAXA",
+              "matched_tokens": [
+                "20260512_072812_gp_gzlxkaxa"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "21:59:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_215939_gp_EjZ7u1ow",
+              "matched_tokens": [
+                "20260430_215939_gp_ejz7u1ow"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "21:59:15",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_215915_gp_ycQ395Gg",
+              "matched_tokens": [
+                "20260430_215915_gp_ycq395gg"
+              ]
+            },
+            {
+              "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+              "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+              "captured_date": "2026-04-30",
+              "captured_time": "23:37:55",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+              "stage": "mechanical_inspection",
+              "media_id": "20260430_233755_gp_DO69MLAA",
+              "matched_tokens": [
+                "20260430_233755_gp_do69mlaa"
+              ]
+            },
+            {
+              "path": "../../photos/20260422_004338_gp_35uwfApA_2.jpg",
+              "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:38",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "transmission_crossmember_and_driveline_mounts",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004338_gp_35uwfApA_2",
+              "matched_tokens": [
+                "20260422_004338_gp_35uwfapa"
+              ]
+            },
+            {
+              "path": "../../photos/20260422_004319_gp_Ttqz46Sw_2.jpg",
+              "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:19",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "transmission_crossmember_and_driveline_mounts",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004319_gp_Ttqz46Sw_2",
+              "matched_tokens": [
+                "20260422_004319_gp_ttqz46sw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_220352_gp_ZpTWaO5Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "22:03:52",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_220352_gp_ZpTWaO5Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_215603_gp_p8KX4pAw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "21:56:03",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_215603_gp_p8KX4pAw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194535_gp_mZ25Ou4A.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:45:35",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194535_gp_mZ25Ou4A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194508_gp_aSPxPLDw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:45:08",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194508_gp_aSPxPLDw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194458_gp_wd1x56gQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:58",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194458_gp_wd1x56gQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194451_gp_gDugUCjQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:51",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194451_gp_gDugUCjQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194435_gp_ewUJAfPA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:35",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194435_gp_ewUJAfPA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194427_gp_QjfOBtTQ.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:27",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194427_gp_QjfOBtTQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194421_gp_toAeFYqg.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:21",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194421_gp_toAeFYqg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194414_gp_gdDllc8Q.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:14",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194414_gp_gdDllc8Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194402_gp_W9J4rcsw.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:44:02",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194402_gp_W9J4rcsw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194344_gp_V7P0qatA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194344_gp_V7P0qatA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194338_gp_81Nj4SVA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:38",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194338_gp_81Nj4SVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194330_gp_CogcrEXA.jpg",
+              "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:30",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "engine_powertrain_cleaning_baseline",
+              "stage": "mechanical_cleaning",
+              "media_id": "20260501_194330_gp_CogcrEXA",
+              "matched_tokens": []
+            }
+          ]
+        }
+      ],
+      "image_count": 22,
+      "reference_token_count": 9,
+      "requirements": [],
+      "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
+      "replacement_pipe_order_release_specs": [],
+      "longman_pipe_hose_order_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
+      "chassis_rubber_requirements": [],
+      "longman_rubber_order_specs": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
+      "fabrication_packages": [],
+      "chassis_bracket_analysis_register": [],
+      "market_specs": [
+        {
+          "id": "gearbox_oil_service_pack",
+          "title": "Gearbox Oil Service Pack",
+          "scope": "Quote only until gearbox/oil spec is confirmed",
+          "quantity": "1 complete gearbox drain-inspect-refill consumables pack",
+          "plain_stall_request": "Need manual gearbox oil service consumables for the gearbox currently fitted to a 1978 Toyota Land Cruiser J40 with 2H diesel. Quote only until the gearbox code, manual oil spec, and capacity are confirmed. WhatsApp history confirms 2H engine with 5-speed gear; H55F candidate is SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L only after confirmation.",
+          "buy_target": "Supply correct manual-transmission gearbox oil for the fitted gearbox, enough for fill plus a small top-up allowance, new drain/fill plug sealing washers matched to the plugs, and a filler pump or hose if the workshop does not supply one. If case marks prove a different 5-speed swap, use the matching manual row instead. Do not substitute differential/hypoid GL-5/LSD oil, transfer-case oil, engine oil, or brake fluid unless the fitted gearbox manual explicitly allows it.",
+          "must_include": [
+            "Fitted gearbox identification before payment",
+            "Manual oil grade and fill quantity",
+            "Correct gearbox oil quantity plus top-up allowance",
+            "Drain and fill plug sealing washers matched to actual plugs",
+            "Clear oil sample cup or bottle",
+            "Clean drain pan and filler pump/hose if workshop stock is not used",
+            "Stop condition for water, heavy metal, burnt oil, chunks, damaged threads, or abnormal noise"
+          ],
+          "links": [
+            {
+              "url": "../../docs/gearbox-oil-service-workstream.md",
+              "label": "Gearbox oil service workstream"
+            },
+            {
+              "url": "../../docs/gearbox-top-cover-workstream.md",
+              "label": "Gearbox top-cover workstream"
+            }
+          ]
+        }
+      ],
+      "linked_packages": [],
+      "component_jobs": [
+        {
+          "component_job_id": "gearbox_oil_service_drain_inspect_refill_20260529",
+          "component_group": "gearbox",
+          "current_status": "workstream_added",
+          "planned_action": "Use WhatsApp-confirmed 2H engine with 5-speed gear as the vehicle basis, confirm the exact 5-speed gearbox/manual match, prove the fill plug opens, drain oil into a clean pan, inspect oil sample and drain plug debris, then refill only with correct manual gearbox oil and matched drain/fill plug sealing washers",
+          "evidence_ref": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs_gearbox_oil_service_workstream|docs_gearbox_top_cover_workstream|20260430_215915_gp_ycQ395Gg|20260430_215939_gp_EjZ7u1ow|20260430_233755_gp_DO69MLAA|20260422_004319_gp_Ttqz46Sw|20260422_004338_gp_35uwfApA|20260512_072812_gp_gZLxKAXA|20260512_072817_gp_MkI6uZkA|20260512_073344_gp_EH3pnE2Q",
+          "notes": "This is a drain-inspect-refill condition gate and buying requirement. H55F is the active candidate until case/top-cover marks prove another 5-speed swap; quote SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L only after confirmation. Stop for water, heavy metal, damaged plug threads, or abnormal gearbox noise."
+        }
+      ],
+      "issue_jobs": [],
+      "steps": [
+        {
+          "label": "Execute current workstream action",
+          "status": "queued",
+          "detail": "Identify the fitted gearbox and manual oil spec, confirm the fill plug opens, drain into a clean pan, inspect oil and plug debris, then refill only with the correct gearbox oil and matched plug sealing washers"
+        },
+        {
+          "label": "Identify fitted gearbox",
+          "status": "queued",
+          "detail": "Record gearbox code/casting or manual match before buying oil."
+        },
+        {
+          "label": "Confirm fill plug opens",
+          "status": "queued",
+          "detail": "Open the fill plug before draining so the gearbox cannot be stranded empty."
+        },
+        {
+          "label": "Drain and inspect oil",
+          "status": "queued",
+          "detail": "Capture oil sample, plug magnet, water, glitter, sludge, and debris before refill."
+        },
+        {
+          "label": "Buy and fill exact oil",
+          "status": "queued",
+          "detail": "Use only the manual-approved gearbox oil and matched drain/fill plug washers."
+        },
+        {
+          "label": "Close shift and leak checks",
+          "status": "queued",
+          "detail": "Static/yard shift checks and post-test leak checks must pass."
+        },
+        {
+          "label": "Issue checks",
+          "status": "completed",
+          "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Component Task \u00b7 Gearbox Oil Service Drain Inspect Refill 20260529",
+          "status": "workstream_added",
+          "detail": "Use WhatsApp-confirmed 2H engine with 5-speed gear as the vehicle basis, confirm the exact 5-speed gearbox/manual match, prove the fill plug opens, drain oil into a clean pan, inspect oil sample and drain plug debris, then refill only with correct manual gearbox oil and matched drain/fill plug sealing washers Notes: This is a drain-inspect-refill condition gate and buying requirement. H55F is the active candidate until case/top-cover marks prove another 5-speed swap; quote SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L only after confirmation. Stop for water, heavy metal, damaged plug threads, or abnormal gearbox noise."
+        },
+        {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "completed",
           "detail": "0 part rows still require price confirmation/order placement."
@@ -44841,14 +45869,14 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Top cover and shift tower are inspected, repaired or replaced as needed, refitted with correct gasket/sealant and oil, and static plus yard shift validation passes with post-test leak checks"
+          "detail": "No linked package rows found. Exit gate: Gearbox oil grade and quantity are recorded, oil/debris inspection is acceptable or escalated, correct oil is filled, drain/fill plugs are sealed, static and yard shift checks pass, and post-test leak checks are clear"
         }
       ],
       "involved_parts": [
         {
           "entry_id": "part_mech_transmission_oil_service",
-          "workstream": "gearbox_top_cover",
-          "item": "Transmission/gearbox oil service - drain inspect and refill",
+          "workstream": "gearbox_oil_service",
+          "item": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -44860,25 +45888,26 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_transmission_oil_service",
-          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
-          "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+          "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-            "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive part reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/water_pump.jpg",
+            "caption": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit \u00b7 water pump reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "generic_part",
+            "media_id": "water_pump",
             "matched_tokens": [
-              "part"
+              "water",
+              "pump"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -44886,7 +45915,385 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "operation_panels": [],
-      "subtask_groups": [],
+      "subtask_groups": [
+        {
+          "key": "gearbox_oil_drain_inspect_refill",
+          "title": "Gearbox Oil Drain Inspect Refill",
+          "summary": "Fitted gearbox identification, oil-spec buying gate, drain inspection, correct refill, and leak/shift closeout.",
+          "subtasks": [
+            {
+              "title": "Identify Gearbox And Oil Spec",
+              "priority": "P0",
+              "remaining": "before payment",
+              "instruction": "Do not buy oil until the fitted gearbox and manual oil requirement are known.",
+              "process_steps": [
+                "Photograph gearbox casting/code areas, shift layout, bellhousing area, and transfer interface.",
+                "Match the fitted gearbox to the manual or workshop spec sheet.",
+                "WhatsApp history confirms 2H engine with 5-speed gear; treat H55F as the active candidate until case/top-cover marks prove otherwise.",
+                "If H55F is confirmed, use SAE75W-90 API GL-4/GL-5, 4.9 L gearbox capacity, buy 5 L.",
+                "Record oil grade, fill quantity, fill level method, and plug torque if available.",
+                "Reject generic axle, transfer-case, engine, brake, or LSD oil substitutes unless the fitted gearbox manual explicitly allows them."
+              ],
+              "tools": [
+                "Camera",
+                "Inspection light",
+                "Manual/spec sheet"
+              ],
+              "supplies": [
+                "Label tag",
+                "Parts request note"
+              ],
+              "hold_point": "Runner or vendor may collect quotes only until gearbox model, grade, capacity, and washer style are confirmed.",
+              "image_tokens": [
+                "gearbox",
+                "transmission",
+                "bellhousing",
+                "case"
+              ],
+              "id": "identify_gearbox_and_oil_spec",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "23:37:55",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_233755_gp_DO69MLAA",
+                  "matched_tokens": [
+                    "20260430_233755_gp_do69mlaa"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:39",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215939_gp_EjZ7u1ow",
+                  "matched_tokens": [
+                    "20260430_215939_gp_ejz7u1ow"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:15",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215915_gp_ycQ395Gg",
+                  "matched_tokens": [
+                    "20260430_215915_gp_ycq395gg"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_004338_gp_35uwfApA_2.jpg",
+                  "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:43:38",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "transmission_crossmember_and_driveline_mounts",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004338_gp_35uwfApA_2",
+                  "matched_tokens": [
+                    "20260422_004338_gp_35uwfapa"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_004319_gp_Ttqz46Sw_2.jpg",
+                  "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:43:19",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "transmission_crossmember_and_driveline_mounts",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004319_gp_Ttqz46Sw_2",
+                  "matched_tokens": [
+                    "20260422_004319_gp_ttqz46sw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:33:44",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_073344_gp_EH3pnE2Q",
+                  "matched_tokens": [
+                    "20260512_073344_gp_eh3pne2q"
+                  ]
+                }
+              ],
+              "registered_items": [
+                "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit (spec_needed_before_order; delivery not_ordered; amount missing)"
+              ]
+            },
+            {
+              "title": "Drain And Inspect Oil",
+              "priority": "P0",
+              "remaining": "before refill",
+              "instruction": "Treat the drain as a condition inspection, not just a fluid change.",
+              "process_steps": [
+                "Clean around the drain and fill plugs before opening either plug.",
+                "Open the fill plug before the drain plug; stop if the fill plug will not open.",
+                "Drain into a clean pan and take a clear sample cup photo.",
+                "Photograph oil color, water separation, glitter, sludge, drain plug, magnet, and debris.",
+                "Stop and escalate if water, heavy metal, chunks, burnt oil, thread damage, or abnormal gearbox noise is found."
+              ],
+              "tools": [
+                "Correct plug socket",
+                "Drain pan",
+                "Clear sample cup",
+                "Camera",
+                "Inspection light"
+              ],
+              "supplies": [
+                "Labels",
+                "Rags",
+                "Gloves"
+              ],
+              "hold_point": "Do not refill as routine service if the oil or plug evidence shows water or heavy metal.",
+              "image_tokens": [
+                "drain",
+                "oil",
+                "plug",
+                "magnet",
+                "debris"
+              ],
+              "id": "drain_and_inspect_oil",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "23:37:55",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_233755_gp_DO69MLAA",
+                  "matched_tokens": [
+                    "20260430_233755_gp_do69mlaa"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:39",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215939_gp_EjZ7u1ow",
+                  "matched_tokens": [
+                    "20260430_215939_gp_ejz7u1ow"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:15",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215915_gp_ycQ395Gg",
+                  "matched_tokens": [
+                    "20260430_215915_gp_ycq395gg"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:33:44",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_073344_gp_EH3pnE2Q",
+                  "matched_tokens": [
+                    "20260512_073344_gp_eh3pne2q"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:28:17",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_072817_gp_MkI6uZkA",
+                  "matched_tokens": [
+                    "20260512_072817_gp_mki6uzka"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:28:12",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_072812_gp_gZLxKAXA",
+                  "matched_tokens": [
+                    "20260512_072812_gp_gzlxkaxa"
+                  ]
+                }
+              ],
+              "registered_items": [
+                "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit (spec_needed_before_order; delivery not_ordered; amount missing)"
+              ]
+            },
+            {
+              "title": "Refill And Close Checks",
+              "priority": "P0",
+              "remaining": "after acceptable inspection",
+              "instruction": "Refill only after the inspection passes and the correct oil is present.",
+              "process_steps": [
+                "Refit the drain plug with correct washer/gasket and torque basis.",
+                "Fill through the correct fill port to the manual quantity or fill-level method.",
+                "Refit the fill plug with correct washer/gasket and torque basis.",
+                "Static-shift through all gears, then yard-test only when clutch and brakes are safe.",
+                "Recheck for leaks after first movement, after 24 hours, and at the next mechanical review."
+              ],
+              "tools": [
+                "Filler pump or hose",
+                "Torque wrench if torque basis exists",
+                "Inspection light"
+              ],
+              "supplies": [
+                "Correct gearbox oil",
+                "Drain/fill plug washers",
+                "Cleanup rags"
+              ],
+              "hold_point": "Close only after grade, quantity, oil findings, plug sealing, shift checks, and leak checks are recorded.",
+              "image_tokens": [
+                "fill",
+                "gearbox",
+                "oil",
+                "leak",
+                "service"
+              ],
+              "id": "refill_and_close_checks",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "23:37:55",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_233755_gp_DO69MLAA",
+                  "matched_tokens": [
+                    "20260430_233755_gp_do69mlaa"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:39",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215939_gp_EjZ7u1ow",
+                  "matched_tokens": [
+                    "20260430_215939_gp_ejz7u1ow"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+                  "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+                  "captured_date": "2026-04-30",
+                  "captured_time": "21:59:15",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+                  "stage": "mechanical_inspection",
+                  "media_id": "20260430_215915_gp_ycQ395Gg",
+                  "matched_tokens": [
+                    "20260430_215915_gp_ycq395gg"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:33:44",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_073344_gp_EH3pnE2Q",
+                  "matched_tokens": [
+                    "20260512_073344_gp_eh3pne2q"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:28:17",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_072817_gp_MkI6uZkA",
+                  "matched_tokens": [
+                    "20260512_072817_gp_mki6uzka"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+                  "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+                  "captured_date": "2026-05-12",
+                  "captured_time": "07:28:12",
+                  "media_type": "photo",
+                  "component_group": "engine_bay",
+                  "specific_component": "engine_powertrain_cleaning_baseline",
+                  "stage": "mechanical_baseline",
+                  "media_id": "20260512_072812_gp_gZLxKAXA",
+                  "matched_tokens": [
+                    "20260512_072812_gp_gzlxkaxa"
+                  ]
+                }
+              ],
+              "registered_items": [
+                "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit (spec_needed_before_order; delivery not_ordered; amount missing)"
+              ]
+            }
+          ]
+        }
+      ],
       "electrical_spec_layout": null
     },
     {
@@ -64158,7 +65565,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -64257,7 +65664,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -65706,7 +67113,6 @@ window.J40_DASHBOARD_DATA = {
                 "Labels",
                 "Paint marker",
                 "Ruler/tape",
-                "Digital caliper",
                 "Inspection light"
               ],
               "supplies": [
@@ -69195,7 +70601,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -69249,7 +70655,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -72385,7 +73791,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -72465,7 +73871,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "23 rows still in purchase_ready."
+        "detail": "20 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -72513,7 +73919,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 23
+        "count": 20
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -72537,7 +73943,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "runner_spec_controlled",
-        "count": 2
+        "count": 5
       },
       {
         "stage": "spec_needed_before_order",
@@ -72559,7 +73965,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 23
+        "count": 20
       },
       {
         "next_action": "track_delivery",
@@ -75631,8 +77037,8 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "entry_id": "part_mech_transmission_oil_service",
-        "workstream": "gearbox_top_cover",
-        "item": "Transmission/gearbox oil service - drain inspect and refill",
+        "workstream": "gearbox_oil_service",
+        "item": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -75642,25 +77048,26 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
-        "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+        "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-          "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive part reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/water_pump.jpg",
+          "caption": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit \u00b7 water pump reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "generic_part",
+          "media_id": "water_pump",
           "matched_tokens": [
-            "part"
+            "water",
+            "pump"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -76049,10 +77456,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22",
-        "notes": "Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76086,10 +77493,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221",
-        "notes": "Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76113,43 +77520,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_accessory_belt_set",
-        "workstream": "mechanical_baseline",
-        "item": "Accessory belt set",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
-          "caption": "Accessory belt set \u00b7 accessory belt reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "accessory_belt",
-          "matched_tokens": [
-            "belt"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_mech_engine_oil_filter_service",
         "workstream": "mechanical_baseline",
         "item": "Engine oil + oil filter service pack",
@@ -76160,11 +77530,20 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Autohub online / Automize online",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "links": [],
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -76172,43 +77551,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
           "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "filter_service",
-          "matched_tokens": [
-            "filter"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_mech_fuel_filter",
-        "workstream": "mechanical_baseline",
-        "item": "Fuel filter",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-          "caption": "Fuel filter \u00b7 filter/service reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -76234,10 +77576,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024",
-        "notes": "Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76271,10 +77613,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217",
-        "notes": "Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76299,43 +77641,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_radiator_cap",
-        "workstream": "mechanical_baseline",
-        "item": "Radiator cap",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
-          "caption": "Radiator cap - current car cropped radiator neck and overflow context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_radiator_cap"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_hvac_receiver_drier_20260514",
         "workstream": "mechanical_baseline",
         "item": "Receiver-drier matched to R134a A/C layout",
@@ -76346,10 +77651,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218",
-        "notes": "Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76383,10 +77688,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Amir runner / verified Toyota diesel parts counter",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76421,10 +77726,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219",
-        "notes": "Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76458,10 +77763,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local diesel hose supplier",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -76516,10 +77821,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [
           {
             "url": "../../docs/pipe-fabrication-spec-20260502.md",
@@ -76579,10 +77884,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local hose supplier",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76616,10 +77921,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local hose supplier",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76637,6 +77942,117 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_mech_vacuum_hose_refresh"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_accessory_belt_set",
+        "workstream": "mechanical_baseline",
+        "item": "Accessory belt set",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / local belt supplier / Toyota diesel parts counter",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
+          "caption": "Accessory belt set \u00b7 accessory belt reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "accessory_belt",
+          "matched_tokens": [
+            "belt"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_fuel_filter",
+        "workstream": "mechanical_baseline",
+        "item": "Fuel filter",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / local Toyota diesel parts counter",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+          "caption": "Fuel filter \u00b7 filter/service reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "filter_service",
+          "matched_tokens": [
+            "filter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_radiator_cap",
+        "workstream": "mechanical_baseline",
+        "item": "Radiator cap",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / local radiator shop / Toyota parts counter",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+          "caption": "Radiator cap - current car cropped radiator neck and overflow context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_radiator_cap"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
@@ -76857,20 +78273,20 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "gearbox_top_cover",
+        "workstream": "gearbox_oil_service",
         "open_count": 1,
         "image": {
-          "path": "../../photos/20260422_004338_gp_35uwfApA_2.jpg",
-          "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:43:38",
+          "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+          "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+          "captured_date": "2026-05-12",
+          "captured_time": "07:33:44",
           "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "transmission_crossmember_and_driveline_mounts",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004338_gp_35uwfApA_2",
+          "component_group": "engine_bay",
+          "specific_component": "engine_powertrain_cleaning_baseline",
+          "stage": "mechanical_baseline",
+          "media_id": "20260512_073344_gp_EH3pnE2Q",
           "matched_tokens": [
-            "20260422_004338_gp_35uwfapa"
+            "20260512_073344_gp_eh3pne2q"
           ]
         }
       },
@@ -83485,12 +84901,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 109,
-      "now_tasks": 94,
+      "total_tasks": 110,
+      "now_tasks": 95,
       "later_tasks": 15,
       "p0_tasks": 31,
       "photo_tasks": 39,
-      "measurement_tasks": 73
+      "measurement_tasks": 74
     },
     "counts_by_workstream": [
       {
@@ -83546,6 +84962,10 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "workstream": "gearbox_oil_service",
+        "count": 1
+      },
+      {
         "workstream": "gearbox_top_cover",
         "count": 1
       },
@@ -83561,7 +84981,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 30
+        "count": 31
       },
       {
         "task_type": "photo_measurement",
@@ -83595,7 +85015,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 65
+        "count": 66
       },
       {
         "priority": "P2",
@@ -92224,6 +93644,129 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:gearbox_oil_service_drain_inspect_refill_20260529",
+        "title": "gearbox_oil_service_drain_inspect_refill_20260529",
+        "workstream": "gearbox_oil_service",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "workstream_added",
+        "location": "workshop",
+        "action": "Use WhatsApp-confirmed 2H engine with 5-speed gear as the vehicle basis, confirm the exact 5-speed gearbox/manual match, prove the fill plug opens, drain oil into a clean pan, inspect oil sample and drain plug debris, then refill only with correct manual gearbox oil and matched drain/fill plug sealing washers",
+        "data_needed": "This is a drain-inspect-refill condition gate and buying requirement. H55F is the active candidate until case/top-cover marks prove another 5-speed swap; quote SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L only after confirmation. Stop for water, heavy metal, damaged plug threads, or abnormal gearbox noise.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "gearbox_oil_service_drain_inspect_refill_20260529",
+        "notes": "",
+        "evidence_ref": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs_gearbox_oil_service_workstream|docs_gearbox_top_cover_workstream|20260430_215915_gp_ycQ395Gg|20260430_215939_gp_EjZ7u1ow|20260430_233755_gp_DO69MLAA|20260422_004319_gp_Ttqz46Sw|20260422_004338_gp_35uwfApA|20260512_072812_gp_gZLxKAXA|20260512_072817_gp_MkI6uZkA|20260512_073344_gp_EH3pnE2Q",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+            "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:15",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215915_gp_ycQ395Gg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+            "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215939_gp_EjZ7u1ow",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+            "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "23:37:55",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_233755_gp_DO69MLAA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260422_004319_gp_Ttqz46Sw.jpg",
+            "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:43:19",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "transmission_crossmember_and_driveline_mounts",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004319_gp_Ttqz46Sw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260422_004338_gp_35uwfApA.jpg",
+            "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:43:38",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "transmission_crossmember_and_driveline_mounts",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004338_gp_35uwfApA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_072812_gp_gZLxKAXA.jpg",
+            "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:28:12",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_powertrain_cleaning_baseline",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_072812_gp_gZLxKAXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_072817_gp_MkI6uZkA.jpg",
+            "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:28:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_powertrain_cleaning_baseline",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_072817_gp_MkI6uZkA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073344_gp_EH3pnE2Q.jpg",
+            "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:33:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_powertrain_cleaning_baseline",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_073344_gp_EH3pnE2Q",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "component_job:gearbox_top_cover_shift_tower_20260518",
         "title": "gearbox_top_cover_shift_tower_20260518",
         "workstream": "gearbox_top_cover",
@@ -95101,8 +96644,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "tool",
         "previously": 62,
         "in_process": 19,
-        "still_required": 3,
-        "total": 84
+        "still_required": 2,
+        "total": 83
       },
       {
         "supply_type": "substance",
@@ -105753,7 +107296,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "A/C barrier hose and refrigerant-compatible fittings",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -105762,8 +107305,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22",
-          "notes": "Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105792,7 +107335,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "A/C firewall bulkhead fittings and sealing grommets",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -105801,8 +107344,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221",
-          "notes": "Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105829,19 +107372,19 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_accessory_belt_set",
           "supply_type": "part",
-          "inventory_group": "mechanical",
+          "inventory_group": "electrical",
           "item": "Accessory belt set",
-          "vendor": "",
+          "vendor": "Amir runner / local belt supplier / Toyota diesel parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105870,7 +107413,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -105879,8 +107422,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready_standard_and_template_quote",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [
             {
               "url": "../../docs/pipe-fabrication-spec-20260502.md",
@@ -105935,7 +107478,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local diesel hose supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -105944,8 +107487,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready_measured_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -105995,17 +107538,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Fuel filter",
-          "vendor": "",
+          "vendor": "Amir runner / local Toyota diesel parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106034,7 +107577,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local hose supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106043,8 +107586,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready_standard_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106073,7 +107616,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Parallel-flow A/C condenser sized to core support",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106082,8 +107625,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217",
-          "notes": "Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106113,17 +107656,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Radiator cap",
-          "vendor": "",
+          "vendor": "Amir runner / local radiator shop / Toyota parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106152,7 +107695,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Receiver-drier matched to R134a A/C layout",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106161,8 +107704,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218",
-          "notes": "Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106191,7 +107734,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Toyota OE glow plugs 19850-68030 x6 - diesel 2H",
-          "vendor": "",
+          "vendor": "Amir runner / verified Toyota diesel parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106200,8 +107743,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106231,7 +107774,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Trinary pressure switch for A/C compressor and fan control",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106240,8 +107783,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219",
-          "notes": "Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106368,35 +107911,36 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_mech_transmission_oil_service",
           "supply_type": "substance",
           "inventory_group": "substances",
-          "item": "Transmission/gearbox oil service - drain inspect and refill",
+          "item": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
-          "workstream": "gearbox_top_cover",
+          "workstream": "gearbox_oil_service",
           "status_group": "still_required",
           "status_detail": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
-          "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+          "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_substance.jpg",
-            "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive substance reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/water_pump.jpg",
+            "caption": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit \u00b7 water pump reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "generic_substance",
+            "media_id": "water_pump",
             "matched_tokens": [
-              "substance"
+              "water",
+              "pump"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -106526,7 +108070,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Engine oil + oil filter service pack",
-          "vendor": "",
+          "vendor": "Autohub online / Automize online",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106535,9 +108079,18 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "links": [],
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+              "label": "automize.pk"
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -106565,7 +108118,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
-          "vendor": "Coolsun / local automotive A/C supplier",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106574,8 +108127,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024",
-          "notes": "Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106604,7 +108157,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
-          "vendor": "",
+          "vendor": "Amir runner / Longman Mills / local hose supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -106613,8 +108166,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready_standard_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-          "notes": "Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106635,41 +108188,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_57",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Digital caliper (hole/spacing verification)",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Used to validate hole diameter and center spacing before cutting.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/digital_caliper.jpg",
-            "caption": "Digital caliper (hole/spacing verification) \u00b7 digital caliper reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "digital_caliper",
-            "matched_tokens": [
-              "caliper"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -115267,7 +116785,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "A/C firewall bulkhead fittings and sealing grommets",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -115276,8 +116794,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221",
-        "notes": "Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -115295,6 +116813,45 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "rubber_grommets",
           "matched_tokens": [
             "grommet"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_mech_accessory_belt_set",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Accessory belt set",
+        "vendor": "Amir runner / local belt supplier / Toyota diesel parts counter",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
+          "caption": "Accessory belt set \u00b7 accessory belt reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "accessory_belt",
+          "matched_tokens": [
+            "belt"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -115502,7 +117059,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -115511,8 +117068,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready_standard_and_template_quote",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [
           {
             "url": "../../docs/pipe-fabrication-spec-20260502.md",
@@ -115667,7 +117224,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Receiver-drier matched to R134a A/C layout",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -115676,8 +117233,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218",
-        "notes": "Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -115784,7 +117341,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Trinary pressure switch for A/C compressor and fan control",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -115793,8 +117350,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219",
-        "notes": "Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -115823,7 +117380,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "A/C barrier hose and refrigerant-compatible fittings",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -115832,8 +117389,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22",
-        "notes": "Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -115851,45 +117408,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "ac_compressor",
           "matched_tokens": [
             "compressor"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_mech_accessory_belt_set",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Accessory belt set",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "mechanical_baseline",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/accessory_belt.jpg",
-          "caption": "Accessory belt set \u00b7 accessory belt reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "accessory_belt",
-          "matched_tokens": [
-            "belt"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -116643,7 +118161,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local diesel hose supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -116652,8 +118170,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready_measured_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -116916,17 +118434,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Fuel filter",
-        "vendor": "",
+        "vendor": "Amir runner / local Toyota diesel parts counter",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -116990,7 +118508,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local hose supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -116999,8 +118517,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready_standard_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -117029,7 +118547,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Parallel-flow A/C condenser sized to core support",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -117038,8 +118556,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217",
-        "notes": "Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -117069,17 +118587,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Radiator cap",
-        "vendor": "",
+        "vendor": "Amir runner / local radiator shop / Toyota parts counter",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -117317,7 +118835,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Toyota OE glow plugs 19850-68030 x6 - diesel 2H",
-        "vendor": "",
+        "vendor": "Amir runner / verified Toyota diesel parts counter",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -117326,8 +118844,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118028,7 +119546,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Engine oil + oil filter service pack",
-        "vendor": "",
+        "vendor": "Autohub online / Automize online",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -118037,9 +119555,18 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "links": [],
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -118103,11 +119630,51 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_mech_transmission_oil_service",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "gearbox_oil_service",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+        "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/water_pump.jpg",
+          "caption": "Gearbox oil service pack - correct oil drain inspect refill washers and sample kit \u00b7 water pump reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "water_pump",
+          "matched_tokens": [
+            "water",
+            "pump"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
-        "vendor": "Coolsun / local automotive A/C supplier",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -118116,8 +119683,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024",
-        "notes": "Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118220,50 +119787,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_mech_transmission_oil_service",
-        "supply_type": "substance",
-        "inventory_group": "substances",
-        "item": "Transmission/gearbox oil service - drain inspect and refill",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "gearbox_top_cover",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
-        "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_substance.jpg",
-          "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive substance reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "generic_substance",
-          "matched_tokens": [
-            "substance"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_mech_vacuum_hose_refresh",
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
-        "vendor": "",
+        "vendor": "Amir runner / Longman Mills / local hose supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -118272,8 +119800,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready_standard_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv",
-        "notes": "Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118356,41 +119884,6 @@ window.J40_DASHBOARD_DATA = {
             "tool"
           ],
           "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_57",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Digital caliper (hole/spacing verification)",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Used to validate hole diameter and center spacing before cutting.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/digital_caliper.jpg",
-          "caption": "Digital caliper (hole/spacing verification) \u00b7 digital caliper reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "digital_caliper",
-          "matched_tokens": [
-            "caliper"
-          ],
-          "match_basis": "semantic_reference_image",
           "match_score": 700
         }
       },
@@ -135085,6 +136578,7 @@ window.J40_DASHBOARD_DATA = {
       "interior_controls",
       "mechanical_baseline",
       "gearbox_top_cover",
+      "gearbox_oil_service",
       "replacement_pipes",
       "brake_system",
       "eps_vitz_upgrade",
@@ -135322,6 +136816,30 @@ window.J40_DASHBOARD_DATA = {
           "maintenance",
           "mechanical",
           "service"
+        ]
+      },
+      "gearbox_oil_service": {
+        "component_groups": [
+          "chassis_underside",
+          "engine_bay"
+        ],
+        "stages": [
+          "mechanical_baseline",
+          "mechanical_cleaning",
+          "mechanical_inspection",
+          "underside_inspection"
+        ],
+        "keywords": [
+          "bellhousing",
+          "drain",
+          "fill",
+          "gearbox",
+          "magnet",
+          "oil",
+          "plug",
+          "powertrain",
+          "service",
+          "transmission"
         ]
       },
       "replacement_pipes": {

@@ -1,15 +1,17 @@
-# EPS Conversion Fabrication Plan - General Adapter Route
+# Yaris-First EPS Conversion Fabrication Plan - General Adapter Route
 
 Date: 2026-05-22
-Scope: planning and fabrication controls for fitting a column-assist EPS unit into the J40 through a new General EPS Adapter. The 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor stack remains the preferred donor target, but the adapter is now the controlling vehicle-side interface.
+Scope: planning and fabrication controls for fitting a column-assist EPS unit into the J40 through a new General EPS Adapter. The active sourcing plan is now **Yaris-first** for Pakistan availability: first scout local Pakistan Yaris sedan EPS donor/installer packages, then older Yaris/Belta XP90-family sets, with Vitz XP90 as fallback if a complete matched set appears. The adapter remains the controlling vehicle-side interface.
 
 ## Core Decision
 
 This is a column-assist EPS graft. It is not a hydraulic steering conversion and does not require power-steering pumps, hydraulic boxes, hoses, crank pulleys, or engine removal.
 
-Preferred route: retain as much of the J40 upper-column driving position, wheel location, switch/stalk relationship, and dash ergonomics as practical. Package the EPS assist unit lower in the column path using a fabricated, removable General EPS Adapter rather than assuming the donor column brackets will bolt directly to the J40.
+Preferred route: retain as much of the J40 upper-column driving position, wheel location, switch/stalk relationship, and dash ergonomics as practical. Package a Yaris-family EPS assist unit lower in the column path using a fabricated, removable General EPS Adapter rather than assuming the donor column brackets will bolt directly to the J40.
 
 The General EPS Adapter is a mechanical interface only. It does not replace the matched EPS ECU/controller, donor pigtails, shaft hardware, U-joints, couplers, bench-test requirement, or steering validation. Do not buy or install a bare EPS column.
+
+Local Yaris sedan donor note: current Pakistan Yaris availability makes this the first market-scout target, but it is higher-risk until the exact EPS layout is physically proven. Accept it only if the assist unit, controller/module, torque sensor, connectors, shafts/couplers, and bench operation can be demonstrated outside the donor car. Reject or keep quote-only if it needs donor body ECU/immobilizer/VSC/CAN messages, scan-tool calibration, or a rack-assist-only layout with no safe adapter path.
 
 ## General EPS Adapter Definition
 

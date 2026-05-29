@@ -3,10 +3,10 @@
 - Created: 2026-05-18
 - Workstream ID: `gearbox_top_cover`
 - Parent phase: `05_mechanical_baseline`
-- Vehicle: 1978 Toyota Land Cruiser J40
+- Vehicle: 1978 Toyota Land Cruiser J40; WhatsApp history basis says ex-military, converted to diesel, Toyota 2H engine, 5-speed gearbox, sold by Jahanzeb.
 - Trigger: existing top cover is reported poor; top-cover service must be split from generic transmission parts buying
 - Primary gate: `GB-TOP-CAPTURE-001`
-- Related docs: [master-project-plan.md](master-project-plan.md), [engine-transmission-cost-comparison.md](engine-transmission-cost-comparison.md), [replacement-pipes-workstream.md](replacement-pipes-workstream.md), [chassis-status-20260501-wire-brush-and-cleaning.md](chassis-status-20260501-wire-brush-and-cleaning.md)
+- Related docs: [master-project-plan.md](master-project-plan.md), [engine-transmission-cost-comparison.md](engine-transmission-cost-comparison.md), [replacement-pipes-workstream.md](replacement-pipes-workstream.md), [gearbox-oil-service-workstream.md](gearbox-oil-service-workstream.md), [chassis-status-20260501-wire-brush-and-cleaning.md](chassis-status-20260501-wire-brush-and-cleaning.md)
 
 ## Decision
 
@@ -15,6 +15,8 @@ Treat the gearbox top cover, shift tower, lever retainer, detents, shift rails, 
 Do not buy only detents, bushes, or a shift-seat kit from the parts list until the top cover itself is inspected. The first decision is whether the current top cover is serviceable, repairable, or should be replaced as an assembly. Only then release the smaller service parts.
 
 This is not a full gearbox rebuild unless inspection finds internal gear, synchro, bearing, or case damage. The controlled baseline path is: identify the fitted gearbox, clean it, open the top cover under clean conditions, inspect the cover and shift mechanism, service/repair/replace the top-cover assembly as needed, renew oil and seals/gaskets disturbed by the job, and validate shift quality before road use.
+
+The oil drain, inspection, refill, and consumables buying requirement is now controlled separately in `docs/gearbox-oil-service-workstream.md` so generic differential, transfer-case, or engine oils are not substituted for the gearbox.
 
 ## Scope
 
@@ -32,6 +34,7 @@ Out of scope unless inspection fails: full geartrain teardown, synchro replaceme
 
 | Evidence | Use |
 | --- | --- |
+| `mcp_whatsapp_j40_messages.csv:1797` | TLC 40 Series Owners message on 2026-05-17 says the J40 has a 2H engine with 5-speed gear and was sold by Jahanzeb; treat H55F as the gearbox candidate until case/top-cover marks prove otherwise. |
 | `docs/parts-list-cleanup-decisions-20260504.md` | Source instruction to split gearbox top-cover service into its own workstream and inspect/repair/replace the poor top cover before buying service parts. |
 | [20260430_215915_gp_ycQ395Gg.jpg](../photos/20260430_215915_gp_ycQ395Gg.jpg) | Gearbox/bellhousing case and clutch-linkage area context. |
 | [20260430_215939_gp_EjZ7u1ow.jpg](../photos/20260430_215939_gp_EjZ7u1ow.jpg) | Bellhousing/gearbox case, linkage, wiring, and route context. |

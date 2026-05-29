@@ -1,6 +1,6 @@
 {
   "model": "j40_full_vehicle_scaffold_rev_b",
-  "detail_revision": "lhd_detail_pass",
+  "detail_revision": "lhd_reference_detail_pass",
   "units": "mm",
   "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
   "drive_side": "left-hand drive",
@@ -12,7 +12,11 @@
     "height": 1950,
     "wheelbase": 2285
   },
-  "part_count": 566,
+  "visual_benchmarks": [
+    "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+    "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/"
+  ],
+  "part_count": 984,
   "outputs": [
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.scad",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.FCMacro",

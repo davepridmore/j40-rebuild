@@ -51,6 +51,44 @@ Use this card sheet on Amir's phone before the longer tables below.
 | Engine radiator | Take the old radiator as the sample; quote recore if tanks/brackets are sound, otherwise new copper/brass build by sample. If the bought aluminium radiator is used, quote only a removable rubber-isolated adapter/cradle if the radiator is otherwise correct. The extra fabricated support leg is evidence of the bad previous installation, not a feature to copy blindly. | Old sample identity, measurements, shop decision, pressure/leak test, core/build proof, proof it mounts on proper lower pads/side/top mounts without the extra leg, adapter/cradle proof if the aluminium radiator is used, final acceptance video. |
 | Brake booster / servo | Take the old booster as the sample; quote professional rebuild or direct-match refurbished exchange unit. | Old sample identity, side-by-side match, interface close-ups, vacuum hold test, assist movement test, contamination check, final acceptance video. |
 
+## Mechanical Baseline Shopping Split - 2026-05-29
+
+These lines separate the two approved online click-to-buy items from the local Amir runner list. Amir should not rebuy the online items unless the online order fails.
+
+### Online Click-To-Buy
+
+| Item | Link | Check before payment |
+| --- | --- | --- |
+| Diesel engine oil | [Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L - Autohub](https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40) | Confirm final quantity covers the 2H service fill plus top-up allowance. This is engine oil, not gearbox/transmission oil. |
+| Oil filter | [Guard Oil Filter GDO-135 - Automize](https://automize.pk/products/guard-oil-filter-gdo-135) | Confirm `GDO-135` / `15600-41010` / `15601-41010` basis is acceptable for the fitted filter head. |
+
+### Amir / Local Runner
+
+| Priority | Item | Amir action | Buy rule |
+| --- | --- | --- | --- |
+| P0 | Fuel filter | Ask Toyota diesel/Land Cruiser parts counters for a 2H/HJ47 fuel-filter element. | Buy only exact old-sample/manual match or candidate `23303-54071` / `04234-68010`; otherwise send box/element/part-number photos and price. |
+| P0 | Glow plugs | Ask verified Toyota diesel parts counter for Toyota `19850-68030 x6`. | Buy sealed exact Toyota-labelled/new trusted equivalent only. Use `19850-68060 x6` only if old plug/system proves 24V/superglow. Reject used/refurbished/substitute plugs. |
+| P0 | Accessory belts | Take old belt sample or clear belt-code/measurement to a belt supplier. | Buy only same profile and effective length for the fitted alternator/fan/accessory layout. Prefer Bando, Mitsuboshi, Gates, or trusted equivalent. |
+| P0 | Radiator cap | Take old radiator/cap or final radiator neck details to a radiator/Toyota parts shop. | Buy Toyota `16401-41021` or exact pressure-equivalent only after neck size and pressure are confirmed. Treat 0.9 bar as candidate, not automatic. |
+| P0 | Heater hose | Use Longman/local hose supplier. | Buy `1000 mm` of `16 mm / 5/8 in` EPDM heater hose, SAE J20R3 or better; final cuts are `400 mm` and `280 mm`. |
+| P0 | Vacuum/breather hose | Use Longman/local hose supplier. | Buy reinforced `10-12 mm ID` vacuum hose x `2000 mm` plus oil-resistant `16-19 mm ID` breather hose x `1000 mm`; send hose markings if uncertain. |
+| P0 | Diesel fuel hose and clamps | Use Longman/local diesel hose supplier. | Buy diesel-rated `8 mm ID x 1500 mm`, `6 mm ID x 2000 mm`, `3.2-3.5 mm` leak-off hose x `1000 mm`, and rolled-edge fuel clamps; reject sharp perforated clamps for fuel hose. |
+| P0 | Radiator hose / formed coolant pipe pack | Use Longman/radiator hose shop/pipe fabricator. | Use the existing replacement-pipe spec: molded upper/lower hoses, overflow hose, formed pipe copied by sample, and `28-30 mm ID` connector hose blanks. |
+| P1 | Gearbox oil service pack | WhatsApp history confirms 2H engine with 5-speed gear. Quote H55F candidate oil only after case/top-cover marks confirm: SAE75W-90 API GL-4/GL-5, 4.9 L capacity, buy 5 L. | Do not buy until fitted gearbox, oil grade, fill quantity, fill-plug access, and drain/fill plug washers are confirmed. If case marks prove a different 5-speed swap, use that matching manual row instead. No differential/hypoid substitute unless the matched manual allows it. |
+
+### Amir / Local A/C Supplier
+
+These are local A/C-shop lines, not blind online buys.
+
+| Priority | Item | Amir action | Buy rule |
+| --- | --- | --- | --- |
+| P1 | Parallel-flow condenser | Quote from Coolsun/local automotive A/C supplier. | Size to core support/grille opening and radiator clearance before payment. |
+| P1 | Receiver-drier | Quote with the selected condenser/hose layout. | Match R134a compatibility, fittings, bracket, flow direction, and trinary/service port needs. |
+| P1 | Trinary switch | Quote with drier/high-side line. | Match thread/port and final relay/fuse plan. |
+| P1 | A/C barrier hose and fittings | Quote after component positions are locked. | Use R134a-compatible barrier hose; final crimp lengths and fitting angles wait for compressor, condenser, drier, bulkhead, and evaporator position. |
+| P1 | Firewall bulkhead fittings/grommets | Quote after evaporator and hose route are locked. | Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. |
+| P1 | HNBR O-rings, refrigerant oil, vacuum/leak/charge setup | Quote as A/C service consumables. | Use refrigerant-compatible HNBR O-rings, correct compressor oil, deep vacuum, leak test, and measured R134a charge after assembly. |
+
 ## Metal Stock / Right Radiator Strap
 
 The right-side radiator strap/post is a prerequisite before final radiator installation. This is a metal-stock/fabrication item, not a Toyota parts-counter item.

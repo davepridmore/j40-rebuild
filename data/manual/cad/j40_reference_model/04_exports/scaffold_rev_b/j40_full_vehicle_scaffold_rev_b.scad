@@ -1874,6 +1874,1678 @@ color([0.435, 0.647, 0.722, 0.80])
 color([0.435, 0.647, 0.722, 0.80])
   box_part(3500, 555, 1415, 28, 170, 300);
 
+// front_detail: front_grille_black_mesh_horizontal_texture_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(64, 0, 860, 18, 560, 12);
+
+// front_detail: front_grille_black_mesh_horizontal_texture_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(64, 0, 895, 18, 560, 12);
+
+// front_detail: front_grille_black_mesh_horizontal_texture_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(64, 0, 930, 18, 560, 12);
+
+// front_detail: front_grille_black_mesh_horizontal_texture_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(64, 0, 965, 18, 560, 12);
+
+// front_detail: front_grille_black_mesh_vertical_texture_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, -260, 852, 20, 12, 145);
+
+// front_detail: front_grille_black_mesh_vertical_texture_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, -170, 852, 20, 12, 145);
+
+// front_detail: front_grille_black_mesh_vertical_texture_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, -80, 852, 20, 12, 145);
+
+// front_detail: front_grille_black_mesh_vertical_texture_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, 80, 852, 20, 12, 145);
+
+// front_detail: front_grille_black_mesh_vertical_texture_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, 170, 852, 20, 12, 145);
+
+// front_detail: front_grille_black_mesh_vertical_texture_6 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(62, 260, 852, 20, 12, 145);
+
+// front_detail: grille_surround_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, -325, 812, "x", 28, 20);
+
+// front_detail: grille_surround_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, -230, 1008, "x", 28, 20);
+
+// front_detail: grille_surround_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, 230, 1008, "x", 28, 20);
+
+// front_detail: grille_surround_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, 325, 812, "x", 28, 20);
+
+// front_detail: toyota_grille_letter_t_top - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -190, 940, 16, 58, 12);
+
+// front_detail: toyota_grille_letter_t_stem - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -190, 895, 16, 13, 54);
+
+// front_detail: toyota_grille_letter_o1_top - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -98, 938, 16, 52, 12);
+
+// front_detail: toyota_grille_letter_o1_bottom - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -98, 893, 16, 52, 12);
+
+// front_detail: toyota_grille_letter_o1_left - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -121, 900, 16, 11, 42);
+
+// front_detail: toyota_grille_letter_o1_right - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -75, 900, 16, 11, 42);
+
+// front_detail: toyota_grille_letter_o2_top - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 98, 938, 16, 52, 12);
+
+// front_detail: toyota_grille_letter_o2_bottom - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 98, 893, 16, 52, 12);
+
+// front_detail: toyota_grille_letter_o2_left - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 75, 900, 16, 11, 42);
+
+// front_detail: toyota_grille_letter_o2_right - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 121, 900, 16, 11, 42);
+
+// front_detail: toyota_grille_letter_y_left_upper - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, -21, 928, 16, 18, 12);
+
+// front_detail: toyota_grille_letter_y_right_upper - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 21, 928, 16, 18, 12);
+
+// front_detail: toyota_grille_letter_y_stem - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 0, 895, 16, 12, 42);
+
+// front_detail: toyota_grille_letter_a_left - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 184, 895, 16, 11, 55);
+
+// front_detail: toyota_grille_letter_a_right - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 228, 895, 16, 11, 55);
+
+// front_detail: toyota_grille_letter_a_top - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 206, 938, 16, 52, 12);
+
+// front_detail: toyota_grille_letter_a_bar - L3 exterior material reference
+color([0.839, 0.749, 0.278, 0.80])
+  box_part(52, 206, 915, 16, 42, 10);
+
+// front_detail: left_front_fender_turn_signal_base - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(290, -642, 1058, 155, 80, 24);
+
+// front_detail: left_front_fender_turn_signal_lens - L3 exterior material reference
+color([0.851, 0.471, 0.141, 0.80])
+  cylinder_part(298, -642, 1075, "z", 78, 32);
+
+// front_detail: left_headlamp_glass_highlight - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  cylinder_part(64, -445, 1035, "x", 126, 18);
+
+// front_detail: left_headlamp_mount_screw_upper - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, -375, 1094, "x", 22, 18);
+
+// front_detail: left_headlamp_mount_screw_lower - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, -515, 876, "x", 22, 18);
+
+// body: left_front_quarter_louver_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, -826, 890, 175, 24, 14);
+
+// body: left_front_quarter_louver_highlight_1 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, -812, 906, 160, 16, 8);
+
+// body: left_front_quarter_louver_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, -826, 925, 175, 24, 14);
+
+// body: left_front_quarter_louver_highlight_2 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, -812, 941, 160, 16, 8);
+
+// body: left_front_quarter_louver_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, -826, 960, 175, 24, 14);
+
+// body: left_front_quarter_louver_highlight_3 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, -812, 976, 160, 16, 8);
+
+// body: left_front_quarter_louver_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, -826, 995, 175, 24, 14);
+
+// body: left_front_quarter_louver_highlight_4 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, -812, 1011, 160, 16, 8);
+
+// body: left_front_quarter_louver_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, -826, 1030, 175, 24, 14);
+
+// body: left_front_quarter_louver_highlight_5 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, -812, 1046, 160, 16, 8);
+
+// body: left_beltline_trim_front_door - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1140, -834, 1118, 780, 22, 28);
+
+// body: left_beltline_trim_rear_tub - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1965, -834, 1118, 1390, 22, 28);
+
+// body: left_door_outer_skin_upper_pressing - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, -789, 1040, 725, 34, 70);
+
+// body: left_door_skin_lower_recess_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, -789, 885, 725, 32, 76);
+
+// body: left_door_window_front_vertical_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, -812, 1192, 34, 35, 385);
+
+// body: left_door_window_rear_vertical_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1642, -812, 1192, 34, 35, 385);
+
+// body: left_door_window_top_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, -812, 1546, 560, 35, 34);
+
+// body: left_door_window_bottom_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, -812, 1186, 560, 35, 30);
+
+// body: left_door_lock_cylinder - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1645, -835, 1032, "y", 36, 22);
+
+// body: left_door_hinge_pin_cap_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, -843, 820, "y", 32, 26);
+
+// body: left_door_hinge_pin_cap_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, -843, 930, "y", 32, 26);
+
+// body: left_door_hinge_pin_cap_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, -843, 1180, "y", 32, 26);
+
+// body: left_door_hinge_pin_cap_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, -843, 1290, "y", 32, 26);
+
+// hard_top: left_hardtop_front_window_upper_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1420, -854, 1732, 500, 18, 22);
+
+// hard_top: left_hardtop_front_window_lower_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1420, -854, 1360, 500, 18, 22);
+
+// hard_top: left_hardtop_front_window_sliding_mullion - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1510, -858, 1438, 28, 24, 300);
+
+// hard_top: left_hardtop_front_window_rounded_corner_1 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1170, -862, 1360, "y", 54, 24);
+
+// hard_top: left_hardtop_front_window_rounded_corner_2 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1670, -862, 1360, "y", 54, 24);
+
+// hard_top: left_hardtop_front_window_rounded_corner_3 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1170, -862, 1680, "y", 54, 24);
+
+// hard_top: left_hardtop_front_window_rounded_corner_4 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1670, -862, 1680, "y", 54, 24);
+
+// hard_top: left_hardtop_rear_window_upper_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2190, -854, 1732, 610, 18, 22);
+
+// hard_top: left_hardtop_rear_window_lower_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2190, -854, 1360, 610, 18, 22);
+
+// hard_top: left_hardtop_rear_window_sliding_mullion - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2299.8, -858, 1438, 28, 24, 300);
+
+// hard_top: left_hardtop_rear_window_rounded_corner_1 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1885, -862, 1360, "y", 54, 24);
+
+// hard_top: left_hardtop_rear_window_rounded_corner_2 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2495, -862, 1360, "y", 54, 24);
+
+// hard_top: left_hardtop_rear_window_rounded_corner_3 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1885, -862, 1680, "y", 54, 24);
+
+// hard_top: left_hardtop_rear_window_rounded_corner_4 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2495, -862, 1680, "y", 54, 24);
+
+// hard_top: left_roof_drip_rail_outer_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, -862, 1784, 2275, 28, 30);
+
+// hard_top: left_roof_side_panel_subtle_vertical_pressing_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1420, -804, 1325, 20, 18, 520);
+
+// hard_top: left_roof_side_panel_subtle_vertical_pressing_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1840, -804, 1325, 20, 18, 520);
+
+// hard_top: left_roof_side_panel_subtle_vertical_pressing_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2260, -804, 1325, 20, 18, 520);
+
+// hard_top: left_roof_side_panel_subtle_vertical_pressing_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2680, -804, 1325, 20, 18, 520);
+
+// hard_top: left_roof_side_panel_subtle_vertical_pressing_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3100, -804, 1325, 20, 18, 520);
+
+// body: left_front_black_fender_flare_arc_1 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1046.32, -823, 548.746, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_2 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(998.868, -823, 627.72, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_3 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(933.72, -823, 692.868, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_4 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(854.746, -823, 740.32, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_5 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(766.639, -823, 767.257, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_6 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(674.632, -823, 772.079, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_7 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(584.192, -823, 754.499, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_8 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(500.691, -823, 715.562, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_9 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(429.09, -823, 657.581, 68, 46, 34);
+
+// body: left_front_black_fender_flare_arc_10 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(373.642, -823, 584, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_1 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3319.44, -823, 543.459, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_2 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3273.62, -823, 619.716, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_3 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3210.72, -823, 682.624, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_4 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3134.46, -823, 728.444, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_5 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3049.38, -823, 754.455, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_6 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2960.54, -823, 759.111, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_7 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2873.21, -823, 742.136, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_8 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2792.58, -823, 704.538, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_9 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2723.44, -823, 648.55, 68, 46, 34);
+
+// body: left_rear_black_fender_flare_arc_10 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2669.9, -823, 577.5, 68, 46, 34);
+
+// body: left_side_step_tread_strip_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1120, -872, 674, 130, 162, 12);
+
+// body: left_side_step_tread_strip_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1320, -872, 674, 130, 162, 12);
+
+// body: left_side_step_tread_strip_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1520, -872, 674, 130, 162, 12);
+
+// body: left_side_step_tread_strip_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1720, -872, 674, 130, 162, 12);
+
+// body: left_side_step_tread_strip_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1920, -872, 674, 130, 162, 12);
+
+// body: left_side_step_drop_bracket_1 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1180, -760, 530, 52, 38, 155);
+
+// body: left_side_step_drop_bracket_2 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1540, -760, 530, 52, 38, 155);
+
+// body: left_side_step_drop_bracket_3 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1900, -760, 530, 52, 38, 155);
+
+// body: left_front_mud_flap - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(420, -780, 190, 42, 135, 280);
+
+// body: left_rear_mud_flap - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(3350, -780, 185, 42, 135, 300);
+
+// front_detail: right_front_fender_turn_signal_base - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(290, 642, 1058, 155, 80, 24);
+
+// front_detail: right_front_fender_turn_signal_lens - L3 exterior material reference
+color([0.851, 0.471, 0.141, 0.80])
+  cylinder_part(298, 642, 1075, "z", 78, 32);
+
+// front_detail: right_headlamp_glass_highlight - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  cylinder_part(64, 445, 1035, "x", 126, 18);
+
+// front_detail: right_headlamp_mount_screw_upper - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, 375, 1094, "x", 22, 18);
+
+// front_detail: right_headlamp_mount_screw_lower - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(58, 515, 876, "x", 22, 18);
+
+// body: right_front_quarter_louver_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, 826, 890, 175, 24, 14);
+
+// body: right_front_quarter_louver_highlight_1 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, 812, 906, 160, 16, 8);
+
+// body: right_front_quarter_louver_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, 826, 925, 175, 24, 14);
+
+// body: right_front_quarter_louver_highlight_2 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, 812, 941, 160, 16, 8);
+
+// body: right_front_quarter_louver_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, 826, 960, 175, 24, 14);
+
+// body: right_front_quarter_louver_highlight_3 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, 812, 976, 160, 16, 8);
+
+// body: right_front_quarter_louver_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, 826, 995, 175, 24, 14);
+
+// body: right_front_quarter_louver_highlight_4 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, 812, 1011, 160, 16, 8);
+
+// body: right_front_quarter_louver_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(885, 826, 1030, 175, 24, 14);
+
+// body: right_front_quarter_louver_highlight_5 - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  box_part(880, 812, 1046, 160, 16, 8);
+
+// body: right_beltline_trim_front_door - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1140, 834, 1118, 780, 22, 28);
+
+// body: right_beltline_trim_rear_tub - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1965, 834, 1118, 1390, 22, 28);
+
+// body: right_door_outer_skin_upper_pressing - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, 789, 1040, 725, 34, 70);
+
+// body: right_door_skin_lower_recess_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, 789, 885, 725, 32, 76);
+
+// body: right_door_window_front_vertical_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, 812, 1192, 34, 35, 385);
+
+// body: right_door_window_rear_vertical_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1642, 812, 1192, 34, 35, 385);
+
+// body: right_door_window_top_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, 812, 1546, 560, 35, 34);
+
+// body: right_door_window_bottom_frame - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1115, 812, 1186, 560, 35, 30);
+
+// body: right_door_lock_cylinder - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1645, 835, 1032, "y", 36, 22);
+
+// body: right_door_hinge_pin_cap_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, 843, 820, "y", 32, 26);
+
+// body: right_door_hinge_pin_cap_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, 843, 930, "y", 32, 26);
+
+// body: right_door_hinge_pin_cap_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, 843, 1180, "y", 32, 26);
+
+// body: right_door_hinge_pin_cap_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1126, 843, 1290, "y", 32, 26);
+
+// hard_top: right_hardtop_front_window_upper_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1420, 854, 1732, 500, 18, 22);
+
+// hard_top: right_hardtop_front_window_lower_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1420, 854, 1360, 500, 18, 22);
+
+// hard_top: right_hardtop_front_window_sliding_mullion - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1510, 858, 1438, 28, 24, 300);
+
+// hard_top: right_hardtop_front_window_rounded_corner_1 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1170, 862, 1360, "y", 54, 24);
+
+// hard_top: right_hardtop_front_window_rounded_corner_2 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1670, 862, 1360, "y", 54, 24);
+
+// hard_top: right_hardtop_front_window_rounded_corner_3 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1170, 862, 1680, "y", 54, 24);
+
+// hard_top: right_hardtop_front_window_rounded_corner_4 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1670, 862, 1680, "y", 54, 24);
+
+// hard_top: right_hardtop_rear_window_upper_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2190, 854, 1732, 610, 18, 22);
+
+// hard_top: right_hardtop_rear_window_lower_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2190, 854, 1360, 610, 18, 22);
+
+// hard_top: right_hardtop_rear_window_sliding_mullion - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2299.8, 858, 1438, 28, 24, 300);
+
+// hard_top: right_hardtop_rear_window_rounded_corner_1 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1885, 862, 1360, "y", 54, 24);
+
+// hard_top: right_hardtop_rear_window_rounded_corner_2 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2495, 862, 1360, "y", 54, 24);
+
+// hard_top: right_hardtop_rear_window_rounded_corner_3 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1885, 862, 1680, "y", 54, 24);
+
+// hard_top: right_hardtop_rear_window_rounded_corner_4 - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2495, 862, 1680, "y", 54, 24);
+
+// hard_top: right_roof_drip_rail_outer_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1235, 862, 1784, 2275, 28, 30);
+
+// hard_top: right_roof_side_panel_subtle_vertical_pressing_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1420, 804, 1325, 20, 18, 520);
+
+// hard_top: right_roof_side_panel_subtle_vertical_pressing_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1840, 804, 1325, 20, 18, 520);
+
+// hard_top: right_roof_side_panel_subtle_vertical_pressing_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2260, 804, 1325, 20, 18, 520);
+
+// hard_top: right_roof_side_panel_subtle_vertical_pressing_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2680, 804, 1325, 20, 18, 520);
+
+// hard_top: right_roof_side_panel_subtle_vertical_pressing_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3100, 804, 1325, 20, 18, 520);
+
+// body: right_front_black_fender_flare_arc_1 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1046.32, 823, 548.746, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_2 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(998.868, 823, 627.72, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_3 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(933.72, 823, 692.868, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_4 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(854.746, 823, 740.32, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_5 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(766.639, 823, 767.257, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_6 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(674.632, 823, 772.079, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_7 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(584.192, 823, 754.499, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_8 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(500.691, 823, 715.562, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_9 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(429.09, 823, 657.581, 68, 46, 34);
+
+// body: right_front_black_fender_flare_arc_10 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(373.642, 823, 584, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_1 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3319.44, 823, 543.459, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_2 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3273.62, 823, 619.716, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_3 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3210.72, 823, 682.624, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_4 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3134.46, 823, 728.444, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_5 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3049.38, 823, 754.455, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_6 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2960.54, 823, 759.111, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_7 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2873.21, 823, 742.136, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_8 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2792.58, 823, 704.538, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_9 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2723.44, 823, 648.55, 68, 46, 34);
+
+// body: right_rear_black_fender_flare_arc_10 - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(2669.9, 823, 577.5, 68, 46, 34);
+
+// body: right_side_step_tread_strip_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1120, 872, 674, 130, 162, 12);
+
+// body: right_side_step_tread_strip_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1320, 872, 674, 130, 162, 12);
+
+// body: right_side_step_tread_strip_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1520, 872, 674, 130, 162, 12);
+
+// body: right_side_step_tread_strip_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1720, 872, 674, 130, 162, 12);
+
+// body: right_side_step_tread_strip_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1920, 872, 674, 130, 162, 12);
+
+// body: right_side_step_drop_bracket_1 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1180, 760, 530, 52, 38, 155);
+
+// body: right_side_step_drop_bracket_2 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1540, 760, 530, 52, 38, 155);
+
+// body: right_side_step_drop_bracket_3 - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(1900, 760, 530, 52, 38, 155);
+
+// body: right_front_mud_flap - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(420, 780, 190, 42, 135, 280);
+
+// body: right_rear_mud_flap - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(3350, 780, 185, 42, 135, 300);
+
+// hard_top: rear_split_door_center_seal - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(3505, 0, 1180, 30, 36, 650);
+
+// hard_top: rear_door_left_glass_dark_inset - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3502, -250, 1470, 24, 340, 252);
+
+// hard_top: rear_door_right_glass_dark_inset - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3502, 250, 1470, 24, 340, 252);
+
+// hard_top: rear_door_window_center_mullion - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3496, 0, 1462, 34, 34, 304);
+
+// hard_top: rear_left_door_hinge_barrel_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3520, -650, 1180, "z", 42, 165);
+
+// hard_top: rear_left_door_hinge_barrel_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3520, -650, 1510, "z", 42, 165);
+
+// hard_top: rear_left_door_pull_handle - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3526, -110, 1205, 28, 120, 44);
+
+// hard_top: rear_left_door_lock_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3536, -190, 1190, "x", 38, 22);
+
+// hard_top: rear_right_door_hinge_barrel_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3520, 650, 1180, "z", 42, 165);
+
+// hard_top: rear_right_door_hinge_barrel_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3520, 650, 1510, "z", 42, 165);
+
+// hard_top: rear_right_door_pull_handle - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3526, 110, 1205, 28, 120, 44);
+
+// hard_top: rear_right_door_lock_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3536, 190, 1190, "x", 38, 22);
+
+// body: rear_spare_sidewall_highlight_ring - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  cylinder_part(3628, 0, 1020, "x", 585, 18);
+
+// body: rear_spare_wheel_spoke_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, 142, 1008, 28, 205, 24);
+
+// body: rear_spare_wheel_spoke_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, 71, 1130.98, 28, 205, 24);
+
+// body: rear_spare_wheel_spoke_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, -71, 1130.98, 28, 205, 24);
+
+// body: rear_spare_wheel_spoke_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, -142, 1008, 28, 205, 24);
+
+// body: rear_spare_wheel_spoke_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, -71, 885.024, 28, 205, 24);
+
+// body: rear_spare_wheel_spoke_6 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3650, 71, 885.024, 28, 205, 24);
+
+// body: windshield_center_divider_bar - L3 exterior material reference
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(1116, 0, 1570, 30, 42, 420);
+
+// body: windshield_upper_inner_glare_band - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1112, 0, 1588, 20, 1210, 28);
+
+// body: windshield_lower_inner_glare_band - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(1112, 0, 1420, 20, 1185, 24);
+
+// body: hood_front_lip_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(42, 0, 1222, 36, 1320, 34);
+
+// body: hood_rear_cowl_gap_shadow - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(1012, 0, 1287, 28, 1310, 28);
+
+// body: front_apron_lower_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(92, 0, 710, 28, 1280, 42);
+
+// front_detail: front_license_plate_upper_screw_left - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(-8, -155, 730, 18, 24, 24);
+
+// front_detail: front_license_plate_upper_screw_right - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(-8, 155, 730, 18, 24, 24);
+
+// front_detail: front_license_plate_lower_screw_left - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(-8, -155, 585, 18, 24, 24);
+
+// front_detail: front_license_plate_lower_screw_right - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(-8, 155, 585, 18, 24, 24);
+
+// front_detail: front_bumper_face_bolt_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(4, -680, 558, "x", 34, 20);
+
+// front_detail: front_bumper_face_bolt_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(4, -485, 558, "x", 34, 20);
+
+// front_detail: front_bumper_face_bolt_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(4, 485, 558, "x", 34, 20);
+
+// front_detail: front_bumper_face_bolt_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(4, 680, 558, "x", 34, 20);
+
+// body: rear_bumper_face_bolt_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3742, -660, 558, "x", 34, 20);
+
+// body: rear_bumper_face_bolt_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3742, -360, 558, "x", 34, 20);
+
+// body: rear_bumper_face_bolt_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3742, 360, 558, "x", 34, 20);
+
+// body: rear_bumper_face_bolt_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3742, 660, 558, "x", 34, 20);
+
+// body: left_windshield_wiper_pivot - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1100, -358, 1372, "x", 42, 26);
+
+// body: left_windshield_wiper_blade_rubber - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(1092, -165, 1508, 24, 480, 16);
+
+// body: left_windshield_wiper_arm_chrome - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1094, -252, 1456, 18, 340, 14);
+
+// body: left_cowl_vent_screw_front - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1044, -278, 1360, "z", 20, 12);
+
+// body: left_cowl_vent_screw_rear - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1018, -422, 1360, "z", 20, 12);
+
+// body: left_hood_side_gap_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(420, -684, 1235, 760, 24, 24);
+
+// body: left_hood_latch_round_pin - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(820, -645, 1238, "y", 28, 22);
+
+// front_detail: left_front_fender_turn_signal_screw_front - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(238, -642, 1078, "z", 18, 12);
+
+// front_detail: left_front_fender_turn_signal_screw_rear - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(350, -642, 1078, "z", 18, 12);
+
+// front_detail: left_side_marker_chrome_bezel - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(190, -682, 1005, "y", 112, 18);
+
+// front_detail: left_fog_lamp_inner_glass - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  cylinder_part(16, -360, 620, "x", 118, 18);
+
+// front_detail: left_fog_lamp_drop_bracket - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(42, -360, 548, 38, 34, 85);
+
+// body: left_mirror_mount_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1328, -842, 1248, "y", 20, 16);
+
+// body: left_mirror_mount_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1328, -842, 1142, "y", 20, 16);
+
+// body: left_mirror_mount_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1484, -842, 1248, "y", 20, 16);
+
+// body: left_mirror_mount_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1484, -842, 1142, "y", 20, 16);
+
+// body: left_door_handle_shadow_gap - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1575, -834, 1016, 175, 18, 18);
+
+// body: left_door_handle_chrome_face - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1575, -858, 1055, 140, 18, 22);
+
+// body: left_front_door_lower_weather_strip - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(1228, -836, 742, 760, 20, 22);
+
+// body: left_rear_quarter_vertical_rear_seam - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(2828, -832, 980, 24, 20, 560);
+
+// body: left_fuel_filler_outer_ring - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2935, -842, 1065, "y", 145, 18);
+
+// hard_top: left_roof_gutter_rivet_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1485, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1730, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1975, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2220, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_6 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2465, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_7 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2710, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_8 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2955, -864, 1828, "y", 18, 16);
+
+// hard_top: left_roof_gutter_rivet_9 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3200, -864, 1828, "y", 18, 16);
+
+// hard_top: left_hardtop_front_window_upper_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, -870, 1724, "y", 18, 16);
+
+// hard_top: left_hardtop_front_window_lower_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, -870, 1368, "y", 18, 16);
+
+// hard_top: left_hardtop_front_window_upper_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1600, -870, 1724, "y", 18, 16);
+
+// hard_top: left_hardtop_front_window_lower_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1600, -870, 1368, "y", 18, 16);
+
+// hard_top: left_hardtop_front_window_center_track - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1420, -868, 1435, 430, 14, 18);
+
+// hard_top: left_hardtop_rear_window_upper_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1955, -870, 1724, "y", 18, 16);
+
+// hard_top: left_hardtop_rear_window_lower_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1955, -870, 1368, "y", 18, 16);
+
+// hard_top: left_hardtop_rear_window_upper_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2425, -870, 1724, "y", 18, 16);
+
+// hard_top: left_hardtop_rear_window_lower_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2425, -870, 1368, "y", 18, 16);
+
+// hard_top: left_hardtop_rear_window_center_track - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(2190, -868, 1435, 540, 14, 18);
+
+// hard_top: left_roof_gutter_front_end_cap - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1128, -862, 1812, 52, 34, 42);
+
+// hard_top: left_roof_gutter_rear_end_cap - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3358, -862, 1812, 52, 34, 42);
+
+// running_gear: front_left_rim_vent_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(877.894, -860, 477.5, 54, 20, 34);
+
+// running_gear: front_left_rim_vent_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(735, -860, 560, 54, 20, 34);
+
+// running_gear: front_left_rim_vent_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(592.106, -860, 477.5, 54, 20, 34);
+
+// running_gear: front_left_rim_vent_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(592.106, -860, 312.5, 54, 20, 34);
+
+// running_gear: front_left_rim_vent_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(735, -860, 230, 54, 20, 34);
+
+// running_gear: front_left_rim_vent_slot_6 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(877.894, -860, 312.5, 54, 20, 34);
+
+// running_gear: front_left_tire_sidewall_tick_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1059.55, -865, 481.963, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(972.588, -865, 632.588, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(821.963, -865, 719.551, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(648.037, -865, 719.551, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(497.412, -865, 632.588, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_6 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(410.449, -865, 481.963, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_7 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(410.449, -865, 308.037, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_8 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(497.412, -865, 157.412, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_9 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(648.037, -865, 70.4489, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_10 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(821.963, -865, 70.4489, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_11 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(972.588, -865, 157.412, 38, 18, 18);
+
+// running_gear: front_left_tire_sidewall_tick_12 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1059.55, -865, 308.037, 38, 18, 18);
+
+// running_gear: front_left_hub_cap_center_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(735, -908, 395, "y", 74, 24);
+
+// running_gear: rear_left_rim_vent_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3162.89, -860, 477.5, 54, 20, 34);
+
+// running_gear: rear_left_rim_vent_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3020, -860, 560, 54, 20, 34);
+
+// running_gear: rear_left_rim_vent_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2877.11, -860, 477.5, 54, 20, 34);
+
+// running_gear: rear_left_rim_vent_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2877.11, -860, 312.5, 54, 20, 34);
+
+// running_gear: rear_left_rim_vent_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3020, -860, 230, 54, 20, 34);
+
+// running_gear: rear_left_rim_vent_slot_6 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3162.89, -860, 312.5, 54, 20, 34);
+
+// running_gear: rear_left_tire_sidewall_tick_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3344.55, -865, 481.963, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3257.59, -865, 632.588, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3106.96, -865, 719.551, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2933.04, -865, 719.551, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2782.41, -865, 632.588, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_6 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2695.45, -865, 481.963, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_7 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2695.45, -865, 308.037, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_8 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2782.41, -865, 157.412, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_9 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2933.04, -865, 70.4489, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_10 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3106.96, -865, 70.4489, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_11 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3257.59, -865, 157.412, 38, 18, 18);
+
+// running_gear: rear_left_tire_sidewall_tick_12 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3344.55, -865, 308.037, 38, 18, 18);
+
+// running_gear: rear_left_hub_cap_center_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3020, -908, 395, "y", 74, 24);
+
+// body: right_windshield_wiper_pivot - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1100, 358, 1372, "x", 42, 26);
+
+// body: right_windshield_wiper_blade_rubber - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(1092, 165, 1508, 24, 480, 16);
+
+// body: right_windshield_wiper_arm_chrome - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1094, 252, 1456, 18, 340, 14);
+
+// body: right_cowl_vent_screw_front - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1044, 278, 1360, "z", 20, 12);
+
+// body: right_cowl_vent_screw_rear - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1018, 422, 1360, "z", 20, 12);
+
+// body: right_hood_side_gap_shadow - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(420, 684, 1235, 760, 24, 24);
+
+// body: right_hood_latch_round_pin - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(820, 645, 1238, "y", 28, 22);
+
+// front_detail: right_front_fender_turn_signal_screw_front - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(238, 642, 1078, "z", 18, 12);
+
+// front_detail: right_front_fender_turn_signal_screw_rear - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(350, 642, 1078, "z", 18, 12);
+
+// front_detail: right_side_marker_chrome_bezel - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(190, 682, 1005, "y", 112, 18);
+
+// front_detail: right_fog_lamp_inner_glass - L3 exterior material reference
+color([0.894, 0.863, 0.780, 0.80])
+  cylinder_part(16, 360, 620, "x", 118, 18);
+
+// front_detail: right_fog_lamp_drop_bracket - L3 exterior material reference
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(42, 360, 548, 38, 34, 85);
+
+// body: right_mirror_mount_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1328, 842, 1248, "y", 20, 16);
+
+// body: right_mirror_mount_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1328, 842, 1142, "y", 20, 16);
+
+// body: right_mirror_mount_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1484, 842, 1248, "y", 20, 16);
+
+// body: right_mirror_mount_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1484, 842, 1142, "y", 20, 16);
+
+// body: right_door_handle_shadow_gap - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1575, 834, 1016, 175, 18, 18);
+
+// body: right_door_handle_chrome_face - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1575, 858, 1055, 140, 18, 22);
+
+// body: right_front_door_lower_weather_strip - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(1228, 836, 742, 760, 20, 22);
+
+// body: right_rear_quarter_vertical_rear_seam - L3 exterior material reference
+color([0.114, 0.114, 0.114, 0.80])
+  box_part(2828, 832, 980, 24, 20, 560);
+
+// body: right_fuel_filler_outer_ring - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2935, 842, 1065, "y", 145, 18);
+
+// hard_top: right_roof_gutter_rivet_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1485, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1730, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1975, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2220, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_6 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2465, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_7 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2710, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_8 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2955, 864, 1828, "y", 18, 16);
+
+// hard_top: right_roof_gutter_rivet_9 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3200, 864, 1828, "y", 18, 16);
+
+// hard_top: right_hardtop_front_window_upper_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, 870, 1724, "y", 18, 16);
+
+// hard_top: right_hardtop_front_window_lower_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1240, 870, 1368, "y", 18, 16);
+
+// hard_top: right_hardtop_front_window_upper_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1600, 870, 1724, "y", 18, 16);
+
+// hard_top: right_hardtop_front_window_lower_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1600, 870, 1368, "y", 18, 16);
+
+// hard_top: right_hardtop_front_window_center_track - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1420, 868, 1435, 430, 14, 18);
+
+// hard_top: right_hardtop_rear_window_upper_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1955, 870, 1724, "y", 18, 16);
+
+// hard_top: right_hardtop_rear_window_lower_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(1955, 870, 1368, "y", 18, 16);
+
+// hard_top: right_hardtop_rear_window_upper_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2425, 870, 1724, "y", 18, 16);
+
+// hard_top: right_hardtop_rear_window_lower_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(2425, 870, 1368, "y", 18, 16);
+
+// hard_top: right_hardtop_rear_window_center_track - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(2190, 868, 1435, 540, 14, 18);
+
+// hard_top: right_roof_gutter_front_end_cap - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(1128, 862, 1812, 52, 34, 42);
+
+// hard_top: right_roof_gutter_rear_end_cap - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3358, 862, 1812, 52, 34, 42);
+
+// running_gear: front_right_rim_vent_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(877.894, 860, 477.5, 54, 20, 34);
+
+// running_gear: front_right_rim_vent_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(735, 860, 560, 54, 20, 34);
+
+// running_gear: front_right_rim_vent_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(592.106, 860, 477.5, 54, 20, 34);
+
+// running_gear: front_right_rim_vent_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(592.106, 860, 312.5, 54, 20, 34);
+
+// running_gear: front_right_rim_vent_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(735, 860, 230, 54, 20, 34);
+
+// running_gear: front_right_rim_vent_slot_6 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(877.894, 860, 312.5, 54, 20, 34);
+
+// running_gear: front_right_tire_sidewall_tick_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1059.55, 865, 481.963, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(972.588, 865, 632.588, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(821.963, 865, 719.551, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(648.037, 865, 719.551, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(497.412, 865, 632.588, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_6 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(410.449, 865, 481.963, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_7 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(410.449, 865, 308.037, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_8 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(497.412, 865, 157.412, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_9 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(648.037, 865, 70.4489, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_10 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(821.963, 865, 70.4489, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_11 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(972.588, 865, 157.412, 38, 18, 18);
+
+// running_gear: front_right_tire_sidewall_tick_12 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(1059.55, 865, 308.037, 38, 18, 18);
+
+// running_gear: front_right_hub_cap_center_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(735, 908, 395, "y", 74, 24);
+
+// running_gear: rear_right_rim_vent_slot_1 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3162.89, 860, 477.5, 54, 20, 34);
+
+// running_gear: rear_right_rim_vent_slot_2 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3020, 860, 560, 54, 20, 34);
+
+// running_gear: rear_right_rim_vent_slot_3 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2877.11, 860, 477.5, 54, 20, 34);
+
+// running_gear: rear_right_rim_vent_slot_4 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(2877.11, 860, 312.5, 54, 20, 34);
+
+// running_gear: rear_right_rim_vent_slot_5 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3020, 860, 230, 54, 20, 34);
+
+// running_gear: rear_right_rim_vent_slot_6 - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3162.89, 860, 312.5, 54, 20, 34);
+
+// running_gear: rear_right_tire_sidewall_tick_1 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3344.55, 865, 481.963, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_2 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3257.59, 865, 632.588, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_3 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3106.96, 865, 719.551, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_4 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2933.04, 865, 719.551, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_5 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2782.41, 865, 632.588, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_6 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2695.45, 865, 481.963, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_7 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2695.45, 865, 308.037, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_8 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2782.41, 865, 157.412, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_9 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(2933.04, 865, 70.4489, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_10 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3106.96, 865, 70.4489, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_11 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3257.59, 865, 157.412, 38, 18, 18);
+
+// running_gear: rear_right_tire_sidewall_tick_12 - L3 exterior material reference
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3344.55, 865, 308.037, 38, 18, 18);
+
+// running_gear: rear_right_hub_cap_center_button - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3020, 908, 395, "y", 74, 24);
+
+// hard_top: rear_window_upper_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3492, 0, 1608, 20, 760, 24);
+
+// hard_top: rear_window_lower_inner_shadow - L3 exterior material reference
+color([0.149, 0.220, 0.247, 0.80])
+  box_part(3492, 0, 1342, 20, 760, 24);
+
+// hard_top: rear_door_hinge_mount_plate_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3528, -620, 1510, 24, 84, 96);
+
+// hard_top: rear_door_hinge_mount_plate_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3528, -520, 1180, 24, 84, 96);
+
+// hard_top: rear_door_hinge_mount_plate_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3528, 520, 1180, 24, 84, 96);
+
+// hard_top: rear_door_hinge_mount_plate_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3528, 620, 1510, 24, 84, 96);
+
+// hard_top: rear_door_hinge_plate_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, -590, 1555, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, -590, 1470, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, 590, 1555, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, 590, 1470, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, -590, 1225, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_6 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, -590, 1138, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_7 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, 590, 1225, "x", 18, 16);
+
+// hard_top: rear_door_hinge_plate_screw_8 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3544, 590, 1138, "x", 18, 16);
+
+// body: rear_spare_carrier_latch_plate - L3 exterior material reference
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3530, 315, 1042, 36, 132, 92);
+
+// body: rear_spare_carrier_latch_pin - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3552, 315, 1042, "x", 28, 36);
+
+// body: rear_spare_carrier_lower_hinge_plate - L3 exterior material reference
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3528, -320, 760, 36, 126, 88);
+
+// body: rear_spare_carrier_upper_hinge_plate - L3 exterior material reference
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3528, -320, 1088, 36, 126, 88);
+
+// body: rear_spare_carrier_hardware_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, -320, 724, "x", 18, 16);
+
+// body: rear_spare_carrier_hardware_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, -320, 796, "x", 18, 16);
+
+// body: rear_spare_carrier_hardware_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, -320, 1052, "x", 18, 16);
+
+// body: rear_spare_carrier_hardware_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, -320, 1124, "x", 18, 16);
+
+// body: rear_spare_carrier_hardware_screw_5 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, 315, 1006, "x", 18, 16);
+
+// body: rear_spare_carrier_hardware_screw_6 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3550, 315, 1078, "x", 18, 16);
+
+// body: rear_license_plate_upper_lamp_left - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3508, -145, 810, 28, 90, 34);
+
+// body: rear_license_plate_upper_lamp_right - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  box_part(3508, 145, 810, 28, 90, 34);
+
+// body: rear_license_plate_screw_1 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3534, -160, 770, "x", 18, 16);
+
+// body: rear_license_plate_screw_2 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3534, 160, 770, "x", 18, 16);
+
+// body: rear_license_plate_screw_3 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3534, -160, 630, "x", 18, 16);
+
+// body: rear_license_plate_screw_4 - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3534, 160, 630, "x", 18, 16);
+
+// body: rear_left_tail_lamp_chrome_bezel - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3488, -675, 930, "x", 122, 18);
+
+// body: rear_left_tail_lamp_inner_lens - L3 exterior material reference
+color([0.839, 0.278, 0.216, 0.80])
+  cylinder_part(3502, -675, 930, "x", 72, 18);
+
+// body: rear_right_tail_lamp_chrome_bezel - L3 exterior material reference
+color([0.851, 0.835, 0.784, 0.80])
+  cylinder_part(3488, 675, 930, "x", 122, 18);
+
+// body: rear_right_tail_lamp_inner_lens - L3 exterior material reference
+color([0.839, 0.278, 0.216, 0.80])
+  cylinder_part(3502, 675, 930, "x", 72, 18);
+
 // interior: dashboard_glovebox_door - L2 visible-detail primitive
 color([0.910, 0.910, 0.910, 0.80])
   box_part(1212, 420, 1115, 35, 335, 150);
