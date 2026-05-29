@@ -1,7 +1,7 @@
 profile_server,profile_label,target_number,chat_id,chat_type,chat_name,unread_count,last_message_timestamp,last_message,relevance_score,relevance_reasons,selected_for_import,messages_fetched,messages_fetch_error,messages_count,media_count,images_count,videos_count
 whatsapp-number-1,primary,+447456457005,archive::akbar_khan,archive,Akbar Khan,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Akbar Khan,883,113,90,13
 whatsapp-number-1,primary,+447456457005,archive::fj40,archive,Fj40,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Fj40,289,52,41,6
-whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,1,2026-05-29T05:21:25.000Z,,15,seed_name|group_bonus|name_hits:40 series|tlc,true,true,,242,67,54,8
+whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,0,2026-05-29T15:29:32.000Z,I have a Bj75 land Cruiser Pick up in cleanest condition am looking for a Hj47 pick up might get exchanged.,17,seed_name|group_bonus|name_hits:40 series|tlc|last_message_hits:land cruiser,true,true,,261,76,62,8
 whatsapp-number-2,secondary,+923099351940,124176513941598@lid,direct_lid,Oxy Welding,0,,,14,seed_name|name_hits:oxy welding|welding,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,162822445105367@lid,direct_lid,Walton Bodyshop,0,,,14,seed_name|name_hits:bodyshop|walton,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363408465558195@g.us,group,Fj40,0,,,11,seed_name|group_bonus|name_hits:fj40,true,true,,350,53,44,5
@@ -40,19 +40,19 @@ whatsapp-number-2,secondary,+923099351940,120363273297369902@g.us,group,DT proje
 whatsapp-number-2,secondary,+923099351940,120363425453547799@g.us,group,DataCentre,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363146238999741@g.us,group,Directors Group,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416281257705@g.us,group,Dog groomer - Arshad,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,1,2026-05-29T16:45:44.000Z,Tomorrow night! COYG!,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363324242926727@g.us,group,Farm land,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363391086842294@g.us,group,Farm plot - dealer Awais,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363267124119464@g.us,group,Fellowship of the Ferment,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363349879220786@g.us,group,First Movers - IT World News Curated by Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363223238173842@g.us,group,Foundation 9-12 (DHA),0,2026-05-25T12:28:15.000Z,"Dear Parents, Summer 2026 Registrations at Legends Academy are filling up fast — only *20 slots* left. ⚽ Early Bird Discount is available for the first 50 registrations. Reserve your child’s spot today! Kind regards, Legends Team",1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363223238173842@g.us,group,Foundation 9-12 (DHA),0,2026-05-29T12:55:34.000Z,"🏆 LAHORE JUNIOR PREMIER LEAGUE – PRIZE CEREMONY REMINDER 🏆 Dear Parents, This is a friendly reminder that the Lahore Junior Premier League Prize Ceremony will be held on Sunday, 7th June 2026 at K-Block Swimming Pool Ground, DHA Phase 5, Lahore. 🕓 Event Timing: 4:00 PM – 9:00 PM 🏅 Prize Ceremony Starts: 6:00 PM Join us for an exciting evening filled with: ⚽ Football Activities 🎯 Fun Games 🍔 Food Stalls 🎩 Magic Show 🥅 Mini Football Arena 📸 Photo Booth 🎉 And many more family attractions! We look forward to celebrating the achievements of our young players with all parents and families. Your presence will make this occasion even more special. 📍 Venue: K-Block Swimming Pool Ground, DHA Phase 5, Lahore 🔥 SPECIAL DISCOUNT OFFER REMINDER 🔥 Parents are also reminded that the last date to avail our special discount offers is 3rd June 2026. ✅ 2 Months Offer — 15% Discount ✅ 3 Months Offer — 25% Discount 📌 Book your slot before the deadline to avail this limited-time offer. Best Regards, Legends Team",1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363151304450687@g.us,group,Grade 7 BLUE,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363337097506552@g.us,group,Group project : due Sunday,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363338082185743@g.us,group,HBL PAKISTAN- GROUP,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363419364967513@g.us,group,Harvester hiring,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363422792476199@g.us,group,Hirings- Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416845226272@g.us,group,Holiday ideas,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,4,2026-05-29T04:45:10.000Z,https://www.instagram.com/reel/DYl-DuAtbmd/?igsh=MTNwa2hncXo3dWVhbA==,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,4,2026-05-29T17:50:24.000Z,https://www.facebook.com/share/r/1BDKTMqjod/,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363417093817926@g.us,group,House,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363423514708697@g.us,group,IFL Sharepoint Status Tracking,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363407986660211@g.us,group,IFL-ManageEngine Payment,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -67,7 +67,7 @@ whatsapp-number-2,secondary,+923099351940,120363406230122349@g.us,group,LEILA WE
 whatsapp-number-2,secondary,+923099351940,120363369500454083@g.us,group,LGSI plans,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363356492502929@g.us,group,LIA,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363293304159632@g.us,group,Legends <> Neem Onboarding & Integration,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363419155016421@g.us,group,Legends Booking Site,0,2026-05-20T14:22:49.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363419155016421@g.us,group,Legends Booking Site,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363323511513926@g.us,group,MYP 2B,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363343468102660@g.us,group,Manuchahar - Veterinary,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363426624684750@g.us,group,Maths- Practice & Tests,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -204,6 +204,7 @@ whatsapp-number-2,secondary,+923099351940,5004056363175@lid,direct_lid,+92 346 4
 whatsapp-number-2,secondary,+923099351940,121603962757350@lid,direct_lid,+92 348 0042040,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,137624140402894@lid,direct_lid,+92 370 1461682,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,137559816540413@lid,direct_lid,+92 42 32157777,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,46407725662437@lid,direct_lid,+92 51 111 693 693,0,2026-05-29T22:00:52.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,228093566419083@lid,direct_lid,+923295296510,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,256646358020215@lid,direct_lid,ADS,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,65717512732866@lid,direct_lid,Abdul Rahman,0,,,0,,false,false,,0,0,0,0
@@ -322,7 +323,7 @@ whatsapp-number-2,secondary,+923099351940,16140621328417@lid,direct_lid,Richard 
 whatsapp-number-2,secondary,+923099351940,99458641559568@lid,direct_lid,Robin,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,70085343449200@lid,direct_lid,SK,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,276591884148909@lid,direct_lid,Sajeel,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,234896140284133@lid,direct_lid,Sakib Chaudry,1,2026-05-27T15:57:20.000Z,"Okie , even if I do get there by 10 I will leave by 1030 if they ask me to. Thanks",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,234896140284133@lid,direct_lid,Sakib Chaudry,0,2026-05-27T15:57:20.000Z,"Okie , even if I do get there by 10 I will leave by 1030 if they ask me to. Thanks",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,9062532010038@lid,direct_lid,Salman Legends Developer,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,88188580327566@lid,direct_lid,Samar,0,2026-05-20T15:18:29.000Z,Can't believe you're wasting your life on this,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,3556400750656@lid,direct_lid,Saqib Embassy,0,,,0,,false,false,,0,0,0,0

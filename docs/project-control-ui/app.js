@@ -30,7 +30,8 @@
     },
   ];
   const AMIR_FRONT_DISC_ENTRY_IDS = new Set([
-    "part_front_disc_pads_hardware",
+    "part_front_disc_pad_axle_set_sumitomo_20260530",
+    "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
     "part_front_brake_hose_pair",
     "part_front_caliper_rebuild_or_replace_pair",
     "part_front_rotor_service_pair",
@@ -38,9 +39,15 @@
   const AMIR_FRONT_DISC_TASKS = [
     {
       priority: "P0",
-      item: "Front disc pads + retaining hardware",
-      action: "Ask Toyota/Land Cruiser parts counters for pads, pad pins, anti-rattle springs, and clips for the visible Sumitomo fixed-caliper front disc setup. Use the removed pad/backing plate as the sample when available; otherwise collect box/part-number photos and price only.",
-      gate: "Buy only if the removed pad outline, backing ears, thickness, retaining-pin/spring/clip style, and rotor thickness match. Reject Prado/J200/Fortuner/V8 pads and seller-led catalog guesses.",
+      item: "Front disc brake pad axle set",
+      action: "Ask Toyota/Land Cruiser parts counters for the Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0. Use the removed pad/backing plate as the sample when available; otherwise collect box/part-number photos and price only.",
+      gate: "Buy only if the removed pad outline, backing ears, thickness, and rotor/caliper clearance match. Reject Prado/J200/Fortuner/V8 pads and seller-led catalog guesses.",
+    },
+    {
+      priority: "P0",
+      item: "Front pad retaining hardware kit",
+      action: "Ask for BR06158K / MT 12342 style hardware, or local equivalent, containing exactly 4 pad retaining pins, 2 anti-rattle springs, and 2 pin clips.",
+      gate: "Buy only if removed pins, springs, and clips match in length, diameter, shape, and installed retention. Receipt must count all three component groups separately.",
     },
     {
       priority: "P0",

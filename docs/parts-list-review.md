@@ -1,27 +1,27 @@
 # Parts List Review
 
-- Generated: 2026-05-30 02:17:48
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 124 rows
+- Generated: 2026-05-30 03:05:50
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 126 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
 - `buy_now`: 25
-- `cancelled_or_not_required`: 22
+- `cancelled_or_not_required`: 23
 - `completed_or_received`: 33
 - `deferred`: 5
 - `needs_confirmation`: 5
 - `needs_spec_before_order`: 7
 - `ordered_waiting_arrival`: 9
-- `runner_spec_controlled`: 9
+- `runner_spec_controlled`: 10
 - `spec_ready_release_hold`: 2
 - `unclear`: 7
 
 ## Workstream Split
 
 - `body_chassis`: 26
-- `brake_system`: 24
+- `brake_system`: 26
 - `mechanical_baseline`: 23
 - `electrical_reset`: 21
 - `interior_weatherproofing`: 11
@@ -35,7 +35,7 @@
 ## Price Coverage
 
 - `has_confirmed_amount=yes`: 24
-- `has_confirmed_amount=no`: 100
+- `has_confirmed_amount=no`: 102
 
 ## Buy-Now / Quote-Ready Missing Price
 

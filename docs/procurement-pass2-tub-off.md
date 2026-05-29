@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-29 22:07:53
+- Generated: 2026-05-30 03:06:06
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -29,7 +29,7 @@
 - `longman_hose_pipe_order_ready`: 4
 - `online_click_buy_approved`: 1
 - `review`: 6
-- `runner_spec_controlled`: 9
+- `runner_spec_controlled`: 10
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 1
 - `track_in_flight_order`: 8
@@ -49,7 +49,7 @@
 - `post_tub_off_inspection`: 7
 - `pre_order_audit`: 1
 - `review`: 16
-- `runner_spec_controlled`: 9
+- `runner_spec_controlled`: 10
 
 ## Immediate Actions (Now)
 

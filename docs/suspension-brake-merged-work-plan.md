@@ -1,6 +1,6 @@
 # Suspension + Brake Merged Work Plan
 
-- Updated: 2026-05-29
+- Updated: 2026-05-30
 - Vehicle: 1978 Toyota Land Cruiser J40
 - Start-here sources: [suspension-workstream.md](suspension-workstream.md), [brake-workstream.md](brake-workstream.md), [brake_system_requirements.csv](../data/manual/brake_system_requirements.csv)
 
@@ -46,7 +46,8 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Ironman Foam Cell main suspension kit | 1 kit | Received; contents check open | Count against [suspension-workstream.md](suspension-workstream.md). Main kit is on hand, but final install still waits for the separate `24635FE` front damper pair. |
 | Ironman `24635FE` front damper pair | 2 | Ordered as separate shipment | Must arrive before final suspension assembly or road validation. |
 | Hardwood cribbing and wedge chocks | 8 blocks + 4 wedges | Received | Inspect against [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md); drawing pack is `data/manual/fabrication/suspension_wood_cribbing_rev_a/`. |
-| Front disc pads and retaining hardware | 1 axle set | Visible Sumitomo fixed caliper; pad shape still pending | Buy by actual pad outline and retaining pin/spring/clip style from the truck, not by year alone. |
+| Front disc pad axle set | 1 axle set | Visible Sumitomo fixed caliper; active row `part_front_disc_pad_axle_set_sumitomo_20260530` | Buy by actual pad outline, backing-ear shape, and thickness from the truck. Reference family `04491-60010` / `04491-60030` / `04465-35170` / `04465-YZZC0`; not by year alone. |
+| Front disc pad retaining hardware kit | 1 kit | Active row `part_front_disc_pad_pin_hardware_kit_sumitomo_20260530` | Kit must separately contain 4 retaining pins, 2 anti-rattle springs, and 2 pin clips matching the old hardware. Reference families `BR06158K` / `MT 12342`; no incomplete loose hardware bundle. |
 | Front Sumitomo fixed-caliper rebuild kits or replacement calipers | 2 sides | Casting visible; piston/kit family pending | Replace/rebuild if seized, leaking, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition. |
 | Front rotors | 2 | Visible; measure before decision | Replace or machine only after diameter/thickness/runout/scoring/service-limit check. |
 | Front flexible brake hoses | 2 | Route visible; end/free-length spec hold | Match chassis bracket/clip, short hard-line/caliper end, free length, and full-lock clearance. |

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-30T02:20:59+05:00",
+  "generated_at": "2026-05-30T03:06:18+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -51,19 +51,19 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 824,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 69,
+    "parts_open_rows": 70,
     "parts_ordered_pending_delivery": 9,
     "urgent_part_actions": 15,
     "capture_data_tasks": 110,
     "capture_data_tasks_now": 95,
-    "supply_rows_tracked": 275,
+    "supply_rows_tracked": 276,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
-    "whatsapp_j40_media_items": 285,
-    "whatsapp_j40_media_images": 230,
+    "whatsapp_j40_media_items": 294,
+    "whatsapp_j40_media_images": 238,
     "whatsapp_j40_media_videos": 32,
-    "other_build_reference_media": 207,
-    "other_build_reference_images": 185,
+    "other_build_reference_media": 215,
+    "other_build_reference_images": 193,
     "other_build_reference_videos": 22,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
@@ -38650,7 +38650,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -38704,7 +38704,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -65423,12 +65423,12 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-FRONT-001",
-          "requirement_name": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
+          "requirement_name": "Front disc pads and retaining hardware - split component purchase lines",
           "pipe_id": "",
           "vehicle_location": "Front Sumitomo fixed disc calipers and rotors",
           "pipe_or_line": "",
           "replace_scope": "required_replace_after_pad_shape_and_caliper_measurement",
-          "quantity": "1_axle_set",
+          "quantity": "1_axle_set_plus_hardware_components",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
@@ -65443,13 +65443,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "required_sumitomo_reference_specs_added_pad_sample_pending",
           "acquisition_status": "spec_controlled_runner_purchase",
           "installation_status": "not_installed",
-          "current_action": "Required item. Use the May 29 closeups as the front hardware ID baseline: visible Sumitomo fixed caliper with external bridge/transfer pipe and dust shield. Ask by reference pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0 and hardware BR06158K / MT 12342, but remove or photograph one pad set and retaining hardware before payment.",
-          "exact_recreation_spec": "Required front pads and retaining/anti-rattle hardware matched to the visible Sumitomo fixed front caliper and current rotor setup. Reference design: Sumitomo-family pad about 107 x 65.7 x 15.5 mm, with axle hardware kit containing 4 pad pins, 2 anti-rattle springs, and 2 pin clips. Do not buy by year alone.",
+          "current_action": "Required item. Use the May 29 closeups as the front hardware ID baseline: visible Sumitomo fixed caliper with external bridge/transfer pipe and dust shield. Split the buy into a front pad axle set plus a retaining hardware kit containing 4 pins, 2 anti-rattle springs, and 2 pin clips; remove or photograph one pad set and retaining hardware before payment.",
+          "exact_recreation_spec": "Required front pads and retaining/anti-rattle hardware matched to the visible Sumitomo fixed front caliper and current rotor setup. Reference design: Sumitomo-family pad about 107 x 65.7 x 15.5 mm. Active purchase rows: part_front_disc_pad_axle_set_sumitomo_20260530 and part_front_disc_pad_pin_hardware_kit_sumitomo_20260530. Component BOM and links live in data/manual/front_disc_component_order_options.csv. Do not buy by year alone.",
           "material_spec": "New brake friction pads and new retaining/anti-rattle hardware matched to the fitted Sumitomo caliper; OEM/Advics/Japanese-equivalent preferred; no used pads or incomplete old hardware reuse",
-          "critical_measurements": "Pad outline, pad thickness, backing-plate ears, retaining pin/spring/clip style, rotor diameter/thickness, caliper casting marks, and wheel clearance",
-          "fit_and_test": "Even pad contact, no drag, no pull, no noise, bedded according to pad maker or workshop procedure",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|source_toyotapartsdeal_04491_60010|source_brakepadshop_04465_35170|source_cruiserteq_BR06158K|source_manafrelv_MT12342",
-          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching. User confirmed the front disc parts should all be replaced; pad removal/outline and rotor measurements now control exact matching only, not whether pads are reused. | 2026-05-30 reference specs added for local ordering: 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0 pad family and BR06158K / MT 12342 hardware kit. These are quote/spec anchors only; removed pad and hardware sample still control payment.",
+          "critical_measurements": "Pad outline, pad thickness, backing-plate ears, retaining pin length/diameter/hole style, anti-rattle spring shape, pin clip style, rotor diameter/thickness, caliper casting marks, and wheel clearance",
+          "fit_and_test": "Even pad contact, no drag, no pull, no noise, every retaining pin/spring/clip fitted and retained, bedded according to pad maker or workshop procedure",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|part_front_disc_pad_axle_set_sumitomo_20260530|part_front_disc_pad_pin_hardware_kit_sumitomo_20260530|data/manual/front_disc_component_order_options.csv|source_btb_04491_60010_A|source_cruiserparts_04491_60010|source_cruiserteq_BR06158K|source_manafrelv_MT12342",
+          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching. User confirmed the front disc parts should all be replaced; pad removal/outline and rotor measurements now control exact matching only, not whether pads are reused. | 2026-05-30 component split: the old aggregate pads/hardware row is retired as a parent, with separate pad-set and hardware-kit order rows plus a BOM that individually checks 4 pins, 2 anti-rattle springs, and 2 pin clips.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -66412,7 +66412,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -66511,7 +66511,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -67277,42 +67277,92 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_front_disc_pads_hardware",
+          "entry_id": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
           "workstream": "brake_system",
-          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
+          "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
           "status": "planned",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+          "amount": "8.00",
+          "amount_status": "estimate",
+          "currency": "USD",
+          "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_front_disc_pads_hardware",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
-          "links": [],
+          "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+          "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+          "links": [
+            {
+              "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+              "label": "cruiserteq.com"
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+            "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
+            "specific_component": "exact_order_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
               "photo_20260529_183947_gp_lsyuesvg"
             ],
-            "match_basis": "local_inventory_evidence",
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_disc_pad_axle_set_sumitomo_20260530",
+          "workstream": "brake_system",
+          "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "39.99",
+          "amount_status": "estimate",
+          "currency": "USD",
+          "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+          "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+          "links": [
+            {
+              "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+              "label": "btbprod.com"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "exact_order_evidence",
             "match_score": 980
           }
         },
@@ -67958,7 +68008,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 (runner_spec_controlled; delivery not_ordered; amount estimate)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
@@ -68090,8 +68140,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
+                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -68348,9 +68398,9 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake vacuum booster servo - refurbish or direct-match exchange by old sample (amir_refurb_quote_video_gate; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)"
+                "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips (runner_spec_controlled; delivery not_ordered; amount estimate)",
+                "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 (runner_spec_controlled; delivery not_ordered; amount estimate)",
+                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -71469,7 +71519,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -71523,7 +71573,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -74673,7 +74723,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "23 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -74820,7 +74870,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "runner_spec_controlled",
-        "count": 9
+        "count": 10
       },
       {
         "stage": "spec_needed_before_order",
@@ -76544,40 +76594,88 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_front_disc_pads_hardware",
+        "entry_id": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
         "workstream": "brake_system",
-        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
+        "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
         "status": "planned",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+        "amount": "8.00",
+        "amount_status": "estimate",
+        "currency": "USD",
+        "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
-        "links": [],
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+        "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+        "links": [
+          {
+            "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+            "label": "cruiserteq.com"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+          "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
+          "specific_component": "exact_order_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
             "photo_20260529_183947_gp_lsyuesvg"
           ],
-          "match_basis": "local_inventory_evidence",
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_disc_pad_axle_set_sumitomo_20260530",
+        "workstream": "brake_system",
+        "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "39.99",
+        "amount_status": "estimate",
+        "currency": "USD",
+        "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+        "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+        "links": [
+          {
+            "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+            "label": "btbprod.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "exact_order_evidence",
           "match_score": 980
         }
       },
@@ -79100,7 +79198,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 21,
+        "open_count": 22,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -98259,8 +98357,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "previously": 96,
         "in_process": 16,
-        "still_required": 60,
-        "total": 172
+        "still_required": 61,
+        "total": 173
       }
     ],
     "rows_by_status": {
@@ -107649,41 +107747,91 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_front_disc_pads_hardware",
+          "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-          "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
-          "amount": "",
-          "currency": "PKR",
+          "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
+          "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+          "amount": "8.00",
+          "currency": "USD",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
-          "links": [],
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+          "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+          "links": [
+            {
+              "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+              "label": "cruiserteq.com"
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+            "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
+            "specific_component": "exact_order_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
               "photo_20260529_183947_gp_lsyuesvg"
             ],
-            "match_basis": "local_inventory_evidence",
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+          "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "amount": "39.99",
+          "currency": "USD",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+          "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+          "links": [
+            {
+              "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+              "label": "btbprod.com"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "exact_order_evidence",
             "match_score": 980
           }
         },
@@ -120121,41 +120269,91 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_front_disc_pads_hardware",
+        "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-        "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
-        "amount": "",
-        "currency": "PKR",
+        "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
+        "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+        "amount": "8.00",
+        "currency": "USD",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
-        "links": [],
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+        "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+        "links": [
+          {
+            "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+            "label": "cruiserteq.com"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+          "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
+          "specific_component": "exact_order_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
             "photo_20260529_183947_gp_lsyuesvg"
           ],
-          "match_basis": "local_inventory_evidence",
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+        "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+        "amount": "39.99",
+        "currency": "USD",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+        "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+        "links": [
+          {
+            "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+            "label": "btbprod.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "exact_order_evidence",
           "match_score": 980
         }
       },
@@ -122152,8 +122350,8 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 207,
-      "total_images": 185,
+      "total_media": 215,
+      "total_images": 193,
       "total_videos": 22,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
@@ -125558,6 +125756,134 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
             "notes": "Author: 41635429744809. Imported timestamp: 2026-05-28 17:46:16.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 09:24:49.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "09:24:49.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid.jpeg",
+            "notes": "Author: 219039053906043. Imported timestamp: 2026-05-29 09:24:49.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:35:14.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:35:14.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:35:14.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:35:14.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:35:14.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:35:14.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:57:15.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:57:15.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:57:15.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:57:15.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:57:15.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:57:15.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:57:15.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:57:15.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:57:15.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 14:57:15.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "14:57:15.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 14:57:15.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-29 15:20:41.000Z",
+            "captured_date": "2026-05-29",
+            "captured_time": "15:20:41.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 15:20:41.000Z"
           }
         ]
       }
@@ -126246,10 +126572,10 @@ window.J40_DASHBOARD_DATA = {
         "chat_name": "TLC 40 Series Owners",
         "chat_id": "971527520120-1517397900@g.us",
         "chat_type": "group",
-        "relevance_score": "15",
+        "relevance_score": "17",
         "messages_fetched": "true",
-        "messages_count": "242",
-        "media_count": "67",
+        "messages_count": "261",
+        "media_count": "76",
         "messages_fetch_error": ""
       },
       {
@@ -126374,11 +126700,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 230
+        "count": 238
       },
       {
         "media_type": "sticker",
-        "count": 5
+        "count": 6
       },
       {
         "media_type": "video",
@@ -126392,10 +126718,91 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 120
+        "count": 129
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a566a69d31afe70cac73ea5b33f8e53d_98548125290539_lid::false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T15:20:41.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5c1845574d2db8f2cc3909ac4308d5e_98548125290539_lid::false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:57:15.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5C1845574D2DB8F2CC3909AC4308D5E_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a57722bcbb719f8020141f5ff02a785e_98548125290539_lid::false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:57:15.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A57722BCBB719F8020141F5FF02A785E_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a53f2ca223416b8259cdade9346a6958_98548125290539_lid::false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:57:15.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A53F2CA223416B8259CDADE9346A6958_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5031dd3600d59ada0c825b35a4cd410_98548125290539_lid::false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:57:15.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5031DD3600D59ADA0C825B35A4CD410_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5f4b63763e8688744697a4cbccfde88_98548125290539_lid::false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:35:14.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5F4B63763E8688744697A4CBCCFDE88_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a569322abd7646634989a7e090cb587d_98548125290539_lid::false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T14:35:14.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A569322ABD7646634989A7E090CB587D_98548125290539_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acf440256359c6985a35e767d08b3dff_219039053906043_lid::false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T09:24:49.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACF440256359C6985A35E767D08B3DFF_219039053906043_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a58bcd8bf1757ab93982325b45f50022_98548125290539_lid::false_971527520120_1517397900_g_us_A58BCD8BF1757AB93982325B45F50022_98548125290539_lid.bin",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-29T07:45:51.000Z",
+        "media_type": "sticker",
+        "file_name": "false_971527520120_1517397900_g_us_A58BCD8BF1757AB93982325B45F50022_98548125290539_lid.bin",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A58BCD8BF1757AB93982325B45F50022_98548125290539_lid.bin"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac3b1bed07bf22214f8593429e4d179e_41635429744809_lid::false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
         "source_profile": "whatsapp-number-2",
@@ -126530,87 +126937,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "photo",
         "file_name": "false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac89c96d44ff7fa8ffdcfafc13eced3b_48408643563605_lid::false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T03:44:18.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac87f8d85ab791f61a3a5a0a3baec832_145874403492093_lid::false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T03:15:54.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a6f50b8e07ddf15a996_187861886328909_lid::false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T01:26:15.000Z",
-        "media_type": "video",
-        "file_name": "false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acc00a4e7024750bb9cd9ab9ac7f1d67_172245385244826_lid::false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-26T14:36:41.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acee77db63f348b4c87145b1936442ff_172245385244826_lid::false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-26T14:36:40.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acb1185595d9d46c265aaacd0eafd238_153450709049471_lid::false_971527520120_1517397900_g_us_ACB1185595D9D46C265AAACD0EAFD238_153450709049471_lid.mp4",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T21:43:28.000Z",
-        "media_type": "video",
-        "file_name": "false_971527520120_1517397900_g_us_ACB1185595D9D46C265AAACD0EAFD238_153450709049471_lid.mp4",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB1185595D9D46C265AAACD0EAFD238_153450709049471_lid.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3aa04c55dc00138297d3_42507291328542_lid::false_971527520120_1517397900_g_us_3AA04C55DC00138297D3_42507291328542_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T11:26:19.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3AA04C55DC00138297D3_42507291328542_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AA04C55DC00138297D3_42507291328542_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a562da4bd265a24ada6522cea039321c_98548125290539_lid::false_971527520120_1517397900_g_us_A562DA4BD265A24ADA6522CEA039321C_98548125290539_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T08:37:07.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_A562DA4BD265A24ADA6522CEA039321C_98548125290539_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A562DA4BD265A24ADA6522CEA039321C_98548125290539_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5b2f7116bca62e1cb039e0b386efac6_128350903398508_lid::false_971527520120_1517397900_g_us_A5B2F7116BCA62E1CB039E0B386EFAC6_128350903398508_lid.oga",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T08:34:08.000Z",
-        "media_type": "audio",
-        "file_name": "false_971527520120_1517397900_g_us_A5B2F7116BCA62E1CB039E0B386EFAC6_128350903398508_lid.oga",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5B2F7116BCA62E1CB039E0B386EFAC6_128350903398508_lid.oga"
       }
     ]
   },

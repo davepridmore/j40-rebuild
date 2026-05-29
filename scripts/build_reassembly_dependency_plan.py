@@ -344,12 +344,21 @@ def build_procurement_decisions(
                 "fill-plug access proof, drain/fill plug washer match, and clean oil-sample capture."
             )
         elif entry_id == "part_front_disc_pads_hardware":
+            decision = "not_required_split_into_component_rows"
+            dependency_gate = "component_split_history"
+            action = "use_child_component_rows"
+            reason = (
+                "This parent pads/hardware bundle has been split into active component purchase rows for the pad "
+                "axle set and retaining hardware kit."
+            )
+        elif entry_id in {"part_front_disc_pad_axle_set_sumitomo_20260530", "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530"}:
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
             action = "measure_label_keep_samples_then_order"
             reason = (
-                "May 29 photos identify visible Sumitomo fixed front calipers; pads/hardware still wait for "
-                "pad outline, backing-plate ears, retaining pin/spring/clip style, and rotor dimensions from the truck."
+                "May 29 photos identify visible Sumitomo fixed front calipers; the split pad axle set and retaining "
+                "hardware kit still wait for pad outline, backing-plate ears, retaining pin/spring/clip style, and "
+                "rotor dimensions from the truck."
             )
         elif entry_id == "part_front_caliper_rebuild_or_replace_pair":
             decision = "capture_spec_then_buy"

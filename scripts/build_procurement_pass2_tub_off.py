@@ -333,10 +333,18 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
 
     if entry_id == "part_front_disc_pads_hardware":
         return (
+            "not_required_split_into_component_rows",
+            "component_split_history",
+            "not_required_parent_row",
+            "Parent pads/hardware bundle is retained only as history; active component rows now track the pad axle set and retaining hardware kit separately.",
+        )
+
+    if entry_id in {"part_front_disc_pad_axle_set_sumitomo_20260530", "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530"}:
+        return (
             "capture_brake_specs_then_order",
             "merged_suspension_brake_window",
             "brake_baseline_release_hold",
-            "Visible May 29 Sumitomo fixed calipers support pad-family matching, but exact pads/hardware still wait for pad outline, retaining hardware, and rotor measurements.",
+            "Visible May 29 Sumitomo fixed calipers support pad-family matching, but exact pad set and retaining hardware purchases still wait for pad outline, retaining pin/spring/clip style, and rotor measurements.",
         )
 
     if entry_id == "part_front_caliper_rebuild_or_replace_pair":
