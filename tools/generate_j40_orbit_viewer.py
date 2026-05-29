@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 from string import Template
 
-from generate_j40_full_vehicle_cad_scaffold import BoxPart, CylinderPart, WheelPart, MODEL_TITLE, OUT_DIR, parts
+from generate_j40_full_vehicle_cad_scaffold import BoxPart, CylinderPart, MeshPart, WheelPart, MODEL_TITLE, OUT_DIR, parts
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -54,6 +54,14 @@ def part_payload() -> list[dict[str, object]]:
                     "axis": part.axis,
                     "diameter": part.diameter,
                     "length": part.length,
+                }
+            )
+        elif isinstance(part, MeshPart):
+            base.update(
+                {
+                    "kind": "mesh",
+                    "vertices": part.vertices,
+                    "faces": part.faces,
                 }
             )
         payload.append(base)
@@ -633,6 +641,23 @@ function cylinderMesh(part, color, diameter, length, axis) {
   return out;
 }
 
+function meshPartMesh(part, color) {
+  const out = { positions: [], normals: [], colors: [], lines: [] };
+  const vertices = part.vertices.map((point) => modelToWorld(point));
+  for (const face of part.faces) {
+    if (face.length < 3) continue;
+    const faceVertices = face.map((index) => vertices[index]);
+    const normal = normalize(cross(subVec(faceVertices[1], faceVertices[0]), subVec(faceVertices[2], faceVertices[0])));
+    for (let index = 1; index < faceVertices.length - 1; index++) {
+      pushTriangle(out, faceVertices[0], faceVertices[index], faceVertices[index + 1], normal, color);
+    }
+    for (let index = 0; index < faceVertices.length; index++) {
+      pushLine(out, faceVertices[index], faceVertices[(index + 1) % faceVertices.length]);
+    }
+  }
+  return out;
+}
+
 function mergeMesh(target, source) {
   target.positions.push(...source.positions);
   target.normals.push(...source.normals);
@@ -694,15 +719,20 @@ function buildMesh(part) {
     mergeMesh(mesh, boxMesh(part, color));
   } else if (part.kind === "cylinder") {
     mergeMesh(mesh, cylinderMesh(part, color, part.diameter, part.length, part.axis));
+  } else if (part.kind === "mesh") {
+    mergeMesh(mesh, meshPartMesh(part, color));
   } else if (part.kind === "wheel") {
     mergeMesh(mesh, cylinderMesh(part, hexToRgba("#151515", 1), part.diameter, part.width, "y"));
     mergeMesh(mesh, cylinderMesh(part, hexToRgba("#b8b8b8", 1), part.diameter * 0.52, part.width + 8, "y"));
     mergeMesh(mesh, cylinderMesh(part, hexToRgba("#252525", 1), part.diameter * 0.30, part.width + 14, "y"));
   }
+  const bounds = boundsFromPositions(mesh.positions);
   const center = part.kind === "box"
     ? modelToWorld([part.x + part.length / 2, part.y, part.z + part.height / 2])
-    : modelToWorld([part.x, part.y, part.z]);
-  return { part, mesh, center, group: part.group, bounds: boundsFromPositions(mesh.positions) };
+    : part.kind === "mesh"
+      ? boundsCenter(bounds)
+      : modelToWorld([part.x, part.y, part.z]);
+  return { part, mesh, center, group: part.group, bounds };
 }
 
 const objects = PARTS.map(buildMesh);

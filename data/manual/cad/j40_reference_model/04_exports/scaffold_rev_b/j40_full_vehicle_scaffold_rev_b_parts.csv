@@ -109,8 +109,9 @@ front_detail,left_indicator_lamp,cylinder_x,84,-720,845,105,30,,L1 visible-detai
 front_detail,right_indicator_lamp,cylinder_x,84,720,845,105,30,,L1 visible-detail primitive,front amber indicator
 front_detail,left_fog_lamp,cylinder_x,25,-360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
 front_detail,right_fog_lamp,cylinder_x,25,360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
-body,hood_closed_reference,box,230,0,1215,920,1390,55,L0 envelope,closed hood reference envelope
-body,hood_open_visual_reference,box,420,0,1420,1180,1390,35,visual only,viewer can show hood-open context; this is a non-kinematic slab reference
+body,hood_closed_reference,box,230,0,1215,920,1390,38,L0 envelope,closed hood lower envelope
+body,hood_crowned_closed_skin,mesh,135,0.0,1210,923,1284,112,L4 gallery-shaped surface,"closed hood crown and rear rise shaped from public front, side, top, wire, and clay gallery renders"
+body,hood_front_rolled_lip_surface,mesh,96,0.0,1204,54,1220,50,L4 gallery-shaped surface,rolled front hood lip visible above the grille in the front renders
 body,hood_left_hinge_axis,cylinder_y,1030,-540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
 body,hood_right_hinge_axis,cylinder_y,1030,540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
 body,left_front_fender,box,270,-720,760,860,270,260,L0 envelope,front wing/fender envelope
@@ -121,7 +122,8 @@ body,windshield_frame,box,1155,0,1315,80,1480,520,L0 envelope,upright windshield
 body,windshield_glass,box,1160,0,1380,35,1300,410,L0 envelope,transparent windshield opening reference
 body,windshield_left_wiper,cylinder_y,1110,-250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
 body,windshield_right_wiper,cylinder_y,1110,250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
-hard_top,white_hardtop_roof,box,1210,0,1845,2290,1540,110,L0 envelope,white hardtop roof from project photos and CC-BY reference
+hard_top,white_hardtop_roof,box,1210,0,1838,2290,1540,58,L0 envelope,hardtop roof lower envelope under crowned skin
+hard_top,white_hardtop_crowned_roof_skin,mesh,1125,0.0,1860,2315,1520,82,L4 gallery-shaped surface,"thin crowned hardtop roof and slight rear lift shaped from top, side, rear, wire, and clay gallery renders"
 hard_top,left_hardtop_side_panel,box,1240,-790,1320,2200,55,590,L0 envelope,left hardtop side shell
 hard_top,right_hardtop_side_panel,box,1240,790,1320,2200,55,590,L0 envelope,right hardtop side shell
 hard_top,left_front_hardtop_window,box,1420,-823,1435,500,20,320,L0 envelope,left sliding/side hardtop window glass
@@ -175,6 +177,62 @@ interior,rear_bench_base,box,2510,0,720,610,1080,135,L0 envelope,rear bench lowe
 interior,rear_bench_back,box,2920,0,840,105,1080,560,L0 envelope,rear bench back
 interior,rear_bench_left_headrest,cylinder_y,2975,-350,1390,140,270,,L1 visible-detail primitive,rear headrest
 interior,rear_bench_right_headrest,cylinder_y,2975,350,1390,140,270,,L1 visible-detail primitive,rear headrest
+body,windshield_raked_glass_surface,mesh,1110,0.0,1378,38,1204,344,L4 gallery-shaped surface,"single raked windshield plane replacing a flat envelope impression from front, side, and clay renders"
+front_detail,front_grille_inset_rounded_surround_surface,mesh,56,0.0,802,50,1170,323,L4 gallery-shaped surface,"slightly inset grille surround shaped from front, wire, and clay renders"
+chassis,front_bumper_swept_main_face,mesh,-18,0.0,484,110,1520,136,L4 gallery-shaped surface,swept front bumper face from front orthographic and front three-quarter renders
+chassis,rear_bumper_swept_main_face,mesh,3638,0.0,492,112,1460,120,L4 gallery-shaped surface,swept rear bumper face from rear orthographic and rear three-quarter renders
+hard_top,front_roof_header_overhang_skin,mesh,1092,0.0,1792,116,1572,86,L4 gallery-shaped surface,"front roof header overhang lip visible in front, side, top, and clay renders"
+hard_top,rear_roof_overhang_skin,mesh,3360,0.0,1830,148,1552,60,L4 gallery-shaped surface,rear hardtop roof overhang lip and slight crown from top and rear renders
+hard_top,rear_barn_door_left_subtle_crown,mesh,3484,-354.0,904,50,672,38,L4 gallery-shaped surface,left rear barn-door skin has a slight crown instead of a flat slab in rear and clay renders
+hard_top,rear_barn_door_right_subtle_crown,mesh,3484,354.0,904,50,672,38,L4 gallery-shaped surface,right rear barn-door skin has a slight crown instead of a flat slab in rear and clay renders
+body,left_front_fender_sloped_outer_skin,mesh,118,-746.0,706,917,200.0,536,L4 gallery-shaped surface,front wing side skin slopes up to the cowl instead of reading as a rectangular block
+chassis,left_front_bumper_swept_return,mesh,24,-783.0,500,104,126.0,120,L4 gallery-shaped surface,front bumper side return shaped from front and three-quarter renders
+chassis,left_rear_bumper_swept_return,mesh,3628,-753.5,502,107,117.0,110,L4 gallery-shaped surface,rear bumper side return shaped from rear and three-quarter renders
+body,left_front_fender_rolled_upper_crown,mesh,155,-657.0,1062,860,194.0,206,L4 gallery-shaped surface,"rolled front fender crown visible in front, side, top, and wire renders"
+body,left_cowl_side_blend_surface,mesh,960,-737.5,1116,205,155.0,294,L4 gallery-shaped surface,"cowl-to-windshield side blend guided by front, side, and clay renders"
+body,left_door_outer_skin_tapered_surface,mesh,1128,-779.0,748,810,90.0,560,L4 gallery-shaped surface,door skin follows the upright but slightly crowned BJ44 side profile in the side and clay renders
+body,left_rear_quarter_waist_tapered_surface,mesh,1942,-780.0,724,1443,100.0,581,L4 gallery-shaped surface,"rear tub side taper and waist line shaped from side, rear, top, wire, and clay renders"
+hard_top,left_hardtop_side_tapered_upper_skin,mesh,1212,-784.0,1300,2213,72.0,490,L4 gallery-shaped surface,"hardtop upper side panel tapers under the roof gutter in side, rear, wire, and clay renders"
+hard_top,left_hardtop_lower_side_roll_surface,mesh,1225,-777.0,1258,2190,70.0,87,L4 gallery-shaped surface,rolled hardtop lower side break below windows from side and rear renders
+hard_top,left_hardtop_rear_corner_radius_facet,mesh,3365,-728.0,1300,105,156.0,480,L4 gallery-shaped surface,"faceted rear hardtop corner radius from rear, top, wire, and clay renders"
+body,left_front_outer_arch_rounded_skin_facet_1,mesh,1015.7402885326976,-790.0,625.5,72.0,112.0,74.5,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_2,mesh,935.9978955753376,-790.0,700,72.0,112.0,23.973654318344643,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_3,mesh,829.7283404456991,-790.0,740.9859103452534,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_4,mesh,707.3340276233996,-790.0,773.7813676241507,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_5,mesh,580.7957652188074,-790.0,767.1497782971912,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_6,mesh,462.5,-790.0,721.7402885326976,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_front_outer_arch_rounded_skin_facet_7,mesh,364.0263456816554,-790.0,693.9978955753377,72.0,112.0,6.0021044246623205,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_1,mesh,3287.749907475931,-790.0,618.0,72.0,112.0,70.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_2,mesh,3210.960936479955,-790.0,688,72.0,112.0,24.826481936183768,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_3,mesh,3108.627290799562,-790.0,727.2827284806143,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_4,mesh,2990.7661006743847,-790.0,758.8635391936266,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_5,mesh,2868.914440581074,-790.0,752.4775642861842,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_6,mesh,2755.0,-790.0,708.7499074759311,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,left_rear_outer_arch_rounded_skin_facet_7,mesh,2660.173518063816,-790.0,683.9609364799549,72.0,112.0,4.039063520045147,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_fender_sloped_outer_skin,mesh,118,746.0,706,917,200.0,536,L4 gallery-shaped surface,front wing side skin slopes up to the cowl instead of reading as a rectangular block
+chassis,right_front_bumper_swept_return,mesh,24,783.0,500,104,126.0,120,L4 gallery-shaped surface,front bumper side return shaped from front and three-quarter renders
+chassis,right_rear_bumper_swept_return,mesh,3628,753.5,502,107,117.0,110,L4 gallery-shaped surface,rear bumper side return shaped from rear and three-quarter renders
+body,right_front_fender_rolled_upper_crown,mesh,155,657.0,1062,860,194.0,206,L4 gallery-shaped surface,"rolled front fender crown visible in front, side, top, and wire renders"
+body,right_cowl_side_blend_surface,mesh,960,737.5,1116,205,155.0,294,L4 gallery-shaped surface,"cowl-to-windshield side blend guided by front, side, and clay renders"
+body,right_door_outer_skin_tapered_surface,mesh,1128,779.0,748,810,90.0,560,L4 gallery-shaped surface,door skin follows the upright but slightly crowned BJ44 side profile in the side and clay renders
+body,right_rear_quarter_waist_tapered_surface,mesh,1942,780.0,724,1443,100.0,581,L4 gallery-shaped surface,"rear tub side taper and waist line shaped from side, rear, top, wire, and clay renders"
+hard_top,right_hardtop_side_tapered_upper_skin,mesh,1212,784.0,1300,2213,72.0,490,L4 gallery-shaped surface,"hardtop upper side panel tapers under the roof gutter in side, rear, wire, and clay renders"
+hard_top,right_hardtop_lower_side_roll_surface,mesh,1225,777.0,1258,2190,70.0,87,L4 gallery-shaped surface,rolled hardtop lower side break below windows from side and rear renders
+hard_top,right_hardtop_rear_corner_radius_facet,mesh,3365,728.0,1300,105,156.0,480,L4 gallery-shaped surface,"faceted rear hardtop corner radius from rear, top, wire, and clay renders"
+body,right_front_outer_arch_rounded_skin_facet_1,mesh,1015.7402885326976,790.0,625.5,72.0,112.0,74.5,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_2,mesh,935.9978955753376,790.0,700,72.0,112.0,23.973654318344643,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_3,mesh,829.7283404456991,790.0,740.9859103452534,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_4,mesh,707.3340276233996,790.0,773.7813676241507,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_5,mesh,580.7957652188074,790.0,767.1497782971912,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_6,mesh,462.5,790.0,721.7402885326976,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_front_outer_arch_rounded_skin_facet_7,mesh,364.0263456816554,790.0,693.9978955753377,72.0,112.0,6.0021044246623205,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_1,mesh,3287.749907475931,790.0,618.0,72.0,112.0,70.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_2,mesh,3210.960936479955,790.0,688,72.0,112.0,24.826481936183768,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_3,mesh,3108.627290799562,790.0,727.2827284806143,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_4,mesh,2990.7661006743847,790.0,758.8635391936266,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_5,mesh,2868.914440581074,790.0,752.4775642861842,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_6,mesh,2755.0,790.0,708.7499074759311,72.0,112.0,52.0,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
+body,right_rear_outer_arch_rounded_skin_facet_7,mesh,2660.173518063816,790.0,683.9609364799549,72.0,112.0,4.039063520045147,L4 gallery-shaped surface,"body-color wheel-arch crown facet under the black flare, guided by side and wire renders"
 chassis,left_front_frame_horn_top_plate,box,120,-390.0,555,500,95,24,L2 bracket reference,front frame horn top reinforcement
 chassis,left_front_frame_horn_side_web,box,120,-448.0,440,500,18,150,L2 bracket reference,front frame horn outside web
 chassis,left_rear_frame_horn_top_plate,box,3230,-390.0,555,420,95,24,L2 bracket reference,rear frame horn top reinforcement

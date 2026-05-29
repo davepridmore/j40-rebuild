@@ -5,7 +5,7 @@
   const tabButtons = Array.from(document.querySelectorAll("[data-view]"));
   const STORAGE_KEY = "j40.photo_recategorization_overrides.v3";
   const FALLBACK_IMAGE_PATH = "./assets/image-needed.svg";
-  const VEHICLE_MAP_VIEWER_URL = "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html?v=rev-b-984-reference-detail";
+  const VEHICLE_MAP_VIEWER_URL = "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html?v=rev-b-1042-gallery-cues";
   const VEHICLE_MAP_EXPORT_LINKS = [
     {
       url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf",

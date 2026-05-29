@@ -17,9 +17,9 @@ OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports
 REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports"
 
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_b"
-MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev B - LHD Hardtop Detail Pass"
+MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev B - LHD Hardtop Gallery Shape Pass"
 MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev B"
-DETAIL_REVISION = "lhd_reference_detail_pass"
+DETAIL_REVISION = "lhd_reference_gallery_shape_pass"
 DRIVER_SIDE = "left"
 DRIVER_Y_SIGN = -1
 DRIVER_Y = -420
@@ -70,7 +70,18 @@ class CylinderPart:
     notes: str
 
 
-PartType = BoxPart | WheelPart | CylinderPart
+@dataclass(frozen=True)
+class MeshPart:
+    group: str
+    name: str
+    vertices: tuple[tuple[float, float, float], ...]
+    faces: tuple[tuple[int, ...], ...]
+    color: str
+    confidence: str
+    notes: str
+
+
+PartType = BoxPart | WheelPart | CylinderPart | MeshPart
 
 
 COLORS = {
@@ -147,6 +158,89 @@ def parts() -> list[PartType]:
     ) -> None:
         p.append(CylinderPart(group, name, x, y, z, axis, diameter, length, color, confidence, notes))
 
+    def mesh(
+        group: str,
+        name: str,
+        vertices: list[tuple[float, float, float]],
+        faces: list[tuple[int, ...]],
+        color: str,
+        confidence: str = "L3 reference-shaped surface",
+        notes: str = "",
+    ) -> None:
+        p.append(MeshPart(group, name, tuple(vertices), tuple(faces), color, confidence, notes))
+
+    def wedge_mesh(
+        group: str,
+        name: str,
+        x_front: float,
+        x_rear: float,
+        y_left: float,
+        y_right: float,
+        z_front_low: float,
+        z_rear_low: float,
+        z_front_high: float,
+        z_rear_high: float,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        vertices = [
+            (x_front, y_left, z_front_low),
+            (x_front, y_right, z_front_low),
+            (x_rear, y_right, z_rear_low),
+            (x_rear, y_left, z_rear_low),
+            (x_front, y_left, z_front_high),
+            (x_front, y_right, z_front_high),
+            (x_rear, y_right, z_rear_high),
+            (x_rear, y_left, z_rear_high),
+        ]
+        faces = [(0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1), (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)]
+        mesh(group, name, vertices, faces, color, confidence, notes)
+
+    def crowned_panel_mesh(
+        group: str,
+        name: str,
+        x_front: float,
+        x_rear: float,
+        y_left: float,
+        y_right: float,
+        z_edge_front: float,
+        z_edge_rear: float,
+        crown_mm: float,
+        thickness: float,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        y_mid = (y_left + y_right) / 2
+        vertices = [
+            (x_front, y_left, z_edge_front),
+            (x_front, y_mid, z_edge_front + crown_mm),
+            (x_front, y_right, z_edge_front),
+            (x_rear, y_left, z_edge_rear),
+            (x_rear, y_mid, z_edge_rear + crown_mm),
+            (x_rear, y_right, z_edge_rear),
+            (x_front, y_left, z_edge_front - thickness),
+            (x_front, y_mid, z_edge_front + crown_mm - thickness),
+            (x_front, y_right, z_edge_front - thickness),
+            (x_rear, y_left, z_edge_rear - thickness),
+            (x_rear, y_mid, z_edge_rear + crown_mm - thickness),
+            (x_rear, y_right, z_edge_rear - thickness),
+        ]
+        faces = [
+            (0, 3, 4, 1),
+            (1, 4, 5, 2),
+            (6, 7, 10, 9),
+            (7, 8, 11, 10),
+            (0, 1, 7, 6),
+            (1, 2, 8, 7),
+            (3, 9, 10, 4),
+            (4, 10, 11, 5),
+            (0, 6, 9, 3),
+            (2, 5, 11, 8),
+        ]
+        mesh(group, name, vertices, faces, color, confidence, notes)
+
     # Published representative FJ40 dimensions from Toyota: 3840 L, 1665 W, 1950 H, 2285 WB.
     # Coordinate system: X front bumper to rear, Y centerline left/right, Z ground up, units mm.
     # This truck is modelled as left-hand drive: negative Y is the driver's side.
@@ -217,8 +311,37 @@ def parts() -> list[PartType]:
     cyl("front_detail", "right_indicator_lamp", 84, 720, 845, "x", 105, 30, COLORS["interior"], notes="front amber indicator")
     cyl("front_detail", "left_fog_lamp", 25, -360, 620, "x", 165, 36, COLORS["reference"], notes="bumper-mounted round fog lamp")
     cyl("front_detail", "right_fog_lamp", 25, 360, 620, "x", 165, 36, COLORS["reference"], notes="bumper-mounted round fog lamp")
-    box("body", "hood_closed_reference", 230, 0, 1215, 920, 1390, 55, COLORS["body_sand"], notes="closed hood reference envelope")
-    box("body", "hood_open_visual_reference", 420, 0, 1420, 1180, 1390, 35, COLORS["body_sand"], "visual only", "viewer can show hood-open context; this is a non-kinematic slab reference")
+    box("body", "hood_closed_reference", 230, 0, 1215, 920, 1390, 38, COLORS["body_sand"], notes="closed hood lower envelope")
+    crowned_panel_mesh(
+        "body",
+        "hood_crowned_closed_skin",
+        135,
+        1058,
+        -642,
+        642,
+        1230,
+        1296,
+        26,
+        20,
+        COLORS["body_sand"],
+        "L4 gallery-shaped surface",
+        "closed hood crown and rear rise shaped from public front, side, top, wire, and clay gallery renders",
+    )
+    wedge_mesh(
+        "body",
+        "hood_front_rolled_lip_surface",
+        96,
+        150,
+        -610,
+        610,
+        1204,
+        1218,
+        1248,
+        1254,
+        COLORS["body_shadow"],
+        "L4 gallery-shaped surface",
+        "rolled front hood lip visible above the grille in the front renders",
+    )
     cyl("body", "hood_left_hinge_axis", 1030, -540, 1288, "y", 28, 230, COLORS["metal"], notes="hood hinge axis placeholder")
     cyl("body", "hood_right_hinge_axis", 1030, 540, 1288, "y", 28, 230, COLORS["metal"], notes="hood hinge axis placeholder")
     box("body", "left_front_fender", 270, -720, 760, 860, 270, 260, COLORS["body_sand"], notes="front wing/fender envelope")
@@ -231,7 +354,22 @@ def parts() -> list[PartType]:
     box("body", "windshield_glass", 1160, 0, 1380, 35, 1300, 410, COLORS["glass"], notes="transparent windshield opening reference")
     cyl("body", "windshield_left_wiper", 1110, -250, 1370, "y", 24, 430, COLORS["rubber"], notes="windshield wiper reference")
     cyl("body", "windshield_right_wiper", 1110, 250, 1370, "y", 24, 430, COLORS["rubber"], notes="windshield wiper reference")
-    box("hard_top", "white_hardtop_roof", 1210, 0, 1845, 2290, 1540, 110, COLORS["roof_white"], notes="white hardtop roof from project photos and CC-BY reference")
+    box("hard_top", "white_hardtop_roof", 1210, 0, 1838, 2290, 1540, 58, COLORS["roof_white"], notes="hardtop roof lower envelope under crowned skin")
+    crowned_panel_mesh(
+        "hard_top",
+        "white_hardtop_crowned_roof_skin",
+        1125,
+        3440,
+        -760,
+        760,
+        1886,
+        1896,
+        46,
+        26,
+        COLORS["roof_white"],
+        "L4 gallery-shaped surface",
+        "thin crowned hardtop roof and slight rear lift shaped from top, side, rear, wire, and clay gallery renders",
+    )
     box("hard_top", "left_hardtop_side_panel", 1240, -790, 1320, 2200, 55, 590, COLORS["body_sand"], notes="left hardtop side shell")
     box("hard_top", "right_hardtop_side_panel", 1240, 790, 1320, 2200, 55, 590, COLORS["body_sand"], notes="right hardtop side shell")
     box("hard_top", "left_front_hardtop_window", 1420, -823, 1435, 500, 20, 320, COLORS["glass"], notes="left sliding/side hardtop window glass")
@@ -285,6 +423,308 @@ def parts() -> list[PartType]:
     # Detail pass. These are still reference primitives, but they turn the
     # scaffold into a usable subsystem map instead of a simple envelope model.
     side_pairs = [("left", -1, -1.0), ("right", 1, 1.0)]
+
+    # Gallery shaping pass from the 12 public 3DModels.org preview renders:
+    # perspective front/rear, wire, side, top, front orthographic, and clay views.
+    wedge_mesh(
+        "body",
+        "windshield_raked_glass_surface",
+        1110,
+        1148,
+        -602,
+        602,
+        1378,
+        1378,
+        1722,
+        1700,
+        COLORS["glass"],
+        "L4 gallery-shaped surface",
+        "single raked windshield plane replacing a flat envelope impression from front, side, and clay renders",
+    )
+    wedge_mesh(
+        "front_detail",
+        "front_grille_inset_rounded_surround_surface",
+        56,
+        106,
+        -585,
+        585,
+        802,
+        820,
+        1125,
+        1100,
+        COLORS["reference"],
+        "L4 gallery-shaped surface",
+        "slightly inset grille surround shaped from front, wire, and clay renders",
+    )
+    wedge_mesh(
+        "chassis",
+        "front_bumper_swept_main_face",
+        -18,
+        92,
+        -760,
+        760,
+        484,
+        520,
+        608,
+        620,
+        COLORS["black_trim"],
+        "L4 gallery-shaped surface",
+        "swept front bumper face from front orthographic and front three-quarter renders",
+    )
+    wedge_mesh(
+        "chassis",
+        "rear_bumper_swept_main_face",
+        3638,
+        3750,
+        -730,
+        730,
+        492,
+        520,
+        604,
+        612,
+        COLORS["black_trim"],
+        "L4 gallery-shaped surface",
+        "swept rear bumper face from rear orthographic and rear three-quarter renders",
+    )
+    crowned_panel_mesh(
+        "hard_top",
+        "front_roof_header_overhang_skin",
+        1092,
+        1208,
+        -786,
+        786,
+        1808,
+        1852,
+        26,
+        16,
+        COLORS["roof_white"],
+        "L4 gallery-shaped surface",
+        "front roof header overhang lip visible in front, side, top, and clay renders",
+    )
+    crowned_panel_mesh(
+        "hard_top",
+        "rear_roof_overhang_skin",
+        3360,
+        3508,
+        -776,
+        776,
+        1862,
+        1848,
+        28,
+        18,
+        COLORS["roof_white"],
+        "L4 gallery-shaped surface",
+        "rear hardtop roof overhang lip and slight crown from top and rear renders",
+    )
+    crowned_panel_mesh(
+        "hard_top",
+        "rear_barn_door_left_subtle_crown",
+        3484,
+        3534,
+        -690,
+        -18,
+        920,
+        924,
+        18,
+        16,
+        COLORS["body_sand"],
+        "L4 gallery-shaped surface",
+        "left rear barn-door skin has a slight crown instead of a flat slab in rear and clay renders",
+    )
+    crowned_panel_mesh(
+        "hard_top",
+        "rear_barn_door_right_subtle_crown",
+        3484,
+        3534,
+        18,
+        690,
+        920,
+        924,
+        18,
+        16,
+        COLORS["body_sand"],
+        "L4 gallery-shaped surface",
+        "right rear barn-door skin has a slight crown instead of a flat slab in rear and clay renders",
+    )
+    for side, sign, y_sign in side_pairs:
+        side_name = "left" if y_sign < 0 else "right"
+        y_inner = 646 * y_sign
+        y_outer = 846 * y_sign
+        y0 = min(y_inner, y_outer)
+        y1 = max(y_inner, y_outer)
+        wedge_mesh(
+            "body",
+            f"{side_name}_front_fender_sloped_outer_skin",
+            118,
+            1035,
+            y0,
+            y1,
+            706,
+            744,
+            1048,
+            1242,
+            COLORS["body_sand"],
+            "L4 gallery-shaped surface",
+            "front wing side skin slopes up to the cowl instead of reading as a rectangular block",
+        )
+        wedge_mesh(
+            "chassis",
+            f"{side_name}_front_bumper_swept_return",
+            24,
+            128,
+            min(720 * y_sign, 846 * y_sign),
+            max(720 * y_sign, 846 * y_sign),
+            500,
+            548,
+            610,
+            620,
+            COLORS["black_trim"],
+            "L4 gallery-shaped surface",
+            "front bumper side return shaped from front and three-quarter renders",
+        )
+        wedge_mesh(
+            "chassis",
+            f"{side_name}_rear_bumper_swept_return",
+            3628,
+            3735,
+            min(695 * y_sign, 812 * y_sign),
+            max(695 * y_sign, 812 * y_sign),
+            502,
+            540,
+            604,
+            612,
+            COLORS["black_trim"],
+            "L4 gallery-shaped surface",
+            "rear bumper side return shaped from rear and three-quarter renders",
+        )
+        wedge_mesh(
+            "body",
+            f"{side_name}_front_fender_rolled_upper_crown",
+            155,
+            1015,
+            min(560 * y_sign, 754 * y_sign),
+            max(560 * y_sign, 754 * y_sign),
+            1062,
+            1238,
+            1110,
+            1268,
+            COLORS["body_highlight"],
+            "L4 gallery-shaped surface",
+            "rolled front fender crown visible in front, side, top, and wire renders",
+        )
+        wedge_mesh(
+            "body",
+            f"{side_name}_cowl_side_blend_surface",
+            960,
+            1165,
+            min(660 * y_sign, 815 * y_sign),
+            max(660 * y_sign, 815 * y_sign),
+            1116,
+            1214,
+            1340,
+            1410,
+            COLORS["body_sand"],
+            "L4 gallery-shaped surface",
+            "cowl-to-windshield side blend guided by front, side, and clay renders",
+        )
+        wedge_mesh(
+            "body",
+            f"{side_name}_door_outer_skin_tapered_surface",
+            1128,
+            1938,
+            min(734 * y_sign, 824 * y_sign),
+            max(734 * y_sign, 824 * y_sign),
+            748,
+            748,
+            1270,
+            1308,
+            COLORS["body_sand"],
+            "L4 gallery-shaped surface",
+            "door skin follows the upright but slightly crowned BJ44 side profile in the side and clay renders",
+        )
+        wedge_mesh(
+            "body",
+            f"{side_name}_rear_quarter_waist_tapered_surface",
+            1942,
+            3385,
+            min(730 * y_sign, 830 * y_sign),
+            max(730 * y_sign, 830 * y_sign),
+            724,
+            746,
+            1305,
+            1278,
+            COLORS["body_sand"],
+            "L4 gallery-shaped surface",
+            "rear tub side taper and waist line shaped from side, rear, top, wire, and clay renders",
+        )
+        wedge_mesh(
+            "hard_top",
+            f"{side_name}_hardtop_side_tapered_upper_skin",
+            1212,
+            3425,
+            min(748 * y_sign, 820 * y_sign),
+            max(748 * y_sign, 820 * y_sign),
+            1308,
+            1300,
+            1790,
+            1782,
+            COLORS["body_sand"],
+            "L4 gallery-shaped surface",
+            "hardtop upper side panel tapers under the roof gutter in side, rear, wire, and clay renders",
+        )
+        wedge_mesh(
+            "hard_top",
+            f"{side_name}_hardtop_lower_side_roll_surface",
+            1225,
+            3415,
+            min(742 * y_sign, 812 * y_sign),
+            max(742 * y_sign, 812 * y_sign),
+            1260,
+            1258,
+            1345,
+            1332,
+            COLORS["body_shadow"],
+            "L4 gallery-shaped surface",
+            "rolled hardtop lower side break below windows from side and rear renders",
+        )
+        wedge_mesh(
+            "hard_top",
+            f"{side_name}_hardtop_rear_corner_radius_facet",
+            3365,
+            3470,
+            min(650 * y_sign, 806 * y_sign),
+            max(650 * y_sign, 806 * y_sign),
+            1300,
+            1308,
+            1780,
+            1762,
+            COLORS["body_shadow"],
+            "L4 gallery-shaped surface",
+            "faceted rear hardtop corner radius from rear, top, wire, and clay renders",
+        )
+        for arch_idx, (axle_name, axle_x, radius, z_base) in enumerate(
+            [("front", front_axle_x, 405, 760), ("rear", rear_axle_x, 390, 748)],
+            start=1,
+        ):
+            for facet_idx, angle_deg in enumerate([30, 48, 66, 84, 102, 120, 138], start=1):
+                angle = math.radians(angle_deg)
+                x_mid = axle_x + math.cos(angle) * radius - 34
+                z_mid = wheel_z + math.sin(angle) * radius
+                wedge_mesh(
+                    "body",
+                    f"{side_name}_{axle_name}_outer_arch_rounded_skin_facet_{facet_idx}",
+                    x_mid - 36,
+                    x_mid + 36,
+                    min(734 * y_sign, 846 * y_sign),
+                    max(734 * y_sign, 846 * y_sign),
+                    max(z_base - 60, z_mid - 24),
+                    max(z_base - 60, z_mid - 24),
+                    z_mid + 28,
+                    z_mid + 28,
+                    COLORS["body_sand"],
+                    "L4 gallery-shaped surface",
+                    "body-color wheel-arch crown facet under the black flare, guided by side and wire renders",
+                )
 
     # Chassis hard points, outriggers, spring mounts, and underside packaging.
     for side, sign, y_sign in side_pairs:
@@ -768,14 +1208,18 @@ def write_scad(model_parts: list[PartType]) -> Path:
             lines.append(
                 f"  box_part({part.x:g}, {part.y:g}, {part.z:g}, {part.length:g}, {part.width:g}, {part.height:g});"
             )
+        elif isinstance(part, WheelPart):
+            lines.append(f"wheel_part({part.x:g}, {part.y:g}, {part.z:g}, {part.diameter:g}, {part.width:g});")
+        elif isinstance(part, CylinderPart):
+            lines.append(f"color({hex_to_scad_color(part.color)})")
+            lines.append(
+                f"  cylinder_part({part.x:g}, {part.y:g}, {part.z:g}, \"{part.axis}\", {part.diameter:g}, {part.length:g});"
+            )
         else:
-            if isinstance(part, WheelPart):
-                lines.append(f"wheel_part({part.x:g}, {part.y:g}, {part.z:g}, {part.diameter:g}, {part.width:g});")
-            else:
-                lines.append(f"color({hex_to_scad_color(part.color)})")
-                lines.append(
-                    f"  cylinder_part({part.x:g}, {part.y:g}, {part.z:g}, \"{part.axis}\", {part.diameter:g}, {part.length:g});"
-                )
+            points = "[" + ", ".join(f"[{x:g}, {y:g}, {z:g}]" for x, y, z in part.vertices) + "]"
+            faces = "[" + ", ".join("[" + ", ".join(str(index) for index in face) + "]" for face in part.faces) + "]"
+            lines.append(f"color({hex_to_scad_color(part.color)})")
+            lines.append(f"  polyhedron(points = {points}, faces = {faces}, convexity = 4);")
         lines.append("")
     path = OUT_DIR / f"{MODEL_NAME}.scad"
     path.write_text("\n".join(lines), encoding="ascii")
@@ -790,6 +1234,7 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
         "# Generated by tools/generate_j40_full_vehicle_cad_scaffold.py.",
         "import FreeCAD as App",
         "import Part",
+        "import Mesh",
         "",
         "try:",
         "    import FreeCADGui as Gui",
@@ -864,6 +1309,20 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
         "    add_to_group(hub, group_name)",
         "    return tire",
         "",
+        "def add_mesh(group_name, name, vertices, faces, rgb):",
+        "    mesh = Mesh.Mesh()",
+        "    for face in faces:",
+        "        if len(face) < 3:",
+        "            continue",
+        "        first = App.Vector(*vertices[face[0]])",
+        "        for index in range(1, len(face) - 1):",
+        "            mesh.addFacet(first, App.Vector(*vertices[face[index]]), App.Vector(*vertices[face[index + 1]]))",
+        "    obj = doc.addObject('Mesh::Feature', name)",
+        "    obj.Mesh = mesh",
+        "    obj.Label = name.replace('_', ' ')",
+        "    set_color(obj, rgb, group_name)",
+        "    return add_to_group(obj, group_name)",
+        "",
     ]
     for part in model_parts:
         safe = part.name.replace("-", "_").replace(" ", "_")
@@ -878,11 +1337,20 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
             lines.append(
                 f"add_wheel({part.group!r}, {safe!r}, {part.x:g}, {part.y:g}, {part.z:g}, {part.diameter:g}, {part.width:g})"
             )
-        else:
+        elif isinstance(part, CylinderPart):
             color = hex_to_fc_color(part.color)
             lines.append(
                 "add_cylinder("
                 f"{part.group!r}, {safe!r}, {part.x:g}, {part.y:g}, {part.z:g}, {part.axis!r}, {part.diameter:g}, {part.length:g}, "
+                f"({color[0]:.3f}, {color[1]:.3f}, {color[2]:.3f}))"
+            )
+        else:
+            color = hex_to_fc_color(part.color)
+            vertices = "[" + ", ".join(f"({x:g}, {y:g}, {z:g})" for x, y, z in part.vertices) + "]"
+            faces = "[" + ", ".join("(" + ", ".join(str(index) for index in face) + ")" for face in part.faces) + "]"
+            lines.append(
+                "add_mesh("
+                f"{part.group!r}, {safe!r}, {vertices}, {faces}, "
                 f"({color[0]:.3f}, {color[1]:.3f}, {color[2]:.3f}))"
             )
     lines.extend(["", "doc.recompute()", "Gui.SendMsgToActiveView('ViewFit') if Gui is not None else None", ""])
@@ -892,6 +1360,19 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
 
 
 def project_rect(part: PartType, view: str) -> tuple[float, float, float, float] | None:
+    if isinstance(part, MeshPart):
+        xs = [point[0] for point in part.vertices]
+        ys = [point[1] for point in part.vertices]
+        zs = [point[2] for point in part.vertices]
+        bounds = (min(xs), min(ys), min(zs), max(xs) - min(xs), max(ys) - min(ys), max(zs) - min(zs))
+        bx, by, bz, bl, bw, bh = bounds
+        if view == "plan":
+            return (bx, by, bl, bw)
+        if view == "side":
+            return (bx, bz, bl, bh)
+        if view == "front":
+            return (by, bz, bw, bh)
+        return None
     if isinstance(part, CylinderPart):
         if part.axis == "x":
             bounds = (part.x - part.length / 2, part.y - part.diameter / 2, part.z - part.diameter / 2, part.length, part.diameter, part.diameter)
@@ -1373,6 +1854,36 @@ def gltf_cylinder_mesh(
     return positions, normals
 
 
+def face_normal(points: list[tuple[float, float, float]]) -> tuple[float, float, float]:
+    if len(points) < 3:
+        return (0.0, 0.0, 1.0)
+    a = points[0]
+    b = points[1]
+    c = points[2]
+    ab = (b[0] - a[0], b[1] - a[1], b[2] - a[2])
+    ac = (c[0] - a[0], c[1] - a[1], c[2] - a[2])
+    return vec_normalize(
+        (
+            ab[1] * ac[2] - ab[2] * ac[1],
+            ab[2] * ac[0] - ab[0] * ac[2],
+            ab[0] * ac[1] - ab[1] * ac[0],
+        )
+    )
+
+
+def gltf_mesh_part_mesh(part: MeshPart) -> tuple[list[tuple[float, float, float]], list[tuple[float, float, float]]]:
+    positions: list[tuple[float, float, float]] = []
+    normals: list[tuple[float, float, float]] = []
+    for face in part.faces:
+        if len(face) < 3:
+            continue
+        points = [part.vertices[index] for index in face]
+        normal = face_normal(points)
+        for index in range(1, len(points) - 1):
+            add_gltf_triangle(positions, normals, points[0], points[index], points[index + 1], normal)
+    return positions, normals
+
+
 def hex_to_rgba_factor(hex_color: str, alpha: float = 1.0) -> list[float]:
     color = hex_color.lstrip("#")
     return [int(color[index : index + 2], 16) / 255 for index in (0, 2, 4)] + [alpha]
@@ -1398,6 +1909,19 @@ def gltf_render_items(
             )
         elif isinstance(part, CylinderPart):
             positions, normals = gltf_cylinder_mesh(part.x, part.y, part.z, part.axis, part.diameter, part.length)
+            items.append(
+                {
+                    "group": part.group,
+                    "name": part.name,
+                    "color": part.color,
+                    "confidence": part.confidence,
+                    "notes": part.notes,
+                    "positions": positions,
+                    "normals": normals,
+                }
+            )
+        elif isinstance(part, MeshPart):
+            positions, normals = gltf_mesh_part_mesh(part)
             items.append(
                 {
                     "group": part.group,
@@ -1614,7 +2138,7 @@ def write_inventory(model_parts: list[PartType]) -> Path:
                         part.notes,
                     ]
                 )
-            else:
+            elif isinstance(part, CylinderPart):
                 writer.writerow(
                     [
                         part.group,
@@ -1630,6 +2154,25 @@ def write_inventory(model_parts: list[PartType]) -> Path:
                         part.notes,
                     ]
                 )
+            else:
+                xs = [point[0] for point in part.vertices]
+                ys = [point[1] for point in part.vertices]
+                zs = [point[2] for point in part.vertices]
+                writer.writerow(
+                    [
+                        part.group,
+                        part.name,
+                        "mesh",
+                        min(xs),
+                        (min(ys) + max(ys)) / 2,
+                        min(zs),
+                        max(xs) - min(xs),
+                        max(ys) - min(ys),
+                        max(zs) - min(zs),
+                        part.confidence,
+                        part.notes,
+                    ]
+                )
     return path
 
 
@@ -1638,13 +2181,13 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
     lines = [
         f"# {MODEL_TITLE}",
         "",
-        "This is a project-owned from-scratch CAD scaffold. It uses the CC-BY 1976 FJ40 Sketchfab model and the project photo inventory as visual references, without extracting or copying source mesh data.",
+        "This is a project-owned from-scratch CAD scaffold. It uses the CC-BY 1976 FJ40 Sketchfab model, the project photo inventory, and public 3DModels.org preview renders as visual references, without extracting or copying source mesh data.",
         "",
         "## Basis",
         "",
         "- Toyota representative FJ40 dimensions: 3840 mm length, 1665 mm width, 1950 mm height, 2285 mm wheelbase.",
         "- Open-source visual reference: 1976 Toyota Land Cruiser FJ40 by tonielpro520 on Sketchfab, CC Attribution 4.0.",
-        "- Commercial visual benchmark only: Toyota Land Cruiser (J40) Hard Top 1979 on 3DModels.org, used for visible exterior detail targets such as separated materials, grille/trim/lamp treatment, hardtop glazing, side vents, fender flares, rear-door hardware, and spare-carrier presentation. No mesh data or paid asset files are copied.",
+        "- Commercial visual benchmark only: Toyota Land Cruiser (J40) Hard Top 1979 on 3DModels.org, using the 12 public gallery renders visible on the product page for exterior silhouette and detail targets such as separated materials, grille/trim/lamp treatment, hardtop glazing, side vents, fender flares, rear-door hardware, spare-carrier presentation, roof crown, hood crown, fender crown, side taper, rear corner radius, and orthographic front/side/top checks. No mesh data, paid asset files, or source geometry are copied.",
         "- Project-photo visual target: sand/beige diesel hardtop J40 with white roof, black bumper/trim, round auxiliary lamps, black window seals, side step boards, and mud-terrain tires.",
         "- Driving layout: left-hand drive. Negative Y is the driver side in this coordinate system.",
         "- This scaffold does not extract or reproduce hidden source mesh data.",
@@ -1663,6 +2206,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "- L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.",
             "- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, LHD dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
             "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, rubber window corner caps, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
+            "- L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.",
             "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
             "- LHD-specific references: left steering wheel/column, left pedal box, left-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, and steering damper.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",
@@ -1693,6 +2237,7 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
             "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
         ],
         "part_count": len(model_parts),
+        "reference_gallery_image_count": 12,
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],
     }
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="ascii")
@@ -1703,6 +2248,7 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     model_parts = parts()
+    gallery_cues = REPORT_DIR / "j40_3dmodels_gallery_visual_cues.json"
     outputs = [
         write_scad(model_parts),
         write_freecad_macro(model_parts),
@@ -1712,6 +2258,8 @@ def main() -> None:
         write_gltf(model_parts),
         write_inventory(model_parts),
     ]
+    if gallery_cues.exists():
+        outputs.append(gallery_cues)
     notes = write_notes(model_parts, outputs)
     manifest = write_manifest(outputs + [notes], model_parts)
     for output in outputs + [notes, manifest]:

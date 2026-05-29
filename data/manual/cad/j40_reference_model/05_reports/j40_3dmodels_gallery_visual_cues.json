@@ -1,0 +1,282 @@
+{
+  "source_page": "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
+  "copyright_handling": "Public preview images analyzed into numeric silhouette cues only; images are not stored in the repo.",
+  "image_count": 12,
+  "images": [
+    {
+      "index": 1,
+      "filename": "ref_0001.jpg",
+      "role": "front_three_quarter",
+      "url": "https://360views.3dmodels.org/zoom/Toyota/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_1000_0001.jpg",
+      "width_px": 1000,
+      "height_px": 1000,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 184,
+        "x1": 954,
+        "y1": 824
+      },
+      "silhouette_width_px": 955,
+      "silhouette_height_px": 641,
+      "silhouette_aspect": 1.4899,
+      "silhouette_center_norm": {
+        "x": 0.477,
+        "y": 0.504
+      },
+      "silhouette_fill_pct": 69.67
+    },
+    {
+      "index": 2,
+      "filename": "ref_0002.jpg",
+      "role": "rear_three_quarter",
+      "url": "https://360views.3dmodels.org/zoom/Toyota/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_1000_0002.jpg",
+      "width_px": 1000,
+      "height_px": 1000,
+      "silhouette_bbox_px": {
+        "x0": 50,
+        "y0": 210,
+        "x1": 962,
+        "y1": 831
+      },
+      "silhouette_width_px": 913,
+      "silhouette_height_px": 622,
+      "silhouette_aspect": 1.4678,
+      "silhouette_center_norm": {
+        "x": 0.506,
+        "y": 0.5205
+      },
+      "silhouette_fill_pct": 72.51
+    },
+    {
+      "index": 3,
+      "filename": "ref_0003.jpg",
+      "role": "front_three_quarter_wire",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0003.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 110,
+        "x1": 572,
+        "y1": 522
+      },
+      "silhouette_width_px": 573,
+      "silhouette_height_px": 413,
+      "silhouette_aspect": 1.3874,
+      "silhouette_center_norm": {
+        "x": 0.4767,
+        "y": 0.5267
+      },
+      "silhouette_fill_pct": 74.49
+    },
+    {
+      "index": 4,
+      "filename": "ref_0004.jpg",
+      "role": "rear_three_quarter_wire",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0004.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 30,
+        "y0": 126,
+        "x1": 576,
+        "y1": 532
+      },
+      "silhouette_width_px": 547,
+      "silhouette_height_px": 407,
+      "silhouette_aspect": 1.344,
+      "silhouette_center_norm": {
+        "x": 0.505,
+        "y": 0.5483
+      },
+      "silhouette_fill_pct": 78.9
+    },
+    {
+      "index": 5,
+      "filename": "ref_0005.jpg",
+      "role": "left_side_orthographic",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0005.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 30,
+        "y0": 174,
+        "x1": 570,
+        "y1": 421
+      },
+      "silhouette_width_px": 541,
+      "silhouette_height_px": 248,
+      "silhouette_aspect": 2.1815,
+      "silhouette_center_norm": {
+        "x": 0.5,
+        "y": 0.4958
+      },
+      "silhouette_fill_pct": 74.64
+    },
+    {
+      "index": 6,
+      "filename": "ref_0006.jpg",
+      "role": "front_detail_three_quarter",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0006.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 38,
+        "x1": 599,
+        "y1": 590
+      },
+      "silhouette_width_px": 600,
+      "silhouette_height_px": 553,
+      "silhouette_aspect": 1.085,
+      "silhouette_center_norm": {
+        "x": 0.4992,
+        "y": 0.5233
+      },
+      "silhouette_fill_pct": 74.24
+    },
+    {
+      "index": 7,
+      "filename": "ref_0007.jpg",
+      "role": "rear_detail_three_quarter",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0007.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 18,
+        "y0": 61,
+        "x1": 599,
+        "y1": 583
+      },
+      "silhouette_width_px": 582,
+      "silhouette_height_px": 523,
+      "silhouette_aspect": 1.1128,
+      "silhouette_center_norm": {
+        "x": 0.5142,
+        "y": 0.5367
+      },
+      "silhouette_fill_pct": 76.9
+    },
+    {
+      "index": 8,
+      "filename": "ref_0008.jpg",
+      "role": "wheel_detail",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0008.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 573,
+        "y1": 573
+      },
+      "silhouette_width_px": 574,
+      "silhouette_height_px": 574,
+      "silhouette_aspect": 1.0,
+      "silhouette_center_norm": {
+        "x": 0.4775,
+        "y": 0.4775
+      },
+      "silhouette_fill_pct": 78.93
+    },
+    {
+      "index": 9,
+      "filename": "ref_0009.jpg",
+      "role": "top_three_quarter",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0009.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 30,
+        "y0": 73,
+        "x1": 575,
+        "y1": 552
+      },
+      "silhouette_width_px": 546,
+      "silhouette_height_px": 480,
+      "silhouette_aspect": 1.1375,
+      "silhouette_center_norm": {
+        "x": 0.5042,
+        "y": 0.5208
+      },
+      "silhouette_fill_pct": 66.72
+    },
+    {
+      "index": 10,
+      "filename": "ref_0010.jpg",
+      "role": "front_orthographic",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0010.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 62,
+        "x1": 543,
+        "y1": 599
+      },
+      "silhouette_width_px": 544,
+      "silhouette_height_px": 538,
+      "silhouette_aspect": 1.0112,
+      "silhouette_center_norm": {
+        "x": 0.4525,
+        "y": 0.5508
+      },
+      "silhouette_fill_pct": 70.7
+    },
+    {
+      "index": 11,
+      "filename": "ref_0011.jpg",
+      "role": "front_three_quarter_clay",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0011.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 0,
+        "y0": 111,
+        "x1": 571,
+        "y1": 515
+      },
+      "silhouette_width_px": 572,
+      "silhouette_height_px": 405,
+      "silhouette_aspect": 1.4123,
+      "silhouette_center_norm": {
+        "x": 0.4758,
+        "y": 0.5217
+      },
+      "silhouette_fill_pct": 73.12
+    },
+    {
+      "index": 12,
+      "filename": "ref_0012.jpg",
+      "role": "rear_three_quarter_clay",
+      "url": "https://i.3dmodels.org/uploads/Toyota/074_Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979/Toyota_Land_Cruiser_J40_Hard_Top_BJ44V_1979_600_0012.jpg",
+      "width_px": 600,
+      "height_px": 600,
+      "silhouette_bbox_px": {
+        "x0": 30,
+        "y0": 126,
+        "x1": 576,
+        "y1": 521
+      },
+      "silhouette_width_px": 547,
+      "silhouette_height_px": 396,
+      "silhouette_aspect": 1.3813,
+      "silhouette_center_norm": {
+        "x": 0.505,
+        "y": 0.5392
+      },
+      "silhouette_fill_pct": 77.05
+    }
+  ],
+  "derived_cues": [
+    "Side orthographic confirms a short front overhang, upright windshield, long hardtop side glass, rear-mounted spare, and rear corner radius.",
+    "Front orthographic confirms wide stance, flat vertical grille plane, raised hood crown, fender-top lamps, round headlamps, bumper-mounted lamps, and mirror stalks.",
+    "Top three-quarter confirms hardtop roof crown, subtle roof side taper, rear spare carrier projection, and black window perimeter material breaks.",
+    "Wire and clay renders confirm separate body-color skins over black wheel-arch flares rather than simple rectangular wheel cutouts.",
+    "Wheel detail confirms six-lug hub, stamped rim dish, dark rim vent openings, raised sidewall/tread blocks, and a substantial tire-to-body gap."
+  ],
+  "orthographic_side_aspect": 2.1815,
+  "orthographic_front_aspect": 1.0112,
+  "top_view_aspect": 1.1375,
+  "wheel_detail_aspect": 1.0
+}
