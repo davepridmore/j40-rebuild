@@ -50,6 +50,8 @@ data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_s
 
 It is mesh geometry exported from the project-owned left-hand-drive scaffold in metre units. It is for visual inspection and packaging, not release-grade fabrication geometry.
 
+The generated orbit viewer includes part search, part focus, single-part isolation, group toggles, and a cabin preset for zooming into the left-hand-drive interior.
+
 Published Rev B viewer:
 
 ```text

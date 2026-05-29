@@ -36,13 +36,13 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     ),
     OverlapDecision(
         group_id="grommet_options",
-        chosen_entries=(
-            "part_rubber_grommet_set",
+        chosen_entries=("part_rubber_grommet_set",),
+        deferred_entries=(
+            "quote_rubber_grommet_set_chat",
             "part_firewall_grommet_set_small_medium",
             "part_firewall_grommet_set_large_power",
         ),
-        deferred_entries=("quote_rubber_grommet_set_chat",),
-        rationale="Base grommet set is received; keep supplemental firewall sizes and suppress duplicate quote-only alternatives.",
+        rationale="Received mixed grommet stock is enough for now; final pass-through sizes are unknown, so suppress extra firewall assortments until a measured hole, wire, or cable size reopens a specific requirement.",
     ),
     OverlapDecision(
         group_id="wire_sleeving_options",

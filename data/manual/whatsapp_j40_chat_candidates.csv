@@ -1,7 +1,7 @@
 profile_server,profile_label,target_number,chat_id,chat_type,chat_name,unread_count,last_message_timestamp,last_message,relevance_score,relevance_reasons,selected_for_import,messages_fetched,messages_fetch_error,messages_count,media_count,images_count,videos_count
 whatsapp-number-1,primary,+447456457005,archive::akbar_khan,archive,Akbar Khan,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Akbar Khan,883,113,90,13
 whatsapp-number-1,primary,+447456457005,archive::fj40,archive,Fj40,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Fj40,289,52,41,6
-whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,2,2026-05-27T17:52:06.000Z,https://youtu.be/I4ZKtnCJCak?si=fwWcU-3WhRrmOfCm,15,seed_name|group_bonus|name_hits:40 series|tlc,true,true,,234,65,53,7
+whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,1,2026-05-29T05:21:25.000Z,,15,seed_name|group_bonus|name_hits:40 series|tlc,true,true,,242,67,54,8
 whatsapp-number-2,secondary,+923099351940,124176513941598@lid,direct_lid,Oxy Welding,0,,,14,seed_name|name_hits:oxy welding|welding,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,162822445105367@lid,direct_lid,Walton Bodyshop,0,,,14,seed_name|name_hits:bodyshop|walton,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363408465558195@g.us,group,Fj40,0,,,11,seed_name|group_bonus|name_hits:fj40,true,true,,350,53,44,5
@@ -11,25 +11,22 @@ whatsapp-number-2,secondary,+923099351940,140888080683096@lid,direct_lid,Akram S
 whatsapp-number-2,secondary,+923099351940,147107092648188@lid,direct_lid,Auto Xpert,0,,,10,seed_name|name_hits:auto xpert,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,163157620326493@lid,direct_lid,Hamza Carnation Car Mods,0,,,10,seed_name|name_hits:carnation,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363420085686125@g.us,group,AC replacement,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,131632577118401@lid,direct_lid,+92 300 4571761,0,2026-05-08T05:19:39.000Z,"❄️ AC Not Cooling? Fridge Stopped Working? Don’t let appliance problems disrupt your comfort. 🔧 Munir Electronics is just one call away! We provide fast, reliable, and professional repair services—so you can get back to your routine without stress. 📞 Call Now: 0300 4571761 ⚡ Same-Day Service | Expert Repairs | No Hidden Charges 🔧 Our Services Include: AC • Refrigerator • LED/LCD • UPS • Microwave • Washing Machine 💼 Why Choose Munir Electronics? ✔️ Quick Response — Always on time ✔️ Skilled Technicians — Trusted expertise ✔️ Transparent Pricing — No surprises ✔️ Home Service Available — گھر بیٹھے آسان سروس 📍 Serving DHA Phase 1 & Paragon City, Lahore 📲 Book Your Service Today: 0300 4571761 | 0300 4671761 ☎️ 042 37207336 ✨ Fix Today. Relax Today.",4,last_message_hits:ac|led,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,4359425396802@lid,direct_lid,Ahmed Red Landcruiser,0,,,4,name_hits:landcruiser,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,151801357664258@lid,direct_lid,Digilog Electronics Order Processing Department,0,,,4,name_hits:order,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,17584166539462@lid,direct_lid,Fiaz Akbar's Help,0,,,4,name_hits:akbar,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,246823214121076@lid,direct_lid,Hamz Toyota Parts,0,2026-05-18T08:57:05.000Z,"Great. Thanks. Nice to meet you, i'll get back to you",4,name_hits:toyota,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,137559816540413@lid,direct_lid,+92 42 32157777,0,2026-05-11T05:26:45.000Z,"*🚚 Your order is on its way!* Dear David Pridmore, Your order from MUJTABA TRADERS-LAHORE 10102050616455 worth Rs. 2250.00 is now out for delivery via PostEx. *Rider Details:* Name: MUHAMMAD UMAR Contact: 03183191379 ⚠ Important: Please do not make any payment via EasyPaisa, JazzCash, or Bank Transfer before delivery. Pay only after receiving your parcel. Would you like to keep getting updates on the delivery?",2,last_message_hits:order,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,80848598626411@lid,direct_lid,Pakistan Power Tools,0,2026-05-19T03:08:19.000Z,Thank you for the confirmation! Your order will be at your doorstep soon!,2,last_message_hits:order,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363410207374365@g.us,group,,0,2026-05-17T18:35:58.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,246823214121076@lid,direct_lid,Hamz Toyota Parts,0,,,4,name_hits:toyota,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363410207374365@g.us,group,,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363421763457621@g.us,group,,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363426639669996@g.us,group,,0,2026-05-17T22:18:12.000Z,k,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363426639669996@g.us,group,,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363404495740090@g.us,group,Ahmed David Samar,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363423313853200@g.us,group,Ai - marketing,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363424849346857@g.us,group,Ai Resources,0,2026-05-07T04:29:31.000Z,https://www.facebook.com/share/r/1Hxeb2Q5XR/,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363424849346857@g.us,group,Ai Resources,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363426180530916@g.us,group,Ai- outreach methods,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363358292264061@g.us,group,Air purifier options,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363287811399819@g.us,group,Aliana's Birthday,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363426886765154@g.us,group,Alianas Birthday 14th!,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363354751027299@g.us,group,Arif walla,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363407336026394@g.us,group,Atyia and her mother,0,2026-05-14T03:42:42.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363407336026394@g.us,group,Atyia and her mother,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363420623078628@g.us,group,Bagpipes and bhangra crew,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363400295359679@g.us,group,Bank account,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363330124017940@g.us,group,Bank selection,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -43,7 +40,7 @@ whatsapp-number-2,secondary,+923099351940,120363273297369902@g.us,group,DT proje
 whatsapp-number-2,secondary,+923099351940,120363425453547799@g.us,group,DataCentre,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363146238999741@g.us,group,Directors Group,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416281257705@g.us,group,Dog groomer - Arshad,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,2026-05-16T12:19:30.000Z,Tonight!,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363324242926727@g.us,group,Farm land,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363391086842294@g.us,group,Farm plot - dealer Awais,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363267124119464@g.us,group,Fellowship of the Ferment,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -55,10 +52,10 @@ whatsapp-number-2,secondary,+923099351940,120363338082185743@g.us,group,HBL PAKI
 whatsapp-number-2,secondary,+923099351940,120363419364967513@g.us,group,Harvester hiring,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363422792476199@g.us,group,Hirings- Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416845226272@g.us,group,Holiday ideas,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,0,2026-05-27T05:33:06.000Z,https://www.facebook.com/share/r/18g5StoYBq/,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,4,2026-05-29T04:45:10.000Z,https://www.instagram.com/reel/DYl-DuAtbmd/?igsh=MTNwa2hncXo3dWVhbA==,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363417093817926@g.us,group,House,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363423514708697@g.us,group,IFL Sharepoint Status Tracking,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363407986660211@g.us,group,IFL-ManageEngine Payment,0,2026-05-06T09:31:46.000Z,By tomorrow we will receive the performa invoice from manageengine so we need to get things ready,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363407986660211@g.us,group,IFL-ManageEngine Payment,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363080086384559@g.us,group,IT  finance,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363415066991749@g.us,group,IT News,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363353147050577@g.us,group,IT projects to network / linked in,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -109,14 +106,15 @@ whatsapp-number-2,secondary,+923099351940,116389822095508@lid,direct_lid,+1 (555
 whatsapp-number-2,secondary,+923099351940,173336978018482@lid,direct_lid,+1 (620) 743-1150,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,213090624913457@lid,direct_lid,+225 58 91 27 51,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,272674722971879@lid,direct_lid,+63 916 516 1365,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,91719362162854@lid,direct_lid,+91 6357 077 733,0,2026-05-19T03:48:48.000Z,"Dear Aldious Huxley, Here is your invoice * * from *Virgil Sports* for a total of *Rs.23000.0*. To review your invoice, or pay online: https://virgil-sports.odoo.com/my/invoices/20313?access_token=9712db6f-7317-4722-bf9f-da23b3eca140 Thank you.",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,91719362162854@lid,direct_lid,+91 6357 077 733,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,215139810816217@lid,direct_lid,+92 21 33263458,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,144066826211386@lid,direct_lid,+92 21 38690144,0,2026-05-07T17:02:08.000Z,"Thank you, your confirmation has been received.",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,144066826211386@lid,direct_lid,+92 21 38690144,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,233521834672379@lid,direct_lid,+92 300 1105253,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,65099020652788@lid,direct_lid,+92 300 1178484,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,81862731001940@lid,direct_lid,+92 300 1245534,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,194287140601921@lid,direct_lid,+92 300 4202231,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,260451212476616@lid,direct_lid,+92 300 4329118,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,131632577118401@lid,direct_lid,+92 300 4571761,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,193703041888404@lid,direct_lid,+92 300 4592166,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,138178258276521@lid,direct_lid,+92 300 4778355,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,4350919336065@lid,direct_lid,+92 300 5262106,0,,,0,,false,false,,0,0,0,0
@@ -142,7 +140,7 @@ whatsapp-number-2,secondary,+923099351940,247575185780977@lid,direct_lid,+92 306
 whatsapp-number-2,secondary,+923099351940,40068001607924@lid,direct_lid,+92 307 4919059,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,66332196368466@lid,direct_lid,+92 308 3333268,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,10995703484548@lid,direct_lid,+92 308 8954002,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,2216354160650@lid,direct_lid,+92 309 5556382,0,2026-05-18T11:31:14.000Z,Mai pta krti hon,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,2216354160650@lid,direct_lid,+92 309 5556382,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,189636244684941@lid,direct_lid,+92 309 7772325,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,139557043482676@lid,direct_lid,+92 309 7772427,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,267293296742528@lid,direct_lid,+92 309 7772453,0,,,0,,false,false,,0,0,0,0
@@ -150,8 +148,8 @@ whatsapp-number-2,secondary,+923099351940,51660135125131@lid,direct_lid,+92 309 
 whatsapp-number-2,secondary,+923099351940,153124744519729@lid,direct_lid,+92 311 6724248,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,89812111507576@lid,direct_lid,+92 312 4465223,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,201313791029281@lid,direct_lid,+92 312 6542211,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,170544729161924@lid,direct_lid,+92 313 2303180,0,2026-05-06T06:53:07.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,160502978224272@lid,direct_lid,+92 313 3649530,0,2026-05-18T02:43:48.000Z,Thanks,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,170544729161924@lid,direct_lid,+92 313 2303180,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,160502978224272@lid,direct_lid,+92 313 3649530,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,245272730984498@lid,direct_lid,+92 313 7934562,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,29541070327817@lid,direct_lid,+92 314 6259463,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,43585965707347@lid,direct_lid,+92 315 6343866,0,,,0,,false,false,,0,0,0,0
@@ -160,12 +158,12 @@ whatsapp-number-2,secondary,+923099351940,214126030790673@lid,direct_lid,+92 316
 whatsapp-number-2,secondary,+923099351940,114224940511356@lid,direct_lid,+92 317 3808485,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,278820754071720@lid,direct_lid,+92 318 5283133,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,160051956306082@lid,direct_lid,+92 319 2312570,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,105437554827266@lid,direct_lid,+92 320 1493193,0,2026-05-11T06:48:27.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,105437554827266@lid,direct_lid,+92 320 1493193,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,57986470916198@lid,direct_lid,+92 320 2676386,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,73113630986465@lid,direct_lid,+92 321 0834444,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,105617675034647@lid,direct_lid,+92 321 2299915,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,142893662658747@lid,direct_lid,+92 321 4653446,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,138384299274246@lid,direct_lid,+92 322 2880035,0,2026-05-05T07:24:09.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,138384299274246@lid,direct_lid,+92 322 2880035,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,210775587196964@lid,direct_lid,+92 322 4247690,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,175389401960607@lid,direct_lid,+92 322 4432994,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,273993194017023@lid,direct_lid,+92 322 9447730,0,,,0,,false,false,,0,0,0,0
@@ -174,8 +172,8 @@ whatsapp-number-2,secondary,+923099351940,186027935322116@lid,direct_lid,+92 323
 whatsapp-number-2,secondary,+923099351940,187780885967037@lid,direct_lid,+92 325 7155941,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,244753325097193@lid,direct_lid,+92 327 5122544,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,201674870267935@lid,direct_lid,+92 327 8734763,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,149684425338965@lid,direct_lid,+92 328 4865157,0,2026-05-12T13:41:17.000Z,Hi,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,188090090033387@lid,direct_lid,+92 328 9488459,0,2026-05-05T10:36:02.000Z,Ok,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,149684425338965@lid,direct_lid,+92 328 4865157,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,188090090033387@lid,direct_lid,+92 328 9488459,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,81385922515075@lid,direct_lid,+92 329 6223224,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,278851322126441@lid,direct_lid,+92 330 7474045,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,203908270047265@lid,direct_lid,+92 330 7474090,0,,,0,,false,false,,0,0,0,0
@@ -205,10 +203,11 @@ whatsapp-number-2,secondary,+923099351940,138779050381371@lid,direct_lid,+92 345
 whatsapp-number-2,secondary,+923099351940,5004056363175@lid,direct_lid,+92 346 4438793,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,121603962757350@lid,direct_lid,+92 348 0042040,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,137624140402894@lid,direct_lid,+92 370 1461682,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,137559816540413@lid,direct_lid,+92 42 32157777,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,228093566419083@lid,direct_lid,+923295296510,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,256646358020215@lid,direct_lid,ADS,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,65717512732866@lid,direct_lid,Abdul Rahman,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,122294932361460@lid,direct_lid,Abid Bhai,0,2026-05-06T18:20:47.000Z,Oh ok no worries Get well soon,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,122294932361460@lid,direct_lid,Abid Bhai,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,160782218203170@lid,direct_lid,Abid Toor Mcb Islamic Branch Manager,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,253803207078139@lid,direct_lid,Afzal Arshad,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,241377296277740@lid,direct_lid,Agil Basalamah,0,,,0,,false,false,,0,0,0,0
@@ -216,7 +215,7 @@ whatsapp-number-2,secondary,+923099351940,16471249936546@lid,direct_lid,Alex Har
 whatsapp-number-2,secondary,+923099351940,247287053840447@lid,direct_lid,Ali Sadozai,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,103070725849285@lid,direct_lid,All About Pets.pk,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,222990792925434@lid,direct_lid,Alpha Vape,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,268362475114725@lid,direct_lid,Amaan Farmdar,0,2026-05-07T17:04:06.000Z,"Oh! Okay, didn't thought about it this way, thanks for the advice",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,268362475114725@lid,direct_lid,Amaan Farmdar,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,31104304160777@lid,direct_lid,Amber,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,222891656351929@lid,direct_lid,Amir Ejaz - Ref. Fatima Fertilizer,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,202619477831919@lid,direct_lid,Amir Perception,0,2026-05-22T05:34:55.000Z,Thanks Sir,0,,false,false,,0,0,0,0
@@ -257,10 +256,10 @@ whatsapp-number-2,secondary,+923099351940,14934322737245@lid,direct_lid,Gabriel,
 whatsapp-number-2,secondary,+923099351940,89369796952250@lid,direct_lid,Gabriel Murphy,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,187857574584546@lid,direct_lid,Gamers HQ,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,182841136656637@lid,direct_lid,Gamestore,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,132804818026624@lid,direct_lid,Ghazi Saghir,0,2026-05-17T09:05:06.000Z,Cheers,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,132804818026624@lid,direct_lid,Ghazi Saghir,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,225425804537878@lid,direct_lid,Gymkhana Cashier,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,16342451228914@lid,direct_lid,Hamza Syed,0,2026-05-22T11:11:39.000Z,Ok sure,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,273559486246991@lid,direct_lid,Hamza Younas Autos. ISLAMABAD,0,2026-05-18T06:17:18.000Z,Hello kindly contact on 03335269284 for Mr Hamza,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,273559486246991@lid,direct_lid,Hamza Younas Autos. ISLAMABAD,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,276827872477405@lid,direct_lid,Hassan Hussein Qureshi,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,241021334098059@lid,direct_lid,Hd,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,182991410184374@lid,direct_lid,Humeira Affan,0,,,0,,false,false,,0,0,0,0
@@ -273,7 +272,7 @@ whatsapp-number-2,secondary,+923099351940,21604021088467@lid,direct_lid,Islamaba
 whatsapp-number-2,secondary,+923099351940,99862385274964@lid,direct_lid,Janet Pridmore,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,180058031407147@lid,direct_lid,Jazz Mobile Tax,0,2026-05-23T10:39:01.000Z,"Ready for some MMA action?🔥 Top fighters, high stakes! Dekho thrilling MMA fights LIVE from Naiza 83! Tune in to Tamasha at 4PM today and don't miss the action!🥊",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,104376312041697@lid,direct_lid,Jonathan Edgar,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,254682987499596@lid,direct_lid,Kashif Hassan,0,2026-05-15T13:36:48.000Z,also which number do u prefer to be contacted on ?,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,254682987499596@lid,direct_lid,Kashif Hassan,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,164583281000636@lid,direct_lid,Kashif Nawab,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,93432735375558@lid,direct_lid,Khawaja Hamza,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,221066345586842@lid,direct_lid,Khurram,0,,,0,,false,false,,0,0,0,0
@@ -295,7 +294,7 @@ whatsapp-number-2,secondary,+923099351940,170493038579952@lid,direct_lid,Mughal,
 whatsapp-number-2,secondary,+923099351940,167637455777899@lid,direct_lid,Muhammad Tanveer Islamabad Dog Driver,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,70905766125795@lid,direct_lid,Mustafa Omar,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,41386355241017@lid,direct_lid,Myshop,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,266142044184702@lid,direct_lid,Nabeel,0,2026-05-26T13:33:59.000Z,Actually think I’ve solved this,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,266142044184702@lid,direct_lid,Nabeel,0,2026-05-28T19:30:50.000Z,"We don’t live in isolation. Actually, I kind of do. Not entirely, but more so than you. YOU for sure don’t live in isolation. Do a bit, but not really. So even though we are objectively right in the approach….you….YOU…gotta somehow find a way to get less off your balls broken whilst existing.",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,249670894878721@lid,direct_lid,Nabeel Dariq,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,212381938520250@lid,direct_lid,Naima Aftab,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,41502302543918@lid,direct_lid,Namra Mahad,0,,,0,,false,false,,0,0,0,0
@@ -306,6 +305,7 @@ whatsapp-number-2,secondary,+923099351940,223978652184732@lid,direct_lid,Nico Si
 whatsapp-number-2,secondary,+923099351940,71876395171917@lid,direct_lid,Nicole,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,144882500935918@lid,direct_lid,Nusrat Imam Samba,0,2026-05-26T09:11:43.000Z,Welcome,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,227951127875613@lid,direct_lid,Osama Shafqat,0,2026-05-23T13:23:30.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,80848598626411@lid,direct_lid,Pakistan Power Tools,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,222947524534370@lid,direct_lid,PetsPark,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,115818725666998@lid,direct_lid,Philippe Lafforgue,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,232658395246627@lid,direct_lid,Playstation Shop,0,,,0,,false,false,,0,0,0,0
@@ -332,13 +332,13 @@ whatsapp-number-2,secondary,+923099351940,123849811181618@lid,direct_lid,Shahid 
 whatsapp-number-2,secondary,+923099351940,151676870725769@lid,direct_lid,Shahzib Actor,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,256796279214221@lid,direct_lid,Shazil Ahmed Tech Hub,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,33264622412028@lid,direct_lid,Sher Ali Tiwana,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,165880898003198@lid,direct_lid,Shezaad Home,0,2026-05-26T09:30:27.000Z,Eid Mubarak ho,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,165880898003198@lid,direct_lid,Shezaad Home,1,2026-05-28T05:51:47.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,18928088678414@lid,direct_lid,Shophive,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,6803244978324@lid,direct_lid,Sikka,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,149688368001207@lid,direct_lid,Sky Games,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,10248245010471@lid,direct_lid,Standardstores,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,37937479729279@lid,direct_lid,Steelworks,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,145964916584457@lid,direct_lid,Steve Hamilton,0,2026-05-07T03:11:10.000Z,"Welcome, available at any chemist. I would have one per day just as a matter of course if spending time out in the heat",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,145964916584457@lid,direct_lid,Steve Hamilton,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,251882836652214@lid,direct_lid,Sultan Saadat,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,81024574869589@lid,direct_lid,Sundus Mehmood,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,48919895662730@lid,direct_lid,TF Consultancy,0,,,0,,false,false,,0,0,0,0

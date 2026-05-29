@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-29 03:15:30
-- Total media files indexed: 802 (791 photos, 11 videos)
+- Generated: 2026-05-29 19:07:38
+- Total media files indexed: 806 (795 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -17,6 +17,7 @@
 | --- | ---: |
 | `baseline_walkaround` | 34 |
 | `brake_system` | 20 |
+| `brake_system_identification` | 4 |
 | `chassis_fixing` | 50 |
 | `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
@@ -57,6 +58,7 @@
 | `body_floor` | `floor_pan_rust_zones` | 35 | 2026-04-13 to 2026-05-17 | `20260413_005435.jpg` |
 | `body_floor` | `floor_seam_and_body_mount_rust` | 3 | 2026-04-05 to 2026-05-17 | `20260405_234652.jpg` |
 | `body_floor` | `rear_cargo_floor` | 2 | 2026-03-23 to 2026-04-13 | `20260323_202016.jpg` |
+| `brake_system` | `front_sumitomo_disc_caliper_and_rotor_baseline` | 4 | 2026-05-29 | `20260529_183947_gp_lSYuESVg.jpg` |
 | `chassis_underside` | `body_mount_and_crossmember_detail` | 1 | 2026-04-05 | `20260405_234546.jpg` |
 | `chassis_underside` | `brake_hard_line_flare_sample` | 1 | 2026-05-14 | `20260514_111300_user_brake_flare_side_view.png` |
 | `chassis_underside` | `engine_bay_chassis_interface` | 6 | 2026-04-22 | `20260422_004347_gp_WIy0j6zw.jpg` |

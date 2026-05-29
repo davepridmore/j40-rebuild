@@ -7,7 +7,7 @@ Purpose: vendor/workshop handoff for the brake refresh package. Use this with `d
 - Vehicle: 1978 Toyota Land Cruiser J40 project truck.
 - Fitted engine basis: Toyota 2H diesel.
 - Brake architecture basis: front disc / rear drum.
-- Front disc setup may be a previous conversion, so fitted calipers, hoses, and pad shape control exact front brake parts.
+- May 29 photos show the front disc setup more specifically: visible Sumitomo fixed front calipers, external hard-line/transfer-pipe detail, dust shields, current rotors, and short hard-line/front hose routing. Fitted hardware, hoses, pad shape, rotor dimensions, and old samples still control exact front brake parts.
 - Ironman Foamcell geometry is treated as effectively the same as the current setup, so brake flex hoses do not need a separate lift/geometry release action.
 
 ## Purchase-Ready Now
@@ -26,10 +26,10 @@ These are approved replacement/renewal scope, but exact part numbers must be mat
 
 | Component | Required scope | Release gate |
 | --- | --- | --- |
-| Front disc pads and retaining hardware | 1 axle set | Identify fitted caliper family, pad outline, retaining pins/springs, and rotor fit. |
-| Front caliper rebuild kits or replacement calipers | Pair if inspection shows leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition | Identify caliper casting, piston count/diameter, inlet fitting, bleed screw, and mounting pattern. |
-| Front rotors | Machine or replace as required | Measure thickness, runout, scoring, cracks, hub/register fit, and service limit. |
-| Front flexible brake hoses | Pair | Confirm chassis end, caliper end or banjo, bracket/clip style, free length, and steering lock clearance. Hose assemblies must be DOT/SAE J1401 or OEM-equivalent crimped brake hoses. |
+| Front disc pads and retaining hardware | 1 axle set for visible Sumitomo fixed-caliper setup | Confirm pad outline, backing-plate ears, retaining pins/springs/clips, rotor fit, and wheel clearance from the truck. |
+| Front Sumitomo fixed-caliper rebuild kits or replacement calipers | Pair if inspection shows leakage, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition | Clean and record caliper casting marks, piston count/diameter, inlet and hard-line/transfer-pipe fittings, bleed screw, and mounting pattern. |
+| Front rotors | Machine or replace as required | Measure thickness, diameter, runout, scoring, cracks, hub/register fit, dust-shield/caliper clearance, and service limit. |
+| Front flexible brake hoses | Pair | Confirm chassis end, caliper/short-hard-line end or banjo if fitted, bracket/clip style, free length, steering lock clearance, and droop clearance. Hose assemblies must be DOT/SAE J1401 or OEM-equivalent crimped brake hoses. |
 | Rear parking-brake cable set | New left/right rear cable assemblies plus equalizer/clevis/spring/clip hardware as fitted | Remove/label old cables, measure overall length, sheath length, backing-plate end, equalizer end, adjuster thread/travel, and clip positions. Old cables are samples only. |
 | Rear axle hard brake lines | Left/right axle lines from center T/union to wheel cylinders | Recreate in brake-rated 4.75 mm / 3/16 in tube. Match flare type, fitting threads/seats, bend templates, route lengths, and clip positions. No bare copper. |
 | Rear center flexible brake hose | 1 frame-to-axle hose | Confirm chassis-side and axle-side fitting style/thread, bracket retention, and old-sample/free length. Must be DOT/SAE J1401 or OEM-equivalent crimped brake hose. |

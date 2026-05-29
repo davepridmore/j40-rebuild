@@ -1362,6 +1362,13 @@ BRAKE_BOOSTER_REPLACEMENT_20260529_FILES = (
     "20260529_030700_gp_8qu2Rliw.jpg",
 )
 
+FRONT_DISC_SUMITOMO_BASELINE_20260529_FILES = (
+    "20260529_183947_gp_lSYuESVg.jpg",
+    "20260529_183959_gp_MlRssDVA.jpg",
+    "20260529_184010_gp_3htpDpPQ.jpg",
+    "20260529_184012_gp_Q01c08NA.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1881,6 +1888,31 @@ FILE_OVERRIDES.update(
             "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation.",
         )
         for file_name in BRAKE_BOOSTER_REPLACEMENT_20260529_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "brake_system",
+            "front_sumitomo_disc_caliper_and_rotor_baseline",
+            "brake_system_identification",
+            "front_fixed_sumitomo_disc_caliper_visible",
+            "high",
+            (
+                "front_brake",
+                "front_disc",
+                "sumitomo",
+                "fixed_caliper",
+                "caliper_bridge_pipe",
+                "front_brake_hose",
+                "front_hard_line",
+                "rotor",
+                "dust_shield",
+                "pad_service",
+            ),
+            "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts.",
+        )
+        for file_name in FRONT_DISC_SUMITOMO_BASELINE_20260529_FILES
     }
 )
 FILE_OVERRIDES.update(

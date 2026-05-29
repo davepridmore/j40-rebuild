@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-29 01:18:28
+- Generated: 2026-05-29 19:12:56
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -22,15 +22,15 @@
 - `capture_brake_specs_then_order`: 6
 - `confirm_price_then_buy`: 8
 - `confirm_procured_receipt`: 5
-- `defer_as_non_baseline`: 5
+- `defer_as_non_baseline`: 4
 - `defer_until_baseline_closure`: 1
 - `hold_until_body_closed`: 1
 - `longman_hose_pipe_order_ready`: 4
 - `open_inspect_then_order_standard_brake_parts`: 1
-- `review`: 4
+- `review`: 7
 - `runner_spec_controlled`: 2
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
-- `stock_audit_then_local_topup`: 3
+- `stock_audit_then_local_topup`: 1
 - `track_in_flight_order`: 8
 
 ## Timing Windows
@@ -42,10 +42,10 @@
 - `in_flight_now`: 13
 - `longman_mills_quote_pack`: 4
 - `merged_suspension_brake_window`: 7
-- `post_baseline_only`: 6
+- `post_baseline_only`: 5
 - `post_tub_off_inspection`: 11
-- `pre_order_audit`: 3
-- `review`: 14
+- `pre_order_audit`: 1
+- `review`: 17
 - `runner_spec_controlled`: 2
 
 ## Immediate Actions (Now)

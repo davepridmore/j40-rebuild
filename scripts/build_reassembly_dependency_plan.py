@@ -334,6 +334,40 @@ def build_procurement_decisions(
                 "or mechanic-labelled sample. If free length, end fittings, bracket groove, thread/seat, hose rating, "
                 "or route clearance are uncertain, collect photos and price only."
             )
+        elif entry_id == "part_front_disc_pads_hardware":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "brake_identification_and_samples"
+            action = "measure_label_keep_samples_then_order"
+            reason = (
+                "May 29 photos identify visible Sumitomo fixed front calipers; pads/hardware still wait for "
+                "pad outline, backing-plate ears, retaining pin/spring/clip style, and rotor dimensions from the truck."
+            )
+        elif entry_id == "part_front_caliper_rebuild_or_replace_pair":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "brake_identification_and_samples"
+            action = "measure_label_keep_samples_then_order"
+            reason = (
+                "May 29 photos identify visible Sumitomo fixed front calipers, but exact rebuild/replacement parts "
+                "still wait for cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, "
+                "mounting ears, and pad hardware."
+            )
+        elif entry_id == "part_front_brake_hose_pair":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "brake_identification_and_samples"
+            action = "measure_label_keep_samples_then_order"
+            reason = (
+                "May 29 photos show the front hose bracket and short hard-line route at the Sumitomo caliper, "
+                "but exact purchase still waits for old-sample/free-length, end fitting thread/seat, bracket groove/clip, "
+                "and full-lock clearance."
+            )
+        elif entry_id == "part_front_rotor_service_pair":
+            decision = "inspect_confirm_then_buy_standard"
+            dependency_gate = "brake_open_inspection"
+            action = "open_measure_then_order_standard_service_parts"
+            reason = (
+                "May 29 photos show the fitted front rotors behind Sumitomo calipers, but machine/replace decision still "
+                "waits for measured rotor thickness, diameter, runout, scoring, cracks, hub/register fit, and service limit."
+            )
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"

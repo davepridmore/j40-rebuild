@@ -1751,6 +1751,16 @@
     return `${LONGMAN_RUBBER_3D_VISUAL_PATH}?focus=${encodeURIComponent(partId)}`;
   }
 
+  const CHASSIS_RUBBER_ORIGINAL_MEDIA_IDS = {
+    "BM-ISO-SM": ["20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"],
+    "BM-ISO-LG": ["20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"],
+    "FS-OVAL": ["20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"],
+    "FS-STRIP-L": ["20260517_193503_gp_N9nHjqXw", "20260517_194143_gp_CO7MuMdA"],
+    "FS-STRIP-R": ["20260517_193612_gp_JmbfR0Tw", "20260517_194633_gp_rAjY3gjg"],
+    "BUMP-60010-LONG": ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"],
+    "BUMP-60020-SHORT": ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"],
+  };
+
   const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
     "BM-ISO-SM": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
@@ -1850,11 +1860,29 @@
     return CHASSIS_RUBBER_DRAWING_FILE_MAP[orderId] || null;
   }
 
+  function preferredChassisRubberOriginalImage(row) {
+    const orderId = cleanString(row && row.order_id).toUpperCase();
+    const evidenceImages = Array.isArray(row && row.evidence_images) ? row.evidence_images : [];
+    const evidenceById = Object.fromEntries(evidenceImages.map((image) => [cleanString(image && image.media_id), image]));
+    for (const mediaId of CHASSIS_RUBBER_ORIGINAL_MEDIA_IDS[orderId] || []) {
+      if (evidenceById[mediaId]) {
+        return evidenceById[mediaId];
+      }
+    }
+    if (row && row.image && cleanString(row.image.path).includes("/photos/")) {
+      return row.image;
+    }
+    return evidenceImages.length ? evidenceImages[0] : null;
+  }
+
   function renderChassisRubberOrderImage(row) {
     const drawingFiles = chassisRubberDrawingFiles(row);
+    const originalImage = preferredChassisRubberOriginalImage(row);
     const previewPath = cleanString(drawingFiles && (drawingFiles.preview || drawingFiles.svg));
-    const previewLabel = cleanString(drawingFiles && drawingFiles.preview) ? "3D visual" : "SVG control";
-    const image = previewPath
+    const previewLabel = originalImage ? "Original photo" : cleanString(drawingFiles && drawingFiles.preview) ? "3D visual" : "SVG control";
+    const image = originalImage
+      ? originalImage
+      : previewPath
       ? {
           path: previewPath,
           caption: `${cleanString(row.order_id) || "Rubber"} ${previewLabel}`,
@@ -1865,11 +1893,11 @@
         ? row.image
         : {};
     const prepared = prepareImage(image, row.part || row.order_id || "Rubber order line");
-    const mediaClass = previewPath ? "table-image table-image-contain" : "table-image";
+    const mediaClass = originalImage || previewPath ? "table-image table-image-contain" : "table-image";
     return `
       <td class="table-image-cell">
         ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
-        <span class="table-image-note">${escapeHtml(previewPath ? previewLabel : "Reference")}</span>
+        <span class="table-image-note">${escapeHtml(originalImage || previewPath ? previewLabel : "Reference")}</span>
       </td>
     `;
   }

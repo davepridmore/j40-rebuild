@@ -40,7 +40,7 @@ The current scaffold is not a direct copy or extraction of the Sketchfab model. 
 
 The FreeCAD macro groups the model into chassis, running gear, body, front detail, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references. It includes project-specific visual cues: sand/beige body, white hardtop roof, black bumpers/trim, hardtop side windows, side step boards, diesel/fuel-filler references, mud-terrain tire lugs, rear parking-brake cable attachment hardware, and left-hand-drive steering/pedal/firewall references.
 
-For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, and hover part readout.
+For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, hover part readout, part search, part focus, single-part isolation, and a cabin preset for left-hand-drive interior inspection.
 
 Published Rev B viewer: https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/rev-b/index.html
 

@@ -8,9 +8,9 @@
 
 Run the Ironman Foam Cell suspension change and the brake baseline refresh as one controlled workshop window.
 
-The working brake architecture remains `front disc / rear drum`. The plan now assumes normal brake service parts will be replaced on both axles as baseline work:
+The working brake architecture remains `front disc / rear drum`. May 29 front wheel closeups make the front-disc read more specific: visible Sumitomo fixed front calipers with external bridge/transfer pipes, dust shields, current rotors, and short hard-line/front hose routing. The plan now assumes normal brake service parts will be replaced on both axles as baseline work:
 
-- Front: pads/hardware, front flex hoses, caliper seal/rebuild or caliper replacement as required by fitted caliper family, and rotor machine/replace decision by measured rotor condition.
+- Front: Sumitomo-family pads/hardware after pad-shape confirmation, front flex hoses matched to the visible bracket/hard-line route, caliper seal/rebuild or matched caliper replacement as required by inspection, and rotor machine/replace decision by measured rotor condition.
 - Rear: new parking-brake cable set, new axle hard lines, new rear center flex hose, wheel cylinders, shoes, springs/hold-downs/adjusters, and new line/cable clips.
 - System: brake fluid, bleed consumables, cap/plug set, and master/reservoir/proportioning inspection with replacement only after the installed layout is identified.
 
@@ -46,10 +46,10 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Ironman Foam Cell main suspension kit | 1 kit | Received; contents check open | Count against [suspension-workstream.md](suspension-workstream.md). Main kit is on hand, but final install still waits for the separate `24635FE` front damper pair. |
 | Ironman `24635FE` front damper pair | 2 | Ordered as separate shipment | Must arrive before final suspension assembly or road validation. |
 | Hardwood cribbing and wedge chocks | 8 blocks + 4 wedges | Received | Inspect against [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md); drawing pack is `data/manual/fabrication/suspension_wood_cribbing_rev_a/`. |
-| Front disc pads and retaining hardware | 1 axle set | Needs fitted-caliper identification | Buy by pad shape/caliper family from the truck, not by year alone. |
-| Front caliper rebuild kits or replacement calipers | 2 sides | Needs fitted-caliper identification | Replace/rebuild if seized, leaking, torn boots, damaged pistons, or unknown unsafe condition. |
-| Front rotors | 2 | Inspect/machine/replace | Replace or machine only after diameter/thickness/runout/scoring check. |
-| Front flexible brake hoses | 2 | Spec hold | Match caliper end, chassis bracket, free length, and full-lock clearance. |
+| Front disc pads and retaining hardware | 1 axle set | Visible Sumitomo fixed caliper; pad shape still pending | Buy by actual pad outline and retaining pin/spring/clip style from the truck, not by year alone. |
+| Front Sumitomo fixed-caliper rebuild kits or replacement calipers | 2 sides | Casting visible; piston/kit family pending | Replace/rebuild if seized, leaking, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition. |
+| Front rotors | 2 | Visible; measure before decision | Replace or machine only after diameter/thickness/runout/scoring/service-limit check. |
+| Front flexible brake hoses | 2 | Route visible; end/free-length spec hold | Match chassis bracket/clip, short hard-line/caliper end, free length, and full-lock clearance. |
 | Rear parking-brake cable set | 1 left/right set | Spec hold | Buy new assemblies only. Match both rear cable lengths, sheath lengths, backing-plate ends, equalizer ends, clips, return springs, and adjuster hardware from the old samples. |
 | Rear axle hard brake lines | 2 axle tubes plus fittings | Spec hold | Recreate in brake-rated `4.75 mm / 3/16 in` tube using old lines as bend templates. No bare copper. |
 | Rear center flexible brake hose | 1 | Selected route; order proof pending | Cruiser Corps `553-103` is the selected online route, but match fitting style, old-sample/free length, and fitted route before final fit. |
@@ -90,7 +90,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 
 - Any brake line is opened without caps/plugs, bleed plan, and brake fluid available.
 - The rear parking-brake cables are cut or discarded before both ends and lengths are recorded.
-- Front brake parts are ordered only from `1978 J40` catalog logic without identifying the fitted disc conversion hardware.
+- Front brake parts are ordered only from `1978 J40` catalog logic instead of the visible Sumitomo fixed-caliper hardware, old samples, and measured rotor/hose specs.
 - Differential parts, seals, or bearings are ordered before oil/debris condition and measured inspection findings are recorded.
 - Suspension is allowed to droop with brake hoses, hard lines, parking-brake cables, breathers, or wiring under tension.
 - Final road test happens before brake bleed, leak test, rear adjustment, parking-brake test, suspension torque marks, and alignment.

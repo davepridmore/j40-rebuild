@@ -305,6 +305,38 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Aamir is office/runner support, not a mechanic, but he can buy against a written hose spec or mechanic-labelled sample. If free length, end fittings, bracket groove, thread/seat, hose rating, or route clearance are uncertain, collect photos and price only.",
         )
 
+    if entry_id == "part_front_disc_pads_hardware":
+        return (
+            "capture_brake_specs_then_order",
+            "merged_suspension_brake_window",
+            "brake_baseline_release_hold",
+            "Visible May 29 Sumitomo fixed calipers support pad-family matching, but exact pads/hardware still wait for pad outline, retaining hardware, and rotor measurements.",
+        )
+
+    if entry_id == "part_front_caliper_rebuild_or_replace_pair":
+        return (
+            "capture_brake_specs_then_order",
+            "merged_suspension_brake_window",
+            "brake_baseline_release_hold",
+            "Visible May 29 Sumitomo fixed calipers support a more specific local-market ask, but exact rebuild/replacement parts still wait for casting, piston, bleed screw, fitting, mount, and pad-hardware measurements.",
+        )
+
+    if entry_id == "part_front_brake_hose_pair":
+        return (
+            "capture_brake_specs_then_order",
+            "merged_suspension_brake_window",
+            "brake_baseline_release_hold",
+            "Visible May 29 route supports the front-hose spec, but exact purchase waits for old sample/free length, end fittings, bracket groove/clip, and full-lock clearance capture.",
+        )
+
+    if entry_id == "part_front_rotor_service_pair":
+        return (
+            "open_inspect_then_order_standard_brake_parts",
+            "merged_suspension_brake_window",
+            "brake_baseline_release_hold",
+            "Visible current rotors sit behind the Sumitomo calipers, but machine/replace decision waits for thickness, diameter, runout, scoring, cracks, hub/register fit, and service limit.",
+        )
+
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
         return (
             "capture_brake_specs_then_order",

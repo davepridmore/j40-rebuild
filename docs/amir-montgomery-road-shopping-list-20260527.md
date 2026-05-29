@@ -6,6 +6,44 @@ Safety rule: brake hydraulic parts must be automotive brake-rated. If the item a
 
 Refurbishment rule added 2026-05-29: radiator and brake booster refurbishment can go through Amir, but payment is blocked until the video gates in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md) are complete and approved. Amir can collect quotes freely; he must not approve the technical repair himself.
 
+Evidence refresh, 2026-05-29:
+
+- Gmail MCP import `data/processed/generated/comms_ingest_2026-05-29_categorized.csv`: `32` messages read, `18` categorized after `2026/05/27`.
+- WhatsApp MCP import `data/processed/generated/mcp_whatsapp_j40_summary.json`: `11` selected chats, `1768` messages, `285` media items.
+- Fresh Gmail evidence changes the runner list: do not duplicate the ToolsMart `TM25805` air/flaring order, AliExpress `3073111533377489` Nitto male-coupler order, Daraz `242695068680938` blow-torch order, or PakWheels `1076462` clutch-master order. Amir should receipt-check those when they arrive, not rebuy them locally unless explicitly told they are urgent duplicates.
+
+## 2026-05-29 Image-Backed Runner Cards
+
+Use this card sheet on Amir's phone before the longer tables below.
+
+![Amir image-backed runner cards](amir-montgomery-road-specific-image-cards-20260529.png)
+
+| Image | Item | Current action | Exact instruction |
+| --- | --- | --- | --- |
+| <img src="amir_montgomery_real_images/brake_pipe_pvf.jpg" width="110"> | Brake pipe coil | Receipt-check existing Amir purchase first | Must be `4.75 mm / 3/16 in` automotive brake-rated Bundy/PVF/zinc-coated steel or good brake-rated CuNi. No bare copper, plumbing tube, or compression tube. Do not duplicate if the existing 25 ft coil passes check. |
+| <img src="amir_montgomery_real_images/star_washer.jpg" width="110"> | Serrated/star grounding washers | Receipt-check existing Amir purchase | Confirm M6 x120, M8 x60, and M10 x30 intent. Reject M2 washers, flat washers, or split spring washers sold as star washers. |
+| <img src="amir_montgomery_real_images/sledge_3lb.jpg" width="110"> | 3 lb sledge / club hammer | Receipt-check existing Amir purchase | Confirm real 3 lb short-handle hammer, tight head, safe handle. |
+| <img src="amir_montgomery_real_images/p_clip.jpg" width="110"> | Rubber-lined P-clips | Buy if missing | Buy mixed line supports for `4.75 mm`, `6 mm`, and `8 mm` lines. Use permanent supports every `300-400 mm`; no cable ties as final support. |
+| <img src="amir_montgomery_real_images/brake_hose_u_clip.jpg" width="110"> | Brake flex-hose U-clips | Buy if available at sensible price | Buy 8-12 mixed retaining clips. Match selected hose bracket groove and chassis tab thickness before final use. |
+| <img src="amir_montgomery_real_images/grommets.jpg" width="110"> | Rubber grommets | Buy if missing | Buy 6/8/10/12 mm ID plus 16/20/25 mm ID mixed. Use for firewall/pass-through and anti-chafe points. |
+| <img src="amir_montgomery_real_images/flare_wrench.webp" width="110"> | Metric flare-nut wrench set | Buy only if not already covered | Must cover likely brake-line hex sizes around 10, 11, 12, 14, and 17 mm. This is a line wrench set, not a normal open spanner. |
+| <img src="amir_montgomery_real_images/brake_tee.jpg" width="110"> | Brake tee / inline unions / tube nuts | Quote/photo only | Brake-rated double/inverted flare fittings only. Buy only after old sample confirms thread and seat. No plumbing brass, no compression unions. |
+| <img src="../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg" width="110"> | Front brake flex hose ends | Quote/photo only | Complete crimped automotive brake hose assemblies only, DOT/SAE J1401 or OEM-equivalent. No generic hose cut from roll. |
+| <img src="../deliverables/selling_site_images/images/manual_overrides/rear_axle_hardline_union_current_car_crop_20260503.jpg" width="110"> | Rear axle union / T area | Quote/photo only | Use installed photo for recognition only. Final purchase needs removed old sample or written spec. |
+| <img src="../photos/20260514_111300_user_brake_flare_side_view.png" width="110"> | Brake flare side view | Spec evidence | This supports a Toyota-style double/inverted-flare working basis, but straight-on seat/thread confirmation still controls purchase. |
+| <img src="../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg" width="110"> | Air hose / Nitto couplers | Wait for ordered setup unless urgent | ToolsMart `TM25805` already includes Licota `9 m` PU hose with Nitto couplers, Licota `1/4 in` quick coupler, and PARD flaring/cutting set. AliExpress `3073111533377489` has 5 Nitto male couplers shipped. Amir may buy local adapters only if the exact compressor/tool thread is in hand. |
+| <img src="../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg" width="110"> | Brake booster / servo | Refurb quote only | Take old booster as sample. Payment waits for the video gate: sample identity, side-by-side match, vacuum hold, assist movement, contamination check, and final acceptance video. |
+| <img src="../photos/20260512_100000_user_front_support_radiator_pickups_context.png" width="110"> | Radiator / support route | Refurb quote only | Take old radiator/support context. Payment waits for the video gate: sample identity, shop decision, pressure/leak test, core/build proof, proper mounting proof, and final acceptance video. |
+
+## Do Not Duplicate After Gmail Refresh
+
+| Evidence | Item | Amir instruction |
+| --- | --- | --- |
+| Gmail `TM25805`, 2026-05-27, ToolsMart, PKR `24,320` | Licota `1/4 in` quick coupler, PARD double flaring/cutting set `3/16-5/8`, Licota `9 m` PU hose with Nitto quick couplers | Do not buy another flaring kit or air hose locally. Only buy a small deburrer/reamer if the delivered PARD kit does not include a usable one. |
+| Gmail `3073111533377489`, 2026-05-28 shipped, AliExpress, PKR `3,072` | 5PCS Nitto male coupling air fittings | Do not duplicate Nitto male couplers unless urgent local adapters are needed and the thread is proven by sample. |
+| Gmail `242695068680938`, 2026-05-27, Daraz, PKR `3,194` | Multi-purpose blow torch head | Treat blow torch as ordered. Receipt-check on arrival; do not rebuy on Montgomery Road unless this order fails. |
+| Gmail `1076462`, 2026-05-29, PakWheels, PKR `3,794` | Trupart clutch master cylinder for Toyota BJ40/BJ60/HJ60, `FM-1246` | Treat as ordered candidate stock. Receipt-check only; do not buy a random clutch master locally without old-sample fit confirmation. |
+
 ## Refurbishment Jobs Assigned To Amir
 
 | Item | Route | Video gate before payment |
@@ -66,7 +104,7 @@ User clarification 2026-05-28: mark these items as procured by Amir. They are no
 
 | Priority | Item | Quantity | Exact ask | Accept | Reject / call first |
 | --- | ---: | ---: | --- | --- | --- |
-| P0 | Tube deburrer / reamer | 1 | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube |
+| P0 | Tube deburrer / reamer | 1 only if PARD kit lacks it | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube; duplicate cutter/flaring kit while ToolsMart `TM25805` is pending |
 
 ## Replacement Pipe / Hose Quote Pack
 
@@ -128,15 +166,16 @@ Current issue: the compressor hose/fittings do not fit either side. Do not buy a
 Already ordered:
 
 - Almiraj bundle included INGCO `AH1151` / `AH1151-3` air hose. This is a small-bore hose: `15 m`, `5 mm ID x 8 mm OD`, usually Nitto-type on `AH1151-3`.
-- ToolsMart order `TM25776` includes a Licota `9 m` PU hose roll with Nitto-type quick couplers. This is the intended larger-bore follow-up, but it is still pending delivery.
+- ToolsMart order `TM25805` is now confirmed by Gmail on 2026-05-27: Licota `9 m` PU hose roll with Nitto-type quick couplers, Licota `1/4 in` one-touch quick coupler, and PARD double flaring/cutting set `3/16-5/8`. This is the intended larger-bore follow-up, but it is still pending physical receipt.
+- AliExpress order `3073111533377489` is confirmed shipped by Gmail on 2026-05-28: `5PCS NITTO Male Coupling Air...`, order total PKR `3,072`.
 
 If Amir is buying locally now, ask for:
 
 | Item | Exact ask | Quantity | Notes |
 | --- | --- | ---: | --- |
-| Nitto/Japanese air quick-coupler matched set | `1/4 inch` air-line quick coupler set, Nitto/Japanese industrial type | 1 full set | Must include male plugs and female sockets/couplers so compressor, hose, blow gun, tire inflator, and impact wrench all use the same standard. |
+| Nitto/Japanese air quick-coupler matched set | `1/4 inch` air-line quick coupler set, Nitto/Japanese industrial type | quote only unless urgent | Already ordered through ToolsMart/AliExpress. Buy locally only if the exact compressor/tool thread is in hand and the existing order will not arrive in time. |
 | Thread adapters | `1/4 inch BSP` male/female adapters, plus `1/4 inch NPT` only if the tool thread proves NPT | mixed set | Pakistan/INGCO/TOTAL stock is often BSP-style, but the actual tool/compressor threads control. Take parts to shop if possible. |
-| Larger air hose if the ToolsMart hose is not arriving soon | `8-10 mm ID` / `3/8 inch` air hose, `9-15 m`, Nitto/Japanese quick couplers, minimum `12 bar` working pressure | 1 | Needed for 1/2 inch impact wrench airflow. The `5 mm ID x 8 mm OD` hose is fine for blow gun/tire inflator/light tools but may choke the impact. |
+| Larger air hose if the ToolsMart hose is not arriving soon | `8-10 mm ID` / `3/8 inch` air hose, `9-15 m`, Nitto/Japanese quick couplers, minimum `12 bar` working pressure | quote only unless urgent | ToolsMart `TM25805` should cover this. Buy locally only if the order fails or the shop confirms the ordered hose is too small for the impact wrench. |
 | PTFE tape or air-thread sealant | For threaded air fittings | 1 roll/tube | Use on threaded joints only; do not tape quick-coupler noses. |
 
 Market instruction:

@@ -137,6 +137,17 @@ HTML_TEMPLATE = Template(
       background: var(--accent);
       border-color: var(--accent);
     }
+    input[type="search"] {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 9px;
+      background: #111315;
+      color: var(--text);
+      font: inherit;
+      outline: none;
+    }
+    input[type="search"]:focus { border-color: var(--accent); }
     #status {
       position: absolute;
       left: 16px;
@@ -189,6 +200,38 @@ HTML_TEMPLATE = Template(
       display: grid;
       gap: 6px;
       margin: 10px 0 0;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 9px;
+    }
+    .part-results {
+      display: grid;
+      gap: 6px;
+      margin-top: 8px;
+      max-height: 210px;
+      overflow: auto;
+    }
+    .part-result {
+      display: grid;
+      gap: 2px;
+      width: 100%;
+      min-height: 44px;
+      text-align: left;
+      background: var(--panel-2);
+    }
+    .part-result span {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .part-result small {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: capitalize;
     }
     .control-row {
       display: flex;
@@ -303,6 +346,17 @@ HTML_TEMPLATE = Template(
         </div>
       </section>
       <section class="section">
+        <h2>Navigate</h2>
+        <input id="partSearch" type="search" placeholder="Find part">
+        <div class="button-grid">
+          <button id="cabinView">Cabin</button>
+          <button id="focusPart">Focus</button>
+          <button id="isolatePart">Isolate</button>
+          <button id="showAll">Show All</button>
+        </div>
+        <div id="partResults" class="part-results"></div>
+      </section>
+      <section class="section">
         <h2>Groups</h2>
         <div id="groups" class="group-list"></div>
       </section>
@@ -355,6 +409,8 @@ const state = {
   opacity: 0.94,
   wire: true,
   visible: Object.fromEntries(GROUP_ORDER.map((group) => [group, true])),
+  selected: null,
+  isolatedPart: null,
   hover: null,
   mouse: [0, 0]
 };
@@ -495,6 +551,53 @@ function mergeMesh(target, source) {
   target.lines.push(...source.lines);
 }
 
+function boundsFromPositions(positions) {
+  const min = [Infinity, Infinity, Infinity];
+  const max = [-Infinity, -Infinity, -Infinity];
+  for (let i = 0; i < positions.length; i += 3) {
+    for (let axis = 0; axis < 3; axis++) {
+      const value = positions[i + axis];
+      min[axis] = Math.min(min[axis], value);
+      max[axis] = Math.max(max[axis], value);
+    }
+  }
+  return { min, max };
+}
+
+function offsetBounds(bounds, offset) {
+  return {
+    min: addVec(bounds.min, offset),
+    max: addVec(bounds.max, offset)
+  };
+}
+
+function unionBounds(boundsList) {
+  const min = [Infinity, Infinity, Infinity];
+  const max = [-Infinity, -Infinity, -Infinity];
+  for (const bounds of boundsList) {
+    for (let axis = 0; axis < 3; axis++) {
+      min[axis] = Math.min(min[axis], bounds.min[axis]);
+      max[axis] = Math.max(max[axis], bounds.max[axis]);
+    }
+  }
+  return min[0] === Infinity ? null : { min, max };
+}
+
+function boundsCenter(bounds) {
+  return [
+    (bounds.min[0] + bounds.max[0]) / 2,
+    (bounds.min[1] + bounds.max[1]) / 2,
+    (bounds.min[2] + bounds.max[2]) / 2
+  ];
+}
+
+function boundsRadius(bounds) {
+  const dx = bounds.max[0] - bounds.min[0];
+  const dy = bounds.max[1] - bounds.min[1];
+  const dz = bounds.max[2] - bounds.min[2];
+  return Math.max(0.12, Math.hypot(dx, dy, dz) / 2);
+}
+
 function buildMesh(part) {
   const color = hexToRgba(part.color, 1);
   const mesh = { positions: [], normals: [], colors: [], lines: [] };
@@ -510,7 +613,7 @@ function buildMesh(part) {
   const center = part.kind === "box"
     ? modelToWorld([part.x + part.length / 2, part.y, part.z + part.height / 2])
     : modelToWorld([part.x, part.y, part.z]);
-  return { part, mesh, center, group: part.group };
+  return { part, mesh, center, group: part.group, bounds: boundsFromPositions(mesh.positions) };
 }
 
 const objects = PARTS.map(buildMesh);
@@ -667,6 +770,11 @@ function groupOffset(group) {
   return mulVec(base, state.explode);
 }
 
+function isObjectVisible(object) {
+  if (state.isolatedPart) return object === state.isolatedPart;
+  return Boolean(state.visible[object.group]);
+}
+
 function resize() {
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const width = Math.max(1, Math.floor(canvas.clientWidth * dpr));
@@ -703,7 +811,7 @@ function draw() {
   gl.uniformMatrix4fv(solidMvpLoc, false, new Float32Array(cam.vp));
   gl.uniform1f(opacityLoc, state.opacity);
   for (const object of objects) {
-    if (!state.visible[object.group]) continue;
+    if (!isObjectVisible(object)) continue;
     const model = mat4Translate(groupOffset(object.group));
     gl.uniformMatrix4fv(solidModelLoc, false, new Float32Array(model));
     setAttribute(solidProgram, "aPosition", object.positionBuffer, 3);
@@ -718,12 +826,25 @@ function draw() {
     gl.uniformMatrix4fv(gl.getUniformLocation(lineProgram, "uMvp"), false, new Float32Array(cam.vp));
     gl.uniform4fv(gl.getUniformLocation(lineProgram, "uColor"), new Float32Array([0.02, 0.025, 0.03, 0.34]));
     for (const object of objects) {
-      if (!state.visible[object.group]) continue;
+      if (!isObjectVisible(object)) continue;
       const model = mat4Translate(groupOffset(object.group));
       gl.uniformMatrix4fv(gl.getUniformLocation(lineProgram, "uModel"), false, new Float32Array(model));
       setAttribute(lineProgram, "aPosition", object.lineBuffer, 3);
       gl.drawArrays(gl.LINES, 0, object.lineCount);
     }
+  }
+
+  if (state.selected && isObjectVisible(state.selected)) {
+    gl.useProgram(lineProgram);
+    gl.uniformMatrix4fv(gl.getUniformLocation(lineProgram, "uMvp"), false, new Float32Array(cam.vp));
+    gl.uniform4fv(gl.getUniformLocation(lineProgram, "uColor"), new Float32Array([0.47, 0.73, 0.79, 1.0]));
+    gl.uniformMatrix4fv(
+      gl.getUniformLocation(lineProgram, "uModel"),
+      false,
+      new Float32Array(mat4Translate(groupOffset(state.selected.group)))
+    );
+    setAttribute(lineProgram, "aPosition", state.selected.lineBuffer, 3);
+    gl.drawArrays(gl.LINES, 0, state.selected.lineCount);
   }
 
   document.getElementById("drawCount").textContent = `${drawn} visible parts`;
@@ -744,7 +865,7 @@ function updateHover(cam) {
   let best = null;
   let bestDistance = 18;
   for (const object of objects) {
-    if (!state.visible[object.group]) continue;
+    if (!isObjectVisible(object)) continue;
     const center = addVec(object.center, groupOffset(object.group));
     const screen = projectToScreen(center, cam.vp);
     if (screen[2] < -1 || screen[2] > 1) continue;
@@ -756,7 +877,7 @@ function updateHover(cam) {
   }
   if (best !== state.hover) {
     state.hover = best;
-    renderPartInfo(best);
+    if (!state.selected) renderPartInfo(best);
   }
   const tooltip = document.getElementById("tooltip");
   if (best) {
@@ -790,6 +911,122 @@ function renderPartInfo(object) {
   `;
 }
 
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function visibleBoundsForObject(object) {
+  return offsetBounds(object.bounds, groupOffset(object.group));
+}
+
+function focusBounds(bounds, options = {}) {
+  if (!bounds) return;
+  const center = boundsCenter(bounds);
+  const radius = boundsRadius(bounds);
+  state.target = center;
+  state.distance = clamp(options.distance || radius * 2.7, 0.28, 13);
+  if (typeof options.yaw === "number") state.yaw = options.yaw;
+  if (typeof options.pitch === "number") state.pitch = options.pitch;
+}
+
+function focusObject(object) {
+  if (!object) return;
+  state.selected = object;
+  focusBounds(visibleBoundsForObject(object), { distance: boundsRadius(visibleBoundsForObject(object)) * 3.0 });
+  renderPartInfo(object);
+}
+
+function focusGroup(group, options = {}) {
+  const groupBounds = unionBounds(objects
+    .filter((object) => object.group === group)
+    .map((object) => visibleBoundsForObject(object)));
+  focusBounds(groupBounds, options);
+}
+
+function syncGroupControls() {
+  for (const input of document.querySelectorAll("#groups input[data-group]")) {
+    input.checked = Boolean(state.visible[input.dataset.group]);
+  }
+}
+
+function setVisibleGroups(groups) {
+  const wanted = new Set(groups);
+  state.visible = Object.fromEntries(GROUP_ORDER.map((group) => [group, wanted.has(group)]));
+  state.isolatedPart = null;
+  syncGroupControls();
+}
+
+function showAllParts() {
+  state.visible = Object.fromEntries(GROUP_ORDER.map((group) => [group, true]));
+  state.isolatedPart = null;
+  state.opacity = 0.94;
+  state.explode = 0.18;
+  document.getElementById("opacity").value = "94";
+  document.getElementById("explode").value = "18";
+  syncGroupControls();
+  viewPreset("iso");
+}
+
+function cabinView() {
+  setVisibleGroups(["interior"]);
+  state.selected = objects.find((object) => object.part.name === "steering_wheel") || null;
+  state.opacity = 1.0;
+  state.explode = 0.0;
+  state.wire = true;
+  document.getElementById("opacity").value = "100";
+  document.getElementById("explode").value = "0";
+  document.getElementById("wire").checked = true;
+  focusGroup("interior", { yaw: Math.PI, pitch: 0.18, distance: 2.35 });
+  renderPartInfo(state.selected);
+}
+
+const searchIndex = objects.map((object) => ({
+  object,
+  label: `${object.part.group.replaceAll("_", " ")} / ${object.part.name.replaceAll("_", " ")}`,
+  key: `${object.part.group} ${object.part.name} ${object.part.notes || ""}`.toLowerCase().replaceAll("_", " ")
+}));
+
+function searchMatches(query) {
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!terms.length) return [];
+  return searchIndex
+    .map((item) => ({
+      item,
+      score: terms.reduce((score, term) => score + (item.key.includes(term) ? 1 : -4), 0)
+    }))
+    .filter((entry) => entry.score > 0)
+    .sort((a, b) => b.score - a.score || a.item.label.localeCompare(b.item.label))
+    .slice(0, 10)
+    .map((entry) => entry.item);
+}
+
+function renderSearchResults() {
+  const container = document.getElementById("partResults");
+  const query = document.getElementById("partSearch").value;
+  container.textContent = "";
+  for (const item of searchMatches(query)) {
+    const button = document.createElement("button");
+    button.className = "part-result";
+    const name = document.createElement("span");
+    name.textContent = item.object.part.name.replaceAll("_", " ");
+    const group = document.createElement("small");
+    group.textContent = item.object.part.group.replaceAll("_", " ");
+    button.append(name, group);
+    button.addEventListener("click", () => {
+      state.isolatedPart = null;
+      state.visible[item.object.group] = true;
+      syncGroupControls();
+      focusObject(item.object);
+    });
+    container.appendChild(button);
+  }
+}
+
+function bestSearchObject() {
+  const matches = searchMatches(document.getElementById("partSearch").value);
+  return matches.length ? matches[0].object : state.selected;
+}
+
 function viewPreset(name) {
   for (const button of document.querySelectorAll("#toolbar button[data-view]")) {
     button.classList.toggle("active", button.dataset.view === name);
@@ -802,6 +1039,9 @@ function viewPreset(name) {
     state.yaw = Math.PI; state.pitch = 0.02; state.distance = 5.0;
   } else if (name === "top") {
     state.yaw = -Math.PI / 2; state.pitch = Math.PI / 2 - 0.015; state.distance = 6.0;
+  } else if (name === "cabin") {
+    cabinView();
+    return;
   }
   state.target = [0, 0, 0];
 }
@@ -816,6 +1056,7 @@ function buildControls() {
   for (const group of GROUP_ORDER.filter((name) => groupStats.has(name))) {
     const label = document.createElement("label");
     label.className = "group";
+    label.dataset.group = group;
     label.innerHTML = `
       <input type="checkbox" checked data-group="${group}">
       <span class="swatch" style="background:${groupColors.get(group)}"></span>
@@ -827,8 +1068,17 @@ function buildControls() {
   groupContainer.addEventListener("change", (event) => {
     const input = event.target;
     if (input && input.dataset && input.dataset.group) {
+      state.isolatedPart = null;
       state.visible[input.dataset.group] = input.checked;
     }
+  });
+  groupContainer.addEventListener("dblclick", (event) => {
+    const row = event.target.closest("label.group");
+    if (!row) return;
+    state.isolatedPart = null;
+    state.visible[row.dataset.group] = true;
+    syncGroupControls();
+    focusGroup(row.dataset.group);
   });
   document.getElementById("explode").addEventListener("input", (event) => {
     state.explode = Number(event.target.value) / 100;
@@ -839,18 +1089,52 @@ function buildControls() {
   document.getElementById("wire").addEventListener("change", (event) => {
     state.wire = event.target.checked;
   });
+  document.getElementById("partSearch").addEventListener("input", renderSearchResults);
+  document.getElementById("partSearch").addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    event.preventDefault();
+    const object = bestSearchObject();
+    if (object) {
+      state.isolatedPart = null;
+      state.visible[object.group] = true;
+      syncGroupControls();
+      focusObject(object);
+    }
+  });
+  document.getElementById("cabinView").addEventListener("click", cabinView);
+  document.getElementById("focusPart").addEventListener("click", () => {
+    const object = bestSearchObject();
+    if (!object) return;
+    state.isolatedPart = null;
+    state.visible[object.group] = true;
+    syncGroupControls();
+    focusObject(object);
+  });
+  document.getElementById("isolatePart").addEventListener("click", () => {
+    const object = bestSearchObject();
+    if (!object) return;
+    state.selected = object;
+    state.isolatedPart = object;
+    state.visible[object.group] = true;
+    syncGroupControls();
+    focusObject(object);
+  });
+  document.getElementById("showAll").addEventListener("click", showAllParts);
   document.getElementById("resetView").addEventListener("click", () => viewPreset("iso"));
   for (const button of document.querySelectorAll("#toolbar button[data-view]")) {
     button.addEventListener("click", () => viewPreset(button.dataset.view));
   }
+  renderSearchResults();
 }
 
 let dragging = false;
 let dragMode = "orbit";
+let dragMoved = false;
 let last = [0, 0];
 canvas.addEventListener("contextmenu", (event) => event.preventDefault());
 canvas.addEventListener("pointerdown", (event) => {
   dragging = true;
+  dragMoved = false;
   dragMode = event.shiftKey || event.button === 2 ? "pan" : "orbit";
   last = [event.clientX, event.clientY];
   canvas.setPointerCapture(event.pointerId);
@@ -861,6 +1145,7 @@ canvas.addEventListener("pointermove", (event) => {
   if (!dragging) return;
   const dx = event.clientX - last[0];
   const dy = event.clientY - last[1];
+  if (Math.hypot(dx, dy) > 2) dragMoved = true;
   last = [event.clientX, event.clientY];
   if (dragMode === "orbit") {
     state.yaw += dx * 0.006;
@@ -874,10 +1159,18 @@ canvas.addEventListener("pointermove", (event) => {
 canvas.addEventListener("pointerup", (event) => {
   dragging = false;
   try { canvas.releasePointerCapture(event.pointerId); } catch (_) {}
+  if (!dragMoved && state.hover) {
+    state.selected = state.hover;
+    renderPartInfo(state.selected);
+  }
+});
+canvas.addEventListener("dblclick", () => {
+  const object = state.hover || state.selected;
+  if (object) focusObject(object);
 });
 canvas.addEventListener("wheel", (event) => {
   event.preventDefault();
-  state.distance = Math.max(2.2, Math.min(13, state.distance * Math.exp(event.deltaY * 0.001)));
+  state.distance = Math.max(0.18, Math.min(13, state.distance * Math.exp(event.deltaY * 0.001)));
 }, { passive: false });
 
 buildControls();

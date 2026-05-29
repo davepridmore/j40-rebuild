@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T01:26:10+05:00",
+  "generated_at": "2026-05-29T19:13:02+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -53,18 +53,18 @@ window.J40_DASHBOARD_DATA = {
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 69,
     "parts_ordered_pending_delivery": 9,
-    "urgent_part_actions": 17,
-    "capture_data_tasks": 112,
-    "capture_data_tasks_now": 96,
-    "supply_rows_tracked": 277,
+    "urgent_part_actions": 15,
+    "capture_data_tasks": 109,
+    "capture_data_tasks_now": 94,
+    "supply_rows_tracked": 276,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
-    "whatsapp_j40_media_items": 283,
-    "whatsapp_j40_media_images": 229,
-    "whatsapp_j40_media_videos": 31,
-    "other_build_reference_media": 205,
-    "other_build_reference_images": 184,
-    "other_build_reference_videos": 21,
+    "whatsapp_j40_media_items": 285,
+    "whatsapp_j40_media_images": 230,
+    "whatsapp_j40_media_videos": 32,
+    "other_build_reference_media": 207,
+    "other_build_reference_images": 185,
+    "other_build_reference_videos": 22,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
     "contact_register_entries": 29,
@@ -10218,7 +10218,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 129,
-      "reference_token_count": 48,
+      "reference_token_count": 50,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -11798,8 +11798,8 @@ window.J40_DASHBOARD_DATA = {
           "component_group": "front_support",
           "current_status": "existing_measurements_imported_dry_fit_required",
           "planned_action": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required.",
-          "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
-          "notes": "User update 2026-05-13 changes the fixing method: no welding by default. Existing-side measurements are imported; final release still needs right-side top screw transfer, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
+          "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
+          "notes": "User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
         }
       ],
       "issue_jobs": [
@@ -11951,7 +11951,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Front Radiator Two Side Retention Fabrication 20260508",
           "status": "existing_measurements_imported_dry_fit_required",
-          "detail": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required. Notes: User update 2026-05-13 changes the fixing method: no welding by default. Existing-side measurements are imported; final release still needs right-side top screw transfer, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
+          "detail": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required. Notes: User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
         },
         {
           "label": "Component Task \u00b7 Chassis Bracket Fabrication Install 20260508",
@@ -18212,15 +18212,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260405_234652.jpg",
-            "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
-            "captured_date": "2026-04-05",
-            "captured_time": "23:46:52",
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
             "media_type": "photo",
-            "component_group": "body_floor",
-            "specific_component": "floor_seam_and_body_mount_rust",
-            "stage": "rust_assessment",
-            "media_id": "20260405_234652",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           }
         },
@@ -18313,15 +18313,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260405_234652.jpg",
-            "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
-            "captured_date": "2026-04-05",
-            "captured_time": "23:46:52",
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
             "media_type": "photo",
-            "component_group": "body_floor",
-            "specific_component": "floor_seam_and_body_mount_rust",
-            "stage": "rust_assessment",
-            "media_id": "20260405_234652",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           }
         },
@@ -18366,15 +18366,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
             "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
+            "captured_time": "00:43:45",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
+            "media_id": "20260502_004345_gp_yK8VYzMQ",
             "matched_tokens": []
           }
         },
@@ -18503,15 +18503,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
             "captured_date": "2026-05-17",
-            "captured_time": "19:41:43",
+            "captured_time": "19:35:03",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "fabrication_measurement",
-            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
             "matched_tokens": []
           }
         },
@@ -18628,15 +18628,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
             "captured_date": "2026-05-17",
-            "captured_time": "19:46:33",
+            "captured_time": "19:36:12",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "fabrication_measurement",
-            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
             "matched_tokens": []
           }
         },
@@ -30524,7 +30524,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 280913
+            "bytes": 282335
           },
           "file_count": 27
         },
@@ -30600,7 +30600,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "3 electrical buy rows still open; 1 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -30667,7 +30667,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 1 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "Issue checks",
@@ -30692,7 +30692,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "4 part rows still require price confirmation/order placement."
+          "detail": "2 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -30711,45 +30711,6 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
-        {
-          "entry_id": "quote_rubber_grommet_set_chat",
-          "workstream": "electrical_reset",
-          "item": "Electrical wire grommet set (200pcs)",
-          "status": "quote",
-          "procurement_stage": "deferred_optional",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "7860",
-          "amount_status": "confirmed",
-          "currency": "PKR",
-          "vendor": "starshop.pk",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "quote_rubber_grommet_set_chat",
-          "evidence_ref": "fj40-00276",
-          "notes": "Reference quote only; duplicate path now superseded by the received AliExpress grommet set Vendor backfilled from J40_Costs.xlsx.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "Electrical wire grommet set (200pcs) \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
         {
           "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
           "workstream": "electrical_reset",
@@ -30824,84 +30785,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "graded_fasteners",
             "matched_tokens": [
               "fastener"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_firewall_grommet_set_large_power",
-          "workstream": "electrical_reset",
-          "item": "Additional firewall grommet set IDs 16/20/25 mm",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_firewall_grommet_set_large_power",
-          "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list|docs_wire-heavy-resize-cutlist",
-          "notes": "Large pass-through sizes still needed for protected heavy feed runs and split-loom trunk crossings",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-            "caption": "Additional firewall grommet set IDs 16/20/25 mm \u00b7 automotive cable reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "heavy_battery_cable",
-            "matched_tokens": [
-              "cable"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_firewall_grommet_set_small_medium",
-          "workstream": "electrical_reset",
-          "item": "Additional firewall grommet set IDs 6/8/10/12 mm",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_firewall_grommet_set_small_medium",
-          "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list",
-          "notes": "Additional small and medium pass-through sizes still needed to cover loom branch and signal wire firewall exits",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "Additional firewall grommet set IDs 6/8/10/12 mm \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -31547,9 +31430,9 @@ window.J40_DASHBOARD_DATA = {
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)"
+                "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
+                "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)",
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -31665,10 +31548,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Star / lock washer pack - M6 x120, M8 x60, M10 x30 (received_candidate; delivery needs_confirmation; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)"
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
+                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)"
               ]
             },
             {
@@ -31913,8 +31796,8 @@ window.J40_DASHBOARD_DATA = {
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)"
+                "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)",
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -32030,10 +31913,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
                 "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)",
-                "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)"
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
+                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
+                "Split conduit / braided sleeve inventory - 14/16 mm, 5m lengths (received; delivery received; amount missing)"
               ]
             }
           ]
@@ -33690,7 +33573,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 280913
+            "bytes": 282335
           },
           "file_count": 27
         },
@@ -33768,7 +33651,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 85349
+            "bytes": 87444
           },
           "file_count": 13
         },
@@ -33886,12 +33769,108 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Fabricate/mock up the compact chassis-mounted battery power carrier Rev F only after mapping the battery cavity: use the May 17 actual installed Daewoo DLS120 battery measurement photos as the fixed exclusion block, keep the standard N70/27-class 318 x 180 x 230 envelope as fallback comparison until the final numbers are transcribed, measure front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, bonnet/terminal-height volumes, battery lift-out path, formed chassis saddle geometry, and adjustable body-side offset-bar setting. Trial the widened front access-ladder stack: 660 x 310 spine, 340 x 265 battery tray with removable hold-down, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D vertical 360 x 245 aluminium base attached flat to the main metal service sheet with exact 300 x 197 insulating sheet and the existing covered relay box outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, red relay power pipe entering the relay top hole closest to the battery, relay output power bundle leaving the second top relay hole, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes, and the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure, central battery-to-far-side-cutoff input route, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched branch routes, 80 mm cable gutter, and cable-lug depth templates. May 14 image-based chassis estimate: start with tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central chassis pickup centreline into the edge cavity, adjustable 160-230 mm via offset bars. The active design keeps relay/MIDI/cutoff off the inboard engine/LHD side unless the widened access-ladder mock-up fails by measurement. Notes: User update 2026-05-16 relay/battery carrier correction: use Relay Rev D in the battery stand power carrier with the flat aluminium base mounted vertically and directly flat to the main metal service sheet; keep the exact insulating sheet and existing covered relay box only. May 17 photos add actual installed Daewoo DLS120 battery ruler views, terminal/hold-down context, and existing tray/mount opening and height measurements; transcribe final case and mount values into the cavity map before cutting. The red relay power pipe enters the relay top hole closest to the battery, and the relay output power bundle exits the second top relay hole. Remove the separate red/black relay cable-boot/output-cluster/loom-card fabrication. Keep MIDI Rev D hinged enclosure from midi5_enclosure_rev_d and slotted body-side offset bars so the battery stand power carrier can be adjusted on the chassis saddle. Keep the widened access ladder at 660 x 310, the 340 x 265 tray around the actual battery datum with the previous 318 x 180 x 230 envelope only as comparison, battery removal after hold-down removal, relay outside the battery footprint on the outboard/access edge, kill switch beside the MIDI enclosure, central battery positive to the far-side cutoff stud first, near-side cutoff output to relay and MIDI fuse 4, 80 mm cable gutter, five grommeted MIDI outputs, and far-side enlarged double-cable output clearance. Chassis fixing is a formed saddle over both rail sides, through-bolted at the one pickup location, with configurable 160-230 mm body-side offset bars."
         },
         {
+          "label": "Procurement \u00b7 release purchase-ready rows",
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
+        },
+        {
+          "label": "Procurement \u00b7 track in-flight deliveries",
+          "status": "completed",
+          "detail": "0 part rows are ordered and awaiting delivery."
+        },
+        {
+          "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
+          "status": "completed",
+          "detail": "0 rows still need confirmation before closeout."
+        },
+        {
           "label": "Close workstream exit gate",
           "status": "queued",
           "detail": "No linked package rows found. Exit gate: Non-rubber fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated"
         }
       ],
-      "involved_parts": [],
+      "involved_parts": [
+        {
+          "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
+          "workstream": "fabrication_handoff",
+          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+          "status": "fabrication_controlled",
+          "procurement_stage": "fabrication_quote_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "estimate",
+          "currency": "PKR",
+          "vendor": "local rubber sheet supplier / Longman fallback",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_mount_rubber_kit_reference",
+            "matched_tokens": [
+              "body",
+              "mount"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
+          "workstream": "fabrication_handoff",
+          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+          "status": "fabrication_controlled",
+          "procurement_stage": "fabrication_quote_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "estimate",
+          "currency": "PKR",
+          "vendor": "local steel stockholder / sheet-metal shop",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_heater_hose_current_car_crop_20260503",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        }
+      ],
       "operation_panels": [],
       "subtask_groups": [
         {
@@ -33932,7 +33911,10 @@ window.J40_DASHBOARD_DATA = {
               "status": "in_progress",
               "parts": [],
               "images": [],
-              "registered_items": []
+              "registered_items": [
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+              ]
             },
             {
               "title": "Release Electrical Fabrication Packages",
@@ -33975,7 +33957,10 @@ window.J40_DASHBOARD_DATA = {
               "status": "queued",
               "parts": [],
               "images": [],
-              "registered_items": []
+              "registered_items": [
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+              ]
             },
             {
               "title": "Inspect First Articles",
@@ -34013,7 +33998,10 @@ window.J40_DASHBOARD_DATA = {
               "status": "queued",
               "parts": [],
               "images": [],
-              "registered_items": []
+              "registered_items": [
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+              ]
             }
           ]
         }
@@ -34780,7 +34768,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "3 electrical buy rows still open; 1 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -34885,7 +34873,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 1 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "WP05 \u00b7 Interior Weatherproofing Stack",
@@ -36717,6 +36705,7 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_220004_gp_C9oYiYmA",
           "matched_tokens": [
+            "20260430_220004_gp_c9oyiyma",
             "engine_bay"
           ]
         },
@@ -36731,6 +36720,7 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_215957_gp_2iBbUagw",
           "matched_tokens": [
+            "20260430_215957_gp_2ibbuagw",
             "engine_bay"
           ]
         },
@@ -37309,6 +37299,7 @@ window.J40_DASHBOARD_DATA = {
               "stage": "mechanical_inspection",
               "media_id": "20260430_220004_gp_C9oYiYmA",
               "matched_tokens": [
+                "20260430_220004_gp_c9oyiyma",
                 "engine_bay"
               ]
             },
@@ -37323,6 +37314,7 @@ window.J40_DASHBOARD_DATA = {
               "stage": "mechanical_inspection",
               "media_id": "20260430_215957_gp_2iBbUagw",
               "matched_tokens": [
+                "20260430_215957_gp_2ibbuagw",
                 "engine_bay"
               ]
             },
@@ -37682,7 +37674,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 27,
-      "reference_token_count": 10,
+      "reference_token_count": 16,
       "requirements": [
         {
           "requirement_id": "HVAC-ENGINE-001",
@@ -37832,6 +37824,14 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Use received DISS/APC and GREZ OFF; registered sprayer is Wadfow WRS1550 pending delivery. Avoid blasting alternator, starter, injection pump, breathers, connectors, and open ports."
         },
         {
+          "component_job_id": "engine_radiator_recore_or_new_20260529",
+          "component_group": "cooling_system",
+          "current_status": "amir_refurb_video_gate",
+          "planned_action": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit",
+          "evidence_ref": "user_update_2026-05-29_do_what_best_engine_radiator|user_update_2026-05-29_extra_fabricated_leg_bad_install|user_update_2026-05-29_aluminium_radiator_adapter_contingency|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|radiator_cap_current_car_crop_20260503|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
+          "notes": "Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test."
+        },
+        {
           "component_job_id": "rear_differential_axle_inspection_20260517",
           "component_group": "rear_axle",
           "current_status": "inspection_plan_added",
@@ -37876,6 +37876,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Component Task \u00b7 Engine Radiator Recore Or New 20260529",
+          "status": "amir_refurb_video_gate",
+          "detail": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit Notes: Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test."
         },
         {
           "label": "Component Task \u00b7 Rear Differential Axle Inspection 20260517",
@@ -38917,6 +38922,7 @@ window.J40_DASHBOARD_DATA = {
                   "stage": "mechanical_inspection",
                   "media_id": "20260430_220004_gp_C9oYiYmA",
                   "matched_tokens": [
+                    "20260430_220004_gp_c9oyiyma",
                     "engine_bay"
                   ]
                 },
@@ -38931,6 +38937,7 @@ window.J40_DASHBOARD_DATA = {
                   "stage": "mechanical_inspection",
                   "media_id": "20260430_215957_gp_2iBbUagw",
                   "matched_tokens": [
+                    "20260430_215957_gp_2ibbuagw",
                     "engine_bay"
                   ]
                 },
@@ -44817,12 +44824,67 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Run GB-TOP-CAPTURE-001, identify gearbox and top-cover variant, remove and bench-inspect the shift tower/top cover, then repair/replace the cover before buying detents, bushes, shift-seat parts, boots, gaskets, or cover hardware Notes: Dedicated component job for the reported poor gearbox top cover. Treat as a condition gate, not a blind parts order or full gearbox rebuild."
         },
         {
+          "label": "Procurement \u00b7 release purchase-ready rows",
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
+        },
+        {
+          "label": "Procurement \u00b7 track in-flight deliveries",
+          "status": "completed",
+          "detail": "0 part rows are ordered and awaiting delivery."
+        },
+        {
+          "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
+          "status": "completed",
+          "detail": "0 rows still need confirmation before closeout."
+        },
+        {
           "label": "Close workstream exit gate",
           "status": "queued",
           "detail": "No linked package rows found. Exit gate: Top cover and shift tower are inspected, repaired or replaced as needed, refitted with correct gasket/sealant and oil, and static plus yard shift validation passes with post-test leak checks"
         }
       ],
-      "involved_parts": [],
+      "involved_parts": [
+        {
+          "entry_id": "part_mech_transmission_oil_service",
+          "workstream": "gearbox_top_cover",
+          "item": "Transmission/gearbox oil service - drain inspect and refill",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_transmission_oil_service",
+          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
+          "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        }
+      ],
       "operation_panels": [],
       "subtask_groups": [],
       "electrical_spec_layout": null
@@ -61244,9 +61306,9 @@ window.J40_DASHBOARD_DATA = {
         "mechanical_baseline",
         "suspension_upgrade"
       ],
-      "next_action": "Use the merged suspension/brake window to identify fitted front disc hardware, replace standard front/rear brake service parts, and renew rear cables/lines with route-clearance validation",
+      "next_action": "Use the merged suspension/brake window with the May 29 visible Sumitomo fixed front-disc baseline, replace standard front/rear brake service parts, and renew rear cables/lines with route-clearance validation",
       "exit_gate": "Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, rear cables/lines are replaced, and no brake-system unknown blocks suspension closeout or reassembly",
-      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; standard front and rear brake service parts are now baseline replacement scope while exact part numbers remain gated by fitted hardware and old samples.",
+      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; May 29 photos now identify the front disc baseline as visible Sumitomo fixed-caliper hardware while exact part numbers remain gated by pad shape",
       "evidence_source": [
         "photo_inventory",
         "20260324_004852",
@@ -61254,6 +61316,10 @@ window.J40_DASHBOARD_DATA = {
         "20260501_194305_gp_EllBGvXA",
         "20260501_194313_gp_lfUqLibA",
         "20260501_194322_gp_XuRtjN4w",
+        "20260529_183947_gp_lSYuESVg",
+        "20260529_183959_gp_MlRssDVA",
+        "20260529_184010_gp_3htpDpPQ",
+        "20260529_184012_gp_Q01c08NA",
         "data_brake_system_requirements",
         "docs_brake_workstream",
         "docs_suspension_brake_merged_work_plan"
@@ -61715,7 +61781,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 11,
-      "reference_token_count": 32,
+      "reference_token_count": 48,
       "requirements": [
         {
           "requirement_id": "BR-CAPTURE-001",
@@ -61738,19 +61804,26 @@ window.J40_DASHBOARD_DATA = {
             "20260514_100003_gp_Vr2QI7ig",
             "20260514_100008_gp_bq1VQUXQ",
             "20260514_100647_gp_foDr3ymA",
-            "20260514_111300_user_brake_flare_side_view"
+            "20260514_111300_user_brake_flare_side_view",
+            "20260529_021217_gp_YAKcHCyQ",
+            "20260529_021225_gp_AzCLYJgQ",
+            "20260529_021239_gp_RiMXwHXA",
+            "20260529_021243_gp_utTmUzJw",
+            "20260529_030646_gp_SAs7gfRg",
+            "20260529_030653_gp_7dCQk4QA",
+            "20260529_030700_gp_8qu2Rliw"
           ],
-          "photo_status": "may14_closeups_plus_flare_side_view_imported_sealing_face_still_required",
+          "photo_status": "may14_closeups_plus_may29_booster_sample_imported_sealing_face_still_required",
           "spec_status": "working_double_inverted_flare_stronger_thread_seat_confirm_pending",
           "acquisition_status": "not_applicable",
           "installation_status": "not_applicable",
-          "current_action": "Before any brake ordering or removal, capture wide route photos plus close-ups with a ruler/label at every brake hose end, hard-line fitting, parking-brake cable end, equalizer, wheel cylinder, front caliper, master/proportioning port, and clip/retainer position. May 14 photos add installed tube-nut/fitting context plus a side view of an actual hard-line flare; still photograph the straight-on sealing face and seat/thread at an opened port before final flaring.",
+          "current_action": "Before any brake ordering or removal, capture wide route photos plus close-ups with a ruler/label at every brake hose end, hard-line fitting, parking-brake cable end, equalizer, wheel cylinder, front caliper, master/proportioning port, and clip/retainer position. May 14 photos add installed tube-nut/fitting context plus a side view of an actual hard-line flare; still photograph the straight-on sealing face and seat/thread at an opened port before final flaring. | May 29 removed booster/servo photos and owner confirmation set the brake scope to replacement of all brake parts; still label and measure old parts before payment or fitting.",
           "exact_recreation_spec": "Create a labeled photo set that lets a remote brake/Toyota parts supplier identify fitted hardware, cable ends, hose ends, line flare/thread/seat, drum internals, and front conversion parts before payment. Working hydraulic flare basis is Toyota-style double/inverted, now supported by the flare side-view photo, but final release stays sample-matched.",
           "material_spec": "Phone/camera with flash, ruler or tape, calipers, labels, paint marker, clean background for removed samples, and old parts retained until replacements fit.",
           "critical_measurements": "Front caliper casting and pad shape, front hose end/bracket/free length, rear center hose ends and T/union, rear hard-line flare/thread/seat, rear cable end types and lengths, rear drum internal shoe/spring/cylinder layout, master/proportioning ports, clip count and position.",
           "fit_and_test": "Photo set must be good enough to release or reject exact brake parts without guessing; no old cable, hose, hard line, or clip sample is discarded before replacement is fitted. Do not fabricate single or ISO bubble flares unless a removed original line proves that standard at a specific seat.",
-          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|photo_import_20260514T104551|20260514_111300_user_brake_flare_side_view",
-          "notes": "May 14 installed-fitting photos plus the user-provided flare side view point strongly to double/inverted flare hardware, but they still do not show a clean straight-on sealing face or measured thread/seat.",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|photo_import_20260514T104551|20260514_111300_user_brake_flare_side_view|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+          "notes": "May 14 installed-fitting photos plus the user-provided flare side view point strongly to double/inverted flare hardware, but they still do not show a clean straight-on sealing face or measured thread/seat. | May 29 removed booster/servo sample photos show aged/corroded servo hardware; owner confirmed all brake parts should be replaced or professionally renewed rather than reused, with old parts retained as samples.",
           "evidence_images": [
             {
               "path": "../../photos/20260514_095907_gp_Ni1EUf4A.jpg",
@@ -61906,6 +61979,90 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "brake_hard_line_flare_sample",
               "stage": "brake_system",
               "media_id": "20260514_111300_user_brake_flare_side_view",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:17",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021217_gp_YAKcHCyQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:25",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021225_gp_AzCLYJgQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021239_gp_RiMXwHXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:43",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021243_gp_utTmUzJw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:46",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030646_gp_SAs7gfRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:53",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030653_gp_7dCQk4QA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:07:00",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030700_gp_8qu2Rliw",
               "matched_tokens": []
             }
           ]
@@ -63012,29 +63169,33 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-FRONT-001",
-          "requirement_name": "Front disc pads and retaining hardware",
+          "requirement_name": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
           "pipe_id": "",
-          "vehicle_location": "Front disc calipers and rotors",
+          "vehicle_location": "Front Sumitomo fixed disc calipers and rotors",
           "pipe_or_line": "",
-          "replace_scope": "replace_after_caliper_identification",
+          "replace_scope": "replace_after_pad_shape_and_caliper_measurement",
           "quantity": "1_axle_set",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
             "20260423_232236_gp_caYB252g",
-            "20260406_031010"
+            "20260406_031010",
+            "20260529_183947_gp_lSYuESVg",
+            "20260529_183959_gp_MlRssDVA",
+            "20260529_184010_gp_3htpDpPQ",
+            "20260529_184012_gp_Q01c08NA"
           ],
-          "photo_status": "supporting_front_disc_photos",
-          "spec_status": "needs_caliper_pad_identification",
+          "photo_status": "direct_sumitomo_front_disc_closeups_added",
+          "spec_status": "sumitomo_fixed_caliper_visible_pad_shape_removal_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Assume front pad and hardware replacement in the baseline refresh; photograph calipers, pad shape, and retaining hardware before ordering.",
-          "exact_recreation_spec": "Replace front pads and retaining or anti-rattle hardware matched to the fitted front disc conversion caliper and rotor setup.",
-          "material_spec": "Brake friction pads and new retaining hardware matched to fitted caliper; no used pads",
-          "critical_measurements": "Pad outline, pad thickness, rotor diameter/thickness if accessible, caliper casting/part numbers, retaining pin/spring style",
+          "current_action": "Use the May 29 closeups as the front hardware ID baseline: visible Sumitomo fixed caliper with external bridge/transfer pipe and dust shield. Remove or photograph one pad set and retaining hardware before ordering.",
+          "exact_recreation_spec": "Replace front pads and retaining or anti-rattle hardware matched to the visible Sumitomo fixed front caliper and current rotor setup; do not buy by year alone.",
+          "material_spec": "Brake friction pads and new retaining/anti-rattle hardware matched to the fitted Sumitomo caliper; no used pads",
+          "critical_measurements": "Pad outline, pad thickness, backing-plate ears, retaining pin/spring/clip style, rotor diameter/thickness, caliper casting marks, and wheel clearance",
           "fit_and_test": "Even pad contact, no drag, no pull, no noise, bedded according to pad maker or workshop procedure",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
-          "notes": "Do not buy from 1978 catalog alone because front discs appear to be a previous conversion.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
+          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching, but pad removal/outline and rotor measurements still control the exact part.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -63083,14 +63244,62 @@ window.J40_DASHBOARD_DATA = {
               "stage": "underside_inspection",
               "media_id": "20260406_031010",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:47",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183947_gp_lSYuESVg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:59",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183959_gp_MlRssDVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:10",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184010_gp_3htpDpPQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:12",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184012_gp_Q01c08NA",
+              "matched_tokens": []
             }
           ]
         },
         {
           "requirement_id": "BR-FRONT-002",
-          "requirement_name": "Front caliper rebuild kits or replacement calipers",
+          "requirement_name": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
           "pipe_id": "",
-          "vehicle_location": "Front disc calipers",
+          "vehicle_location": "Front Sumitomo fixed disc calipers",
           "pipe_or_line": "",
           "replace_scope": "replace_or_rebuild_after_identification",
           "quantity": "2",
@@ -63098,19 +63307,23 @@ window.J40_DASHBOARD_DATA = {
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
             "20260423_232236_gp_caYB252g",
-            "20260406_031010"
+            "20260406_031010",
+            "20260529_183947_gp_lSYuESVg",
+            "20260529_183959_gp_MlRssDVA",
+            "20260529_184010_gp_3htpDpPQ",
+            "20260529_184012_gp_Q01c08NA"
           ],
-          "photo_status": "supporting_front_disc_photos",
-          "spec_status": "needs_caliper_family_identification",
+          "photo_status": "direct_sumitomo_front_disc_closeups_added",
+          "spec_status": "sumitomo_fixed_caliper_visible_casting_and_piston_measure_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Inspect both front calipers during pad service and plan rebuild or replacement if there is leakage, seizure, torn boots, damaged pistons, stuck sliders, or unknown unsafe condition.",
-          "exact_recreation_spec": "Match the fitted caliper family, piston count/diameter, seal kit, bleed screw, inlet fitting, mounting ear spacing, and pad hardware.",
-          "material_spec": "Brake caliper seal kits or matched new/rebuilt calipers with brake-fluid-compatible seals and dust boots",
-          "critical_measurements": "Casting marks, piston count/diameter, inlet fitting, bleed screw size, mounting bolt spacing, pad hardware style",
+          "current_action": "Inspect both visible Sumitomo fixed front calipers during pad service and rebuild or replace as a matched pair if there is leakage, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition.",
+          "exact_recreation_spec": "Match the fitted Sumitomo fixed-caliper family, piston count/diameter, seal kit, bleed screw, inlet fitting, bridge/transfer pipe fittings, mounting ear spacing, and pad hardware.",
+          "material_spec": "Brake caliper seal kits or matched new/rebuilt Sumitomo-family calipers with brake-fluid-compatible seals and dust boots",
+          "critical_measurements": "Casting marks, piston count/diameter, caliper body family, inlet fitting, bridge-pipe fittings, bleed screw size, mounting bolt spacing, pad hardware style",
           "fit_and_test": "No leaks, pistons move/retract cleanly, bleed screws open, no pull or drag after road test",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
-          "notes": "Treat calipers as safety-critical; exact parts wait for fitted conversion identification.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
+          "notes": "The visible casting reads Sumitomo, but exact Toyota application and seal-kit family still require cleaned casting marks and piston measurement or old-sample matching.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -63159,14 +63372,62 @@ window.J40_DASHBOARD_DATA = {
               "stage": "underside_inspection",
               "media_id": "20260406_031010",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:47",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183947_gp_lSYuESVg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:59",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183959_gp_MlRssDVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:10",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184010_gp_3htpDpPQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:12",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184012_gp_Q01c08NA",
+              "matched_tokens": []
             }
           ]
         },
         {
           "requirement_id": "BR-FRONT-003",
-          "requirement_name": "Front rotor machine or replacement decision",
+          "requirement_name": "Front rotor machine or replacement decision - measurement gate",
           "pipe_id": "",
-          "vehicle_location": "Front rotors",
+          "vehicle_location": "Front rotors behind Sumitomo fixed calipers",
           "pipe_or_line": "",
           "replace_scope": "machine_or_replace_by_service_limit",
           "quantity": "2",
@@ -63174,19 +63435,23 @@ window.J40_DASHBOARD_DATA = {
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
             "20260423_232236_gp_caYB252g",
-            "20260406_031010"
+            "20260406_031010",
+            "20260529_183947_gp_lSYuESVg",
+            "20260529_183959_gp_MlRssDVA",
+            "20260529_184010_gp_3htpDpPQ",
+            "20260529_184012_gp_Q01c08NA"
           ],
-          "photo_status": "supporting_front_disc_photos",
-          "spec_status": "needs_rotor_measurement",
+          "photo_status": "direct_sumitomo_front_disc_closeups_added",
+          "spec_status": "rotor_visible_measurement_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Measure and inspect rotors during front brake service; machine or replace only if scoring, cracking, runout, or thickness/service limit requires it.",
-          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, and caliper clearance to the fitted front conversion.",
+          "current_action": "The rotor and dust shield are visible in the May 29 photos, but serviceability is not proven. Measure and inspect both rotors during front brake service.",
+          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, dust-shield clearance, and Sumitomo caliper clearance to the fitted front setup; machine only within service limits.",
           "material_spec": "Brake rotors matched to fitted hub/caliper setup; machine only within service limits",
-          "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, hub face condition",
+          "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, cracking, heat checking, hub face condition",
           "fit_and_test": "No pedal pulsation, no scoring contact, no caliper interference, no wheel/hub fit issue",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
-          "notes": "Rotors are not a blind age-replacement item; condition and service limits control the decision.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
+          "notes": "The photos prove a rotor is fitted but not its condition or dimensions. Do not buy or machine blind; measure first.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -63235,14 +63500,62 @@ window.J40_DASHBOARD_DATA = {
               "stage": "underside_inspection",
               "media_id": "20260406_031010",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:47",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183947_gp_lSYuESVg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:59",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183959_gp_MlRssDVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:10",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184010_gp_3htpDpPQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:12",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184012_gp_Q01c08NA",
+              "matched_tokens": []
             }
           ]
         },
         {
           "requirement_id": "BR-FRONT-004",
-          "requirement_name": "Front flexible brake hoses",
+          "requirement_name": "Front flexible brake hoses - visible chassis bracket and short hard-line route",
           "pipe_id": "",
-          "vehicle_location": "Front frame-to-caliper hydraulic drops",
+          "vehicle_location": "Front frame-to-Sumitomo-caliper hydraulic drops",
           "pipe_or_line": "",
           "replace_scope": "replace_after_fitting_identification",
           "quantity": "2",
@@ -63250,19 +63563,23 @@ window.J40_DASHBOARD_DATA = {
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
             "20260423_232236_gp_caYB252g",
-            "20260406_031010"
+            "20260406_031010",
+            "20260529_183947_gp_lSYuESVg",
+            "20260529_183959_gp_MlRssDVA",
+            "20260529_184010_gp_3htpDpPQ",
+            "20260529_184012_gp_Q01c08NA"
           ],
-          "photo_status": "supporting_front_disc_photos",
-          "spec_status": "needs_fitting_and_length_identification",
+          "photo_status": "direct_sumitomo_front_disc_closeups_added",
+          "spec_status": "front_hose_route_visible_end_measure_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Replace both front flex hoses with the brake hose set after hose ends, bracket retention, free length, and lock-to-lock clearance are captured.",
-          "exact_recreation_spec": "Match chassis-side fitting, caliper-side fitting or banjo, bracket/clip style, free length, and route with steering at full lock.",
+          "current_action": "May 29 photos show the front hose/bracket and short hard-line route to the caliper. Replace both front flex hoses by old sample after fitting ends, bracket retention, free length, and full-lock clearance are captured.",
+          "exact_recreation_spec": "Match chassis-side fitting, bracket groove/clip, short hard-line tube nut, caliper-side fitting or banjo if fitted, free length, and route with steering at full lock.",
           "material_spec": "Complete crimped brake flex hose assemblies rated DOT/SAE J1401 or OEM-equivalent; no generic rubber hose fabrication",
-          "critical_measurements": "Thread/banjo style, hose free length, bracket slot, retaining clip, steering lock clearance",
+          "critical_measurements": "Chassis-side thread/seat, caliper-side thread/seat or banjo style, hose free length, bracket slot/groove, retaining clip, steering-lock and suspension clearance",
           "fit_and_test": "No stretch through normal axle movement, no twist, no tyre/spring/shock contact, leak-free pressure test",
-          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set",
-          "notes": "Ironman geometry is treated as effectively the same as current setup; no separate lift/geometry release action.",
+          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|front_brake_disc_baseline|photo_import_20260529T185008",
+          "notes": "Ironman geometry is treated as effectively the same as current setup, but the fitted hose route still needs full-lock and droop clearance confirmation before payment or installation.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -63310,6 +63627,54 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "steering_and_suspension_linkages",
               "stage": "underside_inspection",
               "media_id": "20260406_031010",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:47",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183947_gp_lSYuESVg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:39:59",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_183959_gp_MlRssDVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:10",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184010_gp_3htpDpPQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+              "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "18:40:12",
+              "media_type": "photo",
+              "component_group": "brake_system",
+              "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+              "stage": "brake_system_identification",
+              "media_id": "20260529_184012_gp_Q01c08NA",
               "matched_tokens": []
             }
           ]
@@ -63329,19 +63694,26 @@ window.J40_DASHBOARD_DATA = {
             "20260423_232220_gp_ezwEcH2g",
             "20260514_095907_gp_Ni1EUf4A",
             "20260514_095926_gp_YBNOqh9A",
-            "20260514_100647_gp_foDr3ymA"
+            "20260514_100647_gp_foDr3ymA",
+            "20260529_021217_gp_YAKcHCyQ",
+            "20260529_021225_gp_AzCLYJgQ",
+            "20260529_021239_gp_RiMXwHXA",
+            "20260529_021243_gp_utTmUzJw",
+            "20260529_030646_gp_SAs7gfRg",
+            "20260529_030653_gp_7dCQk4QA",
+            "20260529_030700_gp_8qu2Rliw"
           ],
-          "photo_status": "supporting_hydraulic_plus_may14_fitting_photos",
-          "spec_status": "candidate_master_ordered_thread_bore_confirm_pending",
+          "photo_status": "supporting_hydraulic_plus_may14_fitting_plus_may29_booster_sample_photos",
+          "spec_status": "candidate_master_ordered_booster_sample_match_pending",
           "acquisition_status": "ordered_partial_pending_delivery",
           "installation_status": "not_installed",
-          "current_action": "PakWheels orders #1075298 and #1075421 placed for two ULTIMA UFM-1041 brake master cylinders. Treat as candidate stock only until installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing are confirmed.",
+          "current_action": "Use the removed booster/servo photos as system refresh evidence. The two UFM-1041 master cylinders remain candidate stock; confirm bore, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing against old parts, and treat rubber seals/grommets/hoses at the master/booster interface as new-only.",
           "exact_recreation_spec": "Replace master cylinder, reservoir seals/caps/hoses, or proportioning hardware only after installed bore, port threads, flare seats, and leak condition are confirmed.",
           "material_spec": "Brake master/reservoir components and brake-fluid-compatible seals matched to the installed system",
           "critical_measurements": "Master bore/markings, reservoir condition, port threads, flare seats, booster/vacuum layout, proportioning valve ports",
           "fit_and_test": "Firm pedal, no external leaks, no internal bypass symptoms, correct front/rear brake balance in road validation",
-          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|photo_import_20260514T104551|part_brake_master_reservoir_refresh|gmail_order_1075298|gmail_order_1075421",
-          "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing. May 14 fitting photos support a double/inverted flare working basis but do not replace direct thread/seat measurement. | Two UFM-1041 brake master cylinder candidates ordered via PakWheels on 2026-05-25; still pending delivery and sample/layout verification before installation.",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|photo_import_20260514T104551|part_brake_master_reservoir_refresh|gmail_order_1075298|gmail_order_1075421|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+          "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing. May 14 fitting photos support a double/inverted flare working basis but do not replace direct thread/seat measurement. | Two UFM-1041 brake master cylinder candidates ordered via PakWheels on 2026-05-25; still pending delivery and sample/layout verification before installation. | May 29 removed booster/servo sample photos move the master/booster area from inspect-only context to owner-confirmed replacement/renewal scope; exact fit still depends on sample matching and road validation.",
           "evidence_images": [
             {
               "path": "../../photos/20260331_224409.jpg",
@@ -63426,6 +63798,90 @@ window.J40_DASHBOARD_DATA = {
               "stage": "brake_system",
               "media_id": "20260514_100647_gp_foDr3ymA",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:17",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021217_gp_YAKcHCyQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:25",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021225_gp_AzCLYJgQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021239_gp_RiMXwHXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:43",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021243_gp_utTmUzJw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:46",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030646_gp_SAs7gfRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:53",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030653_gp_7dCQk4QA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:07:00",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030700_gp_8qu2Rliw",
+              "matched_tokens": []
             }
           ]
         },
@@ -63435,23 +63891,115 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Master cylinder reservoir booster and firewall",
           "pipe_or_line": "",
-          "replace_scope": "market_scout_then_replace_or_rebuild",
+          "replace_scope": "replace_or_professionally_rebuild_after_sample_match",
           "quantity": "1",
           "photo_evidence": [
-            "20260504_user_booster_photo"
+            "20260504_user_booster_photo",
+            "20260529_021217_gp_YAKcHCyQ",
+            "20260529_021225_gp_AzCLYJgQ",
+            "20260529_021239_gp_RiMXwHXA",
+            "20260529_021243_gp_utTmUzJw",
+            "20260529_030646_gp_SAs7gfRg",
+            "20260529_030653_gp_7dCQk4QA",
+            "20260529_030700_gp_8qu2Rliw"
           ],
-          "photo_status": "supporting_close_photo",
-          "spec_status": "needs_booster_id_and_vacuum_test",
+          "photo_status": "removed_booster_servo_sample_photos_show_replacement_required",
+          "spec_status": "removed_sample_measure_and_id_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Front discs / rear drums confirmed by user. Photograph installed booster face/rear, master cylinder mating face, vacuum check valve, pedal clevis, and firewall bracket; vacuum-test the booster and check for brake-fluid contamination before final buy.",
+          "current_action": "Use the removed booster/servo as the sample for local quote or rebuild. Replace or professionally rebuild the servo; do not reuse the photographed unit as-is. Confirm diameter/depth, stud spacing, master seat/depth, pushrod, clevis, check valve/grommet, vacuum nipple orientation, and vacuum hold before payment or fit.",
           "exact_recreation_spec": "Target direct-replacement family is tandem / dual diaphragm brake booster for 9/1975-7/1980 J40 with front discs and rear drums: Toyota 44610-60050. Also quote compatible interchange 44610-60100 / 44610-60180 only if supplier confirms same mounting, pushrod, clevis, master-cylinder seat/depth, check-valve/grommet, and clearance. Prefer new or professionally remanufactured; local used only after bench vacuum hold test.",
           "material_spec": "Vacuum brake booster/servo with new check-valve grommet and check valve if not included; brake-fluid-compatible master rear seal/gasket as needed; no welded/modified booster shell",
           "critical_measurements": "OEM/brand/part markings, booster diameter/depth, firewall stud pattern, master-cylinder stud spacing and pilot, pushrod length/depth, pedal clevis thread/pin, check-valve grommet OD, vacuum nipple orientation, clearance to clutch master and bonnet",
           "fit_and_test": "Vacuum hold with no leakdown/hiss; pedal assist present; no brake-fluid contamination; pushrod free play set; no dragging brakes after road test",
-          "source_ref": "docs_brake_parts_pakistan_acquisition|docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision",
-          "notes": "New explicit row added 2026-05-04 after user confirmed front discs/rear drums and asked for Pakistan/local-market sourcing. Do not buy 44610-60040 single/drum booster or later 44610-60160 unless sample-matched and approved.",
-          "evidence_images": []
+          "source_ref": "docs_brake_parts_pakistan_acquisition|docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+          "notes": "New explicit row added 2026-05-04 after user confirmed front discs/rear drums and asked for Pakistan/local-market sourcing. Do not buy 44610-60040 single/drum booster or later 44610-60160 unless sample-matched and approved. | May 29 removed booster/servo photos show corrosion, aged rubber, and sample-match details; owner confirmed the brake evidence supports replacing all brake parts, with the old servo kept only as a pattern/core.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:17",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021217_gp_YAKcHCyQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:25",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021225_gp_AzCLYJgQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021239_gp_RiMXwHXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "02:12:43",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_021243_gp_utTmUzJw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:46",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030646_gp_SAs7gfRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:06:53",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030653_gp_7dCQk4QA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+              "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "03:07:00",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "brake_booster_servo_removed_sample",
+              "stage": "brake_system",
+              "media_id": "20260529_030700_gp_8qu2Rliw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "BR-SYS-002",
@@ -63618,28 +64166,36 @@ window.J40_DASHBOARD_DATA = {
       ],
       "component_jobs": [
         {
+          "component_job_id": "brake_booster_servo_refurbishment_20260529",
+          "component_group": "brakes",
+          "current_status": "amir_refurb_video_gate",
+          "planned_action": "Send the old brake booster/servo with Amir as the sample; quote professional rebuild of the old unit or a direct-match refurbished exchange unit, but do not pay until sample match, interface close-ups, vacuum hold, assist movement, contamination check, and final acceptance videos are approved",
+          "evidence_ref": "20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md|docs/amir-refurbishment-video-gates-20260529.md",
+          "notes": "Old booster is a sample or rebuild core, not a reuse candidate. Reject raw untested used boosters, wrong stud/pushrod pattern, single/drum units, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or vacuum leakdown."
+        },
+        {
           "component_job_id": "brake_hydraulic_refresh_and_bias_decision",
           "component_group": "brakes",
-          "current_status": "inspection_pending",
-          "planned_action": "Inspect hard lines, flexible hoses, master cylinder, reservoir hoses, and brake balance/proportioning before buying conversion parts or reassembly consumables",
-          "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40",
-          "notes": "Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation."
+          "current_status": "replacement_scope_confirmed",
+          "planned_action": "Treat the hydraulic and booster system as replacement/renewal scope: replace or recreate hard lines and flex hoses, sample-match master/booster/reservoir/proportioning parts, then validate brake balance; old parts are templates only.",
+          "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+          "notes": "Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation. | May 29 removed booster/servo photos and owner confirmation make the brake system replacement scope explicit; exact parts remain gated by old-sample measurement, thread/seat confirmation, bleed, and road validation."
         },
         {
           "component_job_id": "brake_system_evidence_pack",
           "component_group": "brakes",
-          "current_status": "evidence_tracking",
-          "planned_action": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit and updated",
-          "evidence_ref": "20260324_004852|20260324_004906|20260423_232202_gp_ryYH6xZg|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40",
-          "notes": "Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context."
+          "current_status": "replacement_evidence_added",
+          "planned_action": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit, and treat the May 29 removed booster/servo evidence as owner-confirmed replacement scope for old brake parts.",
+          "evidence_ref": "20260324_004852|20260324_004906|20260423_232202_gp_ryYH6xZg|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+          "notes": "Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context. | May 29 removed brake booster/servo photos are now direct brake-system evidence; old brake parts are retained as samples and cores, not reuse candidates."
         },
         {
           "component_job_id": "front_brake_disc_baseline",
           "component_group": "brakes",
-          "current_status": "inspection_pending",
-          "planned_action": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it",
-          "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
-          "notes": "Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified."
+          "current_status": "sumitomo_front_disc_identified_measurement_pending",
+          "planned_action": "Use the May 29 closeups as the fitted front-disc baseline: visible Sumitomo fixed calipers with external bridge/transfer pipes, dust shields, visible rotors, and short hard-line/flex-hose routing; replace pads/hardware and front hoses, and rebuild/replace calipers only after pad shape, piston count/diameter, mounting ears, hose/fitting threads, and rotor measurements are captured.",
+          "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|photo_import_20260529T185008",
+          "notes": "Front discs are no longer only a generic inference: May 29 photos visibly show Sumitomo fixed-caliper hardware. Remaining unknowns are exact Toyota/caliper family, pad outline, piston diameters, rotor dimensions/service limits, hose free length/fittings, and wheel/steering-lock clearance; do not buy exact parts until measured or sample-matched."
         },
         {
           "component_job_id": "rear_brake_cable_line_refresh",
@@ -63671,7 +64227,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Use the merged suspension/brake window to identify fitted front disc hardware, replace standard front/rear brake service parts, and renew rear cables/lines with route-clearance validation"
+          "detail": "Use the merged suspension/brake window with the May 29 visible Sumitomo fixed front-disc baseline, replace standard front/rear brake service parts, and renew rear cables/lines with route-clearance validation"
         },
         {
           "label": "Confirm installed brake architecture",
@@ -63709,24 +64265,24 @@ window.J40_DASHBOARD_DATA = {
           "detail": "No issue-specific checks are recorded for this workstream."
         },
         {
-          "label": "Component Task \u00b7 Brake System Evidence Pack",
-          "status": "evidence_tracking",
-          "detail": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit and updated Notes: Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context."
-        },
-        {
-          "label": "Component Task \u00b7 Brake Hydraulic Refresh And Bias Decision",
-          "status": "inspection_pending",
-          "detail": "Inspect hard lines, flexible hoses, master cylinder, reservoir hoses, and brake balance/proportioning before buying conversion parts or reassembly consumables Notes: Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation."
-        },
-        {
-          "label": "Component Task \u00b7 Front Brake Disc Baseline",
-          "status": "inspection_pending",
-          "detail": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it Notes: Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified."
+          "label": "Component Task \u00b7 Brake Booster Servo Refurbishment 20260529",
+          "status": "amir_refurb_video_gate",
+          "detail": "Send the old brake booster/servo with Amir as the sample; quote professional rebuild of the old unit or a direct-match refurbished exchange unit, but do not pay until sample match, interface close-ups, vacuum hold, assist movement, contamination check, and final acceptance videos are approved Notes: Old booster is a sample or rebuild core, not a reuse candidate. Reject raw untested used boosters, wrong stud/pushrod pattern, single/drum units, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or vacuum leakdown."
         },
         {
           "label": "Component Task \u00b7 Rear Brake Drum Baseline",
           "status": "inspection_pending",
           "detail": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears Notes: Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion."
+        },
+        {
+          "label": "Component Task \u00b7 Brake System Evidence Pack",
+          "status": "replacement_evidence_added",
+          "detail": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit, and treat the May 29 removed booster/servo evidence as owner-confirmed replacement scope for old brake parts. Notes: Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context. | May 29 removed brake booster/servo photos are now direct brake-system evidence; old brake parts are retained as samples and cores, not reuse candidates."
+        },
+        {
+          "label": "Component Task \u00b7 Brake Hydraulic Refresh And Bias Decision",
+          "status": "replacement_scope_confirmed",
+          "detail": "Treat the hydraulic and booster system as replacement/renewal scope: replace or recreate hard lines and flex hoses, sample-match master/booster/reservoir/proportioning parts, then validate brake balance; old parts are templates only. Notes: Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation. | May 29 removed booster/servo photos and owner confirmation make the brake system replacement scope explicit; exact parts remain gated by old-sample measurement, thread/seat confirmation, bleed, and road validation."
         },
         {
           "label": "Component Task \u00b7 Rear Parking Brake Attachment Hardware 20260527",
@@ -63737,6 +64293,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "Component Task \u00b7 Rear Brake Cable Line Refresh",
           "status": "spec_population",
           "detail": "Replace rear parking-brake cable assemblies, rear axle hard lines, center flex hose, and line/cable retainers during the suspension/brake access window after photographing/removing the old parts as templates; keep small parking-brake attachment hardware under rear_parking_brake_attachment_hardware_20260527 Notes: The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates. Clevis/equalizer/return-spring/clip hardware is now split to the dedicated attachment-hardware job."
+        },
+        {
+          "label": "Component Task \u00b7 Front Brake Disc Baseline",
+          "status": "sumitomo_front_disc_identified_measurement_pending",
+          "detail": "Use the May 29 closeups as the fitted front-disc baseline: visible Sumitomo fixed calipers with external bridge/transfer pipes, dust shields, visible rotors, and short hard-line/flex-hose routing; replace pads/hardware and front hoses, and rebuild/replace calipers only after pad shape, piston count/diameter, mounting ears, hose/fitting threads, and rotor measurements are captured. Notes: Front discs are no longer only a generic inference: May 29 photos visibly show Sumitomo fixed-caliper hardware. Remaining unknowns are exact Toyota/caliper family, pad outline, piston diameters, rotor dimensions/service limits, hose free length/fittings, and wheel/steering-lock clearance; do not buy exact parts until measured or sample-matched."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -63761,61 +64322,22 @@ window.J40_DASHBOARD_DATA = {
       ],
       "involved_parts": [
         {
-          "entry_id": "part_front_rotor_service_pair",
-          "workstream": "brake_system",
-          "item": "Front rotor machine or replacement pair",
-          "status": "planned",
-          "procurement_stage": "inspect_then_buy",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_rotor_service_pair",
-          "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
-            "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
           "entry_id": "part_brake_booster_servo_44610_60050",
           "workstream": "brake_system",
-          "item": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout",
+          "item": "Brake vacuum booster servo - refurbish or direct-match exchange by old sample",
           "status": "planned",
-          "procurement_stage": "local_market_quote_and_sample_match",
+          "procurement_stage": "amir_refurb_quote_video_gate",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Bilal Ganj / Montgomery Road / Land Cruiser House / brake servo rebuilder",
+          "vendor": "Amir runner / Land Cruiser House / brake servo rebuilder / local brake specialist",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_brake_booster_servo_44610_60050",
-          "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003",
-          "notes": "Market scout / quote only: front-disc/rear-drum brake architecture confirmed by user on 2026-05-04. Target Toyota 44610-60050 tandem/dual-diaphragm booster; quote compatible 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject 44610-60040 single/drum and later 44610-60160 unless sample-matched and approved.",
+          "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+          "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -63836,6 +64358,45 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_front_rotor_service_pair",
+          "workstream": "brake_system",
+          "item": "Front rotor machine or replacement pair - measure visible current rotors",
+          "status": "planned",
+          "procurement_stage": "inspect_then_buy",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_rotor_service_pair",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -64632,48 +65193,9 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
-          "workstream": "brake_system",
-          "item": "Front caliper rebuild kits or replacement calipers",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
-          "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
-            "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
           "entry_id": "part_front_disc_pads_hardware",
           "workstream": "brake_system",
-          "item": "Front disc pads and retaining hardware",
+          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -64685,25 +65207,25 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_disc_pads_hardware",
-          "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
+              "photo_20260529_183947_gp_lsyuesvg"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -64712,7 +65234,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_front_brake_hose_pair",
           "workstream": "brake_system",
-          "item": "Front flexible brake hose pair",
+          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -64724,9 +65246,30 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_brake_hose_pair",
-          "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, and steering lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-          "links": [],
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -64746,6 +65289,45 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+          "workstream": "brake_system",
+          "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -65236,7 +65818,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
+                "Front flexible brake hose pair - visible bracket and short hard-line route (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -65491,9 +66073,9 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Brake vacuum booster servo - refurbish or direct-match exchange by old sample (amir_refurb_quote_video_gate; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
@@ -71592,7 +72174,7 @@ window.J40_DASHBOARD_DATA = {
       "stock_basis": "Battery compact formed chassis saddle nominal 220 x 230 flat pattern, adjustable offset bars 2x 360 x 60, compact upright bridge flat/gusset plates 2x 110 x 220 if angle route does not replace them, radiator saddle formed-angle post preferably from pre-formed 90-degree angle/L-section stock, EPS General Adapter datum plate/firewall doubler/high-load tabs/cradle trials, structural angle for bridge/frame/adapter trials, trial allowance",
       "covered_fabrication": "Chassis-bolted battery stand formed saddle/upright bridge/adjustable offset bars, bolt-through right-side radiator saddle/post bracket, and measured EPS General Adapter datum/doubler/saddle/cradle trial allowance",
       "release_status": "purchase_ready_estimate",
-      "notes": "Covers the current one-pickup compact battery carrier route with a formed chassis saddle plus adjustable body-side offset bars, simplified bolt-through formed-angle radiator saddle/post bracket trial allowance, and measured EPS General Adapter trial/released pieces. Ask the steel stockholder first for pre-formed 90-degree L-section/angle stock for the radiator post, stand frame, and adapter cradle; keep the plate fallback for the chassis saddle, offset bars, EPS datum/doubler plates, and any flat upright/gusset plates."
+      "notes": "Covers the current one-pickup compact battery carrier route with a formed chassis saddle plus adjustable body-side offset bars, simplified bolt-through formed-angle radiator saddle/post bracket trial allowance, and measured EPS General Adapter trial/released pieces. Right-side radiator post is a prerequisite before final radiator installation. Ask a steel stockholder / loha market / sheet-metal fabricator first for pre-formed 90-degree L-section/angle stock for the radiator post, stand frame, and adapter cradle; keep the plate fallback for the chassis saddle, offset bars, EPS datum/doubler plates, and any flat upright/gusset plates. Amir must collect tape/caliper proof before payment if buying stock directly."
     },
     {
       "material_id": "fab_al3_electrical_plates_current",
@@ -71767,7 +72349,7 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset"
       ],
       "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17",
-      "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+      "blocker_summary": "3 electrical buy rows still open; 1 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
       "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
       "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
       "image": {
@@ -71817,6 +72399,7 @@ window.J40_DASHBOARD_DATA = {
         "stage": "mechanical_inspection",
         "media_id": "20260430_220004_gp_C9oYiYmA",
         "matched_tokens": [
+          "20260430_220004_gp_c9oyiyma",
           "engine_bay"
         ]
       }
@@ -71882,7 +72465,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "25 rows still in purchase_ready."
+        "detail": "23 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -71897,19 +72480,23 @@ window.J40_DASHBOARD_DATA = {
     ],
     "counts_by_procurement_stage": [
       {
+        "stage": "amir_refurb_quote_video_gate",
+        "count": 1
+      },
+      {
         "stage": "deferred_optional",
-        "count": 2
+        "count": 1
       },
       {
         "stage": "deferred_until_body_closed",
         "count": 4
       },
       {
-        "stage": "inspect_then_buy",
-        "count": 1
+        "stage": "fabrication_quote_ready",
+        "count": 2
       },
       {
-        "stage": "local_market_quote_and_sample_match",
+        "stage": "inspect_then_buy",
         "count": 1
       },
       {
@@ -71926,7 +72513,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 25
+        "count": 23
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -71954,7 +72541,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 9
+        "count": 10
       },
       {
         "stage": "spec_needed_before_order_local_hardware_first",
@@ -71972,7 +72559,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 25
+        "count": 23
       },
       {
         "next_action": "track_delivery",
@@ -72392,80 +72979,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "graded_fasteners",
           "matched_tokens": [
             "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_firewall_grommet_set_large_power",
-        "workstream": "electrical_reset",
-        "item": "Additional firewall grommet set IDs 16/20/25 mm",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list|docs_wire-heavy-resize-cutlist",
-        "notes": "Large pass-through sizes still needed for protected heavy feed runs and split-loom trunk crossings",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-          "caption": "Additional firewall grommet set IDs 16/20/25 mm \u00b7 automotive cable reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heavy_battery_cable",
-          "matched_tokens": [
-            "cable"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_firewall_grommet_set_small_medium",
-        "workstream": "electrical_reset",
-        "item": "Additional firewall grommet set IDs 6/8/10/12 mm",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list",
-        "notes": "Additional small and medium pass-through sizes still needed to cover loom branch and signal wire firewall exits",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "Additional firewall grommet set IDs 6/8/10/12 mm \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -73217,57 +73730,20 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_front_rotor_service_pair",
-        "workstream": "brake_system",
-        "item": "Front rotor machine or replacement pair",
-        "status": "planned",
-        "procurement_stage": "inspect_then_buy",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
-          "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
         "entry_id": "part_brake_booster_servo_44610_60050",
         "workstream": "brake_system",
-        "item": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout",
+        "item": "Brake vacuum booster servo - refurbish or direct-match exchange by old sample",
         "status": "planned",
-        "procurement_stage": "local_market_quote_and_sample_match",
+        "procurement_stage": "amir_refurb_quote_video_gate",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Bilal Ganj / Montgomery Road / Land Cruiser House / brake servo rebuilder",
+        "vendor": "Amir runner / Land Cruiser House / brake servo rebuilder / local brake specialist",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003",
-        "notes": "Market scout / quote only: front-disc/rear-drum brake architecture confirmed by user on 2026-05-04. Target Toyota 44610-60050 tandem/dual-diaphragm booster; quote compatible 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject 44610-60040 single/drum and later 44610-60160 unless sample-matched and approved.",
+        "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+        "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -73288,6 +73764,43 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "manual_override",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_front_rotor_service_pair",
+        "workstream": "brake_system",
+        "item": "Front rotor machine or replacement pair - measure visible current rotors",
+        "status": "planned",
+        "procurement_stage": "inspect_then_buy",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -73852,7 +74365,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_caliper_rebuild_or_replace_pair",
         "workstream": "brake_system",
-        "item": "Front caliper rebuild kits or replacement calipers",
+        "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -73862,25 +74375,25 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
+            "photo_20260529_183947_gp_lsyuesvg"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -73889,7 +74402,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_disc_pads_hardware",
         "workstream": "brake_system",
-        "item": "Front disc pads and retaining hardware",
+        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -73899,25 +74412,25 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
+            "photo_20260529_183947_gp_lsyuesvg"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -73926,7 +74439,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_brake_hose_pair",
         "workstream": "brake_system",
-        "item": "Front flexible brake hose pair",
+        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -73936,9 +74449,30 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, and steering lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-        "links": [],
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -74795,43 +75329,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "quote_rubber_grommet_set_chat",
-        "workstream": "electrical_reset",
-        "item": "Electrical wire grommet set (200pcs)",
-        "status": "quote",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "7860",
-        "amount_status": "confirmed",
-        "currency": "PKR",
-        "vendor": "starshop.pk",
-        "supply_type": "part",
-        "evidence_ref": "fj40-00276",
-        "notes": "Reference quote only; duplicate path now superseded by the received AliExpress grommet set Vendor backfilled from J40_Costs.xlsx.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "Electrical wire grommet set (200pcs) \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
         "workstream": "electrical_reset",
         "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
@@ -74901,80 +75398,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "graded_fasteners",
           "matched_tokens": [
             "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_firewall_grommet_set_large_power",
-        "workstream": "electrical_reset",
-        "item": "Additional firewall grommet set IDs 16/20/25 mm",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list|docs_wire-heavy-resize-cutlist",
-        "notes": "Large pass-through sizes still needed for protected heavy feed runs and split-loom trunk crossings",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-          "caption": "Additional firewall grommet set IDs 16/20/25 mm \u00b7 automotive cable reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heavy_battery_cable",
-          "matched_tokens": [
-            "cable"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_firewall_grommet_set_small_medium",
-        "workstream": "electrical_reset",
-        "item": "Additional firewall grommet set IDs 6/8/10/12 mm",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list",
-        "notes": "Additional small and medium pass-through sizes still needed to cover loom branch and signal wire firewall exits",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "Additional firewall grommet set IDs 6/8/10/12 mm \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -75127,6 +75550,119 @@ window.J40_DASHBOARD_DATA = {
             "kit"
           ],
           "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
+        "workstream": "fabrication_handoff",
+        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+        "status": "fabrication_controlled",
+        "procurement_stage": "fabrication_quote_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "estimate",
+        "currency": "PKR",
+        "vendor": "local rubber sheet supplier / Longman fallback",
+        "supply_type": "part",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_mount_rubber_kit_reference",
+          "matched_tokens": [
+            "body",
+            "mount"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
+        "workstream": "fabrication_handoff",
+        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+        "status": "fabrication_controlled",
+        "procurement_stage": "fabrication_quote_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "estimate",
+        "currency": "PKR",
+        "vendor": "local steel stockholder / sheet-metal shop",
+        "supply_type": "part",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_heater_hose_current_car_crop_20260503",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_transmission_oil_service",
+        "workstream": "gearbox_top_cover",
+        "item": "Transmission/gearbox oil service - drain inspect and refill",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
+        "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
           "match_score": 700
         }
       },
@@ -76215,6 +76751,7 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_220004_gp_C9oYiYmA",
           "matched_tokens": [
+            "20260430_220004_gp_c9oyiyma",
             "engine_bay"
           ]
         }
@@ -76223,26 +76760,6 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "interior_weatherproofing",
         "open_count": 10,
         "image": null
-      },
-      {
-        "workstream": "electrical_reset",
-        "open_count": 8,
-        "image": {
-          "path": "../../data/raw/imports/J40.jpg",
-          "caption": "J40 Electrical Wiring Diagram \u00b7 Electrical Reference \u00b7 2026-05-18",
-          "captured_date": "2026-05-18",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "electrical_system",
-          "specific_component": "j40_electrical_wiring_diagram",
-          "stage": "electrical_reference",
-          "media_id": "j40_electrical_wiring_diagram",
-          "matched_tokens": [
-            "j40_electrical_wiring_diagram",
-            "data/raw/imports/j40.graffle",
-            "data/raw/imports/j40"
-          ]
-        }
       },
       {
         "workstream": "body_chassis",
@@ -76281,6 +76798,26 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "workstream": "electrical_reset",
+        "open_count": 5,
+        "image": {
+          "path": "../../data/raw/imports/J40.jpg",
+          "caption": "J40 Electrical Wiring Diagram \u00b7 Electrical Reference \u00b7 2026-05-18",
+          "captured_date": "2026-05-18",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "electrical_system",
+          "specific_component": "j40_electrical_wiring_diagram",
+          "stage": "electrical_reference",
+          "media_id": "j40_electrical_wiring_diagram",
+          "matched_tokens": [
+            "j40_electrical_wiring_diagram",
+            "data/raw/imports/j40.graffle",
+            "data/raw/imports/j40"
+          ]
+        }
+      },
+      {
         "workstream": "chassis_fixing",
         "open_count": 2,
         "image": {
@@ -76299,6 +76836,11 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "workstream": "fabrication_handoff",
+        "open_count": 2,
+        "image": null
+      },
+      {
         "workstream": "eps_vitz_upgrade",
         "open_count": 1,
         "image": {
@@ -76312,6 +76854,24 @@ window.J40_DASHBOARD_DATA = {
           "stage": "underside_inspection",
           "media_id": "20260422_004412_gp_OclpaTdg_2",
           "matched_tokens": []
+        }
+      },
+      {
+        "workstream": "gearbox_top_cover",
+        "open_count": 1,
+        "image": {
+          "path": "../../photos/20260422_004338_gp_35uwfApA_2.jpg",
+          "caption": "Transmission Crossmember And Driveline Mounts \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:38",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "transmission_crossmember_and_driveline_mounts",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004338_gp_35uwfApA_2",
+          "matched_tokens": [
+            "20260422_004338_gp_35uwfapa"
+          ]
         }
       },
       {
@@ -82322,15 +82882,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260405_234652.jpg",
-          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
-          "captured_date": "2026-04-05",
-          "captured_time": "23:46:52",
+          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:31",
           "media_type": "photo",
-          "component_group": "body_floor",
-          "specific_component": "floor_seam_and_body_mount_rust",
-          "stage": "rust_assessment",
-          "media_id": "20260405_234652",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004231_gp_CfosvPIg",
           "matched_tokens": []
         }
       },
@@ -82423,15 +82983,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260405_234652.jpg",
-          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
-          "captured_date": "2026-04-05",
-          "captured_time": "23:46:52",
+          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:31",
           "media_type": "photo",
-          "component_group": "body_floor",
-          "specific_component": "floor_seam_and_body_mount_rust",
-          "stage": "rust_assessment",
-          "media_id": "20260405_234652",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004231_gp_CfosvPIg",
           "matched_tokens": []
         }
       },
@@ -82476,15 +83036,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
           "captured_date": "2026-05-02",
-          "captured_time": "00:42:31",
+          "captured_time": "00:43:45",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
           "stage": "procurement_reconciliation",
-          "media_id": "20260502_004231_gp_CfosvPIg",
+          "media_id": "20260502_004345_gp_yK8VYzMQ",
           "matched_tokens": []
         }
       },
@@ -82613,15 +83173,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
           "captured_date": "2026-05-17",
-          "captured_time": "19:41:43",
+          "captured_time": "19:35:03",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "fabrication_measurement",
-          "media_id": "20260517_194143_gp_CO7MuMdA",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193503_gp_N9nHjqXw",
           "matched_tokens": []
         }
       },
@@ -82738,15 +83298,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
           "captured_date": "2026-05-17",
-          "captured_time": "19:46:33",
+          "captured_time": "19:36:12",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "fabrication_measurement",
-          "media_id": "20260517_194633_gp_rAjY3gjg",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193612_gp_JmbfR0Tw",
           "matched_tokens": []
         }
       },
@@ -82925,12 +83485,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 112,
-      "now_tasks": 96,
-      "later_tasks": 16,
-      "p0_tasks": 34,
-      "photo_tasks": 40,
-      "measurement_tasks": 77
+      "total_tasks": 109,
+      "now_tasks": 94,
+      "later_tasks": 15,
+      "p0_tasks": 31,
+      "photo_tasks": 39,
+      "measurement_tasks": 73
     },
     "counts_by_workstream": [
       {
@@ -82951,11 +83511,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 12
+        "count": 8
       },
       {
         "workstream": "mechanical_baseline",
-        "count": 5
+        "count": 6
       },
       {
         "workstream": "body_chassis",
@@ -83001,19 +83561,19 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 33
+        "count": 30
       },
       {
         "task_type": "photo_measurement",
-        "count": 27
+        "count": 25
       },
       {
         "task_type": "template",
-        "count": 17
+        "count": 18
       },
       {
         "task_type": "photo",
-        "count": 13
+        "count": 14
       },
       {
         "task_type": "data",
@@ -83031,7 +83591,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 34
+        "count": 31
       },
       {
         "priority": "P1",
@@ -83044,246 +83604,106 @@ window.J40_DASHBOARD_DATA = {
     ],
     "tasks": [
       {
-        "task_id": "brake_requirement:BR-SYS-003",
-        "title": "Brake vacuum booster / servo assembly",
+        "task_id": "component_job:brake_booster_servo_refurbishment_20260529",
+        "title": "brake_booster_servo_refurbishment_20260529",
         "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "later",
-        "status": "needs_booster_id_and_vacuum_test",
-        "location": "Master cylinder reservoir booster and firewall",
-        "action": "Front discs / rear drums confirmed by user. Photograph installed booster face/rear, master cylinder mating face, vacuum check valve, pedal clevis, and firewall bracket; vacuum-test the booster and check for brake-fluid contamination before final buy.",
-        "data_needed": "OEM/brand/part markings, booster diameter/depth, firewall stud pattern, master-cylinder stud spacing and pilot, pushrod length/depth, pedal clevis thread/pin, check-valve grommet OD, vacuum nipple orientation, clearance to clutch master and bonnet",
-        "blocks": "BR-SYS-003",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-SYS-003",
-        "notes": "New explicit row added 2026-05-04 after user confirmed front discs/rear drums and asked for Pakistan/local-market sourcing. Do not buy 44610-60040 single/drum booster or later 44610-60160 unless sample-matched and approved.",
-        "evidence_ref": "20260504_user_booster_photo",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "brake_requirement:BR-FRONT-002",
-        "title": "Front caliper rebuild kits or replacement calipers",
-        "workstream": "brake_system",
-        "task_type": "measurement",
+        "task_type": "photo",
         "priority": "P0",
         "timing": "now",
-        "status": "needs_caliper_family_identification",
-        "location": "Front disc calipers",
-        "action": "Inspect both front calipers during pad service and plan rebuild or replacement if there is leakage, seizure, torn boots, damaged pistons, stuck sliders, or unknown unsafe condition.",
-        "data_needed": "Casting marks, piston count/diameter, inlet fitting, bleed screw size, mounting bolt spacing, pad hardware style",
-        "blocks": "BR-FRONT-002",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-FRONT-002",
-        "notes": "Treat calipers as safety-critical; exact parts wait for fitted conversion identification.",
-        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:02",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_and_mount_points",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232236_gp_caYB252g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260406_031010.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
-            "captured_date": "2026-04-06",
-            "captured_time": "03:10:10",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260406_031010",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "brake_requirement:BR-FRONT-003",
-        "title": "Front rotor machine or replacement decision",
-        "workstream": "brake_system",
-        "task_type": "measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_rotor_measurement",
-        "location": "Front rotors",
-        "action": "Measure and inspect rotors during front brake service; machine or replace only if scoring, cracking, runout, or thickness/service limit requires it.",
-        "data_needed": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, hub face condition",
-        "blocks": "BR-FRONT-003",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-FRONT-003",
-        "notes": "Rotors are not a blind age-replacement item; condition and service limits control the decision.",
-        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:02",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_and_mount_points",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232236_gp_caYB252g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260406_031010.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
-            "captured_date": "2026-04-06",
-            "captured_time": "03:10:10",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260406_031010",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:front_brake_disc_baseline",
-        "title": "front_brake_disc_baseline",
-        "workstream": "brake_system",
-        "task_type": "measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "inspection_pending",
-        "location": "workshop",
-        "action": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it",
-        "data_needed": "Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified.",
+        "status": "amir_refurb_video_gate",
+        "location": "Amir runner / brake servo rebuilder / Land Cruiser House / local brake specialist",
+        "action": "Send the old brake booster/servo with Amir as the sample; quote professional rebuild of the old unit or a direct-match refurbished exchange unit, but do not pay until sample match, interface close-ups, vacuum hold, assist movement, contamination check, and final acceptance videos are approved",
+        "data_needed": "Old booster is a sample or rebuild core, not a reuse candidate. Reject raw untested used boosters, wrong stud/pushrod pattern, single/drum units, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or vacuum leakdown.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_brake_disc_baseline",
+        "source_row_id": "brake_booster_servo_refurbishment_20260529",
         "notes": "",
-        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_ref": "20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md|docs/amir-refurbishment-video-gates-20260529.md",
         "evidence_images": [
           {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:02",
+            "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:17",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_and_mount_points",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021217_gp_YAKcHCyQ",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
+            "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:25",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021225_gp_AzCLYJgQ",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:36",
+            "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:39",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232236_gp_caYB252g",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021239_gp_RiMXwHXA",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260406_031010.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
-            "captured_date": "2026-04-06",
-            "captured_time": "03:10:10",
+            "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:43",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260406_031010",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021243_gp_utTmUzJw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:46",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030646_gp_SAs7gfRg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:53",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030653_gp_7dCQk4QA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:07:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030700_gp_8qu2Rliw",
             "matched_tokens": []
           }
         ],
@@ -83301,17 +83721,17 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "photo",
         "priority": "P0",
         "timing": "now",
-        "status": "evidence_tracking",
+        "status": "replacement_evidence_added",
         "location": "repo_documentation",
-        "action": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit and updated",
-        "data_needed": "Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context.",
+        "action": "Consolidate brake configuration evidence from photos, chat, and parts tables; keep the front-disc/rear-drum assessment explicit, and treat the May 29 removed booster/servo evidence as owner-confirmed replacement scope for old brake parts.",
+        "data_needed": "Created so brake decisions do not live only as chat inference inside the broader steering/suspension track. May 14 close-ups and the user flare side-view are now assigned to the braking evidence pack for installed fitting and flare-type context. | May 29 removed brake booster/servo photos are now direct brake-system evidence; old brake parts are retained as samples and cores, not reuse candidates.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "brake_system_evidence_pack",
         "notes": "",
-        "evidence_ref": "20260324_004852|20260324_004906|20260423_232202_gp_ryYH6xZg|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40",
+        "evidence_ref": "20260324_004852|20260324_004906|20260423_232202_gp_ryYH6xZg|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
         "evidence_images": [
           {
             "path": "../../photos/20260324_004852.jpg",
@@ -83395,6 +83815,90 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "brake_hard_line_flare_sample",
             "stage": "brake_system",
             "media_id": "20260514_111300_user_brake_flare_side_view",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021217_gp_YAKcHCyQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:25",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021225_gp_AzCLYJgQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021239_gp_RiMXwHXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:43",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021243_gp_utTmUzJw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:46",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030646_gp_SAs7gfRg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:53",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030653_gp_7dCQk4QA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:07:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030700_gp_8qu2Rliw",
             "matched_tokens": []
           }
         ],
@@ -83517,23 +84021,23 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "brake_requirement:BR-FRONT-004",
-        "title": "Front flexible brake hoses",
+        "task_id": "component_job:front_brake_disc_baseline",
+        "title": "front_brake_disc_baseline",
         "workstream": "brake_system",
         "task_type": "photo_measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "needs_fitting_and_length_identification",
-        "location": "Front frame-to-caliper hydraulic drops",
-        "action": "Replace both front flex hoses with the brake hose set after hose ends, bracket retention, free length, and lock-to-lock clearance are captured.",
-        "data_needed": "Thread/banjo style, hose free length, bracket slot, retaining clip, steering lock clearance",
-        "blocks": "BR-FRONT-004",
+        "status": "sumitomo_front_disc_identified_measurement_pending",
+        "location": "workshop",
+        "action": "Use the May 29 closeups as the fitted front-disc baseline: visible Sumitomo fixed calipers with external bridge/transfer pipes, dust shields, visible rotors, and short hard-line/flex-hose routing; replace pads/hardware and front hoses, and rebuild/replace calipers only after pad shape, piston count/diameter, mounting ears, hose/fitting threads, and rotor measurements are captured.",
+        "data_needed": "Front discs are no longer only a generic inference: May 29 photos visibly show Sumitomo fixed-caliper hardware. Remaining unknowns are exact Toyota/caliper family, pad outline, piston diameters, rotor dimensions/service limits, hose free length/fittings, and wheel/steering-lock clearance; do not buy exact parts until measured or sample-matched.",
+        "blocks": "",
         "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-FRONT-004",
-        "notes": "Ironman geometry is treated as effectively the same as current setup; no separate lift/geometry release action.",
-        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_brake_disc_baseline",
+        "notes": "",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|photo_import_20260529T185008",
         "evidence_images": [
           {
             "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -83582,128 +84086,53 @@ window.J40_DASHBOARD_DATA = {
             "stage": "underside_inspection",
             "media_id": "20260406_031010",
             "matched_tokens": []
-          }
-        ],
-        "links": [
+          },
           {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:brake_hydraulic_refresh_and_bias_decision",
-        "title": "brake_hydraulic_refresh_and_bias_decision",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "inspection_pending",
-        "location": "workshop",
-        "action": "Inspect hard lines, flexible hoses, master cylinder, reservoir hoses, and brake balance/proportioning before buying conversion parts or reassembly consumables",
-        "data_needed": "Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "brake_hydraulic_refresh_and_bias_decision",
-        "notes": "",
-        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260331_224409.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:09",
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "18:39:47",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224409",
+            "component_group": "brake_system",
+            "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+            "stage": "brake_system_identification",
+            "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260331_224423.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:23",
+            "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+            "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "18:39:59",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224423",
+            "component_group": "brake_system",
+            "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+            "stage": "brake_system_identification",
+            "media_id": "20260529_183959_gp_MlRssDVA",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
+            "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+            "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "18:40:10",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
+            "component_group": "brake_system",
+            "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+            "stage": "brake_system_identification",
+            "media_id": "20260529_184010_gp_3htpDpPQ",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
+            "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+            "caption": "Front Sumitomo Disc Caliper And Rotor Baseline \u00b7 Brake System Identification \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "18:40:12",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095907_gp_Ni1EUf4A.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:59:07",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_095907_gp_Ni1EUf4A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095926_gp_YBNOqh9A.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:59:26",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_095926_gp_YBNOqh9A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_100647_gp_foDr3ymA.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "10:06:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_100647_gp_foDr3ymA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
-            "caption": "Brake Hard Line Flare Sample \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "11:13:00",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "brake_hard_line_flare_sample",
-            "stage": "brake_system",
-            "media_id": "20260514_111300_user_brake_flare_side_view",
+            "component_group": "brake_system",
+            "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+            "stage": "brake_system_identification",
+            "media_id": "20260529_184012_gp_Q01c08NA",
             "matched_tokens": []
           }
         ],
@@ -83806,6 +84235,213 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rear_axle_and_leaf_springs",
             "stage": "brake_system",
             "media_id": "20260514_100003_gp_Vr2QI7ig",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:brake_hydraulic_refresh_and_bias_decision",
+        "title": "brake_hydraulic_refresh_and_bias_decision",
+        "workstream": "brake_system",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "replacement_scope_confirmed",
+        "location": "workshop",
+        "action": "Treat the hydraulic and booster system as replacement/renewal scope: replace or recreate hard lines and flex hoses, sample-match master/booster/reservoir/proportioning parts, then validate brake balance; old parts are templates only.",
+        "data_needed": "Fuel and brake line replacement already exists in chat and parts data; May 14 installed fitting photos plus the user flare side-view point to Toyota-style double/inverted flare hardware but final fabrication still requires straight-on sealing-face thread and seat confirmation. | May 29 removed booster/servo photos and owner confirmation make the brake system replacement scope explicit; exact parts remain gated by old-sample measurement, thread/seat confirmation, bleed, and road validation.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "brake_hydraulic_refresh_and_bias_decision",
+        "notes": "",
+        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA|20260514_111300_user_brake_flare_side_view|photo_import_20260514T104551|whatsapp_fj40|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224409",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260331_224423.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224423",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260514_095907_gp_Ni1EUf4A.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "09:59:07",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "brake_system",
+            "media_id": "20260514_095907_gp_Ni1EUf4A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260514_095926_gp_YBNOqh9A.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "09:59:26",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "brake_system",
+            "media_id": "20260514_095926_gp_YBNOqh9A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260514_100647_gp_foDr3ymA.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "10:06:47",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "brake_system",
+            "media_id": "20260514_100647_gp_foDr3ymA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
+            "caption": "Brake Hard Line Flare Sample \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "11:13:00",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "brake_hard_line_flare_sample",
+            "stage": "brake_system",
+            "media_id": "20260514_111300_user_brake_flare_side_view",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021217_gp_YAKcHCyQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:25",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021225_gp_AzCLYJgQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021239_gp_RiMXwHXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "02:12:43",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_021243_gp_utTmUzJw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:46",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030646_gp_SAs7gfRg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:06:53",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030653_gp_7dCQk4QA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "03:07:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "brake_booster_servo_removed_sample",
+            "stage": "brake_system",
+            "media_id": "20260529_030700_gp_8qu2Rliw",
             "matched_tokens": []
           }
         ],
@@ -88101,81 +88737,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "brake_requirement:BR-FRONT-001",
-        "title": "Front disc pads and retaining hardware",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P1",
-        "timing": "now",
-        "status": "needs_caliper_pad_identification",
-        "location": "Front disc calipers and rotors",
-        "action": "Assume front pad and hardware replacement in the baseline refresh; photograph calipers, pad shape, and retaining hardware before ordering.",
-        "data_needed": "Pad outline, pad thickness, rotor diameter/thickness if accessible, caliper casting/part numbers, retaining pin/spring style",
-        "blocks": "BR-FRONT-001",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-FRONT-001",
-        "notes": "Do not buy from 1978 catalog alone because front discs appear to be a previous conversion.",
-        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:02",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_and_mount_points",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232236_gp_caYB252g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260406_031010.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
-            "captured_date": "2026-04-06",
-            "captured_time": "03:10:10",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260406_031010",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:chassis_frame_and_crossmembers",
         "title": "chassis_frame_and_crossmembers",
         "workstream": "chassis_fixing",
@@ -89013,14 +89574,14 @@ window.J40_DASHBOARD_DATA = {
         "status": "existing_measurements_imported_dry_fit_required",
         "location": "workshop_to_fabricator_tbd",
         "action": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required.",
-        "data_needed": "User update 2026-05-13 changes the fixing method: no welding by default. Existing-side measurements are imported; final release still needs right-side top screw transfer, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit.",
+        "data_needed": "User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "front_radiator_two_side_retention_fabrication_20260508",
         "notes": "",
-        "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
+        "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
         "evidence_images": [
           {
             "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
@@ -91978,6 +92539,57 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:engine_radiator_recore_or_new_20260529",
+        "title": "engine_radiator_recore_or_new_20260529",
+        "workstream": "mechanical_baseline",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "amir_refurb_video_gate",
+        "location": "Amir runner / Master Radiators / Kor Tech Radiator / local Lahore radiator shop",
+        "action": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit",
+        "data_needed": "Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "engine_radiator_recore_or_new_20260529",
+        "notes": "",
+        "evidence_ref": "user_update_2026-05-29_do_what_best_engine_radiator|user_update_2026-05-29_extra_fabricated_leg_bad_install|user_update_2026-05-29_aluminium_radiator_adapter_contingency|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|radiator_cap_current_car_crop_20260503|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "component_job:front_wings",
         "title": "front_wings",
         "workstream": "paint_refinish",
@@ -94489,22 +95101,22 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "tool",
         "previously": 62,
         "in_process": 19,
-        "still_required": 4,
-        "total": 85
+        "still_required": 3,
+        "total": 84
       },
       {
         "supply_type": "substance",
         "previously": 12,
         "in_process": 0,
-        "still_required": 7,
-        "total": 19
+        "still_required": 8,
+        "total": 20
       },
       {
         "supply_type": "part",
         "previously": 96,
         "in_process": 16,
-        "still_required": 61,
-        "total": 173
+        "still_required": 60,
+        "total": 172
       }
     ],
     "rows_by_status": {
@@ -103572,19 +104184,19 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_booster_servo_44610_60050",
           "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout",
-          "vendor": "Bilal Ganj / Montgomery Road / Land Cruiser House / brake servo rebuilder",
+          "inventory_group": "electrical",
+          "item": "Brake vacuum booster servo - refurbish or direct-match exchange by old sample",
+          "vendor": "Amir runner / Land Cruiser House / brake servo rebuilder / local brake specialist",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "local_market_quote_and_sample_match",
+          "procurement_stage": "amir_refurb_quote_video_gate",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003",
-          "notes": "Market scout / quote only: front-disc/rear-drum brake architecture confirmed by user on 2026-05-04. Target Toyota 44610-60050 tandem/dual-diaphragm booster; quote compatible 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject 44610-60040 single/drum and later 44610-60160 unless sample-matched and approved.",
+          "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+          "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -103774,7 +104386,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front caliper rebuild kits or replacement calipers",
+          "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -103784,25 +104396,25 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
+              "photo_20260529_183947_gp_lsyuesvg"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -103813,7 +104425,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_disc_pads_hardware",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front disc pads and retaining hardware",
+          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -103823,25 +104435,25 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
+              "photo_20260529_183947_gp_lsyuesvg"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -103852,7 +104464,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_brake_hose_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front flexible brake hose pair",
+          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -103862,9 +104474,30 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, and steering lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-          "links": [],
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -103891,7 +104524,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_rotor_service_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front rotor machine or replacement pair",
+          "item": "Front rotor machine or replacement pair - measure visible current rotors",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -103901,25 +104534,25 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "inspect_then_buy",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-          "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-            "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "media_id": "20260529_183947_gp_lSYuESVg",
             "matched_tokens": [
-              "photo_20260423_232202_gp_ryyh6xzg"
+              "photo_20260529_183947_gp_lsyuesvg"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -104684,84 +105317,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_firewall_grommet_set_large_power",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Additional firewall grommet set IDs 16/20/25 mm",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list|docs_wire-heavy-resize-cutlist",
-          "notes": "Large pass-through sizes still needed for protected heavy feed runs and split-loom trunk crossings",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-            "caption": "Additional firewall grommet set IDs 16/20/25 mm \u00b7 automotive cable reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "heavy_battery_cable",
-            "matched_tokens": [
-              "cable"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_firewall_grommet_set_small_medium",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Additional firewall grommet set IDs 6/8/10/12 mm",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list",
-          "notes": "Additional small and medium pass-through sizes still needed to cover loom branch and signal wire firewall exits",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "Additional firewall grommet set IDs 6/8/10/12 mm \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_cabin_compact_fuse_boxes",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -104801,45 +105356,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "quote_rubber_grommet_set_chat",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Electrical wire grommet set (200pcs)",
-          "vendor": "starshop.pk",
-          "amount": "7860",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "quote",
-          "procurement_stage": "deferred_optional",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "fj40-00276",
-          "notes": "Reference quote only; duplicate path now superseded by the received AliExpress grommet set Vendor backfilled from J40_Costs.xlsx.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "Electrical wire grommet set (200pcs) \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -104874,6 +105390,86 @@ window.J40_DASHBOARD_DATA = {
               "relay"
             ],
             "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+          "vendor": "local rubber sheet supplier / Longman fallback",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "fabrication_handoff",
+          "status_group": "still_required",
+          "status_detail": "fabrication_controlled",
+          "procurement_stage": "fabrication_quote_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_mount_rubber_kit_reference",
+            "matched_tokens": [
+              "body",
+              "mount"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+          "vendor": "local steel stockholder / sheet-metal shop",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "fabrication_handoff",
+          "status_group": "still_required",
+          "status_detail": "fabrication_controlled",
+          "procurement_stage": "fabrication_quote_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_heater_hose_current_car_crop_20260503",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "local_reference_image",
             "match_score": 700
           }
         },
@@ -105769,6 +106365,45 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_mech_transmission_oil_service",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Transmission/gearbox oil service - drain inspect and refill",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "gearbox_top_cover",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
+          "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_substance.jpg",
+            "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive substance reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_substance",
+            "matched_tokens": [
+              "substance"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514",
           "supply_type": "substance",
           "inventory_group": "substances",
@@ -106035,41 +106670,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_24",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Side Cutter Bosi Black in Pakistan",
-          "vendor": "fiaz.com.pk",
-          "amount": "650",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "No",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "No clear order/receipt evidence and user reports not received.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_tools_side_cutter_bosi_black_in_pakistan_b8e345ab3d7d.jpg",
-            "caption": "Side Cutter Bosi Black \u00b7 selling site reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_24"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -114583,6 +115183,86 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+        "vendor": "local rubber sheet supplier / Longman fallback",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "fabrication_handoff",
+        "status_group": "still_required",
+        "status_detail": "fabrication_controlled",
+        "procurement_stage": "fabrication_quote_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_mount_rubber_kit_reference",
+          "matched_tokens": [
+            "body",
+            "mount"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+        "vendor": "local steel stockholder / sheet-metal shop",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "fabrication_handoff",
+        "status_group": "still_required",
+        "status_detail": "fabrication_controlled",
+        "procurement_stage": "fabrication_quote_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_heater_hose_current_car_crop_20260503",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -114606,84 +115286,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
           "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_firewall_grommet_set_large_power",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Additional firewall grommet set IDs 16/20/25 mm",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list|docs_wire-heavy-resize-cutlist",
-        "notes": "Large pass-through sizes still needed for protected heavy feed runs and split-loom trunk crossings",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-          "caption": "Additional firewall grommet set IDs 16/20/25 mm \u00b7 automotive cable reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heavy_battery_cable",
-          "matched_tokens": [
-            "cable"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_firewall_grommet_set_small_medium",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Additional firewall grommet set IDs 6/8/10/12 mm",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_grommet_size_gap_review|docs_bilal-ganj-master-shopping-list",
-        "notes": "Additional small and medium pass-through sizes still needed to cover loom branch and signal wire firewall exits",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "Additional firewall grommet set IDs 6/8/10/12 mm \u00b7 rubber grommet reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -114818,6 +115420,45 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_brake_booster_servo_44610_60050",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Brake vacuum booster servo - refurbish or direct-match exchange by old sample",
+        "vendor": "Amir runner / Land Cruiser House / brake servo rebuilder / local brake specialist",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "amir_refurb_quote_video_gate",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+        "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
+          "caption": "Brake booster servo - Land Cruiser brake booster reference",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_booster_servo_44610_60050"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_cabin_compact_fuse_boxes",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -114918,45 +115559,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "quote_rubber_grommet_set_chat",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Electrical wire grommet set (200pcs)",
-        "vendor": "starshop.pk",
-        "amount": "7860",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "still_required",
-        "status_detail": "quote",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "fj40-00276",
-        "notes": "Reference quote only; duplicate path now superseded by the received AliExpress grommet set Vendor backfilled from J40_Costs.xlsx.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "Electrical wire grommet set (200pcs) \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -115875,45 +116477,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_brake_booster_servo_44610_60050",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout",
-        "vendor": "Bilal Ganj / Montgomery Road / Land Cruiser House / brake servo rebuilder",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "local_market_quote_and_sample_match",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003",
-        "notes": "Market scout / quote only: front-disc/rear-drum brake architecture confirmed by user on 2026-05-04. Target Toyota 44610-60050 tandem/dual-diaphragm booster; quote compatible 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject 44610-60040 single/drum and later 44610-60160 unless sample-matched and approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
-          "caption": "Brake booster servo - Land Cruiser brake booster reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_booster_servo_44610_60050"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_brake_clutch_hard_line_fittings_20260514",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -116175,7 +116738,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_caliper_rebuild_or_replace_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front caliper rebuild kits or replacement calipers",
+        "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -116185,25 +116748,25 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
+            "photo_20260529_183947_gp_lsyuesvg"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -116214,7 +116777,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_disc_pads_hardware",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front disc pads and retaining hardware",
+        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -116224,25 +116787,25 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
+            "photo_20260529_183947_gp_lsyuesvg"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -116253,7 +116816,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_brake_hose_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front flexible brake hose pair",
+        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -116263,9 +116826,30 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, and steering lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-        "links": [],
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -116292,7 +116876,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_rotor_service_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front rotor machine or replacement pair",
+        "item": "Front rotor machine or replacement pair - measure visible current rotors",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -116302,25 +116886,25 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "inspect_then_buy",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
-        "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
+        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
-          "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "media_id": "20260529_183947_gp_lSYuESVg",
           "matched_tokens": [
-            "photo_20260423_232202_gp_ryyh6xzg"
+            "photo_20260529_183947_gp_lsyuesvg"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -117636,6 +118220,45 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_mech_transmission_oil_service",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Transmission/gearbox oil service - drain inspect and refill",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "gearbox_top_cover",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-29_transmission_oil_task|docs/gearbox-top-cover-workstream.md",
+        "notes": "Replace transmission/gearbox oil during mechanical baseline. Open fill plug before draining; drain into clean pan/cup; photograph oil, drain plug/magnet, and debris; identify fitted gearbox/manual oil spec before purchase/refill; use correct gearbox oil only; do not treat rear differential oil as this item.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_substance.jpg",
+          "caption": "Transmission/gearbox oil service - drain inspect and refill \u00b7 automotive substance reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_substance",
+          "matched_tokens": [
+            "substance"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_mech_vacuum_hose_refresh",
         "supply_type": "substance",
         "inventory_group": "substances",
@@ -117772,41 +118395,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_24",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Side Cutter Bosi Black in Pakistan",
-        "vendor": "fiaz.com.pk",
-        "amount": "650",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "No",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "No clear order/receipt evidence and user reports not received.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_tools_side_cutter_bosi_black_in_pakistan_b8e345ab3d7d.jpg",
-          "caption": "Side Cutter Bosi Black \u00b7 selling site reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_24"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "source": "expenses",
         "source_ref": "tool_local_toolbench",
         "supply_type": "tool",
@@ -117851,9 +118439,9 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 205,
-      "total_images": 184,
-      "total_videos": 21,
+      "total_media": 207,
+      "total_images": 185,
+      "total_videos": 22,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
       "drop_zone_videos": 0,
@@ -121225,6 +121813,38 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
             "notes": "Author: 37911810572503. Imported timestamp: 2026-05-27 15:55:46.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-28 13:14:23.000Z",
+            "captured_date": "2026-05-28",
+            "captured_time": "13:14:23.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid.jpeg",
+            "notes": "Author: 92225899917317. Imported timestamp: 2026-05-28 13:14:23.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-28 17:46:16.000Z",
+            "captured_date": "2026-05-28",
+            "captured_time": "17:46:16.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
+            "notes": "Author: 41635429744809. Imported timestamp: 2026-05-28 17:46:16.000Z"
           }
         ]
       }
@@ -121915,8 +122535,8 @@ window.J40_DASHBOARD_DATA = {
         "chat_type": "group",
         "relevance_score": "15",
         "messages_fetched": "true",
-        "messages_count": "234",
-        "media_count": "65",
+        "messages_count": "242",
+        "media_count": "67",
         "messages_fetch_error": ""
       },
       {
@@ -122041,7 +122661,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 229
+        "count": 230
       },
       {
         "media_type": "sticker",
@@ -122049,7 +122669,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "video",
-        "count": 31
+        "count": 32
       }
     ],
     "media_counts_by_profile": [
@@ -122059,10 +122679,28 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 118
+        "count": 120
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac3b1bed07bf22214f8593429e4d179e_41635429744809_lid::false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-28T17:46:16.000Z",
+        "media_type": "video",
+        "file_name": "false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC3B1BED07BF22214F8593429E4D179E_41635429744809_lid.mp4"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac1ae6e046eb8ce87add3095b276f493_92225899917317_lid::false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-28T13:14:23.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC1AE6E046EB8CE87ADD3095B276F493_92225899917317_lid.jpeg"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acb3722f0b7d4c0c2932d22409a029aa_37911810572503_lid::false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
         "source_profile": "whatsapp-number-2",
@@ -122260,24 +122898,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "audio",
         "file_name": "false_971527520120_1517397900_g_us_A5B2F7116BCA62E1CB039E0B386EFAC6_128350903398508_lid.oga",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5B2F7116BCA62E1CB039E0B386EFAC6_128350903398508_lid.oga"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a84b45c883bb316cc0f_42507291328542_lid::false_971527520120_1517397900_g_us_3A84B45C883BB316CC0F_42507291328542_lid.oga",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T08:33:03.000Z",
-        "media_type": "audio",
-        "file_name": "false_971527520120_1517397900_g_us_3A84B45C883BB316CC0F_42507291328542_lid.oga",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A84B45C883BB316CC0F_42507291328542_lid.oga"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a500897ebc7e0fd2f6a2fa503d036f84_128350903398508_lid::false_971527520120_1517397900_g_us_A500897EBC7E0FD2F6A2FA503D036F84_128350903398508_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T08:30:43.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_A500897EBC7E0FD2F6A2FA503D036F84_128350903398508_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A500897EBC7E0FD2F6A2FA503D036F84_128350903398508_lid.jpeg"
       }
     ]
   },
@@ -122285,6 +122905,7 @@ window.J40_DASHBOARD_DATA = {
     "component_groups": [
       "body_exterior",
       "body_floor",
+      "brake_system",
       "chassis_underside",
       "documentation_reference",
       "electrical_system",
@@ -122309,6 +122930,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_and_crossmember_detail",
       "body_off_shell_floor_and_bulkhead",
       "body_shell_with_doors_removed",
+      "brake_booster_servo_removed_sample",
       "brake_hard_line_flare_sample",
       "cabin_engine_firewall_pass_through_holes",
       "cabin_overview",
@@ -122350,6 +122972,7 @@ window.J40_DASHBOARD_DATA = {
       "front_frame_horns_bumper_and_steering_area",
       "front_panel_headlamp_surround",
       "front_panel_lighting_mount_area",
+      "front_sumitomo_disc_caliper_and_rotor_baseline",
       "front_support_radiator_measurement_set",
       "front_support_radiator_pickups_context",
       "front_vent_window_assemblies",
@@ -122410,6 +123033,7 @@ window.J40_DASHBOARD_DATA = {
     "stages": [
       "baseline_walkaround",
       "brake_system",
+      "brake_system_identification",
       "chassis_fixing",
       "electrical_reference",
       "electrical_refit",
@@ -122457,6 +123081,7 @@ window.J40_DASHBOARD_DATA = {
       "existing_mount_ruler_reference",
       "fabrication_spec_capture",
       "fastener_sorting",
+      "front_fixed_sumitomo_disc_caliper_visible",
       "front_frame_steering_baseline",
       "front_linkage_brake_baseline",
       "front_support_opening_measurement",
@@ -122498,6 +123123,7 @@ window.J40_DASHBOARD_DATA = {
       "removed_column_reference",
       "removed_from_vehicle",
       "removed_from_vehicle_needs_refurbish",
+      "replace_all_brake_parts_owner_confirmed",
       "route_context_for_engine_inputs",
       "rust_repair_assessment",
       "sample_length_and_route_identification",
@@ -134219,6 +134845,171 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "cooling|pipe|radiator_hose|metal_pipe|connector_hose|clamp|clip|sample|replacement_pipe|fabrication|measurement|tape_reference",
       "notes": "May 29 user-selected larger pipe detail batch: loose formed metal coolant pipe, connector hoses, clamps, clips, and tape references for replacement-pipe fabrication. Owner confirmed the metal pipe, pipes/hoses, and clips can be replaced; use old parts as patterns only."
+    },
+    "20260529_021217_gp_YAKcHCyQ": {
+      "media_id": "20260529_021217_gp_YAKcHCyQ",
+      "file_name": "20260529_021217_gp_YAKcHCyQ.jpg",
+      "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "02:12:17",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_021225_gp_AzCLYJgQ": {
+      "media_id": "20260529_021225_gp_AzCLYJgQ",
+      "file_name": "20260529_021225_gp_AzCLYJgQ.jpg",
+      "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "02:12:25",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_021239_gp_RiMXwHXA": {
+      "media_id": "20260529_021239_gp_RiMXwHXA",
+      "file_name": "20260529_021239_gp_RiMXwHXA.jpg",
+      "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "02:12:39",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_021243_gp_utTmUzJw": {
+      "media_id": "20260529_021243_gp_utTmUzJw",
+      "file_name": "20260529_021243_gp_utTmUzJw.jpg",
+      "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "02:12:43",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_030646_gp_SAs7gfRg": {
+      "media_id": "20260529_030646_gp_SAs7gfRg",
+      "file_name": "20260529_030646_gp_SAs7gfRg.jpg",
+      "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "03:06:46",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_030653_gp_7dCQk4QA": {
+      "media_id": "20260529_030653_gp_7dCQk4QA",
+      "file_name": "20260529_030653_gp_7dCQk4QA.jpg",
+      "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "03:06:53",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_030700_gp_8qu2Rliw": {
+      "media_id": "20260529_030700_gp_8qu2Rliw",
+      "file_name": "20260529_030700_gp_8qu2Rliw.jpg",
+      "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "03:07:00",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "brake_booster_servo_removed_sample",
+      "stage": "brake_system",
+      "observed_state": "replace_all_brake_parts_owner_confirmed",
+      "confidence": "high",
+      "tags": "brake_booster|brake_servo|vacuum_booster|removed_sample|pushrod|clevis|firewall_studs|corrosion|rubber_boot|replacement_required|sample_match",
+      "notes": "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation."
+    },
+    "20260529_183947_gp_lSYuESVg": {
+      "media_id": "20260529_183947_gp_lSYuESVg",
+      "file_name": "20260529_183947_gp_lSYuESVg.jpg",
+      "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "18:39:47",
+      "media_type": "photo",
+      "component_group": "brake_system",
+      "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+      "stage": "brake_system_identification",
+      "observed_state": "front_fixed_sumitomo_disc_caliper_visible",
+      "confidence": "high",
+      "tags": "front_brake|front_disc|sumitomo|fixed_caliper|caliper_bridge_pipe|front_brake_hose|front_hard_line|rotor|dust_shield|pad_service",
+      "notes": "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts."
+    },
+    "20260529_183959_gp_MlRssDVA": {
+      "media_id": "20260529_183959_gp_MlRssDVA",
+      "file_name": "20260529_183959_gp_MlRssDVA.jpg",
+      "path": "../../photos/20260529_183959_gp_MlRssDVA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "18:39:59",
+      "media_type": "photo",
+      "component_group": "brake_system",
+      "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+      "stage": "brake_system_identification",
+      "observed_state": "front_fixed_sumitomo_disc_caliper_visible",
+      "confidence": "high",
+      "tags": "front_brake|front_disc|sumitomo|fixed_caliper|caliper_bridge_pipe|front_brake_hose|front_hard_line|rotor|dust_shield|pad_service",
+      "notes": "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts."
+    },
+    "20260529_184010_gp_3htpDpPQ": {
+      "media_id": "20260529_184010_gp_3htpDpPQ",
+      "file_name": "20260529_184010_gp_3htpDpPQ.jpg",
+      "path": "../../photos/20260529_184010_gp_3htpDpPQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "18:40:10",
+      "media_type": "photo",
+      "component_group": "brake_system",
+      "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+      "stage": "brake_system_identification",
+      "observed_state": "front_fixed_sumitomo_disc_caliper_visible",
+      "confidence": "high",
+      "tags": "front_brake|front_disc|sumitomo|fixed_caliper|caliper_bridge_pipe|front_brake_hose|front_hard_line|rotor|dust_shield|pad_service",
+      "notes": "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts."
+    },
+    "20260529_184012_gp_Q01c08NA": {
+      "media_id": "20260529_184012_gp_Q01c08NA",
+      "file_name": "20260529_184012_gp_Q01c08NA.jpg",
+      "path": "../../photos/20260529_184012_gp_Q01c08NA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "18:40:12",
+      "media_type": "photo",
+      "component_group": "brake_system",
+      "specific_component": "front_sumitomo_disc_caliper_and_rotor_baseline",
+      "stage": "brake_system_identification",
+      "observed_state": "front_fixed_sumitomo_disc_caliper_visible",
+      "confidence": "high",
+      "tags": "front_brake|front_disc|sumitomo|fixed_caliper|caliper_bridge_pipe|front_brake_hose|front_hard_line|rotor|dust_shield|pad_service",
+      "notes": "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts."
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

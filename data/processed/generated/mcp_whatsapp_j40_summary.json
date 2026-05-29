@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T18:17:04+00:00",
+  "generated_at": "2026-05-29T13:47:11+00:00",
   "profiles": [
     {
       "profile_server": "whatsapp-number-1",
@@ -20,19 +20,19 @@
       "status": "disconnected",
       "total_chats": 379,
       "selected_chats": 9,
-      "messages_imported": 588,
-      "media_imported": 118,
-      "images_imported": 98,
-      "videos_imported": 12
+      "messages_imported": 596,
+      "media_imported": 120,
+      "images_imported": 99,
+      "videos_imported": 13
     }
   ],
   "totals": {
     "chat_candidates": 381,
     "selected_chats": 11,
-    "messages_imported": 1760,
-    "media_imported": 283,
-    "images_imported": 229,
-    "videos_imported": 31
+    "messages_imported": 1768,
+    "media_imported": 285,
+    "images_imported": 230,
+    "videos_imported": 32
   },
   "outputs": {
     "chat_candidates_csv": "data/manual/whatsapp_j40_chat_candidates.csv",

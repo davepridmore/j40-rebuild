@@ -182,9 +182,9 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 
 | Priority | Replacement |
 | --- | --- |
-| P0 | Front disc pad and retaining hardware set after the fitted caliper/pad family is identified. |
-| P0 | Front flex hoses after caliper-end, chassis-bracket, free length, and lock-to-lock clearance are confirmed. |
-| P0 | Front caliper rebuild kits or replacement calipers if inspection finds leaks, seizure, torn boots, damaged pistons, or unknown unsafe condition. |
+| P0 | Front disc pad and retaining hardware set for the visible Sumitomo fixed-caliper setup after pad outline and retaining pin/spring/clip style are captured. |
+| P0 | Front flex hoses after the visible bracket/short-hard-line route is matched for caliper end, chassis bracket, free length, and lock-to-lock clearance. |
+| P0 | Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers if inspection finds leaks, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition. |
 | P0 | Full brake/clutch hard-line stock: receipt-check Amir-procured `25 ft` zinc-coated/galvanised `3/16 in` brake tube. Existing controlled basis is `7600 mm / 25 ft` brake line plus `1500 mm` clutch blank; `10000-12000 mm` remains preferred only if the procured stock is not enough for brake + clutch plus practice flares. |
 | P0 | New brake/clutch flare nuts and fittings after old fittings identify flare type, threads, and seats at master/proportioning, front hose brackets, rear hose/T-union, wheel cylinders, and clutch master/slave or clutch hose ends. Brake-line working basis after the May 14 installed-fitting and flare side-view photos is Toyota-style `double / inverted` flare; final release still comes from a straight-on removed sample and opened seat. |
 | P0 | Rear axle brake T-union/splitter and any disturbed inline unions/splitters if corroded, seized, damaged, or mismatched; match thread, flare seat, port orientation, and mounting style from old samples. |
@@ -193,14 +193,14 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and old-sample/free length. |
 | P0 | Rear wheel-cylinder teardown decision: split into exact fitted cylinder purchase lines once bore/port/mounting pattern and actual count are confirmed, or mark redundant if the existing assemblies are retained/rebuilt. |
 | P0 | Rear drum spring, hold-down, adjuster, and retaining hardware: Centric `116971-05110530` is procured by Amir; verify contents and fit against opened-drum layout or old samples before installation. |
-| P0 | Full brake flex hose set: front left, front right, and rear center after front caliper fitting style, rear center fittings, bracket retention, and free length are captured. |
+| P0 | Full brake flex hose set: front left, front right, and rear center after the visible front Sumitomo caliper hard-line/hose route, rear center fittings, bracket retention, and free length are captured. |
 | P0 | Brake flex-hose retaining U-clips and bracket hardware for front left, front right, and rear center hose brackets. |
 | P0 | Full line-support pack: rubber-lined P-clips for `4.75 mm` hard line, clamp-on rubber-lined axle supports, pass-through grommets/edge trim, M5/M6 fasteners, and larger cable saddles where parking-brake cables rub. |
 | P0 | Clutch hydraulic flex hose assembly, clutch hard-line fittings, and clutch hard-line route release using the shared `4.75 mm / 3/16 in` hydraulic tube stock. |
 | P0 | Clutch master/slave cylinders or rebuild kits if inspection finds leakage, pitting, seizure, bypassing, missing boots, or unknown unsafe condition. |
 | P1 | Rear shoes, hold-down springs, return springs, adjuster hardware, and retaining clips after drum family and shoe dimensions are confirmed. |
 | P1 | Brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips where originals are missing or corroded. |
-| P1 | Front rotors: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
+| P1 | Front rotors behind the visible Sumitomo fixed calipers: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
 | P1 | Brake master cylinder, reservoir hoses/caps/seals, booster interface parts, and proportioning/bias hardware as replacement/renewal scope after old-sample layout, ports, seats, and pushrod depth are confirmed. |
 | P1 | Brake fluid and hydraulic closeout setup. DOT 3 fluid and clear bleed hose are received; caps/plugs, cleaner, rags, and catch tray are on-hand/workshop-managed and must be verified before opening lines. |
 
@@ -211,7 +211,7 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 | Rear brake shoes / friction pieces | Candidate PakWheels order exists, but fit is not closed until delivered units are counted and matched for shoe width, arc, lining, and drum fit. |
 | Rear drum spring and adjuster hardware | Procured candidate only: Centric `116971-05110530` still needs opened-drum fit/content validation; spring layout and hold-down dimensions come from the opened drum. |
 | Rear wheel cylinders / hydraulic entry-point assemblies | No generic order row. This is a workstream gate until teardown splits the exact fitted cylinders into purchase lines, or proves the purchase redundant because the existing assemblies are retained/rebuilt. |
-| Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
+| Front pads/caliper kits/rotors | Baseline service is approved and the front calipers are now visibly Sumitomo fixed type, but exact pads, seal kits, and rotor decisions still wait for pad outline, cleaned casting marks, piston dimensions, and rotor measurements. |
 | Rear parking-brake cables | Baseline replace with new cable assemblies, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
 | Brake master / booster / proportioning | Replacement/renewal scope is confirmed, but master bore, booster pushrod depth, proportioning layout, reservoir condition, fitting threads, and flare seats are not yet sample-matched. |
 | Brake conversion parts | Baseline plan is refresh first; no rear-disc conversion unless inspection or use shows a measured need. |
@@ -228,7 +228,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 | Rear center flex hose | Photograph chassis-side and axle-side fittings, bracket slot, retaining clip, T/union, and route; measure hose free length, fitting/thread or banjo style, bracket retention, and fitted route clearance. | Rear center hose and full flex-hose set. |
 | Rear drums open | Photograph each side before removing springs; record drum inside diameter, shoe width, lining condition, adjuster style, spring layout, backing-plate condition, parking-brake lever condition, and drum scoring/step. | Rear shoes, hardware kit, adjusters, drum machine/replace decision. |
 | Rear wheel cylinders | Photograph installed cylinder and ports; after drum-open capture, record actual cylinder count, bore, mounting bolt spacing, port thread, pushrod/slot style, bleed screw size/access, and leak/seizure condition. | Wheel cylinders and bleed hardware. |
-| Front disc hardware | Photograph both front calipers, rotors, hose ends, brackets, bleed screws, and any visible casting/part numbers; record pad shape, rotor thickness/diameter if accessible, caliper fitting type, hose free length, and steering lock clearance. | Front pads, caliper rebuild kits, front hoses, rotor decision. |
+| Front disc hardware | May 29 photos already show Sumitomo fixed calipers, external hard-line/transfer-pipe detail, dust shields, rotors, and front hose routing. Next capture: clean casting marks, photograph both sides, remove/photograph pad outline and retaining pins/springs/clips, measure rotor thickness/diameter/runout if accessible, record piston count/diameter, caliper fitting type, hose free length, and steering lock clearance. | Front pads, caliper rebuild kits, front hoses, rotor decision. |
 | Master/booster/proportioning | Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias valve if fitted, all ports, and hard-line routing; record fitting threads/flare seats, booster diameter/depth, stud spacing, master seat/depth, pushrod/clevis dimensions, check-valve/grommet size, and any leaks or seized fittings. | Master cylinder, booster/servo replacement or rebuild, reservoir seals/caps/hoses, brake balance decision. |
 | Clips and retainers | Count every brake-line clip, parking-brake cable retainer, rubber sleeve/grommet, and P-clip by position; keep one sample of each style; record hole size, bracket thickness, and line/cable OD. | Clip order, P-clip pack, permanent line/cable support. |
 
@@ -237,7 +237,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 - Brake cables may be removed now after photos/labels, but old cables must remain the ordering samples.
 - Hydraulic lines may be removed only if the truck does not need working brakes before rebuild; cap every open port immediately.
 - Exact rear shoe and wheel-cylinder orders wait until internal drum photos and measurements are captured.
-- Exact front pad, front hose, and caliper rebuild/replacement orders wait until the fitted front disc conversion hardware is identified.
+- Exact front pad, front hose, and caliper rebuild/replacement orders use the visible Sumitomo fixed-caliper baseline but still wait for pad outline, cleaned casting marks, piston/rotor measurements, fitting threads/seats, free length, and steering-lock clearance.
 - Brake flex hose order waits for fitting style, old-sample/free length, bracket retention, and fitted route confirmation.
 - Final brake closeout requires pressure bleed, leak test, route/lock clearance check, even rear adjustment, parking brake hold/release test, and a short reinspection after bedding.
 

@@ -1,22 +1,22 @@
 # Parts List Review
 
-- Generated: 2026-05-29 01:18:56
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 123 rows
+- Generated: 2026-05-29 19:07:56
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 124 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 30
-- `cancelled_or_not_required`: 21
+- `buy_now`: 28
+- `cancelled_or_not_required`: 22
 - `completed_or_received`: 33
-- `deferred`: 6
+- `deferred`: 5
 - `needs_confirmation`: 5
-- `needs_spec_before_order`: 9
+- `needs_spec_before_order`: 10
 - `ordered_waiting_arrival`: 9
 - `runner_spec_controlled`: 2
 - `spec_ready_release_hold`: 2
-- `unclear`: 6
+- `unclear`: 8
 
 ## Workstream Split
 
@@ -30,11 +30,12 @@
 - `chassis_fixing`: 3
 - `optional_upgrades`: 2
 - `chassis_rubbers`: 1
+- `gearbox_top_cover`: 1
 
 ## Price Coverage
 
 - `has_confirmed_amount=yes`: 24
-- `has_confirmed_amount=no`: 99
+- `has_confirmed_amount=no`: 100
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -44,8 +45,6 @@
 - `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
 - `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
-- `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
-- `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
 - `part_hvac_control_panel_20260514` [interior_weatherproofing] Compact A/C control panel or integrated controls
 - `part_hvac_duct_defrost_hose_kit_20260514` [interior_weatherproofing] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit
@@ -76,5 +75,4 @@
 ## Overlap Groups
 
 - `floor_finish_stack` (3 rows): Floor/interior finish stack [action buckets: deferred]
-- `grommet_options` (4 rows): Grommet options [action buckets: buy_now|deferred]
 - `switch_options` (2 rows): Switch inventory [action buckets: buy_now]

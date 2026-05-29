@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-29 03:15:35
+- Generated: 2026-05-29 19:07:41
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
@@ -9,12 +9,14 @@
 
 - `direct_photo_evidence`: 60
 - `indirect_photo_evidence_only`: 2
-- `no_photo_evidence`: 6
+- `no_photo_evidence`: 8
 
 ## Per-Component Results
 
 | Component Job | Status | Direct | Indirect | Direct Components | Notes |
 | --- | --- | ---: | ---: | --- | --- |
+| `brake_booster_servo_refurbishment_20260529` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `engine_radiator_recore_or_new_20260529` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_complete_kit_market_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_connector_wire_id_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_static_and_road_validation` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
@@ -31,7 +33,7 @@
 | `body_mount_points_and_captive_nuts` | `direct_photo_evidence` | 22 | 58 | `body_mount_and_crossmember_detail|frame_and_mount_points|frame_rail_body_mount_and_crossmember_detail` | Mount pedestal and frame-mount photos support thread/captive-nut condition checks before refit. |
 | `body_rubbers` | `direct_photo_evidence` | 7 | 8 | `front_vent_window_assemblies|side_window_glass_and_channels|window_rubber_seals_and_frames` | Detached window assemblies, channels, and rubber surrounds are directly documented; non-window body-mount rubber remains controlled separately. |
 | `brake_hydraulic_refresh_and_bias_decision` | `direct_photo_evidence` | 65 | 33 | `brake_booster_servo_removed_sample|frame_floor_underside_and_lines` | Hard-line routing and removed booster/servo photos are direct evidence for the system refresh decision; axle-end hardware views support brake-bias and wear decisions. Owner-confirmed replacement scope still needs sample matching and final bleed/road validation. |
-| `brake_system_evidence_pack` | `direct_photo_evidence` | 107 | 2 | `brake_booster_servo_removed_sample|frame_and_mount_points|frame_floor_underside_and_lines|rear_axle_and_leaf_springs|steering_and_suspension_linkages` | Brake evidence pack combines direct front/rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples. |
+| `brake_system_evidence_pack` | `direct_photo_evidence` | 111 | 2 | `brake_booster_servo_removed_sample|frame_and_mount_points|frame_floor_underside_and_lines|front_sumitomo_disc_caliper_and_rotor_baseline|rear_axle_and_leaf_springs|steering_and_suspension_linkages` | Brake evidence pack combines direct Sumitomo front-disc closeups, rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples. |
 | `cabin_engine_firewall_holes_survey_20260517` | `direct_photo_evidence` | 4 | 17 | `cabin_engine_firewall_pass_through_holes` | May 17 selected photos are the active cabin-to-engine firewall hole survey; size, edge condition, grommet availability, and routing assignment must be logged before reusing or closing any opening. |
 | `chassis_bracket_analysis_register_20260508` | `direct_photo_evidence` | 54 | 25 | `battery_side_tray_structure_context|frame_rail_body_mount_and_crossmember_detail|frame_rail_body_mount_and_hard_line_detail|front_frame_horns_bumper_and_radiator_support|front_frame_horns_bumper_and_steering_area|front_support_radiator_pickups_context|rear_mid_frame_rail_and_hard_line_detail` | Use the existing body-off chassis photos as baseline evidence, then close this row only after a station-by-station bracket register records function, condition, evidence, and coating impact. |
 | `chassis_bracket_design_release_20260508` | `direct_photo_evidence` | 42 | 33 | `battery_side_tray_structure_context|frame_rail_body_mount_and_hard_line_detail|front_frame_horns_bumper_and_radiator_support|front_frame_horns_bumper_and_steering_area|front_support_radiator_pickups_context|rear_mid_frame_rail_and_hard_line_detail` | Location photos support the bracket design baseline, but released sketches/templates with material, hole/stud, bend, datum, and clearance decisions are still required before fabrication. |
@@ -51,7 +53,7 @@
 | `eps_vitz_shaft_u_joint_adaptation` | `direct_photo_evidence` | 23 | 1 | `front_frame_horns_bumper_and_steering_area|steering_and_suspension_linkages` | Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, phasing, and replaceable General EPS Adapter shaft-interface evidence. |
 | `eps_vitz_support_bracket_design` | `direct_photo_evidence` | 38 | 14 | `dashboard_lower_structure|driver_footwell_firewall_and_wiring|floor_pan_rust_zones` | Cab/firewall and dash-structure photos support adapter support design context, but final support plates need measured templates and dry-fit photos before fabrication. |
 | `floor_pan` | `direct_photo_evidence` | 46 | 60 | `floor_pan_and_firewall|floor_pan_rust_zones|floor_seam_and_body_mount_rust` | Floor pan rust/condition is directly evidenced with dedicated close-ups; May 17 adds tub floor, seam, and body-mount rust details. |
-| `front_brake_disc_baseline` | `direct_photo_evidence` | 9 | 11 | `steering_and_suspension_linkages` | Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference. |
+| `front_brake_disc_baseline` | `direct_photo_evidence` | 13 | 11 | `front_sumitomo_disc_caliper_and_rotor_baseline|steering_and_suspension_linkages` | May 29 closeups directly identify the front disc baseline as visible Sumitomo fixed-caliper hardware with bridge pipe, hose/hard-line routing, dust shield, and rotor; older steering/linkage photos remain supporting context. |
 | `front_radiator_bracket_repair_20260508` | `direct_photo_evidence` | 17 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support|front_support_radiator_pickups_context` | Front support and cooling-route photos are the baseline for the wire-held radiator support repair; the May 12 upright/crossmember view starts the pickup layout, but closure still needs ruler photos, trial-fit, and bracket close-ups. |
 | `front_radiator_two_side_retention_fabrication_20260508` | `direct_photo_evidence` | 17 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support|front_support_radiator_pickups_context` | Radiator/front-support photos directly show the radiator support location and fan-clearance context; the May 12 view adds the visible upright and crossmember hole field, while final hole centres and bracket offsets still need ruler photos or dry-fit. |
 | `front_vent_window_assemblies` | `direct_photo_evidence` | 3 | 6 | `front_vent_window_assemblies` | Detached paired vent/quarter window assemblies are directly documented and should close through the windows refurbishment gate. |

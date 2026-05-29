@@ -276,18 +276,19 @@ RULES: dict[str, EvidenceRule] = {
     "brake_system_evidence_pack": EvidenceRule(
         direct_specific_components=(
             "brake_booster_servo_removed_sample",
+            "front_sumitomo_disc_caliper_and_rotor_baseline",
             "frame_and_mount_points",
             "frame_floor_underside_and_lines",
             "rear_axle_and_leaf_springs",
             "steering_and_suspension_linkages",
         ),
         indirect_specific_components=("suspension_or_linkage_mount",),
-        notes="Brake evidence pack combines direct front/rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples.",
+        notes="Brake evidence pack combines direct Sumitomo front-disc closeups, rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples.",
     ),
     "front_brake_disc_baseline": EvidenceRule(
-        direct_specific_components=("steering_and_suspension_linkages",),
+        direct_specific_components=("front_sumitomo_disc_caliper_and_rotor_baseline", "steering_and_suspension_linkages"),
         indirect_specific_components=("frame_and_mount_points", "suspension_or_linkage_mount"),
-        notes="Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference.",
+        notes="May 29 closeups directly identify the front disc baseline as visible Sumitomo fixed-caliper hardware with bridge pipe, hose/hard-line routing, dust shield, and rotor; older steering/linkage photos remain supporting context.",
     ),
     "rear_brake_drum_baseline": EvidenceRule(
         direct_specific_components=("rear_axle_and_leaf_springs",),

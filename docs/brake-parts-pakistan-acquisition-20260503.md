@@ -99,13 +99,15 @@ Pakistan quote lead only: [Pakwheels FJ40 rear brake shoe listing](https://www.p
 
 ## Local Market Order - Front Disc Brake Parts
 
-> Need front disc brake service parts for a J40 that appears to have a prior front disc conversion.
-> Do not order by 1978 catalog alone.
+> Need front disc brake service parts for a J40 with visible Sumitomo fixed front disc calipers.
+> May 29 photos show the fitted front setup: Sumitomo fixed caliper, external bridge/transfer pipe, dust shield, rotor, and short hard-line/front hose routing.
+> Do not order by 1978 catalog alone, and do not treat the photo read as a final part number.
 > Required scope after identification:
-> - front disc pads and retaining/anti-rattle hardware, 1 axle set
-> - front caliper rebuild kits or replacement calipers, pair only if inspection shows leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe condition
+> - front disc pads and retaining/anti-rattle hardware for the visible Sumitomo fixed-caliper family, 1 axle set
+> - front caliper seal/rebuild kits or matched replacement Sumitomo-family calipers, pair only if inspection shows leakage, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition
+> - front flexible hose assemblies matching chassis bracket/clip, short hard-line/caliper fitting, free length, and lock-to-lock clearance
 > - front rotors machined or replaced only after measuring thickness, runout, scoring, cracks, and service limit
-> Must match fitted caliper casting, piston count/diameter, inlet fitting, bleed screw, pad outline, retaining hardware, rotor diameter/thickness, hub/register, and wheel clearance.
+> Must match cleaned caliper casting marks, piston count/diameter, inlet and bridge-pipe fittings, bleed screw, pad outline, retaining pins/springs/clips, rotor diameter/thickness, hub/register, dust-shield/caliper clearance, and wheel clearance.
 
 ## Local Market Order - Clips And Retainers
 

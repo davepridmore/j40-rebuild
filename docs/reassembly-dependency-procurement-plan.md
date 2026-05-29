@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-29 01:18:24
+- Generated: 2026-05-29 19:12:51
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -31,15 +31,15 @@
 - `capture_spec_then_buy`: 6
 - `confirm_order_state`: 5
 - `confirm_price_then_buy`: 22
-- `defer_duplicate_overlap`: 4
+- `defer_duplicate_overlap`: 3
 - `defer_optional`: 1
 - `hold_until_body_closed`: 1
 - `inspect_confirm_then_buy_standard`: 1
 - `research_compare_then_select`: 1
-- `review`: 4
+- `review`: 7
 - `runner_spec_controlled`: 2
 - `track_ordered_delivery`: 8
-- `verify_stock_before_buy`: 3
+- `verify_stock_before_buy`: 1
 
 ## Component Reuse/Refurbish Decisions
 
@@ -47,7 +47,7 @@
 - `refurbish_send_out`: 4
 - `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `review`: 60
+- `review`: 62
 
 ## Immediate Execution Focus
 
@@ -58,5 +58,5 @@
 - Run `WP04` procurement now: 26 mechanical rows still require buy execution.
 - Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.
 - Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation.
-- Avoid duplicate buys: 3 rows are flagged as likely already on hand and should be physically stock-checked first.
+- Avoid duplicate buys: 1 rows are flagged as likely already on hand and should be physically stock-checked first.
 - Keep interior finish gated: bedliner application/sound/foam/carpet stay blocked until body sealing gate is formally closed, with no extra bed-lining purchase in the baseline.

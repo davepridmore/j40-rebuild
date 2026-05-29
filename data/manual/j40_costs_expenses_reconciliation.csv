@@ -21,7 +21,7 @@ Tools,20,Labels,,,,,section_header,not_applicable,,,,,,,,
 Tools,21,“1/2 inch 24 inch breaker bar — heavy duty”,,,Y,Y,line_item,matched_exact_item,1.0,tool_breaker_bar,"1/2 inch 24 inch breaker bar, heavy duty",local,tools,00_site_setup,site_setup,next_phase_purchase
 Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,Y,No,line_item,no_match,,,,,,,,
 Tools,23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
-Tools,24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,line_item,no_match,,,,,,,,
+Tools,24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,line_item,not_required_duplicate,1.000,tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523,Ingco Heavy duty cable cutter 250mm HHCCB0210,ToolsMart.pk,tools,04_electrical_reset,electrical_reset,ordered_pending_delivery
 Tools,25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,27,Total Abrasive metal Cutting Disc Set 50 Pcs,3999,ngcotool.pk,Y,Y,line_item,no_match,,,,,,,,
