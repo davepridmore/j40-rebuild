@@ -68,6 +68,36 @@ User clarification 2026-05-28: mark these items as procured by Amir. They are no
 | --- | ---: | ---: | --- | --- | --- |
 | P0 | Tube deburrer / reamer | 1 | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube |
 
+## Replacement Pipe / Hose Quote Pack
+
+Use [replacement-pipes-workstream.md](replacement-pipes-workstream.md) and [longman-pipe-hose-order-spec-20260512.md](longman-pipe-hose-order-spec-20260512.md) as the controlling spec. Amir can take this to Longman, a radiator hose shop, a pipe fabricator, or a certified brake hose/pipe shop. He should collect prices, shop cards, packet photos, and return/exchange terms.
+
+Runner rule: buy only the non-safety stock if it exactly matches the written spec. For brake/clutch hydraulic items, or anything where the shop wants to decide from memory, Amir should quote/photo only until there is a labelled old sample, written mechanic spec, or explicit approval.
+
+| Priority | Line | Item | Quantity / buy length | Exact ask | Amir action |
+| --- | --- | --- | --- | --- | --- |
+| P0 | `HLS-01` | Upper radiator hose | 1 molded hose, published `355 mm` free length | HJ47/2H molded EPDM upper radiator hose; Toyota `16571-68020` and Dayco `DMH1342` / `CH1342` are shape references only | Quote/buy if molded shape and coolant rating match; send packet/hose photos |
+| P0 | `HLS-02` | Lower radiator hose | 1 molded hose, published `480 mm` free length | HJ47/2H molded EPDM lower radiator hose; Toyota `16572-68020` and Dayco `DMH1343` / `CH1343` are shape references only | Quote/buy if molded shape and coolant rating match; send packet/hose photos |
+| P0 | `HLS-03` | Radiator overflow hose | `1000 mm` | Small EPDM coolant overflow hose from radiator neck to reserve bottle | Quote/buy if coolant/overflow rated |
+| P0 | `HLS-04` | Heater hose stock | `1000 mm` | `16 mm / 5/8 in` ID EPDM heater hose, SAE J20R3 or better; final cuts are `400 mm` and `280 mm` | Quote/buy exact stock hose |
+| P0 | `HLS-05A/B` | Formed coolant pipe connector hoses | `2 x 500 mm` blanks | New EPDM radiator/coolant connector hose, `28-30 mm` ID exact order basis; old connectors are patterns only | Quote/buy if hose can grip safely and will not kink; send hose marking/photos |
+| P0 | `HLS-12` | Formed metal coolant/radiator pipe | 1 new pipe; `1000 mm` stock preferred, `750 mm` absolute minimum blank | Fabricate/copy old physical pipe from `28-30 mm OD`, `1.2-1.6 mm` wall coolant-compatible tube; match bends, offsets, bead ends, and clamp lands; old pipe is a pattern only | Quote/fabricator check; buy/fabricate only if shop can copy sample, bead ends, and allow dry-fit/pressure test before coating |
+| P0 | `HLS-06` | Low-pressure diesel feed hose | `8 mm ID x 1500 mm` | Diesel-rated SAE J30R9/J30R14T2/DIN 73379-3E or equivalent | Quote/buy if diesel-rated marking is visible |
+| P0 | `HLS-07` | Low-pressure diesel return/bleed hose | `6 mm ID x 2000 mm` | Diesel-rated hose, same rating family as feed hose | Quote/buy if diesel-rated marking is visible |
+| P0 | `HLS-08` | Injector leak-off hose | `3.2-3.5 mm ID x 1000 mm` | Braided diesel injector leak-off hose | Quote/buy if diesel leak-off rated |
+| P0 | `HLS-09` | Fuel clamp pack | Minimum 20 mixed clamps | Rolled-edge fuel-injection clamps for `3.2/3.5 mm`, `6 mm`, and `8 mm` hose OD ranges | Quote/buy if rolled-edge; reject sharp perforated worm clamps for fuel hose |
+| P0 | `HLS-10` | Brake-booster vacuum hose | `10-12 mm ID x 2000 mm` | Reinforced vacuum hose that will not collapse | Quote/buy if reinforced and oil/engine-bay suitable |
+| P0 | `HLS-11` | Crankcase breather/oil-mist hose | `16-19 mm ID x 1000 mm` | Oil-resistant breather/oil-mist hose | Quote/buy if oil/fuel/NBR or oil-mist rated |
+| P1 | `HLS-13` | Low-pressure fuel feed hard-line stock | Conditional `8 mm OD x 5000 mm` | Automotive bundy steel or CuNi/Cunifer only; buy only if a separate rigid feed line exists beyond the flexible feed hose | Quote/photo only unless old rigid feed line presence is confirmed |
+| P1 | `HLS-14` | Low-pressure fuel return hard-line stock | `6 mm OD x 5000 mm` | Automotive bundy steel or CuNi/Cunifer only; no bare copper | Quote/buy if automotive line stock and old route can be copied |
+| P0 | `HLS-15` | Brake hard-line tube and fittings | Already has Amir `25 ft` receipt-check row; quote extra only if needed | `4.75 mm / 3/16 in` brake-rated tube and double/inverted flare fittings after old sample confirms thread/seat | Do not duplicate purchase if existing tube is correct; collect fitting photos/prices only |
+| P0 | `HLS-16` | Rubber-lined P-clips and edge protection | Mixed pack around 20 plus fasteners | Clips for `4.75 mm`, `6 mm`, and `8 mm` line OD; edge/pass-through protection | Quote/buy sensible mixed pack; old clips are size/location patterns only |
+| P0 | `HLS-17` | Brake flex hose assemblies | 3 complete assemblies | Front left, front right, rear center complete crimped brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, copied from sample/spec | Quote/photo only until labelled samples or written spec are available |
+| P0 | `HLS-18` | Clutch flex hose assembly | 1 complete assembly | Complete crimped brake/clutch hydraulic-rated hose copied from sample/spec | Quote/photo only until sample/spec is available |
+| P1 | `HLS-19` | Clutch hard-line blank | `4.75 mm / 3/16 in OD x 1500 mm` | Brake/clutch-rated bundy steel or CuNi/Cunifer with correct hydraulic fittings after flare/thread confirmation | Quote/photo only unless old sample/spec is confirmed; combine with brake tube only if more stock is needed |
+| P1 | `HLS-20` | 2H vacuum pump oil outlet molded hose | 1 if fitted | Oil-compatible molded hose; Toyota/OEM `90923-02079` reference only | Quote only after fitted presence and sample shape are confirmed |
+| P1 | `HLS-21` | Engine air-cleaner intake duct/couplers | 1 set by sample | New intake duct/coupler material, not coolant/heater/fuel hose | Quote/buy only by sample/OD match |
+
 ## Buy If Available At Sensible Price
 
 | Priority | Item | Quantity target | Instructions |

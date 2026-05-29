@@ -1,5 +1,5 @@
 # Generated J40 source-mesh reference loader.
-# Run after the scaffold macro; it adds licensed source meshes to the active FreeCAD document.
+# Run after the scaffold macro; it adds CC-BY reference meshes to the active FreeCAD document.
 from pathlib import Path
 import FreeCAD as App
 import Mesh
@@ -10,9 +10,9 @@ except Exception:
     Gui = None
 
 doc = App.ActiveDocument or App.newDocument('j40_source_mesh_reference')
-group = doc.getObject('licensed_source_mesh_reference')
+group = doc.getObject('cc_by_source_mesh_reference')
 if group is None:
-    group = doc.addObject('App::DocumentObjectGroup', 'licensed_source_mesh_reference')
+    group = doc.addObject('App::DocumentObjectGroup', 'cc_by_source_mesh_reference')
 
 def add_mesh(name, path):
     if doc.getObject(name) is not None:

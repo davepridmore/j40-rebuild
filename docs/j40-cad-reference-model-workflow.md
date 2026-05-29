@@ -6,19 +6,20 @@
 - MeshLab 2025.07 is installed at `/Applications/MeshLab2025.07.app`.
 - CloudCompare was downloaded as a source archive, not an installable app bundle.
 - Blender was not found in `/Applications` or on `PATH`.
-- The selected Sketchfab model is not yet present in the repo or `Downloads`; Sketchfab requires a logged-in download.
-- A project-owned Rev A scaffold has been generated while waiting for the licensed ZIP.
+- The selected Sketchfab model is a downloadable CC-BY reference, but the source archive still requires a logged-in Sketchfab download.
+- A project-owned Rev B left-hand-drive scaffold has been restarted around the open-source hardtop reference and the actual project photos.
 
 ## Source Asset
 
-- Model: Toyota Land Cruiser FJ40 SoftTopInterior&Chassis
-- URL: https://sketchfab.com/3d-models/toyota-land-cruiser-fj40-softtopinteriorchassis-aaf9547c5e8b478abd2ceb47f1f82340
-- Author: dragosburian
-- License: purchased/licensed project use; retain the original license terms with the downloaded asset.
+- Model: 1976 Toyota Land Cruiser FJ40
+- URL: https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d
+- Author: tonielpro520
+- License: Creative Commons Attribution 4.0 (CC BY 4.0); author credit required; commercial use is allowed.
+- Sketchfab API facts captured 2026-05-29: downloadable, 96,681 vertices, 177,769 faces, 31 materials, 3 textures.
 
 ## Intake Steps
 
-1. Download the licensed model ZIP from Sketchfab/Fab while logged in.
+1. Download the source model ZIP from Sketchfab while logged in.
 2. Put the ZIP in `data/manual/cad/j40_reference_model/00_inbox/`.
 3. Run `python3 scripts/j40_cad_intake.py`.
 4. Review `data/manual/cad/j40_reference_model/05_reports/source_model_inventory.md`.
@@ -28,12 +29,24 @@
 
 ## Generated Scaffold
 
-The current scaffold is not a direct copy or extraction of the paid model. It is a parametric vehicle-scale reference built from published FJ40 dimensions and visible reference features.
+The current scaffold is not a direct copy or extraction of the Sketchfab model. It is a from-scratch parametric vehicle-scale reference built from representative FJ40 dimensions, the CC-BY hardtop reference, and project photos of the actual beige diesel hardtop truck.
 
-- OpenSCAD source: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a.scad`
-- FreeCAD macro: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a.FCMacro`
-- Orthographic SVG/PNG/DXF: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/`
-- Part inventory: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a_parts.csv`
+- OpenSCAD source: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.scad`
+- FreeCAD macro: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.FCMacro`
+- Open 3D exchange: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf`
+- Orbit viewer: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html`
+- Orthographic SVG/PNG/DXF: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/`
+- Part inventory: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv`
+
+The FreeCAD macro groups the model into chassis, running gear, body, front detail, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references. It includes project-specific visual cues: sand/beige body, white hardtop roof, black bumpers/trim, hardtop side windows, side step boards, diesel/fuel-filler references, mud-terrain tire lugs, rear parking-brake cable attachment hardware, and left-hand-drive steering/pedal/firewall references.
+
+For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, and hover part readout.
+
+Published Rev B viewer: https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/rev-b/index.html
+
+Published latest viewer: https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/latest/index.html
+
+For open interchange, use the glTF file. It stores the full scaffold as vendor-neutral mesh geometry in metres, with group nodes for body, chassis, running gear, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references.
 
 ## FreeCAD Auto-Update
 
@@ -43,15 +56,15 @@ Run this macro in the FreeCAD GUI:
 /Users/davidpridmore/IdeaProjects/J40/data/manual/cad/j40_reference_model/freecad/J40ReferenceModelAutoUpdate.FCMacro
 ```
 
-It refreshes the repo-generated CAD files, loads the generated scaffold macro, and starts a 30 second timer. When the licensed ZIP, cleaned meshes, or generator scripts change, the open FreeCAD view rebuilds on the next timer tick.
+It refreshes the repo-generated CAD files, loads the generated scaffold macro, and starts a 30 second timer. When the CC-BY ZIP, cleaned meshes, or generator scripts change, the open FreeCAD view rebuilds on the next timer tick.
 
-When real source geometry is present, the loader also runs:
+When source/reference geometry is present, the loader also runs:
 
 ```text
 data/manual/cad/j40_reference_model/04_exports/source_mesh_reference/j40_source_mesh_reference.FCMacro
 ```
 
-That macro loads source OBJ/STL/PLY files into the same FreeCAD document as transparent licensed-reference geometry. The scaffold remains as editable CAD until each source-derived part is remodelled properly.
+That macro loads source OBJ/STL/PLY files into the same FreeCAD document as transparent CC-BY reference geometry. The scaffold remains editable CAD until each useful part is remodelled properly from measurements.
 
 ## Conversion Command
 

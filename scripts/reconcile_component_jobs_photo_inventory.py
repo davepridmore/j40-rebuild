@@ -275,13 +275,14 @@ RULES: dict[str, EvidenceRule] = {
     ),
     "brake_system_evidence_pack": EvidenceRule(
         direct_specific_components=(
+            "brake_booster_servo_removed_sample",
             "frame_and_mount_points",
             "frame_floor_underside_and_lines",
             "rear_axle_and_leaf_springs",
             "steering_and_suspension_linkages",
         ),
         indirect_specific_components=("suspension_or_linkage_mount",),
-        notes="Brake evidence pack combines direct front/rear axle hardware views with underbody hard-line photos and supporting underside context.",
+        notes="Brake evidence pack combines direct front/rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples.",
     ),
     "front_brake_disc_baseline": EvidenceRule(
         direct_specific_components=("steering_and_suspension_linkages",),
@@ -311,9 +312,9 @@ RULES: dict[str, EvidenceRule] = {
         direct_media_ids=("20260517_230500_user_rear_differential_carrier_cover",),
     ),
     "brake_hydraulic_refresh_and_bias_decision": EvidenceRule(
-        direct_specific_components=("frame_floor_underside_and_lines",),
+        direct_specific_components=("frame_floor_underside_and_lines", "brake_booster_servo_removed_sample"),
         indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
-        notes="Hard-line routing photos are direct evidence for hose/line refresh planning, with axle-end hardware views supporting brake-bias and wear decisions.",
+        notes="Hard-line routing and removed booster/servo photos are direct evidence for the system refresh decision; axle-end hardware views support brake-bias and wear decisions. Owner-confirmed replacement scope still needs sample matching and final bleed/road validation.",
     ),
     "suspension_upgrade_spec_and_kit_lock": EvidenceRule(
         direct_specific_components=(),

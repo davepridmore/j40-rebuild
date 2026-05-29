@@ -1,5 +1,6 @@
 {
   "model": "j40_full_vehicle_scaffold_rev_a",
+  "detail_revision": "expanded_detail_pass",
   "units": "mm",
   "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
   "basis_dimensions_mm": {
@@ -8,13 +9,14 @@
     "height": 1950,
     "wheelbase": 2285
   },
-  "part_count": 126,
+  "part_count": 540,
   "outputs": [
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a.scad",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a.FCMacro",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a_orthographic.svg",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a_orthographic.png",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a.gltf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_a/j40_full_vehicle_scaffold_rev_a_parts.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_a_notes.md"
   ]

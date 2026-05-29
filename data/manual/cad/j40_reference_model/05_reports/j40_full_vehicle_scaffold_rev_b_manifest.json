@@ -1,0 +1,26 @@
+{
+  "model": "j40_full_vehicle_scaffold_rev_b",
+  "detail_revision": "lhd_detail_pass",
+  "units": "mm",
+  "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
+  "drive_side": "left-hand drive",
+  "driver_side_y_sign": -1,
+  "driver_side": "left",
+  "basis_dimensions_mm": {
+    "length": 3840,
+    "width": 1665,
+    "height": 1950,
+    "wheelbase": 2285
+  },
+  "part_count": 566,
+  "outputs": [
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.scad",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.FCMacro",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_orthographic.svg",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_orthographic.png",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_notes.md"
+  ]
+}

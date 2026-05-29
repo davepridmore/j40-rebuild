@@ -37,6 +37,7 @@
 - Buying order correction from 2026-05-24: price the brake hard-line tube, fittings, and local fabrication first, before buying more wheel cylinders, shoes/hardware, drums, or parking-brake cable parts.
 - Wheel-cylinder correction from 2026-05-24: the four-cylinder rear kit is not purchase-released by the drum photo. The loose-part catalog photo shows the mounting/port side, while the installed photo shows the drum-side barrel/boots, so a visual mismatch is not enough to reject it; however old-sample backside/port/mounting/bore confirmation controls final purchase.
 - Rear drum decomposition from 2026-05-27: treat the opened drum as separate order lines, not one vague brake row. Shoes/friction pieces are the PakWheels `K-2255-N/Y` candidate order pending delivery/fit check; the Centric `116971-05110530` spring/hold-down/adjuster hardware kit is now procured by Amir but still needs opened-drum fit/content validation; the visible wheel cylinder is the hydraulic entry-point part and remains a new/sample-match requirement.
+- Brake replacement-scope correction from 2026-05-29: the removed booster/servo photos make the system refresh a replacement/renewal scope. Old brake parts are patterns, cores, or measurement samples only; they are not reuse candidates without a specific rebuild/test release.
 
 ## Brake Configuration Evidence Photos
 
@@ -57,6 +58,20 @@
 | [20260406_031010.jpg](../photos/20260406_031010.jpg) | `steering_and_suspension_linkages` | Earlier underside view around the front steering/brake zone. |
 | [20260411_220207.jpg](../photos/20260411_220207.jpg) | `suspension_or_linkage_mount` | Supporting underside mount context; not a decisive brake-hardware photo on its own. |
 | [20260411_220214.jpg](../photos/20260411_220214.jpg) | `suspension_or_linkage_mount` | Supporting underside mount context; not a decisive brake-hardware photo on its own. |
+
+### May 29 Removed Booster / Servo Sample
+
+The May 29 picker import is now classified as `engine_bay/brake_booster_servo_removed_sample` under the `brake_system` stage. These photos support replacing or professionally rebuilding the brake booster/servo and treating the old unit as a supplier/rebuilder sample only.
+
+| File | Use |
+| --- | --- |
+| [20260529_021217_gp_YAKcHCyQ.jpg](../photos/20260529_021217_gp_YAKcHCyQ.jpg) | Removed booster/servo face, pushrod, clevis, boot, and firewall-stud corrosion context. |
+| [20260529_021225_gp_AzCLYJgQ.jpg](../photos/20260529_021225_gp_AzCLYJgQ.jpg) | Side shell and mounting-stud condition for sample matching. |
+| [20260529_021239_gp_RiMXwHXA.jpg](../photos/20260529_021239_gp_RiMXwHXA.jpg) | Pedal-side pushrod/boot detail; supports clevis and pushrod-depth capture. |
+| [20260529_021243_gp_utTmUzJw.jpg](../photos/20260529_021243_gp_utTmUzJw.jpg) | Alternate pushrod/boot detail. |
+| [20260529_030646_gp_SAs7gfRg.jpg](../photos/20260529_030646_gp_SAs7gfRg.jpg) | Booster shell depth/profile and master-side stud layout context. |
+| [20260529_030653_gp_7dCQk4QA.jpg](../photos/20260529_030653_gp_7dCQk4QA.jpg) | Pushrod and mounting pad corrosion detail. |
+| [20260529_030700_gp_8qu2Rliw.jpg](../photos/20260529_030700_gp_8qu2Rliw.jpg) | Master-cylinder mounting side and shell condition. |
 
 ## Hydraulic And Hard-Line Evidence Photos
 
@@ -110,9 +125,9 @@ Existing photos are enough for architecture and broad routing, but not enough fo
 
 | Task | Capture required | Releases |
 | --- | --- | --- |
-| `BR-CAPTURE-001` brake order-release photo pack | Wide route photo first, then close-ups with label/ruler of front calipers, pad shape, rotor face, front hose ends/brackets, rear cable ends, equalizer, rear center hose ends, T/union, wheel-cylinder ports, hard-line flare nuts, clip positions, master/proportioning ports, and rear drum internals after opening. Lay removed cables and hard lines beside a tape measure and keep them as samples. | Front pads/hardware, front hoses, caliper kits/replacements, rear cables, rear hard-line fittings/flares, rear center hose, rear wheel cylinders, rear shoes/hardware, master/reservoir/proportioning parts. |
+| `BR-CAPTURE-001` brake order-release photo pack | Wide route photo first, then close-ups with label/ruler of front calipers, pad shape, rotor face, front hose ends/brackets, rear cable ends, equalizer, rear center hose ends, T/union, wheel-cylinder ports, hard-line flare nuts, clip positions, master/proportioning ports, booster sample dimensions, and rear drum internals after opening. Lay removed cables, hard lines, and booster/master samples beside a tape measure and keep them as samples. | Front pads/hardware, front hoses, caliper kits/replacements, rear cables, rear hard-line fittings/flares, rear center hose, rear wheel cylinders, rear shoes/hardware, master/reservoir/proportioning parts, and booster/servo replacement or rebuild. |
 
-Do not discard old parking-brake cables, hard lines, flex hoses, or representative clips until the replacement parts have been checked against them.
+Do not discard old parking-brake cables, hard lines, flex hoses, booster/master samples, or representative clips until the replacement parts have been checked against them.
 
 ### May 24 Comms And Rear Drum Procurement Status
 
@@ -186,7 +201,7 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 | P1 | Rear shoes, hold-down springs, return springs, adjuster hardware, and retaining clips after drum family and shoe dimensions are confirmed. |
 | P1 | Brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips where originals are missing or corroded. |
 | P1 | Front rotors: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
-| P1 | Brake master cylinder, reservoir hoses/caps/seals, and proportioning/bias hardware only after the installed master/booster/proportioning layout is photographed and inspected. |
+| P1 | Brake master cylinder, reservoir hoses/caps/seals, booster interface parts, and proportioning/bias hardware as replacement/renewal scope after old-sample layout, ports, seats, and pushrod depth are confirmed. |
 | P1 | Brake fluid and hydraulic closeout setup. DOT 3 fluid and clear bleed hose are received; caps/plugs, cleaner, rags, and catch tray are on-hand/workshop-managed and must be verified before opening lines. |
 
 ### Parts Not To Blind-Order
@@ -198,7 +213,7 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 | Rear wheel cylinders / hydraulic entry-point assemblies | No generic order row. This is a workstream gate until teardown splits the exact fitted cylinders into purchase lines, or proves the purchase redundant because the existing assemblies are retained/rebuilt. |
 | Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
 | Rear parking-brake cables | Baseline replace with new cable assemblies, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
-| Brake master cylinder | Master bore, booster/proportioning layout, reservoir condition, and fitting threads are not yet confirmed. |
+| Brake master / booster / proportioning | Replacement/renewal scope is confirmed, but master bore, booster pushrod depth, proportioning layout, reservoir condition, fitting threads, and flare seats are not yet sample-matched. |
 | Brake conversion parts | Baseline plan is refresh first; no rear-disc conversion unless inspection or use shows a measured need. |
 
 ## Capture Requirements Before Ordering
@@ -214,7 +229,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 | Rear drums open | Photograph each side before removing springs; record drum inside diameter, shoe width, lining condition, adjuster style, spring layout, backing-plate condition, parking-brake lever condition, and drum scoring/step. | Rear shoes, hardware kit, adjusters, drum machine/replace decision. |
 | Rear wheel cylinders | Photograph installed cylinder and ports; after drum-open capture, record actual cylinder count, bore, mounting bolt spacing, port thread, pushrod/slot style, bleed screw size/access, and leak/seizure condition. | Wheel cylinders and bleed hardware. |
 | Front disc hardware | Photograph both front calipers, rotors, hose ends, brackets, bleed screws, and any visible casting/part numbers; record pad shape, rotor thickness/diameter if accessible, caliper fitting type, hose free length, and steering lock clearance. | Front pads, caliper rebuild kits, front hoses, rotor decision. |
-| Master/booster/proportioning | Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias valve if fitted, all ports, and hard-line routing; record fitting threads/flare seats and any leaks or seized fittings. | Master cylinder, reservoir seals/caps/hoses, brake balance decision. |
+| Master/booster/proportioning | Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias valve if fitted, all ports, and hard-line routing; record fitting threads/flare seats, booster diameter/depth, stud spacing, master seat/depth, pushrod/clevis dimensions, check-valve/grommet size, and any leaks or seized fittings. | Master cylinder, booster/servo replacement or rebuild, reservoir seals/caps/hoses, brake balance decision. |
 | Clips and retainers | Count every brake-line clip, parking-brake cable retainer, rubber sleeve/grommet, and P-clip by position; keep one sample of each style; record hole size, bracket thickness, and line/cable OD. | Clip order, P-clip pack, permanent line/cable support. |
 
 ## Release Gates

@@ -21,18 +21,22 @@ INPUT_FILES = [
     ROOT / "scripts" / "j40_cad_intake.py",
     ROOT / "scripts" / "freecad_mesh_to_cad.py",
     ROOT / "tools" / "generate_j40_full_vehicle_cad_scaffold.py",
+    ROOT / "tools" / "generate_j40_orbit_viewer.py",
     ROOT / "tools" / "generate_j40_source_mesh_freecad_macro.py",
 ]
 EXPECTED_OUTPUTS = [
-    CAD_ROOT / "04_exports" / "scaffold_rev_a" / "j40_full_vehicle_scaffold_rev_a.FCMacro",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.FCMacro",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_orbit_viewer.html",
     CAD_ROOT / "04_exports" / "source_mesh_reference" / "j40_source_mesh_reference.FCMacro",
-    CAD_ROOT / "04_exports" / "scaffold_rev_a" / "j40_full_vehicle_scaffold_rev_a.scad",
-    CAD_ROOT / "04_exports" / "scaffold_rev_a" / "j40_full_vehicle_scaffold_rev_a_orthographic.dxf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_a" / "j40_full_vehicle_scaffold_rev_a_orthographic.png",
-    CAD_ROOT / "04_exports" / "scaffold_rev_a" / "j40_full_vehicle_scaffold_rev_a_parts.csv",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.scad",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_orthographic.dxf",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.gltf",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_orthographic.png",
+    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_parts.csv",
     CAD_ROOT / "05_reports" / "source_model_inventory.md",
     CAD_ROOT / "05_reports" / "j40_source_mesh_reference_inventory.csv",
-    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_a_manifest.json",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_b_manifest.json",
+    CAD_ROOT / "ATTRIBUTION.md",
 ]
 
 
@@ -103,6 +107,7 @@ def main() -> None:
 
     run_step([sys.executable, str(ROOT / "scripts" / "j40_cad_intake.py")])
     run_step([sys.executable, str(ROOT / "tools" / "generate_j40_full_vehicle_cad_scaffold.py")])
+    run_step([sys.executable, str(ROOT / "tools" / "generate_j40_orbit_viewer.py")])
     run_step([sys.executable, str(ROOT / "tools" / "generate_j40_source_mesh_freecad_macro.py")])
     after = input_signature()
     write_stamp(after, changed=not unchanged)

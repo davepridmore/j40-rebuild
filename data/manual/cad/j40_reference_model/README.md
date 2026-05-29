@@ -1,10 +1,10 @@
 # J40 Reference Model CAD Intake
 
-This folder is for the licensed Sketchfab Toyota Land Cruiser FJ40 model selected as the starting reference:
+This folder is for the open-source Sketchfab Toyota Land Cruiser FJ40 model selected as the starting reference:
 
-- Source page: https://sketchfab.com/3d-models/toyota-land-cruiser-fj40-softtopinteriorchassis-aaf9547c5e8b478abd2ceb47f1f82340
-- Author: dragosburian
-- License: purchased/licensed project use; retain the original license terms with the downloaded asset.
+- Source page: https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d
+- Author: tonielpro520
+- License: Creative Commons Attribution 4.0 (CC BY 4.0); author credit required; commercial use is allowed.
 - Intended use here: reference mesh, packaging study, and manual remodelling into measured CAD parts.
 
 ## Folder Layout
@@ -13,14 +13,14 @@ This folder is for the licensed Sketchfab Toyota Land Cruiser FJ40 model selecte
 - `01_source_mesh/`: extracted source mesh files.
 - `02_mesh_clean/`: repaired or simplified mesh exports from MeshLab/Blender.
 - `03_freecad/`: FreeCAD `.FCStd` working files.
-- `04_exports/`: STEP/STL/DXF exports made from CAD work.
+- `04_exports/`: OpenSCAD, FreeCAD macro, glTF, SVG/PNG, and supporting open exchange exports.
 - `05_reports/`: generated inventory and status reports.
 
 Large model files are intentionally ignored by git. Keep only small metadata, scripts, and notes in version control.
 
 ## First Run
 
-After downloading the licensed model ZIP from Sketchfab/Fab, run:
+After downloading the source model ZIP from Sketchfab while logged in, run:
 
 ```bash
 python3 scripts/j40_cad_intake.py
@@ -39,3 +39,19 @@ The supplied FreeCAD script can convert a mesh into a STEP/FCStd reference body:
 ```
 
 This is not a true parametric remodel. It creates CAD containers around mesh-derived faces. Use it for reference, then rebuild real fabrication parts as sketches, pads, revolves, sweeps, sheet metal, or assemblies.
+
+## Open 3D Viewing
+
+Open this generated file in any glTF 2.0 viewer for a vendor-neutral 3D reference:
+
+```text
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf
+```
+
+It is mesh geometry exported from the project-owned left-hand-drive scaffold in metre units. It is for visual inspection and packaging, not release-grade fabrication geometry.
+
+Published Rev B viewer:
+
+```text
+https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/rev-b/index.html
+```

@@ -1,0 +1,567 @@
+group,name,kind,x_mm,y_center_mm,z_mm,length_or_diameter_mm,width_mm,height_mm,confidence,notes
+chassis,left_frame_rail,box,360,-390,430,3140,85,120,L0 envelope,straight ladder-frame reference rail
+chassis,right_frame_rail,box,360,390,430,3140,85,120,L0 envelope,straight ladder-frame reference rail
+chassis,crossmember_1,box,450,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_2,box,980,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_3,box,1660,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_4,box,2420,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_5,box,3230,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,front_bumper,box,20,0,525,165,1620,120,L0 envelope,black front bumper from project photos
+chassis,rear_bumper,box,3665,0,530,145,1550,110,L0 envelope,black rear bumper envelope
+chassis,front_left_tow_ring,cylinder_x,75,-430,450,115,28,,L1 visible-detail primitive,front bumper tow ring reference
+chassis,front_right_tow_ring,cylinder_x,75,430,450,115,28,,L1 visible-detail primitive,front bumper tow ring reference
+running_gear,front_axle_tube,box,735,0,395,90,1560,90,L0 envelope,front live axle tube envelope
+running_gear,rear_axle_tube,box,3020,0,395,90,1560,90,L0 envelope,rear live axle tube envelope
+running_gear,front_left_leaf_spring,box,215,-430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,front_right_leaf_spring,box,215,430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,rear_left_leaf_spring,box,2500,-430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,rear_right_leaf_spring,box,2500,430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,front_left_tire,wheel_cylinder,735,-705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,front_right_tire,wheel_cylinder,735,705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,rear_left_tire,wheel_cylinder,3020,-705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,rear_right_tire,wheel_cylinder,3020,705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,front_left_mud_tire_outer_lug_1,box,1110.0,-705,395.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_2,box,1081.4548246917325,-705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_3,box,1000.1650429449553,-705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_4,box,878.5062871369087,-705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_5,box,735.0,-705,770.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_6,box,591.4937128630913,-705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_7,box,469.8349570550447,-705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_8,box,388.54517530826746,-705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_9,box,360.0,-705,395.00000000000006,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_10,box,388.5451753082674,-705,251.49371286309136,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_11,box,469.83495705504464,-705,129.8349570550447,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_12,box,591.4937128630911,-705,48.545175308267574,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_13,box,734.9999999999999,-705,20.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_14,box,878.5062871369088,-705,48.54517530826752,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_15,box,1000.1650429449553,-705,129.83495705504464,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_mud_tire_outer_lug_16,box,1081.4548246917325,-705,251.4937128630911,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_1,box,1110.0,705,395.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_2,box,1081.4548246917325,705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_3,box,1000.1650429449553,705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_4,box,878.5062871369087,705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_5,box,735.0,705,770.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_6,box,591.4937128630913,705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_7,box,469.8349570550447,705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_8,box,388.54517530826746,705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_9,box,360.0,705,395.00000000000006,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_10,box,388.5451753082674,705,251.49371286309136,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_11,box,469.83495705504464,705,129.8349570550447,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_12,box,591.4937128630911,705,48.545175308267574,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_13,box,734.9999999999999,705,20.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_14,box,878.5062871369088,705,48.54517530826752,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_15,box,1000.1650429449553,705,129.83495705504464,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_right_mud_tire_outer_lug_16,box,1081.4548246917325,705,251.4937128630911,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_1,box,3395.0,-705,395.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_2,box,3366.4548246917325,-705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_3,box,3285.1650429449555,-705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_4,box,3163.5062871369087,-705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_5,box,3020.0,-705,770.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_6,box,2876.4937128630913,-705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_7,box,2754.8349570550445,-705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_8,box,2673.5451753082675,-705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_9,box,2645.0,-705,395.00000000000006,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_10,box,2673.5451753082675,-705,251.49371286309136,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_11,box,2754.8349570550445,-705,129.8349570550447,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_12,box,2876.4937128630913,-705,48.545175308267574,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_13,box,3020.0,-705,20.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_14,box,3163.5062871369087,-705,48.54517530826752,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_15,box,3285.165042944955,-705,129.83495705504464,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_left_mud_tire_outer_lug_16,box,3366.4548246917325,-705,251.4937128630911,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_1,box,3395.0,705,395.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_2,box,3366.4548246917325,705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_3,box,3285.1650429449555,705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_4,box,3163.5062871369087,705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_5,box,3020.0,705,770.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_6,box,2876.4937128630913,705,741.4548246917325,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_7,box,2754.8349570550445,705,660.1650429449553,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_8,box,2673.5451753082675,705,538.5062871369087,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_9,box,2645.0,705,395.00000000000006,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_10,box,2673.5451753082675,705,251.49371286309136,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_11,box,2754.8349570550445,705,129.8349570550447,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_12,box,2876.4937128630913,705,48.545175308267574,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_13,box,3020.0,705,20.0,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_14,box,3163.5062871369087,705,48.54517530826752,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_15,box,3285.165042944955,705,129.83495705504464,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,rear_right_mud_tire_outer_lug_16,box,3366.4548246917325,705,251.4937128630911,95,48,58,L2 visible-detail primitive,blocky mud-terrain tread lug visible on project photos and Sketchfab reference
+running_gear,front_left_shock_body,cylinder_z,920,-520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,front_right_shock_body,cylinder_z,920,520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,front_left_hub_cap,cylinder_y,735,-840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,front_right_hub_cap,cylinder_y,735,840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,rear_left_shock_body,cylinder_z,3205,-520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,rear_right_shock_body,cylinder_z,3205,520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,rear_left_hub_cap,cylinder_y,3020,-840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,rear_right_hub_cap,cylinder_y,3020,840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+body,floor_pan,box,890,0,615,2550,1330,55,L0 envelope,main floor and rear tub floor envelope
+body,left_rocker_sill,box,1000,-720,665,2050,95,155,L0 envelope,left rocker/sill envelope
+body,right_rocker_sill,box,1000,720,665,2050,95,155,L0 envelope,right rocker/sill envelope
+body,left_rear_quarter_panel,box,2140,-760,725,1270,70,610,L0 envelope,rear tub side panel below hardtop
+body,right_rear_quarter_panel,box,2140,760,725,1270,70,610,L0 envelope,rear tub side panel below hardtop
+body,tailgate_panel,box,3400,0,720,70,1430,650,L0 envelope,tailgate/rear body closing panel
+body,firewall,box,1135,0,690,80,1420,780,L0 envelope,firewall plane and cowl station
+body,cowl_top,box,1085,0,1260,190,1460,110,L0 envelope,scuttle/cowl top envelope
+body,grille_panel,box,170,0,790,80,1410,520,L0 envelope,front grille plane
+front_detail,white_grille_surround,box,125,0,795,35,1120,365,L0 envelope,white front grille surround visible in reference
+front_detail,black_grille_mesh,box,105,0,910,30,640,155,L0 envelope,black mesh grille area
+front_detail,left_headlamp,cylinder_x,92,-445,985,225,38,,L1 visible-detail primitive,round front headlamp
+front_detail,right_headlamp,cylinder_x,92,445,985,225,38,,L1 visible-detail primitive,round front headlamp
+front_detail,left_indicator_lamp,cylinder_x,84,-720,845,105,30,,L1 visible-detail primitive,front amber indicator
+front_detail,right_indicator_lamp,cylinder_x,84,720,845,105,30,,L1 visible-detail primitive,front amber indicator
+front_detail,left_fog_lamp,cylinder_x,25,-360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
+front_detail,right_fog_lamp,cylinder_x,25,360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
+body,hood_closed_reference,box,230,0,1215,920,1390,55,L0 envelope,closed hood reference envelope
+body,hood_open_visual_reference,box,420,0,1420,1180,1390,35,visual only,viewer can show hood-open context; this is a non-kinematic slab reference
+body,hood_left_hinge_axis,cylinder_y,1030,-540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
+body,hood_right_hinge_axis,cylinder_y,1030,540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
+body,left_front_fender,box,270,-720,760,860,270,260,L0 envelope,front wing/fender envelope
+body,right_front_fender,box,270,720,760,860,270,260,L0 envelope,front wing/fender envelope
+body,left_inner_fender,box,290,-520,800,800,70,420,L0 envelope,engine-bay inner fender placeholder
+body,right_inner_fender,box,290,520,800,800,70,420,L0 envelope,engine-bay inner fender placeholder
+body,windshield_frame,box,1155,0,1315,80,1480,520,L0 envelope,upright windshield frame envelope
+body,windshield_glass,box,1160,0,1380,35,1300,410,L0 envelope,transparent windshield opening reference
+body,windshield_left_wiper,cylinder_y,1110,-250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
+body,windshield_right_wiper,cylinder_y,1110,250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
+hard_top,white_hardtop_roof,box,1210,0,1845,2290,1540,110,L0 envelope,white hardtop roof from project photos and CC-BY reference
+hard_top,left_hardtop_side_panel,box,1240,-790,1320,2200,55,590,L0 envelope,left hardtop side shell
+hard_top,right_hardtop_side_panel,box,1240,790,1320,2200,55,590,L0 envelope,right hardtop side shell
+hard_top,left_front_hardtop_window,box,1420,-823,1435,500,20,320,L0 envelope,left sliding/side hardtop window glass
+hard_top,left_rear_hardtop_window,box,2190,-823,1435,610,20,320,L0 envelope,left rear hardtop side window glass
+hard_top,right_front_hardtop_window,box,1420,823,1435,500,20,320,L0 envelope,right sliding/side hardtop window glass
+hard_top,right_rear_hardtop_window,box,2190,823,1435,610,20,320,L0 envelope,right rear hardtop side window glass
+hard_top,rear_hardtop_panel,box,3440,0,1320,55,1540,590,L0 envelope,rear hardtop panel
+hard_top,roof_front_gutter,box,1160,0,1810,70,1575,46,L0 envelope,hardtop gutter at windshield header
+hard_top,roof_left_gutter,box,2250,-830,1815,2200,58,42,L0 envelope,left roof gutter
+hard_top,roof_right_gutter,box,2250,830,1815,2200,58,42,L0 envelope,right roof gutter
+body,left_door_open_reference,box,1180,-910,760,800,70,850,visual only,project photos show the left door removed/open during rebuild; final hinge arc requires measurements
+body,right_door_closed_reference,box,1180,760,760,800,70,850,L0 envelope,right door closed envelope
+body,left_door_window_glass,box,1280,-948,1210,520,22,345,L0 envelope,open door window glass/reference aperture
+body,right_door_window_glass,box,1280,798,1210,520,22,345,L0 envelope,closed door window glass/reference aperture
+body,left_upper_door_hinge,cylinder_z,1135,-955,1180,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,left_lower_door_hinge,cylinder_z,1135,-955,850,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,right_upper_door_hinge,cylinder_z,1135,805,1180,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,right_lower_door_hinge,cylinder_z,1135,805,850,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,left_door_handle,box,1575,-955,1045,160,30,40,L0 envelope,door handle reference
+body,right_door_handle,box,1575,805,1045,160,30,40,L0 envelope,door handle reference
+engine_bay,engine_block,box,460,0,720,520,420,430,L0 envelope,inline-six engine block envelope
+engine_bay,valve_cover,box,510,0,1080,460,180,70,L0 envelope,visible valve cover reference
+engine_bay,radiator,box,235,0,820,75,980,520,L0 envelope,radiator support package
+engine_bay,air_filter,box,760,-235,1120,210,210,150,L0 envelope,air-filter canister envelope
+engine_bay,battery_tray_reference,box,600,430,760,330,220,220,L0 envelope,"battery/package reference, placement to verify"
+engine_bay,inline_six_intake_stack_1,cylinder_z,470,-165,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_2,cylinder_z,470,-99,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_3,cylinder_z,470,-33,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_4,cylinder_z,470,33,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_5,cylinder_z,470,99,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_6,cylinder_z,470,165,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,upper_radiator_hose,cylinder_x,330,-185,1110,72,430,,L1 visible-detail primitive,upper radiator hose placeholder
+engine_bay,exhaust_downpipe_reference,cylinder_z,615,255,845,82,460,,L1 visible-detail primitive,engine bay pipe reference
+interior,dashboard,box,1235,0,1080,120,1320,220,L0 envelope,dashboard envelope from visible interior
+interior,steering_column,box,1135,-420,935,590,60,60,L0 envelope,"steering column envelope, left-hand-drive driver side"
+interior,steering_wheel,cylinder_x,1240,-420,1210,380,32,,L1 visible-detail primitive,steering wheel disk placeholder on left-hand-drive side
+interior,steering_wheel_hub,cylinder_x,1230,-420,1210,135,55,,L1 visible-detail primitive,steering wheel hub
+interior,dashboard_gauge_1,cylinder_x,1222,-560,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_2,cylinder_x,1222,-470,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_3,cylinder_x,1222,-380,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_4,cylinder_x,1222,-290,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,transfer_case_lever,cylinder_z,1580,-120,820,36,285,,L1 visible-detail primitive,transfer-case lever
+interior,gearshift_lever,cylinder_z,1500,-35,820,38,330,,L1 visible-detail primitive,gearshift lever
+interior,front_left_seat_base,box,1660,-310,700,420,410,130,L0 envelope,front seat base
+interior,front_left_seat_back,box,1850,-310,820,95,410,620,L0 envelope,front seat back
+interior,front_left_headrest,cylinder_y,1905,-310,1435,150,300,,L1 visible-detail primitive,front headrest
+interior,front_right_seat_base,box,1660,310,700,420,410,130,L0 envelope,front seat base
+interior,front_right_seat_back,box,1850,310,820,95,410,620,L0 envelope,front seat back
+interior,front_right_headrest,cylinder_y,1905,310,1435,150,300,,L1 visible-detail primitive,front headrest
+interior,rear_bench_base,box,2510,0,720,610,1080,135,L0 envelope,rear bench lower cushion
+interior,rear_bench_back,box,2920,0,840,105,1080,560,L0 envelope,rear bench back
+interior,rear_bench_left_headrest,cylinder_y,2975,-350,1390,140,270,,L1 visible-detail primitive,rear headrest
+interior,rear_bench_right_headrest,cylinder_y,2975,350,1390,140,270,,L1 visible-detail primitive,rear headrest
+chassis,left_front_frame_horn_top_plate,box,120,-390.0,555,500,95,24,L2 bracket reference,front frame horn top reinforcement
+chassis,left_front_frame_horn_side_web,box,120,-448.0,440,500,18,150,L2 bracket reference,front frame horn outside web
+chassis,left_rear_frame_horn_top_plate,box,3230,-390.0,555,420,95,24,L2 bracket reference,rear frame horn top reinforcement
+chassis,left_rear_frame_horn_side_web,box,3230,-448.0,440,420,18,145,L2 bracket reference,rear frame horn outside web
+chassis,left_body_mount_outrigger_1,box,740,-525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,left_body_mount_rubber_biscuit_1,cylinder_z,965,-615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,left_body_mount_center_bolt_1,cylinder_z,965,-615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,left_body_mount_outrigger_2,box,1135,-525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,left_body_mount_rubber_biscuit_2,cylinder_z,1360,-615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,left_body_mount_center_bolt_2,cylinder_z,1360,-615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,left_body_mount_outrigger_3,box,1610,-525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,left_body_mount_rubber_biscuit_3,cylinder_z,1835,-615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,left_body_mount_center_bolt_3,cylinder_z,1835,-615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,left_body_mount_outrigger_4,box,2250,-525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,left_body_mount_rubber_biscuit_4,cylinder_z,2475,-615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,left_body_mount_center_bolt_4,cylinder_z,2475,-615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,left_body_mount_outrigger_5,box,2920,-525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,left_body_mount_rubber_biscuit_5,cylinder_z,3145,-615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,left_body_mount_center_bolt_5,cylinder_z,3145,-615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,left_front_fixed_spring_hanger_outer_plate,box,210,-475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,left_front_fixed_spring_hanger_inner_plate,box,210,-390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,left_front_fixed_spring_pin,cylinder_y,262,-432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,left_front_shackle_spring_hanger_outer_plate,box,1280,-475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,left_front_shackle_spring_hanger_inner_plate,box,1280,-390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,left_front_shackle_spring_pin,cylinder_y,1332,-432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,left_rear_fixed_spring_hanger_outer_plate,box,2495,-475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,left_rear_fixed_spring_hanger_inner_plate,box,2495,-390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,left_rear_fixed_spring_pin,cylinder_y,2547,-432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,left_rear_shackle_spring_hanger_outer_plate,box,3565,-475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,left_rear_shackle_spring_hanger_inner_plate,box,3565,-390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,left_rear_shackle_spring_pin,cylinder_y,3617,-432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,left_crossmember_1_gusset_front,box,898,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,left_crossmember_1_gusset_rear,box,1106,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,left_crossmember_2_gusset_front,box,1578,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,left_crossmember_2_gusset_rear,box,1786,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,left_crossmember_3_gusset_front,box,2338,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,left_crossmember_3_gusset_rear,box,2546,-390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+running_gear,left_front_upper_shock_mount,box,945,-575.0,875,115,110,135,L2 bracket reference,front shock tower envelope
+running_gear,left_rear_upper_shock_mount,box,3185,-575.0,875,115,110,135,L2 bracket reference,rear shock tower envelope
+running_gear,left_front_shock_piston_rod,cylinder_z,920,-520.0,850,24,280,,L2 visible-detail primitive,shock absorber polished rod
+running_gear,left_rear_shock_piston_rod,cylinder_z,3205,-520.0,850,24,280,,L2 visible-detail primitive,shock absorber polished rod
+running_gear,left_front_bump_stop,box,640,-495.0,540,115,80,72,L2 service datum,front axle bump stop
+running_gear,left_rear_bump_stop,box,2925,-495.0,540,115,80,72,L2 service datum,rear axle bump stop
+chassis,right_front_frame_horn_top_plate,box,120,390.0,555,500,95,24,L2 bracket reference,front frame horn top reinforcement
+chassis,right_front_frame_horn_side_web,box,120,448.0,440,500,18,150,L2 bracket reference,front frame horn outside web
+chassis,right_rear_frame_horn_top_plate,box,3230,390.0,555,420,95,24,L2 bracket reference,rear frame horn top reinforcement
+chassis,right_rear_frame_horn_side_web,box,3230,448.0,440,420,18,145,L2 bracket reference,rear frame horn outside web
+chassis,right_body_mount_outrigger_1,box,740,525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,right_body_mount_rubber_biscuit_1,cylinder_z,965,615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,right_body_mount_center_bolt_1,cylinder_z,965,615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,right_body_mount_outrigger_2,box,1135,525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,right_body_mount_rubber_biscuit_2,cylinder_z,1360,615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,right_body_mount_center_bolt_2,cylinder_z,1360,615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,right_body_mount_outrigger_3,box,1610,525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,right_body_mount_rubber_biscuit_3,cylinder_z,1835,615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,right_body_mount_center_bolt_3,cylinder_z,1835,615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,right_body_mount_outrigger_4,box,2250,525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,right_body_mount_rubber_biscuit_4,cylinder_z,2475,615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,right_body_mount_center_bolt_4,cylinder_z,2475,615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,right_body_mount_outrigger_5,box,2920,525.0,525,280,70,55,L2 bracket reference,body mount outrigger arm
+chassis,right_body_mount_rubber_biscuit_5,cylinder_z,3145,615.0,610,118,42,,L2 service datum,rubber body mount stack placeholder
+chassis,right_body_mount_center_bolt_5,cylinder_z,3145,615.0,632,30,70,,L2 service datum,body mount bolt datum
+chassis,right_front_fixed_spring_hanger_outer_plate,box,210,475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,right_front_fixed_spring_hanger_inner_plate,box,210,390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,right_front_fixed_spring_pin,cylinder_y,262,432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,right_front_shackle_spring_hanger_outer_plate,box,1280,475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,right_front_shackle_spring_hanger_inner_plate,box,1280,390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,right_front_shackle_spring_pin,cylinder_y,1332,432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,right_rear_fixed_spring_hanger_outer_plate,box,2495,475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,right_rear_fixed_spring_hanger_inner_plate,box,2495,390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,right_rear_fixed_spring_pin,cylinder_y,2547,432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,right_rear_shackle_spring_hanger_outer_plate,box,3565,475.0,360,105,28,180,L2 bracket reference,leaf spring hanger side plate
+chassis,right_rear_shackle_spring_hanger_inner_plate,box,3565,390.0,360,105,28,180,L2 bracket reference,leaf spring hanger inner plate
+chassis,right_rear_shackle_spring_pin,cylinder_y,3617,432.5,430,42,130,,L2 service datum,leaf spring pin or shackle bolt
+chassis,right_crossmember_1_gusset_front,box,898,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,right_crossmember_1_gusset_rear,box,1106,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,right_crossmember_2_gusset_front,box,1578,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,right_crossmember_2_gusset_rear,box,1786,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,right_crossmember_3_gusset_front,box,2338,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+chassis,right_crossmember_3_gusset_rear,box,2546,390.0,465,38,230,90,L2 bracket reference,crossmember gusset plate
+running_gear,right_front_upper_shock_mount,box,945,575.0,875,115,110,135,L2 bracket reference,front shock tower envelope
+running_gear,right_rear_upper_shock_mount,box,3185,575.0,875,115,110,135,L2 bracket reference,rear shock tower envelope
+running_gear,right_front_shock_piston_rod,cylinder_z,920,520.0,850,24,280,,L2 visible-detail primitive,shock absorber polished rod
+running_gear,right_rear_shock_piston_rod,cylinder_z,3205,520.0,850,24,280,,L2 visible-detail primitive,shock absorber polished rod
+running_gear,right_front_bump_stop,box,640,495.0,540,115,80,72,L2 service datum,front axle bump stop
+running_gear,right_rear_bump_stop,box,2925,495.0,540,115,80,72,L2 service datum,rear axle bump stop
+chassis,transfer_case_crossmember,box,1710,0,500,260,940,120,L2 bracket reference,transmission and transfer case support
+chassis,skid_plate_transfer_case,box,1600,0,315,520,620,42,L2 underbody reference,transfer-case skid plate
+running_gear,transfer_case,box,1640,0,575,410,360,265,L2 underbody reference,transfer case envelope
+running_gear,gearbox_tail_housing,box,1325,0,610,430,300,260,L2 underbody reference,gearbox tail housing
+running_gear,front_prop_shaft,cylinder_x,1120,0,465,82,900,,L2 underbody reference,front prop shaft envelope
+running_gear,rear_prop_shaft,cylinder_x,2180,0,465,82,1360,,L2 underbody reference,rear prop shaft envelope
+running_gear,front_diff_pumpkin,cylinder_y,735,0,420,360,300,,L2 visible-detail primitive,front differential housing
+running_gear,rear_diff_pumpkin,cylinder_y,3020,0,420,380,320,,L2 visible-detail primitive,rear differential housing
+running_gear,front_pinion_nose,cylinder_x,920,0,430,145,310,,L2 visible-detail primitive,front differential pinion nose
+running_gear,rear_pinion_nose,cylinder_x,2780,0,430,145,310,,L2 visible-detail primitive,rear differential pinion nose
+chassis,left_hand_drive_steering_box,box,535,-515,610,245,175,230,L2 service datum,left-hand-drive steering box on left frame rail
+chassis,steering_box_left_frame_mount_plate,box,500,-445,600,295,28,260,L2 bracket reference,steering box mounting plate on left rail
+running_gear,pitman_arm_left_hand_drive,cylinder_z,675,-555,565,62,250,,L2 service datum,pitman arm below LHD steering box
+running_gear,front_drag_link_left_hand_drive,cylinder_x,875,-555,505,34,620,,L2 routing reference,drag link from LHD steering box toward front axle
+running_gear,front_tie_rod,cylinder_y,735,0,505,32,1420,,L2 routing reference,front axle tie rod across knuckles
+running_gear,steering_damper,cylinder_x,905,-350,480,58,520,,L2 service datum,front steering damper package
+running_gear,front_left_steering_knuckle_arm,box,855,-690,475,150,58,60,L2 service datum,left steering knuckle arm
+running_gear,front_right_steering_knuckle_arm,box,855,690,475,150,58,60,L2 service datum,right steering knuckle arm
+running_gear,front_left_brake_backing_plate,cylinder_y,735,-750,395,365,55,,L2 service datum,brake backing plate at hub
+running_gear,front_right_brake_backing_plate,cylinder_y,735,750,395,365,55,,L2 service datum,brake backing plate at hub
+running_gear,front_left_leaf_spring_layer_1,box,215,-430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_left_leaf_spring_layer_2,box,215,-430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_left_leaf_spring_layer_3,box,215,-430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_left_u_bolt_1,cylinder_z,670,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_left_u_bolt_2,cylinder_z,800,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_right_leaf_spring_layer_1,box,215,430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_right_leaf_spring_layer_2,box,215,430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_right_leaf_spring_layer_3,box,215,430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,front_right_u_bolt_1,cylinder_z,670,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_right_u_bolt_2,cylinder_z,800,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_left_brake_backing_plate,cylinder_y,3020,-750,395,365,55,,L2 service datum,brake backing plate at hub
+running_gear,rear_right_brake_backing_plate,cylinder_y,3020,750,395,365,55,,L2 service datum,brake backing plate at hub
+running_gear,rear_left_leaf_spring_layer_1,box,2500,-430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_left_leaf_spring_layer_2,box,2500,-430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_left_leaf_spring_layer_3,box,2500,-430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_left_u_bolt_1,cylinder_z,2955,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_left_u_bolt_2,cylinder_z,3085,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_right_leaf_spring_layer_1,box,2500,430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_right_leaf_spring_layer_2,box,2500,430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_right_leaf_spring_layer_3,box,2500,430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
+running_gear,rear_right_u_bolt_1,cylinder_z,2955,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_right_u_bolt_2,cylinder_z,3085,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_left_outer_rim_ring,cylinder_y,735,-845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
+running_gear,front_left_inner_rim_shadow,cylinder_y,735,-855,395,315,22,,L2 visible-detail primitive,dark rim recess
+running_gear,front_left_valve_stem,cylinder_y,865,-870,540,22,50,,L2 visible-detail primitive,tire valve stem
+running_gear,front_left_lug_nut_1,cylinder_y,827.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_lug_nut_2,cylinder_y,781.0,-877,474.6743371481683,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_lug_nut_3,cylinder_y,689.0,-877,474.6743371481684,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_lug_nut_4,cylinder_y,643.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_lug_nut_5,cylinder_y,689.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_lug_nut_6,cylinder_y,781.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_outer_rim_ring,cylinder_y,735,845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
+running_gear,front_right_inner_rim_shadow,cylinder_y,735,855,395,315,22,,L2 visible-detail primitive,dark rim recess
+running_gear,front_right_valve_stem,cylinder_y,865,870,540,22,50,,L2 visible-detail primitive,tire valve stem
+running_gear,front_right_lug_nut_1,cylinder_y,827.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_lug_nut_2,cylinder_y,781.0,877,474.6743371481683,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_lug_nut_3,cylinder_y,689.0,877,474.6743371481684,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_lug_nut_4,cylinder_y,643.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_lug_nut_5,cylinder_y,689.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_lug_nut_6,cylinder_y,781.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_outer_rim_ring,cylinder_y,3020,-845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
+running_gear,rear_left_inner_rim_shadow,cylinder_y,3020,-855,395,315,22,,L2 visible-detail primitive,dark rim recess
+running_gear,rear_left_valve_stem,cylinder_y,3150,-870,540,22,50,,L2 visible-detail primitive,tire valve stem
+running_gear,rear_left_lug_nut_1,cylinder_y,3112.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_lug_nut_2,cylinder_y,3066.0,-877,474.6743371481683,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_lug_nut_3,cylinder_y,2974.0,-877,474.6743371481684,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_lug_nut_4,cylinder_y,2928.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_lug_nut_5,cylinder_y,2974.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_lug_nut_6,cylinder_y,3066.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_outer_rim_ring,cylinder_y,3020,845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
+running_gear,rear_right_inner_rim_shadow,cylinder_y,3020,855,395,315,22,,L2 visible-detail primitive,dark rim recess
+running_gear,rear_right_valve_stem,cylinder_y,3150,870,540,22,50,,L2 visible-detail primitive,tire valve stem
+running_gear,rear_right_lug_nut_1,cylinder_y,3112.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_lug_nut_2,cylinder_y,3066.0,877,474.6743371481683,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_lug_nut_3,cylinder_y,2974.0,877,474.6743371481684,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_lug_nut_4,cylinder_y,2928.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_lug_nut_5,cylinder_y,2974.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_lug_nut_6,cylinder_y,3066.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+brake_system,front_hard_line_left_frame_run,cylinder_x,1180,-338,575,18,1650,,L2 routing reference,front brake hard-line run along left rail
+brake_system,rear_hard_line_left_frame_run,cylinder_x,2320,-338,575,18,1500,,L2 routing reference,rear brake hard-line run along left rail
+brake_system,rear_axle_brake_line,cylinder_y,3020,0,520,18,1280,,L2 routing reference,rear axle brake hard-line across axle
+brake_system,parking_brake_front_cable,cylinder_x,1630,-145,545,22,650,,L2 routing reference,parking-brake front cable
+brake_system,parking_brake_equalizer_bar,box,2295,0,548,175,46,24,L3 specific item reference,rear parking-brake cable equalizer hardware
+brake_system,parking_brake_equalizer_pivot_pin,cylinder_y,2380,0,548,26,120,,L3 specific item reference,equalizer pivot pin datum
+brake_system,left_rear_parking_brake_cable,cylinder_x,2685,-360.0,535,22,760,,L3 specific item reference,rear parking-brake cable branch
+brake_system,left_parking_brake_clevis,box,3035,-520.0,548,66,32,34,L3 specific item reference,parking-brake clevis at rear brake arm
+brake_system,left_parking_brake_return_spring,cylinder_x,2945,-520.0,602,34,170,,L3 specific item reference,parking-brake return spring envelope
+brake_system,left_parking_brake_cable_clip_1,box,2485,-430.0,545,38,30,34,L3 specific item reference,parking-brake cable frame clip
+brake_system,left_parking_brake_cable_clip_2,box,2805,-470.0,545,38,30,34,L3 specific item reference,parking-brake cable axle clip
+brake_system,right_rear_parking_brake_cable,cylinder_x,2685,360.0,535,22,760,,L3 specific item reference,rear parking-brake cable branch
+brake_system,right_parking_brake_clevis,box,3035,520.0,548,66,32,34,L3 specific item reference,parking-brake clevis at rear brake arm
+brake_system,right_parking_brake_return_spring,cylinder_x,2945,520.0,602,34,170,,L3 specific item reference,parking-brake return spring envelope
+brake_system,right_parking_brake_cable_clip_1,box,2485,430.0,545,38,30,34,L3 specific item reference,parking-brake cable frame clip
+brake_system,right_parking_brake_cable_clip_2,box,2805,470.0,545,38,30,34,L3 specific item reference,parking-brake cable axle clip
+body,transmission_tunnel,box,1250,0,660,1100,360,235,L2 visible-detail primitive,central transmission tunnel envelope
+body,rear_load_floor,box,2060,0,690,1180,1230,42,L2 visible-detail primitive,rear load floor sheet
+body,rear_floor_longitudinal_rib_1,box,2050,-420,740,1230,38,42,L2 panel rib reference,pressed rear floor longitudinal rib
+body,rear_floor_longitudinal_rib_2,box,2050,-210,740,1230,38,42,L2 panel rib reference,pressed rear floor longitudinal rib
+body,rear_floor_longitudinal_rib_3,box,2050,0,740,1230,38,42,L2 panel rib reference,pressed rear floor longitudinal rib
+body,rear_floor_longitudinal_rib_4,box,2050,210,740,1230,38,42,L2 panel rib reference,pressed rear floor longitudinal rib
+body,rear_floor_longitudinal_rib_5,box,2050,420,740,1230,38,42,L2 panel rib reference,pressed rear floor longitudinal rib
+body,floor_cross_pressing_1,box,980,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,floor_cross_pressing_2,box,1280,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,floor_cross_pressing_3,box,1730,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,floor_cross_pressing_4,box,2140,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,floor_cross_pressing_5,box,2570,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,floor_cross_pressing_6,box,3020,0,735,42,1260,34,L2 panel rib reference,floor cross pressing
+body,left_front_wheel_arch_shadow,box,365,-735.0,745,740,34,405,L2 visual aperture reference,front wheel arch opening shadow
+body,left_rear_wheel_arch_shadow,box,2690,-735.0,745,690,34,410,L2 visual aperture reference,rear wheel arch opening shadow
+body,left_rear_inner_wheel_tub,box,2655,-505.0,755,750,280,385,L2 panel reference,rear inner wheel tub envelope
+body,left_tub_top_capping,box,1960,-805.0,1322,1530,105,58,L2 panel reference,rear tub top capping rail
+body,left_door_outer_skin_lower_pressing,box,1235,-790.0,845,725,34,105,L2 panel rib reference,door lower pressed panel line
+body,left_door_vertical_shut_gap_front,box,1130,-824.0,780,18,28,780,L2 aperture reference,door front shut gap
+body,left_door_vertical_shut_gap_rear,box,1940,-824.0,780,18,28,780,L2 aperture reference,door rear shut gap
+body,left_mirror_arm,box,1210,-884.0,1240,210,26,32,L2 visible-detail primitive,door mirror arm
+body,left_door_mirror_head,box,1405,-930.0,1195,135,42,110,L2 visible-detail primitive,door mirror head
+body,left_fuel_or_body_plug_reference,cylinder_y,2935,-812.0,1065,115,28,,L2 visible-detail primitive,round side body plug/filler datum to verify
+body,right_front_wheel_arch_shadow,box,365,735.0,745,740,34,405,L2 visual aperture reference,front wheel arch opening shadow
+body,right_rear_wheel_arch_shadow,box,2690,735.0,745,690,34,410,L2 visual aperture reference,rear wheel arch opening shadow
+body,right_rear_inner_wheel_tub,box,2655,505.0,755,750,280,385,L2 panel reference,rear inner wheel tub envelope
+body,right_tub_top_capping,box,1960,805.0,1322,1530,105,58,L2 panel reference,rear tub top capping rail
+body,right_door_outer_skin_lower_pressing,box,1235,790.0,845,725,34,105,L2 panel rib reference,door lower pressed panel line
+body,right_door_vertical_shut_gap_front,box,1130,824.0,780,18,28,780,L2 aperture reference,door front shut gap
+body,right_door_vertical_shut_gap_rear,box,1940,824.0,780,18,28,780,L2 aperture reference,door rear shut gap
+body,right_mirror_arm,box,1210,884.0,1240,210,26,32,L2 visible-detail primitive,door mirror arm
+body,right_door_mirror_head,box,1405,930.0,1195,135,42,110,L2 visible-detail primitive,door mirror head
+body,right_fuel_or_body_plug_reference,cylinder_y,2935,812.0,1065,115,28,,L2 visible-detail primitive,round side body plug/filler datum to verify
+body,tailgate_hinge_or_chain_anchor_1,cylinder_x,3450,-610,800,54,42,,L2 tailgate reference,tailgate hinge/chain anchor datum
+body,tailgate_hinge_or_chain_anchor_2,cylinder_x,3450,-430,1185,54,42,,L2 tailgate reference,tailgate hinge/chain anchor datum
+body,tailgate_hinge_or_chain_anchor_3,cylinder_x,3450,430,1185,54,42,,L2 tailgate reference,tailgate hinge/chain anchor datum
+body,tailgate_hinge_or_chain_anchor_4,cylinder_x,3450,610,800,54,42,,L2 tailgate reference,tailgate hinge/chain anchor datum
+body,tailgate_lower_pressed_panel,box,3438,0,800,38,1190,135,L2 panel rib reference,tailgate lower pressing
+body,tailgate_upper_pressed_panel,box,3438,0,1115,38,1190,120,L2 panel rib reference,tailgate upper pressing
+body,rear_spare_tire,cylinder_x,3605,0,1020,720,230,,L2 visible-detail primitive,rear-mounted spare tire
+body,rear_spare_wheel_rim,cylinder_x,3615,0,1020,385,245,,L2 visible-detail primitive,rear spare rim
+body,spare_wheel_carrier_vertical,box,3520,0,800,55,72,580,L2 bracket reference,spare wheel carrier vertical support
+body,spare_wheel_carrier_crossbar,box,3515,0,1015,55,560,55,L2 bracket reference,spare wheel carrier crossbar
+body,left_rear_tail_lamp,cylinder_x,3470,-675,930,98,38,,L2 visible-detail primitive,rear tail lamp
+body,right_rear_tail_lamp,cylinder_x,3470,675,930,98,38,,L2 visible-detail primitive,rear tail lamp
+body,rear_license_plate,box,3505,0,695,24,360,170,L2 visible-detail primitive,rear licence plate envelope
+front_detail,vertical_grille_slot_1,box,82,-300,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_2,box,82,-200,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_3,box,82,-100,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_4,box,82,0,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_5,box,82,100,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_6,box,82,200,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,vertical_grille_slot_7,box,82,300,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
+front_detail,headlamp_bezel_left,cylinder_x,80,-495,985,270,28,,L2 visible-detail primitive,round headlamp bezel
+front_detail,side_marker_left,cylinder_y,188,-683.0999999999999,1005,82,26,,L2 visible-detail primitive,front fender side marker
+front_detail,headlamp_bezel_right,cylinder_x,80,495,985,270,28,,L2 visible-detail primitive,round headlamp bezel
+front_detail,side_marker_right,cylinder_y,188,683.0999999999999,1005,82,26,,L2 visible-detail primitive,front fender side marker
+front_detail,front_license_plate,box,5,0,650,22,360,170,L2 visible-detail primitive,front licence plate envelope
+front_detail,front_bumper_left_end_cap,box,40,-780,525,150,115,130,L2 visible-detail primitive,front bumper end cap
+front_detail,front_bumper_right_end_cap,box,40,780,525,150,115,130,L2 visible-detail primitive,front bumper end cap
+body,hood_center_raised_rib,box,320,0,1277,760,180,48,L2 panel rib reference,hood centre raised rib
+body,hood_left_outer_rib,box,330,-470,1265,730,52,38,L2 panel rib reference,hood side rib
+body,hood_right_outer_rib,box,330,470,1265,730,52,38,L2 panel rib reference,hood side rib
+body,left_hood_latch,box,810,-610.0,1210,88,50,58,L2 visible-detail primitive,hood side latch
+body,left_cowl_vent_slot,box,1020,-350.0,1335,150,42,26,L2 visible-detail primitive,cowl vent slot
+body,left_windshield_outer_seal,box,1122,-548.0,1370,30,55,470,L2 visible-detail primitive,windshield side rubber seal
+body,right_hood_latch,box,810,610.0,1210,88,50,58,L2 visible-detail primitive,hood side latch
+body,right_cowl_vent_slot,box,1020,350.0,1335,150,42,26,L2 visible-detail primitive,cowl vent slot
+body,right_windshield_outer_seal,box,1122,548.0,1370,30,55,470,L2 visible-detail primitive,windshield side rubber seal
+body,windshield_top_seal,box,1122,0,1798,30,1320,45,L2 visible-detail primitive,windshield top rubber seal
+body,windshield_bottom_seal,box,1122,0,1360,30,1320,42,L2 visible-detail primitive,windshield lower rubber seal
+hard_top,front_hardtop_roof_rib,box,1290,0,1810,45,1510,42,L2 visible-detail primitive,hardtop roof rib station
+hard_top,front_left_hardtop_vertical_frame,cylinder_z,1290,-765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,front_right_hardtop_vertical_frame,cylinder_z,1290,765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,middle_hardtop_roof_rib,box,1960,0,1810,45,1510,42,L2 visible-detail primitive,hardtop roof rib station
+hard_top,middle_left_hardtop_vertical_frame,cylinder_z,1960,-765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,middle_right_hardtop_vertical_frame,cylinder_z,1960,765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,rear_hardtop_roof_rib,box,2640,0,1810,45,1510,42,L2 visible-detail primitive,hardtop roof rib station
+hard_top,rear_left_hardtop_vertical_frame,cylinder_z,2640,-765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,rear_right_hardtop_vertical_frame,cylinder_z,2640,765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,tail_hardtop_roof_rib,box,3300,0,1810,45,1510,42,L2 visible-detail primitive,hardtop roof rib station
+hard_top,tail_left_hardtop_vertical_frame,cylinder_z,3300,-765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,tail_right_hardtop_vertical_frame,cylinder_z,3300,765.0,1450,34,640,,L2 visible-detail primitive,hardtop side frame/post
+hard_top,left_hardtop_lower_retainer_rail,box,1240,-830.0,1288,2200,42,46,L2 bracket reference,hardtop lower retainer rail
+hard_top,left_front_window_rubber_seal,box,1420,-842.0,1435,535,28,355,L2 visible-detail primitive,hardtop front side window seal
+hard_top,left_rear_window_rubber_seal,box,2190,-842.0,1435,650,28,355,L2 visible-detail primitive,hardtop rear side window seal
+hard_top,left_hardtop_vertical_joint_1,box,1320,-826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,left_hardtop_vertical_joint_2,box,1820,-826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,left_hardtop_vertical_joint_3,box,2500,-826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,left_hardtop_vertical_joint_4,box,3180,-826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+body,left_side_step_board,box,1540,-865.0,620,1120,210,55,L2 visible-detail primitive,painted side step board from project photos
+body,left_diesel_badge,box,2925,-822.0,980,120,24,42,L2 visible-detail primitive,DIESEL side badge datum from project photos
+hard_top,right_hardtop_lower_retainer_rail,box,1240,830.0,1288,2200,42,46,L2 bracket reference,hardtop lower retainer rail
+hard_top,right_front_window_rubber_seal,box,1420,842.0,1435,535,28,355,L2 visible-detail primitive,hardtop front side window seal
+hard_top,right_rear_window_rubber_seal,box,2190,842.0,1435,650,28,355,L2 visible-detail primitive,hardtop rear side window seal
+hard_top,right_hardtop_vertical_joint_1,box,1320,826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,right_hardtop_vertical_joint_2,box,1820,826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,right_hardtop_vertical_joint_3,box,2500,826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+hard_top,right_hardtop_vertical_joint_4,box,3180,826.0,1320,22,28,570,L2 visible-detail primitive,hardtop vertical joint/seal
+body,right_side_step_board,box,1540,865.0,620,1120,210,55,L2 visible-detail primitive,painted side step board from project photos
+body,right_diesel_badge,box,2925,822.0,980,120,24,42,L2 visible-detail primitive,DIESEL side badge datum from project photos
+hard_top,rear_window_rubber_seal,box,3470,0,1460,28,850,330,L2 visible-detail primitive,rear hardtop window seal
+hard_top,rear_hardtop_window,box,3485,0,1470,18,780,275,L2 visible-detail primitive,rear hardtop window
+hard_top,rear_corner_glass_or_seal_45,box,3500,-555,1415,28,170,300,L2 visible-detail primitive,rear corner hardtop glass/seal datum
+hard_top,rear_corner_glass_or_seal_325,box,3500,-275,1415,28,170,300,L2 visible-detail primitive,rear corner hardtop glass/seal datum
+hard_top,rear_corner_glass_or_seal_875,box,3500,275,1415,28,170,300,L2 visible-detail primitive,rear corner hardtop glass/seal datum
+hard_top,rear_corner_glass_or_seal_1155,box,3500,555,1415,28,170,300,L2 visible-detail primitive,rear corner hardtop glass/seal datum
+interior,dashboard_glovebox_door,box,1212,420,1115,35,335,150,L2 visible-detail primitive,glovebox door on passenger/right side for LHD cabin
+interior,dash_instrument_cluster_plate,box,1208,-420,1128,36,330,170,L2 visible-detail primitive,instrument cluster plate on left-hand-drive side
+interior,dash_switch_knob_1,cylinder_x,1200,-535,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_2,cylinder_x,1200,-480,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_3,cylinder_x,1200,-425,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_4,cylinder_x,1200,-370,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_5,cylinder_x,1200,-315,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,heater_control_knob_1,cylinder_x,1200,90,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_2,cylinder_x,1200,155,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_3,cylinder_x,1200,220,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_4,cylinder_x,1200,285,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,steering_wheel_spoke_1,box,1216,-510,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,steering_wheel_spoke_2,box,1216,-420,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,steering_wheel_spoke_3,box,1216,-330,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,clutch_pedal_pad,box,1340,-520,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,clutch_pedal_arm,cylinder_z,1300,-520,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,brake_pedal_pad,box,1340,-440,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,brake_pedal_arm,cylinder_z,1300,-440,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,accelerator_pedal_pad,box,1340,-350,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,accelerator_pedal_arm,cylinder_z,1300,-350,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,lhd_pedal_box_reinforcement,box,1195,-465,850,95,285,250,L2 service datum,left-hand-drive pedal box reinforcement at driver firewall
+interior,lhd_steering_column_dash_bracket,box,1215,-420,1040,62,210,66,L2 service datum,left-hand-drive steering column dash support bracket
+interior,steering_column_firewall_boot,cylinder_x,1142,-420,1020,130,48,,L2 visible-detail primitive,rubber boot where LHD steering column passes through firewall
+interior,brake_pedal_pivot_bar,cylinder_y,1260,-440,960,32,180,,L2 service datum,LHD brake pedal pivot bar
+interior,clutch_pedal_pivot_bar,cylinder_y,1260,-520,960,32,170,,L2 service datum,LHD clutch pedal pivot bar
+interior,accelerator_linkage_pivot,box,1225,-325,875,52,42,125,L2 service datum,LHD accelerator linkage pivot on driver side
+interior,steering_column_indicator_stalk,cylinder_y,1225,-605,1220,22,165,,L2 visible-detail primitive,left-hand-drive steering column stalk reference
+interior,driver_side_floor_dimmer_switch,box,1290,-650,735,70,55,34,L2 visible-detail primitive,floor dimmer/switch placeholder on LHD driver footwell
+interior,handbrake_lever,cylinder_z,1760,-250,790,32,360,,L2 visible-detail primitive,handbrake lever
+interior,gearshift_knob,cylinder_z,1500,-35,1160,86,60,,L2 visible-detail primitive,gearshift knob
+interior,transfer_case_knob,cylinder_z,1580,-120,1110,76,55,,L2 visible-detail primitive,transfer case knob
+interior,front_left_seat_left_rail,box,1515,-420.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,front_left_seat_right_rail,box,1515,-720.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,rear_left_seat_left_rail,box,2350,-420.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,rear_left_seat_right_rail,box,2350,-720.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,left_front_seat_belt_buckle,box,1730,-90.0,850,62,42,145,L2 visible-detail primitive,front seat belt buckle
+interior,left_front_seat_back_seam,box,1848,-310.0,1080,24,390,28,L2 visible-detail primitive,front seat back seam
+interior,left_front_floor_mat,box,1350,-310.0,723,760,500,22,L2 visible-detail primitive,front rubber floor mat
+interior,front_right_seat_left_rail,box,1515,420.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,front_right_seat_right_rail,box,1515,720.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,rear_right_seat_left_rail,box,2350,420.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,rear_right_seat_right_rail,box,2350,720.0,675,545,36,42,L2 service datum,seat mounting rail
+interior,right_front_seat_belt_buckle,box,1730,90.0,850,62,42,145,L2 visible-detail primitive,front seat belt buckle
+interior,right_front_seat_back_seam,box,1848,310.0,1080,24,390,28,L2 visible-detail primitive,front seat back seam
+interior,right_front_floor_mat,box,1350,310.0,723,760,500,22,L2 visible-detail primitive,front rubber floor mat
+interior,rear_floor_mat,box,2220,0,748,1050,1020,22,L2 visible-detail primitive,rear cargo/interior mat
+interior,rear_bench_seat_seam,box,2510,0,845,610,1010,24,L2 visible-detail primitive,rear bench cushion seam
+engine_bay,cooling_fan_hub,cylinder_x,300,0,1010,135,62,,L2 visible-detail primitive,cooling fan hub
+engine_bay,cooling_fan_blade_1,box,286,210.0,992.0,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,cooling_fan_blade_2,box,286,105.00000000000003,1173.865334794732,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,cooling_fan_blade_3,box,286,-104.99999999999997,1173.865334794732,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,cooling_fan_blade_4,box,286,-210.0,992.0,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,cooling_fan_blade_5,box,286,-105.0000000000001,810.134665205268,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,cooling_fan_blade_6,box,286,105.00000000000003,810.1346652052679,38,250,36,L2 visible-detail primitive,cooling fan blade envelope
+engine_bay,crank_pulley,cylinder_x,385,0,850,145,60,,L2 visible-detail primitive,front crank pulley
+engine_bay,water_pump_pulley,cylinder_x,360,0,1010,125,54,,L2 visible-detail primitive,water pump pulley
+engine_bay,fan_belt_upper_run,box,350,0,1010,26,38,270,L2 visible-detail primitive,fan belt upper run
+engine_bay,fan_belt_lower_run,box,385,0,850,26,38,235,L2 visible-detail primitive,fan belt lower run
+engine_bay,alternator_body,cylinder_x,565,325,1010,190,220,,L2 visible-detail primitive,alternator body
+engine_bay,starter_motor,cylinder_x,730,265,680,155,310,,L2 visible-detail primitive,starter motor
+engine_bay,intake_manifold,box,560,-260,995,460,90,115,L2 visible-detail primitive,intake manifold envelope
+engine_bay,exhaust_manifold,box,575,260,900,500,95,145,L2 visible-detail primitive,exhaust manifold envelope
+engine_bay,carburetor_body,cylinder_z,745,-220,1165,120,170,,L2 visible-detail primitive,carburetor body
+engine_bay,round_air_cleaner_lid,cylinder_z,760,-235,1250,260,68,,L2 visible-detail primitive,round air cleaner lid
+engine_bay,brake_booster,cylinder_x,1075,-520,1060,260,145,,L2 service datum,brake booster package
+engine_bay,master_cylinder,cylinder_x,945,-520,1060,92,230,,L2 service datum,brake master cylinder
+engine_bay,clutch_master_cylinder,box,945,-350,1035,210,82,76,L2 service datum,clutch master cylinder
+engine_bay,lhd_firewall_pedal_box_outer_plate,box,1112,-475,895,42,350,300,L2 service datum,left-hand-drive pedal box outer reinforcement on firewall
+engine_bay,brake_booster_firewall_bracket,box,1110,-520,1015,48,300,250,L2 service datum,LHD brake booster firewall bracket
+engine_bay,brake_master_reservoir,cylinder_z,875,-520,1165,110,105,,L2 service datum,brake fluid reservoir on left-hand-drive master cylinder
+engine_bay,brake_master_reservoir_cap,cylinder_z,875,-520,1225,82,24,,L2 visible-detail primitive,brake master reservoir cap
+engine_bay,brake_booster_vacuum_hose,cylinder_x,820,-430,1130,34,470,,L2 routing reference,vacuum hose from engine to LHD brake booster
+engine_bay,clutch_master_reservoir_cap,cylinder_z,910,-350,1130,70,26,,L2 service datum,clutch master reservoir cap
+engine_bay,clutch_hydraulic_line_firewall_run,cylinder_x,830,-350,980,14,520,,L2 routing reference,clutch hydraulic line from LHD master cylinder
+engine_bay,steering_column_lower_firewall_shaft,cylinder_x,1010,-420,980,44,340,,L2 routing reference,LHD steering shaft leaving firewall toward steering box
+engine_bay,steering_column_lower_universal_joint,cylinder_x,840,-430,955,76,58,,L2 service datum,lower steering universal joint
+engine_bay,steering_intermediate_shaft,cylinder_x,690,-455,850,40,360,,L2 routing reference,intermediate steering shaft to left steering box
+engine_bay,battery_case,box,570,430,765,310,205,205,L2 service datum,battery case
+engine_bay,battery_positive_terminal,cylinder_z,622,355,985,34,46,,L2 service datum,battery positive terminal
+engine_bay,battery_negative_terminal,cylinder_z,812,505,985,34,46,,L2 service datum,battery negative terminal
+engine_bay,positive_battery_cable_run,cylinder_x,710,405,1015,24,520,,L2 routing reference,positive battery cable
+engine_bay,radiator_top_tank,cylinder_y,205,0,1095,95,1030,,L2 visible-detail primitive,radiator top tank
+engine_bay,radiator_bottom_tank,cylinder_y,205,0,720,85,1030,,L2 visible-detail primitive,radiator bottom tank
+engine_bay,radiator_cap,cylinder_z,218,260,1155,54,36,,L2 visible-detail primitive,radiator cap
+engine_bay,washer_bottle,box,795,535,850,160,105,210,L2 service datum,washer bottle
+engine_bay,engine_bay_fuse_relay_board_reference,box,930,610,930,240,75,220,L2 packaging reference,engine bay fuse/relay board packaging placeholder
+engine_bay,dipstick_loop,cylinder_z,840,130,1030,46,28,,L2 visible-detail primitive,oil dipstick loop
+fuel_system,rear_underfloor_fuel_tank,box,2870,0,405,650,930,260,L2 underbody reference,rear underfloor fuel tank
+fuel_system,fuel_tank_retaining_strap_1,box,2780,0,555,42,980,38,L2 service datum,fuel tank retaining strap
+fuel_system,fuel_tank_retaining_strap_2,box,3020,0,555,42,980,38,L2 service datum,fuel tank retaining strap
+fuel_system,fuel_filler_neck,cylinder_z,3000,-690,940,76,410,,L2 routing reference,fuel filler neck to left rear quarter
+fuel_system,fuel_line_frame_run,cylinder_x,1880,330,560,16,2070,,L2 routing reference,fuel hard-line run
+exhaust,front_exhaust_pipe,cylinder_x,870,310,520,68,950,,L2 routing reference,front exhaust pipe
+exhaust,centre_exhaust_pipe,cylinder_x,1700,330,470,68,1020,,L2 routing reference,centre exhaust pipe
+exhaust,rear_exhaust_pipe,cylinder_x,2750,330,470,62,1220,,L2 routing reference,rear exhaust pipe
+exhaust,muffler_body,cylinder_x,2260,330,465,250,650,,L2 visible-detail primitive,muffler body
+exhaust,exhaust_hanger_1,box,1020,330,590,52,58,135,L2 service datum,exhaust hanger rubber
+exhaust,exhaust_hanger_2,box,2180,330,590,52,58,135,L2 service datum,exhaust hanger rubber
+exhaust,exhaust_hanger_3,box,3040,330,590,52,58,135,L2 service datum,exhaust hanger rubber
+datum,wheelbase_datum_line_left,cylinder_x,1877.5,-925,285,18,2285,,measurement datum,wheelbase datum line on left side
+datum,wheelbase_datum_line_right,cylinder_x,1877.5,925,285,18,2285,,measurement datum,wheelbase datum line on right side
+datum,front_track_datum_line,cylinder_y,735,0,260,18,1410,,measurement datum,front track datum line
+datum,rear_track_datum_line,cylinder_y,3020,0,260,18,1410,,measurement datum,rear track datum line

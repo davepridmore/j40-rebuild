@@ -15,10 +15,20 @@ INBOX_DIR = CAD_ROOT / "00_inbox"
 SOURCE_DIR = CAD_ROOT / "01_source_mesh"
 REPORT_DIR = CAD_ROOT / "05_reports"
 
-MODEL_URL = "https://sketchfab.com/3d-models/toyota-land-cruiser-fj40-softtopinteriorchassis-aaf9547c5e8b478abd2ceb47f1f82340"
-MODEL_UID = "aaf9547c5e8b478abd2ceb47f1f82340"
-MODEL_AUTHOR = "dragosburian"
-MODEL_LICENSE = "Purchased/licensed project use; retain original license terms with the asset"
+MODEL_NAME = "1976 Toyota Land Cruiser FJ40"
+MODEL_URL = "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d"
+MODEL_UID = "a4e58b09ce48444ca6164834c310880d"
+MODEL_AUTHOR = "tonielpro520"
+MODEL_AUTHOR_URL = "https://sketchfab.com/tonielpro520"
+MODEL_LICENSE = "Creative Commons Attribution 4.0 (CC BY 4.0); author credit required; commercial use allowed"
+MODEL_LICENSE_URL = "http://creativecommons.org/licenses/by/4.0/"
+MODEL_SOURCE = "Sketchfab"
+MODEL_IS_DOWNLOADABLE = True
+MODEL_VERTEX_COUNT = 96681
+MODEL_FACE_COUNT = 177769
+MODEL_MATERIAL_COUNT = 31
+MODEL_TEXTURE_COUNT = 3
+MODEL_THUMBNAIL_URL = "https://media.sketchfab.com/models/a4e58b09ce48444ca6164834c310880d/thumbnails/bf7cb5bb6e3f46d48005187a7be2149c/ec0f310299a84fdba897c982290af85e.jpeg"
 
 MESH_EXTS = {
     ".blend",
@@ -192,14 +202,45 @@ def build_manifest(extracted: dict[str, list[str]]) -> dict[str, object]:
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "model": {
+            "name": MODEL_NAME,
             "uid": MODEL_UID,
             "url": MODEL_URL,
             "author": MODEL_AUTHOR,
+            "author_url": MODEL_AUTHOR_URL,
             "license": MODEL_LICENSE,
+            "license_url": MODEL_LICENSE_URL,
+            "source": MODEL_SOURCE,
+            "is_downloadable": MODEL_IS_DOWNLOADABLE,
+            "vertex_count": MODEL_VERTEX_COUNT,
+            "face_count": MODEL_FACE_COUNT,
+            "material_count": MODEL_MATERIAL_COUNT,
+            "texture_count": MODEL_TEXTURE_COUNT,
+            "thumbnail_url": MODEL_THUMBNAIL_URL,
         },
         "archives": archives,
         "mesh_files": meshes,
     }
+
+
+def write_attribution() -> Path:
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    path = CAD_ROOT / "ATTRIBUTION.md"
+    lines = [
+        "# J40 CAD Reference Attribution",
+        "",
+        "## Open Source Reference Model",
+        "",
+        f"- Model: {MODEL_NAME}",
+        f"- Source: {MODEL_URL}",
+        f"- Author: [{MODEL_AUTHOR}]({MODEL_AUTHOR_URL})",
+        f"- License: [{MODEL_LICENSE}]({MODEL_LICENSE_URL})",
+        "- Use in this repo: visual reference and optional local source mesh for manual remodelling into measured CAD.",
+        "",
+        "The generated scaffold is project-owned geometry built from simple CAD primitives, project photos, and representative FJ40 dimensions. It is not a redistribution of the Sketchfab source mesh.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
 
 
 def write_reports(manifest: dict[str, object]) -> None:
@@ -218,9 +259,13 @@ def write_reports(manifest: dict[str, object]) -> None:
         "",
         "## Source",
         "",
+        f"- Model: {MODEL_NAME}",
         f"- URL: {MODEL_URL}",
         f"- Author: {MODEL_AUTHOR}",
         f"- License: {MODEL_LICENSE}",
+        f"- License URL: {MODEL_LICENSE_URL}",
+        f"- Downloadable: {'yes' if MODEL_IS_DOWNLOADABLE else 'no'}",
+        f"- Mesh stats from Sketchfab API: {MODEL_VERTEX_COUNT:,} vertices, {MODEL_FACE_COUNT:,} faces, {MODEL_MATERIAL_COUNT} materials, {MODEL_TEXTURE_COUNT} textures",
         "",
         "## Status",
         "",
@@ -230,7 +275,9 @@ def write_reports(manifest: dict[str, object]) -> None:
             [
                 "No Sketchfab source ZIP or mesh files were found yet.",
                 "",
-                f"Put the downloaded ZIP in `{INBOX_DIR.relative_to(ROOT)}/`, then rerun `python3 scripts/j40_cad_intake.py`.",
+                "Sketchfab marks this model downloadable, but the download endpoint requires a logged-in/authenticated request.",
+                "",
+                f"Download the source archive while logged in, put the ZIP in `{INBOX_DIR.relative_to(ROOT)}/`, then rerun `python3 scripts/j40_cad_intake.py`.",
                 "",
             ]
         )
@@ -263,6 +310,7 @@ def write_reports(manifest: dict[str, object]) -> None:
             "## CAD Notes",
             "",
             "- Treat the Sketchfab asset as a reference mesh, not a dimensional source of truth.",
+            "- Keep the CC-BY attribution with any derivative reference package.",
             "- Do not try to convert the whole vehicle into one solid body unless it has first been heavily cleaned and split into logical parts.",
             "- Convert or remodel only the useful pieces: body tub envelope, firewall, frame rails, spring hangers, dashboard, seats, brackets, and hard mounting points.",
             "- Final fabrication parts still need physical measurements from the actual J40.",
@@ -270,6 +318,7 @@ def write_reports(manifest: dict[str, object]) -> None:
         ]
     )
     report_path.write_text("\n".join(lines), encoding="utf-8")
+    write_attribution()
 
 
 def extract_archives(force: bool) -> dict[str, list[str]]:

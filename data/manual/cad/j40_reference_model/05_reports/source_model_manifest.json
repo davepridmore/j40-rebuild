@@ -1,11 +1,21 @@
 {
   "archives": [],
-  "generated_at": "2026-05-28T19:26:49.748397+00:00",
+  "generated_at": "2026-05-29T02:39:37.262156+00:00",
   "mesh_files": [],
   "model": {
-    "author": "dragosburian",
-    "license": "Purchased/licensed project use; retain original license terms with the asset",
-    "uid": "aaf9547c5e8b478abd2ceb47f1f82340",
-    "url": "https://sketchfab.com/3d-models/toyota-land-cruiser-fj40-softtopinteriorchassis-aaf9547c5e8b478abd2ceb47f1f82340"
+    "author": "tonielpro520",
+    "author_url": "https://sketchfab.com/tonielpro520",
+    "face_count": 177769,
+    "is_downloadable": true,
+    "license": "Creative Commons Attribution 4.0 (CC BY 4.0); author credit required; commercial use allowed",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "material_count": 31,
+    "name": "1976 Toyota Land Cruiser FJ40",
+    "source": "Sketchfab",
+    "texture_count": 3,
+    "thumbnail_url": "https://media.sketchfab.com/models/a4e58b09ce48444ca6164834c310880d/thumbnails/bf7cb5bb6e3f46d48005187a7be2149c/ec0f310299a84fdba897c982290af85e.jpeg",
+    "uid": "a4e58b09ce48444ca6164834c310880d",
+    "url": "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+    "vertex_count": 96681
   }
 }

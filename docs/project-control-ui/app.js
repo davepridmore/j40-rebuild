@@ -2571,6 +2571,104 @@
     `;
   }
 
+  function renderEvidenceOriginalStateCell(row) {
+    const images = Array.isArray(row && row.evidence_images) ? row.evidence_images : [];
+    const states = new Map();
+    const seen = new Set();
+    images.forEach((image) => {
+      const meta = withOverride(getBasePhotoMeta(image));
+      const stateValue = cleanString(meta.observed_state || (image && image.observed_state));
+      if (!stateValue || seen.has(stateValue)) {
+        return;
+      }
+      seen.add(stateValue);
+      states.set(stateValue, originalStateDisplayLabel(stateValue));
+    });
+    const usefulStates = prioritizeOriginalStates(Array.from(states.entries()));
+    const decision = originalDecisionLabel(row);
+    const dateRange = evidenceDateRange(images);
+    if (!states.size) {
+      return `<span class="small-muted">No captured evidence yet</span>`;
+    }
+    return `
+      <div class="original-state-cell">
+        <div class="chip-row">
+          ${usefulStates.map(([, label]) => `<span class="chip info">${escapeHtml(label)}</span>`).join(" ")}
+        </div>
+        ${decision ? `<div class="small-muted">Decision: ${escapeHtml(decision)}</div>` : ""}
+        <div class="small-muted">Evidence: ${escapeHtml(images.length)} photo${images.length === 1 ? "" : "s"}${dateRange ? ` · ${escapeHtml(dateRange)}` : ""}</div>
+      </div>
+    `;
+  }
+
+  function originalStateDisplayLabel(stateValue) {
+    const key = cleanString(stateValue).toLowerCase();
+    const labels = {
+      fabrication_spec_capture: "Original sample captured",
+      large_pipe_sample_measurement_reference: "Large-pipe detail photos",
+      inspection_in_progress: "Original route inspection",
+      cooling_routing_baseline: "Installed route context",
+      engine_front_cooling_overview: "Engine clearance context",
+      direct_location_photo: "Original location captured",
+      image_route_context_closed: "Route context closed",
+      reference_only: "Reference only",
+    };
+    return labels[key] || formatToken(stateValue);
+  }
+
+  function prioritizeOriginalStates(entries) {
+    const priority = new Map(
+      [
+        "large_pipe_sample_measurement_reference",
+        "fabrication_spec_capture",
+        "direct_location_photo",
+        "inspection_in_progress",
+        "image_route_context_closed",
+        "cooling_routing_baseline",
+        "engine_front_cooling_overview",
+        "reference_only",
+      ].map((value, index) => [value, index])
+    );
+    const sorted = [...entries].sort(([left], [right]) => {
+      const leftKey = cleanString(left).toLowerCase();
+      const rightKey = cleanString(right).toLowerCase();
+      return (priority.get(leftKey) ?? 100) - (priority.get(rightKey) ?? 100);
+    });
+    const nonReference = sorted.filter(([stateValue]) => cleanString(stateValue).toLowerCase() !== "reference_only");
+    return (nonReference.length ? nonReference : sorted).slice(0, 3);
+  }
+
+  function originalDecisionLabel(row) {
+    const scope = cleanString(row && row.replace_scope).toLowerCase();
+    if (!scope) {
+      return "";
+    }
+    if (scope.includes("recreate") || scope.includes("fabricate")) {
+      return "Fabricate new from original pattern";
+    }
+    if (scope.includes("replace_new_after_identification")) {
+      return "Replace new after identification";
+    }
+    if (scope.includes("replace")) {
+      return "Replace with new part";
+    }
+    return formatToken(scope);
+  }
+
+  function evidenceDateRange(images) {
+    const dates = Array.from(
+      new Set(
+        images
+          .map((image) => cleanString(withOverride(getBasePhotoMeta(image)).captured_date || image.captured_date))
+          .filter(Boolean)
+      )
+    ).sort();
+    if (!dates.length) {
+      return "";
+    }
+    return dates.length === 1 ? dates[0] : `${dates[0]} to ${dates[dates.length - 1]}`;
+  }
+
   function splitMultiValue(value) {
     return cleanString(value)
       .split(/[|,]/)
@@ -2635,6 +2733,17 @@
     const openActions = actionRows.filter((row) => cleanString(row.status).toLowerCase() !== "closed");
     const missingPhotos = photoRows.filter((row) => !(Array.isArray(row.media_ids) && row.media_ids.length));
     const released = closureRows.filter((row) => cleanString(row.release_status).toLowerCase() === "released").length;
+    const photoRowsByPipeId = new Map();
+    photoRows.forEach((row) => {
+      const pipeId = cleanString(row.pipe_id);
+      if (!pipeId) {
+        return;
+      }
+      if (!photoRowsByPipeId.has(pipeId)) {
+        photoRowsByPipeId.set(pipeId, []);
+      }
+      photoRowsByPipeId.get(pipeId).push(row);
+    });
 
     return `
       <article class="card replacement-pipe-simple-card">
@@ -2653,6 +2762,7 @@
             <thead>
               <tr>
                 <th>Circuit</th>
+                <th>Original State</th>
                 <th>Local Quote / Buy</th>
                 <th>Final Release Check</th>
                 <th>Status</th>
@@ -2664,6 +2774,13 @@
                   const pipeId = cleanString(row.pipe_id);
                   const closure = closureByCircuit.get(pipeId) || {};
                   const mappedOrderLines = findReplacementPipeOrderLines(pipeId, closure, orderRows);
+                  const relatedPhotoRows = photoRowsByPipeId.get(pipeId) || [];
+                  const originalStateImages = dedupeImages([
+                    ...(Array.isArray(row.evidence_images) ? row.evidence_images : []),
+                    ...relatedPhotoRows.flatMap((photoRow) =>
+                      Array.isArray(photoRow.evidence_images) ? photoRow.evidence_images : []
+                    ),
+                  ]);
                   return `
                     <tr>
                       <td>
@@ -2671,6 +2788,7 @@
                         <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
                         <div class="small-muted">Scope: ${escapeHtml(formatToken(row.replace_scope || ""))}</div>
                       </td>
+                      <td>${renderEvidenceOriginalStateCell({ ...row, evidence_images: originalStateImages })}</td>
                       <td>
                         ${renderReplacementPipeBuyLines(mappedOrderLines)}
                         ${row.quantity ? `<div class="small-muted requirement-material">Circuit basis: ${escapeHtml(row.quantity)}</div>` : ""}

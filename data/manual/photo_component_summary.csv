@@ -58,6 +58,7 @@ electrical_system,j40_electrical_wiring_diagram,1,electrical_reference,2026-05-1
 electrical_system,pedal_box_wiring,5,electrical_rework,2026-03-28,20260328_053638_gp_t6Q3oCTA.jpg
 engine_bay,battery_side_tray_structure_context,1,chassis_fixing,2026-05-12,20260512_100100_user_battery_side_tray_structure_context.png
 engine_bay,bellhousing_clutch_linkage_and_gearbox_case,3,mechanical_inspection,2026-04-30,20260430_215915_gp_ycQ395Gg.jpg
+engine_bay,brake_booster_servo_removed_sample,7,brake_system,2026-05-29,20260529_021217_gp_YAKcHCyQ.jpg
 engine_bay,cooling_hoses_fan_belt_and_radiator_support,5,mechanical_baseline|mechanical_inspection,2026-04-30 to 2026-05-12,20260430_215957_gp_2iBbUagw.jpg
 engine_bay,cooling_pipe_fabrication_samples,29,fabrication_measurement|mechanical_baseline,2026-05-02 to 2026-05-29,20260502_004044_gp_Hx4Yo0Qg.jpg
 engine_bay,engine_bay_overview,15,baseline_walkaround|stripdown_cataloguing,2026-03-17 to 2026-04-23,20260317_235150.jpg

@@ -1352,6 +1352,16 @@ PIPE_FABRICATION_20260529_LARGE_PIPE_FILES = (
     "20260529_002130_gp_4oyuazFg.jpg",
 )
 
+BRAKE_BOOSTER_REPLACEMENT_20260529_FILES = (
+    "20260529_021217_gp_YAKcHCyQ.jpg",
+    "20260529_021225_gp_AzCLYJgQ.jpg",
+    "20260529_021239_gp_RiMXwHXA.jpg",
+    "20260529_021243_gp_utTmUzJw.jpg",
+    "20260529_030646_gp_SAs7gfRg.jpg",
+    "20260529_030653_gp_7dCQk4QA.jpg",
+    "20260529_030700_gp_8qu2Rliw.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1845,6 +1855,32 @@ FILE_OVERRIDES.update(
             "May 29 user-selected larger pipe detail batch: loose formed metal coolant pipe, connector hoses, clamps, clips, and tape references for replacement-pipe fabrication. Owner confirmed the metal pipe, pipes/hoses, and clips can be replaced; use old parts as patterns only.",
         )
         for file_name in PIPE_FABRICATION_20260529_LARGE_PIPE_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "brake_booster_servo_removed_sample",
+            "brake_system",
+            "replace_all_brake_parts_owner_confirmed",
+            "high",
+            (
+                "brake_booster",
+                "brake_servo",
+                "vacuum_booster",
+                "removed_sample",
+                "pushrod",
+                "clevis",
+                "firewall_studs",
+                "corrosion",
+                "rubber_boot",
+                "replacement_required",
+                "sample_match",
+            ),
+            "May 29 user-selected removed brake booster/servo sample photos. Owner confirmed the brake evidence supports replacing all brake parts; use the old booster only as a supplier/rebuilder sample, with new or professionally remanufactured booster, check valve/grommet, seals, and matched master-cylinder interface before fit and road validation.",
+        )
+        for file_name in BRAKE_BOOSTER_REPLACEMENT_20260529_FILES
     }
 )
 FILE_OVERRIDES.update(

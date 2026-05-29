@@ -79,7 +79,7 @@ def write_notes(files: list[SourceFile], macro_path: Path) -> Path:
     lines = [
         "# J40 Source Mesh Reference",
         "",
-        "This report describes the locally available licensed source geometry that the FreeCAD loader can use.",
+        "This report describes the locally available CC-BY/open-source reference geometry that the FreeCAD loader can use.",
         "",
         f"- Loadable mesh files: {len(loadable)}",
         f"- Files needing conversion: {len(skipped)}",
@@ -99,9 +99,9 @@ def write_notes(files: list[SourceFile], macro_path: Path) -> Path:
     if not files:
         lines.extend(
             [
-                "No licensed source geometry is present yet.",
+                "No CC-BY source geometry is present yet.",
                 "",
-                "Put the downloaded ZIP or extracted OBJ/STL/PLY files in `data/manual/cad/j40_reference_model/00_inbox/`.",
+                "Put the downloaded Sketchfab ZIP or extracted OBJ/STL/PLY files in `data/manual/cad/j40_reference_model/00_inbox/`.",
                 "",
             ]
         )
@@ -116,7 +116,7 @@ def write_freecad_macro(files: list[SourceFile]) -> Path:
 
     lines = [
         "# Generated J40 source-mesh reference loader.",
-        "# Run after the scaffold macro; it adds licensed source meshes to the active FreeCAD document.",
+        "# Run after the scaffold macro; it adds CC-BY reference meshes to the active FreeCAD document.",
         "from pathlib import Path",
         "import FreeCAD as App",
         "import Mesh",
@@ -127,9 +127,9 @@ def write_freecad_macro(files: list[SourceFile]) -> Path:
         "    Gui = None",
         "",
         "doc = App.ActiveDocument or App.newDocument('j40_source_mesh_reference')",
-        "group = doc.getObject('licensed_source_mesh_reference')",
+        "group = doc.getObject('cc_by_source_mesh_reference')",
         "if group is None:",
-        "    group = doc.addObject('App::DocumentObjectGroup', 'licensed_source_mesh_reference')",
+        "    group = doc.addObject('App::DocumentObjectGroup', 'cc_by_source_mesh_reference')",
         "",
         "def add_mesh(name, path):",
         "    if doc.getObject(name) is not None:",
@@ -181,4 +181,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

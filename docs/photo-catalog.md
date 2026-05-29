@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-29 01:26:05
-- Total media files indexed: 795 (784 photos, 11 videos)
+- Generated: 2026-05-29 03:15:30
+- Total media files indexed: 802 (791 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -16,7 +16,7 @@
 | Stage | File Count |
 | --- | ---: |
 | `baseline_walkaround` | 34 |
-| `brake_system` | 13 |
+| `brake_system` | 20 |
 | `chassis_fixing` | 50 |
 | `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
@@ -100,6 +100,7 @@
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |
 | `engine_bay` | `battery_side_tray_structure_context` | 1 | 2026-05-12 | `20260512_100100_user_battery_side_tray_structure_context.png` |
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |
+| `engine_bay` | `brake_booster_servo_removed_sample` | 7 | 2026-05-29 | `20260529_021217_gp_YAKcHCyQ.jpg` |
 | `engine_bay` | `cooling_hoses_fan_belt_and_radiator_support` | 5 | 2026-04-30 to 2026-05-12 | `20260430_215957_gp_2iBbUagw.jpg` |
 | `engine_bay` | `cooling_pipe_fabrication_samples` | 29 | 2026-05-02 to 2026-05-29 | `20260502_004044_gp_Hx4Yo0Qg.jpg` |
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |

@@ -11,5 +11,7 @@
 !04_exports/.gitkeep
 !04_exports/scaffold_rev_a/
 !04_exports/scaffold_rev_a/*
+!04_exports/scaffold_rev_b/
+!04_exports/scaffold_rev_b/*
 !04_exports/source_mesh_reference/
 !04_exports/source_mesh_reference/*
