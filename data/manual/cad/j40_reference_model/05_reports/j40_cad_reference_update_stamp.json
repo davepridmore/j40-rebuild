@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29T02:39:37.727323+00:00",
+  "updated_at": "2026-05-29T21:20:27.015304+00:00",
   "changed": true,
   "input_signature": [
     {
@@ -14,13 +14,13 @@
     },
     {
       "path": "tools/generate_j40_full_vehicle_cad_scaffold.py",
-      "size": 84835,
-      "mtime_ns": 1780022301312477439
+      "size": 155676,
+      "mtime_ns": 1780089584046333716
     },
     {
       "path": "tools/generate_j40_orbit_viewer.py",
-      "size": 28817,
-      "mtime_ns": 1780022325656640259
+      "size": 43450,
+      "mtime_ns": 1780087441167768728
     },
     {
       "path": "tools/generate_j40_source_mesh_freecad_macro.py",
@@ -29,17 +29,18 @@
     }
   ],
   "outputs": [
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.FCMacro",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.FCMacro",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html",
     "data/manual/cad/j40_reference_model/04_exports/source_mesh_reference/j40_source_mesh_reference.FCMacro",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.scad",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_orthographic.dxf",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_orthographic.png",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.scad",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
     "data/manual/cad/j40_reference_model/05_reports/source_model_inventory.md",
     "data/manual/cad/j40_reference_model/05_reports/j40_source_mesh_reference_inventory.csv",
-    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_manifest.json",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_manifest.json",
     "data/manual/cad/j40_reference_model/ATTRIBUTION.md"
   ]
 }

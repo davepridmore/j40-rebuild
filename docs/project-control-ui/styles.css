@@ -589,6 +589,13 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0.75rem;
+}
+
 .gallery figure {
   margin: 0;
   border: 1px solid var(--line);
@@ -685,6 +692,16 @@ h1 {
 
 .evidence-figure {
   margin: 0;
+}
+
+.amir-card-sheet {
+  margin-bottom: 0.75rem;
+}
+
+.amir-card-sheet .figure-image {
+  aspect-ratio: 16 / 9;
+  max-height: 560px;
+  object-fit: contain;
 }
 
 .gallery figcaption {

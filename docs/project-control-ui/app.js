@@ -5,23 +5,28 @@
   const tabButtons = Array.from(document.querySelectorAll("[data-view]"));
   const STORAGE_KEY = "j40.photo_recategorization_overrides.v3";
   const FALLBACK_IMAGE_PATH = "./assets/image-needed.svg";
-  const VEHICLE_MAP_VIEWER_URL = "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html?v=rev-b-1042-gallery-cues";
+  const PUBLIC_DASHBOARD_BASE_URL = "https://dbvg4yfpnc4tj.cloudfront.net/docs/project-control-ui/";
+  const VEHICLE_MAP_VIEWER_PATH = "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html?v=rev-c-classic-rounded-back-windows";
   const VEHICLE_MAP_EXPORT_LINKS = [
     {
-      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf",
+      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf",
       label: "glTF",
     },
     {
-      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv",
+      url: "../../data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
       label: "Parts CSV",
     },
     {
-      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_notes.md",
+      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_notes.md",
       label: "Notes",
     },
     {
-      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_b_manifest.json",
+      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_manifest.json",
       label: "Manifest",
+    },
+    {
+      url: "../../data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
+      label: "Online References",
     },
   ];
   const AMIR_FRONT_DISC_ENTRY_IDS = new Set([
@@ -333,6 +338,12 @@
     if (validViews.has(requestedView) && requestedView !== state.activeView) {
       state.activeView = requestedView;
       changed = true;
+    } else if (!validViews.has(requestedView)) {
+      if (state.activeView !== "overview") {
+        state.activeView = "overview";
+        changed = true;
+      }
+      routeIndex = routeParts.length;
     }
 
     if (requestedView === "workstreams" && routeParts[routeIndex] && !["section", "item"].includes(routeParts[routeIndex])) {
@@ -419,8 +430,22 @@
     return `${routeBaseForView()}/${parts.map(encodeURIComponent).join("/")}`;
   }
 
+  function isLocalDashboardOrigin() {
+    const hostname = cleanString(window.location.hostname).toLowerCase();
+    return window.location.protocol === "file:" || hostname === "localhost" || hostname === "127.0.0.1" || hostname === "0.0.0.0" || hostname === "::1";
+  }
+
+  function dashboardAssetUrl(url) {
+    const rawUrl = cleanString(url);
+    return rawUrl;
+  }
+
+  function vehicleMapViewerUrl() {
+    return dashboardAssetUrl(VEHICLE_MAP_VIEWER_PATH);
+  }
+
   function absoluteRoute(route) {
-    const basePath = `${window.location.origin}${window.location.pathname}`;
+    const basePath = isLocalDashboardOrigin() ? PUBLIC_DASHBOARD_BASE_URL : `${window.location.origin}${window.location.pathname}`;
     return `${basePath}${cleanString(route) || "#overview"}`;
   }
 
@@ -1548,11 +1573,11 @@
   const CHASSIS_RUBBER_SPEC_ROWS = [
     {
       id: "BM-ISO-SM",
-      part: "Main body isolator pad, small stations",
+      part: "Small square tub-to-chassis body isolator pads",
       qty: "10 + 2 spares",
       location: "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
-      image: "../../photos/20260405_234652.jpg",
-      imageCaption: "Tub-side body-mount landing context",
+      image: "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+      imageCaption: "Old small body-mount rubber samples with tape",
       spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
       route: "Longman consolidated rubber order",
       files: [
@@ -1565,11 +1590,11 @@
     },
     {
       id: "BM-ISO-LG",
-      part: "Main body isolator pad, large stations",
+      part: "Large square tub-to-chassis body isolator pads",
       qty: "2 + 1 spare",
       location: "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
-      image: "../../photos/20260405_234652.jpg",
-      imageCaption: "Tub-side body-mount landing context",
+      image: "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+      imageCaption: "Old body-mount rubber sample stack with tape",
       spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
       route: "Longman consolidated rubber order",
       files: [
@@ -1582,7 +1607,7 @@
     },
     {
       id: "FS-OVAL",
-      part: "Front-support two-hole oval pad",
+      part: "Two-hole oval front-support isolator pads",
       qty: "2",
       location: "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
       image: "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
@@ -1597,11 +1622,11 @@
     },
     {
       id: "FS-STRIP-L",
-      part: "Underfloor body-support strip liner left",
+      part: "Left plain underfloor body-support strip liner",
       qty: "1",
       location: "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
-      image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-      imageCaption: "Left strip SVG control; first article released",
+      image: "../../photos/20260528_193200_gp_HICSdovA.jpg",
+      imageCaption: "Old strip rubber section with tape",
       spec: "Flat strip 420 x 38 x 8; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
       route: "Longman consolidated rubber order; first article then dry-fit",
       files: [
@@ -1612,11 +1637,11 @@
     },
     {
       id: "FS-STRIP-R",
-      part: "Underfloor body-support strip liner right",
+      part: "Right plain underfloor body-support strip liner",
       qty: "1",
       location: "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
-      image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
-      imageCaption: "Right strip SVG control; first article released",
+      image: "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+      imageCaption: "Old strip rubber end/section with tape",
       spec: "Same as left: flat strip 420 x 38 x 8; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
       route: "Longman consolidated rubber order; first article then dry-fit",
       files: [
@@ -1627,7 +1652,7 @@
     },
     {
       id: "BUMP-60010-LONG",
-      part: "Long axle-to-chassis bump stop: front-left and both rear",
+      part: "Long sample-style axle bump-stop rubbers",
       qty: "3",
       location: "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
       image: "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
@@ -1643,7 +1668,7 @@
     },
     {
       id: "BUMP-60020-SHORT",
-      part: "Short right-front axle-to-chassis bump stop",
+      part: "Short right-front sample-style axle bump-stop rubber",
       qty: "1",
       location: "Axle-to-chassis bump-stop bracket: right-front station only.",
       image: "../../photos/20260529_223701_gp_wYPExcAA.jpg",
@@ -1659,11 +1684,11 @@
     },
     {
       id: "BODY-LINER-FULL-WIDTH-HOLD",
-      part: "Long/full-width flat body or panel liner strips",
+      part: "Hold: unidentified long/full-width flat liner strips",
       qty: "Hold",
       location: "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
-      image: "../../photos/20260405_234652.jpg",
-      imageCaption: "Hold item; needs real full-length liner photos",
+      image: "../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg",
+      imageCaption: "Hold control; no confirmed old liner photo yet",
       spec: "Possible longer flat strips are not yet captured as orderable pieces. They need full-length photos, traces, holes/slots, thickness, quantity, side/orientation, and installed function before Longman quotes them.",
       route: "hold for identification and measurement",
       files: [
@@ -1674,7 +1699,7 @@
     },
     {
       id: "EXH-HGR-90917",
-      part: "Exhaust pipe teardrop cushion",
+      part: "Hold: exhaust teardrop hanger cushion",
       qty: "Hold",
       location: "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
@@ -1811,11 +1836,11 @@
   }
 
   const CHASSIS_RUBBER_ORIGINAL_MEDIA_IDS = {
-    "BM-ISO-SM": ["20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"],
-    "BM-ISO-LG": ["20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"],
+    "BM-ISO-SM": ["20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"],
+    "BM-ISO-LG": ["20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"],
     "FS-OVAL": ["20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"],
-    "FS-STRIP-L": ["20260517_193503_gp_N9nHjqXw", "20260517_194143_gp_CO7MuMdA"],
-    "FS-STRIP-R": ["20260517_193612_gp_JmbfR0Tw", "20260517_194633_gp_rAjY3gjg"],
+    "FS-STRIP-L": ["20260528_193200_gp_HICSdovA", "20260517_194143_gp_CO7MuMdA", "20260517_193503_gp_N9nHjqXw"],
+    "FS-STRIP-R": ["20260528_193253_gp_f0eQuSFA", "20260517_194633_gp_rAjY3gjg", "20260517_193612_gp_JmbfR0Tw"],
     "BUMP-60010-LONG": ["20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"],
     "BUMP-60020-SHORT": ["20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"],
   };
@@ -1938,33 +1963,38 @@
     const drawingFiles = chassisRubberDrawingFiles(row);
     const originalImage = preferredChassisRubberOriginalImage(row);
     const previewPath = cleanString(drawingFiles && (drawingFiles.preview || drawingFiles.svg));
-    const previewLabel = previewPath
+    const secondaryPreviewLabel = previewPath
       ? cleanString(drawingFiles && drawingFiles.preview)
         ? "3D visual"
-        : "Drawing preview"
-      : originalImage
-        ? "Original photo"
-        : "Reference";
-    const image = previewPath
-      ? {
+        : "drawing preview"
+      : "";
+    const image = originalImage
+      ? originalImage
+      : previewPath
+        ? {
           path: previewPath,
-          caption: `${cleanString(row.order_id) || "Rubber"} ${previewLabel}`,
+          caption: `${cleanString(row.order_id) || "Rubber"} ${secondaryPreviewLabel || "reference"}`,
           media_id: `${cleanString(row.order_id).toLowerCase()}_svg`,
           media_type: "photo",
         }
-      : originalImage
-        ? originalImage
       : row && row.image
         ? row.image
         : {};
-    const originalPath = previewPath && originalImage ? cleanString(originalImage.path) : "";
+    const previewLink = originalImage && previewPath ? previewPath : "";
     const prepared = prepareImage(image, row.part || row.order_id || "Rubber order line");
     const mediaClass = originalImage || previewPath ? "table-image table-image-contain" : "table-image";
+    const imageNote = originalImage
+      ? "Old/sample rubber photo"
+      : secondaryPreviewLabel === "drawing preview"
+        ? "Drawing preview"
+        : secondaryPreviewLabel
+        ? secondaryPreviewLabel
+        : "Reference";
     return `
       <td class="table-image-cell">
         ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
-        <span class="table-image-note">${escapeHtml(previewLabel)}</span>
-        ${originalPath ? `<div class="small-muted"><a href="${escapeHtml(originalPath)}" target="_blank" rel="noopener noreferrer">source photo</a></div>` : ""}
+        <span class="table-image-note">${escapeHtml(imageNote)}</span>
+        ${previewLink ? `<div class="small-muted"><a href="${escapeHtml(previewLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(secondaryPreviewLabel)}</a></div>` : ""}
       </td>
     `;
   }
@@ -2131,8 +2161,8 @@
                     <tr>
                       ${renderChassisRubberOrderImage(row)}
                       <td class="scout-line-cell">
-                        <strong>${escapeHtml(row.order_id || "-")}</strong>
-                        <div class="small-muted">${escapeHtml(row.part || "")}</div>
+                        <strong>${escapeHtml(row.part || row.order_id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.order_id || "")}</div>
                         ${statusChip(isHold ? "hold/reference only" : "current order line")}
                       </td>
                       <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
@@ -4399,7 +4429,7 @@
       return scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "Body-mount shim/spacer reference", "body_shims");
     }
     if (rowId === "BM-ISO-LG" || rowId === "BM-ISO-SM" || hasAny("main body isolator pad", "custom square flat pad", "body isolator pad")) {
-      return scoutReferenceImage("../../photos/20260405_234652.jpg", "tub-side flat body-mount landing context", "20260405_234652");
+      return previous("../../photos/20260528_193054_gp_UFyTb44w.jpg", "old body-mount rubber samples with tape", "20260528_193054_gp_UFyTb44w", ["bm-iso", "old-rubber"]);
     }
     if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
       return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large circular body-mount cushion sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "previous"]);
@@ -4417,10 +4447,10 @@
       return previous("../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop sample side/fixture view", "20260529_223701_gp_wYPExcAA", ["bump-stop", "may29", "sample"]);
     }
     if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
-      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a");
+      return previous("../../photos/20260528_193200_gp_HICSdovA.jpg", "old left strip rubber section with tape", "20260528_193200_gp_HICSdovA", ["fs-strip-l", "old-rubber"]);
     }
     if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
-      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "right underfloor strip first-article control", "fs_strip_right_template_blank_rev_a");
+      return previous("../../photos/20260528_193253_gp_f0eQuSFA.jpg", "old right strip rubber section with tape", "20260528_193253_gp_f0eQuSFA", ["fs-strip-r", "old-rubber"]);
     }
     if (rowId === "MIDI5-ENC-BODY-001" || rowId === "MIDI5-LID-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_enclosure", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
@@ -5048,11 +5078,11 @@
     const fabricationExactSpecRows = [
       {
         id: "BM-ISO-SM",
-        item: "Small station square body isolator pad",
+        item: "Small square tub-to-chassis body isolator pads",
         partNumber: "longman_rubber_order_specs.csv",
         route: "longman_custom_rubber_order",
         state: "released_for_quote_and_first_article_station_fit_pending",
-        image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
+        image: scoutPreviousPartImage("../../photos/20260528_193054_gp_UFyTb44w.jpg", "Old small body-mount rubber samples with tape", "20260528_193054_gp_UFyTb44w", ["bm-iso-sm", "old-rubber"]),
         spec: "Longman custom square pad with 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
         qty: "10 + 2 spares",
         dimension: "3D envelope 70 L x 70 W x 22 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
@@ -5063,11 +5093,11 @@
       },
       {
         id: "BM-ISO-LG",
-        item: "Large station square body isolator pad",
+        item: "Large square tub-to-chassis body isolator pads",
         partNumber: "longman_rubber_order_specs.csv",
         route: "longman_custom_rubber_order",
         state: "released_for_quote_and_first_article_station_fit_pending",
-        image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
+        image: scoutPreviousPartImage("../../photos/20260528_193054_gp_UFyTb44w.jpg", "Old body-mount rubber sample stack with tape", "20260528_193054_gp_UFyTb44w", ["bm-iso-lg", "old-rubber"]),
         spec: "Longman custom square pad. Same compound batch as the small pads where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
         qty: "2 + 1 spare",
         dimension: "3D envelope 80 L x 80 W x 24 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
@@ -5106,7 +5136,7 @@
       },
       {
         id: "FS-OVAL",
-        item: "Two-hole oval front-support isolator pad",
+        item: "Two-hole oval front-support isolator pads",
         partNumber: "fs_oval_front_support_pad_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
@@ -5120,11 +5150,11 @@
       },
       {
         id: "FS-STRIP-L",
-        item: "Left underfloor body-support strip liner",
+        item: "Left plain underfloor body-support strip liner",
         partNumber: "fs_strip_left_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "released_for_quote_and_first_article_dry_fit_trim_pending",
-        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a"),
+        image: scoutPreviousPartImage("../../photos/20260528_193200_gp_HICSdovA.jpg", "Old left strip rubber section with tape", "20260528_193200_gp_HICSdovA", ["fs-strip-l", "old-rubber"]),
         spec: "Released first article as a plain flat underfloor body-support / anti-squeak strip. Do not add holes, slots, bonding, or stepped geometry unless dry-fit proves it.",
         qty: "1",
         dimension: "3D envelope 420 L x 38 W x 8 T mm; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges; flat parallel faces; local end trim only after dry-fit",
@@ -5135,11 +5165,11 @@
       },
       {
         id: "FS-STRIP-R",
-        item: "Right underfloor body-support strip liner",
+        item: "Right plain underfloor body-support strip liner",
         partNumber: "fs_strip_right_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "released_for_quote_and_first_article_dry_fit_trim_pending",
-        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control", "fs_strip_right_template_blank_rev_a"),
+        image: scoutPreviousPartImage("../../photos/20260528_193253_gp_f0eQuSFA.jpg", "Old right strip rubber section with tape", "20260528_193253_gp_f0eQuSFA", ["fs-strip-r", "old-rubber"]),
         spec: "Released first article as the right-side mate to the left strip. Use the same plain blank unless dry-fit proves a handed end trim.",
         qty: "1",
         dimension: "3D envelope 420 L x 38 W x 8 T mm; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges; flat parallel faces; local handed trim only after dry-fit",
@@ -6858,6 +6888,7 @@
   }
 
   function renderVehicleMap() {
+    const viewerUrl = vehicleMapViewerUrl();
     root.innerHTML = `
       <section class="vehicle-map-view">
         <div class="vehicle-map-head">
@@ -6866,12 +6897,12 @@
             <p class="section-subtitle">Orbitable full-car scaffold with part search, group toggles, part focus, and export links for the generated CAD map.</p>
           </div>
           <div class="vehicle-map-links">
-            <a class="item-link" href="${escapeHtml(VEHICLE_MAP_VIEWER_URL)}" target="_blank" rel="noopener noreferrer">Open Viewer</a>
-            ${VEHICLE_MAP_EXPORT_LINKS.map((link, index) => renderItemLink(link, index)).join("")}
+            <a class="item-link" href="${escapeHtml(viewerUrl)}" target="_blank" rel="noopener noreferrer">Open Viewer</a>
+            ${VEHICLE_MAP_EXPORT_LINKS.map((link, index) => renderItemLink({ ...link, url: dashboardAssetUrl(link.url) }, index)).join("")}
           </div>
         </div>
         <div class="vehicle-map-frame-shell">
-          <iframe class="vehicle-map-frame" src="${escapeHtml(VEHICLE_MAP_VIEWER_URL)}" title="J40 full vehicle 3D map"></iframe>
+          <iframe class="vehicle-map-frame" src="${escapeHtml(viewerUrl)}" title="J40 full vehicle 3D map"></iframe>
         </div>
       </section>
     `;
@@ -8032,6 +8063,66 @@
     `;
   }
 
+  function renderAmirPurchaseCards() {
+    const amirData = data.amir || {};
+    const cardSheet = amirData.card_sheet && cleanString(amirData.card_sheet.path) ? amirData.card_sheet : null;
+    const cards = Array.isArray(amirData.purchase_cards) ? amirData.purchase_cards : [];
+    if (!cardSheet && !cards.length) {
+      return "";
+    }
+    const shoppingListPath = cleanString(amirData.shopping_list_path);
+    const videoGatesPath = cleanString(amirData.video_gates_path);
+    return `
+      <section id="amir-purchase-cards" class="card">
+        <div class="detail-header">
+          <h3>Image-Backed Purchase Cards</h3>
+          ${renderCopyLinkButton(sectionRoute("amir-purchase-cards"), "#", "Copy Amir purchase cards link")}
+        </div>
+        <p class="small-muted">Specific photos and card sheet sent to Amir for recognition, receipt checks, quote/photo-only gates, and sample-controlled purchases.</p>
+        <div class="link-row">
+          ${shoppingListPath ? `<a class="item-link" href="${escapeHtml(shoppingListPath)}">Shopping list</a>` : ""}
+          ${videoGatesPath ? `<a class="item-link" href="${escapeHtml(videoGatesPath)}">Video gates</a>` : ""}
+        </div>
+        ${cardSheet ? renderFigureImage(cardSheet, "Amir image-backed runner cards", { figureClass: "evidence-figure amir-card-sheet", imageClass: "figure-image" }) : ""}
+        ${
+          cards.length
+            ? `
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Item</th>
+                      <th>Current Action</th>
+                      <th>Instruction</th>
+                      <th>Row</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${cards
+                      .map((card) => {
+                        const entryId = cleanString(card.entry_id);
+                        return `
+                          <tr>
+                            ${renderInventoryImageCell({ item: card.item, image: card.image }, card.item || "Amir reference")}
+                            <td>${escapeHtml(card.item || "-")}</td>
+                            <td>${escapeHtml(card.current_action || "-")}</td>
+                            <td>${escapeHtml(card.instruction || "-")}</td>
+                            <td>${entryId ? `<a class="item-link" href="${escapeHtml(itemRoute(entryId))}">Open row</a>` : "-"}</td>
+                          </tr>
+                        `;
+                      })
+                      .join("")}
+                  </tbody>
+                </table>
+              </div>
+            `
+            : ""
+        }
+      </section>
+    `;
+  }
+
   function renderAmir() {
     const amirRows = collectAmirRows();
     const frontDiscRows = amirRows.filter(isAmirFrontDiscRow);
@@ -8063,6 +8154,8 @@
           <p class="metric-label">Payment-Gated Rows</p>
         </article>
       </section>
+
+      ${renderAmirPurchaseCards()}
 
       <section class="card">
         <div class="detail-header">

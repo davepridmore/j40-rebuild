@@ -4,7 +4,17 @@ from pathlib import Path
 import json
 from string import Template
 
-from generate_j40_full_vehicle_cad_scaffold import BoxPart, CylinderPart, MeshPart, WheelPart, MODEL_TITLE, OUT_DIR, parts
+from generate_j40_full_vehicle_cad_scaffold import (
+    BoxPart,
+    CylinderPart,
+    MeshPart,
+    WheelPart,
+    DRIVER_LAYOUT,
+    MODEL_TITLE,
+    OUT_DIR,
+    TRAFFIC_SIDE,
+    parts,
+)
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -342,7 +352,7 @@ HTML_TEMPLATE = Template(
     <aside>
       <section class="section">
         <h1>$MODEL_TITLE</h1>
-        <div class="meta">Left-hand-drive orbitable reference scaffold. Units: mm. Part count: <span id="partCount"></span>.</div>
+        <div class="meta">$DRIVER_LAYOUT orbitable reference scaffold for $TRAFFIC_SIDE. Units: mm. Part count: <span id="partCount"></span>.</div>
         <div class="meta">Visual reference: <a href="https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d">1976 Toyota Land Cruiser FJ40</a> by <a href="https://sketchfab.com/tonielpro520">tonielpro520</a>, licensed <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>. Generated scaffold is project-owned primitive geometry.</div>
         <div class="meta">Exterior benchmark: <a href="https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/">3DModels.org Toyota Land Cruiser (J40) Hard Top 1979</a>; used only for visible detail guidance, material separation, and hard-top exterior cues.</div>
       </section>
@@ -1306,6 +1316,8 @@ def write_viewer() -> Path:
     html = HTML_TEMPLATE.safe_substitute(
         PARTS_JSON=json.dumps(part_payload(), separators=(",", ":")),
         MODEL_TITLE=MODEL_TITLE,
+        DRIVER_LAYOUT=DRIVER_LAYOUT.capitalize(),
+        TRAFFIC_SIDE=TRAFFIC_SIDE,
     )
     OUT_PATH.write_text(html, encoding="utf-8")
     return OUT_PATH

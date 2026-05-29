@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T23:40:32+05:00",
+  "generated_at": "2026-05-30T02:20:59+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -49,7 +49,7 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 18,
     "workstreams_active": 13,
-    "workstream_evidence_images": 809,
+    "workstream_evidence_images": 824,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 69,
     "parts_ordered_pending_delivery": 9,
@@ -15498,6 +15498,372 @@ window.J40_DASHBOARD_DATA = {
       ],
       "images": [
         {
+          "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:15",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004215_gp_evgCLjSw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004222_gp_PKRe5HSQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:31",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004231_gp_CfosvPIg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004254_gp_Hm9RR5DQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004314_gp_wuzpgNrA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004337_gp_m2OagYpg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004345_gp_yK8VYzMQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004401_gp_otUSjgGA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:13",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004413_gp_Qno8OVRg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004419_gp_ZPXJRBzg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:29",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004429_gp_KJHxGcCA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004437_gp_f1TySzww",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:42",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004442_gp_7WcFHjLQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004454_gp_4EoNuEVA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:35:03",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193503_gp_N9nHjqXw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:35:39",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193539_gp_E0cR9I0A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:35:59",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193559_gp_NEpk1hpg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:36:12",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193612_gp_JmbfR0Tw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:36:16",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260517_193616_gp_1ye19BZA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:41:43",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260517_194143_gp_CO7MuMdA",
+          "matched_tokens": [
+            "20260517_194143_gp_co7mumda"
+          ]
+        },
+        {
+          "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:46:33",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260517_194633_gp_rAjY3gjg",
+          "matched_tokens": [
+            "20260517_194633_gp_rajy3gjg"
+          ]
+        },
+        {
+          "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:47:06",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260517_194706_gp_twKRWGFA",
+          "matched_tokens": [
+            "20260517_194706_gp_twkrwgfa"
+          ]
+        },
+        {
+          "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "18:58:26",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_185826_gp_FoyeBPUg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_185833_gp_gZBjUjPg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "18:58:33",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_185833_gp_gZBjUjPg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:30:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193054_gp_UFyTb44w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_193143_gp_Cn3OWzZQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:31:43",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193143_gp_Cn3OWzZQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:32:00",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193200_gp_HICSdovA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_193228_gp_PLATNsFQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:32:28",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193228_gp_PLATNsFQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:32:53",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193253_gp_f0eQuSFA",
+          "matched_tokens": []
+        },
+        {
           "path": "../../photos/20260517_195430_gp_VGGpRFOQ.jpg",
           "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-05-17",
           "captured_date": "2026-05-17",
@@ -15552,186 +15918,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "20260405_234546"
           ]
-        },
-        {
-          "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:54",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004454_gp_4EoNuEVA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:42",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004442_gp_7WcFHjLQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:37",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004437_gp_f1TySzww",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:29",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004429_gp_KJHxGcCA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:19",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004419_gp_ZPXJRBzg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:13",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004413_gp_Qno8OVRg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:44:01",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004401_gp_otUSjgGA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:43:45",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004345_gp_yK8VYzMQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:43:37",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004337_gp_m2OagYpg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:43:14",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004314_gp_wuzpgNrA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:54",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004254_gp_Hm9RR5DQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:31",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004231_gp_CfosvPIg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:22",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004222_gp_PKRe5HSQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:15",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004215_gp_evgCLjSw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:01",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004201_gp_zfUSmKJg",
-          "matched_tokens": []
         },
         {
           "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
@@ -16174,6 +16360,372 @@ window.J40_DASHBOARD_DATA = {
           "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
           "images": [
             {
+              "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004201_gp_zfUSmKJg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:15",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004215_gp_evgCLjSw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004222_gp_PKRe5HSQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004254_gp_Hm9RR5DQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004314_gp_wuzpgNrA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004337_gp_m2OagYpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004401_gp_otUSjgGA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004413_gp_Qno8OVRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004419_gp_ZPXJRBzg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004437_gp_f1TySzww",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:42",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004442_gp_7WcFHjLQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004454_gp_4EoNuEVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": [
+                "20260517_194143_gp_co7mumda"
+              ]
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": [
+                "20260517_194633_gp_rajy3gjg"
+              ]
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": [
+                "20260517_194706_gp_twkrwgfa"
+              ]
+            },
+            {
+              "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "18:58:26",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_185826_gp_FoyeBPUg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_185833_gp_gZBjUjPg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "18:58:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_185833_gp_gZBjUjPg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "19:30:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_193054_gp_UFyTb44w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_193143_gp_Cn3OWzZQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "19:31:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_193143_gp_Cn3OWzZQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "19:32:00",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_193200_gp_HICSdovA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_193228_gp_PLATNsFQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "19:32:28",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_193228_gp_PLATNsFQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+              "captured_date": "2026-05-28",
+              "captured_time": "19:32:53",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260528_193253_gp_f0eQuSFA",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260517_195430_gp_VGGpRFOQ.jpg",
               "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-05-17",
               "captured_date": "2026-05-17",
@@ -16228,186 +16780,6 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": [
                 "20260405_234546"
               ]
-            },
-            {
-              "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:54",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004454_gp_4EoNuEVA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:42",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004442_gp_7WcFHjLQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:37",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004437_gp_f1TySzww",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:29",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004429_gp_KJHxGcCA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:19",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004419_gp_ZPXJRBzg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:13",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004413_gp_Qno8OVRg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:01",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004401_gp_otUSjgGA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:43:45",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004345_gp_yK8VYzMQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:43:37",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004337_gp_m2OagYpg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:43:14",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004314_gp_wuzpgNrA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:54",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004254_gp_Hm9RR5DQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:22",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004222_gp_PKRe5HSQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:15",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004215_gp_evgCLjSw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:01",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004201_gp_zfUSmKJg",
-              "matched_tokens": []
             },
             {
               "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
@@ -16472,7 +16844,7 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 24,
+      "image_count": 39,
       "reference_token_count": 21,
       "requirements": [
         {
@@ -18521,7 +18893,7 @@ window.J40_DASHBOARD_DATA = {
       "longman_rubber_order_specs": [
         {
           "order_id": "BM-ISO-SM",
-          "part": "Main body isolator pad small stations",
+          "part": "Small square tub-to-chassis body isolator pads",
           "vehicle_location": "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
           "required_qty": "10",
           "optional_spare_qty": "2",
@@ -18608,21 +18980,21 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
+            "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "19:30:54",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_193054_gp_UFyTb44w",
             "matched_tokens": []
           }
         },
         {
           "order_id": "BM-ISO-LG",
-          "part": "Main body isolator pad large stations",
+          "part": "Large square tub-to-chassis body isolator pads",
           "vehicle_location": "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
           "required_qty": "2",
           "optional_spare_qty": "1",
@@ -18709,21 +19081,21 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
+            "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "19:30:54",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_193054_gp_UFyTb44w",
             "matched_tokens": []
           }
         },
         {
           "order_id": "FS-OVAL",
-          "part": "Two-hole front-support isolator pad",
+          "part": "Two-hole oval front-support isolator pads",
           "vehicle_location": "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
           "required_qty": "2",
           "optional_spare_qty": "0",
@@ -18776,7 +19148,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "FS-STRIP-L",
-          "part": "Underfloor body-support strip liner left",
+          "part": "Left plain underfloor body-support strip liner",
           "vehicle_location": "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
           "required_qty": "1",
           "optional_spare_qty": "0",
@@ -18899,21 +19271,21 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-            "captured_date": "2026-05-17",
-            "captured_time": "19:35:03",
+            "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "19:32:00",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_193200_gp_HICSdovA",
             "matched_tokens": []
           }
         },
         {
           "order_id": "FS-STRIP-R",
-          "part": "Underfloor body-support strip liner right",
+          "part": "Right plain underfloor body-support strip liner",
           "vehicle_location": "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
           "required_qty": "1",
           "optional_spare_qty": "0",
@@ -19024,21 +19396,21 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-            "captured_date": "2026-05-17",
-            "captured_time": "19:36:12",
+            "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "19:32:53",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_193253_gp_f0eQuSFA",
             "matched_tokens": []
           }
         },
         {
           "order_id": "BUMP-60010-LONG",
-          "part": "Long axle-to-chassis bump stop front-left and both rear",
+          "part": "Long sample-style axle bump-stop rubbers",
           "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
           "required_qty": "3",
           "optional_spare_qty": "0",
@@ -19115,7 +19487,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "BUMP-60020-SHORT",
-          "part": "Short right-front axle-to-chassis bump stop",
+          "part": "Short right-front sample-style axle bump-stop rubber",
           "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
           "required_qty": "1",
           "optional_spare_qty": "0",
@@ -19192,7 +19564,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "BODY-LINER-FULL-WIDTH-HOLD",
-          "part": "Long or full-width flat body/panel liner strips",
+          "part": "Hold: unidentified long/full-width flat liner strips",
           "vehicle_location": "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
           "required_qty": "hold",
           "optional_spare_qty": "hold",
@@ -19207,7 +19579,7 @@ window.J40_DASHBOARD_DATA = {
           "evidence_images": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-            "caption": "Long or full-width flat body/panel liner strips \u00b7 component reference image",
+            "caption": "Hold: unidentified long/full-width flat liner strips \u00b7 component reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -19224,7 +19596,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "EXH-HGR-90917",
-          "part": "Exhaust teardrop hanger cushion",
+          "part": "Hold: exhaust teardrop hanger cushion",
           "vehicle_location": "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
           "required_qty": "hold",
           "optional_spare_qty": "hold",
@@ -19239,7 +19611,7 @@ window.J40_DASHBOARD_DATA = {
           "evidence_images": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg",
-            "caption": "Exhaust teardrop hanger cushion \u00b7 body mount rubber reference image",
+            "caption": "Hold: exhaust teardrop hanger cushion \u00b7 body mount rubber reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25909,7 +26281,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 206655
+            "bytes": 206763
           },
           "file_count": 37
         }
@@ -26592,75 +26964,75 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:54",
+                  "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:53",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193253_gp_f0eQuSFA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:42",
+                  "path": "../../photos/20260528_193228_gp_PLATNsFQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:28",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193228_gp_PLATNsFQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:37",
+                  "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:00",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193200_gp_HICSdovA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:29",
+                  "path": "../../photos/20260528_193143_gp_Cn3OWzZQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:31:43",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193143_gp_Cn3OWzZQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:19",
+                  "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:30:54",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193054_gp_UFyTb44w",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:13",
+                  "path": "../../photos/20260528_185833_gp_gZBjUjPg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "18:58:33",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_185833_gp_gZBjUjPg",
                   "matched_tokens": []
                 }
               ],
@@ -26726,75 +27098,75 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:54",
+                  "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:53",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193253_gp_f0eQuSFA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:42",
+                  "path": "../../photos/20260528_193228_gp_PLATNsFQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:28",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193228_gp_PLATNsFQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:37",
+                  "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:00",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193200_gp_HICSdovA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:29",
+                  "path": "../../photos/20260528_193143_gp_Cn3OWzZQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:31:43",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193143_gp_Cn3OWzZQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:19",
+                  "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:30:54",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193054_gp_UFyTb44w",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:13",
+                  "path": "../../photos/20260528_185833_gp_gZBjUjPg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "18:58:33",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_185833_gp_gZBjUjPg",
                   "matched_tokens": []
                 }
               ],
@@ -26845,75 +27217,75 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:54",
+                  "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:53",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193253_gp_f0eQuSFA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:42",
+                  "path": "../../photos/20260528_193228_gp_PLATNsFQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:28",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193228_gp_PLATNsFQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:37",
+                  "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:32:00",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193200_gp_HICSdovA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:29",
+                  "path": "../../photos/20260528_193143_gp_Cn3OWzZQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:31:43",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193143_gp_Cn3OWzZQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:19",
+                  "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "19:30:54",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_193054_gp_UFyTb44w",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:13",
+                  "path": "../../photos/20260528_185833_gp_gZBjUjPg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+                  "captured_date": "2026-05-28",
+                  "captured_time": "18:58:33",
                   "media_type": "photo",
                   "component_group": "procurement_inventory",
                   "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "stage": "fabrication_measurement",
+                  "media_id": "20260528_185833_gp_gZBjUjPg",
                   "matched_tokens": []
                 }
               ],
@@ -31551,8 +31923,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber grommet assortment - local received photo evidence",
+            "path": "../../docs/amir_montgomery_real_images/grommets.jpg",
+            "caption": "Amir purchase reference - mixed rubber grommets",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -31563,7 +31935,7 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "part_rubber_grommet_set"
             ],
-            "match_basis": "local_inventory_evidence",
+            "match_basis": "manual_override",
             "match_score": 999
           }
         },
@@ -31754,20 +32126,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-            "caption": "Star / lock washer pack - M6 x120, M8 x60, M10 x30 \u00b7 lock set reference image",
+            "path": "../../docs/amir_montgomery_real_images/star_washer.jpg",
+            "caption": "Amir purchase reference - serrated/star grounding washers",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "lockset",
+            "media_id": "",
             "matched_tokens": [
-              "lock"
+              "part_star_washers"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         }
       ],
@@ -35532,7 +35904,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
           "workstream": "interior_weatherproofing",
-          "item": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment",
+          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -35540,30 +35912,31 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
+          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
+          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/thermostat_gasket.jpg",
-            "caption": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment \u00b7 thermostat/gasket reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "thermostat_gasket",
+            "media_id": "air_hose",
             "matched_tokens": [
-              "thermostat"
+              "air",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -35812,10 +36185,10 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
@@ -35934,9 +36307,9 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
@@ -36056,11 +36429,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
+                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -36182,8 +36555,8 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
               ]
@@ -65054,7 +65427,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front Sumitomo fixed disc calipers and rotors",
           "pipe_or_line": "",
-          "replace_scope": "replace_after_pad_shape_and_caliper_measurement",
+          "replace_scope": "required_replace_after_pad_shape_and_caliper_measurement",
           "quantity": "1_axle_set",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
@@ -65067,16 +65440,16 @@ window.J40_DASHBOARD_DATA = {
             "20260529_184012_gp_Q01c08NA"
           ],
           "photo_status": "direct_sumitomo_front_disc_closeups_added",
-          "spec_status": "sumitomo_fixed_caliper_visible_pad_shape_removal_pending",
-          "acquisition_status": "not_acquired",
+          "spec_status": "required_sumitomo_reference_specs_added_pad_sample_pending",
+          "acquisition_status": "spec_controlled_runner_purchase",
           "installation_status": "not_installed",
-          "current_action": "Use the May 29 closeups as the front hardware ID baseline: visible Sumitomo fixed caliper with external bridge/transfer pipe and dust shield. Remove or photograph one pad set and retaining hardware before ordering.",
-          "exact_recreation_spec": "Replace front pads and retaining or anti-rattle hardware matched to the visible Sumitomo fixed front caliper and current rotor setup; do not buy by year alone.",
-          "material_spec": "Brake friction pads and new retaining/anti-rattle hardware matched to the fitted Sumitomo caliper; no used pads",
+          "current_action": "Required item. Use the May 29 closeups as the front hardware ID baseline: visible Sumitomo fixed caliper with external bridge/transfer pipe and dust shield. Ask by reference pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0 and hardware BR06158K / MT 12342, but remove or photograph one pad set and retaining hardware before payment.",
+          "exact_recreation_spec": "Required front pads and retaining/anti-rattle hardware matched to the visible Sumitomo fixed front caliper and current rotor setup. Reference design: Sumitomo-family pad about 107 x 65.7 x 15.5 mm, with axle hardware kit containing 4 pad pins, 2 anti-rattle springs, and 2 pin clips. Do not buy by year alone.",
+          "material_spec": "New brake friction pads and new retaining/anti-rattle hardware matched to the fitted Sumitomo caliper; OEM/Advics/Japanese-equivalent preferred; no used pads or incomplete old hardware reuse",
           "critical_measurements": "Pad outline, pad thickness, backing-plate ears, retaining pin/spring/clip style, rotor diameter/thickness, caliper casting marks, and wheel clearance",
           "fit_and_test": "Even pad contact, no drag, no pull, no noise, bedded according to pad maker or workshop procedure",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching. User confirmed the front disc parts should all be replaced; pad removal/outline and rotor measurements now control exact matching only, not whether pads are reused.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|source_toyotapartsdeal_04491_60010|source_brakepadshop_04465_35170|source_cruiserteq_BR06158K|source_manafrelv_MT12342",
+          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching. User confirmed the front disc parts should all be replaced; pad removal/outline and rotor measurements now control exact matching only, not whether pads are reused. | 2026-05-30 reference specs added for local ordering: 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0 pad family and BR06158K / MT 12342 hardware kit. These are quote/spec anchors only; removed pad and hardware sample still control payment.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -65182,7 +65555,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front Sumitomo fixed disc calipers",
           "pipe_or_line": "",
-          "replace_scope": "replace_or_professionally_rebuild_pair_after_identification",
+          "replace_scope": "required_replace_or_professionally_rebuild_pair_after_identification",
           "quantity": "2",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
@@ -65195,16 +65568,16 @@ window.J40_DASHBOARD_DATA = {
             "20260529_184012_gp_Q01c08NA"
           ],
           "photo_status": "direct_sumitomo_front_disc_closeups_added",
-          "spec_status": "sumitomo_fixed_caliper_visible_casting_and_piston_measure_pending",
-          "acquisition_status": "not_acquired",
+          "spec_status": "required_caliper_reference_specs_added_casting_and_piston_confirmation_pending",
+          "acquisition_status": "spec_controlled_runner_purchase",
           "installation_status": "not_installed",
-          "current_action": "Full front brake replacement decision: renew both visible Sumitomo fixed front calipers as a matched pair. Use seal kits only as part of a professional rebuild if the bodies, pistons, bores, bleed screws, and bridge pipes pass inspection; otherwise fit matched rebuilt/new Sumitomo-family calipers.",
-          "exact_recreation_spec": "Match the fitted Sumitomo fixed-caliper family, piston count/diameter, seal kit, bleed screw, inlet fitting, bridge/transfer pipe fittings, mounting ear spacing, and pad hardware.",
-          "material_spec": "Matched new/rebuilt Sumitomo-family calipers or professionally rebuilt original calipers with new brake-fluid-compatible seals and dust boots; no as-is caliper reuse",
-          "critical_measurements": "Casting marks, piston count/diameter, caliper body family, inlet fitting, bridge-pipe fittings, bleed screw size, mounting bolt spacing, pad hardware style",
+          "current_action": "Required item. Renew both visible Sumitomo fixed front calipers as a matched pair. Use Toyota 47730-60021 RH / 47750-60021 LH and the fixed Sumitomo 4-piston 34/43 mm design as references. Use seal kits only as part of a professional rebuild if the bodies, pistons, bores, bleed screws, and bridge pipes pass inspection; otherwise fit matched rebuilt/new Sumitomo-family calipers.",
+          "exact_recreation_spec": "Match the fitted Sumitomo fixed-caliper family, side orientation, piston count/diameter, seal kit, bleed screw, inlet fitting, bridge/transfer pipe fittings, mounting ear spacing, rotor/disc thickness family, and pad hardware. Reference family is Toyota 47730-60021 RH / 47750-60021 LH for 9/1975-1/1990 factory front-disc Land Cruiser applications.",
+          "material_spec": "Matched new/rebuilt Sumitomo-family calipers or professionally rebuilt original calipers with new brake-fluid-compatible seals and dust boots; no as-is caliper reuse and no untested raw used calipers except as rebuild cores",
+          "critical_measurements": "Casting marks, side orientation, piston count/diameter, caliper body family, inlet fitting, bridge-pipe fittings, bleed screw size, mounting bolt spacing, rotor/disc thickness family, pad hardware style",
           "fit_and_test": "No leaks, pistons move/retract cleanly, bleed screws open, no pull or drag after road test",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "The visible casting reads Sumitomo, but exact Toyota application and seal-kit family still require cleaned casting marks and piston measurement or old-sample matching. User confirmed replace all front disc parts, so existing calipers are not final-install reuse candidates unless professionally rebuilt and tested.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|source_toyotapartsdeal_47750_60021|source_cruiserteq_BRC60021LOAD|source_trodo_budweg_341480",
+          "notes": "The visible casting reads Sumitomo, but exact Toyota application and seal-kit family still require cleaned casting marks and piston measurement or old-sample matching. User confirmed replace all front disc parts, so existing calipers are not final-install reuse candidates unless professionally rebuilt and tested. | 2026-05-30 reference specs added: 47730-60021 RH / 47750-60021 LH family, fixed Sumitomo 4-piston design, catalog piston reference 34/43 mm. Loaded imported sets are reference/backup only for a normal Pakistan-budget plan.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -65310,7 +65683,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front rotors behind Sumitomo fixed calipers",
           "pipe_or_line": "",
-          "replace_scope": "replace_pair_after_measurement",
+          "replace_scope": "required_replace_pair_after_measurement",
           "quantity": "2",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
@@ -65323,16 +65696,16 @@ window.J40_DASHBOARD_DATA = {
             "20260529_184012_gp_Q01c08NA"
           ],
           "photo_status": "direct_sumitomo_front_disc_closeups_added",
-          "spec_status": "rotor_visible_measurement_pending",
-          "acquisition_status": "not_acquired",
+          "spec_status": "required_rotor_reference_specs_added_old_measurement_pending",
+          "acquisition_status": "spec_controlled_runner_purchase",
           "installation_status": "not_installed",
-          "current_action": "Replace both front rotors. Measure the visible old rotors during front brake service only to identify the correct matched replacement and confirm hub, dust-shield, and Sumitomo-caliper clearance.",
-          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, dust-shield clearance, and Sumitomo caliper clearance to the fitted front setup.",
-          "material_spec": "New brake rotors matched to the fitted hub/caliper setup; old rotors are measurement samples only",
-          "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, cracking, heat checking, hub face condition",
+          "current_action": "Required item. Replace both front rotors. Use Toyota 43512-60011 as the 1975-1980 Land Cruiser front-disc reference and measure the old rotors during front brake service to confirm diameter, thickness, height, hub/register, stud pattern, dust-shield, and Sumitomo-caliper clearance before payment.",
+          "exact_recreation_spec": "Required front rotor pair matched to the fitted hub/caliper setup. Reference design for the 43512-60011 OE family: vented front disc, 302 mm outer diameter, 20 mm nominal thickness, 19 mm minimum thickness, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Old rotor measurements control final match.",
+          "material_spec": "New brake rotors matched to the fitted hub/caliper setup; old rotors are measurement samples only and are not the baseline reuse/machining path",
+          "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, rotor height/offset, center bore/register, PCD/stud pattern, service/auxiliary holes, runout, scoring/step, cracking, heat checking, hub face condition, dust-shield and caliper clearance",
           "fit_and_test": "No pedal pulsation, no scoring contact, no caliper interference, no wheel/hub fit issue",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "The photos prove front rotors are fitted but not dimensions. User confirmed replace all front disc parts, so rotor measurement is now for exact replacement matching rather than a machine-or-reuse decision.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|source_toyotapartsdeal_43512_60011|source_manafrelv_43512_60011|source_ate_24_0120_0153_1",
+          "notes": "The photos prove front rotors are fitted but not dimensions. User confirmed replace all front disc parts, so rotor measurement is now for exact replacement matching rather than a machine-or-reuse decision. | 2026-05-30 reference specs added for local ordering: Toyota 43512-60011, quantity 2; catalog design reference 302 x 20 mm vented disc, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height. Verify against old rotor before payment because fitted hardware controls.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -65438,8 +65811,8 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front frame-to-Sumitomo-caliper hydraulic drops",
           "pipe_or_line": "",
-          "replace_scope": "replace_after_fitting_identification",
-          "quantity": "2",
+          "replace_scope": "required_replace_all_fitted_front_flex_hoses_after_fitting_identification",
+          "quantity": "2_lower_plus_1_front_upper_if_fitted",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
             "20260423_232220_gp_ezwEcH2g",
@@ -65451,16 +65824,16 @@ window.J40_DASHBOARD_DATA = {
             "20260529_184012_gp_Q01c08NA"
           ],
           "photo_status": "direct_sumitomo_front_disc_closeups_added",
-          "spec_status": "front_hose_route_visible_end_measure_pending",
-          "acquisition_status": "not_acquired",
+          "spec_status": "required_front_hose_reference_specs_added_end_measure_pending",
+          "acquisition_status": "spec_controlled_runner_purchase",
           "installation_status": "not_installed",
-          "current_action": "May 29 photos show the front hose/bracket and short hard-line route to the caliper. Replace both front flex hoses by old sample after fitting ends, bracket retention, free length, and full-lock clearance are captured.",
-          "exact_recreation_spec": "Match chassis-side fitting, bracket groove/clip, short hard-line tube nut, caliper-side fitting or banjo if fitted, free length, and route with steering at full lock.",
-          "material_spec": "Complete crimped brake flex hose assemblies rated DOT/SAE J1401 or OEM-equivalent; no generic rubber hose fabrication",
-          "critical_measurements": "Chassis-side thread/seat, caliper-side thread/seat or banjo style, hose free length, bracket slot/groove, retaining clip, steering-lock and suspension clearance",
+          "current_action": "Required item. May 29 photos show the front hose/bracket and short hard-line route to the caliper. Replace every fitted front flex hose by old sample after fitting ends, bracket retention, free length, and full-lock/droop clearance are captured. Use 553-102 as the lower wheel hose reference and 553-101 as the front upper/frame hose reference only if that hose is actually fitted.",
+          "exact_recreation_spec": "Required complete front flexible brake hose assemblies matching the fitted route. Reference lower wheel hose 553-102: front lower LH/RH, 9 1/4 in, DOT rubber, FJ40/FJ45/FJ55 7/1970-8/1980. Reference front upper/frame hose if fitted 553-101: front upper, 10 3/8 in, DOT rubber with retaining clip, FJ40/FJ45 9/1975-10/1984. Match chassis-side fitting, bracket groove/clip, short hard-line tube nut, caliper-side fitting or banjo if fitted, free length, and route with steering at full lock and suspension droop.",
+          "material_spec": "Complete crimped brake flex hose assemblies rated DOT/SAE J1401 or OEM-equivalent; no generic rubber hose fabrication, no substitute fittings, and no unmarked hydraulic hose",
+          "critical_measurements": "Actual front flex-hose count, chassis-side thread/seat, caliper-side thread/seat or banjo style, hose free length, bracket slot/groove, retaining clip, hose clocking, steering-lock and suspension-droop clearance",
           "fit_and_test": "No stretch through normal axle movement, no twist, no tyre/spring/shock contact, leak-free pressure test",
-          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "Ironman geometry is treated as effectively the same as current setup, but the fitted hose route still needs full-lock and droop clearance confirmation before payment or installation. User confirmed all front disc service parts should be replaced, so front flex hoses remain mandatory new parts.",
+          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts|source_cruisercorps_553_102|source_cruisercorps_553_101",
+          "notes": "Ironman geometry is treated as effectively the same as current setup, but the fitted hose route still needs full-lock and droop clearance confirmation before payment or installation. User confirmed all front disc service parts should be replaced, so front flex hoses remain mandatory new parts. | 2026-05-30 reference specs added for local ordering: lower wheel hoses x2 using 553-102 as reference, plus front upper/frame hose x1 only if fitted using 553-101 as reference. Old hose samples and written spec control final payment.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -66226,8 +66599,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
-            "caption": "Brake booster servo - Land Cruiser brake booster reference",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+            "caption": "Amir refurb reference - current brake booster / servo context",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -66409,21 +66782,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-            "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+            "caption": "Amir purchase reference - brake flex-hose U-clips",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cable_ties",
+            "media_id": "",
             "matched_tokens": [
-              "cable",
-              "ties"
+              "part_brake_flex_hose_retaining_clip_pack_20260514"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -66471,21 +66843,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-            "caption": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection \u00b7 cable tie reference image",
+            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+            "caption": "Amir purchase reference - rubber-lined P-clips",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cable_ties",
+            "media_id": "",
             "matched_tokens": [
-              "cable",
-              "ties"
+              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -66788,22 +67159,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+            "caption": "Amir purchase reference - 4.75 mm / 3/16 in brake pipe coil",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
+            "media_id": "",
             "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
+              "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514"
             ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -66924,7 +67293,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_disc_pads_hardware",
           "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+          "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -66964,7 +67333,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_brake_hose_pair",
           "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -67025,7 +67394,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_rotor_service_pair",
           "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+          "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -67065,7 +67434,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
           "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+          "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -67379,22 +67748,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
+            "media_id": "",
             "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
+              "part_brake_hydraulic_tees_unions_splitters_20260514"
             ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -67591,8 +67958,8 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)"
+                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67723,8 +68090,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
+                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
               ]
             },
             {
@@ -67981,9 +68348,9 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake vacuum booster servo - refurbish or direct-match exchange by old sample (amir_refurb_quote_video_gate; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)"
+                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -71855,24 +72222,24 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [
         {
           "requirement_id": "HVAC-UNIT-001",
-          "requirement_name": "Hidden compact evaporator/blower/heater/defrost unit",
+          "requirement_name": "Hidden compact evaporator core/case and outlet plenum for external blowers",
           "pipe_id": "",
           "vehicle_location": "Hidden cabin HVAC package behind/under dash",
           "pipe_or_line": "",
-          "replace_scope": "replace_or_buy_complete_hidden_unit",
-          "quantity": "1_complete_unit",
+          "replace_scope": "buy_evaporator_core_case_or_fabricate_plenum_for_custom_blowers",
+          "quantity": "1_core_case_plenum",
           "photo_evidence": [],
           "photo_status": "package_photos_required",
           "spec_status": "purchase_ready_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Ask supplier for all-side tape photos and bench/leak test before payment",
-          "exact_recreation_spec": "Complete 12V compact evaporator/blower case with evaporator core plus blower/fan cage plus TXV/expansion valve plus drain outlet plus outlet spigots; heater core included only if selected unit supports heat/defrost",
-          "material_spec": "New or tested clean automotive HVAC unit compatible with R134a; intact plastic case; working 12V blower and controls",
-          "critical_measurements": "Case LxWxH; blower protrusion; inlet/return area; outlet count/OD/direction; drain OD/location; refrigerant fitting sizes; heater hose sizes if present; mounting tab spacing; service cover clearance; glovebox/dash/pedal/EPS clearance",
-          "fit_and_test": "Bench-run blower on all speeds; pressure/vacuum leak test evaporator; water-test drain; cardboard-mock fit under dash before purchase",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|reference_projects_and_ideas:vitz_manual_ac_donor",
-          "notes": "This was present in the parts/buy-now data but missing from the requirements feed.",
+          "current_action": "Ask supplier for compact evaporator core/case/cooling coil with TXV plus drain plus fittings plus outlet face/spigots and no required integrated blower; get all-side tape photos and leak test before payment",
+          "exact_recreation_spec": "Preferred compact evaporator core already in a sealed case/plenum with TXV/expansion valve plus drain pan/nipple plus refrigerant fittings plus outlet spigots or a flat face for custom plenum; bare cooling coil acceptable only if shop/fabricator can build sealed plenum plus drain pan plus blower adapter",
+          "material_spec": "New or tested clean R134a-compatible automotive evaporator core/case; intact fins/tubes; TXV/fittings/drain present; no requirement for included 12V blower if external blowers are selected",
+          "critical_measurements": "Coil face WxH; core depth; case/plenum LxWxH; airflow face area; inlet/return area; outlet count/OD/direction or flat plenum face; drain OD/location; refrigerant fitting sizes; external blower adapter face; mounting tab spacing; service cover clearance; glovebox/dash/pedal/EPS clearance",
+          "fit_and_test": "Pressure/vacuum leak test evaporator; water-test drain; bench airflow test with selected external blowers across full coil face; cardboard-mock fit under dash before purchase",
+          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|reference_projects_and_ideas:vitz_manual_ac_donor",
+          "notes": "This was present in the parts/buy-now data but missing from the requirements feed. User clarified on 2026-05-30 that this is the missing cabin-side A/C package and later clarified he wants own blowers so cabin purchase is a smaller evaporator core/case/plenum rather than a full blower box.",
           "evidence_images": []
         },
         {
@@ -71888,13 +72255,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "purchase_ready_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Select only after the hidden evaporator outlet count and mock-up position are fixed",
-          "exact_recreation_spec": "Slim outlet panel or louver set that connects to the selected HVAC box and supports cabin airflow plus defrost routing without a bulky visible hang-on unit",
+          "current_action": "Select only after the evaporator case/plenum outlet count and selected blower position/flow are fixed",
+          "exact_recreation_spec": "Slim outlet panel or louver set that connects to the selected evaporator plenum and supports cabin airflow plus defrost routing without a bulky visible hang-on unit",
           "material_spec": "New automotive plastic or aluminium louver pieces with secure shutters and hose adapters",
           "critical_measurements": "Panel width/height/depth; outlet count and OD; louver throw direction; screw spacing; adapter length; clearance to knees and dash controls",
-          "fit_and_test": "Mock panel under dash; confirm air can reach driver/passenger and defrost ducts without fouling pedals or steering",
+          "fit_and_test": "Mock panel under dash; confirm selected blowers can push air to driver/passenger and defrost ducts without fouling pedals or steering",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Do not buy random vents before the evaporator outlet geometry is known.",
+          "notes": "Do not buy random vents before the evaporator plenum geometry and blower layout are known.",
           "evidence_images": []
         },
         {
@@ -72358,7 +72725,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
           "workstream": "interior_weatherproofing",
-          "item": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment",
+          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -72366,30 +72733,31 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
+          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
+          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/thermostat_gasket.jpg",
-            "caption": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment \u00b7 thermostat/gasket reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "thermostat_gasket",
+            "media_id": "air_hose",
             "matched_tokens": [
-              "thermostat"
+              "air",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -72592,10 +72960,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
                 "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
@@ -72944,11 +73312,11 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
                 "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
@@ -74657,21 +75025,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir purchase reference - brake flex-hose U-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_flex_hose_retaining_clip_pack_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -74816,21 +75183,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir purchase reference - rubber-lined P-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -75695,8 +76061,8 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
-          "caption": "Brake booster servo - Land Cruiser brake booster reference",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+          "caption": "Amir refurb reference - current brake booster / servo context",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -75870,21 +76236,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir purchase reference - brake flex-hose U-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_flex_hose_retaining_clip_pack_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -75930,21 +76295,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir purchase reference - rubber-lined P-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -76028,22 +76392,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+          "caption": "Amir purchase reference - 4.75 mm / 3/16 in brake pipe coil",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
+          "media_id": "",
           "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
+            "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514"
           ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -76158,7 +76520,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+        "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76196,7 +76558,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+        "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76234,7 +76596,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -76293,7 +76655,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+        "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -76595,22 +76957,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
+          "media_id": "",
           "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
+            "part_brake_hydraulic_tees_unions_splitters_20260514"
           ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -77475,20 +77835,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-          "caption": "Star / lock washer pack - M6 x120, M8 x60, M10 x30 \u00b7 lock set reference image",
+          "path": "../../docs/amir_montgomery_real_images/star_washer.jpg",
+          "caption": "Amir purchase reference - serrated/star grounding washers",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "lockset",
+          "media_id": "",
           "matched_tokens": [
-            "lock"
+            "part_star_washers"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -77919,7 +78279,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
         "workstream": "interior_weatherproofing",
-        "item": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -77927,28 +78287,29 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
+        "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/thermostat_gasket.jpg",
-          "caption": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment \u00b7 thermostat/gasket reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "thermostat_gasket",
+          "media_id": "air_hose",
           "matched_tokens": [
-            "thermostat"
+            "air",
+            "hose"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -78800,18 +79161,16 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "chassis_rubbers",
         "open_count": 5,
         "image": {
-          "path": "../../photos/20260517_195430_gp_VGGpRFOQ.jpg",
-          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-05-17",
-          "captured_date": "2026-05-17",
-          "captured_time": "19:54:30",
+          "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:01",
           "media_type": "photo",
-          "component_group": "body_floor",
-          "specific_component": "floor_seam_and_body_mount_rust",
-          "stage": "rust_assessment",
-          "media_id": "20260517_195430_gp_VGGpRFOQ",
-          "matched_tokens": [
-            "20260517_195430_gp_vggprfoq"
-          ]
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
         }
       },
       {
@@ -84812,7 +85171,7 @@ window.J40_DASHBOARD_DATA = {
     "rubber": [
       {
         "order_id": "BM-ISO-SM",
-        "part": "Main body isolator pad small stations",
+        "part": "Small square tub-to-chassis body isolator pads",
         "vehicle_location": "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
         "required_qty": "10",
         "optional_spare_qty": "2",
@@ -84899,21 +85258,21 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:31",
+          "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:30:54",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004231_gp_CfosvPIg",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193054_gp_UFyTb44w",
           "matched_tokens": []
         }
       },
       {
         "order_id": "BM-ISO-LG",
-        "part": "Main body isolator pad large stations",
+        "part": "Large square tub-to-chassis body isolator pads",
         "vehicle_location": "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
         "required_qty": "2",
         "optional_spare_qty": "1",
@@ -85000,21 +85359,21 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:31",
+          "path": "../../photos/20260528_193054_gp_UFyTb44w.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:30:54",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004231_gp_CfosvPIg",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193054_gp_UFyTb44w",
           "matched_tokens": []
         }
       },
       {
         "order_id": "FS-OVAL",
-        "part": "Two-hole front-support isolator pad",
+        "part": "Two-hole oval front-support isolator pads",
         "vehicle_location": "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
         "required_qty": "2",
         "optional_spare_qty": "0",
@@ -85067,7 +85426,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "FS-STRIP-L",
-        "part": "Underfloor body-support strip liner left",
+        "part": "Left plain underfloor body-support strip liner",
         "vehicle_location": "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
         "required_qty": "1",
         "optional_spare_qty": "0",
@@ -85190,21 +85549,21 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-          "captured_date": "2026-05-17",
-          "captured_time": "19:35:03",
+          "path": "../../photos/20260528_193200_gp_HICSdovA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:32:00",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260517_193503_gp_N9nHjqXw",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193200_gp_HICSdovA",
           "matched_tokens": []
         }
       },
       {
         "order_id": "FS-STRIP-R",
-        "part": "Underfloor body-support strip liner right",
+        "part": "Right plain underfloor body-support strip liner",
         "vehicle_location": "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
         "required_qty": "1",
         "optional_spare_qty": "0",
@@ -85315,21 +85674,21 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-          "captured_date": "2026-05-17",
-          "captured_time": "19:36:12",
+          "path": "../../photos/20260528_193253_gp_f0eQuSFA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "19:32:53",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260517_193612_gp_JmbfR0Tw",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_193253_gp_f0eQuSFA",
           "matched_tokens": []
         }
       },
       {
         "order_id": "BUMP-60010-LONG",
-        "part": "Long axle-to-chassis bump stop front-left and both rear",
+        "part": "Long sample-style axle bump-stop rubbers",
         "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
         "required_qty": "3",
         "optional_spare_qty": "0",
@@ -85406,7 +85765,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "BUMP-60020-SHORT",
-        "part": "Short right-front axle-to-chassis bump stop",
+        "part": "Short right-front sample-style axle bump-stop rubber",
         "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
         "required_qty": "1",
         "optional_spare_qty": "0",
@@ -85483,7 +85842,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "BODY-LINER-FULL-WIDTH-HOLD",
-        "part": "Long or full-width flat body/panel liner strips",
+        "part": "Hold: unidentified long/full-width flat liner strips",
         "vehicle_location": "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
         "required_qty": "hold",
         "optional_spare_qty": "hold",
@@ -85498,7 +85857,7 @@ window.J40_DASHBOARD_DATA = {
         "evidence_images": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-          "caption": "Long or full-width flat body/panel liner strips \u00b7 component reference image",
+          "caption": "Hold: unidentified long/full-width flat liner strips \u00b7 component reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -85515,7 +85874,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "EXH-HGR-90917",
-        "part": "Exhaust teardrop hanger cushion",
+        "part": "Hold: exhaust teardrop hanger cushion",
         "vehicle_location": "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
         "required_qty": "hold",
         "optional_spare_qty": "hold",
@@ -85530,7 +85889,7 @@ window.J40_DASHBOARD_DATA = {
         "evidence_images": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg",
-          "caption": "Exhaust teardrop hanger cushion \u00b7 body mount rubber reference image",
+          "caption": "Hold: exhaust teardrop hanger cushion \u00b7 body mount rubber reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -100978,8 +101337,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber grommet assortment - local received photo evidence",
+            "path": "../../docs/amir_montgomery_real_images/grommets.jpg",
+            "caption": "Amir purchase reference - mixed rubber grommets",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -100990,7 +101349,7 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "part_rubber_grommet_set"
             ],
-            "match_basis": "local_inventory_evidence",
+            "match_basis": "manual_override",
             "match_score": 999
           }
         },
@@ -105004,22 +105363,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+            "caption": "Amir purchase reference - 4.75 mm / 3/16 in brake pipe coil",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
+            "media_id": "",
             "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
+              "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514"
             ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -105327,20 +105684,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-            "caption": "Star / lock washer pack - M6 x120, M8 x60, M10 x30 \u00b7 lock set reference image",
+            "path": "../../docs/amir_montgomery_real_images/star_washer.jpg",
+            "caption": "Amir purchase reference - serrated/star grounding washers",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "lockset",
+            "media_id": "",
             "matched_tokens": [
-              "lock"
+              "part_star_washers"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -105659,44 +106016,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
           "product_link": "",
           "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
-              "label": "toolsmart.pk"
-            }
-          ],
+          "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_metric_flare_nut_brake_line_wrench_set_9b3134d651f7.webp",
-            "caption": "Metric flare-nut / brake-line wrench set \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "../../docs/amir_montgomery_real_images/flare_wrench.webp",
+            "caption": "Amir purchase reference - metric flare-nut wrench set",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_metric_flare_nut_wrench_set_20260514",
-              "20260514",
-              "metric",
-              "flare",
-              "nut",
-              "brake",
-              "line",
-              "wrench"
+              "tool_metric_flare_nut_wrench_set_20260514"
             ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
-            "match_score": 283
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -105905,20 +106244,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
-            "caption": "3 lb sledge / club hammer \u00b7 tool reference image",
+            "path": "../../docs/amir_montgomery_real_images/sledge_3lb.jpg",
+            "caption": "Amir purchase reference - 3 lb sledge / club hammer",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "generic_tool",
+            "media_id": "",
             "matched_tokens": [
-              "tool"
+              "tool_sledge_hammer_3lb_20260527"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -106986,21 +107325,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-            "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+            "caption": "Amir purchase reference - brake flex-hose U-clips",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cable_ties",
+            "media_id": "",
             "matched_tokens": [
-              "cable",
-              "ties"
+              "part_brake_flex_hose_retaining_clip_pack_20260514"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -107048,22 +107386,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
+            "media_id": "",
             "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
+              "part_brake_hydraulic_tees_unions_splitters_20260514"
             ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -107090,8 +107426,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
-            "caption": "Brake booster servo - Land Cruiser brake booster reference",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+            "caption": "Amir refurb reference - current brake booster / servo context",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -107288,7 +107624,7 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+          "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -107328,7 +107664,7 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+          "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -107368,7 +107704,7 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -107429,7 +107765,7 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+          "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -107497,21 +107833,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-            "caption": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection \u00b7 cable tie reference image",
+            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+            "caption": "Amir purchase reference - rubber-lined P-clips",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cable_ties",
+            "media_id": "",
             "matched_tokens": [
-              "cable",
-              "ties"
+              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -109378,8 +109713,8 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
           "supply_type": "substance",
           "inventory_group": "substances",
-          "item": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment",
-          "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
+          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
           "amount": "",
           "currency": "PKR",
           "workstream": "interior_weatherproofing",
@@ -109388,26 +109723,27 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
           "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
+          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/thermostat_gasket.jpg",
-            "caption": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment \u00b7 thermostat/gasket reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "thermostat_gasket",
+            "media_id": "air_hose",
             "matched_tokens": [
-              "thermostat"
+              "air",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -109841,20 +110177,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-          "caption": "Star / lock washer pack - M6 x120, M8 x60, M10 x30 \u00b7 lock set reference image",
+          "path": "../../docs/amir_montgomery_real_images/star_washer.jpg",
+          "caption": "Amir purchase reference - serrated/star grounding washers",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "lockset",
+          "media_id": "",
           "matched_tokens": [
-            "lock"
+            "part_star_washers"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -110087,22 +110423,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+          "caption": "Amir purchase reference - 4.75 mm / 3/16 in brake pipe coil",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
+          "media_id": "",
           "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
+            "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514"
           ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -110406,20 +110740,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
-          "caption": "3 lb sledge / club hammer \u00b7 tool reference image",
+          "path": "../../docs/amir_montgomery_real_images/sledge_3lb.jpg",
+          "caption": "Amir purchase reference - 3 lb sledge / club hammer",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "generic_tool",
+          "media_id": "",
           "matched_tokens": [
-            "tool"
+            "tool_sledge_hammer_3lb_20260527"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -111065,44 +111399,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
         "product_link": "",
         "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
-            "label": "toolsmart.pk"
-          }
-        ],
+        "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_metric_flare_nut_brake_line_wrench_set_9b3134d651f7.webp",
-          "caption": "Metric flare-nut / brake-line wrench set \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "../../docs/amir_montgomery_real_images/flare_wrench.webp",
+          "caption": "Amir purchase reference - metric flare-nut wrench set",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_metric_flare_nut_wrench_set_20260514",
-            "20260514",
-            "metric",
-            "flare",
-            "nut",
-            "brake",
-            "line",
-            "wrench"
+            "tool_metric_flare_nut_wrench_set_20260514"
           ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
-          "match_score": 283
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -113190,8 +113506,8 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber grommet assortment - local received photo evidence",
+          "path": "../../docs/amir_montgomery_real_images/grommets.jpg",
+          "caption": "Amir purchase reference - mixed rubber grommets",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -113202,7 +113518,7 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "part_rubber_grommet_set"
           ],
-          "match_basis": "local_inventory_evidence",
+          "match_basis": "manual_override",
           "match_score": 999
         }
       },
@@ -118455,21 +118771,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir purchase reference - brake flex-hose U-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_flex_hose_retaining_clip_pack_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -118496,8 +118811,8 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
-          "caption": "Brake booster servo - Land Cruiser brake booster reference",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+          "caption": "Amir refurb reference - current brake booster / servo context",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -118663,21 +118978,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection \u00b7 cable tie reference image",
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir purchase reference - rubber-lined P-clips",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
+          "media_id": "",
           "matched_tokens": [
-            "cable",
-            "ties"
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -119487,22 +119801,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
+          "media_id": "",
           "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
+            "part_brake_hydraulic_tees_unions_splitters_20260514"
           ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -119784,7 +120096,7 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+        "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -119824,7 +120136,7 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+        "notes": "REQUIRED P0 under Amir/local runner. Ask for Sumitomo fixed-caliper pad family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0, catalog pad shape about 107 x 65.7 x 15.5 mm, plus BR06158K / MT 12342 style hardware: 4 pad pins, 2 anti-rattle springs, 2 pin clips. Buy only after removed pad outline, backing ears, retaining hardware, rotor thickness, and mechanic/user approval prove the exact match.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -119864,7 +120176,7 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -119925,7 +120237,7 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+        "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -121253,8 +121565,8 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
         "supply_type": "substance",
         "inventory_group": "substances",
-        "item": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment",
-        "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+        "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
         "amount": "",
         "currency": "PKR",
         "workstream": "interior_weatherproofing",
@@ -121263,26 +121575,27 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
         "product_link": "",
-        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/thermostat_gasket.jpg",
-          "caption": "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment \u00b7 thermostat/gasket reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "thermostat_gasket",
+          "media_id": "air_hose",
           "matched_tokens": [
-            "thermostat"
+            "air",
+            "hose"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -121473,6 +121786,367 @@ window.J40_DASHBOARD_DATA = {
         }
       }
     ]
+  },
+  "amir": {
+    "card_sheet": {
+      "path": "../../docs/amir-montgomery-road-specific-image-cards-20260529.png",
+      "caption": "Amir image-backed runner cards - specific purchase/reference sheet",
+      "captured_date": "2026-05-29",
+      "captured_time": "",
+      "media_type": "photo",
+      "component_group": "procurement_inventory",
+      "specific_component": "amir_purchase_reference",
+      "stage": "runner_reference",
+      "media_id": "amir_montgomery_purchase_cards_20260529",
+      "matched_tokens": [
+        "amir",
+        "montgomery",
+        "purchase_cards",
+        "runner_reference"
+      ],
+      "match_basis": "amir_purchase_reference",
+      "match_score": 995
+    },
+    "purchase_cards": [
+      {
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "item": "Brake pipe coil",
+        "current_action": "Receipt-check existing Amir purchase first",
+        "instruction": "Must be 4.75 mm / 3/16 in automotive brake-rated Bundy/PVF/zinc-coated steel or good brake-rated CuNi. No bare copper, plumbing tube, or compression tube.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+          "caption": "Amir reference: Brake pipe coil",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_01_brake pipe coil",
+          "matched_tokens": [
+            "amir",
+            "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+            "brake pipe coil"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_star_washers",
+        "item": "Serrated/star grounding washers",
+        "current_action": "Receipt-check existing Amir purchase",
+        "instruction": "Confirm M6 x120, M8 x60, and M10 x30 intent. Reject M2 washers, flat washers, or split spring washers sold as star washers.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/star_washer.jpg",
+          "caption": "Amir reference: Serrated/star grounding washers",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_02_serrated/star grounding washers",
+          "matched_tokens": [
+            "amir",
+            "part_star_washers",
+            "serrated/star grounding washers"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "tool_sledge_hammer_3lb_20260527",
+        "item": "3 lb sledge / club hammer",
+        "current_action": "Receipt-check existing Amir purchase",
+        "instruction": "Confirm real 3 lb short-handle hammer, tight head, and safe handle.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/sledge_3lb.jpg",
+          "caption": "Amir reference: 3 lb sledge / club hammer",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_03_3 lb sledge / club hammer",
+          "matched_tokens": [
+            "amir",
+            "tool_sledge_hammer_3lb_20260527",
+            "3 lb sledge / club hammer"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+        "item": "Rubber-lined P-clips",
+        "current_action": "Buy if missing",
+        "instruction": "Buy mixed line supports for 4.75 mm, 6 mm, and 8 mm lines. Use permanent supports every 300-400 mm; no cable ties as final support.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir reference: Rubber-lined P-clips",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_04_rubber-lined p-clips",
+          "matched_tokens": [
+            "amir",
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+            "rubber-lined p-clips"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
+        "item": "Brake flex-hose U-clips",
+        "current_action": "Buy if available at sensible price",
+        "instruction": "Buy 8-12 mixed retaining clips. Match selected hose bracket groove and chassis tab thickness before final use.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir reference: Brake flex-hose U-clips",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_05_brake flex-hose u-clips",
+          "matched_tokens": [
+            "amir",
+            "part_brake_flex_hose_retaining_clip_pack_20260514",
+            "brake flex-hose u-clips"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_rubber_grommet_set",
+        "item": "Rubber grommets",
+        "current_action": "Buy if missing",
+        "instruction": "Buy 6/8/10/12 mm ID plus 16/20/25 mm ID mixed. Use for firewall/pass-through and anti-chafe points.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/grommets.jpg",
+          "caption": "Amir reference: Rubber grommets",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_06_rubber grommets",
+          "matched_tokens": [
+            "amir",
+            "part_rubber_grommet_set",
+            "rubber grommets"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "tool_metric_flare_nut_wrench_set_20260514",
+        "item": "Metric flare-nut wrench set",
+        "current_action": "Buy only if not already covered",
+        "instruction": "Must cover likely brake-line hex sizes around 10, 11, 12, 14, and 17 mm. This is a line wrench set, not a normal open spanner.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/flare_wrench.webp",
+          "caption": "Amir reference: Metric flare-nut wrench set",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_07_metric flare-nut wrench set",
+          "matched_tokens": [
+            "amir",
+            "tool_metric_flare_nut_wrench_set_20260514",
+            "metric flare-nut wrench set"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+        "item": "Brake tee / inline unions / tube nuts",
+        "current_action": "Quote/photo only",
+        "instruction": "Brake-rated double/inverted flare fittings only. Buy only after old sample confirms thread and seat. No plumbing brass, no compression unions.",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+          "caption": "Amir reference: Brake tee / inline unions / tube nuts",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_08_brake tee / inline unions / tube nuts",
+          "matched_tokens": [
+            "amir",
+            "part_brake_hydraulic_tees_unions_splitters_20260514",
+            "brake tee / inline unions / tube nuts"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_front_brake_hose_pair",
+        "item": "Front brake flex hose ends",
+        "current_action": "Quote/photo only",
+        "instruction": "Complete crimped automotive brake hose assemblies only, DOT/SAE J1401 or OEM-equivalent. No generic hose cut from roll.",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+          "caption": "Amir reference: Front brake flex hose ends",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_09_front brake flex hose ends",
+          "matched_tokens": [
+            "amir",
+            "part_front_brake_hose_pair",
+            "front brake flex hose ends"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_rear_axle_hard_brake_lines",
+        "item": "Rear axle union / T area",
+        "current_action": "Quote/photo only",
+        "instruction": "Use installed photo for recognition only. Final purchase needs removed old sample or written spec.",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/rear_axle_hardline_union_current_car_crop_20260503.jpg",
+          "caption": "Amir reference: Rear axle union / T area",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_10_rear axle union / t area",
+          "matched_tokens": [
+            "amir",
+            "part_rear_axle_hard_brake_lines",
+            "rear axle union / t area"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
+        "item": "Brake flare side view",
+        "current_action": "Spec evidence",
+        "instruction": "Supports a Toyota-style double/inverted-flare working basis, but straight-on seat/thread confirmation still controls purchase.",
+        "image": {
+          "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
+          "caption": "Amir reference: Brake flare side view",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_11_brake flare side view",
+          "matched_tokens": [
+            "amir",
+            "part_brake_clutch_hard_line_fittings_20260514",
+            "brake flare side view"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "tool_toolsmart_pard_double_flaring_cutting_tool_set_tm25805_20260527",
+        "item": "Air hose / Nitto couplers",
+        "current_action": "Wait for ordered setup unless urgent",
+        "instruction": "ToolsMart TM25805 and AliExpress Nitto male couplers are already ordered. Amir may buy local adapters only if the exact compressor/tool thread is in hand.",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Amir reference: Air hose / Nitto couplers",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_12_air hose / nitto couplers",
+          "matched_tokens": [
+            "amir",
+            "tool_toolsmart_pard_double_flaring_cutting_tool_set_tm25805_20260527",
+            "air hose / nitto couplers"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "part_brake_booster_servo_44610_60050",
+        "item": "Brake booster / servo",
+        "current_action": "Refurb quote only",
+        "instruction": "Take old booster as sample. Payment waits for the video gate: sample identity, side-by-side match, vacuum hold, assist movement, contamination check, and final acceptance video.",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+          "caption": "Amir reference: Brake booster / servo",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_13_brake booster / servo",
+          "matched_tokens": [
+            "amir",
+            "part_brake_booster_servo_44610_60050",
+            "brake booster / servo"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      },
+      {
+        "entry_id": "service_engine_radiator_recore_or_new_by_sample_20260529",
+        "item": "Radiator / support route",
+        "current_action": "Refurb quote only",
+        "instruction": "Take old radiator/support context. Payment waits for the video gate: sample identity, shop decision, pressure/leak test, core/build proof, proper mounting proof, and final acceptance video.",
+        "image": {
+          "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
+          "caption": "Amir reference: Radiator / support route",
+          "captured_date": "2026-05-29",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "amir_purchase_reference",
+          "stage": "runner_reference",
+          "media_id": "amir_purchase_reference_14_radiator / support route",
+          "matched_tokens": [
+            "amir",
+            "service_engine_radiator_recore_or_new_by_sample_20260529",
+            "radiator / support route"
+          ],
+          "match_basis": "amir_purchase_reference",
+          "match_score": 995
+        }
+      }
+    ],
+    "shopping_list_path": "../../docs/amir-montgomery-road-shopping-list-20260527.md",
+    "video_gates_path": "../../docs/amir-refurbishment-video-gates-20260529.md"
   },
   "other_builds": {
     "drop_zone": "data/reference/other_j40_builds",

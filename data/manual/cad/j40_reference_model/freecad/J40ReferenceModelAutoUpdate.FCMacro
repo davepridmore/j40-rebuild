@@ -25,8 +25,8 @@ GENERATED_MACRO = (
     / "cad"
     / "j40_reference_model"
     / "04_exports"
-    / "scaffold_rev_b"
-    / "j40_full_vehicle_scaffold_rev_b.FCMacro"
+    / "scaffold_rev_c"
+    / "j40_full_vehicle_scaffold_rev_c.FCMacro"
 )
 SOURCE_MESH_MACRO = (
     ROOT
@@ -39,7 +39,7 @@ SOURCE_MESH_MACRO = (
     / "j40_source_mesh_reference.FCMacro"
 )
 STAMP_PATH = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports" / "j40_cad_reference_update_stamp.json"
-DOCUMENT_PREFIX = "j40_full_vehicle_scaffold_rev_b"
+DOCUMENT_PREFIX = "j40_full_vehicle_scaffold_rev_c"
 AUTO_UPDATE_SECONDS = 30
 
 

@@ -5,7 +5,7 @@ Use `J40ReferenceModelAutoUpdate.FCMacro` in the FreeCAD GUI.
 What it does:
 
 - Runs `scripts/update_j40_cad_reference.py --skip-if-unchanged`.
-- Loads the generated `j40_full_vehicle_scaffold_rev_b.FCMacro`.
+- Loads the generated `j40_full_vehicle_scaffold_rev_c.FCMacro`.
 - Loads any extracted/source OBJ, STL, or PLY files through `j40_source_mesh_reference.FCMacro`.
 - Rebuilds the FreeCAD document when the update stamp changes.
 - Starts a 30 second GUI timer, so the open FreeCAD view refreshes after the source ZIP, cleaned meshes, or generator scripts change.

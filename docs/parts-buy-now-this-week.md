@@ -1,6 +1,6 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-29 22:05:30
+- Generated: 2026-05-30 02:17:48
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
@@ -47,7 +47,7 @@
   - `part_hvac_control_panel_20260514` [P2] Compact A/C control panel or integrated controls (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_duct_defrost_hose_kit_20260514` [P2] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_evaporator_drain_mount_kit_20260514` [P2] Evaporator drain hose and mounting/sealing kit (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_hvac_hidden_evaporator_blower_unit_20260514` [P2] Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_hvac_hidden_evaporator_blower_unit_20260514` [P2] Hidden compact evaporator core/case and outlet plenum for custom blower fitment (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_return_air_grille_filter_20260514` [P2] Hidden return-air grille and washable filter for evaporator intake (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_slim_louver_outlet_panel_20260514` [P2] Slim under-dash louver outlet panel / matched air-directing vent pieces (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (9):

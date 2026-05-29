@@ -13,17 +13,72 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports" / "scaffold_rev_b"
+OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports" / "scaffold_rev_c"
 REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports"
 
-MODEL_NAME = "j40_full_vehicle_scaffold_rev_b"
-MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev B - LHD Hardtop Gallery Shape Pass"
-MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev B"
-DETAIL_REVISION = "lhd_reference_gallery_shape_pass"
-DRIVER_SIDE = "left"
-DRIVER_Y_SIGN = -1
-DRIVER_Y = -420
-PASSENGER_Y = 420
+MODEL_NAME = "j40_full_vehicle_scaffold_rev_c"
+MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Classic Rear Glazing Pass"
+MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev C"
+DETAIL_REVISION = "rhd_classic_rear_glazing_detail_pass"
+DRIVER_LAYOUT = "right-hand drive"
+TRAFFIC_SIDE = "left-side traffic"
+DRIVER_SIDE = "right"
+DRIVER_Y_SIGN = 1
+DRIVER_Y = 420
+PASSENGER_Y = -420
+DRIVER_Y_DIRECTION = "positive" if DRIVER_Y_SIGN > 0 else "negative"
+DRIVER_LAYOUT_NOTE = f"{DRIVER_LAYOUT.capitalize()} layout for {TRAFFIC_SIDE}; {DRIVER_Y_DIRECTION} Y is the driver side."
+
+ONLINE_REFERENCE_ROWS = [
+    {
+        "source_id": "sketchfab-tonielpro520-1976-fj40",
+        "title": "1976 Toyota Land Cruiser FJ40",
+        "url": "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+        "source_type": "downloadable 3D model",
+        "permission_basis": "Creative Commons Attribution 4.0; author credit required; commercial use allowed",
+        "rev_c_use": "overall hardtop silhouette, body tub packaging, material separation, and project-owned remodelling reference",
+    },
+    {
+        "source_id": "sketchfab-game-garage-fj40",
+        "title": "Toyota Land Cruiser",
+        "url": "https://sketchfab.com/3d-models/toyota-land-cruiser-cbcbd901e8874205b5be294fa3dd3df2",
+        "source_type": "downloadable game-ready 3D model",
+        "permission_basis": "Creative Commons Attribution listing; author credit required",
+        "rev_c_use": "high-density material/texture cue set for window rubber, lights, trim, wheels, and visible interior detail",
+    },
+    {
+        "source_id": "3dmodels-1979-j40-hard-top",
+        "title": "Toyota Land Cruiser (J40) Hard Top 1979",
+        "url": "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
+        "source_type": "commercial 3D model preview gallery",
+        "permission_basis": "commercial use covered by project owner; public previews used for reference cues",
+        "rev_c_use": "front/rear orthographic proportions, classic rounded rear hardtop glazing, grille/lamp treatment, wheel/tire material breaks, spare carrier",
+    },
+    {
+        "source_id": "cgtrader-hard-top-bj44v-1979-print",
+        "title": "TOYOTA LAND-CRUISER J40 HARD TOP BJ44V 1979",
+        "url": "https://www.cgtrader.com/3d-print-models/hobby-diy/automotive/toyota-land-cruiser-j40-hard-top-bj44v-1979-df76b215-58fa-40f4-82f4-811350605600",
+        "source_type": "commercial printable 3D model listing",
+        "permission_basis": "commercial use covered by project owner; listing cues used unless local files are placed in inbox",
+        "rev_c_use": "separate-body/open-hood/chassis/wheel/glass part breakdown and hood-understructure targets",
+    },
+    {
+        "source_id": "toyota-epc-fj40-body-interior",
+        "title": "Toyota Land Cruiser FJ40-KC Body and Interior Parts Groups",
+        "url": "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
+        "source_type": "online parts catalog representation",
+        "permission_basis": "parts group names used as factual service-reference cues",
+        "rev_c_use": "cab/body mounting, bumper stays, grille, hood lock/hinge, cowl/front ventilator, side/roof/rear ventilators, spare carrier",
+    },
+    {
+        "source_id": "toyota-gr-heritage-40-parts-list-2025",
+        "title": "Land Cruiser 40 GR Heritage Parts List",
+        "url": "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf",
+        "source_type": "official Toyota heritage parts list",
+        "permission_basis": "public Toyota parts list used for factual part-name cues",
+        "rev_c_use": "parking brake, rear brake tubes, wiper pivot caps, mirror packing, fuel inlet hose, rear combination lamp segmentation",
+    },
+]
 
 
 @dataclass(frozen=True)
@@ -169,6 +224,67 @@ def parts() -> list[PartType]:
     ) -> None:
         p.append(MeshPart(group, name, tuple(vertices), tuple(faces), color, confidence, notes))
 
+    def rounded_rect_profile(width: float, height: float, radius: float, segments: int = 5) -> list[tuple[float, float]]:
+        half_width = width / 2
+        half_height = height / 2
+        corner_radius = min(radius, half_width - 1, half_height - 1)
+        profile: list[tuple[float, float]] = []
+        corners = [
+            (half_width - corner_radius, half_height - corner_radius, 0, 90),
+            (-half_width + corner_radius, half_height - corner_radius, 90, 180),
+            (-half_width + corner_radius, -half_height + corner_radius, 180, 270),
+            (half_width - corner_radius, -half_height + corner_radius, 270, 360),
+        ]
+        for cx, cz, start_deg, end_deg in corners:
+            for step in range(segments + 1):
+                if profile and step == 0:
+                    continue
+                angle = math.radians(start_deg + (end_deg - start_deg) * step / segments)
+                profile.append((cx + math.cos(angle) * corner_radius, cz + math.sin(angle) * corner_radius))
+        return profile
+
+    def rounded_side_window_mesh(
+        name: str,
+        x_center: float,
+        y_center: float,
+        z_center: float,
+        width: float,
+        height: float,
+        thickness: float,
+        radius: float,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        profile = rounded_rect_profile(width, height, radius)
+        vertices = [(x_center + dx, y_center - thickness / 2, z_center + dz) for dx, dz in profile]
+        vertices.extend((x_center + dx, y_center + thickness / 2, z_center + dz) for dx, dz in profile)
+        count = len(profile)
+        faces: list[tuple[int, ...]] = [tuple(range(count)), tuple(range(count, count * 2))[::-1]]
+        faces.extend((idx, (idx + 1) % count, (idx + 1) % count + count, idx + count) for idx in range(count))
+        mesh("hard_top", name, vertices, faces, color, confidence, notes)
+
+    def rounded_rear_window_mesh(
+        name: str,
+        x_center: float,
+        y_center: float,
+        z_center: float,
+        width: float,
+        height: float,
+        thickness: float,
+        radius: float,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        profile = rounded_rect_profile(width, height, radius)
+        vertices = [(x_center - thickness / 2, y_center + dy, z_center + dz) for dy, dz in profile]
+        vertices.extend((x_center + thickness / 2, y_center + dy, z_center + dz) for dy, dz in profile)
+        count = len(profile)
+        faces: list[tuple[int, ...]] = [tuple(range(count)), tuple(range(count, count * 2))[::-1]]
+        faces.extend((idx, (idx + 1) % count, (idx + 1) % count + count, idx + count) for idx in range(count))
+        mesh("hard_top", name, vertices, faces, color, confidence, notes)
+
     def wedge_mesh(
         group: str,
         name: str,
@@ -243,7 +359,7 @@ def parts() -> list[PartType]:
 
     # Published representative FJ40 dimensions from Toyota: 3840 L, 1665 W, 1950 H, 2285 WB.
     # Coordinate system: X front bumper to rear, Y centerline left/right, Z ground up, units mm.
-    # This truck is modelled as left-hand drive: negative Y is the driver's side.
+    # This truck is modelled as right-hand drive: positive Y is the driver's side.
     front_axle_x = 735
     rear_axle_x = front_axle_x + 2285
     track_half = 705
@@ -373,9 +489,9 @@ def parts() -> list[PartType]:
     box("hard_top", "left_hardtop_side_panel", 1240, -790, 1320, 2200, 55, 590, COLORS["body_sand"], notes="left hardtop side shell")
     box("hard_top", "right_hardtop_side_panel", 1240, 790, 1320, 2200, 55, 590, COLORS["body_sand"], notes="right hardtop side shell")
     box("hard_top", "left_front_hardtop_window", 1420, -823, 1435, 500, 20, 320, COLORS["glass"], notes="left sliding/side hardtop window glass")
-    box("hard_top", "left_rear_hardtop_window", 2190, -823, 1435, 610, 20, 320, COLORS["glass"], notes="left rear hardtop side window glass")
     box("hard_top", "right_front_hardtop_window", 1420, 823, 1435, 500, 20, 320, COLORS["glass"], notes="right sliding/side hardtop window glass")
-    box("hard_top", "right_rear_hardtop_window", 2190, 823, 1435, 610, 20, 320, COLORS["glass"], notes="right rear hardtop side window glass")
+    rounded_side_window_mesh("left_rear_hardtop_window", 2190, -832, 1595, 610, 320, 24, 92, COLORS["glass"], "L1 visible-detail primitive", "left classic rounded rear hardtop side window glass")
+    rounded_side_window_mesh("right_rear_hardtop_window", 2190, 832, 1595, 610, 320, 24, 92, COLORS["glass"], "L1 visible-detail primitive", "right classic rounded rear hardtop side window glass")
     box("hard_top", "rear_hardtop_panel", 3440, 0, 1320, 55, 1540, 590, COLORS["body_sand"], notes="rear hardtop panel")
     box("hard_top", "roof_front_gutter", 1160, 0, 1810, 70, 1575, 46, COLORS["roof_white"], notes="hardtop gutter at windshield header")
     box("hard_top", "roof_left_gutter", 2250, -830, 1815, 2200, 58, 42, COLORS["roof_white"], notes="left roof gutter")
@@ -402,10 +518,10 @@ def parts() -> list[PartType]:
     cyl("engine_bay", "upper_radiator_hose", 330, -185, 1110, "x", 72, 430, COLORS["rubber"], notes="upper radiator hose placeholder")
     cyl("engine_bay", "exhaust_downpipe_reference", 615, 255, 845, "z", 82, 460, COLORS["metal"], notes="engine bay pipe reference")
     box("interior", "dashboard", 1235, 0, 1080, 120, 1320, 220, COLORS["interior"], notes="dashboard envelope from visible interior")
-    box("interior", "steering_column", 1135, DRIVER_Y, 935, 590, 60, 60, COLORS["metal"], notes="steering column envelope, left-hand-drive driver side")
-    cyl("interior", "steering_wheel", 1240, DRIVER_Y, 1210, "x", 380, 32, COLORS["rubber"], notes="steering wheel disk placeholder on left-hand-drive side")
+    box("interior", "steering_column", 1135, DRIVER_Y, 935, 590, 60, 60, COLORS["metal"], notes=f"steering column envelope, {DRIVER_LAYOUT} driver side")
+    cyl("interior", "steering_wheel", 1240, DRIVER_Y, 1210, "x", 380, 32, COLORS["rubber"], notes=f"steering wheel disk placeholder on {DRIVER_LAYOUT} side")
     cyl("interior", "steering_wheel_hub", 1230, DRIVER_Y, 1210, "x", 135, 55, COLORS["metal"], notes="steering wheel hub")
-    for idx, y in enumerate([-560, -470, -380, -290], start=1):
+    for idx, y in enumerate([DRIVER_Y + offset * DRIVER_Y_SIGN for offset in (140, 50, -40, -130)], start=1):
         cyl("interior", f"dashboard_gauge_{idx}", 1222, y, 1175, "x", 72, 24, COLORS["reference"], notes="round dashboard gauge")
     cyl("interior", "transfer_case_lever", 1580, -120, 820, "z", 36, 285, COLORS["metal"], notes="transfer-case lever")
     cyl("interior", "gearshift_lever", 1500, -35, 820, "z", 38, 330, COLORS["metal"], notes="gearshift lever")
@@ -768,12 +884,12 @@ def parts() -> list[PartType]:
     cyl("running_gear", "rear_diff_pumpkin", rear_axle_x, 0, 420, "y", 380, 320, COLORS["metal"], "L2 visible-detail primitive", "rear differential housing")
     cyl("running_gear", "front_pinion_nose", front_axle_x + 185, 0, 430, "x", 145, 310, COLORS["metal"], "L2 visible-detail primitive", "front differential pinion nose")
     cyl("running_gear", "rear_pinion_nose", rear_axle_x - 240, 0, 430, "x", 145, 310, COLORS["metal"], "L2 visible-detail primitive", "rear differential pinion nose")
-    box("chassis", "left_hand_drive_steering_box", 535, -515, 610, 245, 175, 230, COLORS["metal"], "L2 service datum", "left-hand-drive steering box on left frame rail")
-    box("chassis", "steering_box_left_frame_mount_plate", 500, -445, 600, 295, 28, 260, COLORS["frame"], "L2 bracket reference", "steering box mounting plate on left rail")
-    cyl("running_gear", "pitman_arm_left_hand_drive", 675, -555, 565, "z", 62, 250, COLORS["metal"], "L2 service datum", "pitman arm below LHD steering box")
-    cyl("running_gear", "front_drag_link_left_hand_drive", 875, -555, 505, "x", 34, 620, COLORS["metal"], "L2 routing reference", "drag link from LHD steering box toward front axle")
+    box("chassis", "right_hand_drive_steering_box", 535, 515 * DRIVER_Y_SIGN, 610, 245, 175, 230, COLORS["metal"], "L2 service datum", "right-hand-drive steering box on right frame rail")
+    box("chassis", "steering_box_right_frame_mount_plate", 500, 445 * DRIVER_Y_SIGN, 600, 295, 28, 260, COLORS["frame"], "L2 bracket reference", "steering box mounting plate on right rail")
+    cyl("running_gear", "pitman_arm_right_hand_drive", 675, 555 * DRIVER_Y_SIGN, 565, "z", 62, 250, COLORS["metal"], "L2 service datum", "pitman arm below RHD steering box")
+    cyl("running_gear", "front_drag_link_right_hand_drive", 875, 555 * DRIVER_Y_SIGN, 505, "x", 34, 620, COLORS["metal"], "L2 routing reference", "drag link from RHD steering box toward front axle")
     cyl("running_gear", "front_tie_rod", front_axle_x, 0, 505, "y", 32, 1420, COLORS["metal"], "L2 routing reference", "front axle tie rod across knuckles")
-    cyl("running_gear", "steering_damper", 905, -350, 480, "x", 58, 520, COLORS["metal"], "L2 service datum", "front steering damper package")
+    cyl("running_gear", "steering_damper", 905, 350 * DRIVER_Y_SIGN, 480, "x", 58, 520, COLORS["metal"], "L2 service datum", "front steering damper package")
     box("running_gear", "front_left_steering_knuckle_arm", front_axle_x + 120, -690, 475, 150, 58, 60, COLORS["metal"], "L2 service datum", "left steering knuckle arm")
     box("running_gear", "front_right_steering_knuckle_arm", front_axle_x + 120, 690, 475, 150, 58, 60, COLORS["metal"], "L2 service datum", "right steering knuckle arm")
     for axle_x, axle_name in [(front_axle_x, "front"), (rear_axle_x, "rear")]:
@@ -798,8 +914,8 @@ def parts() -> list[PartType]:
                 cyl("running_gear", f"{axle_name}_{side_name}_lug_nut_{lug_idx}", lug_x, face_y + 32 * y_sign, lug_z, "y", 32, 36, COLORS["metal"], "L2 service datum", "six-lug wheel nut datum")
 
     # Brake and parking-brake routing, including the specific rear cable hardware now tracked separately.
-    cyl("brake_system", "front_hard_line_left_frame_run", 1180, -338, 575, "x", 18, 1650, COLORS["metal"], "L2 routing reference", "front brake hard-line run along left rail")
-    cyl("brake_system", "rear_hard_line_left_frame_run", 2320, -338, 575, "x", 18, 1500, COLORS["metal"], "L2 routing reference", "rear brake hard-line run along left rail")
+    cyl("brake_system", "front_hard_line_right_frame_run", 1180, 338 * DRIVER_Y_SIGN, 575, "x", 18, 1650, COLORS["metal"], "L2 routing reference", "front brake hard-line run along right rail")
+    cyl("brake_system", "rear_hard_line_right_frame_run", 2320, 338 * DRIVER_Y_SIGN, 575, "x", 18, 1500, COLORS["metal"], "L2 routing reference", "rear brake hard-line run along right rail")
     cyl("brake_system", "rear_axle_brake_line", rear_axle_x, 0, 520, "y", 18, 1280, COLORS["metal"], "L2 routing reference", "rear axle brake hard-line across axle")
     cyl("brake_system", "parking_brake_front_cable", 1630, -145, 545, "x", 22, 650, COLORS["rubber"], "L2 routing reference", "parking-brake front cable")
     box("brake_system", "parking_brake_equalizer_bar", 2295, 0, 548, 175, 46, 24, COLORS["metal"], "L3 specific item reference", "rear parking-brake cable equalizer hardware")
@@ -868,13 +984,15 @@ def parts() -> list[PartType]:
     for side, sign, y_sign in side_pairs:
         box("hard_top", f"{side}_hardtop_lower_retainer_rail", 1240, 830 * y_sign, 1288, 2200, 42, 46, COLORS["metal"], "L2 bracket reference", "hardtop lower retainer rail")
         box("hard_top", f"{side}_front_window_rubber_seal", 1420, 842 * y_sign, 1435, 535, 28, 355, COLORS["rubber"], "L2 visible-detail primitive", "hardtop front side window seal")
-        box("hard_top", f"{side}_rear_window_rubber_seal", 2190, 842 * y_sign, 1435, 650, 28, 355, COLORS["rubber"], "L2 visible-detail primitive", "hardtop rear side window seal")
+        rounded_side_window_mesh(f"{side}_rear_window_rubber_seal", 2190, 842 * y_sign, 1595, 676, 382, 30, 118, COLORS["rubber"], "L2 visible-detail primitive", "classic rounded hardtop rear side window rubber gasket")
         for idx, x in enumerate([1320, 1820, 2500, 3180], start=1):
             box("hard_top", f"{side}_hardtop_vertical_joint_{idx}", x, 826 * y_sign, 1320, 22, 28, 570, COLORS["rubber"], "L2 visible-detail primitive", "hardtop vertical joint/seal")
         box("body", f"{side}_side_step_board", 1540, 865 * y_sign, 620, 1120, 210, 55, COLORS["roof_white"], "L2 visible-detail primitive", "painted side step board from project photos")
         box("body", f"{side}_diesel_badge", 2925, 822 * y_sign, 980, 120, 24, 42, COLORS["metal"], "L2 visible-detail primitive", "DIESEL side badge datum from project photos")
-    box("hard_top", "rear_window_rubber_seal", 3470, 0, 1460, 28, 850, 330, COLORS["rubber"], "L2 visible-detail primitive", "rear hardtop window seal")
-    box("hard_top", "rear_hardtop_window", 3485, 0, 1470, 18, 780, 275, COLORS["glass"], "L2 visible-detail primitive", "rear hardtop window")
+    rounded_rear_window_mesh("rear_left_window_rubber_seal", 3470, -250, 1600, 400, 330, 30, 88, COLORS["rubber"], "L2 visible-detail primitive", "left split rear-door rounded window rubber gasket")
+    rounded_rear_window_mesh("rear_right_window_rubber_seal", 3470, 250, 1600, 400, 330, 30, 88, COLORS["rubber"], "L2 visible-detail primitive", "right split rear-door rounded window rubber gasket")
+    rounded_rear_window_mesh("rear_left_hardtop_window", 3485, -250, 1600, 340, 275, 20, 70, COLORS["glass"], "L2 visible-detail primitive", "left split rear-door classic rounded back window glass")
+    rounded_rear_window_mesh("rear_right_hardtop_window", 3485, 250, 1600, 340, 275, 20, 70, COLORS["glass"], "L2 visible-detail primitive", "right split rear-door classic rounded back window glass")
     for y in [-555, -275, 275, 555]:
         box("hard_top", f"rear_corner_glass_or_seal_{int(y + 600)}", 3500, y, 1415, 28, 170, 300, COLORS["glass"], "L2 visible-detail primitive", "rear corner hardtop glass/seal datum")
 
@@ -937,6 +1055,9 @@ def parts() -> list[PartType]:
             box("hard_top", f"{side_name}_hardtop_{window_name}_window_sliding_mullion", x_center + window_length * 0.18, 858 * y_sign, 1438, 28, 24, 300, COLORS["black_trim"], "L3 exterior material reference", "sliding hardtop side-window mullion")
             for corner_idx, (dx, dz) in enumerate([(-window_length / 2, 0), (window_length / 2, 0), (-window_length / 2, 320), (window_length / 2, 320)], start=1):
                 cyl("hard_top", f"{side_name}_hardtop_{window_name}_window_rounded_corner_{corner_idx}", x_center + dx, 862 * y_sign, 1360 + dz, "y", 54, 24, COLORS["rubber"], "L3 exterior material reference", "rounded rubber window corner approximation")
+        rounded_side_window_mesh(f"{side_name}_classic_rear_quarter_window_dark_inner_inset", 2190, 866 * y_sign, 1595, 548, 260, 16, 74, COLORS["glass_dark"], "L4 online-reference detail", "dark inset inside the classic rounded rear hardtop side glass")
+        box("hard_top", f"{side_name}_classic_rear_quarter_window_upper_glare_arc", 2190, 876 * y_sign, 1695, 440, 16, 18, COLORS["body_highlight"], "L4 online-reference detail", "thin pale reflection band following rounded rear quarter glass")
+        box("hard_top", f"{side_name}_classic_rear_quarter_window_lower_shadow_arc", 2190, 878 * y_sign, 1488, 470, 16, 16, COLORS["glass_dark"], "L4 online-reference detail", "lower dark reflection band in rounded rear quarter glass")
         box("hard_top", f"{side_name}_roof_drip_rail_outer_shadow", 1235, 862 * y_sign, 1784, 2275, 28, 30, COLORS["body_shadow"], "L3 exterior material reference", "drip rail shadow under white roof gutter")
         for rib_idx, x in enumerate([1420, 1840, 2260, 2680, 3100], start=1):
             box("hard_top", f"{side_name}_roof_side_panel_subtle_vertical_pressing_{rib_idx}", x, 804 * y_sign, 1325, 20, 18, 520, COLORS["body_shadow"], "L3 exterior material reference", "subtle hardtop side panel vertical pressing")
@@ -959,8 +1080,8 @@ def parts() -> list[PartType]:
 
     # Rear hard-top and spare-carrier details visible in the back-view render.
     box("hard_top", "rear_split_door_center_seal", 3505, 0, 1180, 30, 36, 650, COLORS["rubber"], "L3 exterior material reference", "rear barn-door center seal")
-    box("hard_top", "rear_door_left_glass_dark_inset", 3502, -250, 1470, 24, 340, 252, COLORS["glass_dark"], "L3 exterior material reference", "rear door glass dark inset")
-    box("hard_top", "rear_door_right_glass_dark_inset", 3502, 250, 1470, 24, 340, 252, COLORS["glass_dark"], "L3 exterior material reference", "rear door glass dark inset")
+    rounded_rear_window_mesh("rear_door_left_glass_dark_inset", 3502, -250, 1600, 285, 225, 22, 58, COLORS["glass_dark"], "L3 exterior material reference", "dark inset inside left rounded rear door glass")
+    rounded_rear_window_mesh("rear_door_right_glass_dark_inset", 3502, 250, 1600, 285, 225, 22, 58, COLORS["glass_dark"], "L3 exterior material reference", "dark inset inside right rounded rear door glass")
     box("hard_top", "rear_door_window_center_mullion", 3496, 0, 1462, 34, 34, 304, COLORS["black_trim"], "L3 exterior material reference", "rear window center mullion")
     for side_name, y_sign in [("left", -1), ("right", 1)]:
         for hinge_idx, z in enumerate([1180, 1510], start=1):
@@ -1042,8 +1163,12 @@ def parts() -> list[PartType]:
             cyl("running_gear", f"{axle_name}_{side_name}_hub_cap_center_button", axle_x, face_y + 48 * y_sign, wheel_z, "y", 74, 24, COLORS["chrome"], "L3 exterior material reference", "bright hub-cap center button")
 
     # Rear door, lighting, license plate, and spare carrier hardware.
-    box("hard_top", "rear_window_upper_inner_shadow", 3492, 0, 1608, 20, 760, 24, COLORS["glass_dark"], "L3 exterior material reference", "dark upper reflection band in rear glass")
-    box("hard_top", "rear_window_lower_inner_shadow", 3492, 0, 1342, 20, 760, 24, COLORS["glass_dark"], "L3 exterior material reference", "dark lower reflection band in rear glass")
+    box("hard_top", "rear_left_window_upper_inner_shadow", 3492, -250, 1688, 20, 260, 22, COLORS["glass_dark"], "L3 exterior material reference", "dark upper reflection band in left rounded rear glass")
+    box("hard_top", "rear_right_window_upper_inner_shadow", 3492, 250, 1688, 20, 260, 22, COLORS["glass_dark"], "L3 exterior material reference", "dark upper reflection band in right rounded rear glass")
+    box("hard_top", "rear_left_window_lower_inner_shadow", 3492, -250, 1496, 20, 275, 20, COLORS["glass_dark"], "L3 exterior material reference", "dark lower reflection band in left rounded rear glass")
+    box("hard_top", "rear_right_window_lower_inner_shadow", 3492, 250, 1496, 20, 275, 20, COLORS["glass_dark"], "L3 exterior material reference", "dark lower reflection band in right rounded rear glass")
+    box("hard_top", "rear_left_window_pale_glare_strip", 3508, -250, 1698, 16, 230, 14, COLORS["body_highlight"], "L4 online-reference detail", "pale reflection strip on left classic rounded back window")
+    box("hard_top", "rear_right_window_pale_glare_strip", 3508, 250, 1698, 16, 230, 14, COLORS["body_highlight"], "L4 online-reference detail", "pale reflection strip on right classic rounded back window")
     for hinge_idx, y in enumerate([-620, -520, 520, 620], start=1):
         box("hard_top", f"rear_door_hinge_mount_plate_{hinge_idx}", 3528, y, 1510 if abs(y) > 570 else 1180, 24, 84, 96, COLORS["chrome"], "L3 exterior material reference", "rear door hinge mounting plate")
     for screw_idx, (y, z) in enumerate([(-590, 1555), (-590, 1470), (590, 1555), (590, 1470), (-590, 1225), (-590, 1138), (590, 1225), (590, 1138)], start=1):
@@ -1062,27 +1187,102 @@ def parts() -> list[PartType]:
         cyl("body", f"rear_{side_name}_tail_lamp_chrome_bezel", 3488, 675 * y_sign, 930, "x", 122, 18, COLORS["chrome"], "L3 exterior material reference", "rear tail lamp chrome bezel")
         cyl("body", f"rear_{side_name}_tail_lamp_inner_lens", 3502, 675 * y_sign, 930, "x", 72, 18, COLORS["electrical"], "L3 exterior material reference", "rear tail lamp inner lens")
 
+    # Rev C online-representation detail pass: adds cues that are visible in
+    # commercial model part breakdowns and Toyota online parts representations.
+    box("hard_top", "roof_ventilator_lid_panel", 1885, 0, 1882, 520, 520, 30, COLORS["roof_white"], "L4 online-reference detail", "roof ventilator lid from Toyota roof/rear ventilator parts representation")
+    box("hard_top", "roof_ventilator_front_hinge_bar", 1625, 0, 1898, 36, 540, 34, COLORS["chrome"], "L4 online-reference detail", "roof ventilator front hinge bar")
+    box("hard_top", "roof_ventilator_rear_pull_handle", 2140, 0, 1905, 46, 210, 34, COLORS["chrome"], "L4 online-reference detail", "roof ventilator pull handle")
+    box("hard_top", "roof_ventilator_shadow_gap", 1885, 0, 1858, 560, 560, 24, COLORS["body_shadow"], "L4 online-reference detail", "shadow line around raised roof ventilator lid")
+    for screw_idx, (x, y) in enumerate([(1642, -220), (1642, 220), (2115, -185), (2115, 185)], start=1):
+        cyl("hard_top", f"roof_ventilator_screw_{screw_idx}", x, y, 1918, "z", 18, 14, COLORS["chrome"], "L4 online-reference detail", "roof ventilator screw head")
+
+    for side, sign, y_sign in side_pairs:
+        side_name = "left" if y_sign < 0 else "right"
+        box("hard_top", f"{side_name}_rear_quarter_ventilator_frame", 3065, 846 * y_sign, 1548, 270, 24, 255, COLORS["black_trim"], "L4 online-reference detail", "rear hardtop side ventilator frame from Toyota rear ventilator parts group")
+        for vent_idx, z in enumerate([1488, 1534, 1580, 1626], start=1):
+            box("hard_top", f"{side_name}_rear_quarter_ventilator_louver_{vent_idx}", 3065, 872 * y_sign, z, 225, 18, 18, COLORS["glass_dark"], "L4 online-reference detail", "stacked rear ventilator louver slat")
+        box("hard_top", f"{side_name}_hardtop_to_tub_join_shadow", 2200, 822 * y_sign, 1262, 2190, 24, 34, COLORS["rubber"], "L4 online-reference detail", "hardtop-to-body joint line visible across commercial model breakdown")
+        box("body", f"{side_name}_front_clip_to_tub_join_line", 1018, 823 * y_sign, 958, 22, 22, 510, COLORS["rubber"], "L4 online-reference detail", "front clip/body tub seam from printable body part breakdown")
+        box("body", f"{side_name}_rear_tub_top_flange", 2325, 805 * y_sign, 1235, 1360, 42, 36, COLORS["body_highlight"], "L4 online-reference detail", "rear tub top flange below removable hardtop")
+
+    for mount_idx, (x, y) in enumerate([(710, -525), (710, 525), (1310, -560), (1310, 560), (2230, -575), (2230, 575), (3060, -545), (3060, 545)], start=1):
+        cyl("chassis", f"cab_body_mount_rubber_puck_{mount_idx}", x, y, 560, "z", 112, 42, COLORS["rubber"], "L4 service-reference detail", "cab/body mounting rubber puck from Toyota body-mounting parts group")
+        box("chassis", f"cab_body_mount_stand_{mount_idx}", x, y, 500, 135, 120, 52, COLORS["frame"], "L4 service-reference detail", "body mount bracket stand")
+
+    for side, sign, y_sign in side_pairs:
+        side_name = "left" if y_sign < 0 else "right"
+        box("chassis", f"{side_name}_front_bumper_stay_outer_plate", 190, 585 * y_sign, 505, 310, 44, 88, COLORS["frame"], "L4 service-reference detail", "front bumper stay plate from Toyota bumper-stay parts group")
+        box("chassis", f"{side_name}_front_bumper_stay_inner_plate", 188, 430 * y_sign, 487, 285, 38, 72, COLORS["frame"], "L4 service-reference detail", "inner front bumper stay plate")
+        box("chassis", f"{side_name}_rear_bumper_stay_outer_plate", 3475, 585 * y_sign, 505, 320, 44, 88, COLORS["frame"], "L4 service-reference detail", "rear bumper stay plate from Toyota bumper-stay parts group")
+        box("chassis", f"{side_name}_rear_bumper_stay_inner_plate", 3482, 430 * y_sign, 488, 290, 38, 72, COLORS["frame"], "L4 service-reference detail", "inner rear bumper stay plate")
+        for bolt_idx, x in enumerate([105, 250], start=1):
+            cyl("chassis", f"{side_name}_front_bumper_stay_bolt_{bolt_idx}", x, 620 * y_sign, 550, "y", 28, 22, COLORS["chrome"], "L4 service-reference detail", "front bumper stay bolt head")
+        for bolt_idx, x in enumerate([3415, 3570], start=1):
+            cyl("chassis", f"{side_name}_rear_bumper_stay_bolt_{bolt_idx}", x, 620 * y_sign, 550, "y", 28, 22, COLORS["chrome"], "L4 service-reference detail", "rear bumper stay bolt head")
+
+    box("body", "hood_underside_front_crossbrace", 285, 0, 1194, 760, 52, 34, COLORS["body_shadow"], "L4 online-reference detail", "hood underside bracing from open-hood printable model representation")
+    box("body", "hood_underside_rear_crossbrace", 930, 0, 1260, 520, 48, 32, COLORS["body_shadow"], "L4 online-reference detail", "rear hood underside crossbrace")
+    for side_name, y_sign in [("left", -1), ("right", 1)]:
+        box("body", f"{side_name}_hood_underside_diagonal_brace", 575, 330 * y_sign, 1224, 650, 36, 30, COLORS["body_shadow"], "L4 online-reference detail", "diagonal hood underside brace approximation")
+        box("body", f"{side_name}_hood_hinge_mount_plate", 1015, 540 * y_sign, 1278, 116, 76, 24, COLORS["chrome"], "L4 service-reference detail", "hood hinge mount plate from Toyota hood lock/hinge representation")
+        cyl("body", f"{side_name}_hood_hinge_mount_screw_front", 986, 540 * y_sign, 1298, "z", 18, 12, COLORS["chrome"], "L4 service-reference detail", "hood hinge mount screw")
+        cyl("body", f"{side_name}_hood_hinge_mount_screw_rear", 1044, 540 * y_sign, 1298, "z", 18, 12, COLORS["chrome"], "L4 service-reference detail", "hood hinge mount screw")
+    cyl("body", "hood_prop_rod_stowed", 650, -585, 1170, "x", 18, 690, COLORS["chrome"], "L4 online-reference detail", "stowed hood prop rod from open-hood reference")
+    box("body", "hood_prop_rod_retaining_clip", 972, -585, 1182, 42, 34, 28, COLORS["chrome"], "L4 online-reference detail", "hood prop retaining clip")
+    box("body", "hood_lock_receiver_plate", 118, 0, 1166, 58, 250, 46, COLORS["chrome"], "L4 service-reference detail", "hood lock receiver at grille header")
+
+    box("brake_system", "proportioning_bypass_valve_body", 1505, 338 * DRIVER_Y_SIGN, 608, 135, 82, 58, COLORS["brass"], "L4 service-reference detail", "Toyota GR Heritage proportioning/bypass valve cue on RHD brake-line side")
+    cyl("brake_system", "proportioning_valve_front_tube", 1398, 338 * DRIVER_Y_SIGN, 610, "x", 14, 210, COLORS["brass"], "L4 service-reference detail", "front brake tube to proportioning valve")
+    cyl("brake_system", "proportioning_valve_rear_tube", 1610, 338 * DRIVER_Y_SIGN, 610, "x", 14, 220, COLORS["brass"], "L4 service-reference detail", "rear brake tube from proportioning valve")
+    for clip_idx, x in enumerate([1835, 2140, 2445, 2750], start=1):
+        box("brake_system", f"rear_brake_tube_frame_clip_{clip_idx}", x, 338 * DRIVER_Y_SIGN, 590, 36, 32, 30, COLORS["chrome"], "L4 service-reference detail", "rear brake tube frame clip from Toyota tube parts cues")
+    cyl("fuel_system", "fuel_tank_sub_inlet_hose", 3020, -612, 745, "z", 46, 320, COLORS["rubber"], "L4 service-reference detail", "fuel tank sub-inlet hose from Toyota GR Heritage parts list")
+    for clamp_idx, z in enumerate([622, 850], start=1):
+        cyl("fuel_system", f"fuel_tank_sub_inlet_hose_clamp_{clamp_idx}", 3020, -612, z, "z", 58, 14, COLORS["chrome"], "L4 service-reference detail", "fuel hose clamp")
+    cyl("fuel_system", "fuel_tank_vent_hose", 2870, -515, 720, "x", 26, 470, COLORS["rubber"], "L4 service-reference detail", "fuel tank vent hose datum")
+
+    for side_name, y_sign in [("left", -1), ("right", 1)]:
+        for segment_name, z, color in [("amber_upper", 982, COLORS["amber"]), ("red_center", 930, COLORS["electrical"]), ("clear_lower", 878, COLORS["reference"])]:
+            box("body", f"rear_{side_name}_tail_lamp_{segment_name}_lens", 3512, 675 * y_sign, z, 24, 88, 42, color, "L4 service-reference detail", "rear combination lamp separated amber/red/clear lens cue from Toyota GR Heritage list")
+        for screw_idx, z in enumerate([1016, 842], start=1):
+            cyl("body", f"rear_{side_name}_tail_lamp_body_screw_{screw_idx}", 3530, 724 * y_sign, z, "x", 16, 14, COLORS["chrome"], "L4 service-reference detail", "rear lamp body screw")
+
+    gauge_positions = [
+        ("speedometer", DRIVER_Y, 128),
+        ("fuel", DRIVER_Y + 108 * DRIVER_Y_SIGN, 72),
+        ("temperature", DRIVER_Y - 108 * DRIVER_Y_SIGN, 72),
+        ("oil_pressure", DRIVER_Y - 200 * DRIVER_Y_SIGN, 58),
+        ("ammeter", DRIVER_Y + 200 * DRIVER_Y_SIGN, 58),
+    ]
+    for gauge_name, y, diameter in gauge_positions:
+        cyl("interior", f"dash_{gauge_name}_chrome_bezel", 1190, y, 1148, "x", diameter, 18, COLORS["chrome"], "L4 online-reference detail", "separate dash gauge bezel from high-density online interior representation")
+        cyl("interior", f"dash_{gauge_name}_dark_face", 1180, y, 1148, "x", diameter - 20, 12, COLORS["glass_dark"], "L4 online-reference detail", "dark gauge face")
+    box("interior", "dash_passenger_grab_handle_left_mount", 1190, PASSENGER_Y - 172 * DRIVER_Y_SIGN, 1170, 38, 36, 74, COLORS["chrome"], "L4 online-reference detail", "passenger dash grab handle mount")
+    box("interior", "dash_passenger_grab_handle_right_mount", 1190, PASSENGER_Y + 175 * DRIVER_Y_SIGN, 1170, 38, 36, 74, COLORS["chrome"], "L4 online-reference detail", "passenger dash grab handle mount")
+    cyl("interior", "dash_passenger_grab_handle_bar", 1184, PASSENGER_Y, 1198, "y", 32, 330, COLORS["chrome"], "L4 online-reference detail", "passenger dash grab handle")
+
     # Interior: controls, seat structure, belts, floor mats, and dash detail.
-    box("interior", "dashboard_glovebox_door", 1212, PASSENGER_Y, 1115, 35, 335, 150, COLORS["reference"], "L2 visible-detail primitive", "glovebox door on passenger/right side for LHD cabin")
-    box("interior", "dash_instrument_cluster_plate", 1208, DRIVER_Y, 1128, 36, 330, 170, COLORS["reference"], "L2 visible-detail primitive", "instrument cluster plate on left-hand-drive side")
-    for idx, y in enumerate([-535, -480, -425, -370, -315], start=1):
+    box("interior", "dashboard_glovebox_door", 1212, PASSENGER_Y, 1115, 35, 335, 150, COLORS["reference"], "L2 visible-detail primitive", f"glovebox door on passenger/{'left' if DRIVER_SIDE == 'right' else 'right'} side for {DRIVER_LAYOUT} cabin")
+    box("interior", "dash_instrument_cluster_plate", 1208, DRIVER_Y, 1128, 36, 330, 170, COLORS["reference"], "L2 visible-detail primitive", f"instrument cluster plate on {DRIVER_LAYOUT} side")
+    for idx, y in enumerate([value * DRIVER_Y_SIGN for value in [535, 480, 425, 370, 315]], start=1):
         cyl("interior", f"dash_switch_knob_{idx}", 1200, y, 1050, "x", 34, 26, COLORS["metal"], "L2 visible-detail primitive", "dash switch knob")
-    for idx, y in enumerate([90, 155, 220, 285], start=1):
+    for idx, y in enumerate([value * -DRIVER_Y_SIGN for value in [90, 155, 220, 285]], start=1):
         cyl("interior", f"heater_control_knob_{idx}", 1200, y, 1048, "x", 30, 24, COLORS["metal"], "L2 visible-detail primitive", "heater/control knob")
-    for spoke_idx, y in enumerate([DRIVER_Y - 90, DRIVER_Y, DRIVER_Y + 90], start=1):
+    for spoke_idx, y in enumerate([DRIVER_Y - 90 * DRIVER_Y_SIGN, DRIVER_Y, DRIVER_Y + 90 * DRIVER_Y_SIGN], start=1):
         box("interior", f"steering_wheel_spoke_{spoke_idx}", 1216, y, 1205, 34, 170, 18, COLORS["metal"], "L2 visible-detail primitive", "steering wheel spoke reference")
-    for pedal_idx, (name, y) in enumerate([("clutch", DRIVER_Y - 100), ("brake", DRIVER_Y - 20), ("accelerator", DRIVER_Y + 70)], start=1):
+    pedal_layout = [("clutch", DRIVER_Y - 70 * DRIVER_Y_SIGN), ("brake", DRIVER_Y + 20 * DRIVER_Y_SIGN), ("accelerator", DRIVER_Y + 100 * DRIVER_Y_SIGN)]
+    for pedal_idx, (name, y) in enumerate(pedal_layout, start=1):
         box("interior", f"{name}_pedal_pad", 1340, y, 705, 90, 45, 110, COLORS["rubber"], "L2 visible-detail primitive", "pedal pad")
         cyl("interior", f"{name}_pedal_arm", 1300, y, 820, "z", 22, 240, COLORS["metal"], "L2 visible-detail primitive", "pedal arm")
-    box("interior", "lhd_pedal_box_reinforcement", 1195, DRIVER_Y - 45, 850, 95, 285, 250, COLORS["metal"], "L2 service datum", "left-hand-drive pedal box reinforcement at driver firewall")
-    box("interior", "lhd_steering_column_dash_bracket", 1215, DRIVER_Y, 1040, 62, 210, 66, COLORS["metal"], "L2 service datum", "left-hand-drive steering column dash support bracket")
-    cyl("interior", "steering_column_firewall_boot", 1142, DRIVER_Y, 1020, "x", 130, 48, COLORS["rubber"], "L2 visible-detail primitive", "rubber boot where LHD steering column passes through firewall")
-    cyl("interior", "brake_pedal_pivot_bar", 1260, DRIVER_Y - 20, 960, "y", 32, 180, COLORS["metal"], "L2 service datum", "LHD brake pedal pivot bar")
-    cyl("interior", "clutch_pedal_pivot_bar", 1260, DRIVER_Y - 100, 960, "y", 32, 170, COLORS["metal"], "L2 service datum", "LHD clutch pedal pivot bar")
-    box("interior", "accelerator_linkage_pivot", 1225, DRIVER_Y + 95, 875, 52, 42, 125, COLORS["metal"], "L2 service datum", "LHD accelerator linkage pivot on driver side")
-    cyl("interior", "steering_column_indicator_stalk", 1225, DRIVER_Y - 185, 1220, "y", 22, 165, COLORS["metal"], "L2 visible-detail primitive", "left-hand-drive steering column stalk reference")
-    box("interior", "driver_side_floor_dimmer_switch", 1290, DRIVER_Y - 230, 735, 70, 55, 34, COLORS["rubber"], "L2 visible-detail primitive", "floor dimmer/switch placeholder on LHD driver footwell")
-    cyl("interior", "handbrake_lever", 1760, -250, 790, "z", 32, 360, COLORS["metal"], "L2 visible-detail primitive", "handbrake lever")
+    box("interior", "rhd_pedal_box_reinforcement", 1195, DRIVER_Y + 45 * DRIVER_Y_SIGN, 850, 95, 285, 250, COLORS["metal"], "L2 service datum", "right-hand-drive pedal box reinforcement at driver firewall")
+    box("interior", "rhd_steering_column_dash_bracket", 1215, DRIVER_Y, 1040, 62, 210, 66, COLORS["metal"], "L2 service datum", "right-hand-drive steering column dash support bracket")
+    cyl("interior", "steering_column_firewall_boot", 1142, DRIVER_Y, 1020, "x", 130, 48, COLORS["rubber"], "L2 visible-detail primitive", f"rubber boot where {DRIVER_LAYOUT} steering column passes through firewall")
+    cyl("interior", "brake_pedal_pivot_bar", 1260, DRIVER_Y + 20 * DRIVER_Y_SIGN, 960, "y", 32, 180, COLORS["metal"], "L2 service datum", "RHD brake pedal pivot bar")
+    cyl("interior", "clutch_pedal_pivot_bar", 1260, DRIVER_Y - 70 * DRIVER_Y_SIGN, 960, "y", 32, 170, COLORS["metal"], "L2 service datum", "RHD clutch pedal pivot bar")
+    box("interior", "accelerator_linkage_pivot", 1225, DRIVER_Y + 118 * DRIVER_Y_SIGN, 875, 52, 42, 125, COLORS["metal"], "L2 service datum", "RHD accelerator linkage pivot on driver side")
+    cyl("interior", "steering_column_indicator_stalk", 1225, DRIVER_Y + 185 * DRIVER_Y_SIGN, 1220, "y", 22, 165, COLORS["metal"], "L2 visible-detail primitive", "right-hand-drive steering column stalk reference")
+    box("interior", "driver_side_floor_dimmer_switch", 1290, DRIVER_Y + 230 * DRIVER_Y_SIGN, 735, 70, 55, 34, COLORS["rubber"], "L2 visible-detail primitive", "floor dimmer/switch placeholder on RHD driver footwell")
+    cyl("interior", "handbrake_lever", 1760, 250 * DRIVER_Y_SIGN, 790, "z", 32, 360, COLORS["metal"], "L2 visible-detail primitive", f"handbrake lever biased toward {DRIVER_LAYOUT} driver side")
     cyl("interior", "gearshift_knob", 1500, -35, 1160, "z", 86, 60, COLORS["rubber"], "L2 visible-detail primitive", "gearshift knob")
     cyl("interior", "transfer_case_knob", 1580, -120, 1110, "z", 76, 55, COLORS["rubber"], "L2 visible-detail primitive", "transfer case knob")
     for side, sign, y_sign in side_pairs:
@@ -1111,19 +1311,19 @@ def parts() -> list[PartType]:
     box("engine_bay", "exhaust_manifold", 575, 260, 900, 500, 95, 145, COLORS["engine"], "L2 visible-detail primitive", "exhaust manifold envelope")
     cyl("engine_bay", "carburetor_body", 745, -220, 1165, "z", 120, 170, COLORS["metal"], "L2 visible-detail primitive", "carburetor body")
     cyl("engine_bay", "round_air_cleaner_lid", 760, -235, 1250, "z", 260, 68, COLORS["metal"], "L2 visible-detail primitive", "round air cleaner lid")
-    cyl("engine_bay", "brake_booster", 1075, -520, 1060, "x", 260, 145, COLORS["metal"], "L2 service datum", "brake booster package")
-    cyl("engine_bay", "master_cylinder", 945, -520, 1060, "x", 92, 230, COLORS["metal"], "L2 service datum", "brake master cylinder")
-    box("engine_bay", "clutch_master_cylinder", 945, -350, 1035, 210, 82, 76, COLORS["metal"], "L2 service datum", "clutch master cylinder")
-    box("engine_bay", "lhd_firewall_pedal_box_outer_plate", 1112, DRIVER_Y - 55, 895, 42, 350, 300, COLORS["metal"], "L2 service datum", "left-hand-drive pedal box outer reinforcement on firewall")
-    box("engine_bay", "brake_booster_firewall_bracket", 1110, -520, 1015, 48, 300, 250, COLORS["metal"], "L2 service datum", "LHD brake booster firewall bracket")
-    cyl("engine_bay", "brake_master_reservoir", 875, -520, 1165, "z", 110, 105, COLORS["reference"], "L2 service datum", "brake fluid reservoir on left-hand-drive master cylinder")
-    cyl("engine_bay", "brake_master_reservoir_cap", 875, -520, 1225, "z", 82, 24, COLORS["brass"], "L2 visible-detail primitive", "brake master reservoir cap")
-    cyl("engine_bay", "brake_booster_vacuum_hose", 820, -430, 1130, "x", 34, 470, COLORS["rubber"], "L2 routing reference", "vacuum hose from engine to LHD brake booster")
-    cyl("engine_bay", "clutch_master_reservoir_cap", 910, -350, 1130, "z", 70, 26, COLORS["brass"], "L2 service datum", "clutch master reservoir cap")
-    cyl("engine_bay", "clutch_hydraulic_line_firewall_run", 830, -350, 980, "x", 14, 520, COLORS["metal"], "L2 routing reference", "clutch hydraulic line from LHD master cylinder")
-    cyl("engine_bay", "steering_column_lower_firewall_shaft", 1010, DRIVER_Y, 980, "x", 44, 340, COLORS["metal"], "L2 routing reference", "LHD steering shaft leaving firewall toward steering box")
-    cyl("engine_bay", "steering_column_lower_universal_joint", 840, DRIVER_Y - 10, 955, "x", 76, 58, COLORS["metal"], "L2 service datum", "lower steering universal joint")
-    cyl("engine_bay", "steering_intermediate_shaft", 690, DRIVER_Y - 35, 850, "x", 40, 360, COLORS["metal"], "L2 routing reference", "intermediate steering shaft to left steering box")
+    cyl("engine_bay", "brake_booster", 1075, 520 * DRIVER_Y_SIGN, 1060, "x", 260, 145, COLORS["metal"], "L2 service datum", "RHD brake booster package")
+    cyl("engine_bay", "master_cylinder", 945, 520 * DRIVER_Y_SIGN, 1060, "x", 92, 230, COLORS["metal"], "L2 service datum", "RHD brake master cylinder")
+    box("engine_bay", "clutch_master_cylinder", 945, 350 * DRIVER_Y_SIGN, 1035, 210, 82, 76, COLORS["metal"], "L2 service datum", "RHD clutch master cylinder")
+    box("engine_bay", "rhd_firewall_pedal_box_outer_plate", 1112, DRIVER_Y + 55 * DRIVER_Y_SIGN, 895, 42, 350, 300, COLORS["metal"], "L2 service datum", "right-hand-drive pedal box outer reinforcement on firewall")
+    box("engine_bay", "brake_booster_firewall_bracket", 1110, 520 * DRIVER_Y_SIGN, 1015, 48, 300, 250, COLORS["metal"], "L2 service datum", "RHD brake booster firewall bracket")
+    cyl("engine_bay", "brake_master_reservoir", 875, 520 * DRIVER_Y_SIGN, 1165, "z", 110, 105, COLORS["reference"], "L2 service datum", "brake fluid reservoir on right-hand-drive master cylinder")
+    cyl("engine_bay", "brake_master_reservoir_cap", 875, 520 * DRIVER_Y_SIGN, 1225, "z", 82, 24, COLORS["brass"], "L2 visible-detail primitive", "brake master reservoir cap")
+    cyl("engine_bay", "brake_booster_vacuum_hose", 820, 430 * DRIVER_Y_SIGN, 1130, "x", 34, 470, COLORS["rubber"], "L2 routing reference", "vacuum hose from engine to RHD brake booster")
+    cyl("engine_bay", "clutch_master_reservoir_cap", 910, 350 * DRIVER_Y_SIGN, 1130, "z", 70, 26, COLORS["brass"], "L2 service datum", "clutch master reservoir cap")
+    cyl("engine_bay", "clutch_hydraulic_line_firewall_run", 830, 350 * DRIVER_Y_SIGN, 980, "x", 14, 520, COLORS["metal"], "L2 routing reference", "clutch hydraulic line from RHD master cylinder")
+    cyl("engine_bay", "steering_column_lower_firewall_shaft", 1010, DRIVER_Y, 980, "x", 44, 340, COLORS["metal"], "L2 routing reference", "RHD steering shaft leaving firewall toward steering box")
+    cyl("engine_bay", "steering_column_lower_universal_joint", 840, DRIVER_Y + 10 * DRIVER_Y_SIGN, 955, "x", 76, 58, COLORS["metal"], "L2 service datum", "lower steering universal joint")
+    cyl("engine_bay", "steering_intermediate_shaft", 690, DRIVER_Y + 35 * DRIVER_Y_SIGN, 850, "x", 40, 360, COLORS["metal"], "L2 routing reference", "intermediate steering shaft to right steering box")
     box("engine_bay", "battery_case", 570, 430, 765, 310, 205, 205, COLORS["rubber"], "L2 service datum", "battery case")
     cyl("engine_bay", "battery_positive_terminal", 622, 355, 985, "z", 34, 46, COLORS["electrical"], "L2 service datum", "battery positive terminal")
     cyl("engine_bay", "battery_negative_terminal", 812, 505, 985, "z", 34, 46, COLORS["metal"], "L2 service datum", "battery negative terminal")
@@ -1174,7 +1374,7 @@ def write_scad(model_parts: list[PartType]) -> Path:
     lines = [
         f"// {MODEL_SHORT_TITLE}",
         "// Units: millimetres. Coordinate system: X front to rear, Y centreline left/right, Z ground up.",
-        "// Left-hand drive: negative Y is the driver side.",
+        f"// {DRIVER_LAYOUT_NOTE}",
         "// Generated by tools/generate_j40_full_vehicle_cad_scaffold.py.",
         "// This is a project-owned reference scaffold, not a direct extraction of the CC-BY mesh.",
         "",
@@ -1230,7 +1430,7 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
     lines = [
         f"# {MODEL_SHORT_TITLE}",
         "# Units: millimetres. Run inside FreeCAD.",
-        "# Left-hand drive: negative Y is the driver side.",
+        f"# {DRIVER_LAYOUT_NOTE}",
         "# Generated by tools/generate_j40_full_vehicle_cad_scaffold.py.",
         "import FreeCAD as App",
         "import Part",
@@ -1428,7 +1628,7 @@ def write_svg(model_parts: list[PartType]) -> Path:
         f'<rect x="0" y="0" width="{width}" height="{height}" fill="#ffffff"/>',
         '<style>text{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#202124}.label{font-size:10px;fill:#333}.title{font-size:22px;font-weight:700}</style>',
         f'<text class="title" x="40" y="32">{MODEL_TITLE}</text>',
-        '<text x="40" y="52">Units mm. LHD reference scaffold only; refine after CC-BY mesh and vehicle measurements arrive.</text>',
+        f'<text x="40" y="52">Units mm. {DRIVER_LAYOUT.capitalize()} reference scaffold only; refine after CC-BY mesh and vehicle measurements arrive.</text>',
     ]
 
     for view, (ox, oy, title) in panels.items():
@@ -1506,7 +1706,7 @@ def write_png_preview(model_parts: list[PartType]) -> Path:
     draw.text((40, 18), MODEL_TITLE, fill=(32, 33, 36, 255), font=font)
     draw.text(
         (40, 38),
-        "Units mm. LHD reference scaffold only; refine after CC-BY mesh and vehicle measurements arrive.",
+        f"Units mm. {DRIVER_LAYOUT.capitalize()} reference scaffold only; refine after CC-BY mesh and vehicle measurements arrive.",
         fill=(32, 33, 36, 255),
         font=font,
     )
@@ -2076,8 +2276,10 @@ def write_gltf(model_parts: list[PartType]) -> Path:
             "scale_factor_m_per_mm": 0.001,
             "source": "generated from project CAD scaffold primitives",
             "detail_revision": DETAIL_REVISION,
-            "drive_side": "left-hand drive",
+            "drive_side": DRIVER_LAYOUT,
+            "traffic_side": TRAFFIC_SIDE,
             "driver_side_y_sign": DRIVER_Y_SIGN,
+            "driver_side": DRIVER_SIDE,
             "part_count": len(model_parts),
         },
     }
@@ -2176,21 +2378,34 @@ def write_inventory(model_parts: list[PartType]) -> Path:
     return path
 
 
+def write_online_reference_inventory() -> Path:
+    path = REPORT_DIR / f"{MODEL_NAME}_online_reference_inventory.csv"
+    with path.open("w", newline="", encoding="ascii") as handle:
+        fieldnames = ["source_id", "title", "url", "source_type", "permission_basis", "rev_c_use"]
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(ONLINE_REFERENCE_ROWS)
+    return path
+
+
 def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
     path = REPORT_DIR / f"{MODEL_NAME}_notes.md"
     lines = [
         f"# {MODEL_TITLE}",
         "",
-        "This is a project-owned from-scratch CAD scaffold. It uses the CC-BY 1976 FJ40 Sketchfab model, the project photo inventory, and public 3DModels.org preview renders as visual references, without extracting or copying source mesh data.",
+        "This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketchfab references, the project photo inventory, public/commercial 3D model representations covered for project use, and Toyota online parts representations as visual and service-reference cues. Source files are not redistributed here unless a licensed/local asset is placed in the intake folder.",
         "",
         "## Basis",
         "",
         "- Toyota representative FJ40 dimensions: 3840 mm length, 1665 mm width, 1950 mm height, 2285 mm wheelbase.",
         "- Open-source visual reference: 1976 Toyota Land Cruiser FJ40 by tonielpro520 on Sketchfab, CC Attribution 4.0.",
-        "- Commercial visual benchmark only: Toyota Land Cruiser (J40) Hard Top 1979 on 3DModels.org, using the 12 public gallery renders visible on the product page for exterior silhouette and detail targets such as separated materials, grille/trim/lamp treatment, hardtop glazing, side vents, fender flares, rear-door hardware, spare-carrier presentation, roof crown, hood crown, fender crown, side taper, rear corner radius, and orthographic front/side/top checks. No mesh data, paid asset files, or source geometry are copied.",
+        "- Additional open visual reference: Toyota Land Cruiser by Game Garage on Sketchfab, listed as Creative Commons Attribution, used for high-density material and interior/detail cues.",
+        "- Commercial visual/reference benchmarks: 3DModels.org Toyota Land Cruiser (J40) Hard Top 1979 and CGTrader Toyota Land-Cruiser J40 Hard Top BJ44V 1979 printable listing. Commercial coverage was confirmed by the project owner; this generator stores only project-owned procedural geometry and provenance metadata unless licensed assets are added locally.",
+        "- Toyota online parts representations: EPC body/interior groups and GR Heritage 40 parts list, used for factual part-name cues such as roof/rear ventilators, body mounts, bumper stays, rear combination lamp segmentation, brake tubes, wiper caps, mirror packing, and fuel inlet hose.",
         "- Project-photo visual target: sand/beige diesel hardtop J40 with white roof, black bumper/trim, round auxiliary lamps, black window seals, side step boards, and mud-terrain tires.",
-        "- Driving layout: left-hand drive. Negative Y is the driver side in this coordinate system.",
+        f"- Driving layout: {DRIVER_LAYOUT} for {TRAFFIC_SIDE}. {DRIVER_Y_DIRECTION.capitalize()} Y is the driver side in this coordinate system.",
         "- This scaffold does not extract or reproduce hidden source mesh data.",
+        "- Source inventory: `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`.",
         "",
         "## Outputs",
         "",
@@ -2204,11 +2419,12 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "",
             "- L0 envelope: boxes/cylinders that locate major vehicle systems.",
             "- L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.",
-            "- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, LHD dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
-            "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, rubber window corner caps, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
+            "- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, right-hand-drive dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
+            "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, classic rounded rear-quarter/back-door glass, rubber window radius gaskets, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
             "- L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.",
+            "- Rev C online-reference details: roof ventilator lid/hinge/handle, rear hardtop ventilator louvers, classic rounded rear hardtop side windows and split rear-door glass, hardtop-to-body joins, front clip/tub joins, body-mount pucks and stands, front/rear bumper stays, hood underside bracing and prop rod, hood lock receiver, brake proportioning valve and tube clips, fuel sub-inlet/vent hoses, separated amber/red/clear rear combination lamp lenses, and interior gauge/grab-handle detail.",
             "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
-            "- LHD-specific references: left steering wheel/column, left pedal box, left-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, and steering damper.",
+            "- Right-hand-drive references: right-side steering wheel/column, right pedal box, right-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, steering damper, and driver-side handbrake reach. The pedal order remains clutch-brake-accelerator across the right footwell.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",
             "- Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.",
             "- Not fabrication release: mounting holes, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.",
@@ -2228,16 +2444,22 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
         "detail_revision": DETAIL_REVISION,
         "units": "mm",
         "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
-        "drive_side": "left-hand drive",
+        "drive_side": DRIVER_LAYOUT,
+        "traffic_side": TRAFFIC_SIDE,
         "driver_side_y_sign": DRIVER_Y_SIGN,
         "driver_side": DRIVER_SIDE,
         "basis_dimensions_mm": {"length": 3840, "width": 1665, "height": 1950, "wheelbase": 2285},
         "visual_benchmarks": [
             "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+            "https://sketchfab.com/3d-models/toyota-land-cruiser-cbcbd901e8874205b5be294fa3dd3df2",
             "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
+            "https://www.cgtrader.com/3d-print-models/hobby-diy/automotive/toyota-land-cruiser-j40-hard-top-bj44v-1979-df76b215-58fa-40f4-82f4-811350605600",
+            "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
+            "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf",
         ],
         "part_count": len(model_parts),
         "reference_gallery_image_count": 12,
+        "online_reference_inventory": f"data/manual/cad/j40_reference_model/05_reports/{MODEL_NAME}_online_reference_inventory.csv",
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],
     }
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="ascii")
@@ -2257,6 +2479,7 @@ def main() -> None:
         write_dxf(model_parts),
         write_gltf(model_parts),
         write_inventory(model_parts),
+        write_online_reference_inventory(),
     ]
     if gallery_cues.exists():
         outputs.append(gallery_cues)

@@ -7,7 +7,7 @@
 - CloudCompare was downloaded as a source archive, not an installable app bundle.
 - Blender was not found in `/Applications` or on `PATH`.
 - The selected Sketchfab model is a downloadable CC-BY reference, but the source archive still requires a logged-in Sketchfab download.
-- A project-owned Rev B left-hand-drive scaffold has been restarted around the open-source hardtop reference and the actual project photos.
+- A project-owned Rev C right-hand-drive scaffold now layers open-source references, commercial/online 3D representations covered for project use, Toyota parts representations, and the actual project photos into one procedural reference model.
 
 ## Source Asset
 
@@ -29,22 +29,23 @@
 
 ## Generated Scaffold
 
-The current scaffold is not a direct copy or extraction of the Sketchfab model. It is a from-scratch parametric vehicle-scale reference built from representative FJ40 dimensions, the CC-BY hardtop reference, and project photos of the actual beige diesel hardtop truck.
+The current scaffold is not a direct copy or extraction of the Sketchfab model or any commercial model. It is a from-scratch parametric vehicle-scale reference built from representative FJ40 dimensions, CC-BY hardtop references, commercial/online model representations, Toyota parts representations, and project photos of the actual beige diesel hardtop truck.
 
-- OpenSCAD source: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.scad`
-- FreeCAD macro: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.FCMacro`
-- Open 3D exchange: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf`
-- Orbit viewer: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_orbit_viewer.html`
-- Orthographic SVG/PNG/DXF: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/`
-- Part inventory: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b_parts.csv`
+- OpenSCAD source: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.scad`
+- FreeCAD macro: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.FCMacro`
+- Open 3D exchange: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf`
+- Orbit viewer: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html`
+- Orthographic SVG/PNG/DXF: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/`
+- Part inventory: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv`
+- Online reference inventory: `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`
 
-The FreeCAD macro groups the model into chassis, running gear, body, front detail, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references. It includes project-specific visual cues: sand/beige body, white hardtop roof, black bumpers/trim, hardtop side windows, side step boards, diesel/fuel-filler references, mud-terrain tire lugs, rear parking-brake cable attachment hardware, and left-hand-drive steering/pedal/firewall references.
+The FreeCAD macro groups the model into chassis, running gear, body, front detail, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references. It includes project-specific visual cues: sand/beige body, white hardtop roof, black bumpers/trim, hardtop side windows, classic rounded rear-quarter/back-door glazing, side step boards, diesel/fuel-filler references, mud-terrain tire lugs, rear parking-brake cable attachment hardware, right-hand-drive steering/pedal/firewall references, Rev C roof/rear ventilator detail, body mounts, bumper stays, tri-color rear lamp segmentation, hood underside/prop hardware, brake/fuel routing, and interior gauge/grab-handle detail.
 
-For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, hover part readout, part search, part focus, single-part isolation, and a cabin preset for left-hand-drive interior inspection.
+For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, hover part readout, part search, part focus, single-part isolation, and a cabin preset for right-hand-drive interior inspection.
 
-Published Rev B viewer: https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/rev-b/index.html
+Published Rev C viewer: https://dbvg4yfpnc4tj.cloudfront.net/data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html
 
-Published latest viewer: https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/latest/index.html
+Published dashboard: https://dbvg4yfpnc4tj.cloudfront.net/docs/project-control-ui/#vehicle-map
 
 For open interchange, use the glTF file. It stores the full scaffold as vendor-neutral mesh geometry in metres, with group nodes for body, chassis, running gear, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references.
 

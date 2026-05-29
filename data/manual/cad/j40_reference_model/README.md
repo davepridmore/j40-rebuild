@@ -45,15 +45,15 @@ This is not a true parametric remodel. It creates CAD containers around mesh-der
 Open this generated file in any glTF 2.0 viewer for a vendor-neutral 3D reference:
 
 ```text
-data/manual/cad/j40_reference_model/04_exports/scaffold_rev_b/j40_full_vehicle_scaffold_rev_b.gltf
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf
 ```
 
-It is mesh geometry exported from the project-owned left-hand-drive scaffold in metre units. It is for visual inspection and packaging, not release-grade fabrication geometry.
+It is mesh geometry exported from the project-owned right-hand-drive scaffold in metre units. It is for visual inspection and packaging, not release-grade fabrication geometry.
 
-The generated orbit viewer includes part search, part focus, single-part isolation, group toggles, and a cabin preset for zooming into the left-hand-drive interior.
+The generated orbit viewer includes part search, part focus, single-part isolation, group toggles, classic rounded rear/back window geometry, and a cabin preset for zooming into the right-hand-drive interior.
 
-Published Rev B viewer:
+Published Rev C viewer:
 
 ```text
-https://d2n0n6ep7ibd7p.cloudfront.net/j40/fj40-reference-model/rev-b/index.html
+https://dbvg4yfpnc4tj.cloudfront.net/data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html
 ```

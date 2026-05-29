@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-29 22:05:25
+- Generated: 2026-05-30 02:17:48
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 124 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
@@ -49,7 +49,7 @@
 - `part_hvac_control_panel_20260514` [interior_weatherproofing] Compact A/C control panel or integrated controls
 - `part_hvac_duct_defrost_hose_kit_20260514` [interior_weatherproofing] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit
 - `part_hvac_evaporator_drain_mount_kit_20260514` [interior_weatherproofing] Evaporator drain hose and mounting/sealing kit
-- `part_hvac_hidden_evaporator_blower_unit_20260514` [interior_weatherproofing] Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment
+- `part_hvac_hidden_evaporator_blower_unit_20260514` [interior_weatherproofing] Hidden compact evaporator core/case and outlet plenum for custom blower fitment
 - `part_hvac_return_air_grille_filter_20260514` [interior_weatherproofing] Hidden return-air grille and washable filter for evaporator intake
 - `part_hvac_slim_louver_outlet_panel_20260514` [interior_weatherproofing] Slim under-dash louver outlet panel / matched air-directing vent pieces
 - `part_hvac_barrier_hose_fittings_20260514` [mechanical_baseline] A/C barrier hose and refrigerant-compatible fittings

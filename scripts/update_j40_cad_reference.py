@@ -25,17 +25,18 @@ INPUT_FILES = [
     ROOT / "tools" / "generate_j40_source_mesh_freecad_macro.py",
 ]
 EXPECTED_OUTPUTS = [
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.FCMacro",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_orbit_viewer.html",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.FCMacro",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_orbit_viewer.html",
     CAD_ROOT / "04_exports" / "source_mesh_reference" / "j40_source_mesh_reference.FCMacro",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.scad",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_orthographic.dxf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b.gltf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_orthographic.png",
-    CAD_ROOT / "04_exports" / "scaffold_rev_b" / "j40_full_vehicle_scaffold_rev_b_parts.csv",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.scad",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.gltf",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_orthographic.png",
+    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_parts.csv",
     CAD_ROOT / "05_reports" / "source_model_inventory.md",
     CAD_ROOT / "05_reports" / "j40_source_mesh_reference_inventory.csv",
-    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_b_manifest.json",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_manifest.json",
     CAD_ROOT / "ATTRIBUTION.md",
 ]
 

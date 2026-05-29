@@ -99,6 +99,111 @@ LOCAL_ORDER_IMAGE_INDEX: dict[str, Path] | None = None
 WIRING_DIAGRAM_JPG_PATH = ROOT / "data" / "raw" / "imports" / "J40.jpg"
 WIRING_DIAGRAM_GRAFFLE_PATH = ROOT / "data" / "raw" / "imports" / "J40.graffle"
 WIRING_DIAGRAM_MEDIA_IDS: tuple[str, ...] = ("j40_electrical_wiring_diagram",)
+AMIR_PURCHASE_REFERENCE_CARD_SHEET: dict[str, str] = {
+    "image_path": "docs/amir-montgomery-road-specific-image-cards-20260529.png",
+    "caption": "Amir image-backed runner cards - specific purchase/reference sheet",
+    "media_id": "amir_montgomery_purchase_cards_20260529",
+}
+AMIR_PURCHASE_REFERENCE_CARDS: tuple[dict[str, str], ...] = (
+    {
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "image_path": "docs/amir_montgomery_real_images/brake_pipe_pvf.jpg",
+        "item": "Brake pipe coil",
+        "current_action": "Receipt-check existing Amir purchase first",
+        "instruction": "Must be 4.75 mm / 3/16 in automotive brake-rated Bundy/PVF/zinc-coated steel or good brake-rated CuNi. No bare copper, plumbing tube, or compression tube.",
+    },
+    {
+        "entry_id": "part_star_washers",
+        "image_path": "docs/amir_montgomery_real_images/star_washer.jpg",
+        "item": "Serrated/star grounding washers",
+        "current_action": "Receipt-check existing Amir purchase",
+        "instruction": "Confirm M6 x120, M8 x60, and M10 x30 intent. Reject M2 washers, flat washers, or split spring washers sold as star washers.",
+    },
+    {
+        "entry_id": "tool_sledge_hammer_3lb_20260527",
+        "image_path": "docs/amir_montgomery_real_images/sledge_3lb.jpg",
+        "item": "3 lb sledge / club hammer",
+        "current_action": "Receipt-check existing Amir purchase",
+        "instruction": "Confirm real 3 lb short-handle hammer, tight head, and safe handle.",
+    },
+    {
+        "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+        "image_path": "docs/amir_montgomery_real_images/p_clip.jpg",
+        "item": "Rubber-lined P-clips",
+        "current_action": "Buy if missing",
+        "instruction": "Buy mixed line supports for 4.75 mm, 6 mm, and 8 mm lines. Use permanent supports every 300-400 mm; no cable ties as final support.",
+    },
+    {
+        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
+        "image_path": "docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+        "item": "Brake flex-hose U-clips",
+        "current_action": "Buy if available at sensible price",
+        "instruction": "Buy 8-12 mixed retaining clips. Match selected hose bracket groove and chassis tab thickness before final use.",
+    },
+    {
+        "entry_id": "part_rubber_grommet_set",
+        "image_path": "docs/amir_montgomery_real_images/grommets.jpg",
+        "item": "Rubber grommets",
+        "current_action": "Buy if missing",
+        "instruction": "Buy 6/8/10/12 mm ID plus 16/20/25 mm ID mixed. Use for firewall/pass-through and anti-chafe points.",
+    },
+    {
+        "entry_id": "tool_metric_flare_nut_wrench_set_20260514",
+        "image_path": "docs/amir_montgomery_real_images/flare_wrench.webp",
+        "item": "Metric flare-nut wrench set",
+        "current_action": "Buy only if not already covered",
+        "instruction": "Must cover likely brake-line hex sizes around 10, 11, 12, 14, and 17 mm. This is a line wrench set, not a normal open spanner.",
+    },
+    {
+        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+        "image_path": "docs/amir_montgomery_real_images/brake_tee.jpg",
+        "item": "Brake tee / inline unions / tube nuts",
+        "current_action": "Quote/photo only",
+        "instruction": "Brake-rated double/inverted flare fittings only. Buy only after old sample confirms thread and seat. No plumbing brass, no compression unions.",
+    },
+    {
+        "entry_id": "part_front_brake_hose_pair",
+        "image_path": "deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+        "item": "Front brake flex hose ends",
+        "current_action": "Quote/photo only",
+        "instruction": "Complete crimped automotive brake hose assemblies only, DOT/SAE J1401 or OEM-equivalent. No generic hose cut from roll.",
+    },
+    {
+        "entry_id": "part_rear_axle_hard_brake_lines",
+        "image_path": "deliverables/selling_site_images/images/manual_overrides/rear_axle_hardline_union_current_car_crop_20260503.jpg",
+        "item": "Rear axle union / T area",
+        "current_action": "Quote/photo only",
+        "instruction": "Use installed photo for recognition only. Final purchase needs removed old sample or written spec.",
+    },
+    {
+        "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
+        "image_path": "photos/20260514_111300_user_brake_flare_side_view.png",
+        "item": "Brake flare side view",
+        "current_action": "Spec evidence",
+        "instruction": "Supports a Toyota-style double/inverted-flare working basis, but straight-on seat/thread confirmation still controls purchase.",
+    },
+    {
+        "entry_id": "tool_toolsmart_pard_double_flaring_cutting_tool_set_tm25805_20260527",
+        "image_path": "deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+        "item": "Air hose / Nitto couplers",
+        "current_action": "Wait for ordered setup unless urgent",
+        "instruction": "ToolsMart TM25805 and AliExpress Nitto male couplers are already ordered. Amir may buy local adapters only if the exact compressor/tool thread is in hand.",
+    },
+    {
+        "entry_id": "part_brake_booster_servo_44610_60050",
+        "image_path": "deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
+        "item": "Brake booster / servo",
+        "current_action": "Refurb quote only",
+        "instruction": "Take old booster as sample. Payment waits for the video gate: sample identity, side-by-side match, vacuum hold, assist movement, contamination check, and final acceptance video.",
+    },
+    {
+        "entry_id": "service_engine_radiator_recore_or_new_by_sample_20260529",
+        "image_path": "photos/20260512_100000_user_front_support_radiator_pickups_context.png",
+        "item": "Radiator / support route",
+        "current_action": "Refurb quote only",
+        "instruction": "Take old radiator/support context. Payment waits for the video gate: sample identity, shop decision, pressure/leak test, core/build proof, proper mounting proof, and final acceptance video.",
+    },
+)
 
 PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "stripdown_cataloguing",
@@ -4136,11 +4241,11 @@ HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
 }
 
 ORDER_PRIMARY_MEDIA_IDS: dict[str, tuple[str, ...]] = {
-    "BM-ISO-SM": ("20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"),
-    "BM-ISO-LG": ("20260502_004231_gp_CfosvPIg", "20260528_193054_gp_UFyTb44w"),
+    "BM-ISO-SM": ("20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"),
+    "BM-ISO-LG": ("20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"),
     "FS-OVAL": ("20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"),
-    "FS-STRIP-L": ("20260517_193503_gp_N9nHjqXw", "20260517_194143_gp_CO7MuMdA"),
-    "FS-STRIP-R": ("20260517_193612_gp_JmbfR0Tw", "20260517_194633_gp_rAjY3gjg"),
+    "FS-STRIP-L": ("20260528_193200_gp_HICSdovA", "20260517_194143_gp_CO7MuMdA", "20260517_193503_gp_N9nHjqXw"),
+    "FS-STRIP-R": ("20260528_193253_gp_f0eQuSFA", "20260517_194633_gp_rAjY3gjg", "20260517_193612_gp_JmbfR0Tw"),
     "BUMP-60010-LONG": ("20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"),
     "BUMP-60020-SHORT": ("20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"),
     "HLS-01": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
@@ -5727,6 +5832,11 @@ def build_workstream_evidence_sets(
             ]
         )
         if rubber_recreation_images:
+            primary_images = dedupe_payload_images(rubber_recreation_images + primary_images)
+            for evidence_set in evidence_sets:
+                if evidence_set.get("key") == "primary":
+                    evidence_set["images"] = primary_images
+                    break
             evidence_sets.insert(
                 0,
                 {
@@ -8056,6 +8166,63 @@ def static_reference_image_payload(
         "matched_tokens": matched_tokens,
         "match_basis": match_basis,
         "match_score": 700,
+    }
+
+
+def amir_purchase_reference_image_payload(
+    relative_path: str,
+    *,
+    caption: str,
+    media_id: str,
+    matched_tokens: list[str],
+) -> dict[str, Any]:
+    return {
+        "path": path_for_ui(relative_path),
+        "caption": caption,
+        "captured_date": "2026-05-29",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "amir_purchase_reference",
+        "stage": "runner_reference",
+        "media_id": media_id,
+        "matched_tokens": matched_tokens,
+        "match_basis": "amir_purchase_reference",
+        "match_score": 995,
+    }
+
+
+def build_amir_purchase_reference_payload() -> dict[str, Any]:
+    sheet = amir_purchase_reference_image_payload(
+        AMIR_PURCHASE_REFERENCE_CARD_SHEET["image_path"],
+        caption=AMIR_PURCHASE_REFERENCE_CARD_SHEET["caption"],
+        media_id=AMIR_PURCHASE_REFERENCE_CARD_SHEET["media_id"],
+        matched_tokens=["amir", "montgomery", "purchase_cards", "runner_reference"],
+    )
+    cards: list[dict[str, Any]] = []
+    for index, row in enumerate(AMIR_PURCHASE_REFERENCE_CARDS, start=1):
+        item = clean(row.get("item"))
+        entry_id = clean(row.get("entry_id"))
+        image = amir_purchase_reference_image_payload(
+            clean(row.get("image_path")),
+            caption=f"Amir reference: {item}",
+            media_id=f"amir_purchase_reference_{index:02d}_{norm(item)}",
+            matched_tokens=[token for token in ["amir", entry_id, norm(item)] if token],
+        )
+        cards.append(
+            {
+                "entry_id": entry_id,
+                "item": item,
+                "current_action": clean(row.get("current_action")),
+                "instruction": clean(row.get("instruction")),
+                "image": image,
+            }
+        )
+    return {
+        "card_sheet": sheet,
+        "purchase_cards": cards,
+        "shopping_list_path": path_for_ui("docs/amir-montgomery-road-shopping-list-20260527.md"),
+        "video_gates_path": path_for_ui("docs/amir-refurbishment-video-gates-20260529.md"),
     }
 
 
@@ -10444,6 +10611,7 @@ def build_dashboard_data() -> dict[str, Any]:
         },
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,
+        "amir": build_amir_purchase_reference_payload(),
         "other_builds": other_builds_reference,
         "contact_register": contact_register_rows,
         "reference_project_ideas": reference_project_idea_rows,
