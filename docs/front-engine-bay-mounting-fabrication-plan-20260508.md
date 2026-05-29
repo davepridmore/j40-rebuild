@@ -29,6 +29,10 @@ Preferred outcome: a serviceable two-side radiator retention set that replaces t
 
 Current package: [front_radiator_two_side_retention_rev_a](../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md)
 
+Prerequisite: fabricate or dry-fit the right-side strap/post before final radiator installation. The metal stock route is controlled by [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md): start with `50 x 50 x 4 mm` mild-steel angle/L-section, `1 m`, plus rubber isolation from `3-5 mm` EPDM/SBR sheet. If the angle does not match the measured `48-50 mm` radiator-post face, use the nearest 4 mm angle only after a dry-fit video proves the radiator ear and vehicle support can be joined without pulling the radiator out of plane.
+
+Aluminium radiator contingency: if the bought aluminium radiator does not land on the existing/fabricated retention arms, do not add another random leg to the radiator. First dry-fit the radiator on lower pads with relaxed hoses. If the core, tanks, necks, drain, cap, and fan clearance are acceptable, fabricate only a removable rubber-isolated adapter plate/crossbar/saddle between the vehicle-side support and the radiator mount. If those fundamentals are wrong, reject the radiator for this vehicle rather than building structure around it.
+
 First-pass construction:
 
 - Use one `4.0 mm` mild-steel formed-angle strip: `48 mm` measured main face, `410 mm` upright/post height, and about `618 mm` developed main-face length across the top screw return, upright post, chassis bridge, and outer chassis leg. Prefer pre-formed `90-degree` angle/L-section stock if one leg is close to `48-50 mm`; otherwise form the return from flat stock.
@@ -38,6 +42,7 @@ First-pass construction:
 - Use crush-tube/spacer practice if bolting through boxed chassis/front-support metal.
 - Do not weld the bracket to the chassis or add a separate rubber-pad fabrication part unless dry-fit proves the bolted saddle route is wrong.
 - Preserve the current radiator plane unless dry-fit proves it must move; fan clearance is a release dimension.
+- Any adapter used for a bought aluminium radiator must attach to vehicle-side structure and radiator mounting ears/rails only; it must not hard-clamp or load the aluminium tank/core.
 
 Release checks:
 
@@ -46,6 +51,7 @@ Release checks:
 - Lower and upper hose paths stay relaxed.
 - Fan and shroud clearance confirmed after tightening.
 - Top screw and through-bolt remain serviceable and the saddle bracket does not block radiator removal.
+- If an aluminium-radiator adapter is used, it is removable, rubber-isolated, and proven by shake test without tank/core flex.
 
 ### BAT-TRAY-001 - Battery Tray Support Upgrade
 

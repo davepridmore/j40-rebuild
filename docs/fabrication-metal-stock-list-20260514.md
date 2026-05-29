@@ -16,6 +16,35 @@ Source data: [fabrication_metal_stock_requirements.csv](../data/manual/fabricati
 | Mild-steel tube/sleeve stock | `300 mm` offcut; ID to final M8/M10 through-bolt size after dry-fit | Crush tubes/spacers if the radiator, battery saddle, or EPS General Adapter through-bolt passes through boxed/doubled structure. |
 | `3.0 mm` 5052-H32 aluminium sheet | `600 x 600 mm` minimum; `1000 x 500` acceptable/preferred if similarly priced | MIDI Rev D enclosure body/lid, Relay Rev D flat base plate `360 x 245`, and folded cutoff base/guard. |
 
+## Source Route / Metal Section
+
+Use a steel stockholder, loha/iron market supplier, or sheet-metal fabricator for this stock. Do not treat this as a normal auto-parts purchase. The first radiator prerequisite is the right-side retention strap/post:
+
+```text
+Need mild-steel angle/L-section for a car radiator support bracket:
+- 50 x 50 x 4 mm MS angle, 1 metre, straight and not badly rusted
+- If 50 x 50 x 4 is not available, show the nearest 4 mm angle with one leg close to 48-50 mm
+- Also quote 4.0 mm MS plate offcut about 700 x 450 mm or 1000 x 500 mm
+- Need cutting possible, clean edges, and no badly pitted stock
+```
+
+Candidate Lahore quote routes from web checks on 2026-05-29:
+
+| Route | Why useful | What to ask |
+| --- | --- | --- |
+| Steel stockholder / Misri Shah or Loha Landa Bazaar | Best fit for MS angle, sheet, plate, and offcuts. | Quote `50 x 50 x 4 mm` MS angle by `1 m` or shortest sale length; ask if they can cut. |
+| Sheet-metal fabricator | Useful if they can supply stock and bend/cut the bracket in one visit. | Quote material plus cutting/drilling/bending by the radiator retention drawing. |
+| Radiator/fabrication shop | Useful only if they understand the vehicle-side bracket and rubber isolation. | Quote the right-side post/adapter as a bolt-on bracket, not a welded radiator leg. |
+
+Known web-listed Lahore candidates to quote, not pre-approved suppliers:
+
+- [Universal Iron and Steel](https://universalironandsteel.com/) lists MS sheet/plate, channels, angle, and beams in Lahore.
+- [Qadri Steel](https://qadristeel.com/products-and-services.html) lists M.S. sheet, plate, and M.S. angle, with a Misri Shah Lahore address.
+- [Arsalan Chaudhary Enterprises](https://arsalance.com/) lists mild steel in rod, plate, pipe, sheet, and square forms from Railway Road, Lahore.
+- [Saddique Sons Traders](https://saddiquesons.com/) is web-listed in Misri Shah and lists MS sheets plus sheet/plate bending capability.
+
+Amir's role is quote/photo only unless the stock exactly matches the list. Before paying, get a video/photo of the steel section face with a tape/caliper on leg width and thickness, the length, the surface condition, and the shop card/location.
+
 ## Separate Body/Tub Metal
 
 | Stock | Minimum buy | Used for |

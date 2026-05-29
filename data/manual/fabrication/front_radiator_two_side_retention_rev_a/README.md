@@ -9,6 +9,7 @@ This package now uses a single 4 mm mild-steel formed-angle radiator post with a
 - Preserve the radiator plane and fan clearance unless a dry-fit proves a correction is needed.
 - Use rubber washers/bushes at the radiator screw as required, but do not fabricate a separate large rubber pad for this bracket unless the vehicle dry-fit proves it is needed.
 - Use crush-tube/spacer practice if the through-bolt passes through boxed chassis/front-support metal.
+- If the bought aluminium radiator does not land on this bracket, add only a removable rubber-isolated adapter between the vehicle-side bracket and the radiator mounting ear/rail. Do not add a hard extra leg to the aluminium tank/core.
 
 ## Part In This Package
 
@@ -39,6 +40,7 @@ This package now uses a single 4 mm mild-steel formed-angle radiator post with a
 - Rubber washer/bush stack at the top screw.
 - Fan-to-radiator clearance after the bracket is tightened.
 - Hose sweep, bonnet closure, radiator service removal, and coating access.
+- For an aluminium radiator, adapter/cradle need is decided only after dry-fit. Any adapter must be removable, rubber-isolated, and must not load the tank/core.
 
 ## Fabrication Rules
 

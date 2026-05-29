@@ -50,6 +50,8 @@ Search position on 2026-05-04: no confirmed in-Pakistan stocked direct `44610-60
 
 Better sourcing position: do not hunt only for a used 1978 booster. Ask first for a professionally refurbished/remanufactured Land Cruiser tandem dual-diaphragm booster in the `44610-60050` / `BBN60050` family, using the broader 1975-1987 Land Cruiser 40/55/60 disc-brake application as the market shorthand. A complete FJ40 booster/master/proportioning kit is the backup retrofit path if direct-fit booster sourcing fails and the workshop accepts new line/fitting work.
 
+Amir route: send the old booster/servo as the sample, but do not pay for rebuild, exchange, or purchase until the shop provides the booster videos listed in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md): old sample identity, side-by-side sample match, interface close-ups, vacuum hold test, assist movement test, contamination check, and final acceptance video.
+
 > Need quote only for brake vacuum booster / servo assembly for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes.
 > Primary target: refurbished/remanufactured Toyota `44610-60050` / `BBN60050` tandem dual-diaphragm booster, 1975-1987 Land Cruiser 40/55/60 disc-brake family.
 > Acceptable quote alternates only if physically confirmed against the old booster or listed by a Land Cruiser supplier for the same 1975-1987 40/55/60 dual-diaphragm family: `44610-60100` / `44610-60180`.
@@ -60,6 +62,7 @@ Better sourcing position: do not hunt only for a used 1978 booster. Ask first fo
 > - vacuum check valve, grommet size, nipple direction, and hose barb
 > - clearance to clutch master cylinder, bonnet, and existing brake lines
 > Prefer professionally remanufactured/refurbished stock. A raw used local-market booster is a rebuild-core candidate only unless it passes bench vacuum hold/leakdown test, has no hissing, has no brake-fluid contamination inside, and has no welded/modified shell. Reject single/drum `44610-60040`, later `44610-60160`, and universal boosters unless the workshop proves full fit and safety.
+> Payment gate: Amir must send the required videos before any deposit/payment/final collection. No video test means quote only.
 
 Retrofit fallback wording if no direct-fit unit is found:
 

@@ -22,7 +22,7 @@ Purpose: vendor/workshop handoff for the brake refresh package. Use this with `d
 
 ## Baseline Brake Parts To Source After Identification
 
-These are approved replacement scope, but exact part numbers must be matched to fitted hardware, close photos, measurements, and old samples.
+These are approved replacement/renewal scope, but exact part numbers must be matched to fitted hardware, close photos, measurements, and old samples. The May 29 removed booster/servo photos confirm the old brake parts should be treated as samples or rebuild cores, not reuse candidates.
 
 | Component | Required scope | Release gate |
 | --- | --- | --- |
@@ -36,12 +36,14 @@ These are approved replacement scope, but exact part numbers must be matched to 
 | Rear wheel cylinders | Pair | Open drums and identify bore, port thread, mounting bolt pattern, pushrod style, side, and bleed screw access. |
 | Rear brake shoes and spring/adjuster hardware | 1 axle set | Open drums and confirm drum inside diameter, shoe width, adjuster style, spring layout, and backing-plate family. |
 | Brake-line and parking-brake cable clips/retainers/grommets | As counted | Count positions, keep samples, confirm tube/cable OD, hole size, bracket thickness, and chafe points. |
-| Brake vacuum booster / servo assembly | 1, quote first | Front discs/rear drums are confirmed. Target a professionally refurbished/remanufactured Land Cruiser tandem/dual-diaphragm booster in the `44610-60050` / `BBN60050` 1975-1987 40/55/60 family, supplier-confirmed against the old unit. Confirm fitted booster markings, mounting studs, master-cylinder seat/depth, pushrod/clevis, check valve/grommet, and vacuum hold before payment. Reject raw used take-offs unless they are only a rebuild core; reject single/drum `44610-60040` and later `44610-60160` unless sample-matched and approved. |
-| Master cylinder, reservoir, and proportioning/bias service parts | As fitted, only if failed/unsafe/unknown after inspection | Photograph installed master, reservoir, booster, ports, fitting threads, flare seats, and any proportioning/bias hardware before ordering. |
+| Brake vacuum booster / servo assembly | 1 replacement or professional rebuild | Front discs/rear drums are confirmed. Target a professionally refurbished/remanufactured Land Cruiser tandem/dual-diaphragm booster in the `44610-60050` / `BBN60050` 1975-1987 40/55/60 family, supplier-confirmed against the old unit. Confirm fitted booster markings, mounting studs, master-cylinder seat/depth, pushrod/clevis, check valve/grommet, and vacuum hold before payment. Reject raw used take-offs unless they are only a rebuild core; reject single/drum `44610-60040` and later `44610-60160` unless sample-matched and approved. |
+| Master cylinder, reservoir, and proportioning/bias service parts | Replacement/renewal by fitted layout | Match installed master bore, reservoir layout, booster pushrod depth, ports, fitting threads, flare seats, and any proportioning/bias hardware before ordering or fitting. |
 
 ## Brake Booster Options
 
 Do not make the brake plan depend on finding another used 1978 booster.
+
+Amir may carry the old booster/servo as a sample for professional refurbishment or a direct-match refurbished exchange unit. Payment is blocked until the required video set in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md) is reviewed: old sample identity, sample match, interface close-ups, vacuum hold test, assist movement test, contamination check, and final acceptance video.
 
 | Rank | Path | What to ask for | Why / risk |
 | ---: | --- | --- | --- |
@@ -64,3 +66,5 @@ Measurements before payment or adaptation:
 Superseded for hydraulic-opening prep as of 2026-05-27: do not quote this as a separate consumables order. DOT 3 fluid, clear bleed hose, and nitrile gloves are received; line caps/plugs, brake cleaner, catch bottle/bleeder, rags, and catch tray are managed from on-hand/workshop supplies and must be verified before any hydraulic line is opened.
 
 For the remaining brake parts and brake booster, prepare sourcing but do not take payment for exact parts until the fitted calipers, rear drums, hoses, hard-line fittings, parking-brake cables, booster/master interface, and old samples are measured and photographed. Final-install brake hoses, hard lines, parking-brake cables, fittings, clips, rubbers, and seals are new-only.
+
+For the brake booster specifically, do not pay Amir/the shop until the video gate in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md) is complete and approved.

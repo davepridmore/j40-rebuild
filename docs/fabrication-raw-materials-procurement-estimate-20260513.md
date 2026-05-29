@@ -17,6 +17,15 @@ Source data: [fabrication_raw_material_estimates.csv](../data/manual/fabrication
 | `part_tub_repair_steel_sheet_1_6mm_20260513` | Body chassis | `1.6 mm` cold-rolled mild-steel sheet | 1 sheet about `1000 x 500 mm` for heavier tub floor sections, flange returns, seat-box edges, and local patch plates. |
 | `part_tub_mount_reinforcement_plate_3mm_20260513` | Body chassis | `3.0 mm` mild-steel plate | 1 plate about `500 x 500 mm` or `300 x 600 mm` for tub body-mount backing, captive-nut/weld-nut repair plates, and reinforcement coupons. |
 
+## Metal Source Route
+
+The right-side radiator strap/post is a prerequisite before final radiator installation. Source it from the metal section route in [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md), not from a Toyota parts counter:
+
+- first ask for `50 x 50 x 4 mm` mild-steel angle/L-section, `1 m`;
+- if unavailable, ask for the nearest `4 mm` angle with one leg close to `48-50 mm`;
+- quote `4.0 mm` mild-steel plate/offcut as fallback for tabs or an adapter;
+- buy only after tape/caliper photos prove leg width, thickness, length, and clean stock condition.
+
 ## Existing Coverage
 
 These are already in procurement and were not duplicated:

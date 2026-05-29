@@ -4,6 +4,32 @@ Purpose: give Amir simple runner tasks while he is on Montgomery Road: collect p
 
 Safety rule: brake hydraulic parts must be automotive brake-rated. If the item affects braking and the mechanic/user has not already approved the exact sample/spec, Amir should send photos and price only. Once a written spec card or labelled sample exists, his job is only to buy that exact match or call before paying. Spec capture guide: [brake-runner-spec-capture-20260528.md](brake-runner-spec-capture-20260528.md).
 
+Refurbishment rule added 2026-05-29: radiator and brake booster refurbishment can go through Amir, but payment is blocked until the video gates in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md) are complete and approved. Amir can collect quotes freely; he must not approve the technical repair himself.
+
+## Refurbishment Jobs Assigned To Amir
+
+| Item | Route | Video gate before payment |
+| --- | --- | --- |
+| Engine radiator | Take the old radiator as the sample; quote recore if tanks/brackets are sound, otherwise new copper/brass build by sample. If the bought aluminium radiator is used, quote only a removable rubber-isolated adapter/cradle if the radiator is otherwise correct. The extra fabricated support leg is evidence of the bad previous installation, not a feature to copy blindly. | Old sample identity, measurements, shop decision, pressure/leak test, core/build proof, proof it mounts on proper lower pads/side/top mounts without the extra leg, adapter/cradle proof if the aluminium radiator is used, final acceptance video. |
+| Brake booster / servo | Take the old booster as the sample; quote professional rebuild or direct-match refurbished exchange unit. | Old sample identity, side-by-side match, interface close-ups, vacuum hold test, assist movement test, contamination check, final acceptance video. |
+
+## Metal Stock / Right Radiator Strap
+
+The right-side radiator strap/post is a prerequisite before final radiator installation. This is a metal-stock/fabrication item, not a Toyota parts-counter item.
+
+Controlling stock list: [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md).
+
+Ask a steel stockholder, sheet-metal shop, or fabricator for:
+
+| Priority | Item | Quantity | Exact ask | Accept | Reject / call first |
+| --- | ---: | ---: | --- | --- | --- |
+| P0 | Radiator right-side post angle | 1 m | `50 x 50 x 4 mm` mild-steel `90-degree` angle/L-section | Straight stock, one leg close to the measured `48-50 mm` radiator-post face, clean enough to prime, cut-to-length available | Thin 2 mm angle, badly rust-pitted stock, aluminium angle, twisted stock, or shop wants to weld a leg directly to the radiator |
+| P0 | Radiator isolator sheet | Small offcut | `3-5 mm` EPDM/SBR rubber sheet for washers/bushes/anti-rub pads | Automotive/industrial rubber, not crumbly, oil/weather tolerant | Foam, soft packing rubber, tyre sidewall strips unless explicitly used only as a temporary mock-up |
+| P1 | 4 mm plate fallback | Offcut or small plate | `4.0 mm` mild-steel plate, about `700 x 450 mm` or nearest offcut | Clean plate for tabs, adapters, and fallback bracket forming | Thin body sheet, galvanized unknown scrap if welding/cutting will be messy, badly pitted scrap |
+| P1 | Crush-tube/spacer stock | Short offcut | Mild-steel tube/sleeve after final M8/M10 bolt size is known | ID/OD matches through-bolt and boxed support width | Buy before bolt size/support width is confirmed |
+
+Before paying, send a video/photo with tape or caliper on the angle leg width and thickness, the length, surface condition, and the shop card/location.
+
 ## Photo Reference
 
 This sheet uses real product/project photos, not drawn representations. Use product photos for recognition only; brake fittings and hoses still need old-sample matching.
