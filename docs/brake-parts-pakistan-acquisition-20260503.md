@@ -104,10 +104,29 @@ Pakistan quote lead only: [Pakwheels FJ40 rear brake shoe listing](https://www.p
 > Do not order by 1978 catalog alone, and do not treat the photo read as a final part number.
 > Required scope after identification:
 > - front disc pads and retaining/anti-rattle hardware for the visible Sumitomo fixed-caliper family, 1 axle set
-> - front caliper seal/rebuild kits or matched replacement Sumitomo-family calipers, pair only if inspection shows leakage, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition
+> - front Sumitomo-family calipers renewed as a matched pair: professional rebuild with seal kits only if the original bodies/pistons/bores/bleeders/bridge pipes pass inspection, otherwise matched rebuilt/new calipers
 > - front flexible hose assemblies matching chassis bracket/clip, short hard-line/caliper fitting, free length, and lock-to-lock clearance
-> - front rotors machined or replaced only after measuring thickness, runout, scoring, cracks, and service limit
+> - front rotors replaced as a pair after measuring old rotor diameter/thickness, hub/register, and dust-shield/caliper clearance for exact matching
 > Must match cleaned caliper casting marks, piston count/diameter, inlet and bridge-pipe fittings, bleed screw, pad outline, retaining pins/springs/clips, rotor diameter/thickness, hub/register, dust-shield/caliper clearance, and wheel clearance.
+
+### Current Front Disc Sourcing Links - 2026-05-29
+
+Use these as quote and availability links, not blind-buy approvals. The May 29 truck photos identify the front as a Sumitomo fixed-caliper disc setup, but the removed pad outline, cleaned casting marks, piston count/diameter, rotor dimensions, and hose end/free-length still control final payment.
+
+| Item | Link | Notes |
+| --- | --- | --- |
+| Loaded front caliper set | [CruiserTeq BRC60021LOAD loaded caliper set](https://cruiserteq.com/front-loaded-caliper-set-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes/) | Strongest one-click option if it sample-matches: includes left/right calipers, AISIN/ADVICS pads, and pad hardware for 9/1975-1/1990 factory front disc Land Cruisers. |
+| Front pads only | [Cruiser Corps 549-211 front disc pads](https://cruisercorps.com/products/brake-pads-disc-front-4-piece) | Use if calipers are rebuilt locally instead of buying loaded calipers. |
+| OEM/Advics front pads | [Cruiser Corps 556-103 Advics/OEM pads](https://cruisercorps.com/products/advics-brake-pads-front-fj40-45-55-60-62-oe) / [CruiserMatts OEM front brake pads](https://cruisermatts.com/products/oem-front-brake-pads-40-55-60) | Candidate OE-quality pad route; confirm pad outline against removed pad before payment. |
+| Front calipers separate | [Cruiser Corps calipers collection](https://cruisercorps.com/collections/calipers) | Alternative to loaded set; look for driver-side `551-218` and passenger-side `551-217`, then confirm side orientation and casting/fitting match. |
+| Caliper rebuild kit | [Cruiser Corps 551-161 rebuild kit](https://cruisercorps.com/products/brake-caliper-rebuild-kit) | Use only if a professional brake shop confirms the old caliper bodies, bores, pistons, bleed screws, and bridge pipes are rebuildable. |
+| Pad pin / anti-rattle hardware | [CruiserTeq BR06158K hardware kit](https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/) / [Man-A-Fre MT 12342 pin kit](https://manafrelv.com/product/front-disc-brake-pin-kit-40-55-60-70-series-and-fj-cruiser-1975-1990-2007-2014-sku-mt-12342/) | Needed if not buying a loaded caliper set. |
+| Front rotors | [ToyotaPartsDeal 43512-60011](https://www.toyotapartsdeal.com/oem/toyota~disc~front~43512-60011.html) / [BTB 43512-60011 front rotor](https://btbprod.com/product/fj40-toyota-land-cruiser-brake-rotor-oem-front-9-75-7-80/) / [Cruiser Corps 551-162 rotor](https://cruisercorps.com/collections/types/products/brake-rotor-disc) | Buy two only after old rotor diameter/thickness and hub/register fit confirm the 9/1975-7/1980 front rotor family. |
+| Front lower wheel hoses | [Cruiser Corps 553-102 lower front hose](https://cruisercorps.com/products/brake-hose-front-lower-right-or-left-side) | Candidate left/right wheel hose; old hose free length and end fittings control final order. |
+| Front upper / frame hose | [Cruiser Corps 553-101 front frame rail hose](https://cruisercorps.com/collections/brakes/products/brake-hose-passenger-side-front-frame-rail) | Add if the fitted front axle has this frame-to-axle hose; confirm actual hose count on the truck before payment. |
+| Extended hose fallback | [BTB 96940-33005SS extended front hose](https://btbprod.com/product/brake-line-extended-front-fj40-75-81/) / [Skyjacker FBL31 front brake line](https://www.jackit.com/skjfbl31.html) | Fallback only if the actual route needs extra length after lock-to-lock and droop checks. |
+| Pakistan search - pads | [PakWheels Land Cruiser front brake pads search](https://www.pakwheels.com/accessories-spare-parts/search/-/q_land+cruiser+front+brake+pads/) / [Daraz FJ40 brake pads search](https://www.daraz.pk/catalog/?q=fj40%20brake%20pads) | Quote/local availability only; reject modern J200/Prado/Fortuner pad listings unless old pad shape proves a match. |
+| Pakistan search - rotors/calipers/hoses | [PakWheels Land Cruiser brake rotor search](https://www.pakwheels.com/accessories-spare-parts/search/-/q_land+cruiser+brake+rotor/) / [PakWheels FJ40 brake caliper search](https://www.pakwheels.com/accessories-spare-parts/search/-/q_fj40+brake+caliper/) / [Daraz Land Cruiser brake hose search](https://www.daraz.pk/catalog/?q=land%20cruiser%20brake%20hose) | Treat these as market scouting links for Amir/local shops. Pay only after sample match, markings, dimensions, and return terms are clear. |
 
 ## Local Market Order - Clips And Retainers
 

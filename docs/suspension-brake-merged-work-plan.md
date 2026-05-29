@@ -1,6 +1,6 @@
 # Suspension + Brake Merged Work Plan
 
-- Updated: 2026-05-04
+- Updated: 2026-05-29
 - Vehicle: 1978 Toyota Land Cruiser J40
 - Start-here sources: [suspension-workstream.md](suspension-workstream.md), [brake-workstream.md](brake-workstream.md), [brake_system_requirements.csv](../data/manual/brake_system_requirements.csv)
 
@@ -10,7 +10,7 @@ Run the Ironman Foam Cell suspension change and the brake baseline refresh as on
 
 The working brake architecture remains `front disc / rear drum`. May 29 front wheel closeups make the front-disc read more specific: visible Sumitomo fixed front calipers with external bridge/transfer pipes, dust shields, current rotors, and short hard-line/front hose routing. The plan now assumes normal brake service parts will be replaced on both axles as baseline work:
 
-- Front: Sumitomo-family pads/hardware after pad-shape confirmation, front flex hoses matched to the visible bracket/hard-line route, caliper seal/rebuild or matched caliper replacement as required by inspection, and rotor machine/replace decision by measured rotor condition.
+- Front: Sumitomo-family pads/hardware after pad-shape confirmation, front flex hoses matched to the visible bracket/hard-line route, matched front caliper renewal or professional rebuild, and rotor replacement as a pair after old-sample measurement.
 - Rear: new parking-brake cable set, new axle hard lines, new rear center flex hose, wheel cylinders, shoes, springs/hold-downs/adjusters, and new line/cable clips.
 - System: brake fluid, bleed consumables, cap/plug set, and master/reservoir/proportioning inspection with replacement only after the installed layout is identified.
 

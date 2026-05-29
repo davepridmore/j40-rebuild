@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T20:34:10+05:00",
+  "generated_at": "2026-05-29T21:36:14+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -64601,8 +64601,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake friction pads and new retaining/anti-rattle hardware matched to the fitted Sumitomo caliper; no used pads",
           "critical_measurements": "Pad outline, pad thickness, backing-plate ears, retaining pin/spring/clip style, rotor diameter/thickness, caliper casting marks, and wheel clearance",
           "fit_and_test": "Even pad contact, no drag, no pull, no noise, bedded according to pad maker or workshop procedure",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
-          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching, but pad removal/outline and rotor measurements still control the exact part.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "May 29 photos make the front-disc hardware specific enough to ask for Sumitomo fixed-caliper pad matching. User confirmed the front disc parts should all be replaced; pad removal/outline and rotor measurements now control exact matching only, not whether pads are reused.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -64704,11 +64704,11 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-FRONT-002",
-          "requirement_name": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+          "requirement_name": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
           "pipe_id": "",
           "vehicle_location": "Front Sumitomo fixed disc calipers",
           "pipe_or_line": "",
-          "replace_scope": "replace_or_rebuild_after_identification",
+          "replace_scope": "replace_or_professionally_rebuild_pair_after_identification",
           "quantity": "2",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
@@ -64724,13 +64724,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "sumitomo_fixed_caliper_visible_casting_and_piston_measure_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Inspect both visible Sumitomo fixed front calipers during pad service and rebuild or replace as a matched pair if there is leakage, seizure, torn boots, damaged pistons, damaged bleed screws, unsafe corrosion, or unknown unsafe condition.",
+          "current_action": "Full front brake replacement decision: renew both visible Sumitomo fixed front calipers as a matched pair. Use seal kits only as part of a professional rebuild if the bodies, pistons, bores, bleed screws, and bridge pipes pass inspection; otherwise fit matched rebuilt/new Sumitomo-family calipers.",
           "exact_recreation_spec": "Match the fitted Sumitomo fixed-caliper family, piston count/diameter, seal kit, bleed screw, inlet fitting, bridge/transfer pipe fittings, mounting ear spacing, and pad hardware.",
-          "material_spec": "Brake caliper seal kits or matched new/rebuilt Sumitomo-family calipers with brake-fluid-compatible seals and dust boots",
+          "material_spec": "Matched new/rebuilt Sumitomo-family calipers or professionally rebuilt original calipers with new brake-fluid-compatible seals and dust boots; no as-is caliper reuse",
           "critical_measurements": "Casting marks, piston count/diameter, caliper body family, inlet fitting, bridge-pipe fittings, bleed screw size, mounting bolt spacing, pad hardware style",
           "fit_and_test": "No leaks, pistons move/retract cleanly, bleed screws open, no pull or drag after road test",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
-          "notes": "The visible casting reads Sumitomo, but exact Toyota application and seal-kit family still require cleaned casting marks and piston measurement or old-sample matching.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "The visible casting reads Sumitomo, but exact Toyota application and seal-kit family still require cleaned casting marks and piston measurement or old-sample matching. User confirmed replace all front disc parts, so existing calipers are not final-install reuse candidates unless professionally rebuilt and tested.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -64832,11 +64832,11 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-FRONT-003",
-          "requirement_name": "Front rotor machine or replacement decision - measurement gate",
+          "requirement_name": "Front rotor replacement pair - measure old rotors for exact match",
           "pipe_id": "",
           "vehicle_location": "Front rotors behind Sumitomo fixed calipers",
           "pipe_or_line": "",
-          "replace_scope": "machine_or_replace_by_service_limit",
+          "replace_scope": "replace_pair_after_measurement",
           "quantity": "2",
           "photo_evidence": [
             "20260423_232202_gp_ryYH6xZg",
@@ -64852,13 +64852,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "rotor_visible_measurement_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "The rotor and dust shield are visible in the May 29 photos, but serviceability is not proven. Measure and inspect both rotors during front brake service.",
-          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, dust-shield clearance, and Sumitomo caliper clearance to the fitted front setup; machine only within service limits.",
-          "material_spec": "Brake rotors matched to fitted hub/caliper setup; machine only within service limits",
+          "current_action": "Replace both front rotors. Measure the visible old rotors during front brake service only to identify the correct matched replacement and confirm hub, dust-shield, and Sumitomo-caliper clearance.",
+          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, dust-shield clearance, and Sumitomo caliper clearance to the fitted front setup.",
+          "material_spec": "New brake rotors matched to the fitted hub/caliper setup; old rotors are measurement samples only",
           "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, cracking, heat checking, hub face condition",
           "fit_and_test": "No pedal pulsation, no scoring contact, no caliper interference, no wheel/hub fit issue",
-          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008",
-          "notes": "The photos prove a rotor is fitted but not its condition or dimensions. Do not buy or machine blind; measure first.",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "The photos prove front rotors are fitted but not dimensions. User confirmed replace all front disc parts, so rotor measurement is now for exact replacement matching rather than a machine-or-reuse decision.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -64985,8 +64985,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Complete crimped brake flex hose assemblies rated DOT/SAE J1401 or OEM-equivalent; no generic rubber hose fabrication",
           "critical_measurements": "Chassis-side thread/seat, caliper-side thread/seat or banjo style, hose free length, bracket slot/groove, retaining clip, steering-lock and suspension clearance",
           "fit_and_test": "No stretch through normal axle movement, no twist, no tyre/spring/shock contact, leak-free pressure test",
-          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|front_brake_disc_baseline|photo_import_20260529T185008",
-          "notes": "Ironman geometry is treated as effectively the same as current setup, but the fitted hose route still needs full-lock and droop clearance confirmation before payment or installation.",
+          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|front_brake_disc_baseline|photo_import_20260529T185008|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "Ironman geometry is treated as effectively the same as current setup, but the fitted hose route still needs full-lock and droop clearance confirmation before payment or installation. User confirmed all front disc service parts should be replaced, so front flex hoses remain mandatory new parts.",
           "evidence_images": [
             {
               "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
@@ -65765,45 +65765,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_front_rotor_service_pair",
-          "workstream": "brake_system",
-          "item": "Front rotor machine or replacement pair - measure visible current rotors",
-          "status": "planned",
-          "procurement_stage": "inspect_then_buy",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_rotor_service_pair",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260529_183947_gp_lSYuESVg",
-            "matched_tokens": [
-              "photo_20260529_183947_gp_lsyuesvg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
           }
         },
         {
@@ -66614,8 +66575,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_disc_pads_hardware",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -66653,8 +66614,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_brake_hose_pair",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -66699,9 +66660,48 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_front_rotor_service_pair",
+          "workstream": "brake_system",
+          "item": "Front rotor replacement pair - measure old rotors for exact match",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_rotor_service_pair",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
           "entry_id": "part_front_caliper_rebuild_or_replace_pair",
           "workstream": "brake_system",
-          "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -66713,8 +66713,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -66722,7 +66722,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
+            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -67091,8 +67091,8 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67223,8 +67223,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Front flexible brake hose pair - visible bracket and short hard-line route (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Front flexible brake hose pair - visible bracket and short hard-line route (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
               ]
             },
             {
@@ -67355,7 +67355,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67482,8 +67482,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake vacuum booster servo - refurbish or direct-match exchange by old sample (amir_refurb_quote_video_gate; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67634,9 +67634,9 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset",
         "fabrication_handoff"
       ],
-      "next_action": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use",
+      "next_action": "Scout and quote a Yaris-first local EPS conversion package: Pakistan Yaris sedan donor/installer package first, older Yaris/Belta XP90 family second, Vitz XP90 fallback only if complete; capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use",
       "exit_gate": "Complete matched donor kit is bench-tested and documented; General EPS Adapter datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, controller access, manual fallback, static checks, and staged road validation are all signed off",
-      "notes": "Expanded 2026-05-12 from market-scout-only into full EPS conversion workstream. Updated 2026-05-22: the route remains column-assist EPS, not hydraulic steering, but J40 fitment now uses the General EPS Adapter as the controlling mechanical interface. No engine removal is expected. Donor brackets/support plates are references only; final release needs measured adapter mock-up, dashboard/firewall support, shaft/U-joint/coupler adaptation, controller mounting, protected wiring, and steering validation. May 12 removed J40 steering-column photo is the current vehicle-side upper-column/switch/wiring reference for EPS layout planning.",
+      "notes": "Expanded 2026-05-12 from market-scout-only into full EPS conversion workstream. Updated 2026-05-22: the route remains column-assist EPS, not hydraulic steering, but J40 fitment now uses the General EPS Adapter as the controlling mechanical interface. Updated 2026-05-29: active sourcing is Yaris-first due to import-kit cost and Vitz scarcity. Pakistan Yaris sedan donors are acceptable only if standalone assist can be bench-proven without donor body ECU/immobilizer/VSC/CAN dependency; older Yaris/Belta XP90 remains a strong donor target; Vitz XP90 is fallback. No engine removal is expected. Donor brackets/support plates are references only; final release needs measured adapter mock-up, dashboard/firewall support, shaft/U-joint/coupler adaptation, controller mounting, protected wiring, and steering validation. May 12 removed J40 steering-column photo is the current vehicle-side upper-column/switch/wiring reference for EPS layout planning.",
       "evidence_source": [
         "whatsapp_fj40",
         "fj40-00263",
@@ -68473,7 +68473,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use"
+          "detail": "Scout and quote a Yaris-first local EPS conversion package: Pakistan Yaris sedan donor/installer package first, older Yaris/Belta XP90 family second, Vitz XP90 fallback only if complete; capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use"
         },
         {
           "label": "Confirm target donor only",
@@ -73902,10 +73902,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 2
       },
       {
-        "stage": "inspect_then_buy",
-        "count": 1
-      },
-      {
         "stage": "ordered_partial_pending_delivery",
         "count": 1
       },
@@ -73947,7 +73943,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 10
+        "count": 11
       },
       {
         "stage": "spec_needed_before_order_local_hardware_first",
@@ -75173,43 +75169,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_front_rotor_service_pair",
-        "workstream": "brake_system",
-        "item": "Front rotor machine or replacement pair - measure visible current rotors",
-        "status": "planned",
-        "procurement_stage": "inspect_then_buy",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260529_183947_gp_lSYuESVg",
-          "matched_tokens": [
-            "photo_20260529_183947_gp_lsyuesvg"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
         "entry_id": "part_clutch_master_slave_cylinders_20260514",
         "workstream": "brake_system",
         "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
@@ -75771,7 +75730,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_caliper_rebuild_or_replace_pair",
         "workstream": "brake_system",
-        "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -75781,8 +75740,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -75790,7 +75749,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
+          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -75818,8 +75777,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -75855,8 +75814,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -75898,6 +75857,43 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_front_rotor_service_pair",
+        "workstream": "brake_system",
+        "item": "Front rotor replacement pair - measure old rotors for exact match",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -105929,7 +105925,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -105939,8 +105935,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105948,7 +105944,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
+            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -105978,8 +105974,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106017,8 +106013,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -106067,18 +106063,18 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_rotor_service_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front rotor machine or replacement pair - measure visible current rotors",
+          "item": "Front rotor replacement pair - measure old rotors for exact match",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "inspect_then_buy",
+          "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106086,7 +106082,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
+            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -118256,7 +118252,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_caliper_rebuild_or_replace_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers",
+        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -118266,8 +118262,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "Visible front calipers are Sumitomo fixed type. Rebuild or replace both front calipers only after cleaned casting marks, piston count/diameter, bleed screw, inlet/bridge-pipe fittings, mounting ears, and pad hardware are matched; mandatory if leaking, seized, torn boots, damaged pistons, or unsafe unknown condition is found.",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118275,7 +118271,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper rebuild kits or matched replacement calipers \u00b7 local inventory photo",
+          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -118305,8 +118301,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "BASELINE MUST REPLACE. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118344,8 +118340,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "BASELINE MUST REPLACE. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -118394,18 +118390,18 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_rotor_service_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front rotor machine or replacement pair - measure visible current rotors",
+        "item": "Front rotor replacement pair - measure old rotors for exact match",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "inspect_then_buy",
+        "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA",
-        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper, but dimensions and condition remain unknown. Inspect, machine, or replace by measured rotor diameter/thickness, service limit, scoring, cracking, runout, hub/register fit, and caliper/wheel clearance.",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
+        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118413,7 +118409,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor machine or replacement pair - measure visible current rotors \u00b7 local inventory photo",
+          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
