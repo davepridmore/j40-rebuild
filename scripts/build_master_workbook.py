@@ -135,6 +135,7 @@ def build_initial_price_rows(expenses: list[dict[str, str]]) -> tuple[list[str],
         "currency",
         "price_source",
         "company_name",
+        "product_link",
         "payment_status",
         "delivery_status",
         "procurement_stage",
@@ -166,6 +167,7 @@ def build_initial_price_rows(expenses: list[dict[str, str]]) -> tuple[list[str],
                 row.get("currency", ""),
                 price_source,
                 company_value(row),
+                row.get("product_link", ""),
                 row.get("payment_status", ""),
                 row.get("delivery_status", ""),
                 row.get("procurement_stage", ""),
@@ -190,6 +192,7 @@ def build_purchase_registration_rows(expenses: list[dict[str, str]]) -> tuple[li
         "amount",
         "currency",
         "company_name",
+        "product_link",
         "evidence_ref",
         "notes",
     ]
@@ -219,6 +222,7 @@ def build_purchase_registration_rows(expenses: list[dict[str, str]]) -> tuple[li
                 row.get("amount", ""),
                 row.get("currency", ""),
                 company_value(row),
+                row.get("product_link", ""),
                 row.get("evidence_ref", ""),
                 row.get("notes", ""),
             ]
@@ -245,6 +249,7 @@ def build_purchase_type_rows(
         "delivery_status",
         "procurement_stage",
         "company_name",
+        "product_link",
         "evidence_ref",
     ]
 
@@ -279,6 +284,7 @@ def build_purchase_type_rows(
                 row.get("delivery_status", ""),
                 row.get("procurement_stage", ""),
                 company_value(row),
+                row.get("product_link", ""),
                 row.get("evidence_ref", ""),
             ]
         )

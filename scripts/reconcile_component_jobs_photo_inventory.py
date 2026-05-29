@@ -58,6 +58,42 @@ RUBBER_FLAT_MEASUREMENT_20260517_MEDIA_IDS: tuple[str, ...] = (
     "20260517_194706_gp_twKRWGFA",
 )
 
+RADIATOR_20260529_MEDIA_IDS: tuple[str, ...] = (
+    "20260529_205200_gp_8G6ZKKEQ",
+    "20260529_205224_gp_aQYpMUyg",
+    "20260529_205232_gp_eHbRrOaw",
+    "20260529_205240_gp_C2r8CMBQ",
+    "20260529_214147_gp_4gfuofYQ",
+    "20260529_230003_gp_rliSbRjA",
+    "20260529_230009_gp_BLX8dSWA",
+    "20260529_230017_gp_L23OD4nw",
+    "20260529_230022_gp_BLo8HLwg",
+    "20260529_230035_gp_5oB8otKw",
+    "20260529_230040_gp_B5P2K9FA",
+    "20260529_230044_gp_I9psm6Dw",
+    "20260529_230050_gp_ZqjySFHg",
+)
+
+BRAKE_BOOSTER_20260529_MEDIA_IDS: tuple[str, ...] = (
+    "20260529_021217_gp_YAKcHCyQ",
+    "20260529_021225_gp_AzCLYJgQ",
+    "20260529_021239_gp_RiMXwHXA",
+    "20260529_021243_gp_utTmUzJw",
+    "20260529_030646_gp_SAs7gfRg",
+    "20260529_030653_gp_7dCQk4QA",
+    "20260529_030700_gp_8qu2Rliw",
+)
+
+INTERIOR_DASH_SWITCH_202604_MEDIA_IDS: tuple[str, ...] = (
+    "20260421_192813_gp_0jvYAo8g",
+    "20260421_194401_gp_1dY3fLdw",
+)
+
+INTERIOR_DIESEL_CUTOFF_202604_MEDIA_IDS: tuple[str, ...] = (
+    "20260420_221819_gp_YV69fbvA",
+    "20260421_194401_gp_1dY3fLdw",
+)
+
 
 @dataclass(frozen=True)
 class EvidenceRule:
@@ -140,6 +176,19 @@ RULES: dict[str, EvidenceRule] = {
         ),
         indirect_specific_components=("electrical_reference_document", "electrical_wiring_diagram"),
         notes="Accessory/electrical removal and rebuild work has strong direct photo coverage.",
+    ),
+    "interior_dash_switch_fitup": EvidenceRule(
+        direct_specific_components=("dashboard_switch_and_control_hardware",),
+        indirect_specific_components=(),
+        notes="April 21 dashboard switch/control hardware photos provide direct evidence for the fit-up row; final closure still needs installed position, mounting, labelling, and functional check photos.",
+        direct_media_ids=INTERIOR_DASH_SWITCH_202604_MEDIA_IDS,
+        indirect_media_ids=("20260420_221819_gp_YV69fbvA",),
+    ),
+    "interior_diesel_cutoff_ignition_security": EvidenceRule(
+        direct_specific_components=("dashboard_switch_and_control_hardware",),
+        indirect_specific_components=(),
+        notes="April 20 hidden diesel-cutoff hardware and April 21 dashboard switch/control photos provide direct hardware evidence; final closure still needs hidden routing, ignition interlock, access-control, and function-test photos.",
+        direct_media_ids=INTERIOR_DIESEL_CUTOFF_202604_MEDIA_IDS,
     ),
     "engine_electrical_inputs_reconciliation_20260517": EvidenceRule(
         direct_specific_components=(
@@ -317,6 +366,12 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
         notes="Hard-line routing and removed booster/servo photos are direct evidence for the system refresh decision; axle-end hardware views support brake-bias and wear decisions. Owner-confirmed replacement scope still needs sample matching and final bleed/road validation.",
     ),
+    "brake_booster_servo_refurbishment_20260529": EvidenceRule(
+        direct_specific_components=("brake_booster_servo_removed_sample",),
+        indirect_specific_components=(),
+        notes="May 29 removed booster/servo photos provide the direct old-sample evidence for Amir's refurbish or direct-match exchange route. Payment still waits for shop video proof: sample match, interface close-ups, vacuum hold, assist movement, contamination check, and final acceptance.",
+        direct_media_ids=BRAKE_BOOSTER_20260529_MEDIA_IDS,
+    ),
     "suspension_upgrade_spec_and_kit_lock": EvidenceRule(
         direct_specific_components=(),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
@@ -434,6 +489,17 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
         notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; the May 12 view adds the visible upright and crossmember hole field, while final hole centres and bracket offsets still need ruler photos or dry-fit.",
     ),
+    "engine_radiator_recore_or_new_20260529": EvidenceRule(
+        direct_specific_components=(
+            "engine_radiator_sample_measurement",
+            "engine_radiator_condition_closeups",
+            "front_support_radiator_measurement_set",
+            "cooling_hoses_fan_belt_and_radiator_support",
+        ),
+        indirect_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support"),
+        notes="May 29 radiator sample and condition photos add direct removed-radiator width/height/side-bracket, core/fin, lower-mount, and added-leg evidence. Existing cooling and front-support photos provide hose/fan/vehicle-side fitment context; shop release still requires pressure/flow test and final dry-fit clearance proof.",
+        direct_media_ids=RADIATOR_20260529_MEDIA_IDS,
+    ),
     "battery_tray_holder_bracket_repair_20260508": EvidenceRule(
         direct_specific_components=(
             "battery_side_tray_structure_context",
@@ -544,9 +610,10 @@ def date_range(rows: list[dict[str, str]]) -> str:
 
 def reconcile() -> list[dict[str, str]]:
     component_jobs = load_csv(COMPONENT_JOBS_PATH)
+    inventory_rows = load_csv(PHOTO_INVENTORY_PATH)
     photo_rows = [
         row
-        for row in load_csv(PHOTO_INVENTORY_PATH)
+        for row in inventory_rows
         if row.get("stage", "").strip().lower() not in NON_COMPONENT_EVIDENCE_STAGES
     ]
 
@@ -554,6 +621,7 @@ def reconcile() -> list[dict[str, str]]:
     by_media_id: dict[str, dict[str, str]] = {}
     for row in photo_rows:
         by_specific[row["specific_component"]].append(row)
+    for row in inventory_rows:
         media_id = row.get("media_id", "").strip()
         file_stem = Path(row.get("file_name", "")).stem
         if media_id:

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T21:55:38+05:00",
+  "generated_at": "2026-05-29T23:40:32+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -3325,6 +3325,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_b_millat",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -3364,6 +3365,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_e_millat",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+          "product_link": "",
           "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -3404,6 +3406,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_retaining_clips_cotter_pin_pack",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
           "links": [],
           "estimated_hardware_type": "R-clips/hairpins/split pins/circlips/small cotters (6-15 visible, likely 10)",
@@ -3443,6 +3446,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_c_captive_clip_nuts",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv|user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+          "product_link": "",
           "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. User photos on 2026-05-08 confirm yellow-zinc knurled flat-head threaded rivet nuts/nutserts, with visible label text reading Product Name: Rivetnut and size M6. User clarified on 2026-05-09 that the two boxes are M6 and M8, so treat M6 and M8 rivnut/nutsert portions as received unless physical receipt check contradicts this. Remaining open scope is captive/clip/speed nuts and weld nuts: original workbook basis M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20. Use new yellow-zinc or equivalent plated hardware; do not reuse rusted spring clips or captive nuts. Confirm final split against old samples before purchase.",
           "links": [],
           "estimated_hardware_type": "Captive/clip/speed nuts plus rivnut/weld-nut candidates (22-40 visible, likely 30)",
@@ -3482,6 +3486,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_wax_and_grease_remover",
           "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_3m_prep_solvent_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+          "product_link": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
           "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797 | Gmail recheck on 2026-05-08 found the Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the pre solvent / remaining Autohub orders have arrived; user reconfirmed item-level receipt on 2026-05-11. Receipt check: confirm one sealed 1 gallon 3M Prep Solvent-70 can, intact label, and no leaks or dents. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
           "links": [
             {
@@ -3539,6 +3544,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_bedliner_sprays",
           "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|user_shelf_image_2026-05-02_raptor_liner_visible",
+          "product_link": "",
           "notes": "Listed by the user as still needed; chat says they are required immediately after floor repair and primer | Marked on hand from shelf image on 2026-05-02: Raptor liner bottles visible. Treat as bedliner/protective coating already acquired, not as primer.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3578,6 +3584,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_autohub_diss_apc_cleaner_5l",
           "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+          "product_link": "",
           "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3617,6 +3624,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_evaporust_5l",
           "evidence_ref": "user_update_2026-04-22_evaporust_delivered|INV-0031",
+          "product_link": "",
           "notes": "Marked delivered per user confirmation; this was previously tracked as quote/pending against INV-0031",
           "links": [],
           "estimated_hardware_type": "",
@@ -3656,6 +3664,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_autohub_grez_off_hd_degreaser_32oz",
           "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+          "product_link": "",
           "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3695,6 +3704,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_cavity_wax",
           "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_2x_u9000_cavity_wax_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+          "product_link": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
           "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302 | Gmail recheck on 2026-05-08 found the shared Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the cavity wax / remaining Autohub orders have arrived; user reconfirmed receipt of 2x U9000/U900 cavity wax on 2026-05-11. Receipt check: confirm two HB Body U900/U9000 400ml cans, usable nozzles/wands, intact labels, and no leakage. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
           "links": [
             {
@@ -3752,6 +3762,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_primer",
           "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938|gmail_msg_19dfcaab0866f88d|gmail_delivery_242366749280938",
+          "product_link": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
           "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg | Gmail Daraz delivery email confirms order 242366749280938 delivered on 2026-05-06; still verify base/hardener tins, mix ratio, thinner, and recoat window before primer use.",
           "links": [
             {
@@ -3809,6 +3820,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_m6_m8_threaded_rivnut_nutsert_assortment_received",
           "evidence_ref": "user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+          "product_link": "",
           "notes": "User confirmed on 2026-05-08 that the rivets have arrived; follow-up photos show two boxes of yellow-zinc knurled flat-head internally threaded rivet nuts/nutserts. Visible box label text: Product Name Rivetnut, size M6, Made in China, manufacturer Shenzhen Shangsha Trading Co. Ltd. User clarified on 2026-05-09 that the two boxes are M6 and M8. These are not plain pop/blind rivets. Treat as the M6 and M8 rivnut/nutsert portion of Fastener Kit C now on hand; exact counts, grip ranges, and payment amount still need physical receipt check before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3848,6 +3860,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_nylon_fiber_wool_polishing_disc_sets_2x",
           "evidence_ref": "user_update_2026-04-24_wirecup_schedule_parts_update|gmail_msg_19dbbce97316517e|gmail_order_241938794080938|photo_20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938.jpg|gmail_msg_19dd86b5fbb89675|gmail_delivery_241938794080938",
+          "product_link": "",
           "notes": "Daraz order 241938794080938 was delivered per Gmail delivery confirmation dated 2026-04-29. Original order matched exact item + quantity (2) and total PKR 2188.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3887,6 +3900,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_seam_sealer",
           "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00820|gmail_msg_19d0ef66d4eacdee|gmail_msg_19d48a1d197405a3|gmail_order_1761310|photo_20260424_part_seam_sealer_autohub_order_1761310.jpg|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|user_update_2026-05-08_all_remaining_autohub_orders_arrived",
+          "product_link": "",
           "notes": "Listed by the user as still needed; later product research includes an Autohub seam-sealer link. Gmail Autohub order 1761310 confirms 3x HB BODY 999 seam sealer and shipment status. | Payment marked paid per user confirmation on 2026-05-02; keep delivery/quantity reconciliation tied to Autohub order 1761310 and physical tube count. | Gmail recheck on 2026-05-08 found the 2026-04-01 Autohub shipment email for order 1761310 but no delivery confirmation; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that all remaining Autohub orders have arrived; mark the three HB BODY 999 seam sealer cartridges received. Receipt check: confirm tube count, labels, expiry/softness, and nozzle condition before body sealing.",
           "links": [],
           "estimated_hardware_type": "",
@@ -3926,6 +3940,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_specialty_brackets_retainer_plates",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
           "links": [],
           "estimated_hardware_type": "Specialty brackets retainer plates captive-nut plates and straps (8-18 visible, likely 12)",
@@ -6645,6 +6660,510 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
+          "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:42:03",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194203_gp_9nXwy2XQ",
+          "matched_tokens": [
+            "20260501_194203_gp_9nxwy2xq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:41:51",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194151_gp_NqgqjDEQ",
+          "matched_tokens": [
+            "20260501_194151_gp_nqgqjdeq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:41:44",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194144_gp_P5PojIhw",
+          "matched_tokens": [
+            "20260501_194144_gp_p5pojihw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:41:37",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194137_gp_S1qvWECw",
+          "matched_tokens": [
+            "20260501_194137_gp_s1qvwecw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:41:06",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194106_gp_e4CETkdg",
+          "matched_tokens": [
+            "20260501_194106_gp_e4cetkdg"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:41:01",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194101_gp_3xKjQSsQ",
+          "matched_tokens": [
+            "20260501_194101_gp_3xkjqssq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:40:56",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194056_gp_p1erpz8w",
+          "matched_tokens": [
+            "20260501_194056_gp_p1erpz8w"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:40:41",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194041_gp_6zRIFJUw",
+          "matched_tokens": [
+            "20260501_194041_gp_6zrifjuw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
+          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:40:26",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194026_gp_gjPjhxdA",
+          "matched_tokens": [
+            "20260501_194026_gp_gjpjhxda"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:40:14",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194014_gp_nWBXweFA",
+          "matched_tokens": [
+            "20260501_194014_gp_nwbxwefa"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:40:06",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194006_gp_AU1Lw9GQ",
+          "matched_tokens": [
+            "20260501_194006_gp_au1lw9gq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:58",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193958_gp_yhnX0HAQ",
+          "matched_tokens": [
+            "20260501_193958_gp_yhnx0haq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:53",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193953_gp_XQtysikA",
+          "matched_tokens": [
+            "20260501_193953_gp_xqtysika"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:44",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193944_gp_smzZc4nw",
+          "matched_tokens": [
+            "20260501_193944_gp_smzzc4nw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:35",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193935_gp_FPwZZHZA",
+          "matched_tokens": [
+            "20260501_193935_gp_fpwzzhza"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:24",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193924_gp_KK717O7g",
+          "matched_tokens": [
+            "20260501_193924_gp_kk717o7g"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:15",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193915_gp_lII00tCA",
+          "matched_tokens": [
+            "20260501_193915_gp_lii00tca"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:39:04",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193904_gp_GgWYRulA",
+          "matched_tokens": [
+            "20260501_193904_gp_ggwyrula"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:56",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193856_gp_M78kWBlQ",
+          "matched_tokens": [
+            "20260501_193856_gp_m78kwblq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:47",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193847_gp_uHWO7Bdw",
+          "matched_tokens": [
+            "20260501_193847_gp_uhwo7bdw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
+          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:41",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_steering_area",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193841_gp_ZwpHFiMA",
+          "matched_tokens": [
+            "20260501_193841_gp_zwphfima"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:33",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193833_gp_Slpuijyg",
+          "matched_tokens": [
+            "20260501_193833_gp_slpuijyg"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:26",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193826_gp_Qhz88J4g",
+          "matched_tokens": [
+            "20260501_193826_gp_qhz88j4g"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:11",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193811_gp_uv8kwbxw",
+          "matched_tokens": [
+            "20260501_193811_gp_uv8kwbxw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:38:05",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193805_gp_VgTc8wYQ",
+          "matched_tokens": [
+            "20260501_193805_gp_vgtc8wyq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:37:55",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193755_gp_cuaY6sgg",
+          "matched_tokens": [
+            "20260501_193755_gp_cuay6sgg"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:36:24",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193624_gp_ocLE7cMQ",
+          "matched_tokens": [
+            "20260501_193624_gp_ocle7cmq"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:36:18",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193618_gp_EFciJdww",
+          "matched_tokens": [
+            "20260501_193618_gp_efcijdww"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:36:09",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193609_gp_f5PDj87Q",
+          "matched_tokens": [
+            "20260501_193609_gp_f5pdj87q"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:36:03",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193603_gp_9zd2mD6w",
+          "matched_tokens": [
+            "20260501_193603_gp_9zd2md6w"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:35:54",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193554_gp_EU4bmOlg",
+          "matched_tokens": [
+            "20260501_193554_gp_eu4bmolg"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:35:42",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193542_gp_U7e0J0iA",
+          "matched_tokens": [
+            "20260501_193542_gp_u7e0j0ia"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_193533_gp_sDErdvGw.jpg",
+          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:35:33",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_193533_gp_sDErdvGw",
+          "matched_tokens": [
+            "20260501_193533_gp_sderdvgw"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:22",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_axle_spring_hanger_and_crossmember",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194322_gp_XuRtjN4w",
+          "matched_tokens": [
+            "20260501_194322_gp_xurtjn4w"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:13",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_axle_spring_hanger_and_crossmember",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194313_gp_lfUqLibA",
+          "matched_tokens": [
+            "20260501_194313_gp_lfuqliba"
+          ]
+        },
+        {
+          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+          "captured_date": "2026-05-01",
+          "captured_time": "19:43:05",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_axle_spring_hanger_and_crossmember",
+          "stage": "chassis_fixing",
+          "media_id": "20260501_194305_gp_EllBGvXA",
+          "matched_tokens": [
+            "20260501_194305_gp_ellbgvxa"
+          ]
+        },
+        {
           "path": "../../photos/20260422_004254_gp_SplHLSYA.jpg",
           "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
@@ -7303,402 +7822,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": []
         },
         {
-          "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:42:03",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194203_gp_9nXwy2XQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:41:51",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194151_gp_NqgqjDEQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:41:44",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194144_gp_P5PojIhw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:41:37",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194137_gp_S1qvWECw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:41:06",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194106_gp_e4CETkdg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:41:01",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194101_gp_3xKjQSsQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:40:56",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194056_gp_p1erpz8w",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:40:41",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194041_gp_6zRIFJUw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
-          "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:40:26",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194026_gp_gjPjhxdA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:40:14",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194014_gp_nWBXweFA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:40:06",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194006_gp_AU1Lw9GQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:58",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193958_gp_yhnX0HAQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:53",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193953_gp_XQtysikA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:44",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193944_gp_smzZc4nw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:35",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193935_gp_FPwZZHZA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:24",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193924_gp_KK717O7g",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:15",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193915_gp_lII00tCA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:39:04",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193904_gp_GgWYRulA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:56",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193856_gp_M78kWBlQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:47",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193847_gp_uHWO7Bdw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
-          "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:41",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_steering_area",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193841_gp_ZwpHFiMA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:33",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193833_gp_Slpuijyg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:26",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193826_gp_Qhz88J4g",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:11",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193811_gp_uv8kwbxw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:38:05",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193805_gp_VgTc8wYQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:37:55",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193755_gp_cuaY6sgg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:36:24",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193624_gp_ocLE7cMQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:36:18",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193618_gp_EFciJdww",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:36:09",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193609_gp_f5PDj87Q",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:36:03",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193603_gp_9zd2mD6w",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:35:54",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193554_gp_EU4bmOlg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:35:42",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193542_gp_U7e0J0iA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_193533_gp_sDErdvGw.jpg",
-          "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:35:33",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_193533_gp_sDErdvGw",
-          "matched_tokens": []
-        },
-        {
           "path": "../../photos/20260422_004332_gp_7d5uYWQQ_2.jpg",
           "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
@@ -7732,42 +7855,6 @@ window.J40_DASHBOARD_DATA = {
           "specific_component": "frame_rail_body_mount_and_hard_line_detail",
           "stage": "underside_inspection",
           "media_id": "20260422_004311_gp_994KQ0Pw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:43:22",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_axle_spring_hanger_and_crossmember",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194322_gp_XuRtjN4w",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
-          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:43:13",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_axle_spring_hanger_and_crossmember",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194313_gp_lfUqLibA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-          "captured_date": "2026-05-01",
-          "captured_time": "19:43:05",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_axle_spring_hanger_and_crossmember",
-          "stage": "chassis_fixing",
-          "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": []
         },
         {
@@ -8111,7 +8198,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193533_gp_sDErdvGw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193533_gp_sderdvgw"
+              ]
             },
             {
               "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
@@ -8123,7 +8212,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193542_gp_U7e0J0iA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193542_gp_u7e0j0ia"
+              ]
             },
             {
               "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
@@ -8135,7 +8226,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193554_gp_EU4bmOlg",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193554_gp_eu4bmolg"
+              ]
             },
             {
               "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
@@ -8147,7 +8240,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193603_gp_9zd2mD6w",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193603_gp_9zd2md6w"
+              ]
             },
             {
               "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
@@ -8159,7 +8254,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193609_gp_f5PDj87Q",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193609_gp_f5pdj87q"
+              ]
             },
             {
               "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
@@ -8171,7 +8268,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193618_gp_EFciJdww",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193618_gp_efcijdww"
+              ]
             },
             {
               "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
@@ -8183,7 +8282,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193624_gp_ocLE7cMQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193624_gp_ocle7cmq"
+              ]
             },
             {
               "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
@@ -8195,7 +8296,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193755_gp_cuaY6sgg",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193755_gp_cuay6sgg"
+              ]
             },
             {
               "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
@@ -8207,7 +8310,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193805_gp_VgTc8wYQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193805_gp_vgtc8wyq"
+              ]
             },
             {
               "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
@@ -8219,7 +8324,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193811_gp_uv8kwbxw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193811_gp_uv8kwbxw"
+              ]
             },
             {
               "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
@@ -8231,7 +8338,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193826_gp_Qhz88J4g",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193826_gp_qhz88j4g"
+              ]
             },
             {
               "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
@@ -8243,7 +8352,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_crossmember_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_193833_gp_Slpuijyg",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193833_gp_slpuijyg"
+              ]
             },
             {
               "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
@@ -8255,7 +8366,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193841_gp_ZwpHFiMA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193841_gp_zwphfima"
+              ]
             },
             {
               "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
@@ -8267,7 +8380,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193847_gp_uHWO7Bdw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193847_gp_uhwo7bdw"
+              ]
             },
             {
               "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
@@ -8279,7 +8394,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193856_gp_M78kWBlQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193856_gp_m78kwblq"
+              ]
             },
             {
               "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
@@ -8291,7 +8408,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193904_gp_GgWYRulA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193904_gp_ggwyrula"
+              ]
             },
             {
               "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
@@ -8303,7 +8422,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193915_gp_lII00tCA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193915_gp_lii00tca"
+              ]
             },
             {
               "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
@@ -8315,7 +8436,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193924_gp_KK717O7g",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193924_gp_kk717o7g"
+              ]
             },
             {
               "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
@@ -8327,7 +8450,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193935_gp_FPwZZHZA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193935_gp_fpwzzhza"
+              ]
             },
             {
               "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
@@ -8339,7 +8464,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193944_gp_smzZc4nw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193944_gp_smzzc4nw"
+              ]
             },
             {
               "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
@@ -8351,7 +8478,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193953_gp_XQtysikA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193953_gp_xqtysika"
+              ]
             },
             {
               "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
@@ -8363,7 +8492,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_193958_gp_yhnX0HAQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_193958_gp_yhnx0haq"
+              ]
             },
             {
               "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
@@ -8375,7 +8506,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_194006_gp_AU1Lw9GQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194006_gp_au1lw9gq"
+              ]
             },
             {
               "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
@@ -8387,7 +8520,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_frame_horns_bumper_and_steering_area",
               "stage": "chassis_fixing",
               "media_id": "20260501_194014_gp_nWBXweFA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194014_gp_nwbxwefa"
+              ]
             },
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -8399,7 +8534,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_spring_hanger_and_crossmember",
               "stage": "chassis_fixing",
               "media_id": "20260501_194305_gp_EllBGvXA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194305_gp_ellbgvxa"
+              ]
             },
             {
               "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
@@ -8411,7 +8548,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_spring_hanger_and_crossmember",
               "stage": "chassis_fixing",
               "media_id": "20260501_194313_gp_lfUqLibA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194313_gp_lfuqliba"
+              ]
             },
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -8423,7 +8562,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_spring_hanger_and_crossmember",
               "stage": "chassis_fixing",
               "media_id": "20260501_194322_gp_XuRtjN4w",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194322_gp_xurtjn4w"
+              ]
             },
             {
               "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
@@ -8435,7 +8576,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194026_gp_gjPjhxdA",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194026_gp_gjpjhxda"
+              ]
             },
             {
               "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
@@ -8447,7 +8590,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194041_gp_6zRIFJUw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194041_gp_6zrifjuw"
+              ]
             },
             {
               "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
@@ -8459,7 +8604,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194056_gp_p1erpz8w",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194056_gp_p1erpz8w"
+              ]
             },
             {
               "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
@@ -8471,7 +8618,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194101_gp_3xKjQSsQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194101_gp_3xkjqssq"
+              ]
             },
             {
               "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
@@ -8483,7 +8632,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194106_gp_e4CETkdg",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194106_gp_e4cetkdg"
+              ]
             },
             {
               "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
@@ -8495,7 +8646,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194137_gp_S1qvWECw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194137_gp_s1qvwecw"
+              ]
             },
             {
               "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
@@ -8507,7 +8660,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194144_gp_P5PojIhw",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194144_gp_p5pojihw"
+              ]
             },
             {
               "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
@@ -8519,7 +8674,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194151_gp_NqgqjDEQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194151_gp_nqgqjdeq"
+              ]
             },
             {
               "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
@@ -8531,7 +8688,9 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
               "stage": "chassis_fixing",
               "media_id": "20260501_194203_gp_9nXwy2XQ",
-              "matched_tokens": []
+              "matched_tokens": [
+                "20260501_194203_gp_9nxwy2xq"
+              ]
             }
           ]
         },
@@ -8762,6 +8921,510 @@ window.J40_DASHBOARD_DATA = {
               "media_id": "20260514_131654_gp_X9nuzrAw",
               "matched_tokens": [
                 "frame_floor_underside_and_lines"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:42:03",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194203_gp_9nXwy2XQ",
+              "matched_tokens": [
+                "20260501_194203_gp_9nxwy2xq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:41:51",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194151_gp_NqgqjDEQ",
+              "matched_tokens": [
+                "20260501_194151_gp_nqgqjdeq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:41:44",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194144_gp_P5PojIhw",
+              "matched_tokens": [
+                "20260501_194144_gp_p5pojihw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:41:37",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194137_gp_S1qvWECw",
+              "matched_tokens": [
+                "20260501_194137_gp_s1qvwecw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:41:06",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194106_gp_e4CETkdg",
+              "matched_tokens": [
+                "20260501_194106_gp_e4cetkdg"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:41:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194101_gp_3xKjQSsQ",
+              "matched_tokens": [
+                "20260501_194101_gp_3xkjqssq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:40:56",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194056_gp_p1erpz8w",
+              "matched_tokens": [
+                "20260501_194056_gp_p1erpz8w"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:40:41",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194041_gp_6zRIFJUw",
+              "matched_tokens": [
+                "20260501_194041_gp_6zrifjuw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
+              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:40:26",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194026_gp_gjPjhxdA",
+              "matched_tokens": [
+                "20260501_194026_gp_gjpjhxda"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:40:14",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194014_gp_nWBXweFA",
+              "matched_tokens": [
+                "20260501_194014_gp_nwbxwefa"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:40:06",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194006_gp_AU1Lw9GQ",
+              "matched_tokens": [
+                "20260501_194006_gp_au1lw9gq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:58",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193958_gp_yhnX0HAQ",
+              "matched_tokens": [
+                "20260501_193958_gp_yhnx0haq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:53",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193953_gp_XQtysikA",
+              "matched_tokens": [
+                "20260501_193953_gp_xqtysika"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:44",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193944_gp_smzZc4nw",
+              "matched_tokens": [
+                "20260501_193944_gp_smzzc4nw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:35",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193935_gp_FPwZZHZA",
+              "matched_tokens": [
+                "20260501_193935_gp_fpwzzhza"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:24",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193924_gp_KK717O7g",
+              "matched_tokens": [
+                "20260501_193924_gp_kk717o7g"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:15",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193915_gp_lII00tCA",
+              "matched_tokens": [
+                "20260501_193915_gp_lii00tca"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:39:04",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193904_gp_GgWYRulA",
+              "matched_tokens": [
+                "20260501_193904_gp_ggwyrula"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:56",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193856_gp_M78kWBlQ",
+              "matched_tokens": [
+                "20260501_193856_gp_m78kwblq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:47",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193847_gp_uHWO7Bdw",
+              "matched_tokens": [
+                "20260501_193847_gp_uhwo7bdw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
+              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:41",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_steering_area",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193841_gp_ZwpHFiMA",
+              "matched_tokens": [
+                "20260501_193841_gp_zwphfima"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:33",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193833_gp_Slpuijyg",
+              "matched_tokens": [
+                "20260501_193833_gp_slpuijyg"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:26",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193826_gp_Qhz88J4g",
+              "matched_tokens": [
+                "20260501_193826_gp_qhz88j4g"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:11",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193811_gp_uv8kwbxw",
+              "matched_tokens": [
+                "20260501_193811_gp_uv8kwbxw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:38:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193805_gp_VgTc8wYQ",
+              "matched_tokens": [
+                "20260501_193805_gp_vgtc8wyq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:37:55",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193755_gp_cuaY6sgg",
+              "matched_tokens": [
+                "20260501_193755_gp_cuay6sgg"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:36:24",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193624_gp_ocLE7cMQ",
+              "matched_tokens": [
+                "20260501_193624_gp_ocle7cmq"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:36:18",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193618_gp_EFciJdww",
+              "matched_tokens": [
+                "20260501_193618_gp_efcijdww"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:36:09",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193609_gp_f5PDj87Q",
+              "matched_tokens": [
+                "20260501_193609_gp_f5pdj87q"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:36:03",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193603_gp_9zd2mD6w",
+              "matched_tokens": [
+                "20260501_193603_gp_9zd2md6w"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:35:54",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193554_gp_EU4bmOlg",
+              "matched_tokens": [
+                "20260501_193554_gp_eu4bmolg"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:35:42",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193542_gp_U7e0J0iA",
+              "matched_tokens": [
+                "20260501_193542_gp_u7e0j0ia"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_193533_gp_sDErdvGw.jpg",
+              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:35:33",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_193533_gp_sDErdvGw",
+              "matched_tokens": [
+                "20260501_193533_gp_sderdvgw"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:22",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_spring_hanger_and_crossmember",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194322_gp_XuRtjN4w",
+              "matched_tokens": [
+                "20260501_194322_gp_xurtjn4w"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:13",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_spring_hanger_and_crossmember",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194313_gp_lfUqLibA",
+              "matched_tokens": [
+                "20260501_194313_gp_lfuqliba"
+              ]
+            },
+            {
+              "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_spring_hanger_and_crossmember",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194305_gp_EllBGvXA",
+              "matched_tokens": [
+                "20260501_194305_gp_ellbgvxa"
               ]
             },
             {
@@ -9423,402 +10086,6 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:42:03",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194203_gp_9nXwy2XQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:41:51",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194151_gp_NqgqjDEQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:41:44",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194144_gp_P5PojIhw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:41:37",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194137_gp_S1qvWECw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:41:06",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194106_gp_e4CETkdg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:41:01",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194101_gp_3xKjQSsQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:40:56",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194056_gp_p1erpz8w",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:40:41",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194041_gp_6zRIFJUw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
-              "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:40:26",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194026_gp_gjPjhxdA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:40:14",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194014_gp_nWBXweFA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:40:06",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194006_gp_AU1Lw9GQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:58",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193958_gp_yhnX0HAQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:53",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193953_gp_XQtysikA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:44",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193944_gp_smzZc4nw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:35",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193935_gp_FPwZZHZA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:24",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193924_gp_KK717O7g",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:15",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193915_gp_lII00tCA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:39:04",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193904_gp_GgWYRulA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:56",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193856_gp_M78kWBlQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:47",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193847_gp_uHWO7Bdw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
-              "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:41",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_steering_area",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193841_gp_ZwpHFiMA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193833_gp_Slpuijyg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:26",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193826_gp_Qhz88J4g",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:11",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193811_gp_uv8kwbxw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:38:05",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193805_gp_VgTc8wYQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:37:55",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193755_gp_cuaY6sgg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:36:24",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193624_gp_ocLE7cMQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:36:18",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193618_gp_EFciJdww",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:36:09",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193609_gp_f5PDj87Q",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:36:03",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193603_gp_9zd2mD6w",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:35:54",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193554_gp_EU4bmOlg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:35:42",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193542_gp_U7e0J0iA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_193533_gp_sDErdvGw.jpg",
-              "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:35:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "frame_rail_body_mount_and_crossmember_detail",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_193533_gp_sDErdvGw",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260422_004332_gp_7d5uYWQQ_2.jpg",
               "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -9852,42 +10119,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "frame_rail_body_mount_and_hard_line_detail",
               "stage": "underside_inspection",
               "media_id": "20260422_004311_gp_994KQ0Pw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:43:22",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_axle_spring_hanger_and_crossmember",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194322_gp_XuRtjN4w",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
-              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:43:13",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_axle_spring_hanger_and_crossmember",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194313_gp_lfUqLibA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-              "captured_date": "2026-05-01",
-              "captured_time": "19:43:05",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "rear_axle_spring_hanger_and_crossmember",
-              "stage": "chassis_fixing",
-              "media_id": "20260501_194305_gp_EllBGvXA",
               "matched_tokens": []
             },
             {
@@ -10218,7 +10449,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 129,
-      "reference_token_count": 50,
+      "reference_token_count": 86,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -11766,7 +11997,7 @@ window.J40_DASHBOARD_DATA = {
           "component_group": "chassis_underside",
           "current_status": "in_progress",
           "planned_action": "Complete detail wire-brushing from May 1 status photos, then degrease, dry, inspect, rust-treat remaining pits, solvent-wipe, zinc-rich epoxy-prime, seam-seal/top-protect, and cavity-wax approved zones",
-          "evidence_ref": "photo_import_20260501T202346|docs_chassis_status_20260501_wire_brush_and_cleaning|docs_chassis_prep_next_steps_20260501|photo_inventory_2026-05-01",
+          "evidence_ref": "photo_import_20260501T202346|docs_chassis_status_20260501_wire_brush_and_cleaning|docs_chassis_prep_next_steps_20260501|photo_inventory_2026-05-01|20260501_193533_gp_sDErdvGw|20260501_193542_gp_U7e0J0iA|20260501_193554_gp_EU4bmOlg|20260501_193603_gp_9zd2mD6w|20260501_193609_gp_f5PDj87Q|20260501_193618_gp_EFciJdww|20260501_193624_gp_ocLE7cMQ|20260501_193755_gp_cuaY6sgg|20260501_193805_gp_VgTc8wYQ|20260501_193811_gp_uv8kwbxw|20260501_193826_gp_Qhz88J4g|20260501_193833_gp_Slpuijyg|20260501_193841_gp_ZwpHFiMA|20260501_193847_gp_uHWO7Bdw|20260501_193856_gp_M78kWBlQ|20260501_193904_gp_GgWYRulA|20260501_193915_gp_lII00tCA|20260501_193924_gp_KK717O7g|20260501_193935_gp_FPwZZHZA|20260501_193944_gp_smzZc4nw|20260501_193953_gp_XQtysikA|20260501_193958_gp_yhnX0HAQ|20260501_194006_gp_AU1Lw9GQ|20260501_194014_gp_nWBXweFA|20260501_194026_gp_gjPjhxdA|20260501_194041_gp_6zRIFJUw|20260501_194056_gp_p1erpz8w|20260501_194101_gp_3xKjQSsQ|20260501_194106_gp_e4CETkdg|20260501_194137_gp_S1qvWECw|20260501_194144_gp_P5PojIhw|20260501_194151_gp_NqgqjDEQ|20260501_194203_gp_9nXwy2XQ|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260501_194322_gp_XuRtjN4w",
           "notes": "May 1 photos show flats partly brushed; hold primer until edges, brackets, hard-line clips, body mounts, spring hangers, steering box area, and crossmember ends are signed off."
         },
         {
@@ -12036,6 +12267,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_chassis_masking_plugs_tape_solvent_wipes",
           "evidence_ref": "user_update_2026-05-08_chassis_raptor_masking_consumables_needed|user_update_2026-05-08_chassis_masking_tape_wipes_purchased|user_update_2026-05-11_ultra_cloth_masking_tape_received|gmail_msg_19e07889134f5cb5|gmail_order_1762336|gmail_msg_19e0c5bf0525eaf0|blueex_tracking_AhubRider|bank_alert_19e0788ae42cca42|gmail_msg_19e078ab2e5df2f2|autostore_order_80788",
+          "product_link": "",
           "notes": "User update 2026-05-08: Raptor selected as the chassis exposed finish after primer/sealer; extra brushes are on hand and strip/flap discs are angle-grinder consumables with existing recorded stock to count before rebuying. Order before solvent wipe/primer/Raptor: solvent-safe lint-free wipes and automotive masking tape; avoid shedding cloth, newspaper where solvent/wet coating can bleed, and plugs/tape that leave residue. User update 2026-05-11 confirms Ultra-cloth and masking tape received. Masking plugs were not separately ordered: on-hand received rubber grommet assortment may be used as temporary masking for open unthreaded holes only after fit and solvent/residue check. Use sacrificial bolts for threaded holes; do not use grommets for brake/fuel line ends, threaded holes, ground pads, or body-mount bearing faces. Buy separate tapered plugs only if grommet fit/check fails. | Gmail recheck 2026-05-12 ties the received masking pack to Autohub order 1762336 / order no. 62336 for 3M Blue High Performance Ultra Soft Cloth x4 at PKR 4600 plus PKR 249 shipping, total PKR 4849, and Autostore order #80788 for green masking tape 24 mm x2 and 48 mm x1 at PKR 2000 plus PKR 250 shipping, COD total PKR 2250. User already confirmed Ultra-cloth and masking tape received on 2026-05-11.",
           "links": [],
           "estimated_hardware_type": "",
@@ -12076,6 +12308,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brighto_extreme_paint_remover_3l_amir_20260528",
           "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+          "product_link": "",
           "notes": "User addendum 2026-05-28: mark Brighto Extreme Paint Remover 3L as procured by Amir. Receipt/use check: confirm sealed 3 L Brighto Extreme Paint Remover container, correct product, no leaks, and compatible use area before applying. Keep away from rubber, wiring, seals, brake/fuel components, and finished paint unless deliberately stripping; use PPE and ventilation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -12115,6 +12348,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_raptor_hardener_1l_amir_20260528",
           "evidence_ref": "user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark 1 L Raptor hardener as procured by Amir. Receipt check: confirm it is genuine/compatible U-POL Raptor hardener/activator for the existing Raptor coating, sealed, in-date, correct volume, and not a generic 2K hardener for a different product before mixing or coating.",
           "links": [],
           "estimated_hardware_type": "",
@@ -16972,23 +17206,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front left axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "1",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned left-front bracket, and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
-          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old decayed rubber is shape evidence only; public sources do not expose the Toyota mould drawing",
-          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm pending caliper/vehicle release; reproduce May 29 sample-style molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area; rubber body outline, P/D, fixture/channel, and contact offset X/Y released from removed samples, fixture, cleaned left-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on current vehicle bracket and axle strike pad; public sources do not expose Toyota mould drawing",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; use it as the bonding and hole-pattern pattern.",
-          "evidence_images": []
+          "notes": "May 29 removed samples supersede the flat-back-plate placeholder and are representative construction evidence for both bump stops.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SUSP-BUMP-FR",
@@ -16996,23 +17257,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front right axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "1",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned right-front bracket, and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
-          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
-          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump test releases another height; reproduce May 29 sample-style molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area; rubber body outline, P/D, fixture/channel, and contact offset X/Y released from removed samples, fixture, cleaned right-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on current right-front bracket and axle strike pad; do not use 70 mm long-stop height here unless full-bump test releases trimming",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; right-front height remains 60 mm.",
-          "evidence_images": []
+          "notes": "Use same May 29 sample-style construction; right-front height remains 60 mm until vehicle release.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SUSP-BUMP-R",
@@ -17020,23 +17308,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Rear axle-to-chassis bump-stop stations",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plates",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "2",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces bonded/captive to supplied one-piece flat steel backing/saddle plates; plate outlines, bolt/stud patterns, hole/thread controls, and contact offsets released from supplied plates, cleaned rear brackets, and axle strike pads",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plates; matched rear pair; no tyre rubber or simple cut blocks",
-          "critical_measurements": "Measure supplied flat metal backing pieces plus BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old decayed rubber is shape evidence only",
-          "fit_and_test": "Both rear first-article flat backing plates seat on brackets, bolts/studs pass by hand, rubber remains bonded/captive, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; reproduce May 29 sample-style molded rubber bodies with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike areas; rubber body outlines, P/D, fixture/channel, and contact offsets released from removed samples, fixture, cleaned rear brackets, and axle strike pads",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; matched rear pair; no tyre rubber or simple cut blocks",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F at both rear stations after Ironman ride-height plan",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Make as matched rear pair after final ride height and axle travel checks; user will provide the flat metal backing/saddle piece with the fabrication request.",
-          "evidence_images": []
+          "notes": "Make as matched rear pair after final ride height and axle travel checks; May 29 samples control construction while vehicle stations control final dimensions.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SHIM-001",
@@ -17916,23 +18231,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front left axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "1",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned left-front bracket, and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
-          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old decayed rubber is shape evidence only; public sources do not expose the Toyota mould drawing",
-          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm pending caliper/vehicle release; reproduce May 29 sample-style molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area; rubber body outline, P/D, fixture/channel, and contact offset X/Y released from removed samples, fixture, cleaned left-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on current vehicle bracket and axle strike pad; public sources do not expose Toyota mould drawing",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; use it as the bonding and hole-pattern pattern.",
-          "evidence_images": []
+          "notes": "May 29 removed samples supersede the flat-back-plate placeholder and are representative construction evidence for both bump stops.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SUSP-BUMP-FR",
@@ -17940,23 +18282,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front right axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "1",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned right-front bracket, and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
-          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
-          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump test releases another height; reproduce May 29 sample-style molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area; rubber body outline, P/D, fixture/channel, and contact offset X/Y released from removed samples, fixture, cleaned right-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on current right-front bracket and axle strike pad; do not use 70 mm long-stop height here unless full-bump test releases trimming",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; right-front height remains 60 mm.",
-          "evidence_images": []
+          "notes": "Use same May 29 sample-style construction; right-front height remains 60 mm until vehicle release.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SUSP-BUMP-R",
@@ -17964,23 +18333,50 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Rear axle-to-chassis bump-stop stations",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plates",
+          "replace_scope": "fabricate_from_may29_removed_sample_family",
           "quantity": "2",
           "photo_evidence": [
+            "20260529_223605_gp_CklgF0cQ",
+            "20260529_223701_gp_wYPExcAA",
             "bump_stop_vehicle_measurement_control"
           ],
-          "photo_status": "measurement_control_spec",
+          "photo_status": "direct_removed_sample_and_measurement_control",
           "spec_status": "spec_ready_vehicle_measurement_release",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces bonded/captive to supplied one-piece flat steel backing/saddle plates; plate outlines, bolt/stud patterns, hole/thread controls, and contact offsets released from supplied plates, cleaned rear brackets, and axle strike pads",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plates; matched rear pair; no tyre rubber or simple cut blocks",
-          "critical_measurements": "Measure supplied flat metal backing pieces plus BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old decayed rubber is shape evidence only",
-          "fit_and_test": "Both rear first-article flat backing plates seat on brackets, bolts/studs pass by hand, rubber remains bonded/captive, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; reproduce May 29 sample-style molded rubber bodies with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike areas; rubber body outlines, P/D, fixture/channel, and contact offsets released from removed samples, fixture, cleaned rear brackets, and axle strike pads",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; matched rear pair; no tyre rubber or simple cut blocks",
+          "critical_measurements": "Caliper May 29 samples and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F at both rear stations after Ironman ride-height plan",
+          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Make as matched rear pair after final ride height and axle travel checks; user will provide the flat metal backing/saddle piece with the fabrication request.",
-          "evidence_images": []
+          "notes": "Make as matched rear pair after final ride height and axle travel checks; May 29 samples control construction while vehicle stations control final dimensions.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-SHIM-001",
@@ -18646,15 +19042,39 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
           "required_qty": "3",
           "optional_spare_qty": "0",
-          "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
-          "envelope_3d_mm": "70 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
-          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
-          "holes_or_inserts": "Flat plate hole pitch, hole/thread, base footprint, and strike offset from supplied flat metal sample plus vehicle measurements; holes belong in the flat plate unless sample proves rubber clearance holes",
-          "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated flat steel plate",
+          "spec": "Sample-style molded rubber stop copied from the May 29 removed bump stops: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+          "envelope_3d_mm": "70 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+          "edge_profile": "Rounded/asymmetric/tapered rubber body cleaned up from sample; no sharp rectangular block and no flat-plate placeholder",
+          "holes_or_inserts": "Rubber through-hole pitch/diameter, central fixture/interface, base footprint, and strike offset come from May 29 samples, removed metal fixture, and vehicle measurements",
+          "material": "NR/SBR bump-stop rubber Shore A 70 +/-5; reproduce any sample-proven insert/fixture retention method",
           "release_state": "first_article_required",
-          "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-          "notes": "User will provide the one flat metal backing/saddle piece with the request. Make one 70 mm first article before remaining long stops.",
+          "photo_refs": "20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA|20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg",
+          "notes": "May 29 removed samples are representative for both bump-stop shapes. Make one sample-style 70 mm first article after caliper/fixture/bracket measurements before remaining long stops.",
           "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            },
             {
               "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18681,15 +19101,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:22",
+            "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:36:05",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004222_gp_PKRe5HSQ",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223605_gp_CklgF0cQ",
             "matched_tokens": []
           }
         },
@@ -18699,15 +19119,39 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
-          "envelope_3d_mm": "60 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
-          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
-          "holes_or_inserts": "Same flat-plate/base/contact rules as long stop; right-front vehicle measurements control final contact offset",
-          "material": "Same compound family as BUMP-60010-LONG bonded/captive to coated flat steel plate",
+          "spec": "Same sample-style molded rubber construction as the long stop, applied to the right-front station.",
+          "envelope_3d_mm": "60 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+          "edge_profile": "Same rounded/tapered sample family, reduced height only if right-front height is confirmed",
+          "holes_or_inserts": "Same rubber-through-hole, fixture/channel, base, and contact rules as long stop; right-front vehicle measurements control final contact offset",
+          "material": "Same compound family as BUMP-60010-LONG; reproduce any sample-proven insert/fixture retention method",
           "release_state": "first_article_required",
-          "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-          "notes": "User will provide the one flat metal backing/saddle piece with the request. Right-front short height is externally controlled by 48304-60020 references.",
+          "photo_refs": "20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA|20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg",
+          "notes": "Use the same May 29 sample-style construction. Right-front short height remains externally controlled by 48304-60020 references until vehicle full-bump checks confirm final release.",
           "evidence_images": [
+            {
+              "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:36:05",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223605_gp_CklgF0cQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+              "captured_date": "2026-05-29",
+              "captured_time": "22:37:01",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "suspension_bump_stop_removed_samples",
+              "stage": "rubber_recreation_measurement",
+              "media_id": "20260529_223701_gp_wYPExcAA",
+              "matched_tokens": []
+            },
             {
               "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18734,15 +19178,15 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:22",
+            "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:36:05",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004222_gp_PKRe5HSQ",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223605_gp_CklgF0cQ",
             "matched_tokens": []
           }
         },
@@ -25287,8 +25731,8 @@ window.J40_DASHBOARD_DATA = {
           "package_id": "longman_rubber_order_20260508",
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
-          "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 420 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus the current-order preview, chassis location map, complete all-drawings SVG preview, interactive/static 3D visualisation, and OpenSCAD source models.",
+          "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops updated to the May 29 removed-sample construction, and hold rows only for any still-unidentified full-width liners.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is the plain 420 x 38 x 8 mm rubber pair. The Longman handoff includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing. Bump-stop design now follows the May 29 removed samples: rubber through-holes, central fixture/channel interface, broad rounded/tapered body, and vehicle-measured final dimensions.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -25465,7 +25909,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 205185
+            "bytes": 206655
           },
           "file_count": 37
         }
@@ -25558,6 +26002,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_a_millat",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -25597,6 +26042,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_rubber_plastic_bumpers_isolators",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements only and keep originals as templates.",
           "links": [],
           "estimated_hardware_type": "Rubber/plastic bumpers knobs isolators and small spacers (8-18 visible, likely 12)",
@@ -25636,6 +26082,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_shoulder_pins_sleeves_spacers",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
           "links": [],
           "estimated_hardware_type": "Shoulder/pivot bolts cylindrical sleeves stand-off spacers and stepped pins (10-24 visible, likely 16)",
@@ -25675,6 +26122,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_mount_hardware_kit",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "product_link": "",
           "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
           "links": [
             {
@@ -25895,6 +26343,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_mount_shim_pack",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "product_link": "",
           "notes": "Track under body-mount rubbers/rubber ordering, not generic fastener buy. Spec ready: thin slotted steel shims 1/2/3/5mm x12 each plus thick control spacers 5/10/15mm x4 each; preserve originals by station and release after body station height measurement.",
           "links": [
             {
@@ -30727,6 +31176,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_daraz_cable_clip_clamp_assortment_20260527",
           "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "product_link": "",
           "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
           "links": [],
           "estimated_hardware_type": "",
@@ -30767,6 +31217,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_d_millat",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -30806,6 +31257,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_cabin_compact_fuse_boxes",
           "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "product_link": "",
           "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
           "links": [],
           "estimated_hardware_type": "",
@@ -30845,6 +31297,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+          "product_link": "",
           "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
           "links": [],
           "estimated_hardware_type": "",
@@ -30884,6 +31337,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_cable_sleeve_protection",
           "evidence_ref": "user_seed|akber_khan-00489|fj40-00276|fj40-00282",
+          "product_link": "",
           "notes": "Workbook inventory shows braided sleeve stock already received/paid: 8, 10, 14, 16, and 20 mm sleeve entries in 5m lengths. Loom-pipe planning basis for this J40/HJ47: do not buy extra 8mm split pipe. If physical stock count is short after final routing, top-up only 12mm x 10m for cabin/light branches and 16mm x 6m for under-bonnet/cabin trunk branches; existing 14/16/20mm 5m sleeve stock is already counted.",
           "links": [],
           "estimated_hardware_type": "",
@@ -30924,6 +31378,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_dielectric_grease",
           "evidence_ref": "user_seed|akber_khan-00489|gmail_msg_19d0f6304329edde|gmail_msg_19d9ff896e3406a1|gmail_order_3070231697777489|gmail_package_PK001206015RS|photo_20260424_part_dielectric_grease_aliexpress_order_3070231697777489.jpg",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx. Gmail AliExpress evidence shows dielectric grease order 3070231697777489 shipped and package PK001206015RS delivered.",
           "links": [],
           "estimated_hardware_type": "",
@@ -30963,6 +31418,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_electric_wires",
           "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|user_update_2026-04-22_wiring_built|gmail_msg_19d045e33582292a|gmail_msg_19d3e56a9e4a3991|gmail_order_3070027285627489|gmail_package_PK015187314R|photo_20260424_part_electric_wires_aliexpress_3070027285627489.jpg",
+          "product_link": "",
           "notes": "Received AliExpress order 3070027285627489: 4 AWG silicone cable, red/black, 1m each (approx 21 mm2). Workbook also contains 1.0/1.5/2.5 mm2 roll inventory; physically count before buying more wire.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31002,6 +31458,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hidden_diesel_cutoff_switch",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
+          "product_link": "",
           "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31041,6 +31498,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_h4_ceramic_headlight_connector_high",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|gmail_msg_19d0ecbd9da965f4|gmail_order_1599|workbook_parts_row_76_received_y_paid_y|photo_20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg|user_update_2026-05-01_h4_connectors_received",
+          "product_link": "",
           "notes": "User has 4 H4 ceramic headlight connectors received. Only 2 are required for the headlights, leaving 2 spares; no additional H4 connectors are required.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31080,6 +31538,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rubber_grommet_set",
           "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+          "product_link": "https://www.aliexpress.com/i/1005008318051049.html",
           "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
           "links": [
             {
@@ -31124,6 +31583,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_split_conduit_braided_sleeve_medium",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (14mm and 16mm, 5m lengths). No additional medium sleeve required until physical count shows a gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31164,6 +31624,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_split_conduit_braided_sleeve_large",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (20mm, 5m lengths). No additional large sleeve required until physical count shows a gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31204,6 +31665,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_split_conduit_braided_sleeve_small",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (8mm and 10mm, 5m lengths). User update 2026-05-04: drop separate 8mm split wiring pipe from required list; no additional small sleeve required until physical count shows a confirmed gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31244,6 +31706,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_aliexpress_waterproof_relay_5pin_40a_6pc_20260511",
           "evidence_ref": "gmail_msg_19e10f7bc91fba44|gmail_msg_19e161ddf7117e32|gmail_order_3070231697837489|user_update_2026-05-13_relay_pack_arrived",
+          "product_link": "",
           "notes": "Gmail AliExpress emails show order 3070231697837489 for 4/5 Pin 4P/5P 40A waterproof car relay, selected 5PIN 40A DC12V x6, order total PKR 8196. May 10 awaiting-confirmation and May 11 review emails indicate the order was marked complete, but physical receipt is not yet user-confirmed; check x6 relay count, 12V coil marking, 5-pin layout, terminal quality, seals, and whether these belong in electrical relay stock before closing as received. | User confirmed on 2026-05-13 that the waterproof 5-pin 40A DC12V relay pack x6 has physically arrived. Close delivery as received; bench/fit check remains: confirm all 6 relays, 12V coil marking, 5-pin changeover layout, terminal retention, socket seals, and allocation into electrical relay stock.",
           "links": [],
           "estimated_hardware_type": "",
@@ -31283,6 +31746,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_star_washers",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|user_update_2026-05-27_millat_order_now_coming_suppress_duplicate|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the standalone star/lock washer pack as procured by Amir: M6 x120, M8 x60, M10 x30. The user message wrote M2-; this is treated as the existing M10 grounding-washer line, not a new M2 size. This overrides the 2026-05-27 duplicate suppression against Millat Kit D; keep both rows and reconcile physical counts after receipt. Receipt check: confirm plated or stainless star/serrated lock washers, counts, and clean metal-biting form before grounding use.",
           "links": [],
           "estimated_hardware_type": "",
@@ -33806,6 +34270,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
           "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "product_link": "",
           "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -33846,6 +34311,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
           "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "product_link": "",
           "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -34958,6 +35424,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+          "product_link": "",
           "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
           "links": [],
           "estimated_hardware_type": "",
@@ -34998,6 +35465,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_control_panel_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+          "product_link": "",
           "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
           "links": [],
           "estimated_hardware_type": "",
@@ -35037,6 +35505,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_cabin_compact_fuse_boxes",
           "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "product_link": "",
           "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
           "links": [],
           "estimated_hardware_type": "",
@@ -35076,6 +35545,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "product_link": "",
           "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
           "links": [],
           "estimated_hardware_type": "",
@@ -35115,6 +35585,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+          "product_link": "",
           "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
           "links": [],
           "estimated_hardware_type": "",
@@ -35154,6 +35625,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "product_link": "",
           "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
@@ -35193,6 +35665,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hidden_diesel_cutoff_switch",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
+          "product_link": "",
           "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
           "links": [],
           "estimated_hardware_type": "",
@@ -36705,7 +37178,6 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_220004_gp_C9oYiYmA",
           "matched_tokens": [
-            "20260430_220004_gp_c9oyiyma",
             "engine_bay"
           ]
         },
@@ -36720,7 +37192,6 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_215957_gp_2iBbUagw",
           "matched_tokens": [
-            "20260430_215957_gp_2ibbuagw",
             "engine_bay"
           ]
         },
@@ -37299,7 +37770,6 @@ window.J40_DASHBOARD_DATA = {
               "stage": "mechanical_inspection",
               "media_id": "20260430_220004_gp_C9oYiYmA",
               "matched_tokens": [
-                "20260430_220004_gp_c9oyiyma",
                 "engine_bay"
               ]
             },
@@ -37314,7 +37784,6 @@ window.J40_DASHBOARD_DATA = {
               "stage": "mechanical_inspection",
               "media_id": "20260430_215957_gp_2iBbUagw",
               "matched_tokens": [
-                "20260430_215957_gp_2ibbuagw",
                 "engine_bay"
               ]
             },
@@ -37674,7 +38143,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 27,
-      "reference_token_count": 16,
+      "reference_token_count": 10,
       "requirements": [
         {
           "requirement_id": "HVAC-ENGINE-001",
@@ -37824,14 +38293,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Use received DISS/APC and GREZ OFF; registered sprayer is Wadfow WRS1550 pending delivery. Avoid blasting alternator, starter, injection pump, breathers, connectors, and open ports."
         },
         {
-          "component_job_id": "engine_radiator_recore_or_new_20260529",
-          "component_group": "cooling_system",
-          "current_status": "amir_refurb_video_gate",
-          "planned_action": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit",
-          "evidence_ref": "user_update_2026-05-29_do_what_best_engine_radiator|user_update_2026-05-29_extra_fabricated_leg_bad_install|user_update_2026-05-29_aluminium_radiator_adapter_contingency|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|radiator_cap_current_car_crop_20260503|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
-          "notes": "Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test."
-        },
-        {
           "component_job_id": "rear_differential_axle_inspection_20260517",
           "component_group": "rear_axle",
           "current_status": "inspection_plan_added",
@@ -37876,11 +38337,6 @@ window.J40_DASHBOARD_DATA = {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
-        },
-        {
-          "label": "Component Task \u00b7 Engine Radiator Recore Or New 20260529",
-          "status": "amir_refurb_video_gate",
-          "detail": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit Notes: Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test."
         },
         {
           "label": "Component Task \u00b7 Rear Differential Axle Inspection 20260517",
@@ -37930,6 +38386,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_battery_purchase",
           "evidence_ref": "akber_khan-00753",
+          "product_link": "",
           "notes": "New battery is already purchased and installed. Gross PKR 20,000 retained.",
           "links": [],
           "estimated_hardware_type": "",
@@ -37969,6 +38426,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38009,6 +38467,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_barrier_hose_fittings_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38048,6 +38507,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38087,6 +38547,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_engine_oil_filter_service",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
           "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
           "links": [
             {
@@ -38135,6 +38596,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38174,6 +38636,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_parallel_flow_condenser_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38214,6 +38677,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_receiver_drier_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38253,6 +38717,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_trinary_switch_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38292,6 +38757,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_fuel_hose_and_clamps",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
           "links": [
             {
@@ -38352,6 +38818,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [
             {
@@ -38417,6 +38884,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_heater_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38456,6 +38924,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_vacuum_hose_refresh",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38495,6 +38964,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_air_filter",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+          "product_link": "",
           "notes": "Marked received per user confirmation; fitment/condition can be validated during installation",
           "links": [],
           "estimated_hardware_type": "",
@@ -38534,6 +39004,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_daraz_jubilee_hose_clip_assortment_30pc",
           "evidence_ref": "gmail_msg_19de62bcdb1080ff|gmail_order_242365766580938|gmail_msg_19e021d07abdead1|gmail_delivery_242365766580938",
+          "product_link": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1",
           "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-06 to 2026-05-08. Three 10 pc clamp packs at PKR 750 each; subtotal PKR 2250 plus PKR 140 shipping. Supplemental clamp stock only; does not close fuel-rated hose/clamp kit until sizes and clamp type are validated. Product links: https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766580938 delivered on 2026-05-07; keep as supplemental clamp stock until sizes, rolled edges, and fuel/coolant suitability are checked.",
           "links": [
             {
@@ -38599,6 +39070,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_thermostat_gasket",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+          "product_link": "",
           "notes": "Marked received per user confirmation; compatibility/usability can be validated during install planning",
           "links": [],
           "estimated_hardware_type": "",
@@ -38638,6 +39110,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_accessory_belt_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38677,6 +39150,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_fuel_filter",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38716,6 +39190,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_radiator_cap",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
           "links": [],
           "estimated_hardware_type": "",
@@ -38931,7 +39406,6 @@ window.J40_DASHBOARD_DATA = {
                   "stage": "mechanical_inspection",
                   "media_id": "20260430_220004_gp_C9oYiYmA",
                   "matched_tokens": [
-                    "20260430_220004_gp_c9oyiyma",
                     "engine_bay"
                   ]
                 },
@@ -38946,7 +39420,6 @@ window.J40_DASHBOARD_DATA = {
                   "stage": "mechanical_inspection",
                   "media_id": "20260430_215957_gp_2iBbUagw",
                   "matched_tokens": [
-                    "20260430_215957_gp_2ibbuagw",
                     "engine_bay"
                   ]
                 },
@@ -45889,6 +46362,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_transmission_oil_service",
           "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+          "product_link": "",
           "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -65744,6 +66218,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_booster_servo_44610_60050",
           "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+          "product_link": "",
           "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
           "links": [],
           "estimated_hardware_type": "",
@@ -65783,6 +66258,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_clutch_master_slave_cylinders_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "product_link": "",
           "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
           "links": [
             {
@@ -65845,6 +66321,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_master_reservoir_refresh",
           "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "product_link": "",
           "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -65884,6 +66361,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_brake_shoes_hardware",
           "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "product_link": "",
           "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
           "links": [],
           "estimated_hardware_type": "",
@@ -65923,6 +66401,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
+          "product_link": "",
           "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
           "links": [],
           "estimated_hardware_type": "",
@@ -65963,6 +66442,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
           "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
+          "product_link": "",
           "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
           "links": [
             {
@@ -66024,6 +66504,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_center_brake_flex_hose",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "product_link": "",
           "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66063,6 +66544,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_daraz_clear_pvc_bleed_hose_2m_20260504",
           "evidence_ref": "user_update_2026-05-04_clear_bleed_hose_order|gmail_msg_19df408f0591f0c1|gmail_msg_19e021d05ca94bc4|gmail_order_242508745080938|gmail_delivery_242508745080938",
+          "product_link": "",
           "notes": "User reported paid Daraz order 2026-05-04: 2meter Clear PVC Hose Tube pipe ID7mm OD10mm clear transparent vinyl tubing water pipe; color family Multicolor; qty 1; PKR 227; seller GoBazaar.pk; seller to pack. Temporary brake bleeding hose only; not for permanent fuel, coolant, vacuum, or hydraulic pressure service. | Gmail Daraz order 242508745080938 confirmed on 2026-05-05 and delivery email confirms delivered on 2026-05-07; use only as temporary clear brake bleed hose, not as permanent fuel, coolant, vacuum, or pressure line.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66103,6 +66585,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_copper_grease",
           "evidence_ref": "user_seed",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66142,6 +66625,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_dot3_brake_fluid_autohub_6x354ml",
           "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471|gmail_msg_19df71b7d1c14a42|gmail_msg_19df81f2b45fe7de|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived",
+          "product_link": "",
           "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03 for DOT 3 brake fluid x6, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. Shipment emails on 2026-05-05 conflicted on Lion DOT-3 x6 versus STP BRAKE FLUID DOT 3 x6, and the user confirmed on 2026-05-08 that the replacement/substitution was agreed and the brake fluid has arrived. Treat as received DOT 3 stock for brake/clutch bleeding; before use, verify six sealed fresh bottles, actual brand/label, DOT 3 rating, and unbroken caps.",
           "links": [
             {
@@ -66195,6 +66679,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_cable_set",
           "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+          "product_link": "",
           "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66234,6 +66719,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_daraz_nitrile_gloves_black_l_100pc_20260504",
           "evidence_ref": "user_update_2026-05-04_nitrile_gloves_order|gmail_msg_19df408f2cc8e480|gmail_order_242508745280938|user_update_2026-05-14_nitrile_gloves_received",
+          "product_link": "",
           "notes": "User reported paid order 2026-05-04: Safety Black Disposable Nitrile gloves 100 PCs Box; color family Black; size L; qty 1; PKR 2333. Brake/cleaning PPE for hydraulic opening prep. Gmail Daraz order 242508745280938 confirmed on 2026-05-05 for Safety Black Disposable Nitrile gloves 100 PCs Box x1. Earlier Gmail checks found the order confirmation but no separate delivery email; user physical receipt on 2026-05-14 supersedes the delivery-email gap. Close delivery as received; receipt check remains: confirm box count, size L, nitrile/powder-free marking if present, and no torn packaging before brake-fluid work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66273,6 +66759,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the brake hard-line tube as procured by Amir from the new shopping list: 25 ft of 3/16 in zinc-coated/galvanised steel brake tube. Receipt/spec check still gates use: confirm automotive brake-rated 4.75 mm / 3/16 in coated Bundy/equivalent tube, 25 ft minimum, no bare copper/plumbing/compression tube, and ability to form correct double/inverted flares before fabrication. Fittings, flare nuts, unions, and final bends remain old-sample/thread/seat controlled.",
           "links": [
             {
@@ -66335,6 +66822,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
           "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos|user_update_2026-05-28_procured_by_amir|user_update_2026-05-28_procured_by_amir_addendum",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the Drum Brake Hardware Kit - 1960-1980 Toyota Land Cruiser - Centric 116971-05110530 as procured by Amir. Treat as a received candidate only until kit contents and fit are checked against the opened rear drums: spring layout, hold-down pin/cup/spring dimensions, adjuster handedness/style, parking-brake lever clips, shoe width/web holes, and side-to-side symmetry. Do not install mismatched or incomplete hardware. | User addendum 2026-05-28 also listed this Centric kit explicitly.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66374,6 +66862,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_brake_flex_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "product_link": "",
           "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
           "links": [
             {
@@ -66434,6 +66923,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_front_disc_pads_hardware",
           "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66473,6 +66963,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_front_brake_hose_pair",
           "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [
             {
@@ -66533,6 +67024,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_front_rotor_service_pair",
           "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66572,6 +67064,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
           "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66611,6 +67104,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
           "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "product_link": "",
           "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66651,6 +67145,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_clutch_hard_line_fittings_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-19|RP-CLUTCH-001",
+          "product_link": "",
           "notes": "Use the shared 4.75 mm brake/clutch tube stock for the clutch hard line, then buy new hydraulic fittings after clutch master, clutch flex hose, and slave cylinder port threads/seats are identified. Final route must clear drivetrain movement and be clipped like the brake lines.",
           "links": [
             {
@@ -66713,6 +67208,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_clutch_flex_hose_assembly_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-18|RP-CLUTCH-001",
+          "product_link": "",
           "notes": "Replace with one new complete brake/clutch-rated crimped hydraulic hose assembly. Copy old free length, end threads/seats, bracket grooves, and movement clearance. No generic rubber hose, roll hose, or used clutch hose.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66753,6 +67249,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260514_100647_gp_foDr3ymA",
+          "product_link": "",
           "notes": "BASELINE MUST RECREATE during the suspension/brake access window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance using the May 14 working Toyota-style double/inverted flare basis, but only after bare flare face, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [
             {
@@ -66813,6 +67310,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_brake_line_cable_clips",
           "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+          "product_link": "",
           "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
@@ -66852,6 +67350,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
           "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "product_link": "",
           "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
           "links": [
             {
@@ -66914,6 +67413,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_brake_clutch_hard_line_fittings_20260514",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "product_link": "",
           "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
           "links": [
             {
@@ -68603,6 +69103,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
+          "product_link": "",
           "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
           "links": [],
           "estimated_hardware_type": "",
@@ -70710,6 +71211,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_ironman_front_dampers_separate_shipment",
           "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+          "product_link": "",
           "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
           "links": [],
           "estimated_hardware_type": "",
@@ -70750,6 +71252,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_ironman_foamcell_suspension_kit",
           "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+          "product_link": "",
           "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. User confirmed on 2026-05-08 that the main suspension kit has arrived minus the separate front damper pair. Treat the main shipment as received, but do not close suspension procurement or start final installation until the separate 24635FE front damper pair is also physically received. Receipt check main shipment against expected kit contents: 24636FE rear dampers, TOY001B front springs, TOY002B rear springs, 415UBK U-bolt kits, 713UK bush kit, 343LH/343RH shackles, 3523 steering damper, 346 pins/shackles as applicable, hardware, labels, and transit damage.",
           "links": [],
           "estimated_hardware_type": "",
@@ -70789,6 +71292,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_suspension_wooden_cribbing_blocks",
           "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|user_update_2026-05-04_wood_parts_ordered|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf|user_update_2026-05-17_wooden_blocks_received",
+          "product_link": "",
           "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands. User update 2026-05-04: wood set ordered; merchant name, wood type, price, expected pickup/delivery date, and receipt/photos still need capture. | Gmail recheck 2026-05-12 found no matching hardwood cribbing / wedge chock receipt, shipment, or delivery email before the 2026-05-17 received update. | User update 2026-05-17: wooden cribbing blocks and wedge chocks marked received; price/payment, merchant name, wood type, receipt, and received-condition photos still need capture.",
           "links": [
             {
@@ -71585,6 +72089,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_carpet",
           "evidence_ref": "user_seed|akber_khan-00803",
+          "product_link": "",
           "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
           "links": [],
           "estimated_hardware_type": "",
@@ -71624,6 +72129,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_fastener_kit_e_trim_screws_cup_washers",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
           "links": [],
           "estimated_hardware_type": "Self-tapping/trim/countersunk screws and cup/finishing washers (35-70 visible, likely 50)",
@@ -71663,6 +72169,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_foam",
           "evidence_ref": "user_seed|akber_khan-00803",
+          "product_link": "",
           "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
           "links": [],
           "estimated_hardware_type": "",
@@ -71702,6 +72209,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_sound_dampening_sheets",
           "evidence_ref": "user_seed|akber_khan-00430|akber_khan-00798|akber_khan-00803",
+          "product_link": "",
           "notes": "Deferred until body is welded, sealed, and dry. Estimate for useful full-cabin J40 coverage: buy 3.5-4.0 m2 / 38-43 sqft of 3mm butyl/aluminium damping sheet, equivalent to 10 large 460x800mm sheets minimum; use 12 sheets if also covering doors, tailgate, or hardtop side panels. This is not a tub-off buy.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71741,6 +72249,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+          "product_link": "",
           "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71781,6 +72290,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_control_panel_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+          "product_link": "",
           "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71820,6 +72330,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+          "product_link": "",
           "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71860,6 +72371,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "product_link": "",
           "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71899,6 +72411,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_return_air_grille_filter_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+          "product_link": "",
           "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
           "links": [],
           "estimated_hardware_type": "",
@@ -71938,6 +72451,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "product_link": "",
           "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
@@ -73805,7 +74319,6 @@ window.J40_DASHBOARD_DATA = {
         "stage": "mechanical_inspection",
         "media_id": "20260430_220004_gp_C9oYiYmA",
         "matched_tokens": [
-          "20260430_220004_gp_c9oyiyma",
           "engine_bay"
         ]
       }
@@ -73983,6 +74496,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local fastener / body hardware supplier",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
         "links": [],
         "estimated_hardware_type": "R-clips/hairpins/split pins/circlips/small cotters (6-15 visible, likely 10)",
@@ -74020,6 +74534,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74057,6 +74572,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv|user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+        "product_link": "",
         "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. User photos on 2026-05-08 confirm yellow-zinc knurled flat-head threaded rivet nuts/nutserts, with visible label text reading Product Name: Rivetnut and size M6. User clarified on 2026-05-09 that the two boxes are M6 and M8, so treat M6 and M8 rivnut/nutsert portions as received unless physical receipt check contradicts this. Remaining open scope is captive/clip/speed nuts and weld nuts: original workbook basis M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20. Use new yellow-zinc or equivalent plated hardware; do not reuse rusted spring clips or captive nuts. Confirm final split against old samples before purchase.",
         "links": [],
         "estimated_hardware_type": "Captive/clip/speed nuts plus rivnut/weld-nut candidates (22-40 visible, likely 30)",
@@ -74094,6 +74610,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+        "product_link": "",
         "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -74132,6 +74649,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74170,6 +74688,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74207,6 +74726,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "product_link": "",
         "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
         "links": [
           {
@@ -74267,6 +74787,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake parts / hydraulic line support supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
         "links": [
           {
@@ -74326,6 +74847,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74363,6 +74885,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74400,6 +74923,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "product_link": "",
         "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74437,6 +74961,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Daraz / Buy More Save More Store",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74475,6 +75000,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74512,6 +75038,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local electrical / automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+        "product_link": "",
         "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74549,6 +75076,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Ironman 4x4 supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+        "product_link": "",
         "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74590,6 +75118,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74628,6 +75157,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+        "product_link": "",
         "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -74667,6 +75197,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74705,6 +75236,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "product_link": "",
         "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
         "links": [
           {
@@ -74766,6 +75298,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74804,6 +75337,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74842,6 +75376,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Daraz / Buy More Save More Store",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74881,6 +75416,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74919,6 +75455,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Ironman 4x4 supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+        "product_link": "",
         "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
         "links": [],
         "estimated_hardware_type": "",
@@ -74959,6 +75496,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -74996,6 +75534,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+        "product_link": "",
         "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -75034,6 +75573,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local fastener / body hardware supplier",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
         "links": [],
         "estimated_hardware_type": "R-clips/hairpins/split pins/circlips/small cotters (6-15 visible, likely 10)",
@@ -75071,6 +75611,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv|user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+        "product_link": "",
         "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. User photos on 2026-05-08 confirm yellow-zinc knurled flat-head threaded rivet nuts/nutserts, with visible label text reading Product Name: Rivetnut and size M6. User clarified on 2026-05-09 that the two boxes are M6 and M8, so treat M6 and M8 rivnut/nutsert portions as received unless physical receipt check contradicts this. Remaining open scope is captive/clip/speed nuts and weld nuts: original workbook basis M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20. Use new yellow-zinc or equivalent plated hardware; do not reuse rusted spring clips or captive nuts. Confirm final split against old samples before purchase.",
         "links": [],
         "estimated_hardware_type": "Captive/clip/speed nuts plus rivnut/weld-nut candidates (22-40 visible, likely 30)",
@@ -75108,6 +75649,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local body hardware fabricator / Bilal Ganj",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
         "links": [],
         "estimated_hardware_type": "Specialty brackets retainer plates captive-nut plates and straps (8-18 visible, likely 12)",
@@ -75145,6 +75687,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Land Cruiser House / brake servo rebuilder / local brake specialist",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+        "product_link": "",
         "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75182,6 +75725,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "product_link": "",
         "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
         "links": [
           {
@@ -75242,6 +75786,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75279,6 +75824,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75316,6 +75862,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75354,6 +75901,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake parts / hydraulic line support supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
         "links": [
           {
@@ -75413,6 +75961,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake hose/Toyota parts supplier",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "product_link": "",
         "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75450,6 +75999,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir / Montgomery Road brake pipe supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the brake hard-line tube as procured by Amir from the new shopping list: 25 ft of 3/16 in zinc-coated/galvanised steel brake tube. Receipt/spec check still gates use: confirm automotive brake-rated 4.75 mm / 3/16 in coated Bundy/equivalent tube, 25 ft minimum, no bare copper/plumbing/compression tube, and ability to form correct double/inverted flares before fabrication. Fittings, flare nuts, unions, and final bends remain old-sample/thread/seat controlled.",
         "links": [
           {
@@ -75510,6 +76060,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir / local brake parts supplier",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos|user_update_2026-05-28_procured_by_amir|user_update_2026-05-28_procured_by_amir_addendum",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the Drum Brake Hardware Kit - 1960-1980 Toyota Land Cruiser - Centric 116971-05110530 as procured by Amir. Treat as a received candidate only until kit contents and fit are checked against the opened rear drums: spring layout, hold-down pin/cup/spring dimensions, adjuster handedness/style, parking-brake lever clips, shoe width/web holes, and side-to-side symmetry. Do not install mismatched or incomplete hardware. | User addendum 2026-05-28 also listed this Centric kit explicitly.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75547,6 +76098,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Aamir runner / Montgomery Road brake pipe-hose supplier / written spec or mechanic-labelled sample required",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "product_link": "",
         "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
         "links": [
           {
@@ -75605,6 +76157,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75642,6 +76195,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75679,6 +76233,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [
           {
@@ -75737,6 +76292,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
         "supply_type": "part",
         "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75774,6 +76330,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "product_link": "",
         "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75812,6 +76369,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "brake/clutch hydraulic pipe specialist",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-19|RP-CLUTCH-001",
+        "product_link": "",
         "notes": "Use the shared 4.75 mm brake/clutch tube stock for the clutch hard line, then buy new hydraulic fittings after clutch master, clutch flex hose, and slave cylinder port threads/seats are identified. Final route must clear drivetrain movement and be clipped like the brake lines.",
         "links": [
           {
@@ -75872,6 +76430,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "brake/clutch hydraulic hose supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-18|RP-CLUTCH-001",
+        "product_link": "",
         "notes": "Replace with one new complete brake/clutch-rated crimped hydraulic hose assembly. Copy old free length, end threads/seats, bracket grooves, and movement clearance. No generic rubber hose, roll hose, or used clutch hose.",
         "links": [],
         "estimated_hardware_type": "",
@@ -75910,6 +76469,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260514_100647_gp_foDr3ymA",
+        "product_link": "",
         "notes": "BASELINE MUST RECREATE during the suspension/brake access window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance using the May 14 working Toyota-style double/inverted flare basis, but only after bare flare face, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [
           {
@@ -75968,6 +76528,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake parts / hardware supplier",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+        "product_link": "",
         "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76005,6 +76566,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake hydraulic pipe specialist",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "product_link": "",
         "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
         "links": [
           {
@@ -76065,6 +76627,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local brake hydraulic pipe specialist",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "product_link": "",
         "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
         "links": [
           {
@@ -76123,6 +76686,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir / local paint supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+        "product_link": "",
         "notes": "User addendum 2026-05-28: mark Brighto Extreme Paint Remover 3L as procured by Amir. Receipt/use check: confirm sealed 3 L Brighto Extreme Paint Remover container, correct product, no leaks, and compatible use area before applying. Keep away from rubber, wiring, seals, brake/fuel components, and finished paint unless deliberately stripping; use PPE and ventilation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76160,6 +76724,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir / local paint supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark 1 L Raptor hardener as procured by Amir. Receipt check: confirm it is genuine/compatible U-POL Raptor hardener/activator for the existing Raptor coating, sealed, in-date, correct volume, and not a generic 2K hardener for a different product before mixing or coating.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76197,6 +76762,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -76234,6 +76800,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Bilal Ganj rubber/body trim supplier",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements only and keep originals as templates.",
         "links": [],
         "estimated_hardware_type": "Rubber/plastic bumpers knobs isolators and small spacers (8-18 visible, likely 12)",
@@ -76271,6 +76838,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local fastener / machine shop supplier",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
         "links": [],
         "estimated_hardware_type": "Shoulder/pivot bolts cylindrical sleeves stand-off spacers and stepped pins (10-24 visible, likely 16)",
@@ -76308,6 +76876,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "product_link": "",
         "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
         "links": [
           {
@@ -76526,6 +77095,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "product_link": "",
         "notes": "Track under body-mount rubbers/rubber ordering, not generic fastener buy. Spec ready: thin slotted steel shims 1/2/3/5mm x12 each plus thick control spacers 5/10/15mm x4 each; preserve originals by station and release after body station height measurement.",
         "links": [
           {
@@ -76744,6 +77314,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Daraz / Buy More Save More Store",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76782,6 +77353,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "MTL Parts",
         "supply_type": "part",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -76819,6 +77391,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "product_link": "",
         "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76856,6 +77429,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local electrical / automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+        "product_link": "",
         "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76893,6 +77467,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir / Montgomery Road local fastener supplier",
         "supply_type": "part",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|user_update_2026-05-27_millat_order_now_coming_suppress_duplicate|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the standalone star/lock washer pack as procured by Amir: M6 x120, M8 x60, M10 x30. The user message wrote M2-; this is treated as the existing M10 grounding-washer line, not a new M2 size. This overrides the 2026-05-27 duplicate suppression against Millat Kit D; keep both rows and reconcile physical counts after receipt. Receipt check: confirm plated or stainless star/serrated lock washers, counts, and clean metal-biting form before grounding use.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76930,6 +77505,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
+        "product_link": "",
         "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
         "links": [],
         "estimated_hardware_type": "",
@@ -76969,6 +77545,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local rubber sheet supplier / Longman fallback",
         "supply_type": "part",
         "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "product_link": "",
         "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77007,6 +77584,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local steel stockholder / sheet-metal shop",
         "supply_type": "part",
         "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "product_link": "",
         "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77045,6 +77623,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+        "product_link": "",
         "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77083,6 +77662,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|akber_khan-00803",
+        "product_link": "",
         "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
         "links": [],
         "estimated_hardware_type": "",
@@ -77120,6 +77700,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local fastener / trim hardware supplier",
         "supply_type": "part",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
         "links": [],
         "estimated_hardware_type": "Self-tapping/trim/countersunk screws and cup/finishing washers (35-70 visible, likely 50)",
@@ -77157,6 +77738,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|akber_khan-00803",
+        "product_link": "",
         "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
         "links": [],
         "estimated_hardware_type": "",
@@ -77194,6 +77776,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|akber_khan-00430|akber_khan-00798|akber_khan-00803",
+        "product_link": "",
         "notes": "Deferred until body is welded, sealed, and dry. Estimate for useful full-cabin J40 coverage: buy 3.5-4.0 m2 / 38-43 sqft of 3mm butyl/aluminium damping sheet, equivalent to 10 large 460x800mm sheets minimum; use 12 sheets if also covering doors, tailgate, or hardtop side panels. This is not a tub-off buy.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77231,6 +77814,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+        "product_link": "",
         "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77269,6 +77853,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+        "product_link": "",
         "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77306,6 +77891,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+        "product_link": "",
         "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77344,6 +77930,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+        "product_link": "",
         "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77381,6 +77968,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+        "product_link": "",
         "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77418,6 +78006,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+        "product_link": "",
         "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77455,6 +78044,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77492,6 +78082,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77529,6 +78120,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Autohub online / Automize online",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
         "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
         "links": [
           {
@@ -77575,6 +78167,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77612,6 +78205,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77650,6 +78244,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77687,6 +78282,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / verified Toyota diesel parts counter",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77725,6 +78321,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77762,6 +78359,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Longman Mills / local diesel hose supplier",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
         "links": [
           {
@@ -77820,6 +78418,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [
           {
@@ -77883,6 +78482,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Longman Mills / local hose supplier",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77920,6 +78520,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Longman Mills / local hose supplier",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77957,6 +78558,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / local belt supplier / Toyota diesel parts counter",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
         "links": [],
         "estimated_hardware_type": "",
@@ -77994,6 +78596,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / local Toyota diesel parts counter",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -78031,6 +78634,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / local radiator shop / Toyota parts counter",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
         "links": [],
         "estimated_hardware_type": "",
@@ -78068,6 +78672,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "SehgalMotors.PK",
         "supply_type": "part",
         "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
+        "product_link": "",
         "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
         "links": [],
         "estimated_hardware_type": "",
@@ -78105,6 +78710,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Ironman 4x4 supplier",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+        "product_link": "",
         "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
         "links": [],
         "estimated_hardware_type": "",
@@ -78163,7 +78769,6 @@ window.J40_DASHBOARD_DATA = {
           "stage": "mechanical_inspection",
           "media_id": "20260430_220004_gp_C9oYiYmA",
           "matched_tokens": [
-            "20260430_220004_gp_c9oyiyma",
             "engine_bay"
           ]
         }
@@ -84728,15 +85333,39 @@ window.J40_DASHBOARD_DATA = {
         "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
         "required_qty": "3",
         "optional_spare_qty": "0",
-        "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
-        "envelope_3d_mm": "70 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
-        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
-        "holes_or_inserts": "Flat plate hole pitch, hole/thread, base footprint, and strike offset from supplied flat metal sample plus vehicle measurements; holes belong in the flat plate unless sample proves rubber clearance holes",
-        "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated flat steel plate",
+        "spec": "Sample-style molded rubber stop copied from the May 29 removed bump stops: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+        "envelope_3d_mm": "70 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+        "edge_profile": "Rounded/asymmetric/tapered rubber body cleaned up from sample; no sharp rectangular block and no flat-plate placeholder",
+        "holes_or_inserts": "Rubber through-hole pitch/diameter, central fixture/interface, base footprint, and strike offset come from May 29 samples, removed metal fixture, and vehicle measurements",
+        "material": "NR/SBR bump-stop rubber Shore A 70 +/-5; reproduce any sample-proven insert/fixture retention method",
         "release_state": "first_article_required",
-        "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-        "notes": "User will provide the one flat metal backing/saddle piece with the request. Make one 70 mm first article before remaining long stops.",
+        "photo_refs": "20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA|20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg",
+        "notes": "May 29 removed samples are representative for both bump-stop shapes. Make one sample-style 70 mm first article after caliper/fixture/bracket measurements before remaining long stops.",
         "evidence_images": [
+          {
+            "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:36:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223605_gp_CklgF0cQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:37:01",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223701_gp_wYPExcAA",
+            "matched_tokens": []
+          },
           {
             "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -84763,15 +85392,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:22",
+          "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+          "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+          "captured_date": "2026-05-29",
+          "captured_time": "22:36:05",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004222_gp_PKRe5HSQ",
+          "component_group": "chassis_underside",
+          "specific_component": "suspension_bump_stop_removed_samples",
+          "stage": "rubber_recreation_measurement",
+          "media_id": "20260529_223605_gp_CklgF0cQ",
           "matched_tokens": []
         }
       },
@@ -84781,15 +85410,39 @@ window.J40_DASHBOARD_DATA = {
         "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
-        "envelope_3d_mm": "60 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
-        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
-        "holes_or_inserts": "Same flat-plate/base/contact rules as long stop; right-front vehicle measurements control final contact offset",
-        "material": "Same compound family as BUMP-60010-LONG bonded/captive to coated flat steel plate",
+        "spec": "Same sample-style molded rubber construction as the long stop, applied to the right-front station.",
+        "envelope_3d_mm": "60 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+        "edge_profile": "Same rounded/tapered sample family, reduced height only if right-front height is confirmed",
+        "holes_or_inserts": "Same rubber-through-hole, fixture/channel, base, and contact rules as long stop; right-front vehicle measurements control final contact offset",
+        "material": "Same compound family as BUMP-60010-LONG; reproduce any sample-proven insert/fixture retention method",
         "release_state": "first_article_required",
-        "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-        "notes": "User will provide the one flat metal backing/saddle piece with the request. Right-front short height is externally controlled by 48304-60020 references.",
+        "photo_refs": "20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA|20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg",
+        "notes": "Use the same May 29 sample-style construction. Right-front short height remains externally controlled by 48304-60020 references until vehicle full-bump checks confirm final release.",
         "evidence_images": [
+          {
+            "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:36:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223605_gp_CklgF0cQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "22:37:01",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "suspension_bump_stop_removed_samples",
+            "stage": "rubber_recreation_measurement",
+            "media_id": "20260529_223701_gp_wYPExcAA",
+            "matched_tokens": []
+          },
           {
             "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -84816,15 +85469,15 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-          "captured_date": "2026-05-02",
-          "captured_time": "00:42:22",
+          "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+          "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-29",
+          "captured_date": "2026-05-29",
+          "captured_time": "22:36:05",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_parts_recreation_samples",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260502_004222_gp_PKRe5HSQ",
+          "component_group": "chassis_underside",
+          "specific_component": "suspension_bump_stop_removed_samples",
+          "stage": "rubber_recreation_measurement",
+          "media_id": "20260529_223605_gp_CklgF0cQ",
           "matched_tokens": []
         }
       },
@@ -84927,7 +85580,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "mechanical_baseline",
-        "count": 6
+        "count": 5
       },
       {
         "workstream": "body_chassis",
@@ -84967,6 +85620,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "interior_weatherproofing",
+        "count": 1
+      },
+      {
+        "workstream": "radiator",
         "count": 1
       },
       {
@@ -90299,8 +90956,441 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "chassis_wire_brush_status_20260501",
         "notes": "",
-        "evidence_ref": "photo_import_20260501T202346|docs_chassis_status_20260501_wire_brush_and_cleaning|docs_chassis_prep_next_steps_20260501|photo_inventory_2026-05-01",
-        "evidence_images": [],
+        "evidence_ref": "photo_import_20260501T202346|docs_chassis_status_20260501_wire_brush_and_cleaning|docs_chassis_prep_next_steps_20260501|photo_inventory_2026-05-01|20260501_193533_gp_sDErdvGw|20260501_193542_gp_U7e0J0iA|20260501_193554_gp_EU4bmOlg|20260501_193603_gp_9zd2mD6w|20260501_193609_gp_f5PDj87Q|20260501_193618_gp_EFciJdww|20260501_193624_gp_ocLE7cMQ|20260501_193755_gp_cuaY6sgg|20260501_193805_gp_VgTc8wYQ|20260501_193811_gp_uv8kwbxw|20260501_193826_gp_Qhz88J4g|20260501_193833_gp_Slpuijyg|20260501_193841_gp_ZwpHFiMA|20260501_193847_gp_uHWO7Bdw|20260501_193856_gp_M78kWBlQ|20260501_193904_gp_GgWYRulA|20260501_193915_gp_lII00tCA|20260501_193924_gp_KK717O7g|20260501_193935_gp_FPwZZHZA|20260501_193944_gp_smzZc4nw|20260501_193953_gp_XQtysikA|20260501_193958_gp_yhnX0HAQ|20260501_194006_gp_AU1Lw9GQ|20260501_194014_gp_nWBXweFA|20260501_194026_gp_gjPjhxdA|20260501_194041_gp_6zRIFJUw|20260501_194056_gp_p1erpz8w|20260501_194101_gp_3xKjQSsQ|20260501_194106_gp_e4CETkdg|20260501_194137_gp_S1qvWECw|20260501_194144_gp_P5PojIhw|20260501_194151_gp_NqgqjDEQ|20260501_194203_gp_9nXwy2XQ|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260501_194322_gp_XuRtjN4w",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_193533_gp_sDErdvGw.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:35:33",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193533_gp_sDErdvGw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193542_gp_U7e0J0iA.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:35:42",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193542_gp_U7e0J0iA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193554_gp_EU4bmOlg.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:35:54",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193554_gp_EU4bmOlg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193603_gp_9zd2mD6w.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:36:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193603_gp_9zd2mD6w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193609_gp_f5PDj87Q.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:36:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193609_gp_f5PDj87Q",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193618_gp_EFciJdww.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:36:18",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193618_gp_EFciJdww",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193624_gp_ocLE7cMQ.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:36:24",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193624_gp_ocLE7cMQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193755_gp_cuaY6sgg.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:37:55",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193755_gp_cuaY6sgg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193805_gp_VgTc8wYQ.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193805_gp_VgTc8wYQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193811_gp_uv8kwbxw.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:11",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193811_gp_uv8kwbxw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193826_gp_Qhz88J4g.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:26",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193826_gp_Qhz88J4g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193833_gp_Slpuijyg.jpg",
+            "caption": "Frame Rail Body Mount And Crossmember Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:33",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_crossmember_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193833_gp_Slpuijyg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193841_gp_ZwpHFiMA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:41",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193841_gp_ZwpHFiMA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193847_gp_uHWO7Bdw.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:47",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193847_gp_uHWO7Bdw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193856_gp_M78kWBlQ.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:38:56",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193856_gp_M78kWBlQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193904_gp_GgWYRulA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:04",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193904_gp_GgWYRulA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193915_gp_lII00tCA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:15",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193915_gp_lII00tCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193924_gp_KK717O7g.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:24",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193924_gp_KK717O7g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193935_gp_FPwZZHZA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:35",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193935_gp_FPwZZHZA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193944_gp_smzZc4nw.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:44",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193944_gp_smzZc4nw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193953_gp_XQtysikA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:53",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193953_gp_XQtysikA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_193958_gp_yhnX0HAQ.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:39:58",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_193958_gp_yhnX0HAQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194006_gp_AU1Lw9GQ.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:40:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194006_gp_AU1Lw9GQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194014_gp_nWBXweFA.jpg",
+            "caption": "Front Frame Horns Bumper And Steering Area \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:40:14",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_steering_area",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194014_gp_nWBXweFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194026_gp_gjPjhxdA.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:40:26",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194026_gp_gjPjhxdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194041_gp_6zRIFJUw.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:40:41",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194041_gp_6zRIFJUw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194056_gp_p1erpz8w.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:40:56",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194056_gp_p1erpz8w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194101_gp_3xKjQSsQ.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:41:01",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194101_gp_3xKjQSsQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194106_gp_e4CETkdg.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:41:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194106_gp_e4CETkdg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194137_gp_S1qvWECw.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:41:37",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194137_gp_S1qvWECw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194144_gp_P5PojIhw.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:41:44",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194144_gp_P5PojIhw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194151_gp_NqgqjDEQ.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:41:51",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194151_gp_NqgqjDEQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194203_gp_9nXwy2XQ.jpg",
+            "caption": "Rear Mid Frame Rail And Hard Line Detail \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:42:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_mid_frame_rail_and_hard_line_detail",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194203_gp_9nXwy2XQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:13",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194313_gp_lfUqLibA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          }
+        ],
         "links": [
           {
             "url": "../../data/manual/component_jobs.csv",
@@ -94078,57 +95168,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "component_job:engine_radiator_recore_or_new_20260529",
-        "title": "engine_radiator_recore_or_new_20260529",
-        "workstream": "mechanical_baseline",
-        "task_type": "photo_measurement",
-        "priority": "P1",
-        "timing": "now",
-        "status": "amir_refurb_video_gate",
-        "location": "Amir runner / Master Radiators / Kor Tech Radiator / local Lahore radiator shop",
-        "action": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit",
-        "data_needed": "Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "engine_radiator_recore_or_new_20260529",
-        "notes": "",
-        "evidence_ref": "user_update_2026-05-29_do_what_best_engine_radiator|user_update_2026-05-29_extra_fabricated_leg_bad_install|user_update_2026-05-29_aluminium_radiator_adapter_contingency|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|radiator_cap_current_car_crop_20260503|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "22:00:04",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_220004_gp_C9oYiYmA",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:front_wings",
         "title": "front_wings",
         "workstream": "paint_refinish",
@@ -94454,6 +95493,213 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "roof_gutter_and_window_channel",
             "stage": "hardware_refinish",
             "media_id": "20260517_193305_gp_o1a6StwA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:engine_radiator_recore_or_new_20260529",
+        "title": "engine_radiator_recore_or_new_20260529",
+        "workstream": "radiator",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "amir_refurb_video_gate",
+        "location": "Amir runner / Master Radiators / Kor Tech Radiator / local Lahore radiator shop",
+        "action": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit",
+        "data_needed": "Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "engine_radiator_recore_or_new_20260529",
+        "notes": "",
+        "evidence_ref": "user_update_2026-05-29_do_what_best_engine_radiator|user_update_2026-05-29_extra_fabricated_leg_bad_install|user_update_2026-05-29_aluminium_radiator_adapter_contingency|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260529_205200_gp_8G6ZKKEQ|20260529_205224_gp_aQYpMUyg|20260529_205232_gp_eHbRrOaw|20260529_205240_gp_C2r8CMBQ|20260529_214147_gp_4gfuofYQ|20260529_230003_gp_rliSbRjA|20260529_230009_gp_BLX8dSWA|20260529_230017_gp_L23OD4nw|20260529_230022_gp_BLo8HLwg|20260529_230035_gp_5oB8otKw|20260529_230040_gp_B5P2K9FA|20260529_230044_gp_I9psm6Dw|20260529_230050_gp_ZqjySFHg|radiator_cap_current_car_crop_20260503|docs/radiator-workstream.md|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_205200_gp_8G6ZKKEQ.jpg",
+            "caption": "Engine Radiator Sample Measurement \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "20:52:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_sample_measurement",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_205200_gp_8G6ZKKEQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_205224_gp_aQYpMUyg.jpg",
+            "caption": "Engine Radiator Sample Measurement \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "20:52:24",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_sample_measurement",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_205224_gp_aQYpMUyg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_205232_gp_eHbRrOaw.jpg",
+            "caption": "Engine Radiator Sample Measurement \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "20:52:32",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_sample_measurement",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_205232_gp_eHbRrOaw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_205240_gp_C2r8CMBQ.jpg",
+            "caption": "Engine Radiator Sample Measurement \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "20:52:40",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_sample_measurement",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_205240_gp_C2r8CMBQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_214147_gp_4gfuofYQ.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "21:41:47",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260529_214147_gp_4gfuofYQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230003_gp_rliSbRjA.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:03",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230003_gp_rliSbRjA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230009_gp_BLX8dSWA.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:09",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230009_gp_BLX8dSWA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230017_gp_L23OD4nw.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230017_gp_L23OD4nw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230022_gp_BLo8HLwg.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:22",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230022_gp_BLo8HLwg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230035_gp_5oB8otKw.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:35",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230035_gp_5oB8otKw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230040_gp_B5P2K9FA.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:40",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230040_gp_B5P2K9FA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230044_gp_I9psm6Dw.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230044_gp_I9psm6Dw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260529_230050_gp_ZqjySFHg.jpg",
+            "caption": "Engine Radiator Condition Closeups \u00b7 Mechanical Baseline \u00b7 2026-05-29",
+            "captured_date": "2026-05-29",
+            "captured_time": "23:00:50",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_radiator_condition_closeups",
+            "stage": "mechanical_baseline",
+            "media_id": "20260529_230050_gp_ZqjySFHg",
             "matched_tokens": []
           }
         ],
@@ -99343,6 +100589,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+          "product_link": "",
           "notes": "User confirmed on 2026-05-08 that the rivets have arrived; follow-up photos show two boxes of yellow-zinc knurled flat-head internally threaded rivet nuts/nutserts. Visible box label text: Product Name Rivetnut, size M6, Made in China, manufacturer Shenzhen Shangsha Trading Co. Ltd. User clarified on 2026-05-09 that the two boxes are M6 and M8. These are not plain pop/blind rivets. Treat as the M6 and M8 rivnut/nutsert portion of Fastener Kit C now on hand; exact counts, grip ranges, and payment amount still need physical receipt check before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99382,6 +100629,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-04_clear_bleed_hose_order|gmail_msg_19df408f0591f0c1|gmail_msg_19e021d05ca94bc4|gmail_order_242508745080938|gmail_delivery_242508745080938",
+          "product_link": "",
           "notes": "User reported paid Daraz order 2026-05-04: 2meter Clear PVC Hose Tube pipe ID7mm OD10mm clear transparent vinyl tubing water pipe; color family Multicolor; qty 1; PKR 227; seller GoBazaar.pk; seller to pack. Temporary brake bleeding hose only; not for permanent fuel, coolant, vacuum, or hydraulic pressure service. | Gmail Daraz order 242508745080938 confirmed on 2026-05-05 and delivery email confirms delivered on 2026-05-07; use only as temporary clear brake bleed hose, not as permanent fuel, coolant, vacuum, or pressure line.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99422,6 +100670,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471|gmail_msg_19df71b7d1c14a42|gmail_msg_19df81f2b45fe7de|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived",
+          "product_link": "",
           "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03 for DOT 3 brake fluid x6, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. Shipment emails on 2026-05-05 conflicted on Lion DOT-3 x6 versus STP BRAKE FLUID DOT 3 x6, and the user confirmed on 2026-05-08 that the replacement/substitution was agreed and the brake fluid has arrived. Treat as received DOT 3 stock for brake/clutch bleeding; before use, verify six sealed fresh bottles, actual brand/label, DOT 3 rating, and unbroken caps.",
           "links": [
             {
@@ -99475,6 +100724,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+          "product_link": "",
           "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99514,6 +100764,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-04_nitrile_gloves_order|gmail_msg_19df408f2cc8e480|gmail_order_242508745280938|user_update_2026-05-14_nitrile_gloves_received",
+          "product_link": "",
           "notes": "User reported paid order 2026-05-04: Safety Black Disposable Nitrile gloves 100 PCs Box; color family Black; size L; qty 1; PKR 2333. Brake/cleaning PPE for hydraulic opening prep. Gmail Daraz order 242508745280938 confirmed on 2026-05-05 for Safety Black Disposable Nitrile gloves 100 PCs Box x1. Earlier Gmail checks found the order confirmation but no separate delivery email; user physical receipt on 2026-05-14 supersedes the delivery-email gap. Close delivery as received; receipt check remains: confirm box count, size L, nitrile/powder-free marking if present, and no torn packaging before brake-fluid work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99553,6 +100804,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00489|fj40-00276|fj40-00282",
+          "product_link": "",
           "notes": "Workbook inventory shows braided sleeve stock already received/paid: 8, 10, 14, 16, and 20 mm sleeve entries in 5m lengths. Loom-pipe planning basis for this J40/HJ47: do not buy extra 8mm split pipe. If physical stock count is short after final routing, top-up only 12mm x 10m for cabin/light branches and 16mm x 6m for under-bonnet/cabin trunk branches; existing 14/16/20mm 5m sleeve stock is already counted.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99593,6 +100845,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|user_update_2026-04-22_wiring_built|gmail_msg_19d045e33582292a|gmail_msg_19d3e56a9e4a3991|gmail_order_3070027285627489|gmail_package_PK015187314R|photo_20260424_part_electric_wires_aliexpress_3070027285627489.jpg",
+          "product_link": "",
           "notes": "Received AliExpress order 3070027285627489: 4 AWG silicone cable, red/black, 1m each (approx 21 mm2). Workbook also contains 1.0/1.5/2.5 mm2 roll inventory; physically count before buying more wire.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99632,6 +100885,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
+          "product_link": "",
           "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99671,6 +100925,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|gmail_msg_19d0ecbd9da965f4|gmail_order_1599|workbook_parts_row_76_received_y_paid_y|photo_20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg|user_update_2026-05-01_h4_connectors_received",
+          "product_link": "",
           "notes": "User has 4 H4 ceramic headlight connectors received. Only 2 are required for the headlights, leaving 2 spares; no additional H4 connectors are required.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99710,6 +100965,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+          "product_link": "https://www.aliexpress.com/i/1005008318051049.html",
           "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
           "links": [
             {
@@ -99754,6 +101010,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (14mm and 16mm, 5m lengths). No additional medium sleeve required until physical count shows a gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99794,6 +101051,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (20mm, 5m lengths). No additional large sleeve required until physical count shows a gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99834,6 +101092,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+          "product_link": "",
           "notes": "Covered by received workbook sleeve inventory (8mm and 10mm, 5m lengths). User update 2026-05-04: drop separate 8mm split wiring pipe from required list; no additional small sleeve required until physical count shows a confirmed gap.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99874,6 +101133,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19e10f7bc91fba44|gmail_msg_19e161ddf7117e32|gmail_order_3070231697837489|user_update_2026-05-13_relay_pack_arrived",
+          "product_link": "",
           "notes": "Gmail AliExpress emails show order 3070231697837489 for 4/5 Pin 4P/5P 40A waterproof car relay, selected 5PIN 40A DC12V x6, order total PKR 8196. May 10 awaiting-confirmation and May 11 review emails indicate the order was marked complete, but physical receipt is not yet user-confirmed; check x6 relay count, 12V coil marking, 5-pin layout, terminal quality, seals, and whether these belong in electrical relay stock before closing as received. | User confirmed on 2026-05-13 that the waterproof 5-pin 40A DC12V relay pack x6 has physically arrived. Close delivery as received; bench/fit check remains: confirm all 6 relays, 12V coil marking, 5-pin changeover layout, terminal retention, socket seals, and allocation into electrical relay stock.",
           "links": [],
           "estimated_hardware_type": "",
@@ -99913,6 +101173,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+          "product_link": "",
           "notes": "Marked received per user confirmation; fitment/condition can be validated during installation",
           "links": [],
           "estimated_hardware_type": "",
@@ -99952,6 +101213,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19de62bcdb1080ff|gmail_order_242365766580938|gmail_msg_19e021d07abdead1|gmail_delivery_242365766580938",
+          "product_link": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1",
           "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-06 to 2026-05-08. Three 10 pc clamp packs at PKR 750 each; subtotal PKR 2250 plus PKR 140 shipping. Supplemental clamp stock only; does not close fuel-rated hose/clamp kit until sizes and clamp type are validated. Product links: https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766580938 delivered on 2026-05-07; keep as supplemental clamp stock until sizes, rolled edges, and fuel/coolant suitability are checked.",
           "links": [
             {
@@ -100017,6 +101279,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "installed",
           "evidence_ref": "akber_khan-00753",
+          "product_link": "",
           "notes": "New battery is already purchased and installed. Gross PKR 20,000 retained.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100056,6 +101319,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+          "product_link": "",
           "notes": "Marked received per user confirmation; compatibility/usability can be validated during install planning",
           "links": [],
           "estimated_hardware_type": "",
@@ -100095,6 +101359,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed",
+          "product_link": "",
           "notes": "Listed with Y in the user purchase list",
           "links": [],
           "estimated_hardware_type": "",
@@ -100134,6 +101399,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+          "product_link": "",
           "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. User confirmed on 2026-05-08 that the main suspension kit has arrived minus the separate front damper pair. Treat the main shipment as received, but do not close suspension procurement or start final installation until the separate 24635FE front damper pair is also physically received. Receipt check main shipment against expected kit contents: 24636FE rear dampers, TOY001B front springs, TOY002B rear springs, 415UBK U-bolt kits, 713UK bush kit, 343LH/343RH shackles, 3523 steering damper, 346 pins/shackles as applicable, hardware, labels, and transit damage.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100173,6 +101439,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|user_update_2026-05-04_wood_parts_ordered|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf|user_update_2026-05-17_wooden_blocks_received",
+          "product_link": "",
           "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands. User update 2026-05-04: wood set ordered; merchant name, wood type, price, expected pickup/delivery date, and receipt/photos still need capture. | Gmail recheck 2026-05-12 found no matching hardwood cribbing / wedge chock receipt, shipment, or delivery email before the 2026-05-17 received update. | User update 2026-05-17: wooden cribbing blocks and wedge chocks marked received; price/payment, merchant name, wood type, receipt, and received-condition photos still need capture.",
           "links": [
             {
@@ -100243,6 +101510,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_3m_prep_solvent_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+          "product_link": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
           "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797 | Gmail recheck on 2026-05-08 found the Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the pre solvent / remaining Autohub orders have arrived; user reconfirmed item-level receipt on 2026-05-11. Receipt check: confirm one sealed 1 gallon 3M Prep Solvent-70 can, intact label, and no leaks or dents. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
           "links": [
             {
@@ -100300,6 +101568,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|user_shelf_image_2026-05-02_raptor_liner_visible",
+          "product_link": "",
           "notes": "Listed by the user as still needed; chat says they are required immediately after floor repair and primer | Marked on hand from shelf image on 2026-05-02: Raptor liner bottles visible. Treat as bedliner/protective coating already acquired, not as primer.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100339,6 +101608,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+          "product_link": "",
           "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100378,6 +101648,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-04-22_evaporust_delivered|INV-0031",
+          "product_link": "",
           "notes": "Marked delivered per user confirmation; this was previously tracked as quote/pending against INV-0031",
           "links": [],
           "estimated_hardware_type": "",
@@ -100417,6 +101688,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+          "product_link": "",
           "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100456,6 +101728,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_2x_u9000_cavity_wax_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+          "product_link": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
           "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302 | Gmail recheck on 2026-05-08 found the shared Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the cavity wax / remaining Autohub orders have arrived; user reconfirmed receipt of 2x U9000/U900 cavity wax on 2026-05-11. Receipt check: confirm two HB Body U900/U9000 400ml cans, usable nozzles/wands, intact labels, and no leakage. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
           "links": [
             {
@@ -100513,6 +101786,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938|gmail_msg_19dfcaab0866f88d|gmail_delivery_242366749280938",
+          "product_link": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
           "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg | Gmail Daraz delivery email confirms order 242366749280938 delivered on 2026-05-06; still verify base/hardener tins, mix ratio, thinner, and recoat window before primer use.",
           "links": [
             {
@@ -100570,6 +101844,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-04-24_wirecup_schedule_parts_update|gmail_msg_19dbbce97316517e|gmail_order_241938794080938|photo_20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938.jpg|gmail_msg_19dd86b5fbb89675|gmail_delivery_241938794080938",
+          "product_link": "",
           "notes": "Daraz order 241938794080938 was delivered per Gmail delivery confirmation dated 2026-04-29. Original order matched exact item + quantity (2) and total PKR 2188.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100609,6 +101884,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00820|gmail_msg_19d0ef66d4eacdee|gmail_msg_19d48a1d197405a3|gmail_order_1761310|photo_20260424_part_seam_sealer_autohub_order_1761310.jpg|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|user_update_2026-05-08_all_remaining_autohub_orders_arrived",
+          "product_link": "",
           "notes": "Listed by the user as still needed; later product research includes an Autohub seam-sealer link. Gmail Autohub order 1761310 confirms 3x HB BODY 999 seam sealer and shipment status. | Payment marked paid per user confirmation on 2026-05-02; keep delivery/quantity reconciliation tied to Autohub order 1761310 and physical tube count. | Gmail recheck on 2026-05-08 found the 2026-04-01 Autohub shipment email for order 1761310 but no delivery confirmation; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that all remaining Autohub orders have arrived; mark the three HB BODY 999 seam sealer cartridges received. Receipt check: confirm tube count, labels, expiry/softness, and nozzle condition before body sealing.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100648,6 +101924,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100687,6 +101964,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-08_chassis_raptor_masking_consumables_needed|user_update_2026-05-08_chassis_masking_tape_wipes_purchased|user_update_2026-05-11_ultra_cloth_masking_tape_received|gmail_msg_19e07889134f5cb5|gmail_order_1762336|gmail_msg_19e0c5bf0525eaf0|blueex_tracking_AhubRider|bank_alert_19e0788ae42cca42|gmail_msg_19e078ab2e5df2f2|autostore_order_80788",
+          "product_link": "",
           "notes": "User update 2026-05-08: Raptor selected as the chassis exposed finish after primer/sealer; extra brushes are on hand and strip/flap discs are angle-grinder consumables with existing recorded stock to count before rebuying. Order before solvent wipe/primer/Raptor: solvent-safe lint-free wipes and automotive masking tape; avoid shedding cloth, newspaper where solvent/wet coating can bleed, and plugs/tape that leave residue. User update 2026-05-11 confirms Ultra-cloth and masking tape received. Masking plugs were not separately ordered: on-hand received rubber grommet assortment may be used as temporary masking for open unthreaded holes only after fit and solvent/residue check. Use sacrificial bolts for threaded holes; do not use grommets for brake/fuel line ends, threaded holes, ground pads, or body-mount bearing faces. Buy separate tapered plugs only if grommet fit/check fails. | Gmail recheck 2026-05-12 ties the received masking pack to Autohub order 1762336 / order no. 62336 for 3M Blue High Performance Ultra Soft Cloth x4 at PKR 4600 plus PKR 249 shipping, total PKR 4849, and Autostore order #80788 for green masking tape 24 mm x2 and 48 mm x1 at PKR 2000 plus PKR 250 shipping, COD total PKR 2250. User already confirmed Ultra-cloth and masking tape received on 2026-05-11.",
           "links": [],
           "estimated_hardware_type": "",
@@ -100727,6 +102005,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00489|gmail_msg_19d0f6304329edde|gmail_msg_19d9ff896e3406a1|gmail_order_3070231697777489|gmail_package_PK001206015RS|photo_20260424_part_dielectric_grease_aliexpress_order_3070231697777489.jpg",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx. Gmail AliExpress evidence shows dielectric grease order 3070231697777489 shipped and package PK001206015RS delivered.",
           "links": [],
           "estimated_hardware_type": "",
@@ -101932,6 +103211,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "workbook_tools#row_41|user_update_2026-05-08_ar_co2_canister_arrived",
+          "product_link": "",
           "notes": "Imported from J40_Costs.xlsx Tools row 41: Ar-CO2 Canister from pakoxygen, PKR 42362, previously paid in the workbook. User confirmed on 2026-05-08 that the Ar-CO2 canister has arrived. Receipt/use check: confirm gas mix, cylinder test date, ownership/deposit paperwork, valve/regulator compatibility, and leak check before MIG welding.",
           "links": [],
           "estimated_hardware_type": "",
@@ -101972,6 +103252,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached. User confirmed received on 2026-05-02.",
           "links": [
             {
@@ -102029,6 +103310,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
           "links": [
             {
@@ -102086,6 +103368,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
           "links": [
             {
@@ -102142,6 +103425,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dcd4fe9fa2eeee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-08_weld_helmet_arrived",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 8710. Review email 2026-04-27 references this exact item; local receipt photo is still not attached. | User confirmed on 2026-05-08 that the welding helmet has arrived. Receipt check: test auto-darkening, sensitivity/delay controls, battery/solar condition, headband adjustment, and lens/cover condition before welding.",
           "links": [
             {
@@ -102199,6 +103483,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-04_daraz_pipe_bender_order|gmail_msg_19df408ef23d48b1|gmail_msg_19e021d0af9de008|gmail_order_242508744880938|gmail_delivery_242508744880938",
+          "product_link": "",
           "notes": "User reported paid Daraz order 2026-05-04: Pipe Bender 180 tube bender, ratchet tubing bender for 3/8 in, 1/4 in, and 5/16 in copper, brass, aluminum, and thin steel pipes; qty 1; PKR 4499; seller Megatronics pk (Peshawar); seller to pack. This covers 1/4, 5/16, and 3/8 in bending only and is not the primary 4.75 mm / 3/16 in brake-line bender. Cutter, deburrer/reamer, and brake-line flaring tool/dies remain unconfirmed for in-house hard-line fabrication. | Gmail Daraz order 242508744880938 confirmed on 2026-05-05 and delivery email confirms delivered on 2026-05-07; receipt check still needs smooth ratchet action and correct fit for 1/4, 5/16, and 3/8 in tube.",
           "links": [
             {
@@ -102262,6 +103547,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg|user_update_2026-05-02_electrical_test_kit_received",
+          "product_link": "",
           "notes": "AliExpress order 3070231697877489 was ordered and arrived; prior 2026-04-27 uncertainty closed from Gmail/order evidence plus user confirmation on 2026-05-02.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102301,6 +103587,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00346|user_update_2026-05-08_breaker_bar_arrived",
+          "product_link": "",
           "notes": "Listed by the user as still needed; breaker bar was part of the minimum tool list discussed around steering work | User confirmed on 2026-05-08 that the breaker bar has arrived. Amount/payment proof is still not captured; verify 1/2 inch drive, approximately 24 inch length, and head/pivot condition before using on seized fasteners.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102340,6 +103627,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19de62bcd140fa41|gmail_order_242365766980938|gmail_msg_19df29a687866969|gmail_delivery_242365766980938",
+          "product_link": "https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1",
           "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Two 3 pc mini wire brush sets at PKR 198 each; subtotal PKR 396 plus PKR 165 shipping. Product link: https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766980938 delivered on 2026-05-04: two 3 pc mini wire brush sets.",
           "links": [
             {
@@ -102397,6 +103685,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-04_bench_vice_ordered|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|user_update_2026-05-12_bench_vice_arrived",
+          "product_link": "",
           "notes": "User reported the bench vice is now ordered on 2026-05-04. Amount, seller, order number, and delivery ETA are not yet captured. Receipt check must confirm bolt-down mounting lugs, 100-150 mm jaws, smooth screw action, uncracked casting, and clean/replaceable jaws before installation on the workbench. | ToolsMart order TM25550 confirmed on 2026-05-04 includes Harden 4 inch Heavy Duty Table Vice 100mm / 9 Kg x1 at PKR 14970. Receipt check must confirm bolt-down lugs, 100 mm jaws, smooth screw action, uncracked casting, and clean jaws before mounting. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | User confirmed on 2026-05-12 that the bench vice has arrived. Receipt/use check: confirm bolt-down lugs, 100 mm jaws, smooth screw action, no cracked casting, clean jaw faces, and secure mounting before use.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102436,6 +103725,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00793|akber_khan-00805|akber_khan-00806|akber_khan-00879",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list; chat shows it was needed before strip-down, was already on the way on 2026-03-17, budget guidance was 2-4k, and arrival was confirmed on 2026-03-18",
           "links": [],
           "estimated_hardware_type": "",
@@ -102475,6 +103765,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19de62cf4907c036|gmail_order_1762191|autohub_order_62191|gmail_msg_19df21e3bb334d7e|blueex_tracking_AhubRider|user_update_2026-05-08_all_remaining_autohub_orders_arrived",
+          "product_link": "https://autohub.pk/products/tire-side-wall-cleaning-brush | https://autohub.pk/products/detailing-brush-large-16-no | https://autohub.pk/products/5-pcs-detailing-brush-set",
           "notes": "Autohub order 1762191 / order number 62191 confirmed 2026-05-02: Tire Side Wall Cleaning Brush x1, Detailing Brush Large x1, 5 Pcs Detailing Brush Set x1; subtotal PKR 2339 plus PKR 249 shipping. Links: https://autohub.pk/products/tire-side-wall-cleaning-brush ; https://autohub.pk/products/detailing-brush-large-16-no ; https://autohub.pk/products/5-pcs-detailing-brush-set | Autohub shipment email on 2026-05-04 says order 1762191 shipped via Blue-ex/AhubRider with tire sidewall brush x1, detailing brush large x1, and 5 pc detailing brush set x1; no delivery email found as of 2026-05-08. | Gmail recheck on 2026-05-08 found no newer delivery email after the 2026-05-04 Blue-ex/AhubRider shipment notice; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that all remaining Autohub orders have arrived; mark the brush bundle received. Receipt check: confirm tire sidewall brush x1, large detailing brush x1, and 5 pc detailing brush set x1.",
           "links": [
             {
@@ -102527,6 +103818,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938|gmail_delivery_243331393680938|gmail_msg_19e3fbe04164503a",
+          "product_link": "",
           "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs. | Gmail delivery email 2026-05-19 (message 19e3fbe04164503a) says Daraz order 243331393680938 was successfully delivered; close delivery tracking, with only normal PPE fit/use check remaining.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102566,6 +103858,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00395|akber_khan-00671|fj40-00286|akber_khan-00879",
+          "product_link": "",
           "notes": "Seeded as received; a later tool basket shows a Harden Pro Grease Gun 500CC at Rs.4,790 and tools later arrived, but the exact paid amount is still left open pending order proof",
           "links": [
             {
@@ -102622,6 +103915,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -102679,6 +103973,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -102734,6 +104029,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -102791,6 +104087,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -102848,6 +104145,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938|gmail_delivery_243331393480938|gmail_msg_19e4a66145e96435",
+          "product_link": "",
           "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work. | Gmail delivery email 2026-05-21 (message 19e4a66145e96435) says Daraz order 243331393480938 was successfully delivered; close delivery tracking, with only normal goggles fit/seal check remaining.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102887,6 +104185,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19de62bcddc3ff3a|gmail_order_242365766080938|gmail_msg_19df29a6c4e6d2b8|gmail_delivery_242365766080938",
+          "product_link": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
           "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Safety protective glasses x1; subtotal PKR 599 plus PKR 165 shipping. Product link: https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766080938 delivered on 2026-05-04: safety goggles/protective glasses x1.",
           "links": [
             {
@@ -102944,6 +104243,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00663|akber_khan-00664",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list; tap set was later discussed as useful for stripped bolts Vendor backfilled from J40_Costs.xlsx.",
           "links": [],
           "estimated_hardware_type": "",
@@ -102983,6 +104283,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00395",
+          "product_link": "",
           "notes": "Marked with x in the user purchase list; torque wrench was explicitly called out in tool planning chat Vendor backfilled from J40_Costs.xlsx.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103023,6 +104324,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+          "product_link": "",
           "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping. User confirmed received on 2026-05-02.",
           "links": [
             {
@@ -103080,6 +104382,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -103137,6 +104440,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+          "product_link": "",
           "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping. User confirmed received on 2026-05-02.",
           "links": [
             {
@@ -103194,6 +104498,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "gmail_msg_19de632df983464c|gmail_order_26242|gmail_msg_19df7037b90900e9|gmail_msg_19df70507d0e285b|gmail_msg_19e021b1cc8e488d|gmail_msg_19e02377924a0205|tracking_postex_22019070003782|tracking_leopard_KI7534590491|gmail_msg_19e0c33c40b6c4da|gmail_delivery_26242",
+          "product_link": "https://powerhouseexpress.com.pk/products/ingco-wb30501-wire-cup-brush",
           "notes": "Order #26242 confirmed 2026-05-02 for 3x INGCO WB30501 wire cup brushes; subtotal PKR 765 plus PKR 300 shipping. Product link: https://powerhouseexpress.com.pk/products/ingco-wb30501-wire-cup-brush | Powerhouse order 26242 was updated on 2026-05-05: INGCO WB30501 x3 removed and Total TAC33021 Wire Cup Brush x3 substituted; final total remains PKR 1065 after the seller update. Shipment emails on 2026-05-07 list PostEx 22019070003782 and later Leopard KI7534590491; track latest Leopard first and verify the actual TAC33021 brushes on receipt. | Gmail recheck on 2026-05-08 found no delivery confirmation after the 2026-05-07 shipment notices; latest carrier evidence lists Leopard KI7534590491 after PostEx 22019070003782, so track Leopard first and verify TAC33021 x3 on receipt. | Gmail recheck 2026-05-12 found Powerhouse delivery email 2026-05-09 for order #26242: Leopard KI7534590491 delivered with Total TAC33021 Wire Cup Brush x3. Receipt check remains actual TAC33021 x3 and usable brush condition before chassis cleaning.",
           "links": [
             {
@@ -103238,6 +104543,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-04_total_tdp133501_drill_press_order|user_update_2026-05-12_drill_press_arrived",
+          "product_link": "",
           "notes": "User reported paid order 2026-05-04: Total TDP133501 Drill Press, 350W, 13 mm, quantity 1. Amount, seller, order number, and delivery ETA not yet captured. Receipt check must confirm straight spindle/no visible wobble, locking table, depth stop, and safe 220-240 V power before use. | Gmail recheck 2026-05-12 found no matching TDP133501 / drill-press receipt, shipment, or delivery email; keep pending and use seller/order details from user if available. | User confirmed on 2026-05-12 that the drill press has arrived. Receipt/use check: confirm straight spindle/no visible wobble, locking table, depth stop, chuck/key, power lead/earth, and safe 220-240 V operation before use.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103278,6 +104584,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; part of the PKR 94510 order for chassis lift/clean/suspension work. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -103334,6 +104641,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -103390,6 +104698,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "received",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+          "product_link": "",
           "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
           "links": [
             {
@@ -103482,6 +104791,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -103521,6 +104831,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+          "product_link": "",
           "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -103561,6 +104872,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
           "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "product_link": "",
           "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103600,6 +104912,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "product_link": "",
           "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
           "links": [
             {
@@ -103662,6 +104975,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the brake hard-line tube as procured by Amir from the new shopping list: 25 ft of 3/16 in zinc-coated/galvanised steel brake tube. Receipt/spec check still gates use: confirm automotive brake-rated 4.75 mm / 3/16 in coated Bundy/equivalent tube, 25 ft minimum, no bare copper/plumbing/compression tube, and ability to form correct double/inverted flares before fabrication. Fittings, flare nuts, unions, and final bends remain old-sample/thread/seat controlled.",
           "links": [
             {
@@ -103724,6 +105038,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
           "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "product_link": "",
           "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103763,6 +105078,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos|user_update_2026-05-28_procured_by_amir|user_update_2026-05-28_procured_by_amir_addendum",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the Drum Brake Hardware Kit - 1960-1980 Toyota Land Cruiser - Centric 116971-05110530 as procured by Amir. Treat as a received candidate only until kit contents and fit are checked against the opened rear drums: spring layout, hold-down pin/cup/spring dimensions, adjuster handedness/style, parking-brake lever clips, shoe width/web holes, and side-to-side symmetry. Do not install mismatched or incomplete hardware. | User addendum 2026-05-28 also listed this Centric kit explicitly.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103802,6 +105118,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+          "product_link": "",
           "notes": "User addendum 2026-05-28: mark Brighto Extreme Paint Remover 3L as procured by Amir. Receipt/use check: confirm sealed 3 L Brighto Extreme Paint Remover container, correct product, no leaks, and compatible use area before applying. Keep away from rubber, wiring, seals, brake/fuel components, and finished paint unless deliberately stripping; use PPE and ventilation.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103841,6 +105158,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark 1 L Raptor hardener as procured by Amir. Receipt check: confirm it is genuine/compatible U-POL Raptor hardener/activator for the existing Raptor coating, sealed, in-date, correct volume, and not a generic 2K hardener for a different product before mixing or coating.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103880,6 +105198,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -103919,6 +105238,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "product_link": "",
           "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
           "links": [],
           "estimated_hardware_type": "",
@@ -103959,6 +105279,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "product_link": "",
           "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -103998,6 +105319,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|user_update_2026-05-27_millat_order_now_coming_suppress_duplicate|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the standalone star/lock washer pack as procured by Amir: M6 x120, M8 x60, M10 x30. The user message wrote M2-; this is treated as the existing M10 grounding-washer line, not a new M2 size. This overrides the 2026-05-27 duplicate suppression against Millat Kit D; keep both rows and reconcile physical counts after receipt. Receipt check: confirm plated or stainless star/serrated lock washers, counts, and clean metal-biting form before grounding use.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104037,6 +105359,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
+          "product_link": "",
           "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104078,6 +105401,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+          "product_link": "",
           "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104153,6 +105477,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 2920. Fulfillment/review emails exist but local receipt photo is still not attached. | Gmail recheck 2026-05-12 found TM25240 order confirmation plus post-fulfillment review emails for the same order, but no item-specific delivery email for this line; because other TM25240 welding lines are received, physically verify this line on the shelf before rebuying or using.",
           "links": [
             {
@@ -104210,6 +105535,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "product_link": "",
           "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 3 line total PKR 1440. Fulfillment/review emails exist but local receipt photo is still not attached. | Gmail recheck 2026-05-12 found TM25240 order confirmation plus post-fulfillment review emails for the same order, but no item-specific delivery email for this line; because other TM25240 welding lines are received, physically verify this line on the shelf before rebuying or using.",
           "links": [
             {
@@ -104267,6 +105593,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734",
+          "product_link": "",
           "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Gmail review request 2026-05-21 (message 19e4ba9b39b2d734) says ToolsMart fulfilled order TM25550 16 days earlier. Treat as received-candidate and physically verify the cutter is on shelf and fits 4.75/6/8 mm tube before use.",
           "links": [
             {
@@ -104330,6 +105657,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+          "product_link": "",
           "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
           "links": [
             {
@@ -104387,6 +105715,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "product_link": "",
           "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes PARD Double Flaring and Cutting Tool Set - 3/16 inch to 5/8 inch x1 at PKR 18210. This is a second/replacement PARD flaring-kit candidate relative to the older TM25550 received-candidate row. Do not release brake/clutch hard-line fabrication until the delivered kit is physically checked on scrap 4.75 mm / 3/16 in brake tube and proves a proper 45-degree double/inverted flare without slipping, cracking, or making only ISO bubble/single flares. If the earlier TM25550 kit is already on hand and usable, treat this new order as duplicate stock/return candidate after receipt.",
           "links": [
             {
@@ -104449,6 +105778,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734|gmail_fulfillment_review_TM25550_pard|gmail_msg_19e2cb8173b05a0e",
+          "product_link": "",
           "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Same TM25550 post-fulfillment Gmail evidence now makes this a received-candidate, not a delivery-tracking item. Physically verify the PARD kit is present and that its dies can make the required 4.75 mm / 3/16 in double/inverted flare before releasing brake-line fabrication. | Gmail review request 2026-05-15 (message 19e2cb8173b05a0e) is item-specific to the PARD Double Flaring and Cutting Tool Set and says ToolsMart fulfilled order TM25550 10 days earlier.",
           "links": [
             {
@@ -104509,6 +105839,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29|web_toolsmart_hhccb0210",
+          "product_link": "",
           "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes Ingco Heavy duty cable cutter 250mm HHCCB0210 x1 at PKR 2130. Intended for electrical cable sizing and clean cable cuts during loom reset; receipt check jaw alignment, cutting edge condition, pivot/action, handle insulation/grip condition, and do not use it on hardened steel.",
           "links": [
             {
@@ -104566,6 +105897,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_update_2026-05-27_amir_sledge_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+          "product_link": "",
           "notes": "User clarification 2026-05-28: mark the 3 lb sledge / club hammer as procured by Amir. Receipt check: confirm actual 3 lb head, tight head-to-handle fit, solid handle, no cracks, and usable striking faces before using on seized suspension/brake hardware.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104605,6 +105937,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19de62bcd3dd7207|gmail_order_242365766280938",
+          "product_link": "https://www.daraz.pk/products/i2171955-s1269424717.html?urlFlag=true&mp=1",
           "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Quantity 2 at PKR 1878 each; subtotal PKR 3756 plus PKR 140 shipping. Product link: https://www.daraz.pk/products/i2171955-s1269424717.html?urlFlag=true&mp=1 | Gmail recheck on 2026-05-08 found only the Daraz confirmation for order 242365766280938 and no delivery email; keep pending and overdue against the 2026-05-07 delivery window until the two knotted cup brushes are physically received. | Gmail recheck 2026-05-12 found only Daraz order 242365766280938 confirmation and no delivery email; keep pending and overdue against the 2026-05-07 delivery window until the two knotted cup brushes are physically received.",
           "links": [
             {
@@ -104649,6 +105982,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e69fea16f42834|gmail_order_3073111533377489",
+          "product_link": "",
           "notes": "AliExpress order 3073111533377489 confirmed 2026-05-27: email line shows 5PCS NITTO Male Coupling Air ... x1 with order total PKR 3072. Product title is truncated in the email, so receipt/order-page check must confirm exact Nitto/Japanese profile, thread type such as 1/4 BSP or NPT, male/female style, quantity 5, seal method, and leak-free fit with the compressor hose, hand gun, and air tools before treating these as final adapters.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104689,6 +106023,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122|user_update_2026-05-27_air_compressor_received",
+          "product_link": "",
           "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports. | User update 2026-05-27: air compressor is now on hand. Keep this aggregate order partially open until the remaining Almiraj bundle lines are counted/confirmed: AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, and HPWR12008 pressure washer. Original AH1151 hose may be small-bore/type-limited; separate ToolsMart TM25776 Licota Nitto-type hose remains the impact-hose follow-up.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104729,6 +106064,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "unknown",
           "delivery_status": "needs_confirmation",
           "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+          "product_link": "",
           "notes": "User addendum 2026-05-28: mark blow torch as procured by Amir for heating a seized suspension pin. Receipt/safety check: confirm torch type, included or compatible gas canister, sound hose/valve/ignition if fitted, no leaks, and suitable heat output. Use only with fire extinguisher ready; protect fuel/brake lines, rubber bushes, wiring, paint stripper residue, and coatings; heat surrounding bracket/sleeve cautiously rather than overheating spring steel.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104769,6 +106105,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6616c37064cd5|gmail_order_242670698180938|bank_alert_19e6618015d8106b",
+          "product_link": "",
           "notes": "Daraz order 242670698180938 confirmed 2026-05-27 from Tz electronic: Led Flood Light 100W IP66 Water proof x1, item PKR 4999 plus PKR 170 shipping, total PKR 5169, paid by card. Standard Chartered alert at 2026-05-27 02:00 PKT shows combined Daraz charge PKR 8387 for this order plus order 242670698380938. Delivery window 2026-05-30 to 2026-06-07. Workshop/site lighting only; this does not change vehicle exterior lighting requirements. Receipt check: confirm 100W marking, IP66-style housing/gland, intact lens, plug/lead condition, safe 220-240 V operation, and useful work-area beam before relying on it for night/paint inspection work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104808,6 +106145,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "product_link": "",
           "notes": "Daraz order 242670698380938 confirmed 2026-05-27 includes NEW SALE 8mm 10mm Thread Auxiliary Side Handle For Angle Grinder Grinding Machine Tools x1 at PKR 999. Allocated amount PKR 1002 equals line subtotal plus prorated net shipping/saving from the mixed order. Candidate replacement/accessory only: on receipt, verify M8/M10 thread compatibility with the actual grinder, thread engagement, handle stiffness, heat resistance, and secure fit before using during grinding or wire-brush work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104847,6 +106185,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "product_link": "",
           "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes a second LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. Together with TM25776 this means two Licota Nitto hose rolls are pending if both orders are fulfilled. Receipt check: confirm hose ID/OD if marked, Nitto coupler compatibility, no cuts/leaks, and actual 1/2 inch impact-wrench performance against the compressor.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104886,6 +106225,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "product_link": "",
           "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 inch IRON x1 at PKR 1390. Standard Chartered alert at 2026-05-27 20:13 PKT shows ToolsMart charge PKR 24320 for the full TM25805 order. Receipt check: confirm Nitto/Japanese quick-coupler profile, 1/4 thread type, fit to the compressor hose/tools, no air leaks, and do not treat this adapter alone as solving small-bore hose airflow.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104926,6 +106266,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+          "product_link": "",
           "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners. | Air compressor is now on hand per user update 2026-05-27, but this replacement hose stays pending until ToolsMart order TM25776 is received and the Nitto-type couplers, hose bore, leaks, and actual impact-wrench performance are checked against the compressor and tools.",
           "links": [],
           "estimated_hardware_type": "",
@@ -104966,6 +106307,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "gmail_msg_19e69fe615478540|gmail_order_243775543180938|bank_alert_19e69febe5ca7e55",
+          "product_link": "",
           "notes": "Daraz order 243775543180938 confirmed 2026-05-27 23:11 from Buy More Save More Store: M8 Thread Angle Grinder Handle Thickened Anti-Vibration Reduce Damping Side Handle For 100 Type Angle Grinder Accessories x1, item PKR 1184 plus PKR 170 shipping, total PKR 1354, paid by card. Delivery window 2026-06-05 to 2026-06-11. This is a separate M8-only handle candidate from the earlier 8/10 mm Daraz handle row; on receipt verify M8 thread, 100-type grinder compatibility, thread engagement, handle stiffness, and secure fit before grinding.",
           "links": [],
           "estimated_hardware_type": "",
@@ -105516,6 +106858,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
           "links": [],
           "estimated_hardware_type": "R-clips/hairpins/split pins/circlips/small cotters (6-15 visible, likely 10)",
@@ -105555,6 +106898,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
           "links": [],
           "estimated_hardware_type": "Specialty brackets retainer plates captive-nut plates and straps (8-18 visible, likely 12)",
@@ -105594,6 +106938,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv|user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+          "product_link": "",
           "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. User photos on 2026-05-08 confirm yellow-zinc knurled flat-head threaded rivet nuts/nutserts, with visible label text reading Product Name: Rivetnut and size M6. User clarified on 2026-05-09 that the two boxes are M6 and M8, so treat M6 and M8 rivnut/nutsert portions as received unless physical receipt check contradicts this. Remaining open scope is captive/clip/speed nuts and weld nuts: original workbook basis M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20. Use new yellow-zinc or equivalent plated hardware; do not reuse rusted spring clips or captive nuts. Confirm final split against old samples before purchase.",
           "links": [],
           "estimated_hardware_type": "Captive/clip/speed nuts plus rivnut/weld-nut candidates (22-40 visible, likely 30)",
@@ -105633,6 +106978,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
+          "product_link": "",
           "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
           "links": [],
           "estimated_hardware_type": "",
@@ -105673,6 +107019,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "product_link": "",
           "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
           "links": [
             {
@@ -105735,6 +107082,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+          "product_link": "",
           "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
           "links": [],
           "estimated_hardware_type": "",
@@ -105774,6 +107122,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "product_link": "",
           "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
           "links": [
             {
@@ -105834,6 +107183,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-19|RP-CLUTCH-001",
+          "product_link": "",
           "notes": "Use the shared 4.75 mm brake/clutch tube stock for the clutch hard line, then buy new hydraulic fittings after clutch master, clutch flex hose, and slave cylinder port threads/seats are identified. Final route must clear drivetrain movement and be clipped like the brake lines.",
           "links": [
             {
@@ -105896,6 +107246,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-18|RP-CLUTCH-001",
+          "product_link": "",
           "notes": "Replace with one new complete brake/clutch-rated crimped hydraulic hose assembly. Copy old free length, end threads/seats, bracket grooves, and movement clearance. No generic rubber hose, roll hose, or used clutch hose.",
           "links": [],
           "estimated_hardware_type": "",
@@ -105936,6 +107287,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
           "links": [],
           "estimated_hardware_type": "",
@@ -105975,6 +107327,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106014,6 +107367,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [
             {
@@ -106074,6 +107428,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106113,6 +107468,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
+          "product_link": "",
           "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
           "links": [
             {
@@ -106174,6 +107530,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260514_100647_gp_foDr3ymA",
+          "product_link": "",
           "notes": "BASELINE MUST RECREATE during the suspension/brake access window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance using the May 14 working Toyota-style double/inverted flare basis, but only after bare flare face, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [
             {
@@ -106234,6 +107591,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "product_link": "",
           "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106273,6 +107631,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+          "product_link": "",
           "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106312,6 +107671,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "product_link": "",
           "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106352,6 +107712,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "product_link": "",
           "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
           "links": [
             {
@@ -106572,6 +107933,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "product_link": "",
           "notes": "Track under body-mount rubbers/rubber ordering, not generic fastener buy. Spec ready: thin slotted steel shims 1/2/3/5mm x12 each plus thick control spacers 5/10/15mm x4 each; preserve originals by station and release after body station height measurement.",
           "links": [
             {
@@ -106792,6 +108154,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements only and keep originals as templates.",
           "links": [],
           "estimated_hardware_type": "Rubber/plastic bumpers knobs isolators and small spacers (8-18 visible, likely 12)",
@@ -106831,6 +108194,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
           "links": [],
           "estimated_hardware_type": "Shoulder/pivot bolts cylindrical sleeves stand-off spacers and stepped pins (10-24 visible, likely 16)",
@@ -106870,6 +108234,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "product_link": "",
           "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106909,6 +108274,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+          "product_link": "",
           "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106948,6 +108314,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "product_link": "",
           "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -106988,6 +108355,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "product_link": "",
           "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107028,6 +108396,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+          "product_link": "",
           "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107068,6 +108437,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_seed|akber_khan-00803",
+          "product_link": "",
           "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
           "links": [],
           "estimated_hardware_type": "",
@@ -107107,6 +108477,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+          "product_link": "",
           "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107146,6 +108517,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "product_link": "",
           "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
           "links": [],
           "estimated_hardware_type": "Self-tapping/trim/countersunk screws and cup/finishing washers (35-70 visible, likely 50)",
@@ -107185,6 +108557,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_seed|akber_khan-00803",
+          "product_link": "",
           "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
           "links": [],
           "estimated_hardware_type": "",
@@ -107224,6 +108597,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "product_link": "",
           "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107263,6 +108637,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_seed|akber_khan-00430|akber_khan-00798|akber_khan-00803",
+          "product_link": "",
           "notes": "Deferred until body is welded, sealed, and dry. Estimate for useful full-cabin J40 coverage: buy 3.5-4.0 m2 / 38-43 sqft of 3mm butyl/aluminium damping sheet, equivalent to 10 large 460x800mm sheets minimum; use 12 sheets if also covering doors, tailgate, or hardtop side panels. This is not a tub-off buy.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107302,6 +108677,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107341,6 +108717,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107380,6 +108757,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107419,6 +108797,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [
             {
@@ -107484,6 +108863,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
           "links": [
             {
@@ -107544,6 +108924,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107583,6 +108964,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107622,6 +109004,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107662,6 +109045,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107701,6 +109085,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107740,6 +109125,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107780,6 +109166,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107819,6 +109206,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
+          "product_link": "",
           "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107858,6 +109246,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "product_link": "",
           "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
           "links": [
             {
@@ -107918,6 +109307,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+          "product_link": "",
           "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107958,6 +109348,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+          "product_link": "",
           "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
           "links": [],
           "estimated_hardware_type": "",
@@ -107998,6 +109389,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "product_link": "",
           "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
           "links": [],
           "estimated_hardware_type": "",
@@ -108037,6 +109429,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+          "product_link": "",
           "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
           "links": [],
           "estimated_hardware_type": "",
@@ -108076,6 +109469,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
           "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
           "links": [
             {
@@ -108124,6 +109518,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
           "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
           "links": [],
           "estimated_hardware_type": "",
@@ -108163,6 +109558,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
           "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
           "links": [],
           "estimated_hardware_type": "",
@@ -108202,6 +109598,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
+          "product_link": "",
           "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
           "links": [
             {
@@ -108265,6 +109662,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
+          "product_link": "",
           "notes": "Scout local market: buy a stable workbench/toolbench with steel frame or heavy hardwood top, minimum 1200 x 600 mm working surface, 850-950 mm working height, flat top, and enough structure to bolt down a vice and pillar drill.",
           "links": [],
           "estimated_hardware_type": "",
@@ -108314,6 +109712,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+        "product_link": "",
         "notes": "User addendum 2026-05-28: mark Brighto Extreme Paint Remover 3L as procured by Amir. Receipt/use check: confirm sealed 3 L Brighto Extreme Paint Remover container, correct product, no leaks, and compatible use area before applying. Keep away from rubber, wiring, seals, brake/fuel components, and finished paint unless deliberately stripping; use PPE and ventilation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108353,6 +109752,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108393,6 +109793,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -108432,6 +109833,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|user_update_2026-05-27_millat_order_now_coming_suppress_duplicate|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the standalone star/lock washer pack as procured by Amir: M6 x120, M8 x60, M10 x30. The user message wrote M2-; this is treated as the existing M10 grounding-washer line, not a new M2 size. This overrides the 2026-05-27 duplicate suppression against Millat Kit D; keep both rows and reconcile physical counts after receipt. Receipt check: confirm plated or stainless star/serrated lock washers, counts, and clean metal-biting form before grounding use.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108471,6 +109873,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
         "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108510,6 +109913,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "product_link": "",
         "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
         "links": [
           {
@@ -108572,6 +109976,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "",
         "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
+        "product_link": "",
         "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108613,6 +110018,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -108652,6 +110058,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the brake hard-line tube as procured by Amir from the new shopping list: 25 ft of 3/16 in zinc-coated/galvanised steel brake tube. Receipt/spec check still gates use: confirm automotive brake-rated 4.75 mm / 3/16 in coated Bundy/equivalent tube, 25 ft minimum, no bare copper/plumbing/compression tube, and ability to form correct double/inverted flares before fabrication. Fittings, flare nuts, unions, and final bends remain old-sample/thread/seat controlled.",
         "links": [
           {
@@ -108714,6 +110121,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+        "product_link": "",
         "notes": "Separate shipment tracker for the Ironman 24635FE front damper pair x2. User confirmed on 2026-05-08 that the main suspension kit has arrived without this front damper pair, so this row remains pending delivery. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2, bushes, washers, sleeves/spacers, labels, and body/eye clearance on receipt before closing suspension procurement or final installation. | Gmail recheck 2026-05-12 found no matching Ironman / 24635FE / front-damper shipment or delivery email; keep the separate 24635FE front damper pair pending.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108754,6 +110162,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
         "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "product_link": "",
         "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108793,6 +110202,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos|user_update_2026-05-28_procured_by_amir|user_update_2026-05-28_procured_by_amir_addendum",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the Drum Brake Hardware Kit - 1960-1980 Toyota Land Cruiser - Centric 116971-05110530 as procured by Amir. Treat as a received candidate only until kit contents and fit are checked against the opened rear drums: spring layout, hold-down pin/cup/spring dimensions, adjuster handedness/style, parking-brake lever clips, shoe width/web holes, and side-to-side symmetry. Do not install mismatched or incomplete hardware. | User addendum 2026-05-28 also listed this Centric kit explicitly.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108832,6 +110242,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "product_link": "",
         "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
@@ -108871,6 +110282,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902|gmail_msg_19e0722af30bb1af",
+        "product_link": "",
         "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180)",
@@ -108946,6 +110358,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark 1 L Raptor hardener as procured by Amir. Receipt check: confirm it is genuine/compatible U-POL Raptor hardener/activator for the existing Raptor coating, sealed, in-date, correct volume, and not a generic 2K hardener for a different product before mixing or coating.",
         "links": [],
         "estimated_hardware_type": "",
@@ -108985,6 +110398,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_update_2026-05-27_amir_sledge_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-28_procured_by_amir",
+        "product_link": "",
         "notes": "User clarification 2026-05-28: mark the 3 lb sledge / club hammer as procured by Amir. Receipt check: confirm actual 3 lb head, tight head-to-handle fit, solid handle, no cracks, and usable striking faces before using on seized suspension/brake hardware.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109024,6 +110438,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19de62bcd3dd7207|gmail_order_242365766280938",
+        "product_link": "https://www.daraz.pk/products/i2171955-s1269424717.html?urlFlag=true&mp=1",
         "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Quantity 2 at PKR 1878 each; subtotal PKR 3756 plus PKR 140 shipping. Product link: https://www.daraz.pk/products/i2171955-s1269424717.html?urlFlag=true&mp=1 | Gmail recheck on 2026-05-08 found only the Daraz confirmation for order 242365766280938 and no delivery email; keep pending and overdue against the 2026-05-07 delivery window until the two knotted cup brushes are physically received. | Gmail recheck 2026-05-12 found only Daraz order 242365766280938 confirmation and no delivery email; keep pending and overdue against the 2026-05-07 delivery window until the two knotted cup brushes are physically received.",
         "links": [
           {
@@ -109068,6 +110483,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e69fea16f42834|gmail_order_3073111533377489",
+        "product_link": "",
         "notes": "AliExpress order 3073111533377489 confirmed 2026-05-27: email line shows 5PCS NITTO Male Coupling Air ... x1 with order total PKR 3072. Product title is truncated in the email, so receipt/order-page check must confirm exact Nitto/Japanese profile, thread type such as 1/4 BSP or NPT, male/female style, quantity 5, seal method, and leak-free fit with the compressor hose, hand gun, and air tools before treating these as final adapters.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109108,6 +110524,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122|user_update_2026-05-27_air_compressor_received",
+        "product_link": "",
         "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports. | User update 2026-05-27: air compressor is now on hand. Keep this aggregate order partially open until the remaining Almiraj bundle lines are counted/confirmed: AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, and HPWR12008 pressure washer. Original AH1151 hose may be small-bore/type-limited; separate ToolsMart TM25776 Licota Nitto-type hose remains the impact-hose follow-up.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109148,6 +110565,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "user_update_2026-05-28_procured_by_amir_addendum",
+        "product_link": "",
         "notes": "User addendum 2026-05-28: mark blow torch as procured by Amir for heating a seized suspension pin. Receipt/safety check: confirm torch type, included or compatible gas canister, sound hose/valve/ignition if fitted, no leaks, and suitable heat output. Use only with fire extinguisher ready; protect fuel/brake lines, rubber bushes, wiring, paint stripper residue, and coatings; heat surrounding bracket/sleeve cautiously rather than overheating spring steel.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109188,6 +110606,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6616c37064cd5|gmail_order_242670698180938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698180938 confirmed 2026-05-27 from Tz electronic: Led Flood Light 100W IP66 Water proof x1, item PKR 4999 plus PKR 170 shipping, total PKR 5169, paid by card. Standard Chartered alert at 2026-05-27 02:00 PKT shows combined Daraz charge PKR 8387 for this order plus order 242670698380938. Delivery window 2026-05-30 to 2026-06-07. Workshop/site lighting only; this does not change vehicle exterior lighting requirements. Receipt check: confirm 100W marking, IP66-style housing/gland, intact lens, plug/lead condition, safe 220-240 V operation, and useful work-area beam before relying on it for night/paint inspection work.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109227,6 +110646,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "product_link": "",
         "notes": "Daraz order 242670698380938 confirmed 2026-05-27 includes NEW SALE 8mm 10mm Thread Auxiliary Side Handle For Angle Grinder Grinding Machine Tools x1 at PKR 999. Allocated amount PKR 1002 equals line subtotal plus prorated net shipping/saving from the mixed order. Candidate replacement/accessory only: on receipt, verify M8/M10 thread compatibility with the actual grinder, thread engagement, handle stiffness, heat resistance, and secure fit before using during grinding or wire-brush work.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109301,6 +110721,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 2920. Fulfillment/review emails exist but local receipt photo is still not attached. | Gmail recheck 2026-05-12 found TM25240 order confirmation plus post-fulfillment review emails for the same order, but no item-specific delivery email for this line; because other TM25240 welding lines are received, physically verify this line on the shelf before rebuying or using.",
         "links": [
           {
@@ -109358,6 +110779,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734",
+        "product_link": "",
         "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Gmail review request 2026-05-21 (message 19e4ba9b39b2d734) says ToolsMart fulfilled order TM25550 16 days earlier. Treat as received-candidate and physically verify the cutter is on shelf and fits 4.75/6/8 mm tube before use.",
         "links": [
           {
@@ -109421,6 +110843,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29|web_toolsmart_hhccb0210",
+        "product_link": "",
         "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes Ingco Heavy duty cable cutter 250mm HHCCB0210 x1 at PKR 2130. Intended for electrical cable sizing and clean cable cuts during loom reset; receipt check jaw alignment, cutting edge condition, pivot/action, handle insulation/grip condition, and do not use it on hardened steel.",
         "links": [
           {
@@ -109478,6 +110901,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "product_link": "",
         "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes a second LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. Together with TM25776 this means two Licota Nitto hose rolls are pending if both orders are fulfilled. Receipt check: confirm hose ID/OD if marked, Nitto coupler compatibility, no cuts/leaks, and actual 1/2 inch impact-wrench performance against the compressor.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109517,6 +110941,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "product_link": "",
         "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 inch IRON x1 at PKR 1390. Standard Chartered alert at 2026-05-27 20:13 PKT shows ToolsMart charge PKR 24320 for the full TM25805 order. Receipt check: confirm Nitto/Japanese quick-coupler profile, 1/4 thread type, fit to the compressor hose/tools, no air leaks, and do not treat this adapter alone as solving small-bore hose airflow.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109557,6 +110982,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+        "product_link": "",
         "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners. | Air compressor is now on hand per user update 2026-05-27, but this replacement hose stays pending until ToolsMart order TM25776 is received and the Nitto-type couplers, hose bore, leaks, and actual impact-wrench performance are checked against the compressor and tools.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109597,6 +111023,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e69fe615478540|gmail_order_243775543180938|bank_alert_19e69febe5ca7e55",
+        "product_link": "",
         "notes": "Daraz order 243775543180938 confirmed 2026-05-27 23:11 from Buy More Save More Store: M8 Thread Angle Grinder Handle Thickened Anti-Vibration Reduce Damping Side Handle For 100 Type Angle Grinder Accessories x1, item PKR 1184 plus PKR 170 shipping, total PKR 1354, paid by card. Delivery window 2026-06-05 to 2026-06-11. This is a separate M8-only handle candidate from the earlier 8/10 mm Daraz handle row; on receipt verify M8 thread, 100-type grinder compatibility, thread engagement, handle stiffness, and secure fit before grinding.",
         "links": [],
         "estimated_hardware_type": "",
@@ -109636,6 +111063,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+        "product_link": "",
         "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
         "links": [
           {
@@ -109693,6 +111121,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "product_link": "",
         "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes PARD Double Flaring and Cutting Tool Set - 3/16 inch to 5/8 inch x1 at PKR 18210. This is a second/replacement PARD flaring-kit candidate relative to the older TM25550 received-candidate row. Do not release brake/clutch hard-line fabrication until the delivered kit is physically checked on scrap 4.75 mm / 3/16 in brake tube and proves a proper 45-degree double/inverted flare without slipping, cracking, or making only ISO bubble/single flares. If the earlier TM25550 kit is already on hand and usable, treat this new order as duplicate stock/return candidate after receipt.",
         "links": [
           {
@@ -109755,6 +111184,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734|gmail_fulfillment_review_TM25550_pard|gmail_msg_19e2cb8173b05a0e",
+        "product_link": "",
         "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Same TM25550 post-fulfillment Gmail evidence now makes this a received-candidate, not a delivery-tracking item. Physically verify the PARD kit is present and that its dies can make the required 4.75 mm / 3/16 in double/inverted flare before releasing brake-line fabrication. | Gmail review request 2026-05-15 (message 19e2cb8173b05a0e) is item-specific to the PARD Double Flaring and Cutting Tool Set and says ToolsMart fulfilled order TM25550 10 days earlier.",
         "links": [
           {
@@ -109815,6 +111245,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "needs_confirmation",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 3 line total PKR 1440. Fulfillment/review emails exist but local receipt photo is still not attached. | Gmail recheck 2026-05-12 found TM25240 order confirmation plus post-fulfillment review emails for the same order, but no item-specific delivery email for this line; because other TM25240 welding lines are received, physically verify this line on the shelf before rebuying or using.",
         "links": [
           {
@@ -111037,6 +112468,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00489|fj40-00276|fj40-00282",
+        "product_link": "",
         "notes": "Workbook inventory shows braided sleeve stock already received/paid: 8, 10, 14, 16, and 20 mm sleeve entries in 5m lengths. Loom-pipe planning basis for this J40/HJ47: do not buy extra 8mm split pipe. If physical stock count is short after final routing, top-up only 12mm x 10m for cabin/light branches and 16mm x 6m for under-bonnet/cabin trunk branches; existing 14/16/20mm 5m sleeve stock is already counted.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111200,6 +112632,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|user_update_2026-04-22_wiring_built|gmail_msg_19d045e33582292a|gmail_msg_19d3e56a9e4a3991|gmail_order_3070027285627489|gmail_package_PK015187314R|photo_20260424_part_electric_wires_aliexpress_3070027285627489.jpg",
+        "product_link": "",
         "notes": "Received AliExpress order 3070027285627489: 4 AWG silicone cable, red/black, 1m each (approx 21 mm2). Workbook also contains 1.0/1.5/2.5 mm2 roll inventory; physically count before buying more wire.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111239,6 +112672,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
+        "product_link": "",
         "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111313,6 +112747,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers|gmail_msg_19d0ecbd9da965f4|gmail_order_1599|workbook_parts_row_76_received_y_paid_y|photo_20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg|user_update_2026-05-01_h4_connectors_received",
+        "product_link": "",
         "notes": "User has 4 H4 ceramic headlight connectors received. Only 2 are required for the headlights, leaving 2 spares; no additional H4 connectors are required.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111597,6 +113032,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "installed",
         "evidence_ref": "akber_khan-00753",
+        "product_link": "",
         "notes": "New battery is already purchased and installed. Gross PKR 20,000 retained.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111741,6 +113177,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+        "product_link": "https://www.aliexpress.com/i/1005008318051049.html",
         "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
         "links": [
           {
@@ -111865,6 +113302,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+        "product_link": "",
         "notes": "Covered by received workbook sleeve inventory (14mm and 16mm, 5m lengths). No additional medium sleeve required until physical count shows a gap.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111905,6 +113343,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+        "product_link": "",
         "notes": "Covered by received workbook sleeve inventory (20mm, 5m lengths). No additional large sleeve required until physical count shows a gap.",
         "links": [],
         "estimated_hardware_type": "",
@@ -111945,6 +113384,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_image_2026-03-21_electrical_leftovers",
+        "product_link": "",
         "notes": "Covered by received workbook sleeve inventory (8mm and 10mm, 5m lengths). User update 2026-05-04: drop separate 8mm split wiring pipe from required list; no additional small sleeve required until physical count shows a confirmed gap.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112056,6 +113496,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19e10f7bc91fba44|gmail_msg_19e161ddf7117e32|gmail_order_3070231697837489|user_update_2026-05-13_relay_pack_arrived",
+        "product_link": "",
         "notes": "Gmail AliExpress emails show order 3070231697837489 for 4/5 Pin 4P/5P 40A waterproof car relay, selected 5PIN 40A DC12V x6, order total PKR 8196. May 10 awaiting-confirmation and May 11 review emails indicate the order was marked complete, but physical receipt is not yet user-confirmed; check x6 relay count, 12V coil marking, 5-pin layout, terminal quality, seals, and whether these belong in electrical relay stock before closing as received. | User confirmed on 2026-05-13 that the waterproof 5-pin 40A DC12V relay pack x6 has physically arrived. Close delivery as received; bench/fit check remains: confirm all 6 relays, 12V coil marking, 5-pin changeover layout, terminal retention, socket seals, and allocation into electrical relay stock.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112202,6 +113643,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-04_clear_bleed_hose_order|gmail_msg_19df408f0591f0c1|gmail_msg_19e021d05ca94bc4|gmail_order_242508745080938|gmail_delivery_242508745080938",
+        "product_link": "",
         "notes": "User reported paid Daraz order 2026-05-04: 2meter Clear PVC Hose Tube pipe ID7mm OD10mm clear transparent vinyl tubing water pipe; color family Multicolor; qty 1; PKR 227; seller GoBazaar.pk; seller to pack. Temporary brake bleeding hose only; not for permanent fuel, coolant, vacuum, or hydraulic pressure service. | Gmail Daraz order 242508745080938 confirmed on 2026-05-05 and delivery email confirms delivered on 2026-05-07; use only as temporary clear brake bleed hose, not as permanent fuel, coolant, vacuum, or pressure line.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112242,6 +113684,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+        "product_link": "",
         "notes": "Marked received per user confirmation; fitment/condition can be validated during installation",
         "links": [],
         "estimated_hardware_type": "",
@@ -112281,6 +113724,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471|gmail_msg_19df71b7d1c14a42|gmail_msg_19df81f2b45fe7de|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived",
+        "product_link": "",
         "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03 for DOT 3 brake fluid x6, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. Shipment emails on 2026-05-05 conflicted on Lion DOT-3 x6 versus STP BRAKE FLUID DOT 3 x6, and the user confirmed on 2026-05-08 that the replacement/substitution was agreed and the brake fluid has arrived. Treat as received DOT 3 stock for brake/clutch bleeding; before use, verify six sealed fresh bottles, actual brand/label, DOT 3 rating, and unbroken caps.",
         "links": [
           {
@@ -112334,6 +113778,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+        "product_link": "",
         "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112373,6 +113818,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list|user_update_2026-05-08_ironman_main_kit_arrived_front_dampers_pending",
+        "product_link": "",
         "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. User confirmed on 2026-05-08 that the main suspension kit has arrived minus the separate front damper pair. Treat the main shipment as received, but do not close suspension procurement or start final installation until the separate 24635FE front damper pair is also physically received. Receipt check main shipment against expected kit contents: 24636FE rear dampers, TOY001B front springs, TOY002B rear springs, 415UBK U-bolt kits, 713UK bush kit, 343LH/343RH shackles, 3523 steering damper, 346 pins/shackles as applicable, hardware, labels, and transit damage.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112412,6 +113858,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19de62bcdb1080ff|gmail_order_242365766580938|gmail_msg_19e021d07abdead1|gmail_delivery_242365766580938",
+        "product_link": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 | https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1",
         "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-06 to 2026-05-08. Three 10 pc clamp packs at PKR 750 each; subtotal PKR 2250 plus PKR 140 shipping. Supplemental clamp stock only; does not close fuel-rated hose/clamp kit until sizes and clamp type are validated. Product links: https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629988.html?urlFlag=true&mp=1 ; https://www.daraz.pk/products/i645582306-s3011629989.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766580938 delivered on 2026-05-07; keep as supplemental clamp stock until sizes, rolled edges, and fuel/coolant suitability are checked.",
         "links": [
           {
@@ -112513,6 +113960,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-04_nitrile_gloves_order|gmail_msg_19df408f2cc8e480|gmail_order_242508745280938|user_update_2026-05-14_nitrile_gloves_received",
+        "product_link": "",
         "notes": "User reported paid order 2026-05-04: Safety Black Disposable Nitrile gloves 100 PCs Box; color family Black; size L; qty 1; PKR 2333. Brake/cleaning PPE for hydraulic opening prep. Gmail Daraz order 242508745280938 confirmed on 2026-05-05 for Safety Black Disposable Nitrile gloves 100 PCs Box x1. Earlier Gmail checks found the order confirmation but no separate delivery email; user physical receipt on 2026-05-14 supersedes the delivery-email gap. Close delivery as received; receipt check remains: confirm box count, size L, nitrile/powder-free marking if present, and no torn packaging before brake-fluid work.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112552,6 +114000,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|user_update_2026-05-04_wood_parts_ordered|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf|user_update_2026-05-17_wooden_blocks_received",
+        "product_link": "",
         "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands. User update 2026-05-04: wood set ordered; merchant name, wood type, price, expected pickup/delivery date, and receipt/photos still need capture. | Gmail recheck 2026-05-12 found no matching hardwood cribbing / wedge chock receipt, shipment, or delivery email before the 2026-05-17 received update. | User update 2026-05-17: wooden cribbing blocks and wedge chocks marked received; price/payment, merchant name, wood type, receipt, and received-condition photos still need capture.",
         "links": [
           {
@@ -112622,6 +114071,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-04-20_photo_review",
+        "product_link": "",
         "notes": "Marked received per user confirmation; compatibility/usability can be validated during install planning",
         "links": [],
         "estimated_hardware_type": "",
@@ -112801,6 +114251,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+        "product_link": "",
         "notes": "User confirmed on 2026-05-08 that the rivets have arrived; follow-up photos show two boxes of yellow-zinc knurled flat-head internally threaded rivet nuts/nutserts. Visible box label text: Product Name Rivetnut, size M6, Made in China, manufacturer Shenzhen Shangsha Trading Co. Ltd. User clarified on 2026-05-09 that the two boxes are M6 and M8. These are not plain pop/blind rivets. Treat as the M6 and M8 rivnut/nutsert portion of Fastener Kit C now on hand; exact counts, grip ranges, and payment amount still need physical receipt check before installation.",
         "links": [],
         "estimated_hardware_type": "",
@@ -112875,6 +114326,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed",
+        "product_link": "",
         "notes": "Listed with Y in the user purchase list",
         "links": [],
         "estimated_hardware_type": "",
@@ -113439,6 +114891,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_3m_prep_solvent_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+        "product_link": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
         "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797 | Gmail recheck on 2026-05-08 found the Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the pre solvent / remaining Autohub orders have arrived; user reconfirmed item-level receipt on 2026-05-11. Receipt check: confirm one sealed 1 gallon 3M Prep Solvent-70 can, intact label, and no leaks or dents. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
         "links": [
           {
@@ -113496,6 +114949,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|user_shelf_image_2026-05-02_raptor_liner_visible",
+        "product_link": "",
         "notes": "Listed by the user as still needed; chat says they are required immediately after floor repair and primer | Marked on hand from shelf image on 2026-05-02: Raptor liner bottles visible. Treat as bedliner/protective coating already acquired, not as primer.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113535,6 +114989,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-08_chassis_raptor_masking_consumables_needed|user_update_2026-05-08_chassis_masking_tape_wipes_purchased|user_update_2026-05-11_ultra_cloth_masking_tape_received|gmail_msg_19e07889134f5cb5|gmail_order_1762336|gmail_msg_19e0c5bf0525eaf0|blueex_tracking_AhubRider|bank_alert_19e0788ae42cca42|gmail_msg_19e078ab2e5df2f2|autostore_order_80788",
+        "product_link": "",
         "notes": "User update 2026-05-08: Raptor selected as the chassis exposed finish after primer/sealer; extra brushes are on hand and strip/flap discs are angle-grinder consumables with existing recorded stock to count before rebuying. Order before solvent wipe/primer/Raptor: solvent-safe lint-free wipes and automotive masking tape; avoid shedding cloth, newspaper where solvent/wet coating can bleed, and plugs/tape that leave residue. User update 2026-05-11 confirms Ultra-cloth and masking tape received. Masking plugs were not separately ordered: on-hand received rubber grommet assortment may be used as temporary masking for open unthreaded holes only after fit and solvent/residue check. Use sacrificial bolts for threaded holes; do not use grommets for brake/fuel line ends, threaded holes, ground pads, or body-mount bearing faces. Buy separate tapered plugs only if grommet fit/check fails. | Gmail recheck 2026-05-12 ties the received masking pack to Autohub order 1762336 / order no. 62336 for 3M Blue High Performance Ultra Soft Cloth x4 at PKR 4600 plus PKR 249 shipping, total PKR 4849, and Autostore order #80788 for green masking tape 24 mm x2 and 48 mm x1 at PKR 2000 plus PKR 250 shipping, COD total PKR 2250. User already confirmed Ultra-cloth and masking tape received on 2026-05-11.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113575,6 +115030,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed",
+        "product_link": "",
         "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113614,6 +115070,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+        "product_link": "",
         "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113653,6 +115110,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00489|gmail_msg_19d0f6304329edde|gmail_msg_19d9ff896e3406a1|gmail_order_3070231697777489|gmail_package_PK001206015RS|photo_20260424_part_dielectric_grease_aliexpress_order_3070231697777489.jpg",
+        "product_link": "",
         "notes": "Marked with x in the user purchase list Vendor backfilled from J40_Costs.xlsx. Gmail AliExpress evidence shows dielectric grease order 3070231697777489 shipped and package PK001206015RS delivered.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113692,6 +115150,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-04-22_evaporust_delivered|INV-0031",
+        "product_link": "",
         "notes": "Marked delivered per user confirmation; this was previously tracked as quote/pending against INV-0031",
         "links": [],
         "estimated_hardware_type": "",
@@ -113731,6 +115190,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-04-28_autohub_order_62074|user_update_2026-04-29_autohub_cleaners_received|gmail_msg_19dcbfb32e6a25f5|gmail_msg_19dcf4539d6347c5|gmail_order_1762074",
+        "product_link": "",
         "notes": "User-provided order confirmation email: order 62074 placed 2026-04-27; delivery window 2-3 working days. User update 2026-04-29: cleaner parts arrived.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113770,6 +115230,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192|user_update_2026-05-08_all_remaining_autohub_orders_arrived|user_update_2026-05-11_2x_u9000_cavity_wax_received|gmail_msg_19e0c5bc0f1cf25e|blueex_tracking_AhubRider",
+        "product_link": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
         "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302 | Gmail recheck on 2026-05-08 found the shared Autohub 1762192 / 62192 confirmation only; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that the cavity wax / remaining Autohub orders have arrived; user reconfirmed receipt of 2x U9000/U900 cavity wax on 2026-05-11. Receipt check: confirm two HB Body U900/U9000 400ml cans, usable nozzles/wands, intact labels, and no leakage. | Gmail recheck 2026-05-12 found Autohub shipment email sent 2026-05-09 for order 1762192 listing 3M Prep Solvent-70 x1 and HB Body U900 cavity wax x2 via Blue-ex AhubRider; user receipt confirmations from 2026-05-08 and 2026-05-11 keep the row received.",
         "links": [
           {
@@ -113827,6 +115288,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938|gmail_msg_19dfcaab0866f88d|gmail_delivery_242366749280938",
+        "product_link": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
         "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg | Gmail Daraz delivery email confirms order 242366749280938 delivered on 2026-05-06; still verify base/hardener tins, mix ratio, thinner, and recoat window before primer use.",
         "links": [
           {
@@ -113884,6 +115346,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-04-24_wirecup_schedule_parts_update|gmail_msg_19dbbce97316517e|gmail_order_241938794080938|photo_20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938.jpg|gmail_msg_19dd86b5fbb89675|gmail_delivery_241938794080938",
+        "product_link": "",
         "notes": "Daraz order 241938794080938 was delivered per Gmail delivery confirmation dated 2026-04-29. Original order matched exact item + quantity (2) and total PKR 2188.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113923,6 +115386,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00820|gmail_msg_19d0ef66d4eacdee|gmail_msg_19d48a1d197405a3|gmail_order_1761310|photo_20260424_part_seam_sealer_autohub_order_1761310.jpg|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|user_update_2026-05-08_all_remaining_autohub_orders_arrived",
+        "product_link": "",
         "notes": "Listed by the user as still needed; later product research includes an Autohub seam-sealer link. Gmail Autohub order 1761310 confirms 3x HB BODY 999 seam sealer and shipment status. | Payment marked paid per user confirmation on 2026-05-02; keep delivery/quantity reconciliation tied to Autohub order 1761310 and physical tube count. | Gmail recheck on 2026-05-08 found the 2026-04-01 Autohub shipment email for order 1761310 but no delivery confirmation; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that all remaining Autohub orders have arrived; mark the three HB BODY 999 seam sealer cartridges received. Receipt check: confirm tube count, labels, expiry/softness, and nozzle condition before body sealing.",
         "links": [],
         "estimated_hardware_type": "",
@@ -113962,6 +115426,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00346|user_update_2026-05-08_breaker_bar_arrived",
+        "product_link": "",
         "notes": "Listed by the user as still needed; breaker bar was part of the minimum tool list discussed around steering work | User confirmed on 2026-05-08 that the breaker bar has arrived. Amount/payment proof is still not captured; verify 1/2 inch drive, approximately 24 inch length, and head/pivot condition before using on seized fasteners.",
         "links": [],
         "estimated_hardware_type": "",
@@ -114037,6 +115502,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19de62bcd140fa41|gmail_order_242365766980938|gmail_msg_19df29a687866969|gmail_delivery_242365766980938",
+        "product_link": "https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1",
         "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Two 3 pc mini wire brush sets at PKR 198 each; subtotal PKR 396 plus PKR 165 shipping. Product link: https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766980938 delivered on 2026-05-04: two 3 pc mini wire brush sets.",
         "links": [
           {
@@ -114094,6 +115560,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "workbook_tools#row_41|user_update_2026-05-08_ar_co2_canister_arrived",
+        "product_link": "",
         "notes": "Imported from J40_Costs.xlsx Tools row 41: Ar-CO2 Canister from pakoxygen, PKR 42362, previously paid in the workbook. User confirmed on 2026-05-08 that the Ar-CO2 canister has arrived. Receipt/use check: confirm gas mix, cylinder test date, ownership/deposit paperwork, valve/regulator compatibility, and leak check before MIG welding.",
         "links": [],
         "estimated_hardware_type": "",
@@ -114134,6 +115601,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-04_bench_vice_ordered|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|user_update_2026-05-12_bench_vice_arrived",
+        "product_link": "",
         "notes": "User reported the bench vice is now ordered on 2026-05-04. Amount, seller, order number, and delivery ETA are not yet captured. Receipt check must confirm bolt-down mounting lugs, 100-150 mm jaws, smooth screw action, uncracked casting, and clean/replaceable jaws before installation on the workbench. | ToolsMart order TM25550 confirmed on 2026-05-04 includes Harden 4 inch Heavy Duty Table Vice 100mm / 9 Kg x1 at PKR 14970. Receipt check must confirm bolt-down lugs, 100 mm jaws, smooth screw action, uncracked casting, and clean jaws before mounting. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | User confirmed on 2026-05-12 that the bench vice has arrived. Receipt/use check: confirm bolt-down lugs, 100 mm jaws, smooth screw action, no cracked casting, clean jaw faces, and secure mounting before use.",
         "links": [],
         "estimated_hardware_type": "",
@@ -114316,6 +115784,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00793|akber_khan-00805|akber_khan-00806|akber_khan-00879",
+        "product_link": "",
         "notes": "Marked with x in the user purchase list; chat shows it was needed before strip-down, was already on the way on 2026-03-17, budget guidance was 2-4k, and arrival was confirmed on 2026-03-18",
         "links": [],
         "estimated_hardware_type": "",
@@ -114531,6 +116000,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg|user_update_2026-05-02_electrical_test_kit_received",
+        "product_link": "",
         "notes": "AliExpress order 3070231697877489 was ordered and arrived; prior 2026-04-27 uncertainty closed from Gmail/order evidence plus user confirmation on 2026-05-02.",
         "links": [],
         "estimated_hardware_type": "",
@@ -114570,6 +116040,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19de62cf4907c036|gmail_order_1762191|autohub_order_62191|gmail_msg_19df21e3bb334d7e|blueex_tracking_AhubRider|user_update_2026-05-08_all_remaining_autohub_orders_arrived",
+        "product_link": "https://autohub.pk/products/tire-side-wall-cleaning-brush | https://autohub.pk/products/detailing-brush-large-16-no | https://autohub.pk/products/5-pcs-detailing-brush-set",
         "notes": "Autohub order 1762191 / order number 62191 confirmed 2026-05-02: Tire Side Wall Cleaning Brush x1, Detailing Brush Large x1, 5 Pcs Detailing Brush Set x1; subtotal PKR 2339 plus PKR 249 shipping. Links: https://autohub.pk/products/tire-side-wall-cleaning-brush ; https://autohub.pk/products/detailing-brush-large-16-no ; https://autohub.pk/products/5-pcs-detailing-brush-set | Autohub shipment email on 2026-05-04 says order 1762191 shipped via Blue-ex/AhubRider with tire sidewall brush x1, detailing brush large x1, and 5 pc detailing brush set x1; no delivery email found as of 2026-05-08. | Gmail recheck on 2026-05-08 found no newer delivery email after the 2026-05-04 Blue-ex/AhubRider shipment notice; later user confirmation on 2026-05-08 closes delivery. | User confirmed on 2026-05-08 that all remaining Autohub orders have arrived; mark the brush bundle received. Receipt check: confirm tire sidewall brush x1, large detailing brush x1, and 5 pc detailing brush set x1.",
         "links": [
           {
@@ -114622,6 +116093,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938|gmail_delivery_243331393680938|gmail_msg_19e3fbe04164503a",
+        "product_link": "",
         "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs. | Gmail delivery email 2026-05-19 (message 19e3fbe04164503a) says Daraz order 243331393680938 was successfully delivered; close delivery tracking, with only normal PPE fit/use check remaining.",
         "links": [],
         "estimated_hardware_type": "",
@@ -114766,6 +116238,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00395|akber_khan-00671|fj40-00286|akber_khan-00879",
+        "product_link": "",
         "notes": "Seeded as received; a later tool basket shows a Harden Pro Grease Gun 500CC at Rs.4,790 and tools later arrived, but the exact paid amount is still left open pending order proof",
         "links": [
           {
@@ -114963,6 +116436,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -115020,6 +116494,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached. User confirmed received on 2026-05-02.",
         "links": [
           {
@@ -115077,6 +116552,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -115219,6 +116695,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -115312,6 +116789,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -115598,6 +117076,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-04_daraz_pipe_bender_order|gmail_msg_19df408ef23d48b1|gmail_msg_19e021d0af9de008|gmail_order_242508744880938|gmail_delivery_242508744880938",
+        "product_link": "",
         "notes": "User reported paid Daraz order 2026-05-04: Pipe Bender 180 tube bender, ratchet tubing bender for 3/8 in, 1/4 in, and 5/16 in copper, brass, aluminum, and thin steel pipes; qty 1; PKR 4499; seller Megatronics pk (Peshawar); seller to pack. This covers 1/4, 5/16, and 3/8 in bending only and is not the primary 4.75 mm / 3/16 in brake-line bender. Cutter, deburrer/reamer, and brake-line flaring tool/dies remain unconfirmed for in-house hard-line fabrication. | Gmail Daraz order 242508744880938 confirmed on 2026-05-05 and delivery email confirms delivered on 2026-05-07; receipt check still needs smooth ratchet action and correct fit for 1/4, 5/16, and 3/8 in tube.",
         "links": [
           {
@@ -115696,6 +117175,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938|gmail_delivery_243331393480938|gmail_msg_19e4a66145e96435",
+        "product_link": "",
         "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work. | Gmail delivery email 2026-05-21 (message 19e4a66145e96435) says Daraz order 243331393480938 was successfully delivered; close delivery tracking, with only normal goggles fit/seal check remaining.",
         "links": [],
         "estimated_hardware_type": "",
@@ -115735,6 +117215,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19de62bcddc3ff3a|gmail_order_242365766080938|gmail_msg_19df29a6c4e6d2b8|gmail_delivery_242365766080938",
+        "product_link": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
         "notes": "Daraz order confirmed 2026-05-02; delivery window 2026-05-05 to 2026-05-07. Safety protective glasses x1; subtotal PKR 599 plus PKR 165 shipping. Product link: https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1 | Gmail Daraz delivery email confirms order 242365766080938 delivered on 2026-05-04: safety goggles/protective glasses x1.",
         "links": [
           {
@@ -115864,6 +117345,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00663|akber_khan-00664",
+        "product_link": "",
         "notes": "Marked with x in the user purchase list; tap set was later discussed as useful for stripped bolts Vendor backfilled from J40_Costs.xlsx.",
         "links": [],
         "estimated_hardware_type": "",
@@ -115903,6 +117385,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "unknown",
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00395",
+        "product_link": "",
         "notes": "Marked with x in the user purchase list; torque wrench was explicitly called out in tool planning chat Vendor backfilled from J40_Costs.xlsx.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116014,6 +117497,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+        "product_link": "",
         "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping. User confirmed received on 2026-05-02.",
         "links": [
           {
@@ -116071,6 +117555,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
         "links": [
           {
@@ -116128,6 +117613,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -116185,6 +117671,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+        "product_link": "",
         "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping. User confirmed received on 2026-05-02.",
         "links": [
           {
@@ -116242,6 +117729,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19de632df983464c|gmail_order_26242|gmail_msg_19df7037b90900e9|gmail_msg_19df70507d0e285b|gmail_msg_19e021b1cc8e488d|gmail_msg_19e02377924a0205|tracking_postex_22019070003782|tracking_leopard_KI7534590491|gmail_msg_19e0c33c40b6c4da|gmail_delivery_26242",
+        "product_link": "https://powerhouseexpress.com.pk/products/ingco-wb30501-wire-cup-brush",
         "notes": "Order #26242 confirmed 2026-05-02 for 3x INGCO WB30501 wire cup brushes; subtotal PKR 765 plus PKR 300 shipping. Product link: https://powerhouseexpress.com.pk/products/ingco-wb30501-wire-cup-brush | Powerhouse order 26242 was updated on 2026-05-05: INGCO WB30501 x3 removed and Total TAC33021 Wire Cup Brush x3 substituted; final total remains PKR 1065 after the seller update. Shipment emails on 2026-05-07 list PostEx 22019070003782 and later Leopard KI7534590491; track latest Leopard first and verify the actual TAC33021 brushes on receipt. | Gmail recheck on 2026-05-08 found no delivery confirmation after the 2026-05-07 shipment notices; latest carrier evidence lists Leopard KI7534590491 after PostEx 22019070003782, so track Leopard first and verify TAC33021 x3 on receipt. | Gmail recheck 2026-05-12 found Powerhouse delivery email 2026-05-09 for order #26242: Leopard KI7534590491 delivered with Total TAC33021 Wire Cup Brush x3. Receipt check remains actual TAC33021 x3 and usable brush condition before chassis cleaning.",
         "links": [
           {
@@ -116286,6 +117774,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-04_total_tdp133501_drill_press_order|user_update_2026-05-12_drill_press_arrived",
+        "product_link": "",
         "notes": "User reported paid order 2026-05-04: Total TDP133501 Drill Press, 350W, 13 mm, quantity 1. Amount, seller, order number, and delivery ETA not yet captured. Receipt check must confirm straight spindle/no visible wobble, locking table, depth stop, and safe 220-240 V power before use. | Gmail recheck 2026-05-12 found no matching TDP133501 / drill-press receipt, shipment, or delivery email; keep pending and use seller/order details from user if available. | User confirmed on 2026-05-12 that the drill press has arrived. Receipt/use check: confirm straight spindle/no visible wobble, locking table, depth stop, chuck/key, power lead/earth, and safe 220-240 V operation before use.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116326,6 +117815,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
         "links": [
           {
@@ -116382,6 +117872,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; part of the PKR 94510 order for chassis lift/clean/suspension work. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -116438,6 +117929,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -116494,6 +117986,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dcd4fe9fa2eeee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-08_weld_helmet_arrived",
+        "product_link": "",
         "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 8710. Review email 2026-04-27 references this exact item; local receipt photo is still not attached. | User confirmed on 2026-05-08 that the welding helmet has arrived. Receipt check: test auto-darkening, sensitivity/delay controls, battery/solar condition, headband adjustment, and lens/cover condition before welding.",
         "links": [
           {
@@ -116551,6 +118044,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "received",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493|user_update_2026-05-08_toolsmart_tm25493_arrived",
+        "product_link": "",
         "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order. | User confirmed on 2026-05-08 that ToolsMart order TM25493 has arrived; mark this line received. Still do item-specific receipt checks before use.",
         "links": [
           {
@@ -116711,6 +118205,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "product_link": "",
         "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116751,6 +118246,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "product_link": "",
         "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116791,6 +118287,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116830,6 +118327,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy only by old belt sample/printed belt code or measured profile and effective length for the actual alternator/fan/accessory layout. Prefer Bando/Mitsuboshi/Gates or trusted equivalent. If size/profile is not proven, collect photos/price only.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116869,6 +118367,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
+        "product_link": "",
         "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116908,6 +118407,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
         "links": [],
         "estimated_hardware_type": "R-clips/hairpins/split pins/circlips/small cotters (6-15 visible, likely 10)",
@@ -116947,6 +118447,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
         "links": [],
         "estimated_hardware_type": "",
@@ -116987,6 +118488,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-04_front_disc_rear_drum_booster_sourcing|BR-SYS-003|user_update_2026-05-29_booster_can_go_amir_refurb_route|docs/amir-refurbishment-video-gates-20260529.md",
+        "product_link": "",
         "notes": "Amir may take the old booster/servo as a sample for professional rebuild or a direct-match refurbished exchange unit. Payment is blocked until video proof is approved: old sample identity, side-by-side sample match, interface close-ups, vacuum hold for at least 60 seconds with gauge visible, assist movement, contamination check, and final acceptance video. Target Toyota 44610-60050 tandem/dual-diaphragm family; quote 44610-60100/44610-60180 only if supplier verifies all mounting/pushrod/master/check-valve dimensions from sample. Reject raw untested used boosters, 44610-60040 single/drum, later 44610-60160 unless sample-matched and approved, welded shells, missing check valve/grommet, brake-fluid contamination, hissing, or leakdown.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117026,6 +118528,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "product_link": "",
         "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117065,6 +118568,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [
           {
@@ -117130,6 +118634,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
+        "product_link": "",
         "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
         "links": [
           {
@@ -117191,6 +118696,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+        "product_link": "",
         "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117230,6 +118736,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117269,6 +118776,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+        "product_link": "",
         "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117308,6 +118816,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+        "product_link": "",
         "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117347,6 +118856,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117386,6 +118896,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
         "links": [],
         "estimated_hardware_type": "",
@@ -117425,6 +118936,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "product_link": "",
         "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
         "links": [
           {
@@ -117645,6 +119157,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "product_link": "",
         "notes": "Track under body-mount rubbers/rubber ordering, not generic fastener buy. Spec ready: thin slotted steel shims 1/2/3/5mm x12 each plus thick control spacers 5/10/15mm x4 each; preserve originals by station and release after body station height measurement.",
         "links": [
           {
@@ -117865,6 +119378,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements only and keep originals as templates.",
         "links": [],
         "estimated_hardware_type": "Rubber/plastic bumpers knobs isolators and small spacers (8-18 visible, likely 12)",
@@ -117904,6 +119418,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
         "links": [],
         "estimated_hardware_type": "Shoulder/pivot bolts cylindrical sleeves stand-off spacers and stepped pins (10-24 visible, likely 16)",
@@ -117943,6 +119458,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "product_link": "",
         "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
         "links": [
           {
@@ -118005,6 +119521,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "product_link": "",
         "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
         "links": [
           {
@@ -118065,6 +119582,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-19|RP-CLUTCH-001",
+        "product_link": "",
         "notes": "Use the shared 4.75 mm brake/clutch tube stock for the clutch hard line, then buy new hydraulic fittings after clutch master, clutch flex hose, and slave cylinder port threads/seats are identified. Final route must clear drivetrain movement and be clipped like the brake lines.",
         "links": [
           {
@@ -118127,6 +119645,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-18|RP-CLUTCH-001",
+        "product_link": "",
         "notes": "Replace with one new complete brake/clutch-rated crimped hydraulic hose assembly. Copy old free length, end threads/seats, bracket grooves, and movement clearance. No generic rubber hose, roll hose, or used clutch hose.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118167,6 +119686,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: quote/order new diesel-rated 8 mm ID feed hose x 1500 mm for the measured approx 1200 mm tank-to-engine route, new 6 mm ID return/bleed hose x 2000 mm, new 3.2-3.5 mm ID braided leak-off hose x 1000 mm, new rolled-edge fuel clamps, plus conditional 8 mm OD x 5000 mm feed hard-line stock only if a separate rigid feed line exists and 6 mm OD x 5000 mm return hard-line stock as new replacement allowance. Final cut, clamp, support, and fuel-prime leak test remain at install.",
         "links": [
           {
@@ -118263,6 +119783,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118302,6 +119823,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118341,6 +119863,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [
           {
@@ -118401,6 +119924,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118440,6 +119964,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy only if the shop supplies an exact 2H/HJ47 fuel-filter element match by old sample, chassis/manual basis, or Toyota part number candidate 23303-54071 / 04234-68010. Otherwise collect photos of box/element/part number, price, and shop card before payment.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118514,6 +120039,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-004A/B: quote/order 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118553,6 +120079,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118593,6 +120120,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118667,6 +120195,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260514_100647_gp_foDr3ymA",
+        "product_link": "",
         "notes": "BASELINE MUST RECREATE during the suspension/brake access window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance using the May 14 working Toyota-style double/inverted flare basis, but only after bare flare face, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [
           {
@@ -118727,6 +120256,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "product_link": "",
         "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118766,6 +120296,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "product_link": "",
         "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118841,6 +120372,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Amir may buy only a sealed exact Toyota-labelled/new trusted equivalent set; reject used/refurbished/PT-107/1C/2C listings or any seller-led substitute.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118881,6 +120413,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+        "product_link": "",
         "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
         "links": [],
         "estimated_hardware_type": "",
@@ -118956,6 +120489,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
         "links": [],
         "estimated_hardware_type": "Specialty brackets retainer plates captive-nut plates and straps (8-18 visible, likely 12)",
@@ -118995,6 +120529,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_seed|akber_khan-00803",
+        "product_link": "",
         "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
         "links": [],
         "estimated_hardware_type": "",
@@ -119034,6 +120569,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+        "product_link": "",
         "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119073,6 +120609,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv|user_update_2026-05-08_rivets_received|user_update_2026-05-09_m6_m8_rivnut_confirmation|photos/20260508_rivnuts_received_user_photo.png|photos/20260508_m6_rivnut_box_labels_user_photo.png",
+        "product_link": "",
         "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. User photos on 2026-05-08 confirm yellow-zinc knurled flat-head threaded rivet nuts/nutserts, with visible label text reading Product Name: Rivetnut and size M6. User clarified on 2026-05-09 that the two boxes are M6 and M8, so treat M6 and M8 rivnut/nutsert portions as received unless physical receipt check contradicts this. Remaining open scope is captive/clip/speed nuts and weld nuts: original workbook basis M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20. Use new yellow-zinc or equivalent plated hardware; do not reuse rusted spring clips or captive nuts. Confirm final split against old samples before purchase.",
         "links": [],
         "estimated_hardware_type": "Captive/clip/speed nuts plus rivnut/weld-nut candidates (22-40 visible, likely 30)",
@@ -119112,6 +120649,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "product_link": "",
         "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
         "links": [],
         "estimated_hardware_type": "Self-tapping/trim/countersunk screws and cup/finishing washers (35-70 visible, likely 50)",
@@ -119151,6 +120689,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_seed|akber_khan-00803",
+        "product_link": "",
         "notes": "Listed by the user as still needed; explicit interior finish-stack mention in chat",
         "links": [],
         "estimated_hardware_type": "",
@@ -119453,6 +120992,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_seed|akber_khan-00430|akber_khan-00798|akber_khan-00803",
+        "product_link": "",
         "notes": "Deferred until body is welded, sealed, and dry. Estimate for useful full-cabin J40 coverage: buy 3.5-4.0 m2 / 38-43 sqft of 3mm butyl/aluminium damping sheet, equivalent to 10 large 460x800mm sheets minimum; use 12 sheets if also covering doors, tailgate, or hardtop side panels. This is not a tub-off buy.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119492,6 +121032,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "product_link": "",
         "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
         "links": [
           {
@@ -119552,6 +121093,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
         "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
         "links": [
           {
@@ -119600,6 +121142,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+        "product_link": "",
         "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119640,6 +121183,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-29_transmission_oil_task|user_update_2026-05-29_liqui_moly_15w40_not_gearbox_oil|mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid|docs/gearbox-oil-service-workstream.md|docs/gearbox-top-cover-workstream.md",
+        "product_link": "",
         "notes": "Specific buying requirement: WhatsApp history confirms 2H engine with 5-speed gear, so treat H55F as active candidate until case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 API GL-4/GL-5 gearbox oil, 4.9 L capacity, buy 5 L, plus matched drain/fill plug sealing washers, clear sample cup/bottle, clean catch pan, and filler pump/hose if workshop does not supply one. Open fill plug before draining; drain into clean pan; photograph oil, drain plug/magnet, water/glitter/sludge/debris; refill only if inspection is acceptable. Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as this row; it is engine oil. Do not substitute differential/hypoid LSD oil, transfer-case oil, engine oil, or brake fluid. Stop for water, heavy metal, damaged threads, burnt oil, chunks, abnormal noise, or open top-cover work.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119680,6 +121224,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
         "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119719,6 +121264,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md",
+        "product_link": "",
         "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden evaporator/blower unit with routed outlets. User photo review on 2026-05-14 suggests the OLX Vitz box is a large full OEM molded dash case and likely too bulky for the intended hidden install unless measured mock-up proves otherwise. Search elsewhere first: ask Snow Cool/Arsalan/Coolsun for the smallest measured universal under-dash evaporator/blower, preferably BEU-202, low-profile BEU-404, or short BEU-848 style with blower, TXV, drain, thermostat/control, and pigtails. Treat 228 Hangon as risky until measured because some 228 variants are minibus-sized. Imported Ubuy units are fallback only because landed cost, customs, and damage risk are uncertain. Buy after checking under-dash envelope, blower capacity/current, outlet count/OD, service access, drain outlet, TXV/fitting location, return-air path, and whether heat/defrost functions are included.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119758,6 +121304,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+        "product_link": "",
         "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119797,6 +121344,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
         "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-VAC-001A/B: quote/order new reinforced 10-12 mm ID brake-booster/vacuum hose x 2000 mm and new oil-resistant 16-19 mm ID breather hose x 1000 mm. 2H vacuum pump oil outlet molded hose is presence-gated and replaced new if fitted. Final barb fit, check-valve direction, brake-assist vacuum, and oil-swelling checks remain at install.",
         "links": [],
         "estimated_hardware_type": "",
@@ -119836,6 +121384,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
+        "product_link": "",
         "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
         "links": [
           {
@@ -119899,6 +121448,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
+        "product_link": "",
         "notes": "Scout local market: buy a stable workbench/toolbench with steel frame or heavy hardwood top, minimum 1200 x 600 mm working surface, 850-950 mm working height, flat top, and enough structure to bolt down a vice and pillar drill.",
         "links": [],
         "estimated_hardware_type": "",
@@ -124443,6 +125993,8 @@ window.J40_DASHBOARD_DATA = {
       "engine_interior_and_stripdown_detail",
       "engine_loose_connector_unassigned",
       "engine_powertrain_cleaning_baseline",
+      "engine_radiator_condition_closeups",
+      "engine_radiator_sample_measurement",
       "engine_sender_branch",
       "engine_starter_solenoid_and_ground_inputs",
       "engine_unidentified_two_wire_connector",
@@ -124506,6 +126058,7 @@ window.J40_DASHBOARD_DATA = {
       "service_parts_and_order_confirmations",
       "side_window_glass_and_channels",
       "steering_and_suspension_linkages",
+      "suspension_bump_stop_removed_samples",
       "suspension_or_linkage_mount",
       "transmission_crossmember_and_driveline_mounts",
       "tub_corner_hinge_pin_repair",
@@ -124537,6 +126090,7 @@ window.J40_DASHBOARD_DATA = {
       "procurement_reconciliation",
       "reference_material",
       "removed_parts_cataloguing",
+      "rubber_recreation_measurement",
       "rust_assessment",
       "steering_brakes_suspension",
       "stripdown_cataloguing",
@@ -124573,6 +126127,7 @@ window.J40_DASHBOARD_DATA = {
       "front_fixed_sumitomo_disc_caliper_visible",
       "front_frame_steering_baseline",
       "front_linkage_brake_baseline",
+      "front_support_fan_clearance_measurement",
       "front_support_opening_measurement",
       "front_support_radiator_baseline",
       "front_upright_height_measurement",
@@ -124589,12 +126144,24 @@ window.J40_DASHBOARD_DATA = {
       "panel_removed",
       "partially_disassembled",
       "pre_cleaning_baseline",
+      "radiator_added_leg_and_lower_mount",
       "radiator_bracket_design_scouting",
       "radiator_complete_mounting_reference",
+      "radiator_core_fin_condition_closeup",
+      "radiator_core_fin_condition_overview",
       "radiator_height_measurement",
+      "radiator_lower_edge_mounting_overview",
+      "radiator_lower_side_mount_measurement",
       "radiator_lower_side_tab_measurement",
       "radiator_removed_mounting_reference",
+      "radiator_removed_width_measurement",
       "radiator_side_bracket_measurement",
+      "radiator_side_core_condition",
+      "radiator_side_core_supporting_condition",
+      "radiator_side_height_measurement",
+      "radiator_side_tank_bracket_measurement",
+      "radiator_side_tank_core_condition",
+      "radiator_top_side_condition",
       "rear_axle_line_baseline",
       "rear_axle_spring_baseline",
       "rear_axle_spring_brake_baseline",
@@ -124610,6 +126177,8 @@ window.J40_DASHBOARD_DATA = {
       "refinished_off_vehicle",
       "refinished_off_vehicle_received",
       "removed_column_reference",
+      "removed_from_fixture",
+      "removed_from_fixture_side_view",
       "removed_from_vehicle",
       "removed_from_vehicle_needs_refurbish",
       "replace_all_brake_parts_owner_confirmed",
@@ -136499,6 +138068,231 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "front_brake|front_disc|sumitomo|fixed_caliper|caliper_bridge_pipe|front_brake_hose|front_hard_line|rotor|dust_shield|pad_service",
       "notes": "May 29 user-selected front disc photos show a fixed Sumitomo caliper on the front axle with an external bridge/transfer pipe, short hard-line/flex-hose routing, bleed-screw area, dust shield, and rotor. Treat as a specific front-disc baseline; still remove/measure pads and rotor thickness before ordering exact service parts."
+    },
+    "20260529_205200_gp_8G6ZKKEQ": {
+      "media_id": "20260529_205200_gp_8G6ZKKEQ",
+      "file_name": "20260529_205200_gp_8G6ZKKEQ.jpg",
+      "path": "../../photos/20260529_205200_gp_8G6ZKKEQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "20:52:00",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_sample_measurement",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_removed_width_measurement",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|removed_sample|core|side_tank|tape_measure|width|recore|sample_match",
+      "notes": "Google Photos May 29 removed engine radiator sample with tape across the core/tank width; use for radiator recore/new-build sample matching and shop instruction."
+    },
+    "20260529_205224_gp_aQYpMUyg": {
+      "media_id": "20260529_205224_gp_aQYpMUyg",
+      "file_name": "20260529_205224_gp_aQYpMUyg.jpg",
+      "path": "../../photos/20260529_205224_gp_aQYpMUyg.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "20:52:24",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_sample_measurement",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_lower_side_mount_measurement",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|removed_sample|side_bracket|lower_mount|tape_measure|fabricated_leg|sample_match",
+      "notes": "Google Photos May 29 close view of the removed radiator side/lower mounting area with tape. Image is soft, but it supports the extra-leg and lower-mount sample capture."
+    },
+    "20260529_205232_gp_eHbRrOaw": {
+      "media_id": "20260529_205232_gp_eHbRrOaw",
+      "file_name": "20260529_205232_gp_eHbRrOaw.jpg",
+      "path": "../../photos/20260529_205232_gp_eHbRrOaw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "20:52:32",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_sample_measurement",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_side_height_measurement",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|removed_sample|side_tank|side_bracket|height|tape_measure|sample_match",
+      "notes": "Google Photos May 29 tape-measure view down the radiator side tank/bracket; use as a height and side-bracket reference for radiator sample matching."
+    },
+    "20260529_205240_gp_C2r8CMBQ": {
+      "media_id": "20260529_205240_gp_C2r8CMBQ",
+      "file_name": "20260529_205240_gp_C2r8CMBQ.jpg",
+      "path": "../../photos/20260529_205240_gp_C2r8CMBQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "20:52:40",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_sample_measurement",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_side_tank_bracket_measurement",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|removed_sample|side_tank|side_bracket|height|tape_measure|sample_match",
+      "notes": "Google Photos May 29 closer tape-measure view along the radiator side tank/bracket; use to confirm side-bracket span and sample dimensions."
+    },
+    "20260529_214147_gp_4gfuofYQ": {
+      "media_id": "20260529_214147_gp_4gfuofYQ",
+      "file_name": "20260529_214147_gp_4gfuofYQ.jpg",
+      "path": "../../photos/20260529_214147_gp_4gfuofYQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "21:41:47",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "front_support_radiator_pickups_context",
+      "stage": "chassis_fixing",
+      "observed_state": "front_support_fan_clearance_measurement",
+      "confidence": "high",
+      "tags": "front_support|radiator|radiator_mount|fan|pulley|tape_measure|clearance|fabrication|measurement",
+      "notes": "Google Photos May 29 in-vehicle tape-measure view across the front support, fan, pulley, and radiator plane area; use for final bracket/fan-clearance constraints."
+    },
+    "20260529_223605_gp_CklgF0cQ": {
+      "media_id": "20260529_223605_gp_CklgF0cQ",
+      "file_name": "20260529_223605_gp_CklgF0cQ.jpg",
+      "path": "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "22:36:05",
+      "media_type": "photo",
+      "component_group": "chassis_underside",
+      "specific_component": "suspension_bump_stop_removed_samples",
+      "stage": "rubber_recreation_measurement",
+      "observed_state": "removed_from_fixture",
+      "confidence": "high",
+      "tags": "bump_stop|suspension|removed_sample|rubber_recreation|through_holes|tape_measure|fixture_removed",
+      "notes": "Google Photos May 29 face/plan view of the two bump-stop samples after unscrewing from the metal fixture. Use as representative evidence for both bump stops: molded rubber carries two mounting holes and the surviving body is low, broad, radiused, and asymmetric rather than the prior flat-plate block placeholder."
+    },
+    "20260529_223701_gp_wYPExcAA": {
+      "media_id": "20260529_223701_gp_wYPExcAA",
+      "file_name": "20260529_223701_gp_wYPExcAA.jpg",
+      "path": "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "22:37:01",
+      "media_type": "photo",
+      "component_group": "chassis_underside",
+      "specific_component": "suspension_bump_stop_removed_samples",
+      "stage": "rubber_recreation_measurement",
+      "observed_state": "removed_from_fixture_side_view",
+      "confidence": "high",
+      "tags": "bump_stop|suspension|removed_sample|rubber_recreation|side_profile|central_metal_fixture|tape_measure",
+      "notes": "Google Photos May 29 side view of the two bump-stop samples after fixture removal. Use to update the mould concept: preserve the rubber-through-hole layout, broad base, raised/central fixture channel or bonded insert interface, and rounded progressive sides; final dimensions still require caliper values."
+    },
+    "20260529_230003_gp_rliSbRjA": {
+      "media_id": "20260529_230003_gp_rliSbRjA",
+      "file_name": "20260529_230003_gp_rliSbRjA.jpg",
+      "path": "../../photos/20260529_230003_gp_rliSbRjA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:03",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_core_fin_condition_closeup",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|core|fins|condition|recore|sample_match",
+      "notes": "Google Photos May 29 close radiator core/fin condition view. Soft focus, but useful as condition evidence before pressure/flow test and recore decision."
+    },
+    "20260529_230009_gp_BLX8dSWA": {
+      "media_id": "20260529_230009_gp_BLX8dSWA",
+      "file_name": "20260529_230009_gp_BLX8dSWA.jpg",
+      "path": "../../photos/20260529_230009_gp_BLX8dSWA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:09",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_core_fin_condition_overview",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|core|fins|condition|blocked_fins|recore|sample_match",
+      "notes": "Google Photos May 29 radiator core overview showing widespread dirt/fin damage and flattened areas; supports recore/shop-test decision."
+    },
+    "20260529_230017_gp_L23OD4nw": {
+      "media_id": "20260529_230017_gp_L23OD4nw",
+      "file_name": "20260529_230017_gp_L23OD4nw.jpg",
+      "path": "../../photos/20260529_230017_gp_L23OD4nw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:17",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_top_side_condition",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|top_edge|side_tank|hose_or_cable|condition|sample_match",
+      "notes": "Google Photos May 29 top/side radiator condition view with adjacent hose/cable crossing; use for edge/tank and clearance context, not final dimension release."
+    },
+    "20260529_230022_gp_BLo8HLwg": {
+      "media_id": "20260529_230022_gp_BLo8HLwg",
+      "file_name": "20260529_230022_gp_BLo8HLwg.jpg",
+      "path": "../../photos/20260529_230022_gp_BLo8HLwg.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:22",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_side_core_condition",
+      "confidence": "medium",
+      "tags": "radiator|engine_radiator|side_tank|core|condition|soft_photo|sample_match",
+      "notes": "Google Photos May 29 soft side/core condition photo. Keep as supporting radiator evidence only; sharper photos are required for crack or solder-joint decisions."
+    },
+    "20260529_230035_gp_5oB8otKw": {
+      "media_id": "20260529_230035_gp_5oB8otKw",
+      "file_name": "20260529_230035_gp_5oB8otKw.jpg",
+      "path": "../../photos/20260529_230035_gp_5oB8otKw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:35",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_added_leg_and_lower_mount",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|added_leg|lower_mount|side_bracket|condition|bad_mounting|sample_match",
+      "notes": "Google Photos May 29 removed radiator view showing the added support leg/lower mounting workaround. This supports replacing the vehicle-side support, not copying the leg onto the radiator."
+    },
+    "20260529_230040_gp_B5P2K9FA": {
+      "media_id": "20260529_230040_gp_B5P2K9FA",
+      "file_name": "20260529_230040_gp_B5P2K9FA.jpg",
+      "path": "../../photos/20260529_230040_gp_B5P2K9FA.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:40",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_side_tank_core_condition",
+      "confidence": "medium",
+      "tags": "radiator|engine_radiator|side_tank|core|condition|soft_photo|sample_match",
+      "notes": "Google Photos May 29 soft side/tank/core condition photo. Keep as supporting evidence before shop pressure/flow test."
+    },
+    "20260529_230044_gp_I9psm6Dw": {
+      "media_id": "20260529_230044_gp_I9psm6Dw",
+      "file_name": "20260529_230044_gp_I9psm6Dw.jpg",
+      "path": "../../photos/20260529_230044_gp_I9psm6Dw.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:44",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_lower_edge_mounting_overview",
+      "confidence": "high",
+      "tags": "radiator|engine_radiator|core|lower_edge|mounting_tabs|added_leg|condition|sample_match",
+      "notes": "Google Photos May 29 radiator lower edge/mounting overview with added leg and mounting tabs visible; use for support strategy and shop sample matching."
+    },
+    "20260529_230050_gp_ZqjySFHg": {
+      "media_id": "20260529_230050_gp_ZqjySFHg",
+      "file_name": "20260529_230050_gp_ZqjySFHg.jpg",
+      "path": "../../photos/20260529_230050_gp_ZqjySFHg.jpg",
+      "captured_date": "2026-05-29",
+      "captured_time": "23:00:50",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "engine_radiator_condition_closeups",
+      "stage": "mechanical_baseline",
+      "observed_state": "radiator_side_core_supporting_condition",
+      "confidence": "medium",
+      "tags": "radiator|engine_radiator|core|side_tank|condition|soft_photo|sample_match",
+      "notes": "Google Photos May 29 soft radiator side/core supporting condition photo. Use only as general condition evidence."
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

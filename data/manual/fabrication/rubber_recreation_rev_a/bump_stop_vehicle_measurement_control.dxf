@@ -235,7 +235,7 @@ TEXT
 40
 3
 1
-2X FLAT BACKING-PLATE HOLES/STUDS: measure from supplied plate and bracket
+2X RUBBER THROUGH-HOLES + FIXTURE/STUDS: measure from samples, fixture, and bracket
 0
 TEXT
 8
@@ -247,7 +247,7 @@ TEXT
 40
 3
 1
-P = centre-to-centre pitch between bolts/studs; D = flat-plate hole/thread size
+P = centre-to-centre pitch between rubber holes/studs; D = rubber through-hole/thread size
 0
 TEXT
 8
@@ -259,7 +259,7 @@ TEXT
 40
 3
 1
-BL/BW/P/D/X-Y/G/F release from supplied flat plate, bracket, and strike pad.
+BL/BW/P/D/fixture-channel/X-Y/G/F release from samples, fixture, bracket, and strike pad.
 0
 TEXT
 8

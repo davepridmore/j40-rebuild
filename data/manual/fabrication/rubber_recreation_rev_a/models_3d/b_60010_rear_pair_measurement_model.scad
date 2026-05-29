@@ -57,49 +57,46 @@ module chamfered_extrude(height, edge_chamfer = 0) {
 
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - The user will provide the one-piece flat metal backing/saddle with the
-//   fabrication request. Use it as the plate outline, hole pattern, and bond
-//   face pattern.
-// - Flat plate footprint, bolt/stud pitch, hole/thread size, and strike offset
-//   must be confirmed against the cleaned vehicle bracket and axle strike pad.
-// - Default holes are visual placeholders in the flat steel plate, not through
-//   the rubber.
+// - May 29 removed samples now control the construction concept for both bump
+//   stops: broad rounded/tapered rubber body, two through-holes in the rubber,
+//   central fixture/channel interface, and flat strike area.
+// - Final body footprint, through-hole pitch/diameter, fixture channel, and
+//   strike offset must be confirmed from sample calipers, removed metal fixture,
+//   cleaned vehicle bracket, and axle strike pad.
 // - This model is a first-article conversation shape, not a released mould.
 
 module b_60010_rear_pair_measurement_model(
   free_height = 70,
-  top_length = 46,
-  top_width = 30,
-  rubber_base_length = 70,
-  rubber_base_width = 40,
-  flat_plate_length = 82,
-  flat_plate_width = 48,
-  flat_plate_thickness = 4,
-  plate_hole_pitch = 64,
-  plate_hole_d = 10
+  top_length = 58,
+  top_width = 32,
+  rubber_base_length = 92,
+  rubber_base_width = 54,
+  rubber_hole_pitch = 64,
+  rubber_hole_d = 12,
+  fixture_channel_width = 20,
+  fixture_channel_depth = 6
 ) {
   union() {
-    color("silver")
-      difference() {
-        translate([0, 0, -flat_plate_thickness])
-          linear_extrude(height = flat_plate_thickness, center = false)
-            rounded_rect_2d([flat_plate_length, flat_plate_width], 3);
-
-        if (plate_hole_d > 0 && plate_hole_pitch > 0)
-          for (x = [-plate_hole_pitch / 2, plate_hole_pitch / 2])
-            translate([x, 0, -flat_plate_thickness - 1])
-              cylinder(h = flat_plate_thickness + 2, d = plate_hole_d);
-      }
-
     color("black")
-      hull() {
-        translate([0, 0, 0.5])
-          linear_extrude(height = 1, center = false)
-            rounded_rect_2d([rubber_base_length, rubber_base_width], 5);
-        translate([0, 0, free_height - 1])
-          linear_extrude(height = 1, center = false)
-            rounded_rect_2d([top_length, top_width], 4);
+      difference() {
+        hull() {
+          translate([0, 0, 0.5])
+            linear_extrude(height = 1, center = false)
+              rounded_rect_2d([rubber_base_length, rubber_base_width], 10);
+          translate([0, 0, free_height - 1])
+            linear_extrude(height = 1, center = false)
+              rounded_rect_2d([top_length, top_width], 6);
+        }
+
+        if (rubber_hole_d > 0 && rubber_hole_pitch > 0)
+          for (x = [-rubber_hole_pitch / 2, rubber_hole_pitch / 2])
+            translate([x, 0, -1])
+              cylinder(h = free_height + 2, d = rubber_hole_d);
       }
+
+    color("silver")
+      translate([0, 0, free_height - fixture_channel_depth / 2])
+        cube([fixture_channel_width, rubber_base_width + 4, fixture_channel_depth], center = true);
   }
 }
 

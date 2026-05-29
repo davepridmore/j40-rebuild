@@ -1,6 +1,6 @@
 # Longman Rubber Order Spec - 2026-05-08
 
-Purpose: send one consolidated custom-rubber manufacturing request to Longman for the current J40 body/front-support/chassis rubber batch, with the bump-stop rubber bonded/captive to the supplied one-piece flat metal backing/saddle piece.
+Purpose: send one consolidated custom-rubber manufacturing request to Longman for the current J40 body/front-support/chassis rubber batch, with the bump-stop rubber updated to match the May 29 removed samples after unscrewing from the metal fixture.
 
 Supplier fit: Longman Mills lists custom rubber parts, automobile parts, rubber-to-metal bonded parts, hose pipes, and rubber testing capability, so this pack asks them to quote the rubber pieces and advise what samples or steel inserts they need before final production.
 
@@ -11,7 +11,7 @@ Longman site references:
 - https://www.longman.com.pk/about-us/
 - https://www.longman.com.pk/automobile-parts/
 
-## Release Position - 2026-05-28
+## Release Position - 2026-05-29
 
 The old-rubber photos and ruler measurements are accepted as the dimensional basis for quote and first articles. The remaining open items are station fit and stack-release checks, not missing rubber dimensions.
 
@@ -23,7 +23,7 @@ Use this distinction:
 - `Station fit pending`: before full production or final trimming, the mechanic must map the part to its vehicle position and confirm footprint, sleeve/cup/shim stack, and dry-fit compression.
 - `Hold`: do not quote or fabricate until a real sample, installed position, or full-length trace is identified.
 
-For this Longman order, `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R` are released for quote and first article. The two bump-stop families are released for first-article discussion on height and Toyota-style construction, but their base, bolt pattern, and strike-face offsets remain vehicle-measured before mould release. `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917` remain hold-only.
+For this Longman order, `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R` are released for quote and first article. The two bump-stop families are released for first-article discussion using the May 29 removed-sample construction: broad molded rubber body, two through-holes in the rubber, central metal fixture/channel interface, rounded/asymmetric sides, and vehicle-measured strike position. `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917` remain hold-only.
 
 ## Vehicle Location And Kit Check
 
@@ -59,9 +59,9 @@ Need quote and manufacturing advice for custom new rubber parts for an older Toy
 
 Please quote the required rubber parts below, plus optional spares where listed. The measured old-rubber dimensions are the quote and first-article basis. Rubber must be new black solid automotive mount-grade compound. No tyre rubber, crumb rubber, sponge/foam, EVA, recycled offcuts, used rubber, or unknown old stock.
 
-For the body/front-support isolators, target hardness is Shore A 60 +/-5. For axle bump stops, target hardness is Shore A 70 +/-5 rubber with the Toyota-style progressive shape bonded or mechanically captive to the supplied one-piece flat steel backing/saddle plate.
+For the body/front-support isolators, target hardness is Shore A 60 +/-5. For axle bump stops, target hardness is Shore A 70 +/-5 rubber using the May 29 removed-sample shape and construction: sample-proven rubber through-holes, central metal fixture/insert interface, rounded/tapered sides, and a flat strike area.
 
-Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part of this Longman order. Existing body-mount washers will be inspected separately. For bump stops, the user will provide one flat metal backing/saddle piece with the request. Copy or reuse that supplied flat piece for the plate outline, hole/slot pattern, thickness, and rubber bond face; do not put mounting holes through the rubber unless the supplied original sample proves rubber clearance holes are part of the construction.
+Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part of this Longman order. Existing body-mount washers will be inspected separately. For bump stops, the user has provided removed rubber samples after unscrewing from the metal fixture. Copy the rubber-through-hole layout and central fixture/channel interface from those samples, then trace or reuse the metal fixture separately; do not use the earlier flat-backing-plate placeholder.
 
 ## Required Quote Table
 
@@ -72,8 +72,8 @@ Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part
 | `FS-OVAL` | Two-hole front-support isolator pad | `2` | `0` | Oval/capsule front-support isolator pad. | `96 L x 64 W x 15 T mm`; capsule ends `R32`; two `12 mm` holes at `64 mm` centres; optional `36 x 18 R3` relief only if sample confirms. | Outer perimeter edge break `0.5-1.0 mm`; clean punched hole edges; relief edges `R3` if relief is released. | Confirm whether old insert/boss is bonded, loose, or just washer imprint before production. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
 | `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | `0` | Plain flat underfloor body-support strip; no stepped section. | `420 L x 38 W x 8 T mm`. | Plan corners `R1.5`; top/bottom perimeter edge break `0.5-1.0 mm`; smooth cut edges; flat parallel faces. | No through-holes in rubber by default. Reuse or trace the slotted steel retainer separately if needed. | Solid EPDM or NR/SBR strip, Shore A `60 +/-5`. |
 | `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | `0` | Plain flat underfloor body-support strip; same blank as left unless dry-fit proves handed trim. | `420 L x 38 W x 8 T mm`. | Plan corners `R1.5`; top/bottom perimeter edge break `0.5-1.0 mm`; smooth cut edges; flat parallel faces. | Same retainer rule as left; do not invent slot geometry in the rubber. | Same batch/type as left strip. |
-| `BUMP-60010-LONG` | Long axle-to-chassis bump stop: front-left and both rear | `3` | `0` | Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face. | `70 H mm` released; flat plate `L x W`, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face `X/Y` are sample/vehicle-measured before mould release. | Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample. | Flat plate hole pitch, hole/thread, base footprint, and strike-face offset come from the supplied flat metal sample plus vehicle measurements. Holes belong in the plate unless the sample proves rubber clearance holes. | NR/SBR bump-stop rubber Shore A `70 +/-5` bonded/captive to coated flat steel plate. |
-| `BUMP-60020-SHORT` | Short right-front axle-to-chassis bump stop | `1` | `0` | Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face. | `60 H mm` released; flat plate `L x W`, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face `X/Y` are sample/vehicle-measured before mould release. | Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample. | Same flat-plate/base/contact rules as long stop; right-front vehicle measurements control final contact offset. | Same compound family as long stops, bonded/captive to coated flat steel plate. |
+| `BUMP-60010-LONG` | Long axle-to-chassis bump stop: front-left and both rear | `3` | `0` | Sample-style molded rubber stop copied from the May 29 removed bump stops, with two rubber through-holes, central fixture/channel interface, broad rounded body, and flat strike area. | `70 H mm` external height remains the Toyota-family control; rubber body `L x W`, through-hole pitch/diameter, fixture channel, and strike-face `X/Y` are sample/vehicle-measured before mould release. | Rounded/asymmetric/tapered rubber body cleaned up from sample, not a sharp block and not the earlier flat-plate placeholder. | Rubber through-hole pitch/diameter, central fixture/interface, base footprint, and strike-face offset come from the May 29 samples, removed metal fixture, and vehicle measurements. | NR/SBR bump-stop rubber Shore A `70 +/-5`; reproduce any sample-proven insert/fixture retention method. |
+| `BUMP-60020-SHORT` | Short right-front axle-to-chassis bump stop | `1` | `0` | Same sample-style molded rubber construction as the long stop, applied to the right-front station. | `60 H mm` external height remains the Toyota-family control; same sample/fixture/vehicle measurement release as long stop. | Same rounded/tapered sample family, reduced height only if right-front height is confirmed. | Same rubber-through-hole, fixture/channel, base, and contact rules as long stop; right-front vehicle measurements control final contact offset. | Same compound family as long stops; reproduce any sample-proven insert/fixture retention method. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Long/full-width flat body or panel liner strips | Hold | Hold | Not yet captured as orderable pieces. Quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required. | Hold: needs measured `L x W x T` and any holes/slots from actual piece or installed path. | Hold: edge radius/chamfer, end trim, and slot edges must come from actual trace. | Needs full-length trace, holes/slots, side/orientation labels, and installed location photos. | EPDM or NR/SBR flat strip, hardness by function after location is confirmed. |
 | `EXH-HGR-90917` | Exhaust teardrop hanger cushion | Hold | Hold | Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape. | Hold target `48 W x 86 H x 22 T mm`; top hole `9 mm`; lower hanger slot `16 x 22 mm` unless sample proves otherwise. | Radiused teardrop perimeter; clean radiused hole/slot edges; reinforcement/insert detail sample-controlled. | Needs old/genuine sample, installed support-point measurements, or a proper tracing before quoting production. | Heat/vibration-resistant exhaust-hanger rubber, Shore A `60 +/-5`. |
 
@@ -85,8 +85,8 @@ Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part
 | `BM-ISO-LG` | Released from measured sample/photo basis and current square-pad envelope. | Quote and make one first article or the quoted pair/spare with first-article signoff. | Confirm which station uses the large pair, landing footprint, sleeve/cup/shim stack, and dry-fit compression. |
 | `FS-OVAL` | Released for quote/first article from the measured old front-support pad dimensions. | Quote and make one first article. | Caliper-check physical sample for hole centres, thickness, insert/boss, and whether the relief is real before making final pair. |
 | `FS-STRIP-L/R` | Released for first article from May 17 measured old strips and installed-location photos. | Quote and make plain `420 x 38 x 8 mm` first articles. | Dry-fit on actual landings; apply only proven end trim; trace/reuse steel retainers separately. |
-| `BUMP-60010-LONG` | Height and Toyota-style construction released; base/holes/contact are not released. | Quote/advice and one `70 mm` first article after vehicle bracket measurements. | Measure BL/BW/P/D/X-Y/G/F on vehicle and pass compression/fit tests. |
-| `BUMP-60020-SHORT` | Height and Toyota-style construction released; base/holes/contact are not released. | Quote/advice and one `60 mm` first article after vehicle bracket measurements. | Measure right-front BL/BW/P/D/X-Y/G/F and pass compression/fit tests. |
+| `BUMP-60010-LONG` | Sample construction released from May 29 photos; final dimensions/contact are not released. | Quote/advice and one sample-style first article after sample caliper and vehicle bracket measurements. | Measure BL/BW/P/D/X-Y/G/F plus central fixture/channel values and pass compression/fit tests. |
+| `BUMP-60020-SHORT` | Same sample construction released; right-front height/contact remain vehicle checked. | Quote/advice and one right-front first article after sample caliper and vehicle bracket measurements. | Measure right-front BL/BW/P/D/X-Y/G/F plus central fixture/channel values and pass compression/fit tests. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Not released. | No supplier action. | Find the actual long/full-width strip or prove the installed path and dimensions. |
 | `EXH-HGR-90917` | Reference shape only. | No Longman production unless a sample or installed support geometry is available. | Sample/trace thickness, insert/reinforcement, pin/slot geometry, and exhaust support alignment. |
 
@@ -108,15 +108,15 @@ For initial quote, use the square dimensions in the table. If any station needs 
 
 ## Bump Stop Shape
 
-The current best local photo for the old bump-stop fragments is the image that was previously attached to the dashboard item `Front-support right strip / liner`:
+The current controlling local photos are the May 29 removed samples after unscrewing from the metal fixture:
 
-<img src="../photos/20260502_004222_gp_PKRe5HSQ.jpg" width="260" alt="Old bump-stop fragments with tape reference">
+<img src="../photos/20260529_223605_gp_CklgF0cQ.jpg" width="260" alt="Removed bump-stop samples with rubber through-holes and tape reference">
 
-Supporting vertical-scale view:
+Supporting side/profile view:
 
-<img src="../photos/20260502_004201_gp_zfUSmKJg.jpg" width="260" alt="Old bump-stop fragment vertical scale reference">
+<img src="../photos/20260529_223701_gp_wYPExcAA.jpg" width="260" alt="Removed bump-stop samples side view after fixture removal">
 
-Use those photos only as shape evidence. Combining the two remaining broken rubber pieces supports the Toyota-style rubber form: wider at the bracket/base face, tapered/radiused sides, and a smaller flat strike face. The photos do not safely release the flat backing-plate footprint, plate hole pitch/size, rubber bond face, or exact strike-face offset; those come from the supplied one-piece flat metal backing/saddle piece plus vehicle measurements.
+Use the May 29 photos as representative construction evidence for both bump stops. They prove two through-holes in the rubber body, a broad low rounded body, and a central metal fixture/channel interface after the metal fixture was unscrewed. The photos do not safely release final caliper dimensions, hole pitch/diameter, fixture-channel dimensions, or exact strike-face offset; those come from direct sample measurement, the removed metal fixture, and vehicle measurements.
 
 Provisional Longman quote shape for bump stops:
 
@@ -124,8 +124,8 @@ Provisional Longman quote shape for bump stops:
 | --- | --- | --- |
 | Quantity | `3` total: front-left, rear-left, rear-right | `1` total: front-right |
 | Free height | `70 +/-1 mm` | `60 +/-1 mm` |
-| Rubber mounting interface | One-piece flat steel backing/saddle plate supplied with the request controls plate footprint, thickness, hole/slot pattern, and rubber bond face; confirm against the cleaned vehicle bracket and fitted fasteners | Same rule; right-front bracket controls any local difference |
-| Rubber profile | Progressive taper, radiused sides, wider at mount/base than strike face | Same profile, reduced height |
+| Rubber mounting interface | Two through-holes in rubber plus central fixture/channel interface copied from May 29 samples; trace/reuse metal fixture separately and confirm against cleaned vehicle bracket and fitted fasteners | Same sample family; right-front bracket controls any local difference |
+| Rubber profile | Broad low body with rounded/asymmetric plan, tapered/radiused sides, and cleaned-up sample strike area | Same sample profile, reduced height only if confirmed |
 | Strike face | Flat rectangular lower face, centred on axle strike pad within `+/-5 mm` | Same |
 | Production release | One `70 mm` first article first, fitted to the vehicle bracket | One `60 mm` first article first, fitted to the vehicle bracket |
 
@@ -210,11 +210,11 @@ Record these bump-stop values:
 
 | ID | Measurement | Use |
 | --- | --- | --- |
-| `BL` | Supplied flat backing plate / bracket landing length | Plate outline and rubber base length |
-| `BW` | Supplied flat backing plate / bracket landing width | Plate outline and rubber base width |
-| `P` | Flat-plate bolt/stud pitch centre-to-centre, confirmed against vehicle bracket | Flat-plate hole pattern |
-| `D` | Flat-plate hole diameter or stud/bolt thread, confirmed against vehicle bracket and fitted fastener | Flat-plate clearance/thread control |
-| `X/Y` | Strike-pad centre offset from flat-plate/bracket holes | Contact face location |
+| `BL` | Rubber body / fixture landing length | Rubber body outline, mould base, and fixture seat |
+| `BW` | Rubber body / fixture landing width | Rubber body width and central fixture/channel clearance |
+| `P` | Rubber through-hole and fixture bolt/stud pitch centre-to-centre, confirmed against vehicle bracket | Rubber hole pattern plus fixture alignment |
+| `D` | Rubber through-hole diameter or stud/bolt thread, confirmed against vehicle bracket and fitted fastener | Rubber clearance and fixture fastener control |
+| `X/Y` | Strike-pad centre offset from rubber-hole/fixture/bracket features | Contact face location |
 | `G` | Loaded stop gap | Ride-height clearance |
 | `F` | Near-full-bump clearance | Confirms stop acts before hard limits |
 
@@ -228,7 +228,7 @@ For the Longman batch:
 - Bump-stop rubber averages `65-75 Shore A`.
 - Faces on body pads are flat and parallel within `0.5 mm`.
 - Holes are drilled/punched cleanly; no burnt, torn, or cracked hole edges.
-- Bump-stop first articles have a flat backing plate that seats on the vehicle bracket, bolts/studs pass through the plate features, the rubber remains bonded/captive to the plate, and the rubber passes 50 percent compression without cracking or permanent collapse; after 30 minutes unloaded, height recovers to at least 90 percent.
+- Bump-stop first articles match the May 29 removed-sample construction, the rubber through-holes align with the removed fixture and vehicle bracket, the central fixture/channel interface is captured without tearing or rocking, and the rubber passes 50 percent compression without cracking or permanent collapse; after 30 minutes unloaded, height recovers to at least 90 percent.
 - Parts are bagged/labeled by ID and side/station.
 
 ## Excluded From This Longman Rubber Order

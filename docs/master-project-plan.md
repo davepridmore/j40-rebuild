@@ -91,6 +91,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, in-place mount inspection).
 - Current baseline keeps the engine installed. Do not buy an engine lift/hoist unless a later approved job actually requires engine support/removal.
+- Use [radiator-workstream.md](radiator-workstream.md) as the control sheet for the radiator body, missing mirror-side retention bracket, recore/new-build decision, photo intake, and final cooling-system installation gate.
 - Use [gearbox-top-cover-workstream.md](gearbox-top-cover-workstream.md) as the control sheet for the reported poor gearbox top cover / shift tower. Do not buy detents, bushes, shift-seat parts, or a replacement cover until the fitted gearbox and top-cover casting are identified and `GB-TOP-CAPTURE-001` is complete.
 - Use [rear-differential-axle-teardown-inspection-plan-20260517.md](rear-differential-axle-teardown-inspection-plan-20260517.md) as the control sheet for the rear differential/axle inspection during the current access window.
 - Keep a written fault list with measured findings; hold upgrades until baseline reliability is closed.

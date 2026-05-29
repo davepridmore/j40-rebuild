@@ -2742,6 +2742,17 @@ def row_text_values(row: dict[str, str]) -> list[str]:
     return [clean(value) for value in row.values() if clean(value)]
 
 
+def row_link_payloads(*values: Any) -> list[dict[str, Any]]:
+    link_values: list[Any] = []
+    for value in values:
+        if isinstance(value, dict):
+            link_values.append(value.get("product_link"))
+            link_values.extend(row_text_values(value))
+        else:
+            link_values.append(value)
+    return link_payloads(link_values)
+
+
 def humanize_token(value: str) -> str:
     token = clean(value).replace("|", ", ")
     return token.replace("_", " ").strip().title()
@@ -4130,8 +4141,8 @@ ORDER_PRIMARY_MEDIA_IDS: dict[str, tuple[str, ...]] = {
     "FS-OVAL": ("20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"),
     "FS-STRIP-L": ("20260517_193503_gp_N9nHjqXw", "20260517_194143_gp_CO7MuMdA"),
     "FS-STRIP-R": ("20260517_193612_gp_JmbfR0Tw", "20260517_194633_gp_rAjY3gjg"),
-    "BUMP-60010-LONG": ("20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"),
-    "BUMP-60020-SHORT": ("20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"),
+    "BUMP-60010-LONG": ("20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"),
+    "BUMP-60020-SHORT": ("20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"),
     "HLS-01": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
     "RPO-COOL-001": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
     "RP-COOL-001": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
@@ -6721,8 +6732,9 @@ def build_supplies_inventory(
                 "payment_status": clean(row.get("payment_status")),
                 "delivery_status": clean(row.get("delivery_status")),
                 "evidence_ref": clean(row.get("evidence_ref")),
+                "product_link": clean(row.get("product_link")),
                 "notes": clean(row.get("notes")),
-                "links": link_payloads(row_text_values(row)),
+                "links": row_link_payloads(row),
                 **estimate_summary,
             }
         )
@@ -8481,19 +8493,19 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         )
     if has_any("bump-60010-long", "long axle-to-chassis bump stop", "48304-60010", "long bump stop"):
         return previous(
-            "photos/20260502_004222_gp_PKRe5HSQ.jpg",
-            "previous broken bump-stop fragments",
-            "20260502_004222_gp_PKRe5HSQ",
+            "photos/20260529_223605_gp_CklgF0cQ.jpg",
+            "May 29 removed bump-stop sample face view",
+            "20260529_223605_gp_CklgF0cQ",
             "bump-stop",
-            "previous",
+            "sample",
         )
     if has_any("bump-60020-short", "short right-front bump stop", "48304-60020", "right-front bump stop"):
         return previous(
-            "photos/20260502_004201_gp_zfUSmKJg.jpg",
-            "previous bump-stop vertical scale reference",
-            "20260502_004201_gp_zfUSmKJg",
+            "photos/20260529_223701_gp_wYPExcAA.jpg",
+            "May 29 removed bump-stop sample side view",
+            "20260529_223701_gp_wYPExcAA",
             "bump-stop",
-            "previous",
+            "sample",
         )
     if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
         return local(
@@ -9640,8 +9652,9 @@ def workstream_part_row_payload(
         "source": "expenses",
         "source_ref": clean(row.get("entry_id")),
         "evidence_ref": clean(row.get("evidence_ref")),
+        "product_link": clean(row.get("product_link")),
         "notes": clean(row.get("notes")),
-        "links": link_payloads(row_text_values(row)),
+        "links": row_link_payloads(row),
         **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup or {}),
     }
 
@@ -10135,8 +10148,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "vendor": clean(row.get("company")),
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")) or clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("evidence_ref")),
+                "product_link": clean(row.get("product_link")) or clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("product_link")),
                 "notes": clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("notes")),
-                "links": link_payloads(row_text_values(row), row_text_values(expense_by_entry_id.get(clean(row.get("entry_id")), {}))),
+                "links": row_link_payloads(row, expense_by_entry_id.get(clean(row.get("entry_id")), {})),
                 **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in buy_now_rows
@@ -10166,8 +10180,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "vendor": clean(row.get("company")),
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")),
+                "product_link": clean(row.get("product_link")),
                 "notes": clean(row.get("notes")),
-                "links": link_payloads(row_text_values(row)),
+                "links": row_link_payloads(row),
                 **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in open_part_rows
@@ -10197,8 +10212,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "vendor": clean(row.get("company")),
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")),
+                "product_link": clean(row.get("product_link")),
                 "notes": clean(row.get("notes")),
-                "links": link_payloads(row_text_values(row)),
+                "links": row_link_payloads(row),
                 **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in ordered_pending_rows

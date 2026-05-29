@@ -10,7 +10,7 @@ Use the old engine radiator as the master pattern and send it with Amir to a rad
 2. If the tanks, necks, or brackets are weak, cracked, plastic, badly corroded, or poorly repaired: build a complete new copper/brass radiator from the old radiator as the pattern.
 3. Do not buy a random FJ40/BJ40/HJ47 radiator by listing photo alone. The fitted 2H/HJ47-style hose layout, fan clearance, cap position, and bracket locations control the part.
 
-Important fitment finding: the extra fabricated support leg on the old radiator is evidence that the radiator was not installed correctly. Use the old radiator for hose-neck, tank, cap, drain, core-envelope, and bracket-location reference, but do not blindly copy the extra leg as the final support design. Final installation should sit on the proper lower pads and side/top mounts; if the vehicle-side mounts are missing, bent, or misaligned, fix the vehicle bracket/retention separately.
+Important fitment finding: the front-of-car fabrication is required to keep the radiator properly located in the vehicle. The extra fabricated support leg on the old radiator is evidence that the radiator was not installed correctly. Use the old radiator for hose-neck, tank, cap, drain, core-envelope, and bracket-location reference, but do not blindly copy the extra leg as the final support design. Final installation should sit on the proper lower pads and side/top mounts; if the vehicle-side mounts are missing, bent, or misaligned, fix the vehicle bracket/retention separately.
 
 ## If The Aluminium Radiator Has Already Been Bought
 
@@ -76,6 +76,7 @@ Capture these before the radiator leaves the vehicle/workshop:
 
 ## Linked Work
 
+- `radiator`: dedicated control workstream in [radiator-workstream.md](radiator-workstream.md).
 - `part_mech_radiator_hose_set`: upper/lower/overflow hose and formed coolant pipe package.
 - `part_mech_radiator_cap`: replace with the radiator job.
 - `front_radiator_two_side_retention_fabrication_20260508`: dry-fit before final radiator release so the radiator is retained on both sides without stressing the tanks.

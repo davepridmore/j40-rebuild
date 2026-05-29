@@ -26,7 +26,7 @@ Only chat content related to this build should be included. The importer treats 
 
 - `data/config/project.json`: import paths, relevance rules, and project metadata
 - `data/config/whatsapp_target_numbers.json`: two-number target map for WhatsApp MCP reads
-- `data/manual/expenses.csv`: manually maintained spend ledger with phase/workstream/evidence/payment/delivery fields
+- `data/manual/expenses.csv`: manually maintained spend ledger with phase/workstream/evidence/payment/delivery/product-link fields
 - `data/manual/procurement_queue.csv`: active purchasing queue filtered out of the main expense ledger
 - `data/manual/j40_costs_workbook_rows.csv`: normalized extract of `/Users/davidpridmore/Documents/J40_Costs.xlsx` cost-like sheets
 - `data/manual/j40_costs_expenses_reconciliation.csv`: workbook-to-ledger match status against `expenses.csv`
@@ -104,6 +104,7 @@ Only chat content related to this build should be included. The importer treats 
 2. Drop reference photos from other J40 builds into `data/reference/other_j40_builds/`.
 3. Add curated WhatsApp or workshop sample images to `data/manual/other_build_reference_media.csv`.
 4. Update `data/manual/expenses.csv` whenever you buy, quote, receive, install, refund, or defer anything that changes project cost.
+   - Put exact online item URLs in `product_link`; multiple URLs can be separated with ` | ` for bundle rows.
 5. Set `procurement_stage` in `data/manual/expenses.csv` so each line item stays operationally visible:
    - `purchase_ready`: ready to order now
    - `ordered_pending_delivery`: order has been placed and is waiting to arrive

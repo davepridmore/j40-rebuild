@@ -16,9 +16,9 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
 - `fs_oval_front_support_pad.scad` - `FS-OVAL` FS-OVAL front support two-hole isolator pad; first-article model; relief/insert construction still sample-controlled
 - `fs_strip_l_plain_strip.scad` - `FS-STRIP-L` FS-STRIP-L underfloor body-support strip liner left; first-article plain strip; local trim/holes only after dry-fit proves them
 - `fs_strip_r_plain_strip.scad` - `FS-STRIP-R` FS-STRIP-R underfloor body-support strip liner right; first-article plain strip; local trim/holes only after dry-fit proves them
-- `b_60010_long_measurement_model.scad` - `B-60010-LONG` BUMP-60010 long bump stop model, front-left and rear; supplied-flat-plate measurement model; plate dimensions, bracket fit, and strike offset required before mould release
-- `b_60020_short_measurement_model.scad` - `B-60020-SHORT` BUMP-60020 short right-front bump stop model; supplied-flat-plate measurement model; plate dimensions, bracket fit, and strike offset required before mould release
-- `b_60010_rear_pair_measurement_model.scad` - `B-60010-REAR-PAIR` BUMP-60010 rear pair bump stop model; supplied-flat-plate measurement model; plate dimensions, bracket fit, and strike offset required before mould release
+- `b_60010_long_measurement_model.scad` - `B-60010-LONG` BUMP-60010 long bump stop model, front-left and rear; May 29 removed-sample measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release
+- `b_60020_short_measurement_model.scad` - `B-60020-SHORT` BUMP-60020 short right-front bump stop model; May 29 removed-sample measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release
+- `b_60010_rear_pair_measurement_model.scad` - `B-60010-REAR-PAIR` BUMP-60010 rear pair bump stop model; May 29 removed-sample measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release
 - `exh_hgr_90917_teardrop_cushion.scad` - `EXH-HGR-90917` EXH-HGR-90917 teardrop exhaust cushion; hold-only; sample or installed support-point geometry required
 
 ## Critical Release Rules
@@ -30,9 +30,10 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are supplied-flat-plate measurement placeholders. Free
-  height is known, but the backing-plate outline, thickness, hole pattern, bond
-  face, and strike geometry must come from the supplied flat metal sample,
-  cleaned vehicle brackets, and axle strike pads.
+- Bump-stop models are May 29 removed-sample measurement placeholders. Free
+  height is known, but rubber body outline, through-hole pitch/diameter,
+  central fixture/channel detail, and strike geometry must come from sample
+  calipers, the removed metal fixture, cleaned vehicle brackets, and axle
+  strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.

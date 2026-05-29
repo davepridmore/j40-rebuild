@@ -109,6 +109,7 @@ def collect_relative_asset_paths(value: Any) -> set[str]:
 
 def repo_relative_from_ui_path(relative_ui_path: str) -> Path:
     repo_relative = relative_ui_path.strip().replace("\\", "/")
+    repo_relative = repo_relative.split("#", 1)[0].split("?", 1)[0]
     while repo_relative.startswith("../"):
         repo_relative = repo_relative[3:]
     if not repo_relative:

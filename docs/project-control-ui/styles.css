@@ -353,6 +353,26 @@ h1 {
   font-size: 1rem;
 }
 
+.overview-count-row {
+  margin: 0.65rem 0;
+}
+
+.overview-status-table td:nth-child(4),
+.overview-status-table td:nth-child(5) {
+  font-weight: 700;
+  text-align: center;
+}
+
+.task-workstream-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.task-workstream-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
 .item-action-cell {
   align-items: flex-start;
   display: inline-flex;

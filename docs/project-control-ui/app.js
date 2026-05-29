@@ -1630,26 +1630,26 @@
       part: "Long axle-to-chassis bump stop: front-left and both rear",
       qty: "3",
       location: "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
-      image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-      imageCaption: "Broken old bump-stop fragments with tape reference",
-      spec: "Toyota-style progressive bump-stop rubber bonded/captive to the supplied one-piece flat steel backing/saddle plate, free height 70 +/-1; tapered/radiused rubber body; flat rectangular strike face. Use the old fragments as shape evidence only.",
-      route: "Longman first article, then supplied flat-plate and vehicle-measurement release",
+      image: "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
+      imageCaption: "May 29 removed bump-stop sample: face/plan view",
+      spec: "May 29 removed-sample style bump-stop rubber, free height 70 +/-1; broad rounded/tapered rubber body with two rubber through-holes, central fixture/channel interface, and flat strike area. Final BL/BW/P/D/fixture-channel/contact offsets come from calipers, fixture, bracket, and axle strike pad.",
+      route: "Longman first article, then sample/fixture and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "User will provide the one flat metal backing/saddle piece with the request; it releases plate outline, hole pattern, bond face, and strike-face offset with vehicle measurements.",
+      notes: "May 29 removed samples are representative construction evidence for both stops. Trace or reuse the removed metal fixture separately; vehicle measurements release final fit.",
     },
     {
       id: "BUMP-60020-SHORT",
       part: "Short right-front axle-to-chassis bump stop",
       qty: "1",
       location: "Axle-to-chassis bump-stop bracket: right-front station only.",
-      image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
-      imageCaption: "Broken old bump-stop vertical/scale reference",
-      spec: "Same Toyota-style progressive rubber construction as the long stop, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
-      route: "Longman first article, then supplied flat-plate and vehicle-measurement release",
+      image: "../../photos/20260529_223701_gp_wYPExcAA.jpg",
+      imageCaption: "May 29 removed bump-stop sample: side/fixture view",
+      spec: "Same May 29 sample-style construction as the long stop: rubber through-holes, central fixture/channel interface, rounded/tapered body, and flat strike area, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
+      route: "Longman first article, then sample/fixture and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
@@ -1702,7 +1702,7 @@
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg", "FS-OVAL two-hole front-support SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "FS-STRIP-L left plain-strip SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "FS-STRIP-R right plain-strip SVG control"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop supplied flat-plate measurement control with bracket bolt/stud pitch callouts"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop May 29 sample and vehicle measurement control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg", "Full-width liner hold measurement control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg", "Exhaust hanger hold reference SVG"],
     ["../../photos/20260422_004323_gp_JD88KuWQ.jpg", "Body-off chassis body-mount pedestal close-up"],
@@ -1727,8 +1727,10 @@
     ["../../photos/20260517_193616_gp_1ye19BZA.jpg", "Loose strip curved-end close-up"],
     ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad measurement photo"],
     ["../../photos/20260512_100000_user_front_support_radiator_pickups_context.png", "Front support / radiator pickup location context"],
-    ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Bump-stop fragment shape evidence"],
-    ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Bump-stop vertical/scale evidence"],
+    ["../../photos/20260529_223605_gp_CklgF0cQ.jpg", "May 29 removed bump-stop sample face/plan evidence"],
+    ["../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop sample side/fixture evidence"],
+    ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Superseded bump-stop fragment context only"],
+    ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Superseded bump-stop vertical/scale context only"],
     ["../../photos/20260422_004254_gp_SplHLSYA.jpg", "Rear axle/chassis bump-stop station context"],
     ["../../photos/20260501_193841_gp_ZwpHFiMA.jpg", "Front axle/chassis bump-stop station context"],
   ];
@@ -1749,8 +1751,8 @@
     {
       family: "Axle-to-chassis bump stops",
       current: "BUMP-60010-LONG x3, BUMP-60020-SHORT x1",
-      basis: "Existing bump-stop spec tracks the Toyota-style 70 mm long / 60 mm right-front split and the vehicle-measured saddle/hole release.",
-      decision: "Covered as first articles. The preview now keeps the two screw/mounting holes visible and calls out pitch/diameter measurement.",
+      basis: "May 29 removed samples show the representative construction: broad molded rubber, two rubber through-holes, and a central fixture/channel interface; Toyota references keep the 70 mm long / 60 mm right-front height split.",
+      decision: "Covered as first articles. The preview keeps the rubber through-holes visible and calls out sample, fixture, bracket, and strike-pad measurement release.",
     },
     {
       family: "Full-width flat body/panel liners",
@@ -1814,8 +1816,8 @@
     "FS-OVAL": ["20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"],
     "FS-STRIP-L": ["20260517_193503_gp_N9nHjqXw", "20260517_194143_gp_CO7MuMdA"],
     "FS-STRIP-R": ["20260517_193612_gp_JmbfR0Tw", "20260517_194633_gp_rAjY3gjg"],
-    "BUMP-60010-LONG": ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"],
-    "BUMP-60020-SHORT": ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"],
+    "BUMP-60010-LONG": ["20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"],
+    "BUMP-60020-SHORT": ["20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"],
   };
 
   const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
@@ -2023,14 +2025,14 @@
       <div class="chassis-rubber-preview-block">
         <div class="chassis-rubber-preview-copy">
           <strong>Current Order Preview</strong>
-          <span>Shows only the active Longman quote and first-article lines: square body pads, front-support oval, left/right strips, and long/short bump stops bonded/captive to the supplied flat backing plate.</span>
+          <span>Shows only the active Longman quote and first-article lines: square body pads, front-support oval, left/right strips, and long/short bump stops following the May 29 removed-sample construction.</span>
         </div>
         ${renderPreparedMedia(preparedCurrent, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
       </div>
       <div class="chassis-rubber-preview-block">
         <div class="chassis-rubber-preview-copy">
           <strong>Complete SVG Preview</strong>
-          <span>Shows every current order line and hold/reference control together: square body pads, front-support oval, left/right strips, long/short bump stops with mounting-hole controls, full-width liner hold, and exhaust hanger hold.</span>
+          <span>Shows every current order line and hold/reference control together: square body pads, front-support oval, left/right strips, long/short bump stops with rubber through-hole and fixture-channel controls, full-width liner hold, and exhaust hanger hold.</span>
         </div>
         ${renderPreparedMedia(preparedComplete, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
       </div>
@@ -2093,7 +2095,7 @@
           </div>
         </div>
         <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style tapered/radiused progressive rubber body bonded/captive to the supplied one-piece flat steel backing/saddle plate, flat rectangular strike face, vehicle bracket measurements, and axle contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, rubber replacements that omit the supplied flat backing plate, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use the May 29 removed-sample construction for both stops: broad rounded/tapered rubber body, two rubber through-holes, central fixture/channel interface, flat strike area, vehicle bracket measurements, and axle contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, universal bump stops, or replacements that omit the sample-proven through-hole and fixture/channel layout.</p>
         <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="${CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH}">current order preview</a>, <a href="${CHASSIS_RUBBER_LOCATION_MAP_PATH}">vehicle location map</a>, <a href="${CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH}">complete SVG preview</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
         ${renderChassisRubberCoverageCheck()}
         ${renderChassisRubberCompleteDrawingPreview()}
@@ -2152,8 +2154,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 420 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, flat backing-plate outline/hole features +/-0.5 after supplied sample and vehicle measurement release, contact centre +/-5; rubber/steel bond or captive joint must survive compression.</p>
-        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need the supplied one-piece flat metal backing/saddle piece, BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, flat-plate hole layout, material declaration, and first-article compression recovery check before mould release.</p>
+        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 420 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, rubber through-hole pitch/diameter and fixture/channel features +/-0.5 after sample/fixture/vehicle release, contact centre +/-5; fixture retention must survive compression.</p>
+        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need May 29 sample calipers, removed fixture trace, BL/BW/P/D/fixture-channel/X-Y/G/F values, fabricator side/profile sketch, rubber through-hole layout, material declaration, and first-article compression recovery check before mould release.</p>
       </article>
     `;
   }
@@ -4112,7 +4114,7 @@
       return ["20260502_004429_gp_KJHxGcCA", "20260502_004231_gp_CfosvPIg", "20260502_004413_gp_Qno8OVRg"];
     }
     if (id.includes("BUMP") || text.includes("bump stop") || text.includes("rubber bumper")) {
-      return ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"];
+      return ["20260529_223605_gp_CklgF0cQ", "20260529_223701_gp_wYPExcAA"];
     }
     if (id === "CR-FRONT-001" || id === "FS-OVAL" || text.includes("two-hole oval")) {
       return ["20260502_004345_gp_yK8VYzMQ"];
@@ -4288,7 +4290,7 @@
           : isShim
             ? "New flat steel, deburred and zinc plated or epoxy primed."
             : isBump
-              ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern coated flat steel backing plate; no used or universal mismatch."
+            ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 29 sample-style rubber through-holes, central fixture/channel interface, and sample-proven fixture/insert retention; no used or universal mismatch."
               : isExhaust
                 ? "New heat/vibration-resistant molded exhaust rubber, Shore A 60 +/-5."
                 : "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5.",
@@ -4300,7 +4302,7 @@
           : isShim
           ? "Trace preserved station footprint before CNC/laser cutting final outline."
           : isBump
-            ? "Measure supplied one-piece flat backing plate, cleaned vehicle bracket BL/BW, bolt/stud pitch P, hole/thread D, strike-pad X/Y, loaded gap G, and full-bump clearance F; make Toyota-style tapered rubber bonded/captive to flat-plate 70 mm long and 60 mm right-front first articles before full set."
+            ? "Measure May 29 removed samples, removed fixture, cleaned vehicle bracket BL/BW, rubber through-hole pitch P, hole/thread D, fixture/channel, strike-pad X/Y, loaded gap G, and full-bump clearance F; make sample-style 70 mm long and 60 mm right-front first articles before full set."
             : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
         reject: isBump
           ? "Used, cracked, oil-softened, simple cut block, universal height/profile, or wrong bracket/contact fit."
@@ -4409,10 +4411,10 @@
       return previous("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "previous two-hole oval front-support pad", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "previous"]);
     }
     if (rowId === "BUMP-60010-LONG" || hasAny("long axle-to-chassis bump stop", "48304-60010", "long bump stop")) {
-      return previous("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "previous broken bump-stop fragments", "20260502_004222_gp_PKRe5HSQ", ["bump-stop", "previous"]);
+      return previous("../../photos/20260529_223605_gp_CklgF0cQ.jpg", "May 29 removed bump-stop sample face/plan view", "20260529_223605_gp_CklgF0cQ", ["bump-stop", "may29", "sample"]);
     }
     if (rowId === "BUMP-60020-SHORT" || hasAny("short right-front bump stop", "48304-60020", "right-front bump stop")) {
-      return previous("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "previous bump-stop vertical scale reference", "20260502_004201_gp_zfUSmKJg", ["bump-stop", "previous"]);
+      return previous("../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop sample side/fixture view", "20260529_223701_gp_wYPExcAA", ["bump-stop", "may29", "sample"]);
     }
     if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
       return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a");
@@ -4760,7 +4762,7 @@
       plain_stall_request:
         "I need one consolidated quote for the exact new-only J40 body/front-support/chassis custom rubber bundle listed in the Longman spec. Quote the rubber lines together; sleeves, cup washers, shims, spacers, bolts, nuts, and washers are separate controlled hardware lines. Toyota/OE part numbers are reference shapes only. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 420 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old rubber is not the master: use the supplied one-piece flat metal backing/saddle as the bonding and hole-pattern pattern, plus the 70 mm long / 60 mm right-front height controls and vehicle bracket measurements.",
+        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 420 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old broken fragments and the earlier flat-plate placeholder are not the master: use the May 29 removed samples as the construction pattern, plus the removed fixture, 70 mm long / 60 mm right-front height controls, and vehicle bracket measurements.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
@@ -6517,155 +6519,341 @@
     `;
   }
 
+  function overviewWorkstreamContext() {
+    const workstreams = Array.isArray(data.workstreams) ? data.workstreams : [];
+    return {
+      workstreams,
+      byId: new Map(workstreams.map((workstream) => [cleanString(workstream.id), workstream])),
+    };
+  }
+
+  function overviewWorkstreamId(value) {
+    return cleanString(value) || "unassigned";
+  }
+
+  function overviewWorkstreamLabel(workstreamId, context) {
+    if (workstreamId === "unassigned") {
+      return "Unassigned";
+    }
+    const workstream = context.byId.get(workstreamId);
+    return cleanString(workstream && workstream.title) || formatToken(workstreamId);
+  }
+
+  function groupOverviewRowsByWorkstream(rows) {
+    return (Array.isArray(rows) ? rows : []).reduce((groups, row) => {
+      const workstreamId = overviewWorkstreamId(row && row.workstream);
+      if (!groups[workstreamId]) {
+        groups[workstreamId] = [];
+      }
+      groups[workstreamId].push(row);
+      return groups;
+    }, {});
+  }
+
+  function sortedOverviewWorkstreamIds(context, ...groupMaps) {
+    const ids = [];
+    const seen = new Set();
+    const addId = (id) => {
+      const normalized = overviewWorkstreamId(id);
+      if (!seen.has(normalized)) {
+        seen.add(normalized);
+        ids.push(normalized);
+      }
+    };
+    context.workstreams.forEach((workstream) => addId(workstream.id));
+    const extraIds = new Set();
+    groupMaps.forEach((groups) => {
+      Object.keys(groups || {}).forEach((id) => {
+        if (!seen.has(id)) {
+          extraIds.add(id);
+        }
+      });
+    });
+    [...extraIds]
+      .sort((left, right) => {
+        if (left === "unassigned") return 1;
+        if (right === "unassigned") return -1;
+        return overviewWorkstreamLabel(left, context).localeCompare(overviewWorkstreamLabel(right, context));
+      })
+      .forEach(addId);
+    return ids;
+  }
+
+  function overviewTaskPriorityRank(task) {
+    const priority = cleanString(task && task.priority).toUpperCase();
+    const match = priority.match(/^P(\d+)/);
+    return match ? Number(match[1]) : 9;
+  }
+
+  function overviewTaskTimingRank(task) {
+    return cleanString(task && task.timing).toLowerCase() === "later" ? 1 : 0;
+  }
+
+  function compareOverviewTasks(left, right) {
+    return (
+      overviewTaskTimingRank(left) - overviewTaskTimingRank(right) ||
+      overviewTaskPriorityRank(left) - overviewTaskPriorityRank(right) ||
+      cleanString(left && left.title).localeCompare(cleanString(right && right.title))
+    );
+  }
+
+  function renderOverviewTaskRows(tasks, options = {}) {
+    const showEvidence = Boolean(options.showEvidence);
+    return tasks
+      .slice()
+      .sort(compareOverviewTasks)
+      .map(
+        (task) => `
+          <tr>
+            ${showEvidence ? `<td class="requirement-evidence-cell">${renderCaptureTaskEvidence(task)}</td>` : ""}
+            <td>${priorityChip(task.priority)}</td>
+            <td>${escapeHtml(formatToken(task.timing || "now"))}</td>
+            <td>
+              <strong>${escapeHtml(task.title || task.task_id || "Task")}</strong>
+              ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
+              ${task.notes ? `<div class="small-muted">${escapeHtml(truncateText(task.notes, 140))}</div>` : ""}
+            </td>
+            <td>${statusChip(task.status || "open")}</td>
+            <td>${escapeHtml(formatToken(task.task_type || "data"))}</td>
+            <td>
+              ${escapeHtml(task.action || "-")}
+              ${task.data_needed ? `<div class="small-muted">${escapeHtml(truncateText(task.data_needed, 180))}</div>` : ""}
+            </td>
+            <td>
+              <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
+              ${renderLinksCell(task)}
+            </td>
+          </tr>
+        `
+      )
+      .join("");
+  }
+
+  function renderTasksByWorkstreamSection(tasks, options = {}) {
+    const sourceTasks = Array.isArray(tasks) ? tasks : [];
+    const context = overviewWorkstreamContext();
+    const groupedTasks = groupOverviewRowsByWorkstream(sourceTasks);
+    const workstreamIds = sortedOverviewWorkstreamIds(context, groupedTasks).filter(
+      (workstreamId) => groupedTasks[workstreamId] && groupedTasks[workstreamId].length
+    );
+    const showEvidence = Boolean(options.showEvidence);
+    const emptyText = options.emptyText || "No tasks found.";
+    const columnCount = showEvidence ? 8 : 7;
+
+    if (!sourceTasks.length) {
+      return `<section class="card"><p class="small-muted">${escapeHtml(emptyText)}</p></section>`;
+    }
+
+    return `
+      <section class="task-workstream-list">
+        ${workstreamIds
+          .map((workstreamId) => {
+            const rows = groupedTasks[workstreamId] || [];
+            const workstream = context.byId.get(workstreamId);
+            return `
+              <article class="card task-workstream-card">
+                <div class="detail-header">
+                  <h3>${escapeHtml(overviewWorkstreamLabel(workstreamId, context))}</h3>
+                  <div class="overview-card-actions">
+                    ${workstream ? statusChip(workstream.status) : statusChip("unassigned")}
+                    ${chip(`${rows.length} tasks`)}
+                    ${workstream ? `<button class="overview-open-btn" data-open-workstream-id="${escapeHtml(workstreamId)}" type="button">Open</button>` : ""}
+                  </div>
+                </div>
+                <div class="table-wrap">
+                  <table class="capture-task-table compact">
+                    <thead>
+                      <tr>
+                        ${showEvidence ? "<th>Evidence</th>" : ""}
+                        <th>Priority</th>
+                        <th>Timing</th>
+                        <th>Task</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Action / Data Needed</th>
+                        <th>Source</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${
+                        rows.length
+                          ? renderOverviewTaskRows(rows, { showEvidence })
+                          : `<tr><td colspan="${columnCount}">${escapeHtml(emptyText)}</td></tr>`
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            `;
+          })
+          .join("")}
+      </section>
+    `;
+  }
+
+  function overviewRequiredOrders() {
+    const supplies = data.supplies || {};
+    const allSupplyRows = Array.isArray(supplies.all_rows) ? supplies.all_rows : [];
+    return allSupplyRows
+      .filter((row) => cleanString(row && row.status_group).toLowerCase() === "still_required")
+      .sort(
+        (left, right) =>
+          overviewWorkstreamId(left && left.workstream).localeCompare(overviewWorkstreamId(right && right.workstream)) ||
+          cleanString(left && left.supply_type).localeCompare(cleanString(right && right.supply_type)) ||
+          cleanString(left && left.item).localeCompare(cleanString(right && right.item))
+      );
+  }
+
+  function renderRequiredOrdersAcrossAll(requiredOrders, context) {
+    const groupedOrders = groupOverviewRowsByWorkstream(requiredOrders);
+    const workstreamIds = sortedOverviewWorkstreamIds(context, groupedOrders).filter(
+      (workstreamId) => groupedOrders[workstreamId] && groupedOrders[workstreamId].length
+    );
+    const countChips = workstreamIds
+      .map((workstreamId) => chip(`${overviewWorkstreamLabel(workstreamId, context)}: ${(groupedOrders[workstreamId] || []).length}`))
+      .join("");
+
+    return `
+      <h2 class="section-title">Required Orders Across All Workstreams</h2>
+      <section class="card">
+        <div class="detail-header">
+          <h3>Still Required / Need To Order</h3>
+          ${chip(`${requiredOrders.length} rows`)}
+        </div>
+        <div class="chip-row overview-count-row">
+          ${countChips || chip("No required orders")}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Workstream</th>
+                <th>Type</th>
+                <th>Item</th>
+                <th>Stage / Status</th>
+                <th>Supplier</th>
+                <th>Cost</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${
+                requiredOrders.length
+                  ? requiredOrders
+                      .map(
+                        (row) => `
+                          <tr>
+                            <td>${escapeHtml(overviewWorkstreamLabel(overviewWorkstreamId(row.workstream), context))}</td>
+                            <td>${escapeHtml(formatToken(row.supply_type || "-"))}</td>
+                            <td>${renderItemButton(row)}</td>
+                            <td>
+                              ${statusChip(row.procurement_stage || row.status_detail || row.status_group || "still_required")}
+                              ${row.status_detail ? `<div class="small-muted">${escapeHtml(formatToken(row.status_detail))}</div>` : ""}
+                            </td>
+                            <td>${tableSupplierCell(row)}</td>
+                            <td>${tableCostCell(row)}</td>
+                            <td>${renderLinksCell(row)}</td>
+                          </tr>
+                        `
+                      )
+                      .join("")
+                  : '<tr><td colspan="7">No still-required order rows found.</td></tr>'
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
   function renderOverview() {
     const summary = data.summary || {};
-    const workstreams = data.workstreams || [];
     const parts = data.parts || {};
-    const projectSteps = data.project_steps || [];
-    const urgentActions = parts.urgent_actions || [];
+    const captureTasks = data.capture_tasks || {};
+    const allTasks = Array.isArray(captureTasks.tasks) ? captureTasks.tasks : [];
+    const currentTasks = allTasks.filter((task) => cleanString(task.timing).toLowerCase() !== "later");
+    const context = overviewWorkstreamContext();
+    const requiredOrders = overviewRequiredOrders();
+    const groupedOrders = groupOverviewRowsByWorkstream(requiredOrders);
+    const groupedTasks = groupOverviewRowsByWorkstream(currentTasks);
+    const workstreamIds = sortedOverviewWorkstreamIds(context, groupedOrders, groupedTasks);
 
     root.innerHTML = `
       <section class="metrics-grid">
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.workstreams_in_scope ?? 0)}</p>
-          <p class="metric-label">Workstreams in Scope</p>
+          <p class="metric-value">${escapeHtml(summary.workstreams_in_scope ?? context.workstreams.length)}</p>
+          <p class="metric-label">Workstreams</p>
         </article>
         <article class="card">
           <p class="metric-value">${escapeHtml(summary.workstreams_active ?? 0)}</p>
           <p class="metric-label">Active Workstreams</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.parts_open_rows ?? 0)}</p>
-          <p class="metric-label">Open Parts Rows</p>
+          <p class="metric-value">${escapeHtml(requiredOrders.length)}</p>
+          <p class="metric-label">Required Orders</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.parts_ordered_pending_delivery ?? 0)}</p>
+          <p class="metric-value">${escapeHtml(summary.parts_ordered_pending_delivery ?? (parts.ordered_pending_delivery || []).length)}</p>
           <p class="metric-label">Orders Awaiting Delivery</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.capture_data_tasks_now ?? 0)}</p>
-          <p class="metric-label">Photo / Data Tasks Now</p>
+          <p class="metric-value">${escapeHtml(currentTasks.length)}</p>
+          <p class="metric-label">Current Tasks</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.workstream_evidence_images ?? 0)}</p>
-          <p class="metric-label">Mapped Workstream Evidence Media</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.supply_rows_tracked ?? 0)}</p>
-          <p class="metric-label">Tracked Tool/Substance/Part Rows</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.whatsapp_j40_selected_chats ?? 0)}</p>
-          <p class="metric-label">J40 Chats Selected</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.whatsapp_j40_media_items ?? 0)}</p>
-          <p class="metric-label">WhatsApp Media Imported</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.whatsapp_j40_media_images ?? 0)}</p>
-          <p class="metric-label">WhatsApp Images</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.whatsapp_j40_media_videos ?? 0)}</p>
-          <p class="metric-label">WhatsApp Videos</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.other_build_reference_media ?? summary.other_build_reference_images ?? 0)}</p>
-          <p class="metric-label">Other-Build Reference Media</p>
+          <p class="metric-value">${escapeHtml((allTasks.length || 0) - currentTasks.length)}</p>
+          <p class="metric-label">Later / Deferred Tasks</p>
         </article>
       </section>
 
-      <h2 class="section-title">Core Workstreams</h2>
-      <p class="section-subtitle">Current status, immediate next action, and direct media evidence.</p>
-      <section class="cards-grid">
-        ${workstreams
-          .map((ws) => {
-            const leadImage = chooseWorkstreamLeadImage(ws);
-            return `
-              <article class="card overview-workstream-card" data-open-workstream-id="${escapeHtml(ws.id)}">
-                <div class="detail-header">
-                  <h3>${escapeHtml(ws.title)}</h3>
-                  <div class="overview-card-actions">
-                    ${statusChip(ws.status)}
-                    ${renderCopyLinkButton(workstreamRoute(ws.id), "#", `Copy ${ws.title} workstream link`)}
-                    <button class="overview-open-btn" data-open-workstream-id="${escapeHtml(ws.id)}" type="button" aria-label="Open ${escapeHtml(ws.title)} workstream">Open</button>
-                  </div>
-                </div>
-                <p class="small-muted">${chip(`Priority: ${formatToken(ws.priority)}`)} ${chip(`Phase: ${formatToken(ws.phase)}`)}</p>
-                <p><strong>Next:</strong> ${escapeHtml(ws.next_action || "No action recorded")}</p>
-                <p class="small-muted"><strong>Evidence:</strong> ${escapeHtml(ws.image_count ?? 0)} mapped media items</p>
-                ${
-                  leadImage
-                    ? renderFigureImage(leadImage, ws.title, {
-                        figureClass: "evidence-figure",
-                        buttonClass: "image-open-btn",
-                        imageClass: "lead-image",
-                      })
-                    : '<p class="small-muted">No media mapped.</p>'
-                }
-              </article>
-            `;
-          })
-          .join("")}
+      <h2 class="section-title">Workstreams and Status</h2>
+      <section class="card overview-status-card">
+        <div class="table-wrap">
+          <table class="overview-status-table">
+            <thead>
+              <tr>
+                <th>Workstream</th>
+                <th>Status</th>
+                <th>Priority / Phase</th>
+                <th>Required Orders</th>
+                <th>Current Tasks</th>
+                <th>Next Action</th>
+                <th>Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${workstreamIds
+                .map((workstreamId) => {
+                  const workstream = context.byId.get(workstreamId);
+                  const orderCount = (groupedOrders[workstreamId] || []).length;
+                  const taskCount = (groupedTasks[workstreamId] || []).length;
+                  return `
+                    <tr>
+                      <td><strong>${escapeHtml(overviewWorkstreamLabel(workstreamId, context))}</strong></td>
+                      <td>${workstream ? statusChip(workstream.status) : statusChip("unassigned")}</td>
+                      <td>
+                        ${workstream ? chip(`Priority: ${formatToken(workstream.priority)}`) : ""}
+                        ${workstream ? chip(`Phase: ${formatToken(workstream.phase)}`) : ""}
+                      </td>
+                      <td>${escapeHtml(orderCount)}</td>
+                      <td>${escapeHtml(taskCount)}</td>
+                      <td>${escapeHtml(workstream ? workstream.next_action || "No action recorded" : "Rows need workstream assignment")}</td>
+                      <td>${workstream ? `<button class="overview-open-btn" data-open-workstream-id="${escapeHtml(workstreamId)}" type="button">Open</button>` : ""}</td>
+                    </tr>
+                  `;
+                })
+                .join("")}
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      ${renderWhatsappOverviewSection(summary)}
+      ${renderRequiredOrdersAcrossAll(requiredOrders, context)}
 
-      <h2 class="section-title">Project Steps</h2>
-      <div class="cards-grid">
-        ${projectSteps
-          .map(
-            (step) => `
-              <article class="card">
-                <div class="detail-header">
-                  <h3>${escapeHtml(step.work_package_id)} · ${escapeHtml(step.title)}</h3>
-                  ${statusChip(step.current_state)}
-                </div>
-                <p>${escapeHtml(step.objective || "")}</p>
-                <p class="small-muted"><strong>Gate:</strong> ${escapeHtml(step.gate_to_close || "")}</p>
-              </article>
-            `
-          )
-          .join("")}
-      </div>
-
-      <h2 class="section-title">Immediate Part Actions</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>Priority</th>
-              <th>Workstream</th>
-              <th>Item</th>
-              <th>Next Action</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${
-              urgentActions.length
-                ? urgentActions
-                    .slice(0, 14)
-                    .map(
-                      (row) => `
-                        <tr>
-                          ${renderInventoryImageCell(row, row.item || "Part image")}
-                          <td>${escapeHtml(row.priority)}</td>
-                          <td>${escapeHtml(formatToken(row.workstream))}</td>
-                          <td>${renderItemButton(row)}</td>
-                          <td>${escapeHtml(formatToken(row.next_action))}</td>
-                          <td>${statusChip(row.status)}</td>
-                        </tr>
-                      `
-                    )
-                    .join("")
-                : '<tr><td colspan="6">No urgent actions found.</td></tr>'
-            }
-          </tbody>
-        </table>
-      </div>
+      <h2 class="section-title">Tasks by Workstream</h2>
+      ${renderTasksByWorkstreamSection(currentTasks, {
+        emptyText: "No current tasks found.",
+      })}
     `;
   }
 
@@ -8163,138 +8351,16 @@
         </article>
       </section>
 
-      <h3 class="section-title">Current Task List</h3>
-      <div class="table-wrap">
-        <table class="capture-task-table">
-          <thead>
-            <tr>
-              <th>Evidence</th>
-              <th>Task</th>
-              <th>Workstream</th>
-              <th>Type</th>
-              <th>Action</th>
-              <th>Data Needed</th>
-              <th>Blocks / Source</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${
-              nowTasks.length
-                ? nowTasks
-                    .map(
-                      (task) => `
-                        <tr>
-                          <td class="requirement-evidence-cell">${renderCaptureTaskEvidence(task)}</td>
-                          <td>
-                            <div class="task-title-row">
-                              ${priorityChip(task.priority)}
-                              ${statusChip(task.status || "open")}
-                            </div>
-                            <strong>${escapeHtml(task.title || task.task_id || "Task")}</strong>
-                            ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
-                            ${task.notes ? `<div class="small-muted">${escapeHtml(truncateText(task.notes, 180))}</div>` : ""}
-                          </td>
-                          <td>${escapeHtml(formatToken(task.workstream || "-"))}</td>
-                          <td>${escapeHtml(formatToken(task.task_type || "data"))}</td>
-                          <td>${escapeHtml(task.action || "-")}</td>
-                          <td>${escapeHtml(task.data_needed || "-")}</td>
-                          <td>
-                            ${task.blocks ? `<div>${escapeHtml(task.blocks)}</div>` : ""}
-                            ${task.record_result_in ? `<div class="small-muted">${escapeHtml(task.record_result_in)}</div>` : ""}
-                            <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
-                            ${renderLinksCell(task)}
-                          </td>
-                        </tr>
-                      `
-                    )
-                    .join("")
-                : '<tr><td colspan="7">No current photo/data tasks found.</td></tr>'
-            }
-          </tbody>
-        </table>
-      </div>
+      <h3 class="section-title">Current Tasks by Workstream</h3>
+      ${renderTasksByWorkstreamSection(nowTasks, {
+        showEvidence: true,
+        emptyText: "No current photo/data tasks found.",
+      })}
 
-      <h3 class="section-title">Later / Deferred</h3>
-      <div class="table-wrap">
-        <table class="capture-task-table compact">
-          <thead>
-            <tr>
-              <th>Priority</th>
-              <th>Task</th>
-              <th>Workstream</th>
-              <th>Status</th>
-              <th>Action / Data Needed</th>
-              <th>Source</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${
-              tasks.filter((task) => cleanString(task.timing) === "later").length
-                ? tasks
-                    .filter((task) => cleanString(task.timing) === "later")
-                    .map(
-                      (task) => `
-                        <tr>
-                          <td>${priorityChip(task.priority)}</td>
-                          <td>
-                            <strong>${escapeHtml(task.title || task.task_id || "Task")}</strong>
-                            ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
-                          </td>
-                          <td>${escapeHtml(formatToken(task.workstream || "-"))}</td>
-                          <td>${statusChip(task.status || "open")}</td>
-                          <td>
-                            ${escapeHtml(task.action || "-")}
-                            ${task.data_needed ? `<div class="small-muted">${escapeHtml(task.data_needed)}</div>` : ""}
-                          </td>
-                          <td>
-                            <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
-                            ${renderLinksCell(task)}
-                          </td>
-                        </tr>
-                      `
-                    )
-                    .join("")
-                : '<tr><td colspan="6">No later/deferred tasks found.</td></tr>'
-            }
-          </tbody>
-        </table>
-      </div>
-    `;
-  }
-
-  function renderProjectSteps() {
-    const projectSteps = data.project_steps || [];
-    root.innerHTML = `
-      <h2 class="section-title">Project Steps and Status</h2>
-      <p class="section-subtitle">These are the controlling work packages for the current build phase.</p>
-      <section class="cards-grid">
-        ${projectSteps
-          .map(
-            (step) => `
-              <article class="card">
-                <div class="detail-header">
-                  <h3>${escapeHtml(step.work_package_id)} · ${escapeHtml(step.title)}</h3>
-                  ${statusChip(step.current_state)}
-                </div>
-                <p><strong>Objective:</strong> ${escapeHtml(step.objective || "")}</p>
-                <p><strong>Depends On:</strong> ${escapeHtml((step.depends_on || []).map(formatToken).join(", ") || "None")}</p>
-                <p><strong>Linked Streams:</strong> ${escapeHtml((step.linked_workstreams || []).map(formatToken).join(", ") || "None")}</p>
-                <p><strong>Blockers:</strong> ${escapeHtml(step.blocker_summary || "None recorded")}</p>
-                <p><strong>Gate To Close:</strong> ${escapeHtml(step.gate_to_close || "")}</p>
-                <p><strong>Procurement Guidance:</strong> ${escapeHtml(step.key_procurement_actions || "")}</p>
-                ${
-                  step.image && !isImageDeleted(step.image)
-                    ? renderFigureImage(step.image, step.title || "Project step image", {
-                        figureClass: "evidence-figure",
-                        imageClass: "lead-image",
-                      })
-                    : ""
-                }
-              </article>
-            `
-          )
-          .join("")}
-      </section>
+      <h3 class="section-title">Later / Deferred by Workstream</h3>
+      ${renderTasksByWorkstreamSection(tasks.filter((task) => cleanString(task.timing).toLowerCase() === "later"), {
+        emptyText: "No later/deferred tasks found.",
+      })}
     `;
   }
 
@@ -9712,8 +9778,6 @@
       renderer = renderAmir;
     } else if (state.activeView === "photos-needed") {
       renderer = renderPhotosNeeded;
-    } else if (state.activeView === "steps") {
-      renderer = renderProjectSteps;
     } else if (state.activeView === "other-builds") {
       renderer = renderOtherBuilds;
     }

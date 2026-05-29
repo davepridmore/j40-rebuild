@@ -557,6 +557,7 @@ def build_pass2(rows: list[dict[str, str]], wiring_stock_count: int, wiring_conn
                 "workstream": workstream,
                 "item": item,
                 "prior_decision": row.get("decision", ""),
+                "product_link": row.get("product_link", ""),
                 "sourcing_mode": mode,
                 "timing_window": timing,
                 "pass2_decision": decision,
@@ -583,9 +584,17 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_condition_based_after_inspection": ("Condition-Based Replacements", "Buy only failed/worn parts after inspection."),
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
-        "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
+        "basket_merged_brake_suspension_window": (
+            "Merged Brake/Suspension Window",
+            "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window. "
+            "Front disc quote tasks moved to Amir runner-spec-controlled basket on 2026-05-29.",
+        ),
         "basket_runner_quote_photo_only": ("Runner Quote/Photo Only", "Office-runner scope only: collect prices, shop cards, packet photos, and availability; mechanic/user approval required before payment or fit decisions."),
-        "basket_runner_spec_controlled": ("Runner Spec-Controlled", "Office-runner scope: collect prices/photos now, and buy only when a written spec, mechanic-labelled sample, or explicit mechanic/user approval removes the fit decision from the runner."),
+        "basket_runner_spec_controlled": (
+            "Runner Spec-Controlled",
+            "Office-runner scope: collect prices/photos now, and buy only when a written spec, mechanic-labelled sample, or explicit mechanic/user approval removes the fit decision from the runner. "
+            "Front disc pads, hoses, calipers, and rotors are quote/sample-match tasks only until the old samples or written specs are approved.",
+        ),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray before opening hydraulic lines; DOT 3 fluid, clear bleed hose, and nitrile gloves are already received."),
         "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Ultra-cloth solvent-safe wipes and masking tape are received; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
         "basket_longman_hose_pipe_order_ready": ("Longman Hose/Pipe Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit Longman quote/order lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
@@ -692,6 +701,7 @@ def main() -> None:
             "workstream",
             "item",
             "prior_decision",
+            "product_link",
             "sourcing_mode",
             "timing_window",
             "pass2_decision",

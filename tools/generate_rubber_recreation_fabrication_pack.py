@@ -727,34 +727,34 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
                 "BUMP-F-L",
                 "bump_stop_vehicle_measurement_control",
                 "1",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern one-piece flat steel backing plate; cast PU Shore A 80 +/-5 fallback only if flat-plate bond/captive retention and rebound are proven",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 29 sample-style rubber through-holes, central fixture/channel interface, and fixture/insert retention where present; cast PU Shore A 80 +/-5 fallback only if same shape and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
-                "vehicle measurement release required before mould; 70 mm external height known",
-                "Use the supplied one-piece flat metal backing/saddle as the bonding and hole-pattern pattern; confirm BL/BW/P/D/X-Y/G/F against the vehicle bracket and axle strike pad; make one 70 mm first article before full set; no simple cut block or rubber mounting holes unless the supplied sample proves them.",
+                "sample and vehicle measurement release required before mould; 70 mm external height known",
+                "Use May 29 removed samples as the construction pattern: two through-holes in rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area. Confirm BL/BW/P/D/fixture-channel/X-Y/G/F against samples, removed fixture, vehicle bracket, and axle strike pad; make one 70 mm first article before full set.",
             ],
             [
                 "BUMP-F-R",
                 "bump_stop_vehicle_measurement_control",
                 "1",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern one-piece flat steel backing plate; cast PU Shore A 80 +/-5 fallback only if flat-plate bond/captive retention and rebound are proven",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 29 sample-style rubber through-holes, central fixture/channel interface, and fixture/insert retention where present; cast PU Shore A 80 +/-5 fallback only if same shape and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
-                "vehicle measurement release required before mould; 60 mm external height known",
-                "Right front is the short 60 mm Toyota-style rubber stop bonded/captive to the supplied-pattern flat backing plate. Reject 70 mm right-front substitutes unless full-bump test releases trimming. Holes belong in the flat plate unless the supplied sample proves rubber clearance holes.",
+                "sample and vehicle measurement release required before mould; 60 mm external height known",
+                "Right front uses the same May 29 sample-style construction, with the short 60 mm height unless full-bump test releases another height. Reject 70 mm right-front substitutes unless full-bump test releases trimming.",
             ],
             [
                 "BUMP-R",
                 "bump_stop_vehicle_measurement_control",
                 "2",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern one-piece flat steel backing plates; cast PU Shore A 80 +/-5 fallback only if flat-plate bond/captive retention and rebound are proven",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 29 sample-style rubber through-holes, central fixture/channel interface, and fixture/insert retention where present; cast PU Shore A 80 +/-5 fallback only if same shape and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
-                "vehicle measurement release required before mould; 70 mm external height known",
-                "Make as matched Toyota-style rear rubber pair bonded/captive to supplied-pattern one-piece flat backing plates, with tapered/radiused progressive bodies, height match <=1 mm, and hardness spread <=5 Shore A.",
+                "sample and vehicle measurement release required before mould; 70 mm external height known",
+                "Make as matched May 29 sample-style rear rubber pair with two rubber through-holes, central fixture/channel interface, broad rounded/tapered bodies, height match <=1 mm, and hardness spread <=5 Shore A.",
             ],
         ]
     )
@@ -777,18 +777,18 @@ def write_inspection_sheet() -> None:
         ("BM-SHIM-THICK", "thickness labels, hole/slot match, station map need, deburred edges, coating", "cut/buy only if station map proves need; no washer towers"),
         (
             "BUMP-F-L",
-            "70 mm free height, supplied one-piece flat backing plate outline/thickness/hole pattern, tapered progressive rubber body, flat strike face, vehicle bracket fit, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; flat-plate outline/hole features +/-0.5 from supplied sample/vehicle release; rubber/steel bond or captive joint stays intact; contact centred +/-5; seats flat; engages before shock/tyre/spring/brake-hose or metal hard limit",
+            "70 mm free height, sample-style rubber through-holes, central fixture/channel interface, rounded/tapered body, flat strike area, vehicle bracket fit, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; rubber through-hole pitch/diameter and fixture/channel features +/-0.5 from sample/vehicle release; retention stays intact; contact centred +/-5; engages before shock/tyre/spring/brake-hose or metal hard limit",
         ),
         (
             "BUMP-F-R",
-            "60 mm free height, supplied one-piece flat backing plate outline/thickness/hole pattern, tapered progressive rubber body, flat strike face, right-front bracket fit, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 60 +/-1; flat-plate outline/hole features +/-0.5 from supplied sample/vehicle release; rubber/steel bond or captive joint stays intact; contact centred +/-5; reject 70 mm right-front substitute unless vehicle test releases trimming",
+            "60 mm free height, sample-style rubber through-holes, central fixture/channel interface, rounded/tapered body, flat strike area, right-front bracket fit, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 60 +/-1; rubber through-hole pitch/diameter and fixture/channel features +/-0.5 from sample/vehicle release; retention stays intact; contact centred +/-5; reject 70 mm right-front substitute unless vehicle test releases trimming",
         ),
         (
             "BUMP-R",
-            "70 mm free height pair, supplied one-piece flat backing plate outlines/thickness/hole patterns, tapered progressive rubber bodies, flat strike faces, rear bracket fit, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; flat-plate outline/hole features +/-0.5 from supplied sample/vehicle release; rubber/steel bonds or captive joints stay intact; contacts before hard limits; no universal unmatched pair",
+            "70 mm free height pair, sample-style rubber through-holes, central fixture/channel interfaces, rounded/tapered bodies, flat strike areas, rear bracket fit, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; rubber through-hole pitch/diameter and fixture/channel features +/-0.5 from sample/vehicle release; retention stays intact; contacts before hard limits; no universal unmatched pair",
         ),
     ]
     header = "part_id,inspect_features,acceptance\n"
@@ -922,37 +922,37 @@ def machine_definition_rows() -> list[dict[str, str]]:
         {
             "part_id": "BUMP-F-L",
             "qty": "1",
-            "machine_route": "supplied-flat-plate-controlled mould/cast Toyota-style progressive bump-stop assembly; rubber not CNC-cut",
+            "machine_route": "May 29 removed-sample controlled mould/cast progressive bump-stop assembly; rubber not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "supplied one-piece flat metal backing/saddle, cleaned vehicle bracket, and axle strike pad in mm; old rubber is shape evidence only; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; release one-piece flat backing plate outline, thickness, bond face, bolt/stud pitch P, and hole/thread D from the supplied flat metal sample and matching vehicle bracket; flat rectangular contact face centred on axle strike pad within +/-5; no square block; do not add rubber mounting holes unless the supplied sample proves rubber clearance holes",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern coated flat steel backing plate; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven flat-plate bond/captive retention",
-            "tolerance": "height +/-1; flat-plate outline and hole features +/-0.5 after supplied sample/vehicle release; contact centre +/-5; rubber/steel bond or captive joint must survive compression and rebound",
-            "release_status": "vehicle-measurement release required before mould; exact external height known",
-            "shop_note": "User will provide the one flat metal backing/saddle piece with the request. Fabricator must supply side/profile sketch, flat-plate hole layout, material declaration, bond/captive construction, and one first article; verify flat bracket seating, hand fit, loaded/full-bump contact, and 50 percent compression recovery before full set.",
+            "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned vehicle bracket, and axle strike pad in mm; sample controls construction but final dimensions remain caliper/vehicle released",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce May 29 sample-style broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area; release rubber body outline, through-hole pitch P, hole/thread D, fixture/channel, and contact X/Y from samples, removed fixture, and matching vehicle bracket; no square block and no flat-plate placeholder",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
+            "tolerance": "height +/-1; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
+            "release_status": "sample and vehicle measurement release required before mould; exact external height known",
+            "shop_note": "Fabricator must supply side/profile sketch, rubber through-hole layout, fixture/channel trace, material declaration, retention construction, and one first article; verify bracket/fixture hand fit, loaded/full-bump contact, and 50 percent compression recovery before full set.",
         },
         {
             "part_id": "BUMP-F-R",
             "qty": "1",
-            "machine_route": "supplied-flat-plate-controlled mould/cast Toyota-style short right-front bump-stop assembly; rubber not CNC-cut",
+            "machine_route": "May 29 removed-sample controlled mould/cast short right-front bump-stop assembly; rubber not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "supplied one-piece flat metal backing/saddle, cleaned right-front vehicle bracket, and axle strike pad in mm; old rubber is shape evidence only; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release one-piece flat backing plate outline, thickness, bond face, bolt/stud pitch P, and hole/thread D from the supplied flat metal sample and matching right-front bracket; flat rectangular contact face centred on axle strike pad within +/-5; do not add rubber mounting holes unless the supplied sample proves rubber clearance holes",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern coated flat steel backing plate; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven flat-plate bond/captive retention",
-            "tolerance": "height +/-1; flat-plate outline and hole features +/-0.5 after supplied sample/vehicle release; contact centre +/-5; rubber/steel bond or captive joint must survive compression and rebound",
-            "release_status": "vehicle-measurement release required before mould; exact external height known",
+            "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned right-front vehicle bracket, and axle strike pad in mm; sample controls construction but final dimensions remain caliper/vehicle released",
+            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce May 29 sample-style broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area; do not use 70 mm long-stop height here unless full-bump test releases it; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and right-front bracket",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
+            "tolerance": "height +/-1; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
+            "release_status": "sample and vehicle measurement release required before mould; exact external height known",
             "shop_note": "Reject aftermarket or locally made right-front stops at 70 mm unless deliberately trimmed and released by a full-bump clearance test.",
         },
         {
             "part_id": "BUMP-R",
             "qty": "2",
-            "machine_route": "supplied-flat-plate-controlled mould/cast Toyota-style progressive matched rear bump-stop assemblies; rubber not CNC-cut",
+            "machine_route": "May 29 removed-sample controlled mould/cast progressive matched rear bump-stop assemblies; rubber not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "supplied one-piece flat metal backing/saddles, cleaned rear vehicle brackets, and axle strike pads in mm; old rubber is shape evidence only; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; release each one-piece flat backing plate outline, thickness, bond face, bolt/stud pitch P, and hole/thread D from supplied flat metal samples and matching rear brackets; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair; do not add rubber mounting holes unless supplied samples prove rubber clearance holes",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern coated flat steel backing plates; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven flat-plate bond/captive retention",
-            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; flat-plate outline and hole features +/-0.5 after supplied sample/vehicle release; contact centre +/-5; rubber/steel bonds or captive joints must survive compression and rebound",
-            "release_status": "vehicle-measurement release required before mould; exact external height known",
+            "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned rear vehicle brackets, and axle strike pads in mm; sample controls construction but final dimensions remain caliper/vehicle released",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce May 29 sample-style broad rounded/tapered rubber bodies with two through-holes in the rubber, central fixture/channel interface, and flat strike areas; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and rear brackets; matched progressive pair",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
+            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
+            "release_status": "sample and vehicle measurement release required before mould; exact external height known",
             "shop_note": "Make as matched rear pair after final ride height and axle travel checks; reject universal unmatched rear stops and simple cut blocks.",
         },
     ]
@@ -1036,11 +1036,11 @@ The strip files are released plain first-article cut patterns at `420 x 38 x 8 m
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the flat backing-plate outline, thickness, hole pattern, bond face, and contact offsets are released from the user-supplied one-piece flat metal backing/saddle and the cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied-pattern flat steel backing plate. Do not make bump stops from simple cut rubber blocks, and do not invent rubber mounting holes.
+Bump stops cannot rely on Toyota/manufacturer supply. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the May 29 removed samples control construction for both stops: broad molded rubber body, two through-holes in the rubber, central metal fixture/channel interface, rounded/tapered sides, and flat strike area. Final BL/BW/P/D/fixture-channel/X-Y/G/F dimensions come from sample calipers, the removed fixture, cleaned vehicle brackets, and axle strike pads. Do not make bump stops from simple cut rubber blocks or the earlier flat-plate placeholder.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` bonded/captive to supplied-pattern coated flat steel backing plates, or cast PU Shore A `80 +/-5` only if the progressive geometry, flat-plate bond/captive construction, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5`, or cast PU Shore A `80 +/-5` only if the May 29 sample-style through-hole layout, central fixture/channel interface, progressive geometry, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.
 """
@@ -1134,38 +1134,38 @@ def write_current_order_preview() -> None:
     <rect class="panel" x="0" y="0" width="348" height="190"/>
     <text class="panel-title" x="18" y="30">BUMP-60010-LONG</text>
     <text class="small" x="18" y="50">Front-left and both rear bump stops | qty 3</text>
-    <rect class="steel" x="72" y="76" width="170" height="18" rx="3"/>
-    <circle class="hole" cx="106" cy="85" r="8"/>
-    <circle class="hole" cx="208" cy="85" r="8"/>
-    <path class="rubber" d="M106 94 L208 94 L188 158 L126 158 Z"/>
-    <rect class="rubber2" x="134" y="158" width="46" height="14" rx="3"/>
-    <line class="dim" x1="262" y1="94" x2="262" y2="172"/>
+    <path class="rubber" d="M78 92 Q82 72 108 70 L220 76 Q242 78 244 104 L232 148 Q222 172 190 172 L114 166 Q82 164 72 142 Z"/>
+    <rect class="steel" x="143" y="86" width="38" height="82" rx="5"/>
+    <circle class="hole" cx="108" cy="112" r="9"/>
+    <circle class="hole" cx="210" cy="112" r="9"/>
+    <rect class="rubber2" x="126" y="146" width="86" height="20" rx="5"/>
+    <line class="dim" x1="264" y1="76" x2="264" y2="172"/>
     <text class="label" x="276" y="137">70 H</text>
-    <text class="tiny" x="72" y="184">Rubber bonded/captive to supplied flat backing plate</text>
+    <text class="tiny" x="58" y="184">May 29 sample: rubber holes + central fixture channel</text>
   </g>
 
   <g transform="translate(34,556)">
     <rect class="panel" x="0" y="0" width="348" height="190"/>
     <text class="panel-title" x="18" y="30">BUMP-60020-SHORT</text>
     <text class="small" x="18" y="50">Right-front bump stop only | qty 1</text>
-    <rect class="steel" x="72" y="82" width="170" height="18" rx="3"/>
-    <circle class="hole" cx="108" cy="91" r="8"/>
-    <circle class="hole" cx="206" cy="91" r="8"/>
-    <path class="rubber" d="M110 100 L206 100 L188 154 L128 154 Z"/>
-    <rect class="rubber2" x="136" y="154" width="44" height="14" rx="3"/>
-    <line class="dim" x1="262" y1="100" x2="262" y2="168"/>
+    <path class="rubber" d="M80 100 Q84 82 110 80 L218 86 Q240 88 242 112 L230 146 Q220 164 190 164 L116 160 Q84 158 74 138 Z"/>
+    <rect class="steel" x="144" y="94" width="36" height="68" rx="5"/>
+    <circle class="hole" cx="110" cy="118" r="9"/>
+    <circle class="hole" cx="208" cy="118" r="9"/>
+    <rect class="rubber2" x="128" y="142" width="82" height="18" rx="5"/>
+    <line class="dim" x1="264" y1="86" x2="264" y2="164"/>
     <text class="label" x="276" y="137">60 H</text>
-    <text class="tiny" x="68" y="184">Do not substitute a 70 mm long stop here</text>
+    <text class="tiny" x="58" y="184">Same sample family; right-front height check remains</text>
   </g>
 
   <g transform="translate(426,556)">
     <rect class="note-box" x="0" y="0" width="740" height="190" rx="8"/>
-    <text class="panel-title" x="18" y="32">Bump-stop flat backing piece rule</text>
-    <text class="small" x="18" y="60">The user will provide one flat metal backing/saddle piece with the request.</text>
-    <text class="small" x="18" y="82">Copy or reuse that piece for plate outline, thickness, hole/slot pattern,</text>
-    <text class="small" x="18" y="104">and rubber bond face.</text>
-    <text class="small" x="18" y="126">Rubber is bonded or mechanically captive to the flat plate. Mounting holes</text>
-    <text class="small" x="18" y="148">belong in the plate unless the supplied sample proves rubber clearance holes.</text>
+    <text class="panel-title" x="18" y="32">Bump-stop May 29 sample rule</text>
+    <text class="small" x="18" y="60">Removed samples now control both bump-stop construction: rubber through-holes,</text>
+    <text class="small" x="18" y="82">broad rounded/tapered body, central fixture/channel interface, and flat strike area.</text>
+    <text class="small" x="18" y="104">Trace or reuse the metal fixture separately; final BL/BW/P/D/fixture-channel/X-Y/G/F</text>
+    <text class="small" x="18" y="126">values still come from calipers and vehicle bracket/strike-pad measurements.</text>
+    <text class="small" x="18" y="148">Do not use the earlier flat-back-plate placeholder or a simple cut block.</text>
     <text class="tiny" x="18" y="170">Current active lines: BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, BUMP-60010-LONG, BUMP-60020-SHORT.</text>
   </g>
 </svg>

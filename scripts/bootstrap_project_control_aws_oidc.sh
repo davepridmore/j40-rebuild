@@ -10,6 +10,16 @@ OWNER_TAG="${OWNER_TAG:-private-pridmoredave}"
 S3_BUCKET="${S3_BUCKET:-j40-rebuild-dashboard}"
 GITHUB_OIDC_THUMBPRINT="${GITHUB_OIDC_THUMBPRINT:-6938fd4d98bab03faadb97b34396831e3780aea1}"
 
+case "$AWS_PROFILE" in
+  *farmdar*)
+    cat >&2 <<TEXT
+Project Control UI deploy must not use the repo-wide farmdar AWS profile.
+Set AWS_PROFILE to the private dashboard-owning AWS account profile, or deploy through GitHub Actions OIDC.
+TEXT
+    exit 1
+    ;;
+esac
+
 for command in aws gh jq; do
   if ! command -v "$command" >/dev/null 2>&1; then
     echo "Missing required command: $command" >&2

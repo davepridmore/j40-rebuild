@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-29 19:07:38
-- Total media files indexed: 806 (795 photos, 11 videos)
+- Generated: 2026-05-29 23:38:49
+- Total media files indexed: 821 (810 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -18,7 +18,7 @@
 | `baseline_walkaround` | 34 |
 | `brake_system` | 20 |
 | `brake_system_identification` | 4 |
-| `chassis_fixing` | 50 |
+| `chassis_fixing` | 51 |
 | `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
 | `electrical_reset` | 3 |
@@ -26,12 +26,13 @@
 | `eps_vitz_upgrade` | 1 |
 | `fabrication_measurement` | 39 |
 | `hardware_refinish` | 44 |
-| `mechanical_baseline` | 22 |
+| `mechanical_baseline` | 34 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 140 |
 | `reference_material` | 78 |
 | `removed_parts_cataloguing` | 16 |
+| `rubber_recreation_measurement` | 2 |
 | `rust_assessment` | 63 |
 | `steering_brakes_suspension` | 11 |
 | `stripdown_cataloguing` | 111 |
@@ -76,6 +77,7 @@
 | `chassis_underside` | `rear_mid_frame_rail_and_hard_line_detail` | 9 | 2026-05-01 | `20260501_194026_gp_gjPjhxdA.jpg` |
 | `chassis_underside` | `rear_shock_and_crossmember_view` | 1 | 2026-04-05 | `20260405_234811.jpg` |
 | `chassis_underside` | `steering_and_suspension_linkages` | 9 | 2026-04-06 to 2026-05-12 | `20260406_030839_gp_VYKBhRNA.jpg` |
+| `chassis_underside` | `suspension_bump_stop_removed_samples` | 2 | 2026-05-29 | `20260529_223605_gp_CklgF0cQ.jpg` |
 | `chassis_underside` | `suspension_or_linkage_mount` | 2 | 2026-04-11 | `20260411_220207.jpg` |
 | `chassis_underside` | `transmission_crossmember_and_driveline_mounts` | 4 | 2026-04-22 | `20260422_004319_gp_Ttqz46Sw.jpg` |
 | `documentation_reference` | `aftermarket_chassis_reference_image` | 1 | 2026-04-22 | `20260422_015512_gp_BmYsVZ6w.jpg` |
@@ -108,9 +110,11 @@
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `engine_bay` | `engine_powertrain_cleaning_baseline` | 19 | 2026-05-01 to 2026-05-12 | `20260501_194330_gp_CogcrEXA.jpg` |
+| `engine_bay` | `engine_radiator_condition_closeups` | 8 | 2026-05-29 | `20260529_230003_gp_rliSbRjA.jpg` |
+| `engine_bay` | `engine_radiator_sample_measurement` | 4 | 2026-05-29 | `20260529_205200_gp_8G6ZKKEQ.jpg` |
 | `engine_bay` | `existing_battery_mount_tray_measurements` | 4 | 2026-05-17 | `20260517_194431_gp_4XVycxAg.jpg` |
 | `engine_bay` | `front_support_radiator_measurement_set` | 6 | 2026-05-12 | `20260512_205417_gp_CzJNQsiA.jpg` |
-| `engine_bay` | `front_support_radiator_pickups_context` | 5 | 2026-05-12 | `20260512_073210_gp_zP427O2A.jpg` |
+| `engine_bay` | `front_support_radiator_pickups_context` | 6 | 2026-05-12 to 2026-05-29 | `20260512_073210_gp_zP427O2A.jpg` |
 | `engine_bay` | `installed_battery_dimension_reference` | 2 | 2026-05-17 | `20260517_194303_gp_5yuaRoaA.jpg` |
 | `engine_bay` | `replacement_pipe_hose_sample_sorting` | 7 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |

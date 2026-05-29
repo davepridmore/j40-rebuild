@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-29 20:34:04
+- Generated: 2026-05-29 22:07:53
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -19,7 +19,7 @@
 - `buy_for_baseline`: 1
 - `buy_now`: 1
 - `capture_body_hardware_samples_then_order`: 5
-- `capture_brake_specs_then_order`: 6
+- `capture_brake_specs_then_order`: 3
 - `confirm_price_then_buy`: 8
 - `confirm_procured_receipt`: 5
 - `defer_as_non_baseline`: 4
@@ -28,9 +28,8 @@
 - `hold_until_body_closed`: 1
 - `longman_hose_pipe_order_ready`: 4
 - `online_click_buy_approved`: 1
-- `open_inspect_then_order_standard_brake_parts`: 1
 - `review`: 6
-- `runner_spec_controlled`: 5
+- `runner_spec_controlled`: 9
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 1
 - `track_in_flight_order`: 8
@@ -44,13 +43,13 @@
 - `gearbox_oil_service_gate`: 1
 - `in_flight_now`: 13
 - `longman_mills_quote_pack`: 4
-- `merged_suspension_brake_window`: 7
+- `merged_suspension_brake_window`: 3
 - `online_click_buy_now`: 1
 - `post_baseline_only`: 5
 - `post_tub_off_inspection`: 7
 - `pre_order_audit`: 1
 - `review`: 16
-- `runner_spec_controlled`: 5
+- `runner_spec_controlled`: 9
 
 ## Immediate Actions (Now)
 

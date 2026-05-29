@@ -348,49 +348,46 @@ def bump_stop_scad(part_id: str, title: str, height: float, qty: str) -> tuple[M
         + f"""
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - The user will provide the one-piece flat metal backing/saddle with the
-//   fabrication request. Use it as the plate outline, hole pattern, and bond
-//   face pattern.
-// - Flat plate footprint, bolt/stud pitch, hole/thread size, and strike offset
-//   must be confirmed against the cleaned vehicle bracket and axle strike pad.
-// - Default holes are visual placeholders in the flat steel plate, not through
-//   the rubber.
+// - May 29 removed samples now control the construction concept for both bump
+//   stops: broad rounded/tapered rubber body, two through-holes in the rubber,
+//   central fixture/channel interface, and flat strike area.
+// - Final body footprint, through-hole pitch/diameter, fixture channel, and
+//   strike offset must be confirmed from sample calipers, removed metal fixture,
+//   cleaned vehicle bracket, and axle strike pad.
 // - This model is a first-article conversation shape, not a released mould.
 
 module {module_name}(
   free_height = {height:g},
-  top_length = 46,
-  top_width = 30,
-  rubber_base_length = 70,
-  rubber_base_width = 40,
-  flat_plate_length = 82,
-  flat_plate_width = 48,
-  flat_plate_thickness = 4,
-  plate_hole_pitch = 64,
-  plate_hole_d = 10
+  top_length = 58,
+  top_width = 32,
+  rubber_base_length = 92,
+  rubber_base_width = 54,
+  rubber_hole_pitch = 64,
+  rubber_hole_d = 12,
+  fixture_channel_width = 20,
+  fixture_channel_depth = 6
 ) {{
   union() {{
-    color("silver")
-      difference() {{
-        translate([0, 0, -flat_plate_thickness])
-          linear_extrude(height = flat_plate_thickness, center = false)
-            rounded_rect_2d([flat_plate_length, flat_plate_width], 3);
-
-        if (plate_hole_d > 0 && plate_hole_pitch > 0)
-          for (x = [-plate_hole_pitch / 2, plate_hole_pitch / 2])
-            translate([x, 0, -flat_plate_thickness - 1])
-              cylinder(h = flat_plate_thickness + 2, d = plate_hole_d);
-      }}
-
     color("black")
-      hull() {{
-        translate([0, 0, 0.5])
-          linear_extrude(height = 1, center = false)
-            rounded_rect_2d([rubber_base_length, rubber_base_width], 5);
-        translate([0, 0, free_height - 1])
-          linear_extrude(height = 1, center = false)
-            rounded_rect_2d([top_length, top_width], 4);
+      difference() {{
+        hull() {{
+          translate([0, 0, 0.5])
+            linear_extrude(height = 1, center = false)
+              rounded_rect_2d([rubber_base_length, rubber_base_width], 10);
+          translate([0, 0, free_height - 1])
+            linear_extrude(height = 1, center = false)
+              rounded_rect_2d([top_length, top_width], 6);
+        }}
+
+        if (rubber_hole_d > 0 && rubber_hole_pitch > 0)
+          for (x = [-rubber_hole_pitch / 2, rubber_hole_pitch / 2])
+            translate([x, 0, -1])
+              cylinder(h = free_height + 2, d = rubber_hole_d);
       }}
+
+    color("silver")
+      translate([0, 0, free_height - fixture_channel_depth / 2])
+        cube([fixture_channel_width, rubber_base_width + 4, fixture_channel_depth], center = true);
   }}
 }}
 
@@ -402,10 +399,10 @@ module {module_name}(
         filename=filename,
         title=title,
         quantity=qty,
-        release_status="supplied-flat-plate measurement model; plate dimensions, bracket fit, and strike offset required before mould release",
-        controls=f"{height:g} mm free height known; supplied flat-plate outline/hole pattern, bond face, and strike geometry vehicle-controlled",
+        release_status="May 29 removed-sample measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release",
+        controls=f"{height:g} mm free height known; May 29 sample-style rubber through-holes, central fixture/channel interface, and strike geometry vehicle-controlled",
         old_part_questions=(
-            "Do not use decayed rubber as the master. Measure the supplied one-piece flat metal backing/saddle plate outline, thickness, hole pitch, hole/thread size, bond face, "
+            "Caliper the May 29 removed samples and removed metal fixture: rubber body length/width, through-hole pitch/diameter, central fixture/channel size, "
             "vehicle bracket fit, strike-pad offset, loaded gap, and safe near-full-bump clearance."
         ),
     )
@@ -523,10 +520,11 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are supplied-flat-plate measurement placeholders. Free
-  height is known, but the backing-plate outline, thickness, hole pattern, bond
-  face, and strike geometry must come from the supplied flat metal sample,
-  cleaned vehicle brackets, and axle strike pads.
+- Bump-stop models are May 29 removed-sample measurement placeholders. Free
+  height is known, but rubber body outline, through-hole pitch/diameter,
+  central fixture/channel detail, and strike geometry must come from sample
+  calipers, the removed metal fixture, cleaned vehicle brackets, and axle
+  strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.
 """

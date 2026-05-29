@@ -108,19 +108,19 @@
     <text class="panel-title" x="18" y="30">BUMP-60010-LONG</text>
     <text class="small" x="18" y="50">Front-left and both rear axle-to-chassis bump stops</text>
     <g transform="translate(42,80)">
-      <rect class="steel" x="10" y="0" width="210" height="28" rx="4"/>
-      <path class="rubber" d="M52 28 L178 28 L150 168 L80 168 Z"/>
-      <rect class="rubber2" x="72" y="168" width="88" height="28" rx="4"/>
-      <circle class="hole" cx="50" cy="14" r="10"/>
-      <circle class="hole" cx="180" cy="14" r="10"/>
-      <path class="dim" d="M244 28 L244 168"/>
+      <path class="rubber" d="M30 22 Q36 2 70 0 L188 6 Q218 10 224 42 L210 166 Q200 194 164 196 L78 190 Q42 188 30 158 Z"/>
+      <rect class="steel" x="104" y="40" width="48" height="124" rx="6"/>
+      <circle class="hole" cx="66" cy="76" r="10"/>
+      <circle class="hole" cx="188" cy="76" r="10"/>
+      <rect class="rubber2" x="72" y="166" width="100" height="26" rx="5"/>
+      <path class="dim" d="M244 2 L244 196"/>
       <text class="small" x="260" y="104">70 H</text>
-      <path class="dim" d="M50 -18 L180 -18"/>
-      <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">flat backing-plate holes/studs</text>
+      <path class="dim" d="M66 -18 L188 -18"/>
+      <text class="small" x="96" y="-28">P measure</text>
+      <text class="tiny" x="20" y="-4">rubber through-holes + fixture channel</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes belong in the supplied flat backing plate, not the rubber</text>
-    <text class="tiny" x="18" y="266">Plate footprint, hole pitch, bond face, and strike offset release from supplied piece plus brackets</text>
+    <text class="tiny" x="18" y="248">Red holes are sample-proven rubber through-holes; silver is the central fixture/channel</text>
+    <text class="tiny" x="18" y="266">Rubber body, hole pitch, fixture/channel, and strike offset release from samples plus brackets</text>
   </g>
 
   <g transform="translate(464,388)">
@@ -128,18 +128,18 @@
     <text class="panel-title" x="18" y="30">BUMP-60020-SHORT</text>
     <text class="small" x="18" y="50">Right-front axle-to-chassis bump stop</text>
     <g transform="translate(42,94)">
-      <rect class="steel" x="10" y="0" width="210" height="28" rx="4"/>
-      <path class="rubber" d="M56 28 L174 28 L150 148 L80 148 Z"/>
-      <rect class="rubber2" x="74" y="148" width="84" height="28" rx="4"/>
-      <circle class="hole" cx="50" cy="14" r="10"/>
-      <circle class="hole" cx="180" cy="14" r="10"/>
-      <path class="dim" d="M244 28 L244 148"/>
+      <path class="rubber" d="M34 22 Q40 4 72 2 L184 8 Q214 12 220 42 L206 146 Q196 170 164 172 L82 166 Q46 164 34 140 Z"/>
+      <rect class="steel" x="106" y="42" width="46" height="104" rx="6"/>
+      <circle class="hole" cx="70" cy="76" r="10"/>
+      <circle class="hole" cx="184" cy="76" r="10"/>
+      <rect class="rubber2" x="74" y="146" width="98" height="24" rx="5"/>
+      <path class="dim" d="M244 4 L244 172"/>
       <text class="small" x="260" y="94">60 H</text>
-      <path class="dim" d="M50 -18 L180 -18"/>
-      <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">flat backing-plate holes/studs</text>
+      <path class="dim" d="M70 -18 L184 -18"/>
+      <text class="small" x="96" y="-28">P measure</text>
+      <text class="tiny" x="20" y="-4">rubber through-holes + fixture channel</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes belong in the supplied flat backing plate, not the rubber</text>
+    <text class="tiny" x="18" y="248">Same sample-style rubber holes and fixture/channel as long stop</text>
     <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
   </g>
 

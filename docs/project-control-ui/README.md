@@ -5,7 +5,7 @@ This UI provides a navigable view over:
 - core workstreams and their status
 - full-car 3D vehicle map
 - part-ordering queue and in-flight deliveries
-- project package steps (`WP01` .. `WP06`)
+- required orders and workstream-aligned tasks
 - linked image evidence from the photo inventory
 
 ## Rebuild Data
@@ -27,7 +27,7 @@ so video controls and media loading behave like the deployed dashboard.
 
 The portal supports stable hash links:
 
-- `#overview`, `#vehicle-map`, `#parts`, `#scout`, `#tasks`, `#photos-needed`, `#steps`, `#other-builds`
+- `#overview`, `#vehicle-map`, `#parts`, `#scout`, `#tasks`, `#photos-needed`, `#other-builds`
 - `#workstreams/<workstream_id>` for a specific workstream
 - `#parts/item/<entry_id>` for a specific part or inventory row
 - `#<view>/section/<section_id>` and `#workstreams/<workstream_id>/section/<section_id>` for page sections
@@ -71,6 +71,11 @@ That role should belong to the private AWS account used for this project. The
 private account email is not stored in the workflow. The role needs to allow S3
 bucket creation, bucket website configuration, bucket tagging, bucket policy
 updates, and object sync/delete for the dashboard bucket.
+
+This dashboard deploy is not part of the Farmdar AWS estate. Do not use the
+repo-wide `farmdar` AWS profile for bootstrap, manual S3 patching, or
+CloudFront invalidation. Use the private dashboard-owning AWS profile locally,
+or let the GitHub Actions workflow assume `AWS_ROLE_ARN` through OIDC.
 
 If the private AWS profile is available locally, bootstrap the S3 bucket,
 website policy, GitHub OIDC role, and GitHub secret with:

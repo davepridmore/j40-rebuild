@@ -179,6 +179,7 @@ def build_buy_now_rows(expenses_parts: list[dict[str, str]]) -> list[dict[str, s
                 "next_action": action,
                 "overlap_resolution": overlap_resolution,
                 "company": row.get("company", ""),
+                "product_link": row.get("product_link", ""),
                 "evidence_ref": row.get("evidence_ref", ""),
             }
         )
@@ -288,6 +289,7 @@ def main() -> None:
             "next_action",
             "overlap_resolution",
             "company",
+            "product_link",
             "evidence_ref",
         ],
     )
