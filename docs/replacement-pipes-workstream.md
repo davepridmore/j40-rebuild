@@ -37,7 +37,7 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 | `RPO-BRAKE-001B` | New brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. May 14 installed-fitting and flare side-view photos point to Toyota-style `double / inverted` flares. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Working flare basis is `double / inverted`; old-line templates, straight-on flare face, union thread, fitting seat, individual route lengths, and clip positions still control final fabrication. | `BRAKE-A` |
 | `RPO-CLUTCH-001A` | New complete clutch flex hose. Brake/clutch hydraulic-rated. | `1` new complete assembly | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | `CLUTCH-A` |
 | `RPO-CLUTCH-001B` | New clutch hard line. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | `CLUTCH-A` |
-| `RPO-CLIP-001` | Rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines. | Mixed pack, around `20` clips plus fasteners | Clip IDs matched to `4.75 mm`, `6 mm`, and `8 mm` line ODs; support hard lines every `300-400 mm`. | `FUEL-B`, `BRAKE-A` |
+| `RPO-CLIP-001` | Rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines. | On-hand mixed stock plus fasteners | Clip IDs matched to `4.75 mm`, `6 mm`, and `8 mm` line ODs and original bracket/hole locations; copy the old route first. | `FUEL-B`, `BRAKE-A` |
 
 ## Hard Rules
 
@@ -49,7 +49,7 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 - Replace the formed-pipe rubber connector hoses with new hose.
 - Treat the old formed pipe, connector hoses, clamps, and clips as patterns only; final installation uses new parts.
 - Use smooth-band or constant-tension clamps on coolant hoses and rolled-edge fuel-injection clamps on diesel hoses.
-- Use rubber-lined P-clips for permanent hard-line support; do not use cable ties as permanent fuel/brake/clutch line supports.
+- Use on-hand rubber-lined P-clips for permanent hard-line support at the original route points where possible; do not use cable ties as permanent fuel/brake/clutch line supports.
 
 ## Reference Media
 

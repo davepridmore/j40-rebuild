@@ -51,6 +51,8 @@ def classify_audit(row: dict[str, str]) -> tuple[str, str]:
     delivery = (row.get("delivery_status") or "").strip().lower()
     evidence = (row.get("evidence_ref") or "").strip()
 
+    if delivery == "needs_location_match":
+        return "confirm_on_hand_location_match", "high"
     if stage in {"needs_confirmation", "received_candidate"} or delivery == "needs_confirmation":
         return "confirm_order_or_receipt", "high"
     if stage == "ordered_pending_delivery" or delivery == "pending_delivery":

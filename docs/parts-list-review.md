@@ -1,22 +1,22 @@
 # Parts List Review
 
-- Generated: 2026-05-30 03:05:50
+- Generated: 2026-05-30 03:16:20
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 126 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 25
+- `buy_now`: 23
 - `cancelled_or_not_required`: 23
 - `completed_or_received`: 33
 - `deferred`: 5
-- `needs_confirmation`: 5
+- `needs_confirmation`: 9
 - `needs_spec_before_order`: 7
 - `ordered_waiting_arrival`: 9
 - `runner_spec_controlled`: 10
 - `spec_ready_release_hold`: 2
-- `unclear`: 7
+- `unclear`: 5
 
 ## Workstream Split
 
@@ -41,8 +41,6 @@
 
 - `part_body_retaining_clips_cotter_pin_pack` [body_chassis] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters
 - `part_fastener_kit_c_captive_clip_nuts` [body_chassis] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
-- `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection
-- `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
 - `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request

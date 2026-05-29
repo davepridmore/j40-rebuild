@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-30T03:06:18+05:00",
+  "generated_at": "2026-05-30T03:17:36+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -53,7 +53,7 @@ window.J40_DASHBOARD_DATA = {
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 70,
     "parts_ordered_pending_delivery": 9,
-    "urgent_part_actions": 15,
+    "urgent_part_actions": 13,
     "capture_data_tasks": 110,
     "capture_data_tasks_now": 95,
     "supply_rows_tracked": 276,
@@ -38650,7 +38650,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -38704,7 +38704,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -55996,18 +55996,18 @@ window.J40_DASHBOARD_DATA = {
           "order_line_id": "RPO-CLIP-001",
           "route": "SUPPORT_HARD_LINES",
           "item": "Rubber-lined P-clips and line protection",
-          "part_number_or_code": "New P-clips matched to measured line ODs",
-          "dimension_spec_mm": "20 mixed new rubber-lined P-clips for 4.75 mm, 6 mm, and 8 mm line OD; support spacing 300-400 mm",
-          "qty_required": "pack",
-          "qty_to_order": "20 new clip mixed pack plus fasteners",
+          "part_number_or_code": "On-hand P-clips matched to measured line ODs and original locations",
+          "dimension_spec_mm": "Use existing mixed rubber-lined P-clip/support stock for 4.75 mm, 6 mm, and 8 mm line OD; preserve original support locations first",
+          "qty_required": "on-hand pack",
+          "qty_to_order": "on-hand stock plus fasteners",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_order_ready",
-          "exact_order_spec": "Order 20 mixed new rubber-lined P-clips plus fasteners for 4.75 mm, 6 mm, and 8 mm hard-line OD, with edge/pass-through protection. Use 300-400 mm support spacing.",
-          "material_spec": "New rubber-lined plated or stainless P-clips, corrosion-protected fasteners, grommet or sleeve protection at pass-throughs",
-          "source_basis": "RP-FUEL-002|RP-BRAKE-001|RP-CLUTCH-001",
-          "user_action_required": "Buy mixed new P-clips for the listed line ODs and confirm hole/fastener fit during route inspection; use old clips only as size/location patterns.",
-          "do_not_order_if": "Clip sizes cannot be matched to measured line ODs or only used/bare clips are offered.",
-          "notes": "Use support spacing around 300-400 mm on hard lines; replace corroded/missing clips and do not substitute cable ties for permanent hydraulic/fuel line support.",
+          "order_release_state": "on_hand_location_match",
+          "exact_order_spec": "Do not order another generic P-clip pack now. Photograph original support locations, match on-hand clips to 4.75 mm, 6 mm, and 8 mm hard-line OD plus bracket hole/fastener size, and replace corroded/missing clips at the same locations.",
+          "material_spec": "On-hand rubber-lined plated or stainless P-clips, corrosion-protected fasteners, grommet or sleeve protection at pass-throughs",
+          "source_basis": "RP-FUEL-002|RP-BRAKE-001|RP-CLUTCH-001|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "user_action_required": "Use old clips only as size/location patterns; add a support only where the original route would otherwise rub or span unsafely.",
+          "do_not_order_if": "Clip sizes cannot be matched to measured line ODs; only used/bare clips are offered; route would be moved to suit clip stock.",
+          "notes": "Preserve original hard-line routing and support points where safe; no cable ties as permanent hydraulic/fuel line support.",
           "evidence_images": [
             {
               "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
@@ -58609,18 +58609,18 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "HLS-16",
-          "order_state": "quote_ready_longman",
+          "order_state": "on_hand_location_match",
           "shop_lane": "hard_line_support",
           "item": "Rubber-lined P-clips and edge protection",
-          "order_text": "New rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines; replace old/corroded clips and use old clips only as size/location patterns.",
-          "qty": "mixed pack 20 new clips plus fasteners",
+          "order_text": "On-hand rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines; replace old/corroded clips at the same original locations first.",
+          "qty": "use on-hand mixed stock plus fasteners",
           "buy_length_mm": "not_applicable",
-          "diameter_spec": "Clip IDs for 4.75 mm, 6 mm, and 8 mm line OD",
-          "material_spec": "New rubber-lined plated or stainless clips plus edge protection",
-          "clamp_or_fitting_spec": "Permanent line supports, not cable ties",
-          "source_basis": "standard_line_support_basis_plus_owner_replace_clips",
-          "final_install_check": "Support hard lines every 300-400 mm; protect pass-throughs",
-          "hard_reject": "Used clips; plain cable ties or bare metal clips for permanent support",
+          "diameter_spec": "Clip IDs for 4.75 mm, 6 mm, and 8 mm line OD matched to measured line/cable OD and old bracket holes",
+          "material_spec": "On-hand rubber-lined plated or stainless clips plus edge protection",
+          "clamp_or_fitting_spec": "Permanent line supports in original locations, not cable ties",
+          "source_basis": "user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "final_install_check": "Copy original support locations and protect pass-throughs; add support only where the original route would rub or span unsafely",
+          "hard_reject": "Used failed clips; plain cable ties; bare metal clips on brake pipe; moving routes to suit clip stock",
           "evidence_images": [
             {
               "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
@@ -65324,16 +65324,16 @@ window.J40_DASHBOARD_DATA = {
             "20260512_072947_gp_bNB9GvHA"
           ],
           "photo_status": "direct_location_plus_may12_context_photos",
-          "spec_status": "needs_clip_count",
-          "acquisition_status": "not_acquired",
+          "spec_status": "needs_clip_count_and_location_match",
+          "acquisition_status": "on_hand_stock_fit_check",
           "installation_status": "not_installed",
-          "current_action": "Can remove rusty or broken clips now after photos and a count by position; keep one sample of each clip style until replacements are in hand.",
-          "exact_recreation_spec": "Replace corroded brake-line clips, cable retaining clips, rubber sleeves/grommets, and P-clips so the new hard lines and parking-brake cables are supported at the original points",
-          "material_spec": "Brake-line retaining clips, rubber-lined P-clips where original clips are missing, rubber sleeves/grommets at pass-through or rub points, zinc/plated fasteners",
-          "critical_measurements": "Count and type of each original clip, hole size, bracket thickness, tube/cable OD, distance between support points, chafe locations",
+          "current_action": "P-clips, U-clips, and support stock are on hand. Photograph and count original support/tee locations before removal; keep one sample of each clip/tee style and choose the on-hand piece that best fits the same location.",
+          "exact_recreation_spec": "Replace corroded brake-line clips, cable retaining clips, rubber sleeves/grommets, and P-clips so the new hard lines and parking-brake cables are supported at the original points. Do not move line routes to suit stocked clips.",
+          "material_spec": "On-hand brake-line retaining clips, rubber-lined P-clips where original clips are missing, rubber sleeves/grommets at pass-through or rub points, zinc/plated fasteners",
+          "critical_measurements": "Count and type of each original clip, hole size, bracket thickness, tube/cable OD, distance between support points, chafe locations, and whether on-hand stock fits each location",
           "fit_and_test": "Lines and cables must be retained without metal-on-metal rub and must not bind through axle movement or steering/suspension articulation",
-          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion",
-          "notes": "May 12 photos add line/cable retaining context. Clips are cheap but control whether the new brake lines survive.",
+          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "notes": "May 12 photos add line/cable retaining context. User clarified 2026-05-30 that P-clips, U-clips, and brake tees are on hand; the work is now a same-location fit/use decision, not a generic purchase.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -66412,7 +66412,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -66511,7 +66511,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -66555,8 +66555,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "in_progress",
-          "detail": "2 part rows still require price confirmation/order placement."
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -66566,7 +66566,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
           "status": "in_progress",
-          "detail": "2 rows still need confirmation before closeout."
+          "detail": "6 rows still need confirmation before closeout."
         },
         {
           "label": "Close workstream exit gate",
@@ -66756,107 +66756,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "exact_order_evidence",
             "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
-          "workstream": "brake_system",
-          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
-          "product_link": "",
-          "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
-            "caption": "Amir purchase reference - brake flex-hose U-clips",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_flex_hose_retaining_clip_pack_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-          "workstream": "brake_system",
-          "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local brake parts / hydraulic line support supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-          "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
-          "product_link": "",
-          "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
-            "caption": "Amir purchase reference - rubber-lined P-clips",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -67115,6 +67014,107 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
+          "workstream": "brake_system",
+          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+          "status": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "on-hand brake hose U-clip stock / original bracket location match",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: U-clips are on hand. Do not buy a mixed U-clip pack now. During front-left, front-right, and rear-center hose replacement, photograph each original bracket/tab and clip location, then choose the on-hand U-clip that locks the selected hose groove tightly in that same bracket. Replace loose, bent, rusty, or missing clips only at the original hose-retention points unless the old location is unsafe. If no on-hand U-clip fits the hose groove and bracket tab thickness, stop and sample-match one clip; do not rely on wire, cable ties, or unsupported hose fittings.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+            "caption": "Amir purchase reference - brake flex-hose U-clips",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_flex_hose_retaining_clip_pack_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+          "workstream": "brake_system",
+          "item": "Brake hydraulic splitter T-union and inline union replacement set",
+          "status": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "on-hand brake tee/union stock / old-location sample match",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
+          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: brake tees/unions are on hand. Do not quote or buy another generic tee pack now. During hard-line replacement, photograph the original rear axle T and any inline union locations, keep old fittings as samples, and use an on-hand tee/union only where the old part is seized, corroded, damaged, or mismatched. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles to the same location as before. If no on-hand tee matches the old location, stop and quote by sample; do not move the tee or reroute lines to suit stock.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_hydraulic_tees_unions_splitters_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
           "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
           "workstream": "brake_system",
           "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
@@ -67176,6 +67176,67 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+          "workstream": "brake_system",
+          "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
+          "status": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "on-hand P-clip and support stock / original line-route match",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+          "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: rubber-lined P-clips and support hardware are on hand. Do not buy another generic support pack now. First map the original brake, clutch, and fuel hard-line support locations with photos, hole sizes, bracket tabs, line OD, and cable OD. Use on-hand P-clips/supports to replace corroded or missing supports at the same locations and to retain the original route; add a new P-clip only where an original support is missing/damaged or a new fabricated line would otherwise rub or span unsafely. No cable ties as final support; reject bare metal contact on brake pipe.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+            "caption": "Amir purchase reference - rubber-lined P-clips",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
           "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
           "workstream": "brake_system",
           "item": "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser",
@@ -67210,6 +67271,46 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
               "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_brake_line_cable_clips",
+          "workstream": "brake_system",
+          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+          "status": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "on-hand rear line/cable clip stock / original rear route match",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_brake_line_cable_clips",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: support clips/P-clips are on hand. Rear line/cable work is now a location-match install task, not a buy task. Photograph and count the original rear brake-line clips, cable retainers, rubber sleeves/grommets, and P-clip locations before removal; then use on-hand clips to replace missing/corroded supports at those same positions and preserve the original axle/chassis route. Add support only where the original route has an unsafe unsupported span or chafe point. No cable ties as final support and no expensive imported clip kit unless an on-hand clip cannot match a required original location.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 on-hand rear line/cable clip stock / original rear route match",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -67714,107 +67815,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_brake_line_cable_clips",
-          "workstream": "brake_system",
-          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order_local_hardware_first",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local brake parts / hardware supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_brake_line_cable_clips",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
-          "product_link": "",
-          "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
-          "workstream": "brake_system",
-          "item": "Brake hydraulic splitter T-union and inline union replacement set",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local brake hydraulic pipe specialist",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
-          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "product_link": "",
-          "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
-            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_hydraulic_tees_unions_splitters_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
           "workstream": "brake_system",
           "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
@@ -68009,7 +68009,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 (runner_spec_controlled; delivery not_ordered; amount estimate)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Brake flex-hose retaining U-clips and bracket hardware pack (received_candidate; delivery needs_location_match; amount missing)"
               ]
             },
             {
@@ -68139,9 +68139,9 @@ window.J40_DASHBOARD_DATA = {
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake flex-hose retaining U-clips and bracket hardware pack (received_candidate; delivery needs_location_match; amount missing)",
                 "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -68272,7 +68272,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
+                "Brake hydraulic splitter T-union and inline union replacement set (received_candidate; delivery needs_location_match; amount missing)"
               ]
             },
             {
@@ -71519,7 +71519,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -71573,7 +71573,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -74723,7 +74723,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "24 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "21 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -74802,7 +74802,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "20 rows still in purchase_ready."
+        "detail": "18 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -74846,7 +74846,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 20
+        "count": 18
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -74866,7 +74866,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "received_candidate",
-        "count": 5
+        "count": 9
       },
       {
         "stage": "runner_spec_controlled",
@@ -74877,12 +74877,8 @@ window.J40_DASHBOARD_DATA = {
         "count": 7
       },
       {
-        "stage": "spec_needed_before_order_local_hardware_first",
-        "count": 1
-      },
-      {
         "stage": "spec_needed_before_order_quote_with_line_stock",
-        "count": 2
+        "count": 1
       },
       {
         "stage": "spec_ready_release_hold",
@@ -74892,7 +74888,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 20
+        "count": 18
       },
       {
         "next_action": "track_delivery",
@@ -75055,44 +75051,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
-        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
-        "workstream": "brake_system",
-        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
-          "caption": "Amir purchase reference - brake flex-hose U-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_flex_hose_retaining_clip_pack_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "priority": "P0",
         "entry_id": "part_brake_master_reservoir_refresh",
         "workstream": "brake_system",
         "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
@@ -75188,65 +75146,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-        "workstream": "brake_system",
-        "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake parts / hydraulic line support supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
-          "caption": "Amir purchase reference - rubber-lined P-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {
@@ -76265,103 +76164,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
-        "workstream": "brake_system",
-        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
-          "caption": "Amir purchase reference - brake flex-hose U-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_flex_hose_retaining_clip_pack_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-        "workstream": "brake_system",
-        "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake parts / hydraulic line support supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
-          "caption": "Amir purchase reference - rubber-lined P-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_rear_center_brake_flex_hose",
         "workstream": "brake_system",
         "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
@@ -76396,6 +76198,103 @@ window.J40_DASHBOARD_DATA = {
             "part_rear_center_brake_flex_hose"
           ],
           "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
+        "workstream": "brake_system",
+        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+        "status": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "on-hand brake hose U-clip stock / original bracket location match",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: U-clips are on hand. Do not buy a mixed U-clip pack now. During front-left, front-right, and rear-center hose replacement, photograph each original bracket/tab and clip location, then choose the on-hand U-clip that locks the selected hose groove tightly in that same bracket. Replace loose, bent, rusty, or missing clips only at the original hose-retention points unless the old location is unsafe. If no on-hand U-clip fits the hose groove and bracket tab thickness, stop and sample-match one clip; do not rely on wire, cable ties, or unsupported hose fittings.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir purchase reference - brake flex-hose U-clips",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_flex_hose_retaining_clip_pack_20260514"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic splitter T-union and inline union replacement set",
+        "status": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "on-hand brake tee/union stock / old-location sample match",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: brake tees/unions are on hand. Do not quote or buy another generic tee pack now. During hard-line replacement, photograph the original rear axle T and any inline union locations, keep old fittings as samples, and use an on-hand tee/union only where the old part is seized, corroded, damaged, or mismatched. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles to the same location as before. If no on-hand tee matches the old location, stop and quote by sample; do not move the tee or reroute lines to suit stock.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_hydraulic_tees_unions_splitters_20260514"
+          ],
+          "match_basis": "manual_override",
           "match_score": 999
         }
       },
@@ -76459,6 +76358,65 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+        "workstream": "brake_system",
+        "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
+        "status": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "on-hand P-clip and support stock / original line-route match",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: rubber-lined P-clips and support hardware are on hand. Do not buy another generic support pack now. First map the original brake, clutch, and fuel hard-line support locations with photos, hole sizes, bracket tabs, line OD, and cable OD. Use on-hand P-clips/supports to replace corroded or missing supports at the same locations and to retain the original route; add a new P-clip only where an original support is missing/damaged or a new fabricated line would otherwise rub or span unsafely. No cable ties as final support; reject bare metal contact on brake pipe.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir purchase reference - rubber-lined P-clips",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
         "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
         "workstream": "brake_system",
         "item": "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser",
@@ -76491,6 +76449,44 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260524_025547_gp_yCvA0bxA",
           "matched_tokens": [
             "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_brake_line_cable_clips",
+        "workstream": "brake_system",
+        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+        "status": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "on-hand rear line/cable clip stock / original rear route match",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: support clips/P-clips are on hand. Rear line/cable work is now a location-match install task, not a buy task. Photograph and count the original rear brake-line clips, cable retainers, rubber sleeves/grommets, and P-clip locations before removal; then use on-hand clips to replace missing/corroded supports at those same positions and preserve the original axle/chassis route. Add support only where the original route has an unsafe unsupported span or chafe point. No cable ties as final support and no expensive imported clip kit unless an on-hand clip cannot match a required original location.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 on-hand rear line/cable clip stock / original rear route match",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260501_194305_gp_EllBGvXA",
+          "matched_tokens": [
+            "photo_20260501_194305_gp_ellbgvxa"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -76971,103 +76967,6 @@ window.J40_DASHBOARD_DATA = {
             "part_rear_axle_hard_brake_lines"
           ],
           "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_rear_brake_line_cable_clips",
-        "workstream": "brake_system",
-        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order_local_hardware_first",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake parts / hardware supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
-        "product_link": "",
-        "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194305_gp_EllBGvXA",
-          "matched_tokens": [
-            "photo_20260501_194305_gp_ellbgvxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
-        "workstream": "brake_system",
-        "item": "Brake hydraulic splitter T-union and inline union replacement set",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake hydraulic pipe specialist",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "product_link": "",
-        "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
-          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_hydraulic_tees_unions_splitters_20260514"
-          ],
-          "match_basis": "manual_override",
           "match_score": 999
         }
       },
@@ -84452,18 +84351,18 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "HLS-16",
-        "order_state": "quote_ready_longman",
+        "order_state": "on_hand_location_match",
         "shop_lane": "hard_line_support",
         "item": "Rubber-lined P-clips and edge protection",
-        "order_text": "New rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines; replace old/corroded clips and use old clips only as size/location patterns.",
-        "qty": "mixed pack 20 new clips plus fasteners",
+        "order_text": "On-hand rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines; replace old/corroded clips at the same original locations first.",
+        "qty": "use on-hand mixed stock plus fasteners",
         "buy_length_mm": "not_applicable",
-        "diameter_spec": "Clip IDs for 4.75 mm, 6 mm, and 8 mm line OD",
-        "material_spec": "New rubber-lined plated or stainless clips plus edge protection",
-        "clamp_or_fitting_spec": "Permanent line supports, not cable ties",
-        "source_basis": "standard_line_support_basis_plus_owner_replace_clips",
-        "final_install_check": "Support hard lines every 300-400 mm; protect pass-throughs",
-        "hard_reject": "Used clips; plain cable ties or bare metal clips for permanent support",
+        "diameter_spec": "Clip IDs for 4.75 mm, 6 mm, and 8 mm line OD matched to measured line/cable OD and old bracket holes",
+        "material_spec": "On-hand rubber-lined plated or stainless clips plus edge protection",
+        "clamp_or_fitting_spec": "Permanent line supports in original locations, not cable ties",
+        "source_basis": "user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "final_install_check": "Copy original support locations and protect pass-throughs; add support only where the original route would rub or span unsafely",
+        "hard_reject": "Used failed clips; plain cable ties; bare metal clips on brake pipe; moving routes to suit clip stock",
         "evidence_images": [
           {
             "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
@@ -86446,16 +86345,16 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "photo_measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "needs_clip_count",
+        "status": "needs_clip_count_and_location_match",
         "location": "Rear axle brake line and parking-brake cable retaining points",
-        "action": "Can remove rusty or broken clips now after photos and a count by position; keep one sample of each clip style until replacements are in hand.",
-        "data_needed": "Count and type of each original clip, hole size, bracket thickness, tube/cable OD, distance between support points, chafe locations",
+        "action": "P-clips, U-clips, and support stock are on hand. Photograph and count original support/tee locations before removal; keep one sample of each clip/tee style and choose the on-hand piece that best fits the same location.",
+        "data_needed": "Count and type of each original clip, hole size, bracket thickness, tube/cable OD, distance between support points, chafe locations, and whether on-hand stock fits each location",
         "blocks": "BR-REAR-006",
         "record_result_in": "",
         "source_label": "Brake Requirements",
         "source_path": "data/manual/brake_system_requirements.csv",
         "source_row_id": "BR-REAR-006",
-        "notes": "May 12 photos add line/cable retaining context. Clips are cheap but control whether the new brake lines survive.",
+        "notes": "May 12 photos add line/cable retaining context. User clarified 2026-05-30 that P-clips, U-clips, and brake tees are on hand; the work is now a same-location fit/use decision, not a generic purchase.",
         "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260324_004852|20260324_004906|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA",
         "evidence_images": [
           {
@@ -98356,8 +98255,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 96,
-        "in_process": 16,
-        "still_required": 61,
+        "in_process": 20,
+        "still_required": 57,
         "total": 173
       }
     ],
@@ -105315,6 +105214,107 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+          "vendor": "on-hand brake hose U-clip stock / original bracket location match",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: U-clips are on hand. Do not buy a mixed U-clip pack now. During front-left, front-right, and rear-center hose replacement, photograph each original bracket/tab and clip location, then choose the on-hand U-clip that locks the selected hose groove tightly in that same bracket. Replace loose, bent, rusty, or missing clips only at the original hose-retention points unless the old location is unsafe. If no on-hand U-clip fits the hose groove and bracket tab thickness, stop and sample-match one clip; do not rely on wire, cable ties, or unsupported hose fittings.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+            "caption": "Amir purchase reference - brake flex-hose U-clips",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_flex_hose_retaining_clip_pack_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Brake hydraulic splitter T-union and inline union replacement set",
+          "vendor": "on-hand brake tee/union stock / old-location sample match",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: brake tees/unions are on hand. Do not quote or buy another generic tee pack now. During hard-line replacement, photograph the original rear axle T and any inline union locations, keep old fittings as samples, and use an on-hand tee/union only where the old part is seized, corroded, damaged, or mismatched. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles to the same location as before. If no on-hand tee matches the old location, stop and quote by sample; do not move the tee or reroute lines to suit stock.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_hydraulic_tees_unions_splitters_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_brake_master_reservoir_refresh",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -105479,6 +105479,67 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
+          "vendor": "on-hand P-clip and support stock / original line-route match",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: rubber-lined P-clips and support hardware are on hand. Do not buy another generic support pack now. First map the original brake, clutch, and fuel hard-line support locations with photos, hole sizes, bracket tabs, line OD, and cable OD. Use on-hand P-clips/supports to replace corroded or missing supports at the same locations and to retain the original route; add a new P-clip only where an original support is missing/damaged or a new fabricated line would otherwise rub or span unsafely. No cable ties as final support; reject bare metal contact on brake pipe.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+            "caption": "Amir purchase reference - rubber-lined P-clips",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_rear_brake_shoes_hardware",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -105552,6 +105613,46 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
               "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_brake_line_cable_clips",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+          "vendor": "on-hand rear line/cable clip stock / original rear route match",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
+          "payment_status": "unknown",
+          "delivery_status": "needs_location_match",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+          "product_link": "",
+          "notes": "User clarification 2026-05-30: support clips/P-clips are on hand. Rear line/cable work is now a location-match install task, not a buy task. Photograph and count the original rear brake-line clips, cable retainers, rubber sleeves/grommets, and P-clip locations before removal; then use on-hand clips to replace missing/corroded supports at those same positions and preserve the original axle/chassis route. Add support only where the original route has an unsafe unsupported span or chafe point. No cable ties as final support and no expensive imported clip kit unless an on-hand clip cannot match a required original location.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 on-hand rear line/cable clip stock / original rear route match",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -107401,107 +107502,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-          "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
-          "product_link": "",
-          "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
-            "caption": "Amir purchase reference - brake flex-hose U-clips",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_flex_hose_retaining_clip_pack_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Brake hydraulic splitter T-union and inline union replacement set",
-          "vendor": "local brake hydraulic pipe specialist",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "product_link": "",
-          "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
-            "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_hydraulic_tees_unions_splitters_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_brake_booster_servo_44610_60050",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -107938,67 +107938,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
-          "vendor": "local brake parts / hydraulic line support supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
-          "product_link": "",
-          "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
-            "caption": "Amir purchase reference - rubber-lined P-clips",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -108096,46 +108035,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_rear_brake_line_cable_clips",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-          "vendor": "local brake parts / hardware supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order_local_hardware_first",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
-          "product_link": "",
-          "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
           }
         },
         {
@@ -110182,6 +110081,46 @@ window.J40_DASHBOARD_DATA = {
     "all_rows": [
       {
         "source": "expenses",
+        "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+        "vendor": "on-hand brake hose U-clip stock / original bracket location match",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: U-clips are on hand. Do not buy a mixed U-clip pack now. During front-left, front-right, and rear-center hose replacement, photograph each original bracket/tab and clip location, then choose the on-hand U-clip that locks the selected hose groove tightly in that same bracket. Replace loose, bent, rusty, or missing clips only at the original hose-retention points unless the old location is unsafe. If no on-hand U-clip fits the hose groove and bracket tab thickness, stop and sample-match one clip; do not rely on wire, cable ties, or unsupported hose fittings.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
+          "caption": "Amir purchase reference - brake flex-hose U-clips",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_flex_hose_retaining_clip_pack_20260514"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_brighto_extreme_paint_remover_3l_amir_20260528",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -110303,6 +110242,46 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_rear_brake_line_cable_clips",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+        "vendor": "on-hand rear line/cable clip stock / original rear route match",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: support clips/P-clips are on hand. Rear line/cable work is now a location-match install task, not a buy task. Photograph and count the original rear brake-line clips, cable retainers, rubber sleeves/grommets, and P-clip locations before removal; then use on-hand clips to replace missing/corroded supports at those same positions and preserve the original axle/chassis route. Add support only where the original route has an unsafe unsupported span or chafe point. No cable ties as final support and no expensive imported clip kit unless an on-hand clip cannot match a required original location.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 on-hand rear line/cable clip stock / original rear route match",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260501_194305_gp_EllBGvXA",
+          "matched_tokens": [
+            "photo_20260501_194305_gp_ellbgvxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_star_washers",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -110336,6 +110315,67 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_star_washers"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Brake hydraulic splitter T-union and inline union replacement set",
+        "vendor": "on-hand brake tee/union stock / old-location sample match",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: brake tees/unions are on hand. Do not quote or buy another generic tee pack now. During hard-line replacement, photograph the original rear axle T and any inline union locations, keep old fittings as samples, and use an on-hand tee/union only where the old part is seized, corroded, damaged, or mismatched. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles to the same location as before. If no on-hand tee matches the old location, stop and quote by sample; do not move the tee or reroute lines to suit stock.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
+          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_hydraulic_tees_unions_splitters_20260514"
           ],
           "match_basis": "manual_override",
           "match_score": 999
@@ -110582,6 +110622,67 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
+        "vendor": "on-hand P-clip and support stock / original line-route match",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
+        "payment_status": "unknown",
+        "delivery_status": "needs_location_match",
+        "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md|user_update_2026-05-30_on_hand_pclips_uclips_brake_tees",
+        "product_link": "",
+        "notes": "User clarification 2026-05-30: rubber-lined P-clips and support hardware are on hand. Do not buy another generic support pack now. First map the original brake, clutch, and fuel hard-line support locations with photos, hole sizes, bracket tabs, line OD, and cable OD. Use on-hand P-clips/supports to replace corroded or missing supports at the same locations and to retain the original route; add a new P-clip only where an original support is missing/damaged or a new fabricated line would otherwise rub or span unsafely. No cable ties as final support; reject bare metal contact on brake pipe.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
+          "caption": "Amir purchase reference - rubber-lined P-clips",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
           ],
           "match_basis": "manual_override",
           "match_score": 999
@@ -118897,46 +118998,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-        "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy new brake flex-hose retaining U-clips / horseshoe clips and small bracket hardware for front left, front right, and rear center hose brackets. Quantity target 8-12 mixed clips. Match clip thickness and groove width to the selected hose assemblies and bracket tab thickness. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
-          "caption": "Amir purchase reference - brake flex-hose U-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_flex_hose_retaining_clip_pack_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_brake_booster_servo_44610_60050",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -119079,107 +119140,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
-        "vendor": "local brake parts / hydraulic line support supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_clamp_on_line_supports|HLS-16|BR-REAR-006|docs/rear-drum-brake-buy-sheet-20260524.md",
-        "product_link": "",
-        "notes": "Buy the brake pipe clip/support pack: 4.75 mm / 3/16 in rubber-lined P-clips x25-30, rear axle hard-line support clips or clamp-on rubber-lined axle supports x10-20, edge trim / anti-chafe sleeve 1-2 m, rubber sleeves/grommets x10-20 mixed, and M5/M6 plated fastener sets x20-30. Include larger saddles for parking-brake cable outer sheath where needed. Use permanent supports every 300-400 mm on hard lines and near unions/bends; no cable ties as final support; reject bare metal clips directly on brake pipe.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
-          "caption": "Amir purchase reference - rubber-lined P-clips",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_clutch_line_support_clamps_full_vehicle_20260514"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_rear_brake_line_cable_clips",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-        "vendor": "local brake parts / hardware supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order_local_hardware_first",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
-        "product_link": "",
-        "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194305_gp_EllBGvXA",
-          "matched_tokens": [
-            "photo_20260501_194305_gp_ellbgvxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
         }
       },
       {
@@ -119899,67 +119859,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_body_shoulder_pins_sleeves_spacers"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Brake hydraulic splitter T-union and inline union replacement set",
-        "vendor": "local brake hydraulic pipe specialist",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "product_link": "",
-        "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
-          "caption": "Amir purchase reference - brake tee / inline unions / tube nuts",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_brake_hydraulic_tees_unions_splitters_20260514"
           ],
           "match_basis": "manual_override",
           "match_score": 999
@@ -122081,8 +121980,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
         "item": "Rubber-lined P-clips",
-        "current_action": "Buy if missing",
-        "instruction": "Buy mixed line supports for 4.75 mm, 6 mm, and 8 mm lines. Use permanent supports every 300-400 mm; no cable ties as final support.",
+        "current_action": "Use existing stock by original location",
+        "instruction": "Do not buy more now. Photograph old support locations, line OD, and bracket hole first; use the on-hand P-clip that holds the same route without metal-on-metal rub.",
         "image": {
           "path": "../../docs/amir_montgomery_real_images/p_clip.jpg",
           "caption": "Amir reference: Rubber-lined P-clips",
@@ -122105,8 +122004,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
         "item": "Brake flex-hose U-clips",
-        "current_action": "Buy if available at sensible price",
-        "instruction": "Buy 8-12 mixed retaining clips. Match selected hose bracket groove and chassis tab thickness before final use.",
+        "current_action": "Use existing stock by original hose bracket",
+        "instruction": "Do not buy more now. Match the selected hose groove and original bracket tab thickness with on-hand U-clips; stop if no clip locks tightly.",
         "image": {
           "path": "../../docs/amir_montgomery_real_images/brake_hose_u_clip.jpg",
           "caption": "Amir reference: Brake flex-hose U-clips",
@@ -122177,8 +122076,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
         "item": "Brake tee / inline unions / tube nuts",
-        "current_action": "Quote/photo only",
-        "instruction": "Brake-rated double/inverted flare fittings only. Buy only after old sample confirms thread and seat. No plumbing brass, no compression unions.",
+        "current_action": "Use existing stock by old tee/union location",
+        "instruction": "Brake tees/unions are on hand. Match old thread, flare seat, port orientation, mounting hole, and tube entry angles before use; quote only if no on-hand part matches.",
         "image": {
           "path": "../../docs/amir_montgomery_real_images/brake_tee.jpg",
           "caption": "Amir reference: Brake tee / inline unions / tube nuts",

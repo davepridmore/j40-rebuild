@@ -27,9 +27,9 @@ Runner-controlled brake hose purchases use the capture checklist in [brake-runne
 | --- | --- | --- |
 | P0 | Tube stock | Amir has procured `25 ft` of zinc-coated/galvanised `3/16 in` tube. Receipt-check it as brake-rated `4.75 mm / 3/16 in` coated Bundy/equivalent before use; `10000-12000 mm` remains preferred only if this stock is not enough for brake + clutch plus practice flares. |
 | P0 | Flare nuts | Buy new brake-rated `double / inverted` flare nuts only after thread and seat are confirmed from the removed old line and port. Buy extras for practice/scrap flares. |
-| P0 | Tee/unions | Replace corroded or seized rear axle tees/inline unions only with brake-rated fittings that match thread, seat, mounting, port orientation, and tube entry angle. No compression/plumbing fittings. |
+| P0 | Tee/unions | Brake tees/unions are on hand. Replace corroded or seized rear axle tees/inline unions only with on-hand brake-rated fittings that match the same original location, thread, seat, mounting, port orientation, and tube entry angle. No compression/plumbing fittings. |
 | P0 | Flex hoses | Define a written hose spec or use mechanic-labelled old samples, then buy complete crimped front-left, front-right, and rear-center brake flex hose assemblies only as an exact match. Aamir can do the counter purchase; mechanic/user controls the spec. No roll hose. |
-| P0 | Supports | Buy `4.75 mm` rubber-lined P-clips, brake hose U-clips, axle line supports, grommets/edge trim, and plated fasteners. Support hard lines every `300-400 mm` and near unions/bends. |
+| P0 | Supports | P-clips and brake hose U-clips are on hand. Fit them by original line/hose support location: match `4.75 mm` line OD, hose groove, bracket tab/hole, and route before adding anything new. Add support only where the original support is missing/damaged or the copied route would rub/span unsafely. |
 | P0 | Opening prep | No separate purchase line. Before opening hydraulics, verify on-hand/workshop line caps/plugs, brake cleaner, catch bottle/bleeder kit, rags, and catch tray are ready. DOT 3 fluid, clear bleed hose, and nitrile gloves are already received. |
 
 ## Reject Rules

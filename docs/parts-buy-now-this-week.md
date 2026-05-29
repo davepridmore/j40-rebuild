@@ -1,19 +1,19 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-30 03:05:55
+- Generated: 2026-05-30 03:16:28
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 29
-- `confirm_price_then_order`: 20
+- Rows in this-week list: 27
+- `confirm_price_then_order`: 18
 - `track_delivery`: 9
 
 ## Priority Split
 
-- `P0`: 14
+- `P0`: 12
 - `P1`: 9
 - `P2`: 6
 
@@ -29,11 +29,9 @@
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (20):
+- `confirm_price_then_order` (18):
   - `part_body_retaining_clips_cotter_pin_pack` [P0] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (price: price_tbd; order_date: 2026-05-04; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_fastener_kit_c_captive_clip_nuts` [P0] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [P0] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_brake_flex_hose_retaining_clip_pack_20260514` [P0] Brake flex-hose retaining U-clips and bracket hardware pack (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_cabin_compact_fuse_boxes` [P0] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_blower_clutch_fan_wiring_20260514` [P0] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_barrier_hose_fittings_20260514` [P1] A/C barrier hose and refrigerant-compatible fittings (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)

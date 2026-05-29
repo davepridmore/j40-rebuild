@@ -22,7 +22,7 @@ Yes, the rear drum area needs a repair package, and some of it has already been 
 | Still required | Rear center brake flex hose | Buy one complete crimped automotive brake hose by old sample or written spec. Must match both ends, free length, bracket groove/clip, thread/seat/banjo if fitted, and DOT/SAE J1401 or OEM-equivalent rating. |
 | Still required | Rear axle hard brake lines and fittings | Recreate left/right axle lines from old templates. Buy flare nuts, T/union pieces, and any splitters only after old sample confirms thread and seat. |
 | Procured by Amir / fit check | Rear drum springs / hold-down / adjuster hardware | Centric `116971-05110530` drum brake hardware kit is procured by Amir. Treat it as a fit-check candidate until opened-drum layout, shoe width/web holes, spring hooks, hold-down pin length, adjusters, and parking-brake clips match. |
-| Still required | Line clips, U-clips, P-clips, grommets, cable retainers | Buy locally by measured tube/cable OD and original clip positions. No cable ties as permanent support. |
+| On hand / fit by location | Line clips, U-clips, P-clips, grommets, cable retainers, brake tees | Do not buy generic clips/tees now. Photograph original locations, then use on-hand stock that matches the same tube/cable OD, hose groove, bracket hole/tab, and tee port orientation. No cable ties as permanent support. |
 | Inspect first | Wheel cylinders | No generic purchase. Open drums, identify actual count/side/bore/port/mounting/pushrod/bleeder access, then buy exact samples or rebuild only if safe. |
 | Inspect first | Drums | Measure ID, scoring, step, cracks, and out-of-round. Machine locally if within limit; replace side-specific only if failed. No blind import. |
 
@@ -47,7 +47,7 @@ Use these links in this order: local quote/sample-match first, direct local cons
 | Quote / sample-match | Montgomery Road Toyota parts lead | [Fineauto.pk listing](https://www.bizsouthasia.com/PK/fineauto-pk-0333-4318643) | Phone/WhatsApp first; ask for J40/FJ40/BJ40 rear brake and handbrake parts by sample. |
 | Already ordered / local fallback | Rear brake shoes | [PakWheels K-2255-N/Y FJ40 rear brake shoe](https://www.pakwheels.com/accessories-spare-parts/toyota-land-cruiser-fj40-mk-rear-brake-shoe-k-2255-n-y-5570294) | Do not buy more until current PakWheels order arrives and unit count/shoe width/arc match are verified. |
 | Buy if missing | Brake cleaner | [Daraz brake cleaner 450 ml](https://www.daraz.pk/products/brake-cleaner-450-ml-i386631013.html) | Buy 4 cans only if workshop/on-hand cleaner is missing. Non-residue brake cleaner only. |
-| Buy by measured OD | Rubber-lined P-clips / line support | [Daraz pipe-clamps-rubber search](https://www.daraz.pk/tag/pipe-clamps-rubber/) | Buy 4.75 mm / 3/16 in support clips only after checking line OD and bracket hole/fastener size. |
+| On hand / fit by measured OD | Rubber-lined P-clips / line support | On-hand stock first | Do not buy more now. Use on-hand 4.75 mm / 3/16 in support clips only after checking line OD and original bracket hole/fastener size. |
 | Reference / import fallback | Rear center brake flex hose | [Cruiser Corps 553-103 rear hose](https://cruisercorps.com/collections/brakes/products/brake-hose-line-rear-fj40-hose-upper-front-fj55) | Buy only if old hose length/end fittings match; otherwise use as reference for local crimped hose. |
 | Reference / import fallback | Drum spring/hold-down hardware | [Cruiser Corps 551-113 drum hardware kit](https://cruisercorps.com/collections/types/products/drum-brake-hardware-rebuild-kit) | Buy/import only if opened-drum spring/hold-down layout matches and local sample kit is unavailable. |
 | Reference / import fallback | Rear wheel cylinders | [Cruiser Corps A28 rear wheel-cylinder kit](https://cruisercorps.com/products/wheel-cylinder-kit-rear-1) | Do not buy until drums are opened and actual cylinder count/position/bore/port/mounting match. |
@@ -77,20 +77,21 @@ For a 1978 J40/BJ40/FJ40 rear drum setup, the reference pattern is usually four 
 
 Do not buy until one rear drum is opened and the existing cylinders are photographed/removed. Confirm actual cylinder count, side/position, bore, line-entry port thread/seat, mounting bolt spacing, pushrod/boot shape, and bleed-screw access.
 
-## Brake Pipe Clip / Support Buy Pack
+## Brake Pipe Clip / Support Fit Pack
 
-Buy these as the brake-pipe support package for the rear axle and full brake/clutch hard-line refresh. The existing ledger rows are `part_brake_clutch_line_support_clamps_full_vehicle_20260514`, `part_brake_flex_hose_retaining_clip_pack_20260514`, and `part_rear_brake_line_cable_clips`.
+Use existing P-clips, U-clips, brake tees/unions, and support stock first. This is now a location-match install package for the rear axle and full brake/clutch hard-line refresh, not a buy pack. The existing ledger rows are `part_brake_clutch_line_support_clamps_full_vehicle_20260514`, `part_brake_flex_hose_retaining_clip_pack_20260514`, `part_brake_hydraulic_tees_unions_splitters_20260514`, and `part_rear_brake_line_cable_clips`.
 
-| Priority | Purchase item | Quantity target | Link / source | Accept | Reject |
+| Priority | Fit item | Quantity target | Source | Accept | Reject |
 | --- | --- | ---: | --- | --- | --- |
-| P0 | `4.75 mm / 3/16 in` rubber-lined P-clips | 25-30 | [Daraz pipe-clamps-rubber search](https://www.daraz.pk/tag/pipe-clamps-rubber/) or local hydraulic/brake pipe shop | Rubber-lined steel or stainless P-clips that grip the brake pipe without crushing it; M5/M6 fixing hole preferred. | Bare metal clip directly on pipe, plastic wall clips, wrong ID, sharp edge, loose fit. |
-| P0 | Brake flex-hose retaining U-clips / horseshoe clips | 8-12 mixed | Local brake pipe/hose shop first; use [BrakeQuip retaining clip reference](https://spokanehose.com/product.php?id=7066) for shape | Zinc/plated spring steel U-clips matching the selected hose bracket groove and tab thickness. | Loose U-clip, thin soft sheet metal, wrong groove width, cable tie or wire substitute. |
-| P0 | Rear axle hard-line support clips / clamp-on axle supports | 10-20 mixed | Local brake pipe/hardware shop | Rubber-lined clamp or original-style axle hard-line clip matched to the axle route and bracket holes. | Unlined saddle clamp, clip that lets pipe rotate/rub, clamp that fouls U-bolts/shocks/springs. |
+| P0 | `4.75 mm / 3/16 in` rubber-lined P-clips | As required by old support locations | On-hand stock | Rubber-lined steel or stainless P-clips that grip the brake pipe without crushing it and land on the original hole/bracket where safe. | Bare metal clip directly on pipe, plastic wall clips, wrong ID, sharp edge, loose fit, or moving the line route to suit clip stock. |
+| P0 | Brake flex-hose retaining U-clips / horseshoe clips | As required by hose brackets | On-hand stock | Zinc/plated spring steel U-clips matching the selected hose bracket groove and original tab thickness. | Loose U-clip, thin soft sheet metal, wrong groove width, cable tie or wire substitute. |
+| P0 | Brake tees / inline unions | As required by original tee/union locations | On-hand stock | Brake-rated tee/union matching old thread, flare seat, port orientation, mounting hole/bracket, tube entry angles, and same location. | Plumbing/compression fittings, wrong seat/thread/port orientation, or relocating lines to suit a stocked tee. |
+| P0 | Rear axle hard-line support clips / clamp-on axle supports | As required by old route | On-hand stock | Rubber-lined clamp or original-style axle hard-line clip matched to the axle route and bracket holes. | Unlined saddle clamp, clip that lets pipe rotate/rub, clamp that fouls U-bolts/shocks/springs. |
 | P0 | Edge trim / anti-chafe sleeve | 1-2 m | Local rubber/hardware shop or automotive electrical supplier | Rubber/plastic edge trim for bracket holes and metal edges near hard line or cable routes. | Hard PVC with sharp edge, adhesive-only fix in dirty/wet area, material that slips off. |
 | P0 | Rubber sleeves/grommets for line pass-throughs | 10-20 mixed | Local rubber/hardware shop | Sleeves/grommets matched to `4.75 mm` pipe, cable sheath OD, and bracket hole size. | Oversized grommet, loose sleeve, fuel/oil-soft material where exposed. |
 | P0 | M5/M6 plated fasteners for supports | 20-30 sets | Local fastener shop | Zinc/yellow-zinc or stainless bolt/nut/washer sets, nyloc or lock washer where needed. | Rusty used fasteners, mild unplated screws, self-tappers into weak metal unless no proper fixing exists. |
 
-Install rule: support hard lines every `300-400 mm`, plus near bends, unions, T-pieces, hose brackets, and pass-throughs. No brake pipe should touch bare metal, move in a clip, or be held permanently by cable ties.
+Install rule: copy the original support and tee locations first. Add support only where an original support is missing/damaged or the remade line would otherwise rub or span unsafely, including near bends, unions, T-pieces, hose brackets, and pass-throughs. No brake pipe should touch bare metal, move in a clip, or be held permanently by cable ties.
 
 ## Local-First Stop Before Import
 
