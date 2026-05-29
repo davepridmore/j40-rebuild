@@ -111,6 +111,17 @@ Pakistan quote lead only: [Pakwheels FJ40 rear brake shoe listing](https://www.p
 
 Local runner assignment: the local pads/hardware, front hose, caliper rebuild/replacement quote, and rotor quote tasks are now under Amir's Montgomery Road / Land Cruiser parts runner sheet: [amir-montgomery-road-shopping-list-20260527.md](amir-montgomery-road-shopping-list-20260527.md). Amir may collect prices/photos and buy only after labelled old samples, written mechanic specs, or explicit user/mechanic approval remove the fit decision from him.
 
+### Required Front Disc Reference Specs - 2026-05-30
+
+Use these as the normal Pakistan-budget order basis: local OEM/Advics/Japan-equivalent parts or professional rebuild/sample-match work, not an imported loaded caliper set unless the local route fails.
+
+| Priority | Required item | Reference spec / design | Pakistan buy rule |
+| --- | --- | --- | --- |
+| P0 | Front disc pads and retaining hardware | Sumitomo fixed-caliper pad family: `04491-60010`, `04491-60030`, `04465-35170`, `04465-YZZC0`; catalog pad shape about `107 x 65.7 x 15.5 mm`. Hardware reference `BR06158K` / `MT 12342`: 4 pad pins, 2 anti-rattle springs, 2 pin clips. | Buy one axle set only after removed pad/backing plate and hardware match. Prefer OEM/Advics/Japanese-equivalent. Reject Prado/J200/Fortuner/V8 pads and seller-led guesses. |
+| P0 | Front Sumitomo fixed caliper renewal pair | Toyota reference family `47730-60021` RH / `47750-60021` LH; fixed Sumitomo 4-piston design, catalog piston reference `34/43 mm`, `20 mm` disc family. | Rebuild the original calipers locally if the bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Raw used calipers are cores only. |
+| P0 | Front rotor replacement pair | Toyota reference `43512-60011`, quantity 2; catalog design reference: vented disc, `302 mm` OD, `20 mm` nominal thickness, `19 mm` minimum, `100 mm` center bore, `139.7 mm` PCD, `48 mm` height, 6 mounting holes plus 2 service/auxiliary holes. | Buy two new rotors only after old rotor measurements and hub/dust-shield/caliper/wheel clearance confirm this family. No machining/reuse as the baseline plan. |
+| P0 | Front flexible brake hoses | Replace every fitted front flex hose. Lower wheel reference `553-102`, 2 pieces, `9 1/4 in`, DOT rubber. Front upper/frame reference if fitted `553-101`, 1 piece, `10 3/8 in`, DOT rubber with retaining clip. | Buy or fabricate only complete crimped automotive brake hose assemblies rated DOT/SAE J1401 or OEM-equivalent. Old free length, end fittings, thread/seat, bracket groove, clips, and steering/droop route control final. |
+
 ### Current Front Disc Sourcing Links - 2026-05-29
 
 Use these as quote and availability links, not blind-buy approvals. The May 29 truck photos identify the front as a Sumitomo fixed-caliper disc setup, but the removed pad outline, cleaned casting marks, piston count/diameter, rotor dimensions, and hose end/free-length still control final payment.
