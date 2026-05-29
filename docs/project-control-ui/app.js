@@ -1936,25 +1936,33 @@
     const drawingFiles = chassisRubberDrawingFiles(row);
     const originalImage = preferredChassisRubberOriginalImage(row);
     const previewPath = cleanString(drawingFiles && (drawingFiles.preview || drawingFiles.svg));
-    const previewLabel = originalImage ? "Original photo" : cleanString(drawingFiles && drawingFiles.preview) ? "3D visual" : "SVG control";
-    const image = originalImage
-      ? originalImage
-      : previewPath
+    const previewLabel = previewPath
+      ? cleanString(drawingFiles && drawingFiles.preview)
+        ? "3D visual"
+        : "Drawing preview"
+      : originalImage
+        ? "Original photo"
+        : "Reference";
+    const image = previewPath
       ? {
           path: previewPath,
           caption: `${cleanString(row.order_id) || "Rubber"} ${previewLabel}`,
           media_id: `${cleanString(row.order_id).toLowerCase()}_svg`,
           media_type: "photo",
         }
+      : originalImage
+        ? originalImage
       : row && row.image
         ? row.image
         : {};
+    const originalPath = previewPath && originalImage ? cleanString(originalImage.path) : "";
     const prepared = prepareImage(image, row.part || row.order_id || "Rubber order line");
     const mediaClass = originalImage || previewPath ? "table-image table-image-contain" : "table-image";
     return `
       <td class="table-image-cell">
         ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
-        <span class="table-image-note">${escapeHtml(originalImage || previewPath ? previewLabel : "Reference")}</span>
+        <span class="table-image-note">${escapeHtml(previewLabel)}</span>
+        ${originalPath ? `<div class="small-muted"><a href="${escapeHtml(originalPath)}" target="_blank" rel="noopener noreferrer">source photo</a></div>` : ""}
       </td>
     `;
   }
