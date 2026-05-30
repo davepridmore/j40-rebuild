@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -16,9 +17,14 @@ SCAFFOLD_MANIFEST_PATH = REPORT_DIR / "j40_full_vehicle_scaffold_rev_c_manifest.
 
 INPUT_DIRS = [
     CAD_ROOT / "00_inbox",
+    CAD_ROOT / "01_source_mesh",
     CAD_ROOT / "02_mesh_clean",
 ]
 INPUT_FILES = [
+    ROOT / "data" / "manual" / "photo_inventory.csv",
+    ROOT / "data" / "manual" / "component_jobs.csv",
+    ROOT / "data" / "manual" / "component_jobs_photo_reconciliation.csv",
+    ROOT / "scripts" / "update_j40_cad_reference.py",
     ROOT / "scripts" / "j40_cad_intake.py",
     ROOT / "scripts" / "freecad_mesh_to_cad.py",
     ROOT / "scripts" / "export_gltf_to_obj.py",
@@ -62,10 +68,14 @@ SCAFFOLD_MANIFEST_EXTRA_OUTPUTS = [
 
 def file_record(path: Path) -> dict[str, object]:
     stat = path.stat()
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
     return {
         "path": str(path.relative_to(ROOT)),
         "size": stat.st_size,
-        "mtime_ns": stat.st_mtime_ns,
+        "sha256": digest.hexdigest(),
     }
 
 

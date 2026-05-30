@@ -194,28 +194,44 @@ def load_parts() -> list[PartRow]:
     ]
 
 
-def job_lookup() -> dict[tuple[str, str], dict[str, str]]:
-    jobs = read_csv(COMPONENT_JOBS)
-    by_group: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for job in jobs:
-        by_group[job.get("component_group", "")].append(job)
-    lookup: dict[tuple[str, str], dict[str, str]] = {}
-    for group, group_jobs in by_group.items():
-        for job in group_jobs:
-            key = (group, job.get("component_job_id", ""))
-            lookup[key] = job
+def job_lookup() -> dict[str, dict[str, str]]:
+    return {row.get("component_job_id", ""): row for row in read_csv(COMPONENT_JOBS)}
+
+
+def split_pipe_values(value: str) -> list[str]:
+    return [item.strip() for item in value.split("|") if item.strip()]
+
+
+def unique_join(values: list[str]) -> str:
+    seen: set[str] = set()
+    output: list[str] = []
+    for value in values:
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        output.append(value)
+    return "|".join(output)
+
+
+def reconciliation_by_specific_component() -> dict[str, list[dict[str, str]]]:
+    lookup: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in read_csv(COMPONENT_JOB_RECON):
+        for field_name, basis in (
+            ("direct_specific_components", "direct"),
+            ("indirect_specific_components", "indirect"),
+        ):
+            for specific_component in split_pipe_values(row.get(field_name, "")):
+                mapped = dict(row)
+                mapped["job_match_basis"] = basis
+                lookup[specific_component].append(mapped)
     return lookup
-
-
-def reconciliation_lookup() -> dict[str, dict[str, str]]:
-    return {row.get("component_job_id", ""): row for row in read_csv(COMPONENT_JOB_RECON)}
 
 
 def build_matrix() -> list[dict[str, str]]:
     photos = read_csv(PHOTO_INVENTORY)
     parts = load_parts()
     jobs = job_lookup()
-    recon = reconciliation_lookup()
+    recon_by_component = reconciliation_by_specific_component()
     grouped: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
     for row in photos:
         if row.get("media_type") not in {"photo", "video"}:
@@ -227,12 +243,13 @@ def build_matrix() -> list[dict[str, str]]:
         matches = model_part_matches(component_group, specific_component, parts)
         matched_confidence = Counter(part.confidence for part in matches)
         readiness_value = readiness(rows, matches, specific_component)
-        related_job = jobs.get((component_group, specific_component), {})
-        related_recon = recon.get(specific_component, {})
+        related_recons = recon_by_component.get(specific_component, [])
+        related_jobs = [jobs.get(row.get("component_job_id", ""), {}) for row in related_recons]
         output_rows.append(
             {
                 "component_group": component_group,
                 "specific_component": specific_component,
+                "component_job_ids": unique_join([row.get("component_job_id", "") for row in related_recons]),
                 "photo_count": str(len(rows)),
                 "video_count": str(sum(1 for row in rows if row.get("media_type") == "video")),
                 "date_range": date_range(rows),
@@ -244,9 +261,10 @@ def build_matrix() -> list[dict[str, str]]:
                 "model_confidence_mix": "|".join(f"{key}:{value}" for key, value in matched_confidence.most_common()),
                 "digital_twin_readiness": readiness_value,
                 "measurement_priority": backlog_priority(len(rows), readiness_value),
-                "job_status": related_job.get("current_status", ""),
-                "job_action": related_job.get("planned_action", ""),
-                "reconciliation_status": related_recon.get("reconciliation_status", ""),
+                "job_status": unique_join([job.get("current_status", "") for job in related_jobs]),
+                "job_action": unique_join([job.get("planned_action", "") for job in related_jobs]),
+                "job_match_basis": unique_join([row.get("job_match_basis", "") for row in related_recons]),
+                "reconciliation_status": unique_join([row.get("reconciliation_status", "") for row in related_recons]),
             }
         )
     return output_rows
@@ -264,12 +282,14 @@ def write_notes(matrix_rows: list[dict[str, str]], backlog_rows: list[dict[str, 
     group_counts = Counter(row["component_group"] for row in matrix_rows)
     readiness_counts = Counter(row["digital_twin_readiness"] for row in matrix_rows)
     photo_total = sum(int(row["photo_count"]) for row in matrix_rows)
+    job_linked_count = sum(1 for row in matrix_rows if row.get("component_job_ids"))
     p1_rows = [row for row in backlog_rows if row["measurement_priority"] == "P1"]
     lines = [
         "# J40 Digital Twin Build Notes",
         "",
         f"- Generated: {datetime.now(timezone.utc).isoformat()}",
         f"- Photo/video evidence rows: {len(matrix_rows)} component slices, {photo_total} media references.",
+        f"- Component-job linkage: {job_linked_count} of {len(matrix_rows)} component slices linked through `{COMPONENT_JOB_RECON.relative_to(ROOT)}`.",
         f"- Current scaffold parts: {sum(1 for _ in read_csv(MODEL_PARTS))}.",
         f"- Evidence matrix: `{EVIDENCE_MATRIX.relative_to(ROOT)}`",
         f"- Measurement backlog: `{MEASUREMENT_BACKLOG.relative_to(ROOT)}`",
@@ -311,6 +331,7 @@ def main() -> None:
     matrix_fields = [
         "component_group",
         "specific_component",
+        "component_job_ids",
         "photo_count",
         "video_count",
         "date_range",
@@ -324,6 +345,7 @@ def main() -> None:
         "measurement_priority",
         "job_status",
         "job_action",
+        "job_match_basis",
         "reconciliation_status",
     ]
     write_csv(EVIDENCE_MATRIX, matrix_rows, matrix_fields)

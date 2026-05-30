@@ -1,51 +1,71 @@
 {
-  "updated_at": "2026-05-30T22:07:08.638932+00:00",
+  "updated_at": "2026-05-30T22:16:21.022392+00:00",
   "changed": true,
   "input_signature": [
     {
+      "path": "data/manual/photo_inventory.csv",
+      "size": 270683,
+      "sha256": "75f5e48b4b99ed8f7adc30318984d5798ad975505c4bd34ba0fae868d53fa20f"
+    },
+    {
+      "path": "data/manual/component_jobs.csv",
+      "size": 57132,
+      "sha256": "423c4f278fa5f8b110a1079da7611fec0aa3388ff6fe3bddb46da360684b6bdb"
+    },
+    {
+      "path": "data/manual/component_jobs_photo_reconciliation.csv",
+      "size": 59015,
+      "sha256": "3c6803a7063ae25c09c79588fc9fe8bdf1fc998ad2493d0ceb4e5e599e3a8bb5"
+    },
+    {
+      "path": "scripts/update_j40_cad_reference.py",
+      "size": 7979,
+      "sha256": "581b3fef316c7b4a24523d28881c725a1cad5615847b8c609481c3b773368e13"
+    },
+    {
       "path": "scripts/j40_cad_intake.py",
       "size": 13012,
-      "mtime_ns": 1780004736450363336
+      "sha256": "dfa5d23f39237f93328d69aa34f5cef32091c96ba78770bfd0dd1ca5d0a197d6"
     },
     {
       "path": "scripts/freecad_mesh_to_cad.py",
       "size": 3145,
-      "mtime_ns": 1779989632768821755
+      "sha256": "70bccc0505f20f4e9f0698e1d670b076216fcc5bf2510cf4699ceef70579b3ee"
     },
     {
       "path": "scripts/export_gltf_to_obj.py",
       "size": 11783,
-      "mtime_ns": 1780153740886034913
+      "sha256": "2019aaa80cdce0eab4aa6de202fa6e793e4f6cb7512e823ccf44990ac66c0d02"
     },
     {
       "path": "scripts/export_gltf_to_3d_dxf.py",
       "size": 8528,
-      "mtime_ns": 1780177043446573182
+      "sha256": "9c627cb3dbbb723b163de794cbed0743131f6dea74d38a535c0c204a4d7d9dbc"
     },
     {
       "path": "scripts/build_j40_public_reference_strategy.py",
       "size": 12393,
-      "mtime_ns": 1780178720996730348
+      "sha256": "9b2b06484883fdf4fd5443fb535a02f2fc7f5d143a72160879cb309f38771b5c"
     },
     {
       "path": "scripts/build_j40_digital_twin_evidence.py",
-      "size": 13154,
-      "mtime_ns": 1780178770260347785
+      "size": 14302,
+      "sha256": "bb3f11e3f0e187287ee047a312f4fe5b9e1bb336533f498bfe3cb794ddfb9297"
     },
     {
       "path": "tools/generate_j40_full_vehicle_cad_scaffold.py",
       "size": 163789,
-      "mtime_ns": 1780178814152132421
+      "sha256": "7474bf75bae531934f1c3c6503513df3f77c0b89b0f4bc1231874524f527c41f"
     },
     {
       "path": "tools/generate_j40_orbit_viewer.py",
       "size": 43450,
-      "mtime_ns": 1780087441167768728
+      "sha256": "383c08983ac10d13ef152c9e85941ffad030d63071704f00a8e779302970ce9b"
     },
     {
       "path": "tools/generate_j40_source_mesh_freecad_macro.py",
       "size": 6328,
-      "mtime_ns": 1780004795946040794
+      "sha256": "55923b5b774ba14617ce84a271ee5939c839ddce9369435be3e08084e96b49d0"
     }
   ],
   "outputs": [

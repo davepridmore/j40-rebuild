@@ -1,7 +1,8 @@
 # J40 Digital Twin Build Notes
 
-- Generated: 2026-05-30T22:07:08.630793+00:00
+- Generated: 2026-05-30T22:16:21.013323+00:00
 - Photo/video evidence rows: 114 component slices, 821 media references.
+- Component-job linkage: 88 of 114 component slices linked through `data/manual/component_jobs_photo_reconciliation.csv`.
 - Current scaffold parts: 1233.
 - Evidence matrix: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv`
 - Measurement backlog: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv`
