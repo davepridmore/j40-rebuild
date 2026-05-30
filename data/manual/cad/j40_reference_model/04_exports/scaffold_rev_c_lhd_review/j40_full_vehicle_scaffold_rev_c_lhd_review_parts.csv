@@ -158,13 +158,13 @@ engine_bay,inline_six_intake_stack_6,cylinder_z,470,165,1160,46,180,,L1 visible-
 engine_bay,upper_radiator_hose,cylinder_x,330,-185,1110,72,430,,L1 visible-detail primitive,upper radiator hose placeholder
 engine_bay,exhaust_downpipe_reference,cylinder_z,615,255,845,82,460,,L1 visible-detail primitive,engine bay pipe reference
 interior,dashboard,box,1235,0,1080,120,1320,220,L0 envelope,dashboard envelope from visible interior
-interior,steering_column,box,1135,420,935,590,60,60,L0 envelope,"steering column envelope, right-hand drive driver side"
-interior,steering_wheel,cylinder_x,1240,420,1210,380,32,,L1 visible-detail primitive,steering wheel disk placeholder on right-hand drive side
-interior,steering_wheel_hub,cylinder_x,1230,420,1210,135,55,,L1 visible-detail primitive,steering wheel hub
-interior,dashboard_gauge_1,cylinder_x,1222,560,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
-interior,dashboard_gauge_2,cylinder_x,1222,470,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
-interior,dashboard_gauge_3,cylinder_x,1222,380,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
-interior,dashboard_gauge_4,cylinder_x,1222,290,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,steering_column,box,1135,-420,935,590,60,60,L0 envelope,"steering column envelope, left-hand drive driver side"
+interior,steering_wheel,cylinder_x,1240,-420,1210,380,32,,L1 visible-detail primitive,steering wheel disk placeholder on left-hand drive side
+interior,steering_wheel_hub,cylinder_x,1230,-420,1210,135,55,,L1 visible-detail primitive,steering wheel hub
+interior,dashboard_gauge_1,cylinder_x,1222,-560,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_2,cylinder_x,1222,-470,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_3,cylinder_x,1222,-380,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_4,cylinder_x,1222,-290,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
 interior,transfer_case_lever,cylinder_z,1580,-120,820,36,285,,L1 visible-detail primitive,transfer-case lever
 interior,gearshift_lever,cylinder_z,1500,-35,820,38,330,,L1 visible-detail primitive,gearshift lever
 interior,front_left_seat_base,box,1660,-310,700,420,410,130,L0 envelope,front seat base
@@ -329,12 +329,12 @@ running_gear,front_diff_pumpkin,cylinder_y,735,0,420,360,300,,L2 visible-detail 
 running_gear,rear_diff_pumpkin,cylinder_y,3020,0,420,380,320,,L2 visible-detail primitive,rear differential housing
 running_gear,front_pinion_nose,cylinder_x,920,0,430,145,310,,L2 visible-detail primitive,front differential pinion nose
 running_gear,rear_pinion_nose,cylinder_x,2780,0,430,145,310,,L2 visible-detail primitive,rear differential pinion nose
-chassis,right_hand_drive_steering_box,box,535,515,610,245,175,230,L2 service datum,right-hand-drive steering box on right frame rail
-chassis,steering_box_right_frame_mount_plate,box,500,445,600,295,28,260,L2 bracket reference,steering box mounting plate on right rail
-running_gear,pitman_arm_right_hand_drive,cylinder_z,675,555,565,62,250,,L2 service datum,pitman arm below RHD steering box
-running_gear,front_drag_link_right_hand_drive,cylinder_x,875,555,505,34,620,,L2 routing reference,drag link from RHD steering box toward front axle
+chassis,left_hand_drive_steering_box,box,535,-515,610,245,175,230,L2 service datum,left-hand-drive steering box on left frame rail
+chassis,steering_box_left_frame_mount_plate,box,500,-445,600,295,28,260,L2 bracket reference,steering box mounting plate on left rail
+running_gear,pitman_arm_left_hand_drive,cylinder_z,675,-555,565,62,250,,L2 service datum,pitman arm below LHD steering box
+running_gear,front_drag_link_left_hand_drive,cylinder_x,875,-555,505,34,620,,L2 routing reference,drag link from LHD steering box toward front axle
 running_gear,front_tie_rod,cylinder_y,735,0,505,32,1420,,L2 routing reference,front axle tie rod across knuckles
-running_gear,steering_damper,cylinder_x,905,350,480,58,520,,L2 service datum,front steering damper package
+running_gear,steering_damper,cylinder_x,905,-350,480,58,520,,L2 service datum,front steering damper package
 running_gear,front_left_steering_knuckle_arm,box,855,-690,475,150,58,60,L2 service datum,left steering knuckle arm
 running_gear,front_right_steering_knuckle_arm,box,855,690,475,150,58,60,L2 service datum,right steering knuckle arm
 running_gear,front_left_brake_backing_plate,cylinder_y,735,-750,395,365,55,,L2 service datum,brake backing plate at hub
@@ -411,8 +411,8 @@ running_gear,rear_right_lug_nut_4,cylinder_y,2928.0,877,395.0,32,36,,L2 service 
 running_gear,rear_right_lug_nut_5,cylinder_y,2974.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_right_lug_nut_6,cylinder_y,3066.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_right_mud_terrain_sidewall_lettering_panel,box,3210,899,103,165,18,34,project-photo evidence,raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement
-brake_system,front_hard_line_right_frame_run,cylinder_x,1180,338,575,18,1650,,L2 routing reference,front brake hard-line run along right rail
-brake_system,rear_hard_line_right_frame_run,cylinder_x,2320,338,575,18,1500,,L2 routing reference,rear brake hard-line run along right rail
+brake_system,front_hard_line_left_frame_run,cylinder_x,1180,-338,575,18,1650,,L2 routing reference,front brake hard-line run along left rail
+brake_system,rear_hard_line_left_frame_run,cylinder_x,2320,-338,575,18,1500,,L2 routing reference,rear brake hard-line run along left rail
 brake_system,rear_axle_brake_line,cylinder_y,3020,0,520,18,1280,,L2 routing reference,rear axle brake hard-line across axle
 brake_system,parking_brake_front_cable,cylinder_x,1630,-145,545,22,650,,L2 routing reference,parking-brake front cable
 brake_system,parking_brake_equalizer_bar,box,2295,0,548,175,46,24,L3 specific item reference,rear parking-brake cable equalizer hardware
@@ -1095,13 +1095,13 @@ body,right_hood_hinge_mount_screw_rear,cylinder_z,1044,540,1298,18,12,,L4 servic
 body,hood_prop_rod_stowed,cylinder_x,650,-585,1170,18,690,,L4 online-reference detail,stowed hood prop rod from open-hood reference
 body,hood_prop_rod_retaining_clip,box,972,-585,1182,42,34,28,L4 online-reference detail,hood prop retaining clip
 body,hood_lock_receiver_plate,box,118,0,1166,58,250,46,L4 service-reference detail,hood lock receiver at grille header
-brake_system,proportioning_bypass_valve_body,box,1505,338,608,135,82,58,L4 service-reference detail,Toyota GR Heritage proportioning/bypass valve cue on RHD brake-line side
-brake_system,proportioning_valve_front_tube,cylinder_x,1398,338,610,14,210,,L4 service-reference detail,front brake tube to proportioning valve
-brake_system,proportioning_valve_rear_tube,cylinder_x,1610,338,610,14,220,,L4 service-reference detail,rear brake tube from proportioning valve
-brake_system,rear_brake_tube_frame_clip_1,box,1835,338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
-brake_system,rear_brake_tube_frame_clip_2,box,2140,338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
-brake_system,rear_brake_tube_frame_clip_3,box,2445,338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
-brake_system,rear_brake_tube_frame_clip_4,box,2750,338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
+brake_system,proportioning_bypass_valve_body,box,1505,-338,608,135,82,58,L4 service-reference detail,Toyota GR Heritage proportioning/bypass valve cue on LHD brake-line side
+brake_system,proportioning_valve_front_tube,cylinder_x,1398,-338,610,14,210,,L4 service-reference detail,front brake tube to proportioning valve
+brake_system,proportioning_valve_rear_tube,cylinder_x,1610,-338,610,14,220,,L4 service-reference detail,rear brake tube from proportioning valve
+brake_system,rear_brake_tube_frame_clip_1,box,1835,-338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
+brake_system,rear_brake_tube_frame_clip_2,box,2140,-338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
+brake_system,rear_brake_tube_frame_clip_3,box,2445,-338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
+brake_system,rear_brake_tube_frame_clip_4,box,2750,-338,590,36,32,30,L4 service-reference detail,rear brake tube frame clip from Toyota tube parts cues
 fuel_system,fuel_tank_sub_inlet_hose,cylinder_z,3020,-612,745,46,320,,L4 service-reference detail,fuel tank sub-inlet hose from Toyota GR Heritage parts list
 fuel_system,fuel_tank_sub_inlet_hose_clamp_1,cylinder_z,3020,-612,622,58,14,,L4 service-reference detail,fuel hose clamp
 fuel_system,fuel_tank_sub_inlet_hose_clamp_2,cylinder_z,3020,-612,850,58,14,,L4 service-reference detail,fuel hose clamp
@@ -1116,48 +1116,48 @@ body,rear_right_tail_lamp_red_center_lens,box,3512,675,930,24,88,42,L4 service-r
 body,rear_right_tail_lamp_clear_lower_lens,box,3512,675,878,24,88,42,L4 service-reference detail,rear combination lamp separated amber/red/clear lens cue from Toyota GR Heritage list
 body,rear_right_tail_lamp_body_screw_1,cylinder_x,3530,724,1016,16,14,,L4 service-reference detail,rear lamp body screw
 body,rear_right_tail_lamp_body_screw_2,cylinder_x,3530,724,842,16,14,,L4 service-reference detail,rear lamp body screw
-interior,dash_speedometer_chrome_bezel,cylinder_x,1190,420,1148,128,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
-interior,dash_speedometer_dark_face,cylinder_x,1180,420,1148,108,12,,L4 online-reference detail,dark gauge face
-interior,dash_fuel_chrome_bezel,cylinder_x,1190,528,1148,72,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
-interior,dash_fuel_dark_face,cylinder_x,1180,528,1148,52,12,,L4 online-reference detail,dark gauge face
-interior,dash_temperature_chrome_bezel,cylinder_x,1190,312,1148,72,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
-interior,dash_temperature_dark_face,cylinder_x,1180,312,1148,52,12,,L4 online-reference detail,dark gauge face
-interior,dash_oil_pressure_chrome_bezel,cylinder_x,1190,220,1148,58,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
-interior,dash_oil_pressure_dark_face,cylinder_x,1180,220,1148,38,12,,L4 online-reference detail,dark gauge face
-interior,dash_ammeter_chrome_bezel,cylinder_x,1190,620,1148,58,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
-interior,dash_ammeter_dark_face,cylinder_x,1180,620,1148,38,12,,L4 online-reference detail,dark gauge face
-interior,dash_passenger_grab_handle_left_mount,box,1190,-592,1170,38,36,74,L4 online-reference detail,passenger dash grab handle mount
-interior,dash_passenger_grab_handle_right_mount,box,1190,-245,1170,38,36,74,L4 online-reference detail,passenger dash grab handle mount
-interior,dash_passenger_grab_handle_bar,cylinder_y,1184,-420,1198,32,330,,L4 online-reference detail,passenger dash grab handle
-interior,dashboard_glovebox_door,box,1212,-420,1115,35,335,150,L2 visible-detail primitive,glovebox door on passenger/left side for right-hand drive cabin
-interior,dash_instrument_cluster_plate,box,1208,420,1128,36,330,170,L2 visible-detail primitive,instrument cluster plate on right-hand drive side
-interior,dash_switch_knob_1,cylinder_x,1200,535,1050,34,26,,L2 visible-detail primitive,dash switch knob
-interior,dash_switch_knob_2,cylinder_x,1200,480,1050,34,26,,L2 visible-detail primitive,dash switch knob
-interior,dash_switch_knob_3,cylinder_x,1200,425,1050,34,26,,L2 visible-detail primitive,dash switch knob
-interior,dash_switch_knob_4,cylinder_x,1200,370,1050,34,26,,L2 visible-detail primitive,dash switch knob
-interior,dash_switch_knob_5,cylinder_x,1200,315,1050,34,26,,L2 visible-detail primitive,dash switch knob
-interior,heater_control_knob_1,cylinder_x,1200,-90,1048,30,24,,L2 visible-detail primitive,heater/control knob
-interior,heater_control_knob_2,cylinder_x,1200,-155,1048,30,24,,L2 visible-detail primitive,heater/control knob
-interior,heater_control_knob_3,cylinder_x,1200,-220,1048,30,24,,L2 visible-detail primitive,heater/control knob
-interior,heater_control_knob_4,cylinder_x,1200,-285,1048,30,24,,L2 visible-detail primitive,heater/control knob
-interior,steering_wheel_spoke_1,box,1216,330,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
-interior,steering_wheel_spoke_2,box,1216,420,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
-interior,steering_wheel_spoke_3,box,1216,510,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
-interior,clutch_pedal_pad,box,1340,350,705,90,45,110,L2 visible-detail primitive,pedal pad
-interior,clutch_pedal_arm,cylinder_z,1300,350,820,22,240,,L2 visible-detail primitive,pedal arm
-interior,brake_pedal_pad,box,1340,440,705,90,45,110,L2 visible-detail primitive,pedal pad
-interior,brake_pedal_arm,cylinder_z,1300,440,820,22,240,,L2 visible-detail primitive,pedal arm
-interior,accelerator_pedal_pad,box,1340,520,705,90,45,110,L2 visible-detail primitive,pedal pad
-interior,accelerator_pedal_arm,cylinder_z,1300,520,820,22,240,,L2 visible-detail primitive,pedal arm
-interior,rhd_pedal_box_reinforcement,box,1195,465,850,95,285,250,L2 service datum,right-hand-drive pedal box reinforcement at driver firewall
-interior,rhd_steering_column_dash_bracket,box,1215,420,1040,62,210,66,L2 service datum,right-hand-drive steering column dash support bracket
-interior,steering_column_firewall_boot,cylinder_x,1142,420,1020,130,48,,L2 visible-detail primitive,rubber boot where right-hand drive steering column passes through firewall
-interior,brake_pedal_pivot_bar,cylinder_y,1260,440,960,32,180,,L2 service datum,RHD brake pedal pivot bar
-interior,clutch_pedal_pivot_bar,cylinder_y,1260,350,960,32,170,,L2 service datum,RHD clutch pedal pivot bar
-interior,accelerator_linkage_pivot,box,1225,538,875,52,42,125,L2 service datum,RHD accelerator linkage pivot on driver side
-interior,steering_column_indicator_stalk,cylinder_y,1225,605,1220,22,165,,L2 visible-detail primitive,right-hand-drive steering column stalk reference
-interior,driver_side_floor_dimmer_switch,box,1290,650,735,70,55,34,L2 visible-detail primitive,floor dimmer/switch placeholder on RHD driver footwell
-interior,handbrake_lever,cylinder_z,1760,250,790,32,360,,L2 visible-detail primitive,handbrake lever biased toward right-hand drive driver side
+interior,dash_speedometer_chrome_bezel,cylinder_x,1190,-420,1148,128,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
+interior,dash_speedometer_dark_face,cylinder_x,1180,-420,1148,108,12,,L4 online-reference detail,dark gauge face
+interior,dash_fuel_chrome_bezel,cylinder_x,1190,-528,1148,72,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
+interior,dash_fuel_dark_face,cylinder_x,1180,-528,1148,52,12,,L4 online-reference detail,dark gauge face
+interior,dash_temperature_chrome_bezel,cylinder_x,1190,-312,1148,72,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
+interior,dash_temperature_dark_face,cylinder_x,1180,-312,1148,52,12,,L4 online-reference detail,dark gauge face
+interior,dash_oil_pressure_chrome_bezel,cylinder_x,1190,-220,1148,58,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
+interior,dash_oil_pressure_dark_face,cylinder_x,1180,-220,1148,38,12,,L4 online-reference detail,dark gauge face
+interior,dash_ammeter_chrome_bezel,cylinder_x,1190,-620,1148,58,18,,L4 online-reference detail,separate dash gauge bezel from high-density online interior representation
+interior,dash_ammeter_dark_face,cylinder_x,1180,-620,1148,38,12,,L4 online-reference detail,dark gauge face
+interior,dash_passenger_grab_handle_left_mount,box,1190,592,1170,38,36,74,L4 online-reference detail,passenger dash grab handle mount
+interior,dash_passenger_grab_handle_right_mount,box,1190,245,1170,38,36,74,L4 online-reference detail,passenger dash grab handle mount
+interior,dash_passenger_grab_handle_bar,cylinder_y,1184,420,1198,32,330,,L4 online-reference detail,passenger dash grab handle
+interior,dashboard_glovebox_door,box,1212,420,1115,35,335,150,L2 visible-detail primitive,glovebox door on passenger/right side for left-hand drive cabin
+interior,dash_instrument_cluster_plate,box,1208,-420,1128,36,330,170,L2 visible-detail primitive,instrument cluster plate on left-hand drive side
+interior,dash_switch_knob_1,cylinder_x,1200,-535,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_2,cylinder_x,1200,-480,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_3,cylinder_x,1200,-425,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_4,cylinder_x,1200,-370,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,dash_switch_knob_5,cylinder_x,1200,-315,1050,34,26,,L2 visible-detail primitive,dash switch knob
+interior,heater_control_knob_1,cylinder_x,1200,90,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_2,cylinder_x,1200,155,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_3,cylinder_x,1200,220,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,heater_control_knob_4,cylinder_x,1200,285,1048,30,24,,L2 visible-detail primitive,heater/control knob
+interior,steering_wheel_spoke_1,box,1216,-330,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,steering_wheel_spoke_2,box,1216,-420,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,steering_wheel_spoke_3,box,1216,-510,1205,34,170,18,L2 visible-detail primitive,steering wheel spoke reference
+interior,clutch_pedal_pad,box,1340,-350,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,clutch_pedal_arm,cylinder_z,1300,-350,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,brake_pedal_pad,box,1340,-440,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,brake_pedal_arm,cylinder_z,1300,-440,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,accelerator_pedal_pad,box,1340,-520,705,90,45,110,L2 visible-detail primitive,pedal pad
+interior,accelerator_pedal_arm,cylinder_z,1300,-520,820,22,240,,L2 visible-detail primitive,pedal arm
+interior,lhd_pedal_box_reinforcement,box,1195,-465,850,95,285,250,L2 service datum,left-hand-drive pedal box reinforcement at driver firewall
+interior,lhd_steering_column_dash_bracket,box,1215,-420,1040,62,210,66,L2 service datum,left-hand-drive steering column dash support bracket
+interior,steering_column_firewall_boot,cylinder_x,1142,-420,1020,130,48,,L2 visible-detail primitive,rubber boot where left-hand drive steering column passes through firewall
+interior,brake_pedal_pivot_bar,cylinder_y,1260,-440,960,32,180,,L2 service datum,LHD brake pedal pivot bar
+interior,clutch_pedal_pivot_bar,cylinder_y,1260,-350,960,32,170,,L2 service datum,LHD clutch pedal pivot bar
+interior,accelerator_linkage_pivot,box,1225,-538,875,52,42,125,L2 service datum,LHD accelerator linkage pivot on driver side
+interior,steering_column_indicator_stalk,cylinder_y,1225,-605,1220,22,165,,L2 visible-detail primitive,left-hand-drive steering column stalk reference
+interior,driver_side_floor_dimmer_switch,box,1290,-650,735,70,55,34,L2 visible-detail primitive,floor dimmer/switch placeholder on LHD driver footwell
+interior,handbrake_lever,cylinder_z,1760,-250,790,32,360,,L2 visible-detail primitive,handbrake lever biased toward left-hand drive driver side
 interior,gearshift_knob,cylinder_z,1500,-35,1160,86,60,,L2 visible-detail primitive,gearshift knob
 interior,transfer_case_knob,cylinder_z,1580,-120,1110,76,55,,L2 visible-detail primitive,transfer case knob
 interior,front_left_seat_left_rail,box,1515,-420.0,675,545,36,42,L2 service datum,seat mounting rail
@@ -1193,19 +1193,19 @@ engine_bay,intake_manifold,box,560,-260,995,460,90,115,L2 visible-detail primiti
 engine_bay,exhaust_manifold,box,575,260,900,500,95,145,L2 visible-detail primitive,exhaust manifold envelope
 engine_bay,carburetor_body,cylinder_z,745,-220,1165,120,170,,L2 visible-detail primitive,carburetor body
 engine_bay,round_air_cleaner_lid,cylinder_z,760,-235,1250,260,68,,L2 visible-detail primitive,round air cleaner lid
-engine_bay,brake_booster,cylinder_x,1075,520,1060,260,145,,L2 service datum,RHD brake booster package
-engine_bay,master_cylinder,cylinder_x,945,520,1060,92,230,,L2 service datum,RHD brake master cylinder
-engine_bay,clutch_master_cylinder,box,945,350,1035,210,82,76,L2 service datum,RHD clutch master cylinder
-engine_bay,rhd_firewall_pedal_box_outer_plate,box,1112,475,895,42,350,300,L2 service datum,right-hand-drive pedal box outer reinforcement on firewall
-engine_bay,brake_booster_firewall_bracket,box,1110,520,1015,48,300,250,L2 service datum,RHD brake booster firewall bracket
-engine_bay,brake_master_reservoir,cylinder_z,875,520,1165,110,105,,L2 service datum,brake fluid reservoir on right-hand-drive master cylinder
-engine_bay,brake_master_reservoir_cap,cylinder_z,875,520,1225,82,24,,L2 visible-detail primitive,brake master reservoir cap
-engine_bay,brake_booster_vacuum_hose,cylinder_x,820,430,1130,34,470,,L2 routing reference,vacuum hose from engine to RHD brake booster
-engine_bay,clutch_master_reservoir_cap,cylinder_z,910,350,1130,70,26,,L2 service datum,clutch master reservoir cap
-engine_bay,clutch_hydraulic_line_firewall_run,cylinder_x,830,350,980,14,520,,L2 routing reference,clutch hydraulic line from RHD master cylinder
-engine_bay,steering_column_lower_firewall_shaft,cylinder_x,1010,420,980,44,340,,L2 routing reference,RHD steering shaft leaving firewall toward steering box
-engine_bay,steering_column_lower_universal_joint,cylinder_x,840,430,955,76,58,,L2 service datum,lower steering universal joint
-engine_bay,steering_intermediate_shaft,cylinder_x,690,455,850,40,360,,L2 routing reference,intermediate steering shaft to right steering box
+engine_bay,brake_booster,cylinder_x,1075,-520,1060,260,145,,L2 service datum,LHD brake booster package
+engine_bay,master_cylinder,cylinder_x,945,-520,1060,92,230,,L2 service datum,LHD brake master cylinder
+engine_bay,clutch_master_cylinder,box,945,-350,1035,210,82,76,L2 service datum,LHD clutch master cylinder
+engine_bay,lhd_firewall_pedal_box_outer_plate,box,1112,-475,895,42,350,300,L2 service datum,left-hand-drive pedal box outer reinforcement on firewall
+engine_bay,brake_booster_firewall_bracket,box,1110,-520,1015,48,300,250,L2 service datum,LHD brake booster firewall bracket
+engine_bay,brake_master_reservoir,cylinder_z,875,-520,1165,110,105,,L2 service datum,brake fluid reservoir on left-hand-drive master cylinder
+engine_bay,brake_master_reservoir_cap,cylinder_z,875,-520,1225,82,24,,L2 visible-detail primitive,brake master reservoir cap
+engine_bay,brake_booster_vacuum_hose,cylinder_x,820,-430,1130,34,470,,L2 routing reference,vacuum hose from engine to LHD brake booster
+engine_bay,clutch_master_reservoir_cap,cylinder_z,910,-350,1130,70,26,,L2 service datum,clutch master reservoir cap
+engine_bay,clutch_hydraulic_line_firewall_run,cylinder_x,830,-350,980,14,520,,L2 routing reference,clutch hydraulic line from LHD master cylinder
+engine_bay,steering_column_lower_firewall_shaft,cylinder_x,1010,-420,980,44,340,,L2 routing reference,LHD steering shaft leaving firewall toward steering box
+engine_bay,steering_column_lower_universal_joint,cylinder_x,840,-430,955,76,58,,L2 service datum,lower steering universal joint
+engine_bay,steering_intermediate_shaft,cylinder_x,690,-455,850,40,360,,L2 routing reference,intermediate steering shaft to right steering box
 engine_bay,battery_case,box,570,430,765,310,205,205,L2 service datum,battery case
 engine_bay,battery_positive_terminal,cylinder_z,622,355,985,34,46,,L2 service datum,battery positive terminal
 engine_bay,battery_negative_terminal,cylinder_z,812,505,985,34,46,,L2 service datum,battery negative terminal
@@ -1236,17 +1236,17 @@ as_fitted_routes,j40_rt_003_cutoff_output_to_relay_box_feed_cutoff_to_relay_feed
 as_fitted_routes,j40_rt_004_cutoff_output_to_midi_common_feed_cutoff_to_midi_common,cylinder_x,860,624,980,26,470,,L1 as-fitted route scope,J40-RT-004 cutoff_output_to_midi_common_feed; target L3; capture cable_sweep_to_second_from_last_midi_holder_input_and_grommet_size; clearance lid_hinge_clearance_output_fanout_and_bend_radius; release midi_enclosure_grommet_and_holder_spacing_dry_fit_complete; status scope_added_needs_measurement
 as_fitted_routes,j40_rt_005_midi_five_output_fanout_midi_output_fanout,cylinder_y,1030,670,950,18,360,,L1 as-fitted route scope,J40-RT-005 midi_five_output_fanout; target L3; capture five_output_centerlines_output_hole_sizes_bundle_diameters_and_clip_points; clearance lid_close_bend_radius_heat_chafe_and_service_pull_clearance; release all_five_output_destinations_named_and_fused; status scope_added_needs_capture
 as_fitted_routes,j40_rt_006_battery_negative_engine_chassis_body_grounds_battery_negative_to_engine,cylinder_x,695,310,930,24,520,,L1 as-fitted route scope,J40-RT-006 battery_negative_engine_chassis_body_grounds; target L3; capture earth_strap_centerlines_lug_faces_bolt_points_and_clean_contact_zones; clearance exhaust_heat_engine_movement_paint_coating_and_service_clearance; release continuity_test_and_contact_face_release_before_coating; status scope_added_needs_capture
-as_fitted_routes,j40_rt_006_battery_negative_engine_chassis_body_grounds_body_chassis_ground_strap,cylinder_z,1115,520,760,22,280,,L1 as-fitted route scope,J40-RT-006 battery_negative_engine_chassis_body_grounds; target L3; capture earth_strap_centerlines_lug_faces_bolt_points_and_clean_contact_zones; clearance exhaust_heat_engine_movement_paint_coating_and_service_clearance; release continuity_test_and_contact_face_release_before_coating; status scope_added_needs_capture
+as_fitted_routes,j40_rt_006_battery_negative_engine_chassis_body_grounds_body_chassis_ground_strap,cylinder_z,1115,-520,760,22,280,,L1 as-fitted route scope,J40-RT-006 battery_negative_engine_chassis_body_grounds; target L3; capture earth_strap_centerlines_lug_faces_bolt_points_and_clean_contact_zones; clearance exhaust_heat_engine_movement_paint_coating_and_service_clearance; release continuity_test_and_contact_face_release_before_coating; status scope_added_needs_capture
 as_fitted_routes,j40_rt_007_starter_main_and_solenoid_trigger_starter_main_cable,cylinder_x,720,286,760,24,550,,L1 as-fitted route scope,J40-RT-007 starter_main_and_solenoid_trigger; target L2; capture starter_cable_path_trigger_wire_path_lug_orientation_and_support_points; clearance exhaust_heat_clutch_linkage_steering_and_engine_movement_clearance; release continuity_and_cranking_load_test_after_routing; status scope_added_needs_capture
 as_fitted_routes,j40_rt_007_starter_main_and_solenoid_trigger_starter_solenoid_trigger,cylinder_x,780,236,820,12,460,,L1 as-fitted route scope,J40-RT-007 starter_main_and_solenoid_trigger; target L2; capture starter_cable_path_trigger_wire_path_lug_orientation_and_support_points; clearance exhaust_heat_clutch_linkage_steering_and_engine_movement_clearance; release continuity_and_cranking_load_test_after_routing; status scope_added_needs_capture
 as_fitted_routes,j40_rt_008_alternator_charge_regulator_branch_alternator_charge_branch,cylinder_x,625,325,1065,20,590,,L1 as-fitted route scope,J40-RT-008 alternator_charge_regulator_branch; target L2; capture alternator_B_plus_sense_exciter_regulator_branch_and_clip_locations; clearance belt_pulley_fan_heat_and_vibration_clearance; release charging_test_and_no_chafe_before_wrap; status scope_added_needs_capture
 as_fitted_routes,j40_rt_009_engine_sender_injection_pump_branch_engine_sender_injection_pump_branch,cylinder_x,745,-165,1085,16,760,,L1 as-fitted route scope,J40-RT-009 engine_sender_injection_pump_branch; target L2; capture oil_temp_fuel_stop_idle_up_unknown_connector_and_sender_branch_routes; clearance throttle_linkage_fuel_lines_heat_and_service_clearance; release each_connector_identified_and_continuity_tested; status scope_added_needs_capture
 as_fitted_routes,j40_rt_010_headlamp_marker_horn_aux_lamp_branch_front_lamp_cross_loom,cylinder_y,145,0,735,18,1280,,L1 as-fitted route scope,J40-RT-010 headlamp_marker_horn_aux_lamp_branch; target L2; capture loom_centerline_to_headlamps_indicators_horn_aux_lamps_and_earths; clearance grille_removal_radiator_condenser_fan_and sharp_edge_clearance; release front_panel_dry_fit_with_lamp_harness_clips; status scope_added_needs_capture
 as_fitted_routes,j40_rt_011_compressor_clutch_pressure_switch_condenser_fan_branch_compressor_pressure_fan_branch,cylinder_x,500,485,970,16,720,,L1 as-fitted route scope,J40-RT-011 compressor_clutch_pressure_switch_condenser_fan_branch; target L3; capture compressor_clutch_feed_pressure_switch_fan_relay_output_and_earth_routes; clearance belt_pulley_condenser_fan_radiator_heat_and_service_clearance; release pressure_switch_and_fan_relay_logic_verified_before_charge; status scope_added_needs_capture
-as_fitted_routes,j40_rt_012_under_dash_evaporator_blower_controls_feed_under_dash_evaporator_feed,cylinder_y,1230,-420,985,18,520,,L1 as-fitted route scope,J40-RT-012 under_dash_evaporator_blower_controls_feed; target L2; capture blower_feed_control_panel_thermostat_sensor_and_drain_hose_paths; clearance pedal_column_dash_service_and_condensate_fall_clearance; release evaporator_mocked_under_dash_with_drain_exit_confirmed; status scope_added_needs_capture
+as_fitted_routes,j40_rt_012_under_dash_evaporator_blower_controls_feed_under_dash_evaporator_feed,cylinder_y,1230,420,985,18,520,,L1 as-fitted route scope,J40-RT-012 under_dash_evaporator_blower_controls_feed; target L2; capture blower_feed_control_panel_thermostat_sensor_and_drain_hose_paths; clearance pedal_column_dash_service_and_condensate_fall_clearance; release evaporator_mocked_under_dash_with_drain_exit_confirmed; status scope_added_needs_capture
 as_fitted_routes,j40_rt_013_firewall_main_pass_throughs_main_firewall_pass_through_band,cylinder_y,1120,0,995,22,1160,,L1 as-fitted route scope,J40-RT-013 firewall_main_pass_throughs; target L3; capture all_holes_grommets_bulkheads_pass_throughs_and_edge_protection; clearance water_ingress_heat_pedal_column_and_service_clearance; release every_pass_through_named_before_final_paint_or_seal; status scope_added_needs_capture
 as_fitted_routes,j40_rt_014_rear_body_tail_fuel_sender_loom_rear_body_tail_fuel_sender_loom,cylinder_x,2835,-520,700,18,1160,,L1 as-fitted route scope,J40-RT-014 rear_body_tail_fuel_sender_loom; target L2; capture rear_lamp_number_plate_fuel_sender_and_body_to_chassis_flex_paths; clearance suspension_tank_exhaust_body_lift_and_chafe_clearance; release tail_lamp_and_sender_continuity_test_after_route_capture; status scope_added_needs_capture
-as_fitted_routes,j40_rt_015_front_brake_hard_lines_and_flex_hoses_front_brake_master_to_crossmember,cylinder_x,980,338,650,16,920,,L1 as-fitted route scope,J40-RT-015 front_brake_hard_lines_and_flex_hoses; target L3; capture master_proportioning_front_hard_lines_flex_hose_clips_and_caliper_entry; clearance steering_lock_suspension_travel_tire_exhaust_and_chafe_clearance; release pressure_bleed_and_full_lock_clearance_before road_test; status scope_added_needs_measurement
+as_fitted_routes,j40_rt_015_front_brake_hard_lines_and_flex_hoses_front_brake_master_to_crossmember,cylinder_x,980,-338,650,16,920,,L1 as-fitted route scope,J40-RT-015 front_brake_hard_lines_and_flex_hoses; target L3; capture master_proportioning_front_hard_lines_flex_hose_clips_and_caliper_entry; clearance steering_lock_suspension_travel_tire_exhaust_and_chafe_clearance; release pressure_bleed_and_full_lock_clearance_before road_test; status scope_added_needs_measurement
 as_fitted_routes,j40_rt_015_front_brake_hard_lines_and_flex_hoses_front_brake_flex_sweep_left,cylinder_y,820,-650,580,20,250,,L1 as-fitted route scope,J40-RT-015 front_brake_hard_lines_and_flex_hoses; target L3; capture master_proportioning_front_hard_lines_flex_hose_clips_and_caliper_entry; clearance steering_lock_suspension_travel_tire_exhaust_and_chafe_clearance; release pressure_bleed_and_full_lock_clearance_before road_test; status scope_added_needs_measurement
 as_fitted_routes,j40_rt_015_front_brake_hard_lines_and_flex_hoses_front_brake_flex_sweep_right,cylinder_y,820,650,580,20,250,,L1 as-fitted route scope,J40-RT-015 front_brake_hard_lines_and_flex_hoses; target L3; capture master_proportioning_front_hard_lines_flex_hose_clips_and_caliper_entry; clearance steering_lock_suspension_travel_tire_exhaust_and_chafe_clearance; release pressure_bleed_and_full_lock_clearance_before road_test; status scope_added_needs_measurement
 as_fitted_routes,j40_rt_016_rear_axle_hard_lines_center_flex_and_wheel_cylinder_lines_rear_axle_brake_pipe_and_center_flex,cylinder_y,3020,0,548,18,1330,,L1 as-fitted route scope,J40-RT-016 rear_axle_hard_lines_center_flex_and_wheel_cylinder_lines; target L3; capture rear_T_center_flex_axle_hard_lines_wheel_cylinder_entries_and_clip_points; clearance axle_articulation_spring_U_bolt_tire_and_exhaust_clearance; release pressure_test_and_suspension_sweep_before coating_closeout; status scope_added_needs_measurement
@@ -1255,28 +1255,28 @@ as_fitted_routes,j40_rt_018_fuel_supply_return_leakoff_and_sender_routes_fuel_su
 as_fitted_routes,j40_rt_019_filler_neck_vent_and_tank_access_filler_neck_and_vent_pair,cylinder_z,3000,-650,865,42,440,,L1 as-fitted route scope,J40-RT-019 filler_neck_vent_and_tank_access; target L2; capture filler_neck_vent_hoses_clamps_body_passages_and tank_access_sweep; clearance body_mount_exhaust_tire_and_chafe_clearance; release filler_and_vent_dry_fit_before_body_closeout; status scope_added_needs_capture
 as_fitted_routes,j40_rt_020_compressor_discharge_to_condenser_ac_discharge_compressor_to_condenser,cylinder_x,470,535,1080,24,680,,L1 as-fitted route scope,J40-RT-020 compressor_discharge_to_condenser; target L3; capture barrier_hose_centerline_fitting_angle_port_style_service_loop_and_clamp_points; clearance belt_fan_exhaust_radiator_and_bonnet_clearance; release compressor_port_style_and_crimp_clocking_confirmed; status scope_added_needs_measurement
 as_fitted_routes,j40_rt_021_condenser_to_receiver_drier_liquid_line_ac_condenser_to_drier_liquid_line,cylinder_y,330,-520,915,18,930,,L1 as-fitted route scope,J40-RT-021 condenser_to_receiver_drier_liquid_line; target L3; capture liquid_line_centerline_drier_bracket_pressure_switch_and_service_access; clearance fan_blade_grille_radiator_edge_and_vibration_clearance; release drier_and_pressure_switch_mount_dry_fit_complete; status scope_added_needs_measurement
-as_fitted_routes,j40_rt_022_drier_to_evaporator_and_evaporator_suction_to_compressor_ac_firewall_to_evaporator_suction_pair,cylinder_x,980,-420,1035,26,650,,L1 as-fitted route scope,J40-RT-022 drier_to_evaporator_and_evaporator_suction_to_compressor; target L3; capture two_firewall_passages_hose_sizes_fitting_angles_bulkhead_or_grommet_locations; clearance pedal_column_engine_heat_exhaust_bonnet_and_service_clearance; release evaporator_and_compressor_fittings_identified_before hose_crimp; status scope_added_needs_capture
+as_fitted_routes,j40_rt_022_drier_to_evaporator_and_evaporator_suction_to_compressor_ac_firewall_to_evaporator_suction_pair,cylinder_x,980,420,1035,26,650,,L1 as-fitted route scope,J40-RT-022 drier_to_evaporator_and_evaporator_suction_to_compressor; target L3; capture two_firewall_passages_hose_sizes_fitting_angles_bulkhead_or_grommet_locations; clearance pedal_column_engine_heat_exhaust_bonnet_and_service_clearance; release evaporator_and_compressor_fittings_identified_before hose_crimp; status scope_added_needs_capture
 as_fitted_routes,j40_rt_023_radiator_heater_overflow_and_bypass_hoses_radiator_heater_overflow_hose_bundle,cylinder_x,395,-230,1075,38,620,,L1 as-fitted route scope,J40-RT-023 radiator_heater_overflow_and_bypass_hoses; target L2; capture radiator_hoses_heater_hoses_overflow_bottle_route_bends_clamps_and_bead_ends; clearance fan_belt_hood_radiator_support_AC_condenser_and_heat_clearance; release pressure_test_and_fan_clearance_before coolant_fill; status scope_added_needs_measurement
-as_fitted_routes,j40_rt_024_throttle_choke_fuel_stop_and_heater_control_cables_throttle_choke_fuel_stop_control_cables,cylinder_x,1050,350,915,18,560,,L1 as-fitted route scope,J40-RT-024 throttle_choke_fuel_stop_and_heater_control_cables; target L2; capture cable_centerlines_bulkhead_points_end_fittings_brackets_and_sweep_envelopes; clearance pedal_linkage_manifold_heat_steering_column_and_service_clearance; release full_travel_test_without_binding_or_chafe; status scope_added_needs_capture
-as_fitted_routes,j40_rt_025_speedometer_cable_and_transfer_gear_route_speedometer_cable_cluster_to_transfer,cylinder_x,1460,235,820,18,780,,L1 as-fitted route scope,J40-RT-025 speedometer_cable_and_transfer_gear_route; target L2; capture cable_route_from_cluster_to_transmission_or_transfer_drive_with_clips; clearance exhaust_heat_prop_shaft_body_floor_and_bend_radius_clearance; release cluster_and_gearbox_connection_verified_before_floor_closeout; status scope_added_needs_capture
-as_fitted_routes,j40_rt_026_evaporator_condensate_and_body_drain_routes_evaporator_condensate_drain,cylinder_z,1235,-555,660,24,430,,L1 as-fitted route scope,J40-RT-026 evaporator_condensate_and_body_drain_routes; target L2; capture drain_centerlines_fall_direction_exit_points_and_grommets; clearance exhaust_heat_floor_edge_pedal_and_water_backflow_clearance; release water_pour_test_confirms_drain_outside_cabin; status scope_added_needs_capture
+as_fitted_routes,j40_rt_024_throttle_choke_fuel_stop_and_heater_control_cables_throttle_choke_fuel_stop_control_cables,cylinder_x,1050,-350,915,18,560,,L1 as-fitted route scope,J40-RT-024 throttle_choke_fuel_stop_and_heater_control_cables; target L2; capture cable_centerlines_bulkhead_points_end_fittings_brackets_and_sweep_envelopes; clearance pedal_linkage_manifold_heat_steering_column_and_service_clearance; release full_travel_test_without_binding_or_chafe; status scope_added_needs_capture
+as_fitted_routes,j40_rt_025_speedometer_cable_and_transfer_gear_route_speedometer_cable_cluster_to_transfer,cylinder_x,1460,-235,820,18,780,,L1 as-fitted route scope,J40-RT-025 speedometer_cable_and_transfer_gear_route; target L2; capture cable_route_from_cluster_to_transmission_or_transfer_drive_with_clips; clearance exhaust_heat_prop_shaft_body_floor_and_bend_radius_clearance; release cluster_and_gearbox_connection_verified_before_floor_closeout; status scope_added_needs_capture
+as_fitted_routes,j40_rt_026_evaporator_condensate_and_body_drain_routes_evaporator_condensate_drain,cylinder_z,1235,555,660,24,430,,L1 as-fitted route scope,J40-RT-026 evaporator_condensate_and_body_drain_routes; target L2; capture drain_centerlines_fall_direction_exit_points_and_grommets; clearance exhaust_heat_floor_edge_pedal_and_water_backflow_clearance; release water_pour_test_confirms_drain_outside_cabin; status scope_added_needs_capture
 as_fitted_routes,j40_rt_027_exhaust_route_and_hanger_clearance_exhaust_heat_route_reference,cylinder_x,1910,330,610,36,2260,,L2 heat-clearance check,J40-RT-027 exhaust_route_and_hanger_clearance; target L2; capture downpipe_muffler_tailpipe_hangers_heat_shields_and_service_gap; clearance brake_fuel_AC_electrical_suspension_and_body_clearance; release exhaust_hangers_released_before_coating_and_line_closeout; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_routing_supports_spine,cylinder_x,1860,430,620,14,2240,,L1 as-fitted route scope,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_1_clip,box,650,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_2_clip,box,930,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_3_clip,box,1210,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_4_clip,box,1510,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_5_clip,box,1830,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_6_clip,box,2160,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_7_clip,box,2480,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_8_clip,box,2800,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
-as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_9_clip,box,3130,430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_routing_supports_spine,cylinder_x,1860,-430,620,14,2240,,L1 as-fitted route scope,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_1_clip,box,650,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_2_clip,box,930,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_3_clip,box,1210,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_4_clip,box,1510,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_5_clip,box,1830,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_6_clip,box,2160,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_7_clip,box,2480,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_8_clip,box,2800,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
+as_fitted_routes,j40_rt_028_p_clips_tabs_grommets_and_loom_guards_shared_route_support_9_clip,box,3130,-430,620,42,34,34,L2 route support placeholder,J40-RT-028 P_clips_tabs_grommets_and_loom_guards; target L3; capture all_added_or_reused_support_tabs_hole_sizes_fasteners_and_edge_guards; clearance coating_access_rust_trap_body_fit_and_service_clearance; release each_support_point_photo_verified_after fabrication; status scope_added_needs_capture
 mechanical_clearance,fan_radiator_clearance_envelope,box,275,0,990,150,720,510,L2 mechanical soundness clearance check,"fan, shroud, radiator, and condenser clearance volume"
 mechanical_clearance,front_steering_lock_sweep_left,box,755,-705,500,420,260,250,L2 mechanical soundness clearance check,left front wheel/brake hose steering-lock movement sweep
 mechanical_clearance,front_steering_lock_sweep_right,box,755,705,500,420,260,250,L2 mechanical soundness clearance check,right front wheel/brake hose steering-lock movement sweep
 mechanical_clearance,front_prop_shaft_clearance_tunnel,box,1120,0,438,980,260,210,L2 mechanical soundness clearance check,front prop-shaft movement and exhaust/routing no-foul envelope
 mechanical_clearance,rear_prop_shaft_clearance_tunnel,box,2180,0,438,1480,280,220,L2 mechanical soundness clearance check,rear prop-shaft movement and parking-brake/fuel-line no-foul envelope
-mechanical_clearance,pedal_column_hvac_clearance_zone,box,1215,420,900,420,390,420,L2 mechanical soundness clearance check,"pedal, steering-column, HVAC, and firewall route service clearance zone"
+mechanical_clearance,pedal_column_hvac_clearance_zone,box,1215,-420,900,420,390,420,L2 mechanical soundness clearance check,"pedal, steering-column, HVAC, and firewall route service clearance zone"
 datum,wheelbase_datum_line_left,cylinder_x,1877.5,-925,285,18,2285,,measurement datum,wheelbase datum line on left side
 datum,wheelbase_datum_line_right,cylinder_x,1877.5,925,285,18,2285,,measurement datum,wheelbase datum line on right side
 datum,front_track_datum_line,cylinder_y,735,0,260,18,1410,,measurement datum,front track datum line

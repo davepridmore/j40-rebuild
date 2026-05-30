@@ -14,6 +14,10 @@ CAD_ROOT = ROOT / "data" / "manual" / "cad" / "j40_reference_model"
 REPORT_DIR = CAD_ROOT / "05_reports"
 STAMP_PATH = REPORT_DIR / "j40_cad_reference_update_stamp.json"
 SCAFFOLD_MANIFEST_PATH = REPORT_DIR / "j40_full_vehicle_scaffold_rev_c_manifest.json"
+LHD_REVIEW_MANIFEST_PATH = REPORT_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_manifest.json"
+SCAFFOLD_DIR = CAD_ROOT / "04_exports" / "scaffold_rev_c"
+LHD_REVIEW_DIR = CAD_ROOT / "04_exports" / "scaffold_rev_c_lhd_review"
+AS_FITTED_ROUTE_SCOPE = REPORT_DIR / "j40_as_fitted_route_model_scope_20260531.csv"
 
 INPUT_DIRS = [
     CAD_ROOT / "00_inbox",
@@ -24,6 +28,7 @@ INPUT_FILES = [
     ROOT / "data" / "manual" / "photo_inventory.csv",
     ROOT / "data" / "manual" / "component_jobs.csv",
     ROOT / "data" / "manual" / "component_jobs_photo_reconciliation.csv",
+    AS_FITTED_ROUTE_SCOPE,
     ROOT / "scripts" / "update_j40_cad_reference.py",
     ROOT / "scripts" / "j40_cad_intake.py",
     ROOT / "scripts" / "freecad_mesh_to_cad.py",
@@ -32,25 +37,40 @@ INPUT_FILES = [
     ROOT / "scripts" / "build_j40_public_reference_strategy.py",
     ROOT / "scripts" / "build_j40_digital_twin_evidence.py",
     ROOT / "tools" / "generate_j40_full_vehicle_cad_scaffold.py",
+    ROOT / "tools" / "generate_j40_driver_layout_variant.py",
     ROOT / "tools" / "generate_j40_orbit_viewer.py",
     ROOT / "tools" / "generate_j40_source_mesh_freecad_macro.py",
 ]
 EXPECTED_OUTPUTS = [
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.FCMacro",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_orbit_viewer.html",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c.FCMacro",
+    SCAFFOLD_DIR / "j40_full_vehicle_orbit_viewer.html",
     CAD_ROOT / "04_exports" / "source_mesh_reference" / "j40_source_mesh_reference.FCMacro",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.scad",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.gltf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_orthographic.png",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_parts.csv",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.obj",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.mtl",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c.scad",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c.gltf",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_orthographic.png",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_parts.csv",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_editable.obj",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_editable.mtl",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review.FCMacro",
+    LHD_REVIEW_DIR / "j40_full_vehicle_orbit_viewer.html",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review.scad",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.dxf",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_3d_autocad.dxf",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review.gltf",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.png",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_parts.csv",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_editable.mtl",
     CAD_ROOT / "05_reports" / "source_model_inventory.md",
     CAD_ROOT / "05_reports" / "j40_source_mesh_reference_inventory.csv",
     CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
+    CAD_ROOT / "05_reports" / "j40_as_fitted_route_model_coverage_20260531.csv",
     CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_manifest.json",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_lhd_review_online_reference_inventory.csv",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_lhd_review_manifest.json",
+    CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_lhd_review_notes.md",
     CAD_ROOT / "05_reports" / "j40_public_reference_strategy.csv",
     CAD_ROOT / "05_reports" / "j40_public_reference_strategy.md",
     CAD_ROOT / "05_reports" / "j40_digital_twin_evidence_matrix.csv",
@@ -60,9 +80,14 @@ EXPECTED_OUTPUTS = [
 ]
 
 SCAFFOLD_MANIFEST_EXTRA_OUTPUTS = [
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.obj",
-    CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.mtl",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_editable.obj",
+    SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_editable.mtl",
+]
+LHD_REVIEW_MANIFEST_EXTRA_OUTPUTS = [
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_3d_autocad.dxf",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj",
+    LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_editable.mtl",
 ]
 
 
@@ -121,15 +146,15 @@ def write_stamp(signature: list[dict[str, object]], changed: bool) -> None:
     STAMP_PATH.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
-def sync_scaffold_manifest_outputs() -> None:
-    if not SCAFFOLD_MANIFEST_PATH.exists():
+def sync_manifest_outputs(manifest_path: Path, extra_outputs: list[Path]) -> None:
+    if not manifest_path.exists():
         return
-    data = json.loads(SCAFFOLD_MANIFEST_PATH.read_text(encoding="utf-8"))
+    data = json.loads(manifest_path.read_text(encoding="utf-8"))
     outputs = data.setdefault("outputs", [])
     if not isinstance(outputs, list):
         return
     changed = False
-    for path in SCAFFOLD_MANIFEST_EXTRA_OUTPUTS:
+    for path in extra_outputs:
         if not path.exists():
             continue
         relative_path = str(path.relative_to(ROOT))
@@ -137,7 +162,12 @@ def sync_scaffold_manifest_outputs() -> None:
             outputs.append(relative_path)
             changed = True
     if changed:
-        SCAFFOLD_MANIFEST_PATH.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+        manifest_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+
+
+def sync_scaffold_manifest_outputs() -> None:
+    sync_manifest_outputs(SCAFFOLD_MANIFEST_PATH, SCAFFOLD_MANIFEST_EXTRA_OUTPUTS)
+    sync_manifest_outputs(LHD_REVIEW_MANIFEST_PATH, LHD_REVIEW_MANIFEST_EXTRA_OUTPUTS)
 
 
 def main() -> None:
@@ -157,21 +187,38 @@ def main() -> None:
     run_step([sys.executable, str(ROOT / "scripts" / "j40_cad_intake.py")])
     run_step([sys.executable, str(ROOT / "tools" / "generate_j40_full_vehicle_cad_scaffold.py")])
     run_step([sys.executable, str(ROOT / "tools" / "generate_j40_orbit_viewer.py")])
+    run_step([sys.executable, str(ROOT / "tools" / "generate_j40_driver_layout_variant.py")])
     run_step([sys.executable, str(ROOT / "tools" / "generate_j40_source_mesh_freecad_macro.py")])
     run_step(
         [
             sys.executable,
             str(ROOT / "scripts" / "export_gltf_to_3d_dxf.py"),
-            str(CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.gltf"),
-            str(CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf"),
+            str(SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c.gltf"),
+            str(SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf"),
+        ]
+    )
+    run_step(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "export_gltf_to_3d_dxf.py"),
+            str(LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review.gltf"),
+            str(LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_3d_autocad.dxf"),
         ]
     )
     run_step(
         [
             sys.executable,
             str(ROOT / "scripts" / "export_gltf_to_obj.py"),
-            str(CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c.gltf"),
-            str(CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.obj"),
+            str(SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c.gltf"),
+            str(SCAFFOLD_DIR / "j40_full_vehicle_scaffold_rev_c_editable.obj"),
+        ]
+    )
+    run_step(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "export_gltf_to_obj.py"),
+            str(LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review.gltf"),
+            str(LHD_REVIEW_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj"),
         ]
     )
     run_step([sys.executable, str(ROOT / "scripts" / "build_j40_public_reference_strategy.py")])

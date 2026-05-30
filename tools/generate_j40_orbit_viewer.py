@@ -403,8 +403,10 @@ const SCALE = 0.001;
 const CYLINDER_SEGMENTS = 24;
 const GROUP_ORDER = [
   "body", "hard_top", "front_detail", "interior", "engine_bay",
-  "chassis", "running_gear", "brake_system", "fuel_system", "exhaust", "datum"
+  "chassis", "running_gear", "brake_system", "fuel_system", "exhaust",
+  "as_fitted_routes", "mechanical_clearance", "datum"
 ];
+const DEFAULT_HIDDEN_GROUPS = new Set(["mechanical_clearance"]);
 const GROUP_EXPLODE = {
   body: [0.00, 0.10, 0.00],
   hard_top: [0.00, 0.55, 0.00],
@@ -416,6 +418,8 @@ const GROUP_EXPLODE = {
   brake_system: [0.00, -0.74, -0.12],
   fuel_system: [0.36, -0.78, 0.16],
   exhaust: [0.00, -0.92, 0.22],
+  as_fitted_routes: [0.00, -1.08, 0.12],
+  mechanical_clearance: [0.00, -1.20, 0.28],
   datum: [0.00, -0.05, 0.00]
 };
 
@@ -427,7 +431,7 @@ const state = {
   explode: 0.18,
   opacity: 0.94,
   wire: true,
-  visible: Object.fromEntries(GROUP_ORDER.map((group) => [group, true])),
+  visible: Object.fromEntries(GROUP_ORDER.map((group) => [group, !DEFAULT_HIDDEN_GROUPS.has(group)])),
   selected: null,
   isolatedPart: null,
   hover: null,

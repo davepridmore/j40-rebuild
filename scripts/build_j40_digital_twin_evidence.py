@@ -23,6 +23,8 @@ EVIDENCE_MATRIX = REPORT_DIR / "j40_digital_twin_evidence_matrix.csv"
 MEASUREMENT_BACKLOG = REPORT_DIR / "j40_digital_twin_measurement_backlog.csv"
 BUILD_NOTES = REPORT_DIR / "j40_digital_twin_build_notes.md"
 PUBLIC_REFERENCE_STRATEGY = REPORT_DIR / "j40_public_reference_strategy.md"
+AS_FITTED_ROUTE_SCOPE = REPORT_DIR / "j40_as_fitted_route_model_scope_20260531.csv"
+LHD_REVIEW_VIEWER = CAD_ROOT / "04_exports" / "scaffold_rev_c_lhd_review" / "j40_full_vehicle_orbit_viewer.html"
 
 MODEL_GROUP_HINTS = {
     "body_exterior": {"body", "front_detail", "hard_top", "chassis"},
@@ -294,6 +296,8 @@ def write_notes(matrix_rows: list[dict[str, str]], backlog_rows: list[dict[str, 
         f"- Evidence matrix: `{EVIDENCE_MATRIX.relative_to(ROOT)}`",
         f"- Measurement backlog: `{MEASUREMENT_BACKLOG.relative_to(ROOT)}`",
         f"- Public-source strategy: `{PUBLIC_REFERENCE_STRATEGY.relative_to(ROOT)}`",
+        f"- As-fitted route scope: `{AS_FITTED_ROUTE_SCOPE.relative_to(ROOT)}`",
+        f"- LHD driver-side review variant: `{LHD_REVIEW_VIEWER.relative_to(ROOT)}`",
         "",
         "## Readiness Summary",
         "",
@@ -321,6 +325,12 @@ def write_notes(matrix_rows: list[dict[str, str]], backlog_rows: list[dict[str, 
             "Public sources are ranked by intended use. Toyota sources control part names and applicability; CC/open 3D models control visual comparison; community CAD controls only measurement leads until verified.",
             "",
             "Primary datums still needed: wheel/tire size, front disc rotor diameter/thickness, caliper mounting ear spacing, frame rail hole stations, body mount heights, door/roof aperture dimensions, firewall hole diameters, bumper/fog-lamp bracket offsets, and glass/rubber channel profiles.",
+            "",
+            "## As-Fitted Routing Addendum",
+            "",
+            f"The route scope in `{AS_FITTED_ROUTE_SCOPE.relative_to(ROOT)}` is now a release gate for the digital twin. Every cable, loom, hose, hard line, control cable, earth strap, A/C refrigerant hose, brake/fuel line, and drivetrain-orientation route that can affect fitment must be visible as named geometry before fabrication, crimping, final wrapping, coating, or body closeout relies on the model.",
+            "",
+            "Drive and drivetrain orientation must be verified against the actual truck before route geometry is released. Generic right-hand-drive or J40 reference geometry is not enough for brackets, A/C hoses, hard lines, clip tabs, or service clearances.",
         ]
     )
     BUILD_NOTES.write_text("\n".join(lines) + "\n", encoding="utf-8")

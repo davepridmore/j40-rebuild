@@ -1,18 +1,20 @@
 # J40 Digital Twin Build Notes
 
-- Generated: 2026-05-30T22:16:21.013323+00:00
+- Generated: 2026-05-30T23:21:48.582907+00:00
 - Photo/video evidence rows: 114 component slices, 821 media references.
 - Component-job linkage: 88 of 114 component slices linked through `data/manual/component_jobs_photo_reconciliation.csv`.
-- Current scaffold parts: 1233.
+- Current scaffold parts: 1282.
 - Evidence matrix: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv`
 - Measurement backlog: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv`
 - Public-source strategy: `data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md`
+- As-fitted route scope: `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv`
+- LHD driver-side review variant: `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html`
 
 ## Readiness Summary
 
-- `represented_needs_measurement_refinement`: 63
-- `visual_reference_modelled`: 20
-- `photos_only_needs_model_geometry`: 16
+- `represented_needs_measurement_refinement`: 65
+- `visual_reference_modelled`: 19
+- `photos_only_needs_model_geometry`: 15
 - `represented_needs_dimension_check`: 10
 - `measurement_photo_available_needs_cad_datum`: 5
 
@@ -59,3 +61,9 @@ The model can be a faithful visual digital twin from photos and source reference
 Public sources are ranked by intended use. Toyota sources control part names and applicability; CC/open 3D models control visual comparison; community CAD controls only measurement leads until verified.
 
 Primary datums still needed: wheel/tire size, front disc rotor diameter/thickness, caliper mounting ear spacing, frame rail hole stations, body mount heights, door/roof aperture dimensions, firewall hole diameters, bumper/fog-lamp bracket offsets, and glass/rubber channel profiles.
+
+## As-Fitted Routing Addendum
+
+The route scope in `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv` is now a release gate for the digital twin. Every cable, loom, hose, hard line, control cable, earth strap, A/C refrigerant hose, brake/fuel line, and drivetrain-orientation route that can affect fitment must be visible as named geometry before fabrication, crimping, final wrapping, coating, or body closeout relies on the model.
+
+Drive and drivetrain orientation must be verified against the actual truck before route geometry is released. Generic right-hand-drive or J40 reference geometry is not enough for brackets, A/C hoses, hard lines, clip tabs, or service clearances.

@@ -1,4 +1,4 @@
-# J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass
+# J40 Full Vehicle CAD Scaffold Rev C - LHD Driver-Side Review Variant
 
 This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketchfab references, the project photo inventory, public/commercial 3D model representations covered for project use, and Toyota online parts representations as visual and service-reference cues. Source files are not redistributed here unless a licensed/local asset is placed in the intake folder.
 
@@ -11,22 +11,22 @@ This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketch
 - Toyota online parts representations: EPC body/interior groups and GR Heritage 40 parts list, used for factual part-name cues such as roof/rear ventilators, body mounts, bumper stays, rear combination lamp segmentation, brake tubes, wiper caps, mirror packing, and fuel inlet hose.
 - Project-photo visual target: sand/beige diesel hardtop J40 with white roof, black bumper/trim, round auxiliary lamps, black window seals, side step boards, and mud-terrain tires.
 - Project-specific identity cues: Punjab BSN 453 front plate stroke reference, front disc/Sumitomo-style caliper package from May 29 brake photos, and raised mud-terrain sidewall lettering panels.
-- Driving layout: right-hand drive for left-side traffic. Positive Y is the driver side in this coordinate system.
+- Driving layout: left-hand drive for right-side traffic. Negative Y is the driver side in this coordinate system.
 - This scaffold does not extract or reproduce hidden source mesh data.
 - Source inventory: `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`.
 
 ## Outputs
 
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.scad`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.FCMacro`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.svg`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv`
-- `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`
-- `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.scad`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.FCMacro`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.svg`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.png`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.dxf`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.gltf`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_parts.csv`
+- `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_online_reference_inventory.csv`
 - `data/manual/cad/j40_reference_model/05_reports/j40_3dmodels_gallery_visual_cues.json`
+- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html`
 
 ## Current CAD Level
 

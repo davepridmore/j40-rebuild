@@ -84,4 +84,23 @@ data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_build_notes.md
 data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md
 ```
 
+As-fitted routing scope is controlled by:
+
+```text
+docs/j40-digital-twin-as-fitted-cable-scope-20260531.md
+data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv
+```
+
+Every cable, loom, hose, hard line, control cable, earth strap, A/C refrigerant hose, brake/fuel line, and drivetrain/drive-orientation route that can affect fitment must be modelled as a named route before fabrication or closeout relies on the 3D model. Generic route placeholders are visual only until each route has measured endpoints, pass-throughs, supports, bend radius, and clearance checks.
+
 Exact duplicate rule: photo and reference-model evidence is acceptable for visual placement, but any fabrication-grade geometry must be closed by measured truck datums, Toyota dimensions, or calibrated photogrammetry.
+
+Driver-side review output:
+
+```text
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.gltf
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj
+```
+
+The LHD review variant is a mirrored packaging check, not the default truth model. Keep the RHD `scaffold_rev_c` output as the as-fitted base unless the physical truck measurements prove the driver controls have been swapped.

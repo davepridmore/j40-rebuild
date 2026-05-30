@@ -15,6 +15,8 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports" / "scaffold_rev_c"
 REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports"
+AS_FITTED_ROUTE_SCOPE = REPORT_DIR / "j40_as_fitted_route_model_scope_20260531.csv"
+AS_FITTED_ROUTE_MODEL_COVERAGE = REPORT_DIR / "j40_as_fitted_route_model_coverage_20260531.csv"
 
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_c"
 MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass"
@@ -185,11 +187,51 @@ COLORS = {
     "fluid": "#4f7f55",
     "brass": "#c49a3d",
     "datum": "#7c6fcb",
+    "route_power": "#d64737",
+    "route_fluid": "#3a78c2",
+    "route_control": "#7b5a3a",
+    "clearance": "#b596e3",
 }
+
+
+def read_as_fitted_route_scope() -> dict[str, dict[str, str]]:
+    if not AS_FITTED_ROUTE_SCOPE.exists():
+        return {}
+    with AS_FITTED_ROUTE_SCOPE.open(newline="", encoding="utf-8-sig") as handle:
+        return {row.get("route_id", ""): row for row in csv.DictReader(handle) if row.get("route_id")}
+
+
+def as_fitted_route_model_matches(model_parts: list[PartType]) -> dict[str, list[PartType]]:
+    route_scope = read_as_fitted_route_scope()
+    matches: dict[str, list[PartType]] = {route_id: [] for route_id in route_scope}
+    for part in model_parts:
+        if part.group != "as_fitted_routes":
+            continue
+        for route_id in route_scope:
+            if route_id in part.notes:
+                matches[route_id].append(part)
+    return matches
+
+
+def as_fitted_route_metrics(model_parts: list[PartType]) -> dict[str, int]:
+    route_scope = read_as_fitted_route_scope()
+    matches = as_fitted_route_model_matches(model_parts)
+    return {
+        "scope_rows": len(route_scope),
+        "represented_rows": sum(1 for route_id in route_scope if matches.get(route_id)),
+        "route_part_count": sum(1 for part in model_parts if part.group == "as_fitted_routes"),
+        "clearance_part_count": sum(1 for part in model_parts if part.group == "mechanical_clearance"),
+    }
+
+
+def slug(value: str) -> str:
+    token = value.lower().replace("-", "_").replace("/", "_")
+    return "".join(char if char.isalnum() or char == "_" else "_" for char in token).strip("_")
 
 
 def parts() -> list[PartType]:
     p: list[PartType] = []
+    route_scope = read_as_fitted_route_scope()
 
     def box(
         group: str,
@@ -309,6 +351,41 @@ def parts() -> list[PartType]:
                     confidence,
                     notes,
                 )
+
+    def route_notes(route_id: str, fallback: str) -> str:
+        row = route_scope.get(route_id, {})
+        if not row:
+            return f"{route_id}: {fallback}; route scope row not found."
+        fields = [
+            f"{route_id} {row.get('route_name', fallback)}",
+            f"target {row.get('model_level_target', '')}",
+            f"capture {row.get('geometry_to_capture', '')}",
+            f"clearance {row.get('clearance_checks', '')}",
+            f"release {row.get('release_gate', '')}",
+            f"status {row.get('status', '')}",
+        ]
+        return "; ".join(field for field in fields if field and not field.endswith(" "))
+
+    def route_segment(
+        route_id: str,
+        segment_name: str,
+        x: float,
+        y: float,
+        z: float,
+        axis: str,
+        diameter: float,
+        length: float,
+        color: str,
+        confidence: str = "L1 as-fitted route scope",
+    ) -> None:
+        row = route_scope.get(route_id, {})
+        name = f"{slug(route_id)}_{slug(row.get('route_name', segment_name))}_{slug(segment_name)}"
+        cyl("as_fitted_routes", name, x, y, z, axis, diameter, length, color, confidence, route_notes(route_id, segment_name))
+
+    def route_clip(route_id: str, segment_name: str, x: float, y: float, z: float, color: str = COLORS["metal"]) -> None:
+        row = route_scope.get(route_id, {})
+        name = f"{slug(route_id)}_{slug(row.get('route_name', segment_name))}_{slug(segment_name)}_clip"
+        box("as_fitted_routes", name, x, y, z, 42, 34, 34, color, "L2 route support placeholder", route_notes(route_id, segment_name))
 
     def rounded_rect_profile(width: float, height: float, radius: float, segments: int = 5) -> list[tuple[float, float]]:
         half_width = width / 2
@@ -1536,6 +1613,56 @@ def parts() -> list[PartType]:
     for idx, x in enumerate([1020, 2180, 3040], start=1):
         box("exhaust", f"exhaust_hanger_{idx}", x, 330, 590, 52, 58, 135, COLORS["rubber"], "L2 service datum", "exhaust hanger rubber")
 
+    # As-fitted route scope. These named centerlines are release-gate placeholders
+    # from j40_as_fitted_route_model_scope_20260531.csv; physical endpoints,
+    # supports, and bend radii still need truck measurements before L3 release.
+    route_segment("J40-RT-001", "engine_gearbox_transfer_centerline", 1640, 0, 642, "x", 20, 2600, COLORS["datum"], "L2 orientation check")
+    route_segment("J40-RT-001", "front_output_to_front_pinion", 1188, -82, 468, "x", 20, 920, COLORS["datum"], "L2 orientation check")
+    route_segment("J40-RT-001", "rear_output_to_rear_pinion", 2235, 70, 468, "x", 20, 1430, COLORS["datum"], "L2 orientation check")
+    route_segment("J40-RT-002", "battery_to_cutoff_sweep", 735, 432, 1032, "x", 28, 430, COLORS["route_power"])
+    route_segment("J40-RT-003", "cutoff_to_relay_feed", 850, 540, 1040, "x", 24, 430, COLORS["route_power"])
+    route_segment("J40-RT-004", "cutoff_to_midi_common", 860, 624, 980, "x", 26, 470, COLORS["route_power"])
+    route_segment("J40-RT-005", "midi_output_fanout", 1030, 670, 950, "y", 18, 360, COLORS["route_power"])
+    route_segment("J40-RT-006", "battery_negative_to_engine", 695, 310, 930, "x", 24, 520, COLORS["metal"])
+    route_segment("J40-RT-006", "body_chassis_ground_strap", 1115, 520 * DRIVER_Y_SIGN, 760, "z", 22, 280, COLORS["metal"])
+    route_segment("J40-RT-007", "starter_main_cable", 720, 286, 760, "x", 24, 550, COLORS["route_power"])
+    route_segment("J40-RT-007", "starter_solenoid_trigger", 780, 236, 820, "x", 12, 460, COLORS["route_power"])
+    route_segment("J40-RT-008", "alternator_charge_branch", 625, 325, 1065, "x", 20, 590, COLORS["route_power"])
+    route_segment("J40-RT-009", "engine_sender_injection_pump_branch", 745, -165, 1085, "x", 16, 760, COLORS["route_power"])
+    route_segment("J40-RT-010", "front_lamp_cross_loom", 145, 0, 735, "y", 18, 1280, COLORS["route_power"])
+    route_segment("J40-RT-011", "compressor_pressure_fan_branch", 500, 485, 970, "x", 16, 720, COLORS["route_power"])
+    route_segment("J40-RT-012", "under_dash_evaporator_feed", 1230, PASSENGER_Y, 985, "y", 18, 520, COLORS["route_power"])
+    route_segment("J40-RT-013", "main_firewall_pass_through_band", 1120, 0, 995, "y", 22, 1160, COLORS["route_control"])
+    route_segment("J40-RT-014", "rear_body_tail_fuel_sender_loom", 2835, -520, 700, "x", 18, 1160, COLORS["route_power"])
+    route_segment("J40-RT-015", "front_brake_master_to_crossmember", 980, 338 * DRIVER_Y_SIGN, 650, "x", 16, 920, COLORS["route_fluid"])
+    route_segment("J40-RT-015", "front_brake_flex_sweep_left", front_axle_x + 85, -650, wheel_z + 185, "y", 20, 250, COLORS["route_fluid"])
+    route_segment("J40-RT-015", "front_brake_flex_sweep_right", front_axle_x + 85, 650, wheel_z + 185, "y", 20, 250, COLORS["route_fluid"])
+    route_segment("J40-RT-016", "rear_axle_brake_pipe_and_center_flex", rear_axle_x, 0, 548, "y", 18, 1330, COLORS["route_fluid"])
+    route_segment("J40-RT-017", "parking_brake_equalizer_to_axle", 2505, 0, 568, "x", 22, 980, COLORS["route_control"])
+    route_segment("J40-RT-018", "fuel_supply_return_frame_pair", 1880, 306, 542, "x", 18, 2100, COLORS["route_fluid"])
+    route_segment("J40-RT-019", "filler_neck_and_vent_pair", 3000, -650, 865, "z", 42, 440, COLORS["route_fluid"])
+    route_segment("J40-RT-020", "ac_discharge_compressor_to_condenser", 470, 535, 1080, "x", 24, 680, COLORS["route_fluid"])
+    route_segment("J40-RT-021", "ac_condenser_to_drier_liquid_line", 330, -520, 915, "y", 18, 930, COLORS["route_fluid"])
+    route_segment("J40-RT-022", "ac_firewall_to_evaporator_suction_pair", 980, PASSENGER_Y, 1035, "x", 26, 650, COLORS["route_fluid"])
+    route_segment("J40-RT-023", "radiator_heater_overflow_hose_bundle", 395, -230, 1075, "x", 38, 620, COLORS["route_fluid"])
+    route_segment("J40-RT-024", "throttle_choke_fuel_stop_control_cables", 1050, DRIVER_Y - 70 * DRIVER_Y_SIGN, 915, "x", 18, 560, COLORS["route_control"])
+    route_segment("J40-RT-025", "speedometer_cable_cluster_to_transfer", 1460, DRIVER_Y - 185 * DRIVER_Y_SIGN, 820, "x", 18, 780, COLORS["route_control"])
+    route_segment("J40-RT-026", "evaporator_condensate_drain", 1235, PASSENGER_Y - 135 * DRIVER_Y_SIGN, 660, "z", 24, 430, COLORS["route_fluid"])
+    route_segment("J40-RT-027", "exhaust_heat_route_reference", 1910, 330, 610, "x", 36, 2260, COLORS["clearance"], "L2 heat-clearance check")
+    route_segment("J40-RT-028", "routing_supports_spine", 1860, 430 * DRIVER_Y_SIGN, 620, "x", 14, 2240, COLORS["chrome"])
+
+    for clip_idx, x in enumerate([650, 930, 1210, 1510, 1830, 2160, 2480, 2800, 3130], start=1):
+        route_clip("J40-RT-028", f"shared_route_support_{clip_idx}", x, 430 * DRIVER_Y_SIGN, 620)
+    for clearance_name, x, y, z, length, width, height, notes in [
+        ("fan_radiator_clearance_envelope", 275, 0, 990, 150, 720, 510, "fan, shroud, radiator, and condenser clearance volume"),
+        ("front_steering_lock_sweep_left", front_axle_x + 20, -705, 500, 420, 260, 250, "left front wheel/brake hose steering-lock movement sweep"),
+        ("front_steering_lock_sweep_right", front_axle_x + 20, 705, 500, 420, 260, 250, "right front wheel/brake hose steering-lock movement sweep"),
+        ("front_prop_shaft_clearance_tunnel", 1120, 0, 438, 980, 260, 210, "front prop-shaft movement and exhaust/routing no-foul envelope"),
+        ("rear_prop_shaft_clearance_tunnel", 2180, 0, 438, 1480, 280, 220, "rear prop-shaft movement and parking-brake/fuel-line no-foul envelope"),
+        ("pedal_column_hvac_clearance_zone", 1215, DRIVER_Y, 900, 420, 390, 420, "pedal, steering-column, HVAC, and firewall route service clearance zone"),
+    ]:
+        box("mechanical_clearance", clearance_name, x, y, z, length, width, height, COLORS["clearance"], "L2 mechanical soundness clearance check", notes)
+
     # Measurement datum bars make the model more useful while the mesh is absent.
     cyl("datum", "wheelbase_datum_line_left", (front_axle_x + rear_axle_x) / 2, -925, 285, "x", 18, 2285, COLORS["datum"], "measurement datum", "wheelbase datum line on left side")
     cyl("datum", "wheelbase_datum_line_right", (front_axle_x + rear_axle_x) / 2, 925, 285, "x", 18, 2285, COLORS["datum"], "measurement datum", "wheelbase datum line on right side")
@@ -1636,6 +1763,8 @@ def write_freecad_macro(model_parts: list[PartType]) -> Path:
         "    'glass': 60,",
         "    'hard_top': 18,",
         "    'datum': 45,",
+        "    'as_fitted_routes': 15,",
+        "    'mechanical_clearance': 72,",
         "}",
         "",
         "def group_for(group_name):",
@@ -1832,6 +1961,12 @@ def write_svg(model_parts: list[PartType]) -> Path:
             ry = min(y0, y1)
             rw = abs(x1 - x0)
             rh = abs(y1 - y0)
+            if part.group == "mechanical_clearance":
+                svg.append(
+                    f'<rect x="{rx:.2f}" y="{ry:.2f}" width="{rw:.2f}" height="{rh:.2f}" '
+                    f'fill="none" stroke="{part.color}" stroke-width="1.2" stroke-dasharray="7 4"/>'
+                )
+                continue
             opacity = "0.55" if isinstance(part, (WheelPart, CylinderPart)) else "0.38"
             svg.append(
                 f'<rect x="{rx:.2f}" y="{ry:.2f}" width="{rw:.2f}" height="{rh:.2f}" '
@@ -1908,6 +2043,13 @@ def write_png_preview(model_parts: list[PartType]) -> Path:
             x, y, w, h = rect
             x0, y0 = tx(view, x, y + h)
             x1, y1 = tx(view, x + w, y)
+            if part.group == "mechanical_clearance":
+                draw.rectangle(
+                    (min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1)),
+                    outline=rgba(part.color, 230),
+                    width=2,
+                )
+                continue
             fill = rgba(part.color, 145 if isinstance(part, (WheelPart, CylinderPart)) else 95)
             draw.rectangle((min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1)), fill=fill, outline=(31, 31, 31, 180))
         if view == "plan":
@@ -2576,8 +2718,49 @@ def write_online_reference_inventory() -> Path:
     return path
 
 
+def write_route_model_coverage(model_parts: list[PartType]) -> Path:
+    matches = as_fitted_route_model_matches(model_parts)
+    route_scope = read_as_fitted_route_scope()
+    path = AS_FITTED_ROUTE_MODEL_COVERAGE
+    with path.open("w", newline="", encoding="ascii") as handle:
+        fieldnames = [
+            "route_id",
+            "system",
+            "route_name",
+            "model_level_target",
+            "coverage_status",
+            "model_part_count",
+            "model_part_names",
+            "geometry_to_capture",
+            "clearance_checks",
+            "release_gate",
+            "scope_status",
+        ]
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for route_id, row in sorted(route_scope.items()):
+            parts_for_route = matches.get(route_id, [])
+            writer.writerow(
+                {
+                    "route_id": route_id,
+                    "system": row.get("system", ""),
+                    "route_name": row.get("route_name", ""),
+                    "model_level_target": row.get("model_level_target", ""),
+                    "coverage_status": "represented_in_generator" if parts_for_route else "missing_model_geometry",
+                    "model_part_count": len(parts_for_route),
+                    "model_part_names": "|".join(part.name for part in parts_for_route),
+                    "geometry_to_capture": row.get("geometry_to_capture", ""),
+                    "clearance_checks": row.get("clearance_checks", ""),
+                    "release_gate": row.get("release_gate", ""),
+                    "scope_status": row.get("status", ""),
+                }
+            )
+    return path
+
+
 def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
     path = REPORT_DIR / f"{MODEL_NAME}_notes.md"
+    route_metrics = as_fitted_route_metrics(model_parts)
     lines = [
         f"# {MODEL_TITLE}",
         "",
@@ -2616,6 +2799,9 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
             "- Right-hand-drive references: right-side steering wheel/column, right pedal box, right-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, steering damper, and driver-side handbrake reach. The pedal order remains clutch-brake-accelerator across the right footwell.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",
+            "- As-fitted route scope: every route row from `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv` has a visible named placeholder or support/clearance primitive covering electrical power, starter/charging, engine controls, front lighting, A/C electrical, cabin HVAC, bulkhead, rear body loom, brake hydraulics, parking brake, fuel, A/C refrigerant, cooling, control cables, speedometer cable, drains, exhaust heat, and shared routing supports.",
+            f"- Route generator coverage: {route_metrics['represented_rows']} of {route_metrics['scope_rows']} as-fitted route rows are represented by {route_metrics['route_part_count']} named `as_fitted_routes` parts. Coverage report: `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv`.",
+            "- Mechanical-soundness references: fan/radiator, steering-lock/brake-hose, prop-shaft, exhaust heat, and pedal/column/HVAC clearance volumes are visible as non-release L2 checks.",
             "- Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.",
             "- Not fabrication release: mounting holes, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.",
             "",
@@ -2629,6 +2815,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
 
 def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
     path = REPORT_DIR / f"{MODEL_NAME}_manifest.json"
+    route_metrics = as_fitted_route_metrics(model_parts)
     data = {
         "model": MODEL_NAME,
         "detail_revision": DETAIL_REVISION,
@@ -2651,6 +2838,12 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
             "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/",
         ],
         "part_count": len(model_parts),
+        "as_fitted_route_scope": str(AS_FITTED_ROUTE_SCOPE.relative_to(ROOT)),
+        "as_fitted_route_model_coverage": str(AS_FITTED_ROUTE_MODEL_COVERAGE.relative_to(ROOT)),
+        "as_fitted_route_scope_rows": route_metrics["scope_rows"],
+        "as_fitted_route_rows_represented": route_metrics["represented_rows"],
+        "as_fitted_route_part_count": route_metrics["route_part_count"],
+        "mechanical_clearance_part_count": route_metrics["clearance_part_count"],
         "reference_gallery_image_count": 12,
         "online_reference_inventory": f"data/manual/cad/j40_reference_model/05_reports/{MODEL_NAME}_online_reference_inventory.csv",
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],
@@ -2673,6 +2866,7 @@ def main() -> None:
         write_gltf(model_parts),
         write_inventory(model_parts),
         write_online_reference_inventory(),
+        write_route_model_coverage(model_parts),
     ]
     if gallery_cues.exists():
         outputs.append(gallery_cues)

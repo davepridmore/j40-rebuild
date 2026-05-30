@@ -1,0 +1,52 @@
+{
+  "model": "j40_full_vehicle_scaffold_rev_c_lhd_review",
+  "detail_revision": "lhd_review_mirrored_driver_controls_as_fitted_route_scope",
+  "units": "mm",
+  "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
+  "drive_side": "left-hand drive",
+  "traffic_side": "right-side traffic",
+  "driver_side_y_sign": -1,
+  "driver_side": "left",
+  "basis_dimensions_mm": {
+    "length": 3840,
+    "width": 1665,
+    "height": 1950,
+    "wheelbase": 2285
+  },
+  "visual_benchmarks": [
+    "https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d",
+    "https://sketchfab.com/3d-models/toyota-land-cruiser-cbcbd901e8874205b5be294fa3dd3df2",
+    "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
+    "https://www.cgtrader.com/3d-print-models/hobby-diy/automotive/toyota-land-cruiser-j40-hard-top-bj44v-1979-df76b215-58fa-40f4-82f4-811350605600",
+    "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
+    "https://toyotagazooracing.com/gr/heritage/landcruiser40/",
+    "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/Landcruiser40_en.pdf",
+    "https://forum.ih8mud.com/threads/a-lot-of-people-have-been-asking-for-this-cad-model-for-fj40-frame.798358/",
+    "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/"
+  ],
+  "part_count": 1282,
+  "as_fitted_route_scope": "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv",
+  "as_fitted_route_model_coverage": "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv",
+  "as_fitted_route_scope_rows": 28,
+  "as_fitted_route_rows_represented": 28,
+  "as_fitted_route_part_count": 43,
+  "mechanical_clearance_part_count": 6,
+  "reference_gallery_image_count": 12,
+  "online_reference_inventory": "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_online_reference_inventory.csv",
+  "outputs": [
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.scad",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.FCMacro",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.svg",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.png",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.gltf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_parts.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_online_reference_inventory.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_3dmodels_gallery_visual_cues.json",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_notes.md",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_3d_autocad.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_editable.mtl"
+  ]
+}

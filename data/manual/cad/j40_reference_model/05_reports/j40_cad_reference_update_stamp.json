@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-30T22:16:21.022392+00:00",
-  "changed": true,
+  "updated_at": "2026-05-30T23:21:48.591465+00:00",
+  "changed": false,
   "input_signature": [
     {
       "path": "data/manual/photo_inventory.csv",
@@ -18,9 +18,14 @@
       "sha256": "3c6803a7063ae25c09c79588fc9fe8bdf1fc998ad2493d0ceb4e5e599e3a8bb5"
     },
     {
+      "path": "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv",
+      "size": 9240,
+      "sha256": "d28e7418e623e013eb2d8d4b23ed7a2f977f5c8c45cbbe1314ed42bfe5570775"
+    },
+    {
       "path": "scripts/update_j40_cad_reference.py",
-      "size": 7979,
-      "sha256": "581b3fef316c7b4a24523d28881c725a1cad5615847b8c609481c3b773368e13"
+      "size": 10203,
+      "sha256": "8f45a6b43c8f80f1a5381ecd03a60bfb6f3b736febc87f0a56e8fda62b1eb64b"
     },
     {
       "path": "scripts/j40_cad_intake.py",
@@ -49,18 +54,23 @@
     },
     {
       "path": "scripts/build_j40_digital_twin_evidence.py",
-      "size": 14302,
-      "sha256": "bb3f11e3f0e187287ee047a312f4fe5b9e1bb336533f498bfe3cb794ddfb9297"
+      "size": 15430,
+      "sha256": "9018e2917a82244eaca060f114a93e9bc9f8be8b3d726e0a42a6c202fd50f978"
     },
     {
       "path": "tools/generate_j40_full_vehicle_cad_scaffold.py",
-      "size": 163789,
-      "sha256": "7474bf75bae531934f1c3c6503513df3f77c0b89b0f4bc1231874524f527c41f"
+      "size": 177114,
+      "sha256": "87baa9759f8827746514d9330242509bbdfbbb0067267ca9938eeb6b53e95a7e"
+    },
+    {
+      "path": "tools/generate_j40_driver_layout_variant.py",
+      "size": 3997,
+      "sha256": "5bdb20f6e8f97bea9fc3d5a4e32ad52d84ee913e94fd13adb7fdfa744b6f53fc"
     },
     {
       "path": "tools/generate_j40_orbit_viewer.py",
-      "size": 43450,
-      "sha256": "383c08983ac10d13ef152c9e85941ffad030d63071704f00a8e779302970ce9b"
+      "size": 43676,
+      "sha256": "63bfb9f1891f8b1de3daad937c7210de81802140c8e1bbe1794da2ced1ae05cf"
     },
     {
       "path": "tools/generate_j40_source_mesh_freecad_macro.py",
@@ -80,10 +90,24 @@
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_editable.obj",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_editable.mtl",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.FCMacro",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.scad",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_3d_autocad.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review.gltf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_orthographic.png",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_parts.csv",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_editable.obj",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/j40_full_vehicle_scaffold_rev_c_lhd_review_editable.mtl",
     "data/manual/cad/j40_reference_model/05_reports/source_model_inventory.md",
     "data/manual/cad/j40_reference_model/05_reports/j40_source_mesh_reference_inventory.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_manifest.json",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_online_reference_inventory.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_manifest.json",
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_lhd_review_notes.md",
     "data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md",
     "data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv",

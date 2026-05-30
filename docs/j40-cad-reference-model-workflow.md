@@ -41,6 +41,10 @@ The current scaffold is not a direct copy or extraction of the Sketchfab model o
 
 The FreeCAD macro groups the model into chassis, running gear, body, front detail, hardtop, engine bay, interior, brake system, fuel system, exhaust, and datum references. It includes project-specific visual cues: sand/beige body, white hardtop roof, black bumpers/trim, hardtop side windows, classic rounded rear-quarter/back-door glazing, side step boards, diesel/fuel-filler references, mud-terrain tire lugs, rear parking-brake cable attachment hardware, right-hand-drive steering/pedal/firewall references, Rev C roof/rear ventilator detail, body mounts, bumper stays, tri-color rear lamp segmentation, hood underside/prop hardware, brake/fuel routing, and interior gauge/grab-handle detail.
 
+The as-fitted route scope is now part of the CAD workflow. Use [j40-digital-twin-as-fitted-cable-scope-20260531.md](j40-digital-twin-as-fitted-cable-scope-20260531.md) and `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv` to drive every cable, loom, hose, hard line, control cable, earth strap, A/C hose, brake/fuel line, and drivetrain-orientation verification into named model geometry. Route placeholders are visual only until the actual truck supplies endpoints, pass-throughs, supports, bend radius, and clearance measurements.
+
+A left-hand-drive driver-side review variant is generated beside the RHD base under `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c_lhd_review/`. Use it only as a swap/packaging comparison. The RHD `scaffold_rev_c` model remains the default as-fitted truth model until the actual truck measurements prove a control-side swap.
+
 For quick visual inspection, open the orbit viewer in a browser. It is self-contained and supports orbit, zoom, pan, group visibility toggles, exploded view, wire overlay, hover part readout, part search, part focus, single-part isolation, and a cabin preset for right-hand-drive interior inspection.
 
 Published Rev C viewer: https://dbvg4yfpnc4tj.cloudfront.net/data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html
@@ -89,7 +93,8 @@ The downloaded model is a visual mesh. A direct STEP export from it is only a CA
 - body tub, firewall, floor, and transmission tunnel reference planes
 - dashboard and steering column packaging
 - seat and belt mounting zones
-- fuel tank, battery, fuse/relay board, HVAC, and loom routing envelopes
+- fuel tank, battery, fuse/relay board, HVAC, and all as-fitted loom/cable/hose/line routing envelopes
 - spring hanger, shackle, bumper, and bracket hard points
+- drivetrain orientation, prop-shaft route, axle differential offsets, and steering linkage orientation checked against the actual truck
 
 Physical measurements from the actual truck remain the source of truth.
