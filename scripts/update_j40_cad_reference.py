@@ -23,6 +23,7 @@ INPUT_FILES = [
     ROOT / "scripts" / "freecad_mesh_to_cad.py",
     ROOT / "scripts" / "export_gltf_to_obj.py",
     ROOT / "scripts" / "export_gltf_to_3d_dxf.py",
+    ROOT / "scripts" / "build_j40_public_reference_strategy.py",
     ROOT / "scripts" / "build_j40_digital_twin_evidence.py",
     ROOT / "tools" / "generate_j40_full_vehicle_cad_scaffold.py",
     ROOT / "tools" / "generate_j40_orbit_viewer.py",
@@ -44,6 +45,8 @@ EXPECTED_OUTPUTS = [
     CAD_ROOT / "05_reports" / "j40_source_mesh_reference_inventory.csv",
     CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
     CAD_ROOT / "05_reports" / "j40_full_vehicle_scaffold_rev_c_manifest.json",
+    CAD_ROOT / "05_reports" / "j40_public_reference_strategy.csv",
+    CAD_ROOT / "05_reports" / "j40_public_reference_strategy.md",
     CAD_ROOT / "05_reports" / "j40_digital_twin_evidence_matrix.csv",
     CAD_ROOT / "05_reports" / "j40_digital_twin_measurement_backlog.csv",
     CAD_ROOT / "05_reports" / "j40_digital_twin_build_notes.md",
@@ -161,6 +164,7 @@ def main() -> None:
             str(CAD_ROOT / "04_exports" / "scaffold_rev_c" / "j40_full_vehicle_scaffold_rev_c_editable.obj"),
         ]
     )
+    run_step([sys.executable, str(ROOT / "scripts" / "build_j40_public_reference_strategy.py")])
     run_step([sys.executable, str(ROOT / "scripts" / "build_j40_digital_twin_evidence.py")])
     sync_scaffold_manifest_outputs()
     after = input_signature()

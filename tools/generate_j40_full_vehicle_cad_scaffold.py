@@ -17,7 +17,7 @@ OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports
 REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports"
 
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_c"
-MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Classic Rear Glazing Pass"
+MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass"
 MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev C"
 DETAIL_REVISION = "rhd_classic_rear_glazing_project_digital_twin_evidence_pass"
 DRIVER_LAYOUT = "right-hand drive"
@@ -71,12 +71,36 @@ ONLINE_REFERENCE_ROWS = [
         "rev_c_use": "cab/body mounting, bumper stays, grille, hood lock/hinge, cowl/front ventilator, side/roof/rear ventilators, spare carrier",
     },
     {
-        "source_id": "toyota-gr-heritage-40-parts-list-2025",
+        "source_id": "toyota-gr-heritage-40-current-page",
+        "title": "Toyota GR Heritage Land Cruiser 40",
+        "url": "https://toyotagazooracing.com/gr/heritage/landcruiser40/",
+        "source_type": "official Toyota heritage parts program",
+        "permission_basis": "public Toyota product and parts-program page used for factual availability and naming cues",
+        "rev_c_use": "current official parts program vocabulary, order timing cues, and category cross-checks",
+    },
+    {
+        "source_id": "toyota-gr-heritage-40-parts-list-2026",
         "title": "Land Cruiser 40 GR Heritage Parts List",
-        "url": "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf",
+        "url": "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/Landcruiser40_en.pdf",
         "source_type": "official Toyota heritage parts list",
         "permission_basis": "public Toyota parts list used for factual part-name cues",
         "rev_c_use": "parking brake, rear brake tubes, wiper pivot caps, mirror packing, fuel inlet hose, rear combination lamp segmentation",
+    },
+    {
+        "source_id": "ih8mud-fj40-frame-cad-thread",
+        "title": "A lot of people have been asking for this, CAD model for FJ40 frame",
+        "url": "https://forum.ih8mud.com/threads/a-lot-of-people-have-been-asking-for-this-cad-model-for-fj40-frame.798358/",
+        "source_type": "community CAD and dimensional lead",
+        "permission_basis": "public forum reference; per-file rights and accuracy must be verified before local use",
+        "rev_c_use": "candidate frame rail, crossmember, and bracket datum leads for comparison against measured truck geometry",
+    },
+    {
+        "source_id": "ih8mud-40-series-cad-file-repository",
+        "title": "3D Print and CAD File Repository - 40 Series",
+        "url": "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/",
+        "source_type": "community CAD/STL repository",
+        "permission_basis": "public forum index; per-file licenses vary and must be checked",
+        "rev_c_use": "small part modelling leads such as knobs, covers, bezels, hose separators, and license lamp covers",
     },
 ]
 
@@ -2621,7 +2645,10 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
             "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
             "https://www.cgtrader.com/3d-print-models/hobby-diy/automotive/toyota-land-cruiser-j40-hard-top-bj44v-1979-df76b215-58fa-40f4-82f4-811350605600",
             "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
-            "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf",
+            "https://toyotagazooracing.com/gr/heritage/landcruiser40/",
+            "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/Landcruiser40_en.pdf",
+            "https://forum.ih8mud.com/threads/a-lot-of-people-have-been-asking-for-this-cad-model-for-fj40-frame.798358/",
+            "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/",
         ],
         "part_count": len(model_parts),
         "reference_gallery_image_count": 12,

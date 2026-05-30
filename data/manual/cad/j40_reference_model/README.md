@@ -81,6 +81,7 @@ data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_s
 data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv
 data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv
 data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_build_notes.md
+data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md
 ```
 
 Exact duplicate rule: photo and reference-model evidence is acceptable for visual placement, but any fabrication-grade geometry must be closed by measured truck datums, Toyota dimensions, or calibrated photogrammetry.

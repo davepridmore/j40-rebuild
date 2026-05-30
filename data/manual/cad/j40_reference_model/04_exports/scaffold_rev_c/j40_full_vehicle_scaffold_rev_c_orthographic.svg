@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1260" viewBox="0 0 1680 1260">
 <rect x="0" y="0" width="1680" height="1260" fill="#ffffff"/>
 <style>text{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#202124}.label{font-size:10px;fill:#333}.title{font-size:22px;font-weight:700}</style>
-<text class="title" x="40" y="32">J40 Full Vehicle CAD Scaffold Rev C - RHD Classic Rear Glazing Pass</text>
+<text class="title" x="40" y="32">J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass</text>
 <text x="40" y="52">Units mm. Right-hand drive reference scaffold only; refine after CC-BY mesh and vehicle measurements arrive.</text>
 <text x="40" y="79" font-weight="700">PLAN X/Y</text>
 <rect x="126.40" y="394.40" width="753.60" height="20.40" fill="#2d3033" fill-opacity="0.38" stroke="#1f1f1f" stroke-width="0.6"/>

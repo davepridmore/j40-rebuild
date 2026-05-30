@@ -1,10 +1,11 @@
 # J40 Digital Twin Build Notes
 
-- Generated: 2026-05-30T15:22:55.437766+00:00
+- Generated: 2026-05-30T22:07:08.630793+00:00
 - Photo/video evidence rows: 114 component slices, 821 media references.
 - Current scaffold parts: 1233.
 - Evidence matrix: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv`
 - Measurement backlog: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv`
+- Public-source strategy: `data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md`
 
 ## Readiness Summary
 
@@ -53,5 +54,7 @@
 ## Build Rule
 
 The model can be a faithful visual digital twin from photos and source references, but exact fabrication geometry requires measured datums. Treat every L0/L1 part as approximate until tied to a tape measure, known Toyota dimension, or calibrated photogrammetry solve.
+
+Public sources are ranked by intended use. Toyota sources control part names and applicability; CC/open 3D models control visual comparison; community CAD controls only measurement leads until verified.
 
 Primary datums still needed: wheel/tire size, front disc rotor diameter/thickness, caliper mounting ear spacing, frame rail hole stations, body mount heights, door/roof aperture dimensions, firewall hole diameters, bumper/fog-lamp bracket offsets, and glass/rubber channel profiles.

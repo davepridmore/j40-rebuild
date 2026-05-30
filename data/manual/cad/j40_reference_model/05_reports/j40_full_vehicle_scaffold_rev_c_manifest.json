@@ -19,7 +19,10 @@
     "https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/",
     "https://www.cgtrader.com/3d-print-models/hobby-diy/automotive/toyota-land-cruiser-j40-hard-top-bj44v-1979-df76b215-58fa-40f4-82f4-811350605600",
     "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
-    "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf"
+    "https://toyotagazooracing.com/gr/heritage/landcruiser40/",
+    "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/Landcruiser40_en.pdf",
+    "https://forum.ih8mud.com/threads/a-lot-of-people-have-been-asking-for-this-cad-model-for-fj40-frame.798358/",
+    "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/"
   ],
   "part_count": 1233,
   "reference_gallery_image_count": 12,
@@ -30,11 +33,13 @@
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.svg",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
-    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_3dmodels_gallery_visual_cues.json",
-    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_notes.md"
+    "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_notes.md",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_editable.obj",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_editable.mtl"
   ]
 }

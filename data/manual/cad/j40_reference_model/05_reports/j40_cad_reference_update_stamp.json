@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30T15:22:55.445298+00:00",
+  "updated_at": "2026-05-30T22:07:08.638932+00:00",
   "changed": true,
   "input_signature": [
     {
@@ -18,14 +18,24 @@
       "mtime_ns": 1780153740886034913
     },
     {
+      "path": "scripts/export_gltf_to_3d_dxf.py",
+      "size": 8528,
+      "mtime_ns": 1780177043446573182
+    },
+    {
+      "path": "scripts/build_j40_public_reference_strategy.py",
+      "size": 12393,
+      "mtime_ns": 1780178720996730348
+    },
+    {
       "path": "scripts/build_j40_digital_twin_evidence.py",
-      "size": 12758,
-      "mtime_ns": 1780154511518299359
+      "size": 13154,
+      "mtime_ns": 1780178770260347785
     },
     {
       "path": "tools/generate_j40_full_vehicle_cad_scaffold.py",
-      "size": 161899,
-      "mtime_ns": 1780154559948854393
+      "size": 163789,
+      "mtime_ns": 1780178814152132421
     },
     {
       "path": "tools/generate_j40_orbit_viewer.py",
@@ -44,6 +54,7 @@
     "data/manual/cad/j40_reference_model/04_exports/source_mesh_reference/j40_source_mesh_reference.FCMacro",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.scad",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
@@ -53,6 +64,8 @@
     "data/manual/cad/j40_reference_model/05_reports/j40_source_mesh_reference_inventory.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_manifest.json",
+    "data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.csv",
+    "data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md",
     "data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_build_notes.md",

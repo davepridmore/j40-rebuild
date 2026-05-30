@@ -1,4 +1,4 @@
-# J40 Full Vehicle CAD Scaffold Rev C - RHD Classic Rear Glazing Pass
+# J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass
 
 This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketchfab references, the project photo inventory, public/commercial 3D model representations covered for project use, and Toyota online parts representations as visual and service-reference cues. Source files are not redistributed here unless a licensed/local asset is placed in the intake folder.
 
@@ -22,7 +22,6 @@ This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketch
 - `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.svg`
 - `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png`
 - `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf`
-- `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf`
 - `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf`
 - `data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv`
 - `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`
