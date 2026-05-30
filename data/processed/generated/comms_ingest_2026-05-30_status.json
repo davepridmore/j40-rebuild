@@ -1,5 +1,5 @@
 {
-  "run_date_utc": "2026-05-29",
+  "run_date_utc": "2026-05-30",
   "date_tag": "2026-05-30",
   "email": {
     "new_messages_query_after": "2026/05/29",
@@ -15,11 +15,14 @@
       "after:2026/05/29 \"on_hand_stock_20260530\"",
       "after:2026/05/29 \"1075298\"",
       "after:2026/05/29 \"1075421\"",
+      "after:2026/05/29 \"1076462\"",
       "after:2026/05/29 \"aamir_local_run_20260527\"",
       "after:2026/05/29 \"TM25776\"",
       "after:2026/05/29 \"TM25550\"",
       "after:2026/05/29 \"TM25805\"",
       "after:2026/05/29 \"242670698380938\"",
+      "after:2026/05/29 \"1762694\"",
+      "after:2026/05/29 \"62694\"",
       "after:2026/05/29 \"3073111533377489\"",
       "after:2026/05/29 \"242365766280938\"",
       "after:2026/05/29 \"243775543180938\"",
@@ -55,23 +58,23 @@
     ],
     "query_stats": {
       "after:2026/05/29 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
-        "returned": 3,
-        "result_size_estimate": 3,
+        "returned": 6,
+        "result_size_estimate": 6,
         "has_next_page": false
       },
       "after:2026/05/29 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
-        "returned": 7,
-        "result_size_estimate": 7,
+        "returned": 13,
+        "result_size_estimate": 13,
         "has_next_page": false
       },
       "after:2026/05/29 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
-        "returned": 0,
-        "result_size_estimate": 0,
+        "returned": 4,
+        "result_size_estimate": 4,
         "has_next_page": false
       },
       "after:2026/05/29 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
-        "returned": 9,
-        "result_size_estimate": 9,
+        "returned": 14,
+        "result_size_estimate": 14,
         "has_next_page": false
       },
       "after:2026/05/29 \"38902\"": {
@@ -109,6 +112,11 @@
         "result_size_estimate": 0,
         "has_next_page": false
       },
+      "after:2026/05/29 \"1076462\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
       "after:2026/05/29 \"aamir_local_run_20260527\"": {
         "returned": 0,
         "result_size_estimate": 0,
@@ -132,6 +140,16 @@
       "after:2026/05/29 \"242670698380938\"": {
         "returned": 0,
         "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/29 \"1762694\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/29 \"62694\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
         "has_next_page": false
       },
       "after:2026/05/29 \"3073111533377489\"": {
@@ -295,20 +313,23 @@
         "has_next_page": false
       }
     },
-    "unique_messages_read": 15,
-    "categorized_records_written": 8,
-    "excluded_non_project_records": 7,
+    "unique_messages_read": 31,
+    "categorized_records_written": 19,
+    "excluded_non_project_records": 12,
     "category_counts": {
-      "supplier_communication": 3,
-      "project_update": 2,
-      "product": 3
+      "supplier_communication": 6,
+      "project_update": 8,
+      "product": 5
     },
     "top_sources": {
-      "Daraz": 3,
+      "Aliexpress": 5,
+      "Daraz": 4,
+      "Alibaba": 3,
       "Autohub": 2,
+      "Alibaba Remind": 2,
       "PakWheels": 1,
-      "Aliexpress": 1,
-      "Alibaba": 1
+      "feedback@service.alibaba.com": 1,
+      "LOOKFANTASTIC": 1
     },
     "output_csv": "data/processed/generated/comms_ingest_2026-05-30_categorized.csv",
     "output_json": "data/processed/generated/gmail_project_messages_2026-05-30.json",
@@ -320,7 +341,18 @@
       "Up to 5% OFF Turbos, Nitrous, Superchargers",
       "Standard Chartered: Transaction Alert",
       "Yay, your Order 243852333280938 is confirmed!",
-      "bmw f30 headlights: samples available"
+      "bmw f30 headlights: samples available",
+      "Price drop on items you viewed",
+      "New seller message on 2026.05.29 07 PM",
+      "【Notification】The progress of your Trade Assurance order 302575831501027345 has changed",
+      "dodge charger front bumper: request a sample today",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Package PK015448775R: left the departure region",
+      "546 shoppers loved these",
+      "Flash Sale: 20% Off",
+      "Price drop on items you viewed",
+      "Standard Chartered: Transaction Alert",
+      "Order 3073062248277489: order confirmed"
     ]
   }
 }

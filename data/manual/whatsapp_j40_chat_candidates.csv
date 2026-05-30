@@ -1,7 +1,7 @@
 profile_server,profile_label,target_number,chat_id,chat_type,chat_name,unread_count,last_message_timestamp,last_message,relevance_score,relevance_reasons,selected_for_import,messages_fetched,messages_fetch_error,messages_count,media_count,images_count,videos_count
 whatsapp-number-1,primary,+447456457005,archive::akbar_khan,archive,Akbar Khan,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Akbar Khan,883,113,90,13
 whatsapp-number-1,primary,+447456457005,archive::fj40,archive,Fj40,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Fj40,289,52,41,6
-whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,0,2026-05-29T15:29:32.000Z,I have a Bj75 land Cruiser Pick up in cleanest condition am looking for a Hj47 pick up might get exchanged.,17,seed_name|group_bonus|name_hits:40 series|tlc|last_message_hits:land cruiser,true,true,,261,76,62,8
+whatsapp-number-2,secondary,+923099351940,971527520120-1517397900@g.us,group,TLC 40 Series Owners,0,2026-05-30T05:16:05.000Z,"Dear Members, Eid Mubarak! I hope everyone is enjoying the holidays. I wanted to ask if anyone has recently used a good poshish (upholstery/carpet) professional who can install floor carpeting. Any recommendations would be greatly appreciated. Thank you!",19,seed_name|group_bonus|name_hits:40 series|tlc|last_message_hits:carpet|floor,true,true,,266,79,65,8
 whatsapp-number-2,secondary,+923099351940,124176513941598@lid,direct_lid,Oxy Welding,0,,,14,seed_name|name_hits:oxy welding|welding,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,162822445105367@lid,direct_lid,Walton Bodyshop,0,,,14,seed_name|name_hits:bodyshop|walton,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363408465558195@g.us,group,Fj40,0,,,11,seed_name|group_bonus|name_hits:fj40,true,true,,350,53,44,5
@@ -40,7 +40,7 @@ whatsapp-number-2,secondary,+923099351940,120363273297369902@g.us,group,DT proje
 whatsapp-number-2,secondary,+923099351940,120363425453547799@g.us,group,DataCentre,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363146238999741@g.us,group,Directors Group,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416281257705@g.us,group,Dog groomer - Arshad,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,1,2026-05-29T16:45:44.000Z,Tomorrow night! COYG!,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,2026-05-29T16:56:20.000Z,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363324242926727@g.us,group,Farm land,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363391086842294@g.us,group,Farm plot - dealer Awais,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363267124119464@g.us,group,Fellowship of the Ferment,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -52,7 +52,7 @@ whatsapp-number-2,secondary,+923099351940,120363338082185743@g.us,group,HBL PAKI
 whatsapp-number-2,secondary,+923099351940,120363419364967513@g.us,group,Harvester hiring,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363422792476199@g.us,group,Hirings- Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363416845226272@g.us,group,Holiday ideas,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,4,2026-05-29T17:50:24.000Z,https://www.facebook.com/share/r/1BDKTMqjod/,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,7,2026-05-30T02:39:43.000Z,https://www.facebook.com/share/r/18fW9H3MCL/,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363417093817926@g.us,group,House,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363423514708697@g.us,group,IFL Sharepoint Status Tracking,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363407986660211@g.us,group,IFL-ManageEngine Payment,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -204,7 +204,7 @@ whatsapp-number-2,secondary,+923099351940,5004056363175@lid,direct_lid,+92 346 4
 whatsapp-number-2,secondary,+923099351940,121603962757350@lid,direct_lid,+92 348 0042040,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,137624140402894@lid,direct_lid,+92 370 1461682,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,137559816540413@lid,direct_lid,+92 42 32157777,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,46407725662437@lid,direct_lid,+92 51 111 693 693,0,2026-05-29T22:00:52.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,46407725662437@lid,direct_lid,+92 51 111 693 693,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,228093566419083@lid,direct_lid,+923295296510,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,256646358020215@lid,direct_lid,ADS,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,65717512732866@lid,direct_lid,Abdul Rahman,0,,,0,,false,false,,0,0,0,0

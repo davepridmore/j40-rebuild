@@ -8,6 +8,17 @@ New direction: use owner-selected external blowers. The target is a compact evap
 
 Complete under-dash evaporator/blower assemblies remain useful only if the blower section is removable or the case can be reused without making the package too bulky. Do not pay extra for a large hang-on blower scroll when the project will use separate blowers.
 
+## 2026-05-30 Order Capture
+
+The Gmail refresh added two A/C evaporator signals:
+
+| Source | Evidence | Status | Control note |
+| --- | --- | --- | --- |
+| AliExpress order `3073062248277489` | `gmail_msg_19e78b8a26f000c1`, `bank_alert_19e78b8dbe36d812` | Ordered and paid, PKR 36,942 | Universal 4-hole A/C evaporator / cool-heat 12V unit. Treat as an ordered candidate only; accept after physical measurement, leak test, airflow test, and under-dash mock-up. |
+| Alibaba Trade Assurance order `302575831501027345` | `gmail_msg_19e76240ad0d5bc6` | Needs payment/active-order confirmation, USD 45 email total | Possible under-dash evaporator sample. Do not count as confirmed spend until payment/order state is proven. |
+
+These orders do not override the custom-blower direction. On arrival, confirm whether the case/plenum, drain, fittings, outlet face, and any integrated blower section can be adapted for the selected external blowers before cutting mounts, ducts, drain holes, or crimping hoses.
+
 ## Purchase / Inquiry Links
 
 Local inquiry first:

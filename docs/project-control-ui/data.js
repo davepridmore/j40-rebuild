@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-30T03:17:36+05:00",
+  "generated_at": "2026-05-30T18:22:53+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -51,23 +51,23 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 824,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 70,
-    "parts_ordered_pending_delivery": 9,
-    "urgent_part_actions": 13,
+    "parts_open_rows": 72,
+    "parts_ordered_pending_delivery": 11,
+    "urgent_part_actions": 14,
     "capture_data_tasks": 110,
     "capture_data_tasks_now": 95,
-    "supply_rows_tracked": 276,
+    "supply_rows_tracked": 278,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
-    "whatsapp_j40_media_items": 294,
-    "whatsapp_j40_media_images": 238,
+    "whatsapp_j40_media_items": 297,
+    "whatsapp_j40_media_images": 241,
     "whatsapp_j40_media_videos": 32,
-    "other_build_reference_media": 215,
-    "other_build_reference_images": 193,
+    "other_build_reference_media": 218,
+    "other_build_reference_images": 196,
     "other_build_reference_videos": 22,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
-    "contact_register_entries": 29,
+    "contact_register_entries": 30,
     "reference_project_ideas": 16
   },
   "workstreams": [
@@ -7208,20 +7208,6 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
-          "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
-          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:44:36",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_radiator_support",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004436_gp_yjCPMWTg_2",
-          "matched_tokens": [
-            "20260422_004436_gp_yjcpmwtg"
-          ]
-        },
-        {
           "path": "../../photos/20260405_234546.jpg",
           "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
           "captured_date": "2026-04-05",
@@ -7740,20 +7726,6 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
-          "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
-          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:44:29",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_radiator_support",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004429_gp_4emWbTrA_2",
-          "matched_tokens": [
-            "20260422_004429_gp_4emwbtra"
-          ]
-        },
-        {
           "path": "../../photos/20260422_004423_gp_B1N5ThVw_2.jpg",
           "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
@@ -7966,6 +7938,18 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": []
         },
         {
+          "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
+          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:36",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_radiator_support",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004436_gp_yjCPMWTg_2",
+          "matched_tokens": []
+        },
+        {
           "path": "../../photos/20260422_004301_gp_SU89hisw.jpg",
           "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
@@ -8095,6 +8079,18 @@ window.J40_DASHBOARD_DATA = {
           "specific_component": "full_chassis_frame_overview",
           "stage": "underside_inspection",
           "media_id": "20260422_054711_gp_V1EgU9oQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
+          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:29",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_radiator_support",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004429_gp_4emWbTrA_2",
           "matched_tokens": []
         },
         {
@@ -9472,20 +9468,6 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
-              "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:36",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004436_gp_yjCPMWTg_2",
-              "matched_tokens": [
-                "20260422_004436_gp_yjcpmwtg"
-              ]
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -10004,20 +9986,6 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
-              "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:29",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004429_gp_4emWbTrA_2",
-              "matched_tokens": [
-                "20260422_004429_gp_4emwbtra"
-              ]
-            },
-            {
               "path": "../../photos/20260422_004423_gp_B1N5ThVw_2.jpg",
               "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -10230,6 +10198,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
+              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:44:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_radiator_support",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004436_gp_yjCPMWTg_2",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260422_004301_gp_SU89hisw.jpg",
               "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -10362,6 +10342,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
+              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_radiator_support",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004429_gp_4emWbTrA_2",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260422_004241_gp_hASLbowg.jpg",
               "caption": "Full Chassis Frame Overview \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -10449,7 +10441,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 129,
-      "reference_token_count": 86,
+      "reference_token_count": 80,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -12015,22 +12007,6 @@ window.J40_DASHBOARD_DATA = {
           "planned_action": "Send current body-off/chassis photos to the exhaust fabricator; decide whether to mock up headers, downpipes, dual exhaust routing, and hanger tabs while access is open, then remove parts and finish any chassis hanger/bracket welding before final chassis coating",
           "evidence_ref": "mcp_whatsapp_akber_20260508_142751|mcp_whatsapp_akber_20260508_142816|docs_chassis_bracket_audit_20260508",
           "notes": "Related Akbar/exhaust-guy action from the same conversation. The fabrication belongs in chassis_fixing because any hanger or clearance tab welded to the chassis must be complete before Raptor."
-        },
-        {
-          "component_job_id": "front_radiator_bracket_repair_20260508",
-          "component_group": "front_support",
-          "current_status": "pre_coating_hold",
-          "planned_action": "Replace the wire-held/one-sided radiator support condition with a two-side controlled retention setup; trial-fit radiator isolators/rubbers and fan clearance, then fit the released bolt-through saddle/post bracket before primer/Raptor",
-          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142752|20260422_004423_gp_B1N5ThVw|20260430_215957_gp_2iBbUagw|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|docs_chassis_bracket_audit_20260508|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
-          "notes": "Radiator bracket was explicitly named in the Akbar WhatsApp hold; May 12 21:29-21:32 measurement photos add the removed-radiator side/lower bracket views plus in-vehicle upright/opening/fan-clearance measurements. Existing-side flat pattern/bend measurements are imported; remaining release hold is right-side hole transfer, chassis saddle width/through-bolt route, isolator fit, and labelled dry-fit/template photos before coating the front support area."
-        },
-        {
-          "component_job_id": "front_radiator_two_side_retention_fabrication_20260508",
-          "component_group": "front_support",
-          "current_status": "existing_measurements_imported_dry_fit_required",
-          "planned_action": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required.",
-          "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
-          "notes": "User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
         }
       ],
       "issue_jobs": [
@@ -12180,11 +12156,6 @@ window.J40_DASHBOARD_DATA = {
           "detail": "For every repair/fabricate bracket, create a release sketch or card template with material thickness, bend shape, hole/stud size, location datum, weld/bolt method, clearance envelope, and corrosion/coating access plan Notes: This is the design step. Unknown or optional brackets stay hold/no-weld until the function and location are proven."
         },
         {
-          "label": "Component Task \u00b7 Front Radiator Two Side Retention Fabrication 20260508",
-          "status": "existing_measurements_imported_dry_fit_required",
-          "detail": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required. Notes: User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit."
-        },
-        {
           "label": "Component Task \u00b7 Chassis Bracket Fabrication Install 20260508",
           "status": "implementation_required",
           "detail": "Fabricate, repair, weld, or properly bolt only released baseline brackets; trial-fit each supported part, grind/deburr welds, clean heat-affected areas, and keep threads/ground faces serviceable before primer/Raptor Notes: This is the implementation step. Do not add generic auxiliary brackets without a released function and template."
@@ -12220,14 +12191,19 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Before primer/Raptor, survey chassis and tub-side welded brackets/tabs against current photos, loose parts, and visible wire-tied fixes; mark each missing, broken, non-baseline, or required auxiliary bracket and decide weld/bolt/no-refit for each Notes: Akbar reported several brackets that should be welded were previously wire-tied and estimated 10-15 additions. Do not final coat until the bracket map is signed off."
         },
         {
-          "label": "Component Task \u00b7 Front Radiator Bracket Repair 20260508",
-          "status": "pre_coating_hold",
-          "detail": "Replace the wire-held/one-sided radiator support condition with a two-side controlled retention setup; trial-fit radiator isolators/rubbers and fan clearance, then fit the released bolt-through saddle/post bracket before primer/Raptor Notes: Radiator bracket was explicitly named in the Akbar WhatsApp hold; May 12 21:29-21:32 measurement photos add the removed-radiator side/lower bracket views plus in-vehicle upright/opening/fan-clearance measurements. Existing-side flat pattern/bend measurements are imported; remaining release hold is right-side hole transfer, chassis saddle width/through-bolt route, isolator fit, and labelled dry-fit/template photos before coating the front support area."
+          "label": "Component Task \u00b7 Engine Bay Mounting Scouting Pass 20260508",
+          "status": "radiator_and_battery_measurements_imported_mount_template_required",
+          "detail": "Capture close-up/ruler photos for radiator side mounts, previous wire support path, battery tray top/side/underside supports, battery dimensions/terminal orientation, proposed MIDI/cutoff cardboard mock-up, cable exits, bonnet clearance, and the May 12 candidate upright/lower/inner pickup zones; use results to release the radiator and battery/power carrier templates Notes: May 12 photos now move radiator from pure location scouting to measured template scouting: loose radiator brackets, side/lower tabs, upright height/offset, and front opening/fan envelope are visible. May 17 photos add actual installed battery footprint/terminal orientation plus existing tray opening and height measurements. MIDI/cutoff mock-up, cable sweep, underside foot condition, and final pickup template measurements are still required before cutting metal."
+        },
+        {
+          "label": "Component Task \u00b7 Chassis Bracket Analysis Register 20260508",
+          "status": "register_seeded_open",
+          "detail": "Maintain the bracket register from current chassis walkaround, existing body-off photos, loose removed parts, and WhatsApp notes; assign station, function, evidence photo, keep/repair/fabricate/remove/unknown status, and whether each item blocks primer/Raptor Notes: Register seeded on 2026-05-08 with radiator/front-support and battery-side mounting rows. Close only when the bracket list also covers line/harness/ground tabs, exhaust hanger points, and any wire-tied/non-baseline additions."
         },
         {
           "label": "Additional open component tasks",
           "status": "in_progress",
-          "detail": "3 more open component rows are linked to this workstream."
+          "detail": "1 more open component rows are linked to this workstream."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -31179,30 +31155,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 109,
       "reference_token_count": 30,
-      "requirements": [
-        {
-          "requirement_id": "HVAC-ELEC-001",
-          "requirement_name": "Relay fuse switch and wiring pack for HVAC blower clutch and condenser fan",
-          "pipe_id": "",
-          "vehicle_location": "Front loom plus dash feed for HVAC",
-          "pipe_or_line": "",
-          "replace_scope": "buy_after_loads_and_switching_are_fixed",
-          "quantity": "1_wiring_pack",
-          "photo_evidence": [],
-          "photo_status": "wiring_layout_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Size fuses relays wire and connectors from selected blower clutch and fan loads before buying extras",
-          "exact_recreation_spec": "Protected 12V wiring for blower speeds thermostat/clutch request pressure switch logic condenser fan request grounds and serviceable connectors",
-          "material_spec": "Automotive wire/relay/fuse/connector materials rated above measured loads with heat and moisture protection",
-          "critical_measurements": "Blower current; clutch current; fan current if fitted; fuse sizes; relay ratings; ground locations; connector pinout; grommet locations; harness length",
-          "fit_and_test": "Continuity-test before power; live-test blower speeds clutch request pressure-switch cutout and fan request with fused feeds",
-          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514|data/manual/electrical_diagram_reconciliation_20260518.csv",
-          "notes": "This row makes the A/C electrical dependency visible in the Electrical Reset requirements list.",
-          "evidence_images": []
-        }
-      ],
+      "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -31513,7 +31466,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "2 part rows still require price confirmation/order placement."
+          "detail": "1 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -31651,46 +31604,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_hvac_blower_clutch_fan_wiring_20260514",
-          "workstream": "electrical_reset",
-          "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local electrical / automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
-          "product_link": "",
-          "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -32264,11 +32177,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
                 "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)",
-                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
+                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)"
               ]
             },
             {
@@ -32384,10 +32297,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Star / lock washer pack - M6 x120, M8 x60, M10 x30 (received_candidate; delivery needs_confirmation; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
-                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)"
+                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)",
+                "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)"
               ]
             },
             {
@@ -32628,12 +32541,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)",
-                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
+                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
             {
@@ -32751,8 +32664,8 @@ window.J40_DASHBOARD_DATA = {
                 "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Split conduit / braided sleeve inventory - 14/16 mm, 5m lengths (received; delivery received; amount missing)"
+                "Split conduit / braided sleeve inventory - 14/16 mm, 5m lengths (received; delivery received; amount missing)",
+                "Split conduit / braided sleeve inventory - 20 mm, 5m lengths (received; delivery received; amount missing)"
               ]
             }
           ]
@@ -35761,7 +35674,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "6 part rows still require price confirmation/order placement."
+          "detail": "1 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -35780,87 +35693,6 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
-        {
-          "entry_id": "part_hvac_duct_defrost_hose_kit_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
-          "product_link": "",
-          "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_control_panel_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Compact A/C control panel or integrated controls",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_control_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
-          "product_link": "",
-          "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
         {
           "entry_id": "part_cabin_compact_fuse_boxes",
           "workstream": "electrical_reset",
@@ -35899,127 +35731,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_blower_clutch_fan_wiring_20260514",
-          "workstream": "electrical_reset",
-          "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local electrical / automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
-          "product_link": "",
-          "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-          "product_link": "",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -36185,11 +35896,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -36306,11 +36013,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
               ]
             },
             {
@@ -36428,12 +36131,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)"
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -36553,12 +36252,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
-                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
               ]
             }
           ]
@@ -38517,118 +38212,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 27,
       "reference_token_count": 10,
-      "requirements": [
-        {
-          "requirement_id": "HVAC-ENGINE-001",
-          "requirement_name": "Parallel-flow A/C condenser sized to core support",
-          "pipe_id": "",
-          "vehicle_location": "Front core support ahead of radiator",
-          "pipe_or_line": "",
-          "replace_scope": "buy_after_front_pack_measurement",
-          "quantity": "1_condenser",
-          "photo_evidence": [],
-          "photo_status": "core_support_measurement_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Measure the radiator/core-support opening and fan clearance before ordering",
-          "exact_recreation_spec": "Parallel-flow condenser sized for the J40 front pack with fittings positioned for clean hose routing to drier and compressor",
-          "material_spec": "New R134a-compatible parallel-flow condenser with protected fins and mount tabs",
-          "critical_measurements": "Core width/height/thickness; fitting thread/type/location; fan/radiator clearance; mount tab spacing; grille clearance; hose exit direction",
-          "fit_and_test": "Pressure/leak test before charge; verify no radiator/grille/fan contact and no unsupported condenser load",
-          "source_ref": "part_hvac_parallel_flow_condenser_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Visible front-pack dimensions control the final condenser choice.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-ENGINE-002",
-          "requirement_name": "Receiver-drier matched to R134a layout",
-          "pipe_id": "",
-          "vehicle_location": "Front engine bay A/C liquid line position",
-          "pipe_or_line": "",
-          "replace_scope": "buy_with_condenser_and_hose_layout",
-          "quantity": "1_drier",
-          "photo_evidence": [],
-          "photo_status": "layout_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Choose drier after condenser fitting orientation and service-port layout are fixed",
-          "exact_recreation_spec": "Receiver-drier compatible with R134a and the selected condenser/expansion-valve layout; sight glass optional only if supplier recommends it",
-          "material_spec": "New sealed receiver-drier; do not reuse an opened or unknown drier",
-          "critical_measurements": "Fitting thread/type; inlet/outlet orientation; body diameter/height; bracket size; service-port access; trinary/switch port if integrated",
-          "fit_and_test": "Install new sealed drier last; leak test and evacuate before charging",
-          "source_ref": "part_hvac_receiver_drier_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Drier is a consumable and should not be opened until final assembly.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-ENGINE-003",
-          "requirement_name": "Trinary pressure switch for compressor and condenser fan control",
-          "pipe_id": "",
-          "vehicle_location": "Receiver-drier or high-pressure liquid line",
-          "pipe_or_line": "",
-          "replace_scope": "buy_with_drier_or_line_port",
-          "quantity": "1_switch",
-          "photo_evidence": [],
-          "photo_status": "layout_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Match switch thread and pressure logic to the drier/line port before purchase",
-          "exact_recreation_spec": "Trinary pressure switch to protect compressor low/high pressure and request condenser fan operation when required",
-          "material_spec": "New R134a-compatible automotive pressure switch with matching connector or service pigtail",
-          "critical_measurements": "Thread size; sealing style; cut-in/cut-out pressures; connector type; wire count; mounting/service access",
-          "fit_and_test": "Bench-continuity check switch logic if possible; confirm compressor clutch and fan relays respond correctly after charge",
-          "source_ref": "part_hvac_trinary_switch_20260514|data/manual/electrical_diagram_reconciliation_20260518.csv",
-          "notes": "Electrical function depends on the final pressure-switch logic.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-ENGINE-004",
-          "requirement_name": "A/C compressor plus bracket and belt alignment",
-          "pipe_id": "",
-          "vehicle_location": "2H engine accessory drive and compressor mount",
-          "pipe_or_line": "",
-          "replace_scope": "inspect_existing_then_restore_or_replace",
-          "quantity": "1_compressor_mount_package",
-          "photo_evidence": [],
-          "photo_status": "engine_bay_photos_required",
-          "spec_status": "inspect_before_buy",
-          "acquisition_status": "inspect_existing_before_buy",
-          "installation_status": "not_installed",
-          "current_action": "Inspect existing Sanden-type compressor and engine-specific bracket before buying replacement",
-          "exact_recreation_spec": "Compact Sanden-type automotive compressor or proven on-hand unit plus 2H-specific bracket/spacers/adjuster/idler and final belt solution",
-          "material_spec": "Reuse only if clutch voltage plus pulley plus ports plus shaft seal plus oil/refrigerant compatibility pass inspection; otherwise buy rebuilt/new compatible compressor",
-          "critical_measurements": "Pulley groove type; belt section and final belt length; bracket hole spacing; pulley alignment; compressor ear spacing; port style; clutch voltage/current; service clearance",
-          "fit_and_test": "Spin and clutch-test compressor; verify pulley alignment with straightedge; pressure/leak check system after hose fabrication",
-          "source_ref": "docs/parts-list-cleanup-decisions-20260504.md|data/manual/j40_costs_cost_tabs_tidy.csv:Parts8-9|data/manual/j40_costs_cost_tabs_tidy.csv:Parts163",
-          "notes": "Workbook rows said reuse/inspect but the dashboard requirements had no HVAC compressor gate.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-HOSE-001",
-          "requirement_name": "A/C barrier hose fittings bulkheads and service consumables",
-          "pipe_id": "",
-          "vehicle_location": "Compressor/condenser/drier/bulkhead/evaporator circuit",
-          "pipe_or_line": "",
-          "replace_scope": "buy_or_crimp_after_all_component_positions_are_locked",
-          "quantity": "1_complete_circuit_set",
-          "photo_evidence": [],
-          "photo_status": "layout_photos_required",
-          "spec_status": "layout_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Do not crimp final hoses until compressor condenser drier bulkhead and evaporator positions are fixed",
-          "exact_recreation_spec": "R134a-compatible barrier hose set with fittings/bulkhead pass-throughs/HNBR O-rings/oil/service ports made to the final installed layout",
-          "material_spec": "New automotive A/C barrier hose and refrigerant-compatible fittings; no generic rubber hose or used unknown hose",
-          "critical_measurements": "Hose ID/OD; fitting angles; crimp style; bulkhead hole size; service port position; O-ring sizes; oil type; charge amount after system volume is known",
-          "fit_and_test": "Vacuum hold and leak test before charge; verify hoses clear heat sharp edges and engine movement",
-          "source_ref": "part_hvac_barrier_hose_fittings_20260514|part_hvac_firewall_bulkhead_fittings_20260514|part_hvac_r134a_oil_oring_charge_kit_20260514|HLS-22|RUB-024",
-          "notes": "This ties the existing hose/rubber rows to the full HVAC requirement chain.",
-          "evidence_images": []
-        }
-      ],
+      "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -38724,12 +38308,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "8 part rows still require price confirmation/order placement."
+          "detail": "2 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
+          "status": "in_progress",
+          "detail": "1 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -38784,6 +38368,55 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_mech_engine_oil_filter_service",
+          "workstream": "mechanical_baseline",
+          "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "amount": "12499",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "Autohub",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_engine_oil_filter_service",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+              "label": "automize.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+            "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "filter_service",
+            "matched_tokens": [
+              "filter"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_mech_heat_glow_plugs_set",
           "workstream": "mechanical_baseline",
           "item": "Toyota OE glow plugs 19850-68030 x6 - diesel 2H",
@@ -38825,9 +38458,9 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_hvac_barrier_hose_fittings_20260514",
+          "entry_id": "part_mech_oil_filter_guard_gdo135_20260529",
           "workstream": "mechanical_baseline",
-          "item": "A/C barrier hose and refrigerant-compatible fittings",
+          "item": "Engine oil filter - Guard GDO-135 candidate for 2H",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -38835,98 +38468,14 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "vendor": "Automize online",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_hvac_barrier_hose_fittings_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_firewall_bulkhead_fittings_20260514",
-          "workstream": "mechanical_baseline",
-          "item": "A/C firewall bulkhead fittings and sealing grommets",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_mech_engine_oil_filter_service",
-          "workstream": "mechanical_baseline",
-          "item": "Engine oil + oil filter service pack",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Autohub online / Automize online",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_engine_oil_filter_service",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
-          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
-          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+          "source_ref": "part_mech_oil_filter_guard_gdo135_20260529",
+          "evidence_ref": "user_update_2026-05-29_liqui_moly_guard_added|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_refresh_2026-05-30_no_filter_order_found",
+          "product_link": "https://automize.pk/products/guard-oil-filter-gdo-135",
+          "notes": "Oil filter remains open after the 2026-05-30 Gmail refresh: Autohub oil order was found, but no Automize/Guard GDO-135 order evidence was found. Buy/confirm only if Guard GDO-135 cross-reference 15600-41010 / 15601-41010 is acceptable for the fitted 2H filter head; physically fit-check before service.",
           "links": [
-            {
-              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
-              "label": "autohub.pk"
-            },
             {
               "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
               "label": "automize.pk"
@@ -38938,7 +38487,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-            "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
+            "caption": "Engine oil filter - Guard GDO-135 candidate for 2H \u00b7 filter/service reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -38948,167 +38497,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "filter_service",
             "matched_tokens": [
               "filter"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_r134a_oil_oring_charge_kit_20260514",
-          "workstream": "mechanical_baseline",
-          "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_parallel_flow_condenser_20260514",
-          "workstream": "mechanical_baseline",
-          "item": "Parallel-flow A/C condenser sized to core support",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_parallel_flow_condenser_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Parallel-flow A/C condenser sized to core support \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_receiver_drier_20260514",
-          "workstream": "mechanical_baseline",
-          "item": "Receiver-drier matched to R134a A/C layout",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_receiver_drier_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/receiver_drier.jpg",
-            "caption": "Receiver-drier matched to R134a A/C layout \u00b7 receiver-drier reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "receiver_drier",
-            "matched_tokens": [
-              "receiver"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_trinary_switch_20260514",
-          "workstream": "mechanical_baseline",
-          "item": "Trinary pressure switch for A/C compressor and fan control",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_trinary_switch_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Trinary pressure switch for A/C compressor and fan control \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -39170,72 +38558,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_mech_fuel_hose_and_clamps"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_radiator_hose_set",
-          "workstream": "mechanical_baseline",
-          "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
-          "status": "purchase_ready",
-          "procurement_stage": "purchase_ready_standard_and_template_quote",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
-          "links": [
-            {
-              "url": "../../docs/pipe-fabrication-spec-20260502.md",
-              "label": "Formed coolant pipe fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "Cooling hose and pipe package - current car cropped radiator/heater hose route context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_hose_set"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
@@ -39546,46 +38868,6 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "semantic_reference_image",
             "match_score": 700
           }
-        },
-        {
-          "entry_id": "part_mech_radiator_cap",
-          "workstream": "mechanical_baseline",
-          "item": "Radiator cap",
-          "status": "planned",
-          "procurement_stage": "runner_spec_controlled",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / local radiator shop / Toyota parts counter",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_cap",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
-            "caption": "Radiator cap - current car cropped radiator neck and overflow context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_cap"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
         }
       ],
       "operation_panels": [],
@@ -39721,12 +39003,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Trinary pressure switch for A/C compressor and fan control (purchase_ready; delivery not_ordered; amount missing)"
+                "Engine oil filter - Guard GDO-135 candidate for 2H (purchase_ready; delivery not_ordered; amount missing)",
+                "Fuel filter (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -39856,12 +39138,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (received; delivery received; amount confirmed)",
-                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "A/C barrier hose and refrigerant-compatible fittings (purchase_ready; delivery not_ordered; amount missing)"
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
+                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
+                "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -39989,11 +39271,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
                 "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
-                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
+                "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
+                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (received; delivery received; amount confirmed)",
+                "Air filter element (received; delivery received; amount missing)"
               ]
             },
             {
@@ -40118,12 +39400,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "A/C barrier hose and refrigerant-compatible fittings (purchase_ready; delivery not_ordered; amount missing)",
-                "A/C firewall bulkhead fittings and sealing grommets (purchase_ready; delivery not_ordered; amount missing)",
-                "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
-                "Parallel-flow A/C condenser sized to core support (purchase_ready; delivery not_ordered; amount missing)",
-                "Receiver-drier matched to R134a A/C layout (purchase_ready; delivery not_ordered; amount missing)",
-                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)"
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
+                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
+                "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Fuel filter (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (received; delivery received; amount confirmed)",
+                "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -40250,10 +39532,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
                 "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
-                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (purchase_ready_standard_and_template_quote; delivery not_ordered; amount missing)",
-                "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup (purchase_ready; delivery not_ordered; amount missing)",
-                "Parallel-flow A/C condenser sized to core support (purchase_ready; delivery not_ordered; amount missing)",
-                "Radiator cap (runner_spec_controlled; delivery not_ordered; amount missing)"
+                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
+                "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
+                "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             }
           ]
@@ -63562,7 +62844,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Use the merged suspension/brake window with the May 29 visible Sumitomo fixed front-disc baseline, replace standard front/rear brake service parts, and renew rear cables/lines with route-clearance validation",
       "exit_gate": "Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, rear cables/lines are replaced, and no brake-system unknown blocks suspension closeout or reassembly",
-      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; May 29 photos now identify the front disc baseline as visible Sumitomo fixed-caliper hardware while exact part numbers remain gated by pad shape",
+      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; May 29 photos now identify the front disc baseline as visible Sumitomo fixed-caliper hardware while exact part numbers remain gated by pad shape, piston/rotor measurements, hose fittings, fitted hardware, and old samples.",
       "evidence_source": [
         "photo_inventory",
         "20260324_004852",
@@ -66618,21 +65900,21 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_clutch_master_slave_cylinders_20260514",
           "workstream": "brake_system",
-          "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+          "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
           "status": "ordered",
           "procurement_stage": "ordered_partial_pending_delivery",
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
-          "amount": "3700",
+          "amount": "7494",
           "amount_status": "confirmed",
           "currency": "PKR",
           "vendor": "PakWheels AUTOSTORE",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_clutch_master_slave_cylinders_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
           "product_link": "",
-          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -66661,7 +65943,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+            "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -68141,7 +67423,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (received_candidate; delivery needs_location_match; amount missing)",
                 "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -68268,7 +67550,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
@@ -72269,140 +71551,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 0,
       "reference_token_count": 2,
-      "requirements": [
-        {
-          "requirement_id": "HVAC-UNIT-001",
-          "requirement_name": "Hidden compact evaporator core/case and outlet plenum for external blowers",
-          "pipe_id": "",
-          "vehicle_location": "Hidden cabin HVAC package behind/under dash",
-          "pipe_or_line": "",
-          "replace_scope": "buy_evaporator_core_case_or_fabricate_plenum_for_custom_blowers",
-          "quantity": "1_core_case_plenum",
-          "photo_evidence": [],
-          "photo_status": "package_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Ask supplier for compact evaporator core/case/cooling coil with TXV plus drain plus fittings plus outlet face/spigots and no required integrated blower; get all-side tape photos and leak test before payment",
-          "exact_recreation_spec": "Preferred compact evaporator core already in a sealed case/plenum with TXV/expansion valve plus drain pan/nipple plus refrigerant fittings plus outlet spigots or a flat face for custom plenum; bare cooling coil acceptable only if shop/fabricator can build sealed plenum plus drain pan plus blower adapter",
-          "material_spec": "New or tested clean R134a-compatible automotive evaporator core/case; intact fins/tubes; TXV/fittings/drain present; no requirement for included 12V blower if external blowers are selected",
-          "critical_measurements": "Coil face WxH; core depth; case/plenum LxWxH; airflow face area; inlet/return area; outlet count/OD/direction or flat plenum face; drain OD/location; refrigerant fitting sizes; external blower adapter face; mounting tab spacing; service cover clearance; glovebox/dash/pedal/EPS clearance",
-          "fit_and_test": "Pressure/vacuum leak test evaporator; water-test drain; bench airflow test with selected external blowers across full coil face; cardboard-mock fit under dash before purchase",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|reference_projects_and_ideas:vitz_manual_ac_donor",
-          "notes": "This was present in the parts/buy-now data but missing from the requirements feed. User clarified on 2026-05-30 that this is the missing cabin-side A/C package and later clarified he wants own blowers so cabin purchase is a smaller evaporator core/case/plenum rather than a full blower box.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-UNIT-002",
-          "requirement_name": "Slim under-dash louver outlet panel and matched vent pieces",
-          "pipe_id": "",
-          "vehicle_location": "Lower dash outlet face and cabin vents",
-          "pipe_or_line": "",
-          "replace_scope": "buy_or_fabricate_to_selected_unit",
-          "quantity": "1_matched_set",
-          "photo_evidence": [],
-          "photo_status": "supplier_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Select only after the evaporator case/plenum outlet count and selected blower position/flow are fixed",
-          "exact_recreation_spec": "Slim outlet panel or louver set that connects to the selected evaporator plenum and supports cabin airflow plus defrost routing without a bulky visible hang-on unit",
-          "material_spec": "New automotive plastic or aluminium louver pieces with secure shutters and hose adapters",
-          "critical_measurements": "Panel width/height/depth; outlet count and OD; louver throw direction; screw spacing; adapter length; clearance to knees and dash controls",
-          "fit_and_test": "Mock panel under dash; confirm selected blowers can push air to driver/passenger and defrost ducts without fouling pedals or steering",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Do not buy random vents before the evaporator plenum geometry and blower layout are known.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-UNIT-003",
-          "requirement_name": "Return-air grille and washable filter",
-          "pipe_id": "",
-          "vehicle_location": "Hidden return-air intake below dash",
-          "pipe_or_line": "",
-          "replace_scope": "buy_or_fabricate_serviceable_filter_intake",
-          "quantity": "1_assembly",
-          "photo_evidence": [],
-          "photo_status": "supplier_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Match the grille/filter to the selected evaporator intake and keep it reachable for cleaning",
-          "exact_recreation_spec": "Hidden return-air grille with serviceable washable filter and sealed path to evaporator intake",
-          "material_spec": "Automotive grille/filter material that will not collapse into blower suction",
-          "critical_measurements": "Grille face size; filter media size; intake opening area; service access; mount screw spacing; clearance to passenger feet and wiring",
-          "fit_and_test": "Verify blower does not pull loose trim or insulation; filter can be removed without dropping the HVAC box",
-          "source_ref": "part_hvac_return_air_grille_filter_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Required so the hidden unit does not ingest dust or loose cabin insulation.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-UNIT-004",
-          "requirement_name": "Compact A/C control panel or integrated controls",
-          "pipe_id": "",
-          "vehicle_location": "Dash or concealed HVAC control position",
-          "pipe_or_line": "",
-          "replace_scope": "buy_with_selected_unit_or_separate_panel",
-          "quantity": "1_control_set",
-          "photo_evidence": [],
-          "photo_status": "supplier_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Confirm whether the selected evaporator includes controls before buying a separate panel",
-          "exact_recreation_spec": "Control set for blower speeds plus thermostat/temperature control plus A/C clutch request; illumination optional only if it integrates cleanly",
-          "material_spec": "12V automotive switches/resistor/thermostat matched to the selected blower and clutch relay current",
-          "critical_measurements": "Panel size; knob/button depth; harness plug style; resistor rating; blower speed count; thermostat probe routing; dash hole/cable clearance",
-          "fit_and_test": "Bench-test blower speeds and clutch-request output through a relay; confirm labels/functions before dash closeout",
-          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Separate row keeps controls from being hidden inside the evaporator unit line.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-UNIT-005",
-          "requirement_name": "HVAC duct and defrost/demist hose kit",
-          "pipe_id": "",
-          "vehicle_location": "Dash outlet and windscreen demist routing",
-          "pipe_or_line": "",
-          "replace_scope": "buy_after_unit_and_outlets_are_fixed",
-          "quantity": "1_route_set",
-          "photo_evidence": [],
-          "photo_status": "layout_photos_required",
-          "spec_status": "layout_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Wait for evaporator position and vent layout before cutting or ordering duct lengths",
-          "exact_recreation_spec": "2.5 inch or selected-size flexible duct plus vent adapters and defrost/demist hose pieces routed from the HVAC box to cabin vents and windscreen outlets",
-          "material_spec": "Automotive HVAC duct hose and adapters that tolerate cabin heat and vibration",
-          "critical_measurements": "Final duct OD/ID; route lengths; bend radius; clamp sizes; defrost outlet dimensions; clearance to wiring and pedal/steering movement",
-          "fit_and_test": "Airflow-test each outlet and demist path; no collapsed hose or chafe points after dash fit-up",
-          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514|RUB-025|docs/rubber-ordering-spec-20260502.md",
-          "notes": "This remains dependent on the selected hidden unit and outlet panel.",
-          "evidence_images": []
-        },
-        {
-          "requirement_id": "HVAC-DRAIN-001",
-          "requirement_name": "Evaporator drain hose plus mounting/sealing kit",
-          "pipe_id": "",
-          "vehicle_location": "Evaporator drain and under-dash mounting points",
-          "pipe_or_line": "",
-          "replace_scope": "buy_after_unit_mockup",
-          "quantity": "1_mount_and_drain_set",
-          "photo_evidence": [],
-          "photo_status": "layout_photos_required",
-          "spec_status": "layout_measurement_hold",
-          "acquisition_status": "not_acquired",
-          "installation_status": "not_installed",
-          "current_action": "Confirm drain nipple side and mounting feet before buying hose/grommet/seal pieces",
-          "exact_recreation_spec": "Drain hose plus grommet plus mounting/sealing hardware to route condensate outside the cabin and isolate the HVAC case",
-          "material_spec": "EPDM drain hose; sealed firewall/floor grommet; corrosion-protected brackets or tabs",
-          "critical_measurements": "Drain nipple OD; fall angle; exit hole size; firewall/floor thickness; bracket spacing; case isolation thickness; service access",
-          "fit_and_test": "Water-test drain with vehicle level and nose-up; no cabin drip; no sharp hole edge; case remains secure under vibration",
-          "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514|RUB-024|docs/rubber-ordering-spec-20260502.md",
-          "notes": "Do not trap condensate inside the tub or behind insulation.",
-          "evidence_images": []
-        }
-      ],
+      "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -72470,8 +71619,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "in_progress",
-          "detail": "6 part rows still require price confirmation/order placement."
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -72649,249 +71798,6 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "semantic_reference_image",
             "match_score": 700
           }
-        },
-        {
-          "entry_id": "part_hvac_duct_defrost_hose_kit_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
-          "product_link": "",
-          "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_control_panel_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Compact A/C control panel or integrated controls",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_control_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
-          "product_link": "",
-          "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_evaporator_drain_mount_kit_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Evaporator drain hose and mounting/sealing kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
-          "product_link": "",
-          "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
-            "caption": "Evaporator drain hose and mounting/sealing kit \u00b7 rubber bumpers and isolators reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "body_rubber_bumpers_isolators_reference",
-            "matched_tokens": [
-              "rubber",
-              "isolators"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_return_air_grille_filter_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Hidden return-air grille and washable filter for evaporator intake",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_return_air_grille_filter_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
-          "product_link": "",
-          "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Hidden return-air grille and washable filter for evaporator intake \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
-          "workstream": "interior_weatherproofing",
-          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-          "product_link": "",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
         }
       ],
       "operation_panels": [],
@@ -73010,12 +71916,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
-                "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
-                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)"
+                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -73128,12 +72032,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
+                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -73247,8 +72149,6 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
@@ -73362,12 +72262,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hidden compact evaporator core/case and outlet plenum for custom blower fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
-                "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
+                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -74802,7 +73700,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "18 rows still in purchase_ready."
+        "detail": "17 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -74812,7 +73710,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "9 rows ordered and waiting to arrive."
+        "detail": "11 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -74833,12 +73731,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 2
       },
       {
+        "stage": "needs_confirmation",
+        "count": 1
+      },
+      {
         "stage": "ordered_partial_pending_delivery",
         "count": 1
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 8
+        "count": 10
       },
       {
         "stage": "pre_payment_market_check",
@@ -74846,7 +73748,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 18
+        "count": 17
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -74888,11 +73790,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 18
+        "count": 17
       },
       {
         "next_action": "track_delivery",
-        "count": 9
+        "count": 11
       }
     ],
     "urgent_actions": [
@@ -75091,18 +73993,18 @@ window.J40_DASHBOARD_DATA = {
         "priority": "P0",
         "entry_id": "part_clutch_master_slave_cylinders_20260514",
         "workstream": "brake_system",
-        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
         "status": "ordered",
         "procurement_stage": "ordered_partial_pending_delivery",
         "next_action": "track_delivery",
-        "amount": "3700",
+        "amount": "7494",
         "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
         "product_link": "",
-        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -75131,7 +74033,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -75340,38 +74242,47 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "priority": "P0",
-        "entry_id": "part_hvac_blower_clutch_fan_wiring_20260514",
-        "workstream": "electrical_reset",
-        "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
+        "priority": "P1",
+        "entry_id": "part_mech_engine_oil_filter_service",
+        "workstream": "mechanical_baseline",
+        "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "12499",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "local electrical / automotive A/C supplier",
+        "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
-        "product_link": "",
-        "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
-        "links": [],
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+          "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "relay",
+          "media_id": "filter_service",
           "matched_tokens": [
-            "relay"
+            "filter"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -75415,9 +74326,88 @@ window.J40_DASHBOARD_DATA = {
           "match_basis": "semantic_reference_image",
           "match_score": 700
         }
+      },
+      {
+        "priority": "P2",
+        "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "36942",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "AliExpress",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|aliexpress_order_3073062248277489",
+        "product_link": "",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test. | Gmail import 2026-05-30: AliExpress order 3073062248277489 confirmed Universal 4 Hole Auto AC Evaporator / Cool and Heat 12V x1, order total PKR 36,942; matching Standard Chartered alert confirms card payment. Treat this as an ordered candidate for the hidden A/C workstream, not an automatic fitment approval: on arrival measure case/core/outlets/drain/fittings, leak-test, bench airflow-test, and confirm any integrated blower can be removed, bypassed, or ignored for the owner-selected external-blower direction before final mounting or hose crimping.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       }
     ],
     "ordered_pending_delivery": [
+      {
+        "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "36942",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "AliExpress",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|aliexpress_order_3073062248277489",
+        "product_link": "",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test. | Gmail import 2026-05-30: AliExpress order 3073062248277489 confirmed Universal 4 Hole Auto AC Evaporator / Cool and Heat 12V x1, order total PKR 36,942; matching Standard Chartered alert confirms card payment. Treat this as an ordered candidate for the hidden A/C workstream, not an automatic fitment approval: on arrival measure case/core/outlets/drain/fittings, leak-test, bench airflow-test, and confirm any integrated blower can be removed, bypassed, or ignored for the owner-selected external-blower direction before final mounting or hose crimping.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
       {
         "entry_id": "part_fastener_kit_b_millat",
         "workstream": "body_chassis",
@@ -75539,20 +74529,20 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_clutch_master_slave_cylinders_20260514",
         "workstream": "brake_system",
-        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
         "status": "ordered",
         "procurement_stage": "ordered_partial_pending_delivery",
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
         "expected_delivery_date": "after_eid_vendor_note_no_exact_date",
-        "amount": "3700",
+        "amount": "7494",
         "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
         "product_link": "",
-        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -75581,7 +74571,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -75756,6 +74746,54 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_mech_engine_oil_filter_service",
+        "workstream": "mechanical_baseline",
+        "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "12499",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "Autohub",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+          "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "filter_service",
+          "matched_tokens": [
+            "filter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_ironman_front_dampers_separate_shipment",
         "workstream": "suspension_upgrade",
         "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
@@ -75797,6 +74835,542 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "open_rows": [
+      {
+        "entry_id": "part_hvac_alibaba_underdash_evaporator_sample_20260529",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents",
+        "status": "needs_confirmation",
+        "procurement_stage": "needs_confirmation",
+        "payment_status": "needs_confirmation",
+        "delivery_status": "pending_confirmation",
+        "amount": "45",
+        "amount_status": "confirmed",
+        "currency": "USD",
+        "vendor": "Alibaba Trade Assurance",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19e76240ad0d5bc6|alibaba_order_302575831501027345",
+        "product_link": "",
+        "notes": "Gmail import 2026-05-30: Alibaba Trade Assurance progress email for order 302575831501027345, order date 2026-05-29 16:48:47 PST, Air Conditioning Evaporator Assembly 12V Universal Under-Dash Heating Cooling Unit with 4 Vents x1, total USD 45.00 with free shipping. No matching payment alert was found in this ingest, so confirm whether this is paid/active, cancelled, or only a sample/order draft before counting it as spend or relying on it for A/C packaging.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "36942",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "AliExpress",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|aliexpress_order_3073062248277489",
+        "product_link": "",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test. | Gmail import 2026-05-30: AliExpress order 3073062248277489 confirmed Universal 4 Hole Auto AC Evaporator / Cool and Heat 12V x1, order total PKR 36,942; matching Standard Chartered alert confirms card payment. Treat this as an ordered candidate for the hidden A/C workstream, not an automatic fitment approval: on arrival measure case/core/outlets/drain/fittings, leak-test, bench airflow-test, and confirm any integrated blower can be removed, bypassed, or ignored for the owner-selected external-blower direction before final mounting or hose crimping.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_duct_defrost_hose_kit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+        "product_link": "",
+        "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_barrier_hose_fittings_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "A/C barrier hose and refrigerant-compatible fittings",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_firewall_bulkhead_fittings_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "A/C firewall bulkhead fittings and sealing grommets",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
+          "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "rubber_grommets",
+          "matched_tokens": [
+            "grommet"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_control_panel_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Compact A/C control panel or integrated controls",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+        "product_link": "",
+        "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_evaporator_drain_mount_kit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Evaporator drain hose and mounting/sealing kit",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+        "product_link": "",
+        "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+          "caption": "Evaporator drain hose and mounting/sealing kit \u00b7 rubber bumpers and isolators reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_rubber_bumpers_isolators_reference",
+          "matched_tokens": [
+            "rubber",
+            "isolators"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_r134a_oil_oring_charge_kit_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_return_air_grille_filter_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Hidden return-air grille and washable filter for evaporator intake",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+        "product_link": "",
+        "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Hidden return-air grille and washable filter for evaporator intake \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_parallel_flow_condenser_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Parallel-flow A/C condenser sized to core support",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Parallel-flow A/C condenser sized to core support \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_receiver_drier_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Receiver-drier matched to R134a A/C layout",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/receiver_drier.jpg",
+          "caption": "Receiver-drier matched to R134a A/C layout \u00b7 receiver-drier reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "receiver_drier",
+          "matched_tokens": [
+            "receiver"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_blower_clutch_fan_wiring_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local electrical / automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+        "product_link": "",
+        "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
+          "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "relay",
+          "matched_tokens": [
+            "relay"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+        "product_link": "",
+        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_trinary_switch_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Trinary pressure switch for A/C compressor and fan control",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
+          "caption": "Trinary pressure switch for A/C compressor and fan control \u00b7 automotive relay reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "relay",
+          "matched_tokens": [
+            "relay"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
       {
         "entry_id": "part_fastener_kit_b_millat",
         "workstream": "body_chassis",
@@ -76029,19 +75603,19 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_clutch_master_slave_cylinders_20260514",
         "workstream": "brake_system",
-        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
         "status": "ordered",
         "procurement_stage": "ordered_partial_pending_delivery",
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
-        "amount": "3700",
+        "amount": "7494",
         "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
         "product_link": "",
-        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -76070,7 +75644,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -77773,44 +77347,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_hvac_blower_clutch_fan_wiring_20260514",
-        "workstream": "electrical_reset",
-        "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local electrical / automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
-        "product_link": "",
-        "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_star_washers",
         "workstream": "electrical_reset",
         "item": "Star / lock washer pack - M6 x120, M8 x60, M10 x30",
@@ -78158,328 +77694,21 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_hvac_duct_defrost_hose_kit_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
-        "product_link": "",
-        "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_control_panel_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "Compact A/C control panel or integrated controls",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
-        "product_link": "",
-        "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "ac_compressor",
-          "matched_tokens": [
-            "compressor"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_evaporator_drain_mount_kit_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "Evaporator drain hose and mounting/sealing kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
-        "product_link": "",
-        "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
-          "caption": "Evaporator drain hose and mounting/sealing kit \u00b7 rubber bumpers and isolators reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "body_rubber_bumpers_isolators_reference",
-          "matched_tokens": [
-            "rubber",
-            "isolators"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_hidden_evaporator_blower_unit_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_return_air_grille_filter_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "Hidden return-air grille and washable filter for evaporator intake",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
-        "product_link": "",
-        "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Hidden return-air grille and washable filter for evaporator intake \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
-        "workstream": "interior_weatherproofing",
-        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-        "product_link": "",
-        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_barrier_hose_fittings_20260514",
-        "workstream": "mechanical_baseline",
-        "item": "A/C barrier hose and refrigerant-compatible fittings",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "ac_compressor",
-          "matched_tokens": [
-            "compressor"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_firewall_bulkhead_fittings_20260514",
-        "workstream": "mechanical_baseline",
-        "item": "A/C firewall bulkhead fittings and sealing grommets",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-          "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "rubber_grommets",
-          "matched_tokens": [
-            "grommet"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_mech_engine_oil_filter_service",
         "workstream": "mechanical_baseline",
-        "item": "Engine oil + oil filter service pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
+        "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "12499",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "Autohub online / Automize online",
+        "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
-        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
-        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
         "links": [
           {
             "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
@@ -78496,7 +77725,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-          "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
+          "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -78512,9 +77741,9 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_hvac_r134a_oil_oring_charge_kit_20260514",
+        "entry_id": "part_mech_oil_filter_guard_gdo135_20260529",
         "workstream": "mechanical_baseline",
-        "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
+        "item": "Engine oil filter - Guard GDO-135 candidate for 2H",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -78522,105 +77751,33 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "vendor": "Automize online",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
-        "links": [],
+        "evidence_ref": "user_update_2026-05-29_liqui_moly_guard_added|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_refresh_2026-05-30_no_filter_order_found",
+        "product_link": "https://automize.pk/products/guard-oil-filter-gdo-135",
+        "notes": "Oil filter remains open after the 2026-05-30 Gmail refresh: Autohub oil order was found, but no Automize/Guard GDO-135 order evidence was found. Buy/confirm only if Guard GDO-135 cross-reference 15600-41010 / 15601-41010 is acceptable for the fitted 2H filter head; physically fit-check before service.",
+        "links": [
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup \u00b7 AC compressor reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+          "caption": "Engine oil filter - Guard GDO-135 candidate for 2H \u00b7 filter/service reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "ac_compressor",
+          "media_id": "filter_service",
           "matched_tokens": [
-            "compressor"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_parallel_flow_condenser_20260514",
-        "workstream": "mechanical_baseline",
-        "item": "Parallel-flow A/C condenser sized to core support",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Parallel-flow A/C condenser sized to core support \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_receiver_drier_20260514",
-        "workstream": "mechanical_baseline",
-        "item": "Receiver-drier matched to R134a A/C layout",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/receiver_drier.jpg",
-          "caption": "Receiver-drier matched to R134a A/C layout \u00b7 receiver-drier reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "receiver_drier",
-          "matched_tokens": [
-            "receiver"
+            "filter"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -78660,44 +77817,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "glow",
             "plugs"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_trinary_switch_20260514",
-        "workstream": "mechanical_baseline",
-        "item": "Trinary pressure switch for A/C compressor and fan control",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "Trinary pressure switch for A/C compressor and fan control \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -78757,70 +77876,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_mech_fuel_hose_and_clamps"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_mech_radiator_hose_set",
-        "workstream": "mechanical_baseline",
-        "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
-        "status": "purchase_ready",
-        "procurement_stage": "purchase_ready_standard_and_template_quote",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
-        "links": [
-          {
-            "url": "../../docs/pipe-fabrication-spec-20260502.md",
-            "label": "Formed coolant pipe fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-          "caption": "Cooling hose and pipe package - current car cropped radiator/heater hose route context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_radiator_hose_set"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
@@ -78979,44 +78034,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_radiator_cap",
-        "workstream": "mechanical_baseline",
-        "item": "Radiator cap",
-        "status": "planned",
-        "procurement_stage": "runner_spec_controlled",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir runner / local radiator shop / Toyota parts counter",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
-          "caption": "Radiator cap - current car cropped radiator neck and overflow context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_radiator_cap"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_android_unit",
         "workstream": "optional_upgrades",
         "item": "Android unit",
@@ -79052,6 +78069,108 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_radiator_hose_set",
+        "workstream": "radiator",
+        "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
+        "status": "purchase_ready",
+        "procurement_stage": "purchase_ready_standard_and_template_quote",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
+        "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+        "links": [
+          {
+            "url": "../../docs/pipe-fabrication-spec-20260502.md",
+            "label": "Formed coolant pipe fabrication spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+          "caption": "Cooling hose and pipe package - current car cropped radiator/heater hose route context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_radiator_hose_set"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_radiator_cap",
+        "workstream": "radiator",
+        "item": "Radiator cap",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / local radiator shop / Toyota parts counter",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "product_link": "",
+        "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+          "caption": "Radiator cap - current car cropped radiator neck and overflow context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_radiator_cap"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
         }
       },
       {
@@ -79114,8 +78233,13 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "workstream": "ac_hvac_retrofit",
+        "open_count": 14,
+        "image": null
+      },
+      {
         "workstream": "mechanical_baseline",
-        "open_count": 15,
+        "open_count": 8,
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
@@ -79130,11 +78254,6 @@ window.J40_DASHBOARD_DATA = {
             "engine_bay"
           ]
         }
-      },
-      {
-        "workstream": "interior_weatherproofing",
-        "open_count": 10,
-        "image": null
       },
       {
         "workstream": "body_chassis",
@@ -79172,7 +78291,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "electrical_reset",
-        "open_count": 5,
+        "open_count": 4,
         "image": {
           "path": "../../data/raw/imports/J40.jpg",
           "caption": "J40 Electrical Wiring Diagram \u00b7 Electrical Reference \u00b7 2026-05-18",
@@ -79189,6 +78308,11 @@ window.J40_DASHBOARD_DATA = {
             "data/raw/imports/j40"
           ]
         }
+      },
+      {
+        "workstream": "interior_weatherproofing",
+        "open_count": 4,
+        "image": null
       },
       {
         "workstream": "chassis_fixing",
@@ -79210,6 +78334,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "fabrication_handoff",
+        "open_count": 2,
+        "image": null
+      },
+      {
+        "workstream": "radiator",
         "open_count": 2,
         "image": null
       },
@@ -85923,12 +85052,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 23
       },
       {
-        "workstream": "chassis_fixing",
+        "workstream": "window_refurbishment",
         "count": 13
       },
       {
-        "workstream": "window_refurbishment",
-        "count": 13
+        "workstream": "chassis_fixing",
+        "count": 11
       },
       {
         "workstream": "brake_system",
@@ -85949,6 +85078,10 @@ window.J40_DASHBOARD_DATA = {
       {
         "workstream": "paint_refinish",
         "count": 4
+      },
+      {
+        "workstream": "radiator",
+        "count": 3
       },
       {
         "workstream": "electrical_reset",
@@ -85976,10 +85109,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "interior_weatherproofing",
-        "count": 1
-      },
-      {
-        "workstream": "radiator",
         "count": 1
       },
       {
@@ -92220,468 +91349,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "component_job:front_radiator_bracket_repair_20260508",
-        "title": "front_radiator_bracket_repair_20260508",
-        "workstream": "chassis_fixing",
-        "task_type": "template",
-        "priority": "P1",
-        "timing": "now",
-        "status": "pre_coating_hold",
-        "location": "workshop",
-        "action": "Replace the wire-held/one-sided radiator support condition with a two-side controlled retention setup; trial-fit radiator isolators/rubbers and fan clearance, then fit the released bolt-through saddle/post bracket before primer/Raptor",
-        "data_needed": "Radiator bracket was explicitly named in the Akbar WhatsApp hold; May 12 21:29-21:32 measurement photos add the removed-radiator side/lower bracket views plus in-vehicle upright/opening/fan-clearance measurements. Existing-side flat pattern/bend measurements are imported; remaining release hold is right-side hole transfer, chassis saddle width/through-bolt route, isolator fit, and labelled dry-fit/template photos before coating the front support area.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_radiator_bracket_repair_20260508",
-        "notes": "",
-        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142752|20260422_004423_gp_B1N5ThVw|20260430_215957_gp_2iBbUagw|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|docs_chassis_bracket_audit_20260508|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004423_gp_B1N5ThVw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "10:00:00",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:32:10",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073210_gp_zP427O2A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:03",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073303_gp_hNyAiN1g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073314_gp_GyAXZWBg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:17",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_205417_gp_CzJNQsiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:34",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_205434_gp_QnE3tLvQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_212929_gp_pnlr6x5w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_212947_gp_AdvWGolg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:08",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213008_gp_1U5vulZw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:27",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213027_gp_9Cy950Kw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213129_gp_IVnd8hWQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:44",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213144_gp_2rlycKHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:32:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213214_gp_xZKluAkg",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:front_radiator_two_side_retention_fabrication_20260508",
-        "title": "front_radiator_two_side_retention_fabrication_20260508",
-        "workstream": "chassis_fixing",
-        "task_type": "template",
-        "priority": "P1",
-        "timing": "now",
-        "status": "existing_measurements_imported_dry_fit_required",
-        "location": "workshop_to_fabricator_tbd",
-        "action": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required.",
-        "data_needed": "User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_radiator_two_side_retention_fabrication_20260508",
-        "notes": "",
-        "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004423_gp_B1N5ThVw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004429_gp_4emWbTrA.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:29",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004429_gp_4emWbTrA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004436_gp_yjCPMWTg.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004436_gp_yjCPMWTg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "22:00:04",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_220004_gp_C9oYiYmA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "10:00:00",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:32:10",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073210_gp_zP427O2A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:03",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073303_gp_hNyAiN1g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073314_gp_GyAXZWBg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073547_gp_SNtwIVyA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:35:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073547_gp_SNtwIVyA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:17",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_205417_gp_CzJNQsiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:34",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_205434_gp_QnE3tLvQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_212929_gp_pnlr6x5w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_212947_gp_AdvWGolg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:08",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213008_gp_1U5vulZw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:27",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_measurement_set",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213027_gp_9Cy950Kw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213129_gp_IVnd8hWQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:44",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213144_gp_2rlycKHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:32:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213214_gp_xZKluAkg",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
         "task_id": "body_mount_station_closure:MAIN-FL",
         "title": "front_left_main_body_mount",
         "workstream": "chassis_rubbers",
@@ -96067,6 +94734,468 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:front_radiator_bracket_repair_20260508",
+        "title": "front_radiator_bracket_repair_20260508",
+        "workstream": "radiator",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "pre_coating_hold",
+        "location": "workshop",
+        "action": "Replace the wire-held/one-sided radiator support condition with a two-side controlled retention setup; trial-fit radiator isolators/rubbers and fan clearance, then fit the released bolt-through saddle/post bracket before primer/Raptor",
+        "data_needed": "Radiator bracket was explicitly named in the Akbar WhatsApp hold; May 12 21:29-21:32 measurement photos add the removed-radiator side/lower bracket views plus in-vehicle upright/opening/fan-clearance measurements. Existing-side flat pattern/bend measurements are imported; remaining release hold is right-side hole transfer, chassis saddle width/through-bolt route, isolator fit, and labelled dry-fit/template photos before coating the front support area.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_radiator_bracket_repair_20260508",
+        "notes": "",
+        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142752|20260422_004423_gp_B1N5ThVw|20260430_215957_gp_2iBbUagw|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|docs_chassis_bracket_audit_20260508|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004423_gp_B1N5ThVw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "10:00:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:32:10",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_073210_gp_zP427O2A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:33:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_073303_gp_hNyAiN1g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:33:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_073314_gp_GyAXZWBg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "20:54:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_205417_gp_CzJNQsiA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "20:54:34",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_205434_gp_QnE3tLvQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:29:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_212929_gp_pnlr6x5w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:29:47",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_212947_gp_AdvWGolg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:30:08",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213008_gp_1U5vulZw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:30:27",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213027_gp_9Cy950Kw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:31:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213129_gp_IVnd8hWQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:31:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213144_gp_2rlycKHA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:32:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213214_gp_xZKluAkg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:front_radiator_two_side_retention_fabrication_20260508",
+        "title": "front_radiator_two_side_retention_fabrication_20260508",
+        "workstream": "radiator",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "existing_measurements_imported_dry_fit_required",
+        "location": "workshop_to_fabricator_tbd",
+        "action": "Release a serviceable right-side radiator retention bracket from the existing-side measured template: one 4 mm mild-steel formed-angle post with a 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top screw return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, clean near/far lower legs with no side ears over both sides of the chassis/front-support section, a through-bolt across both legs and chassis, and a top return carrying the radiator screw. Preserve fan/shroud/hose clearance and use rubber washer/bush isolation at the screw as required.",
+        "data_needed": "User update 2026-05-13 changes the fixing method: no welding by default. User update 2026-05-29 confirms the right-side strap/post is a prerequisite before final radiator installation. Existing-side measurements are imported; final release still needs right-side top screw transfer, 50 x 50 x 4 mm mild-steel angle or verified fallback, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and cardboard or flat-bar dry-fit.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_radiator_two_side_retention_fabrication_20260508",
+        "notes": "",
+        "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004423_gp_B1N5ThVw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260422_004429_gp_4emWbTrA.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:29",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004429_gp_4emWbTrA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260422_004436_gp_yjCPMWTg.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004436_gp_yjCPMWTg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "10:00:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:32:10",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_073210_gp_zP427O2A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:33:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_073303_gp_hNyAiN1g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:33:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_073314_gp_GyAXZWBg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_073547_gp_SNtwIVyA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "07:35:47",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_baseline",
+            "media_id": "20260512_073547_gp_SNtwIVyA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "20:54:17",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_205417_gp_CzJNQsiA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "20:54:34",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_205434_gp_QnE3tLvQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:29:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_212929_gp_pnlr6x5w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:29:47",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_212947_gp_AdvWGolg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:30:08",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213008_gp_1U5vulZw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
+            "caption": "Front Support Radiator Measurement Set \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:30:27",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_measurement_set",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213027_gp_9Cy950Kw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:31:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213129_gp_IVnd8hWQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:31:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213144_gp_2rlycKHA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "21:32:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_213214_gp_xZKluAkg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "replacement_pipe_release_action:RPA-009",
         "title": "RPA-009",
         "workstream": "replacement_pipes",
@@ -98241,16 +97370,16 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "tool",
         "previously": 62,
-        "in_process": 19,
-        "still_required": 2,
+        "in_process": 20,
+        "still_required": 1,
         "total": 83
       },
       {
         "supply_type": "substance",
         "previously": 12,
-        "in_process": 0,
-        "still_required": 8,
-        "total": 20
+        "in_process": 3,
+        "still_required": 7,
+        "total": 22
       },
       {
         "supply_type": "part",
@@ -105358,9 +104487,9 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_clutch_master_slave_cylinders_20260514",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+          "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
           "vendor": "PakWheels AUTOSTORE",
-          "amount": "3700",
+          "amount": "7494",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "in_process",
@@ -105368,9 +104497,9 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_partial_pending_delivery",
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
           "product_link": "",
-          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -105399,7 +104528,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+            "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -105983,6 +105112,136 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "source": "expenses",
+          "source_ref": "part_hvac_alibaba_underdash_evaporator_sample_20260529",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents",
+          "vendor": "Alibaba Trade Assurance",
+          "amount": "45",
+          "currency": "USD",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "in_process",
+          "status_detail": "needs_confirmation",
+          "procurement_stage": "needs_confirmation",
+          "payment_status": "needs_confirmation",
+          "delivery_status": "pending_confirmation",
+          "evidence_ref": "gmail_msg_19e76240ad0d5bc6|alibaba_order_302575831501027345",
+          "product_link": "",
+          "notes": "Gmail import 2026-05-30: Alibaba Trade Assurance progress email for order 302575831501027345, order date 2026-05-29 16:48:47 PST, Air Conditioning Evaporator Assembly 12V Universal Under-Dash Heating Cooling Unit with 4 Vents x1, total USD 45.00 with free shipping. No matching payment alert was found in this ingest, so confirm whether this is paid/active, cancelled, or only a sample/order draft before counting it as spend or relying on it for A/C packaging.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+            "caption": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents \u00b7 rust/metal treatment reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "wax_grease_remover",
+            "matched_tokens": [
+              "rust"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+          "vendor": "AliExpress",
+          "amount": "36942",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|aliexpress_order_3073062248277489",
+          "product_link": "",
+          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test. | Gmail import 2026-05-30: AliExpress order 3073062248277489 confirmed Universal 4 Hole Auto AC Evaporator / Cool and Heat 12V x1, order total PKR 36,942; matching Standard Chartered alert confirms card payment. Treat this as an ordered candidate for the hidden A/C workstream, not an automatic fitment approval: on arrival measure case/core/outlets/drain/fittings, leak-test, bench airflow-test, and confirm any integrated blower can be removed, bypassed, or ignored for the owner-selected external-blower direction before final mounting or hose crimping.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_hose",
+            "matched_tokens": [
+              "air",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_engine_oil_filter_service",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+          "vendor": "Autohub",
+          "amount": "12499",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+              "label": "automize.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+            "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "filter_service",
+            "matched_tokens": [
+              "filter"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "source": "workbook_tools",
           "source_ref": "workbook_tools#row_52",
           "supply_type": "tool",
@@ -106131,6 +105390,70 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
             "image_url": "http://www.toolsmart.pk/cdn/shop/files/26d1d02f-3b32-4da1-bcf1-2eb315371f72.webp?v=1765177291",
             "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_brake_line_deburrer_reamer_20260514",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
+          "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-30_deburrer_already_ordered",
+          "product_link": "",
+          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required. | User update 2026-05-30: deburring tool is already ordered. Do not duplicate locally now; receipt-check the ordered item or the delivered PARD kit for a usable compact internal/external deburrer/reamer that works on 4.75 mm / 3/16 in brake tube. If the received tool is missing or too large, reopen a dedicated small-tube deburrer purchase.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
+            "caption": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube \u00b7 hard-line shaping tool kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_tool_reference",
+            "matched_tokens": [
+              "line",
+              "bender",
+              "flaring",
+              "tool"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -107375,6 +106698,368 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "ac_compressor",
             "matched_tokens": [
               "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
+          "vendor": "Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
+          "product_link": "",
+          "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_hose",
+            "matched_tokens": [
+              "air",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_barrier_hose_fittings_20260514",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "A/C barrier hose and refrigerant-compatible fittings",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+            "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "ac_compressor",
+            "matched_tokens": [
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "A/C firewall bulkhead fittings and sealing grommets",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
+            "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "rubber_grommets",
+            "matched_tokens": [
+              "grommet"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_control_panel_20260514",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Compact A/C control panel or integrated controls",
+          "vendor": "Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
+          "product_link": "",
+          "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+            "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "ac_compressor",
+            "matched_tokens": [
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_parallel_flow_condenser_20260514",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Parallel-flow A/C condenser sized to core support",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Parallel-flow A/C condenser sized to core support \u00b7 air hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_hose",
+            "matched_tokens": [
+              "air",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_receiver_drier_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Receiver-drier matched to R134a A/C layout",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/receiver_drier.jpg",
+            "caption": "Receiver-drier matched to R134a A/C layout \u00b7 receiver-drier reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "receiver_drier",
+            "matched_tokens": [
+              "receiver"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
+          "vendor": "local electrical / automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
+          "product_link": "",
+          "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
+            "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "relay",
+            "matched_tokens": [
+              "relay"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
+          "vendor": "Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "product_link": "",
+          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "wax_grease_remover",
+            "matched_tokens": [
+              "rust"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_trinary_switch_20260514",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Trinary pressure switch for A/C compressor and fan control",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
+            "caption": "Trinary pressure switch for A/C compressor and fan control \u00b7 automotive relay reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "relay",
+            "matched_tokens": [
+              "relay"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -108642,46 +108327,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request",
-          "vendor": "local electrical / automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_222",
-          "product_link": "",
-          "notes": "Required to integrate HVAC into the clean loom. Size fuses/wire/relays from the selected blower current, compressor clutch current, and condenser-fan load if fitted; include ignition feed, pressure-switch logic, and serviceable connectors.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -108764,47 +108409,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_215|RUB-025",
-          "product_link": "",
-          "notes": "Required to route air from the hidden unit to cabin outlets and windscreen demist if used. Use 2.5 inch / 63.5 mm ID only if the selected evaporator and vent outlets match; otherwise buy by measured outlet OD, bend clearance, clamp/retainer style, and final dash route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "2.5 inch duct hose, vent adapters, and defrost/demist hose kit \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_carpet",
           "supply_type": "part",
           "inventory_group": "parts",
@@ -108838,46 +108442,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "carpet_mats",
             "matched_tokens": [
               "carpet"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_control_panel_20260514",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Compact A/C control panel or integrated controls",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_214",
-          "product_link": "",
-          "notes": "Required unless the selected evaporator unit includes suitable integrated controls. Controls must cover blower speed, temperature/blend if heat is retained, and A/C compressor request without a bulky modern under-dash box.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "Compact A/C control panel or integrated controls \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -108965,46 +108529,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-          "product_link": "",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_sound_dampening_sheets",
           "supply_type": "part",
           "inventory_group": "parts",
@@ -109038,86 +108562,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "sound_deadening",
             "matched_tokens": [
               "sound"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_barrier_hose_fittings_20260514",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "A/C barrier hose and refrigerant-compatible fittings",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "A/C firewall bulkhead fittings and sealing grommets",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_221|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for a clean hidden evaporator install. Use proper refrigerant bulkhead fittings or protected pass-throughs, not raw hose through sheet metal. Final hole size and location wait for the evaporator and engine-bay hose route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/rubber_grommets.jpg",
-            "caption": "A/C firewall bulkhead fittings and sealing grommets \u00b7 rubber grommet reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "rubber_grommets",
-            "matched_tokens": [
-              "grommet"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -109161,72 +108605,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_hose_set",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
-          "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "purchase_ready",
-          "procurement_stage": "purchase_ready_standard_and_template_quote",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
-          "links": [
-            {
-              "url": "../../docs/pipe-fabrication-spec-20260502.md",
-              "label": "Formed coolant pipe fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "Cooling hose and pipe package - current car cropped radiator/heater hose route context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_hose_set"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
           }
         },
         {
@@ -109372,127 +108750,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_parallel_flow_condenser_20260514",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Parallel-flow A/C condenser sized to core support",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_217|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for the new A/C layout. Size to the J40 core support/grille opening with radiator clearance, hood latch/front panel clearance, hose fitting orientation, and airflow path confirmed. Decide condenser fan only after condenser size and idle airflow are checked.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Parallel-flow A/C condenser sized to core support \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_cap",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Radiator cap",
-          "vendor": "Amir runner / local radiator shop / Toyota parts counter",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "runner_spec_controlled",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
-            "caption": "Radiator cap - current car cropped radiator neck and overflow context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_cap"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_receiver_drier_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Receiver-drier matched to R134a A/C layout",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_218|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required new whenever the A/C system is opened/rebuilt. Match fittings, bracket location, flow direction, refrigerant compatibility, and service-port/trinary-switch arrangement.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/receiver_drier.jpg",
-            "caption": "Receiver-drier matched to R134a A/C layout \u00b7 receiver-drier reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "receiver_drier",
-            "matched_tokens": [
-              "receiver"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -109534,46 +108791,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_trinary_switch_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Trinary pressure switch for A/C compressor and fan control",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_219|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required for pressure protection and condenser-fan request if an electric condenser fan is used. Match switch thread/port to the drier or high-side line and wire it through the final relay/fuse plan.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Trinary pressure switch for A/C compressor and fan control \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_android_unit",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -109607,6 +108824,233 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "android_head_unit",
             "matched_tokens": [
               "android"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_radiator_hose_set",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
+          "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "radiator",
+          "status_group": "still_required",
+          "status_detail": "purchase_ready",
+          "procurement_stage": "purchase_ready_standard_and_template_quote",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|data/manual/longman_pipe_hose_order_specs.csv|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
+          "notes": "List under Amir/Longman local runner. Longman quote/order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+          "links": [
+            {
+              "url": "../../docs/pipe-fabrication-spec-20260502.md",
+              "label": "Formed coolant pipe fabrication spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "caption": "Cooling hose and pipe package - current car cropped radiator/heater hose route context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_radiator_hose_set"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_radiator_cap",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Radiator cap",
+          "vendor": "Amir runner / local radiator shop / Toyota parts counter",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "radiator",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|user_update_2026-05-29_list_under_amir_mechanical_easy|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "product_link": "",
+          "notes": "List under Amir/local runner. Buy Toyota radiator cap 16401-41021 or exact pressure-equivalent cap only after the fitted radiator neck/sample confirms large/small neck and pressure. 0.9 bar is a candidate only if the radiator/manual basis confirms it. Replace with coolant hose service.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+            "caption": "Radiator cap - current car cropped radiator neck and overflow context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_radiator_cap"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Evaporator drain hose and mounting/sealing kit",
+          "vendor": "Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
+          "product_link": "",
+          "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+            "caption": "Evaporator drain hose and mounting/sealing kit \u00b7 rubber bumpers and isolators reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_rubber_bumpers_isolators_reference",
+            "matched_tokens": [
+              "rubber",
+              "isolators"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
+          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
+          "product_link": "",
+          "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+            "caption": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup \u00b7 AC compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "ac_compressor",
+            "matched_tokens": [
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_hvac_return_air_grille_filter_20260514",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Hidden return-air grille and washable filter for evaporator intake",
+          "vendor": "Coolsun / local automotive A/C supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
+          "product_link": "",
+          "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+            "caption": "Hidden return-air grille and washable filter for evaporator intake \u00b7 rust/metal treatment reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "wax_grease_remover",
+            "matched_tokens": [
+              "rust"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -109716,133 +109160,11 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514",
+          "source_ref": "part_mech_oil_filter_guard_gdo135_20260529",
           "supply_type": "substance",
           "inventory_group": "substances",
-          "item": "Evaporator drain hose and mounting/sealing kit",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_216|RUB-024",
-          "product_link": "",
-          "notes": "Required before the evaporator is hidden. Include drain hose matched to outlet OD, firewall/floor grommet, clamp, bracketry/isolators, and sealing so condensate has continuous downward fall outside the cabin.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
-            "caption": "Evaporator drain hose and mounting/sealing kit \u00b7 rubber bumpers and isolators reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "body_rubber_bumpers_isolators_reference",
-            "matched_tokens": [
-              "rubber",
-              "isolators"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
-          "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "product_link": "",
-          "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_return_air_grille_filter_20260514",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "Hidden return-air grille and washable filter for evaporator intake",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan",
-          "product_link": "",
-          "notes": "Required so the hidden blower can pull cabin air instead of being boxed into a dead space. Size the grille/filter to the evaporator intake area; keep it accessible for cleaning and do not place it where it will ingest water from the cowl or floor.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Hidden return-air grille and washable filter for evaporator intake \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_engine_oil_filter_service",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "Engine oil + oil filter service pack",
-          "vendor": "Autohub online / Automize online",
+          "item": "Engine oil filter - Guard GDO-135 candidate for 2H",
+          "vendor": "Automize online",
           "amount": "",
           "currency": "PKR",
           "workstream": "mechanical_baseline",
@@ -109851,14 +109173,10 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
-          "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
-          "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+          "evidence_ref": "user_update_2026-05-29_liqui_moly_guard_added|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_refresh_2026-05-30_no_filter_order_found",
+          "product_link": "https://automize.pk/products/guard-oil-filter-gdo-135",
+          "notes": "Oil filter remains open after the 2026-05-30 Gmail refresh: Autohub oil order was found, but no Automize/Guard GDO-135 order evidence was found. Buy/confirm only if Guard GDO-135 cross-reference 15600-41010 / 15601-41010 is acceptable for the fitted 2H filter head; physically fit-check before service.",
           "links": [
-            {
-              "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
-              "label": "autohub.pk"
-            },
             {
               "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
               "label": "automize.pk"
@@ -109870,7 +109188,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-            "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
+            "caption": "Engine oil filter - Guard GDO-135 candidate for 2H \u00b7 filter/service reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -109880,46 +109198,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "filter_service",
             "matched_tokens": [
               "filter"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_r134a_oil_oring_charge_kit_20260514",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup",
-          "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_224|RUB-024|user_update_2026-05-29_list_under_amir_mechanical_easy",
-          "product_link": "",
-          "notes": "List under Amir/local A/C supplier. Required consumables/service for the rebuilt A/C circuit. Use refrigerant-compatible HNBR O-rings, correct oil for compressor/refrigerant, deep vacuum, leak test, and measured R134a charge after the complete layout is assembled.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "HNBR O-rings, refrigerant oil, vacuum/leak test, and R134a charge setup \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -109963,70 +109241,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_brake_line_deburrer_reamer_20260514",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-          "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
-          "product_link": "",
-          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-            "caption": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube \u00b7 hard-line shaping tool kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_tool_reference",
-            "matched_tokens": [
-              "line",
-              "bender",
-              "flaring",
-              "tool"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -110426,9 +109640,9 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_clutch_master_slave_cylinders_20260514",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "item": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect",
         "vendor": "PakWheels AUTOSTORE",
-        "amount": "3700",
+        "amount": "7494",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "in_process",
@@ -110436,9 +109650,9 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_partial_pending_delivery",
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298|gmail_msg_19e738813f17b21a|gmail_order_1076462",
         "product_link": "",
-        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation. | Gmail import 2026-05-30 added PakWheels order #1076462 from 2026-05-29 for a second Trupart Clutch Master Cylinder FM-1246 x1 at PKR 3520 plus PKR 199 shipping and PKR 75 tax, total PKR 3794. Together with the earlier #1075298 allocated PKR 3700, track two clutch-master candidates totaling PKR 7494. Treat as duplicate/candidate stock until bore, port thread, pushrod, reservoir, and old-sample fit are checked; slave cylinder and hoses remain separate.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -110467,7 +109681,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "caption": "Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -110967,6 +110181,136 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_hvac_alibaba_underdash_evaporator_sample_20260529",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents",
+        "vendor": "Alibaba Trade Assurance",
+        "amount": "45",
+        "currency": "USD",
+        "workstream": "ac_hvac_retrofit",
+        "status_group": "in_process",
+        "status_detail": "needs_confirmation",
+        "procurement_stage": "needs_confirmation",
+        "payment_status": "needs_confirmation",
+        "delivery_status": "pending_confirmation",
+        "evidence_ref": "gmail_msg_19e76240ad0d5bc6|alibaba_order_302575831501027345",
+        "product_link": "",
+        "notes": "Gmail import 2026-05-30: Alibaba Trade Assurance progress email for order 302575831501027345, order date 2026-05-29 16:48:47 PST, Air Conditioning Evaporator Assembly 12V Universal Under-Dash Heating Cooling Unit with 4 Vents x1, total USD 45.00 with free shipping. No matching payment alert was found in this ingest, so confirm whether this is paid/active, cancelled, or only a sample/order draft before counting it as spend or relying on it for A/C packaging.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Alibaba under-dash A/C evaporator assembly sample - 12V heat/cool 4 vents \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_mech_engine_oil_filter_service",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately",
+        "vendor": "Autohub",
+        "amount": "12499",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_msg_19e7436f18d47b7c|gmail_order_1762694|autohub_order_62694|bank_alert_19e7438814e99398",
+        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head. | Gmail import 2026-05-30: Autohub order 1762694 / order number 62694 confirmed 2026-05-29 for Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 5L x1 at PKR 11999 plus PKR 500 shipping, total PKR 12499; matching Standard Chartered alert confirms payment. This covers engine oil only; Guard GDO-135 oil filter remains a separate open item. Do not count this as gearbox/transmission oil.",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
+            "label": "automize.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
+          "caption": "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately \u00b7 filter/service reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "filter_service",
+          "matched_tokens": [
+            "filter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
+        "vendor": "AliExpress",
+        "amount": "36942",
+        "currency": "PKR",
+        "workstream": "ac_hvac_retrofit",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|aliexpress_order_3073062248277489",
+        "product_link": "",
+        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test. | Gmail import 2026-05-30: AliExpress order 3073062248277489 confirmed Universal 4 Hole Auto AC Evaporator / Cool and Heat 12V x1, order total PKR 36,942; matching Standard Chartered alert confirms card payment. Treat this as an ordered candidate for the hidden A/C workstream, not an automatic fitment approval: on arrival measure case/core/outlets/drain/fittings, leak-test, bench airflow-test, and confirm any integrated blower can be removed, bypassed, or ignored for the owner-selected external-blower direction before final mounting or hose crimping.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "tool_sledge_hammer_3lb_20260527",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -111170,6 +110514,70 @@ window.J40_DASHBOARD_DATA = {
             "line"
           ],
           "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_brake_line_deburrer_reamer_20260514",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
+        "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-30_deburrer_already_ordered",
+        "product_link": "",
+        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required. | User update 2026-05-30: deburring tool is already ordered. Do not duplicate locally now; receipt-check the ordered item or the delivered PARD kit for a usable compact internal/external deburrer/reamer that works on 4.75 mm / 3/16 in brake tube. If the received tool is missing or too large, reopen a dedicated small-tube deburrer purchase.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
+          "caption": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube \u00b7 hard-line shaping tool kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_tool_reference",
+          "matched_tokens": [
+            "line",
+            "bender",
+            "flaring",
+            "tool"
+          ],
+          "match_basis": "local_reference_image",
           "match_score": 700
         }
       },
@@ -118845,7 +118253,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -119085,7 +118493,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Longman Mills / local radiator hose or pipe fabricator",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "radiator",
         "status_group": "still_required",
         "status_detail": "purchase_ready",
         "procurement_stage": "purchase_ready_standard_and_template_quote",
@@ -119151,7 +118559,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -119191,7 +118599,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "local electrical / automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "electrical_reset",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -119231,7 +118639,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "interior_weatherproofing",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -119271,7 +118679,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -119297,46 +118705,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "relay",
           "matched_tokens": [
             "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_hvac_barrier_hose_fittings_20260514",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "A/C barrier hose and refrigerant-compatible fittings",
-        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "mechanical_baseline",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
-        "product_link": "",
-        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "ac_compressor",
-          "matched_tokens": [
-            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -120481,7 +119849,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -120522,7 +119890,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / local radiator shop / Toyota parts counter",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "radiator",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "runner_spec_controlled",
@@ -120815,7 +120183,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "interior_weatherproofing",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -120877,6 +120245,46 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "sound_deadening",
           "matched_tokens": [
             "sound"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_hvac_barrier_hose_fittings_20260514",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "A/C barrier hose and refrigerant-compatible fittings",
+        "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "ac_hvac_retrofit",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_220|RUB-024|HLS-22|user_update_2026-05-29_list_under_amir_mechanical_easy",
+        "product_link": "",
+        "notes": "List under Amir/local A/C supplier. Required, but final crimped hose lengths and fitting angles must wait until compressor, condenser, receiver-drier, firewall bulkhead, and hidden evaporator positions are locked. Use R134a-compatible barrier hose and fittings; pressure/leak test after fabrication.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "A/C barrier hose and refrigerant-compatible fittings \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -120971,7 +120379,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "interior_weatherproofing",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -121488,11 +120896,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_mech_engine_oil_filter_service",
+        "source_ref": "part_mech_oil_filter_guard_gdo135_20260529",
         "supply_type": "substance",
         "inventory_group": "substances",
-        "item": "Engine oil + oil filter service pack",
-        "vendor": "Autohub online / Automize online",
+        "item": "Engine oil filter - Guard GDO-135 candidate for 2H",
+        "vendor": "Automize online",
         "amount": "",
         "currency": "PKR",
         "workstream": "mechanical_baseline",
@@ -121501,14 +120909,10 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-29_online_click_buy_engine_oil_filter|user_update_2026-05-29_liqui_moly_guard_added|https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40|https://automize.pk/products/guard-oil-filter-gdo-135",
-        "product_link": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40 | https://automize.pk/products/guard-oil-filter-gdo-135",
-        "notes": "Online click-to-buy selected by user 2026-05-29: Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 (5 Liter) from Autohub plus Guard Oil Filter GDO-135 from Automize. Record this as engine oil and engine oil filter, not transmission/gearbox oil. Before payment confirm final oil quantity covers the 2H service fill/top-up and Guard GDO-135 cross-reference 15600-41010/15601-41010 is acceptable for the fitted filter head.",
+        "evidence_ref": "user_update_2026-05-29_liqui_moly_guard_added|https://automize.pk/products/guard-oil-filter-gdo-135|gmail_refresh_2026-05-30_no_filter_order_found",
+        "product_link": "https://automize.pk/products/guard-oil-filter-gdo-135",
+        "notes": "Oil filter remains open after the 2026-05-30 Gmail refresh: Autohub oil order was found, but no Automize/Guard GDO-135 order evidence was found. Buy/confirm only if Guard GDO-135 cross-reference 15600-41010 / 15601-41010 is acceptable for the fitted 2H filter head; physically fit-check before service.",
         "links": [
-          {
-            "url": "https://autohub.pk/products/liqui-moly-touring-high-tech-shpd-motor-oil-15w-40",
-            "label": "autohub.pk"
-          },
           {
             "url": "https://automize.pk/products/guard-oil-filter-gdo-135",
             "label": "automize.pk"
@@ -121520,7 +120924,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/filter_service.jpg",
-          "caption": "Engine oil + oil filter service pack \u00b7 filter/service reference image",
+          "caption": "Engine oil filter - Guard GDO-135 candidate for 2H \u00b7 filter/service reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -121544,7 +120948,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "interior_weatherproofing",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -121626,7 +121030,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Amir runner / Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -121659,47 +121063,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514",
-        "supply_type": "substance",
-        "inventory_group": "substances",
-        "item": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment",
-        "vendor": "Amir runner / Snow Cool / Arsalan Autos / BEU-202-404-848 supplier / Coolsun A/C shop",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "interior_weatherproofing",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|user_update_2026-05-30_cabin_ac_missing|workbook_parts_row_212|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "product_link": "",
-        "notes": "Required because the aftermarket A/C has been removed and the selected direction is a hidden cabin evaporator core/case with routed outlets and owner-selected external blowers. User clarified on 2026-05-30 that this is the missing cabin-side A/C package, separate from the engine-bay condenser/drier/hose work, and that he wants to use his own blowers rather than buy a bulky complete blower box. Search Snow Cool/Arsalan/Coolsun for a compact evaporator core, cooling coil, or evaporator case/plenum with TXV, drain pan/nipple, refrigerant fittings, outlet spigots or flat plenum face, and all-side dimensions. BEU-202/low-profile BEU-404/short BEU-848 remain useful only if the case can be reused with the integrated blower removed or bypassed. Reject bulky Vitz/full OEM dash boxes and any bare coil unless a shop/fabricator can build a sealed plenum, drain pan, service access, and adapter for the selected blowers. Buy after checking coil face area, case/plenum envelope, fitting side, outlet geometry, drain route, service access, external blower airflow/current, and bench airflow plus leak test.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Hidden compact evaporator core/case and outlet plenum for custom blower fitment \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_hvac_return_air_grille_filter_20260514",
         "supply_type": "substance",
         "inventory_group": "substances",
@@ -121707,7 +121070,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "interior_weatherproofing",
+        "workstream": "ac_hvac_retrofit",
         "status_group": "still_required",
         "status_detail": "planned",
         "procurement_stage": "purchase_ready",
@@ -121776,70 +121139,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_brake_line_deburrer_reamer_20260514",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-        "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
-        "product_link": "",
-        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-          "caption": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube \u00b7 hard-line shaping tool kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_tool_reference",
-          "matched_tokens": [
-            "line",
-            "bender",
-            "flaring",
-            "tool"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -122249,8 +121548,8 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 215,
-      "total_images": 193,
+      "total_media": 218,
+      "total_images": 196,
       "total_videos": 22,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
@@ -125783,6 +125082,54 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
             "notes": "Author: 98548125290539. Imported timestamp: 2026-05-29 15:20:41.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-30 08:31:00.000Z",
+            "captured_date": "2026-05-30",
+            "captured_time": "08:31:00.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid.jpeg",
+            "notes": "Author: 195330918379676. Imported timestamp: 2026-05-30 08:31:00.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-30 08:31:01.000Z",
+            "captured_date": "2026-05-30",
+            "captured_time": "08:31:01.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid.jpeg",
+            "notes": "Author: 195330918379676. Imported timestamp: 2026-05-30 08:31:01.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-30 08:31:01.000Z",
+            "captured_date": "2026-05-30",
+            "captured_time": "08:31:01.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid.jpeg",
+            "notes": "Author: 195330918379676. Imported timestamp: 2026-05-30 08:31:01.000Z"
           }
         ]
       }
@@ -126252,6 +125599,22 @@ window.J40_DASHBOARD_DATA = {
       "status": "scout_only",
       "next_action": "Confirm exact stall/vendor before purchasing",
       "notes": "Akbar said brake pads may be available from Kanchi Chawk just outside Defence."
+    },
+    {
+      "contact_id": "autostore_pk_online",
+      "name": "Autostore.pk",
+      "category": "parts_supplier",
+      "role": "online Pakistan Toyota and Land Cruiser brake pad quote lead",
+      "location": "Pakistan online",
+      "phone": "[redacted]",
+      "channel_or_url": "https://www.autostore.pk/shop/car-parts/toyota-land-cruiser-front-disc-brake-pads/|https://www.autostore.pk/shop/car-parts/brake-discs-pads/toyota-land-cruiser-old-genuine-disk-pad/",
+      "source": "web_research",
+      "source_date": "2026-05-30",
+      "evidence_ref": "web_autostore_front_disc_pad_local_quote|web_autostore_old_genuine_disk_pad",
+      "confidence": "medium",
+      "status": "quote_target",
+      "next_action": "Ask whether they can source exact 1978 J40 fixed-Sumitomo pad refs 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0 and accept removed-pad sample comparison",
+      "notes": "Local online pad quotes found at PKR 6600 and PKR 17200, but listed refs/fitments are later Land Cruiser/Hilux families and 04465-60020; quote lead only, not blind-buy approval."
     }
   ],
   "reference_project_ideas": [
@@ -126471,10 +125834,10 @@ window.J40_DASHBOARD_DATA = {
         "chat_name": "TLC 40 Series Owners",
         "chat_id": "971527520120-1517397900@g.us",
         "chat_type": "group",
-        "relevance_score": "17",
+        "relevance_score": "19",
         "messages_fetched": "true",
-        "messages_count": "261",
-        "media_count": "76",
+        "messages_count": "266",
+        "media_count": "79",
         "messages_fetch_error": ""
       },
       {
@@ -126599,7 +125962,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 238
+        "count": 241
       },
       {
         "media_type": "sticker",
@@ -126617,10 +125980,37 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 129
+        "count": 132
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_accd0096e80c4715380b2bfab5c4dc9e_195330918379676_lid::false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-30T08:31:01.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACCD0096E80C4715380B2BFAB5C4DC9E_195330918379676_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac73931f5fe7f225f21d9afe6426279f_195330918379676_lid::false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-30T08:31:01.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC73931F5FE7F225F21D9AFE6426279F_195330918379676_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac2cf850576c691b0ad764e96f69515f_195330918379676_lid::false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-30T08:31:00.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2CF850576C691B0AD764E96F69515F_195330918379676_lid.jpeg"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a566a69d31afe70cac73ea5b33f8e53d_98548125290539_lid::false_971527520120_1517397900_g_us_A566A69D31AFE70CAC73EA5B33F8E53D_98548125290539_lid.jpeg",
         "source_profile": "whatsapp-number-2",
@@ -126809,33 +126199,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "photo",
         "file_name": "false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a859612fd0524444787_113159520133224_lid::false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T05:09:54.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac52da71d533b9f0e8b017804ab580b7_236519688282206_lid::false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T05:08:54.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a44568fdcfbaac803e5_79744859140123_lid::false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-27T04:19:07.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg"
       }
     ]
   },
