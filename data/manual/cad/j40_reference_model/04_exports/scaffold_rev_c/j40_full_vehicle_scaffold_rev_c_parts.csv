@@ -361,6 +361,16 @@ running_gear,rear_right_leaf_spring_layer_2,box,2500,430.0,323,820,78,14,L2 visi
 running_gear,rear_right_leaf_spring_layer_3,box,2500,430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,rear_right_u_bolt_1,cylinder_z,2955,430.0,405,24,210,,L2 service datum,axle U-bolt reference
 running_gear,rear_right_u_bolt_2,cylinder_z,3085,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+brake_system,front_left_vented_disc_rotor,cylinder_y,735,-738.0,395,405,42,,project-photo evidence,front disc rotor visible in 2026-05-29 front brake photo set; exact diameter/thickness still needs measurement
+brake_system,front_left_sumitomo_disc_caliper_body,box,827,-760.0,477,140,94,225,project-photo evidence,large Sumitomo-style front caliper body from 20260529_183947_gp_lSYuESVg and related photos
+brake_system,front_left_disc_caliper_bridge,box,781,-787.0,583,92,68,52,project-photo evidence,caliper upper bridge/ear envelope from May 29 brake photos
+brake_system,front_left_caliper_bleeder_screw,cylinder_y,857,-824.0,617,18,42,,project-photo evidence,visible bleeder/pipe fitting on front caliper; service datum only
+brake_system,front_left_flex_hose_to_caliper,cylinder_y,820,-652.0,580,22,245,,project-photo evidence,front flexible brake hose route to caliper from May 29 brake photos
+brake_system,front_right_vented_disc_rotor,cylinder_y,735,738.0,395,405,42,,project-photo evidence,front disc rotor visible in 2026-05-29 front brake photo set; exact diameter/thickness still needs measurement
+brake_system,front_right_sumitomo_disc_caliper_body,box,827,760.0,477,140,94,225,project-photo evidence,large Sumitomo-style front caliper body from 20260529_183947_gp_lSYuESVg and related photos
+brake_system,front_right_disc_caliper_bridge,box,781,787.0,583,92,68,52,project-photo evidence,caliper upper bridge/ear envelope from May 29 brake photos
+brake_system,front_right_caliper_bleeder_screw,cylinder_y,857,824.0,617,18,42,,project-photo evidence,visible bleeder/pipe fitting on front caliper; service datum only
+brake_system,front_right_flex_hose_to_caliper,cylinder_y,820,652.0,580,22,245,,project-photo evidence,front flexible brake hose route to caliper from May 29 brake photos
 running_gear,front_left_outer_rim_ring,cylinder_y,735,-845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
 running_gear,front_left_inner_rim_shadow,cylinder_y,735,-855,395,315,22,,L2 visible-detail primitive,dark rim recess
 running_gear,front_left_valve_stem,cylinder_y,865,-870,540,22,50,,L2 visible-detail primitive,tire valve stem
@@ -370,6 +380,7 @@ running_gear,front_left_lug_nut_3,cylinder_y,689.0,-877,474.6743371481684,32,36,
 running_gear,front_left_lug_nut_4,cylinder_y,643.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,front_left_lug_nut_5,cylinder_y,689.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,front_left_lug_nut_6,cylinder_y,781.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_left_mud_terrain_sidewall_lettering_panel,box,925,-899,103,165,18,34,project-photo evidence,raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement
 running_gear,front_right_outer_rim_ring,cylinder_y,735,845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
 running_gear,front_right_inner_rim_shadow,cylinder_y,735,855,395,315,22,,L2 visible-detail primitive,dark rim recess
 running_gear,front_right_valve_stem,cylinder_y,865,870,540,22,50,,L2 visible-detail primitive,tire valve stem
@@ -379,6 +390,7 @@ running_gear,front_right_lug_nut_3,cylinder_y,689.0,877,474.6743371481684,32,36,
 running_gear,front_right_lug_nut_4,cylinder_y,643.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,front_right_lug_nut_5,cylinder_y,689.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,front_right_lug_nut_6,cylinder_y,781.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,front_right_mud_terrain_sidewall_lettering_panel,box,925,899,103,165,18,34,project-photo evidence,raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement
 running_gear,rear_left_outer_rim_ring,cylinder_y,3020,-845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
 running_gear,rear_left_inner_rim_shadow,cylinder_y,3020,-855,395,315,22,,L2 visible-detail primitive,dark rim recess
 running_gear,rear_left_valve_stem,cylinder_y,3150,-870,540,22,50,,L2 visible-detail primitive,tire valve stem
@@ -388,6 +400,7 @@ running_gear,rear_left_lug_nut_3,cylinder_y,2974.0,-877,474.6743371481684,32,36,
 running_gear,rear_left_lug_nut_4,cylinder_y,2928.0,-877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_left_lug_nut_5,cylinder_y,2974.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_left_lug_nut_6,cylinder_y,3066.0,-877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_left_mud_terrain_sidewall_lettering_panel,box,3210,-899,103,165,18,34,project-photo evidence,raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement
 running_gear,rear_right_outer_rim_ring,cylinder_y,3020,845,395,455,34,,L2 visible-detail primitive,outer wheel rim ring
 running_gear,rear_right_inner_rim_shadow,cylinder_y,3020,855,395,315,22,,L2 visible-detail primitive,dark rim recess
 running_gear,rear_right_valve_stem,cylinder_y,3150,870,540,22,50,,L2 visible-detail primitive,tire valve stem
@@ -397,6 +410,7 @@ running_gear,rear_right_lug_nut_3,cylinder_y,2974.0,877,474.6743371481684,32,36,
 running_gear,rear_right_lug_nut_4,cylinder_y,2928.0,877,395.0,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_right_lug_nut_5,cylinder_y,2974.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
 running_gear,rear_right_lug_nut_6,cylinder_y,3066.0,877,315.3256628518317,32,36,,L2 service datum,six-lug wheel nut datum
+running_gear,rear_right_mud_terrain_sidewall_lettering_panel,box,3210,899,103,165,18,34,project-photo evidence,raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement
 brake_system,front_hard_line_right_frame_run,cylinder_x,1180,338,575,18,1650,,L2 routing reference,front brake hard-line run along right rail
 brake_system,rear_hard_line_right_frame_run,cylinder_x,2320,338,575,18,1500,,L2 routing reference,rear brake hard-line run along right rail
 brake_system,rear_axle_brake_line,cylinder_y,3020,0,520,18,1280,,L2 routing reference,rear axle brake hard-line across axle
@@ -459,6 +473,37 @@ body,spare_wheel_carrier_crossbar,box,3515,0,1015,55,560,55,L2 bracket reference
 body,left_rear_tail_lamp,cylinder_x,3470,-675,930,98,38,,L2 visible-detail primitive,rear tail lamp
 body,right_rear_tail_lamp,cylinder_x,3470,675,930,98,38,,L2 visible-detail primitive,rear tail lamp
 body,rear_license_plate,box,3505,0,695,24,360,170,L2 visible-detail primitive,rear licence plate envelope
+body,rear_license_plate_bsn453_1_B_top,box,3522,-107.5,727.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_mid,box,3522,-107.5,695.0,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_bottom,box,3522,-107.5,662.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_ul,box,3522,-121.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_ll,box,3522,-121.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_ur,box,3522,-94.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_1_B_lr,box,3522,-94.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_2_S_top,box,3522,-64.5,727.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_2_S_mid,box,3522,-64.5,695.0,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_2_S_bottom,box,3522,-64.5,662.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_2_S_ul,box,3522,-78.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_2_S_lr,box,3522,-51.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_3_N_ul,box,3522,-35.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_3_N_ll,box,3522,-35.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_3_N_ur,box,3522,-8.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_3_N_lr,box,3522,-8.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_3_N_center,box,3522,-21.5,695.0,8,7.0,72.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_4_4_ul,box,3522,8.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_4_4_ur,box,3522,35.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_4_4_mid,box,3522,21.5,695.0,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_4_4_lr,box,3522,35.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_5_5_top,box,3522,64.5,727.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_5_5_ul,box,3522,51.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_5_5_mid,box,3522,64.5,695.0,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_5_5_lr,box,3522,78.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_5_5_bottom,box,3522,64.5,662.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_6_3_top,box,3522,107.5,727.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_6_3_ur,box,3522,121.0,713.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_6_3_mid,box,3522,107.5,695.0,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_6_3_lr,box,3522,121.0,677.0,8,7.0,36.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
+body,rear_license_plate_bsn453_6_3_bottom,box,3522,107.5,662.5,8,34.0,7.0,project-photo evidence,matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation
 front_detail,vertical_grille_slot_1,box,82,-300,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
 front_detail,vertical_grille_slot_2,box,82,-200,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
 front_detail,vertical_grille_slot_3,box,82,-100,842,26,42,230,L2 visible-detail primitive,FJ40 vertical grille slot
@@ -471,6 +516,37 @@ front_detail,side_marker_left,cylinder_y,188,-683.0999999999999,1005,82,26,,L2 v
 front_detail,headlamp_bezel_right,cylinder_x,80,495,985,270,28,,L2 visible-detail primitive,round headlamp bezel
 front_detail,side_marker_right,cylinder_y,188,683.0999999999999,1005,82,26,,L2 visible-detail primitive,front fender side marker
 front_detail,front_license_plate,box,5,0,650,22,360,170,L2 visible-detail primitive,front licence plate envelope
+front_detail,front_license_plate_bsn453_1_B_top,box,-10,-107.5,682.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_mid,box,-10,-107.5,650.0,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_bottom,box,-10,-107.5,617.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_ul,box,-10,-121.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_ll,box,-10,-121.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_ur,box,-10,-94.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_1_B_lr,box,-10,-94.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_2_S_top,box,-10,-64.5,682.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_2_S_mid,box,-10,-64.5,650.0,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_2_S_bottom,box,-10,-64.5,617.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_2_S_ul,box,-10,-78.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_2_S_lr,box,-10,-51.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_3_N_ul,box,-10,-35.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_3_N_ll,box,-10,-35.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_3_N_ur,box,-10,-8.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_3_N_lr,box,-10,-8.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_3_N_center,box,-10,-21.5,650.0,8,7.0,72.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_4_4_ul,box,-10,8.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_4_4_ur,box,-10,35.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_4_4_mid,box,-10,21.5,650.0,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_4_4_lr,box,-10,35.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_5_5_top,box,-10,64.5,682.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_5_5_ul,box,-10,51.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_5_5_mid,box,-10,64.5,650.0,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_5_5_lr,box,-10,78.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_5_5_bottom,box,-10,64.5,617.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_6_3_top,box,-10,107.5,682.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_6_3_ur,box,-10,121.0,668.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_6_3_mid,box,-10,107.5,650.0,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_6_3_lr,box,-10,121.0,632.0,8,7.0,36.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
+front_detail,front_license_plate_bsn453_6_3_bottom,box,-10,107.5,617.5,8,34.0,7.0,project-photo evidence,"front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography"
 front_detail,front_bumper_left_end_cap,box,40,-780,525,150,115,130,L2 visible-detail primitive,front bumper end cap
 front_detail,front_bumper_right_end_cap,box,40,780,525,150,115,130,L2 visible-detail primitive,front bumper end cap
 body,hood_center_raised_rib,box,320,0,1277,760,180,48,L2 panel rib reference,hood centre raised rib

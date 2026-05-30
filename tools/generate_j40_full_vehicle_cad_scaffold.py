@@ -19,7 +19,7 @@ REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_repo
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_c"
 MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Classic Rear Glazing Pass"
 MODEL_SHORT_TITLE = "J40 full vehicle CAD scaffold Rev C"
-DETAIL_REVISION = "rhd_classic_rear_glazing_detail_pass"
+DETAIL_REVISION = "rhd_classic_rear_glazing_project_digital_twin_evidence_pass"
 DRIVER_LAYOUT = "right-hand drive"
 TRAFFIC_SIDE = "left-side traffic"
 DRIVER_SIDE = "right"
@@ -223,6 +223,68 @@ def parts() -> list[PartType]:
         notes: str = "",
     ) -> None:
         p.append(MeshPart(group, name, tuple(vertices), tuple(faces), color, confidence, notes))
+
+    def plate_text(
+        group: str,
+        prefix: str,
+        x: float,
+        y_center: float,
+        z_center: float,
+        text: str,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        char_width = 34.0
+        char_height = 72.0
+        gap = 9.0
+        stroke = 7.0
+        total_width = len(text) * char_width + (len(text) - 1) * gap
+        y_start = y_center - total_width / 2 + char_width / 2
+        z_top = z_center + char_height / 2 - stroke / 2
+        z_bottom = z_center - char_height / 2 + stroke / 2
+        segment_defs = {
+            "top": (0.0, z_top - z_center, char_width, stroke),
+            "mid": (0.0, 0.0, char_width, stroke),
+            "bottom": (0.0, z_bottom - z_center, char_width, stroke),
+            "ul": (-(char_width - stroke) / 2, char_height / 4, stroke, char_height / 2),
+            "ur": ((char_width - stroke) / 2, char_height / 4, stroke, char_height / 2),
+            "ll": (-(char_width - stroke) / 2, -char_height / 4, stroke, char_height / 2),
+            "lr": ((char_width - stroke) / 2, -char_height / 4, stroke, char_height / 2),
+            "center": (0.0, 0.0, stroke, char_height),
+        }
+        patterns = {
+            "0": ("top", "bottom", "ul", "ur", "ll", "lr"),
+            "1": ("ur", "lr"),
+            "2": ("top", "ur", "mid", "ll", "bottom"),
+            "3": ("top", "ur", "mid", "lr", "bottom"),
+            "4": ("ul", "ur", "mid", "lr"),
+            "5": ("top", "ul", "mid", "lr", "bottom"),
+            "6": ("top", "ul", "mid", "ll", "lr", "bottom"),
+            "7": ("top", "ur", "lr"),
+            "8": ("top", "mid", "bottom", "ul", "ur", "ll", "lr"),
+            "9": ("top", "mid", "bottom", "ul", "ur", "lr"),
+            "B": ("top", "mid", "bottom", "ul", "ll", "ur", "lr"),
+            "S": ("top", "mid", "bottom", "ul", "lr"),
+            "N": ("ul", "ll", "ur", "lr", "center"),
+        }
+        for char_idx, char in enumerate(text.upper()):
+            char_y = y_start + char_idx * (char_width + gap)
+            for segment in patterns.get(char, ()):
+                offset_y, offset_z, width, height = segment_defs[segment]
+                box(
+                    group,
+                    f"{prefix}_{char_idx + 1}_{char}_{segment}",
+                    x,
+                    char_y + offset_y,
+                    z_center + offset_z,
+                    8,
+                    width,
+                    height,
+                    color,
+                    confidence,
+                    notes,
+                )
 
     def rounded_rect_profile(width: float, height: float, radius: float, segments: int = 5) -> list[tuple[float, float]]:
         half_width = width / 2
@@ -901,6 +963,73 @@ def parts() -> list[PartType]:
             for u_idx, offset in enumerate([-65, 65], start=1):
                 cyl("running_gear", f"{axle_name}_{side}_u_bolt_{u_idx}", axle_x + offset, 430 * y_sign, 405, "z", 24, 210, COLORS["metal"], "L2 service datum", "axle U-bolt reference")
 
+    for side, sign, y_sign in side_pairs:
+        cyl(
+            "brake_system",
+            f"front_{side}_vented_disc_rotor",
+            front_axle_x,
+            738 * y_sign,
+            wheel_z,
+            "y",
+            405,
+            42,
+            COLORS["metal"],
+            "project-photo evidence",
+            "front disc rotor visible in 2026-05-29 front brake photo set; exact diameter/thickness still needs measurement",
+        )
+        box(
+            "brake_system",
+            f"front_{side}_sumitomo_disc_caliper_body",
+            front_axle_x + 92,
+            760 * y_sign,
+            wheel_z + 82,
+            140,
+            94,
+            225,
+            COLORS["metal"],
+            "project-photo evidence",
+            "large Sumitomo-style front caliper body from 20260529_183947_gp_lSYuESVg and related photos",
+        )
+        box(
+            "brake_system",
+            f"front_{side}_disc_caliper_bridge",
+            front_axle_x + 46,
+            787 * y_sign,
+            wheel_z + 188,
+            92,
+            68,
+            52,
+            COLORS["metal"],
+            "project-photo evidence",
+            "caliper upper bridge/ear envelope from May 29 brake photos",
+        )
+        cyl(
+            "brake_system",
+            f"front_{side}_caliper_bleeder_screw",
+            front_axle_x + 122,
+            824 * y_sign,
+            wheel_z + 222,
+            "y",
+            18,
+            42,
+            COLORS["brass"],
+            "project-photo evidence",
+            "visible bleeder/pipe fitting on front caliper; service datum only",
+        )
+        cyl(
+            "brake_system",
+            f"front_{side}_flex_hose_to_caliper",
+            front_axle_x + 85,
+            652 * y_sign,
+            wheel_z + 185,
+            "y",
+            22,
+            245,
+            COLORS["rubber"],
+            "project-photo evidence",
+            "front flexible brake hose route to caliper from May 29 brake photos",
+        )
+
     # Wheels: backing detail, lug nuts, and valve stems so each wheel is identifiable in FreeCAD.
     for axle_x, axle_name in [(front_axle_x, "front"), (rear_axle_x, "rear")]:
         for side_name, face_y, y_sign in [("left", -845, -1), ("right", 845, 1)]:
@@ -912,6 +1041,19 @@ def parts() -> list[PartType]:
                 lug_x = axle_x + math.cos(angle) * 92
                 lug_z = wheel_z + math.sin(angle) * 92
                 cyl("running_gear", f"{axle_name}_{side_name}_lug_nut_{lug_idx}", lug_x, face_y + 32 * y_sign, lug_z, "y", 32, 36, COLORS["metal"], "L2 service datum", "six-lug wheel nut datum")
+            box(
+                "running_gear",
+                f"{axle_name}_{side_name}_mud_terrain_sidewall_lettering_panel",
+                axle_x + 190,
+                face_y + 54 * y_sign,
+                wheel_z - 292,
+                165,
+                18,
+                34,
+                COLORS["body_shadow"],
+                "project-photo evidence",
+                "raised mud-terrain tire sidewall lettering from project photos; exact tire make/size still needs measurement",
+            )
 
     # Brake and parking-brake routing, including the specific rear cable hardware now tracked separately.
     cyl("brake_system", "front_hard_line_right_frame_run", 1180, 338 * DRIVER_Y_SIGN, 575, "x", 18, 1650, COLORS["metal"], "L2 routing reference", "front brake hard-line run along right rail")
@@ -956,6 +1098,17 @@ def parts() -> list[PartType]:
     cyl("body", "left_rear_tail_lamp", 3470, -675, 930, "x", 98, 38, COLORS["electrical"], "L2 visible-detail primitive", "rear tail lamp")
     cyl("body", "right_rear_tail_lamp", 3470, 675, 930, "x", 98, 38, COLORS["electrical"], "L2 visible-detail primitive", "rear tail lamp")
     box("body", "rear_license_plate", 3505, 0, 695, 24, 360, 170, COLORS["reference"], "L2 visible-detail primitive", "rear licence plate envelope")
+    plate_text(
+        "body",
+        "rear_license_plate_bsn453",
+        3522,
+        0,
+        695,
+        "BSN453",
+        COLORS["black_trim"],
+        "project-photo evidence",
+        "matching BSN 453 plate identity propagated from front baseline photos pending rear plate confirmation",
+    )
 
     # Front sheet metal, grille, lamps, bonnet fixtures, and windshield details.
     for idx, y in enumerate([-300, -200, -100, 0, 100, 200, 300], start=1):
@@ -964,6 +1117,17 @@ def parts() -> list[PartType]:
         cyl("front_detail", f"headlamp_bezel_{'left' if y < 0 else 'right'}", 80, y, 985, "x", 270, 28, COLORS["metal"], "L2 visible-detail primitive", "round headlamp bezel")
         cyl("front_detail", f"side_marker_{'left' if y < 0 else 'right'}", 188, y * 1.38, 1005, "y", 82, 26, COLORS["electrical"], "L2 visible-detail primitive", "front fender side marker")
     box("front_detail", "front_license_plate", 5, 0, 650, 22, 360, 170, COLORS["reference"], "L2 visible-detail primitive", "front licence plate envelope")
+    plate_text(
+        "front_detail",
+        "front_license_plate_bsn453",
+        -10,
+        0,
+        650,
+        "BSN453",
+        COLORS["black_trim"],
+        "project-photo evidence",
+        "front Punjab plate BSN 453 visible in baseline walkaround photos; stroke text is visual reference, not legal plate typography",
+    )
     box("front_detail", "front_bumper_left_end_cap", 40, -780, 525, 150, 115, 130, COLORS["metal"], "L2 visible-detail primitive", "front bumper end cap")
     box("front_detail", "front_bumper_right_end_cap", 40, 780, 525, 150, 115, 130, COLORS["metal"], "L2 visible-detail primitive", "front bumper end cap")
     box("body", "hood_center_raised_rib", 320, 0, 1277, 760, 180, 48, COLORS["body_sand"], "L2 panel rib reference", "hood centre raised rib")
@@ -2403,6 +2567,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
         "- Commercial visual/reference benchmarks: 3DModels.org Toyota Land Cruiser (J40) Hard Top 1979 and CGTrader Toyota Land-Cruiser J40 Hard Top BJ44V 1979 printable listing. Commercial coverage was confirmed by the project owner; this generator stores only project-owned procedural geometry and provenance metadata unless licensed assets are added locally.",
         "- Toyota online parts representations: EPC body/interior groups and GR Heritage 40 parts list, used for factual part-name cues such as roof/rear ventilators, body mounts, bumper stays, rear combination lamp segmentation, brake tubes, wiper caps, mirror packing, and fuel inlet hose.",
         "- Project-photo visual target: sand/beige diesel hardtop J40 with white roof, black bumper/trim, round auxiliary lamps, black window seals, side step boards, and mud-terrain tires.",
+        "- Project-specific identity cues: Punjab BSN 453 front plate stroke reference, front disc/Sumitomo-style caliper package from May 29 brake photos, and raised mud-terrain sidewall lettering panels.",
         f"- Driving layout: {DRIVER_LAYOUT} for {TRAFFIC_SIDE}. {DRIVER_Y_DIRECTION.capitalize()} Y is the driver side in this coordinate system.",
         "- This scaffold does not extract or reproduce hidden source mesh data.",
         "- Source inventory: `data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv`.",
@@ -2423,6 +2588,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, classic rounded rear-quarter/back-door glass, rubber window radius gaskets, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
             "- L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.",
             "- Rev C online-reference details: roof ventilator lid/hinge/handle, rear hardtop ventilator louvers, classic rounded rear hardtop side windows and split rear-door glass, hardtop-to-body joins, front clip/tub joins, body-mount pucks and stands, front/rear bumper stays, hood underside bracing and prop rod, hood lock receiver, brake proportioning valve and tube clips, fuel sub-inlet/vent hoses, separated amber/red/clear rear combination lamp lenses, and interior gauge/grab-handle detail.",
+            "- Digital-twin evidence pass: front disc rotors, Sumitomo-style caliper envelopes, caliper hose/fitting datums, BSN 453 plate strokes, and sidewall lettering panels are tied to project photos rather than generic J40 references.",
             "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
             "- Right-hand-drive references: right-side steering wheel/column, right pedal box, right-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, steering damper, and driver-side handbrake reach. The pedal order remains clutch-brake-accelerator across the right footwell.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",

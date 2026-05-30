@@ -57,3 +57,30 @@ Published Rev C viewer:
 ```text
 https://dbvg4yfpnc4tj.cloudfront.net/data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_orbit_viewer.html
 ```
+
+## Digital Twin Workflow
+
+The active model is now driven as a project-specific digital twin, not just a generic J40 scaffold. The update flow combines:
+
+- local photo inventory in `data/manual/photo_inventory.csv`
+- current project CAD scaffold parts
+- locally licensed or open 3D references placed in `00_inbox/` or `02_mesh_clean/`
+- public Toyota and reference-model cues recorded in the reports
+- measured datums as they become available
+
+Run the full refresh with:
+
+```bash
+python3 scripts/update_j40_cad_reference.py --force
+```
+
+That regenerates the glTF/viewer, the editable OBJ/MTL mesh, and the digital-twin evidence reports:
+
+```text
+data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf
+data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv
+data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv
+data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_build_notes.md
+```
+
+Exact duplicate rule: photo and reference-model evidence is acceptable for visual placement, but any fabrication-grade geometry must be closed by measured truck datums, Toyota dimensions, or calibrated photogrammetry.

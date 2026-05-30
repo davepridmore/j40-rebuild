@@ -1,6 +1,6 @@
 {
   "model": "j40_full_vehicle_scaffold_rev_c",
-  "detail_revision": "rhd_classic_rear_glazing_detail_pass",
+  "detail_revision": "rhd_classic_rear_glazing_project_digital_twin_evidence_pass",
   "units": "mm",
   "coordinate_system": "X front bumper to rear, Y centreline left/right, Z ground up",
   "drive_side": "right-hand drive",
@@ -21,7 +21,7 @@
     "https://toyota.epc-data.com/land_cruiser/fj40/61645/body/",
     "https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf"
   ],
-  "part_count": 1157,
+  "part_count": 1233,
   "reference_gallery_image_count": 12,
   "online_reference_inventory": "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
   "outputs": [
@@ -30,6 +30,7 @@
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.svg",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.png",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_orthographic.dxf",
+    "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_3d_autocad.dxf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c.gltf",
     "data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/j40_full_vehicle_scaffold_rev_c_parts.csv",
     "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",

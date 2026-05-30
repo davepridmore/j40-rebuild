@@ -1470,6 +1470,46 @@ color([0.722, 0.722, 0.722, 0.80])
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3085, 430, 405, "z", 24, 210);
 
+// brake_system: front_left_vented_disc_rotor - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(735, -738, 395, "y", 405, 42);
+
+// brake_system: front_left_sumitomo_disc_caliper_body - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(827, -760, 477, 140, 94, 225);
+
+// brake_system: front_left_disc_caliper_bridge - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(781, -787, 583, 92, 68, 52);
+
+// brake_system: front_left_caliper_bleeder_screw - project-photo evidence
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(857, -824, 617, "y", 18, 42);
+
+// brake_system: front_left_flex_hose_to_caliper - project-photo evidence
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(820, -652, 580, "y", 22, 245);
+
+// brake_system: front_right_vented_disc_rotor - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(735, 738, 395, "y", 405, 42);
+
+// brake_system: front_right_sumitomo_disc_caliper_body - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(827, 760, 477, 140, 94, 225);
+
+// brake_system: front_right_disc_caliper_bridge - project-photo evidence
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(781, 787, 583, 92, 68, 52);
+
+// brake_system: front_right_caliper_bleeder_screw - project-photo evidence
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(857, 824, 617, "y", 18, 42);
+
+// brake_system: front_right_flex_hose_to_caliper - project-photo evidence
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(820, 652, 580, "y", 22, 245);
+
 // running_gear: front_left_outer_rim_ring - L2 visible-detail primitive
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(735, -845, 395, "y", 455, 34);
@@ -1505,6 +1545,10 @@ color([0.722, 0.722, 0.722, 0.80])
 // running_gear: front_left_lug_nut_6 - L2 service datum
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(781, -877, 315.326, "y", 32, 36);
+
+// running_gear: front_left_mud_terrain_sidewall_lettering_panel - project-photo evidence
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(925, -899, 103, 165, 18, 34);
 
 // running_gear: front_right_outer_rim_ring - L2 visible-detail primitive
 color([0.722, 0.722, 0.722, 0.80])
@@ -1542,6 +1586,10 @@ color([0.722, 0.722, 0.722, 0.80])
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(781, 877, 315.326, "y", 32, 36);
 
+// running_gear: front_right_mud_terrain_sidewall_lettering_panel - project-photo evidence
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(925, 899, 103, 165, 18, 34);
+
 // running_gear: rear_left_outer_rim_ring - L2 visible-detail primitive
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3020, -845, 395, "y", 455, 34);
@@ -1578,6 +1626,10 @@ color([0.722, 0.722, 0.722, 0.80])
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3066, -877, 315.326, "y", 32, 36);
 
+// running_gear: rear_left_mud_terrain_sidewall_lettering_panel - project-photo evidence
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3210, -899, 103, 165, 18, 34);
+
 // running_gear: rear_right_outer_rim_ring - L2 visible-detail primitive
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3020, 845, 395, "y", 455, 34);
@@ -1613,6 +1665,10 @@ color([0.722, 0.722, 0.722, 0.80])
 // running_gear: rear_right_lug_nut_6 - L2 service datum
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3066, 877, 315.326, "y", 32, 36);
+
+// running_gear: rear_right_mud_terrain_sidewall_lettering_panel - project-photo evidence
+color([0.616, 0.588, 0.494, 0.80])
+  box_part(3210, 899, 103, 165, 18, 34);
 
 // brake_system: front_hard_line_right_frame_run - L2 routing reference
 color([0.722, 0.722, 0.722, 0.80])
@@ -1862,6 +1918,130 @@ color([0.839, 0.278, 0.216, 0.80])
 color([0.910, 0.910, 0.910, 0.80])
   box_part(3505, 0, 695, 24, 360, 170);
 
+// body: rear_license_plate_bsn453_1_B_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -107.5, 727.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_1_B_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -107.5, 695, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_1_B_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -107.5, 662.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_1_B_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -121, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_1_B_ll - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -121, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_1_B_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -94, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_1_B_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -94, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_2_S_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -64.5, 727.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_2_S_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -64.5, 695, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_2_S_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -64.5, 662.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_2_S_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -78, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_2_S_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -51, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_3_N_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -35, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_3_N_ll - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -35, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_3_N_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -8, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_3_N_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -8, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_3_N_center - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, -21.5, 695, 8, 7, 72);
+
+// body: rear_license_plate_bsn453_4_4_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 8, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_4_4_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 35, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_4_4_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 21.5, 695, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_4_4_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 35, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_5_5_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 64.5, 727.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_5_5_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 51, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_5_5_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 64.5, 695, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_5_5_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 78, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_5_5_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 64.5, 662.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_6_3_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 107.5, 727.5, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_6_3_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 121, 713, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_6_3_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 107.5, 695, 8, 34, 7);
+
+// body: rear_license_plate_bsn453_6_3_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 121, 677, 8, 7, 36);
+
+// body: rear_license_plate_bsn453_6_3_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(3522, 107.5, 662.5, 8, 34, 7);
+
 // front_detail: vertical_grille_slot_1 - L2 visible-detail primitive
 color([0.114, 0.114, 0.114, 0.80])
   box_part(82, -300, 842, 26, 42, 230);
@@ -1909,6 +2089,130 @@ color([0.839, 0.278, 0.216, 0.80])
 // front_detail: front_license_plate - L2 visible-detail primitive
 color([0.910, 0.910, 0.910, 0.80])
   box_part(5, 0, 650, 22, 360, 170);
+
+// front_detail: front_license_plate_bsn453_1_B_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -107.5, 682.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_1_B_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -107.5, 650, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_1_B_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -107.5, 617.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_1_B_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -121, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_1_B_ll - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -121, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_1_B_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -94, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_1_B_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -94, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_2_S_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -64.5, 682.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_2_S_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -64.5, 650, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_2_S_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -64.5, 617.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_2_S_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -78, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_2_S_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -51, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_3_N_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -35, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_3_N_ll - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -35, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_3_N_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -8, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_3_N_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -8, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_3_N_center - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, -21.5, 650, 8, 7, 72);
+
+// front_detail: front_license_plate_bsn453_4_4_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 8, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_4_4_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 35, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_4_4_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 21.5, 650, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_4_4_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 35, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_5_5_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 64.5, 682.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_5_5_ul - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 51, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_5_5_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 64.5, 650, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_5_5_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 78, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_5_5_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 64.5, 617.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_6_3_top - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 107.5, 682.5, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_6_3_ur - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 121, 668, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_6_3_mid - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 107.5, 650, 8, 34, 7);
+
+// front_detail: front_license_plate_bsn453_6_3_lr - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 121, 632, 8, 7, 36);
+
+// front_detail: front_license_plate_bsn453_6_3_bottom - project-photo evidence
+color([0.067, 0.075, 0.082, 0.80])
+  box_part(-10, 107.5, 617.5, 8, 34, 7);
 
 // front_detail: front_bumper_left_end_cap - L2 visible-detail primitive
 color([0.722, 0.722, 0.722, 0.80])
