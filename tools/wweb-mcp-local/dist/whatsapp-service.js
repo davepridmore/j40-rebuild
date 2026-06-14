@@ -99,7 +99,7 @@ class WhatsAppService {
                 throw new Error('Invalid phone number');
             }
             // Format the chat ID
-            const chatId = number.includes('@c.us') ? number : `${number}@c.us`;
+            const chatId = number.includes('@') ? number : `${number}@c.us`;
             // Get the chat
             const chat = await this.client.getChatById(chatId);
             const messages = await chat.fetchMessages({ limit });
@@ -108,7 +108,7 @@ class WhatsAppService {
                 body: message.body,
                 fromMe: message.fromMe,
                 timestamp: timestampToIso(message.timestamp),
-                contact: message.fromMe ? undefined : message.author?.split('@')[0],
+                contact: message.fromMe ? undefined : (message.author || message.from)?.split('@')[0],
                 type: message.type,
             }));
         }
@@ -126,7 +126,7 @@ class WhatsAppService {
                 throw new Error('Invalid phone number');
             }
             // Format the chat ID
-            const chatId = number.includes('@c.us') ? number : `${number}@c.us`;
+            const chatId = number.includes('@') ? number : `${number}@c.us`;
             // Send the message
             const result = await this.client.sendMessage(chatId, message);
             return {

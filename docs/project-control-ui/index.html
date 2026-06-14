@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J40 Project Control UI</title>
-  <link rel="stylesheet" href="./styles.css?v=20260529-overview-workstreams">
+  <link rel="stylesheet" href="./styles.css?v=20260607-status-update-2">
 </head>
 <body>
   <header class="app-header">
@@ -18,6 +18,7 @@
 
   <nav class="tabs" aria-label="Primary navigation">
     <button class="tab is-active" data-view="overview" type="button">Overview</button>
+    <button class="tab" data-view="status-update" type="button">Status Update</button>
     <button class="tab" data-view="vehicle-map" type="button">3D Vehicle Map</button>
     <button class="tab" data-view="workstreams" type="button">Workstreams</button>
     <button class="tab" data-view="tasks" type="button">Tasks</button>
@@ -31,10 +32,10 @@
   <main id="view-root" class="view-root" aria-live="polite"></main>
 
   <footer class="app-footer">
-    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code>, <code>data/manual/other_build_reference_media.csv</code>, <code>data/reference/other_j40_builds/</code>, <code>data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/</code></p>
+    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/procurement_queue.csv</code>, <code>data/manual/orders_receipts_audit_queue.csv</code>, <code>data/manual/photo_inventory.csv</code>, <code>data/processed/generated/comms_ingest_*</code>, <code>data/processed/generated/whatsapp_project_relevant_*</code>, <code>data/manual/other_build_reference_media.csv</code>, <code>data/reference/other_j40_builds/</code>, <code>data/manual/cad/j40_reference_model/04_exports/scaffold_rev_c/</code></p>
   </footer>
 
-  <script src="./data.js"></script>
-  <script src="./app.js?v=20260530-classic-rounded-back-windows"></script>
+  <script src="./data.js?v=20260607-status-update"></script>
+  <script src="./app.js?v=20260607-status-update"></script>
 </body>
 </html>

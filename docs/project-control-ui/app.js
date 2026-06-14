@@ -1581,11 +1581,11 @@
     {
       id: "BM-ISO-SM",
       part: "Small square tub-to-chassis body isolator pads",
-      qty: "10 + 2 spares",
+      qty: "10 + 6 spares",
       location: "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
       image: "../../photos/20260528_193054_gp_UFyTb44w.jpg",
       imageCaption: "Old small body-mount rubber samples with tape",
-      spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
+      spec: "Custom square flat pad 80 x 80 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
       route: "Longman consolidated rubber order",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf"],
@@ -1593,12 +1593,12 @@
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "Preferred shape is square. Trim corners/edges only if station photos prove a clash.",
+      notes: "Preferred shape is the simple 80 x 80 square pad. Extras cover dry-fit stacking/trim only where a station proves it needs two pads.",
     },
     {
       id: "BM-ISO-LG",
       part: "Large square tub-to-chassis body isolator pads",
-      qty: "2 + 1 spare",
+      qty: "2 + 2 spares",
       location: "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
       image: "../../photos/20260528_193054_gp_UFyTb44w.jpg",
       imageCaption: "Old body-mount rubber sample stack with tape",
@@ -1610,7 +1610,7 @@
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "Large pair remains height-controlled at 24; final station map controls placement.",
+      notes: "Large pair remains height-controlled at 24; final station map controls placement and any proven two-pad stack.",
     },
     {
       id: "FS-OVAL",
@@ -1659,28 +1659,28 @@
     },
     {
       id: "BUMP-60010-LONG",
-      part: "Long sample-style axle bump-stop rubbers",
+      part: "Rear/back bump-stop rubbers - same front shape longer",
       qty: "3",
-      location: "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
-      image: "../../photos/20260529_223605_gp_CklgF0cQ.jpg",
-      imageCaption: "May 29 removed bump-stop sample: face/plan view",
-      spec: "May 29 removed-sample style bump-stop rubber, free height 70 +/-1; broad rounded/tapered rubber body with two rubber through-holes, central fixture/channel interface, and flat strike area. Final BL/BW/P/D/fixture-channel/contact offsets come from calipers, fixture, bracket, and axle strike pad.",
+      location: "Rear/back long-family axle-to-chassis bump-stop stations, plus any Toyota-controlled front-left long station if confirmed.",
+      image: "../../photos/20260531_171935_gp_BYfhqiWg.jpg",
+      imageCaption: "May 31 exact front bump-stop side height/profile",
+      spec: "May 31 exact front-stop rubber shape, free height 70 +/-1 for long-family stops; broad rounded/tapered rubber body with two rubber through-holes, central fixture/channel interface, and flat strike area. Rear/back stops use the same front shape made longer. Final BL/BW/P/D/fixture-channel/contact offsets come from calipers, fixture, bracket, and axle strike pad.",
       route: "Longman first article, then sample/fixture and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "May 29 removed samples are representative construction evidence for both stops. Trace or reuse the removed metal fixture separately; vehicle measurements release final fit.",
+      notes: "May 31 front-stop photos are the active shape master. May 29 photos support fixture/interface only; trace or reuse the removed metal fixture separately and let vehicle measurements release final fit.",
     },
     {
       id: "BUMP-60020-SHORT",
-      part: "Short right-front sample-style axle bump-stop rubber",
+      part: "Exact front/right-front axle bump-stop rubber",
       qty: "1",
       location: "Axle-to-chassis bump-stop bracket: right-front station only.",
-      image: "../../photos/20260529_223701_gp_wYPExcAA.jpg",
-      imageCaption: "May 29 removed bump-stop sample: side/fixture view",
-      spec: "Same May 29 sample-style construction as the long stop: rubber through-holes, central fixture/channel interface, rounded/tapered body, and flat strike area, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
+      image: "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
+      imageCaption: "May 31 exact front bump-stop face/width",
+      spec: "Exact May 31 front-stop construction: rubber through-holes, central fixture/channel interface, rounded/tapered body, and flat strike area, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
       route: "Longman first article, then sample/fixture and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
@@ -1734,7 +1734,7 @@
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg", "FS-OVAL two-hole front-support SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "FS-STRIP-L left plain-strip SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "FS-STRIP-R right plain-strip SVG control"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop May 29 sample and vehicle measurement control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop May 31 front-shape and vehicle measurement control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg", "Full-width liner hold measurement control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg", "Exhaust hanger hold reference SVG"],
     ["../../photos/20260422_004323_gp_JD88KuWQ.jpg", "Body-off chassis body-mount pedestal close-up"],
@@ -1759,8 +1759,10 @@
     ["../../photos/20260517_193616_gp_1ye19BZA.jpg", "Loose strip curved-end close-up"],
     ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad measurement photo"],
     ["../../photos/20260512_100000_user_front_support_radiator_pickups_context.png", "Front support / radiator pickup location context"],
-    ["../../photos/20260529_223605_gp_CklgF0cQ.jpg", "May 29 removed bump-stop sample face/plan evidence"],
-    ["../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop sample side/fixture evidence"],
+    ["../../photos/20260531_171824_gp_HmSS2ChQ.jpg", "May 31 exact front bump-stop face/width evidence"],
+    ["../../photos/20260531_171935_gp_BYfhqiWg.jpg", "May 31 exact front bump-stop side height/profile evidence"],
+    ["../../photos/20260529_223605_gp_CklgF0cQ.jpg", "May 29 removed bump-stop fixture face support"],
+    ["../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop fixture side support"],
     ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Superseded bump-stop fragment context only"],
     ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Superseded bump-stop vertical/scale context only"],
     ["../../photos/20260422_004254_gp_SplHLSYA.jpg", "Rear axle/chassis bump-stop station context"],
@@ -1770,9 +1772,9 @@
   const CHASSIS_RUBBER_COVERAGE_ROWS = [
     {
       family: "Main tub-to-chassis body pads",
-      current: "BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare",
+      current: "BM-ISO-SM 10 + 6 spares, BM-ISO-LG 2 + 2 spares",
       basis: "Toyota EPC-style rows list NO.1-NO.5 body-mount cushions, spacers, shims, and hardware; aftermarket kits are split by early/late 40-series year ranges.",
-      decision: "Covered in the Longman bundle as function-first square pads because the vehicle photos do not prove shaped rubber sockets. Keep OE/reproduction kit rows reference-only unless the route is deliberately changed.",
+      decision: "Covered in the Longman bundle as simple function-first 80 x 80 square pads because the vehicle photos do not prove shaped rubber sockets. Extra pads are for dry-fit stacking only where a station proves it. Keep OE/reproduction kit rows reference-only unless the route is deliberately changed.",
     },
     {
       family: "Front support / nose extension isolators",
@@ -1783,7 +1785,7 @@
     {
       family: "Axle-to-chassis bump stops",
       current: "BUMP-60010-LONG x3, BUMP-60020-SHORT x1",
-      basis: "May 29 removed samples show the representative construction: broad molded rubber, two rubber through-holes, and a central fixture/channel interface; Toyota references keep the 70 mm long / 60 mm right-front height split.",
+      basis: "May 31 exact front-stop photos show the representative construction: broad molded rubber, two rubber through-holes, and a central fixture/channel interface; rear/back stops use the same shape made longer, while Toyota references keep the 70 mm long / 60 mm right-front height split.",
       decision: "Covered as first articles. The preview keeps the rubber through-holes visible and calls out sample, fixture, bracket, and strike-pad measurement release.",
     },
     {
@@ -2062,7 +2064,7 @@
       <div class="chassis-rubber-preview-block">
         <div class="chassis-rubber-preview-copy">
           <strong>Current Order Preview</strong>
-          <span>Shows only the active Longman quote and first-article lines: square body pads, front-support oval, left/right strips, and long/short bump stops following the May 29 removed-sample construction.</span>
+          <span>Shows only the active Longman quote and first-article lines: square body pads, front-support oval, left/right strips, and long/short bump stops following the May 31 front-stop shape.</span>
         </div>
         ${renderPreparedMedia(preparedCurrent, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
       </div>
@@ -2132,7 +2134,7 @@
           </div>
         </div>
         <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use the May 29 removed-sample construction for both stops: broad rounded/tapered rubber body, two rubber through-holes, central fixture/channel interface, flat strike area, vehicle bracket measurements, and axle contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, universal bump stops, or replacements that omit the sample-proven through-hole and fixture/channel layout.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use the May 31 exact front-stop construction: broad rounded/tapered rubber body, two rubber through-holes, central fixture/channel interface, flat strike area, vehicle bracket measurements, and axle contact measurements. Rear/back stops are the same shape made longer. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, universal bump stops, or replacements that omit the through-hole and fixture/channel layout.</p>
         <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="${CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH}">current order preview</a>, <a href="${CHASSIS_RUBBER_LOCATION_MAP_PATH}">vehicle location map</a>, <a href="${CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH}">complete SVG preview</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
         ${renderChassisRubberCoverageCheck()}
         ${renderChassisRubberCompleteDrawingPreview()}
@@ -2192,7 +2194,149 @@
           </table>
         </div>
         <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 420 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, rubber through-hole pitch/diameter and fixture/channel features +/-0.5 after sample/fixture/vehicle release, contact centre +/-5; fixture retention must survive compression.</p>
-        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need May 29 sample calipers, removed fixture trace, BL/BW/P/D/fixture-channel/X-Y/G/F values, fabricator side/profile sketch, rubber through-hole layout, material declaration, and first-article compression recovery check before mould release.</p>
+        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need May 31 front-stop sample/photo calipers, removed fixture trace, BL/BW/P/D/fixture-channel/X-Y/G/F values, fabricator side/profile sketch, rubber through-hole layout, material declaration, and first-article compression recovery check before mould release.</p>
+      </article>
+    `;
+  }
+
+  function rubberOrderPriorityRank(row) {
+    const priority = cleanString(row && row.priority).toUpperCase();
+    const required = cleanString(row && row.required_for_current_build).toUpperCase();
+    const route = cleanString(row && row.route).toLowerCase();
+    if (priority.includes("P0_NOW")) return 0;
+    if (priority.includes("P0_RECEIPT")) return 1;
+    if (priority.includes("P1_NOW")) return 2;
+    if (required === "YES") return 3;
+    if (priority.includes("P1_INSPECT")) return 4;
+    if (priority.includes("P2_INSPECT")) return 5;
+    if (route.includes("no_active") || priority.includes("P6")) return 7;
+    if (priority.includes("P2_DEFER")) return 8;
+    return 6;
+  }
+
+  function rubberOrderCategoryLabel(value) {
+    const raw = cleanString(value);
+    const labels = {
+      body_sealing: "Body Sealing",
+      body_weatherstrip: "Body Weatherstrip",
+      brakes: "Brakes",
+      chassis_rubbers: "Chassis Rubbers",
+      clutch_hydraulics: "Clutch",
+      cooling: "Cooling",
+      engine_air_intake: "Air Intake",
+      engine_controls: "Engine Controls",
+      exhaust: "Exhaust",
+      fuel_system: "Fuel",
+      hvac: "HVAC",
+      interior_controls: "Interior Controls",
+      powertrain_mounts: "Powertrain Mounts",
+      sealing_grommets: "Grommets",
+      steering: "Steering",
+      suspension_ironman: "Suspension",
+    };
+    return labels[raw] || formatToken(raw || "rubber");
+  }
+
+  function rubberOrderStatusLabel(row) {
+    const priority = cleanString(row && row.priority);
+    const required = cleanString(row && row.required_for_current_build);
+    const route = cleanString(row && row.route);
+    const parts = [priority, required ? `Current build: ${required}` : "", route].filter(Boolean);
+    return parts.join(" / ");
+  }
+
+  function renderRubberOrderLinkedFiles(value) {
+    const files = cleanString(value)
+      .split(/[;|]/)
+      .map((item) => item.trim())
+      .filter(Boolean)
+      .slice(0, 5);
+    if (!files.length) return "";
+    return `
+      <div class="item-links compact-links">
+        ${files
+          .map((file) => {
+            const href = file.startsWith("http") ? file : `../../${file}`;
+            return `<a class="item-link" href="${escapeHtml(href)}">${escapeHtml(file.split("/").pop() || file)}</a>`;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function renderCompleteJ40RubberCoverage(rows) {
+    const source = Array.isArray(rows) ? rows.filter((row) => row && cleanString(row.rubber_order_id)) : [];
+    if (!source.length) return "";
+    const orderedRows = [...source].sort((a, b) => {
+      const priorityDelta = rubberOrderPriorityRank(a) - rubberOrderPriorityRank(b);
+      if (priorityDelta) return priorityDelta;
+      return cleanString(a.rubber_order_id).localeCompare(cleanString(b.rubber_order_id));
+    });
+    const requiredNow = source.filter((row) => cleanString(row.required_for_current_build).toUpperCase() === "YES").length;
+    const currentOrConditional = source.filter((row) => {
+      const required = cleanString(row.required_for_current_build).toUpperCase();
+      return required === "YES" || required === "CONDITIONAL" || required === "LATER_OR_CONDITIONAL";
+    }).length;
+    const buyNow = source.filter((row) => cleanString(row.priority).toUpperCase().includes("NOW")).length;
+    const deferred = source.filter((row) => cleanString(row.priority).toUpperCase().includes("DEFER")).length;
+    const categories = new Set(source.map((row) => cleanString(row.workstream_category)).filter(Boolean));
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Complete J40 Rubber Coverage</h3>
+          <div class="chip-row">
+            ${chip(`${source.length} rubber rows`)}
+            ${chip(`${requiredNow} current-build`)}
+            ${chip(`${currentOrConditional} current/conditional`)}
+            ${chip(`${buyNow} buy/lock now`)}
+            ${chip(`${deferred} deferred`)}
+            ${chip(`${categories.size} categories`)}
+          </div>
+        </div>
+        <p class="small-muted">This is the all-rubbers control layer behind the chassis mount pack. The Longman table above is only the body/chassis custom-rubber bundle; this matrix keeps every J40 rubber, hose, seal, boot, grommet, bushing, mount, weatherstrip, bump stop, HVAC rubber, and hanger in one buy gate so duplicate or premature purchases are visible.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table all-rubber-coverage-table">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Category</th>
+                <th>Priority / Gate</th>
+                <th>Quantity</th>
+                <th>Ordering Spec</th>
+                <th>Material / Measurement Control</th>
+                <th>Source Files</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${orderedRows
+                .map((row) => `
+                  <tr>
+                    <td class="scout-line-cell">
+                      <strong>${escapeHtml(row.rubber_order_id)}</strong>
+                      <div class="small-muted">${escapeHtml(row.item_group || "")}</div>
+                    </td>
+                    <td>${escapeHtml(rubberOrderCategoryLabel(row.workstream_category))}</td>
+                    <td>
+                      ${statusChip(rubberOrderStatusLabel(row))}
+                      ${renderScoutField("Pre-order gate", row.pre_order_gate)}
+                    </td>
+                    <td>${escapeHtml(row.quantity_to_order || "-")}</td>
+                    <td>${escapeHtml(row.ordering_spec || "-")}</td>
+                    <td>
+                      ${renderScoutField("Material", row.material_spec)}
+                      ${renderScoutField("Measure", row.measurements_required_before_order)}
+                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                    </td>
+                    <td>
+                      ${renderScoutField("Rows", row.source_rows)}
+                      ${renderRubberOrderLinkedFiles(row.linked_files)}
+                    </td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
       </article>
     `;
   }
@@ -3000,6 +3144,7 @@
     if (active.id === "chassis_rubbers") {
       return [
         renderChassisRubberConsolidatedSpec(active.longman_rubber_order_specs),
+        renderCompleteJ40RubberCoverage(active.rubber_ordering_specs),
         renderChassisRubberReferenceImages(),
       ].join("");
     }
@@ -4327,7 +4472,7 @@
           : isShim
             ? "New flat steel, deburred and zinc plated or epoxy primed."
             : isBump
-            ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 29 sample-style rubber through-holes, central fixture/channel interface, and sample-proven fixture/insert retention; no used or universal mismatch."
+            ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 using May 31 front-stop rubber through-holes, central fixture/channel interface, and sample-proven fixture/insert retention; no used or universal mismatch."
               : isExhaust
                 ? "New heat/vibration-resistant molded exhaust rubber, Shore A 60 +/-5."
                 : "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5.",
@@ -4339,7 +4484,7 @@
           : isShim
           ? "Trace preserved station footprint before CNC/laser cutting final outline."
           : isBump
-            ? "Measure May 29 removed samples, removed fixture, cleaned vehicle bracket BL/BW, rubber through-hole pitch P, hole/thread D, fixture/channel, strike-pad X/Y, loaded gap G, and full-bump clearance F; make sample-style 70 mm long and 60 mm right-front first articles before full set."
+            ? "Measure May 31 front-stop sample/photos, removed fixture, cleaned vehicle bracket BL/BW, rubber through-hole pitch P, hole/thread D, fixture/channel, strike-pad X/Y, loaded gap G, and full-bump clearance F; make 70 mm long-family and 60 mm right-front first articles before full set."
             : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
         reject: isBump
           ? "Used, cracked, oil-softened, simple cut block, universal height/profile, or wrong bracket/contact fit."
@@ -4448,10 +4593,10 @@
       return previous("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "previous two-hole oval front-support pad", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "previous"]);
     }
     if (rowId === "BUMP-60010-LONG" || hasAny("long axle-to-chassis bump stop", "48304-60010", "long bump stop")) {
-      return previous("../../photos/20260529_223605_gp_CklgF0cQ.jpg", "May 29 removed bump-stop sample face/plan view", "20260529_223605_gp_CklgF0cQ", ["bump-stop", "may29", "sample"]);
+      return previous("../../photos/20260531_171824_gp_HmSS2ChQ.jpg", "May 31 exact front bump-stop face/width view", "20260531_171824_gp_HmSS2ChQ", ["bump-stop", "may31", "front-stop"]);
     }
     if (rowId === "BUMP-60020-SHORT" || hasAny("short right-front bump stop", "48304-60020", "right-front bump stop")) {
-      return previous("../../photos/20260529_223701_gp_wYPExcAA.jpg", "May 29 removed bump-stop sample side/fixture view", "20260529_223701_gp_wYPExcAA", ["bump-stop", "may29", "sample"]);
+      return previous("../../photos/20260531_171935_gp_BYfhqiWg.jpg", "May 31 exact front bump-stop side height/profile view", "20260531_171935_gp_BYfhqiWg", ["bump-stop", "may31", "front-stop"]);
     }
     if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
       return previous("../../photos/20260528_193200_gp_HICSdovA.jpg", "old left strip rubber section with tape", "20260528_193200_gp_HICSdovA", ["fs-strip-l", "old-rubber"]);
@@ -4795,11 +4940,11 @@
       id: "body_mount_rubbers_market_scout",
       title: "Consolidated Longman Rubber Market Scout",
       scope: "Single quote bundle",
-      quantity: "1 Longman rubber bundle plus separate controlled hardware rows",
+      quantity: "3 supplier-facing rubber order groups plus separate controlled hardware rows and all-rubbers coverage check",
       plain_stall_request:
         "I need one consolidated quote for the exact new-only J40 body/front-support/chassis custom rubber bundle listed in the Longman spec. Quote the rubber lines together; sleeves, cup washers, shims, spacers, bolts, nuts, and washers are separate controlled hardware lines. Toyota/OE part numbers are reference shapes only. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 420 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old broken fragments and the earlier flat-plate placeholder are not the master: use the May 29 removed samples as the construction pattern, plus the removed fixture, 70 mm long / 60 mm right-front height controls, and vehicle bracket measurements.",
+        "Ask Longman for 3 things: 1) simple 80 x 80 body pads: one active 80 x 80 x 24 pad size, 30 pieces total; the smaller 22 mm body-rubber line is removed; 2) front support/body-support rubbers: FS-OVAL x2 plus FS-STRIP-L/R x1 each; 3) bump stops: BUMP-60010-LONG x3 and BUMP-60020-SHORT x1. The extra body pads are dry-fit allowance for stations that prove they need two stacked pads, not a release for new ribbed or shaped body-rubber variants. Full-width flat liners and the exhaust hanger remain hold/reference lines only. Before buying any other rubber, check the all-rubbers matrix for hoses, grommets, suspension bushes, powertrain mounts, weatherstrips, HVAC rubber, seals, and hangers so they stay in their own gates. For bump stops, use the May 31 exact front-stop photos as the construction pattern, rear/back stops as the same shape made longer, plus the removed fixture, 70 mm long / 60 mm right-front height controls, and vehicle bracket measurements.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
@@ -5091,12 +5236,12 @@
         state: "released_for_quote_and_first_article_station_fit_pending",
         image: scoutPreviousPartImage("../../photos/20260528_193054_gp_UFyTb44w.jpg", "Old small body-mount rubber samples with tape", "20260528_193054_gp_UFyTb44w", ["bm-iso-sm", "old-rubber"]),
         spec: "Longman custom square pad with 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
-        qty: "10 + 2 spares",
-        dimension: "3D envelope 70 L x 70 W x 22 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
+        qty: "10 + 6 spares",
+        dimension: "3D envelope 80 L x 80 W x 22 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
-        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
-        notes: "Primary custom shape is square; trim only if station photos prove a clash.",
+        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve and any proven two-pad stack.",
+        notes: "Primary custom shape is the simple 80 x 80 square pad; extras cover dry-fit stacking/trim only where proven.",
       },
       {
         id: "BM-ISO-LG",
@@ -5106,12 +5251,12 @@
         state: "released_for_quote_and_first_article_station_fit_pending",
         image: scoutPreviousPartImage("../../photos/20260528_193054_gp_UFyTb44w.jpg", "Old body-mount rubber sample stack with tape", "20260528_193054_gp_UFyTb44w", ["bm-iso-lg", "old-rubber"]),
         spec: "Longman custom square pad. Same compound batch as the small pads where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
-        qty: "2 + 1 spare",
+        qty: "2 + 2 spares",
         dimension: "3D envelope 80 L x 80 W x 24 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
-        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
-        notes: "Primary custom shape is square; trim only if station photos prove a clash.",
+        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve and any proven two-pad stack.",
+        notes: "Primary custom shape is the simple 80 x 80 square pad; extras cover dry-fit stacking/height correction only where proven.",
       },
       {
         id: "BM-CUP-SM",
@@ -6420,6 +6565,399 @@
     `;
   }
 
+  function renderStatusText(value, maxLength = 150) {
+    const text = cleanString(value);
+    if (!text) {
+      return '<span class="small-muted">-</span>';
+    }
+    if (text.length <= maxLength) {
+      return escapeHtml(text);
+    }
+    return `
+      <div class="status-long-text">${escapeHtml(truncateText(text, maxLength))}</div>
+      <details class="status-detail">
+        <summary>Full detail</summary>
+        <p>${escapeHtml(text)}</p>
+      </details>
+    `;
+  }
+
+  function renderStatusMetric(label, value, detail = "") {
+    return `
+      <article class="card">
+        <p class="metric-value">${escapeHtml(value ?? 0)}</p>
+        <p class="metric-label">${escapeHtml(label)}</p>
+        ${detail ? `<p class="small-muted">${escapeHtml(detail)}</p>` : ""}
+      </article>
+    `;
+  }
+
+  function renderStatusCountChips(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return '<span class="small-muted">No counts recorded.</span>';
+    }
+    return sourceRows
+      .map((row) => chip(`${formatToken(row.label || "unknown")}: ${row.count ?? 0}`))
+      .join("");
+  }
+
+  function renderStatusSourceFiles(files) {
+    const entries = Object.entries(files || {});
+    if (!entries.length) {
+      return "";
+    }
+    return `
+      <section class="card status-source-card">
+        <div class="detail-header">
+          <h3>Source Files</h3>
+          ${chip(`${entries.length} files`)}
+        </div>
+        <div class="status-source-list">
+          ${entries
+            .map(
+              ([key, value]) => `
+                <div class="status-source-row">
+                  <strong>${escapeHtml(formatToken(key))}</strong>
+                  <code>${escapeHtml(value)}</code>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusUpdateSnapshot() {
+    const update = data.status_update || {};
+    const gmailRows = (((update.gmail || {}).rows) || []).length;
+    const whatsappNewRows = ((((update.whatsapp || {}).new_rows) || [])).length;
+    const manualRows = (update.manual_updates || []).length;
+    if (!update.date_tag && !gmailRows && !whatsappNewRows && !manualRows) {
+      return "";
+    }
+    return `
+      <section class="card status-update-snapshot">
+        <div class="detail-header">
+          <h3>Latest Comms Status Update</h3>
+          ${chip(update.date_tag || "latest")}
+        </div>
+        <div class="chip-row">
+          ${chip(`Gmail rows: ${gmailRows}`)}
+          ${chip(`New WhatsApp rows: ${whatsappNewRows}`)}
+          ${chip(`Manual tracker rows: ${manualRows}`)}
+        </div>
+        <p class="small-muted">Gmail, WhatsApp, manual tracker updates, and the order/receipt delivery watchlist are available in the dedicated update view.</p>
+        <a class="item-link" href="#status-update">Open Status Update</a>
+      </section>
+    `;
+  }
+
+  function renderStatusManualRows(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    return `
+      <section class="card status-update-table-card">
+        <div class="detail-header">
+          <h3>Manual Tracker Updates</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table class="status-update-table">
+            <thead>
+              <tr>
+                <th>Tracker</th>
+                <th>Row / Item</th>
+                <th>State</th>
+                <th>Commercials</th>
+                <th>Evidence</th>
+                <th>Notes / Next Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows.length
+                ? sourceRows
+                    .map(
+                      (row) => `
+                        <tr>
+                          <td>
+                            <strong>${escapeHtml(formatToken(row.table || "tracker"))}</strong>
+                            <div class="small-muted">${escapeHtml(formatToken(row.workstream || row.phase || "unassigned"))}</div>
+                          </td>
+                          <td>
+                            <code>${escapeHtml(row.row_id || "")}</code>
+                            <div>${renderStatusText(row.item || "", 120)}</div>
+                          </td>
+                          <td>
+                            ${statusChip(row.status || row.procurement_stage || "tracked")}
+                            ${row.procurement_stage ? `<div class="small-muted">Stage: ${escapeHtml(formatToken(row.procurement_stage))}</div>` : ""}
+                            ${row.delivery_status ? `<div class="small-muted">Delivery: ${escapeHtml(formatToken(row.delivery_status))}</div>` : ""}
+                            ${row.payment_status ? `<div class="small-muted">Payment: ${escapeHtml(formatToken(row.payment_status))}</div>` : ""}
+                          </td>
+                          <td>
+                            ${row.company ? `<strong>${escapeHtml(row.company)}</strong>` : "-"}
+                            ${row.transaction_number ? `<div class="small-muted">Txn: ${escapeHtml(row.transaction_number)}</div>` : ""}
+                            ${row.amount ? `<div class="small-muted">${escapeHtml(row.currency || "PKR")} ${escapeHtml(row.amount)}</div>` : ""}
+                            ${row.expected_delivery_date ? `<div class="small-muted">ETA: ${escapeHtml(row.expected_delivery_date)}</div>` : ""}
+                          </td>
+                          <td>${renderStatusText(row.evidence_ref || row.product_link || "", 130)}</td>
+                          <td>${renderStatusText(row.next_action || row.notes || "", 180)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="6">No manual tracker rows matched this status update.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusGmailRows(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    return `
+      <section class="card status-update-table-card">
+        <div class="detail-header">
+          <h3>Gmail Evidence</h3>
+          ${chip(`${sourceRows.length} categorized rows`)}
+        </div>
+        <div class="table-wrap">
+          <table class="status-update-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Source</th>
+                <th>Category</th>
+                <th>Subject / Topic</th>
+                <th>Refs / Amount</th>
+                <th>Action</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows.length
+                ? sourceRows
+                    .map(
+                      (row) => `
+                        <tr>
+                          <td>
+                            ${escapeHtml(formatDateTime(row.date_utc || ""))}
+                            <div class="small-muted"><code>${escapeHtml(row.message_id || "")}</code></div>
+                          </td>
+                          <td>${escapeHtml(row.source || row.channel || "-")}</td>
+                          <td>
+                            ${statusChip(row.category || "categorized")}
+                            ${row.subcategory ? `<div class="small-muted">${escapeHtml(formatToken(row.subcategory))}</div>` : ""}
+                          </td>
+                          <td>
+                            <strong>${renderStatusText(row.subject_or_ref || "", 110)}</strong>
+                            ${row.product_or_topic ? `<div>${renderStatusText(row.product_or_topic, 170)}</div>` : ""}
+                          </td>
+                          <td>
+                            ${row.part_number_or_code ? renderStatusText(row.part_number_or_code, 120) : "-"}
+                            ${row.amount_pkr ? `<div class="small-muted">PKR ${escapeHtml(row.amount_pkr)}</div>` : ""}
+                          </td>
+                          <td>
+                            ${statusChip(row.status || "signal")}
+                            <div class="small-muted">Required: ${escapeHtml(formatToken(row.action_required || "unknown"))}</div>
+                          </td>
+                          <td>${renderStatusText(row.notes || "", 150)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="7">No Gmail rows were loaded for the latest status update.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusWhatsappRows(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    return `
+      <section class="card status-update-table-card">
+        <div class="detail-header">
+          <h3>WhatsApp Project Extract</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table class="status-update-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Chat</th>
+                <th>Category</th>
+                <th>Message</th>
+                <th>Matched Terms</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows.length
+                ? sourceRows
+                    .map(
+                      (row) => `
+                        <tr class="${cleanString(row.is_new).toLowerCase() === "true" ? "is-new-status-row" : ""}">
+                          <td>
+                            ${escapeHtml(formatDateTime(row.timestamp || ""))}
+                            <div class="small-muted"><code>${escapeHtml(row.message_id || "")}</code></div>
+                            ${cleanString(row.is_new).toLowerCase() === "true" ? chip("new") : ""}
+                          </td>
+                          <td>
+                            <strong>${escapeHtml(row.chat_name || "-")}</strong>
+                            <div class="small-muted">${escapeHtml(row.source_profile || "")}</div>
+                            ${row.author ? `<div class="small-muted">By: ${escapeHtml(row.author)}</div>` : ""}
+                          </td>
+                          <td>
+                            ${statusChip(row.category || "project")}
+                            ${row.subcategory ? `<div class="small-muted">${escapeHtml(formatToken(row.subcategory))}</div>` : ""}
+                          </td>
+                          <td>${renderStatusText(row.text || "", 220)}</td>
+                          <td>${renderStatusText(row.matched_terms || "", 120)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="5">No WhatsApp project rows were loaded for the latest status update.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusDeliveryWatchlist(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    return `
+      <section class="card status-update-table-card">
+        <div class="detail-header">
+          <h3>Ordering / Receipt Watchlist</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table class="status-update-table">
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Item</th>
+                <th>Supplier / Txn</th>
+                <th>State</th>
+                <th>Evidence</th>
+                <th>Search Queries</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows.length
+                ? sourceRows
+                    .map(
+                      (row) => `
+                        <tr class="${row.recent_evidence_match ? "is-new-status-row" : ""}">
+                          <td>
+                            ${statusChip(row.audit_priority || "audit")}
+                            ${row.recent_evidence_match ? `<div class="small-muted">latest evidence</div>` : ""}
+                          </td>
+                          <td>
+                            <code>${escapeHtml(row.entry_id || "")}</code>
+                            <div><strong>${renderStatusText(row.item || "", 135)}</strong></div>
+                            <div class="small-muted">${escapeHtml(formatToken(row.workstream || row.phase || "unassigned"))}</div>
+                          </td>
+                          <td>
+                            ${row.company ? `<strong>${escapeHtml(row.company)}</strong>` : "-"}
+                            ${row.transaction_number ? `<div class="small-muted">Txn: ${escapeHtml(row.transaction_number)}</div>` : ""}
+                            ${row.amount_display ? `<div class="small-muted">${escapeHtml(row.amount_display)}</div>` : ""}
+                            ${row.expected_delivery_date ? `<div class="small-muted">ETA: ${escapeHtml(row.expected_delivery_date)}</div>` : ""}
+                          </td>
+                          <td>
+                            ${statusChip(row.status || row.procurement_stage || "tracked")}
+                            ${row.procurement_stage ? `<div class="small-muted">Stage: ${escapeHtml(formatToken(row.procurement_stage))}</div>` : ""}
+                            ${row.delivery_status ? `<div class="small-muted">Delivery: ${escapeHtml(formatToken(row.delivery_status))}</div>` : ""}
+                            ${row.audit_status ? `<div class="small-muted">Audit: ${escapeHtml(formatToken(row.audit_status))}</div>` : ""}
+                          </td>
+                          <td>${renderStatusText(row.evidence_ref || row.product_link || "", 140)}</td>
+                          <td>
+                            ${renderStatusText([row.order_search_query, row.receipt_search_query].filter(Boolean).join(" | "), 170)}
+                          </td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="6">No ordering or receipt watchlist rows were loaded.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusUpdate() {
+    const update = data.status_update || {};
+    const gmail = update.gmail || {};
+    const gmailSummary = gmail.summary || {};
+    const whatsapp = update.whatsapp || {};
+    const whatsappImportSummary = whatsapp.import_summary || {};
+    const whatsappProjectSummary = whatsapp.project_summary || {};
+    const whatsappTotals = whatsappImportSummary.totals || {};
+    const whatsappMessages = (whatsappProjectSummary.messages || {});
+    const gmailRows = Array.isArray(gmail.rows) ? gmail.rows : [];
+    const whatsappRows = Array.isArray(whatsapp.rows) ? whatsapp.rows : [];
+    const whatsappNewRows = Array.isArray(whatsapp.new_rows) ? whatsapp.new_rows : [];
+    const manualRows = Array.isArray(update.manual_updates) ? update.manual_updates : [];
+    const watchlistRows = Array.isArray(update.delivery_watchlist) ? update.delivery_watchlist : [];
+
+    root.innerHTML = `
+      <section class="status-update-view">
+        <div class="status-update-head">
+          <div>
+            <h2 class="section-title">Latest Comms Status Update</h2>
+            <p class="section-subtitle">Detailed Gmail import, WhatsApp project extract, manual tracker changes, and order/receipt audit state for ${escapeHtml(update.date_tag || "the latest run")}.</p>
+          </div>
+          <div class="chip-row">
+            ${chip(update.date_tag || "latest")}
+            ${chip(`${Object.keys(update.source_files || {}).length} source files`)}
+          </div>
+        </div>
+
+        <section class="metrics-grid">
+          ${renderStatusMetric("Gmail Read", gmailSummary.unique_messages_read ?? gmailRows.length, `${gmailSummary.excluded_non_project_records ?? 0} excluded`)}
+          ${renderStatusMetric("Gmail Categorized", gmailSummary.categorized_records_written ?? gmailRows.length, `${gmailSummary.queries_run ?? 0} queries`)}
+          ${renderStatusMetric("WhatsApp Project Rows", whatsappMessages.project_rows_total ?? whatsappRows.length, `${whatsappTotals.messages_imported ?? 0} imported messages`)}
+          ${renderStatusMetric("New WhatsApp Rows", whatsappMessages.project_rows_new_since_rerun ?? whatsappNewRows.length, `${whatsappTotals.media_imported ?? 0} media items`)}
+          ${renderStatusMetric("Manual Tracker Rows", manualRows.length, "Expenses, procurement, workstreams")}
+          ${renderStatusMetric("Delivery Watchlist", watchlistRows.length, "Orders and receipt checks")}
+        </section>
+
+        ${renderStatusSourceFiles(update.source_files || {})}
+
+        <section class="cards-grid status-update-summary-grid">
+          <article class="card">
+            <div class="detail-header">
+              <h3>Gmail Summary</h3>
+              ${chip(`${gmailRows.length} rows`)}
+            </div>
+            <p class="small-muted">Query after: ${escapeHtml(gmailSummary.new_messages_query_after || "unknown")}</p>
+            <div class="chip-row">${renderStatusCountChips(gmail.category_counts)}</div>
+            <div class="chip-row">${renderStatusCountChips(gmail.top_sources)}</div>
+          </article>
+          <article class="card">
+            <div class="detail-header">
+              <h3>WhatsApp Summary</h3>
+              ${chip(`${whatsappRows.length} project rows`)}
+            </div>
+            <p class="small-muted">Selected chats: ${escapeHtml(whatsappTotals.selected_chats ?? 0)}. Messages imported: ${escapeHtml(whatsappTotals.messages_imported ?? 0)}. Media imported: ${escapeHtml(whatsappTotals.media_imported ?? 0)}.</p>
+            <div class="chip-row">${renderStatusCountChips(Object.entries((whatsappMessages.categories || {})).map(([label, count]) => ({ label, count })))}</div>
+          </article>
+        </section>
+
+        ${renderStatusManualRows(manualRows)}
+        ${renderStatusGmailRows(gmailRows)}
+        ${renderStatusWhatsappRows(whatsappRows)}
+        ${renderStatusDeliveryWatchlist(watchlistRows)}
+      </section>
+    `;
+  }
+
   function renderWhatsappOverviewSection(summary) {
     const selectedChatsSummary = toNumber(summary.whatsapp_j40_selected_chats);
     const mediaItemsSummary = toNumber(summary.whatsapp_j40_media_items);
@@ -6842,6 +7380,8 @@
           <p class="metric-label">Later / Deferred Tasks</p>
         </article>
       </section>
+
+      ${renderStatusUpdateSnapshot()}
 
       <h2 class="section-title">Workstreams and Status</h2>
       <section class="card overview-status-card">
@@ -9866,6 +10406,8 @@
     let renderer = renderOverview;
     if (state.activeView === "workstreams") {
       renderer = renderWorkstreams;
+    } else if (state.activeView === "status-update") {
+      renderer = renderStatusUpdate;
     } else if (state.activeView === "vehicle-map") {
       renderer = renderVehicleMap;
     } else if (state.activeView === "parts") {

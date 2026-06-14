@@ -10,9 +10,9 @@ Update after the May 3/May 4 review: the standard engine/cooling/fuel/vacuum/bre
 
 The remaining holds are no longer generic "measure every pipe" holds. They are install/safety holds: 2H vacuum pump oil outlet fitted-presence check, brake/clutch hydraulic fitting and movement checks, formed-pipe dry-fit/pressure test, fuel prime leak test, coolant pressure test, vacuum assist check, and final chafe checks.
 
-The body/front-support rubber recreation parts now have a separate Longman order spec in [Longman Rubber Order Spec](longman-rubber-order-spec-20260508.md). The current preferred body-pad quote shape is square flat isolator pads because the vehicle photos do not prove molded sockets on either side; final hole/sleeve and station trim still come from removed samples and station measurements.
+The body/front-support rubber recreation parts now have a separate Longman order spec in [Longman Rubber Order Spec](longman-rubber-order-spec-20260508.md). The current preferred body-pad quote shape is a single square flat isolator pad because the vehicle photos do not prove molded sockets on either side; final hole/sleeve and station trim still come from removed samples and station measurements.
 
-- Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; current first-article bore is `18.0 mm` for Toyota `90560-12009` style body-mount sleeves.
+- Main body isolator pads: one active `80 x 80 x 24 mm` square pad, quote `30` total (`12` base pads plus `18` stacking/trim spares); current first-article bore is `18.0 mm` for Toyota `90560-12009` style body-mount sleeves. Do not quote a separate `70 mm` or `22 mm` body-pad line.
 - Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, with relief only if the physical sample confirms it is functional.
 - Front support strip rubbers: left/right are now released as plain first-article underfloor support strips, `420 x 38 x 8 mm`, with final end trim controlled by dry-fit.
 

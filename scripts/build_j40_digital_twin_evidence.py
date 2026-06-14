@@ -150,10 +150,14 @@ def model_part_matches(component_group: str, specific_component: str, parts: lis
         score = 0
         if part.group in group_hints:
             score += 3
+        if part.group == "datum":
+            score += 3
         part_tokens = tokens(f"{part.group} {part.name} {part.notes}")
         overlap = component_tokens & part_tokens
         score += len(overlap) * 2
         if part.group in group_hints and overlap:
+            score += 2
+        if part.group == "datum" and overlap:
             score += 2
         if score >= 4:
             scored.append((score, part))
@@ -165,6 +169,8 @@ def readiness(rows: list[dict[str, str]], matches: list[PartRow], specific_compo
     if not matches:
         return "photos_only_needs_model_geometry"
     if any("measurement" in row.get("stage", "") for row in rows):
+        if any(part.group == "datum" or "datum" in part.confidence.lower() for part in matches):
+            return "represented_needs_dimension_check"
         return "measurement_photo_available_needs_cad_datum"
     if any(part.confidence.startswith(("L0", "L1")) for part in matches):
         return "represented_needs_measurement_refinement"
@@ -286,6 +292,13 @@ def write_notes(matrix_rows: list[dict[str, str]], backlog_rows: list[dict[str, 
     photo_total = sum(int(row["photo_count"]) for row in matrix_rows)
     job_linked_count = sum(1 for row in matrix_rows if row.get("component_job_ids"))
     p1_rows = [row for row in backlog_rows if row["measurement_priority"] == "P1"]
+    datum_closure_rows = [
+        row
+        for row in matrix_rows
+        if "datum" in split_pipe_values(row.get("model_groups", ""))
+        and row["digital_twin_readiness"] == "represented_needs_dimension_check"
+        and row["component_group"] not in {"documentation_reference", "procurement_inventory"}
+    ]
     lines = [
         "# J40 Digital Twin Build Notes",
         "",
@@ -304,6 +317,14 @@ def write_notes(matrix_rows: list[dict[str, str]], backlog_rows: list[dict[str, 
     ]
     for name, count in readiness_counts.most_common():
         lines.append(f"- `{name}`: {count}")
+    if datum_closure_rows:
+        lines.extend(["", "## CAD Datum Closure", ""])
+        for row in datum_closure_rows[:10]:
+            lines.append(
+                "- `{component_group}/{specific_component}` now has named datum geometry; examples `{model_part_examples}`".format(
+                    **row
+                )
+            )
     lines.extend(["", "## Strongest Photo Coverage", ""])
     for group, count in group_counts.most_common(12):
         media = sum(int(row["photo_count"]) for row in matrix_rows if row["component_group"] == group)

@@ -5149,3 +5149,67 @@ color([0.486, 0.435, 0.796, 0.80])
 // datum: rear_track_datum_line - measurement datum
 color([0.486, 0.435, 0.796, 0.80])
   cylinder_part(3020, 0, 260, "y", 18, 1410);
+
+// datum: cooling_pipe_fabrication_samples_main_run_datum - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(505, -235, 1145, "x", 30, 520);
+
+// datum: cooling_pipe_fabrication_samples_vertical_leg_datum - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(360, -235, 995, "z", 30, 315);
+
+// datum: cooling_pipe_fabrication_samples_upper_hose_overlap_datum - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(245, -235, 1160, "x", 42, 185);
+
+// datum: cooling_pipe_fabrication_samples_lower_hose_overlap_datum - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(330, -235, 835, "x", 42, 165);
+
+// datum: cooling_pipe_fabrication_samples_clamp_pair_datum - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  box_part(286, -235, 1000, 34, 84, 365);
+
+// datum: radiator_sample_measurement_core_envelope - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  box_part(205, 0, 915, 90, 1030, 430);
+
+// datum: front_support_radiator_measurement_set_lower_pickup_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(190, 0, 625, "y", 18, 890);
+
+// datum: front_support_radiator_pickups_context_upper_pickup_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(188, 0, 1190, "y", 18, 840);
+
+// datum: existing_battery_mount_tray_measurements_tray_footprint - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  box_part(575, 430, 640, 360, 250, 36);
+
+// datum: existing_battery_mount_tray_measurements_hold_down_span - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(575, 430, 1005, "y", 16, 250);
+
+// datum: installed_battery_dimension_reference_length_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(570, 300, 900, "x", 16, 330);
+
+// datum: installed_battery_dimension_reference_width_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(735, 430, 900, "y", 16, 225);
+
+// datum: installed_battery_dimension_reference_height_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(745, 560, 875, "z", 16, 225);
+
+// datum: suspension_bump_stop_removed_samples_front_envelope - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  box_part(640, -560, 330, 125, 90, 86);
+
+// datum: suspension_bump_stop_removed_samples_rear_envelope - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  box_part(2925, -560, 330, 125, 90, 86);
+
+// datum: suspension_bump_stop_removed_samples_mount_hole_spacing_bar - measurement datum from project photos
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(640, -560, 392, "x", 14, 86);

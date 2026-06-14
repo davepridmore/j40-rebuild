@@ -38,23 +38,23 @@ Send these files to the rubber/steel fabricator:
 6. Matching `*.svg` files - visual reference copies.
 7. `models_3d/*.scad` - parametric 3D models for current square-pad quote geometry and hold-only bump-stop/exhaust reference shapes.
 
-Note: the May 8 Longman order supersedes the earlier circular body-pad placeholder for the main body isolators. The active quote basis is square `BM-ISO-SM` and `BM-ISO-LG` pads. Use `models_3d/bm_iso_sm_square_pad.scad` and `bm_iso_lg_square_pad.scad` for the current 3D envelopes. They default to the production `18.0 mm` bore for the Toyota `90560-12009` style body-mount sleeve.
+Note: the current Longman order supersedes the earlier circular body-pad placeholder and the old small/large body-pad split for the main body isolators. The active quote basis is one square `BM-ISO-LG` pad: `80 x 80 x 24 mm` with an `18.0 mm` bore for the Toyota `90560-12009` style body-mount sleeve. `BM-ISO-SM` is retained only as a removed traceability row.
 
 Package contents:
 
 | Part | DXF | Release Use |
 | --- | --- | --- |
-| `BM-ISO-SM` small square body pad | `models_3d/bm_iso_sm_square_pad.scad` | Active Longman quote/first article: `70 x 70 x 22`, `18.0` bore |
-| `BM-ISO-LG` large square body pad | `models_3d/bm_iso_lg_square_pad.scad` | Active Longman quote/first article: `80 x 80 x 24`, `18.0` bore |
-| `BM-SM` small circular cushion | `bm_sm_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by square `BM-ISO-SM` unless circular profile is deliberately reopened |
-| `BM-LG` large circular cushion | `bm_lg_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by square `BM-ISO-LG` unless circular profile is deliberately reopened |
+| `BM-ISO-SM` removed small-height square body pad | `models_3d/bm_iso_sm_square_pad.scad` | Removed from active order; do not quote/fabricate separately |
+| `BM-ISO-LG` single active square body pad | `models_3d/bm_iso_lg_square_pad.scad` | Active Longman quote/first article: `80 x 80 x 24`, `18.0` bore, quote `30` total |
+| `BM-SM` small circular cushion | `bm_sm_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by the single square `BM-ISO-LG` body pad unless circular profile is deliberately reopened |
+| `BM-LG` large circular cushion | `bm_lg_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by the single square `BM-ISO-LG` body pad unless circular profile is deliberately reopened |
 | `BM-CUP` small cup washer blank | `bm_cup_small_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `BM-CUP` large cup washer blank | `bm_cup_large_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
 | `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Released plain first-article strip: `420 x 38 x 8`; local end trim only after dry-fit |
 | `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Released plain first-article strip: `420 x 38 x 8`; local end trim only after dry-fit |
 | `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Toyota `90917-08004` / `17572-92000` is a reference shape only; source exact new stock or locally mould from a genuine sample/intact original with side profile, insert depth, thickness, and reinforcement confirmed |
-| `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | May 29 removed-sample mould release. Long `48304-60010` positions remain externally controlled at `70 mm`; right-front `48304-60020` remains `60 mm` unless vehicle testing says otherwise. Reproduce the sample-style molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered sides, and flat strike area. Rubber body outline, through-hole pattern, fixture/channel detail, and contact offset come from the May 29 samples, removed metal fixture, and vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
+| `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | May 31 exact front-stop photo mould release. Long `48304-60010` positions remain externally controlled at `70 mm`; right-front `48304-60020` remains `60 mm` unless vehicle testing says otherwise. Reproduce the May 31 front-stop molded rubber body with two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered sides, and flat strike area. Rear/back stops use the same front-stop body and fixture pattern made longer. Fixture detail and contact offset are checked against the May 29 removed-fixture photos, removed metal fixture, and vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
 
 Common handoff index: `docs/fabrication-handoff-index.md`.
 
@@ -67,7 +67,7 @@ Use this section as the fabrication purchase-order language. The dimension table
 Before full production, the fabricator must provide:
 
 1. A written quote listing each part ID, quantity, material, hardness, process route, and whether the part is cut, moulded, bonded, or formed.
-2. A first-article set: one `BM-ISO-SM`, one `BM-ISO-LG`, one `FS-OVAL`, and one left/right strip trial.
+2. A first-article set: one `BM-ISO-LG` single active body pad, one `FS-OVAL`, and one left/right strip trial.
 3. A material declaration or supplier datasheet for the rubber compound, including base polymer family and Shore A hardness.
 4. A one-page inspection report with part ID, quantity, key dimensions, durometer readings, visual result, date, and fabricator contact.
 5. Labeled bags for every part family and side/station where applicable.
@@ -79,7 +79,7 @@ Do not approve the final batch until the first articles pass dimensional check, 
 
 Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, used rubber, old salvage rubber, or unidentified compound.
 
-Bump stops are the exception to the body/front-support hardness target. Use the separate bump-stop material control: `NR/SBR` automotive bump-stop rubber Shore A `70 +/-5`, or cast automotive PU Shore A `80 +/-5` only if the May 29 sample-style through-hole layout, central fixture/channel interface, progressive mould shape, and rebound recovery are held. The old bump-stop rubber is construction evidence, not a final dimension master; caliper the samples and removed fixture before mould release.
+Bump stops are the exception to the body/front-support hardness target. Use the separate bump-stop material control: `NR/SBR` automotive bump-stop rubber Shore A `70 +/-5`, or cast automotive PU Shore A `80 +/-5` only if the May 31 exact front-stop through-hole layout, central fixture/channel interface, progressive mould shape, and rebound recovery are held. Rear/back stops use the same shape made longer. The old bump-stop rubber is construction evidence, not a final dimension master; caliper the samples and removed fixture before mould release.
 
 Required material targets:
 
@@ -96,7 +96,7 @@ If the fabricator cannot perform the laboratory tests, require a compound suppli
 
 ### Process Controls
 
-- Keep each matched family from one compound batch and one cure/cutting setup: `BM-ISO-SM` set, `BM-ISO-LG` pair, `FS-OVAL` pair, and `FS-STRIP-L/R` pair.
+- Keep each matched family from one compound batch and one cure/cutting setup: the single `BM-ISO-LG` body-pad batch, `FS-OVAL` pair, and `FS-STRIP-L/R` pair.
 - Measure finished rubber after curing, trimming, drilling/punching, and at least `24 h` relaxation at room temperature.
 - Square body pads and flat strip liners must have flat, parallel faces; face parallelism must be `<=0.5`, and body-pad bore position must be within `+/-0.5`.
 - Functional holes and slots must be punched, bored, or waterjet cut. Do not burn, tear, or rough hand-knife the holes.
@@ -147,7 +147,7 @@ Usable OE controls:
 | --- | --- | --- |
 | Cushion station IDs | `NO.1` to `NO.5`, upper/lower rows, with left/right quantities | Do not release production until every old cushion is mapped to a Toyota station and vehicle side. |
 | Cushion part numbers | `90540-16043`, `52204-35010`, `52202-30010`, `52022-60010`, `90540-17045`, `52023-60010`, `52209-60010` | Use these to label bags and verify which physical samples belong to which station. |
-| Rubber dimensions | No OE OD/ID/free-height dimensions found in open official/OEM listing sources | Use the measured old-rubber/photo dimensions as the quote and first-article basis for `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, and `FS-STRIP`; station fit and final caliper checks close before final install/production. |
+| Rubber dimensions | No OE OD/ID/free-height dimensions found in open official/OEM listing sources | Use the measured old-rubber/photo dimensions as context for the single active `BM-ISO-LG` body pad, `FS-OVAL`, and `FS-STRIP`; station fit and final caliper checks close before final install/production. |
 | Body-mount bolts | `90105-10053` for `NO.1` to `NO.3`; `90101-10463` for `NO.4` to `NO.5` | Confirms bolt families, but final length and pitch still need direct vehicle confirmation. |
 | Cushion spacers | `90560-12232`, `90560-12231`, `90560-12233`, `90560-12234` | Reuse/measure original spacers before reproducing because listing does not publish dimensions. |
 | Shim/spacer thicknesses | `52212-90310 T=10`, `52216-90310 T=5.0`, `52217-90310 T=15`, `52033-90301 T=22.8`, `52033-90304 T=27.8` | Use these as legitimate Toyota thickness references. Do not improvise with washer stacks. |
@@ -165,12 +165,12 @@ Energy Suspension `8.4104` data is useful because it publishes exact thicknesses
 | `4147` body mount bushing | `0.240 in` | `6.10 mm` | `2` | Conditional: identify only if matching physical samples/positions exist. |
 
 Impact on this spec:
-- `BM-ISO-LG` is released for quote/first article at `24 mm` height, because the photo-derived target and the published `4144` thickness agree.
-- `BM-ISO-SM` is released for quote/first article as a square `22 mm` pad. The Energy split-stack reference remains useful only as a dry-stack/compression check before final install.
-- Any short/extra mount pieces must be added only after they are found in the actual removed samples or on the vehicle. Do not add Energy kit pieces just because they appear in an aftermarket kit.
+- `BM-ISO-LG` is the single active body-pad order line at `80 x 80 x 24 mm`.
+- `BM-ISO-SM` / `22 mm` body-pad production is removed. The Energy split-stack reference remains useful only as a dry-stack/compression check before final install.
+- Any short/extra mount pieces must be added only after they are found in the actual removed samples or on the vehicle. Do not add Energy kit pieces just because they appear in an aftermarket kit, and do not create a separate `70 mm` body-pad SKU from the cup photos.
 
 Reconciliation risk:
-- The Toyota OE/EPC listing uses `NO.1` to `NO.5` station groups with left/right quantities. The current working fabrication set is based on the photographed physical pieces and the early `2 large + 10 small` rubber-family count.
+- The Toyota OE/EPC listing uses `NO.1` to `NO.5` station groups with left/right quantities. The current working fabrication set has moved away from the early `2 large + 10 small` rubber-family count to the single active `80 x 80 x 24` pad.
 - Treat this as a station-mapping hold, not as permission to change the fabrication count blindly. During dry-fit, label the chassis/body positions `FL`, `FR`, `ML`, `MR`, `RL`, `RR`, then map each physical rubber/cup/sleeve stack to the Toyota `NO.1` to `NO.5` rows that actually apply to this vehicle.
 - If a Toyota station row is present on the vehicle but not represented in the May 2 photos, that missing rubber or spacer becomes a separate procurement/fabrication item before primer and body refit.
 
@@ -220,8 +220,8 @@ Longman can quote and make first articles from the measured old-rubber dimension
 
 | Part ID | Part | Qty | Nominal Dimensions | Status |
 | --- | --- | ---: | --- | --- |
-| `BM-ISO-SM` | Small station square body isolator pad | `10` | `70 L x 70 W x 22 H`, square flat pad, `18.0` centre bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, edge break/chamfer `1.0` max | Released for quote / first article |
-| `BM-ISO-LG` | Large station square body isolator pad | `2` | `80 L x 80 W x 24 H`, square flat pad, `18.0` centre bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, edge break/chamfer `1.0` max | Released for quote / first article |
+| `BM-ISO-SM` | Removed smaller 22 mm square body isolator pad line | `0` | Removed; use `BM-ISO-LG` single active `80 x 80 x 24` pad instead | Removed from active order |
+| `BM-ISO-LG` | Single active 80 mm square body isolator pad | `30 total` | `80 L x 80 W x 24 H`, square flat pad, `18.0` centre bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, edge break/chamfer `1.0` max | Released for quote / first article |
 | `BM-SLV` | Main body-mount crush sleeve | `6` | `ID 10.8-11.0` for M10 bolt; OD and length held for caliper confirmation | Hold |
 | `BM-CUP` | Body-mount cup/seat washer | `12` | small cup `OD 64`, large cup `OD 78`, M10 clearance hole `11`, dish/register depth `2-3`, steel `2.5-3.0` thick | Separate hardware inspect / quote if needed |
 | `FS-OVAL` | Two-hole oval front-support isolator pad | `2` | length `96`, width `64`, thickness `15`, holes `12`, hole spacing `64`, relief `36 x 18 R3` if functional, insert/boss `OD 29` | Released for quote / first article |
@@ -232,19 +232,20 @@ Longman can quote and make first articles from the measured old-rubber dimension
 
 Relevant images: `RRB-004`, `RRB-010`, `RRB-011`, `RRB-013`, `RRB-014`.
 
-Fabricate two square flat body-pad families for the current Longman order:
+Fabricate one square flat body-pad family for the current Longman order:
 
-| Dimension | `BM-ISO-SM` | `BM-ISO-LG` |
-| --- | ---: | ---: |
-| Quantity | `10` | `2` |
-| Plan size | `70 x 70` | `80 x 80` |
-| Free height | `22` | `24` |
-| Through bore | `18.0` | `18.0` |
-| Plan corner radius | `R1.5` | `R1.5` |
-| Top/bottom edge break or chamfer | `1.0` max | `1.0` max |
+| Dimension | `BM-ISO-LG` single active pad |
+| --- | ---: |
+| Quantity | `30 total` (`12` base pads + `18` stacking/trim spares) |
+| Plan size | `80 x 80` |
+| Free height | `24` |
+| Through bore | `18.0` |
+| Plan corner radius | `R1.5` |
+| Top/bottom edge break or chamfer | `1.0` max |
 
 Fabrication notes:
 - Make the faces flat and parallel.
+- Do not create new shaped/ribbed body-rubber variants or a separate `70 mm` / `22 mm` body-pad SKU. Use the simple square pad and dry-fit any two-pad stack station-by-station.
 - Keep the bore centred within `+/-0.5`.
 - The `18.0` bore is for the Toyota `90560-12009` style body-mount sleeve. The M10 bolt must pass through the steel sleeve, not clamp directly through raw rubber.
 - The sleeve controls crush. Do not clamp the body mount by crushing raw rubber around the bolt.
@@ -267,8 +268,7 @@ Cup/seat washers:
 - Quantity: `12`.
 - Steel thickness: `2.5-3.0`.
 - Clearance hole: `11` for M10.
-- Small station support footprint: must support the `70 x 70` square pad without rocking or cutting into the edge.
-- Large station support footprint: must support the `80 x 80` square pad without rocking or cutting into the edge.
+- Every main body station support footprint must support the single active `80 x 80` square pad without rocking or cutting into the edge; trim the pad only where dry-fit proves a local interference.
 - Register/dish depth: `2-3`.
 - Reuse original cups only if flat, not thinned, and not cracked. Otherwise press/form new cups.
 
@@ -382,10 +382,10 @@ Before accepting the batch:
 | Hold | Why | Must Be Confirmed With |
 | --- | --- | --- |
 | `BM-SLV` sleeve OD and length | Controls compression and final body height | Calipers on old sleeve or complete stack dry-fit |
-| `BM-ISO-SM/BM-ISO-LG` station footprint | Square pad must sit on flat bearing area without rocking, edge overhang, or contact with weld/rust lips | Station photo and dry-fit |
-| `BM-ISO-SM/BM-ISO-LG` sleeve/cup/shim stack | Sleeve must control clamp load without over-crushing the pad | Bench dry-stack and vehicle dry-fit |
+| `BM-ISO-LG` station footprint | Single active square pad must sit on flat bearing area without rocking, edge overhang, or contact with weld/rust lips; trim only if dry-fit proves local interference | Station photo and dry-fit |
+| `BM-ISO-LG` sleeve/cup/shim stack | Sleeve must control clamp load without over-crushing the pad | Bench dry-stack and vehicle dry-fit |
 | `FS-OVAL` hole spacing and insert OD | Off-plane top photo and corroded insert make image-only reading risky | Calipers on physical pad/insert |
 | `FS-STRIP-L/R` local handed trim and steel retainer remake | Rubber size is now released, but any side-specific end trim or replacement steel retainer still comes from the physical sample | Dry-fit on the actual landing and direct trace from the original steel if the retainer must be remade |
 | Station count and large-pair location | Pre-1/79 pattern is the working basis, but the car may have prior repairs | Mount map during tub dry-fit |
-| Toyota `NO.1` to `NO.5` OE station mapping | OE listing does not reduce cleanly to the current `BM-ISO-SM/BM-ISO-LG` family count | Label every body/chassis mount position and reconcile against `data/manual/rubber_recreation_toyota_oe_cross_reference.csv` |
+| Toyota `NO.1` to `NO.5` OE station mapping | OE listing does not reduce cleanly to the current single-pad custom route | Label every body/chassis mount position and reconcile against `data/manual/rubber_recreation_toyota_oe_cross_reference.csv` |
 | OE shim/spacer thickness | Some Toyota spacer rows publish thickness, but most cushion spacers do not | Use Toyota thickness rows where available; measure original spacers and shims before copying |

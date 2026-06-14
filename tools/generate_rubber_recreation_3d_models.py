@@ -348,46 +348,55 @@ def bump_stop_scad(part_id: str, title: str, height: float, qty: str) -> tuple[M
         + f"""
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - May 29 removed samples now control the construction concept for both bump
-//   stops: broad rounded/tapered rubber body, two through-holes in the rubber,
-//   central fixture/channel interface, and flat strike area.
-// - Final body footprint, through-hole pitch/diameter, fixture channel, and
+// - May 31 exact front-stop photos now control the visible body shape:
+//   broad rounded/tapered rubber body on a metal/fixture base plate,
+//   two end bolt holes in that base/fixture, and a flat strike area.
+// - Rear/back stops use the same front-stop shape and fixture pattern at the
+//   longer Toyota-family height.
+// - Final body footprint, base-hole pitch/diameter, fixture interface, and
 //   strike offset must be confirmed from sample calipers, removed metal fixture,
 //   cleaned vehicle bracket, and axle strike pad.
 // - This model is a first-article conversation shape, not a released mould.
 
 module {module_name}(
   free_height = {height:g},
-  top_length = 58,
-  top_width = 32,
+  top_length = 70,
+  top_width = 38,
   rubber_base_length = 92,
-  rubber_base_width = 54,
-  rubber_hole_pitch = 64,
-  rubber_hole_d = 12,
-  fixture_channel_width = 20,
-  fixture_channel_depth = 6
+  rubber_base_width = 52,
+  base_plate_length = 128,
+  base_plate_width = 58,
+  base_plate_thickness = 6,
+  base_hole_pitch = 100,
+  base_hole_d = 14,
+  strike_face_depth = 2
 ) {{
   union() {{
-    color("black")
+    color([0.42, 0.28, 0.20])
       difference() {{
-        hull() {{
-          translate([0, 0, 0.5])
-            linear_extrude(height = 1, center = false)
-              rounded_rect_2d([rubber_base_length, rubber_base_width], 10);
-          translate([0, 0, free_height - 1])
-            linear_extrude(height = 1, center = false)
-              rounded_rect_2d([top_length, top_width], 6);
-        }}
+        linear_extrude(height = base_plate_thickness, center = false)
+          capsule_2d(base_plate_length, base_plate_width);
 
-        if (rubber_hole_d > 0 && rubber_hole_pitch > 0)
-          for (x = [-rubber_hole_pitch / 2, rubber_hole_pitch / 2])
+        if (base_hole_d > 0 && base_hole_pitch > 0)
+          for (x = [-base_hole_pitch / 2, base_hole_pitch / 2])
             translate([x, 0, -1])
-              cylinder(h = free_height + 2, d = rubber_hole_d);
+              cylinder(h = base_plate_thickness + 2, d = base_hole_d);
       }}
 
-    color("silver")
-      translate([0, 0, free_height - fixture_channel_depth / 2])
-        cube([fixture_channel_width, rubber_base_width + 4, fixture_channel_depth], center = true);
+    color("black")
+      hull() {{
+        translate([0, 0, base_plate_thickness + 0.5])
+          linear_extrude(height = 1, center = false)
+            rounded_rect_2d([rubber_base_length, rubber_base_width], 10);
+        translate([0, 0, base_plate_thickness + free_height - 1])
+          linear_extrude(height = 1, center = false)
+            rounded_rect_2d([top_length, top_width], 8);
+      }}
+
+    color([0.17, 0.18, 0.16])
+      translate([0, 0, base_plate_thickness + free_height])
+        linear_extrude(height = strike_face_depth, center = false)
+          rounded_rect_2d([top_length, top_width], 8);
   }}
 }}
 
@@ -399,10 +408,10 @@ module {module_name}(
         filename=filename,
         title=title,
         quantity=qty,
-        release_status="May 29 removed-sample measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release",
-        controls=f"{height:g} mm free height known; May 29 sample-style rubber through-holes, central fixture/channel interface, and strike geometry vehicle-controlled",
+        release_status="May 31 front-stop measurement model; sample calipers, fixture fit, bracket fit, and strike offset required before mould release",
+        controls=f"{height:g} mm free height known; May 31 front-stop tapered rubber body, metal/fixture base plate with end bolt holes, and strike geometry vehicle-controlled",
         old_part_questions=(
-            "Caliper the May 29 removed samples and removed metal fixture: rubber body length/width, through-hole pitch/diameter, central fixture/channel size, "
+            "Caliper the May 31 exact front-stop sample/photos and removed metal fixture: rubber body length/width, base-hole pitch/diameter, fixture/base thickness and interface, "
             "vehicle bracket fit, strike-pad offset, loaded gap, and safe near-full-bump clearance."
         ),
     )
@@ -516,15 +525,19 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
 - `BM-ISO-SM` and `BM-ISO-LG` default to `hole_d = 18.0`, matching the Toyota
   `90560-12009` spacer basis. Production release uses the 18.0 mm bore; `hole_d = 0`
   is a non-release CAD override only.
+- The 80 x 80 body pads are deliberately simple. Extra BM-ISO pieces cover
+  dry-fit stacking or station proof where two pads are needed; do not create
+  new ribbed or shaped body-rubber variants without a station trace.
 - `FS-OVAL` has optional `relief_depth`; the old part must prove whether the
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are May 29 removed-sample measurement placeholders. Free
-  height is known, but rubber body outline, through-hole pitch/diameter,
-  central fixture/channel detail, and strike geometry must come from sample
-  calipers, the removed metal fixture, cleaned vehicle brackets, and axle
-  strike pads.
+- Bump-stop models use the May 31 exact front-stop photos as the visible shape
+  master. Free height is known; the rear/back stop is the same shape stretched
+  to the longer height. Rubber body outline, through-hole pitch/diameter,
+  central fixture/channel detail, and strike geometry must still be checked
+  against sample calipers, the removed metal fixture, cleaned vehicle brackets,
+  and axle strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.
 """
@@ -535,14 +548,14 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated: list[ModelFile] = []
     specs = [
-        body_pad_scad("BM-ISO-SM", "BM-ISO-SM main body isolator pad, small stations", 70, 22, "10 plus 2 spares"),
-        body_pad_scad("BM-ISO-LG", "BM-ISO-LG main body isolator pad, large stations", 80, 24, "2 plus 1 spare"),
+        body_pad_scad("BM-ISO-SM", "BM-ISO-SM main body isolator pad, small-height stations", 80, 22, "10 plus 6 spares"),
+        body_pad_scad("BM-ISO-LG", "BM-ISO-LG main body isolator pad, large stations", 80, 24, "2 plus 2 spares"),
         fs_oval_scad(),
         strip_scad("FS-STRIP-L", "left"),
         strip_scad("FS-STRIP-R", "right"),
-        bump_stop_scad("B-60010-LONG", "BUMP-60010 long bump stop model, front-left and rear", 70, "3"),
-        bump_stop_scad("B-60020-SHORT", "BUMP-60020 short right-front bump stop model", 60, "1"),
-        bump_stop_scad("B-60010-REAR-PAIR", "BUMP-60010 rear pair bump stop model", 70, "2"),
+        bump_stop_scad("B-60010-LONG", "BUMP-60010 rear/back long stop model, same front shape", 70, "3"),
+        bump_stop_scad("B-60020-SHORT", "BUMP-60020 exact front/right-front stop model", 60, "1"),
+        bump_stop_scad("B-60010-REAR-PAIR", "BUMP-60010 rear pair same front-shape model", 70, "2"),
         exhaust_scad(),
     ]
     for model, text in specs:

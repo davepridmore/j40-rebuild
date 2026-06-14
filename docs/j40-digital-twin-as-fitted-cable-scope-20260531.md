@@ -105,3 +105,5 @@ Photo-only routes can enter the CAD as L1. Fabrication or crimping routes need r
 - Every electrical heavy cable has bend sweep, lug clocking, fuse/cutoff relationship, and chafe protection shown before final wrap.
 
 The route backlog lives at `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv`.
+
+The Pakistan purchase BOM for the same route IDs lives at `data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv`. The CAD generator reads this BOM so generated route parts carry their relevant buy-item IDs in the model notes.

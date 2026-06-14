@@ -2,7 +2,9 @@
 
 Date: 2026-05-08
 
-Purpose: keep the chassis/body rubber order aligned with the current evidence. The current Longman order is custom rubber, with bump-stop rubber now controlled by the May 29 removed samples after unscrewing from the metal fixture. Body-mount steel washers, cup/seat washers, crush sleeves, shims, bolts, and captive-thread repairs are inspected or ordered separately because they control the stack but are not custom rubber pieces.
+Purpose: keep the chassis/body rubber order aligned with the current evidence. The current Longman order is custom rubber, with bump-stop rubber now controlled by the May 31 exact front-stop photos. Rear/back stops use the same front-stop shape and fixture pattern, made longer to the `70 mm` family height. Body-mount steel washers, cup/seat washers, crush sleeves, shims, bolts, and captive-thread repairs are inspected or ordered separately because they control the stack but are not custom rubber pieces.
+
+The Chassis Rubbers dashboard section now also carries the complete J40 rubber coverage matrix from [rubber_ordering_specs.csv](../data/manual/rubber_ordering_specs.csv). Treat the Longman pack as the body/chassis custom-rubber subset, and treat the all-rubbers matrix as the guardrail that keeps hoses, grommets, bushes, mounts, weatherstrips, HVAC rubber, seals, plugs, and hangers in their own buy gates.
 
 Current supplier pack:
 
@@ -13,6 +15,22 @@ Current supplier pack:
 - [Complete chassis rubber SVG preview](../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg)
 - [Parametric 3D rubber models](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md)
 - [Bump-stop fabrication spec](bump-stop-fabrication-spec-20260504.md)
+- [All-rubbers ordering matrix](../data/manual/rubber_ordering_specs.csv)
+
+## Complete J40 Rubber Coverage
+
+Use the all-rubbers matrix before any rubber purchase, even when the immediate work is the body/chassis mount stack. It prevents a body-mount supplier quote from absorbing unrelated items that should be inspected, sample-matched, receipt-checked, or deferred.
+
+| Coverage group | Rows | Current position |
+| --- | --- | --- |
+| Body/chassis mount and hardware | `RUB-001` to `RUB-002` | Current Chassis Rubbers workstream. `RUB-001` is the Longman custom-rubber pack; `RUB-002` is separate sleeves/cups/shims/hardware. |
+| Grommets and pass-through seals | `RUB-003` to `RUB-004`, `RUB-017` | Buy/top-up only by measured firewall/body holes and current inventory; floor/body plugs defer until repair and coating are stable. |
+| Powertrain, steering, suspension, and intake rubber | `RUB-005` to `RUB-008`, `RUB-026` to `RUB-027` | Engine mounts are no-active-purchase; gearbox mounts, steering bushes, bump stops, and intake ducting are inspect/sample-match gates; Ironman bushes are receipt-check first. |
+| Brake, clutch, fuel, coolant, vacuum, and formed-pipe rubber | `RUB-009` to `RUB-016`, `RUB-028` | Safety/fluids stay in rated-hose gates. Brake hoses must be complete crimped assemblies, fuel hose must be fuel-rated, and coolant/heater hose must be EPDM coolant/heater hose. |
+| Exhaust, pedal, HVAC, and duct rubber | `RUB-022` to `RUB-025` | Exhaust hanger/cushion rubber waits for final support geometry; pedal rubber is later; HVAC barrier hose, drain, O-rings, duct, and defrost hose are current HVAC refit items. |
+| Body, window, roof, bonnet, and rear-door weatherstrip | `RUB-018` to `RUB-021`, `RUB-029` to `RUB-032` | Deferred until body/window/hardtop/rear-closure fit is known; do not roll these into the Longman chassis mount quote. |
+
+Current count: `32` all-rubber rows across `16` workstream categories. `9` rows are buy/lock-now or receipt-check work, `10` are current-build required, and the remaining rows are inspect-first, conditional, no-active-purchase, or deferred.
 
 ## Current Order Basis
 
@@ -42,24 +60,35 @@ The current Toyota GR Heritage 40-series list checked on 2026-05-28 does not exp
 
 Use `../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg` as the dashboard/install location guide:
 
-- `BM-ISO-SM` and `BM-ISO-LG`: main tub-to-chassis mount stack.
+- Single `80 x 80 x 24` body pad: main tub-to-chassis mount stack, ordered as a generous flat-square batch so any station that proves low can use two stacked pads.
 - `FS-OVAL`: separate left/right front support / nose-extension isolators.
 - `FS-STRIP-L/R`: left/right underfloor front-support/body-support strip landings.
-- `BUMP-60010-LONG`: front-left and both rear axle-to-chassis bump-stop stations.
-- `BUMP-60020-SHORT`: right-front axle-to-chassis bump-stop station only.
-- `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917`: visible in the preview only as hold/reference controls.
+- `BUMP-60010-LONG`: rear/back long-family axle-to-chassis bump-stop stations, plus any Toyota-controlled front-left long station if confirmed on this vehicle.
+- `BUMP-60020-SHORT`: exact front/right-front axle-to-chassis bump-stop station.
+- `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917`: hold/reference controls only, excluded from the purchase 3D view.
+
+Main body rubbers stay deliberately simple: the active route is one plain `80 x 80 x 24` square body-pad size. The smaller `22 mm` body-rubber line is removed from the order. The Longman quote now carries `30` flat square pads so there is enough stock for stations that prove they need two stacked pads, not a release for new ribbed or shaped body-rubber variants.
+
+## Three Things To Order
+
+The Longman request should be presented as three supplier-facing order groups, with the part IDs below retained as drawing and first-article controls:
+
+| Order group | What to order | Qty |
+| --- | --- | --- |
+| 1. Simple `80 x 80` body pads | Single `80 x 80 x 24` body-pad size; smaller `22 mm` pad line removed | `30` body pads |
+| 2. Front support / body-support rubbers | `FS-OVAL` plus `38 x 8` strip stock for the left/right underfloor strips | `2` oval pads, `2 m` of strip stock; cut `2 x 420 mm` strips after dry-fit |
+| 3. Bump stops | Long rear/back bump stops plus short exact front/right-front stop | `3` long stops and `1` short stop |
 
 ## Rubber Order Lines
 
 | ID | Status | Qty | Current spec | Release gate |
 | --- | --- | ---: | --- | --- |
-| `BM-ISO-SM` | Released for quote / first article | `10 + 2 spares` | 3D envelope `70 L x 70 W x 22 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; Shore A `60 +/-5`. | Station mapping, footprint check, sleeve/cup/shim dry-stack, and compression check before final install. |
-| `BM-ISO-LG` | Released for quote / first article | `2 + 1 spare` | 3D envelope `80 L x 80 W x 24 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; same compound batch as small pads if possible. | Confirm the large-pair station, footprint, sleeve/cup/shim dry-stack, and compression check before final install. |
+| `BM-ISO-LG` | Released for quote / first article as the single active body-pad size | `12 base + 18 stacking/trim spares` | 3D envelope `80 L x 80 W x 24 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; smaller `22 mm` line removed from order; use a second identical pad only where dry-fit proves extra height is needed. | Station mapping, footprint check, sleeve/cup/shim dry-stack, any two-pad station proof, and compression check before final install. |
 | `FS-OVAL` | Released for quote / first article | `2` | 3D envelope `96 L x 64 W x 15 T mm`; capsule ends `R32`; outer edge break `0.5-1.0 mm`; two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Caliper-confirm hole centres, thickness, insert/boss/relief construction before final pair. |
-| `FS-STRIP-L` | Released for quote / first article | `1` | 3D envelope `420 L x 38 W x 8 T mm`; plan corners `R1.5`; top/bottom edge break `0.5-1.0 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, then apply only proven end trim; reuse or trace the slotted steel retainer separately if needed. |
-| `FS-STRIP-R` | Released for quote / first article | `1` | Same flat strip spec as left: `420 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`. Use the same blank unless the right side proves a handed end trim. | Same first-article dry-fit and retainer rule as left. |
-| `BUMP-60010-LONG` | First article required | `3` | Sample-style long bump-stop rubber copied from the May 29 removed samples: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area; external long-family height target remains `70 +/-1 mm` pending caliper/vehicle release. | May 29 samples plus removed metal fixture, vehicle bracket, and axle strike pad control BL/BW/P/D/X-Y/G/F and fixture-channel dimensions; make one first article before remaining long stops. |
-| `BUMP-60020-SHORT` | First article required | `1` | Same sample-style construction as the long stop, applied to the right-front station; external short-family height target remains `60 +/-1 mm` unless vehicle full-bump testing releases another height. | May 29 samples plus right-front bracket and axle strike pad control rubber footprint, through-hole pattern, fixture/channel interface, and contact face. |
+| `FS-STRIP-L` | Released for quote / first article | `1 cut from stock` | Cut `420 L x 38 W x 8 T mm` from a shared `2 m` order of `38 x 8 mm` plain strip stock after dry-fit; plan corners `R1.5`; top/bottom edge break `0.5-1.0 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, allow for a non-perfectly-straight run, then apply only proven end/edge trim; keep spare stock for similar strip landings; reuse or trace the slotted steel retainer separately if needed. |
+| `FS-STRIP-R` | Released for quote / first article | `1 cut from stock` | Same `420 L x 38 W x 8 T mm` cut piece from the shared `38 x 8 mm` stock unless the right side proves a handed or non-straight trim. | Same first-article dry-fit and retainer rule as left. |
+| `BUMP-60010-LONG` | First article required | `3` | Same May 31 exact front-stop body shape, through-hole pattern, central fixture/channel interface, broad rounded/tapered body, and flat strike area, made longer for the `70 +/-1 mm` long-family height. | May 31 front-stop photos control the visible shape. May 29 fixture photos, removed metal fixture, vehicle bracket, and axle strike pad control BL/BW/P/D/X-Y/G/F and fixture-channel dimensions; make one first article before remaining long stops. |
+| `BUMP-60020-SHORT` | First article required | `1` | Exact front/right-front bump stop from the May 31 photos at `60 +/-1 mm`, with the same through-hole rubber body, fixture/channel interface, and contact face. | May 31 front-stop photos plus right-front bracket and axle strike pad control rubber footprint, through-hole pattern, fixture/channel interface, and contact face. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Not captured yet | Hold | Possible long/full-width flat body or panel liner strips. | Do not order until the pieces are found or a vehicle station proves a continuous flat anti-squeak liner is required. |
 | `EXH-HGR-90917` | Optional later hold | Hold | Teardrop exhaust hanger cushion from sample or genuine part reference. | Needs intact sample/proper tracing before production. |
 
@@ -69,7 +98,7 @@ Known current rubber pieces:
 
 - Main body isolator pads: required, but now specified as square flat custom pads instead of circular/register bushings.
 - Two-hole front-support oval pads: required by old sample/photo trail, subject to caliper confirmation.
-- Axle bump stops: required if missing/decayed; height split is externally controlled as `70 mm` long stops for front-left/rear pair and `60 mm` short stop for front-right.
+- Axle bump stops: required if missing/decayed; May 31 front-stop photos control the active shape, and the rear/back stops are the same shape made longer. Height split is externally controlled as `70 mm` long family and `60 mm` front/right-front short family unless vehicle testing says otherwise.
 - `FS-STRIP-L/R` flat strip pair: now evidenced by the May 17 loose-part photos plus installed-location photos. Treat these as custom underfloor body-support / anti-squeak strips, not generic body-mount biscuits.
 - Rubber definitions must carry the 3D envelope and edge/profile control, not only a flat plan size.
 
@@ -79,15 +108,16 @@ Candidate or unproven pieces:
 
 ## Photo Correction
 
-The old strip rows had been mixed up with bump-stop evidence. The May 17 photo set resolves that:
+The old strip rows and body-rubber rows had been mixed up with bump-stop evidence. The current split is:
 
-- `20260502_004222_gp_PKRe5HSQ.jpg` and `20260502_004201_gp_zfUSmKJg.jpg` remain historical bump-stop context only; the May 29 removed samples supersede them for active construction.
+- `20260502_004222_gp_PKRe5HSQ.jpg` and `20260502_004201_gp_zfUSmKJg.jpg` are strip/historical context only and are excluded from the active bump-stop gallery.
 - `20260517_194143_gp_CO7MuMdA`, `20260517_194633_gp_rAjY3gjg`, and `20260517_194706_gp_twKRWGFA` are the installed-location proof for the flat strip pair.
 - `20260517_193503_gp_N9nHjqXw`, `20260517_193539_gp_E0cR9I0A`, `20260517_193559_gp_NEpk1hpg`, `20260517_193612_gp_JmbfR0Tw`, and `20260517_193616_gp_1ye19BZA` are the loose-part measurement references.
 - `20260528_185826_gp_FoyeBPUg` and `20260528_185833_gp_gZBjUjPg` are strip/retainer landing context only. They do not release rubber holes, slots, bonding, handed trim, or bump-stop geometry.
-- `20260528_193054_gp_UFyTb44w`, `20260528_193143_gp_Cn3OWzZQ`, and `20260528_193228_gp_PLATNsFQ` are loose body-mount rubber/cup stack context only. They show round/cup fragments with tape, but the photo angles do not reopen the active square `BM-ISO-SM` / `BM-ISO-LG` pad route.
+- `20260528_193054_gp_UFyTb44w`, `20260528_193143_gp_Cn3OWzZQ`, and `20260528_193228_gp_PLATNsFQ` are loose body-mount rubber/cup stack context only. They show round/cup fragments with tape, but the photo angles do not reopen the active single `80 x 80 x 24` square pad route.
 - `20260528_193200_gp_HICSdovA` and `20260528_193253_gp_f0eQuSFA` are loose rectangular strip/block section context only. They do not release a new length, hole pattern, slot pattern, bonding, or handed trim.
-- `20260529_223605_gp_CklgF0cQ` and `20260529_223701_gp_wYPExcAA` supersede the old flat-back-plate bump-stop placeholder. They show the bump stops after unscrewing from the metal fixture and release the construction concept for both stops: rubber through-holes, broad rounded body, and central fixture/channel interface. Final dimensions still need calipers and vehicle/fixture confirmation.
+- `20260531_171824_gp_HmSS2ChQ`, `20260531_171833_gp_Vw96I7Mg`, `20260531_171859_gp_i6bRyQKA`, `20260531_171903_gp_jNI1gfYA`, and `20260531_171935_gp_BYfhqiWg` are the active exact front-stop photos. Use them for the front-stop body, through-hole landing, fixture plate, height/profile, and mould shape.
+- `20260529_223605_gp_CklgF0cQ` and `20260529_223701_gp_wYPExcAA` are supporting removed-fixture evidence. They confirm rubber through-holes, broad rounded body, and central fixture/channel interface, but the May 31 front-stop photos are now the active shape master.
 
 ## Photo Measurement Audit
 
@@ -95,10 +125,10 @@ Checked on 2026-05-28:
 
 - May 17 loose strip ruler photos show the underfloor strip length at about `16.5 in`, which converts to `419 mm`. The released first-article length is therefore corrected to `420 mm`, with the existing `38 W x 8 T mm` strip section retained.
 - The visible elongated slots and rust-stained channel features belong to the steel retainer or witness marks. They are not released as rubber holes; the strip remains plain unless dry-fit proves otherwise.
-- May 28 loose body-mount/cup photos were checked against the current body-pad designs. They add useful stack context, but no reliable new OD/height dimension replaces the current `70 x 70 x 22` and `80 x 80 x 24` square first articles.
+- May 28 loose body-mount/cup photos were checked against the current body-pad design. They add useful stack context, but no reliable new OD/height dimension replaces the active single `80 x 80 x 24` square first article.
 - May 28 loose rectangular rubber close-ups support only the strip/section context. The active strip design remains the plain `420 x 38 x 8 mm` first article with no holes or slots by default.
-- May 29 bump-stop photos after fixture removal now control the construction concept. They prove rubber through-holes and a central fixture/channel interface rather than the prior flat-back-plate-only placeholder. They do not release final dimensions; caliper the samples, removed fixture, and vehicle bracket before mould release. The external height controls remain `70 mm` long and `60 mm` right-front short until vehicle testing says otherwise.
-- May 2 body-pad/cup photos support the current pad thickness range and washer/cup context, but do not prove a round rubber outside profile. The square `BM-ISO-SM` and `BM-ISO-LG` first articles remain the active Longman route.
+- May 31 front-stop photos now control the active bump-stop shape. They replace the old strip/photo mix and the prior flat-back-plate-only placeholder. May 29 removed-fixture photos remain supporting construction evidence only. The external height controls remain `70 mm` long-family and `60 mm` front/right-front short until vehicle testing says otherwise.
+- May 2 body-pad/cup photos support the current pad thickness range and washer/cup context, but do not prove a round rubber outside profile. The single square `80 x 80 x 24` body pad remains the active Longman route and stays separate from bump-stop evidence.
 
 ## External Control Notes
 
@@ -133,7 +163,7 @@ Use this as the exact best spec:
 - Sleeve length: `48.1 mm`.
 - Sleeve ID: M10 clearance, `10.8-11.0 mm` if locally fabricated.
 - Sleeve OD: copy a genuine/old `90560-12009`; do not choose arbitrary tube stock.
-- Rubber bore: `18.0 mm` through for `BM-ISO-SM` and `BM-ISO-LG`.
+- Rubber bore: `18.0 mm` through for the single `80 x 80 x 24` body pad.
 - Reject: `16 mm` OD tube unless a dry-fit proves the stack cannot wander.
 - Local fabrication route: machine one sample tube from old/OE dimensions, dry-fit with the `18.0 mm` rubber bore and cup/washer stack, then release the other five.
 
@@ -158,7 +188,7 @@ For every station:
 - Bolt size and captive nut or through-bolt arrangement.
 - Old crush-sleeve OD/ID if available, only to confirm it matches the Toyota `90560-12009` family or to give a local machinist the OD to copy.
 - Confirm the released `18.0 mm` rubber bore clears the sleeve without allowing the stack to wander.
-- Whether the square `70 x 70` or `80 x 80` pad fits, or which exact corners/edges need trimming.
+- Whether the released square `80 x 80` pad fits, or which exact corners/edges need trimming.
 
 ### Front-Support Oval Pads
 
@@ -170,7 +200,7 @@ For every station:
 
 ### Underfloor Body-Support Strip Pair
 
-- Released first-article rubber size is `420 x 38 x 8 mm`.
+- Order `2 m` of `38 x 8 mm` strip stock and cut the released `420 x 38 x 8 mm` first articles from that stock after dry-fit because the landing path may not be perfectly straight.
 - Confirm only the local handed end trim, if any, during dry-fit.
 - Hole or slot geometry belongs to the steel retainer, not automatically to the rubber.
 - Reuse or trace the original slotted steel retainers if they are not serviceable.
@@ -214,7 +244,7 @@ Record:
 
 - Longman provides compound family and Shore A target.
 - Body/front-support rubber averages Shore A `55-65`.
-- Bump-stop rubber averages Shore A `65-75`, or PU `75-85` only if the sample-style through-hole layout, central fixture/channel interface, rebound recovery, and progressive shape are correct.
+- Bump-stop rubber averages Shore A `65-75`, or PU `75-85` only if the May 31 front-stop through-hole layout, central fixture/channel interface, rebound recovery, and progressive shape are correct.
 - Faces on body pads are flat and parallel within `0.5 mm`.
 - Holes are clean, not burnt or torn.
 - Bump-stop first articles pass 50 percent compression without cracking, retention failure, or permanent collapse; after 30 minutes unloaded, height recovers to at least 90 percent.

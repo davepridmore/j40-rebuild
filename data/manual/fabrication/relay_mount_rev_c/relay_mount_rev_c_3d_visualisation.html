@@ -13,20 +13,47 @@
     h1 { margin: 0; font-size: clamp(20px, 3vw, 30px); letter-spacing: 0; }
     .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .chip { border: 1px solid #c8d0d8; border-radius: 999px; padding: 5px 9px; background: #f8fafb; font-size: 13px; }
-    main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; min-height: 0; }
-    #viewport { position: relative; min-height: 560px; overflow: hidden; }
+    main { display: grid; grid-template-columns: minmax(420px, 1fr) minmax(420px, 520px); align-items: start; min-height: 0; }
+    #viewport { position: sticky; top: 0; height: calc(100vh - 134px); min-height: 560px; max-height: 860px; overflow: hidden; }
     canvas { display: block; width: 100%; height: 100%; }
-    aside { border-left: 1px solid #d8dde2; background: #fff; padding: 18px; }
+    .order-overlay { position: absolute; z-index: 3; left: 18px; top: 18px; width: min(340px, calc(100% - 36px)); padding: 12px; border: 1px solid #c8d0d8; border-radius: 8px; background: rgba(255, 255, 255, 0.94); box-shadow: 0 10px 30px rgba(20, 30, 40, 0.12); pointer-events: none; }
+    .order-overlay h2 { margin: 0 0 8px; font-size: 14px; }
+    .order-overlay-row { display: grid; grid-template-columns: 22px 1fr; column-gap: 8px; row-gap: 2px; align-items: start; padding: 7px 0; border-top: 1px solid #e4e8eb; }
+    .order-overlay-row:first-of-type { border-top: 0; }
+    .order-overlay-row span { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: #202a33; color: #fff; font-size: 11px; font-weight: 700; }
+    .order-overlay-row strong { font-size: 13px; line-height: 1.2; }
+    .order-overlay-row small { grid-column: 2; color: #54616c; font-size: 12px; line-height: 1.25; }
+    aside { border-left: 1px solid #d8dde2; background: #fff; padding: 18px; overflow: auto; }
     h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0; }
     dl { margin: 0; display: grid; gap: 12px; }
     dt { font-weight: 700; }
     dd { margin: 3px 0 0; color: #54616c; font-size: 14px; line-height: 1.45; }
+    .order-groups { display: grid; gap: 8px; }
+    .order-group-row { display: grid; grid-template-columns: 26px 1fr; gap: 9px; align-items: start; color: #1d252c; }
+    .order-group-index { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #202a33; color: #fff; font-size: 12px; font-weight: 700; }
+    .order-group-row strong { display: block; color: #1d252c; font-size: 13px; }
+    .order-group-row small { display: block; color: #54616c; font-size: 12px; line-height: 1.3; }
     .photos-heading { margin-top: 22px; }
     .photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
     .item-photo { margin: 0; min-width: 0; }
     .item-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid #d8dde2; border-radius: 6px; background: #f5f6f7; }
     .item-photo figcaption { margin-top: 4px; color: #54616c; font-size: 12px; line-height: 1.25; }
     .item-photo strong { color: #1d252c; }
+    .rubber-sections { display: grid; gap: 16px; }
+    .rubber-section { border: 1px solid #cfd7de; border-radius: 8px; background: #fff; overflow: hidden; }
+    .rubber-header { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; padding: 13px 14px; background: #f8fafb; border-bottom: 1px solid #d8dde2; }
+    .rubber-header h3 { margin: 0; font-size: 16px; letter-spacing: 0; }
+    .rubber-header p { margin: 4px 0 0; color: #54616c; font-size: 13px; line-height: 1.35; }
+    .rubber-header span { white-space: nowrap; border: 1px solid #c8d0d8; border-radius: 999px; padding: 4px 8px; background: #fff; font-size: 12px; color: #33414c; }
+    .rubber-content { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(170px, 0.95fr); gap: 14px; padding: 14px; }
+    .rubber-gallery h4,
+    .rubber-design h4 { margin: 0 0 9px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: #46545f; }
+    .rubber-design p { margin: 9px 0 0; color: #46545f; font-size: 13px; line-height: 1.4; }
+    .design-preview { display: block; width: 100%; border: 1px solid #d8dde2; border-radius: 7px; background: #f7f9fa; }
+    .design-empty,
+    .empty-note { border: 1px dashed #c8d0d8; border-radius: 7px; color: #667580; background: #f8fafb; padding: 12px; font-size: 13px; line-height: 1.4; }
+    .model-link { display: inline-flex; margin-top: 10px; color: #174b7a; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .model-link:hover { text-decoration: underline; }
     #fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #f5f6f7; }
     #fallback img { width: min(94vw, 920px); max-height: 82vh; object-fit: contain; }
     body.is-three-ready #fallback { display: none; }
@@ -34,7 +61,8 @@
     body.embed aside { display: none; }
     body.embed main { grid-template-columns: 1fr; min-height: 100vh; height: 100vh; }
     body.embed #viewport { min-height: 100vh; height: 100vh; }
-    @media (max-width: 820px) { main { grid-template-columns: 1fr; } #viewport { min-height: 430px; } aside { border-left: 0; border-top: 1px solid #d8dde2; } }
+    @media (max-width: 1060px) { main { grid-template-columns: 1fr; } #viewport { position: relative; top: auto; height: 430px; min-height: 430px; max-height: none; } aside { border-left: 0; border-top: 1px solid #d8dde2; } .order-overlay { max-width: 300px; } }
+    @media (max-width: 640px) { .rubber-content { grid-template-columns: 1fr; } .photo-grid { grid-template-columns: 1fr; } }
   </style>
   <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
 </head>
@@ -55,12 +83,14 @@
   <main>
     <section id="viewport" aria-label="Interactive 3D fabrication visualisation">
       <div id="fallback"><img src="./relay_mount_rev_c_3d_visualisation.svg" alt="Relay Mount Rev C static visualisation"></div>
+      
     </section>
     <aside>
       <h2>Assembly Read</h2>
       <dl>
         <div><dt>Package role</dt><dd>Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.</dd></div>
         <div><dt>Load path</dt><dd>The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.</dd></div>
+
         <div><dt>Service intent</dt><dd>Show the relay box rotated on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, the spaced rear guard, top power in/out exits, front control-cable exit, and service-loop clearance.</dd></div>
       </dl>
 
@@ -87,6 +117,8 @@
       fusered: [0xd43a38, 0.02, 0.3],
       brass: [0xc4a35a, 0.4, 0.36],
       rubber: [0x161a1d, 0.02, 0.65],
+      rubberWorn: [0x2b2d2a, 0.01, 0.82],
+      rust: [0x6c4935, 0.18, 0.78],
       silver: [0xd4d8dc, 0.35, 0.32],
       void: [0xf5f6f7, 0.0, 0.85],
       white: [0xf4f6f8, 0.02, 0.3],
@@ -161,6 +193,44 @@
       return new THREE.Shape(points.map(([x, z]) => new THREE.Vector2(x - 24, z - 42)));
     }
 
+    function roundedRectOutline(width, depth, radius = 0, segments = 56) {
+      const points = roundedRectShape(width, depth, radius).getSpacedPoints(segments);
+      if (points.length > 1 && points[0].distanceTo(points[points.length - 1]) < 0.001) {
+        points.pop();
+      }
+      return points;
+    }
+
+    function taperedBumpStopGeometry(item) {
+      const bottom = roundedRectOutline(item.w, item.d, item.corner_r || 0, 64);
+      const top = roundedRectOutline(item.top_w || item.w * 0.78, item.top_d || item.d * 0.75, item.top_corner_r || item.corner_r || 0, 64);
+      const count = Math.min(bottom.length, top.length);
+      const vertices = [];
+      for (let index = 0; index < count; index += 1) {
+        vertices.push(bottom[index].x, 0, bottom[index].y);
+      }
+      for (let index = 0; index < count; index += 1) {
+        vertices.push(top[index].x, item.h, top[index].y);
+      }
+      vertices.push(0, 0, 0);
+      vertices.push(0, item.h, 0);
+      const bottomCenter = count * 2;
+      const topCenter = count * 2 + 1;
+      const indices = [];
+      for (let index = 0; index < count; index += 1) {
+        const next = (index + 1) % count;
+        indices.push(index, next, count + next);
+        indices.push(index, count + next, count + index);
+        indices.push(bottomCenter, next, index);
+        indices.push(topCenter, count + index, count + next);
+      }
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
+      geometry.setIndex(indices);
+      geometry.computeVertexNormals();
+      return geometry;
+    }
+
     function planShape(item) {
       if (item.shape === "capsule") return capsuleShape(item.w, item.d);
       if (item.shape === "teardrop") return teardropShape();
@@ -188,10 +258,12 @@
 
     function addHoleVisuals(item) {
       (item.holes || []).forEach((hole) => {
-        const geometry = new THREE.CylinderGeometry(hole.r * 0.96, hole.r * 0.96, item.h + 0.08, 48);
+        if (!hole.marker) return;
+        const markerHeight = hole.marker_h || 0.8;
+        const geometry = new THREE.CylinderGeometry(hole.r * 0.96, hole.r * 0.96, markerHeight, 48);
         const cutout = new THREE.Mesh(geometry, materials.void);
-        cutout.name = `${item.name} visible through-bore`;
-        cutout.position.set(item.x + (hole.x || 0), item.y, item.z + (hole.z || 0));
+        cutout.name = `${item.name} visible hole marker`;
+        cutout.position.set(item.x + (hole.x || 0), item.y + item.h + markerHeight / 2 + 0.04, item.z + (hole.z || 0));
         cutout.castShadow = false;
         cutout.receiveShadow = false;
         root.add(cutout);
@@ -203,7 +275,9 @@
     }
 
     function box(item) {
-      const geometry = item.shape
+      const geometry = item.shape === "tapered_bump_stop"
+        ? taperedBumpStopGeometry(item)
+        : item.shape
         ? extrudedPlanGeometry(item)
         : new THREE.BoxGeometry(item.w, item.h, item.d);
       const mesh = new THREE.Mesh(

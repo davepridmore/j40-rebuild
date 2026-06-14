@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-30 16:54:16
-- Total media files indexed: 821 (810 photos, 11 videos)
+- Generated: 2026-06-14 22:59:22
+- Total media files indexed: 850 (839 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -30,9 +30,9 @@
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 78 |
+| `reference_material` | 102 |
 | `removed_parts_cataloguing` | 16 |
-| `rubber_recreation_measurement` | 2 |
+| `rubber_recreation_measurement` | 7 |
 | `rust_assessment` | 63 |
 | `steering_brakes_suspension` | 11 |
 | `stripdown_cataloguing` | 111 |
@@ -77,7 +77,7 @@
 | `chassis_underside` | `rear_mid_frame_rail_and_hard_line_detail` | 9 | 2026-05-01 | `20260501_194026_gp_gjPjhxdA.jpg` |
 | `chassis_underside` | `rear_shock_and_crossmember_view` | 1 | 2026-04-05 | `20260405_234811.jpg` |
 | `chassis_underside` | `steering_and_suspension_linkages` | 9 | 2026-04-06 to 2026-05-12 | `20260406_030839_gp_VYKBhRNA.jpg` |
-| `chassis_underside` | `suspension_bump_stop_removed_samples` | 2 | 2026-05-29 | `20260529_223605_gp_CklgF0cQ.jpg` |
+| `chassis_underside` | `suspension_bump_stop_removed_samples` | 7 | 2026-05-29 to 2026-05-31 | `20260529_223605_gp_CklgF0cQ.jpg` |
 | `chassis_underside` | `suspension_or_linkage_mount` | 2 | 2026-04-11 | `20260411_220207.jpg` |
 | `chassis_underside` | `transmission_crossmember_and_driveline_mounts` | 4 | 2026-04-22 | `20260422_004319_gp_Ttqz46Sw.jpg` |
 | `documentation_reference` | `aftermarket_chassis_reference_image` | 1 | 2026-04-22 | `20260422_015512_gp_BmYsVZ6w.jpg` |
@@ -86,7 +86,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 67 | 2026-04-14 to 2026-05-28 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 91 | 2026-04-14 to 2026-06-14 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |

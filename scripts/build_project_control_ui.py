@@ -13,6 +13,7 @@ from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parent.parent
 MANUAL_DIR = ROOT / "data" / "manual"
+GENERATED_DIR = ROOT / "data" / "processed" / "generated"
 UI_DIR = ROOT / "docs" / "project-control-ui"
 
 WORKSTREAM_STATUS_PATH = MANUAL_DIR / "workstream_status.csv"
@@ -38,6 +39,8 @@ FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requir
 FABRICATION_RAW_MATERIAL_ESTIMATES_PATH = MANUAL_DIR / "fabrication_raw_material_estimates.csv"
 CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH = MANUAL_DIR / "chassis_bracket_analysis_register_20260508.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
+PROCUREMENT_QUEUE_PATH = MANUAL_DIR / "procurement_queue.csv"
+ORDERS_RECEIPTS_AUDIT_QUEUE_PATH = MANUAL_DIR / "orders_receipts_audit_queue.csv"
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
 FASTENER_PHOTO_COUNT_ESTIMATES_PATH = MANUAL_DIR / "fastener_photo_count_estimates.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
@@ -219,6 +222,8 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "gearbox_top_cover",
     "gearbox_oil_service",
     "replacement_pipes",
+    "radiator",
+    "ac_hvac_retrofit",
     "brake_system",
     "eps_vitz_upgrade",
     "suspension_upgrade",
@@ -235,6 +240,8 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
     "paint_refinish": "Paint",
+    "ac_hvac_retrofit": "A/C HVAC",
+    "radiator": "Radiator",
     "replacement_pipes": "Replacement Pipes",
     "window_refurbishment": "Windows",
     "eps_vitz_upgrade": "Steering (EPS)",
@@ -1179,8 +1186,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "chassis_rubbers": {
-        "title": "Chassis Rubbers Fabricator Spec",
-        "summary": "Fabricator-ready body-mount rubber, sleeve, cup, shim, and front-support isolation specification.",
+        "title": "Chassis Rubbers And All Rubber Coverage",
+        "summary": "Fabricator-ready body/chassis mount specification plus the full J40 rubber ordering matrix across hoses, grommets, bushes, mounts, weatherstrip, HVAC, and sealing rubbers.",
         "default_tools": ["Calipers", "Jack and axle stands", "Pry bars", "Socket set", "Torque wrench"],
         "default_supplies": ["Penetrating oil", "Rubber grease", "Anti-seize", "Temporary alignment bolts"],
         "subtasks": [
@@ -1212,7 +1219,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Use docs/longman-rubber-order-spec-20260508.md as the current single Longman quote pack for square body pads, FS-OVAL pads, FS-STRIP-L/R first articles, and bump-stop first articles.",
                     "Use data/manual/fabrication/rubber_recreation_rev_a/ for FS-OVAL drawings, FS-STRIP first-article controls, hold/reference liner controls, exhaust-hanger reference, and bump-stop measurement controls.",
                     "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
-                    "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
+                    "Use data/manual/rubber_ordering_specs.csv as the cross-category all-rubbers ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, grommets, powertrain mounts, HVAC rubber, and sealing rubber stay in the correct buy gates.",
                     "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
                     "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
                     "Record station-by-station measurements and release status in data/manual/body_mount_station_closure_sheet.csv.",
@@ -1233,14 +1240,14 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "title": "Lock Sourcing Path",
                 "priority": "P1",
                 "remaining": "avoid duplicate buys",
-                "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
+                "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more, and check every other rubber family against the all-rubbers matrix before adding a duplicate buy.",
                 "process_steps": [
-                    "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, or deferred.",
+                    "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, receipt-check, no-active-purchase, or deferred.",
                     "For body mounts, keep exactly one active route in data/manual/body_mount_order_release_specs.csv: the consolidated Longman custom rubber bundle unless the route is deliberately changed to a complete OE/reproduction package.",
                     "Check whether an available kit covers all required positions and sleeves.",
                     "Price any missing sleeves, washers, and shims separately.",
                     "Reject used/salvage rubber for structural body mounts.",
-                    "Do not buy separate spring eye or shackle bushes here; those are gated by the Ironman kit receipt check.",
+                    "Do not buy separate spring eye or shackle bushes here; those are gated by the Ironman kit receipt check in the all-rubbers matrix.",
                     "Record vendor, delivery status, and expected fit risk.",
                     "Keep old samples available for supplier comparison until receipt check closes.",
                 ],
@@ -2283,7 +2290,6 @@ RUBBER_3D_MODEL_LINKS: list[tuple[str, str]] = [
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md", "3D model README"),
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv", "3D model manifest CSV"),
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad", "OpenSCAD model master"),
-    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad", "BM-ISO-SM OpenSCAD"),
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad", "BM-ISO-LG OpenSCAD"),
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad", "FS-OVAL OpenSCAD"),
     ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad", "FS-STRIP-L OpenSCAD"),
@@ -2309,8 +2315,6 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         *RUBBER_3D_MODEL_LINKS,
         ("data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop measurement control SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf", "Bump-stop measurement control DXF"),
-        ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf", "BM-ISO-SM square pad DXF"),
-        ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg", "BM-ISO-SM square pad SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf", "BM-ISO-LG square pad DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg", "BM-ISO-LG square pad SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf", "Small cup washer DXF"),
@@ -4203,8 +4207,8 @@ def evidence_images_from_refs(
 EVIDENCE_KEY_PATTERN = re.compile(r"\b(?:RPO|RP|HLS|CR|BM|BMA|FS|RHA|RUB)-[A-Z0-9]+(?:-[A-Z0-9]+)*\b")
 
 RUBBER_REQUIREMENT_EQUIVALENT_KEYS: dict[str, tuple[str, ...]] = {
-    "CR-MAIN-001": ("BM-ISO-SM", "BM-FAB-002", "BM-SM", "RUB-001"),
-    "CR-MAIN-002": ("BM-ISO-LG", "BM-FAB-001", "BM-LG", "RUB-001"),
+    "CR-MAIN-001": ("BM-ISO-LG", "BM-FAB-001", "RUB-001"),
+    "CR-MAIN-002": ("BM-FAB-002", "RUB-001"),
     "CR-MAIN-003": ("BM-HW-001", "BM-SLV"),
     "CR-MAIN-004": ("BM-HW-002", "BM-CUP-SM", "BM-CUP-LG"),
     "CR-FRONT-001": ("BM-FAB-003", "FS-OVAL", "RUB-001"),
@@ -4241,7 +4245,6 @@ HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
 }
 
 ORDER_PRIMARY_MEDIA_IDS: dict[str, tuple[str, ...]] = {
-    "BM-ISO-SM": ("20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"),
     "BM-ISO-LG": ("20260528_193054_gp_UFyTb44w", "20260502_004231_gp_CfosvPIg"),
     "FS-OVAL": ("20260502_004345_gp_yK8VYzMQ", "20260502_004231_gp_CfosvPIg"),
     "FS-STRIP-L": ("20260528_193200_gp_HICSdovA", "20260517_194143_gp_CO7MuMdA", "20260517_193503_gp_N9nHjqXw"),
@@ -4463,9 +4466,9 @@ def body_mount_order_evidence_keys(row: dict[str, str]) -> list[str]:
         ),
     ]
     if "large" in text and ("cushion" in text or "isolator" in text or "pad" in text):
-        keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-LG", "BM-FAB-001"])
+        keys.extend(["CR-MAIN-001", "BM-ISO-LG", "BM-FAB-001"])
     elif "small" in text and ("cushion" in text or "isolator" in text or "pad" in text):
-        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-SM", "BM-FAB-002"])
+        keys.extend(["CR-MAIN-002", "BM-FAB-002"])
     elif "cushion" in text or "body mount" in text:
         keys.extend(["CR-MAIN-001", "CR-MAIN-002"])
     if any(token in text for token in ("stopper", "seat", "washer", "cup")):
@@ -4487,9 +4490,9 @@ def body_mount_action_evidence_keys(row: dict[str, str]) -> list[str]:
     if any(token in text for token in ("lay out", "route", "dry-stack", "dry stack", "body-mount rubber")):
         keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-FRONT-001", "CR-FRONT-002", "CR-FRONT-003"])
     if "large circular" in text or "large isolator" in text:
-        keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-FAB-001", "BM-LG"])
+        keys.extend(["CR-MAIN-001", "BM-ISO-LG", "BM-FAB-001"])
     if "small circular" in text or "small isolator" in text or "split" in text:
-        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-FAB-002", "BM-SM"])
+        keys.extend(["CR-MAIN-002", "BM-FAB-002"])
     if any(token in text for token in ("stopper", "seat", "cup")):
         keys.extend(["CR-MAIN-004", "BM-HW-002", "BM-CUP-SM"])
     if "sleeve" in text or "crush tube" in text:
@@ -4514,8 +4517,8 @@ def body_mount_station_evidence_keys(row: dict[str, str]) -> list[str]:
         keys.extend(["CR-FRONT-001", "CR-FRONT-003", "FS-OVAL", "FS-STRIP-R"])
     elif "bm-lg" in text or "bm-iso-lg" in text:
         keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-LG"])
-    elif "bm-sm" in text or "bm-iso-sm" in text:
-        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-SM"])
+    elif "bm-sm" in text:
+        keys.extend(["CR-MAIN-002", "BM-FAB-002"])
     elif station_id.startswith("MAIN"):
         keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-MAIN-004"])
     return keys
@@ -5079,6 +5082,296 @@ def load_json_optional(path: Path) -> dict[str, Any]:
     except (OSError, json.JSONDecodeError):
         return {}
     return data if isinstance(data, dict) else {}
+
+
+STATUS_UPDATE_EVIDENCE_TOKENS: tuple[str, ...] = (
+    "19e8e727ef0410d4",
+    "19e8cd7d9efb4afa",
+    "19e8db81edcbda0b",
+    "19e9612f4e02d240",
+    "aliexpress_shipped_3073062248277489",
+    "leopards_KI7535728644",
+    "gmail_delivery_242670698180938",
+    "gmail_package_PK015448775R",
+    "PK015448775R",
+)
+
+
+def latest_generated_file(glob_pattern: str) -> Path | None:
+    candidates: list[tuple[str, float, str, Path]] = []
+    if not GENERATED_DIR.exists():
+        return None
+    for path in GENERATED_DIR.glob(glob_pattern):
+        match = re.search(r"(\d{4}-\d{2}-\d{2})", path.name)
+        date_key = match.group(1) if match else ""
+        try:
+            modified_at = path.stat().st_mtime
+        except OSError:
+            modified_at = 0.0
+        candidates.append((date_key, modified_at, path.name, path))
+    if not candidates:
+        return None
+    return sorted(candidates)[-1][3]
+
+
+def path_from_repo_value(value: str, fallback: Path | None = None) -> Path | None:
+    text = clean(value)
+    if text:
+        path = Path(text)
+        return path if path.is_absolute() else ROOT / path
+    return fallback
+
+
+def source_file_payload(paths: dict[str, Path | None]) -> dict[str, str]:
+    payload: dict[str, str] = {}
+    for key, path in paths.items():
+        if path and path.exists():
+            payload[key] = repo_relative_path(path)
+    return payload
+
+
+def counter_payload(values: Any) -> list[dict[str, Any]]:
+    if not isinstance(values, dict):
+        return []
+    rows: list[dict[str, Any]] = []
+    for label, count in values.items():
+        rows.append({"label": clean(label), "count": count})
+    return sorted(rows, key=lambda row: (-int(row.get("count") or 0), row.get("label") or ""))
+
+
+def row_contains_status_token(row: dict[str, str], tokens: Iterable[str]) -> bool:
+    haystack = " | ".join(clean(value) for value in row.values()).lower()
+    return any(clean(token).lower() in haystack for token in tokens if clean(token))
+
+
+def status_update_manual_row_payload(table: str, row: dict[str, str]) -> dict[str, str]:
+    row_id = clean(row.get("entry_id")) or clean(row.get("workstream_id")) or clean(row.get("id"))
+    return {
+        "table": table,
+        "row_id": row_id,
+        "phase": clean(row.get("phase")),
+        "workstream": clean(row.get("workstream")) or clean(row.get("workstream_id")),
+        "bucket": clean(row.get("bucket")),
+        "category": clean(row.get("category")),
+        "item": clean(row.get("item")) or clean(row.get("next_action")) or row_id,
+        "company": clean(row.get("company")),
+        "transaction_number": clean(row.get("transaction_number")),
+        "status": clean(row.get("status")) or clean(row.get("current_status")),
+        "procurement_stage": clean(row.get("procurement_stage")),
+        "payment_status": clean(row.get("payment_status")),
+        "delivery_status": clean(row.get("delivery_status")),
+        "expected_delivery_date": clean(row.get("expected_delivery_date")),
+        "amount": clean(row.get("amount")),
+        "currency": clean(row.get("currency")),
+        "evidence_ref": clean(row.get("evidence_ref")) or clean(row.get("evidence_source")),
+        "product_link": clean(row.get("product_link")),
+        "next_action": clean(row.get("next_action")),
+        "notes": clean(row.get("notes")),
+    }
+
+
+def status_update_manual_rows(
+    table: str,
+    rows: list[dict[str, str]],
+    tokens: Iterable[str],
+) -> list[dict[str, str]]:
+    payload_rows: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for row in rows:
+        if not row_contains_status_token(row, tokens):
+            continue
+        payload = status_update_manual_row_payload(table, row)
+        key = (table, payload["row_id"])
+        if key in seen:
+            continue
+        seen.add(key)
+        payload_rows.append(payload)
+    return payload_rows
+
+
+def gmail_status_row_payload(row: dict[str, str]) -> dict[str, str]:
+    return {
+        "channel": clean(row.get("channel")),
+        "message_id": clean(row.get("message_id")),
+        "date_utc": clean(row.get("date_utc")),
+        "category": clean(row.get("category")),
+        "subcategory": clean(row.get("subcategory")),
+        "source": clean(row.get("source")),
+        "subject_or_ref": clean(row.get("subject_or_ref")),
+        "product_or_topic": clean(row.get("product_or_topic")),
+        "part_number_or_code": clean(row.get("part_number_or_code")),
+        "amount_pkr": clean(row.get("amount_pkr")),
+        "status": clean(row.get("status")),
+        "action_required": clean(row.get("action_required")),
+        "notes": clean(row.get("notes")),
+    }
+
+
+def whatsapp_status_row_payload(row: dict[str, str]) -> dict[str, str]:
+    return {
+        "scope": clean(row.get("scope")),
+        "is_new": clean(row.get("is_new")),
+        "message_id": clean(row.get("message_id")),
+        "timestamp": clean(row.get("timestamp")),
+        "source_profile": clean(row.get("source_profile")),
+        "chat_name": clean(row.get("chat_name")),
+        "author": clean(row.get("author")),
+        "category": clean(row.get("category")),
+        "subcategory": clean(row.get("subcategory")),
+        "text": clean(row.get("text")),
+        "matched_terms": clean(row.get("matched_terms")),
+    }
+
+
+def audit_watchlist_row_payload(row: dict[str, str], tokens: Iterable[str]) -> dict[str, Any]:
+    amount = clean(row.get("amount"))
+    currency = clean(row.get("currency")) or "PKR"
+    return {
+        "entry_id": clean(row.get("entry_id")),
+        "phase": clean(row.get("phase")),
+        "workstream": clean(row.get("workstream")),
+        "bucket": clean(row.get("bucket")),
+        "item": clean(row.get("item")),
+        "company": clean(row.get("company")),
+        "transaction_number": clean(row.get("transaction_number")),
+        "order_date": clean(row.get("order_date")),
+        "expected_delivery_date": clean(row.get("expected_delivery_date")),
+        "status": clean(row.get("status")),
+        "procurement_stage": clean(row.get("procurement_stage")),
+        "payment_status": clean(row.get("payment_status")),
+        "delivery_status": clean(row.get("delivery_status")),
+        "amount": amount,
+        "currency": currency,
+        "amount_display": f"{currency} {amount}" if amount else "",
+        "product_link": clean(row.get("product_link")),
+        "evidence_ref": clean(row.get("evidence_ref")),
+        "audit_status": clean(row.get("audit_status")),
+        "audit_priority": clean(row.get("audit_priority")),
+        "order_search_query": clean(row.get("order_search_query")),
+        "receipt_search_query": clean(row.get("receipt_search_query")),
+        "recent_evidence_match": row_contains_status_token(row, tokens),
+    }
+
+
+def build_status_update_detail(
+    *,
+    expense_rows: list[dict[str, str]],
+    procurement_queue_rows: list[dict[str, str]],
+    workstream_rows: list[dict[str, str]],
+    audit_queue_rows: list[dict[str, str]],
+) -> dict[str, Any]:
+    gmail_status_path = latest_generated_file("comms_ingest_*_status.json")
+    gmail_status = load_json_optional(gmail_status_path) if gmail_status_path else {}
+    email_status = gmail_status.get("email") if isinstance(gmail_status.get("email"), dict) else {}
+    date_tag = clean(gmail_status.get("date_tag")) or clean(gmail_status.get("run_date_utc"))
+    if not date_tag and gmail_status_path:
+        match = re.search(r"(\d{4}-\d{2}-\d{2})", gmail_status_path.name)
+        date_tag = match.group(1) if match else ""
+
+    gmail_csv_path = path_from_repo_value(
+        clean(email_status.get("output_csv")),
+        GENERATED_DIR / f"comms_ingest_{date_tag}_categorized.csv" if date_tag else latest_generated_file("comms_ingest_*_categorized.csv"),
+    )
+    gmail_messages_path = path_from_repo_value(
+        clean(email_status.get("output_json")),
+        GENERATED_DIR / f"gmail_project_messages_{date_tag}.json" if date_tag else latest_generated_file("gmail_project_messages_*.json"),
+    )
+    whatsapp_project_csv_path = (
+        GENERATED_DIR / f"whatsapp_project_relevant_{date_tag}.csv" if date_tag else latest_generated_file("whatsapp_project_relevant_*.csv")
+    )
+    whatsapp_examples_csv_path = (
+        GENERATED_DIR / f"whatsapp_examples_media_{date_tag}.csv" if date_tag else latest_generated_file("whatsapp_examples_media_*.csv")
+    )
+    whatsapp_project_summary_path = (
+        GENERATED_DIR / f"whatsapp_project_relevant_{date_tag}_summary.json"
+        if date_tag
+        else latest_generated_file("whatsapp_project_relevant_*_summary.json")
+    )
+    whatsapp_import_summary_path = GENERATED_DIR / "mcp_whatsapp_j40_summary.json"
+
+    gmail_rows = load_csv_optional(gmail_csv_path) if gmail_csv_path else []
+    whatsapp_rows = load_csv_optional(whatsapp_project_csv_path) if whatsapp_project_csv_path else []
+    whatsapp_new_rows = [row for row in whatsapp_rows if norm(row.get("is_new")) == "true"]
+    whatsapp_project_summary = load_json_optional(whatsapp_project_summary_path) if whatsapp_project_summary_path else {}
+    whatsapp_import_summary = load_json_optional(whatsapp_import_summary_path)
+
+    manual_tokens = set(STATUS_UPDATE_EVIDENCE_TOKENS)
+    if date_tag:
+        manual_tokens.add(date_tag)
+    manual_tokens.update(clean(row.get("message_id")) for row in gmail_rows if clean(row.get("message_id")))
+
+    manual_updates = (
+        status_update_manual_rows("expenses", expense_rows, manual_tokens)
+        + status_update_manual_rows("procurement_queue", procurement_queue_rows, manual_tokens)
+        + status_update_manual_rows("workstream_status", workstream_rows, manual_tokens)
+    )
+
+    pending_delivery_rows = []
+    for row in audit_queue_rows:
+        status = norm(row.get("status"))
+        stage = norm(row.get("procurement_stage"))
+        delivery_status = norm(row.get("delivery_status"))
+        if (
+            status == "ordered"
+            or stage.startswith("ordered")
+            or delivery_status in {"pending_delivery", "local_transit", "in_transit", "unknown"}
+            or row_contains_status_token(row, manual_tokens)
+        ):
+            pending_delivery_rows.append(audit_watchlist_row_payload(row, manual_tokens))
+
+    priority_rank = {"high": 0, "medium": 1, "low": 2}
+    pending_delivery_rows = sorted(
+        pending_delivery_rows,
+        key=lambda row: (
+            0 if row.get("recent_evidence_match") else 1,
+            priority_rank.get(norm(row.get("audit_priority")), 9),
+            clean(row.get("workstream")),
+            clean(row.get("entry_id")),
+        ),
+    )
+
+    source_files = source_file_payload(
+        {
+            "gmail_status": gmail_status_path,
+            "gmail_categorized_csv": gmail_csv_path,
+            "gmail_messages_json": gmail_messages_path,
+            "whatsapp_project_csv": whatsapp_project_csv_path,
+            "whatsapp_examples_media_csv": whatsapp_examples_csv_path,
+            "whatsapp_project_summary": whatsapp_project_summary_path,
+            "whatsapp_import_summary": whatsapp_import_summary_path,
+            "expenses": EXPENSES_PATH,
+            "procurement_queue": PROCUREMENT_QUEUE_PATH,
+            "workstream_status": WORKSTREAM_STATUS_PATH,
+            "orders_receipts_audit_queue": ORDERS_RECEIPTS_AUDIT_QUEUE_PATH,
+        }
+    )
+
+    return {
+        "date_tag": date_tag,
+        "source_files": source_files,
+        "gmail": {
+            "summary": {
+                "run_date_utc": clean(gmail_status.get("run_date_utc")),
+                "new_messages_query_after": clean(email_status.get("new_messages_query_after")),
+                "unique_messages_read": email_status.get("unique_messages_read", len(gmail_rows)),
+                "categorized_records_written": email_status.get("categorized_records_written", len(gmail_rows)),
+                "excluded_non_project_records": email_status.get("excluded_non_project_records", 0),
+                "queries_run": len(email_status.get("queries_run") or []),
+            },
+            "category_counts": counter_payload(email_status.get("category_counts")),
+            "top_sources": counter_payload(email_status.get("top_sources")),
+            "high_signal_procurement_refs": [clean(value) for value in email_status.get("high_signal_procurement_refs") or []],
+            "rows": [gmail_status_row_payload(row) for row in gmail_rows],
+        },
+        "whatsapp": {
+            "import_summary": whatsapp_import_summary,
+            "project_summary": whatsapp_project_summary,
+            "rows": [whatsapp_status_row_payload(row) for row in whatsapp_rows],
+            "new_rows": [whatsapp_status_row_payload(row) for row in whatsapp_new_rows],
+        },
+        "manual_updates": manual_updates,
+        "delivery_watchlist": pending_delivery_rows,
+    }
 
 
 def build_pakwheels_reference_sections() -> list[dict[str, Any]]:
@@ -8660,19 +8953,19 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         )
     if has_any("bump-60010-long", "long axle-to-chassis bump stop", "48304-60010", "long bump stop"):
         return previous(
-            "photos/20260529_223605_gp_CklgF0cQ.jpg",
-            "May 29 removed bump-stop sample face view",
-            "20260529_223605_gp_CklgF0cQ",
+            "photos/20260531_171935_gp_BYfhqiWg.jpg",
+            "May 31 exact front bump-stop side height/profile view",
+            "20260531_171935_gp_BYfhqiWg",
             "bump-stop",
-            "sample",
+            "front-stop",
         )
     if has_any("bump-60020-short", "short right-front bump stop", "48304-60020", "right-front bump stop"):
         return previous(
-            "photos/20260529_223701_gp_wYPExcAA.jpg",
-            "May 29 removed bump-stop sample side view",
-            "20260529_223701_gp_wYPExcAA",
+            "photos/20260531_171824_gp_HmSS2ChQ.jpg",
+            "May 31 exact front bump-stop face/width view",
+            "20260531_171824_gp_HmSS2ChQ",
             "bump-stop",
-            "sample",
+            "front-stop",
         )
     if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
         return local(
@@ -9840,6 +10133,7 @@ def build_dashboard_data() -> dict[str, Any]:
     longman_rubber_order_rows = load_csv_optional(LONGMAN_RUBBER_ORDER_SPECS_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
     rubber_hose_component_audit_rows = load_csv_optional(RUBBER_HOSE_COMPONENT_AUDIT_PATH)
+    rubber_ordering_spec_rows = load_csv_optional(RUBBER_ORDERING_SPECS_PATH)
     body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
     body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
@@ -9872,6 +10166,8 @@ def build_dashboard_data() -> dict[str, Any]:
         rubber_original_part_evidence_index,
     )
     expense_rows = load_csv(EXPENSES_PATH)
+    procurement_queue_rows = load_csv_optional(PROCUREMENT_QUEUE_PATH)
+    orders_receipts_audit_rows = load_csv_optional(ORDERS_RECEIPTS_AUDIT_QUEUE_PATH)
     fastener_estimate_rows = load_csv_optional(FASTENER_PHOTO_COUNT_ESTIMATES_PATH)
     fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows)
     buy_now_rows = load_csv(BUY_NOW_PATH)
@@ -10006,7 +10302,7 @@ def build_dashboard_data() -> dict[str, Any]:
             requirements = build_workstream_requirements(chassis_rubber_requirement_rows, photo_rows)
         elif ws_id == "brake_system":
             requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
-        elif ws_id in {"interior_weatherproofing", "mechanical_baseline", "electrical_reset"}:
+        elif ws_id in {"ac_hvac_retrofit", "interior_weatherproofing", "mechanical_baseline", "electrical_reset"}:
             hvac_rows_for_workstream = [
                 requirement_row
                 for requirement_row in hvac_system_requirement_rows
@@ -10057,6 +10353,7 @@ def build_dashboard_data() -> dict[str, Any]:
             if ws_id == "chassis_rubbers"
             else []
         )
+        rubber_ordering_specs = rubber_ordering_spec_rows if ws_id == "chassis_rubbers" else []
         body_mount_order_release_specs = (
             body_mount_order_release_payload(
                 body_mount_order_release_rows,
@@ -10117,6 +10414,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "replacement_pipe_circuit_closure": replacement_pipe_circuit_closure,
                 "chassis_rubber_requirements": chassis_rubber_requirements,
                 "longman_rubber_order_specs": longman_rubber_order_specs,
+                "rubber_ordering_specs": rubber_ordering_specs,
                 "body_mount_order_release_specs": body_mount_order_release_specs,
                 "body_mount_release_actions": body_mount_release_actions,
                 "body_mount_station_closure": body_mount_station_closure,
@@ -10496,6 +10794,13 @@ def build_dashboard_data() -> dict[str, Any]:
         component_rows=component_rows,
     )
 
+    status_update = build_status_update_detail(
+        expense_rows=expense_rows,
+        procurement_queue_rows=procurement_queue_rows,
+        workstream_rows=workstream_rows,
+        audit_queue_rows=orders_receipts_audit_rows,
+    )
+
     data = {
         "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "source_files": {
@@ -10522,6 +10827,8 @@ def build_dashboard_data() -> dict[str, Any]:
             "longman_pipe_hose_order_specs": "data/manual/longman_pipe_hose_order_specs.csv",
             "longman_rubber_order_specs": "data/manual/longman_rubber_order_specs.csv",
             "expenses": "data/manual/expenses.csv",
+            "procurement_queue": "data/manual/procurement_queue.csv",
+            "orders_receipts_audit_queue": "data/manual/orders_receipts_audit_queue.csv",
             "fastener_photo_count_estimates": "data/manual/fastener_photo_count_estimates.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
@@ -10552,6 +10859,10 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_open_rows": len(open_rows_for_table),
             "parts_ordered_pending_delivery": len(ordered_pending_table),
             "urgent_part_actions": len(urgent_actions),
+            "status_update_gmail_records": len(status_update.get("gmail", {}).get("rows", [])),
+            "status_update_whatsapp_new_rows": len(status_update.get("whatsapp", {}).get("new_rows", [])),
+            "status_update_manual_rows": len(status_update.get("manual_updates", [])),
+            "status_update_delivery_watchlist_rows": len(status_update.get("delivery_watchlist", [])),
             "capture_data_tasks": capture_tasks["summary"]["total_tasks"],
             "capture_data_tasks_now": capture_tasks["summary"]["now_tasks"],
             "supply_rows_tracked": len(supplies_inventory["all_rows"]),
@@ -10585,6 +10896,7 @@ def build_dashboard_data() -> dict[str, Any]:
             for row in fabrication_raw_material_rows
         ],
         "project_steps": project_steps,
+        "status_update": status_update,
         "parts": {
             "steps": parts_steps,
             "counts_by_procurement_stage": [

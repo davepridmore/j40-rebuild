@@ -438,10 +438,8 @@ def fetch_chat_messages(profile: Profile, api_key: str, chat: dict[str, Any]) ->
 
     if type_name == "group":
         path = f"/groups/{quoted_chat_id}/messages?limit={MESSAGE_LIMIT_PER_CHAT}"
-    elif type_name == "direct_cus":
+    elif type_name in {"direct_cus", "direct_lid"}:
         path = f"/messages/{quoted_chat_id}?limit={MESSAGE_LIMIT_PER_CHAT}"
-    elif type_name == "direct_lid":
-        return [], "messages_api_not_supported_for_lid"
     else:
         return [], "messages_api_not_supported_for_type"
 

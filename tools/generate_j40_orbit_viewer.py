@@ -95,6 +95,7 @@ HTML_TEMPLATE = Template(
       --text: #f2f4f5;
       --muted: #aeb7bf;
       --accent: #78b9c9;
+      --warn: #d8b35f;
     }
     * { box-sizing: border-box; }
     html, body {
@@ -214,6 +215,41 @@ HTML_TEMPLATE = Template(
       text-decoration: none;
     }
     .meta a:hover { text-decoration: underline; }
+    .release-note {
+      margin-top: 9px;
+      padding: 8px 9px;
+      border: 1px solid rgba(216,179,95,0.36);
+      border-radius: 6px;
+      color: #f3e2b2;
+      background: rgba(216,179,95,0.10);
+      font-size: 12px;
+    }
+    .variant-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .variant-links a {
+      display: block;
+      min-width: 0;
+      padding: 7px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      text-align: center;
+      text-decoration: none;
+      background: #262b30;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .variant-links a.current {
+      color: #091012;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .variant-links a:not(.current):hover { border-color: var(--accent); }
     .control {
       display: grid;
       gap: 6px;
@@ -355,23 +391,34 @@ HTML_TEMPLATE = Template(
         <div class="meta">$DRIVER_LAYOUT orbitable reference scaffold for $TRAFFIC_SIDE. Units: mm. Part count: <span id="partCount"></span>.</div>
         <div class="meta">Visual reference: <a href="https://sketchfab.com/3d-models/1976-toyota-land-cruiser-fj40-a4e58b09ce48444ca6164834c310880d">1976 Toyota Land Cruiser FJ40</a> by <a href="https://sketchfab.com/tonielpro520">tonielpro520</a>, licensed <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>. Generated scaffold is project-owned primitive geometry.</div>
         <div class="meta">Exterior benchmark: <a href="https://3dmodels.org/3d-models/toyota-land-cruiser-j40-hard-top-1979/">3DModels.org Toyota Land Cruiser (J40) Hard Top 1979</a>; used only for visible detail guidance, material separation, and hard-top exterior cues.</div>
+        <div class="release-note">Reference model only. Fabrication release still requires measured truck datums, dry-fit photos, and clearance checks.</div>
+        <div class="variant-links">
+          <a class="$RHD_LINK_CLASS" href="$RHD_VIEWER_HREF">RHD truth</a>
+          <a class="$LHD_LINK_CLASS" href="$LHD_VIEWER_HREF">LHD review</a>
+        </div>
       </section>
       <section class="section">
         <h2>Display</h2>
         <div class="control">
-          <div class="control-row"><span>Explode</span><input id="explode" type="range" min="0" max="100" value="18"></div>
+          <div class="control-row"><span>Explode</span><input id="explode" type="range" min="0" max="100" value="8"></div>
           <div class="control-row"><span>Opacity</span><input id="opacity" type="range" min="30" max="100" value="94"></div>
           <div class="control-row"><span>Wire overlay</span><input id="wire" type="checkbox" checked></div>
         </div>
       </section>
       <section class="section">
         <h2>Navigate</h2>
-        <input id="partSearch" type="search" placeholder="Find part">
+        <input id="partSearch" type="search" placeholder="Search part, group, route">
         <div class="button-grid">
+          <button id="exteriorView">Exterior</button>
+          <button id="engineView">Engine</button>
           <button id="cabinView">Cabin</button>
+          <button id="underView">Underside</button>
+          <button id="routesView">Routes</button>
+          <button id="datumsView">Datums</button>
           <button id="focusPart">Focus</button>
           <button id="isolatePart">Isolate</button>
           <button id="showAll">Show All</button>
+          <button id="clearSelection">Clear</button>
         </div>
         <div id="partResults" class="part-results"></div>
       </section>
@@ -406,7 +453,22 @@ const GROUP_ORDER = [
   "chassis", "running_gear", "brake_system", "fuel_system", "exhaust",
   "as_fitted_routes", "mechanical_clearance", "datum"
 ];
-const DEFAULT_HIDDEN_GROUPS = new Set(["mechanical_clearance"]);
+const GROUP_LABELS = {
+  body: "Body",
+  hard_top: "Hard top",
+  front_detail: "Front detail",
+  interior: "Interior",
+  engine_bay: "Engine bay",
+  chassis: "Chassis",
+  running_gear: "Axles / suspension",
+  brake_system: "Brake system",
+  fuel_system: "Fuel system",
+  exhaust: "Exhaust",
+  as_fitted_routes: "Routes",
+  mechanical_clearance: "Clearance zones",
+  datum: "Measurement datums"
+};
+const DEFAULT_HIDDEN_GROUPS = new Set(["as_fitted_routes", "mechanical_clearance", "datum"]);
 const GROUP_EXPLODE = {
   body: [0.00, 0.10, 0.00],
   hard_top: [0.00, 0.55, 0.00],
@@ -428,7 +490,7 @@ const state = {
   pitch: 0.42,
   distance: 5.9,
   target: [0, 0, 0],
-  explode: 0.18,
+  explode: 0.08,
   opacity: 0.94,
   wire: true,
   visible: Object.fromEntries(GROUP_ORDER.map((group) => [group, !DEFAULT_HIDDEN_GROUPS.has(group)])),
@@ -755,6 +817,10 @@ for (const object of objects) {
   groupStats.set(object.group, (groupStats.get(object.group) || 0) + 1);
 }
 
+function labelForGroup(group) {
+  return GROUP_LABELS[group] || group.replaceAll("_", " ");
+}
+
 const vertexShaderSource = `
 attribute vec3 aPosition;
 attribute vec3 aNormal;
@@ -1037,7 +1103,7 @@ function renderPartInfo(object) {
       : `${Math.round(part.diameter)} dia x ${Math.round(part.length)} mm`;
   panel.innerHTML = `
     <strong>${part.name.replaceAll("_", " ")}</strong>
-    <span class="tag">${part.group.replaceAll("_", " ")}</span>
+    <span class="tag">${labelForGroup(part.group)}</span>
     <span>${dims}</span>
     <span>${part.confidence}</span>
     <span>${part.notes || ""}</span>
@@ -1089,33 +1155,114 @@ function setVisibleGroups(groups) {
   syncGroupControls();
 }
 
+function setDisplay({ explode = state.explode, opacity = state.opacity, wire = state.wire } = {}) {
+  state.explode = explode;
+  state.opacity = opacity;
+  state.wire = wire;
+  document.getElementById("explode").value = String(Math.round(explode * 100));
+  document.getElementById("opacity").value = String(Math.round(opacity * 100));
+  document.getElementById("wire").checked = wire;
+}
+
+function focusVisible(options = {}) {
+  const visibleBounds = unionBounds(objects
+    .filter((object) => isObjectVisible(object))
+    .map((object) => visibleBoundsForObject(object)));
+  focusBounds(visibleBounds, options);
+}
+
+function viewGroups(groups, options = {}) {
+  setVisibleGroups(groups);
+  state.selected = null;
+  setDisplay({
+    explode: options.explode ?? 0.08,
+    opacity: options.opacity ?? 0.94,
+    wire: options.wire ?? true
+  });
+  if (options.focusGroup) {
+    focusGroup(options.focusGroup, options);
+  } else {
+    focusVisible(options);
+  }
+  renderPartInfo(null);
+}
+
 function showAllParts() {
   state.visible = Object.fromEntries(GROUP_ORDER.map((group) => [group, true]));
   state.isolatedPart = null;
-  state.opacity = 0.94;
-  state.explode = 0.18;
-  document.getElementById("opacity").value = "94";
-  document.getElementById("explode").value = "18";
+  setDisplay({ opacity: 0.94, explode: 0.18, wire: true });
   syncGroupControls();
   viewPreset("iso");
+}
+
+function exteriorView() {
+  viewGroups(["body", "hard_top", "front_detail", "chassis", "running_gear"], {
+    yaw: -0.82,
+    pitch: 0.34,
+    distance: 5.6,
+    explode: 0.05,
+    opacity: 0.97
+  });
+}
+
+function engineView() {
+  viewGroups(["engine_bay", "front_detail", "brake_system", "chassis", "as_fitted_routes"], {
+    focusGroup: "engine_bay",
+    yaw: -1.15,
+    pitch: 0.22,
+    distance: 2.65,
+    explode: 0.04,
+    opacity: 0.96
+  });
 }
 
 function cabinView() {
   setVisibleGroups(["interior"]);
   state.selected = objects.find((object) => object.part.name === "steering_wheel") || null;
-  state.opacity = 1.0;
-  state.explode = 0.0;
-  state.wire = true;
-  document.getElementById("opacity").value = "100";
-  document.getElementById("explode").value = "0";
-  document.getElementById("wire").checked = true;
+  setDisplay({ opacity: 1.0, explode: 0.0, wire: true });
   focusGroup("interior", { yaw: Math.PI, pitch: 0.18, distance: 2.35 });
   renderPartInfo(state.selected);
 }
 
+function undersideView() {
+  viewGroups(["chassis", "running_gear", "brake_system", "fuel_system", "exhaust", "as_fitted_routes"], {
+    yaw: -Math.PI / 2,
+    pitch: -0.34,
+    distance: 4.7,
+    explode: 0.12,
+    opacity: 0.94
+  });
+}
+
+function routesView() {
+  viewGroups(["chassis", "running_gear", "engine_bay", "brake_system", "fuel_system", "exhaust", "as_fitted_routes", "datum"], {
+    yaw: -1.25,
+    pitch: 0.2,
+    distance: 5.0,
+    explode: 0.12,
+    opacity: 0.84
+  });
+}
+
+function datumsView() {
+  viewGroups(["body", "hard_top", "engine_bay", "chassis", "running_gear", "datum"], {
+    yaw: -0.88,
+    pitch: 0.38,
+    distance: 5.3,
+    explode: 0.04,
+    opacity: 0.70
+  });
+}
+
+function clearSelection() {
+  state.selected = null;
+  state.isolatedPart = null;
+  renderPartInfo(state.hover);
+}
+
 const searchIndex = objects.map((object) => ({
   object,
-  label: `${object.part.group.replaceAll("_", " ")} / ${object.part.name.replaceAll("_", " ")}`,
+  label: `${labelForGroup(object.part.group)} / ${object.part.name.replaceAll("_", " ")}`,
   key: `${object.part.group} ${object.part.name} ${object.part.notes || ""}`.toLowerCase().replaceAll("_", " ")
 }));
 
@@ -1143,7 +1290,7 @@ function renderSearchResults() {
     const name = document.createElement("span");
     name.textContent = item.object.part.name.replaceAll("_", " ");
     const group = document.createElement("small");
-    group.textContent = item.object.part.group.replaceAll("_", " ");
+    group.textContent = labelForGroup(item.object.part.group);
     button.append(name, group);
     button.addEventListener("click", () => {
       state.isolatedPart = null;
@@ -1193,11 +1340,12 @@ function buildControls() {
     label.innerHTML = `
       <input type="checkbox" checked data-group="${group}">
       <span class="swatch" style="background:${groupColors.get(group)}"></span>
-      <span class="group-name">${group.replaceAll("_", " ")}</span>
+      <span class="group-name">${labelForGroup(group)}</span>
       <span class="count">${groupStats.get(group)}</span>
     `;
     groupContainer.appendChild(label);
   }
+  syncGroupControls();
   groupContainer.addEventListener("change", (event) => {
     const input = event.target;
     if (input && input.dataset && input.dataset.group) {
@@ -1234,7 +1382,12 @@ function buildControls() {
       focusObject(object);
     }
   });
+  document.getElementById("exteriorView").addEventListener("click", exteriorView);
+  document.getElementById("engineView").addEventListener("click", engineView);
   document.getElementById("cabinView").addEventListener("click", cabinView);
+  document.getElementById("underView").addEventListener("click", undersideView);
+  document.getElementById("routesView").addEventListener("click", routesView);
+  document.getElementById("datumsView").addEventListener("click", datumsView);
   document.getElementById("focusPart").addEventListener("click", () => {
     const object = bestSearchObject();
     if (!object) return;
@@ -1253,6 +1406,7 @@ function buildControls() {
     focusObject(object);
   });
   document.getElementById("showAll").addEventListener("click", showAllParts);
+  document.getElementById("clearSelection").addEventListener("click", clearSelection);
   document.getElementById("resetView").addEventListener("click", () => viewPreset("iso"));
   for (const button of document.querySelectorAll("#toolbar button[data-view]")) {
     button.addEventListener("click", () => viewPreset(button.dataset.view));
@@ -1315,13 +1469,34 @@ requestAnimationFrame(draw);
 )
 
 
+def variant_links() -> dict[str, str]:
+    if OUT_DIR.name == "scaffold_rev_c_lhd_review":
+        return {
+            "rhd_href": "../scaffold_rev_c/j40_full_vehicle_orbit_viewer.html",
+            "lhd_href": "j40_full_vehicle_orbit_viewer.html",
+            "rhd_class": "",
+            "lhd_class": "current",
+        }
+    return {
+        "rhd_href": "j40_full_vehicle_orbit_viewer.html",
+        "lhd_href": "../scaffold_rev_c_lhd_review/j40_full_vehicle_orbit_viewer.html",
+        "rhd_class": "current",
+        "lhd_class": "",
+    }
+
+
 def write_viewer() -> Path:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    links = variant_links()
     html = HTML_TEMPLATE.safe_substitute(
         PARTS_JSON=json.dumps(part_payload(), separators=(",", ":")),
         MODEL_TITLE=MODEL_TITLE,
         DRIVER_LAYOUT=DRIVER_LAYOUT.capitalize(),
         TRAFFIC_SIDE=TRAFFIC_SIDE,
+        RHD_VIEWER_HREF=links["rhd_href"],
+        LHD_VIEWER_HREF=links["lhd_href"],
+        RHD_LINK_CLASS=links["rhd_class"],
+        LHD_LINK_CLASS=links["lhd_class"],
     )
     OUT_PATH.write_text(html, encoding="utf-8")
     return OUT_PATH

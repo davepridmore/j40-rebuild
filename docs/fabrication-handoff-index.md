@@ -70,6 +70,35 @@ Release position:
 - Final bending/drilling remains gated by right-side vehicle dry-fit, transferred left-bracket dimensions, screw size, radiator ear offset, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and fan clearance.
 - The Bracket Analysis Register remains the evidence/action register; this package is the Fabrication handoff for making the bracket templates.
 
+## Front Cooling Stack Frame - Rev A
+
+Directory: [data/manual/fabrication/front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)
+
+Control spec: [front-cooling-stack-fabrication-plan-20260530.md](front-cooling-stack-fabrication-plan-20260530.md)
+
+Primary files:
+- `data/manual/fabrication/front_cooling_stack_rev_a/README.md`
+- `docs/l4tw-front-cooling-stack-delivery-spec-20260531.md`
+- `data/manual/fabrication/front_cooling_stack_rev_a/delivery_spec_l4tw_20260531.csv`
+- `docs/front-cooling-stack-local-parts-selection-20260530.md`
+- `data/manual/fabrication/front_cooling_stack_rev_a/local_parts_selection_pakistan_20260530.csv`
+- `data/manual/fabrication/front_cooling_stack_rev_a/known_price_fit_check_pakistan_20260530.csv`
+- `data/manual/fabrication/front_cooling_stack_rev_a/front_cooling_stack_rev_a.svg`
+- `data/manual/fabrication/front_cooling_stack_rev_a/component_layout.csv`
+- `data/manual/fabrication/front_cooling_stack_rev_a/measurement_basis.csv`
+- `data/manual/fabrication/front_cooling_stack_rev_a/fabricator_cut_list.csv`
+- `data/manual/fabrication/front_cooling_stack_rev_a/inspection_checklist.csv`
+
+DXF files:
+- None in Rev A. This is a site-fit mock-up/fabricator spec because upright height, chassis saddle width, radiator tabs, condenser tabs, drier clamp, fan hoop, and hole centres must be transferred from the actual vehicle and selected parts.
+
+Release position:
+- Rev A turns the prior one-side radiator support repair into a full front cooling-stack frame when both full-height chassis/front-support uprights are being fabricated.
+- It carries the HJ47/2H radiator, R134a parallel-flow condenser, optional slim pusher fan, and receiver-drier as separate rubber-isolated components.
+- The L4TW delivery spec is the acceptance contract: corrected radiator, two-side frame, condenser, fan provision, drier, pressure switch, compressor gate, barrier hoses, electrical protection, and final validation evidence.
+- The local buy package selects Master Radiators/KorTech for the radiator route, Snow Cool/Arsalan for condenser/drier/evaporator leads, and Sanpak/Arsalan/Cool Sun style A/C hose support, but final purchase remains gated by dimensions and fitting proof.
+- The existing Sanden-type compressor is compatible in principle with the condenser/drier layout, but hose crimping and final charge remain blocked until the compressor port style, clutch voltage, belt alignment, oil/refrigerant state, leak test, and pressure-switch protection are confirmed.
+
 ## Suspension Wood Cribbing - Rev A
 
 Directory: [data/manual/fabrication/suspension_wood_cribbing_rev_a](../data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md)

@@ -1,19 +1,19 @@
 [
   {
     "part_id": "BM-ISO-SM",
-    "qty": "10 plus 2 spares",
+    "qty": "10 plus 6 spares",
     "machine_route": "waterjet/knife/punch/moulded square body isolator pad; DXF is top profile",
     "machine_files": "bm_iso_sm_square_pad_rev_a.dxf|bm_iso_sm_square_pad_rev_a.svg",
-    "coordinate_system": "2D top profile in mm; origin lower-left of 70 x 70 bounding square; centre at X35 Y35",
-    "exact_definition_mm": "Square flat pad 70 L x 70 W x 22 H; plan corners R1.5; through bore diameter 18.0 at X35 Y35 for Toyota 90560-12009 style sleeve; top/bottom perimeter edge break or chamfer 1.0 max; flat parallel faces",
+    "coordinate_system": "2D top profile in mm; origin lower-left of 80 x 80 bounding square; centre at X40 Y40",
+    "exact_definition_mm": "Square flat pad 80 L x 80 W x 22 H; plan corners R1.5; through bore diameter 18.0 at X40 Y40 for Toyota 90560-12009 style sleeve; top/bottom perimeter edge break or chamfer 1.0 max; flat parallel faces",
     "material": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
     "tolerance": "length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; edge break 0.5-1.0; faces parallel <=0.5",
     "release_status": "released for quote and first article; station fit and compression check pending",
-    "shop_note": "Use this square BM-ISO-SM control for the active Longman body-pad order. Do not use the older circular BM-SM placeholder unless deliberately re-released."
+    "shop_note": "Use this simple square BM-ISO-SM control for the active Longman body-pad order. The extra pads are deliberate dry-fit stacking/trim allowance where a station proves two pads are needed. Do not use the older circular BM-SM placeholder unless deliberately re-released."
   },
   {
     "part_id": "BM-ISO-LG",
-    "qty": "2 plus 1 spare",
+    "qty": "2 plus 2 spares",
     "machine_route": "waterjet/knife/punch/moulded square body isolator pad; DXF is top profile",
     "machine_files": "bm_iso_lg_square_pad_rev_a.dxf|bm_iso_lg_square_pad_rev_a.svg",
     "coordinate_system": "2D top profile in mm; origin lower-left of 80 x 80 bounding square; centre at X40 Y40",
@@ -21,7 +21,7 @@
     "material": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
     "tolerance": "length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; edge break 0.5-1.0; faces parallel <=0.5",
     "release_status": "released for quote and first article; large-station fit and compression check pending",
-    "shop_note": "Make the large pair and spare from the same compound batch where possible. Do not use the older circular BM-LG placeholder unless deliberately re-released."
+    "shop_note": "Make the large pair and two spares from the same compound batch where possible. Use extras only for dry-fit stacking/height correction where proven. Do not use the older circular BM-LG placeholder unless deliberately re-released."
   },
   {
     "part_id": "BM-CUP-SM",
@@ -122,10 +122,10 @@
   {
     "part_id": "BUMP-F-L",
     "qty": "1",
-    "machine_route": "May 29 removed-sample controlled mould/cast progressive bump-stop assembly; rubber not CNC-cut",
+    "machine_route": "May 31 exact front-stop controlled mould/cast progressive bump-stop assembly; rubber not CNC-cut",
     "machine_files": "bump_stop_vehicle_measurement_control.svg",
-    "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned vehicle bracket, and axle strike pad in mm; sample controls construction but final dimensions remain caliper/vehicle released",
-    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce May 29 sample-style broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area; release rubber body outline, through-hole pitch P, hole/thread D, fixture/channel, and contact X/Y from samples, removed fixture, and matching vehicle bracket; no square block and no flat-plate placeholder",
+    "coordinate_system": "May 31 exact front-stop photos/sample, May 29 removed-fixture support photos, removed metal fixture, cleaned vehicle bracket, and axle strike pad in mm; front-stop photos control shape but final dimensions remain caliper/vehicle released",
+    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce the May 31 front-stop broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area, stretched to the longer height; release rubber body outline, through-hole pitch P, hole/thread D, fixture/channel, and contact X/Y from samples, removed fixture, and matching vehicle bracket; no square block and no flat-plate placeholder",
     "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
     "tolerance": "height +/-1; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
     "release_status": "sample and vehicle measurement release required before mould; exact external height known",
@@ -134,10 +134,10 @@
   {
     "part_id": "BUMP-F-R",
     "qty": "1",
-    "machine_route": "May 29 removed-sample controlled mould/cast short right-front bump-stop assembly; rubber not CNC-cut",
+    "machine_route": "May 31 exact front-stop controlled mould/cast short right-front bump-stop assembly; rubber not CNC-cut",
     "machine_files": "bump_stop_vehicle_measurement_control.svg",
-    "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned right-front vehicle bracket, and axle strike pad in mm; sample controls construction but final dimensions remain caliper/vehicle released",
-    "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce May 29 sample-style broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area; do not use 70 mm long-stop height here unless full-bump test releases it; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and right-front bracket",
+    "coordinate_system": "May 31 exact front-stop photos/sample, May 29 removed-fixture support photos, removed metal fixture, cleaned right-front vehicle bracket, and axle strike pad in mm; front-stop photos control shape but final dimensions remain caliper/vehicle released",
+    "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce the May 31 exact front-stop broad rounded/tapered rubber body with two through-holes in the rubber, central fixture/channel interface, and flat strike area; do not use 70 mm long-stop height here unless full-bump test releases it; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and right-front bracket",
     "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
     "tolerance": "height +/-1; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
     "release_status": "sample and vehicle measurement release required before mould; exact external height known",
@@ -146,10 +146,10 @@
   {
     "part_id": "BUMP-R",
     "qty": "2",
-    "machine_route": "May 29 removed-sample controlled mould/cast progressive matched rear bump-stop assemblies; rubber not CNC-cut",
+    "machine_route": "May 31 exact front-stop controlled mould/cast progressive matched rear/back bump-stop assemblies; rubber not CNC-cut",
     "machine_files": "bump_stop_vehicle_measurement_control.svg",
-    "coordinate_system": "May 29 removed samples, removed metal fixture, cleaned rear vehicle brackets, and axle strike pads in mm; sample controls construction but final dimensions remain caliper/vehicle released",
-    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce May 29 sample-style broad rounded/tapered rubber bodies with two through-holes in the rubber, central fixture/channel interface, and flat strike areas; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and rear brackets; matched progressive pair",
+    "coordinate_system": "May 31 exact front-stop photos/sample, May 29 removed-fixture support photos, removed metal fixture, cleaned rear vehicle brackets, and axle strike pads in mm; front-stop photos control shape but final dimensions remain caliper/vehicle released",
+    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear/back stops; reproduce the same May 31 front-stop broad rounded/tapered rubber body made longer, with two through-holes in the rubber, central fixture/channel interface, and flat strike areas; release rubber body outline, P, D, fixture/channel, and contact X/Y from samples, fixture, and rear brackets; matched progressive pair",
     "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; cast automotive PU Shore A 80 +/-5 acceptable only with same shape, through-holes, fixture interface, and rebound",
     "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; rubber through-hole and fixture/channel features +/-0.5 after sample/vehicle release; contact centre +/-5; retention must survive compression and rebound",
     "release_status": "sample and vehicle measurement release required before mould; exact external height known",

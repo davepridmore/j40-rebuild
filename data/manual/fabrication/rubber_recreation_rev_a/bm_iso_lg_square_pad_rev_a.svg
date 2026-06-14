@@ -10,7 +10,7 @@
     .title { font: 700 7px monospace; fill: #111; }
     .note { font: 4.8px monospace; fill: #111; }
   </style>
-  <text x="24" y="14" class="title">BM-ISO-LG large square body isolator pad | qty 2 plus 1 spare | units: mm</text>
+  <text x="24" y="14" class="title">BM-ISO-LG large square body isolator pad | qty 2 plus 2 spares | units: mm</text>
   <g transform="translate(24,24)">
   <polygon class="cut" points="0,1.5 0.029,1.207 0.114,0.926 0.253,0.667 0.439,0.439 0.667,0.253 0.926,0.114 1.207,0.029 1.5,0 78.5,0 78.793,0.029 79.074,0.114 79.333,0.253 79.561,0.439 79.747,0.667 79.886,0.926 79.971,1.207 80,1.5 80,78.5 79.971,78.793 79.886,79.074 79.747,79.333 79.561,79.561 79.333,79.747 79.074,79.886 78.793,79.971 78.5,80 1.5,80 1.207,79.971 0.926,79.886 0.667,79.747 0.439,79.561 0.253,79.333 0.114,79.074 0.029,78.793 0,78.5" /><circle class="cut" cx="40" cy="40" r="9" /><line class="center" x1="40" y1="0" x2="40" y2="80" /><line class="center" x1="0" y1="40" x2="80" y2="40" />
   </g>

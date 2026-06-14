@@ -18,6 +18,7 @@ LHD_REVIEW_MANIFEST_PATH = REPORT_DIR / "j40_full_vehicle_scaffold_rev_c_lhd_rev
 SCAFFOLD_DIR = CAD_ROOT / "04_exports" / "scaffold_rev_c"
 LHD_REVIEW_DIR = CAD_ROOT / "04_exports" / "scaffold_rev_c_lhd_review"
 AS_FITTED_ROUTE_SCOPE = REPORT_DIR / "j40_as_fitted_route_model_scope_20260531.csv"
+PAKISTAN_ROUTE_PURCHASE_BOM = ROOT / "data" / "manual" / "j40_as_fitted_route_pakistan_purchase_bom_20260531.csv"
 
 INPUT_DIRS = [
     CAD_ROOT / "00_inbox",
@@ -29,6 +30,7 @@ INPUT_FILES = [
     ROOT / "data" / "manual" / "component_jobs.csv",
     ROOT / "data" / "manual" / "component_jobs_photo_reconciliation.csv",
     AS_FITTED_ROUTE_SCOPE,
+    PAKISTAN_ROUTE_PURCHASE_BOM,
     ROOT / "scripts" / "update_j40_cad_reference.py",
     ROOT / "scripts" / "j40_cad_intake.py",
     ROOT / "scripts" / "freecad_mesh_to_cad.py",

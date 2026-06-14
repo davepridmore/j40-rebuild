@@ -14,6 +14,7 @@ from typing import Any
 
 import requests
 import google.auth
+from google.auth.exceptions import RefreshError
 from google.auth.transport.requests import AuthorizedSession, Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -136,7 +137,10 @@ def load_credentials_oauth_client(client_secrets: Path, token_file: Path, open_b
         creds = Credentials.from_authorized_user_file(str(token_file), scopes=scopes)
 
     if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
+        try:
+            creds.refresh(Request())
+        except RefreshError:
+            creds = None
 
     if not creds or not creds.valid:
         if not client_secrets.exists():

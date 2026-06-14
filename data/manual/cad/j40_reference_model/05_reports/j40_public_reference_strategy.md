@@ -1,6 +1,6 @@
 # J40 Public Reference Strategy
 
-- Generated: 2026-05-30T23:21:48.196867+00:00
+- Generated: 2026-05-31T04:15:55.406876+00:00
 - CSV: `data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.csv`
 
 ## Decision

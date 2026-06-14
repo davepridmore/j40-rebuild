@@ -2,7 +2,7 @@
 
 Purpose: make the body-mount rubber, stop/seat, shim, sleeve, and bolt order executable while marking the few items that still need direct physical confirmation.
 
-Supersession note 2026-05-28: the active custom-rubber route is the Longman square-pad order in [longman-rubber-order-spec-20260508.md](longman-rubber-order-spec-20260508.md). The old circular `BM-SM` / `BM-LG` cushion route is no longer the active rubber geometry. Remaining checks are station mapping, sleeve/cup/shim dry-stack, compression, and local trim before final install.
+Supersession note 2026-06-01: the active custom-rubber route is the Longman single `80 x 80 x 24 mm` square-pad order in [longman-rubber-order-spec-20260508.md](longman-rubber-order-spec-20260508.md). The old circular `BM-SM` / `BM-LG` cushion route and the old small/large square-pad split are no longer active rubber geometry. Remaining checks are station mapping, sleeve/cup/shim dry-stack, compression, and local trim before final install.
 
 Order-line sheet: [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv)
 
@@ -55,8 +55,8 @@ These are released for Longman quote and first article where marked. Final insta
 
 | Code | Item | Qty | Spec |
 | --- | --- | ---: | --- |
-| `BM-ISO-LG` | Large square body isolator pad | `2 + 1 spare` | `80 L x 80 W x 24 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
-| `BM-ISO-SM` | Small square body isolator pad | `10 + 2 spares` | `70 L x 70 W x 22 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
+| `BM-ISO-LG` | Single active square body isolator pad | `30 total` | `80 L x 80 W x 24 H`, simple square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5`; order covers `12` base pads plus `18` stacking/trim spares where dry-fit proves need |
+| `BM-ISO-SM` | Removed small-height square body isolator pad | `0` | Do not fabricate or quote a separate `22 mm` body pad. Use the active `BM-ISO-LG` `80 x 80 x 24 mm` pad everywhere, stacking a second identical pad only where dry-fit proves height is needed and trimming locally only where interference is proven. |
 | `FS-OVAL` | Front support oval isolator pad | `2` | `96 mm` length, `64 mm` max width, `15 mm` thickness, two `12 mm` holes, `64 mm` hole centres, `36 x 18 mm` rectangular relief with `R3` corners, `29 mm` top boss/insert OD |
 | `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | plain flat strip `420 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`, no rubber holes by default |
 | `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | same blank as left unless dry-fit proves handed end trim |
@@ -65,7 +65,7 @@ Material for all local rubber pieces: new black automotive mount-grade `EPDM` or
 
 Local fabrication also requires the first-article, material, process, inspection, rejection, and packaging controls in [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv). The fabricator must provide a material declaration and a one-page inspection report before the batch is accepted.
 
-Main production hold: `BM-ISO-SM` and `BM-ISO-LG` are released for quote/first article; final installation still needs station mapping, sleeve/cup/shim dry-stack, and compression check.
+Main production hold: only `BM-ISO-LG` is released for quote/first article as the single active body-pad line; final installation still needs station mapping, sleeve/cup/shim dry-stack, and compression check.
 
 ## Exact Hardware And Shim Order
 
@@ -74,7 +74,7 @@ These are the local order packs unless the OE/reproduction package includes matc
 | Line | Item | Qty To Order | Spec |
 | --- | --- | ---: | --- |
 | `BM-HW-001` | Main body mount sleeves/crush tubes | `6` | Toyota `90560-12009` style body-mount spacer/crush tube; length `48.1 mm`; M10 clearance ID `10.8-11.0 mm` if locally fabricated; copy old/OE spacer OD, not arbitrary tube stock |
-| `BM-HW-002` | Cup/seat washers | `14` | `10` small at `64 mm` OD, `2` large at `78 mm` OD, plus `2` spare; `11 mm` hole, `2-3 mm` dish/register depth, `2.5-3.0 mm` steel |
+| `BM-HW-002` | Cup/seat washers | inspect existing first | Reuse sound originals or recreate from measured samples only; formed seat/cup washers, not thin flat washers; must support the single active `80 x 80 mm` body pad and `18.0 mm` bore/sleeve stack; `11 mm` bolt clearance and `2.5-3.0 mm` steel target unless originals prove otherwise |
 | `BM-HW-003` | M10 bolt length trial pack | `16` | M10 x `1.25`, class `8.8` minimum: `70 mm x4`, `80 mm x4`, `90 mm x4`, `100 mm x4` |
 | `BM-HW-004` | M10 nuts/washers/repair pack | `1 pack` | all-metal nuts x`12`, nyloc nuts x`12`, flat washers x`40`, spring washers x`20`, M10 x `1.25` weld nuts x`4`, `3 mm` repair tabs x`4` |
 | `BM-HW-005` | M12 front-support/repair pack | hold | Buy only if front support proves M12. If verified: bolts x`4`, nuts x`6`, flat washers x`12`, spring washers x`6` in measured pitch/length |
@@ -88,14 +88,14 @@ These are the open actions that still block final release:
 1. `BMA-001`: lay out every old body-mount part by station and photograph it.
 2. `BMA-002`: choose OE/reproduction package or local fabrication; mark the other route do-not-order.
 3. `BMA-003`: measure the current stopper/seat pieces and match them to `52023-60010` or `90560-12233` if using OE route; keep `90560-12009` as the six-piece spacer/crush-tube reference.
-4. `BMA-004`: confirm the large-pair station and square-pad footprint.
-5. `BMA-005`: dry-stack the small square pad with sleeve/cup/shim hardware and confirm installed compression.
+4. `BMA-004`: confirm the single `80 x 80 mm` pad footprint at every main body station.
+5. `BMA-005`: dry-stack a representative `BM-ISO-LG` pad with sleeve/cup/shim hardware and confirm installed compression.
 6. `BMA-006`: measure sleeve ID, OD, and length, or dry-stack and derive sleeve length.
 7. `BMA-007`: thread-gauge body-mount bolts and captive nuts; measure usable captive nut depth.
 8. `BMA-008`: preserve and measure original shim/spacer packs by station.
 9. `BMA-009`: dry-fit the left/right underfloor strips; apply only proven local end trim and trace the separate steel retainer if it must be remade.
 10. `BMA-010`: confirm front-support fastener diameter and pitch before any M12 order.
-11. `BMA-011`: dry-stack one large station, one small station, and one front-support station before final sleeve cutting and bolt-length selection.
+11. `BMA-011`: dry-stack representative main body stations and one front-support station before final sleeve cutting and bolt-length selection.
 
 Record the results in [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv).
 

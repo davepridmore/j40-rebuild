@@ -17,6 +17,7 @@ OUT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "04_exports
 REPORT_DIR = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports"
 AS_FITTED_ROUTE_SCOPE = REPORT_DIR / "j40_as_fitted_route_model_scope_20260531.csv"
 AS_FITTED_ROUTE_MODEL_COVERAGE = REPORT_DIR / "j40_as_fitted_route_model_coverage_20260531.csv"
+PAKISTAN_ROUTE_PURCHASE_BOM = ROOT / "data" / "manual" / "j40_as_fitted_route_pakistan_purchase_bom_20260531.csv"
 
 MODEL_NAME = "j40_full_vehicle_scaffold_rev_c"
 MODEL_TITLE = "J40 Full Vehicle CAD Scaffold Rev C - RHD Digital Twin Evidence Pass"
@@ -201,6 +202,26 @@ def read_as_fitted_route_scope() -> dict[str, dict[str, str]]:
         return {row.get("route_id", ""): row for row in csv.DictReader(handle) if row.get("route_id")}
 
 
+def read_pakistan_route_purchase_bom_by_route() -> dict[str, list[dict[str, str]]]:
+    if not PAKISTAN_ROUTE_PURCHASE_BOM.exists():
+        return {}
+    grouped: dict[str, list[dict[str, str]]] = {}
+    with PAKISTAN_ROUTE_PURCHASE_BOM.open(newline="", encoding="utf-8-sig") as handle:
+        for row in csv.DictReader(handle):
+            for route_id in row.get("linked_route_ids", "").split("|"):
+                route_id = route_id.strip()
+                if route_id:
+                    grouped.setdefault(route_id, []).append(row)
+    return grouped
+
+
+def pakistan_route_purchase_bom_count() -> int:
+    if not PAKISTAN_ROUTE_PURCHASE_BOM.exists():
+        return 0
+    with PAKISTAN_ROUTE_PURCHASE_BOM.open(newline="", encoding="utf-8-sig") as handle:
+        return sum(1 for _ in csv.DictReader(handle))
+
+
 def as_fitted_route_model_matches(model_parts: list[PartType]) -> dict[str, list[PartType]]:
     route_scope = read_as_fitted_route_scope()
     matches: dict[str, list[PartType]] = {route_id: [] for route_id in route_scope}
@@ -221,6 +242,7 @@ def as_fitted_route_metrics(model_parts: list[PartType]) -> dict[str, int]:
         "represented_rows": sum(1 for route_id in route_scope if matches.get(route_id)),
         "route_part_count": sum(1 for part in model_parts if part.group == "as_fitted_routes"),
         "clearance_part_count": sum(1 for part in model_parts if part.group == "mechanical_clearance"),
+        "pakistan_purchase_bom_rows": pakistan_route_purchase_bom_count(),
     }
 
 
@@ -232,6 +254,7 @@ def slug(value: str) -> str:
 def parts() -> list[PartType]:
     p: list[PartType] = []
     route_scope = read_as_fitted_route_scope()
+    purchase_bom_by_route = read_pakistan_route_purchase_bom_by_route()
 
     def box(
         group: str,
@@ -356,12 +379,17 @@ def parts() -> list[PartType]:
         row = route_scope.get(route_id, {})
         if not row:
             return f"{route_id}: {fallback}; route scope row not found."
+        buy_items = [
+            f"{item.get('bom_id', '')} {item.get('exact_part_to_buy_pakistan', '')} qty {item.get('qty', '')}"
+            for item in purchase_bom_by_route.get(route_id, [])
+        ]
         fields = [
             f"{route_id} {row.get('route_name', fallback)}",
             f"target {row.get('model_level_target', '')}",
             f"capture {row.get('geometry_to_capture', '')}",
             f"clearance {row.get('clearance_checks', '')}",
             f"release {row.get('release_gate', '')}",
+            f"pakistan_buy {' | '.join(buy_items)}" if buy_items else "",
             f"status {row.get('status', '')}",
         ]
         return "; ".join(field for field in fields if field and not field.endswith(" "))
@@ -1668,6 +1696,22 @@ def parts() -> list[PartType]:
     cyl("datum", "wheelbase_datum_line_right", (front_axle_x + rear_axle_x) / 2, 925, 285, "x", 18, 2285, COLORS["datum"], "measurement datum", "wheelbase datum line on right side")
     cyl("datum", "front_track_datum_line", front_axle_x, 0, 260, "y", 18, 1410, COLORS["datum"], "measurement datum", "front track datum line")
     cyl("datum", "rear_track_datum_line", rear_axle_x, 0, 260, "y", 18, 1410, COLORS["datum"], "measurement datum", "rear track datum line")
+    cyl("datum", "cooling_pipe_fabrication_samples_main_run_datum", 505, -235, 1145, "x", 30, 520, COLORS["datum"], "measurement datum from project photos", "May 2/May 29 cooling_pipe_fabrication_samples formed coolant pipe master-template run; close OD, wall, bead, and bend clocking from physical sample before fabrication")
+    cyl("datum", "cooling_pipe_fabrication_samples_vertical_leg_datum", 360, -235, 995, "z", 30, 315, COLORS["datum"], "measurement datum from project photos", "cooling pipe vertical leg and bend-height reference from selected tape-reference photos")
+    cyl("datum", "cooling_pipe_fabrication_samples_upper_hose_overlap_datum", 245, -235, 1160, "x", 42, 185, COLORS["datum"], "measurement datum from project photos", "formed pipe upper hose-overlap and clamp-land datum; target hose ID remains sample/tape controlled")
+    cyl("datum", "cooling_pipe_fabrication_samples_lower_hose_overlap_datum", 330, -235, 835, "x", 42, 165, COLORS["datum"], "measurement datum from project photos", "formed pipe lower hose-overlap and clamp-land datum; dry-fit fan/radiator clearance before release")
+    box("datum", "cooling_pipe_fabrication_samples_clamp_pair_datum", 286, -235, 1000, 34, 84, 365, COLORS["datum"], "measurement datum from project photos", "two clamp-land witness positions for made-to-order cooling pipe sample set")
+    box("datum", "radiator_sample_measurement_core_envelope", 205, 0, 915, 90, 1030, 430, COLORS["datum"], "measurement datum from project photos", "engine_radiator_sample_measurement removed-radiator core/tank envelope; pressure/flow test and exact bracket offsets remain release gates")
+    cyl("datum", "front_support_radiator_measurement_set_lower_pickup_bar", 190, 0, 625, "y", 18, 890, COLORS["datum"], "measurement datum from project photos", "front_support_radiator_measurement_set lower pickup span and grommet/stud station reference")
+    cyl("datum", "front_support_radiator_pickups_context_upper_pickup_bar", 188, 0, 1190, "y", 18, 840, COLORS["datum"], "measurement datum from project photos", "front_support_radiator_pickups_context upper support station reference for radiator and front cooling stack dry-fit")
+    box("datum", "existing_battery_mount_tray_measurements_tray_footprint", 575, 430, 640, 360, 250, 36, COLORS["datum"], "measurement datum from project photos", "existing_battery_mount_tray_measurements tray footprint; lock final pickup holes and hold-down geometry from measured tray photos")
+    cyl("datum", "existing_battery_mount_tray_measurements_hold_down_span", 575, 430, 1005, "y", 16, 250, COLORS["datum"], "measurement datum from project photos", "battery tray hold-down span datum from measurement photos")
+    cyl("datum", "installed_battery_dimension_reference_length_bar", 570, 300, 900, "x", 16, 330, COLORS["datum"], "measurement datum from project photos", "installed_battery_dimension_reference length datum; update battery envelope when final battery is selected")
+    cyl("datum", "installed_battery_dimension_reference_width_bar", 735, 430, 900, "y", 16, 225, COLORS["datum"], "measurement datum from project photos", "installed battery width datum and service-lift clearance reference")
+    cyl("datum", "installed_battery_dimension_reference_height_bar", 745, 560, 875, "z", 16, 225, COLORS["datum"], "measurement datum from project photos", "installed battery height datum for bonnet, cutoff, cable, and tray clearance")
+    box("datum", "suspension_bump_stop_removed_samples_front_envelope", front_axle_x - 95, -560, 330, 125, 90, 86, COLORS["datum"], "measurement datum from project photos", "suspension_bump_stop_removed_samples front rubber envelope; final height/hole pattern comes from removed sample")
+    box("datum", "suspension_bump_stop_removed_samples_rear_envelope", rear_axle_x - 95, -560, 330, 125, 90, 86, COLORS["datum"], "measurement datum from project photos", "suspension_bump_stop_removed_samples rear rubber envelope; compare left/right before replacement")
+    cyl("datum", "suspension_bump_stop_removed_samples_mount_hole_spacing_bar", front_axle_x - 95, -560, 392, "x", 14, 86, COLORS["datum"], "measurement datum from project photos", "bump-stop removed-sample mounting-hole spacing datum; verify bolt size and plate thickness before ordering")
 
     return p
 
@@ -2721,6 +2765,7 @@ def write_online_reference_inventory() -> Path:
 def write_route_model_coverage(model_parts: list[PartType]) -> Path:
     matches = as_fitted_route_model_matches(model_parts)
     route_scope = read_as_fitted_route_scope()
+    purchase_bom_by_route = read_pakistan_route_purchase_bom_by_route()
     path = AS_FITTED_ROUTE_MODEL_COVERAGE
     with path.open("w", newline="", encoding="ascii") as handle:
         fieldnames = [
@@ -2731,6 +2776,8 @@ def write_route_model_coverage(model_parts: list[PartType]) -> Path:
             "coverage_status",
             "model_part_count",
             "model_part_names",
+            "purchase_bom_count",
+            "purchase_bom_ids",
             "geometry_to_capture",
             "clearance_checks",
             "release_gate",
@@ -2740,6 +2787,7 @@ def write_route_model_coverage(model_parts: list[PartType]) -> Path:
         writer.writeheader()
         for route_id, row in sorted(route_scope.items()):
             parts_for_route = matches.get(route_id, [])
+            buy_items = purchase_bom_by_route.get(route_id, [])
             writer.writerow(
                 {
                     "route_id": route_id,
@@ -2749,6 +2797,8 @@ def write_route_model_coverage(model_parts: list[PartType]) -> Path:
                     "coverage_status": "represented_in_generator" if parts_for_route else "missing_model_geometry",
                     "model_part_count": len(parts_for_route),
                     "model_part_names": "|".join(part.name for part in parts_for_route),
+                    "purchase_bom_count": len(buy_items),
+                    "purchase_bom_ids": "|".join(item.get("bom_id", "") for item in buy_items),
                     "geometry_to_capture": row.get("geometry_to_capture", ""),
                     "clearance_checks": row.get("clearance_checks", ""),
                     "release_gate": row.get("release_gate", ""),
@@ -2791,16 +2841,18 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "",
             "- L0 envelope: boxes/cylinders that locate major vehicle systems.",
             "- L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.",
-            "- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, right-hand-drive dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
+            f"- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, {DRIVER_LAYOUT} dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
             "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, classic rounded rear-quarter/back-door glass, rubber window radius gaskets, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
             "- L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.",
             "- Rev C online-reference details: roof ventilator lid/hinge/handle, rear hardtop ventilator louvers, classic rounded rear hardtop side windows and split rear-door glass, hardtop-to-body joins, front clip/tub joins, body-mount pucks and stands, front/rear bumper stays, hood underside bracing and prop rod, hood lock receiver, brake proportioning valve and tube clips, fuel sub-inlet/vent hoses, separated amber/red/clear rear combination lamp lenses, and interior gauge/grab-handle detail.",
             "- Digital-twin evidence pass: front disc rotors, Sumitomo-style caliper envelopes, caliper hose/fitting datums, BSN 453 plate strokes, and sidewall lettering panels are tied to project photos rather than generic J40 references.",
+            "- Measurement-photo datum pass: cooling-pipe fabrication sample, radiator/front-support pickups, installed battery, battery tray, and removed bump-stop sample evidence now has named datum geometry for follow-up measurement closure.",
             "- Visual geometry pass: glTF and orbit-viewer box primitives use conservative chamfers on body, hardtop, front detail, interior, chassis, and running gear pieces to reduce the blocky placeholder look while preserving named part boundaries.",
-            "- Right-hand-drive references: right-side steering wheel/column, right pedal box, right-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, steering damper, and driver-side handbrake reach. The pedal order remains clutch-brake-accelerator across the right footwell.",
+            f"- {DRIVER_LAYOUT.capitalize()} references: {DRIVER_SIDE}-side steering wheel/column, {DRIVER_SIDE} pedal box, {DRIVER_SIDE}-firewall brake booster/master cylinder, clutch master, lower steering shaft, steering box, pitman arm, drag link, tie rod, steering damper, and driver-side handbrake reach. The pedal order remains clutch-brake-accelerator across the {DRIVER_SIDE} footwell.",
             "- L3 specific-item references: rear parking-brake cable attachment hardware, equalizer, clevises, return springs, and frame/axle clips.",
             "- As-fitted route scope: every route row from `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv` has a visible named placeholder or support/clearance primitive covering electrical power, starter/charging, engine controls, front lighting, A/C electrical, cabin HVAC, bulkhead, rear body loom, brake hydraulics, parking brake, fuel, A/C refrigerant, cooling, control cables, speedometer cable, drains, exhaust heat, and shared routing supports.",
             f"- Route generator coverage: {route_metrics['represented_rows']} of {route_metrics['scope_rows']} as-fitted route rows are represented by {route_metrics['route_part_count']} named `as_fitted_routes` parts. Coverage report: `data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv`.",
+            f"- Pakistan purchase BOM: {route_metrics['pakistan_purchase_bom_rows']} route-linked buy rows from `data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv` are read into generated route notes so the 3D model carries the local buy IDs/specs.",
             "- Mechanical-soundness references: fan/radiator, steering-lock/brake-hose, prop-shaft, exhaust heat, and pedal/column/HVAC clearance volumes are visible as non-release L2 checks.",
             "- Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.",
             "- Not fabrication release: mounting holes, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.",
@@ -2840,10 +2892,13 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
         "part_count": len(model_parts),
         "as_fitted_route_scope": str(AS_FITTED_ROUTE_SCOPE.relative_to(ROOT)),
         "as_fitted_route_model_coverage": str(AS_FITTED_ROUTE_MODEL_COVERAGE.relative_to(ROOT)),
+        "pakistan_route_purchase_bom": str(PAKISTAN_ROUTE_PURCHASE_BOM.relative_to(ROOT)),
+        "pakistan_route_purchase_bom_rows": route_metrics["pakistan_purchase_bom_rows"],
         "as_fitted_route_scope_rows": route_metrics["scope_rows"],
         "as_fitted_route_rows_represented": route_metrics["represented_rows"],
         "as_fitted_route_part_count": route_metrics["route_part_count"],
         "mechanical_clearance_part_count": route_metrics["clearance_part_count"],
+        "measurement_datum_part_count": sum(1 for part in model_parts if part.group == "datum"),
         "reference_gallery_image_count": 12,
         "online_reference_inventory": f"data/manual/cad/j40_reference_model/05_reports/{MODEL_NAME}_online_reference_inventory.csv",
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],

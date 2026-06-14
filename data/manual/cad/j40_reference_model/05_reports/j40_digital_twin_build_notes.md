@@ -1,9 +1,9 @@
 # J40 Digital Twin Build Notes
 
-- Generated: 2026-05-30T23:21:48.582907+00:00
+- Generated: 2026-05-31T04:15:55.879374+00:00
 - Photo/video evidence rows: 114 component slices, 821 media references.
 - Component-job linkage: 88 of 114 component slices linked through `data/manual/component_jobs_photo_reconciliation.csv`.
-- Current scaffold parts: 1282.
+- Current scaffold parts: 1298.
 - Evidence matrix: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv`
 - Measurement backlog: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv`
 - Public-source strategy: `data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md`
@@ -12,11 +12,17 @@
 
 ## Readiness Summary
 
-- `represented_needs_measurement_refinement`: 65
-- `visual_reference_modelled`: 19
-- `photos_only_needs_model_geometry`: 15
-- `represented_needs_dimension_check`: 10
-- `measurement_photo_available_needs_cad_datum`: 5
+- `represented_needs_measurement_refinement`: 68
+- `visual_reference_modelled`: 20
+- `represented_needs_dimension_check`: 15
+- `photos_only_needs_model_geometry`: 11
+
+## CAD Datum Closure
+
+- `chassis_underside/suspension_bump_stop_removed_samples` now has named datum geometry; examples `suspension_bump_stop_removed_samples_front_envelope|suspension_bump_stop_removed_samples_mount_hole_spacing_bar|suspension_bump_stop_removed_samples_rear_envelope|left_front_bump_stop|left_rear_bump_stop|right_front_bump_stop|right_rear_bump_stop|cab_body_mount_rubber_puck_1`
+- `engine_bay/cooling_pipe_fabrication_samples` now has named datum geometry; examples `cooling_pipe_fabrication_samples_clamp_pair_datum|cooling_pipe_fabrication_samples_lower_hose_overlap_datum|cooling_pipe_fabrication_samples_main_run_datum|cooling_pipe_fabrication_samples_upper_hose_overlap_datum|cooling_pipe_fabrication_samples_vertical_leg_datum|cooling_fan_blade_1|cooling_fan_blade_2|cooling_fan_blade_3`
+- `engine_bay/existing_battery_mount_tray_measurements` now has named datum geometry; examples `existing_battery_mount_tray_measurements_hold_down_span|existing_battery_mount_tray_measurements_tray_footprint|battery_tray_reference|battery_case|battery_negative_terminal|battery_positive_terminal|positive_battery_cable_run|installed_battery_dimension_reference_height_bar`
+- `engine_bay/installed_battery_dimension_reference` now has named datum geometry; examples `installed_battery_dimension_reference_height_bar|installed_battery_dimension_reference_length_bar|installed_battery_dimension_reference_width_bar|battery_case|battery_negative_terminal|battery_positive_terminal|battery_tray_reference|positive_battery_cable_run`
 
 ## Strongest Photo Coverage
 
@@ -39,7 +45,7 @@
 - `body_exterior/wing_removal_and_body_lift_prep`: 35 photos, represented_needs_measurement_refinement; examples `20260419_190643_gp_UM5SilTQ.jpg|20260419_190654_gp_1EaxkrUA.jpg|20260419_190707_gp_WCc87lEg.jpg|20260419_190736_gp_ymvXBmNA.jpg|20260419_190741_gp_C3FddI9g.jpg|20260419_190749_gp_AtrQSXHA.jpg|20260419_190806_gp_9yVHtwgA.jpg|20260419_195946_gp_9VNxVqNA.jpg`
 - `body_floor/floor_pan_rust_zones`: 35 photos, represented_needs_measurement_refinement; examples `20260413_005435.jpg|20260413_005437_gp_84WzM92A.jpg|20260413_005516.jpg|20260413_005520_gp_cPf1PDAg.jpg|20260413_005523.jpg|20260413_005526_gp_ZYnYrDDg.jpg|20260413_005529.jpg|20260413_005531_gp_5VurJvdg.jpg`
 - `engine_bay/engine_interior_and_stripdown_detail`: 32 photos, represented_needs_measurement_refinement; examples `20260420_005132_gp_MgOMVKpQ.jpeg|20260420_005143_gp_5JtjMOoA.jpeg|20260420_005201_gp_WEoLBuzQ.jpeg|20260420_005240_gp_2gDmDYfQ.jpeg|20260420_010535_gp_r3KU0Asw.jpg|20260420_013423_gp_albazLaw.jpeg|20260420_013526_gp_WY73IuyA.jpeg|20260420_013551_gp_Wytz9EgQ.jpeg`
-- `engine_bay/cooling_pipe_fabrication_samples`: 29 photos, measurement_photo_available_needs_cad_datum; examples `20260502_004044_gp_Hx4Yo0Qg.jpg|20260502_004106_gp_wlYlUahA.jpg|20260502_004120_gp_7Jw9Zyrg.jpg|20260502_004133_gp_ZEpqmARA.jpg|20260502_004139_gp_jt1dGw4A.jpg|20260502_004145_gp_e8soxsyA.jpg|20260528_194853_gp_SiEb7xTg.jpg|20260528_235330_gp_8pOmnEbg.jpg`
+- `engine_bay/cooling_pipe_fabrication_samples`: 29 photos, represented_needs_dimension_check; examples `20260502_004044_gp_Hx4Yo0Qg.jpg|20260502_004106_gp_wlYlUahA.jpg|20260502_004120_gp_7Jw9Zyrg.jpg|20260502_004133_gp_ZEpqmARA.jpg|20260502_004139_gp_jt1dGw4A.jpg|20260502_004145_gp_e8soxsyA.jpg|20260528_194853_gp_SiEb7xTg.jpg|20260528_235330_gp_8pOmnEbg.jpg`
 - `engine_bay/engine_powertrain_cleaning_baseline`: 19 photos, represented_needs_measurement_refinement; examples `20260501_194330_gp_CogcrEXA.jpg|20260501_194338_gp_81Nj4SVA.jpg|20260501_194344_gp_V7P0qatA.jpg|20260501_194402_gp_W9J4rcsw.jpg|20260501_194414_gp_gdDllc8Q.jpg|20260501_194421_gp_toAeFYqg.jpg|20260501_194427_gp_QjfOBtTQ.jpg|20260501_194435_gp_ewUJAfPA.jpg`
 - `interior_cabin/dashboard_and_cabin_stripdown`: 19 photos, represented_needs_measurement_refinement; examples `20260323_180218.jpg|20260323_180220_gp_R3uBBhUw.jpg|20260323_180314.jpg|20260323_180316_gp_65cSGRyQ.jpg|20260323_185922_gp_XWQyq7dw.jpg|20260323_185947.jpg|20260323_185949_gp_bRW3C2Ng.jpg|20260323_190006_gp_xzDpzXmg.jpg`
 - `body_floor/body_off_shell_floor_and_bulkhead`: 16 photos, represented_needs_measurement_refinement; examples `20260422_004449_gp_ZzlGoYsQ.jpg|20260422_004449_gp_ZzlGoYsQ_2.jpg|20260422_004513_gp_bgO24J2g.jpg|20260422_004513_gp_bgO24J2g_2.jpg|20260422_004523_gp_p13iAnmw.jpg|20260422_004523_gp_p13iAnmw_2.jpg|20260422_004536_gp_AAvm6QRQ.jpg|20260422_004536_gp_AAvm6QRQ_2.jpg`

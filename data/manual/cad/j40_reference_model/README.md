@@ -89,9 +89,10 @@ As-fitted routing scope is controlled by:
 ```text
 docs/j40-digital-twin-as-fitted-cable-scope-20260531.md
 data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv
+data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv
 ```
 
-Every cable, loom, hose, hard line, control cable, earth strap, A/C refrigerant hose, brake/fuel line, and drivetrain/drive-orientation route that can affect fitment must be modelled as a named route before fabrication or closeout relies on the 3D model. Generic route placeholders are visual only until each route has measured endpoints, pass-throughs, supports, bend radius, and clearance checks.
+Every cable, loom, hose, hard line, control cable, earth strap, A/C refrigerant hose, brake/fuel line, and drivetrain/drive-orientation route that can affect fitment must be modelled as a named route before fabrication or closeout relies on the 3D model. Generic route placeholders are visual only until each route has measured endpoints, pass-throughs, supports, bend radius, clearance checks, and the relevant Pakistan buy-item specs.
 
 Exact duplicate rule: photo and reference-model evidence is acceptable for visual placement, but any fabrication-grade geometry must be closed by measured truck datums, Toyota dimensions, or calibrated photogrammetry.
 

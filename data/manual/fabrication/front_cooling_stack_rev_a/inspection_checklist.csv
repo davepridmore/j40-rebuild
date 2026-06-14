@@ -1,0 +1,12 @@
+check_id,stage,requirement,evidence
+FCS-CHECK-001,mockup,"Radiator sits square on lower pads/saddles with no hose tension, no tank twist, and both sides supported.","Wide photo from front and side with ruler/tape visible."
+FCS-CHECK-002,mockup,"Condenser fits in front of radiator with at least 10-15 mm air gap and no grille/bonnet-latch conflict.","Side photo showing grille-to-condenser and condenser-to-radiator depth."
+FCS-CHECK-003,mockup,"Optional pusher fan clears grille and mounts to frame/fan hoop, not through condenser or radiator fins.","Fan mounted photo and rear clearance photo."
+FCS-CHECK-004,mockup,"Receiver-drier mounts vertical on a side bracket and leaves hose bend radius for condenser outlet and liquid line to firewall/TXV.","Drier mock-up photo with hose/fitting direction marked."
+FCS-CHECK-005,compressor,"Existing Sanden-type compressor passes 12V clutch, pulley alignment, leak, oil/refrigerant, and port-style checks.","Close photos of compressor label/head ports plus A/C shop leak/oil note."
+FCS-CHECK-006,pre-drill,"Final radiator and condenser tab holes are transferred from real parts with rubber washers installed.","Close photos of tab transfer marks and rubber stack."
+FCS-CHECK-007,pre-coating,"All welded/drilled steel is deburred, test-fitted, and corrosion-prepped before primer/Raptor.","Bare-metal finished frame photos before coating."
+FCS-CHECK-008,installed,"Engine fan/shroud, belts, upper/lower hoses, A/C hoses, grille, bonnet, and service removal clearance all pass after final tightening.","Installed stack photos plus hand-shake/running clearance video."
+FCS-CHECK-009,charge,"A/C pressure protection switch is wired and verified before compressor is allowed to run charged.","Electrical test note or video showing clutch cutout/request logic."
+FCS-CHECK-010,cooling_validation,"Cooling system pressure test, warm idle leak check, and A/C condenser fan/pressure behavior are validated after assembly.","Pressure-test photo/video and warm running check."
+

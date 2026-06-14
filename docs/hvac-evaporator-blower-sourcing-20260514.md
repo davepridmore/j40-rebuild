@@ -19,6 +19,23 @@ The Gmail refresh added two A/C evaporator signals:
 
 These orders do not override the custom-blower direction. On arrival, confirm whether the case/plenum, drain, fittings, outlet face, and any integrated blower section can be adapted for the selected external blowers before cutting mounts, ducts, drain holes, or crimping hoses.
 
+## 2026-05-31 Owner Purchase Update
+
+Owner reports a major purchase intended to secure the cabin cooling package / slimline under-dash A/C direction. Exact order details and shipped contents still need proof.
+
+Release position:
+
+- Treat the purchased unit as the primary cabin evaporator candidate once order confirmation or arrival photos are available.
+- Keep the custom-blower/hidden-installation quality bar: the unit must physically fit under the J40 dash, drain correctly, seal airflow across the coil, and connect to R134a barrier hoses cleanly.
+- Do not let the purchase force a poor visible hang-on installation. If the case is too bulky, use the cooling coil/TXV/drain hardware as donor parts only if a better plenum can be made.
+- Hose crimping waits until the purchased unit, condenser, drier, compressor, service ports, and firewall/bulkhead positions are all fixed in the vehicle.
+
+## 2026-06-02 Vent And Duct Update
+
+The working cabin outlet plan is now four directional outlets: two low-profile front dash/under-dash vents plus two longer duct runs to small directional outlets just behind the front-door pillar area. Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) as the vent/louver/duct buy spec.
+
+This does not release vent purchase yet. The selected evaporator/plenum must first prove outlet count, outlet OD, blower position, drain route, and demist allowance. If the case has four usable 2.5 inch takeoffs, dedicate one to each outlet. If it has only two outlets, use a fabricated plenum or airflow-tested Y splits only after confirming the rear/pillar runs do not weaken the front airflow.
+
 ## Purchase / Inquiry Links
 
 Local inquiry first:
@@ -65,6 +82,7 @@ Ask the supplier/shop for:
 - Drain nipple with enough fall to route condensate outside the cabin.
 - Case dimensions and photos from all sides before travel or deposit.
 - Coil face width/height, core depth, outlet count and outlet OD, or a flat face that can accept a sealed plenum and 2 to 4 duct takeoffs.
+- Vent plan compatibility: enough outlet area for two front cabin vents plus two rear/pillar directional vents, plus demist if required.
 - External blower compatibility: adapter face, airflow across the full coil face, service access, and measured blower current once the project blowers are selected.
 - Return-air path that can be fitted with a serviceable grille/filter.
 - Bench airflow test with the selected external blowers plus nitrogen pressure/vacuum leak test before payment.

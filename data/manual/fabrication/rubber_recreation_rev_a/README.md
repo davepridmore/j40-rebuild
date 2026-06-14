@@ -20,8 +20,8 @@ Use it with:
 
 ## DXF / SVG Parts
 
-- `bm_iso_sm_square_pad_rev_a.dxf` / `bm_iso_sm_square_pad_rev_a.svg` - BM-ISO-SM small square body isolator pad, qty 10 plus 2 spares
-- `bm_iso_lg_square_pad_rev_a.dxf` / `bm_iso_lg_square_pad_rev_a.svg` - BM-ISO-LG large square body isolator pad, qty 2 plus 1 spare
+- `bm_iso_sm_square_pad_rev_a.dxf` / `bm_iso_sm_square_pad_rev_a.svg` - BM-ISO-SM small-height square body isolator pad, qty 10 plus 6 spares
+- `bm_iso_lg_square_pad_rev_a.dxf` / `bm_iso_lg_square_pad_rev_a.svg` - BM-ISO-LG large square body isolator pad, qty 2 plus 2 spares
 - `bm_cup_small_seat_washer_rev_a.dxf` / `bm_cup_small_seat_washer_rev_a.svg` - BM-CUP small body-mount cup washer, qty 10 working basis
 - `bm_cup_large_seat_washer_rev_a.dxf` / `bm_cup_large_seat_washer_rev_a.svg` - BM-CUP large body-mount cup washer, qty 2 working basis
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
@@ -48,10 +48,10 @@ The strip files are released plain first-article cut patterns at `420 x 38 x 8 m
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the May 29 removed samples control construction for both stops: broad molded rubber body, two through-holes in the rubber, central metal fixture/channel interface, rounded/tapered sides, and flat strike area. Final BL/BW/P/D/fixture-channel/X-Y/G/F dimensions come from sample calipers, the removed fixture, cleaned vehicle brackets, and axle strike pads. Do not make bump stops from simple cut rubber blocks or the earlier flat-plate placeholder.
+Bump stops cannot rely on Toyota/manufacturer supply. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the May 31 exact front-stop photos control the visible construction: broad molded rubber body, two through-holes in the rubber, central metal fixture/channel interface, rounded/tapered sides, and flat strike area. Rear/back stops use the same shape made longer. Final BL/BW/P/D/fixture-channel/X-Y/G/F dimensions come from sample calipers, the May 29 removed-fixture support photos, the removed fixture, cleaned vehicle brackets, and axle strike pads. Do not make bump stops from simple cut rubber blocks or the earlier flat-plate placeholder.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5`, or cast PU Shore A `80 +/-5` only if the May 29 sample-style through-hole layout, central fixture/channel interface, progressive geometry, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5`, or cast PU Shore A `80 +/-5` only if the May 31 exact front-stop through-hole layout, central fixture/channel interface, progressive geometry, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.

@@ -2,7 +2,7 @@
 
 Scope: replacement bump stops for the leaf-spring axle-to-chassis stops where Toyota supply cannot be relied on and the old rubber is too decayed to use as the mould master.
 
-This is not a Toyota engineering/mould drawing. Toyota almost certainly had a formal drawing for `48304-60010` and `48304-60020`, but the public OEM/catalog pages checked do not expose the mould dimensions, compound recipe, internal reinforcement detail, metal fixture relationship, or load/deflection curve. Treat the Toyota numbers and known application/height data as external controls. The May 29 removed samples now control the local construction concept for both bump stops: a broad molded rubber body with two through-holes in the rubber, rounded/asymmetric sides, and a central metal fixture/insert interface after unscrewing from the vehicle metal fixture. Final dimensions still come from calipers, the removed metal fixture, current vehicle brackets, axle strike pads, and first-article tests.
+This is not a Toyota engineering/mould drawing. Toyota almost certainly had a formal drawing for `48304-60010` and `48304-60020`, but the public OEM/catalog pages checked do not expose the mould dimensions, compound recipe, internal reinforcement detail, metal fixture relationship, or load/deflection curve. Treat the Toyota numbers and known application/height data as external controls. The May 31 exact front bump-stop photos now control the visible local shape: a broad molded rubber body with two through-holes in the rubber, rounded/asymmetric sides, a central metal fixture/insert interface, and a flat strike face. Rear/back stops use the same front-stop shape and fixture pattern, made longer to the `70 mm` family height. Final station release still comes from calipers, the removed metal fixture, current vehicle brackets, axle strike pads, and first-article tests.
 
 If a Toyota dealer, NOS part, or genuine sample becomes available, use it as the preferred master before cutting a mould. Until then, the fabricator must reproduce the Toyota-style progressive stop, not invent a square rubber block.
 
@@ -10,9 +10,9 @@ If a Toyota dealer, NOS part, or genuine sample becomes available, use it as the
 
 | Controlled part | Qty | Position | Toyota reference | Free height target | Source role |
 | --- | ---: | --- | --- | ---: | --- |
-| `BUMP-60010-FL` | `1` | Front left spring bump stop | `48304-60010` | `70 mm` | Long stop. Fits front-left on Land Cruiser 40/45 and rear axle pair. |
-| `BUMP-60020-FR` | `1` | Front right spring bump stop | `48304-60020` | `60 mm` | Short right-front stop. Do not substitute the `70 mm` long stop unless a full bump-clearance test proves it must be trimmed to the right-front height. |
-| `BUMP-60010-R` | `2` | Rear spring bump stops | `48304-60010` | `70 mm` | Matched rear pair using the long stop geometry. |
+| `BUMP-60010-FL` | `1` | Front left spring bump stop | `48304-60010` | `70 mm` | Same May 31 front-stop shape family, made to the long height. |
+| `BUMP-60020-FR` | `1` | Front right spring bump stop | `48304-60020` | `60 mm` | Exact front-stop shape from the May 31 photos at the short height. Do not substitute the `70 mm` long stop unless a full bump-clearance test proves it must be trimmed to the right-front height. |
+| `BUMP-60010-R` | `2` | Rear spring bump stops | `48304-60010` | `70 mm` | Matched rear/back pair using the same front-stop body and fixture pattern, made longer. |
 
 External references used:
 
@@ -30,7 +30,7 @@ Links:
 
 ## Sample-Controlled Shape To Reproduce
 
-The correct fabrication target is now the removed-sample family shown in `photos/20260529_223605_gp_CklgF0cQ.jpg` and `photos/20260529_223701_gp_wYPExcAA.jpg`, applied as representative construction evidence for both bump stops. It is not a plain rubber block, and it is not the earlier placeholder rubber bonded to a separate flat backing plate with holes only in steel. Use the two May 29 samples, the removed metal fixture, the cleaned vehicle brackets, the axle strike pads, and any usable NOS/genuine sample to control the visible form:
+The correct fabrication target is now the exact front-stop photo set shown in `photos/20260531_171824_gp_HmSS2ChQ.jpg`, `photos/20260531_171833_gp_Vw96I7Mg.jpg`, `photos/20260531_171859_gp_i6bRyQKA.jpg`, `photos/20260531_171903_gp_jNI1gfYA.jpg`, and `photos/20260531_171935_gp_BYfhqiWg.jpg`. The May 29 removed-sample photos are supporting fixture and construction evidence only. The rear/back stops are the same body, through-hole layout, fixture/channel interface, and strike-face design made longer to the `70 mm` family height. It is not a plain rubber block, and it is not the earlier placeholder rubber bonded to a separate flat backing plate with holes only in steel. Use the May 31 front-stop photos, the May 29 fixture-support photos, the removed metal fixture, the cleaned vehicle brackets, the axle strike pads, and any usable NOS/genuine sample to control the visible form:
 
 - Molded rubber body with two through-holes visible in the rubber body. The holes are now part of the rubber design because the removed samples prove them.
 - Broad low body with rounded/asymmetric plan corners and battered/tapered sides copied from the better surviving sample faces, then cleaned up into a mouldable shape.
@@ -48,7 +48,7 @@ Fabricator deliverables before mould release:
 
 ## Fabrication Route
 
-Use a molded or cast progressive bump-stop rubber copied from the May 29 removed-sample family, with the sample-proven rubber through-holes and central metal fixture/insert interface. Do not cut a simple solid cuboid from sheet rubber and do not rely on ordinary glue-only attachment.
+Use a molded or cast progressive bump-stop rubber copied from the May 31 exact front-stop photo set, with the sample-proven rubber through-holes and central metal fixture/insert interface. Rear/back stops use that same shape family at the longer `70 mm` height. Do not cut a simple solid cuboid from sheet rubber and do not rely on ordinary glue-only attachment.
 
 Preferred material:
 
@@ -61,14 +61,14 @@ Preferred material:
 
 Acceptable local fallback:
 
-- Cast automotive polyurethane only if the fabricator cannot mould rubber and can keep the same progressive geometry, flat-plate bond/captive construction, and rebound recovery.
+- Cast automotive polyurethane only if the fabricator cannot mould rubber and can keep the same progressive geometry, fixture/captive construction, and rebound recovery.
 - Hardness target `80 +/-5 Shore A` for PU.
 - Make the four stops as one batch and trial-fit before accepting final production.
-- PU fallback must still use the sample-style rounded/tapered body, rubber through-holes, central fixture/interface detail, correct height, and strike-face location. A cast square block is not acceptable.
+- PU fallback must still use the May 31 front-stop rounded/tapered body, rubber through-holes, central fixture/interface detail, correct height, and strike-face location. A cast square block is not acceptable.
 
 ## Vehicle-Controlled Mould Dimensions
 
-The old rubber is now construction evidence, not a finished dimension master. Release these values from the two May 29 removed samples, the removed metal fixture, the actual vehicle brackets, and the strike pads, in millimetres.
+The old rubber is now construction evidence, not a finished dimension master. Release these values from the May 31 exact front-stop photos, the May 29 fixture-support photos, the removed metal fixture, the actual vehicle brackets, and the strike pads, in millimetres.
 
 | Measurement ID | Measurement | How to take it | Controls |
 | --- | --- | --- | --- |
@@ -84,9 +84,9 @@ The old rubber is now construction evidence, not a finished dimension master. Re
 Geometry release rules:
 
 - The `P` and `D` dimensions on `data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg` / `.dxf` are now rubber-through-hole plus fixture/bracket controls. These drawings are measurement controls only; they are not a released final cut profile until the samples, fixture, and bracket values are recorded.
-- Base footprint: copy the May 29 sample family, then confirm it seats with the removed metal fixture and vehicle bracket with `0.5-1.0 mm` practical edge clearance where needed.
+- Base footprint: copy the May 31 exact front-stop family, then confirm it seats with the removed metal fixture and vehicle bracket with `0.5-1.0 mm` practical edge clearance where needed.
 - Mounting holes/studs: use the sample rubber holes, removed metal fixture, and vehicle `P` and `D`; feature location tolerance `+/-0.5 mm`. Holes belong through the rubber because the removed samples prove that construction.
-- Rubber height: `70 +/-1 mm` for `BUMP-60010-FL` and both `BUMP-60010-R`; `60 +/-1 mm` for `BUMP-60020-FR`.
+- Rubber height: `70 +/-1 mm` for `BUMP-60010-FL` and both `BUMP-60010-R`; `60 +/-1 mm` for `BUMP-60020-FR`. Height changes only stretch the same front-stop body family; do not create a separate rear shape.
 - Matched rear pair: rear left and rear right free height must match within `1 mm`, and hardness readings must be within `5 Shore A`.
 - Contact face: centred on the axle strike pad within `+/-5 mm`; face must be radiused/tapered, not a sharp-edged block.
 - Side profile: taper the body so compression is progressive and so the rubber does not foul the mount, U-bolts, spring pack, shock, or tyre through axle movement.
@@ -134,7 +134,12 @@ Use these only as station/context references. They are not dimension masters; fi
 | `photos/20260501_193847_gp_uHWO7Bdw.jpg` | Second current-chassis angle for front/rear axle travel path context. |
 | `photos/20260422_004254_gp_SplHLSYA.jpg` | Body-off underside context for spring/shackle/axle clearance. |
 | `photos/20260422_004423_gp_B1N5ThVw.jpg` | Front frame-horn and suspension context; use only for orientation. |
-| `photos/20260529_223605_gp_CklgF0cQ.jpg` | Removed bump-stop sample face/plan view after unscrewing from metal fixture; representative construction evidence for both stops, including rubber through-holes and broad rounded body. |
-| `photos/20260529_223701_gp_wYPExcAA.jpg` | Removed bump-stop sample side view after fixture removal; use for central fixture/channel interface and side-profile concept, not final caliper dimensions. |
+| `photos/20260531_171824_gp_HmSS2ChQ.jpg` | Exact front bump-stop face/width measurement with tape; active mould-shape reference. |
+| `photos/20260531_171833_gp_Vw96I7Mg.jpg` | Companion exact front bump-stop face/width measurement. |
+| `photos/20260531_171859_gp_i6bRyQKA.jpg` | Exact front bump-stop base/fixture plate length and through-hole landing measurement. |
+| `photos/20260531_171903_gp_jNI1gfYA.jpg` | Companion exact front bump-stop base/fixture plate measurement. |
+| `photos/20260531_171935_gp_BYfhqiWg.jpg` | Exact front bump-stop side height/profile measurement; rear/back stops use this same shape made longer. |
+| `photos/20260529_223605_gp_CklgF0cQ.jpg` | Supporting removed-sample face/plan view after unscrewing from metal fixture; confirms rubber through-holes and broad rounded body. |
+| `photos/20260529_223701_gp_wYPExcAA.jpg` | Supporting removed-sample side view for central fixture/channel interface, not the active shape master. |
 
-Before fabrication, take four new close photo sets: front-left, front-right, rear-left, rear-right, each with a ruler/caliper on the bracket holes and a side view of the axle strike pad.
+Before mould release, take station-fit photo sets for front-left, front-right, rear-left, and rear-right, each with a ruler/caliper on the bracket holes and a side view of the axle strike pad. These photos verify mounting and clearance; they do not replace the May 31 front-stop shape master.

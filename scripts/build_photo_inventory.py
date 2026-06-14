@@ -1369,6 +1369,14 @@ FRONT_DISC_SUMITOMO_BASELINE_20260529_FILES = (
     "20260529_184012_gp_Q01c08NA.jpg",
 )
 
+BUMP_STOP_REMOVED_20260531_FILES = (
+    "20260531_171824_gp_HmSS2ChQ.jpg",
+    "20260531_171833_gp_Vw96I7Mg.jpg",
+    "20260531_171859_gp_i6bRyQKA.jpg",
+    "20260531_171903_gp_jNI1gfYA.jpg",
+    "20260531_171935_gp_BYfhqiWg.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1768,7 +1776,7 @@ FILE_OVERRIDES.update(
                 "recreation",
                 "fabrication",
             ),
-            "May 28 user-selected loose body-mount rubber/cup measurement photo. It supports stack/cup inspection context only; the active Longman body-pad design remains square BM-ISO-SM/LG unless station dry-fit deliberately reopens a round profile.",
+            "May 28 user-selected loose body-mount rubber/cup measurement photo. It supports stack/cup inspection context only; the active Longman body-pad design is the single square BM-ISO-LG 80 x 80 x 24 pad unless station dry-fit deliberately reopens a round profile.",
         )
         for file_name in RUBBER_RECREATION_20260528_BODY_CUP_MEASUREMENT_FILES
     }
@@ -3386,6 +3394,28 @@ FILE_OVERRIDES.update(
             ),
             "Google Photos May 29 side view of the two bump-stop samples after fixture removal. Use to update the mould concept: preserve the rubber-through-hole layout, broad base, raised/central fixture channel or bonded insert interface, and rounded progressive sides; final dimensions still require caliper values.",
         ),
+        **{
+            file_name: c(
+                "chassis_underside",
+                "suspension_bump_stop_removed_samples",
+                "rubber_recreation_measurement",
+                "front_bump_stop_measurement_reference",
+                "high",
+                (
+                    "bump_stop",
+                    "front_bump_stop",
+                    "suspension",
+                    "removed_sample",
+                    "rubber_recreation",
+                    "metal_fixture",
+                    "tape_measure",
+                    "measurement",
+                    "fabrication",
+                ),
+                "Google Photos May 31 exact front bump-stop measurement photo selected for the rubber recreation workstream. Use this May 31 front-stop set as the active body-width, height, fixture-plate, through-hole landing, and mould-shape master; rear/back stops use the same shape made longer.",
+            )
+            for file_name in BUMP_STOP_REMOVED_20260531_FILES
+        },
         "20260529_230003_gp_rliSbRjA.jpg": c(
             "engine_bay",
             "engine_radiator_condition_closeups",
