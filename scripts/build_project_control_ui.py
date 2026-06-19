@@ -44,6 +44,7 @@ ORDERS_RECEIPTS_AUDIT_QUEUE_PATH = MANUAL_DIR / "orders_receipts_audit_queue.csv
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
 FASTENER_PHOTO_COUNT_ESTIMATES_PATH = MANUAL_DIR / "fastener_photo_count_estimates.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
+BILAL_GANJ_SAMPLE_KITS_PATH = MANUAL_DIR / "bilal_ganj_sample_fabrication_kits_20260619.csv"
 WORKBOOK_TOOLS_PATH = MANUAL_DIR / "workbook_tabs" / "tools.csv"
 WORKBOOK_PARTS_PATH = MANUAL_DIR / "workbook_tabs" / "parts.csv"
 WORKBOOK_SUBSTANCES_PATH = MANUAL_DIR / "workbook_tabs" / "substances.csv"
@@ -8485,7 +8486,32 @@ def amir_purchase_reference_image_payload(
     }
 
 
-def build_amir_purchase_reference_payload() -> dict[str, Any]:
+def split_sample_parts(value: Any) -> list[str]:
+    return [item.strip() for item in clean(value).split(";") if item.strip()]
+
+
+def build_sample_fabrication_kits_payload(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+    return [
+        {
+            "kit_id": clean(row.get("kit_id")),
+            "priority": clean(row.get("priority")),
+            "kit_name": clean(row.get("kit_name")),
+            "target_market_or_shop": clean(row.get("target_market_or_shop")),
+            "sample_parts_checklist": split_sample_parts(row.get("sample_parts_checklist")),
+            "physical_samples_to_pack": clean(row.get("physical_samples_to_pack")),
+            "measurements_to_capture": clean(row.get("measurements_to_capture")),
+            "fabrication_or_buy_instruction": clean(row.get("fabrication_or_buy_instruction")),
+            "required_rating_or_material": clean(row.get("required_rating_or_material")),
+            "reject_if": clean(row.get("reject_if")),
+            "source_refs": clean(row.get("source_refs")),
+            "status": clean(row.get("status")),
+        }
+        for row in rows
+        if clean(row.get("kit_id"))
+    ]
+
+
+def build_amir_purchase_reference_payload(sample_fabrication_kit_rows: list[dict[str, str]]) -> dict[str, Any]:
     sheet = amir_purchase_reference_image_payload(
         AMIR_PURCHASE_REFERENCE_CARD_SHEET["image_path"],
         caption=AMIR_PURCHASE_REFERENCE_CARD_SHEET["caption"],
@@ -8516,6 +8542,11 @@ def build_amir_purchase_reference_payload() -> dict[str, Any]:
         "purchase_cards": cards,
         "shopping_list_path": path_for_ui("docs/amir-montgomery-road-shopping-list-20260527.md"),
         "video_gates_path": path_for_ui("docs/amir-refurbishment-video-gates-20260529.md"),
+        "sample_fabrication_kits_path": path_for_ui("docs/bilal-ganj-sample-fabrication-kits-20260619.md"),
+        "sample_fabrication_kits_csv_path": path_for_ui(
+            "data/manual/bilal_ganj_sample_fabrication_kits_20260619.csv"
+        ),
+        "sample_fabrication_kits": build_sample_fabrication_kits_payload(sample_fabrication_kit_rows),
     }
 
 
@@ -10171,6 +10202,7 @@ def build_dashboard_data() -> dict[str, Any]:
     fastener_estimate_rows = load_csv_optional(FASTENER_PHOTO_COUNT_ESTIMATES_PATH)
     fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows)
     buy_now_rows = load_csv(BUY_NOW_PATH)
+    bilal_ganj_sample_kit_rows = load_csv_optional(BILAL_GANJ_SAMPLE_KITS_PATH)
     supplies_inventory = build_supplies_inventory(expense_rows, fastener_estimate_rows)
     workbook_source_links = build_workbook_source_links()
     electrical_spec_layout = load_electrical_spec_layout(photo_rows)
@@ -10831,6 +10863,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "orders_receipts_audit_queue": "data/manual/orders_receipts_audit_queue.csv",
             "fastener_photo_count_estimates": "data/manual/fastener_photo_count_estimates.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
+            "bilal_ganj_sample_fabrication_kits": "data/manual/bilal_ganj_sample_fabrication_kits_20260619.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
             "engine_electrical_inputs_reconciliation": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
@@ -10859,6 +10892,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_open_rows": len(open_rows_for_table),
             "parts_ordered_pending_delivery": len(ordered_pending_table),
             "urgent_part_actions": len(urgent_actions),
+            "sample_fabrication_kits": len(bilal_ganj_sample_kit_rows),
             "status_update_gmail_records": len(status_update.get("gmail", {}).get("rows", [])),
             "status_update_whatsapp_new_rows": len(status_update.get("whatsapp", {}).get("new_rows", [])),
             "status_update_manual_rows": len(status_update.get("manual_updates", [])),
@@ -10923,7 +10957,7 @@ def build_dashboard_data() -> dict[str, Any]:
         },
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,
-        "amir": build_amir_purchase_reference_payload(),
+        "amir": build_amir_purchase_reference_payload(bilal_ganj_sample_kit_rows),
         "other_builds": other_builds_reference,
         "contact_register": contact_register_rows,
         "reference_project_ideas": reference_project_idea_rows,

@@ -8670,6 +8670,76 @@
     `;
   }
 
+  function sampleChecklistItems(value) {
+    if (Array.isArray(value)) {
+      return value.map((item) => cleanString(item)).filter(Boolean);
+    }
+    return cleanString(value)
+      .split(/[;|]/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+
+  function renderAmirSampleFabricationKits() {
+    const amirData = data.amir || {};
+    const kits = Array.isArray(amirData.sample_fabrication_kits) ? amirData.sample_fabrication_kits : [];
+    const kitDocPath = cleanString(amirData.sample_fabrication_kits_path);
+    const kitCsvPath = cleanString(amirData.sample_fabrication_kits_csv_path);
+    if (!kits.length && !kitDocPath && !kitCsvPath) {
+      return "";
+    }
+    return `
+      <section id="amir-sample-fabrication-kits" class="card">
+        <div class="detail-header">
+          <h3>Bilal Ganj / Montgomery Road Sample Kits</h3>
+          ${renderCopyLinkButton(sectionRoute("amir-sample-fabrication-kits"), "#", "Copy sample kits link")}
+        </div>
+        <p class="small-muted">Physical handoff bundles for sample-copy work. Keep brake hydraulics, handbrake cables, brake springs, and fuel hoses separated.</p>
+        <div class="link-row">
+          ${kitDocPath ? `<a class="item-link" href="${escapeHtml(kitDocPath)}">Handoff doc</a>` : ""}
+          ${kitCsvPath ? `<a class="item-link" href="${escapeHtml(kitCsvPath)}">Kit CSV</a>` : ""}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Kit</th>
+                <th>Priority</th>
+                <th>Shop Route</th>
+                <th>Sample Parts To Take</th>
+                <th>Instruction</th>
+                <th>Rating / Material</th>
+                <th>Reject If</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${
+                kits.length
+                  ? kits
+                      .map((kit) => {
+                        const sampleParts = sampleChecklistItems(kit.sample_parts_checklist || kit.physical_samples_to_pack);
+                        return `
+                          <tr>
+                            <td><strong>${escapeHtml(kit.kit_id || "-")}</strong><br><span class="small-muted">${escapeHtml(kit.kit_name || "")}</span></td>
+                            <td>${escapeHtml(cleanString(kit.priority || "P1").toUpperCase())}</td>
+                            <td>${escapeHtml(kit.target_market_or_shop || "-")}</td>
+                            <td>${renderPlainList(sampleParts)}</td>
+                            <td>${escapeHtml(kit.fabrication_or_buy_instruction || "-")}</td>
+                            <td>${escapeHtml(kit.required_rating_or_material || "-")}</td>
+                            <td>${escapeHtml(kit.reject_if || "-")}</td>
+                          </tr>
+                        `;
+                      })
+                      .join("")
+                  : '<tr><td colspan="7">No sample fabrication kits found.</td></tr>'
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  }
+
   function renderAmir() {
     const amirRows = collectAmirRows();
     const frontDiscRows = amirRows.filter(isAmirFrontDiscRow);
@@ -8703,6 +8773,8 @@
       </section>
 
       ${renderAmirPurchaseCards()}
+
+      ${renderAmirSampleFabricationKits()}
 
       <section class="card">
         <div class="detail-header">

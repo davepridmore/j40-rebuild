@@ -11,6 +11,7 @@ Important:
 - The 10-way relay/fuse block is already bought. Cabin/interior car fuse boxes are separate, still not ordered, and must be compact covered blade-fuse boxes.
 - Cabin fuse-box target is the compact internal/OEM-style form shown in the 2026-05-03 user reference image; use `docs/cabin-fuse-box-acquisition-20260503.md` for the supplier order text.
 - Glow plugs stay on the plan for price visibility, but they are no longer a Bilal Ganj/donor scouting item. Order them new only from a Toyota/diesel parts counter after old-plug/system confirmation.
+- Brake/fuel sample-copy work is now split into physical handoff kits. Use `docs/bilal-ganj-sample-fabrication-kits-20260619.md` for the rear handbrake cable, rear brake/handbrake springs, brake flex hoses, and fuel hoses. Brake flex hoses are brake-rated hydraulic assemblies; fuel hoses are fuel-rated rubber.
 - The separate Local Market workstream was retired on 2026-05-13. Keep each local buy under its owning workstream: electrical reset for fuse/grommet work, EPS conversion for the Vitz kit and General EPS Adapter release, chassis/body/fabrication for hardware and sample-matched brackets, brake system for hydraulic prep, suspension for cribbing, and site setup for the toolbench.
 
 ## A) Buy / Book Now (Core)

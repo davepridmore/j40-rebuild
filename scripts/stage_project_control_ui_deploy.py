@@ -27,9 +27,11 @@ PUBLIC_FABRICATION_DOCS = (
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
 )
 PUBLIC_MARKET_DOCS = (
+    ROOT / "data" / "manual" / "bilal_ganj_sample_fabrication_kits_20260619.csv",
     ROOT / "docs" / "eps-bilal-ganj-kit-checklist.md",
     ROOT / "docs" / "bilal-ganj-detailed-size-specs.md",
     ROOT / "docs" / "bilal-ganj-master-shopping-list.md",
+    ROOT / "docs" / "bilal-ganj-sample-fabrication-kits-20260619.md",
     ROOT / "docs" / "bilal-ganj-mechanic-checklist.md",
 )
 
