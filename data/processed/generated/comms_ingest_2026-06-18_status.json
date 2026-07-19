@@ -1,0 +1,393 @@
+{
+  "run_date_utc": "2026-06-18",
+  "date_tag": "2026-06-18",
+  "email": {
+    "new_messages_query_after": "2026/06/15",
+    "queries_run": [
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)",
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)",
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)",
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)",
+      "after:2026/06/15 \"302575831501027345\"",
+      "after:2026/06/15 \"3073062248277489\"",
+      "after:2026/06/15 \"TM25240\"",
+      "after:2026/06/15 \"1622606272102\"",
+      "after:2026/06/15 \"on_hand_stock_20260530\"",
+      "after:2026/06/15 \"1075298\"",
+      "after:2026/06/15 \"1076462\"",
+      "after:2026/06/15 \"amir_local_procurement_20260528\"",
+      "after:2026/06/15 \"aamir_local_run_20260527\"",
+      "after:2026/06/15 \"TM25776\"",
+      "after:2026/06/15 \"TM25550\"",
+      "after:2026/06/15 \"TM25805\"",
+      "after:2026/06/15 \"1762694\"",
+      "after:2026/06/15 \"62694\"",
+      "after:2026/06/15 \"TM25878\"",
+      "after:2026/06/15 \"62074\"",
+      "after:2026/06/15 \"62192\"",
+      "after:2026/06/15 \"38902\"",
+      "after:2026/06/15 \"38903\"",
+      "after:2026/06/15 \"241938794080938\"",
+      "after:2026/06/15 \"242366749280938\"",
+      "after:2026/06/15 \"1761310\"",
+      "after:2026/06/15 \"quote_with_4.75mm_line_stock\"",
+      "after:2026/06/15 \"242508745080938\"",
+      "after:2026/06/15 \"242508745280938\"",
+      "after:2026/06/15 \"62228\"",
+      "after:2026/06/15 \"553-103_reference_only\"",
+      "after:2026/06/15 \"243701549680938\"",
+      "after:2026/06/15 \"242508744880938\"",
+      "after:2026/06/15 \"1695\"",
+      "after:2026/06/15 \"1762336\"",
+      "after:2026/06/15 \"80788\"",
+      "after:2026/06/15 \"3070231697837489\"",
+      "after:2026/06/15 \"242670698380938\"",
+      "after:2026/06/15 \"3070231697777489\"",
+      "after:2026/06/15 \"3070027285627489\"",
+      "after:2026/06/15 \"1599\"",
+      "after:2026/06/15 \"3070231697877489\"",
+      "after:2026/06/15 \"242365766580938\"",
+      "after:2026/06/15 \"3073111533377489\"",
+      "after:2026/06/15 \"62191\"",
+      "after:2026/06/15 \"242695068680938\"",
+      "after:2026/06/15 \"242365766280938\"",
+      "after:2026/06/15 \"243775543180938\"",
+      "after:2026/06/15 \"243954390480938\"",
+      "after:2026/06/15 \"242670698180938\"",
+      "after:2026/06/15 \"242365766980938\"",
+      "after:2026/06/15 \"243331393680938\"",
+      "after:2026/06/15 \"243331393480938\"",
+      "after:2026/06/15 \"242365766080938\"",
+      "after:2026/06/15 \"TM25493\"",
+      "after:2026/06/15 \"26242\"",
+      "after:2026/06/15 \"TM25430\""
+    ],
+    "query_stats": {
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
+        "returned": 27,
+        "result_size_estimate": 27,
+        "has_next_page": false
+      },
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
+        "returned": 7,
+        "result_size_estimate": 7,
+        "has_next_page": false
+      },
+      "after:2026/06/15 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
+        "returned": 32,
+        "result_size_estimate": 32,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"302575831501027345\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3073062248277489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25240\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1622606272102\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"on_hand_stock_20260530\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1075298\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1076462\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"amir_local_procurement_20260528\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"aamir_local_run_20260527\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25776\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25550\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25805\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1762694\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"62694\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25878\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"62074\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"62192\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"38902\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"38903\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"241938794080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242366749280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1761310\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"quote_with_4.75mm_line_stock\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242508745080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242508745280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"62228\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"553-103_reference_only\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"243701549680938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242508744880938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1695\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1762336\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"80788\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3070231697837489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242670698380938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3070231697777489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3070027285627489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"1599\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3070231697877489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242365766580938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"3073111533377489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"62191\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242695068680938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242365766280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"243775543180938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"243954390480938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242670698180938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242365766980938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"243331393680938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"243331393480938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"242365766080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25493\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"26242\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/06/15 \"TM25430\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      }
+    },
+    "unique_messages_read": 53,
+    "categorized_records_written": 27,
+    "excluded_non_project_records": 26,
+    "category_counts": {
+      "product": 5,
+      "supplier_communication": 17,
+      "project_update": 5
+    },
+    "top_sources": {
+      "Daraz": 12,
+      "Aliexpress": 8,
+      "Toolsmart.Pk": 4,
+      "Alibaba Remind": 1,
+      "The JetBrains team": 1,
+      "Brighto Paints | Pakistan's 1st Multinational Paint Company": 1
+    },
+    "output_csv": "data/processed/generated/comms_ingest_2026-06-18_categorized.csv",
+    "output_json": "data/processed/generated/gmail_project_messages_2026-06-18.json",
+    "high_signal_procurement_refs": [
+      "Standard Chartered: Transaction Alert",
+      "Yay, your Order 243618635980938 is confirmed!",
+      "Yay, your Order 243618635680938 is confirmed!",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "The hottest fitness items RN",
+      "Order 3074405027177489: order shipped",
+      "Hi David, share your thoughts about LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER",
+      "Standard Chartered: Transaction Alert",
+      "Yay, your Order 244793706080938 is confirmed!",
+      "Yay, your Order 244793706280938 is confirmed!",
+      "Hi David, share your thoughts about Ingco Heavy duty cable cutter 250mm HHCCB0210",
+      "Package PK015500693R has an update",
+      "Festival of amazing bargains",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Package PK015500693R: left the departure region",
+      "Delivery of your Order 243618635980938",
+      "Still browsing 3/16\" Brake Line Double Flaring Tool Kit Detach...?",
+      "UK.shopper, new finds for you",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Price drop on items you viewed"
+    ]
+  }
+}

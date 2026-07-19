@@ -1,12 +1,11 @@
 measurement_id,source,dimension,value_or_basis,status,notes
 FCS-MEAS-001,front_radiator_two_side_retention_rev_a,existing radiator bracket face,48-50 mm basis,imported_basis,Use this as the preferred upright face/angle-leg size where packaging allows
-FCS-MEAS-002,front_radiator_two_side_retention_rev_a,upright/post height,410 mm basis,reference_only,Earlier single-post basis; new full-height frame must be site-fit from chassis rail to top support plane
+FCS-MEAS-002,front_radiator_two_side_retention_rev_a,upright/post height,410 mm,measured_design_basis,Duplicate the existing upright as a handed/mirrored welded upright on the left side; verify the real part before welding
 FCS-MEAS-003,front_radiator_two_side_retention_rev_a,template steel thickness,4.0 mm,imported_basis,Use 4 mm mild steel for structural upright/post work unless box section route is approved
-FCS-MEAS-004,user update 2026-05-30,leg concept,two full-height chassis uprights,new_design_basis,Design treats the uprights as the structural cooling-stack frame
+FCS-MEAS-004,user update 2026-07-17,leg concept,existing upright plus identical welded left upright,confirmed_design_basis,Do not redesign the structural supports; use removable adapter tabs for component alignment
 FCS-MEAS-005,HJ47/2H radiator references,radiator core candidate,about 435 x 530-540 x 60-64 mm,candidate_only,Confirm against old sample and vehicle before purchase or final tabs
 FCS-MEAS-006,universal parallel-flow condenser references,condenser candidate,14 x 22 in / about 356 x 559 x 21 mm,candidate_only,Use 14 x 24 in only if clear opening and fitting route allow it
 FCS-MEAS-007,vehicle dry-fit,upright inside spacing,to measure,open,Record inside face spacing at radiator upper/lower mounts and condenser upper/lower mounts
 FCS-MEAS-008,vehicle dry-fit,front stack depth,to measure,open,Record grille to radiator plane depth; subtract condenser thickness fan thickness and air gap
 FCS-MEAS-009,vehicle dry-fit,fan to radiator clearance,to measure,open,Must be rechecked after uprights and radiator are tightened
 FCS-MEAS-010,compressor inspection,compressor port style,to identify,open,Record Sanden head type and actual fitting sizes before hose crimping
-

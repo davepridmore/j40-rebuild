@@ -1377,6 +1377,15 @@ BUMP_STOP_REMOVED_20260531_FILES = (
     "20260531_171935_gp_BYfhqiWg.jpg",
 )
 
+CHASSIS_REAR_HALF_PRIMER_20260704_FILES = (
+    "20260704_012250_gp_aySfKLOw.jpg",
+    "20260704_012258_gp_Gechq08Q.jpg",
+    "20260704_012307_gp_CV3XpTDw.jpg",
+    "20260704_012317_gp_w8vZUIhw.jpg",
+    "20260704_012328_gp_7Yd8GyjA.jpg",
+    "20260704_012437_gp_tnnHUuaA.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1442,6 +1451,20 @@ CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
 
 FILE_OVERRIDES.update(CHASSIS_20260422_OVERRIDES)
 FILE_OVERRIDES.update(CHASSIS_20260501_OVERRIDES)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "chassis_underside",
+            "rear_half_chassis_primer_application",
+            "chassis_fixing",
+            "rear_half_epoxy_primer_applied_partial",
+            "high",
+            ("body_off", "chassis", "rear_half", "primer", "epoxy_primer", "partial_coating", "brush_applied"),
+            "July 4 rear/back-half chassis primer application evidence. Shows grey primer on rear rails, rear crossmember/tube, and several brackets; use as partial coating evidence, not full chassis topcoat release.",
+        )
+        for file_name in CHASSIS_REAR_HALF_PRIMER_20260704_FILES
+    }
+)
 FILE_OVERRIDES.update(
     {
         "20260503_153832_gp_0FJJiLHg.jpg": c(
@@ -3554,6 +3577,314 @@ FILE_OVERRIDES.update(
                 "sample_match",
             ),
             "Google Photos May 29 soft radiator side/core supporting condition photo. Use only as general condition evidence.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260704_232054_gp_1mnxabPQ.jpg": c(
+            "brake_system",
+            "rear_drum_brake_removed_hardware_layout",
+            "brake_system_reconstruction",
+            "removed_parts_layout",
+            "high",
+            (
+                "rear_brake",
+                "drum",
+                "wheel_cylinder",
+                "return_springs",
+                "adjuster",
+                "parking_brake",
+                "handbrake_lever",
+                "removed_hardware",
+                "reassembly_reference",
+            ),
+            "Google Photos July 4 user-selected rear drum brake removed hardware layout. Shows the wheel cylinder, return/hold springs, adjuster or actuator pieces, handbrake lever hardware, nuts, and washers; use as a reconstruction reference after cleaning and replacement-part matching.",
+        ),
+        "20260704_233215_gp_khbGQ5Vg.jpg": c(
+            "brake_system",
+            "rear_drum_backing_plate_contact_and_anchor_area",
+            "brake_system_reconstruction",
+            "backing_plate_detail_with_rust",
+            "high",
+            (
+                "rear_brake",
+                "drum",
+                "backing_plate",
+                "shoe_contact_pad",
+                "anchor_area",
+                "parking_brake",
+                "rust",
+                "reassembly_reference",
+            ),
+            "Google Photos July 4 user-selected close-up of the rear drum backing plate and contact/anchor hardware area. Use to plan cleaning, light coating boundaries, shoe contact lubrication points, and reassembly orientation; do not treat this as evidence that the old hydraulic or friction parts are reusable.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260704_231547_gp_q267TkIw.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "parking_brake_cable_or_flexible_line_sample",
+            "medium",
+            ("rear_brake", "drum", "parking_brake", "cable", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 import of current rear drum brake rebuild parts. Shows a black cable or flexible line sample; confirm whether this is the parking-brake cable or a hydraulic/flexible line before assigning it to the rebuild kit.",
+        ),
+        "20260705_023010_gp_HfVx9cMA.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "expander_or_anchor_block_sample",
+            "medium",
+            ("rear_brake", "drum", "expander", "anchor", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing a small cast expander/anchor/abutment-style piece. Use as a sample-match item; installed orientation still needs comparison to the assembled reference side.",
+        ),
+        "20260705_022645_gp_f0UgIsTQ.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "return_spring_sample",
+            "high",
+            ("rear_brake", "drum", "return_spring", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing one removed return/tension spring for the rear drum brake.",
+        ),
+        "20260705_022634_gp_aSZ3Pygg.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "return_spring_sample",
+            "high",
+            ("rear_brake", "drum", "return_spring", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing a second removed return/tension spring for the rear drum brake.",
+        ),
+        "20260705_022626_gp_l4YDm1vg.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "spring_and_small_link_sample",
+            "high",
+            ("rear_brake", "drum", "spring", "linkage", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing a spring with small link/connector detail. Use as a reassembly reference and compare against the assembled side before reuse.",
+        ),
+        "20260705_022617_gp_bx0hLqUA.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "adjuster_expander_bar_sample",
+            "high",
+            ("rear_brake", "drum", "adjuster", "expander_bar", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing the adjuster/expander bar or strut-style piece from the rear drum brake.",
+        ),
+        "20260705_022607_gp_IRGHnYxQ.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "wheel_cylinder_or_expander_body_with_links_sample",
+            "medium",
+            ("rear_brake", "drum", "wheel_cylinder", "expander", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing a cylinder/body with linked rods. Confirm whether this is hydraulic wheel-cylinder related or part of the mechanical expander before reuse or ordering.",
+        ),
+        "20260705_022559_gp_YyIEayQQ.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "parking_brake_or_expander_retaining_clip_sample",
+            "high",
+            ("rear_brake", "drum", "retaining_clip", "parking_brake", "expander", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing the U-shaped retaining clip used around the parking-brake/expander linkage.",
+        ),
+        "20260705_022544_gp_Fgy5X7pw.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "parking_brake_lever_link_sample",
+            "high",
+            ("rear_brake", "drum", "parking_brake", "handbrake_lever", "linkage", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing the parking-brake operating lever/link assembly. Keep left/right orientation controlled and inspect pivot and hook wear before reuse.",
+        ),
+        "20260705_022534_gp_g75wJmWQ.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "hub_spacer_or_retainer_plate_sample",
+            "medium",
+            ("rear_brake", "drum", "hub", "retainer_plate", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing a circular retainer/spacer-style plate. Confirm exact function and orientation before treating it as brake hardware.",
+        ),
+        "20260705_022524_gp_4dTxGAwA.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "rear_brake_shoe_sample_reference",
+            "high",
+            ("rear_brake", "drum", "brake_shoes", "linings", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing rear brake shoe samples. Use for size/handing/reference only; replace linings/shoes for service unless professionally inspected and relined.",
+        ),
+        "20260705_022516_gp_eApLw4Zg.jpg": c(
+            "brake_system",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "brake_system_reconstruction",
+            "rear_brake_drum_sample_reference",
+            "medium",
+            ("rear_brake", "drum", "brake_drum", "sample_match", "current_parts_inventory"),
+            "Google Photos July 5 current brake parts photo showing the rear brake drum sample. Drum condition and diameter still require physical measurement before reuse.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260712_012120_gp_K81WQNTw.jpg": c(
+            "chassis_underside",
+            "suspension_bump_stop_install_set_20260712",
+            "suspension_reassembly_parts_intake",
+            "new_bump_stops_install_pending",
+            "high",
+            (
+                "bilal_ganj",
+                "bump_stop",
+                "suspension",
+                "front_spring",
+                "rear_spring",
+                "rust_treatment",
+                "install_pending",
+            ),
+            "Google Photos July 12 Bilal Ganj intake: new bump-stop set in hand. Install at the front/rear spring bump-stop brackets only after the metal mounting ears/plates are cleaned, rust-treated, painted/protected, and bolt-hole/station fit is confirmed.",
+        ),
+        "20260712_012202_gp_1sGI44uA.jpg": c(
+            "chassis_underside",
+            "suspension_bump_stop_install_set_20260712",
+            "suspension_reassembly_parts_intake",
+            "mounting_plates_need_rust_treatment",
+            "high",
+            (
+                "bilal_ganj",
+                "bump_stop",
+                "suspension",
+                "mounting_plate",
+                "underside",
+                "rust_treatment",
+                "install_pending",
+            ),
+            "Google Photos July 12 underside view of the bump-stop metal mounting plates. Treat the plates/ears for rust before fitting; then install to the matching spring bump-stop brackets and verify clearance at full bump.",
+        ),
+        "20260712_012246_gp_YN2uKtmQ.jpg": c(
+            "brake_system",
+            "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
+            "brake_system_reconstruction",
+            "reconditioned_install_pending",
+            "high",
+            (
+                "bilal_ganj",
+                "rear_brake",
+                "drum",
+                "hold_down_pins",
+                "springs",
+                "cups",
+                "reconditioned",
+                "install_pending",
+            ),
+            "Google Photos July 12 reconditioned rear drum hold-down spring/pin/cup hardware. Install inside the rear drum backing plates only after side/count verification, spring tension check, and comparison with the opened drum layout.",
+        ),
+        "20260712_012759_gp_EhqLfyZA.jpg": c(
+            "brake_system",
+            "rear_drum_parking_brake_reconditioned_hardware_20260712",
+            "brake_system_reconstruction",
+            "cleaned_reconditioned_install_pending",
+            "high",
+            (
+                "bilal_ganj",
+                "rear_brake",
+                "drum",
+                "parking_brake",
+                "handbrake_lever",
+                "adjuster",
+                "return_springs",
+                "reconditioned",
+                "install_pending",
+            ),
+            "Google Photos July 12 cleaned/reconditioned rear drum and parking-brake hardware. Install at the rear drum backing plates and parking-brake cable attachment points after LH/RH orientation, spring routing, adjuster movement, lever pivot condition, and free return are verified.",
+        ),
+        "20260712_012946_gp_GJur42bg.jpg": c(
+            "replacement_pipes",
+            "bilal_ganj_replacement_pipe_hose_set_20260712",
+            "replacement_pipe_parts_intake",
+            "received_pending_circuit_assignment",
+            "medium",
+            (
+                "bilal_ganj",
+                "replacement_pipe",
+                "hose",
+                "clamps",
+                "received",
+                "route_match_pending",
+                "install_pending",
+            ),
+            "Google Photos July 12 received replacement pipe/hose/clamp set. Keep as parts inventory until each hose/pipe is matched to its exact circuit and old route; install only after material, diameter, bend/length, clamp lands, and pressure/service suitability are confirmed.",
+        ),
+        "20260712_163133_gp_KjVxhYfQ.jpg": c(
+            "replacement_pipes",
+            "bilal_ganj_replacement_pipe_hose_set_20260712",
+            "replacement_pipe_parts_intake",
+            "new_pipe_hose_set_received_pending_circuit_assignment",
+            "high",
+            (
+                "bilal_ganj",
+                "replacement_pipe",
+                "hose",
+                "molded_hose",
+                "straight_hose",
+                "clamps",
+                "received",
+                "route_match_pending",
+                "install_pending",
+            ),
+            "Google Photos July 12 later intake image showing the new replacement hose/pipe/clamp set more clearly. Treat as received parts evidence only; assign each item to a circuit after old-route match, material/rating check, diameter/length/bend check, clamp-land check, and pressure/service suitability confirmation.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260716_000001_user_rear_drum_hub_rust.png": c(
+            "brake_system",
+            "rear_drum_hub_and_backing_plate_condition_20260716",
+            "brake_system_reconstruction",
+            "outer_drum_hub_heavily_surface_rusted_cleanup_pending",
+            "high",
+            ("rear_brake", "drum", "hub", "rust", "wheel_cylinder", "brake_shoes", "cleanup_pending"),
+            "User photo July 16 showing a substantially assembled rear drum brake with visible wheel cylinder, shoes and hub studs. The outer drum/hub braking enclosure has been left exposed and is heavily surface-rusted. Strip loose rust without damaging machined registers or friction surfaces, then inspect and measure before assembly.",
+        ),
+        "20260716_000002_user_rear_backing_plate_assembly_rust.png": c(
+            "brake_system",
+            "rear_drum_hub_and_backing_plate_condition_20260716",
+            "brake_system_reconstruction",
+            "backing_plate_and_circular_holder_rusted_cleanup_inspection_pending",
+            "high",
+            ("rear_brake", "drum", "backing_plate", "parking_brake", "rust", "cleanup_pending", "reassembly_reference"),
+            "User photo July 16 showing the removed circular rear brake backing-plate/shoe-holder assembly with parking-brake linkage. Broad rust remains on the plate and hardware; clean, inspect shoe contact pads, pivots, holes and cable attachment, and protect only non-friction/non-contact areas before reassembly.",
+        ),
+        "20260716_000003_user_reconditioned_rear_brake_hardware.png": c(
+            "brake_system",
+            "rear_drum_reconditioned_hardware_update_20260716",
+            "brake_system_reconstruction",
+            "cleaned_components_and_used_replacement_pins_fit_check_pending",
+            "high",
+            ("rear_brake", "drum", "parking_brake", "adjuster", "springs", "used_pins", "reconditioned", "fit_check_pending"),
+            "User photo July 16 of tidied rear drum/parking-brake operating parts, adjuster and spring selection. Replacement pins are used rather than new; inspect for wear, grooves, bending and retention, then control LH/RH position and spring routing against the reference layout.",
+        ),
+        "20260716_000004_user_remade_hold_down_springs_pins.png": c(
+            "brake_system",
+            "rear_drum_reconditioned_hardware_update_20260716",
+            "brake_system_reconstruction",
+            "remade_hold_down_springs_and_used_pins_fit_check_pending",
+            "high",
+            ("rear_brake", "drum", "hold_down_springs", "hold_down_pins", "cups", "remade", "fit_check_pending"),
+            "User photo July 16 showing remade rear drum hold-down springs with pins and cups/retainers. Compare free length, wire diameter, coil count, spring rate, pin length and cup engagement side-to-side before use; reject any pin with wear, bending or poor head/cup retention.",
         ),
     }
 )

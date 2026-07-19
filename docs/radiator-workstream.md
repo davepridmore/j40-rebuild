@@ -5,7 +5,7 @@
 - Parent phases: `05_mechanical_baseline`, `03b_chassis_fixing`
 - Vehicle: 1978 Toyota Land Cruiser J40 with 2H/HJ47-style cooling layout as the working basis
 - Primary gates: `RAD-RET-001`, `RAD-CAPTURE-001`, `RAD-SHOP-001`, `RAD-INSTALL-001`
-- Related docs: [engine-radiator-recore-release-20260529.md](engine-radiator-recore-release-20260529.md), [front-engine-bay-mounting-fabrication-plan-20260508.md](front-engine-bay-mounting-fabrication-plan-20260508.md), [fabrication-handoff-index.md](fabrication-handoff-index.md), [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md), [photo-catalog.md](photo-catalog.md), [component-jobs-photo-reconciliation.md](component-jobs-photo-reconciliation.md)
+- Related docs: [bilal-ganj-front-cooling-ac-purchase-list-20260714.md](bilal-ganj-front-cooling-ac-purchase-list-20260714.md), [engine-radiator-recore-release-20260529.md](engine-radiator-recore-release-20260529.md), [front-engine-bay-mounting-fabrication-plan-20260508.md](front-engine-bay-mounting-fabrication-plan-20260508.md), [fabrication-handoff-index.md](fabrication-handoff-index.md), [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md), [photo-catalog.md](photo-catalog.md), [component-jobs-photo-reconciliation.md](component-jobs-photo-reconciliation.md)
 
 ## Decision
 

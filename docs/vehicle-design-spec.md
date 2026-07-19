@@ -100,11 +100,11 @@ Proposed design hierarchy:
 1. steering rebuild and wear-item correction
 2. ordered Ironman Foamcell kit content check and suspension installation
 3. brake baseline
-4. column-assist EPS conversion through the General EPS Adapter route if packaging, fabrication, and safety gates close
+4. RHD J60/HJ60 hydraulic power-steering conversion using a component-in-hand frame plate, shaft, linkage and 2H pump package
 5. final ride-height, caster, and alignment validation
 
 Design interpretation:
-- power steering is a real design goal, not just a repair item; the current route is column-assist EPS using a measured General EPS Adapter rather than hydraulic steering
+- power steering is a real design goal, not just a repair item; the active route is a RHD J60/HJ60 hydraulic steering-box conversion with a 2H-compatible pump, superseding the prior column-EPS plan
 - the Ironman Foamcell kit is now the suspension baseline
 - front disc brakes fit the “usable classic” direction
 - full spring / 4-link conversion is explicitly outside the baseline design

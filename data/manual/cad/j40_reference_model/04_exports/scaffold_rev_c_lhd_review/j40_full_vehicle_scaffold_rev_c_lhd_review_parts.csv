@@ -344,11 +344,109 @@ running_gear,front_left_leaf_spring_layer_2,box,215,-430.0,323,820,78,14,L2 visi
 running_gear,front_left_leaf_spring_layer_3,box,215,-430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,front_left_u_bolt_1,cylinder_z,670,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
 running_gear,front_left_u_bolt_2,cylinder_z,800,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_left_fixed_spring_eye_bushing,cylinder_y,262,-430.0,430,92,96,,L3 suspension connection datum,rubber bushing at fixed leaf-spring eye aligned with the frame hanger pin
+running_gear,front_left_fixed_spring_eye_inner_sleeve,cylinder_y,262,-430.0,430,38,132,,L3 suspension connection datum,steel sleeve through fixed leaf-spring eye bushing
+chassis,left_front_fixed_hanger_cross_sleeve,cylinder_y,262,-432.5,430,44,152,,L3 suspension connection datum,hanger spacer sleeve between inner and outer frame-side spring hanger plates
+chassis,left_front_fixed_hanger_pin_bolt,cylinder_y,262,-432.5,430,30,190,,L3 suspension connection datum,through-bolt datum tying fixed spring eye to frame hanger plates
+chassis,left_front_fixed_hanger_outer_bolt_head,box,244,-553.0,412,36,18,36,L3 suspension connection datum,outer hanger bolt head datum
+chassis,left_front_fixed_hanger_inner_nut,box,244,-312.0,412,36,18,36,L3 suspension connection datum,inner hanger nut datum
+running_gear,front_left_fixed_eye_leaf_wrap_upper,mesh,251.21969814732213,-430.0,351.0677498934955,79.56060370535576,70.0,87.86450021300902,L3 suspension connection datum,upper wrap from fixed eye into main leaf pack
+running_gear,front_left_fixed_eye_leaf_wrap_lower,mesh,255.19689572683166,-430.0,318.35605574703317,121.60620854633669,66.0,102.28788850593367,L3 suspension connection datum,lower wrap from fixed eye into second leaf layer
+chassis,left_front_shackle_upper_frame_bushing,cylinder_y,1332,-432.5,430,86,126,,L3 suspension connection datum,upper shackle bushing in frame-side hanger
+chassis,left_front_shackle_upper_sleeve,cylinder_y,1332,-432.5,430,36,152,,L3 suspension connection datum,upper shackle sleeve and pin datum
+running_gear,front_left_shackle_lower_spring_eye_bushing,cylinder_y,1261,-430.0,356,92,96,,L3 suspension connection datum,lower shackle bushing through spring eye
+running_gear,front_left_shackle_lower_spring_eye_sleeve,cylinder_y,1261,-430.0,356,38,132,,L3 suspension connection datum,lower shackle sleeve through spring eye
+running_gear,front_left_shackle_outer_link_plate,mesh,1240.0741175834544,-507.0,335.92246416790886,112.85176483309124,18.0,114.15507166418229,L3 suspension connection datum,outer shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,front_left_shackle_inner_link_plate,mesh,1240.0741175834544,-360.0,335.92246416790886,112.85176483309124,18.0,114.15507166418229,L3 suspension connection datum,inner shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,front_left_shackle_upper_pin_bolt,cylinder_y,1332,-432.5,430,30,190,,L3 suspension connection datum,upper shackle through-bolt datum
+running_gear,front_left_shackle_lower_pin_bolt,cylinder_y,1261,-430.0,356,30,168,,L3 suspension connection datum,lower shackle through-bolt datum
+running_gear,front_left_shackle_eye_leaf_wrap_upper,mesh,1134.7778057672258,-430.0,342.0017633352296,126.4443884655484,70.0,29.996473329540777,L3 suspension connection datum,upper wrap from shackle eye into main leaf pack
+running_gear,front_left_shackle_eye_leaf_wrap_lower,mesh,1081.2642213624256,-430.0,315.0246353228474,180.47155727514883,66.0,33.95072935430517,L3 suspension connection datum,lower wrap from shackle eye into second leaf layer
+running_gear,front_left_leaf_pack_rebound_clip_1,box,403,-430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,front_left_leaf_pack_rebound_clip_1_bolt,cylinder_y,425,-430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,front_left_leaf_pack_rebound_clip_2,box,1028,-430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,front_left_leaf_pack_rebound_clip_2_bolt,cylinder_y,1050,-430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,front_left_spring_center_bolt,cylinder_z,735,-430.0,338,18,88,,L3 suspension connection datum,leaf-spring center bolt locating spring pack to axle perch
+running_gear,front_left_axle_spring_perch_welded_saddle,box,653,-430.0,352,164,126,38,L3 suspension connection datum,welded axle perch saddle under axle tube and above spring pack
+running_gear,front_left_spring_perch_lower_clamp_plate,box,609,-430.0,290,252,146,34,L3 suspension connection datum,lower spring clamp plate under leaf pack tying U-bolts together
+running_gear,front_left_axle_tube_contact_pad,box,643,-430.0,452,184,132,24,L3 suspension connection datum,upper contact pad between axle tube and spring perch
+running_gear,front_left_u_bolt_1_top_crown,box,647,-430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,front_left_u_bolt_1_leg_1,cylinder_z,665,-472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_left_u_bolt_1_leg_1_lower_nut,cylinder_z,665,-472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_left_u_bolt_1_leg_2,cylinder_z,665,-388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_left_u_bolt_1_leg_2_lower_nut,cylinder_z,665,-388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_left_u_bolt_2_top_crown,box,787,-430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,front_left_u_bolt_2_leg_1,cylinder_z,805,-472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_left_u_bolt_2_leg_1_lower_nut,cylinder_z,805,-472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_left_u_bolt_2_leg_2,cylinder_z,805,-388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_left_u_bolt_2_leg_2_lower_nut,cylinder_z,805,-388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_left_shock_lower_mount_inner_tab,box,853,-484.0,349,48,18,92,L3 suspension connection datum,inner lower shock tab welded to axle/spring plate zone
+running_gear,front_left_shock_lower_mount_outer_tab,box,853,-556.0,349,48,18,92,L3 suspension connection datum,outer lower shock tab welded to axle/spring plate zone
+running_gear,front_left_shock_lower_pin,cylinder_y,877,-520.0,395,30,126,,L3 suspension connection datum,lower shock pin through axle tabs and shock eye
+running_gear,front_left_shock_lower_eye_bushing,cylinder_y,877,-520.0,395,72,82,,L3 suspension connection datum,rubber bushing in lower shock eye
+running_gear,front_left_shock_upper_tower_gusset_front,box,901,-520.0,765,38,118,110,L3 suspension connection datum,front gusset tying upper shock tower to frame rail
+running_gear,front_left_shock_upper_tower_gusset_rear,box,987,-520.0,765,38,118,110,L3 suspension connection datum,rear gusset tying upper shock tower to frame rail
+running_gear,front_left_shock_upper_pin,cylinder_y,945,-520.0,855,30,146,,L3 suspension connection datum,upper shock pin through frame tower and shock eye
+running_gear,front_left_shock_upper_eye_bushing,cylinder_y,945,-520.0,855,72,86,,L3 suspension connection datum,rubber bushing in upper shock eye
+running_gear,front_left_shock_centerline_connection_path,mesh,864.1397552080942,-520.0,393.0989203351096,93.72048958381151,42.0,463.8021593297808,L3 suspension connection datum,shock load-path centerline from lower axle tab to upper frame tower
+running_gear,front_left_bump_stop_axle_strike_pad,box,590,-495.0,476,138,105,22,L3 suspension connection datum,axle strike pad directly below frame bump stop
+datum,front_left_fixed_hanger_pin_center_datum,cylinder_y,262,-430.0,430,12,170,,L3 suspension connection datum,pin-center datum for fixed spring hanger measurement
+datum,front_left_shackle_upper_pin_center_datum,cylinder_y,1332,-430.0,430,12,170,,L3 suspension connection datum,pin-center datum for upper shackle measurement
+datum,front_left_shackle_lower_pin_center_datum,cylinder_y,1261,-430.0,356,12,152,,L3 suspension connection datum,pin-center datum for lower shackle and spring eye measurement
 running_gear,front_right_leaf_spring_layer_1,box,215,430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,front_right_leaf_spring_layer_2,box,215,430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,front_right_leaf_spring_layer_3,box,215,430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,front_right_u_bolt_1,cylinder_z,670,430.0,405,24,210,,L2 service datum,axle U-bolt reference
 running_gear,front_right_u_bolt_2,cylinder_z,800,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,front_right_fixed_spring_eye_bushing,cylinder_y,262,430.0,430,92,96,,L3 suspension connection datum,rubber bushing at fixed leaf-spring eye aligned with the frame hanger pin
+running_gear,front_right_fixed_spring_eye_inner_sleeve,cylinder_y,262,430.0,430,38,132,,L3 suspension connection datum,steel sleeve through fixed leaf-spring eye bushing
+chassis,right_front_fixed_hanger_cross_sleeve,cylinder_y,262,432.5,430,44,152,,L3 suspension connection datum,hanger spacer sleeve between inner and outer frame-side spring hanger plates
+chassis,right_front_fixed_hanger_pin_bolt,cylinder_y,262,432.5,430,30,190,,L3 suspension connection datum,through-bolt datum tying fixed spring eye to frame hanger plates
+chassis,right_front_fixed_hanger_outer_bolt_head,box,244,553.0,412,36,18,36,L3 suspension connection datum,outer hanger bolt head datum
+chassis,right_front_fixed_hanger_inner_nut,box,244,312.0,412,36,18,36,L3 suspension connection datum,inner hanger nut datum
+running_gear,front_right_fixed_eye_leaf_wrap_upper,mesh,251.21969814732213,430.0,351.0677498934955,79.56060370535576,70.0,87.86450021300902,L3 suspension connection datum,upper wrap from fixed eye into main leaf pack
+running_gear,front_right_fixed_eye_leaf_wrap_lower,mesh,255.19689572683166,430.0,318.35605574703317,121.60620854633669,66.0,102.28788850593367,L3 suspension connection datum,lower wrap from fixed eye into second leaf layer
+chassis,right_front_shackle_upper_frame_bushing,cylinder_y,1332,432.5,430,86,126,,L3 suspension connection datum,upper shackle bushing in frame-side hanger
+chassis,right_front_shackle_upper_sleeve,cylinder_y,1332,432.5,430,36,152,,L3 suspension connection datum,upper shackle sleeve and pin datum
+running_gear,front_right_shackle_lower_spring_eye_bushing,cylinder_y,1261,430.0,356,92,96,,L3 suspension connection datum,lower shackle bushing through spring eye
+running_gear,front_right_shackle_lower_spring_eye_sleeve,cylinder_y,1261,430.0,356,38,132,,L3 suspension connection datum,lower shackle sleeve through spring eye
+running_gear,front_right_shackle_outer_link_plate,mesh,1240.0741175834544,507.0,335.92246416790886,112.85176483309124,18.0,114.15507166418229,L3 suspension connection datum,outer shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,front_right_shackle_inner_link_plate,mesh,1240.0741175834544,360.0,335.92246416790886,112.85176483309124,18.0,114.15507166418229,L3 suspension connection datum,inner shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,front_right_shackle_upper_pin_bolt,cylinder_y,1332,432.5,430,30,190,,L3 suspension connection datum,upper shackle through-bolt datum
+running_gear,front_right_shackle_lower_pin_bolt,cylinder_y,1261,430.0,356,30,168,,L3 suspension connection datum,lower shackle through-bolt datum
+running_gear,front_right_shackle_eye_leaf_wrap_upper,mesh,1134.7778057672258,430.0,342.0017633352296,126.4443884655484,70.0,29.996473329540777,L3 suspension connection datum,upper wrap from shackle eye into main leaf pack
+running_gear,front_right_shackle_eye_leaf_wrap_lower,mesh,1081.2642213624256,430.0,315.0246353228474,180.47155727514883,66.0,33.95072935430517,L3 suspension connection datum,lower wrap from shackle eye into second leaf layer
+running_gear,front_right_leaf_pack_rebound_clip_1,box,403,430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,front_right_leaf_pack_rebound_clip_1_bolt,cylinder_y,425,430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,front_right_leaf_pack_rebound_clip_2,box,1028,430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,front_right_leaf_pack_rebound_clip_2_bolt,cylinder_y,1050,430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,front_right_spring_center_bolt,cylinder_z,735,430.0,338,18,88,,L3 suspension connection datum,leaf-spring center bolt locating spring pack to axle perch
+running_gear,front_right_axle_spring_perch_welded_saddle,box,653,430.0,352,164,126,38,L3 suspension connection datum,welded axle perch saddle under axle tube and above spring pack
+running_gear,front_right_spring_perch_lower_clamp_plate,box,609,430.0,290,252,146,34,L3 suspension connection datum,lower spring clamp plate under leaf pack tying U-bolts together
+running_gear,front_right_axle_tube_contact_pad,box,643,430.0,452,184,132,24,L3 suspension connection datum,upper contact pad between axle tube and spring perch
+running_gear,front_right_u_bolt_1_top_crown,box,647,430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,front_right_u_bolt_1_leg_1,cylinder_z,665,388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_right_u_bolt_1_leg_1_lower_nut,cylinder_z,665,388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_right_u_bolt_1_leg_2,cylinder_z,665,472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_right_u_bolt_1_leg_2_lower_nut,cylinder_z,665,472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_right_u_bolt_2_top_crown,box,787,430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,front_right_u_bolt_2_leg_1,cylinder_z,805,388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_right_u_bolt_2_leg_1_lower_nut,cylinder_z,805,388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_right_u_bolt_2_leg_2,cylinder_z,805,472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,front_right_u_bolt_2_leg_2_lower_nut,cylinder_z,805,472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,front_right_shock_lower_mount_inner_tab,box,853,484.0,349,48,18,92,L3 suspension connection datum,inner lower shock tab welded to axle/spring plate zone
+running_gear,front_right_shock_lower_mount_outer_tab,box,853,556.0,349,48,18,92,L3 suspension connection datum,outer lower shock tab welded to axle/spring plate zone
+running_gear,front_right_shock_lower_pin,cylinder_y,877,520.0,395,30,126,,L3 suspension connection datum,lower shock pin through axle tabs and shock eye
+running_gear,front_right_shock_lower_eye_bushing,cylinder_y,877,520.0,395,72,82,,L3 suspension connection datum,rubber bushing in lower shock eye
+running_gear,front_right_shock_upper_tower_gusset_front,box,901,520.0,765,38,118,110,L3 suspension connection datum,front gusset tying upper shock tower to frame rail
+running_gear,front_right_shock_upper_tower_gusset_rear,box,987,520.0,765,38,118,110,L3 suspension connection datum,rear gusset tying upper shock tower to frame rail
+running_gear,front_right_shock_upper_pin,cylinder_y,945,520.0,855,30,146,,L3 suspension connection datum,upper shock pin through frame tower and shock eye
+running_gear,front_right_shock_upper_eye_bushing,cylinder_y,945,520.0,855,72,86,,L3 suspension connection datum,rubber bushing in upper shock eye
+running_gear,front_right_shock_centerline_connection_path,mesh,864.1397552080942,520.0,393.0989203351096,93.72048958381151,42.0,463.8021593297808,L3 suspension connection datum,shock load-path centerline from lower axle tab to upper frame tower
+running_gear,front_right_bump_stop_axle_strike_pad,box,590,495.0,476,138,105,22,L3 suspension connection datum,axle strike pad directly below frame bump stop
+datum,front_right_fixed_hanger_pin_center_datum,cylinder_y,262,430.0,430,12,170,,L3 suspension connection datum,pin-center datum for fixed spring hanger measurement
+datum,front_right_shackle_upper_pin_center_datum,cylinder_y,1332,430.0,430,12,170,,L3 suspension connection datum,pin-center datum for upper shackle measurement
+datum,front_right_shackle_lower_pin_center_datum,cylinder_y,1261,430.0,356,12,152,,L3 suspension connection datum,pin-center datum for lower shackle and spring eye measurement
 running_gear,rear_left_brake_backing_plate,cylinder_y,3020,-750,395,365,55,,L2 service datum,brake backing plate at hub
 running_gear,rear_right_brake_backing_plate,cylinder_y,3020,750,395,365,55,,L2 service datum,brake backing plate at hub
 running_gear,rear_left_leaf_spring_layer_1,box,2500,-430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
@@ -356,11 +454,109 @@ running_gear,rear_left_leaf_spring_layer_2,box,2500,-430.0,323,820,78,14,L2 visi
 running_gear,rear_left_leaf_spring_layer_3,box,2500,-430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,rear_left_u_bolt_1,cylinder_z,2955,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
 running_gear,rear_left_u_bolt_2,cylinder_z,3085,-430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_left_fixed_spring_eye_bushing,cylinder_y,2547,-430.0,430,92,96,,L3 suspension connection datum,rubber bushing at fixed leaf-spring eye aligned with the frame hanger pin
+running_gear,rear_left_fixed_spring_eye_inner_sleeve,cylinder_y,2547,-430.0,430,38,132,,L3 suspension connection datum,steel sleeve through fixed leaf-spring eye bushing
+chassis,left_rear_fixed_hanger_cross_sleeve,cylinder_y,2547,-432.5,430,44,152,,L3 suspension connection datum,hanger spacer sleeve between inner and outer frame-side spring hanger plates
+chassis,left_rear_fixed_hanger_pin_bolt,cylinder_y,2547,-432.5,430,30,190,,L3 suspension connection datum,through-bolt datum tying fixed spring eye to frame hanger plates
+chassis,left_rear_fixed_hanger_outer_bolt_head,box,2529,-553.0,412,36,18,36,L3 suspension connection datum,outer hanger bolt head datum
+chassis,left_rear_fixed_hanger_inner_nut,box,2529,-312.0,412,36,18,36,L3 suspension connection datum,inner hanger nut datum
+running_gear,rear_left_fixed_eye_leaf_wrap_upper,mesh,2536.219698147322,-430.0,351.0677498934955,79.56060370535579,70.0,87.86450021300902,L3 suspension connection datum,upper wrap from fixed eye into main leaf pack
+running_gear,rear_left_fixed_eye_leaf_wrap_lower,mesh,2540.196895726832,-430.0,318.35605574703317,121.60620854633635,66.0,102.28788850593367,L3 suspension connection datum,lower wrap from fixed eye into second leaf layer
+chassis,left_rear_shackle_upper_frame_bushing,cylinder_y,3617,-432.5,430,86,126,,L3 suspension connection datum,upper shackle bushing in frame-side hanger
+chassis,left_rear_shackle_upper_sleeve,cylinder_y,3617,-432.5,430,36,152,,L3 suspension connection datum,upper shackle sleeve and pin datum
+running_gear,rear_left_shackle_lower_spring_eye_bushing,cylinder_y,3546,-430.0,356,92,96,,L3 suspension connection datum,lower shackle bushing through spring eye
+running_gear,rear_left_shackle_lower_spring_eye_sleeve,cylinder_y,3546,-430.0,356,38,132,,L3 suspension connection datum,lower shackle sleeve through spring eye
+running_gear,rear_left_shackle_outer_link_plate,mesh,3525.074117583454,-507.0,335.92246416790886,112.85176483309169,18.0,114.15507166418229,L3 suspension connection datum,outer shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,rear_left_shackle_inner_link_plate,mesh,3525.074117583454,-360.0,335.92246416790886,112.85176483309169,18.0,114.15507166418229,L3 suspension connection datum,inner shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,rear_left_shackle_upper_pin_bolt,cylinder_y,3617,-432.5,430,30,190,,L3 suspension connection datum,upper shackle through-bolt datum
+running_gear,rear_left_shackle_lower_pin_bolt,cylinder_y,3546,-430.0,356,30,168,,L3 suspension connection datum,lower shackle through-bolt datum
+running_gear,rear_left_shackle_eye_leaf_wrap_upper,mesh,3419.777805767226,-430.0,342.0017633352296,126.4443884655484,70.0,29.996473329540777,L3 suspension connection datum,upper wrap from shackle eye into main leaf pack
+running_gear,rear_left_shackle_eye_leaf_wrap_lower,mesh,3366.2642213624254,-430.0,315.0246353228474,180.47155727514928,66.0,33.95072935430517,L3 suspension connection datum,lower wrap from shackle eye into second leaf layer
+running_gear,rear_left_leaf_pack_rebound_clip_1,box,2688,-430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,rear_left_leaf_pack_rebound_clip_1_bolt,cylinder_y,2710,-430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,rear_left_leaf_pack_rebound_clip_2,box,3313,-430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,rear_left_leaf_pack_rebound_clip_2_bolt,cylinder_y,3335,-430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,rear_left_spring_center_bolt,cylinder_z,3020,-430.0,338,18,88,,L3 suspension connection datum,leaf-spring center bolt locating spring pack to axle perch
+running_gear,rear_left_axle_spring_perch_welded_saddle,box,2938,-430.0,352,164,126,38,L3 suspension connection datum,welded axle perch saddle under axle tube and above spring pack
+running_gear,rear_left_spring_perch_lower_clamp_plate,box,2894,-430.0,290,252,146,34,L3 suspension connection datum,lower spring clamp plate under leaf pack tying U-bolts together
+running_gear,rear_left_axle_tube_contact_pad,box,2928,-430.0,452,184,132,24,L3 suspension connection datum,upper contact pad between axle tube and spring perch
+running_gear,rear_left_u_bolt_1_top_crown,box,2932,-430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,rear_left_u_bolt_1_leg_1,cylinder_z,2950,-472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_left_u_bolt_1_leg_1_lower_nut,cylinder_z,2950,-472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_left_u_bolt_1_leg_2,cylinder_z,2950,-388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_left_u_bolt_1_leg_2_lower_nut,cylinder_z,2950,-388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_left_u_bolt_2_top_crown,box,3072,-430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,rear_left_u_bolt_2_leg_1,cylinder_z,3090,-472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_left_u_bolt_2_leg_1_lower_nut,cylinder_z,3090,-472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_left_u_bolt_2_leg_2,cylinder_z,3090,-388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_left_u_bolt_2_leg_2_lower_nut,cylinder_z,3090,-388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_left_shock_lower_mount_inner_tab,box,3138,-484.0,349,48,18,92,L3 suspension connection datum,inner lower shock tab welded to axle/spring plate zone
+running_gear,rear_left_shock_lower_mount_outer_tab,box,3138,-556.0,349,48,18,92,L3 suspension connection datum,outer lower shock tab welded to axle/spring plate zone
+running_gear,rear_left_shock_lower_pin,cylinder_y,3162,-520.0,395,30,126,,L3 suspension connection datum,lower shock pin through axle tabs and shock eye
+running_gear,rear_left_shock_lower_eye_bushing,cylinder_y,3162,-520.0,395,72,82,,L3 suspension connection datum,rubber bushing in lower shock eye
+running_gear,rear_left_shock_upper_tower_gusset_front,box,3186,-520.0,765,38,118,110,L3 suspension connection datum,front gusset tying upper shock tower to frame rail
+running_gear,rear_left_shock_upper_tower_gusset_rear,box,3272,-520.0,765,38,118,110,L3 suspension connection datum,rear gusset tying upper shock tower to frame rail
+running_gear,rear_left_shock_upper_pin,cylinder_y,3230,-520.0,855,30,146,,L3 suspension connection datum,upper shock pin through frame tower and shock eye
+running_gear,rear_left_shock_upper_eye_bushing,cylinder_y,3230,-520.0,855,72,86,,L3 suspension connection datum,rubber bushing in upper shock eye
+running_gear,rear_left_shock_centerline_connection_path,mesh,3149.1397552080944,-520.0,393.0989203351096,93.72048958381129,42.0,463.8021593297808,L3 suspension connection datum,shock load-path centerline from lower axle tab to upper frame tower
+running_gear,rear_left_bump_stop_axle_strike_pad,box,2875,-495.0,476,138,105,22,L3 suspension connection datum,axle strike pad directly below frame bump stop
+datum,rear_left_fixed_hanger_pin_center_datum,cylinder_y,2547,-430.0,430,12,170,,L3 suspension connection datum,pin-center datum for fixed spring hanger measurement
+datum,rear_left_shackle_upper_pin_center_datum,cylinder_y,3617,-430.0,430,12,170,,L3 suspension connection datum,pin-center datum for upper shackle measurement
+datum,rear_left_shackle_lower_pin_center_datum,cylinder_y,3546,-430.0,356,12,152,,L3 suspension connection datum,pin-center datum for lower shackle and spring eye measurement
 running_gear,rear_right_leaf_spring_layer_1,box,2500,430.0,305,935,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,rear_right_leaf_spring_layer_2,box,2500,430.0,323,820,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,rear_right_leaf_spring_layer_3,box,2500,430.0,341,705,78,14,L2 visible-detail primitive,stacked leaf spring layer
 running_gear,rear_right_u_bolt_1,cylinder_z,2955,430.0,405,24,210,,L2 service datum,axle U-bolt reference
 running_gear,rear_right_u_bolt_2,cylinder_z,3085,430.0,405,24,210,,L2 service datum,axle U-bolt reference
+running_gear,rear_right_fixed_spring_eye_bushing,cylinder_y,2547,430.0,430,92,96,,L3 suspension connection datum,rubber bushing at fixed leaf-spring eye aligned with the frame hanger pin
+running_gear,rear_right_fixed_spring_eye_inner_sleeve,cylinder_y,2547,430.0,430,38,132,,L3 suspension connection datum,steel sleeve through fixed leaf-spring eye bushing
+chassis,right_rear_fixed_hanger_cross_sleeve,cylinder_y,2547,432.5,430,44,152,,L3 suspension connection datum,hanger spacer sleeve between inner and outer frame-side spring hanger plates
+chassis,right_rear_fixed_hanger_pin_bolt,cylinder_y,2547,432.5,430,30,190,,L3 suspension connection datum,through-bolt datum tying fixed spring eye to frame hanger plates
+chassis,right_rear_fixed_hanger_outer_bolt_head,box,2529,553.0,412,36,18,36,L3 suspension connection datum,outer hanger bolt head datum
+chassis,right_rear_fixed_hanger_inner_nut,box,2529,312.0,412,36,18,36,L3 suspension connection datum,inner hanger nut datum
+running_gear,rear_right_fixed_eye_leaf_wrap_upper,mesh,2536.219698147322,430.0,351.0677498934955,79.56060370535579,70.0,87.86450021300902,L3 suspension connection datum,upper wrap from fixed eye into main leaf pack
+running_gear,rear_right_fixed_eye_leaf_wrap_lower,mesh,2540.196895726832,430.0,318.35605574703317,121.60620854633635,66.0,102.28788850593367,L3 suspension connection datum,lower wrap from fixed eye into second leaf layer
+chassis,right_rear_shackle_upper_frame_bushing,cylinder_y,3617,432.5,430,86,126,,L3 suspension connection datum,upper shackle bushing in frame-side hanger
+chassis,right_rear_shackle_upper_sleeve,cylinder_y,3617,432.5,430,36,152,,L3 suspension connection datum,upper shackle sleeve and pin datum
+running_gear,rear_right_shackle_lower_spring_eye_bushing,cylinder_y,3546,430.0,356,92,96,,L3 suspension connection datum,lower shackle bushing through spring eye
+running_gear,rear_right_shackle_lower_spring_eye_sleeve,cylinder_y,3546,430.0,356,38,132,,L3 suspension connection datum,lower shackle sleeve through spring eye
+running_gear,rear_right_shackle_outer_link_plate,mesh,3525.074117583454,507.0,335.92246416790886,112.85176483309169,18.0,114.15507166418229,L3 suspension connection datum,outer shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,rear_right_shackle_inner_link_plate,mesh,3525.074117583454,360.0,335.92246416790886,112.85176483309169,18.0,114.15507166418229,L3 suspension connection datum,inner shackle side plate connecting frame hanger upper pin to spring-eye lower pin
+running_gear,rear_right_shackle_upper_pin_bolt,cylinder_y,3617,432.5,430,30,190,,L3 suspension connection datum,upper shackle through-bolt datum
+running_gear,rear_right_shackle_lower_pin_bolt,cylinder_y,3546,430.0,356,30,168,,L3 suspension connection datum,lower shackle through-bolt datum
+running_gear,rear_right_shackle_eye_leaf_wrap_upper,mesh,3419.777805767226,430.0,342.0017633352296,126.4443884655484,70.0,29.996473329540777,L3 suspension connection datum,upper wrap from shackle eye into main leaf pack
+running_gear,rear_right_shackle_eye_leaf_wrap_lower,mesh,3366.2642213624254,430.0,315.0246353228474,180.47155727514928,66.0,33.95072935430517,L3 suspension connection datum,lower wrap from shackle eye into second leaf layer
+running_gear,rear_right_leaf_pack_rebound_clip_1,box,2688,430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,rear_right_leaf_pack_rebound_clip_1_bolt,cylinder_y,2710,430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,rear_right_leaf_pack_rebound_clip_2,box,3313,430.0,300,44,98,72,L3 suspension connection datum,leaf-pack rebound clip wrapping the stacked spring leaves
+running_gear,rear_right_leaf_pack_rebound_clip_2_bolt,cylinder_y,3335,430.0,352,16,112,,L3 suspension connection datum,small cross bolt through leaf-pack rebound clip
+running_gear,rear_right_spring_center_bolt,cylinder_z,3020,430.0,338,18,88,,L3 suspension connection datum,leaf-spring center bolt locating spring pack to axle perch
+running_gear,rear_right_axle_spring_perch_welded_saddle,box,2938,430.0,352,164,126,38,L3 suspension connection datum,welded axle perch saddle under axle tube and above spring pack
+running_gear,rear_right_spring_perch_lower_clamp_plate,box,2894,430.0,290,252,146,34,L3 suspension connection datum,lower spring clamp plate under leaf pack tying U-bolts together
+running_gear,rear_right_axle_tube_contact_pad,box,2928,430.0,452,184,132,24,L3 suspension connection datum,upper contact pad between axle tube and spring perch
+running_gear,rear_right_u_bolt_1_top_crown,box,2932,430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,rear_right_u_bolt_1_leg_1,cylinder_z,2950,388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_right_u_bolt_1_leg_1_lower_nut,cylinder_z,2950,388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_right_u_bolt_1_leg_2,cylinder_z,2950,472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_right_u_bolt_1_leg_2_lower_nut,cylinder_z,2950,472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_right_u_bolt_2_top_crown,box,3072,430.0,490,36,118,24,L3 suspension connection datum,U-bolt crown wrapping over axle tube
+running_gear,rear_right_u_bolt_2_leg_1,cylinder_z,3090,388.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_right_u_bolt_2_leg_1_lower_nut,cylinder_z,3090,388.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_right_u_bolt_2_leg_2,cylinder_z,3090,472.0,394,18,226,,L3 suspension connection datum,vertical U-bolt leg from axle crown through lower clamp plate
+running_gear,rear_right_u_bolt_2_leg_2_lower_nut,cylinder_z,3090,472.0,276,32,24,,L3 suspension connection datum,U-bolt lower nut below spring clamp plate
+running_gear,rear_right_shock_lower_mount_inner_tab,box,3138,484.0,349,48,18,92,L3 suspension connection datum,inner lower shock tab welded to axle/spring plate zone
+running_gear,rear_right_shock_lower_mount_outer_tab,box,3138,556.0,349,48,18,92,L3 suspension connection datum,outer lower shock tab welded to axle/spring plate zone
+running_gear,rear_right_shock_lower_pin,cylinder_y,3162,520.0,395,30,126,,L3 suspension connection datum,lower shock pin through axle tabs and shock eye
+running_gear,rear_right_shock_lower_eye_bushing,cylinder_y,3162,520.0,395,72,82,,L3 suspension connection datum,rubber bushing in lower shock eye
+running_gear,rear_right_shock_upper_tower_gusset_front,box,3186,520.0,765,38,118,110,L3 suspension connection datum,front gusset tying upper shock tower to frame rail
+running_gear,rear_right_shock_upper_tower_gusset_rear,box,3272,520.0,765,38,118,110,L3 suspension connection datum,rear gusset tying upper shock tower to frame rail
+running_gear,rear_right_shock_upper_pin,cylinder_y,3230,520.0,855,30,146,,L3 suspension connection datum,upper shock pin through frame tower and shock eye
+running_gear,rear_right_shock_upper_eye_bushing,cylinder_y,3230,520.0,855,72,86,,L3 suspension connection datum,rubber bushing in upper shock eye
+running_gear,rear_right_shock_centerline_connection_path,mesh,3149.1397552080944,520.0,393.0989203351096,93.72048958381129,42.0,463.8021593297808,L3 suspension connection datum,shock load-path centerline from lower axle tab to upper frame tower
+running_gear,rear_right_bump_stop_axle_strike_pad,box,2875,495.0,476,138,105,22,L3 suspension connection datum,axle strike pad directly below frame bump stop
+datum,rear_right_fixed_hanger_pin_center_datum,cylinder_y,2547,430.0,430,12,170,,L3 suspension connection datum,pin-center datum for fixed spring hanger measurement
+datum,rear_right_shackle_upper_pin_center_datum,cylinder_y,3617,430.0,430,12,170,,L3 suspension connection datum,pin-center datum for upper shackle measurement
+datum,rear_right_shackle_lower_pin_center_datum,cylinder_y,3546,430.0,356,12,152,,L3 suspension connection datum,pin-center datum for lower shackle and spring eye measurement
 brake_system,front_left_vented_disc_rotor,cylinder_y,735,-738.0,395,405,42,,project-photo evidence,front disc rotor visible in 2026-05-29 front brake photo set; exact diameter/thickness still needs measurement
 brake_system,front_left_sumitomo_disc_caliper_body,box,827,-760.0,477,140,94,225,project-photo evidence,large Sumitomo-style front caliper body from 20260529_183947_gp_lSYuESVg and related photos
 brake_system,front_left_disc_caliper_bridge,box,781,-787.0,583,92,68,52,project-photo evidence,caliper upper bridge/ear envelope from May 29 brake photos

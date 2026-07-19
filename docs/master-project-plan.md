@@ -4,6 +4,8 @@
 
 - Project: 1978 Toyota Land Cruiser J40 rebuild
 - Planning date: 2026-03-19
+- Latest status update: 2026-07-19
+- Communications note: the live WhatsApp refresh was unavailable on 2026-07-19; the local message export was checked but remains stale (generated 2026-07-12, latest indexed message 2026-06-13). The 2026-07-19 status items below therefore come directly from the owner and must be reconciled against the next successful message import.
 - This plan is built from the evidence already stored in this repo plus current Punjab Excise reference pages.
 - Legal/admin items here are a control tracker, not a substitute for confirming the latest filing requirements before submission.
 
@@ -11,6 +13,7 @@
 
 - Close the ownership and vehicle-admin loop cleanly enough that the project can always prove legal status.
 - Rebuild the truck in a sequence that favors structural integrity, weatherproofing, electrical reliability, and mechanical reliability before optional upgrades.
+- Add a conservative, reliability-led turbocharger system to the retained diesel engine after the engine baseline and supporting-system gates are proven.
 - Keep all removable parts, decisions, and vendor work traceable back to evidence.
 - Capture every direct project cost, including admin fees, tools, shipping, consumables, labour, refunds, rework, and optional-upgrade spend.
 
@@ -24,6 +27,10 @@
 - Body and rust work is also live. Primer, prep solvent, seam sealer, cavity wax, and floor repair materials are on the active list; Raptor bedliner is tracked as on hand, and generic bed-lining/sound/foam/carpet buys stay gated until body closure.
 - New photo evidence through `2026-04-20` shows wing removal/body-lift prep and underside access are mature enough to run body-off welding as an active track, with dedicated chassis and stripped-engine tracks in parallel.
 - Steering feel remains a known problem. The suspension path is no longer hypothetical: the Ironman Foam Cell kit is ordered and must now be managed as an incoming safety-critical installation workstream with receipt, fitment, torque, alignment, and road-validation gates.
+- The replacement steering decision is closed: use the RHD J60/HJ60 hydraulic steering-box route with the matched 2H pump-drive package; the earlier Vitz/column-EPS route is superseded.
+- A turbocharger is included in the approved powertrain direction. Exact turbo sizing, boost target, manifold, fuelling changes, and installation hardware remain gated by engine-code confirmation and measured engine health.
+- Owner update `2026-07-19`: the brake booster work is reported complete. Treat physical work as complete but keep the brake-safety release open until the rebuilt/replacement unit passes identity, vacuum-hold, assist, pushrod/free-play, leak, and fitted braking checks.
+- Owner update `2026-07-19`: front and rear bumpers have been re-created and the associated welding work is reported complete. Move fabrication to post-weld QA: verify dimensions, symmetry, chassis pickup alignment, penetration/defects, fastener access, recovery/load assumptions, bare-metal photo evidence, and corrosion-protection touch-in before final coating or road release.
 
 ## Operating Rules
 
@@ -44,11 +51,11 @@
 | `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean, inspect, repair/approve rails/crossmembers/mounts, then execute rust treatment, primer, seam/top protection, and cavity-wax closeout in order. | Chassis structural repairs are closed or explicitly approved and the coating/protection stack is documented with no unknowns remaining. |
 | `03c_window_refurbishment` | `in_progress` | Dedicated window track: glass, frames, channels, latches, sliders, and window rubbers/weatherstrips. | Windows are tagged, repaired/refinished, seal choices are measured/proven, and bench-fit/water checks are recorded before refit. |
 | `04_electrical_reset` | `in_progress` | Remove junk wiring, define final architecture, buy only the core electrical materials, and install a documented harness. | Starting, charging, lights, horn, wipers, gauges, and required accessories work from a clean, documented loom. |
-| `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables). | Engine baseline maintenance is complete and post-service defects are logged. |
+| `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables), confirm turbo suitability, and capture the as-fitted intake/exhaust/oiling package. | Engine baseline maintenance is complete, post-service defects are logged, and the turbo go/no-go inputs are measured. |
 | `06_steering_brakes_suspension` | `queued` | Resolve steering slack and brake baseline while receiving and installing the ordered Ironman Foam Cell suspension set under controlled gates. | Steering and braking are safe; Ironman suspension is contents-checked, installed, aligned, road-tested, and rechecked after settling. |
 | `07_interior_weatherproofing` | `queued` | Floor sealing, bed lining, sound deadening, foam, carpet, and interior refit only after leaks and rust are handled. | Cabin is sealed, quieter, and ready for final trim without trapping moisture. |
 | `08_final_assembly_validation` | `queued` | Reassemble, close punch-list items, validate drivability, and tie all evidence back to the project archive. | Reassembled truck passes road and function checks with open defects logged or closed. |
-| `09_optional_upgrades` | `backlog` | Android unit, audio, premium shocks, and other non-essential extras that should not distort the baseline budget. | Optional work is approved only after baseline completion and explicit budget sign-off. |
+| `09_optional_upgrades` | `backlog` | Reliability-led turbocharger installation plus Android unit, audio, premium shocks, and other non-essential extras that should not distort the baseline budget. | Turbo supporting-system gates and baseline completion are signed off, then each optional work package receives explicit budget approval and validation. |
 
 Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separate workstream. Its remaining items are controlled by the owning workstreams: electrical reset, EPS conversion, chassis fixing/rubbers, fabrication handoff, brake system, suspension upgrade, replacement pipes, mechanical baseline, and site setup.
 
@@ -70,6 +77,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Do not buy the full stack of finishing materials until the rust map and repair method are confirmed.
 - Run in three layers: structural repair, corrosion protection, then finish/sealing materials.
 - Keep this track focused on shell/body steel; feed chassis-specific items into the dedicated chassis track below.
+- Front and rear bumper re-creation/welding is reported complete as of `2026-07-19`. Do not reopen fabrication unless inspection finds a defect; the remaining scope is dimensional/weld QA, mounting/recovery-point validation, photo closeout, and corrosion protection.
 
 ### Chassis Fixing Track
 
@@ -86,6 +94,9 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - Freeze the electrical scope before buying. Baseline circuits first, optional audio/accessories later.
 - Prefer one documented architecture over a mix of old loom, partial kit wiring, and ad-hoc additions.
+- Reserve a documented turbo-instrument branch in the new loom: fused ignition-switched supply, gauge illumination/dimming where supported, clean instrument ground, EGT thermocouple extension wiring kept separate from noisy/high-current conductors, and protected sender wiring for boost (if electronic), oil pressure, and coolant temperature.
+- A conventional internally wastegated turbo requires no turbo ECU or electric boost controller. Keep boost control mechanical for the initial build; add no solenoid/controller branch unless a later approved specification explicitly requires it.
+- Any electric intercooler/condenser fan must use a dedicated fused relay circuit sized from measured running and inrush current, with manual/temperature/A-C request logic documented before termination.
 
 ### Mechanical Baseline (Engine While Stripped)
 
@@ -103,6 +114,19 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - `INSPECTION NOTE ONLY`: engine mounts are removed from the active parts list because the engine stays installed. Photograph and check them after degreasing and under load; reopen a purchase only if they fail and another approved job already provides safe engine support.
 - `Decision rule`: keep these baseline replacements independent from optional upgrades (power steering conversion, premium shocks, audio, etc.) so reliability and safety close first.
 
+### Turbocharger Powertrain Addition
+
+- Use [2h-turbo-suitability-and-options-20260717.md](2h-turbo-suitability-and-options-20260717.md) as the preliminary configuration, suitability-test, packaging, and decision-sequence control sheet.
+- Turbocharging is included in the approved build direction, but installation starts only after the retained engine's exact code, displacement, injection-pump type, compression/leak-down condition, hot oil pressure, cooling performance, crankcase blow-by, and baseline exhaust smoke are recorded.
+- Select the turbo and boost target from the measured engine condition and intended low-rpm road use; default to a conservative low-boost, quick-spool setup rather than choosing hardware by peak-power claims.
+- Treat this as a complete engineered system: turbo and manifold/adapter, wastegate/boost control, filtered oil feed with correct restriction, gravity oil drain to a properly positioned sump return, intake plumbing and filtration, intercooler if required by the final thermal calculation, charge piping and clamps, downpipe/exhaust with heat management, and accessible service joints.
+- Add calibrated boost and pre-turbine EGT monitoring before fuelling is increased. Retain oil-pressure and coolant-temperature monitoring, establish baseline values, and define stop-test limits before road tuning.
+- Have the injection pump and injectors assessed by a diesel specialist. Make fuelling changes only with boost/EGT evidence; visible sustained smoke, excessive EGT, unstable boost, oil leakage, or coolant-temperature rise fails the validation gate.
+- Verify radiator/condenser/fan-stack capacity, under-bonnet clearances, brake and clutch line heat exposure, engine mounts, clutch holding capacity, gearbox/transfer-case condition, axle gearing, and propshaft condition before final boost approval.
+- Budget and procure the turbo package separately from baseline engine service. Do not buy a turbo, manifold, intercooler, or fuelling parts until the engine-health and packaging capture gates close and one matched bill of materials is approved.
+- Validate in stages: static leak/prime check, no-load heat cycle, wastegate/boost-control check, short low-load road test, progressively loaded EGT/boost logging, hot restart/leak inspection, then a post-run fastener and hose-clamp recheck.
+- Close every interface in the turbo connection schedule: exhaust manifold to turbine; turbine to supported downpipe/exhaust; filtered air to compressor; compressor to intercooler and intake manifold; engine oil gallery to turbo feed; unrestricted turbo drain to sump; coolant feed/return only if required by the selected turbo; crankcase breather/oil separator to clean-air inlet; intake-plenum boost reference to wastegate, boost gauge, and pump compensator if used; EGT probe before turbine; oil/coolant/boost senders to the protected instrument loom.
+
 ### Steering, Brakes, and Suspension
 
 - Use `docs/suspension-workstream.md` as the start-here control sheet for the Ironman Foam Cell install.
@@ -113,7 +137,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style, bracket retention, and old-sample/free length.
 - Do not final-close rear suspension/brakes until the rear differential/axle inspection has recorded oil/debris condition, breather condition, carrier sealing, axle seals/bearings, gear condition, and post-fill leak checks.
 - Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
-- Current EPS route remains column-assist, not hydraulic, and does not require engine removal. The J40 fitment now uses the General EPS Adapter route: a fabricated datum plate/firewall doubler/EPS saddle/clocking-spacer/replaceable shaft-interface package, with donor brackets treated as reference geometry rather than assumed bolt-on parts.
+- Active power-steering route is now a RHD J60/HJ60 hydraulic steering-box conversion with a matched 2H pump/bracket/pulley package. It does not require engine removal, but no chassis plate, holes, sleeves, shaft work or hydraulic routing is released until the actual box, pitman arm, shaft/couplers, drag link and pump drive are physically present for trial fit. See `docs/j60-hydraulic-power-steering-conversion-plan-20260719.md`.
+- Brake booster work is reported complete on `2026-07-19`; close procurement/rebuild activity, but keep installation acceptance open until the exact unit is recorded and it passes vacuum retention, pedal/assist movement, pushrod/free-play, master-cylinder interface, hose/check-valve, leak, bleed, static-stop, and controlled low-speed brake tests.
 
 ### Interior and Weatherproofing
 
@@ -124,9 +149,14 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - `Harness strategy gate`: baseline starting point is now the hot rod 21-circuit harness path; only reopen the loom decision if strip-down exposes a hard compatibility problem.
 - `Body repair gate`: lock the corrosion-protection stack only after a rust map exists.
-- `Power steering gate`: choose retain/rebuild/manual versus conversion only after steering wear and mechanical packaging are inspected.
+- `Power steering gate`: J60 hydraulic conversion is selected, but fabrication remains blocked until the complete identified RHD J60/HJ60 steering set and 2H pump-drive components pass bench inspection and full vehicle trial fit.
 - `Suspension installation gate`: Ironman kit is the approved path. No install starts without both shipments, receipt check, supplier/OEM torque sheet, clean hanger inspection, safe support gear, and brake/steering clearance plan.
 - `Audio/android gate`: do not commit until the base wiring is working and the dash/interior design is frozen.
+- `Turbo engine-health gate`: no hardware order or fuelling increase until engine identity, compression/leak-down, hot oil pressure, blow-by, injector/pump condition, and cooling-system performance are documented and accepted.
+- `Turbo package gate`: approve one matched turbo/manifold/oiling/intake/intercooler/exhaust/instrumentation package only after clearance and heat-route measurements are captured; the package must include target boost, EGT limit, oil-feed specification, drain geometry, and a written staged-test plan.
+- `Turbo connection closeout gate`: no fuel increase or loaded road test until every oil, coolant-if-used, intake, charge-air, exhaust, breather, boost-reference and electrical connection is labelled, supported, leak-tested, protected from heat/chafe, and recorded in the as-fitted route model.
+- `Bumper fabrication closeout gate`: front and rear bumper metalwork is complete, but final coating/road release requires dimensional and symmetry checks, sound weld inspection, proven chassis pickups/fastener access, documented recovery/load classification, bare-metal completion photos, and corrosion-protection touch-in.
+- `Brake booster closeout gate`: reported workshop completion is not the road-safety release; retain the gate until the fitted booster and master-cylinder interface pass the full static and low-speed acceptance checks.
 
 ## Legal/Admin Control Model
 
@@ -153,7 +183,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 1. Confirm seller biometric status and whether ownership transfer has actually been submitted.
 2. Build a single legal/admin evidence pack for the transfer and number-plate path.
 3. Keep the strip-down tagging process active so removed and outsourced parts stay traceable.
-4. Freeze weld-zone map boundaries and execute cut -> fit -> weld -> immediate corrosion stack on each closed zone.
+4. Inspect and close the completed front/rear bumper re-creation and welding: record measurements and bare-metal weld photos, verify pickup/recovery assumptions and fastener access, correct any defects, then apply the approved corrosion stack.
 5. Run chassis fixing in parallel: deep-clean frame, inspect rails/crossmembers/mounts, and close the open issue checks before coating signoff.
 6. Capture body-mount pedestal/captive-thread condition and lock shim + rubber + hardware refit plan before tub return.
 7. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
@@ -161,6 +191,10 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present; prepare the merged brake/suspension parts and tools checklist before the workshop window.
 10. Run the gearbox top-cover capture pack before buying shift-tower service parts or closing the mechanical baseline.
 11. Run the rear differential/axle capture pack before coating or rear road-validation closeout.
-12. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
-13. Record exact prices for already received tools and consumables that are still missing amounts.
-14. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.
+12. Source a Toyota Land Cruiser 70-series diesel radiator and matching A/C condenser donor stack, preferably `HZJ75` / `HZJ78` / `HZJ79` / `1HZ` with A/C; market-side proof is identity, condition, price, and return/exchange terms, while final J40 mounting and fitment remain owner/fabricator work.
+13. Capture the retained engine code, injection-pump identity, compression/leak-down, hot oil pressure, blow-by, baseline EGT/smoke, and intake/exhaust/oil-drain packaging measurements; use these to produce the matched turbo system specification and budget before ordering parts.
+14. Keep procurement gated by phase: immediate rust-control buys now, defer interior and turbo/other optional-upgrade buys until their release gates close.
+15. Record the completed brake booster identity and evidence, then run vacuum-hold, pedal/assist, pushrod/free-play, master-cylinder interface, leak/bleed, static-stop, and controlled low-speed acceptance checks.
+16. Re-run the WhatsApp MCP import after authentication is restored and reconcile any messages newer than the current `2026-06-13` index against these owner-supplied `2026-07-19` updates.
+17. Record exact prices for already received tools and consumables that are still missing amounts.
+18. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.

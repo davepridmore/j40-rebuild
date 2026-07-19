@@ -1,20 +1,20 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-30 18:22:52
+- Generated: 2026-07-10 23:47:30
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 28
+- Rows in this-week list: 25
 - `confirm_price_then_order`: 17
-- `track_delivery`: 11
+- `track_delivery`: 8
 
 ## Priority Split
 
-- `P0`: 11
-- `P1`: 4
+- `P0`: 7
+- `P1`: 5
 - `P2`: 13
 
 ## Overlap Decisions Applied
@@ -32,7 +32,7 @@
 - `confirm_price_then_order` (17):
   - `part_body_retaining_clips_cotter_pin_pack` [P0] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (price: price_tbd; order_date: 2026-05-04; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_fastener_kit_c_captive_clip_nuts` [P0] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_cabin_compact_fuse_boxes` [P0] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_fuel_filler_neck_hose_vent_20260619` [P1] Fuel filler rubber parts - main fuel fill hose vent hose and smooth-band clamps (price: price_tbd; order_date: 2026-06-19; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_heat_glow_plugs_set` [P1] Toyota OE glow plugs 19850-68030 x6 - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_oil_filter_guard_gdo135_20260529` [P1] Engine oil filter - Guard GDO-135 candidate for 2H (price: price_tbd; order_date: 2026-05-29; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_barrier_hose_fittings_20260514` [P2] A/C barrier hose and refrigerant-compatible fittings (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -47,15 +47,12 @@
   - `part_hvac_return_air_grille_filter_20260514` [P2] Hidden return-air grille and washable filter for evaporator intake (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_slim_louver_outlet_panel_20260514` [P2] Slim under-dash louver outlet panel / matched air-directing vent pieces (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_trinary_switch_20260514` [P2] Trinary pressure switch for A/C compressor and fan control (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-- `track_delivery` (11):
-  - `part_fastener_kit_a_millat` [P0] Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
-  - `part_fastener_kit_b_millat` [P0] Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
-  - `part_fastener_kit_e_millat` [P0] Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 (price: 1880 PKR; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
-  - `part_brake_master_reservoir_refresh` [P0] Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect (price: 12596 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
+- `track_delivery` (8):
+  - `part_brake_master_reservoir_refresh` [P0] Brake master cylinder candidate order - ULTIMA UFM-1041 x1; reservoir/proportioning still inspect (price: 6307 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
   - `part_clutch_master_slave_cylinders_20260514` [P0] Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect (price: 7494 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
-  - `part_rear_brake_shoes_hardware` [P0] Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (price: 33600 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
-  - `part_daraz_cable_clip_clamp_assortment_20260527` [P0] Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (price: 2216 PKR; order_date: 2026-05-27; delivery_eta: 2026-06-04_to_2026-06-10; delivery_status: pending_delivery; payment_status: paid)
-  - `part_fastener_kit_d_millat` [P0] Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
+  - `part_daraz_kobe_heat_resistant_matt_black_spray_20260704` [P0] Kobe heat-resistant matt black silicone spray topcoat candidate - qty 1 (price: 1799 PKR; order_date: 2026-07-04; delivery_eta: 2026-07-07_to_2026-07-08; delivery_status: pending_delivery; payment_status: paid)
+  - `part_toolsmart_vmd_brake_clutch_cleaner_400ml_tm26231_20260704` [P0] VMD Brake and Clutch Cleaner 400ML - qty 1 (price: 2007 PKR; order_date: 2026-07-04; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
+  - `part_brighto_extreme_paint_remover_3l_second_order_20260618` [P0] Brighto Extreme Paint Remover - 3 L second order (price: 4670 PKR; order_date: 2026-06-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
   - `part_mech_engine_oil_filter_service` [P1] Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (price: 12499 PKR; order_date: 2026-05-29; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
   - `part_ironman_front_dampers_separate_shipment` [P1] Ironman Foamcell front damper pair - separate shipment (24635FE x2) (price: price_tbd; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
   - `part_hvac_hidden_evaporator_blower_unit_20260514` [P2] Hidden compact evaporator core/case and outlet plenum for custom blower fitment (price: 36942 PKR; order_date: 2026-05-30; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)

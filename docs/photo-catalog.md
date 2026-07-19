@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-06-14 22:59:22
-- Total media files indexed: 850 (839 photos, 11 videos)
+- Generated: 2026-07-19 16:44:37
+- Total media files indexed: 918 (907 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -18,7 +18,8 @@
 | `baseline_walkaround` | 34 |
 | `brake_system` | 20 |
 | `brake_system_identification` | 4 |
-| `chassis_fixing` | 51 |
+| `brake_system_reconstruction` | 20 |
+| `chassis_fixing` | 57 |
 | `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
 | `electrical_reset` | 3 |
@@ -30,12 +31,14 @@
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 102 |
+| `reference_material` | 140 |
 | `removed_parts_cataloguing` | 16 |
+| `replacement_pipe_parts_intake` | 2 |
 | `rubber_recreation_measurement` | 7 |
 | `rust_assessment` | 63 |
 | `steering_brakes_suspension` | 11 |
 | `stripdown_cataloguing` | 111 |
+| `suspension_reassembly_parts_intake` | 2 |
 | `underside_inspection` | 114 |
 | `window_refurbishment_intake` | 4 |
 
@@ -60,6 +63,13 @@
 | `body_floor` | `floor_seam_and_body_mount_rust` | 3 | 2026-04-05 to 2026-05-17 | `20260405_234652.jpg` |
 | `body_floor` | `rear_cargo_floor` | 2 | 2026-03-23 to 2026-04-13 | `20260323_202016.jpg` |
 | `brake_system` | `front_sumitomo_disc_caliper_and_rotor_baseline` | 4 | 2026-05-29 | `20260529_183947_gp_lSYuESVg.jpg` |
+| `brake_system` | `rear_drum_backing_plate_contact_and_anchor_area` | 1 | 2026-07-04 | `20260704_233215_gp_khbGQ5Vg.jpg` |
+| `brake_system` | `rear_drum_brake_current_parts_inventory_20260705` | 12 | 2026-07-04 to 2026-07-05 | `20260704_231547_gp_q267TkIw.jpg` |
+| `brake_system` | `rear_drum_brake_removed_hardware_layout` | 1 | 2026-07-04 | `20260704_232054_gp_1mnxabPQ.jpg` |
+| `brake_system` | `rear_drum_hold_down_spring_pin_set_reconditioned_20260712` | 1 | 2026-07-12 | `20260712_012246_gp_YN2uKtmQ.jpg` |
+| `brake_system` | `rear_drum_hub_and_backing_plate_condition_20260716` | 2 | 2026-07-16 | `20260716_000001_user_rear_drum_hub_rust.png` |
+| `brake_system` | `rear_drum_parking_brake_reconditioned_hardware_20260712` | 1 | 2026-07-12 | `20260712_012759_gp_EhqLfyZA.jpg` |
+| `brake_system` | `rear_drum_reconditioned_hardware_update_20260716` | 2 | 2026-07-16 | `20260716_000003_user_reconditioned_rear_brake_hardware.png` |
 | `chassis_underside` | `body_mount_and_crossmember_detail` | 1 | 2026-04-05 | `20260405_234546.jpg` |
 | `chassis_underside` | `brake_hard_line_flare_sample` | 1 | 2026-05-14 | `20260514_111300_user_brake_flare_side_view.png` |
 | `chassis_underside` | `engine_bay_chassis_interface` | 6 | 2026-04-22 | `20260422_004347_gp_WIy0j6zw.jpg` |
@@ -74,9 +84,11 @@
 | `chassis_underside` | `rear_axle_spring_hanger_and_crossmember` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004254_gp_SplHLSYA.jpg` |
 | `chassis_underside` | `rear_differential_carrier_and_axle_housing` | 1 | 2026-05-17 | `20260517_230500_user_rear_differential_carrier_cover.png` |
 | `chassis_underside` | `rear_frame_crossmember_and_mounts` | 1 | 2026-04-05 | `20260405_234541.jpg` |
+| `chassis_underside` | `rear_half_chassis_primer_application` | 6 | 2026-07-04 | `20260704_012250_gp_aySfKLOw.jpg` |
 | `chassis_underside` | `rear_mid_frame_rail_and_hard_line_detail` | 9 | 2026-05-01 | `20260501_194026_gp_gjPjhxdA.jpg` |
 | `chassis_underside` | `rear_shock_and_crossmember_view` | 1 | 2026-04-05 | `20260405_234811.jpg` |
 | `chassis_underside` | `steering_and_suspension_linkages` | 9 | 2026-04-06 to 2026-05-12 | `20260406_030839_gp_VYKBhRNA.jpg` |
+| `chassis_underside` | `suspension_bump_stop_install_set_20260712` | 2 | 2026-07-12 | `20260712_012120_gp_K81WQNTw.jpg` |
 | `chassis_underside` | `suspension_bump_stop_removed_samples` | 7 | 2026-05-29 to 2026-05-31 | `20260529_223605_gp_CklgF0cQ.jpg` |
 | `chassis_underside` | `suspension_or_linkage_mount` | 2 | 2026-04-11 | `20260411_220207.jpg` |
 | `chassis_underside` | `transmission_crossmember_and_driveline_mounts` | 4 | 2026-04-22 | `20260422_004319_gp_Ttqz46Sw.jpg` |
@@ -86,7 +98,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 91 | 2026-04-14 to 2026-06-14 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 129 | 2026-04-14 to 2026-07-10 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
@@ -149,6 +161,7 @@
 | `removable_panels` | `returned_painted_front_wings` | 4 | 2026-05-23 | `20260523_223012_gp_8OUV7efg.jpg` |
 | `removable_panels` | `returned_painted_inner_panels_or_splash_shields` | 2 | 2026-05-23 | `20260523_222923_gp_nZMVhWQg.jpg` |
 | `removable_panels` | `wiper_arm_or_linkage_hardware` | 1 | 2026-04-12 | `20260412_010713.jpg` |
+| `replacement_pipes` | `bilal_ganj_replacement_pipe_hose_set_20260712` | 2 | 2026-07-12 | `20260712_012946_gp_GJur42bg.jpg` |
 | `roof_and_gutters` | `roof_gutter_and_window_channel` | 6 | 2026-03-23 to 2026-05-17 | `20260323_210944.jpg` |
 | `rubbers_and_seals` | `window_rubber_seals_and_frames` | 2 | 2026-03-29 | `20260329_051754.jpg` |
 | `wheels_and_tires` | `wheel_and_tire_detail` | 1 | 2026-03-24 | `20260324_004830.jpg` |

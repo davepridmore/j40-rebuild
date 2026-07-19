@@ -6,10 +6,10 @@
 - Relevant chat messages indexed: 590
 - Relevant media items indexed: 79
 - Evidence sources in use: Akbar Khan (383), Fj40 (207)
-- Confirmed restoration spend so far: PKR 1,139,552
+- Confirmed restoration spend so far: PKR 1,294,447
 - Confirmed admin spend tracked separately: PKR 16,365
-- Quoted but not confirmed as purchased: PKR 7,860
-- Purchased / planned items still missing prices: 75
+- Quoted but not confirmed as purchased: PKR 0
+- Purchased / planned items still missing prices: 106
 
 ## Main Workstreams
 
@@ -73,12 +73,15 @@
 - 2026-05-04 `tools` Bench vice / workshop vice: PKR 14,970
 - 2026-05-01 `parts` Ironman Foamcell suspension kit - main shipment (front dampers separate): PKR 575,000
 - 2026-04-18 `parts` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60: PKR 1,880
+- 2026-03-18 `parts` Electrical wire grommet set (200pcs): PKR 7,860
 - 2026-03-21 `parts` H4 ceramic headlight connectors - x4 received: PKR 1,350
-- 2026-05-25 `parts` Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect: PKR 12,596
+- 2026-05-29 `parts` Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately: PKR 12,499
+- 2026-05-25 `parts` Brake master cylinder candidate order - ULTIMA UFM-1041 x1; reservoir/proportioning still inspect: PKR 6,307
 - 2026-05-03 `parts` DOT 3 brake fluid x6 - Autohub agreed replacement/substitution received: PKR 5,349
-- 2026-05-25 `parts` Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect: PKR 3,700
+- 2026-06-02 `parts` Brake/clutch hard-line tube stock candidate - Altivox 3/16 in 25 ft kit with 28 fittings: PKR 35,496
+- 2026-05-25 `parts` Clutch master cylinder candidates - Trupart FM-1246 x2; slave cylinder still inspect: PKR 7,494
 - 2026-05-25 `parts` FJ40 BJ-40 Toyota Land Cruiser hand brake cable: PKR 5,795
-- 2026-05-25 `parts` Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match: PKR 33,600
+- 2026-05-25 `parts` Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate: PKR 20,183
 - 2026-04-24 `parts` Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2: PKR 2,188
 - 2026-04-27 `parts` GREZ OFF HD DEGREASER - Spray Nine (32 oz.): PKR 3,250
 - 2026-04-27 `parts` DISS (APC) All Purpose Cleaner 5L: PKR 4,999
@@ -102,6 +105,7 @@
 - 2026-05-02 `tools` Engine/detailing brush bundle - tire sidewall brush, large detailing brush, 5 pc detailing brush set: PKR 2,588
 - 2026-05-02 `tools` 75mm 3 inch steel knotted cup rotary wire brush for angle grinder x2: PKR 3,896
 - 2026-05-02 `tools` 3 pc mini wire brush set - brass, nylon, stainless steel bristles x2: PKR 561
+- 2026-06-02 `tools` Heavy Duty Cup Brush for Angle Grinder - 3/4 in listed sizes, twisted/crimped wire x5: PKR 2,190
 - 2026-05-02 `tools` Safety goggles / protective glasses for grinding and cleaning: PKR 764
 - 2026-05-02 `parts` Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3: PKR 2,390
 - 2026-05-02 `parts` HB Body U900 cavity wax spray 400ml x2: PKR 4,998
@@ -114,19 +118,39 @@
 - 2026-05-08 `tools` Ar-CO2 Canister: PKR 42,362
 - 2026-05-08 `parts` Chassis coating masking pack - Ultra-cloth solvent-safe wipes and masking tape: PKR 7,099
 - 2026-05-11 `parts` Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6: PKR 8,196
+- 2026-05-30 `parts` Hidden compact evaporator core/case and outlet plenum for custom blower fitment: PKR 36,942
 - 2026-05-18 `tools` Almiraj INGCO air and cleaning setup - ACS112501 compressor, AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, HPWR12008 pressure washer: PKR 83,549
 - 2026-05-18 `tools` Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter: PKR 946
 - 2026-05-18 `tools` Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant: PKR 869
 - 2026-05-23 `tools` Large-bore Nitto air hose for 1/2 inch impact wrench: PKR 4,720
 - 2026-05-23 `tools` Ingco Heavy duty cable cutter 250mm HHCCB0210: PKR 2,130
 - 2026-05-27 `tools` Daraz 100W IP66 LED flood light - workshop/site lighting: PKR 5,169
+- 2026-06-02 `tools` Harden 3lb Sledge Hammer Fiberglass Handle 590323: PKR 3,730
+- 2026-05-27 `tools` LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 in IRON: PKR 1,390
+- 2026-05-27 `tools` PARD Double Flaring and Cutting Tool Set - 3/16 in to 5/8 in: PKR 18,210
+- 2026-05-27 `tools` LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER: PKR 4,720
+- 2026-05-27 `tools` M8 Thread Angle Grinder Handle thickened anti-vibration side handle for 100 type angle grinder: PKR 1,354
+- 2026-05-27 `tools` AliExpress 5PCS NITTO male coupling air fittings: PKR 3,072
+- 2026-06-02 `parts` Brighto Extreme Paint Remover - 3 L: PKR 4,670
+- 2026-06-01 `tools` Multi-purpose blow torch head for seized suspension pin heat release: PKR 3,194
+- 2026-06-18 `parts` Brighto Extreme Paint Remover - 3 L second order: PKR 4,670
+- 2026-06-16 `parts` Daraz brass BSP reducing hex bushing adapter assortment - qty 5: PKR 3,608
+- 2026-07-03 `tools` Harden Cup Twist Wire Brush With Nut 100mm x M14 x 2.0 - qty 4: PKR 5,800
+- 2026-07-04 `tools` Nylon paint brush set - 5 packs of 3 pcs assorted sizes: PKR 1,900
+- 2026-07-04 `tools` M14 to M10 angle grinder adapter for polishing/slotting accessory: PKR 1,593
+- 2026-07-04 `parts` Kobe heat-resistant matt black silicone spray topcoat candidate - qty 1: PKR 1,799
+- 2026-07-04 `tools` 6 pc industrial wire brush drill set plus knife brush - qty 2 sets: PKR 2,110
+- 2026-07-10 `parts` Bilal Ganj receipt line - cover foam rubber / کور فوم ربڑ x4: PKR 10,000
+- 2026-07-10 `parts` Bilal Ganj receipt line - body packing / باڈی پیکنگ x2: PKR 3,000
+- 2026-07-10 `parts` Bilal Ganj receipt line - lever springs / لیور سپرنگ x4: PKR 1,000
 
 ## Quote Watchlist
 
-- 2026-03-18 Electrical wire grommet set (200pcs): PKR 7,860
+- No quotes captured yet.
 
 ## Unpriced Items To Backfill
 
+- `planned` Fuel filler rubber parts - main fuel fill hose vent hose and smooth-band clamps
 - `received` Grease gun
 - `received` Torque wrench
 - `received` Car cover
@@ -145,9 +169,8 @@
 - `received` Total TDP133501 Drill Press - 350W - 13mm
 - `received` Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
 - `researching` EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry
-- `planned` Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
-- `received` M6 and M8 threaded rivet nuts / rivnuts / nutserts - received
-- Plus 55 more items in `data/manual/expenses.csv`
+- `received` Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves
+- Plus 86 more items in `data/manual/expenses.csv`
 
 ## Notes
 

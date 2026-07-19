@@ -9,4 +9,7 @@ FCS-CHECK-007,pre-coating,"All welded/drilled steel is deburred, test-fitted, an
 FCS-CHECK-008,installed,"Engine fan/shroud, belts, upper/lower hoses, A/C hoses, grille, bonnet, and service removal clearance all pass after final tightening.","Installed stack photos plus hand-shake/running clearance video."
 FCS-CHECK-009,charge,"A/C pressure protection switch is wired and verified before compressor is allowed to run charged.","Electrical test note or video showing clutch cutout/request logic."
 FCS-CHECK-010,cooling_validation,"Cooling system pressure test, warm idle leak check, and A/C condenser fan/pressure behavior are validated after assembly.","Pressure-test photo/video and warm running check."
-
+FCS-CHECK-011,measurement,"M1-M7 from the Rev B handoff are recorded after the duplicate upright is tacked and the grille bonnet/latch engine fan and body position are represented.","Completed dimension CSV/worksheet plus ruler photographs at every datum."
+FCS-CHECK-012,mockup,"500 x 180 x 60 intercooler mock-up occupies only the lower band and leaves the upper pusher-fan band serviceable.","Front and side photographs of full-size mock-up."
+FCS-CHECK-013,pressure_test,"Intercooler passes 20 psi leak test subject to the core manufacturer's rating; outlets are 57 mm OD with retaining beads.","Gauge-visible test photograph/video and fabricator test note."
+FCS-CHECK-014,serviceability,"Radiator condenser intercooler fan and drier can each be removed without cutting welds or unloading another heat exchanger.","Removal sequence note and fastener-access photographs."

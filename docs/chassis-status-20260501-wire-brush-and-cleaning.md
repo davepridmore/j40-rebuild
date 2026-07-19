@@ -139,7 +139,7 @@ Still requiring purchase or final check before coating:
 - Confirmation that the cavity-wax cans have the wand/nozzle needed for boxed sections.
 - Masking tape and Ultra-cloth solvent-safe lint-free wipes are received as of May 11, 2026.
 - The on-hand grommet pack can cover temporary open-hole masking if each grommet fits snugly, stays removable, and does not soften or leave residue after solvent contact; buy separate tapered plugs only if that fit check fails.
-- Extra brushes are on hand; flap/strip discs are angle-grinder consumables with existing recorded stock, so only rebuy if the physical count is short.
+- Angle-grinder brush consumption update 2026-06-15: two proven grinder-compatible cup brushes cleaned roughly one-third of the chassis. Buy five more of the same fitting/size before continuing heavy chassis work; do not substitute the smaller unknown-hole brushes unless fit, RPM rating, and guard clearance are proven.
 
 Inventory note: the registered Toolsmart item is a `5L pressure sprayer`, mainly for degreaser application. The INGCO `HPWR12008` powered high-pressure washer is now ordered from Almiraj/almiratrading but is not yet received. For this chassis and engine work, use any powered pressure washer cautiously; it is a rinse tool, not a substitute for brushing, degreasing, drying, and inspection.
 

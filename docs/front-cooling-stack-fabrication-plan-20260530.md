@@ -1,6 +1,8 @@
 # Front Cooling Stack Fabrication Plan - 2026-05-30
 
-Purpose: define the fabrication direction for replacing the weak one-sided radiator support with a full front cooling-stack frame that can carry the engine radiator and A/C condenser cleanly.
+Purpose: define the fabrication direction for replacing the weak one-sided radiator support with a full front cooling-stack frame that can carry the engine radiator, A/C condenser and turbo intercooler cleanly.
+
+Current integrated fabricator handoff: [j40-integrated-cooling-pack-fabricator-handoff-20260717.md](j40-integrated-cooling-pack-fabricator-handoff-20260717.md). It retains the decided existing upright plus one welded identical mirrored upright and adds separately removable cooling components using small adapter tabs.
 
 Fabrication package: [data/manual/fabrication/front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)
 
@@ -10,9 +12,9 @@ L4TW delivery spec: [l4tw-front-cooling-stack-delivery-spec-20260531.md](l4tw-fr
 
 ## Decision
 
-Use two full-height chassis/front-support uprights as the structural frame. The radiator, A/C condenser, optional pusher fan, and receiver-drier mount to that frame as separate serviceable parts.
+Use the existing full-height chassis/front-support upright and weld an identical mirrored upright on the left side. The radiator, A/C condenser, lower-front turbo intercooler, optional upper-band pusher fan, and receiver-drier mount to those uprights as separate serviceable parts.
 
-The radiator must not support the condenser. The condenser must not support the fan. Nothing should be tied through radiator or condenser fins.
+The radiator must not support the condenser or intercooler. The condenser must not support the fan or intercooler. Nothing should be tied through any core or fins.
 
 ## Component Direction
 

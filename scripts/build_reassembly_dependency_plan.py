@@ -591,13 +591,13 @@ def build_work_packages(
             work_package_id="WP01",
             title="Body + Chassis Rust/Bracket Closure",
             lane="body_structure",
-            objective="Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
+            objective="Close floor/rust repairs, finish chassis prep/coating by zone, and keep welder-affected suspension/radiator areas under validation before final sealing.",
             depends_on="stripdown_cataloguing_complete",
             linked_workstreams="body_chassis|chassis_fixing",
             current_state="in_progress" if rust_photos >= 8 else "queued",
             evidence_signal=f"rust_assessment_photos={rust_photos}, stripdown_photos={stripdown_photos}",
             blocker_summary=f"{body_buy_now} body material rows still need buy execution.",
-            gate_to_close="Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
+            gate_to_close="Rust map signed off, rear/back coating started after primer cure, front prep primed, and welder-affected suspension/radiator repair zones validated before final top protection.",
             key_procurement_actions="Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
         ),
         WorkPackage(
@@ -739,7 +739,7 @@ def write_report(
         "- Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap."
     )
     lines.append(
-        "- Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos."
+        "- Proceed by coating zone: prime the newly prepared front underside and start Raptor on the rear/back section, but hold final top protection on suspension/radiator weld-affected areas until experienced-welder repair, validation photos, and primer touch-in are complete."
     )
     lines.append(
         f"- Run `WP04` procurement now: {count_mechanical_buy_actions(procurement_rows)} mechanical rows still require buy execution."

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
+  <style>
+    text{font-family:Arial,sans-serif;fill:#17202a} .t{font-size:24px;font-weight:bold}.s{font-size:16px}.d{font-size:15px;fill:#34495e}.dim{stroke:#34495e;stroke-width:2;marker-start:url(#a);marker-end:url(#a)}.ext{stroke:#7f8c8d;stroke-width:1}.upr{fill:#566573}.rad{fill:#85c1e9;stroke:#2471a3;stroke-width:3}.cond{fill:none;stroke:#d68910;stroke-width:3;stroke-dasharray:9 6}.ic{fill:#abebc6;stroke:#1e8449;stroke-width:3}.fan{fill:none;stroke:#922b21;stroke-width:4}.tab{fill:#d5d8dc;stroke:#626567;stroke-width:2}
+  </style>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8" fill="none" stroke="#34495e"/></marker></defs>
+  <text x="550" y="34" text-anchor="middle" class="t">J40 INTEGRATED COOLING PACK — REV B — FRONT ELEVATION</text>
+  <text x="550" y="58" text-anchor="middle" class="d">All dimensions mm. Structural uprights shown at measured 410 × 48 face; M1/M2 control final manufacture.</text>
+  <rect x="130" y="150" width="48" height="410" class="upr"/><rect x="922" y="150" width="48" height="410" class="upr"/>
+  <text x="154" y="585" text-anchor="middle" class="s">new left duplicate</text><text x="946" y="585" text-anchor="middle" class="s">existing datum</text>
+  <rect x="285" y="130" width="530" height="435" class="rad"/><text x="550" y="340" text-anchor="middle" class="t">RADIATOR</text><text x="550" y="367" text-anchor="middle" class="s">530 × 435 × 64 target</text>
+  <rect x="270" y="170" width="559" height="356" class="cond"/><text x="710" y="205" class="s">CONDENSER 559 × 356 × 21</text>
+  <rect x="300" y="385" width="500" height="180" class="ic"/><text x="550" y="466" text-anchor="middle" class="t">INTERCOOLER</text><text x="550" y="493" text-anchor="middle" class="s">500 × 180 × 60; 57 OD outlets</text>
+  <circle cx="550" cy="275" r="145" class="fan"/><circle cx="550" cy="275" r="12" fill="#922b21"/><text x="550" y="282" text-anchor="middle" class="s" fill="#922b21">12 in pusher fan — upper band</text>
+  <rect x="190" y="185" width="65" height="70" class="tab"/><rect x="845" y="185" width="65" height="70" class="tab"/><rect x="190" y="470" width="65" height="70" class="tab"/><rect x="845" y="470" width="65" height="70" class="tab"/>
+  <text x="550" y="622" text-anchor="middle" class="s">Four removable 50 × 70 × 4 adapter tabs; 9 × 20 vertical slots; M7 offset 0–20</text>
+  <line x1="130" y1="105" x2="970" y2="105" class="dim"/><line x1="130" y1="115" x2="130" y2="145" class="ext"/><line x1="970" y1="115" x2="970" y2="145" class="ext"/><text x="550" y="97" text-anchor="middle" class="s">M1 = minimum clear width between inside faces (measure top/middle/bottom)</text>
+  <line x1="100" y1="150" x2="100" y2="560" class="dim"/><line x1="108" y1="150" x2="128" y2="150" class="ext"/><line x1="108" y1="560" x2="128" y2="560" class="ext"/><text x="86" y="355" text-anchor="middle" transform="rotate(-90 86 355)" class="s">410 measured upright height</text>
+  <line x1="300" y1="600" x2="800" y2="600" class="dim"/><text x="550" y="594" text-anchor="middle" class="s">500 intercooler core</text>
+  <line x1="840" y1="385" x2="840" y2="565" class="dim"/><text x="858" y="475" class="s">180</text>
+  <text x="550" y="672" text-anchor="middle" class="d">Layer order: grille → upper fan / lower intercooler → 10 gap → condenser → 15 gap → radiator → shroud/engine fan.</text>
+  <text x="550" y="700" text-anchor="middle" class="d">Do not scale this drawing for M1/M2. Complete the measurement schedule before final core manufacture.</text>
+</svg>

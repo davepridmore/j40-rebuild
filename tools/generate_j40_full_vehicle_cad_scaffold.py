@@ -548,6 +548,42 @@ def parts() -> list[PartType]:
         ]
         mesh(group, name, vertices, faces, color, confidence, notes)
 
+    def xz_bar_mesh(
+        group: str,
+        name: str,
+        x1: float,
+        y_center: float,
+        z1: float,
+        x2: float,
+        z2: float,
+        thickness_y: float,
+        thickness_normal: float,
+        color: str,
+        confidence: str,
+        notes: str,
+    ) -> None:
+        dx = x2 - x1
+        dz = z2 - z1
+        span = math.hypot(dx, dz)
+        if span <= 0:
+            return
+        nx = -dz / span * thickness_normal / 2
+        nz = dx / span * thickness_normal / 2
+        y0 = y_center - thickness_y / 2
+        y1 = y_center + thickness_y / 2
+        vertices = [
+            (x1 + nx, y0, z1 + nz),
+            (x1 - nx, y0, z1 - nz),
+            (x2 - nx, y0, z2 - nz),
+            (x2 + nx, y0, z2 + nz),
+            (x1 + nx, y1, z1 + nz),
+            (x1 - nx, y1, z1 - nz),
+            (x2 - nx, y1, z2 - nz),
+            (x2 + nx, y1, z2 + nz),
+        ]
+        faces = [(0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1), (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)]
+        mesh(group, name, vertices, faces, color, confidence, notes)
+
     # Published representative FJ40 dimensions from Toyota: 3840 L, 1665 W, 1950 H, 2285 WB.
     # Coordinate system: X front bumper to rear, Y centerline left/right, Z ground up, units mm.
     # This truck is modelled as right-hand drive: positive Y is the driver's side.
@@ -730,6 +766,79 @@ def parts() -> list[PartType]:
     # Detail pass. These are still reference primitives, but they turn the
     # scaffold into a usable subsystem map instead of a simple envelope model.
     side_pairs = [("left", -1, -1.0), ("right", 1, 1.0)]
+
+    def suspension_connection_detail(axle_name: str, axle_x: float, side: str, y_sign: float) -> None:
+        spring_y = 430 * y_sign
+        rail_y = 390 * y_sign
+        hanger_y = 475 * y_sign
+        hanger_mid_y = (hanger_y + rail_y) / 2
+        fixed_hanger_x = axle_x - 525
+        shackle_hanger_x = axle_x + 545
+        fixed_pin_x = fixed_hanger_x + 52
+        shackle_upper_pin_x = shackle_hanger_x + 52
+        fixed_eye_z = 430
+        shackle_upper_z = 430
+        shackle_lower_x = axle_x + 526
+        shackle_lower_z = 356
+        leaf_pack_start_x = axle_x - 510
+        leaf_pack_end_x = axle_x + 512
+        lower_plate_z = 290
+        perch_z = 352
+        axle_pad_z = 452
+        shock_upper_x = axle_x + 210
+        shock_lower_x = axle_x + 142
+        shock_y = 520 * y_sign
+        shock_upper_z = 855
+        shock_lower_z = 395
+        confidence = "L3 suspension connection datum"
+
+        cyl("running_gear", f"{axle_name}_{side}_fixed_spring_eye_bushing", fixed_pin_x, spring_y, fixed_eye_z, "y", 92, 96, COLORS["rubber"], confidence, "rubber bushing at fixed leaf-spring eye aligned with the frame hanger pin")
+        cyl("running_gear", f"{axle_name}_{side}_fixed_spring_eye_inner_sleeve", fixed_pin_x, spring_y, fixed_eye_z, "y", 38, 132, COLORS["metal"], confidence, "steel sleeve through fixed leaf-spring eye bushing")
+        cyl("chassis", f"{side}_{axle_name}_fixed_hanger_cross_sleeve", fixed_pin_x, hanger_mid_y, fixed_eye_z, "y", 44, 152, COLORS["metal"], confidence, "hanger spacer sleeve between inner and outer frame-side spring hanger plates")
+        cyl("chassis", f"{side}_{axle_name}_fixed_hanger_pin_bolt", fixed_pin_x, hanger_mid_y, fixed_eye_z, "y", 30, 190, COLORS["brass"], confidence, "through-bolt datum tying fixed spring eye to frame hanger plates")
+        box("chassis", f"{side}_{axle_name}_fixed_hanger_outer_bolt_head", fixed_pin_x - 18, hanger_y + 78 * y_sign, fixed_eye_z - 18, 36, 18, 36, COLORS["brass"], confidence, "outer hanger bolt head datum")
+        box("chassis", f"{side}_{axle_name}_fixed_hanger_inner_nut", fixed_pin_x - 18, rail_y - 78 * y_sign, fixed_eye_z - 18, 36, 18, 36, COLORS["brass"], confidence, "inner hanger nut datum")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_fixed_eye_leaf_wrap_upper", fixed_pin_x, spring_y, fixed_eye_z, leaf_pack_start_x + 95, 360, 70, 28, COLORS["spring"], confidence, "upper wrap from fixed eye into main leaf pack")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_fixed_eye_leaf_wrap_lower", fixed_pin_x, spring_y, fixed_eye_z - 18, leaf_pack_start_x + 145, 327, 66, 22, COLORS["spring"], confidence, "lower wrap from fixed eye into second leaf layer")
+
+        cyl("chassis", f"{side}_{axle_name}_shackle_upper_frame_bushing", shackle_upper_pin_x, hanger_mid_y, shackle_upper_z, "y", 86, 126, COLORS["rubber"], confidence, "upper shackle bushing in frame-side hanger")
+        cyl("chassis", f"{side}_{axle_name}_shackle_upper_sleeve", shackle_upper_pin_x, hanger_mid_y, shackle_upper_z, "y", 36, 152, COLORS["metal"], confidence, "upper shackle sleeve and pin datum")
+        cyl("running_gear", f"{axle_name}_{side}_shackle_lower_spring_eye_bushing", shackle_lower_x, spring_y, shackle_lower_z, "y", 92, 96, COLORS["rubber"], confidence, "lower shackle bushing through spring eye")
+        cyl("running_gear", f"{axle_name}_{side}_shackle_lower_spring_eye_sleeve", shackle_lower_x, spring_y, shackle_lower_z, "y", 38, 132, COLORS["metal"], confidence, "lower shackle sleeve through spring eye")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_shackle_outer_link_plate", shackle_upper_pin_x, hanger_y + 32 * y_sign, shackle_upper_z, shackle_lower_x, shackle_lower_z, 18, 58, COLORS["metal"], confidence, "outer shackle side plate connecting frame hanger upper pin to spring-eye lower pin")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_shackle_inner_link_plate", shackle_upper_pin_x, rail_y - 30 * y_sign, shackle_upper_z, shackle_lower_x, shackle_lower_z, 18, 58, COLORS["metal"], confidence, "inner shackle side plate connecting frame hanger upper pin to spring-eye lower pin")
+        cyl("running_gear", f"{axle_name}_{side}_shackle_upper_pin_bolt", shackle_upper_pin_x, hanger_mid_y, shackle_upper_z, "y", 30, 190, COLORS["brass"], confidence, "upper shackle through-bolt datum")
+        cyl("running_gear", f"{axle_name}_{side}_shackle_lower_pin_bolt", shackle_lower_x, spring_y, shackle_lower_z, "y", 30, 168, COLORS["brass"], confidence, "lower shackle through-bolt datum")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_shackle_eye_leaf_wrap_upper", shackle_lower_x, spring_y, shackle_lower_z, leaf_pack_end_x - 112, 358, 70, 28, COLORS["spring"], confidence, "upper wrap from shackle eye into main leaf pack")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_shackle_eye_leaf_wrap_lower", shackle_lower_x, spring_y, shackle_lower_z - 18, leaf_pack_end_x - 165, 326, 66, 22, COLORS["spring"], confidence, "lower wrap from shackle eye into second leaf layer")
+
+        for clamp_idx, clamp_x in enumerate([axle_x - 310, axle_x + 315], start=1):
+            box("running_gear", f"{axle_name}_{side}_leaf_pack_rebound_clip_{clamp_idx}", clamp_x - 22, spring_y, 300, 44, 98, 72, COLORS["metal"], confidence, "leaf-pack rebound clip wrapping the stacked spring leaves")
+            cyl("running_gear", f"{axle_name}_{side}_leaf_pack_rebound_clip_{clamp_idx}_bolt", clamp_x, spring_y, 352, "y", 16, 112, COLORS["brass"], confidence, "small cross bolt through leaf-pack rebound clip")
+        cyl("running_gear", f"{axle_name}_{side}_spring_center_bolt", axle_x, spring_y, 338, "z", 18, 88, COLORS["brass"], confidence, "leaf-spring center bolt locating spring pack to axle perch")
+        box("running_gear", f"{axle_name}_{side}_axle_spring_perch_welded_saddle", axle_x - 82, spring_y, perch_z, 164, 126, 38, COLORS["metal"], confidence, "welded axle perch saddle under axle tube and above spring pack")
+        box("running_gear", f"{axle_name}_{side}_spring_perch_lower_clamp_plate", axle_x - 126, spring_y, lower_plate_z, 252, 146, 34, COLORS["metal"], confidence, "lower spring clamp plate under leaf pack tying U-bolts together")
+        box("running_gear", f"{axle_name}_{side}_axle_tube_contact_pad", axle_x - 92, spring_y, axle_pad_z, 184, 132, 24, COLORS["metal"], confidence, "upper contact pad between axle tube and spring perch")
+        for u_idx, x_offset in enumerate([-70, 70], start=1):
+            box("running_gear", f"{axle_name}_{side}_u_bolt_{u_idx}_top_crown", axle_x + x_offset - 18, spring_y, 490, 36, 118, 24, COLORS["metal"], confidence, "U-bolt crown wrapping over axle tube")
+            for leg_idx, y_offset in enumerate([-42, 42], start=1):
+                leg_y = spring_y + y_offset
+                cyl("running_gear", f"{axle_name}_{side}_u_bolt_{u_idx}_leg_{leg_idx}", axle_x + x_offset, leg_y, 394, "z", 18, 226, COLORS["metal"], confidence, "vertical U-bolt leg from axle crown through lower clamp plate")
+                cyl("running_gear", f"{axle_name}_{side}_u_bolt_{u_idx}_leg_{leg_idx}_lower_nut", axle_x + x_offset, leg_y, 276, "z", 32, 24, COLORS["brass"], confidence, "U-bolt lower nut below spring clamp plate")
+
+        box("running_gear", f"{axle_name}_{side}_shock_lower_mount_inner_tab", shock_lower_x - 24, shock_y - 36 * y_sign, shock_lower_z - 46, 48, 18, 92, COLORS["metal"], confidence, "inner lower shock tab welded to axle/spring plate zone")
+        box("running_gear", f"{axle_name}_{side}_shock_lower_mount_outer_tab", shock_lower_x - 24, shock_y + 36 * y_sign, shock_lower_z - 46, 48, 18, 92, COLORS["metal"], confidence, "outer lower shock tab welded to axle/spring plate zone")
+        cyl("running_gear", f"{axle_name}_{side}_shock_lower_pin", shock_lower_x, shock_y, shock_lower_z, "y", 30, 126, COLORS["brass"], confidence, "lower shock pin through axle tabs and shock eye")
+        cyl("running_gear", f"{axle_name}_{side}_shock_lower_eye_bushing", shock_lower_x, shock_y, shock_lower_z, "y", 72, 82, COLORS["rubber"], confidence, "rubber bushing in lower shock eye")
+        box("running_gear", f"{axle_name}_{side}_shock_upper_tower_gusset_front", shock_upper_x - 44, shock_y, shock_upper_z - 90, 38, 118, 110, COLORS["frame"], confidence, "front gusset tying upper shock tower to frame rail")
+        box("running_gear", f"{axle_name}_{side}_shock_upper_tower_gusset_rear", shock_upper_x + 42, shock_y, shock_upper_z - 90, 38, 118, 110, COLORS["frame"], confidence, "rear gusset tying upper shock tower to frame rail")
+        cyl("running_gear", f"{axle_name}_{side}_shock_upper_pin", shock_upper_x, shock_y, shock_upper_z, "y", 30, 146, COLORS["brass"], confidence, "upper shock pin through frame tower and shock eye")
+        cyl("running_gear", f"{axle_name}_{side}_shock_upper_eye_bushing", shock_upper_x, shock_y, shock_upper_z, "y", 72, 86, COLORS["rubber"], confidence, "rubber bushing in upper shock eye")
+        xz_bar_mesh("running_gear", f"{axle_name}_{side}_shock_centerline_connection_path", shock_lower_x, shock_y, shock_lower_z, shock_upper_x, shock_upper_z, 42, 26, COLORS["datum"], confidence, "shock load-path centerline from lower axle tab to upper frame tower")
+        box("running_gear", f"{axle_name}_{side}_bump_stop_axle_strike_pad", axle_x - 145, 495 * y_sign, 476, 138, 105, 22, COLORS["metal"], confidence, "axle strike pad directly below frame bump stop")
+        cyl("datum", f"{axle_name}_{side}_fixed_hanger_pin_center_datum", fixed_pin_x, spring_y, fixed_eye_z, "y", 12, 170, COLORS["datum"], confidence, "pin-center datum for fixed spring hanger measurement")
+        cyl("datum", f"{axle_name}_{side}_shackle_upper_pin_center_datum", shackle_upper_pin_x, spring_y, shackle_upper_z, "y", 12, 170, COLORS["datum"], confidence, "pin-center datum for upper shackle measurement")
+        cyl("datum", f"{axle_name}_{side}_shackle_lower_pin_center_datum", shackle_lower_x, spring_y, shackle_lower_z, "y", 12, 152, COLORS["datum"], confidence, "pin-center datum for lower shackle and spring eye measurement")
 
     # Gallery shaping pass from the 12 public 3DModels.org preview renders:
     # perspective front/rear, wire, side, top, front orthographic, and clay views.
@@ -1091,6 +1200,7 @@ def parts() -> list[PartType]:
                 box("running_gear", f"{axle_name}_{side}_leaf_spring_layer_{leaf_idx}", axle_x - 520, 430 * y_sign, z, 1050 - leaf_idx * 115, 78, 14, COLORS["spring"], "L2 visible-detail primitive", "stacked leaf spring layer")
             for u_idx, offset in enumerate([-65, 65], start=1):
                 cyl("running_gear", f"{axle_name}_{side}_u_bolt_{u_idx}", axle_x + offset, 430 * y_sign, 405, "z", 24, 210, COLORS["metal"], "L2 service datum", "axle U-bolt reference")
+            suspension_connection_detail(axle_name, axle_x, side, y_sign)
 
     for side, sign, y_sign in side_pairs:
         cyl(
@@ -2841,7 +2951,8 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             "",
             "- L0 envelope: boxes/cylinders that locate major vehicle systems.",
             "- L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.",
-            f"- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, {DRIVER_LAYOUT} dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.",
+            f"- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, {DRIVER_LAYOUT} dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, rims, tire lugs, hubs, and body pressings.",
+            "- L3 suspension connection pass: each corner now carries named spring-eye bushings/sleeves, fixed-hanger bolts, shackle upper/lower pins and link plates, leaf-pack rebound clips, spring center bolts, axle perches, U-bolt legs/crowns/nuts, lower clamp plates, shock eye bushings/pins/tabs/tower gussets, bump-stop strike pads, and pin-center datum markers.",
             "- L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, classic rounded rear-quarter/back-door glass, rubber window radius gaskets, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.",
             "- L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.",
             "- Rev C online-reference details: roof ventilator lid/hinge/handle, rear hardtop ventilator louvers, classic rounded rear hardtop side windows and split rear-door glass, hardtop-to-body joins, front clip/tub joins, body-mount pucks and stands, front/rear bumper stays, hood underside bracing and prop rod, hood lock receiver, brake proportioning valve and tube clips, fuel sub-inlet/vent hoses, separated amber/red/clear rear combination lamp lenses, and interior gauge/grab-handle detail.",
@@ -2855,7 +2966,7 @@ def write_notes(model_parts: list[PartType], outputs: list[Path]) -> Path:
             f"- Pakistan purchase BOM: {route_metrics['pakistan_purchase_bom_rows']} route-linked buy rows from `data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv` are read into generated route notes so the 3D model carries the local buy IDs/specs.",
             "- Mechanical-soundness references: fan/radiator, steering-lock/brake-hose, prop-shaft, exhaust heat, and pedal/column/HVAC clearance volumes are visible as non-release L2 checks.",
             "- Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.",
-            "- Not fabrication release: mounting holes, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.",
+            "- Not fabrication release: mounting holes, shackle clocking, spring-eye sleeve IDs, U-bolt spacing, shock pin offsets, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.",
             "",
             f"Total named parts: {len(model_parts)}",
             "",
@@ -2899,6 +3010,7 @@ def write_manifest(outputs: list[Path], model_parts: list[PartType]) -> Path:
         "as_fitted_route_part_count": route_metrics["route_part_count"],
         "mechanical_clearance_part_count": route_metrics["clearance_part_count"],
         "measurement_datum_part_count": sum(1 for part in model_parts if part.group == "datum"),
+        "suspension_connection_part_count": sum(1 for part in model_parts if part.confidence == "L3 suspension connection datum"),
         "reference_gallery_image_count": 12,
         "online_reference_inventory": f"data/manual/cad/j40_reference_model/05_reports/{MODEL_NAME}_online_reference_inventory.csv",
         "outputs": [str(output.relative_to(ROOT)) for output in outputs],

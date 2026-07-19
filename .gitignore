@@ -24,6 +24,10 @@ node_modules/
 tools/wweb-mcp-local/node_modules/
 **/__pycache__/
 .deploy/
+.codex-tmp/
+tmp/
+*.inspect.ndjson
+~$*
 
 # Local staging inboxes and transient working files.
 data/inbox/photos/

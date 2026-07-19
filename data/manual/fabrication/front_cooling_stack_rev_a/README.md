@@ -1,4 +1,12 @@
-# J40 Front Cooling Stack Frame - Rev A
+# J40 Front Cooling Stack Frame - Rev A / Integrated Pack Rev B
+
+The current fabricator handoff adds the turbo intercooler while retaining the decided matching structural uprights:
+
+- [integrated cooling-pack handoff](../../../../docs/j40-integrated-cooling-pack-fabricator-handoff-20260717.md)
+- [dimension schedule](integrated_cooling_pack_dimensions_rev_b.csv)
+- [front elevation](integrated_cooling_pack_front_elevation_rev_b.svg)
+
+Rev B treats the existing upright plus a welded identical mirrored upright on the left side as fixed vehicle structure. Small removable adapter tabs resolve component alignment. The radiator, condenser, intercooler and fans remain independently removable.
 
 Purpose: fabricate a front cooling-stack frame that carries the engine radiator, A/C condenser, optional pusher fan, and receiver-drier from the chassis/front-support structure instead of hanging any load from the radiator core or condenser fins.
 
@@ -10,7 +18,7 @@ L4TW delivery spec: [delivery_spec_l4tw_20260531.csv](delivery_spec_l4tw_2026053
 
 ## Design Intent
 
-- Build two full-height left/right cooling-stack uprights from the chassis/front-support rail up to the radiator top plane.
+- Retain the existing measured upright and duplicate it as a handed/mirrored welded upright on the left side. The measured upright height is `410 mm`; verify the duplicate against the vehicle before welding.
 - Use the uprights as the structure for both cooling systems:
   - engine radiator on rubber-isolated rear tabs
   - A/C condenser on separate forward tabs

@@ -1,9 +1,9 @@
 # J40 Digital Twin Build Notes
 
-- Generated: 2026-05-31T04:15:55.879374+00:00
-- Photo/video evidence rows: 114 component slices, 821 media references.
+- Generated: 2026-06-17T22:45:20.237968+00:00
+- Photo/video evidence rows: 114 component slices, 850 media references.
 - Component-job linkage: 88 of 114 component slices linked through `data/manual/component_jobs_photo_reconciliation.csv`.
-- Current scaffold parts: 1298.
+- Current scaffold parts: 1494.
 - Evidence matrix: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_evidence_matrix.csv`
 - Measurement backlog: `data/manual/cad/j40_reference_model/05_reports/j40_digital_twin_measurement_backlog.csv`
 - Public-source strategy: `data/manual/cad/j40_reference_model/05_reports/j40_public_reference_strategy.md`
@@ -19,21 +19,21 @@
 
 ## CAD Datum Closure
 
-- `chassis_underside/suspension_bump_stop_removed_samples` now has named datum geometry; examples `suspension_bump_stop_removed_samples_front_envelope|suspension_bump_stop_removed_samples_mount_hole_spacing_bar|suspension_bump_stop_removed_samples_rear_envelope|left_front_bump_stop|left_rear_bump_stop|right_front_bump_stop|right_rear_bump_stop|cab_body_mount_rubber_puck_1`
+- `chassis_underside/suspension_bump_stop_removed_samples` now has named datum geometry; examples `suspension_bump_stop_removed_samples_front_envelope|suspension_bump_stop_removed_samples_mount_hole_spacing_bar|suspension_bump_stop_removed_samples_rear_envelope|front_left_bump_stop_axle_strike_pad|front_right_bump_stop_axle_strike_pad|left_front_bump_stop|left_rear_bump_stop|rear_left_bump_stop_axle_strike_pad`
 - `engine_bay/cooling_pipe_fabrication_samples` now has named datum geometry; examples `cooling_pipe_fabrication_samples_clamp_pair_datum|cooling_pipe_fabrication_samples_lower_hose_overlap_datum|cooling_pipe_fabrication_samples_main_run_datum|cooling_pipe_fabrication_samples_upper_hose_overlap_datum|cooling_pipe_fabrication_samples_vertical_leg_datum|cooling_fan_blade_1|cooling_fan_blade_2|cooling_fan_blade_3`
 - `engine_bay/existing_battery_mount_tray_measurements` now has named datum geometry; examples `existing_battery_mount_tray_measurements_hold_down_span|existing_battery_mount_tray_measurements_tray_footprint|battery_tray_reference|battery_case|battery_negative_terminal|battery_positive_terminal|positive_battery_cable_run|installed_battery_dimension_reference_height_bar`
 - `engine_bay/installed_battery_dimension_reference` now has named datum geometry; examples `installed_battery_dimension_reference_height_bar|installed_battery_dimension_reference_length_bar|installed_battery_dimension_reference_width_bar|battery_case|battery_negative_terminal|battery_positive_terminal|battery_tray_reference|positive_battery_cable_run`
 
 ## Strongest Photo Coverage
 
-- `chassis_underside`: 20 component slices, 176 media items
+- `chassis_underside`: 20 component slices, 181 media items
 - `electrical_system`: 15 component slices, 34 media items
 - `engine_bay`: 15 component slices, 148 media items
 - `body_exterior`: 12 component slices, 56 media items
 - `interior_cabin`: 12 component slices, 55 media items
 - `procurement_inventory`: 10 component slices, 150 media items
 - `removable_panels`: 10 component slices, 47 media items
-- `documentation_reference`: 7 component slices, 78 media items
+- `documentation_reference`: 7 component slices, 102 media items
 - `body_floor`: 4 component slices, 56 media items
 - `wheels_and_tires`: 3 component slices, 3 media items
 - `windows`: 2 component slices, 5 media items

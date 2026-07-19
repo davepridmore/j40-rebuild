@@ -84,6 +84,15 @@ BRAKE_BOOSTER_20260529_MEDIA_IDS: tuple[str, ...] = (
     "20260529_030700_gp_8qu2Rliw",
 )
 
+CHASSIS_REAR_HALF_PRIMER_20260704_MEDIA_IDS: tuple[str, ...] = (
+    "20260704_012250_gp_aySfKLOw",
+    "20260704_012258_gp_Gechq08Q",
+    "20260704_012307_gp_CV3XpTDw",
+    "20260704_012317_gp_w8vZUIhw",
+    "20260704_012328_gp_7Yd8GyjA",
+    "20260704_012437_gp_tnnHUuaA",
+)
+
 INTERIOR_DASH_SWITCH_202604_MEDIA_IDS: tuple[str, ...] = (
     "20260421_192813_gp_0jvYAo8g",
     "20260421_194401_gp_1dY3fLdw",
@@ -283,9 +292,16 @@ RULES: dict[str, EvidenceRule] = {
             "frame_rail_body_mount_and_crossmember_detail",
             "front_frame_horns_bumper_and_steering_area",
             "rear_mid_frame_rail_and_hard_line_detail",
+            "rear_half_chassis_primer_application",
         ),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
-        notes="Body-off underside shots and May 1 post-brushing photos provide direct evidence for rails/crossmembers and supporting suspension context.",
+        notes="Body-off underside shots, May 1 post-brushing photos, and July 4 rear-half primer photos provide direct evidence for rails/crossmembers and supporting suspension context.",
+    ),
+    "chassis_rear_half_primer_application_20260704": EvidenceRule(
+        direct_specific_components=("rear_half_chassis_primer_application",),
+        indirect_specific_components=("rear_mid_frame_rail_and_hard_line_detail", "rear_axle_spring_hanger_and_crossmember"),
+        notes="July 4 picker batch documents partial rear/back-half chassis primer application. Treat as coating evidence for that zone only; topcoat release still needs hole/thread cleanup, inner-face touch-in, stand-contact touch-up, and front/remaining chassis coverage.",
+        direct_media_ids=CHASSIS_REAR_HALF_PRIMER_20260704_MEDIA_IDS,
     ),
     "body_mount_points_and_captive_nuts": EvidenceRule(
         direct_specific_components=("body_mount_and_crossmember_detail", "frame_and_mount_points", "frame_rail_body_mount_and_crossmember_detail"),
@@ -329,30 +345,66 @@ RULES: dict[str, EvidenceRule] = {
             "frame_and_mount_points",
             "frame_floor_underside_and_lines",
             "rear_axle_and_leaf_springs",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
+            "rear_drum_parking_brake_reconditioned_hardware_20260712",
+            "rear_drum_backing_plate_contact_and_anchor_area",
+            "rear_drum_brake_removed_hardware_layout",
+            "rear_drum_hub_and_backing_plate_condition_20260716",
+            "rear_drum_reconditioned_hardware_update_20260716",
             "steering_and_suspension_linkages",
         ),
         indirect_specific_components=("suspension_or_linkage_mount",),
-        notes="Brake evidence pack combines direct Sumitomo front-disc closeups, rear axle hardware views, underbody hard-line photos, and the removed booster/servo sample. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples.",
+        notes="Brake evidence pack combines direct Sumitomo front-disc closeups, rear axle hardware views, underbody hard-line photos, removed booster/servo sample, and July 12 reconditioned rear drum/parking-brake hardware. May 29 owner confirmation treats the brake parts as replacement scope, with old parts retained only as samples.",
     ),
     "front_brake_disc_baseline": EvidenceRule(
         direct_specific_components=("front_sumitomo_disc_caliper_and_rotor_baseline", "steering_and_suspension_linkages"),
         indirect_specific_components=("frame_and_mount_points", "suspension_or_linkage_mount"),
         notes="May 29 closeups directly identify the front disc baseline as visible Sumitomo fixed-caliper hardware with bridge pipe, hose/hard-line routing, dust shield, and rotor; older steering/linkage photos remain supporting context.",
     ),
+    "front_caliper_holder_fit_check_20260712": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("front_sumitomo_disc_caliper_and_rotor_baseline", "steering_and_suspension_linkages"),
+        notes="Owner reports donor caliper holders/carriers are in hand, but the July 12 picker batch did not include a distinct holder photo. Existing front Sumitomo disc photos are vehicle-side context only; closure needs donor-holder photos and physical fit checks.",
+    ),
     "rear_brake_drum_baseline": EvidenceRule(
-        direct_specific_components=("rear_axle_and_leaf_springs",),
+        direct_specific_components=(
+            "rear_axle_and_leaf_springs",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
+            "rear_drum_parking_brake_reconditioned_hardware_20260712",
+            "rear_drum_backing_plate_contact_and_anchor_area",
+            "rear_drum_brake_removed_hardware_layout",
+            "rear_drum_hub_and_backing_plate_condition_20260716",
+            "rear_drum_reconditioned_hardware_update_20260716",
+        ),
         indirect_specific_components=("frame_floor_underside_and_lines",),
-        notes="Rear axle underside shots are the main evidence set for drum hardware and parking-brake linkage condition.",
+        notes="Rear axle underside shots, July 4 removed layout, July 12 reconditioned hardware, and July 16 condition photos document the rebuild. July 16 shows remade springs and tidied operating parts, but used pins still need wear/retention checks and the rusty drum/hub and backing plate remain on hold for cleaning, inspection and measurement.",
     ),
     "rear_brake_cable_line_refresh": EvidenceRule(
-        direct_specific_components=("rear_axle_and_leaf_springs",),
+        direct_specific_components=(
+            "rear_axle_and_leaf_springs",
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
+            "rear_drum_parking_brake_reconditioned_hardware_20260712",
+            "rear_drum_backing_plate_contact_and_anchor_area",
+            "rear_drum_brake_removed_hardware_layout",
+            "rear_drum_hub_and_backing_plate_condition_20260716",
+            "rear_drum_reconditioned_hardware_update_20260716",
+        ),
         indirect_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail", "rear_axle_spring_hanger_and_crossmember"),
-        notes="Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; small clevis/equalizer/spring/clip hardware is controlled separately.",
+        notes="Rear axle/drum photos directly show the parking-brake cable/linkage, axle-end hard-line routing, removed spring/lever hardware, and July 12 reconditioned pieces. Small clevis/equalizer/spring/clip hardware remains controlled separately.",
     ),
     "rear_parking_brake_attachment_hardware_20260527": EvidenceRule(
-        direct_specific_components=(),
+        direct_specific_components=(
+            "rear_drum_brake_current_parts_inventory_20260705",
+            "rear_drum_brake_removed_hardware_layout",
+            "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
+            "rear_drum_parking_brake_reconditioned_hardware_20260712",
+            "rear_drum_reconditioned_hardware_update_20260716",
+        ),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember"),
-        notes="Dedicated control row for parking-brake cable attachment hardware: clevis, equalizer, pins, return springs, cable-end clips, and bracket retainers. Route photos are present; release still needs labelled removed hardware and received-cable contents comparison.",
+        notes="Dedicated control row for parking-brake cable attachment hardware: clevis, equalizer, pins, return springs, cable-end clips, and bracket retainers. July 16 adds tidied hardware, remade springs and used replacement pins; all remain install candidates pending side/location control, wear and retention checks, spring comparison, and received-cable contents comparison.",
         direct_media_ids=("20260514_095953_gp_BXoQkXnw", "20260514_100003_gp_Vr2QI7ig"),
     ),
     "rear_differential_axle_inspection_20260517": EvidenceRule(
@@ -381,6 +433,16 @@ RULES: dict[str, EvidenceRule] = {
         direct_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
         indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "frame_and_mount_points"),
         notes="Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos.",
+    ),
+    "suspension_bump_stop_install_20260712": EvidenceRule(
+        direct_specific_components=("suspension_bump_stop_install_set_20260712", "suspension_bump_stop_removed_samples"),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
+        notes="July 12 Bilal Ganj photos show the new bump-stop set in hand. Install at the front/rear spring bump-stop brackets only after rust-treating the metal mounting plates and confirming station fit/clearance.",
+    ),
+    "suspension_grinder_damage_weld_repair_20260712": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
+        notes="Owner reports an experienced welder will correct the angle-grinder damage on the suspension area. Existing suspension photos are context only; closure needs repair photos, geometry check, primer touch-in, and fitment signoff.",
     ),
     "eps_vitz_column_layout_measurement": EvidenceRule(
         direct_specific_components=("j40_removed_steering_column_set", "driver_footwell_firewall_and_wiring", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
@@ -567,9 +629,9 @@ RULES: dict[str, EvidenceRule] = {
         notes="May 2 selected pipe photos directly document the made-to-order cooling pipe sample set; engine-bay routing photos provide supporting context.",
     ),
     "replacement_pipe_ordering_matrix": EvidenceRule(
-        direct_specific_components=(),
+        direct_specific_components=("bilal_ganj_replacement_pipe_hose_set_20260712",),
         indirect_specific_components=(),
-        notes="Replacement pipe ordering is limited to selected pipe sample photos and close pipe/hose/line location evidence; body rubbers and broad chassis/mechanical context are excluded.",
+        notes="Replacement pipe ordering is limited to selected pipe sample photos, close pipe/hose/line location evidence, and the July 12 received pipe/hose/clamp set. Body rubbers and broad chassis/mechanical context are excluded; exact circuit assignment still needs old-route matching.",
         direct_media_ids=(
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",

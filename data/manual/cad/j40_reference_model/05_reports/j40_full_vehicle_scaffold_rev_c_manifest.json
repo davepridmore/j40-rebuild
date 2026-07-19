@@ -24,7 +24,7 @@
     "https://forum.ih8mud.com/threads/a-lot-of-people-have-been-asking-for-this-cad-model-for-fj40-frame.798358/",
     "https://forum.ih8mud.com/threads/3d-print-and-cad-file-repository-40-series.1281295/"
   ],
-  "part_count": 1298,
+  "part_count": 1494,
   "as_fitted_route_scope": "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_scope_20260531.csv",
   "as_fitted_route_model_coverage": "data/manual/cad/j40_reference_model/05_reports/j40_as_fitted_route_model_coverage_20260531.csv",
   "pakistan_route_purchase_bom": "data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv",
@@ -33,7 +33,8 @@
   "as_fitted_route_rows_represented": 28,
   "as_fitted_route_part_count": 43,
   "mechanical_clearance_part_count": 6,
-  "measurement_datum_part_count": 20,
+  "measurement_datum_part_count": 32,
+  "suspension_connection_part_count": 196,
   "reference_gallery_image_count": 12,
   "online_reference_inventory": "data/manual/cad/j40_reference_model/05_reports/j40_full_vehicle_scaffold_rev_c_online_reference_inventory.csv",
   "outputs": [

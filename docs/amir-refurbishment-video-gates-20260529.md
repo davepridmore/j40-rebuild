@@ -34,23 +34,25 @@ Reject if hose neck positions change, mounting tabs are missing, the shop wants 
 
 ## Brake Booster / Servo Video Gate
 
+Current route: service/rebuild the removed old booster first. A direct-match refurbished exchange unit is fallback only if the old booster cannot be rebuilt and the sample match is proven on video.
+
 Before payment, exchange purchase, or final refurbished-unit collection, Amir must send these videos:
 
 | Video | Must show |
 | --- | --- |
 | Old booster identity | Full old booster/servo, shell diameter/depth, firewall studs, master-cylinder studs, center bore/seat, pedal pushrod, clevis, boot, vacuum check valve/grommet, and any markings. |
-| Sample match | Old booster beside the candidate/refurbished unit or old booster before/after rebuild; compare firewall studs, master studs, pushrod/clevis, shell diameter/depth, and check-valve position. |
+| Sample match | Old booster before/after rebuild, or old booster beside the candidate/refurbished fallback unit; compare firewall studs, master studs, pushrod/clevis, shell diameter/depth, and check-valve position. |
 | Interface close-up | Master-cylinder mounting face, pushrod tip/depth, clevis thread and pin hole, firewall bracket/studs, check-valve/grommet, and hose barb direction. |
 | Vacuum hold test | Hand vacuum pump or bench tester connected to the actual booster, gauge visible, no obvious leakdown for at least 60 seconds, and no hissing. |
 | Assist movement test | Pushrod/diaphragm action while vacuum is applied, with smooth return and no sticking. |
 | Contamination check | Master-cylinder side opened/visible enough to show no brake-fluid pooling inside the booster and no rotten seal debris. |
 | Final acceptance video | Refurbished/matched unit with all studs, clevis/pushrod, check valve/grommet, boots, and mounting faces shown before payment/collection. |
 
-Reject if it is a raw untested used booster, single-diaphragm/drum-brake unit, welded or hammered shell, wrong stud pattern, wrong pushrod/clevis, missing check valve/grommet, visible brake-fluid contamination, hissing, or any vacuum leakdown the shop cannot explain and fix.
+Reject if the shop cannot service/rebuild or bench-test our old booster, or if the fallback is a raw untested used booster, single-diaphragm/drum-brake unit, welded or hammered shell, wrong stud pattern, wrong pushrod/clevis, missing check valve/grommet, visible brake-fluid contamination, hissing, or any vacuum leakdown the shop cannot explain and fix.
 
 ## Payment Rule
 
 Amir can collect prices and shop cards freely. Payment is only approved after the video set is reviewed and the chosen route is explicitly accepted:
 
 - radiator: recore our sample, or build a new copper/brass radiator by sample;
-- brake booster: rebuild our old booster, or supply a professionally refurbished direct-match exchange unit.
+- brake booster: service/rebuild our old booster first; use a professionally refurbished direct-match exchange unit only if rebuild is not viable and the sample match is proven.

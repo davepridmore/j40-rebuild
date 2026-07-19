@@ -1,6 +1,6 @@
 part_id,qty,material,process,notes
-FCS-UPRIGHT-L,1,"50 x 50 x 4 mm mild-steel angle preferred; 40 x 40 x 3-4 mm box/formed plate fallback","site-cut, drill/slot after mock-up","Left full-height cooling-stack upright from chassis/front-support pickup to radiator top plane. Final height and hole fields are site-fit."
-FCS-UPRIGHT-R,1,"50 x 50 x 4 mm mild-steel angle preferred; 40 x 40 x 3-4 mm box/formed plate fallback","site-cut, drill/slot after mock-up","Right full-height cooling-stack upright from chassis/front-support pickup to radiator top plane. Final height and hole fields are site-fit."
+FCS-UPRIGHT-L,1,"4.0 mm mild-steel formed angle matching existing 48 mm face","duplicate/mirror existing; weld after complete dry-fit","New left upright: 410 mm upright height with 58 mm top return 70 mm chassis bridge and 80 mm outer leg basis. Transfer from the real existing upright before welding."
+FCS-UPRIGHT-R,0,"existing vehicle part","retain and inspect","Existing upright is the physical pattern and datum; do not replace unless inspection finds damage."
 FCS-LOWER-SADDLE-L,1,"4.0 mm mild steel plate or formed angle saddle","form/drill after chassis width measure","Bolt-through saddle or weld-prep foot for left upright. Use crush tube/spacer if boxed metal is clamped."
 FCS-LOWER-SADDLE-R,1,"4.0 mm mild steel plate or formed angle saddle","form/drill after chassis width measure","Bolt-through saddle or weld-prep foot for right upright. Use crush tube/spacer if boxed metal is clamped."
 FCS-RAD-TAB-UPPER,2,"3.0-4.0 mm mild steel tab","cut slot after radiator ear dry-fit","Rubber-isolated upper radiator tabs; slot only enough for tolerance, not to compensate for wrong radiator."
@@ -11,4 +11,6 @@ FCS-FAN-HOOP,1,"25 x 25 x 3 mm angle or 3 mm strap hoop","optional; fabricate on
 FCS-DRIER-CLAMP,1,"2.0-3.0 mm mild steel/aluminium strap plus rubber liner","bend to drier OD after drier selected","Vertical receiver-drier clamp on side upright; drier remains removable."
 FCS-CROSS-UP,1,"25 x 25 x 3 mm angle or 30 x 3 mm flat","optional bolt-in","Upper removable crossbar if condenser/fan tab stiffness needs it."
 FCS-CROSS-LOW,1,"25 x 25 x 3 mm angle or 30 x 3 mm flat","optional bolt-in","Lower removable crossbar if condenser/fan tab stiffness needs it."
-
+FCS-SIDE-RAIL,2,"30 x 3 mm mild-steel flat or 25 x 25 x 3 mm angle","cut to M2 minus 10; drill after mock-up","Removable component carrier rails between structural uprights; 5 mm top/bottom clearance."
+FCS-ADAPTER-TAB,4,"50 x 70 x 4 mm mild steel","cut 9 x 20 vertical slot; joggle to M7","Maximum simple offset 20 mm; use boxed two-shear-face spacer above 20 mm."
+FCS-IC-TAB,4,"4.0 mm mild steel","drill/slot after actual intercooler dry-fit","Rubber-isolated intercooler tabs; one upper tab permits 2-3 mm horizontal thermal movement."

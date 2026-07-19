@@ -99,6 +99,27 @@ Release position:
 - The local buy package selects Master Radiators/KorTech for the radiator route, Snow Cool/Arsalan for condenser/drier/evaporator leads, and Sanpak/Arsalan/Cool Sun style A/C hose support, but final purchase remains gated by dimensions and fitting proof.
 - The existing Sanden-type compressor is compatible in principle with the condenser/drier layout, but hose crimping and final charge remain blocked until the compressor port style, clutch voltage, belt alignment, oil/refrigerant state, leak test, and pressure-switch protection are confirmed.
 
+## 2H Turbo-Readiness Chassis Provisions - Rev A
+
+Directory: [data/manual/fabrication/turbo_readiness_chassis_rev_a](../data/manual/fabrication/turbo_readiness_chassis_rev_a/README.md)
+
+Control spec: [turbo-readiness-chassis-welder-fabrication-spec-20260717.md](turbo-readiness-chassis-welder-fabrication-spec-20260717.md)
+
+Primary files:
+- `data/manual/fabrication/turbo_readiness_chassis_rev_a/README.md`
+- `data/manual/fabrication/turbo_readiness_chassis_rev_a/fabrication_scope.csv`
+- `data/manual/fabrication/turbo_readiness_chassis_rev_a/inspection_checklist.csv`
+
+DXF files:
+- None. This is a measured site-fit interface release; turbo-dependent positions and hole centres must be transferred from the assembled vehicle or rigid full-size templates.
+
+Release position:
+- **Superseded as a current welder handout on 2026-07-19.** Use [chassis-welder-steering-turbo-component-first-instruction-20260719.md](chassis-welder-steering-turbo-component-first-instruction-20260719.md).
+- Released now: clean/inspect/photograph the existing steering-box mount and continue unrelated approved chassis work.
+- No J60 steering or turbo conversion-specific welding is released until the actual matched component sets are present for trial fit.
+- Conditional after physical component trial fit: steering mounting/reinforcement, line/loom relocation tabs, exhaust-hanger interfaces, heat-shield interfaces and removable airbox/breather/charge-support interfaces.
+- Explicitly excluded: manifold, turbo support, downpipe, complete exhaust, sump/oil-return work and charge-pipe fabrication.
+
 ## Suspension Wood Cribbing - Rev A
 
 Directory: [data/manual/fabrication/suspension_wood_cribbing_rev_a](../data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md)

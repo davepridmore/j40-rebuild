@@ -59,6 +59,10 @@ newmtl brass
 Kd 0.768627 0.603922 0.239216
 d 1.000000
 
+newmtl datum
+Kd 0.486275 0.435294 0.796078
+d 1.000000
+
 newmtl electrical
 Kd 0.839216 0.278431 0.215686
 d 1.000000
@@ -81,10 +85,6 @@ d 1.000000
 
 newmtl fluid
 Kd 0.309804 0.498039 0.333333
-d 1.000000
-
-newmtl datum
-Kd 0.486275 0.435294 0.796078
 d 1.000000
 
 newmtl route_control

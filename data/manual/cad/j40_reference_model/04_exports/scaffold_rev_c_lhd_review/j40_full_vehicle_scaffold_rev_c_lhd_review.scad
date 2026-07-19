@@ -1402,6 +1402,202 @@ color([0.722, 0.722, 0.722, 0.80])
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(800, -430, 405, "z", 24, 210);
 
+// running_gear: front_left_fixed_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(262, -430, 430, "y", 92, 96);
+
+// running_gear: front_left_fixed_spring_eye_inner_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(262, -430, 430, "y", 38, 132);
+
+// chassis: left_front_fixed_hanger_cross_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(262, -432.5, 430, "y", 44, 152);
+
+// chassis: left_front_fixed_hanger_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(262, -432.5, 430, "y", 30, 190);
+
+// chassis: left_front_fixed_hanger_outer_bolt_head - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(244, -553, 412, 36, 18, 36);
+
+// chassis: left_front_fixed_hanger_inner_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(244, -312, 412, 36, 18, 36);
+
+// running_gear: front_left_fixed_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[272.78, -465, 438.932], [251.22, -465, 421.068], [309.22, -465, 351.068], [330.78, -465, 368.932], [272.78, -395, 438.932], [251.22, -395, 421.068], [309.22, -395, 351.068], [330.78, -395, 368.932]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_fixed_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[268.803, -463, 420.644], [255.197, -463, 403.356], [363.197, -463, 318.356], [376.803, -463, 335.644], [268.803, -397, 420.644], [255.197, -397, 403.356], [363.197, -397, 318.356], [376.803, -397, 335.644]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// chassis: left_front_shackle_upper_frame_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1332, -432.5, 430, "y", 86, 126);
+
+// chassis: left_front_shackle_upper_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(1332, -432.5, 430, "y", 36, 152);
+
+// running_gear: front_left_shackle_lower_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1261, -430, 356, "y", 92, 96);
+
+// running_gear: front_left_shackle_lower_spring_eye_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(1261, -430, 356, "y", 38, 132);
+
+// running_gear: front_left_shackle_outer_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[1352.93, -516, 409.922], [1311.07, -516, 450.078], [1240.07, -516, 376.078], [1281.93, -516, 335.922], [1352.93, -498, 409.922], [1311.07, -498, 450.078], [1240.07, -498, 376.078], [1281.93, -498, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_shackle_inner_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[1352.93, -369, 409.922], [1311.07, -369, 450.078], [1240.07, -369, 376.078], [1281.93, -369, 335.922], [1352.93, -351, 409.922], [1311.07, -351, 450.078], [1240.07, -351, 376.078], [1281.93, -351, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_shackle_upper_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1332, -432.5, 430, "y", 30, 190);
+
+// running_gear: front_left_shackle_lower_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1261, -430, 356, "y", 30, 168);
+
+// running_gear: front_left_shackle_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[1260.78, -465, 342.002], [1261.22, -465, 369.998], [1135.22, -465, 371.998], [1134.78, -465, 344.002], [1260.78, -395, 342.002], [1261.22, -395, 369.998], [1135.22, -395, 371.998], [1134.78, -395, 344.002]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_shackle_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[1261.74, -463, 327.025], [1260.26, -463, 348.975], [1081.26, -463, 336.975], [1082.74, -463, 315.025], [1261.74, -397, 327.025], [1260.26, -397, 348.975], [1081.26, -397, 336.975], [1082.74, -397, 315.025]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_leaf_pack_rebound_clip_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(403, -430, 300, 44, 98, 72);
+
+// running_gear: front_left_leaf_pack_rebound_clip_1_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(425, -430, 352, "y", 16, 112);
+
+// running_gear: front_left_leaf_pack_rebound_clip_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(1028, -430, 300, 44, 98, 72);
+
+// running_gear: front_left_leaf_pack_rebound_clip_2_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1050, -430, 352, "y", 16, 112);
+
+// running_gear: front_left_spring_center_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(735, -430, 338, "z", 18, 88);
+
+// running_gear: front_left_axle_spring_perch_welded_saddle - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(653, -430, 352, 164, 126, 38);
+
+// running_gear: front_left_spring_perch_lower_clamp_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(609, -430, 290, 252, 146, 34);
+
+// running_gear: front_left_axle_tube_contact_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(643, -430, 452, 184, 132, 24);
+
+// running_gear: front_left_u_bolt_1_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(647, -430, 490, 36, 118, 24);
+
+// running_gear: front_left_u_bolt_1_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(665, -472, 394, "z", 18, 226);
+
+// running_gear: front_left_u_bolt_1_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(665, -472, 276, "z", 32, 24);
+
+// running_gear: front_left_u_bolt_1_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(665, -388, 394, "z", 18, 226);
+
+// running_gear: front_left_u_bolt_1_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(665, -388, 276, "z", 32, 24);
+
+// running_gear: front_left_u_bolt_2_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(787, -430, 490, 36, 118, 24);
+
+// running_gear: front_left_u_bolt_2_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(805, -472, 394, "z", 18, 226);
+
+// running_gear: front_left_u_bolt_2_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(805, -472, 276, "z", 32, 24);
+
+// running_gear: front_left_u_bolt_2_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(805, -388, 394, "z", 18, 226);
+
+// running_gear: front_left_u_bolt_2_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(805, -388, 276, "z", 32, 24);
+
+// running_gear: front_left_shock_lower_mount_inner_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(853, -484, 349, 48, 18, 92);
+
+// running_gear: front_left_shock_lower_mount_outer_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(853, -556, 349, 48, 18, 92);
+
+// running_gear: front_left_shock_lower_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(877, -520, 395, "y", 30, 126);
+
+// running_gear: front_left_shock_lower_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(877, -520, 395, "y", 72, 82);
+
+// running_gear: front_left_shock_upper_tower_gusset_front - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(901, -520, 765, 38, 118, 110);
+
+// running_gear: front_left_shock_upper_tower_gusset_rear - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(987, -520, 765, 38, 118, 110);
+
+// running_gear: front_left_shock_upper_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(945, -520, 855, "y", 30, 146);
+
+// running_gear: front_left_shock_upper_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(945, -520, 855, "y", 72, 86);
+
+// running_gear: front_left_shock_centerline_connection_path - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  polyhedron(points = [[864.14, -541, 396.901], [889.86, -541, 393.099], [957.86, -541, 853.099], [932.14, -541, 856.901], [864.14, -499, 396.901], [889.86, -499, 393.099], [957.86, -499, 853.099], [932.14, -499, 856.901]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_left_bump_stop_axle_strike_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(590, -495, 476, 138, 105, 22);
+
+// datum: front_left_fixed_hanger_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(262, -430, 430, "y", 12, 170);
+
+// datum: front_left_shackle_upper_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(1332, -430, 430, "y", 12, 170);
+
+// datum: front_left_shackle_lower_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(1261, -430, 356, "y", 12, 152);
+
 // running_gear: front_right_leaf_spring_layer_1 - L2 visible-detail primitive
 color([0.133, 0.133, 0.133, 0.80])
   box_part(215, 430, 305, 935, 78, 14);
@@ -1421,6 +1617,202 @@ color([0.722, 0.722, 0.722, 0.80])
 // running_gear: front_right_u_bolt_2 - L2 service datum
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(800, 430, 405, "z", 24, 210);
+
+// running_gear: front_right_fixed_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(262, 430, 430, "y", 92, 96);
+
+// running_gear: front_right_fixed_spring_eye_inner_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(262, 430, 430, "y", 38, 132);
+
+// chassis: right_front_fixed_hanger_cross_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(262, 432.5, 430, "y", 44, 152);
+
+// chassis: right_front_fixed_hanger_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(262, 432.5, 430, "y", 30, 190);
+
+// chassis: right_front_fixed_hanger_outer_bolt_head - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(244, 553, 412, 36, 18, 36);
+
+// chassis: right_front_fixed_hanger_inner_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(244, 312, 412, 36, 18, 36);
+
+// running_gear: front_right_fixed_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[272.78, 395, 438.932], [251.22, 395, 421.068], [309.22, 395, 351.068], [330.78, 395, 368.932], [272.78, 465, 438.932], [251.22, 465, 421.068], [309.22, 465, 351.068], [330.78, 465, 368.932]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_fixed_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[268.803, 397, 420.644], [255.197, 397, 403.356], [363.197, 397, 318.356], [376.803, 397, 335.644], [268.803, 463, 420.644], [255.197, 463, 403.356], [363.197, 463, 318.356], [376.803, 463, 335.644]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// chassis: right_front_shackle_upper_frame_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1332, 432.5, 430, "y", 86, 126);
+
+// chassis: right_front_shackle_upper_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(1332, 432.5, 430, "y", 36, 152);
+
+// running_gear: front_right_shackle_lower_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(1261, 430, 356, "y", 92, 96);
+
+// running_gear: front_right_shackle_lower_spring_eye_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(1261, 430, 356, "y", 38, 132);
+
+// running_gear: front_right_shackle_outer_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[1352.93, 498, 409.922], [1311.07, 498, 450.078], [1240.07, 498, 376.078], [1281.93, 498, 335.922], [1352.93, 516, 409.922], [1311.07, 516, 450.078], [1240.07, 516, 376.078], [1281.93, 516, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_shackle_inner_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[1352.93, 351, 409.922], [1311.07, 351, 450.078], [1240.07, 351, 376.078], [1281.93, 351, 335.922], [1352.93, 369, 409.922], [1311.07, 369, 450.078], [1240.07, 369, 376.078], [1281.93, 369, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_shackle_upper_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1332, 432.5, 430, "y", 30, 190);
+
+// running_gear: front_right_shackle_lower_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1261, 430, 356, "y", 30, 168);
+
+// running_gear: front_right_shackle_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[1260.78, 395, 342.002], [1261.22, 395, 369.998], [1135.22, 395, 371.998], [1134.78, 395, 344.002], [1260.78, 465, 342.002], [1261.22, 465, 369.998], [1135.22, 465, 371.998], [1134.78, 465, 344.002]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_shackle_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[1261.74, 397, 327.025], [1260.26, 397, 348.975], [1081.26, 397, 336.975], [1082.74, 397, 315.025], [1261.74, 463, 327.025], [1260.26, 463, 348.975], [1081.26, 463, 336.975], [1082.74, 463, 315.025]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_leaf_pack_rebound_clip_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(403, 430, 300, 44, 98, 72);
+
+// running_gear: front_right_leaf_pack_rebound_clip_1_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(425, 430, 352, "y", 16, 112);
+
+// running_gear: front_right_leaf_pack_rebound_clip_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(1028, 430, 300, 44, 98, 72);
+
+// running_gear: front_right_leaf_pack_rebound_clip_2_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(1050, 430, 352, "y", 16, 112);
+
+// running_gear: front_right_spring_center_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(735, 430, 338, "z", 18, 88);
+
+// running_gear: front_right_axle_spring_perch_welded_saddle - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(653, 430, 352, 164, 126, 38);
+
+// running_gear: front_right_spring_perch_lower_clamp_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(609, 430, 290, 252, 146, 34);
+
+// running_gear: front_right_axle_tube_contact_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(643, 430, 452, 184, 132, 24);
+
+// running_gear: front_right_u_bolt_1_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(647, 430, 490, 36, 118, 24);
+
+// running_gear: front_right_u_bolt_1_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(665, 388, 394, "z", 18, 226);
+
+// running_gear: front_right_u_bolt_1_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(665, 388, 276, "z", 32, 24);
+
+// running_gear: front_right_u_bolt_1_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(665, 472, 394, "z", 18, 226);
+
+// running_gear: front_right_u_bolt_1_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(665, 472, 276, "z", 32, 24);
+
+// running_gear: front_right_u_bolt_2_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(787, 430, 490, 36, 118, 24);
+
+// running_gear: front_right_u_bolt_2_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(805, 388, 394, "z", 18, 226);
+
+// running_gear: front_right_u_bolt_2_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(805, 388, 276, "z", 32, 24);
+
+// running_gear: front_right_u_bolt_2_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(805, 472, 394, "z", 18, 226);
+
+// running_gear: front_right_u_bolt_2_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(805, 472, 276, "z", 32, 24);
+
+// running_gear: front_right_shock_lower_mount_inner_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(853, 484, 349, 48, 18, 92);
+
+// running_gear: front_right_shock_lower_mount_outer_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(853, 556, 349, 48, 18, 92);
+
+// running_gear: front_right_shock_lower_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(877, 520, 395, "y", 30, 126);
+
+// running_gear: front_right_shock_lower_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(877, 520, 395, "y", 72, 82);
+
+// running_gear: front_right_shock_upper_tower_gusset_front - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(901, 520, 765, 38, 118, 110);
+
+// running_gear: front_right_shock_upper_tower_gusset_rear - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(987, 520, 765, 38, 118, 110);
+
+// running_gear: front_right_shock_upper_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(945, 520, 855, "y", 30, 146);
+
+// running_gear: front_right_shock_upper_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(945, 520, 855, "y", 72, 86);
+
+// running_gear: front_right_shock_centerline_connection_path - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  polyhedron(points = [[864.14, 499, 396.901], [889.86, 499, 393.099], [957.86, 499, 853.099], [932.14, 499, 856.901], [864.14, 541, 396.901], [889.86, 541, 393.099], [957.86, 541, 853.099], [932.14, 541, 856.901]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: front_right_bump_stop_axle_strike_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(590, 495, 476, 138, 105, 22);
+
+// datum: front_right_fixed_hanger_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(262, 430, 430, "y", 12, 170);
+
+// datum: front_right_shackle_upper_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(1332, 430, 430, "y", 12, 170);
+
+// datum: front_right_shackle_lower_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(1261, 430, 356, "y", 12, 152);
 
 // running_gear: rear_left_brake_backing_plate - L2 service datum
 color([0.722, 0.722, 0.722, 0.80])
@@ -1450,6 +1842,202 @@ color([0.722, 0.722, 0.722, 0.80])
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3085, -430, 405, "z", 24, 210);
 
+// running_gear: rear_left_fixed_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2547, -430, 430, "y", 92, 96);
+
+// running_gear: rear_left_fixed_spring_eye_inner_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2547, -430, 430, "y", 38, 132);
+
+// chassis: left_rear_fixed_hanger_cross_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2547, -432.5, 430, "y", 44, 152);
+
+// chassis: left_rear_fixed_hanger_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2547, -432.5, 430, "y", 30, 190);
+
+// chassis: left_rear_fixed_hanger_outer_bolt_head - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(2529, -553, 412, 36, 18, 36);
+
+// chassis: left_rear_fixed_hanger_inner_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(2529, -312, 412, 36, 18, 36);
+
+// running_gear: rear_left_fixed_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[2557.78, -465, 438.932], [2536.22, -465, 421.068], [2594.22, -465, 351.068], [2615.78, -465, 368.932], [2557.78, -395, 438.932], [2536.22, -395, 421.068], [2594.22, -395, 351.068], [2615.78, -395, 368.932]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_fixed_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[2553.8, -463, 420.644], [2540.2, -463, 403.356], [2648.2, -463, 318.356], [2661.8, -463, 335.644], [2553.8, -397, 420.644], [2540.2, -397, 403.356], [2648.2, -397, 318.356], [2661.8, -397, 335.644]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// chassis: left_rear_shackle_upper_frame_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3617, -432.5, 430, "y", 86, 126);
+
+// chassis: left_rear_shackle_upper_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3617, -432.5, 430, "y", 36, 152);
+
+// running_gear: rear_left_shackle_lower_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3546, -430, 356, "y", 92, 96);
+
+// running_gear: rear_left_shackle_lower_spring_eye_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3546, -430, 356, "y", 38, 132);
+
+// running_gear: rear_left_shackle_outer_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[3637.93, -516, 409.922], [3596.07, -516, 450.078], [3525.07, -516, 376.078], [3566.93, -516, 335.922], [3637.93, -498, 409.922], [3596.07, -498, 450.078], [3525.07, -498, 376.078], [3566.93, -498, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_shackle_inner_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[3637.93, -369, 409.922], [3596.07, -369, 450.078], [3525.07, -369, 376.078], [3566.93, -369, 335.922], [3637.93, -351, 409.922], [3596.07, -351, 450.078], [3525.07, -351, 376.078], [3566.93, -351, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_shackle_upper_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3617, -432.5, 430, "y", 30, 190);
+
+// running_gear: rear_left_shackle_lower_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3546, -430, 356, "y", 30, 168);
+
+// running_gear: rear_left_shackle_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[3545.78, -465, 342.002], [3546.22, -465, 369.998], [3420.22, -465, 371.998], [3419.78, -465, 344.002], [3545.78, -395, 342.002], [3546.22, -395, 369.998], [3420.22, -395, 371.998], [3419.78, -395, 344.002]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_shackle_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[3546.74, -463, 327.025], [3545.26, -463, 348.975], [3366.26, -463, 336.975], [3367.74, -463, 315.025], [3546.74, -397, 327.025], [3545.26, -397, 348.975], [3366.26, -397, 336.975], [3367.74, -397, 315.025]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_leaf_pack_rebound_clip_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2688, -430, 300, 44, 98, 72);
+
+// running_gear: rear_left_leaf_pack_rebound_clip_1_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2710, -430, 352, "y", 16, 112);
+
+// running_gear: rear_left_leaf_pack_rebound_clip_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3313, -430, 300, 44, 98, 72);
+
+// running_gear: rear_left_leaf_pack_rebound_clip_2_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3335, -430, 352, "y", 16, 112);
+
+// running_gear: rear_left_spring_center_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3020, -430, 338, "z", 18, 88);
+
+// running_gear: rear_left_axle_spring_perch_welded_saddle - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2938, -430, 352, 164, 126, 38);
+
+// running_gear: rear_left_spring_perch_lower_clamp_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2894, -430, 290, 252, 146, 34);
+
+// running_gear: rear_left_axle_tube_contact_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2928, -430, 452, 184, 132, 24);
+
+// running_gear: rear_left_u_bolt_1_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2932, -430, 490, 36, 118, 24);
+
+// running_gear: rear_left_u_bolt_1_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2950, -472, 394, "z", 18, 226);
+
+// running_gear: rear_left_u_bolt_1_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2950, -472, 276, "z", 32, 24);
+
+// running_gear: rear_left_u_bolt_1_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2950, -388, 394, "z", 18, 226);
+
+// running_gear: rear_left_u_bolt_1_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2950, -388, 276, "z", 32, 24);
+
+// running_gear: rear_left_u_bolt_2_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3072, -430, 490, 36, 118, 24);
+
+// running_gear: rear_left_u_bolt_2_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3090, -472, 394, "z", 18, 226);
+
+// running_gear: rear_left_u_bolt_2_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3090, -472, 276, "z", 32, 24);
+
+// running_gear: rear_left_u_bolt_2_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3090, -388, 394, "z", 18, 226);
+
+// running_gear: rear_left_u_bolt_2_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3090, -388, 276, "z", 32, 24);
+
+// running_gear: rear_left_shock_lower_mount_inner_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3138, -484, 349, 48, 18, 92);
+
+// running_gear: rear_left_shock_lower_mount_outer_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3138, -556, 349, 48, 18, 92);
+
+// running_gear: rear_left_shock_lower_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3162, -520, 395, "y", 30, 126);
+
+// running_gear: rear_left_shock_lower_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3162, -520, 395, "y", 72, 82);
+
+// running_gear: rear_left_shock_upper_tower_gusset_front - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(3186, -520, 765, 38, 118, 110);
+
+// running_gear: rear_left_shock_upper_tower_gusset_rear - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(3272, -520, 765, 38, 118, 110);
+
+// running_gear: rear_left_shock_upper_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3230, -520, 855, "y", 30, 146);
+
+// running_gear: rear_left_shock_upper_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3230, -520, 855, "y", 72, 86);
+
+// running_gear: rear_left_shock_centerline_connection_path - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  polyhedron(points = [[3149.14, -541, 396.901], [3174.86, -541, 393.099], [3242.86, -541, 853.099], [3217.14, -541, 856.901], [3149.14, -499, 396.901], [3174.86, -499, 393.099], [3242.86, -499, 853.099], [3217.14, -499, 856.901]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_left_bump_stop_axle_strike_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2875, -495, 476, 138, 105, 22);
+
+// datum: rear_left_fixed_hanger_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(2547, -430, 430, "y", 12, 170);
+
+// datum: rear_left_shackle_upper_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(3617, -430, 430, "y", 12, 170);
+
+// datum: rear_left_shackle_lower_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(3546, -430, 356, "y", 12, 152);
+
 // running_gear: rear_right_leaf_spring_layer_1 - L2 visible-detail primitive
 color([0.133, 0.133, 0.133, 0.80])
   box_part(2500, 430, 305, 935, 78, 14);
@@ -1469,6 +2057,202 @@ color([0.722, 0.722, 0.722, 0.80])
 // running_gear: rear_right_u_bolt_2 - L2 service datum
 color([0.722, 0.722, 0.722, 0.80])
   cylinder_part(3085, 430, 405, "z", 24, 210);
+
+// running_gear: rear_right_fixed_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(2547, 430, 430, "y", 92, 96);
+
+// running_gear: rear_right_fixed_spring_eye_inner_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2547, 430, 430, "y", 38, 132);
+
+// chassis: right_rear_fixed_hanger_cross_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2547, 432.5, 430, "y", 44, 152);
+
+// chassis: right_rear_fixed_hanger_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2547, 432.5, 430, "y", 30, 190);
+
+// chassis: right_rear_fixed_hanger_outer_bolt_head - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(2529, 553, 412, 36, 18, 36);
+
+// chassis: right_rear_fixed_hanger_inner_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  box_part(2529, 312, 412, 36, 18, 36);
+
+// running_gear: rear_right_fixed_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[2557.78, 395, 438.932], [2536.22, 395, 421.068], [2594.22, 395, 351.068], [2615.78, 395, 368.932], [2557.78, 465, 438.932], [2536.22, 465, 421.068], [2594.22, 465, 351.068], [2615.78, 465, 368.932]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_fixed_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[2553.8, 397, 420.644], [2540.2, 397, 403.356], [2648.2, 397, 318.356], [2661.8, 397, 335.644], [2553.8, 463, 420.644], [2540.2, 463, 403.356], [2648.2, 463, 318.356], [2661.8, 463, 335.644]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// chassis: right_rear_shackle_upper_frame_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3617, 432.5, 430, "y", 86, 126);
+
+// chassis: right_rear_shackle_upper_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3617, 432.5, 430, "y", 36, 152);
+
+// running_gear: rear_right_shackle_lower_spring_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3546, 430, 356, "y", 92, 96);
+
+// running_gear: rear_right_shackle_lower_spring_eye_sleeve - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3546, 430, 356, "y", 38, 132);
+
+// running_gear: rear_right_shackle_outer_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[3637.93, 498, 409.922], [3596.07, 498, 450.078], [3525.07, 498, 376.078], [3566.93, 498, 335.922], [3637.93, 516, 409.922], [3596.07, 516, 450.078], [3525.07, 516, 376.078], [3566.93, 516, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_shackle_inner_link_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  polyhedron(points = [[3637.93, 351, 409.922], [3596.07, 351, 450.078], [3525.07, 351, 376.078], [3566.93, 351, 335.922], [3637.93, 369, 409.922], [3596.07, 369, 450.078], [3525.07, 369, 376.078], [3566.93, 369, 335.922]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_shackle_upper_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3617, 432.5, 430, "y", 30, 190);
+
+// running_gear: rear_right_shackle_lower_pin_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3546, 430, 356, "y", 30, 168);
+
+// running_gear: rear_right_shackle_eye_leaf_wrap_upper - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[3545.78, 395, 342.002], [3546.22, 395, 369.998], [3420.22, 395, 371.998], [3419.78, 395, 344.002], [3545.78, 465, 342.002], [3546.22, 465, 369.998], [3420.22, 465, 371.998], [3419.78, 465, 344.002]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_shackle_eye_leaf_wrap_lower - L3 suspension connection datum
+color([0.133, 0.133, 0.133, 0.80])
+  polyhedron(points = [[3546.74, 397, 327.025], [3545.26, 397, 348.975], [3366.26, 397, 336.975], [3367.74, 397, 315.025], [3546.74, 463, 327.025], [3545.26, 463, 348.975], [3366.26, 463, 336.975], [3367.74, 463, 315.025]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_leaf_pack_rebound_clip_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2688, 430, 300, 44, 98, 72);
+
+// running_gear: rear_right_leaf_pack_rebound_clip_1_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2710, 430, 352, "y", 16, 112);
+
+// running_gear: rear_right_leaf_pack_rebound_clip_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3313, 430, 300, 44, 98, 72);
+
+// running_gear: rear_right_leaf_pack_rebound_clip_2_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3335, 430, 352, "y", 16, 112);
+
+// running_gear: rear_right_spring_center_bolt - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3020, 430, 338, "z", 18, 88);
+
+// running_gear: rear_right_axle_spring_perch_welded_saddle - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2938, 430, 352, 164, 126, 38);
+
+// running_gear: rear_right_spring_perch_lower_clamp_plate - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2894, 430, 290, 252, 146, 34);
+
+// running_gear: rear_right_axle_tube_contact_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2928, 430, 452, 184, 132, 24);
+
+// running_gear: rear_right_u_bolt_1_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2932, 430, 490, 36, 118, 24);
+
+// running_gear: rear_right_u_bolt_1_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2950, 388, 394, "z", 18, 226);
+
+// running_gear: rear_right_u_bolt_1_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2950, 388, 276, "z", 32, 24);
+
+// running_gear: rear_right_u_bolt_1_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(2950, 472, 394, "z", 18, 226);
+
+// running_gear: rear_right_u_bolt_1_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(2950, 472, 276, "z", 32, 24);
+
+// running_gear: rear_right_u_bolt_2_top_crown - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3072, 430, 490, 36, 118, 24);
+
+// running_gear: rear_right_u_bolt_2_leg_1 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3090, 388, 394, "z", 18, 226);
+
+// running_gear: rear_right_u_bolt_2_leg_1_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3090, 388, 276, "z", 32, 24);
+
+// running_gear: rear_right_u_bolt_2_leg_2 - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  cylinder_part(3090, 472, 394, "z", 18, 226);
+
+// running_gear: rear_right_u_bolt_2_leg_2_lower_nut - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3090, 472, 276, "z", 32, 24);
+
+// running_gear: rear_right_shock_lower_mount_inner_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3138, 484, 349, 48, 18, 92);
+
+// running_gear: rear_right_shock_lower_mount_outer_tab - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(3138, 556, 349, 48, 18, 92);
+
+// running_gear: rear_right_shock_lower_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3162, 520, 395, "y", 30, 126);
+
+// running_gear: rear_right_shock_lower_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3162, 520, 395, "y", 72, 82);
+
+// running_gear: rear_right_shock_upper_tower_gusset_front - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(3186, 520, 765, 38, 118, 110);
+
+// running_gear: rear_right_shock_upper_tower_gusset_rear - L3 suspension connection datum
+color([0.176, 0.188, 0.200, 0.80])
+  box_part(3272, 520, 765, 38, 118, 110);
+
+// running_gear: rear_right_shock_upper_pin - L3 suspension connection datum
+color([0.769, 0.604, 0.239, 0.80])
+  cylinder_part(3230, 520, 855, "y", 30, 146);
+
+// running_gear: rear_right_shock_upper_eye_bushing - L3 suspension connection datum
+color([0.114, 0.114, 0.114, 0.80])
+  cylinder_part(3230, 520, 855, "y", 72, 86);
+
+// running_gear: rear_right_shock_centerline_connection_path - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  polyhedron(points = [[3149.14, 499, 396.901], [3174.86, 499, 393.099], [3242.86, 499, 853.099], [3217.14, 499, 856.901], [3149.14, 541, 396.901], [3174.86, 541, 393.099], [3242.86, 541, 853.099], [3217.14, 541, 856.901]], faces = [[0, 1, 2, 3], [4, 7, 6, 5], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]], convexity = 4);
+
+// running_gear: rear_right_bump_stop_axle_strike_pad - L3 suspension connection datum
+color([0.722, 0.722, 0.722, 0.80])
+  box_part(2875, 495, 476, 138, 105, 22);
+
+// datum: rear_right_fixed_hanger_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(2547, 430, 430, "y", 12, 170);
+
+// datum: rear_right_shackle_upper_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(3617, 430, 430, "y", 12, 170);
+
+// datum: rear_right_shackle_lower_pin_center_datum - L3 suspension connection datum
+color([0.486, 0.435, 0.796, 0.80])
+  cylinder_part(3546, 430, 356, "y", 12, 152);
 
 // brake_system: front_left_vented_disc_rotor - project-photo evidence
 color([0.722, 0.722, 0.722, 0.80])

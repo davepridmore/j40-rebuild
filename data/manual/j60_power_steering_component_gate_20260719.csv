@@ -1,0 +1,16 @@
+item_id,group,item,required_before_fabrication,acceptance,inventory_status,evidence_ref,notes
+J60PS-001,steering,RHD J60/HJ60 hydraulic steering box,yes,"RHD orientation; readable ID; mounting pattern ports splines and condition recorded",missing,,Do not buy unidentified or LHD box
+J60PS-002,steering,Matching pitman arm nut and washer,yes,"Fits sector spline/index; no cracks or damaged taper/thread",missing,,Keep matched to selected box
+J60PS-003,chassis,Proven FJ40-to-J60 conversion frame plate/template,yes,"Matches actual box and RHD J40 rail after trial fit",missing,,Commercial plate preferred; local copy only from physical template
+J60PS-004,chassis,Mounting bolts sleeves/crush tubes and spacers,yes,"Dimensions transferred from actual rail/plate; graded hardware",missing,,Do not guess sleeve length
+J60PS-005,shaft,Collapsible/telescoping intermediate shaft,yes,"Adequate travel and spline engagement without bottoming",missing,,Rigid welded shaft not acceptable
+J60PS-006,shaft,Upper and lower U-joints/couplers,yes,"Exact J40-column and J60-box spline match; smooth and positively retained",missing,,Record spline counts/diameters
+J60PS-007,linkage,Drag link and end joints,yes,"Box end and axle end/taper confirmed; adjustment range centres wheels",missing,,Final length set at ride height
+J60PS-008,hydraulics,Power-steering pump compatible with selected box,yes,"Inspected/rebuilt; compatible flow pressure and relief basis",missing,,Do not mix unknown high-output pump
+J60PS-009,hydraulics,2H pump mounting bracket and adjuster,yes,"Fits installed 2H without belt/accessory conflict",missing,,Physical trial fit mandatory
+J60PS-010,hydraulics,Crank/pump pulley and correct belt section,yes,"Aligned grooves and adequate adjustment range",missing,,Verify with straightedge
+J60PS-011,hydraulics,Reservoir cap and mounting bracket,yes,"Clean serviceable upright mounting and correct feed/return ports",missing,,Keep away from turbo heat
+J60PS-012,hydraulics,New high-pressure hose and matched fittings,after_box_pump_position,"Pressure rated; exact pump/box ends; no twist/chafe/heat contact",missing,,Final length after trial fit
+J60PS-013,hydraulics,New return hose and fittings,after_box_pump_position,"Fluid compatible; unrestricted route; correct clamps",missing,,Optional cooler decided after routing
+J60PS-014,service,Donor box/pump service specifications,yes,"Correct fluid torque bleeding and inspection basis identified",missing,,Use exact donor/part identification
+J60PS-015,vehicle,Existing steering mount bare-metal inspection,yes,"Cracks elongation thinning and previous repairs photographed/dispositioned",planned,,No conversion alteration before component trial fit

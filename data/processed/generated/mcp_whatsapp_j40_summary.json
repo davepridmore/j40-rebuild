@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-14T17:57:15+00:00",
+  "generated_at": "2026-07-19T11:43:53+00:00",
   "profiles": [
     {
       "profile_server": "whatsapp-number-1",
       "profile_label": "primary",
       "target_number": "+447456457005",
-      "status": "disconnected",
+      "status": "connected",
       "total_chats": 0,
       "selected_chats": 2,
       "messages_imported": 1172,
@@ -17,9 +17,9 @@
       "profile_server": "whatsapp-number-2",
       "profile_label": "secondary",
       "target_number": "+923099351940",
-      "status": "disconnected",
-      "total_chats": 407,
-      "selected_chats": 9,
+      "status": "disconnected_with_previous_export_fallback",
+      "total_chats": 0,
+      "selected_chats": 3,
       "messages_imported": 1272,
       "media_imported": 271,
       "images_imported": 224,
@@ -27,8 +27,8 @@
     }
   ],
   "totals": {
-    "chat_candidates": 409,
-    "selected_chats": 11,
+    "chat_candidates": 5,
+    "selected_chats": 5,
     "messages_imported": 2444,
     "media_imported": 436,
     "images_imported": 355,

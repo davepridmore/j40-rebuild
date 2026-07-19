@@ -1,0 +1,10 @@
+{
+  "run_id": "20260704T021608",
+  "session_id": "sessions/3d2ea086-8f6d-4e6b-9f97-00208a79d984",
+  "picker_items": 6,
+  "filtered_items": 6,
+  "downloaded": 6,
+  "skipped_already_imported": 0,
+  "failed": 0,
+  "manifest": "data/raw/imports/google_photos/20260704T021608/manifest.csv"
+}

@@ -32,7 +32,8 @@ This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketch
 
 - L0 envelope: boxes/cylinders that locate major vehicle systems.
 - L1 reference: named CAD primitives for body, chassis, running gear, engine bay, hardtop, and interior.
-- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, left-hand drive dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, suspension brackets, shocks, rims, tire lugs, hubs, and body pressings.
+- L2 visible-detail scaffold: grille slots/lights, bumper/tow points, hood ribs/latches, hardtop panels/windows/gutters, door hinges/handles/mirrors, left-hand drive dashboard/gauges/switches, seats/belts/pedals, engine-bay accessories/hoses, rims, tire lugs, hubs, and body pressings.
+- L3 suspension connection pass: each corner now carries named spring-eye bushings/sleeves, fixed-hanger bolts, shackle upper/lower pins and link plates, leaf-pack rebound clips, spring center bolts, axle perches, U-bolt legs/crowns/nuts, lower clamp plates, shock eye bushings/pins/tabs/tower gussets, bump-stop strike pads, and pin-center datum markers.
 - L3 exterior material references: separated grille mesh and TOYOTA lettering, fender-top lamps, side louvers, beltline trim, hardtop sliding-window mullions, classic rounded rear-quarter/back-door glass, rubber window radius gaskets, faceted black fender flares, step-board tread strips, mud flaps, rear barn-door seals/hinges/handles, spare-wheel spoke/highlight parts, wiper hardware, roof-gutter rivets, wheel-face vents, tire sidewall ticks, bumper bolts, license-plate screws, rear lamps, and spare-carrier latch plates.
 - L4 gallery-shaped surfaces: closed crowned hood, rolled hood lip, raked windshield surface, inset grille surround, sloped front fender skins, rolled fender crowns, tapered door/rear-quarter skins, tapered hardtop side skins, hardtop rear-corner facets, body-color wheel-arch facets, and crowned hardtop roof skin.
 - Rev C online-reference details: roof ventilator lid/hinge/handle, rear hardtop ventilator louvers, classic rounded rear hardtop side windows and split rear-door glass, hardtop-to-body joins, front clip/tub joins, body-mount pucks and stands, front/rear bumper stays, hood underside bracing and prop rod, hood lock receiver, brake proportioning valve and tube clips, fuel sub-inlet/vent hoses, separated amber/red/clear rear combination lamp lenses, and interior gauge/grab-handle detail.
@@ -46,6 +47,6 @@ This is a project-owned from-scratch CAD scaffold. It uses the CC-BY FJ40 Sketch
 - Pakistan purchase BOM: 30 route-linked buy rows from `data/manual/j40_as_fitted_route_pakistan_purchase_bom_20260531.csv` are read into generated route notes so the 3D model carries the local buy IDs/specs.
 - Mechanical-soundness references: fan/radiator, steering-lock/brake-hose, prop-shaft, exhaust heat, and pedal/column/HVAC clearance volumes are visible as non-release L2 checks.
 - Routing references: brake lines, parking-brake cables, battery cable, fuel line, filler neck, exhaust, prop shafts, and measurement datum bars.
-- Not fabrication release: mounting holes, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.
+- Not fabrication release: mounting holes, shackle clocking, spring-eye sleeve IDs, U-bolt spacing, shock pin offsets, curvature, exact frame sweep, body flange geometry, and bracket datums still need physical measurements from the actual truck.
 
-Total named parts: 1298
+Total named parts: 1494

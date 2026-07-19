@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-05-31T04:15:55.889232+00:00",
+  "updated_at": "2026-06-17T22:45:20.247018+00:00",
   "changed": true,
   "input_signature": [
     {
       "path": "data/manual/photo_inventory.csv",
-      "size": 270683,
-      "sha256": "75f5e48b4b99ed8f7adc30318984d5798ad975505c4bd34ba0fae868d53fa20f"
+      "size": 279198,
+      "sha256": "bea888e6062058647a54718ada320512bff24310b342b775431fb383dbf14e55"
     },
     {
       "path": "data/manual/component_jobs.csv",
@@ -64,8 +64,8 @@
     },
     {
       "path": "tools/generate_j40_full_vehicle_cad_scaffold.py",
-      "size": 183943,
-      "sha256": "16b30212b008e0709f1ebc3cc74544a1f8e9e3033223e58b7632ca135a01bc4b"
+      "size": 195748,
+      "sha256": "1a71e0ea574ed30ed2ee344e81cb5441eafe9b79ca58c15775bf1189c3dad897"
     },
     {
       "path": "tools/generate_j40_driver_layout_variant.py",
