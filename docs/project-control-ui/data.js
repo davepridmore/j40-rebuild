@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-07-19T20:35:45+05:00",
+  "generated_at": "2026-07-19T21:19:19+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -62,8 +62,8 @@ window.J40_DASHBOARD_DATA = {
     "status_update_whatsapp_new_rows": 0,
     "status_update_manual_rows": 20,
     "status_update_delivery_watchlist_rows": 20,
-    "capture_data_tasks": 116,
-    "capture_data_tasks_now": 101,
+    "capture_data_tasks": 117,
+    "capture_data_tasks_now": 102,
     "supply_rows_tracked": 328,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
@@ -3194,6 +3194,14 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Included in the 'whatever can come off cleanly' list"
         },
         {
+          "component_job_id": "passenger_footwell_floor_section_replacement_20260719",
+          "component_group": "body_floor",
+          "current_status": "confirmed_cut_out_and_reweld_required",
+          "planned_action": "Strip and expose the full passenger-foot floor area on both faces; probe and mark the boundary into sound full-thickness steel; brace and datum the tub; cut out the failed section; fabricate a correctly shaped replacement preserving tunnel toe-board seat/body-mount flange rib and drain geometry; weld with controlled sequencing; inspect both faces and trial-fit affected interfaces; then apply epoxy primer seam sealer underside protection and cavity protection before interior finish.",
+          "evidence_ref": "user_update_2026-07-19_passenger_foot_area_cut_out_reweld_required",
+          "notes": "Owner confirms essentially the entire tub area beneath the passengers' feet needs removal and welded section replacement. This is structural floor reconstruction rather than an overlay patch. Final cut lines must follow sound steel after stripping/probing; photograph top and underside before cutting and after bare-metal welding. Keep wiring fuel/brake lines insulation and combustible material clear of hot work."
+        },
+        {
           "component_job_id": "rear_bumper_recreation_welding_20260719",
           "component_group": "body_fabrication",
           "current_status": "work_reported_complete_qa_pending",
@@ -3277,6 +3285,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Component Task \u00b7 Passenger Footwell Floor Section Replacement 20260719",
+          "status": "confirmed_cut_out_and_reweld_required",
+          "detail": "Strip and expose the full passenger-foot floor area on both faces; probe and mark the boundary into sound full-thickness steel; brace and datum the tub; cut out the failed section; fabricate a correctly shaped replacement preserving tunnel toe-board seat/body-mount flange rib and drain geometry; weld with controlled sequencing; inspect both faces and trial-fit affected interfaces; then apply epoxy primer seam sealer underside protection and cavity protection before interior finish. Notes: Owner confirms essentially the entire tub area beneath the passengers' feet needs removal and welded section replacement. This is structural floor reconstruction rather than an overlay patch. Final cut lines must follow sound steel after stripping/probing; photograph top and underside before cutting and after bare-metal welding. Keep wiring fuel/brake lines insulation and combustible material clear of hot work."
         },
         {
           "label": "Component Task \u00b7 Tub Corner Hinge Pin Repair 20260517",
@@ -36075,7 +36088,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 285331
+            "bytes": 286740
           },
           "file_count": 5
         },
@@ -36122,7 +36135,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/turbo_readiness_chassis_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 46740
+            "bytes": 46730
           },
           "file_count": 6
         }
@@ -102422,11 +102435,11 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 116,
-      "now_tasks": 101,
+      "total_tasks": 117,
+      "now_tasks": 102,
       "later_tasks": 15,
-      "p0_tasks": 33,
-      "photo_tasks": 41,
+      "p0_tasks": 34,
+      "photo_tasks": 42,
       "measurement_tasks": 80
     },
     "counts_by_workstream": [
@@ -102451,12 +102464,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 8
       },
       {
-        "workstream": "mechanical_baseline",
+        "workstream": "body_chassis",
         "count": 5
       },
       {
-        "workstream": "body_chassis",
-        "count": 4
+        "workstream": "mechanical_baseline",
+        "count": 5
       },
       {
         "workstream": "eps_vitz_upgrade",
@@ -102526,7 +102539,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo",
-        "count": 14
+        "count": 15
       },
       {
         "task_type": "data",
@@ -102544,7 +102557,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 33
+        "count": 34
       },
       {
         "priority": "P1",
@@ -102556,6 +102569,32 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "tasks": [
+      {
+        "task_id": "component_job:passenger_footwell_floor_section_replacement_20260719",
+        "title": "passenger_footwell_floor_section_replacement_20260719",
+        "workstream": "body_chassis",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "confirmed_cut_out_and_reweld_required",
+        "location": "workshop_body_shell",
+        "action": "Strip and expose the full passenger-foot floor area on both faces; probe and mark the boundary into sound full-thickness steel; brace and datum the tub; cut out the failed section; fabricate a correctly shaped replacement preserving tunnel toe-board seat/body-mount flange rib and drain geometry; weld with controlled sequencing; inspect both faces and trial-fit affected interfaces; then apply epoxy primer seam sealer underside protection and cavity protection before interior finish.",
+        "data_needed": "Owner confirms essentially the entire tub area beneath the passengers' feet needs removal and welded section replacement. This is structural floor reconstruction rather than an overlay patch. Final cut lines must follow sound steel after stripping/probing; photograph top and underside before cutting and after bare-metal welding. Keep wiring fuel/brake lines insulation and combustible material clear of hot work.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "passenger_footwell_floor_section_replacement_20260719",
+        "notes": "",
+        "evidence_ref": "user_update_2026-07-19_passenger_foot_area_cut_out_reweld_required",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
       {
         "task_id": "component_job:brake_system_evidence_pack",
         "title": "brake_system_evidence_pack",

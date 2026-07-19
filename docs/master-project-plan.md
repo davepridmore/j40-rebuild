@@ -31,6 +31,7 @@
 - A turbocharger is included in the approved powertrain direction. Exact turbo sizing, boost target, manifold, fuelling changes, and installation hardware remain gated by engine-code confirmation and measured engine health.
 - Owner update `2026-07-19`: the brake booster work is reported complete. Treat physical work as complete but keep the brake-safety release open until the rebuilt/replacement unit passes identity, vacuum-hold, assist, pushrod/free-play, leak, and fitted braking checks.
 - Owner update `2026-07-19`: front and rear bumpers have been re-created and the associated welding work is reported complete. Move fabrication to post-weld QA: verify dimensions, symmetry, chassis pickup alignment, penetration/defects, fastener access, recovery/load assumptions, bare-metal photo evidence, and corrosion-protection touch-in before final coating or road release.
+- Owner update `2026-07-19`: the tub floor across essentially the full passenger-foot area requires cut-out and welded section replacement. Treat this as confirmed structural floor scope, not a cosmetic patch: expose and mark the affected area, extend the cut to sound full-thickness steel, preserve seat/pedal/body-mount and transmission-tunnel datums, reproduce the original floor shape and drainage/stiffening features, weld with distortion control, then inspect and protect both faces before sealing or interior finishes.
 
 ## Operating Rules
 
@@ -78,6 +79,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Run in three layers: structural repair, corrosion protection, then finish/sealing materials.
 - Keep this track focused on shell/body steel; feed chassis-specific items into the dedicated chassis track below.
 - Front and rear bumper re-creation/welding is reported complete as of `2026-07-19`. Do not reopen fabrication unless inspection finds a defect; the remaining scope is dimensional/weld QA, mounting/recovery-point validation, photo closeout, and corrosion protection.
+- The passenger-foot section of the tub floor is confirmed for major section replacement. Remove trim, seam sealer, undercoat, lines and combustible material from both sides; map the final boundary only after probing exposes sound steel. Brace and datum the tub before cutting, avoid small overlays over weakened metal, and retain or recreate tunnel, toe-board, seat-mount, body-mount, flange, rib and drain geometry affected by the cut.
+- Complete the replacement with repair-grade steel matched to the original structural function, controlled butt/flange/plug welds as appropriate to the original joints, staged welding to limit heat distortion, and dressed welds without thinning the panel. Release only after topside/underside weld inspection, dimensional and trial-fit checks, epoxy primer, seam sealer, underside protection and cavity protection where boxed seams were opened.
 
 ### Chassis Fixing Track
 
