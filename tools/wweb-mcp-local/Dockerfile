@@ -18,8 +18,8 @@ RUN apt-get update && \
 
 WORKDIR /project
 
-COPY package.json /project/package.json
-RUN npm install
+COPY package.json package-lock.json /project/
+RUN npm ci
 COPY tsconfig.json /project/tsconfig.json
 COPY src/ /project/src
 RUN npm run build

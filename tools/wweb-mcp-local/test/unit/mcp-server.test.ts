@@ -3,8 +3,6 @@ import { WhatsAppService } from '../../src/whatsapp-service';
 import { WhatsAppApiClient } from '../../src/whatsapp-api-client';
 import { createWhatsAppClient } from '../../src/whatsapp-client';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import fs from 'fs';
-import path from 'path';
 
 // Mock whatsapp-web.js to prevent Puppeteer dependency issues
 jest.mock(
@@ -22,7 +20,6 @@ jest.mock(
       NoAuth: jest.fn(),
     };
   },
-  { virtual: true },
 );
 
 // Mock dependencies
@@ -63,30 +60,6 @@ jest.mock('../../src/mcp-server', () => {
     }),
   };
 });
-
-// Mock fs helpers used by this module while preserving Node fs APIs used by dependencies.
-jest.mock('fs', () => ({
-  ...jest.requireActual('fs'),
-  promises: {
-    ...jest.requireActual('fs').promises,
-    mkdir: jest.fn().mockResolvedValue(undefined),
-    writeFile: jest.fn().mockResolvedValue(undefined),
-    stat: jest.fn().mockResolvedValue({ size: 12345 }),
-  },
-  existsSync: jest.fn().mockReturnValue(true),
-  mkdirSync: jest.fn(),
-  readFileSync: jest.fn().mockReturnValue('{}'),
-  writeFileSync: jest.fn(),
-  unlinkSync: jest.fn(),
-  rmSync: jest.fn(),
-}));
-
-// Mock path helpers used by this module while preserving Node path APIs used by dependencies.
-jest.mock('path', () => ({
-  ...jest.requireActual('path'),
-  join: jest.fn((...args) => args.join('/')),
-  resolve: jest.fn(path => `/absolute${path}`),
-}));
 
 describe('MCP Server', () => {
   let mockWhatsAppService: jest.Mocked<WhatsAppService>;
