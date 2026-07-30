@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-07-19 16:44:38
+- Generated: 2026-07-29 06:20:45
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -12,7 +12,7 @@
 - `electrical_reference` diagrams: 1
 - Electrical diagram reconciliation rows: 18
 - `rust_assessment` photos: 63
-- `stripdown_cataloguing` photos: 111
+- `stripdown_cataloguing` photos: 114
 
 ## Bifurcated Dependency Lanes
 
@@ -25,7 +25,7 @@
 
 ## Procurement Decisions
 
-- `buy_now`: 3
+- `buy_now`: 4
 - `capture_body_hardware_samples_then_order`: 4
 - `capture_spec_then_buy`: 8
 - `confirm_order_state`: 8
@@ -35,17 +35,18 @@
 - `hold_until_body_closed`: 1
 - `inspect_confirm_then_buy_standard`: 1
 - `research_compare_then_select`: 1
-- `review`: 46
+- `review`: 45
 - `runner_spec_controlled`: 4
-- `track_ordered_delivery`: 7
+- `track_ordered_delivery`: 6
 
 ## Component Reuse/Refurbish Decisions
 
 - `clean_store_for_reuse`: 1
+- `refurbish`: 1
 - `refurbish_send_out`: 4
 - `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `review`: 77
+- `review`: 79
 
 ## Immediate Execution Focus
 
@@ -53,7 +54,7 @@
 - Use `data/raw/imports/J40.jpg` as the WP03 viewable wiring diagram and keep `data/raw/imports/J40.graffle` as the editable source; export a fresh JPG after any diagram change.
 - Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap.
 - Proceed by coating zone: prime the newly prepared front underside and start Raptor on the rear/back section, but hold final top protection on suspension/radiator weld-affected areas until experienced-welder repair, validation photos, and primer touch-in are complete.
-- Run `WP04` procurement now: 15 mechanical rows still require buy execution.
+- Run `WP04` procurement now: 16 mechanical rows still require buy execution.
 - Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.
 - Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation.
 - Avoid duplicate buys: 0 rows are flagged as likely already on hand and should be physically stock-checked first.

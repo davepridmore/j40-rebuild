@@ -34,6 +34,11 @@ PUBLIC_MARKET_DOCS = (
     ROOT / "docs" / "bilal-ganj-sample-fabrication-kits-20260619.md",
     ROOT / "docs" / "bilal-ganj-mechanic-checklist.md",
 )
+PUBLIC_PROJECT_REFERENCE_ASSETS = (
+    ROOT / "docs" / "front-rear-bumper-installation-control-20260722.md",
+    ROOT / "photos" / "20260722_front_vehicle_bumper_design_reference.png",
+    ROOT / "photos" / "20260722_rear_vehicle_bumper_design_reference.png",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -259,6 +264,16 @@ def stage_public_market_docs(output_dir: Path) -> int:
     return copied
 
 
+def stage_public_project_reference_assets(output_dir: Path) -> int:
+    copied = 0
+    for source in PUBLIC_PROJECT_REFERENCE_ASSETS:
+        if not source.exists():
+            continue
+        copy_file(source, output_dir / source.relative_to(ROOT))
+        copied += 1
+    return copied
+
+
 def stage_app_public_assets(output_dir: Path) -> tuple[int, list[str]]:
     copied = 0
     missing: list[str] = []
@@ -287,14 +302,23 @@ def stage_referenced_assets(data: dict[str, Any], output_dir: Path) -> tuple[dic
     copied = 0
     for relative_ui_path in sorted(collect_relative_asset_paths(data)):
         source = resolve_repo_path(relative_ui_path)
-        staged_name = staged_media_name(relative_ui_path, source)
-        rewritten_path = f"../../{STAGED_MEDIA_PATH}/{staged_name}"
-        path_map[relative_ui_path] = rewritten_path
-        target = output_dir / STAGED_MEDIA_PATH / staged_name
         if not source.exists():
             missing.append(relative_ui_path)
             path_map[relative_ui_path] = MISSING_MEDIA_FALLBACK
             continue
+        source_relative = source.relative_to(ROOT)
+        if source_relative.parts and source_relative.parts[0] == "photos":
+            target = output_dir / source_relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if not target.exists() and not target.is_symlink():
+                target.symlink_to(source)
+                copied += 1
+            path_map[relative_ui_path] = relative_ui_path
+            continue
+        staged_name = staged_media_name(relative_ui_path, source)
+        rewritten_path = f"../../{STAGED_MEDIA_PATH}/{staged_name}"
+        path_map[relative_ui_path] = rewritten_path
+        target = output_dir / STAGED_MEDIA_PATH / staged_name
         copy_file(source, target)
         copied += 1
     return rewrite_relative_asset_paths(data, path_map), copied, missing
@@ -311,6 +335,7 @@ def main() -> None:
     stage_static_ui(output_dir)
     copied_fabrication_assets = stage_public_fabrication_assets(output_dir)
     copied_market_docs = stage_public_market_docs(output_dir)
+    copied_project_reference_assets = stage_public_project_reference_assets(output_dir)
     copied_app_assets, missing_app_assets = stage_app_public_assets(output_dir)
     data, copied_assets, missing_assets = stage_referenced_assets(data, output_dir)
     write_dashboard_data(data, output_dir)
@@ -318,6 +343,7 @@ def main() -> None:
     print(f"Staged Project Control UI: {output_dir}")
     print(f"Copied fabrication assets: {copied_fabrication_assets}")
     print(f"Copied market docs: {copied_market_docs}")
+    print(f"Copied project reference assets: {copied_project_reference_assets}")
     print(f"Copied app-referenced public assets: {copied_app_assets}")
     print(f"Copied referenced media/assets: {copied_assets}")
     all_missing_assets = missing_assets + missing_app_assets

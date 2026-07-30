@@ -4,7 +4,7 @@
 
 - Project: 1978 Toyota Land Cruiser J40 rebuild
 - Planning date: 2026-03-19
-- Latest status update: 2026-07-19
+- Latest status update: 2026-07-23
 - Communications note: the live WhatsApp refresh was unavailable on 2026-07-19; the local message export was checked but remains stale (generated 2026-07-12, latest indexed message 2026-06-13). The 2026-07-19 status items below therefore come directly from the owner and must be reconciled against the next successful message import.
 - This plan is built from the evidence already stored in this repo plus current Punjab Excise reference pages.
 - Legal/admin items here are a control tracker, not a substitute for confirming the latest filing requirements before submission.
@@ -20,7 +20,7 @@
 ## Current State From Evidence
 
 - Admin spend has started: excise challan and vehicle inspection costs are already in the ledger.
-- Ownership transfer is not yet evidenced as complete; seller biometric and transfer completion still need explicit tracking.
+- Ownership registration and transfer are complete as of `2026-07-23`. Both sides of the Punjab registration certificate are archived under `docs/legal-admin-evidence/`, the new number plate is in hand, and the owner confirms insurance is not required.
 - Strip-down is underway or imminent: roof, doors, hood, back cabin, and interior components are being discussed as removable work packages.
 - The current operating split is body and electrical at home, with heavier mechanical work expected through workshop contacts.
 - Electrical reset is a live workstream. Multiple harness options, grommets, sleeving, fuse hardware, and audio-related line items have already appeared in chat evidence.
@@ -29,9 +29,14 @@
 - Steering feel remains a known problem. The suspension path is no longer hypothetical: the Ironman Foam Cell kit is ordered and must now be managed as an incoming safety-critical installation workstream with receipt, fitment, torque, alignment, and road-validation gates.
 - The replacement steering decision is closed: use the RHD J60/HJ60 hydraulic steering-box route with the matched 2H pump-drive package; the earlier Vitz/column-EPS route is superseded.
 - A turbocharger is included in the approved powertrain direction. Exact turbo sizing, boost target, manifold, fuelling changes, and installation hardware remain gated by engine-code confirmation and measured engine health.
-- Owner update `2026-07-19`: the brake booster work is reported complete. Treat physical work as complete but keep the brake-safety release open until the rebuilt/replacement unit passes identity, vacuum-hold, assist, pushrod/free-play, leak, and fitted braking checks.
+- Owner update `2026-07-29`: the brake booster has been confirmed functionally fine and needs cosmetic tidying only. Close replacement/rebuild and booster-defect investigation; preserve its sealed and adjusted interfaces during refinishing. Final fitted braking checks remain part of the overall brake-system release.
 - Owner update `2026-07-19`: front and rear bumpers have been re-created and the associated welding work is reported complete. Move fabrication to post-weld QA: verify dimensions, symmetry, chassis pickup alignment, penetration/defects, fastener access, recovery/load assumptions, bare-metal photo evidence, and corrosion-protection touch-in before final coating or road release.
 - Owner update `2026-07-19`: the tub floor across essentially the full passenger-foot area requires cut-out and welded section replacement. Treat this as confirmed structural floor scope, not a cosmetic patch: expose and mark the affected area, extend the cut to sound full-thickness steel, preserve seat/pedal/body-mount and transmission-tunnel datums, reproduce the original floor shape and drainage/stiffening features, weld with distortion control, then inspect and protect both faces before sealing or interior finishes.
+- Owner update `2026-07-22`: the second radiator retention arm has been welded in and the major round-tube structural bar has been reinstated. Record physical fabrication as complete, but keep release open for both-end weld/heat-affected-zone inspection, chassis and radiator geometry, driveline/pipe clearance, radiator dry fit with isolators, fan/shroud/hose/bonnet clearance, and coating touch-in.
+- Owner update `2026-07-22`: all non-friction rear-drum parts are reported obtained. The PakWheels `K-2255` shoes fail the physical rear fit because they are too wide; preserve them for return/exchange and do not modify them. Source one four-shoe axle set of MK `K-2221` / Toyota `04494-60010` or `04494-60011` through the [controlled Pakistan route](rear-brake-shoe-fitment-and-purchase-control-20260722.md), with seller dimension photos and old-sample confirmation before payment.
+- Owner update `2026-07-22`: the experienced welders have repaired the mistaken grinder cut in the suspension/axle area. Record the repair as workshop work complete but retain post-weld inspection, exact-station identification, alignment/clearance confirmation, bare-metal photo evidence, and primer/topcoat touch-in before suspension or road release.
+- Owner clarification `2026-07-22`: the front and rear **vehicle bumpers** are separate from the suspension bump stops. Their metalwork/welding was previously reported complete and the welders are now scheduled to install them, using the supplied front winch/hoop and rear carrier/tow-layout images as design references. The bump stops remain received but not installed.
+- Owner update `2026-07-29`: the suspension cut repair, missing major structural-bar reinstatement, opposite-side radiator holder/support bar, and front vehicle-bumper installation are all reported successfully completed. The new motor-to-winch connecting axle/drive shaft and the new rear vehicle bumper remain pending. Preserve the owner's `axle` wording in the evidence trail, but identify and dimension the actual winch drive-shaft/coupling assembly before fabrication or operation. See [project-progress-update-20260729.md](project-progress-update-20260729.md).
 
 ## Operating Rules
 
@@ -46,7 +51,7 @@
 | Phase | Status | Purpose | Exit Gate |
 | --- | --- | --- | --- |
 | `00_site_setup` | `in_progress` | Covered working area, storage bins, labels, and a repeatable intake process for removed parts and new purchases. | J40 can stay stripped without losing weather protection or part traceability. |
-| `01_legal_admin` | `in_progress` | Track challan, inspection, biometric, transfer filing, plate position, and final document pack. | Ownership/admin file is complete enough for later proof, resale, insurance, and road-use questions. |
+| `01_legal_admin` | `completed` | Ownership registration, new number plate and core document pack completed; insurance is not required. | Ownership transfer is evidenced by the registration certificate issued in the current owner's name and the plate path is closed. |
 | `02_stripdown_cataloguing` | `in_progress` | Strip the truck in a controlled way and produce a visible map of what is removable, damaged, missing, or outsourced. | Shell, loose parts, and outbound panels are catalogued with photos and labels. |
 | `03_body_chassis` | `in_progress` | Body-off and welding track: weld-zone mapping, structural rust cuts, patch fabrication, and corrosion stack sequencing. | Body is off and weld scope is signed off by zone with materials staged. |
 | `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean, inspect, repair/approve rails/crossmembers/mounts, then execute rust treatment, primer, seam/top protection, and cavity-wax closeout in order. | Chassis structural repairs are closed or explicitly approved and the coating/protection stack is documented with no unknowns remaining. |
@@ -64,7 +69,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 ### Legal/Admin
 
-- Capture challan, inspection, seller biometric, transfer submission, transfer completion, number plate status, and final document pack.
+- Registration is complete as of `2026-07-23`; both sides of the certificate are retained in `docs/legal-admin-evidence/`.
+- The new number plate is in hand and insurance is confirmed not required, so no legal/admin follow-up remains beyond secure document retention.
 - Keep legal/admin spend separate from restoration spend so the build economics remain readable.
 
 ### Strip-Down and Cataloguing
@@ -105,7 +111,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, in-place mount inspection).
 - Current baseline keeps the engine installed. Do not buy an engine lift/hoist unless a later approved job actually requires engine support/removal.
-- Use [radiator-workstream.md](radiator-workstream.md) as the control sheet for the radiator body, missing mirror-side retention bracket, recore/new-build decision, photo intake, and final cooling-system installation gate.
+- Use [radiator-workstream.md](radiator-workstream.md) as the control sheet for the radiator body, the now-welded mirror-side retention arm, post-weld QA, recore/new-build decision, photo intake, and final cooling-system installation gate.
 - Use [gearbox-top-cover-workstream.md](gearbox-top-cover-workstream.md) as the control sheet for the reported poor gearbox top cover / shift tower. Do not buy detents, bushes, shift-seat parts, or a replacement cover until the fitted gearbox and top-cover casting are identified and `GB-TOP-CAPTURE-001` is complete.
 - Use [rear-differential-axle-teardown-inspection-plan-20260517.md](rear-differential-axle-teardown-inspection-plan-20260517.md) as the control sheet for the rear differential/axle inspection during the current access window.
 - Keep a written fault list with measured findings; hold upgrades until baseline reliability is closed.
@@ -139,9 +145,13 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Do not buy alternate local/OME/Bilstein spring, shock, bush, shackle, or U-bolt options unless the Ironman receipt check proves a missing or incorrect item.
 - Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style, bracket retention, and old-sample/free length.
 - Do not final-close rear suspension/brakes until the rear differential/axle inspection has recorded oil/debris condition, breather condition, carrier sealing, axle seals/bearings, gear condition, and post-fill leak checks.
+- The mistaken suspension/axle-area grinder cut is reported welded/repaired on `2026-07-22`. The fabrication hold is closed, but the safety release remains open until the exact repair station is photographed, both sides are inspected for cracks/heat damage or distortion, geometry and nearby brake/line clearance are confirmed, and corrosion protection is restored.
+- The second radiator arm and major structural crossbar are also reported welded/reinstated on `2026-07-22`. Do not close chassis or cooling-system release until the new arm and both crossbar ends pass weld/geometry/clearance inspection, the radiator dry-fits with its isolation stack, and every worked area is re-protected.
+- The July 12 bump-stop set is received but has no confirmed installation schedule. Preserve the original J40 load path when it is fitted: rubber stops and their separate metal fixtures/brackets land at the chassis-side stations above the axles; do not clamp the stops to the spring pack or U-bolt plate. Verify `60 mm` right-front and `70 mm` long-family placement where the supplied parts match those Toyota families, then check contact and clearance at all four stations.
 - Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
 - Active power-steering route is now a RHD J60/HJ60 hydraulic steering-box conversion with a matched 2H pump/bracket/pulley package. It does not require engine removal, but no chassis plate, holes, sleeves, shaft work or hydraulic routing is released until the actual box, pitman arm, shaft/couplers, drag link and pump drive are physically present for trial fit. See `docs/j60-hydraulic-power-steering-conversion-plan-20260719.md`.
-- Brake booster work is reported complete on `2026-07-19`; close procurement/rebuild activity, but keep installation acceptance open until the exact unit is recorded and it passes vacuum retention, pedal/assist movement, pushrod/free-play, master-cylinder interface, hose/check-valve, leak, bleed, static-stop, and controlled low-speed brake tests.
+- The brake booster is functionally confirmed good as of `2026-07-29`; close procurement/rebuild activity and perform cosmetic tidying only. Do not disturb the shell joint, pushrod/free-play, clevis, boot, check valve/grommet, studs, or master-cylinder interface. Retain leak, bleed, static-stop, and controlled low-speed checks under final assembled brake-system acceptance.
+- Rear-drum procurement is now narrowed to correct shoes: `K-2255` is rejected as too wide, while MK `K-2221` / Toyota `04494-60010` or `04494-60011` is the controlled target. Verify one four-shoe axle set, approximately `55–57 mm` width, web/end/hole pattern and actual drum/backing-plate fit; count and function-check the reported-complete non-friction hardware pool before assembly.
 
 ### Interior and Weatherproofing
 
@@ -154,12 +164,14 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - `Body repair gate`: lock the corrosion-protection stack only after a rust map exists.
 - `Power steering gate`: J60 hydraulic conversion is selected, but fabrication remains blocked until the complete identified RHD J60/HJ60 steering set and 2H pump-drive components pass bench inspection and full vehicle trial fit.
 - `Suspension installation gate`: Ironman kit is the approved path. No install starts without both shipments, receipt check, supplier/OEM torque sheet, clean hanger inspection, safe support gear, and brake/steering clearance plan.
+- `Suspension repair and bump-stop gate`: the grinder-cut weld repair is reported complete, while the four new bump stops are received but not installed. Close only after repair inspection and, when the stops are eventually fitted, bracket/fixture confirmation, correct front-right/long-family placement, fastener retention, strike-pad alignment, full-bump clearance, and coating touch-in are photographed and accepted.
 - `Audio/android gate`: do not commit until the base wiring is working and the dash/interior design is frozen.
 - `Turbo engine-health gate`: no hardware order or fuelling increase until engine identity, compression/leak-down, hot oil pressure, blow-by, injector/pump condition, and cooling-system performance are documented and accepted.
 - `Turbo package gate`: approve one matched turbo/manifold/oiling/intake/intercooler/exhaust/instrumentation package only after clearance and heat-route measurements are captured; the package must include target boost, EGT limit, oil-feed specification, drain geometry, and a written staged-test plan.
 - `Turbo connection closeout gate`: no fuel increase or loaded road test until every oil, coolant-if-used, intake, charge-air, exhaust, breather, boost-reference and electrical connection is labelled, supported, leak-tested, protected from heat/chafe, and recorded in the as-fitted route model.
-- `Bumper fabrication closeout gate`: front and rear bumper metalwork is complete, but final coating/road release requires dimensional and symmetry checks, sound weld inspection, proven chassis pickups/fastener access, documented recovery/load classification, bare-metal completion photos, and corrosion-protection touch-in.
-- `Brake booster closeout gate`: reported workshop completion is not the road-safety release; retain the gate until the fitted booster and master-cylinder interface pass the full static and low-speed acceptance checks.
+- `Bumper installation closeout gate`: front vehicle-bumper installation is reported complete on `2026-07-29`; rear vehicle-bumper installation remains pending. Final coating/road release requires installed dimensional and symmetry checks, sound weld inspection, proven chassis pickups/fastener access, documented recovery/tow/load classification, carrier/latch and body-access checks, bare-metal completion photos, and corrosion-protection touch-in.
+- `Winch drive connection gate`: the new motor-to-winch connecting axle/drive shaft remains pending. Do not operate the winch until the actual shaft/coupling layout is identified, aligned, supported and guarded, with material/diameter, end connections, engine-movement allowance, service access, and surrounding clearance documented.
+- `Brake booster cosmetic closeout gate`: functional condition is accepted; close after non-invasive cleanup/refinish is complete and all interfaces remain protected and unaltered. Static and low-speed braking checks stay under the overall brake-system road-safety gate.
 
 ## Legal/Admin Control Model
 
@@ -168,7 +180,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Punjab Excise also has a current number-plate request page that says deployment with reference to biometric verification is under process:
   - `https://excise.punjab.gov.pk/npr-tmp`
 - Because of that, the tracker should keep plate status separate from transfer status. A replica or interim plate arrangement is not the same thing as a closed ownership/admin file.
-- Any item without explicit evidence stays open or `needs_confirmation` even if it was discussed in chat.
+- Ownership transfer and the core registration document pack are closed by the `2026-07-23` owner update and certificate images.
+- The new number plate is confirmed received; insurance is explicitly marked `not_required`.
 
 ## Cost Capture Rules
 
@@ -183,21 +196,21 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 ## Immediate Next Actions
 
-1. Confirm seller biometric status and whether ownership transfer has actually been submitted.
-2. Build a single legal/admin evidence pack for the transfer and number-plate path.
-3. Keep the strip-down tagging process active so removed and outsourced parts stay traceable.
-4. Inspect and close the completed front/rear bumper re-creation and welding: record measurements and bare-metal weld photos, verify pickup/recovery assumptions and fastener access, correct any defects, then apply the approved corrosion stack.
-5. Run chassis fixing in parallel: deep-clean frame, inspect rails/crossmembers/mounts, and close the open issue checks before coating signoff.
-6. Capture body-mount pedestal/captive-thread condition and lock shim + rubber + hardware refit plan before tub return.
-7. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
-8. Run stripped-engine maintenance in parallel with chassis access and log post-service defects.
-9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present; prepare the merged brake/suspension parts and tools checklist before the workshop window.
-10. Run the gearbox top-cover capture pack before buying shift-tower service parts or closing the mechanical baseline.
-11. Run the rear differential/axle capture pack before coating or rear road-validation closeout.
-12. Source a Toyota Land Cruiser 70-series diesel radiator and matching A/C condenser donor stack, preferably `HZJ75` / `HZJ78` / `HZJ79` / `1HZ` with A/C; market-side proof is identity, condition, price, and return/exchange terms, while final J40 mounting and fitment remain owner/fabricator work.
-13. Capture the retained engine code, injection-pump identity, compression/leak-down, hot oil pressure, blow-by, baseline EGT/smoke, and intake/exhaust/oil-drain packaging measurements; use these to produce the matched turbo system specification and budget before ordering parts.
-14. Keep procurement gated by phase: immediate rust-control buys now, defer interior and turbo/other optional-upgrade buys until their release gates close.
-15. Record the completed brake booster identity and evidence, then run vacuum-hold, pedal/assist, pushrod/free-play, master-cylinder interface, leak/bleed, static-stop, and controlled low-speed acceptance checks.
-16. Re-run the WhatsApp MCP import after authentication is restored and reconcile any messages newer than the current `2026-06-13` index against these owner-supplied `2026-07-19` updates.
-17. Record exact prices for already received tools and consumables that are still missing amounts.
+1. Keep the original registration certificate and new number plate evidence secure.
+2. Keep the strip-down tagging process active so removed and outsourced parts stay traceable.
+3. Close out the reported-installed front vehicle bumper and install the pending rear bumper against [front-rear-bumper-installation-control-20260722.md](front-rear-bumper-installation-control-20260722.md): verify chassis pickups, dimensions, symmetry, winch/fairlead or carrier/tow interfaces, recovery/load assumptions, fastener access and body/tyre clearance; correct defects, photograph the installed work, then apply the approved corrosion stack.
+4. Run chassis fixing in parallel: deep-clean frame, inspect rails/crossmembers/mounts, photograph and validate the reported-complete suspension/axle-area grinder-cut repair, and restore primer/top protection before coating signoff.
+5. Capture body-mount pedestal/captive-thread condition and lock shim + rubber + hardware refit plan before tub return.
+6. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
+7. Run stripped-engine maintenance in parallel with chassis access and log post-service defects.
+8. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present; prepare the merged brake/suspension parts and tools checklist. Keep the four received bump stops as a separate not-installed item until the correct chassis-side brackets/fixtures and front-right/long-family positions are confirmed.
+9. Run the gearbox top-cover capture pack before buying shift-tower service parts or closing the mechanical baseline.
+10. Run the rear differential/axle capture pack before coating or rear road-validation closeout.
+11. Source a Toyota Land Cruiser 70-series diesel radiator and matching A/C condenser donor stack, preferably `HZJ75` / `HZJ78` / `HZJ79` / `1HZ` with A/C; market-side proof is identity, condition, price, and return/exchange terms, while final J40 mounting and fitment remain owner/fabricator work.
+12. Capture the retained engine code, injection-pump identity, compression/leak-down, hot oil pressure, blow-by, baseline EGT/smoke, and intake/exhaust/oil-drain packaging measurements; use these to produce the matched turbo system specification and budget before ordering parts.
+13. Keep procurement gated by phase: immediate rust-control buys now, defer interior and turbo/other optional-upgrade buys until their release gates close.
+14. Cosmetically tidy the confirmed-good brake booster without disturbing its sealed or adjusted interfaces; then validate it as part of the normal master-cylinder fit, leak/bleed, static-stop, and controlled low-speed brake-system checks.
+15. Re-run the WhatsApp MCP import after authentication is restored and reconcile any messages newer than the current `2026-06-13` index against these owner-supplied `2026-07-19` updates.
+16. Record exact prices for already received tools and consumables that are still missing amounts.
+17. Identify, measure, fabricate and validate the pending motor-to-winch drive shaft/coupling assembly, including alignment, support/guarding, engine-movement allowance, service access and clearance checks; do not operate the winch before this gate closes.
 18. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.

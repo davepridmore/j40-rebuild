@@ -17,6 +17,7 @@ DOCS_DIR = ROOT / "docs"
 INDEX_DIR = PHOTOS_DIR / "index"
 
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
+APPLE_METADATA_PATH = MANUAL_DIR / "apple_photo_metadata.csv"
 PHOTO_SUMMARY_PATH = MANUAL_DIR / "photo_component_summary.csv"
 CATALOG_PATH = DOCS_DIR / "photo-catalog.md"
 
@@ -3889,6 +3890,236 @@ FILE_OVERRIDES.update(
     }
 )
 
+FILE_OVERRIDES.update(
+    {
+        "20260722_000001_user_second_radiator_arm_welded_front_structure.png": c(
+            "front_support",
+            "front_radiator_two_side_retention_20260722",
+            "welding_update",
+            "second_radiator_arm_reported_welded_visual_qa_and_radiator_dry_fit_pending",
+            "high",
+            ("radiator", "retention_arm", "front_support", "welded", "qa_pending"),
+            "User-supplied July 22 front chassis image supports the report that the second radiator retention arm/post has been welded in. Inspect weld continuity and heat-affected areas, trial-fit the radiator with rubber isolation, verify fan/shroud/hose clearance, and restore primer/top protection before release.",
+        ),
+        "20260722_000002_user_front_structure_winch_crossmember_update.png": c(
+            "chassis_underside",
+            "front_winch_crossmember_structure_context_20260722",
+            "structural_update",
+            "front_structure_and_winch_mount_context_visible_closeout_inspection_pending",
+            "medium",
+            ("chassis", "front_crossmember", "winch", "structure", "inspection_pending"),
+            "User-supplied July 22 overhead image records the current front crossmember/winch mounting structure after welding work. Confirm fasteners, welds, alignment, cable clearance and corrosion protection before closeout.",
+        ),
+        "20260722_000003_user_major_structural_crossbar_reinstalled.png": c(
+            "chassis_underside",
+            "major_round_tube_structural_crossbar_reinstatement_20260722",
+            "welding_update",
+            "major_structural_bar_reported_reinstalled_welded_post_weld_validation_and_coating_pending",
+            "high",
+            ("chassis", "structural_crossbar", "round_tube", "reinstalled", "welded", "qa_pending"),
+            "User-supplied July 22 image shows the major round-tube structural bar reinstated between the chassis rails near the transmission/powertrain area. Inspect both ends for weld quality and geometry, check driveline/line clearance, then restore corrosion protection.",
+        ),
+        "20260722_000004_user_rear_side_seat_reference.png": c(
+            "documentation_reference",
+            "rear_side_seat_layout_reference_20260722",
+            "reference_material",
+            "reference_only_not_current_vehicle_evidence",
+            "low",
+            ("reference", "rear_seat", "interior", "layout"),
+            "User-supplied image of another J40 rear side-seat layout. Retain as design reference only; it does not prove parts, fitment or work completed on the project vehicle.",
+        ),
+        "20260722_000005_user_rear_drum_hold_down_hardware_complete.png": c(
+            "brake_system",
+            "rear_drum_hold_down_hardware_pool_complete_20260722",
+            "parts_inventory",
+            "rear_drum_hold_down_hardware_reported_complete_fit_condition_and_count_qa_pending",
+            "high",
+            ("rear_brake", "drum", "hold_down_pins", "springs", "cups", "parts_on_hand", "qa_pending"),
+            "July 22 evidence records the rear-drum hold-down pins, springs and cups/retainers as obtained. Verify axle-set counts, spring condition/rate, pin wear/length and cup engagement during one-side-at-a-time assembly.",
+        ),
+        "20260722_000006_user_rear_drum_operating_hardware_complete.png": c(
+            "brake_system",
+            "rear_drum_operating_parking_brake_hardware_pool_complete_20260722",
+            "parts_inventory",
+            "rear_drum_operating_hardware_reported_complete_fit_orientation_and_free_return_qa_pending",
+            "high",
+            ("rear_brake", "drum", "parking_brake", "adjusters", "levers", "springs", "clips", "parts_on_hand", "qa_pending"),
+            "July 22 evidence shows the rear-drum operating/parking-brake parts pool. Owner reports all drum parts obtained apart from correctly fitting shoes; verify LH/RH orientation, adjuster movement, lever pivots, spring routing and free return before release.",
+        ),
+        "20260722_000007_user_bump_stop_set_inventory.png": c(
+            "chassis_underside",
+            "suspension_bump_stop_set_20260722",
+            "parts_inventory",
+            "bump_stop_set_on_hand_install_location_and_bracket_fit_pending",
+            "high",
+            ("suspension", "bump_stop", "front", "rear", "parts_on_hand", "install_pending"),
+            "July 22 image reconfirms four bump-stop assemblies on hand. Install to the correct chassis-side bump-stop brackets, not under spring U-bolt plates, after bracket fit and full-bump alignment are confirmed.",
+        ),
+        "20260722_000008_user_k2255_brake_shoe_wrong_width_fit_check.png": c(
+            "brake_system",
+            "rear_brake_shoe_fit_rejection_20260722",
+            "fit_check",
+            "k2255_shoe_too_wide_does_not_fit_rejected_return_exchange_required",
+            "high",
+            ("rear_brake", "drum", "brake_shoe", "k2255", "wrong_width", "rejected", "return_exchange"),
+            "July 22 fit-check image visibly shows the purchased K-2255 shoe is too wide for the project rear backing-plate/wheel-cylinder arrangement. Do not modify or install it; return/exchange for K-2221 after seller photos and old-sample confirmation.",
+        ),
+        "20260723_013021_gp_UGFfrBkw.jpg": c(
+            "electrical_system",
+            "pedal_area_dual_plunger_switch_bracket_20260723",
+            "parts_triage",
+            "pedal_location_accepted_exact_switch_functions_test_pending",
+            "medium",
+            ("pedal_box", "brake_pedal", "clutch_pedal", "plunger_switch", "electrical", "identify_first", "refinish_bracket"),
+            "Owner identifies the brake/clutch pedal meeting area. Geometry shows threaded adjustable plungers and no visible hydraulic line ports; send for function/continuity checks and refinish only the bracket.",
+        ),
+        "20260723_013033_gp_l8ZqIJ6Q.jpg": c(
+            "body_hardware",
+            "single_stamped_latch_adjuster_identification_20260723",
+            "parts_triage",
+            "not_seatbelt_identify_before_coating",
+            "medium",
+            ("latch", "adjuster", "hood_latch_candidate", "bonnet_latch_candidate", "identify_first", "refurbishment"),
+            "Single stamped latch/adjuster assembly. Wider photo catalog does not prove the location; send with an IDENTIFY FIRST tag and retain even if the shop cannot identify it.",
+        ),
+        "20260723_013044_gp_nVUdz9dQ.jpg": c(
+            "body_hardware",
+            "front_door_latch_central_locking_sets_20260723",
+            "parts_triage",
+            "likely_one_of_two_door_sets_mechanical_rebuild_modern_actuator_decision_pending",
+            "medium",
+            ("door_latch", "door_rods", "central_locking", "actuator", "lh_rh_control", "mechanical_sample", "modernisation"),
+            "Likely one front-door latch/rod set with an aftermarket electric lock actuator. Keep separate from 013103 as an LH/RH candidate; protect all working parts from blasting and paint.",
+        ),
+        "20260723_013050_gp_rSLoiGNw.jpg": c(
+            "brake_system",
+            "parking_brake_cable_linkage_reconstruction_sample_20260723",
+            "parts_triage",
+            "complete_handbrake_system_reconstruction_required",
+            "high",
+            ("parking_brake", "handbrake", "cable", "linkage", "end_fitting", "sample_match", "reconstruction"),
+            "Owner identifies this as handbrake linkage. Use with the received cable to reconstruct the entire system, including adjusters, clevises, pins, clips, equalisation and free return.",
+        ),
+        "20260723_013103_gp_24hNTQNQ.jpg": c(
+            "body_hardware",
+            "front_door_latch_central_locking_sets_20260723",
+            "parts_triage",
+            "likely_second_of_two_door_sets_mechanical_rebuild_modern_actuator_decision_pending",
+            "medium",
+            ("door_latch", "door_rods", "central_locking", "actuator", "lh_rh_control", "mechanical_sample", "modernisation"),
+            "Not a seatbelt. Likely the second front-door latch/rod set with an aftermarket electric lock actuator. Compare with 013044 against the two door shells before work.",
+        ),
+        "20260723_013123_gp_JLEfOezg.jpg": c(
+            "electrical_system",
+            "windscreen_washer_pump_replacement_sample_20260723",
+            "parts_triage",
+            "replace_with_complete_washer_system",
+            "medium",
+            ("washer_pump", "12v_motor", "two_hoses", "wiring", "sample_match", "replace"),
+            "Small wired pump/motor with two fluid hoses, consistent with a washer pump. Exclude from refurbishment and retain only until the new reservoir/pump/hoses/nozzles are matched.",
+        ),
+        "20260723_013148_gp_AK0sjJJw.jpg": c(
+            "interior_cabin",
+            "glovebox_lid_refresh_repaint_20260723",
+            "parts_triage",
+            "dry_fit_repair_prime_paint",
+            "high",
+            ("glovebox", "lid", "interior", "rust", "dent_repair", "epoxy_primer", "paint"),
+            "Reusable glove-box lid selected for dry fit, dent/rust repair, epoxy primer and interior-colour paint.",
+        ),
+        "20260723_013155_gp_k26a3Rpw.jpg": c(
+            "electrical_system",
+            "wiper_arms_blades_replacement_sample_20260723",
+            "parts_triage",
+            "replace_and_exclude_from_refurbishment",
+            "high",
+            ("wiper", "arms", "blades", "sample_match", "replace"),
+            "Wiper arms/blades, not a window channel. Exclude from the refurbishment selector and retain only until length, spline, sweep and blade fit are matched.",
+        ),
+        "20260723_013218_gp_gz4eGcoQ.jpg": c(
+            "window_hardware",
+            "manual_window_regulator_refurbishment_20260723",
+            "parts_triage",
+            "clean_inspect_refinish_regrease_bench_cycle",
+            "high",
+            ("window_regulator", "manual_window", "gear_teeth", "rollers", "refurbishment"),
+            "Manual window regulator selected for cleaning, wear inspection, controlled refinishing, lubrication and full-travel bench cycling.",
+        ),
+        "20260723_013303_gp_ZzbvMf2A.jpg": c(
+            "electrical_system",
+            "windscreen_wiper_motor_assessment_20260723",
+            "parts_triage",
+            "likely_wiper_motor_auto_electric_bench_test_required",
+            "medium",
+            ("wiper_motor", "gearbox", "crank_arm", "ball_joint", "auto_electric", "bench_test", "identify_first"),
+            "One-per-vehicle motor/gearbox with crank and ball joint, consistent with an FJ40 windscreen-wiper motor rather than steering. Send to an auto-electric specialist; keep out of blasting and paint.",
+        ),
+        "20260723_013311_gp_51vqP4uQ.jpg": c(
+            "engine_bay",
+            "oil_filler_breather_tube_identification_20260723",
+            "parts_triage",
+            "likely_engine_filler_breather_identify_and_condition_check",
+            "medium",
+            ("oil_filler", "breather_tube", "filler_neck", "engine", "identify_first", "refurbishment"),
+            "Large neck plus smaller side breather are consistent with an engine oil-filler/breather tube, but installed origin is not photographed. Clean internally, inspect and coat only the sound exterior after identification.",
+        ),
+        "20260723_013331_gp_wJ1wGBzg.jpg": c(
+            "interior_cabin",
+            "door_interior_modernisation_samples_20260723",
+            "design_hold",
+            "retain_as_pattern_exclude_from_refurbishment",
+            "high",
+            ("door_pull", "interior_handle", "armrest", "modernisation", "pattern", "exclude"),
+            "Old interior door pull/handle retained only as a mounting and clearance pattern while new direct-fit or custom modern handles and door cards are chosen.",
+        ),
+        "20260723_013357_gp_r5068tWQ.jpg": c(
+            "interior_cabin",
+            "door_interior_modernisation_samples_20260723",
+            "design_hold",
+            "retain_as_pattern_exclude_from_refurbishment",
+            "high",
+            ("door_pull", "interior_handle", "bezel", "modernisation", "pattern", "exclude"),
+            "Old interior handle/bezel retained only as a rod, opening and door-card pattern while the modernised interior package is selected.",
+        ),
+        "20260723_013420_gp_SclaaDYg.jpg": c(
+            "interior_cabin",
+            "door_interior_modernisation_samples_20260723",
+            "design_hold",
+            "retain_as_pattern_exclude_from_refurbishment",
+            "high",
+            ("door_pull", "interior_handle", "bezel", "modernisation", "pattern", "exclude"),
+            "Additional old interior handle/bezel retained as a pattern only; exclude from the refurbishment selector pending a coordinated modern interior decision.",
+        ),
+        "20260723_013447_gp_mzaP0yGQ.jpg": c(
+            "body_hardware",
+            "unidentified_lever_pieces_refurbisher_identification_20260723",
+            "parts_triage",
+            "identify_first_refinish_if_useful_and_sound",
+            "medium",
+            ("lever", "bracket", "pivot", "identify_first", "refurbishment"),
+            "Send to the refurbisher for identification. If useful and sound, refinish only non-working surfaces while masking the pivot, bush, holes and mating faces.",
+        ),
+        "20260723_013456_gp_DSWTd2FA.jpg": c(
+            "body_hardware",
+            "unidentified_lever_pieces_refurbisher_identification_20260723",
+            "parts_triage",
+            "identify_first_refinish_if_useful_and_sound",
+            "medium",
+            ("lever", "knob", "shaft", "identify_first", "refurbishment"),
+            "Send to the refurbisher for identification. If useful and sound, refinish only non-working surfaces while masking the shaft, pivot and mounting eye.",
+        ),
+        "20260723_013511_gp_8BN3n86Q.jpg": c(
+            "interior_cabin",
+            "padded_interior_trim_modernisation_sample_20260723",
+            "design_hold",
+            "not_window_channel_retain_as_pattern",
+            "medium",
+            ("interior_trim", "padded_trim", "armrest_candidate", "dash_trim_candidate", "modernisation", "pattern"),
+            "Long padded interior trim, not a metal window channel. Keep as a pattern for the modern interior or later upholstery after its installed location is confirmed.",
+        ),
+    }
+)
+
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")
 SCREENSHOT_DATE_RE = re.compile(r"^Screenshot_(?P<date>\d{8})_")
@@ -3965,6 +4196,10 @@ def clean_generated_index() -> None:
 
 def build_photo_inventory() -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
+    apple_metadata: dict[str, dict[str, str]] = {}
+    if APPLE_METADATA_PATH.is_file():
+        with APPLE_METADATA_PATH.open(newline="", encoding="utf-8") as handle:
+            apple_metadata = {row["file_name"]: row for row in csv.DictReader(handle) if row.get("file_name")}
 
     for path in sorted(PHOTOS_DIR.iterdir(), key=lambda item: item.name.lower()):
         if not path.is_file():
@@ -3975,6 +4210,9 @@ def build_photo_inventory() -> list[dict[str, str]]:
 
         classification = classify_file(path.name)
         captured_date, captured_time = extract_captured_parts(path.name)
+        metadata = apple_metadata.get(path.name, {})
+        captured_date = metadata.get("captured_date") or captured_date
+        captured_time = metadata.get("captured_time") or captured_time
 
         row = {
             "media_id": path.stem,
@@ -3982,6 +4220,11 @@ def build_photo_inventory() -> list[dict[str, str]]:
             "relative_path": f"photos/{path.name}",
             "captured_date": captured_date,
             "captured_time": captured_time,
+            "captured_at": metadata.get("captured_at", ""),
+            "timezone_name": metadata.get("timezone_name", ""),
+            "latitude": metadata.get("latitude", ""),
+            "longitude": metadata.get("longitude", ""),
+            "metadata_source": metadata.get("metadata_source", "filename"),
             "media_type": "video" if extension in {".mp4", ".mov", ".avi", ".mkv"} else "photo",
             "component_group": classification.component_group,
             "specific_component": classification.specific_component,
@@ -4011,6 +4254,11 @@ def build_photo_inventory() -> list[dict[str, str]]:
                 "relative_path": relative_path,
                 "captured_date": str(reference.get("captured_date", "")),
                 "captured_time": "",
+                "captured_at": "",
+                "timezone_name": "",
+                "latitude": "",
+                "longitude": "",
+                "metadata_source": "manual_reference",
                 "media_type": "video" if extension in {".mp4", ".mov", ".avi", ".mkv"} else "photo",
                 "component_group": classification.component_group,
                 "specific_component": classification.specific_component,
@@ -4022,6 +4270,7 @@ def build_photo_inventory() -> list[dict[str, str]]:
             }
         )
 
+    rows.sort(key=lambda row: (row["captured_date"] or "9999-99-99", row["captured_time"] or "99:99:99", row["file_name"].lower()))
     return rows
 
 
@@ -4033,6 +4282,11 @@ def write_inventory_csv(rows: list[dict[str, str]]) -> None:
         "relative_path",
         "captured_date",
         "captured_time",
+        "captured_at",
+        "timezone_name",
+        "latitude",
+        "longitude",
+        "metadata_source",
         "media_type",
         "component_group",
         "specific_component",

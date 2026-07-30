@@ -15,16 +15,24 @@ The preferred starting concept is:
 
 This is a preliminary engineering direction, not a parts release. The turbo model, turbine housing, manifold, boost target, and fuelling setting remain open until the checks below are complete.
 
+## Rev D Cooling Boundary — 50°C Release Requirement
+
+The cooling package is now specified as a **hard 50°C release condition**, not a general hot-weather preference: `50°C` dry-bulb air measured at the grille/cooling-pack inlet, with A/C operating, plus a `52°C` ten-minute heat soak and hot restart. The engine radiator must prove at least `115 kW` continuous heat rejection after stabilisation and `130 kW` for ten minutes. The main radiator/condenser path uses the engine-driven puller with a sealed full-face shroud (`≥9,000 m³/h` installed at `125 Pa` and `1,500 rpm`) plus independently fused/relayed A/C pushers (`≥3,000 m³/h` installed at `75 Pa` and `13.5 V`).
+
+Turbo charge air is deliberately **not** placed in front of the radiator or A/C condenser. It uses a separate side/wing air-to-air cooler with sealed fresh-air inlet, dedicated fan and separate hot-air exit. At `50°C` fresh inlet, `0.20 kg/s` charge flow and `130°C` nominal compressor discharge it must reject `≥15 kW`, keep stabilised manifold IAT at or below `80°C`, and keep complete charge-route pressure loss at or below `10 kPa` (target `≤7 kPa`). The dedicated fan is `≥2,500 m³/h` installed at `75 Pa`; it runs with the engine unless a documented fail-safe controller is approved.
+
+Once the full mechanical, airflow, temperature and charge-air acceptance log passes, this cooling design must not be the reason for a boost derate **within the defined 150 bhp crank thermal-design envelope**. That is not an approval to produce 150 bhp, run arbitrary boost, or exceed turbo-map, EGT, exhaust-drive-pressure, oil, fuelling, clutch or driveline limits. The initial turbo calibration remains `5-7 psi`; any move toward `8-10 psi` remains conditional on logged evidence and diesel-specialist review.
+
 ## What The Project Already Establishes
 
 | Item | Current project basis | Confidence / consequence |
 | --- | --- | --- |
 | Engine | Toyota `2H`, naturally aspirated diesel, six glow plugs | High enough for planning; photograph the block/ID marks before ordering engine-specific hardware. |
-| Cooling layout | `HJ47 / 2H`-style hose and radiator pattern | Strong project evidence; the planned 70-series radiator/condenser stack still needs an as-installed heat-rejection test. |
+| Cooling layout | `HJ47 / 2H`-style hose and radiator pattern | Strong project evidence; Rev D requires a measured-fit radiator/condenser main pack and independent side charge-cooler path, both proven by an as-installed heat-rejection test. |
 | Gearbox | Five-speed; `H55F` is the active candidate | Do not set a torque target until case/top-cover marks confirm it and oil/debris condition is checked. |
 | Intended vehicle | 1978 J40 restoration, road and utility use | Favors low-rpm response, controlled cylinder pressure, and durability over peak power. |
 | Exhaust | Final route and hangers are not yet frozen | Helpful: the downpipe, heat shields, and full exhaust can be designed around the chosen turbo while access is open. |
-| A/C and cooling work | Front radiator/condenser/fan package is being redesigned | Turbo heat load, condenser obstruction, fan/shroud performance, and under-bonnet airflow must be validated together. |
+| A/C and cooling work | 50°C Rev D cooling system is being designed | Turbo heat load, condenser obstruction, installed fan performance, shroud sealing and independent charge-air exit must be validated together. |
 
 ## Why A Conservative Setup Fits
 
@@ -50,7 +58,7 @@ Model-family names describe a sizing direction, not interchangeable purchase app
 | Boost | `5-7 psi` initial calibration | Stable wastegate control, no charge leaks, clean smoke response, acceptable EGT/coolant temperature, and healthy hot oil pressure. |
 | Higher boost | Consider no more than roughly `8-10 psi` within this conservative path | Only after logged loaded testing, diesel-specialist fuelling review, and clutch/driveline acceptance. This is not pre-approved. |
 | EGT sensor | Pre-turbine thermocouple | Install before adding fuel; agree the continuous and short-duration alarm limits with the engine builder/tuner for this exact sensor position and engine. |
-| Intercooling | Plan to fit | May be omitted only if logged compressor-outlet/intake temperatures and packaging analysis justify it; A/C condenser and radiator airflow cannot be compromised. |
+| Intercooling | Separate side/wing air-to-air cooler is required for this turbo package | It must not compromise A/C condenser/radiator air. Prove `≥15 kW` rejection, `≤80°C` manifold IAT and charge-route loss `≤10 kPa` at the Rev D test condition. |
 | Fuelling | Baseline pump setting until turbo system is proven | Adjust gradually on measured boost/EGT with no sustained visible smoke. |
 | Exhaust | Low-restriction system with flex provision, heat shields, and serviceable joints | Final diameter and muffler selected after turbo outlet and full chassis/body clearances are known. |
 
@@ -87,7 +95,7 @@ Perform these on a fully warmed engine wherever applicable and record the raw re
 - Turbo oil-feed source and measured pressure; specify the feed/restrictor to the chosen turbo manufacturer's requirement.
 - Oil-drain fall, diameter, entry angle, and sump entry above the normal oil level; no uphill section or tight bend.
 - Air-cleaner-to-compressor route and compressor-to-intercooler-to-manifold route with flexible engine-movement joints.
-- Intercooler position that does not starve the A/C condenser and radiator; measure the complete cooling stack pressure/temperature performance, not each component in isolation.
+- Independent side/wing intercooler position with sealed fresh inlet and separate hot exit; it must not starve or pre-heat the A/C condenser/radiator. Measure the complete cooling and charge-air systems under their installed pressure/temperature conditions, not each core in isolation.
 - Heat shielding and thermal barriers around the turbine, manifold, downpipe, brake/clutch hydraulics, wiring, bonnet, and intake plumbing.
 - Service removal path for the oil filter, starter, alternator, belts, A/C compressor, and turbo itself.
 

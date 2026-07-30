@@ -11,9 +11,19 @@
 
 Treat the radiator as a dedicated workstream because it crosses three separate scopes: vehicle-side front-support fabrication, radiator shop recore/new-build decision, and final cooling-system fitment.
 
-The reason for the front-of-car fabrication is to keep the radiator properly located in the vehicle. The immediate fabrication job is not a radiator-shop repair to the core or tanks; it is the missing/right-side vehicle-side retention piece that matches the existing side and holds the radiator in place. Use the existing-side measurements as the template basis, but do not blindly drill final holes until the right-side dry-fit proves the radiator ear, chassis/front-support width, top screw position, rubber isolation, and fan clearance.
+**Status update 2026-07-22:** the owner reports the second/right-side radiator retention arm has been welded in, and the current front-structure photo shows both upright arms. Close the fabrication action but keep installation acceptance open. Inspect the new weld and heat-affected metal, compare the arms for height/plane/hole alignment, dry-fit the actual radiator with rubber isolation, verify fan/shroud/hose/bonnet clearance, then restore primer/top protection. Do not re-fabricate the arm unless that inspection or dry fit finds a defect.
+
+The reason for the front-of-car fabrication is to keep the radiator properly located in the vehicle. The immediate fabrication job was not a radiator-shop repair to the core or tanks; it was the missing/right-side vehicle-side retention piece that matches the existing side and holds the radiator in place. The earlier measurements and template remain the as-built checking basis rather than an instruction to make another arm.
 
 The radiator body itself remains sample-controlled. Send the old engine radiator with Amir as the master pattern for pressure/flow testing. Recore it if the tanks, necks, drain, cap seat, and brackets are sound; otherwise build a new copper/brass radiator by sample. Do not buy a random listing radiator from year/model alone.
+
+### Rev D Thermal Release — supersedes nominal stack assumptions
+
+The current controlled fabrication handoff is [J40 Integrated Cooling Pack Fabricator Specification — Rev D](J40-integrated-cooling-pack-fabricator-specification-rev-c.md). It supersedes earlier nominal front-stack assumptions, including a fixed `530 × 435 × 64 mm` core, a dual-9-inch/free-air-fan target, and any arrangement that puts the turbo intercooler in front of the condenser/radiator.
+
+Build the engine radiator and A/C condenser as a measured-fit **main path** only: grille → A/C pusher frame → condenser → `≥15 mm` gap → radiator → sealed full-face shroud → engine-driven puller. Final core selection must prove `≥115 kW` continuous heat rejection and `≥130 kW` for ten minutes at `50°C` dry-bulb grille inlet with A/C on; also prove a `52°C` ten-minute heat soak and hot restart. The engine-driven puller must deliver `≥9,000 m³/h` installed at `125 Pa` and `1,500 rpm`; the independently fused/relayed A/C pusher(s) must deliver `≥3,000 m³/h` installed at `75 Pa` and `13.5 V`.
+
+The future turbo charge cooler is a separate side/wing system, not a third layer in the main pack: sealed fresh inlet → side charge cooler → dedicated `≥2,500 m³/h` installed fan at `75 Pa` → separate hot exit. Its release targets are `≥15 kW` rejection at the Rev D charge-air duty, manifold IAT `≤80°C`, and complete charge-route pressure loss `≤10 kPa` (target `≤7 kPa`). After all Rev D thermal/airflow gates pass, cooling must not force boost derate inside the `150 bhp` crank thermal-design envelope. This is not approval of 150 bhp, arbitrary boost, fuelling, turbo-map speed, EGT, drive-pressure or driveline capacity; turbo calibration still starts at `5-7 psi`, with `8-10 psi` only after logged evidence.
 
 If the aluminium radiator route is already in play, it is accepted only after dry-fit proves the core, tanks, necks, cap, drain, fan clearance, and hose layout are correct. Any added metal part must be a removable rubber-isolated adapter/cradle between the vehicle support and radiator mounting ears/rails, not a hard leg welded or bolted to the tank/core.
 
@@ -34,7 +44,7 @@ Fabricate one mirror-side radiator retention post from the existing-side datum:
 | Top screw return | `58 mm`, carried full-depth across the formed angle section |
 | Chassis bridge allowance | `70 mm`, verify on right-side dry-fit |
 | Outer saddle leg | `80 mm` |
-| Fixing method | Bolt-through lower saddle over both sides of chassis/front-support section; avoid welding by default |
+| Fixing method | As built on 2026-07-22: second arm reported welded to the vehicle structure; inspect the weld and geometry, then confirm the radiator fastener/isolator stack before acceptance |
 | Isolation | Rubber washer/bush/grommet stack at radiator screw as needed |
 
 Release holds before final steel drilling:
@@ -45,9 +55,9 @@ Release holds before final steel drilling:
 - Confirm fan, shroud, belt, upper/lower hose, bonnet-close, and radiator removal clearance after tightening.
 - Photograph the cardboard or flat-bar dry-fit with ruler before final drilling/coating.
 
-## Missing-Side Application Sequence
+## Missing-Side Application Sequence — Historical Fit/QA Basis
 
-This is the immediate workshop use case for the fabricated holder: copy the working holder concept to the side where the radiator is currently missing proper support.
+The arm is now reported installed. Retain this sequence only as the datum and dry-fit checklist for checking the as-built work; do not fabricate a duplicate unless the current arm fails inspection.
 
 1. Set the radiator in its intended position first, sitting on the correct lower pads or temporary rubber spacers. Do not use hose tension to pull it into place.
 2. Use the existing/good side as the datum for height, front-back plane, and top screw relationship.

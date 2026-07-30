@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-30 03:16:39
+- Generated: 2026-07-29 06:20:53
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -13,25 +13,23 @@
 
 ## Decision Counts
 
-- `bundle_local_toyota_buy_after_inspection`: 6
+- `bundle_local_toyota_buy_after_inspection`: 2
 - `buy_body_fastener_hardware_from_samples`: 2
 - `buy_compact_cabin_fuse_boxes`: 1
-- `buy_now`: 1
+- `buy_now`: 2
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_brake_specs_then_order`: 3
-- `confirm_price_then_buy`: 6
-- `confirm_procured_receipt`: 9
+- `confirm_price_then_buy`: 12
+- `confirm_procured_receipt`: 8
 - `defer_as_non_baseline`: 4
 - `defer_until_baseline_closure`: 1
 - `gearbox_oil_spec_then_buy`: 1
 - `hold_until_body_closed`: 1
 - `longman_hose_pipe_order_ready`: 4
-- `online_click_buy_approved`: 1
-- `review`: 5
-- `runner_spec_controlled`: 10
+- `review`: 42
+- `runner_spec_controlled`: 9
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
-- `stock_audit_then_local_topup`: 1
-- `track_in_flight_order`: 8
+- `track_in_flight_order`: 6
 
 ## Timing Windows
 
@@ -40,25 +38,21 @@
 - `body_sealed`: 1
 - `electrical_closeout`: 1
 - `gearbox_oil_service_gate`: 1
-- `in_flight_now`: 17
+- `in_flight_now`: 14
 - `longman_mills_quote_pack`: 4
 - `merged_suspension_brake_window`: 3
-- `online_click_buy_now`: 1
 - `post_baseline_only`: 5
-- `post_tub_off_inspection`: 7
-- `pre_order_audit`: 1
-- `review`: 12
-- `runner_spec_controlled`: 10
+- `post_tub_off_inspection`: 3
+- `review`: 56
+- `runner_spec_controlled`: 9
 
 ## Immediate Actions (Now)
 
-- `part_fastener_kit_a_millat` Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves -> track_in_flight_order
-- `part_fastener_kit_b_millat` Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers -> track_in_flight_order
-- `part_fastener_kit_e_millat` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 -> track_in_flight_order
-- `part_brake_master_reservoir_refresh` Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect -> track_in_flight_order
-- `part_rear_brake_shoes_hardware` Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate -> track_in_flight_order
-- `part_daraz_cable_clip_clamp_assortment_20260527` Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 -> track_in_flight_order
-- `part_fastener_kit_d_millat` Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points -> track_in_flight_order
+- `part_hvac_hidden_evaporator_blower_unit_20260514` Hidden compact evaporator core/case and outlet plenum for custom blower fitment -> track_in_flight_order
+- `part_brake_master_reservoir_refresh` Brake master cylinder candidate order - ULTIMA UFM-1041 x1; reservoir/proportioning still inspect -> track_in_flight_order
+- `part_toolsmart_vmd_brake_clutch_cleaner_400ml_tm26231_20260704` VMD Brake and Clutch Cleaner 400ML - qty 1 -> track_in_flight_order
+- `part_brighto_extreme_paint_remover_3l_second_order_20260618` Brighto Extreme Paint Remover - 3 L second order -> track_in_flight_order
+- `part_mech_engine_oil_filter_service` Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately -> track_in_flight_order
 - `part_ironman_front_dampers_separate_shipment` Ironman Foamcell front damper pair - separate shipment (24635FE x2) -> track_in_flight_order
 
 ## Practical Outcome

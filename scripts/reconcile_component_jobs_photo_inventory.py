@@ -293,9 +293,11 @@ RULES: dict[str, EvidenceRule] = {
             "front_frame_horns_bumper_and_steering_area",
             "rear_mid_frame_rail_and_hard_line_detail",
             "rear_half_chassis_primer_application",
+            "front_winch_crossmember_structure_context_20260722",
+            "major_round_tube_structural_crossbar_reinstatement_20260722",
         ),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
-        notes="Body-off underside shots, May 1 post-brushing photos, and July 4 rear-half primer photos provide direct evidence for rails/crossmembers and supporting suspension context.",
+        notes="Body-off underside shots, May 1 post-brushing photos, July 4 rear-half primer photos, and the July 22 reinstated structural-crossbar image provide direct chassis/crossmember evidence. The new weld still needs both-end inspection, geometry/clearance checks, and coating touch-in.",
     ),
     "chassis_rear_half_primer_application_20260704": EvidenceRule(
         direct_specific_components=("rear_half_chassis_primer_application",),
@@ -377,9 +379,12 @@ RULES: dict[str, EvidenceRule] = {
             "rear_drum_brake_removed_hardware_layout",
             "rear_drum_hub_and_backing_plate_condition_20260716",
             "rear_drum_reconditioned_hardware_update_20260716",
+            "rear_drum_hold_down_hardware_pool_complete_20260722",
+            "rear_drum_operating_parking_brake_hardware_pool_complete_20260722",
+            "rear_brake_shoe_fit_rejection_20260722",
         ),
         indirect_specific_components=("frame_floor_underside_and_lines",),
-        notes="Rear axle underside shots, July 4 removed layout, July 12 reconditioned hardware, and July 16 condition photos document the rebuild. July 16 shows remade springs and tidied operating parts, but used pins still need wear/retention checks and the rusty drum/hub and backing plate remain on hold for cleaning, inspection and measurement.",
+        notes="Rear axle/drum images plus the July 22 hold-down and operating-hardware photos document the reported-complete non-friction parts pool. The July 22 fit photo rejects K-2255 as too wide; correct K-2221 shoes, hardware count/condition/layout checks, rusty drum/backing-plate preparation, assembly and functional validation remain open.",
     ),
     "rear_brake_cable_line_refresh": EvidenceRule(
         direct_specific_components=(
@@ -402,9 +407,11 @@ RULES: dict[str, EvidenceRule] = {
             "rear_drum_hold_down_spring_pin_set_reconditioned_20260712",
             "rear_drum_parking_brake_reconditioned_hardware_20260712",
             "rear_drum_reconditioned_hardware_update_20260716",
+            "rear_drum_hold_down_hardware_pool_complete_20260722",
+            "rear_drum_operating_parking_brake_hardware_pool_complete_20260722",
         ),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember"),
-        notes="Dedicated control row for parking-brake cable attachment hardware: clevis, equalizer, pins, return springs, cable-end clips, and bracket retainers. July 16 adds tidied hardware, remade springs and used replacement pins; all remain install candidates pending side/location control, wear and retention checks, spring comparison, and received-cable contents comparison.",
+        notes="July 22 photos support the owner report that the rear-drum hold-down and parking-brake/operating hardware pool is complete. Procurement is provisionally closed; side/location control, counts, wear/retention checks, spring comparison, adjuster/lever movement and full free return still gate installation.",
         direct_media_ids=("20260514_095953_gp_BXoQkXnw", "20260514_100003_gp_Vr2QI7ig"),
     ),
     "rear_differential_axle_inspection_20260517": EvidenceRule(
@@ -421,7 +428,7 @@ RULES: dict[str, EvidenceRule] = {
     "brake_booster_servo_refurbishment_20260529": EvidenceRule(
         direct_specific_components=("brake_booster_servo_removed_sample",),
         indirect_specific_components=(),
-        notes="May 29 removed booster/servo photos provide the direct old-sample evidence for Amir's refurbish or direct-match exchange route. Payment still waits for shop video proof: sample match, interface close-ups, vacuum hold, assist movement, contamination check, and final acceptance.",
+        notes="May 29 removed booster/servo photos record its pre-tidy condition and interfaces. Owner confirmation on July 29 closes the functional concern: the booster is fine and needs cosmetic tidying only. Preserve the shell joint, pushrod/free-play, clevis, boot, check valve, grommet, studs, and master-cylinder interface during cosmetic work; validate the assembled brakes in the wider brake-system closeout.",
         direct_media_ids=BRAKE_BOOSTER_20260529_MEDIA_IDS,
     ),
     "suspension_upgrade_spec_and_kit_lock": EvidenceRule(
@@ -435,7 +442,7 @@ RULES: dict[str, EvidenceRule] = {
         notes="Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos.",
     ),
     "suspension_bump_stop_install_20260712": EvidenceRule(
-        direct_specific_components=("suspension_bump_stop_install_set_20260712", "suspension_bump_stop_removed_samples"),
+        direct_specific_components=("suspension_bump_stop_install_set_20260712", "suspension_bump_stop_removed_samples", "suspension_bump_stop_set_20260722"),
         indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
         notes="July 12 Bilal Ganj photos show the new bump-stop set in hand. Install at the front/rear spring bump-stop brackets only after rust-treating the metal mounting plates and confirming station fit/clearance.",
     ),
@@ -526,9 +533,12 @@ RULES: dict[str, EvidenceRule] = {
             "front_frame_horns_bumper_and_steering_area",
             "frame_rail_body_mount_and_hard_line_detail",
             "rear_mid_frame_rail_and_hard_line_detail",
+            "front_radiator_two_side_retention_20260722",
+            "front_winch_crossmember_structure_context_20260722",
+            "major_round_tube_structural_crossbar_reinstatement_20260722",
         ),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
-        notes="Current photos provide pre-work baseline only; closure needs post-install labelled photos and trial-fit evidence before primer/Raptor.",
+        notes="July 22 images show the second radiator arm and reinstated structural crossbar after fabrication. Physical work is reported complete; closure still needs close weld/geometry/clearance evidence, radiator dry fit, and primer/Raptor touch-in.",
     ),
     "chassis_bracket_validation_release_20260508": EvidenceRule(
         direct_specific_components=(
@@ -537,19 +547,27 @@ RULES: dict[str, EvidenceRule] = {
             "frame_rail_body_mount_and_crossmember_detail",
             "frame_rail_body_mount_and_hard_line_detail",
             "rear_mid_frame_rail_and_hard_line_detail",
+            "front_radiator_two_side_retention_20260722",
+            "front_winch_crossmember_structure_context_20260722",
+            "major_round_tube_structural_crossbar_reinstatement_20260722",
         ),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
-        notes="Baseline photos support the validation checklist; final release still requires labelled installed-bracket photos and dry-fit checks for radiator, battery, line/harness/ground, and exhaust interfaces.",
+        notes="Baseline and July 22 installed-work photos support the validation checklist. Final release still requires close weld/heat-affected-zone views, geometry and clearance measurements, radiator/isolator dry fit, and coating restoration.",
     ),
     "front_radiator_bracket_repair_20260508": EvidenceRule(
-        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "front_radiator_two_side_retention_20260722"),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
-        notes="Front support and cooling-route photos are the baseline for the wire-held radiator support repair; the May 12 upright/crossmember view starts the pickup layout, but closure still needs ruler photos, trial-fit, and bracket close-ups.",
+        notes="July 22 front-structure evidence shows the second radiator arm present and reported welded. Fabrication is complete; closure still needs weld/heat-affected-zone closeups, side-to-side geometry, radiator/isolator dry fit, fan/shroud/hose/bonnet clearance, and coating touch-in.",
     ),
     "front_radiator_two_side_retention_fabrication_20260508": EvidenceRule(
-        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "front_radiator_two_side_retention_20260722"),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
-        notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; the May 12 view adds the visible upright and crossmember hole field, while final hole centres and bracket offsets still need ruler photos or dry-fit.",
+        notes="The July 22 front-structure photo shows both radiator arms and supports the report that the second arm is welded in. Keep installation release open for weld inspection, pickup alignment, rubber isolation, radiator dry fit and fan/shroud/hose clearance.",
+    ),
+    "major_structural_round_tube_crossbar_reinstatement_20260722": EvidenceRule(
+        direct_specific_components=("major_round_tube_structural_crossbar_reinstatement_20260722",),
+        indirect_specific_components=("front_winch_crossmember_structure_context_20260722", "frame_floor_underside_and_lines"),
+        notes="July 22 image directly shows the major round-tube structural crossbar reinstated between the rails. Fabrication is reported complete; both ends, rail condition, geometry, driveline/line clearance and corrosion protection still require closeout evidence.",
     ),
     "engine_radiator_recore_or_new_20260529": EvidenceRule(
         direct_specific_components=(
@@ -646,6 +664,22 @@ RULES: dict[str, EvidenceRule] = {
             "20260430_215939_gp_EjZ7u1ow",
             "20260502_005740_gp_Qiat03EQ",
         ),
+    ),
+    "removed_reusable_parts_refresh_repaint_20260723": EvidenceRule(
+        direct_specific_components=(
+            "pedal_area_dual_plunger_switch_bracket_20260723",
+            "single_stamped_latch_adjuster_identification_20260723",
+            "front_door_latch_central_locking_sets_20260723",
+            "parking_brake_cable_linkage_reconstruction_sample_20260723",
+            "glovebox_lid_refresh_repaint_20260723",
+            "manual_window_regulator_refurbishment_20260723",
+            "windscreen_wiper_motor_assessment_20260723",
+            "unidentified_lever_pieces_refurbisher_identification_20260723",
+            "oil_filler_breather_tube_identification_20260723",
+            "suspension_bump_stop_set_20260722",
+        ),
+        indirect_specific_components=(),
+        notes="The revised selector is directly supported by the eleven July 23 part photos plus the separately tracked bump-stop set. Mechanical, electrical and cable items require specialist assessment before cosmetic work; identify-first labels remain mandatory where the function is not proven.",
     ),
     "tub_refit_rubber_hardware_shim_stack": EvidenceRule(
         direct_specific_components=("body_mount_and_crossmember_detail", "floor_seam_and_body_mount_rust"),

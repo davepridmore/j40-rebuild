@@ -1,0 +1,8 @@
+part_id,feature_id,feature_type,size_mm,centre_x_mm,centre_y_mm,quantity,note
+J40-EBP-001,S01-S04,horizontal_obround,34.0x10.0,67/293,12/233,4,All combinations of listed X and Y coordinates; end radius 5.0
+J40-EBP-001,S05-S08,vertical_obround,10.0x34.0,13/347,103/160,4,All combinations of listed X and Y coordinates; end radius 5.0
+J40-EBP-002,P01,outer_profile,300.0x197.0,,,1,No holes in CNC release
+J40-EBP-003,H01-H05,round_hole,diameter 4.5,11.0/31.2/51.4/71.6/91.8,20.0,5,Fuse-holder row 1
+J40-EBP-003,H06-H10,round_hole,diameter 4.5,21.0/41.2/61.4/81.6/101.8,64.0,5,Fuse-holder row 2
+J40-EBP-003,H11-H13,round_hole,diameter 5.5,15.0/70.0/125.0,10.0,3,Standoff row 1
+J40-EBP-003,H14-H16,round_hole,diameter 5.5,15.0/70.0/125.0,75.0,3,Standoff row 2

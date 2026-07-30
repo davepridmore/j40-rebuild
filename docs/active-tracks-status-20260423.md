@@ -9,13 +9,14 @@
 - Current reality: body is off; body welding and chassis fixing are both active in parallel.
 - 2026-05-03 update: suspension upgrade is now the ordered Ironman Foam Cell path, controlled by `docs/suspension-workstream.md`.
 - 2026-05-13 update: `local_market_procurement` is retired as a separate workstream; local buys now stay under the owning workstream.
+- 2026-07-23 update: ownership registration is complete, the new number plate is in hand, and both sides of the Punjab registration certificate are archived in `docs/legal-admin-evidence/`. The owner confirms insurance is not required.
 
 ## Track Snapshot
 
 | Track | Status | Priority | Depends On | Immediate Next Move | Gate To Close |
 | --- | --- | --- | --- | --- | --- |
 | `site_setup` | `in_progress` | `high` | `-` | Stabilize covered work area, labeling, and storage flow before more parts move. | Vehicle can stay stripped without weather/part-loss risk. |
-| `legal_admin` | `in_progress` | `critical` | `seller_biometric` | Confirm biometric transfer submission, plate status, and complete document pack. | Ownership/admin trail is explicit and auditable. |
+| `legal_admin` | `completed` | `critical` | `-` | Secure the original certificate and new plate evidence. | Ownership registration, new number plate and core evidence pack completed on 2026-07-23; insurance is not required. |
 | `stripdown_cataloguing` | `in_progress` | `critical` | `site_setup` | Keep controlled strip-down with tags, photos, and outbound job tracking. | Shell/loose parts/outsourced items catalogued with no orphan parts. |
 | `body_chassis` | `in_progress` | `critical` | `stripdown_cataloguing` | Execute weld-zone cut/fab/weld/coating sequence and freeze refit interface points. | Body-off shell repairs are welded, sealed, and signed off zone by zone. |
 | `chassis_fixing` | `in_progress` | `high` | `body_chassis` | Run cleanup sequence with wire cup first on non-flat frame geometry, then flats cleanup and issue closure before coating. | No unresolved structural defects; protection stack documented. |

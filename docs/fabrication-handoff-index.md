@@ -70,7 +70,23 @@ Release position:
 - Final bending/drilling remains gated by right-side vehicle dry-fit, transferred left-bracket dimensions, screw size, radiator ear offset, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and fan clearance.
 - The Bracket Analysis Register remains the evidence/action register; this package is the Fabrication handoff for making the bracket templates.
 
-## Front Cooling Stack Frame - Rev A
+## Integrated Radiator & Front Cooling Pack - Rev C.1 (Current)
+
+**Current controlled handoff — issued 30 July 2026.** Use this package for the radiator shop, A/C installer and fabrication mock-up. **Final core manufacture remains HOLD** until the documented vehicle measurements, full-size dummy fit and written owner approval are complete.
+
+Controlled specification: [J40-integrated-cooling-pack-fabricator-specification-rev-c.docx](J40-integrated-cooling-pack-fabricator-specification-rev-c.docx) and [source Markdown](J40-integrated-cooling-pack-fabricator-specification-rev-c.md)
+
+Dimensioned drawing assets: [data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/)
+
+Release position:
+- The Rev C.1 drawing register covers the complete front elevation, radiator orthographic/interface sheet, exploded radiator parts, condenser/intercooler/dual-fan dimensions, mounting/saddles/shroud, side-depth gates, and dual-fan mounting/wiring.
+- **Two matching slim 9-inch 12 V pusher fans are mandatory**, mounted side-by-side above the intercooler. Each fan has its own fused and relayed branch; retain the original engine-driven puller and a close removable shroud.
+- The Rev A optional single-fan provision is **not current** and must not be substituted for the required dual-fan arrangement.
+- Red dimensions are fixed nominal requirements. Purple items and every unlabeled position must be measured on the actual vehicle and released in writing before final core manufacture.
+
+## Front Cooling Stack Frame - Rev A (Legacy / Superseded)
+
+**Superseded by Integrated Radiator & Front Cooling Pack Rev C.1 on 30 July 2026. Do not issue Rev A as the current radiator-shop or fan specification.** It remains only as historical reference for earlier frame work.
 
 Directory: [data/manual/fabrication/front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)
 

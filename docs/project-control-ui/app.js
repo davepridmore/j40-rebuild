@@ -93,6 +93,10 @@
     visualViewerKey: "",
     itemDetailRow: null,
     recategorizeOpen: false,
+    imageSearch: "",
+    imageComponentGroup: "",
+    imageStage: "",
+    imageVisibleCount: 120,
   };
 
   const imageRegistry = new Map();
@@ -193,6 +197,14 @@
       return;
     }
 
+    const imageShowMoreTrigger = event.target.closest("[data-images-show-more]");
+    if (imageShowMoreTrigger) {
+      event.preventDefault();
+      state.imageVisibleCount += 120;
+      renderImagesResults();
+      return;
+    }
+
     const itemTrigger = event.target.closest("[data-item-key]");
     if (!itemTrigger) {
       return;
@@ -209,6 +221,30 @@
     }
     event.preventDefault();
     openItemDetail(itemKey);
+  });
+
+  root.addEventListener("input", (event) => {
+    const target = event.target.closest("[data-images-search]");
+    if (!target || state.activeView !== "images") {
+      return;
+    }
+    state.imageSearch = cleanString(target.value);
+    state.imageVisibleCount = 120;
+    renderImagesResults();
+  });
+
+  root.addEventListener("change", (event) => {
+    const target = event.target.closest("[data-images-filter]");
+    if (!target || state.activeView !== "images") {
+      return;
+    }
+    if (target.getAttribute("data-images-filter") === "component-group") {
+      state.imageComponentGroup = cleanString(target.value);
+    } else if (target.getAttribute("data-images-filter") === "stage") {
+      state.imageStage = cleanString(target.value);
+    }
+    state.imageVisibleCount = 120;
+    renderImagesResults();
   });
 
   root.addEventListener("pointerover", (event) => {
@@ -1330,10 +1366,10 @@
     };
   }
 
-  function renderImageButton(prepared, buttonClass, imageClass) {
+  function renderImageButton(prepared, buttonClass, imageClass, loading = "eager") {
     return `
       <button type="button" class="${buttonClass}" data-image-key="${escapeHtml(prepared.key)}" title="Open full-size media">
-        <img loading="eager" decoding="async" class="${imageClass}" src="${escapeHtml(prepared.path)}" alt="${escapeHtml(prepared.caption)}">
+        <img loading="${loading === "lazy" ? "lazy" : "eager"}" decoding="async" class="${imageClass}" src="${escapeHtml(prepared.path)}" alt="${escapeHtml(prepared.caption)}">
       </button>
     `;
   }
@@ -3727,6 +3763,132 @@
     `;
   }
 
+  function imageLibraryRows() {
+    const rows = Array.isArray(data.images) ? data.images : Object.values(data.photo_lookup || {});
+    const query = cleanString(state.imageSearch).toLowerCase();
+    return rows.filter((image) => {
+      if (state.imageComponentGroup && cleanString(image.component_group) !== state.imageComponentGroup) {
+        return false;
+      }
+      if (state.imageStage && cleanString(image.stage) !== state.imageStage) {
+        return false;
+      }
+      if (!query) {
+        return true;
+      }
+      const searchable = [
+        image.file_name,
+        image.caption,
+        image.component_group,
+        image.specific_component,
+        image.stage,
+        image.observed_state,
+        image.tags,
+        image.notes,
+      ]
+        .map((value) => cleanString(value).toLowerCase())
+        .join(" ");
+      return searchable.includes(query);
+    });
+  }
+
+  function renderImagesResults() {
+    const resultRoot = document.getElementById("images-results");
+    if (!resultRoot) {
+      return;
+    }
+    resetImageRegistry();
+    const matches = imageLibraryRows();
+    const visible = matches.slice(0, state.imageVisibleCount);
+    const sequenceId = createImageSequence();
+    resultRoot.innerHTML = `
+      <div class="images-result-summary">
+        <p class="small-muted">Showing ${escapeHtml(visible.length)} of ${escapeHtml(matches.length)} images.</p>
+      </div>
+      ${
+        visible.length
+          ? `<div class="gallery images-library-grid">
+              ${visible
+                .map((image) => {
+                  const prepared = prepareImage(image, image.file_name || "J40 project image", { sequenceId });
+                  const component = formatToken(prepared.effective.specific_component || prepared.effective.component_group || "");
+                  const date = cleanString(prepared.effective.captured_date);
+                  return `
+                    <figure>
+                      ${renderImageButton(prepared, "image-open-btn", "gallery-image", "lazy")}
+                      <figcaption>
+                        <span class="images-caption-row">
+                          <strong>${escapeHtml(component || prepared.caption)}</strong>
+                          <a class="image-direct-link" href="${escapeHtml(prepared.path)}" target="_blank" rel="noopener">Direct URL</a>
+                        </span>
+                        ${date ? `<span>${escapeHtml(date)}</span>` : ""}
+                      </figcaption>
+                    </figure>
+                  `;
+                })
+                .join("")}
+            </div>`
+          : '<article class="card"><p>No images match those filters.</p></article>'
+      }
+      ${
+        visible.length < matches.length
+          ? `<div class="images-show-more-wrap">
+              <button type="button" class="images-show-more-btn" data-images-show-more>Show 120 more</button>
+            </div>`
+          : ""
+      }
+    `;
+  }
+
+  function renderImages() {
+    const rows = Array.isArray(data.images) ? data.images : Object.values(data.photo_lookup || {});
+    const componentGroups = Array.from(new Set(rows.map((image) => cleanString(image.component_group)).filter(Boolean))).sort();
+    const stages = Array.from(new Set(rows.map((image) => cleanString(image.stage)).filter(Boolean))).sort();
+    root.innerHTML = `
+      <div class="images-view">
+        <div class="images-view-heading">
+          <div>
+            <h2 class="section-title">Images</h2>
+            <p class="section-subtitle">The complete J40 project image archive. Select any image to open the full-size viewer.</p>
+          </div>
+          <span class="header-meta">${escapeHtml(rows.length)} images</span>
+        </div>
+        <section class="card images-toolbar" aria-label="Image filters">
+          <label>
+            <span>Search</span>
+            <input type="search" value="${escapeHtml(state.imageSearch)}" placeholder="Part, stage, tag, or filename" data-images-search>
+          </label>
+          <label>
+            <span>Component group</span>
+            <select data-images-filter="component-group">
+              <option value="">All component groups</option>
+              ${componentGroups
+                .map(
+                  (value) =>
+                    `<option value="${escapeHtml(value)}"${value === state.imageComponentGroup ? " selected" : ""}>${escapeHtml(formatToken(value))}</option>`
+                )
+                .join("")}
+            </select>
+          </label>
+          <label>
+            <span>Stage</span>
+            <select data-images-filter="stage">
+              <option value="">All stages</option>
+              ${stages
+                .map(
+                  (value) =>
+                    `<option value="${escapeHtml(value)}"${value === state.imageStage ? " selected" : ""}>${escapeHtml(formatToken(value))}</option>`
+                )
+                .join("")}
+            </select>
+          </label>
+        </section>
+        <section id="images-results" aria-live="polite"></section>
+      </div>
+    `;
+    renderImagesResults();
+  }
+
   function renderEvidenceSets(evidenceSets) {
     if (!evidenceSets || !evidenceSets.length) {
       return '<p class="small-muted">No evidence sets available.</p>';
@@ -4800,19 +4962,19 @@
       ...(parts.urgent_actions || []),
     ]);
     const allSupplyRows = dedupeScoutRows((data.supplies && data.supplies.all_rows) || []);
-    const epsWorkstream = workstreamById("eps_vitz_upgrade");
+    const steeringWorkstream = workstreamById("eps_vitz_upgrade");
     const replacementPipesWorkstream = workstreamById("replacement_pipes");
     const chassisRubbersWorkstream = workstreamById("chassis_rubbers");
     const fabricationWorkstream = workstreamById("fabrication_handoff");
-    const epsMarketSpecs = [
-      ...((epsWorkstream && epsWorkstream.market_specs) || []),
-      ...((parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("eps"))),
+    const steeringMarketSpecs = [
+      ...((steeringWorkstream && steeringWorkstream.market_specs) || []),
+      ...((parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("j60_hydraulic_steering"))),
     ];
     const brakeMarketSpecs = (parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("brake_booster"));
-    const epsParts = filterScoutRows(allPartRows, {
+    const steeringParts = filterScoutRows(allPartRows, {
       entryIds: ["part_power_steering_upgrade"],
       workstreams: ["eps_vitz_upgrade"],
-      terms: ["eps", "vitz", "yaris", "scp90", "ncp90"],
+      terms: ["j60", "hj60", "hydraulic steering", "steering box", "pitman", "drag link", "power steering pump"],
     });
     const brakeBoosterParts = filterScoutRows(allPartRows, {
       entryIds: ["part_brake_booster_servo_44610_60050"],
@@ -5617,15 +5779,15 @@
 
     return [
       {
-        id: "eps",
-        title: "EPS",
-        description: "Only the 2005-2011 Vitz/Yaris SCP90/NCP90 complete EPS kit is a buy candidate; J40 fitment is through the General EPS Adapter route.",
-        chips: ["SCP90/NCP90 only", "Bench-test before payment", "General adapter geometry"],
-        parts: epsParts,
+        id: "j60-hydraulic-steering",
+        title: "J60 Hydraulic Steering",
+        description: "Source a complete RHD J60/HJ60 box-side set and 2H pump-drive set; inspect/rebuild and physically trial-fit before any chassis fabrication or final hoses.",
+        chips: ["RHD complete set", "Trial-fit before fabrication", "Steering before turbo"],
+        parts: steeringParts,
         marketSpecs: attachScoutImage(
-          dedupeScoutRows(epsMarketSpecs),
-          epsParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg", "Complete Vitz/Yaris XP90 EPS column set checklist reference", "eps_complete_column_set_reference")
+          dedupeScoutRows(steeringMarketSpecs),
+          steeringParts,
+          null
         ),
       },
       {
@@ -9262,6 +9424,283 @@
     `;
   }
 
+  function renderCoolingPack() {
+    const photorealisticVisuals = [
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph01_photorealistic_complete_pack.png",
+        caption: "PH01 — Split-out Rev D components: central pack layers, independent side charge-air module, mounts and electrical parts.",
+        specific_component: "Rev D split-out cooling-pack components and independent side charge-air module",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph02_photorealistic_fully_assembled_pack.png",
+        caption: "PH02 — Fully assembled Rev D main pack and independent side charge-air module.",
+        specific_component: "Rev D fully assembled main pack and independent side charge-air module",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph03_installed_vehicle_composite.png",
+        caption: "PH03 — Proposed later-stage composite using the latest winch/crossmember evidence and documented new-bumper reference.",
+        specific_component: "Rev D proposed later-stage J40 chassis, new-bumper and cooling-pack composite",
+      },
+    ];
+    const diagrams = [
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d01_complete_stack.png",
+        caption: "D01 — Complete main-pack elevation and separate charge-cooler route.",
+        specific_component: "Rev D complete cooling-system elevation",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d02_radiator_assembly.png",
+        caption: "D02 — Radiator assembly, controlled interfaces and required test points.",
+        specific_component: "Rev D radiator assembly orthographic",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d03_radiator_components.png",
+        caption: "D03 — Exploded radiator parts.",
+        specific_component: "Rev D exploded radiator parts",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d04_component_dimensions.png",
+        caption: "D04 — Condenser, side charge cooler and fan-system dimensions.",
+        specific_component: "Rev D component dimensions",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d05_mounting_shroud.png",
+        caption: "D05 — Mounting, saddles and full-face shroud details.",
+        specific_component: "Rev D mounting and shroud details",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d06_side_geometry.png",
+        caption: "D06 — Main-pack depth gates and independent side-air path.",
+        specific_component: "Rev D side-section and air-path gates",
+      },
+      {
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d07_fan_wiring.png",
+        caption: "D07 — Mechanical, A/C-pusher and charge-cooler fan wiring.",
+        specific_component: "Rev D complete fan wiring",
+      },
+    ];
+    const fitGates = [
+      ["M1", "Main-pack envelope", "Measure clear width, height and depth at all radiator, condenser, shroud, fan, tank, port and connector positions. Final dimensions follow the measured vehicle, not a catalogue core."],
+      ["M2", "Main airflow route", "Grille → A/C pusher frame → condenser → 15 mm minimum gap → radiator → sealed full-face shroud → mechanical puller. No charge cooler in this path."],
+      ["M3", "Mechanical fan clearance", "Record full swept circle; ≥20 mm static radiator-to-blade clearance (25–30 preferred), ≥15 mm radial shroud clearance through engine movement."],
+      ["M4", "Side charge-cooler route", "Prove sealed fresh-air inlet, sealed core/shroud and separate hot-air exit. The exit must not feed the condenser/radiator inlet or recirculate at idle."],
+      ["M5", "Independent removal and isolation", "Each heat exchanger and fan frame has its own rubber-isolated mounts and can be removed without cutting or loading another core."],
+      ["M8", "Side charge-cooler template fit", "Before any side-core, duct or bracket manufacture, prove the selected upright, full-size 90° duct templates, inner-wing/body-envelope clearance, steering/suspension movement and independent removal path on the actual vehicle."],
+      ["F1", "Mechanical puller performance", "≥9,000 m³/h installed at 125 Pa at 1,500 engine rpm, with full close shroud. Supplier free-air flow does not pass."],
+      ["F2", "A/C pusher performance", "One or more independently fused/relayed front pushers: aggregate ≥3,000 m³/h installed at 75 Pa and 13.5 V."],
+      ["F3", "Charge-cooler fan performance", "Dedicated side fan ≥2,500 m³/h installed at 75 Pa through its complete inlet/core/shroud/outlet. Engine-running or documented fail-safe IAT/boost control; failure warns and commands ON."],
+      ["F4", "Electrical proof", "Record motor part numbers, steady/start current, fuses, cable sizes and loaded voltage. One fan-branch fault must not stop every electric fan."],
+      ["T1", "50°C continuous proof", "At 50°C dry-bulb at grille inlet, A/C on: ≥60 min after stabilisation at the 150 bhp crank thermal-design envelope; coolant must stabilise with no upward trend."],
+      ["T2", "Peak and soak proof", "≥130 kW for 10 min, then 52°C 10-min heat soak and hot restart. Log radiator-inlet air behind condenser, coolant in/out, IAT, boost, voltage and fan/engine speed."],
+      ["T3", "Charge-air proof", "At 50°C fresh-air inlet, 0.20 kg/s and 130°C nominal compressor discharge: side cooler rejects ≥15 kW; manifold IAT ≤80°C; complete charge-route drop ≤10 kPa (target ≤7 kPa)."],
+    ];
+
+    root.innerHTML = `
+      <div class="cooling-pack-view">
+        <section class="cooling-pack-hero" id="cooling-pack-summary">
+          <div class="cooling-pack-hero-copy">
+            <div class="cooling-pack-kicker-row">
+              <p class="eyebrow">Fabricator issue · Rev D · 30 July 2026</p>
+              ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy cooling-pack summary link")}
+            </div>
+            <h2>J40 Integrated Radiator &amp; Front Cooling Pack</h2>
+            <p class="cooling-pack-lead">A 50°C-capable cooling system for the Toyota 2H, R134a A/C and a conservative future turbo installation. The hard release condition is 50°C dry-bulb air at the grille with A/C on, plus a 52°C heat-soak/hot-restart test. It is designed so cooling does not require boost derate within the defined 150 bhp crank thermal-design envelope once every acceptance gate passes.</p>
+            <div class="cooling-pack-release">
+              <span class="cooling-pack-hold">50°C CLAIM / FINAL MANUFACTURE: HOLD</span>
+              <span>Design is released for quotation, measurements, mock-up and controlled fabrication; thermal and charge-air proof release the final claim.</span>
+            </div>
+            <blockquote>
+              <strong>Karigar ke liye:</strong> Pehle gaari par naap lo. Phir cardboard ya plywood dummy fit karo. Owner ki written approval ke baad hi final radiator, condenser ya intercooler core banao.
+            </blockquote>
+            <div class="cooling-pack-downloads">
+              <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.docx" download>Download shop specification (.docx)</a>
+              <a class="item-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md" download>Download source specification (.md)</a>
+            </div>
+          </div>
+          <dl class="cooling-pack-facts" aria-label="Key cooling-pack dimensions">
+            <div><dt>Ambient release</dt><dd>50°C + A/C on</dd><span>52°C soak / hot restart</span></div>
+            <div><dt>Radiator duty</dt><dd>≥115 kW continuous</dd><span>≥130 kW for 10 min</span></div>
+            <div><dt>Main installed air</dt><dd>≥9,000 m³/h</dd><span>125 Pa / 1,500 rpm puller</span></div>
+            <div><dt>Charge-air duty</dt><dd>≥15 kW</dd><span>side path; IAT ≤80°C</span></div>
+          </dl>
+        </section>
+
+        <section class="card cooling-pack-section cooling-pack-photorealistic" id="cooling-pack-photorealistic-visuals">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">PH01–PH03 · Fabrication visuals</p>
+              <h3>Component parts, assembled pack and proposed later-stage bumper packaging</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-photorealistic-visuals"), "#", "Copy photorealistic fabrication visuals link")}
+          </div>
+          <div class="cooling-pack-photorealistic-note" role="note">
+            <strong>Visual reference only.</strong> D01–D07, the measured vehicle and the thermal test log control manufacture. Do not scale these images or use them to release a core, bracket, fan position or duct.
+          </div>
+          <div class="cooling-pack-no-extra-width" role="note">
+            <strong>No extra front width.</strong>
+            <span>The radiator, condenser and front pusher fan frame stay entirely between the existing welded uprights / original central aperture and stack only front-to-rear.</span>
+            <span>The side charge cooler begins aft and outboard of the chosen upright, then turns about 90° into the side / inner-wing bay on its own mounts. It does not widen the grille, front panel or radiator.</span>
+            <span><strong>Side location and ducts are conceptual pending M8:</strong> full-size template-fit and body-envelope clearance on the actual vehicle are required before manufacture.</span>
+          </div>
+          <p class="small-muted">Read the three images in order and click any image to inspect it full size: PH01 splits out the required component groups, PH02 shows how those groups assemble without increasing the central front width, and PH03 shows the proposed later-stage vehicle packaging. PH03 is based on the latest factual winch/crossmember photo and the documented new-bumper design reference; it is not proof that the bumper or cooling pack has been fabricated or installed. Build only to the controlled drawings and approved full-size mock-up.</p>
+          <div class="cooling-pack-photorealistic-grid">
+            ${photorealisticVisuals
+              .map((visual) =>
+                renderFigureImage(visual, visual.caption, {
+                  figureClass: "cooling-pack-photorealistic-figure",
+                  buttonClass: "image-open-btn",
+                  imageClass: "cooling-pack-photorealistic-image",
+                  captionClass: "cooling-pack-photorealistic-caption",
+                })
+              )
+              .join("")}
+          </div>
+        </section>
+
+        <section class="card cooling-pack-section" id="cooling-pack-layout">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">What the shop builds</p>
+              <h3>Stack arrangement and required fans</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-layout"), "#", "Copy stack arrangement link")}
+          </div>
+          <div class="cooling-pack-band-grid">
+            <article>
+              <span class="cooling-pack-band-tag">Main engine/A-C path</span>
+              <p><strong>Grille → independently fused A/C pusher frame → condenser → ≥15 mm gap → radiator → sealed full-face shroud → engine-driven mechanical puller.</strong></p>
+            </article>
+            <article>
+              <span class="cooling-pack-band-tag">Independent turbo charge-air path</span>
+              <p><strong>Fresh side/wing inlet → sealed duct → side charge cooler → dedicated high-static fan → separate hot-air exit.</strong> This route must not block or pre-heat the condenser/radiator.</p>
+            </article>
+          </div>
+          <div class="table-wrap cooling-pack-table-wrap">
+            <table class="cooling-pack-table">
+              <thead><tr><th>Component</th><th>Required baseline</th><th>Fan decision</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Engine radiator</strong></td><td>Measured-fit copper/brass or equivalent core with net fin face ≥0.250 m² preferred. Must prove ≥115 kW continuous and ≥130 kW for 10 min at the stated test condition; a legacy 530 × 435 × 64 core is not an automatic acceptance.</td><td>Retain/rebuild the engine-driven puller with removable sealed full-face shroud; ≥9,000 m³/h installed at 125 Pa / 1,500 rpm.</td></tr>
+                <tr><td><strong>A/C condenser</strong></td><td>Parallel-flow R134a condenser on four independent rubber-isolated mounts; its exact envelope is vehicle-measured.</td><td>Front pusher(s), independently fused/relayed: aggregate ≥3,000 m³/h installed at 75 Pa / 13.5 V.</td></tr>
+                <tr><td><strong>Turbo charge cooler</strong></td><td>Separate side/wing air-to-air core with 57 mm beaded outlets, sealed inlet and separate hot exit. ≥15 kW at stated duty; complete charge route ≤10 kPa drop (target ≤7).</td><td>Dedicated high-static side fan ≥2,500 m³/h installed at 75 Pa through complete path; not an optional fan.</td></tr>
+                <tr><td><strong>Cabin evaporator</strong></td><td>A/C installer to supply and verify.</td><td>Requires its cabin blower; outside radiator-shop metalwork.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="cooling-pack-simple-rule"><strong>Simple rule:</strong> Har part apni bracket par, rubber ke saath, aur alag se nikal sakay. Core par koi load nahin.</p>
+        </section>
+
+        <section class="card cooling-pack-section" id="cooling-pack-diagrams">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">Rev D drawing register · 30 Jul 2026</p>
+              <h3>Complete dimensioned radiator and cooling-pack drawings</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-diagrams"), "#", "Copy cooling-pack diagrams link")}
+          </div>
+          <div class="cooling-pack-drawing-notes" role="note">
+            <span><b class="drawing-key drawing-key-fixed"></b><strong>Red</strong> = fixed nominal requirement.</span>
+            <span><b class="drawing-key drawing-key-measure"></b><strong>Purple</strong> = measure on vehicle / written approval.</span>
+            <span>All unlabeled positions are field-measured. Dimensions are in millimetres. <strong>Final core manufacture: HOLD.</strong></span>
+          </div>
+          <p class="small-muted">Click any drawing to inspect it full size. Use the full-size vehicle mock-up and written approval before making any final core.</p>
+          <div class="cooling-pack-gallery">${renderGallery(diagrams)}</div>
+        </section>
+
+        <section class="cooling-pack-spec-grid" id="cooling-pack-specifications">
+          <article class="card cooling-pack-spec-card">
+            <p class="cooling-pack-section-label">Main-pack airflow</p>
+            <h3>Installed airflow—not free-air marketing</h3>
+            <ul>
+              <li>Mechanical puller + sealed full-face shroud: ≥9,000 m³/h installed at 125 Pa at 1,500 engine rpm.</li>
+              <li>A/C pusher(s): ≥3,000 m³/h installed at 75 Pa at 13.5 V; multiple motors use independent fuse/relay branches.</li>
+              <li>Record make, model, installed test basis, steady current, start current and loaded voltage for every fan.</li>
+              <li>No component may obscure the main core or be supported by another heat exchanger.</li>
+            </ul>
+          </article>
+          <article class="card cooling-pack-spec-card">
+            <p class="cooling-pack-section-label">Side charge-cooler system</p>
+            <h3>Turbo air gets its own cool air and fan</h3>
+            <ul>
+              <li>≥15 kW heat rejection at 50°C fresh inlet, 0.20 kg/s charge flow and 130°C nominal compressor outlet.</li>
+              <li>Manifold IAT ≤80°C at stabilised rated full load; pressure-test to ≥2× declared boost, minimum 30 psi.</li>
+              <li>Dedicated fan ≥2,500 m³/h installed at 75 Pa. It runs whenever engine runs unless a documented fail-safe controller is approved; fault commands ON and warns driver.</li>
+              <li>Dust/stone/water protection, drain and cleaning access are required. Seal all bypass and recirculation paths.</li>
+            </ul>
+          </article>
+          <article class="card cooling-pack-spec-card">
+            <p class="cooling-pack-section-label">Mechanical fan and shroud</p>
+            <h3>Retain the engine-driven puller</h3>
+            <ul>
+              <li>Reject cracked, welded, loose, distorted or contact-marked blades.</li>
+              <li>Full-face rigid removable shroud, sealed around radiator perimeter.</li>
+              <li>Blade depth 35–50% inside the shroud opening; perimeter seals must force air through the radiator.</li>
+              <li>At least 15 radial clearance through checked engine movement.</li>
+              <li>Radiator rear face to nearest blade ≥20 static; 25–30 preferred.</li>
+            </ul>
+          </article>
+          <article class="card cooling-pack-spec-card cooling-pack-never-card">
+            <p class="cooling-pack-section-label">Turbo and release boundary</p>
+            <h3>No cooling derate—but no blank cheque for boost</h3>
+            <ul>
+              <li>After T1–T3 pass, the cooling system must not require boost reduction within the 150 bhp crank thermal-design envelope.</li>
+              <li>Initial calibration stays at 5–7 psi. Consider 8–10 psi only after logged coolant, IAT, EGT, oil, smoke, boost and driveline evidence.</li>
+              <li>This cooling specification does not approve 150 bhp, arbitrary boost, fuelling, turbo speed, exhaust drive pressure, clutch or driveline capacity.</li>
+            </ul>
+          </article>
+          <article class="card cooling-pack-spec-card cooling-pack-never-card">
+            <p class="cooling-pack-section-label">Never do this</p>
+            <h3>Core and mounting prohibitions</h3>
+            <ul>
+              <li>No drilling or welding into a tank, header, tube, core or fin.</li>
+              <li>No plastic ties through any heat-exchanger core.</li>
+              <li>No component or fan carried by another heat exchanger.</li>
+              <li>No guessed neck positions, cap pressure, port threads or fan current.</li>
+              <li>No forced bolt alignment; every component must remove separately without cutting.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card cooling-pack-section" id="cooling-pack-gates">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">Release control</p>
+              <h3>Mandatory measurements before final manufacture</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-gates"), "#", "Copy mandatory fit gates link")}
+          </div>
+          <p class="small-muted">Measure with both uprights represented, body settled, grille/front panel and bonnet latch installed or accurately represented, and the engine fan present. Put a tape or ruler in every evidence photo.</p>
+          <div class="table-wrap cooling-pack-table-wrap">
+            <table class="cooling-pack-table cooling-pack-gate-table">
+              <thead><tr><th>ID</th><th>Check</th><th>PASS requirement</th></tr></thead>
+              <tbody>
+                ${fitGates.map(([id, check, requirement]) => `<tr><td><strong>${escapeHtml(id)}</strong></td><td>${escapeHtml(check)}</td><td>${escapeHtml(requirement)}</td></tr>`).join("")}
+              </tbody>
+            </table>
+          </div>
+          <div class="cooling-pack-release-footer">
+            <strong>Do not order final cores from these nominal dimensions alone.</strong>
+            <span>Pass M1–M5, M8 and F1–F4, build the full-size dummy, close the bonnet, prove removal paths, then pass T1–T3 with a complete log before claiming 50°C / no-cooling-derate performance.</span>
+          </div>
+        </section>
+
+        <section class="card cooling-pack-section cooling-pack-files" id="cooling-pack-files">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">Controlled handoff</p>
+              <h3>Download the complete Rev D specification</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-files"), "#", "Copy cooling-pack downloads link")}
+          </div>
+          <p>The Word document is the fabricator handoff: complete construction rules, dimensions, tests, sequence, acceptance checks and a sign-off sheet. Print it or send it directly to the radiator shop.</p>
+          <div class="cooling-pack-downloads">
+            <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.docx" download>Download shop specification (.docx)</a>
+            <a class="item-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md" download>Download source specification (.md)</a>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
   function renderOtherBuilds() {
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
@@ -10490,8 +10929,12 @@
       renderer = renderCaptureTasks;
     } else if (state.activeView === "amir") {
       renderer = renderAmir;
+    } else if (state.activeView === "images") {
+      renderer = renderImages;
     } else if (state.activeView === "photos-needed") {
       renderer = renderPhotosNeeded;
+    } else if (state.activeView === "cooling-pack") {
+      renderer = renderCoolingPack;
     } else if (state.activeView === "other-builds") {
       renderer = renderOtherBuilds;
     }

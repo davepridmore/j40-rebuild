@@ -18,7 +18,7 @@ This is no longer an active workstream. The old Local Market lane was removed be
 | Brake-opening consumables | `brake_system` | `BR-SYS-002` workstream safety gate; no active local-market buy. |
 | Mechanical service parts | `mechanical_baseline` | service rows in `data/manual/procurement_queue.csv` |
 | Hose and pipe pack | `replacement_pipes` / `mechanical_baseline` | [longman-pipe-hose-order-spec-20260512.md](longman-pipe-hose-order-spec-20260512.md) |
-| Brake booster / servo reman quote | `brake_system` | brake booster scout rows and brake workstream |
+| Brake booster / servo reman quote | `brake_system` | Closed 2026-07-29: existing booster confirmed good; cosmetic tidy only, no replacement/rebuild scout. |
 | Hardwood cribbing cut set | `suspension_upgrade` | [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md) |
 | Toolbench / workbench | `site_setup` | `tool_local_toolbench` in expenses and procurement queue |
 

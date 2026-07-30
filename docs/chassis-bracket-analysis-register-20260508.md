@@ -2,7 +2,7 @@
 
 Source CSV: [data/manual/chassis_bracket_analysis_register_20260508.csv](../data/manual/chassis_bracket_analysis_register_20260508.csv)
 
-This is the actual bracket register seeded from current local photos. The May 12 user and Google Photos sets now include the measured left chassis-attached radiator bracket/upright, front-support hole-field, fan/belt, removed-radiator tab, and battery-side structure context. The front-support and battery-stand concepts can move into template work, but final release still needs labelled hole-centre, hole-diameter, and dry-fit photos.
+This is the actual bracket register seeded from current local photos. The May 12 sets provided the measured left chassis-attached radiator bracket/upright, front-support hole-field, fan/belt, removed-radiator tab and battery-side structure context. On 2026-07-22 the owner reported the second/right radiator arm welded in and supplied a current front-structure image. Radiator-arm fabrication is therefore closed; post-weld inspection, radiator/isolator dry fit, geometry/clearance and coating touch-in remain open. Battery-stand work remains a separate scope.
 
 ## Current Register
 
@@ -10,7 +10,7 @@ This is the actual bracket register seeded from current local photos. The May 12
 | --- | --- | --- | --- | --- | --- |
 | `CBR-001` | Front support, left chassis radiator side | Left chassis-attached radiator bracket | Direct measurement photo | May 12 21:31-21:32 images show the existing left-side bracket/upright height, top-tab offset, front opening, and fan/pulley clearance. | Use the measured left bracket as the datum for a similar right-side radiator bracket. Blocks final primer/Raptor until template release. |
 | `CBR-010` | Front support, left chassis radiator side reference | Left radiator bracket measurement datum for right-side fabrication | Direct measurement photo | Dedicated left reference set is now visible in the Chassis Fixing register. | Build the right-side template from this reference, then validate actual right-side pickup metal before cutting steel. |
-| `CBR-002` | Front support, right radiator side to fabricate | Right-side radiator retention bracket to fabricate | Direct context | The measured left bracket photos and removed-radiator tab photos now give a starting geometry; the right-side pickup condition still needs dry-fit proof. | Transfer the left geometry into a right-side template, verify isolator contact and clearance, then release or repair. |
+| `CBR-002` | Front support, right radiator side | Right-side radiator retention arm | Direct July 22 update photo | The second arm is visibly present and reported welded. Fabrication is complete, but weld condition, height/plane, top/lower pickups and actual radiator fit remain unproven. | Inspect the as-built arm, dry-fit the radiator with isolation, verify fan/shroud/hose/bonnet clearance and re-protect the worked steel. |
 | `CBR-003` | Front support, lower crossmember | Lower radiator support or lower pickup holes | Direct context | May 12 images show a usable-looking hole field; hole condition, metal thickness, and lower load path still need measurement. | Inspect and measure before using or repairing lower pickups. |
 | `CBR-004` | Front support, radiator/fan side | Radiator/fan/belt/hose/steering/exhaust clearance envelope | Direct photo | Packaging constraints are clearer, including fan/pulley and battery-side steering/exhaust/alternator clearance. | Do not let new brackets pull the radiator toward the fan, stress hoses, or crowd steering/exhaust/service access. |
 | `CBR-005` | Engine bay, battery-side inner wing | Battery top clamp or crossbar | Partial direct context | Battery-side structure context is better, but installed battery, top clamp path, and bonnet clearance still need checking. | Inspect top restraint after tray base support is proven. |
@@ -45,6 +45,6 @@ Confirm these before any fabrication release:
 
 ## Release State
 
-The radiator job can proceed to right-side template layout now using the May 12 measured left bracket/upright reference, but it cannot be cut or welded until the right-side dry-fit, side-to-side pickup measurements, and lower-support ruler photos are captured.
+The radiator arm is now installed. Use the May 12 left-side datum and the earlier template requirements as the acceptance checklist for the as-built right side; do not cut or weld again unless the post-weld/radiator dry-fit inspection identifies a specific defect.
 
 The battery tray and battery-side MIDI/cutoff carrier can now move from pure location scouting to a tray-stand concept, but they still cannot be released from the current photos alone. The existing images improve the structure read; they do not prove tray strength, underside feet, or final pickup geometry.

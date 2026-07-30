@@ -1,0 +1,450 @@
+[
+  {
+    "message_id": "19f8e26716259977",
+    "thread_id": "19f8e26716259977",
+    "date_utc": "2026-07-23T08:45:11Z",
+    "from": "GARI PARTS <hello@gariparts.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "A shipment from order O#1715 is on the way",
+    "snippet": "Order O#1715 Your order is on the way Your order is on the way. Track your shipment to see the delivery status. View your order or Visit our store Other tracking number: KI7539252162 Items in this",
+    "body_excerpt": "Your order is on the way GARI PARTS Order O#1715 ------------------------ Your order is on the way ------------------------ Your order is on the way. Track your shipment to see the delivery status. View your order ( \" class= ) or Visit our store ( https://gariparts.com?syclid=30765d7c-1a37-49ac-8235-dbee0ac47401 ) Other tracking number: KI7539252162 ( https://pk.leopardscourier.com/tracking ) Items in this shipment ---------------------- TOYOTA LAND CRUISER FJ 40,FJ80 BRAKE SHOE REAR MK YELLOW ASBESTOR K-2221-N/Y × 2 If you have any questions, reply to this email or contact us at hello@gariparts.com",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "shipment_update",
+      "status": "shipment_tracking_signal",
+      "project_hits": [
+        "brake",
+        "land cruiser",
+        "toyota"
+      ],
+      "supplier_hits": [],
+      "order_hits": [
+        "delivery",
+        "order",
+        "tracking"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [
+        "KI7539252162",
+        "DBEE0AC47401",
+        "LEOPARDSCOURIER"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19f8a3c0f5b8ed36",
+    "thread_id": "19f8a3c0f5b8ed36",
+    "date_utc": "2026-07-22T14:30:18Z",
+    "from": "Cruiser Corps <contact@cruisercorps.com>",
+    "to": "David Pridmore <pridmoredave@gmail.com>",
+    "subject": "Check out our Disc Brake Conversion Kits.",
+    "snippet": "Upgrade your FJ40, FJ45, or FJ55 today. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
+    "body_excerpt": "https://cruisercorps.com/ https://cruisercorps.com/collections/brakes Check Out Our Disc Brake Conversion Kits! Upgrade your FJ40, FJ45, or FJ55 with our top-of-the-line aftermarket Disc Brake Conversion Kits. Perfect for vehicles made between 8/1970 and 8/1980. Check out these products, and shop for all your other Cruiser needs now. [SHOP BRAKES](https://cruisercorps.com/collections/brakes) [Image of Disc Brake Conversion Kits - FJ40, FJ45, FJ55 - 8/1970 - 8/1980](https://cruiser-corps.myshopify.com/products/disc-brake-conversion-kit-fj40) Disc Brake Conversion Kits - FJ40, FJ45, FJ55 - 8/1970 - 8/1980 [Shop now](https://cruiser-corps.myshopify.com/products/disc-brake-conversion-kit-fj40) tel://405-607-2240/ https://cruisercorps.com/pages/hassle-free-30-day-returns [SHOP CRUISERCORPS.COM](https://cruisercorps.com/) [Button Text](https://www.facebook.com/pg/cruisercorps/posts/) [Custom](https://www.instagram.com/cruisercorps/) [Custom](https://twitter.com/cruisercorps) [Custom](https://cruisercorps.com/) Copyright © 2026 *Cruiser Corps*, All rights reserved. To change how you receive these emails, you can [Manage Preferences](https://manage.kmail-lists.com/subscriptions/update?a=HHEhTd&c=01KT56X1GKW7HX7N073SKRY1B6&k=e3637e610c0e9504916a5cdf4c1b88f9&g=P3aaKy&se=pridmoredave%40gmail.com&m=01KXKE8K5XVEX7FFY537ADRBE0&r=01KY52VSVEQM553PMR3BTC3ZQN) or [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=HHEhTd&c=01KT56X1GKW7HX7N073SKRY1B6&k=e3637e610c0e9504916a5cdf4c1b88f9&g=P3aaKy&se=pridmoredave%40gmail.com&m=01KXKE8K5XVEX7FFY537ADRBE0&r=01KY52VSVEQM553PMR3BTC3ZQN) from the list. Contact Cruiser Corps t. [405-607-2240](tel://405-607-2240/) Mon - Fri e. [contact@cruisercorps.com](https://cruisercorps.com/pages/contact-us) a. [2727 W Reno Ave, OKC, OK 73107](https://www.google.com/maps/place/2727+W+Reno+Ave,+Oklahoma+City,+OK+73107)",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [
+        "brake",
+        "fj40"
+      ],
+      "supplier_hits": [],
+      "order_hits": [],
+      "exclude_hits": [
+        "facebook",
+        "instagram"
+      ],
+      "amount_pkr": "0",
+      "codes": [
+        "HASSLE-FREE-30-DAY-RETURNS"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19f8761a9f9f92db",
+    "thread_id": "19f8761a9f9f92db",
+    "date_utc": "2026-07-22T01:12:31Z",
+    "from": "GARI PARTS <hello@gariparts.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "GARI PARTS Order O#1715 confirmed",
+    "snippet": "Order O#1715 Order Confirmed Hi David, Thank you for choosing GariParts.com We&#39;ve successfully received your order and our team is currently preparing your items for dispatch. Your products will go",
+    "body_excerpt": "Order Confirmed Gari Parts Order O#1715 *************** Order Confirmed *************** Hi David, Thank you for choosing GariParts.com We've successfully received your order and our team is currently preparing your items for dispatch. Your products will go through a compatibility and quality check before shipment to ensure a smooth delivery experience. You'll receive another update once your order has been packed and dispatched. View Order Details ( https://gariparts.com/80926146865/orders/43cd707368a0354a47dc52694b70de7c/authenticate?key=shcct_Z2wxRFZkMG5oMDFZVUFhUzRWNkNvZXgycDYwcXZoUHFWdGlTSEZ1T1d3b0ZyWURLMlZFb3hHY1dTYW9ZTXZhZUJ2Vit3NzgwMlFjSFRTZFV0Q2xNZ0N0ZE1Lc0svaHhHS0VFcFJDVUlwUGZkYkdOcVcrSWpUeG5DSk5YQUR5QllvcTVEMGlqVTN5dE9yd0lVektIYWIramhJNnNTcm9TdnFUSmJrV1Y0TVlhM1hwYjgvM0hVaEVlNWNNUUNmeXhRcEJ4R3h4Unh4amM3NnFFMFIvamcvUHJiZlFiK2RwekRZaGZic2g2MCtiWDk0aTN3REsrakNBc05Kd0VVODgwS0VzUzB6a0hER2s4SHJEUXdiWFlXRGxNWVBwTlRQZVhWUjZhYVBEaml6bGhoZ1Rra2JDbGZnSG0zUkhQbFJUTzF1TVdTL0hEcWtocFVTYkl2WEVqVSt5akxwa1pBNE55MjJHamlFRUpiNDBzQnlKZk1xRFVOMi9WODNwcEVsZXRYOVBOV2QxS01zQ0ttTXRwZ1FGdHY2c01CWE13M2FDNi92eGR5TDNPYW5kL2c4MDVnZUZWbEVEQkw3bjJ6bktBRFUzcnVpYnIwQ05RSFhUWURmaGNobzd0YjN3MmJRYi9VSk91MFAyQ2w1WWlFWmRIbm0vSHlMakN4L1BQWTBiVlh5Ujl6K3h4Y3pBNFdESkFFT01UcGs5K3pJc0RtdGc4cHhuOHA4em04V28xS00vQm5OczFTUjg0SHdqNjRzQTFwbzZBR1hRPT0tLVNBM21FSmNKQnlkR1M1OEctLWU3SEJpd2pEcWdROUhENUFVSVV6cXc9PQ&syclid=e29f8a28-db9f-4fa0-9aa9-e4e64039b2f3 ) Order Summary Product Details Qty Total TOYOTA LAND CRUISER FJ 40,FJ80 BRAKE SHOE REAR MK YELLOW ASBESTOR K-2221-N/Y 2 Rs.11,214.00 Subtotal Rs.11,214.00 Shipping (Express Checkout) Rs.859.00 Taxes Rs.0.00 Total Rs.12,073.00 PKR Shipping Address ---------------- David Pridmore House 287 Street 24/1, K Block, DHA Phase 5 Lahore, 54910 Pakistan 00923099351940 Billing Address --------------- David Pridmore House 287 Street 24/1, K Block, DHA Phase 5 Lahore, 54910 Pakistan 00923099351940 Payment ------- Bank deposit Shipping Method --------------- Express Checkout Need Help? Contact our support team for order assistance and product inquiries. UAN: +92 331 0074274 ( tel:+923310074274 ) Email: [redacted] Karachi, Pakistan Facebook ( https://www.facebook.com/GariParts ) Instagram ( https://www.instagram.com/gariparts/ ) TikTok ( https://www.tiktok.com/@hellogariparts ) YouTube ( https://www.youtube.com/@gariparts ) WhatsApp ( https://wa.me/923310074274 ) Visit Website ( https://gariparts.com/?syclid=62871d5f-431c-4f15-809c-938b529a0f20 ) © 2026 Gari Parts. All rights reserved.",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "shipment_update",
+      "status": "shipment_tracking_signal",
+      "project_hits": [
+        "brake",
+        "land cruiser",
+        "toyota"
+      ],
+      "supplier_hits": [],
+      "order_hits": [
+        "confirmed",
+        "delivery",
+        "dispatch",
+        "order",
+        "payment"
+      ],
+      "exclude_hits": [
+        "facebook",
+        "instagram"
+      ],
+      "amount_pkr": "12073",
+      "codes": [
+        "DB9F-4FA0-9AA9-E4E64039B2F3"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19f84fa60610d138",
+    "thread_id": "19f84fa60610d138",
+    "date_utc": "2026-07-21T14:00:27Z",
+    "from": "Cruiser Corps <contact@cruisercorps.com>",
+    "to": "David Pridmore <pridmoredave@gmail.com>",
+    "subject": "Check out our Disc Brake Conversion Kits.",
+    "snippet": "Upgrade your FJ40, FJ45, or FJ55 today. ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏",
+    "body_excerpt": "https://cruisercorps.com/ https://cruisercorps.com/collections/brakes Check Out Our Disc Brake Conversion Kits! Upgrade your FJ40, FJ45, or FJ55 with our top-of-the-line aftermarket Disc Brake Conversion Kits. Perfect for vehicles made between 8/1970 and 8/1980. Check out these products, and shop for all your other Cruiser needs now. [SHOP BRAKES](https://cruisercorps.com/collections/brakes) [Image of Disc Brake Conversion Kits - FJ40, FJ45, FJ55 - 8/1970 - 8/1980](https://cruiser-corps.myshopify.com/products/disc-brake-conversion-kit-fj40) Disc Brake Conversion Kits - FJ40, FJ45, FJ55 - 8/1970 - 8/1980 [Shop now](https://cruiser-corps.myshopify.com/products/disc-brake-conversion-kit-fj40) tel://405-607-2240/ https://cruisercorps.com/pages/hassle-free-30-day-returns [SHOP CRUISERCORPS.COM](https://cruisercorps.com/) [Button Text](https://www.facebook.com/pg/cruisercorps/posts/) [Custom](https://www.instagram.com/cruisercorps/) [Custom](https://twitter.com/cruisercorps) [Custom](https://cruisercorps.com/) Copyright © 2026 *Cruiser Corps*, All rights reserved. To change how you receive these emails, you can [Manage Preferences](https://manage.kmail-lists.com/subscriptions/update?a=HHEhTd&c=01KT56X1GKW7HX7N073SKRY1B6&k=e3637e610c0e9504916a5cdf4c1b88f9&g=P3aaKy&se=pridmoredave%40gmail.com&m=01KXKE7P27HPJ5EY5PDAMZZ4CN&r=01KY2ERV02R6QQ5B14JK0QVHPP) or [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=HHEhTd&c=01KT56X1GKW7HX7N073SKRY1B6&k=e3637e610c0e9504916a5cdf4c1b88f9&g=P3aaKy&se=pridmoredave%40gmail.com&m=01KXKE7P27HPJ5EY5PDAMZZ4CN&r=01KY2ERV02R6QQ5B14JK0QVHPP) from the list. Contact Cruiser Corps t. [405-607-2240](tel://405-607-2240/) Mon - Fri e. [contact@cruisercorps.com](https://cruisercorps.com/pages/contact-us) a. [2727 W Reno Ave, OKC, OK 73107](https://www.google.com/maps/place/2727+W+Reno+Ave,+Oklahoma+City,+OK+73107)",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [
+        "brake",
+        "fj40"
+      ],
+      "supplier_hits": [],
+      "order_hits": [],
+      "exclude_hits": [
+        "facebook",
+        "instagram"
+      ],
+      "amount_pkr": "0",
+      "codes": [
+        "HASSLE-FREE-30-DAY-RETURNS"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19fa7e723dd350c7",
+    "thread_id": "19fa7e723dd350c7",
+    "date_utc": "2026-07-28T08:46:08Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Delivery of your Order 246729588080938",
+    "snippet": "Your parcel(s) have been delivered! Dear pridmoredave, We are excited to inform you that your Order 246729588080938 has been successfully delivered. As we&#39;d love to hear your thoughts on your new",
+    "body_excerpt": "Your parcel(s) have been delivered! --> Your parcel(s) have been delivered! Dear pridmoredave, We are excited to inform you that your Order 246729588080938 has been successfully delivered. As we'd love to hear your thoughts on your new purchase, please do take a moment to write a review. This will also help other buyers get the right product(s). Thank you for shopping with Daraz and we look forward to your next purchase. Stay safe! Yours sincerely, Daraz Parcel 1 Sold by: MalikTarders786 4ft Wooden Table Bench Rs. 6,099.00 Quantity: 1 Subtotal: Rs. 6,099.00 Shipping fee: Rs. 430.00 Total Saving: Rs. (0.00) Total (GST Incl.): Rs. 6,539.00 Shipping option: STANDARD Paid by: Credit or Debit Card Note: A small Platform Fee of PKR 10 has been added to your order to help us maintain smooth and seamless platform operations. If you have selected Cash on Delivery as your payment method at checkout, an additional handling fee has been added to your total payment amount. Learn More What’s Next? Remember to keep your invoice and original packaging in case you would need to return, replace or claim warranty. If you wish to return your item, you may refer to a detailed guide here . Please ensure that you do so before the return policy period expires. NEED HELP? WE ARE HERE FOR YOU. HELP CENTER Download The App Help Center | Contact Us Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email. unsubscribe ./-->",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "receipt_payment",
+      "status": "payment_or_receipt_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "delivered",
+        "delivery",
+        "invoice",
+        "order",
+        "paid",
+        "payment",
+        "review"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "6539",
+      "codes": [
+        "246729588080938",
+        "MALIKTARDERS786"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19fa6f2670819f3b",
+    "thread_id": "19fa6f2670819f3b",
+    "date_utc": "2026-07-28T03:35:14Z",
+    "from": "Powerhouse Express <info@powerhouseexpress.com.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Anex Mega Sale is LIVE! Up to 50% OFF till 31st July",
+    "snippet": "Induction Cooker from PKR 15550, Roti Maker, Juicer &amp; more. Ends 31 July ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+    "body_excerpt": "Induction Cooker from PKR 15,550, Roti Maker, Juicer & more. Ends 31 July ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 96 Anex AG-826 Deluxe Coffee Maker PKR 29365 PKR 25840 Buy Now Anex AG-3157 Food Processor Black PKR 48380 PKR 39670 Buy Now Anex AG-1087 Deluxe Insect Killer (2/10) PKR 16925 PKR 13880 Buy Now Anex AG-195 Deluxe Juicer Blender & Grinder PKR 24670 PKR 21710 Buy Now Anex AG-3073 Oven Toaster Bar B Q With Grill and Pizza Pan PKR 40230 PKR 32990 Buy Now Anex AG-2127 Dough Maker PKR 19790 PKR 17415 Buy Now Anex AG-2029 Deluxe Roti Maker PKR 17215 PKR 15150 Buy Now Anex AG-2174 Deluxe Induction Cooker PKR 17670 PKR 15550 Buy Now Don't want to receive these anymore? Click here .",
+    "classification": {
+      "category": "product",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "powerhouse"
+      ],
+      "order_hits": [],
+      "exclude_hits": [],
+      "amount_pkr": "48380",
+      "codes": [
+        "AG-826",
+        "AG-3157",
+        "AG-1087",
+        "AG-195",
+        "AG-3073",
+        "AG-2127",
+        "AG-2029",
+        "AG-2174"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19fa00d66753454d",
+    "thread_id": "19fa00d66753454d",
+    "date_utc": "2026-07-26T20:10:58Z",
+    "from": "\"AliExpress.seller\" <promotion@aliexpress.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Our daily picks at US $14.00 off",
+    "snippet": "Collect coupons inside &amp; shop now ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+    "body_excerpt": "Collect coupons inside & shop now ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ Daily specials in our store ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ New day, new deals! Discover top promotions and save big with our special store coupon code(s) on your faves from our store. DC Connector Store CN￥ 14.00 Orders over CN￥ 247.00 07/30/2026 23:59:59 Collect 10m Electrical Wire 22 20 18AWG Tinned Copper... PKR 1,774 -40% Photovoltaic Extension Cables 10/12/14AWG 5/1... PKR 3,413 4PIN Electrical Cable Tinned Copper Wire 5/10... PKR 1,788 3Pin LED Electrical Wire 22 20 18 AWG Flexibl... PKR 1,543 -55% Silicone Wire Car Battery Cable 8 6 4 3 0AWG ... PKR 1,646 -40% Heat Resistant Silicone Wire 2/3/5/10/20/30/5... PKR 909 3PIN Electrical Wires Tinned Copper 5/10/20m ... PKR 1,168 AC Power Cord 2pin IEC C7 Figure 8 Cable 1.5m... PKR 1,249 Solar Panel Electrical Wire Red Black Heat Re... PKR 663 Shop now Hot picks for you 2Pin LED Electrical Wire Tinned Copper 22/20/... PKR 1,174 UK Power Cable With 13A Fuse IEC320 C7 Figure... PKR 1,695 -40% 2 3 4 Core Electrical Wires 5/10/20/30/50/100... PKR 1,586 2 3 4 5 6 Pin LED Extension Cable 22 20 18 AW... PKR 986 AC Power Cable IEC C7 Figure 8 1/1.5/2/3/10m ... PKR 1,376 2 Pin Loud Speaker Cable 10m Transparent Elec... PKR 550 View more This email is sent by the seller. AliExpress does not guarantee the accuracy of the information in this e-mail. Product details and discount information are subject to real-time updates on AliExpress. Download to get app-only deals This email was sent to You are receiving this email because you are a registered member of www.AliExpress.com. If you don't want to receive marketing emails in the future, please unsubscribe Read our Privacy Policy and Terms of Use if you have any questions. AliExpress Service Center Alibaba.com Singapore E-Commerce Private Limited, c/o 26/F Tower One, Times Square, 1 Matheson Street, Causeway Bay, Hong Kong",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [
+        "ac",
+        "battery",
+        "connector",
+        "fuse"
+      ],
+      "supplier_hits": [
+        "aliexpress"
+      ],
+      "order_hits": [],
+      "exclude_hits": [
+        "ba.com"
+      ],
+      "amount_pkr": "3413",
+      "codes": [
+        "IEC320"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f8d1af1a1e3da5",
+    "thread_id": "19f8d1af1a1e3da5",
+    "date_utc": "2026-07-23T03:52:17Z",
+    "from": "<alerts.pk@sc.com>",
+    "to": "<pridmoredave@gmail.com>",
+    "subject": "Standard Chartered: Transaction Alert",
+    "snippet": "Dear Client, Alerts July 23 2026, 08:52 AM Your Standard Chartered Debit Card no. 52903xxxxxxxx8509 has been used to make the following transaction : Amount : PKR 6539.00 Date : 23-07-26 at : Daraz.",
+    "body_excerpt": "Alerts CASA Dear Client, Alerts July 23 2026, 08:52 AM Your Standard Chartered Debit Card no. 52903xxxxxxxx8509 has been used to make the following transaction : Amount : PKR 6,539.00 Date : 23-07-26 at : Daraz. Don't miss out on the latest Standard Chartered promotions & benefits. Visit www.sc.com/pk to find out more! Thank you Standard Chartered Bank (Pakistan) Limited To unsubscribe or modify these alerts, please login to your Online Banking account and select Alerts and SMS Banking. This is a system-generated e-mail and does not require an authorised signature. Please do not reply to the sender of this email. Please note Standard Chartered Bank will never ask you for your account details. To learn more on important legal notices data protection , our privacy policy and how you can avoid online fraud please visit our website on online security tips at www.sc.com/pk",
+    "classification": {
+      "category": "product",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [],
+      "exclude_hits": [],
+      "amount_pkr": "6539",
+      "codes": [],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f8d1a59e117e52",
+    "thread_id": "19f8d1a59e117e52",
+    "date_utc": "2026-07-23T03:52:20Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Yay, your Order 246729588080938 is confirmed!",
+    "snippet": "Yay, your order is confirmed! Yay, your order is confirmed! Dear pridmoredave, Thank you for shopping with Daraz. We have received your Order 246729588080938 on 23 July 2026 11:51. We&#39;re excited",
+    "body_excerpt": "Yay, your Order #246729588080938 is confirmed! Yay, your order is confirmed! --> Yay, your order is confirmed! Dear pridmoredave, Thank you for shopping with Daraz. We have received your Order 246729588080938 on 23 July 2026 11:51. We're excited for you to receive your order and will notify you once it is on its way! However, you can still amend your order by clicking the ' Manage My Order ' button below. Please stay active in the app messages section, as the seller may contact you about your order. We hope you had a pleasant experience. Stay safe! Yours sincerely, Daraz Delivery Details Name: pridmoredave Address: [redacted] Phone: [redacted] Email: [redacted] Parcel 1 Sold by:MalikTarders786 Delivered on: 28 July - 30 July 2026 4ft Wooden Table Bench Rs 6,099.00 Quantity: 1 Subtotal: Rs 6,099.00 Shipping fee: Rs 430.00 Total Saving: Rs (0.00) Total (inclusive of tax, if any): Rs 6,539.00 Shipping option: STANDARD Paid by: Credit or Debit Card Note: A small Platform Fee of PKR 10 has been added to your order to help us maintain smooth and seamless platform operations. If you have selected Cash on Delivery as your payment method at checkout, an additional handling fee has been added to your total payment amount. Learn More NEED HELP? WE ARE HERE FOR YOU. HELP CENTER Download The App Help Center | Contact Us Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email. unsubscribe ./-->",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "receipt_payment",
+      "status": "payment_or_receipt_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "confirmed",
+        "delivered",
+        "delivery",
+        "order",
+        "paid",
+        "payment"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "6539",
+      "codes": [
+        "246729588080938",
+        "MALIKTARDERS786"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f8949ec7a86321",
+    "thread_id": "19f8949ec7a86321",
+    "date_utc": "2026-07-22T10:05:50Z",
+    "from": "Autohub Pakistan <store+4245433@t.shopifyemail.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "A shipment from order 1763669 is on the way",
+    "snippet": "Dear David Pridmore, All of the items from order 1763669 have now been shipped: 1x AMSOIL Synthetic Poly Off Road Mos2 Synthetic Grease #2 They are being shipped via courier service to the following",
+    "body_excerpt": "Dear David Pridmore, All of the items from order 1763669 have now been shipped: 1x AMSOIL Synthetic Poly Off Road Mos2 Synthetic Grease #2 They are being shipped via courier service to the following address: David Pridmore House 287, Street 24/1, K block, DHA 5 Lahore 54910 Pakistan The tracking number for these items are AhubRider. Click here & enter the tracking number to check status of your shipment. ( https://postex.pk/tracking/?trackno=AhubRider ) Please allow some time for the status of the shipment to correctly display at the above address. Thank you for ordering from Autohub Pakistan!",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "shipment_update",
+      "status": "shipment_tracking_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "autohub",
+        "postex"
+      ],
+      "order_hits": [
+        "order",
+        "shipped",
+        "tracking"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [
+        "1763669"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f86aceeb6fad60",
+    "thread_id": "19f86aceeb6fad60",
+    "date_utc": "2026-07-21T21:55:07Z",
+    "from": "Autohub Pakistan <store+4245433@t.shopifyemail.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Order 1763669 confirmed",
+    "snippet": "HOME FEATURED Thanks for your purchase! This email is just to confirm your order that you placed on 07/22/2026. Your order number is 63669. Your order will be delivered in 2 to 3 working days. Billing",
+    "body_excerpt": "HOME ( http://autohub.pk/?syclid=041091ea-4fb1-4319-9059-3d450cecb173 ) FEATURED ( http://autohub.pk/collections/featured?syclid=e00f582c-c4ab-4886-9fc3-2a62163fca70 ) Thanks for your purchase! ------------------------- This email is just to confirm your order that you placed on 07/22/2026. Your order number is 63669. Your order will be delivered in 2 to 3 working days. Billing Address: ---------------- David Pridmore House 287, Street 24/1, K block, DHA Lahore, 54910 Pakistan Shipping Address: ----------------- David Pridmore House 287, Street 24/1, K block, DHA Lahore, 54910 Pakistan Order Details: -------------- line.title AMSOIL Synthetic Poly Off Road Mos2 Synthetic Grease #2 ------------------------------------------------------- Quantity: 1 Total: Rs.3,499 Subtotal: Rs.3,499 Shipping: Rs.249 Total: Rs.3,748 Facebook ( https://www.facebook.com/autohubpk )",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "autohub"
+      ],
+      "order_hits": [
+        "confirmed",
+        "delivered",
+        "order"
+      ],
+      "exclude_hits": [
+        "facebook"
+      ],
+      "amount_pkr": "3748",
+      "codes": [
+        "1763669"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f839c8c0dc1659",
+    "thread_id": "19f839c8c0dc1659",
+    "date_utc": "2026-07-21T07:38:21Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+    "snippet": "Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been",
+    "body_excerpt": "96 Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been done better in this 2-minute survey.Simply click on the rating on the question below to begin. How likely are you to recommend DARAZ to a friend or colleague? Kindly select a rating on a scale of 0 (Highly unlikely) to 10 (Highly likely) Start Survey Thank you for your feedback. Sincerely, Daraz team Download The App Help Center | Contact Us | Cancel Subscription Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email.",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "post_purchase_feedback",
+      "status": "feedback_requested",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "feedback"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19f969baecda0aa2",
+    "thread_id": "19f969baecda0aa2",
+    "date_utc": "2026-07-25T00:10:12Z",
+    "from": "Vercel <notifications@vercel.com>",
+    "to": "pridmoredave+ai-course-test-20260722@gmail.com",
+    "subject": "New sign-in detected on your Vercel account",
+    "snippet": "New sign-in detected on your Vercel account Hello, ai-course-test-20260722. Your Vercel account pridmoredave+ai-course-test-20260722@gmail.com was recently signed-in from a new location, device or",
+    "body_excerpt": "Vercel ******************************************* New sign-in detected on your Vercel account ******************************************* Hello, ai-course-test-20260722. Your Vercel account pridmoredave+ai-course-test-20260722@gmail.com was recently signed-in from a new location, device or browser: Location: Singapore, Singapore Time: Saturday, July 25, 2026 at 12:10 AM UTC Browser: Chrome 150.0.0.0 on macOS 10.15.7 Device: Apple Mac IP: 47.128.185.249 Don't recognize this activity? Review your recent activity (https://e2.knock.app/t/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoc3QiOiJlMi5rbm9jay5hcHAiLCJpYXQiOjE3ODQ5MzgyMTIwMTc4MDIsImlkeCI6MCwibWlkIjoiM0d5SzhwY0hrcWQ5TDRGRmw4ME5VRk9iYTJ0IiwidXJsIjoiaHR0cHM6Ly92ZXJjZWwuY29tL2FjY291bnQvYWN0aXZpdHkifQ.0XkNQl2ytd2ZhKggGK0qKo8d9mbNlKnUVIhyBL-nXQE) and access tokens (https://e2.knock.app/t/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoc3QiOiJlMi5rbm9jay5hcHAiLCJpYXQiOjE3ODQ5MzgyMTIwMTc5OTIsImlkeCI6MCwibWlkIjoiM0d5SzhwY0hrcWQ5TDRGRmw4ME5VRk9iYTJ0IiwidXJsIjoiaHR0cHM6Ly92ZXJjZWwuY29tL2FjY291bnQvdG9rZW5zIn0.P3V7xqvRgwDQN8PhpRVDPFmxtMGRfDXpeHhSyOolGKo) now. This alert triggers when we detect a sign-in from an unrecognized location, device, or browser. Common causes: traveling, VPN or Private Relay, or a new browser. ----------------------------------------------------------------- If you'd like to report an issue, reach out to Vercel Help (https://e2.knock.app/t/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoc3QiOiJlMi5rbm9jay5hcHAiLCJpYXQiOjE3ODQ5MzgyMTIwMTgxOTAsImlkeCI6MCwibWlkIjoiM0d5SzhwY0hrcWQ5TDRGRmw4ME5VRk9iYTJ0IiwidXJsIjoiaHR0cHM6Ly92ZXJjZWwuY29tL2hlbHA_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW5vdGlmaWNhdGlvbnMpLiJ9.jsUZ2w3ive6nMBuqEGzF96Lh1bn3j1wLRtcz-EKggbU Manage your notification settings (https://e2.knock.app/t/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoc3QiOiJlMi5rbm9jay5hcHAiLCJpYXQiOjE3ODQ5MzgyMTIwMTgzNzUsImlkeCI6MCwibWlkIjoiM0d5SzhwY0hrcWQ5TDRGRmw4ME5VRk9iYTJ0IiwidXJsIjoiaHR0cHM6Ly92ZXJjZWwuY29tL2Q_dG89JTJGJTVCdGVhbSU1RCUyRiU3RSUyRnNldHRpbmdzJTJGbm90aWZpY2F0aW9ucyZ0aXRsZT1Ob3RpZmljYXRpb24rU2V0dGluZ3MifQ.idMPRFGlnSrR1yeJX9_4J-0CQlDlxVIx0she0O8tYvk) Copyright © 2026 Vercel Inc. (https://e2.knock.app/t/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoc3QiOiJlMi5rbm9jay5hcHAiLCJpYXQiOjE3ODQ5MzgyMTIwMTg1NTUsImlkeCI6MCwibWlkIjoiM0d5SzhwY0hrcWQ5TDRGRmw4ME5VRk9iYTJ0IiwidXJsIjoiaHR0cHM6Ly92ZXJjZWwuY29tP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1ub3RpZmljYXRpb25zIn0.aqNYi6BgWtnHW4msrI87kQ2w8G_cwdioaYaynO2_KQs) All rights reserved. 440 N Barranca Ave #4133 Covina, CA 91723 :root { color-scheme: light dark; } .body { background-color: #ffffff; margin: 0; padding: 0; } .outer-table, .outer-td, .inner-td { background-color: #ffffff; } .block-row__cell { padding: 0 !important; } .block-row { padding: 0 !important; } p { color: #171717; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif; font-size: 16px; line-height: 1.5; margin: 0 0 16px 0; overflow-wrap: anywhere; } .break-all { color: #171717; font-size: 16px; line-height: 1.5; word-break: break-all; } h1 { color: #171717; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 24px 0; padding: 0; } h2 { color: #171717; font-size: 18px; font-weight: 600; margin: 0 0 16px 0; } h3 { color: #171717; font-size: 16px; font-weight: 600; margin: 0 0 12px 0; } a { color: #0067D6; text-decoration: none; } .block-markdown a { color: #0067D6; text-decoration: none; } a.block-button { color: inherit; } strong { color: #171717; font-weight: 600; } pre { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace; color: #171717; background-color: #F2F2F2; border: 1px solid #E6E6E6; padding: 12px 16px; border-radius: 8px; font-size: 14px; max-width: 100%; overflow: hidden; t",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "post_purchase_feedback",
+      "status": "feedback_requested",
+      "project_hits": [
+        "relay"
+      ],
+      "supplier_hits": [],
+      "order_hits": [
+        "review"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [
+        "171717",
+        "AI-COURSE-TEST-20260722",
+        "EYJHBGCIOIJIUZI1NIISINR5CCI6IKPXVCJ9",
+        "EYJOC3QIOIJLMI5RBM9JAY5HCHAILCJPYXQIOJE3ODQ5MZGYMTIWMTC4MDISIMLKECI6MCWIBWLKIJOIM0D5SZHWY0HRCWQ5TDRGRMW4ME5VRK9IYTJ0IIWIDXJSIJOIAHR0CHM6LY92ZXJJZWWUY29TL2FJY291BNQVYWN0AXZPDHKIFQ",
+        "EYJOC3QIOIJLMI5RBM9JAY5HCHAILCJPYXQIOJE3ODQ5MZGYMTIWMTC5OTISIMLKECI6MCWIBWLKIJOIM0D5SZHWY0HRCWQ5TDRGRMW4ME5VRK9IYTJ0IIWIDXJSIJOIAHR0CHM6LY92ZXJJZWWUY29TL2FJY291BNQVDG9RZW5ZIN0",
+        "JSUZ2W3IVE6NMBUQEGZF96LH1BN3J1WLRTCZ-EKGGBU",
+        "EYJOC3QIOIJLMI5RBM9JAY5HCHAILCJPYXQIOJE3ODQ5MZGYMTIWMTG1NTUSIMLKECI6MCWIBWLKIJOIM0D5SZHWY0HRCWQ5TDRGRMW4ME5VRK9IYTJ0IIWIDXJSIJOIAHR0CHM6LY92ZXJJZWWUY29TP3V0BV9TZWRPDW09ZW1HAWWMDXRTX3NVDXJJZT1UB3RPZMLJYXRPB25ZIN0",
+        "FF6166"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19f86a9380524117",
+    "thread_id": "19f86a9380524117",
+    "date_utc": "2026-07-21T21:51:03Z",
+    "from": "\"Standard Electric Co.\" <store+83194446119@t.shopifyemail.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Order 3327 confirmed",
+    "snippet": "Standard Electric Co. Order 3327 Thank you for your order! We&#39;re getting your order ready to be shipped. We will notify you when it has been sent. View your order or Visit our store Order summary",
+    "body_excerpt": "Thank you for your order! ***************************************************************** Standard Electric Co. ( https://standardstores.pk?syclid=af3b5eb5-990b-4c3e-a3e4-4abda38d37b2 ) ***************************************************************** Order 3327 ------------------------- Thank you for your order! ------------------------- We're getting your order ready to be shipped. We will notify you when it has been sent. View your order ( https://standardstores.pk/83194446119/orders/9974d348a33f4251a987e5faa1c2cf84/authenticate?key=shcct_NnRkSWNtckZKa3RoaURLREVDTm9aTEZFalM3RElFMVB6V05wTzhCQ25aNzdxaWRsdlBGNHVjcHIzb1dYNUNOUm4wTk1rUWxiNk9EckxvUHlsL0J4dDdNOUhZNVFhelYxRHJpb0ZzemZHaVphTlowKzlDUTJNV0lBTjh4V0swRnB6ajFGclVBTUh6ZHVES25ETDlEY3NyNnJydGRMdTN5bDBML3NDWEdTMGtUc3l2RHpXSTV2c0J3UWNUdW5DTm5McHJVY1lsOVhMbHprZEE0U0YvYnFramI0bXcvVXR1WHlaSGNTREdTZkIrYS9PN0p2VENiTlljYkFJRWM2QjBpVTFHdkxTYVpKa2FjOXlsR2VwUlFhTll2S0pLWTFEMzUyQXFCb0pDOU5KVmQxNi9Bbk9DeUp1SkU2M1h3aDlweTZ4dmJ4ZUQ2NWxiVjl1NDFNVCtNMjR4cXdTUXd6cSt0eGVDVFV0U0FwSkJDUm8vQUVuYU03Y2FGbVFJNEZkTHhySE9LYlN3Q2VIS3JVb2psZUI1QWlqeTk4ZG0vVTY5NTJmSXIzeGl1M2NaT1VLd3FCRUFadjRGUDNBN25KTnZzanRPYWU4Q24rZndnQUZVemxjVDNzMEVOaUxOdTA0bTk5WjgyN0FIV3YwK01MNkxyaXRLZjRHeHlMamFiUTVCSDFaYWd0R0R2cUx5bkNIdDRMMSthYXN4TmxtcnlVSHcrMWxrOEU0NnRpVnd2bm5TMnkwM3lWaEVUWmJONEJ6YnAyQ2s1UGh3PT0tLUtsM0l4OHVncmd0Qi81WCstLTVscEZZRmVjcktOcTdZSGFZSDRFbUE9PQ&syclid=7dd58635-0ee3-4139-bde8-e5b816764732 ) or Visit our store ( https://standardstores.pk?syclid=15a18272-a2e6-471a-b330-7f2a0f46c260 ) Order summary ------------- SF/PF / Pneumatic Air Quick Coupler Socket Connector × 1 20 (1/4'') SF Rs.215.00 Subtotal Rs.215.00 Shipping Rs.480.00 Taxes Rs.0.00 Total Rs.695.00 PKR Total paid today Rs.0.00 PKR Customer information -------------------- Shipping address ---------------- David Pridmore House 287. Street 24/1. K Block Phase 5 Lahore 54910 Pakistan Billing address --------------- David Pridmore House 287. Street 24/1. K Block Phase 5 Lahore 54910 Pakistan Payment ------- Cash on Delivery (COD) Shipping method --------------- Standard If you have any questions, reply to this email or contact us at standardelectric26@gmail.com",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "shipment_update",
+      "status": "shipment_tracking_signal",
+      "project_hits": [
+        "connector"
+      ],
+      "supplier_hits": [],
+      "order_hits": [
+        "confirmed",
+        "delivery",
+        "order",
+        "paid",
+        "payment",
+        "shipped"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "695",
+      "codes": [
+        "AF3B5EB5-990B-4C3E-A3E4-4ABDA38D37B2",
+        "BDE8-E5B816764732"
+      ],
+      "reason": "project_order_signal"
+    }
+  }
+]

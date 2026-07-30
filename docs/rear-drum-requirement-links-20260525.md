@@ -22,7 +22,7 @@ These are requirement/reference links, not automatic purchase approvals. Use the
 | Rear wheel-cylinder / backing-plate diagram | Reference only | FJParts diagram: https://www.fjparts.com/rear_backing_plate_wheel_cylinder_diagram.htm | Use to compare 9/71-7/80 and 9/75-7/80 rear backing-plate layouts. |
 | Wheel-cylinder bolt kits | One kit per cylinder if old bolts are bad | Cruiser Corps `A16`: https://cruisercorps.com/products/a16-stainless-bolt-kit-wheel-cylinder-8pcs-1971-1984 | Reference only; local bolts/washers by old sample are preferred. |
 | Rear brake shoes, normal narrow route | 1 axle set | Cruiser Corps `549-163`: https://cruisercorps.com/products/brake-shoes-4-piece | Reference for rear axle to 7/1980; confirm shoe width first. |
-| Rear brake shoes, Pakistan lead | 1 axle set | PakWheels / Gari Parts `K-2255-N/Y`: https://www.pakwheels.com/accessories-spare-parts/toyota-land-cruiser-fj40-mk-rear-brake-shoe-k-2255-n-y-5570294 | Local lead only; verify stock and physical fit. |
+| Rear brake shoes, Pakistan route | 1 four-shoe axle set | GariParts `K-2221-N/Y`: https://gariparts.com/products/k-2221-n-y | Corrected 2026-07-22 after K-2255 failed as too wide. Require actual box/ruler photos, approximately 55–57 mm width and old-sample/backing-plate match before payment. |
 | Rear drum spring/hardware kit, normal narrow route | 1 axle kit | Cruiser Corps `551-113`: https://cruisercorps.com/products/drum-brake-hardware-rebuild-kit | Reference for 1960-7/1980 axle kit; match spring layout before buying. |
 | Rear 3-inch non-USA shoe/hardware backup | 1 axle set only if measured 3-inch shoes | SOR page `081`: https://www.sor.com/cat/081 | Use only if the opened drums prove 3-inch non-USA rear brake setup. |
 
@@ -45,7 +45,7 @@ These are requirement/reference links, not automatic purchase approvals. Use the
 
 Send this with photos and old samples:
 
-> 1978 Toyota Land Cruiser J40 rear drum brakes. Need local/sample-matched rear wheel cylinders, rear brake shoes, drum hardware/springs, rear center flex hose, parking-brake cable set, rear axle hard brake lines in 4.75 mm / 3/16 in brake tube, and clips. Please match old samples for cylinder bore, mounting bolt spacing, port thread, bleed screw access, shoe width, spring layout, hose length/fittings, parking-brake cable ends/lengths, and brake-line flare/thread/seat. Do not substitute generic hydraulic hose or plumbing pipe.
+> 1978 Toyota Land Cruiser J40 rear drum brakes. Rear shoe target is MK K-2221 / Toyota 04494-60010 or 04494-60011, one complete four-shoe axle set, nominally about 55–57 mm wide; K-2255 has already failed as too wide. Need local/sample-matched rear wheel cylinders, rear center flex hose, parking-brake cable set and 4.75 mm / 3/16 in axle brake lines as applicable. Please match the old samples for cylinder bore/mount/port, shoe arc/width/web holes/ends, hose length/fittings, cable ends/lengths and flare/thread/seat. Do not substitute K-2255, generic hydraulic hose or plumbing pipe.
 
 ## Project References
 

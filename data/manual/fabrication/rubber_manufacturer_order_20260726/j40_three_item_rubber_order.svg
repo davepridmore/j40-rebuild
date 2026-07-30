@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+  <style>
+    text { font-family: sans-serif; fill: #111; }
+    .title { font-size: 7px; font-weight: 700; }
+    .head { font-size: 5px; font-weight: 700; }
+    .note { font-size: 4px; }
+    .part { fill: #e9eef3; stroke: #111; stroke-width: .6; }
+    .hole { fill: white; stroke: #111; stroke-width: .6; }
+    .dim { stroke: #356a8a; stroke-width: .35; fill: none; }
+  </style>
+
+  <text x="12" y="13" class="title">TOYOTA LAND CRUISER J40 — REPLACEMENT RUBBERS</text>
+  <text x="12" y="20" class="note">Body-mount and front-support rubbers | Units: mm | New black solid EPDM or NR/SBR | Shore A 60 ±5</text>
+
+  <text x="12" y="33" class="head">1. MAIN BODY PAD — QTY 30</text>
+  <rect x="12" y="39" width="56" height="56" rx="1.05" class="part"/>
+  <circle cx="40" cy="67" r="6.3" class="hole"/>
+  <line x1="12" y1="101" x2="68" y2="101" class="dim"/>
+  <text x="34" y="107" class="note">80</text>
+  <line x1="74" y1="39" x2="74" y2="95" class="dim"/>
+  <text x="77" y="69" class="note">80</text>
+  <text x="12" y="114" class="note">24 thick • centred Ø18 bore • R1.5 corners</text>
+
+  <text x="102" y="33" class="head">2. FRONT-SUPPORT OVAL PAD — QTY 2</text>
+  <rect x="102" y="46" width="67.2" height="44.8" rx="22.4" class="part"/>
+  <circle cx="113.2" cy="68.4" r="4.2" class="hole"/>
+  <circle cx="158" cy="68.4" r="4.2" class="hole"/>
+  <line x1="113.2" y1="99" x2="158" y2="99" class="dim"/>
+  <text x="129" y="105" class="note">64 centres</text>
+  <text x="102" y="114" class="note">96 × 64 × 15 • capsule ends R32 • 2 × Ø12 holes</text>
+  <text x="102" y="120" class="note">No relief, boss, or insert unless original sample proves it</text>
+
+  <text x="12" y="137" class="head">3. UNDERFLOOR SUPPORT STRIP — QTY 4</text>
+  <rect x="12" y="145" width="210" height="19" rx=".75" class="part"/>
+  <text x="12" y="173" class="note">420 long × 38 wide × 8 thick</text>
+  <text x="12" y="179" class="note">Plain strip only: no holes, slots, bonding, or handed shaping</text>
+
+  <line x1="12" y1="190" x2="285" y2="190" class="dim"/>
+  <text x="12" y="198" class="note">Tolerances: outside dimensions ±1.0; thickness ±0.5; hole positions ±0.5; body bore +0.5/-0.0.</text>
+  <text x="12" y="204" class="note">Quantities shown are total amounts to manufacture and already include all required spares.</text>
+</svg>

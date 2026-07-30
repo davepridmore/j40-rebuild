@@ -1,0 +1,4 @@
+part_id,description,quantity,material,thickness_mm,finished_x_mm,finished_y_mm,profile_tolerance_mm,hole_position_tolerance_mm,source_dxf,release_note
+J40-EBP-001,Relay structural back-plate,1,5052-H32 aluminium,3.0,360.0,245.0,+/-0.25,+/-0.20,../relay_mount_rev_d/relay_base_plate_rev_d.dxf,Cut profile and eight slots only; transfer relay-box holes from actual enclosure
+J40-EBP-002,Relay insulating back-plate,1,G10/FR-4 preferred; HDPE ABS polypropylene or phenolic acceptable,3.0,300.0,197.0,+/-0.25,N/A,../relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf,Cut profile only; transfer fixing holes with actual enclosure and aluminium plate
+J40-EBP-003,Five-way MIDI fuse-holder back-plate,1,G10/FR-4 preferred; HDPE ABS or phenolic acceptable,5.0,140.0,85.0,+/-0.25,+/-0.20,../midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf,CNC-ready subject to physical sample check of one holder

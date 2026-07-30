@@ -460,7 +460,12 @@ def build_component_disposition(
         if row.get("component_group", "") in {"rear_axle", "brakes", "gearbox", "suspension_upgrade", "steering_procurement", "steering_column"}:
             dependency_lane = "mechanical_safety"
             pre_reassembly_action = "inspect_measure_and_close_before_road_validation"
-        if status == "planned_send_out":
+        if status == "functionally_confirmed_cosmetic_tidy_pending":
+            disposition = "refurbish"
+            reuse_decision = "reuse_after_refurbishment"
+            pre_reassembly_action = "cosmetic_tidy_then_refit_and_validate_with_brake_system"
+            dependency_lane = "mechanical_safety"
+        elif status == "planned_send_out":
             disposition = "refurbish_send_out"
             reuse_decision = "reuse_after_refurbish"
             pre_reassembly_action = "confirm_vendor_scope_and_return_condition"

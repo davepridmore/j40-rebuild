@@ -1,5 +1,9 @@
 # Longman Rubber Order 2026-05-08
 
+> Historical package — do not send to the supplier. It was superseded on
+> 2026-07-26 by `../rubber_manufacturer_order_20260726/`, which contains only
+> the three approved rubber items and excludes hoses and bump stops.
+
 This folder is the supplier-facing fabrication handoff for the current Longman chassis/body rubber order.
 
 Order it as three supplier-facing things:

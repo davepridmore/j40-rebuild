@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-19T11:43:53+00:00",
+  "generated_at": "2026-07-22T17:59:51+00:00",
   "profiles": [
     {
       "profile_server": "whatsapp-number-1",
       "profile_label": "primary",
       "target_number": "+447456457005",
-      "status": "connected",
+      "status": "disconnected",
       "total_chats": 0,
       "selected_chats": 2,
       "messages_imported": 1172,

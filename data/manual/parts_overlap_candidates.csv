@@ -1,3 +1,4 @@
 overlap_group_id,overlap_group_label,item_count,entries,items,action_buckets
 floor_finish_stack,Floor/interior finish stack,3,part_carpet|part_foam|part_sound_dampening_sheets,Carpet|Foam|Sound dampening sheets,deferred
+grommet_options,Grommet options,2,part_hvac_firewall_bulkhead_fittings_20260514|part_turbo_gauge_mount_wiring_20260717,A/C firewall bulkhead fittings and sealing grommets|Gauge mounting panel fused wiring terminals loom protection grommets labels and connectors,buy_now|unclear
 switch_options,Switch inventory,2,part_hvac_blower_clutch_fan_wiring_20260514|part_hvac_trinary_switch_20260514,"Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request|Trinary pressure switch for A/C compressor and fan control",buy_now

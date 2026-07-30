@@ -1,0 +1,4 @@
+item_id,item,total_quantity_including_spares,dimensions_mm,material,hardness
+BM-ISO-LG,Main body isolator pad,30,"80 L x 80 W x 24 H; centred 18.0 through-bore; R1.5 corners; edge break/chamfer <=1.0","New black solid automotive mount-grade EPDM or NR/SBR","Shore A 60 +/-5"
+FS-OVAL,Front-support oval pad,2,"96 L x 64 W x 15 T; capsule ends R32; two 12.0 holes at 64.0 centres; no relief/boss/insert unless original sample proves it","New black solid automotive mount-grade EPDM or NR/SBR","Shore A 60 +/-5"
+FS-STRIP,Underfloor support strip,4,"420 L x 38 W x 8 T; no holes, slots, bonding, or handed shaping","New black solid automotive mount-grade EPDM or NR/SBR","Shore A 60 +/-5"

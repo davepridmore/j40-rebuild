@@ -1,5 +1,10 @@
 # Longman Rubber Order Spec - 2026-05-08
 
+> **Superseded for supplier use on 2026-07-26.** Use
+> `docs/rubber-manufacturer-order-spec-20260726.md`. The current supplier
+> order contains only body pads, front-support oval pads, and underfloor
+> strips. Hoses and bump stops are excluded.
+
 Purpose: send one consolidated custom-rubber manufacturing request to Longman for the current J40 body/front-support/chassis rubber batch, with the bump-stop rubber updated to match the May 31 exact front-stop photos and the May 29 removed-fixture support photos.
 
 Supplier fit: Longman Mills lists custom rubber parts, automobile parts, rubber-to-metal bonded parts, hose pipes, and rubber testing capability, so this pack asks them to quote the rubber pieces and advise what samples or steel inserts they need before final production.

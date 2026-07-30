@@ -1,12 +1,20 @@
 # Suspension Workstream - Ironman Foam Cell Kit
 
-- Updated: 2026-05-24
+- Updated: 2026-07-23
 - Workstreams: `steering_brakes_suspension`, `suspension_upgrade`
-- Current state: main Ironman kit received; separate front damper pair pending
+- Current state: main Ironman kit received; separate front damper pair pending; grinder-cut weld repair reported complete; four bump stops received but not installed
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
 - Order evidence: `data/manual/procurement_queue.csv`, `data/manual/orders_receipts_audit_queue.csv`, `data/manual/workstream_status.csv`
 - Merged brake execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md)
-- Comms refresh: 2026-05-24 WhatsApp import found no new verified `24635FE` delivery signal; Gmail verification is blocked until Google OAuth is re-authorized. The same day Google Photos picker plus catalog follow-up moved rear wheel cylinders back to the standard four-cylinder J40/BJ40 route, with sample/count verification still required before payment.
+- Comms refresh: 2026-07-22 WhatsApp refresh fell back to the existing export because both configured profiles were disconnected; the newest indexed message remains `2026-06-13`. Searches of the connected Gmail account and the locally imported project-mail archive through `2026-07-20` found no email confirming the grinder repair, vehicle-bumper installation, bump-stop installation, or `24635FE` delivery. See [communication-review-20260722-axle-repair-bumpers.md](communication-review-20260722-axle-repair-bumpers.md).
+
+## 2026-07-22 Field Update
+
+- The experienced welders report the mistaken grinder cut in the suspension/axle area repaired. Treat welding as complete, but keep the safety gate open until the exact repair location is photographed, both sides are inspected, nearby geometry and line clearance are checked, and primer/top protection is restored.
+- The four new suspension bump stops received on July 12 remain not installed; the owner's installation update concerned the separate front and rear vehicle bumpers shown in the supplied reference images. Before bump-stop installation, label all four stations and complete metal-fixture degreasing, loose-rust/scale removal, condition inspection, compatible residual-rust treatment, epoxy primer and topcoat while protecting rubber, threads, mounting faces and contact interfaces; then trial-fit and verify handed/height placement, retention, strike-pad alignment and full-bump clearance.
+- The stops must use the correct J40 chassis-side bump-stop brackets/metal fixtures above the axles. Do not trap them under a spring pack, suspension shoe, U-bolt plate, or other axle-clamped hardware.
+- If/when bump-stop installation is scheduled, confirm the short right-front stop versus the long left-front/rear family, bracket hole and fixture fit, fastener retention, strike-pad alignment, and full-bump clearance before calling installation complete.
+- The fabrication specification remains a fallback and dimensional acceptance sheet. If the received parts pass identity and fit checks, do not fabricate duplicates.
 
 ## Decision
 
@@ -65,7 +73,7 @@ No torque sheet means no installation.
 2. Count the kit against the incoming-set table and the supplier invoice.
 3. Preserve all old springs, shackles, pins, plates, and U-bolts until the Ironman kit is fully installed and validated.
 4. Confirm all chassis spring hangers, shackle mounts, steering-box mount area, axle spring pads, and U-bolt plates are clean and crack-free.
-5. Stop for repair if any spring hanger is cracked, ovalized, bent, deeply pitted, or has damaged captive hardware.
+5. Photograph and inspect the reported-complete grinder-cut weld repair before loading the suspension. Stop for rework if there is cracking, undercut, porosity, incomplete fusion, distortion, damaged adjacent metal, or an unresolved line/clearance issue; restore corrosion protection only after acceptance.
 6. Confirm brake flexible hoses, brake hard lines, parking-brake cables, breather hose, and wiring have slack at expected full droop.
 7. If the rear differential/axle package is being done in the same window, confirm `DIFF-CAPTURE-001` photo tools, drain/fill access, drain pan, correct gear-oil basis, carrier gasket or approved sealant, breather check parts, dial indicator/gear marking compound, and axle-seal/bearing/pinion-seal contingency path.
 8. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, sealed fresh DOT 3 brake fluid, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
@@ -73,6 +81,15 @@ No torque sheet means no installation.
 10. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
 11. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.
 12. Confirm the separate `24635FE` front damper shipment has arrived before final assembly or road validation.
+
+## Bump-Stop Installation Gate
+
+1. Lay out and label front-left, front-right, rear-left, and rear-right parts before fitting.
+2. Confirm the short right-front stop and long left-front/rear family against the received parts; do not force four identical-height stops into service without a full-bump clearance release.
+3. Clean and inspect each chassis-side bracket/fixture and its fastener holes. Repair rust or damaged mounting metal before assembly and protect the metal after fit is proven.
+4. Install the rubber stop with its correct separate metal fixture/bracket at the chassis-side station above the axle. Do not place the stop beneath the spring/U-bolt plate.
+5. Confirm the strike face meets the axle pad squarely, the fasteners retain without tearing or rocking the rubber, and the stop engages before the shock, tyre, spring, brake hose, breather, or steering parts reach a hard limit.
+6. Photograph all four installed stations and record static clearance; repeat the alignment/clearance check after the Ironman suspension settles.
 
 ## Baseline Measurements
 

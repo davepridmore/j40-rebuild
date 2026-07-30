@@ -10,8 +10,8 @@ The rusty circular carrier is the rear brake backing plate/shoe carrier assembly
 
 | System item | Recorded part/specification | Current disposition |
 | --- | --- | --- |
-| Rear shoes | PakWheels `K-2255-N/Y`, nominal requirement `1 axle set`; order `1075298`, three sale units received—confirm whether each unit is a shoe, pair or set | New, on hand; exact arc, width, web-hole and lever/adjuster contacts must match |
-| Spring/hold-down/adjuster kit | Centric `116971-05110530`, listed for 1960–1980 Toyota Land Cruiser, `1 axle hardware kit` | Reference/procured candidate; compare with actual layout and remade pieces |
+| Rear shoes | Received PakWheels `K-2255-N/Y` under order `1075298`; physical fit rejects it as too wide. Correct catalog target: MK `K-2221` / Toyota `04494-60010` or `04494-60011`, nominally about `55–57 mm` wide, `1 four-shoe axle set` | K-2255 return/exchange required; [K-2221 Pakistan purchase route](rear-brake-shoe-fitment-and-purchase-control-20260722.md) is ready, pending seller dimension photos and old-sample confirmation |
+| Spring/hold-down/adjuster kit | Centric `116971-05110530` plus the collected/reconditioned pins, cups, springs, adjusters, levers and clips | Owner reports the non-friction drum hardware pool complete; verify counts, condition, LH/RH layout and free return during assembly |
 | Wheel cylinders | Likely-matching received stock; Toyota reference family `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055` | Fit by old sample and installed position, not part number alone |
 | Rear drums | `2`, left/right; no previous active pair order | New larger pair now on hand; installed fit and measurement govern acceptance |
 | Rear centre flex hose | `1`, complete crimped brake hose, `DOT/SAE J1401` or OEM-equivalent | Still old-sample/free-length/fitting controlled |
@@ -19,7 +19,7 @@ The rusty circular carrier is the rear brake backing plate/shoe carrier assembly
 | Brake fluid | Fresh sealed `DOT 3` per project inventory | Final fill/bleed only; never reuse drained fluid |
 | Parking-brake splitter/equalizer | One input feeding both rear wheels through the original equalizer/yoke geometry | Copy locally from the complete old sample; preserve every clevis, pin, clip and spring |
 
-Reference part numbers describe the inventory trail; the removed originals and installed geometry control final fit.
+Reference part numbers describe the inventory trail; the removed originals and installed geometry control final fit. The 2026-07-22 physical check is decisive: do not modify or install `K-2255` on the project rear axle.
 
 ## Required setup
 

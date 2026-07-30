@@ -197,8 +197,8 @@ AMIR_PURCHASE_REFERENCE_CARDS: tuple[dict[str, str], ...] = (
         "entry_id": "part_brake_booster_servo_44610_60050",
         "image_path": "deliverables/selling_site_images/images/manual_overrides/brake_booster_current_car_context_20260503.jpg",
         "item": "Brake booster / servo",
-        "current_action": "Refurb quote only",
-        "instruction": "Take old booster as sample. Payment waits for the video gate: sample identity, side-by-side match, vacuum hold, assist movement, contamination check, and final acceptance video.",
+        "current_action": "Cosmetic tidy only",
+        "instruction": "Existing booster confirmed functionally good on 2026-07-29. Do not seek replacement or rebuild quotes; clean/refinish without disturbing the shell, pushrod/free-play, check valve/grommet, boot, clevis, studs, or master-cylinder interface.",
     },
     {
         "entry_id": "service_engine_radiator_recore_or_new_by_sample_20260529",
@@ -227,6 +227,7 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "ac_hvac_retrofit",
     "brake_system",
     "eps_vitz_upgrade",
+    "turbocharger_powertrain",
     "suspension_upgrade",
     "interior_weatherproofing",
     "final_assembly_validation",
@@ -245,7 +246,9 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "radiator": "Radiator",
     "replacement_pipes": "Replacement Pipes",
     "window_refurbishment": "Windows",
-    "eps_vitz_upgrade": "Steering (EPS)",
+    # Keep the legacy workstream id so existing links and historical rows remain stable.
+    "eps_vitz_upgrade": "Steering — J60 Hydraulic",
+    "turbocharger_powertrain": "2H Turbo",
     "suspension_upgrade": "Suspension",
 }
 
@@ -311,6 +314,60 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     "decision_rule": (
         "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, "
         "required photos, and General EPS Adapter geometry are all captured before payment."
+    ),
+}
+
+J60_HYDRAULIC_STEERING_MARKET_SCOUT_SPEC: dict[str, Any] = {
+    "id": "j60_hydraulic_steering_market_scout",
+    "title": "J60 Hydraulic Steering Acquisition Gate",
+    "scope": "Complete-set identification and quote only until trial-fit release",
+    "quantity": "1 complete matched RHD J60/HJ60 hydraulic steering package",
+    "plain_stall_request": (
+        "I need a complete right-hand-drive J60/HJ60 hydraulic power-steering set: steering box, "
+        "matched pitman arm, collapsible shaft and couplers, drag-link parts, plus a Toyota 2H-compatible "
+        "pump, brackets, pulley, reservoir and hoses. Keep every part together for inspection and trial fit."
+    ),
+    "buy_target": (
+        "The approved route is RHD J60/HJ60 hydraulic steering, not Vitz/Yaris column EPS. Source the box-side "
+        "and 2H pump-side hardware as identified matched sets. Do not release chassis drilling, welding, adapter "
+        "plates or final hoses from catalogue assumptions; first bench-inspect the complete set and physically "
+        "trial-fit it on the J40. The steering package establishes the geometry that the turbo hot side must avoid."
+    ),
+    "must_include": [
+        "RHD J60/HJ60 hydraulic steering box with readable casting or identification evidence.",
+        "Matched pitman arm, collapsible/intermediate shaft, couplers, U-joints and fastening hardware.",
+        "Drag-link parts suitable for measuring the final J40 linkage route after trial fit.",
+        "Toyota 2H-compatible pump, engine brackets, pulley, reservoir and mounting hardware.",
+        "Pressure and return fittings or hose-end references retained for measured hose fabrication.",
+        "Photos and measurements of splines, mounting faces, port threads, pulley alignment and clearances.",
+    ],
+    "bench_test": [
+        "Inspect the box for cracks, damaged mounting ears, shaft play, roughness, leaks and sector/input wear.",
+        "Confirm pitman and shaft splines fully match their mating parts; reject hammered or welded joints.",
+        "Inspect pump shaft, pulley, reservoir and brackets as one 2H drive-alignment package.",
+        "Rebuild or professionally inspect serviceable used units before permanent installation.",
+        "Trial-fit the complete steering layout on the vehicle before any chassis or hose fabrication is released.",
+    ],
+    "reject_if": [
+        "The steering box is left-hand-drive, unidentified, cracked, welded, seized or materially incomplete.",
+        "Pitman arm, shaft/couplers, pump brackets, pulley or reservoir are missing from a claimed complete set.",
+        "Seller proposes a Vitz/Yaris EPS column, loose hydraulic box or mixed unmatched parts as the approved route.",
+        "Mounting, spline, port or 2H pulley alignment cannot be documented before purchase release.",
+        "Permanent drilling, welding, plates or final hoses are requested before physical vehicle trial fit.",
+    ],
+    "capture_before_leaving": [
+        "Seller, location, contact, price, return terms and donor claim.",
+        "Box identification, mounting face, sector/input splines, pitman arm and shaft/coupler layout.",
+        "Pump, bracket, pulley, belt-plane, reservoir and port/fitting details.",
+        "One full-set photo showing every included component and fastener.",
+        "Bench-inspection result and any rebuild quote or warranty.",
+    ],
+    "price_guidance": {
+        "rule": "Quote complete matched sets first; do not pay complete-package money for missing box-side or 2H pump-drive hardware.",
+    },
+    "decision_rule": (
+        "Release purchase only when the RHD J60/HJ60 identity, complete contents, condition evidence and return "
+        "terms are acceptable. Release fabrication only after the complete rebuilt/inspected package passes J40 trial fit."
     ),
 }
 
@@ -505,9 +562,14 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
         "keywords": {"brake", "disc", "drum", "caliper", "hydraulic", "master", "cylinder", "hose", "line", "bias"},
     },
     "eps_vitz_upgrade": {
-        "component_groups": {"chassis_underside"},
-        "stages": {"underside_inspection"},
-        "keywords": {"eps", "vitz", "steering", "column", "motor", "ecu", "assist", "u-joint", "adapter", "mount"},
+        "component_groups": {"chassis_underside", "engine_bay", "procurement_inventory"},
+        "stages": {"underside_inspection", "procurement_reconciliation"},
+        "keywords": {"j60", "hj60", "steering", "hydraulic", "box", "pitman", "drag-link", "shaft", "pump", "reservoir", "hose"},
+    },
+    "turbocharger_powertrain": {
+        "component_groups": {"engine_bay", "chassis_underside", "procurement_inventory"},
+        "stages": {"baseline_walkaround", "underside_inspection", "procurement_reconciliation"},
+        "keywords": {"2h", "turbo", "manifold", "intercooler", "downpipe", "exhaust", "oil", "egt", "boost", "cooling"},
     },
     "suspension_upgrade": {
         "component_groups": {"chassis_underside", "procurement_inventory"},
@@ -540,6 +602,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "replacement_pipes": 18,
     "brake_system": 18,
     "eps_vitz_upgrade": 18,
+    "turbocharger_powertrain": 18,
     "suspension_upgrade": 18,
     "interior_weatherproofing": 18,
     "stripdown_cataloguing": 16,
@@ -561,6 +624,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "replacement_pipes": 1,
     "brake_system": 2,
     "eps_vitz_upgrade": 2,
+    "turbocharger_powertrain": 2,
     "suspension_upgrade": 2,
     "interior_weatherproofing": 2,
     "final_assembly_validation": 0,
@@ -578,6 +642,7 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "replacement_pipes": True,
     "brake_system": False,
     "eps_vitz_upgrade": False,
+    "turbocharger_powertrain": False,
     "suspension_upgrade": False,
     "interior_weatherproofing": False,
     "final_assembly_validation": True,
@@ -824,15 +889,22 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close brake safety gate", "Do not progress to final validation until brake function is verified."),
     ],
     "eps_vitz_upgrade": [
-        ("Confirm target donor only", "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets; treat Corolla, Axio, Prius, and mixed-family sets as quote/photo only."),
-        ("Verify complete matched kit", "Check column, matched EPS ECU/controller or proven integrated control, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."),
-        ("Bench-test before payment", "Require smooth powered assist both directions, no lash/noise, and manual shaft rotation with assist disabled."),
-        ("Capture seller evidence and decision", "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, donor bracket/shaft geometry, bench-test video, and buy/no-buy decision."),
-        ("Map J40 column layout", "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, controller location, and General EPS Adapter datum points before any shaft is cut."),
-        ("Design General EPS Adapter", "Fabricate a removable datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, and triangulated support that carries EPS motor torque without relying on thin dash sheet alone."),
-        ("Adapt shafts and U-joints", "Build a phased intermediate shaft path from the adapter datum with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."),
-        ("Mount controller and protected wiring", "Install the EPS ECU/controller dry and serviceable, then run new fused power, ground, ignition trigger, terminals, and loom protection."),
-        ("Validate steering before road use", "Confirm manual steering with EPS off, powered assist consistency, shaft clearances, fastener locking, alignment, and staged road checks before signoff."),
+        ("Identify the fitted J40 steering and chassis interfaces", "Record the existing box, frame mounting area, column/shaft route, axle/linkage geometry and service clearances before selecting parts."),
+        ("Source a complete RHD J60/HJ60 box-side set", "Keep the hydraulic box, matched pitman arm, collapsible shaft, couplers, U-joints and drag-link parts together with identification and condition evidence."),
+        ("Source the complete 2H pump-drive set", "Acquire the pump, correct 2H brackets, pulley, reservoir and fitting references as one aligned package."),
+        ("Bench inspect or rebuild the used units", "Reject damaged or unmatched steering parts and complete professional inspection/rebuild before permanent vehicle work."),
+        ("Trial-fit the complete steering system", "Mock box, shaft, linkage and pump drive on the J40 before chassis drilling, welding, plates or final hoses are released."),
+        ("Freeze the measured fabrication card", "Only after successful trial fit, record mounting, reinforcement, shaft, drag-link, hose and belt-alignment dimensions."),
+        ("Install and validate the hydraulic system", "Complete controlled fabrication, rated hoses, fluid fill/bleed, alignment and lock-to-lock clearance checks before staged road validation."),
+        ("Release the turbo hot-side envelope second", "Prove steering geometry first; the turbo, manifold, downpipe and heat shields must route around the installed steering system."),
+    ],
+    "turbocharger_powertrain": [
+        ("Pass the 2H engine-health gate", "Confirm engine identity, six-cylinder compression, hot oil pressure, measured blow-by, cooling stability, injector/pump condition and baseline smoke before releasing hardware."),
+        ("Select one matched conservative package", "Approve exact turbo, turbine housing, flange, wastegate setting and oil requirements together; GT2256/small-GT25 or compact HX30 is a response range, not a part-number release."),
+        ("Prove steering and vehicle clearances first", "Install or mock the J60 hydraulic steering before finalizing the turbo manifold, downpipe, heat shields or nearby service routes."),
+        ("Mock the full air, oil and exhaust system", "Reserve measured oil feed/drain, sealed intake, intercooler/charge pipes, single exhaust, breather and boost-reference connections before body/front-stack closeout."),
+        ("Install mandatory monitoring", "Fit pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring before any fuel increase; the mechanical internal wastegate needs no ECU."),
+        ("Validate at 5–7 psi first", "Prime, heat-cycle and progressively load at baseline fuel while logging temperatures, pressures, smoke and leaks; consider 8–10 psi only after logged specialist validation."),
     ],
     "suspension_upgrade": [
         ("Capture measured suspension baseline", "Record ride height, shackle angles, and current travel/clearance before parts lock."),
@@ -2143,6 +2215,199 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
     },
 }
 
+# The legacy key is retained for route/link stability, but the superseded EPS
+# instructions must never be emitted by the portal.
+WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
+    "title": "J60 Hydraulic Steering Conversion",
+    "summary": (
+        "Use a complete RHD J60/HJ60 hydraulic steering package with a 2H-compatible pump drive. "
+        "Inspect/rebuild and physically trial-fit the complete system before releasing any chassis fabrication "
+        "or final hoses; prove steering first, then route the turbo hot side around it."
+    ),
+    "default_tools": ["Phone/camera", "Tape measure", "Calipers", "Angle finder", "Straight edge", "Torque wrench"],
+    "default_supplies": ["Identification tags", "Measurement sheet", "Temporary mock-up fasteners", "Paint marker"],
+    "subtasks": [
+        {
+            "title": "Identify Existing J40 Interfaces",
+            "priority": "P0",
+            "remaining": "before sourcing release",
+            "instruction": "Record the as-fitted steering and chassis geometry before selecting or modifying components.",
+            "process_steps": [
+                "Identify and photograph the existing steering box, frame mounts, shaft route and column connection.",
+                "Record axle/linkage geometry, steering stops, drag-link route and nearby brake, clutch and engine interfaces.",
+                "Measure mounting faces, shaft centerlines, splines and service clearances.",
+                "Keep every measurement tied to a labelled vehicle photo.",
+            ],
+            "tools": ["Phone/camera", "Tape measure", "Calipers", "Angle finder"],
+            "supplies": ["Measurement sheet", "Labels", "Paint marker"],
+            "hold_point": "No donor selection or fabrication is released from an assumed J40/J60 fit.",
+            "image_tokens": ["steering", "box", "shaft", "chassis", "linkage"],
+        },
+        {
+            "title": "Acquire Complete Matched J60/HJ60 Sets",
+            "priority": "P0",
+            "remaining": "quote and identify first",
+            "instruction": "Source complete RHD box-side and Toyota 2H pump-drive sets, not isolated components.",
+            "process_steps": [
+                "Confirm a RHD J60/HJ60 hydraulic box with matched pitman arm, collapsible shaft, couplers and drag-link parts.",
+                "Confirm a 2H-compatible pump, engine brackets, pulley, reservoir and fitting references.",
+                "Photograph identification marks, splines, mounting faces, ports, pulley plane and every included fastener.",
+                "Record seller, price, return terms and missing pieces before purchase release.",
+            ],
+            "tools": ["Phone/camera", "Calipers", "Notebook"],
+            "supplies": ["Printed acquisition gate", "Labels"],
+            "hold_point": "A loose box, unmatched pitman/shaft or incomplete pump-drive package is quote-only.",
+            "image_tokens": ["j60", "hj60", "hydraulic", "pitman", "pump", "reservoir"],
+        },
+        {
+            "title": "Bench Inspect And Trial-Fit",
+            "priority": "P0",
+            "remaining": "before drilling, welding, plates or hoses",
+            "instruction": "Inspect/rebuild used units, then prove the complete system physically on the J40.",
+            "process_steps": [
+                "Inspect or professionally rebuild the steering box and pump; reject cracks, damaged mounts, roughness, play or leakage.",
+                "Mock the box, shaft/couplers, pitman and drag-link route on the chassis.",
+                "Mock pump brackets, pulley/belt plane, reservoir and hose paths on the 2H.",
+                "Turn lock-to-lock and check frame, axle, suspension, brake/clutch, engine and service clearances.",
+                "Recreate body/bonnet/wing datums needed for later turbo clearance.",
+            ],
+            "tools": ["Inspection light", "Temporary fasteners", "Straight edge", "Angle finder", "Torque wrench"],
+            "supplies": ["Mock-up spacers", "Tags", "Measurement card"],
+            "hold_point": "No permanent chassis work or final hose fabrication until the full trial fit is reviewed and accepted.",
+            "image_tokens": ["trial", "fit", "steering", "box", "pump", "clearance"],
+        },
+        {
+            "title": "Freeze Fabrication And Hose Card",
+            "priority": "P0",
+            "remaining": "after successful trial fit",
+            "instruction": "Release only measured mounting, reinforcement, linkage and hydraulic details.",
+            "process_steps": [
+                "Record final box mounting and any approved reinforcement dimensions from the accepted mock-up.",
+                "Freeze collapsible shaft engagement, U-joint angles, pitman orientation and measured drag-link geometry.",
+                "Measure pressure/return ports, hose ends, lengths, support points and heat/abrasion clearances.",
+                "Freeze pump bracket, pulley alignment, belt and reservoir mounting details.",
+                "Issue a labelled fabrication card with hold points and inspection evidence.",
+            ],
+            "tools": ["Calipers", "Tape measure", "Angle finder", "Camera"],
+            "supplies": ["Fabrication card", "Hose tags", "Paint marker"],
+            "hold_point": "Catalogue dimensions or donor claims cannot replace measured vehicle data.",
+            "image_tokens": ["measurement", "mount", "shaft", "drag", "hose", "pulley"],
+        },
+        {
+            "title": "Install, Bleed And Validate",
+            "priority": "P0",
+            "remaining": "before road use and turbo hot-side release",
+            "instruction": "Treat the conversion as safety-critical and prove it before turbo routing is finalized.",
+            "process_steps": [
+                "Complete approved mounting, shaft/linkage work, pump drive, reservoir and rated hose installation.",
+                "Fill and bleed with the specified fluid; inspect pump behavior, aeration and every joint for leaks.",
+                "Check lock-to-lock freedom, steering stops, shaft collapse path, fastener locking and alignment.",
+                "Run static, yard-speed and staged road checks with reinspection and re-torque.",
+                "Publish the proven steering envelope to the turbo fabricator; manifold, downpipe and heat shields must clear it.",
+            ],
+            "tools": ["Torque wrench", "Inspection light", "Wheel chocks", "Alignment equipment"],
+            "supplies": ["Specified fluid", "Rated hoses", "Torque paint", "Inspection sheet"],
+            "hold_point": "Any bind, play, leak, hose contact, alignment fault or uncertain fastener blocks road use and turbo hot-side release.",
+            "image_tokens": ["hydraulic", "steering", "hose", "validation", "turbo", "clearance"],
+        },
+    ],
+}
+
+WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
+    "title": "2H Conservative Turbo Conversion",
+    "summary": (
+        "The turbo direction is approved, but hardware remains gated by engine health and a matched package. "
+        "Use a small responsive wastegated unit, intercooling and mandatory monitoring; validate at 5–7 psi "
+        "before considering 8–10 psi, and finalize the hot side only after J60 steering geometry is proven."
+    ),
+    "default_tools": ["Compression tester", "Oil-pressure test gauge", "Cooling pressure tester", "EGT and boost logging"],
+    "default_supplies": ["Test sheets", "Identification tags", "Temporary mock-up stock", "Heat-clearance markers"],
+    "subtasks": [
+        {
+            "title": "Pass 2H Engine-Health Gate",
+            "priority": "P0",
+            "remaining": "before any turbo hardware order",
+            "instruction": "Prove that the as-fitted 2H is healthy enough for conservative boost.",
+            "process_steps": [
+                "Confirm engine identity and record all six compression readings.",
+                "Measure hot oil pressure, blow-by and cooling stability.",
+                "Assess injector balance, injection-pump condition and baseline smoke.",
+                "Stop the conversion for a weak cylinder, low hot oil pressure, heavy blow-by, overheating or unresolved fuel fault.",
+            ],
+            "tools": ["Compression tester", "Oil-pressure gauge", "Blow-by measurement", "Cooling test kit"],
+            "supplies": ["Engine-health record sheet"],
+            "hold_point": "No turbo package order until the engine-health record is accepted.",
+            "image_tokens": ["2h", "engine", "compression", "oil", "cooling"],
+        },
+        {
+            "title": "Approve One Matched Turbo Package",
+            "priority": "P0",
+            "remaining": "after health pass",
+            "instruction": "Approve exact hardware as one mapped package, not from a generic turbo-class label.",
+            "process_steps": [
+                "Compare mapped response for the confirmed 4.0 L 2H, operating rpm, ambient temperature and altitude.",
+                "Use GT2256/small-GT25 or compact HX30 only as the preferred response range.",
+                "Freeze exact turbo, turbine housing, flange, internal wastegate setting and oil/coolant requirements.",
+                "Keep initial boost at 5–7 psi; do not release 8–10 psi as the starting target.",
+            ],
+            "tools": ["Turbo maps", "Engine data sheet", "Specialist review"],
+            "supplies": ["Matched-package approval sheet"],
+            "hold_point": "No purchase from advertised horsepower, flange alone or an unverified used turbo claim.",
+            "image_tokens": ["turbo", "wastegate", "manifold", "map", "2h"],
+        },
+        {
+            "title": "Mock Steering, Hot Side And Full Interfaces",
+            "priority": "P0",
+            "remaining": "before permanent fabrication",
+            "instruction": "Prove J60 steering first, then package every turbo interface around the accepted steering envelope.",
+            "process_steps": [
+                "Install or physically mock the J60 hydraulic box, shaft, pump and hose envelope before final manifold/downpipe work.",
+                "Mock turbo/manifold, supported downpipe, single exhaust and removable air-gap heat shields.",
+                "Reserve continuous-fall sump drain, manufacturer-compliant oil feed and conditional coolant lines.",
+                "Mock sealed air cleaner, intercooler, 2.0–2.5 inch working-basis charge route and crankcase breather.",
+                "Check bonnet, wing, A/C, radiator/condenser/fan, brake/clutch/fuel/electrical and service clearances.",
+            ],
+            "tools": ["Camera", "Tape measure", "Angle finder", "Mock-up stock"],
+            "supplies": ["Clearance card", "Labels", "Temporary supports"],
+            "hold_point": "No final hot-side fabrication until steering and all body/front-stack datums are proven.",
+            "image_tokens": ["turbo", "steering", "downpipe", "intercooler", "clearance"],
+        },
+        {
+            "title": "Install Monitoring And Protection",
+            "priority": "P0",
+            "remaining": "before fuel adjustment",
+            "instruction": "Monitoring is mandatory even though the internal wastegate needs no ECU.",
+            "process_steps": [
+                "Install a calibrated pre-turbine EGT probe and low-range boost measurement.",
+                "Install calibrated engine oil-pressure and coolant-temperature monitoring with visible alarms.",
+                "Use fused ignition power, clean ground, protected sender routes and serviceable labelled connectors.",
+                "Pressure/leak-test charge air, oil, coolant and exhaust interfaces before loaded use.",
+            ],
+            "tools": ["Reference gauges", "Multimeter", "Pressure-test equipment"],
+            "supplies": ["EGT, boost, oil-pressure and coolant-temperature instruments", "Protected wiring"],
+            "hold_point": "No fuel increase or loaded tuning without calibrated monitoring and passed leak tests.",
+            "image_tokens": ["egt", "boost", "oil", "coolant", "gauge"],
+        },
+        {
+            "title": "Validate At 5–7 PSI",
+            "priority": "P0",
+            "remaining": "after complete-vehicle safety release",
+            "instruction": "Use staged logging and stop conditions before any higher-boost decision.",
+            "process_steps": [
+                "Prime the turbo oil system, heat-cycle at baseline fuel and inspect leaks and fasteners.",
+                "Verify mechanical wastegate control at 5–7 psi.",
+                "Progressively load while logging EGT, boost, oil pressure, coolant temperature and smoke.",
+                "Make only measured specialist fuel adjustments after stable baseline results.",
+                "Consider 8–10 psi only after logged thermal, lubrication, smoke, clutch and driveline validation.",
+            ],
+            "tools": ["Data log sheet", "EGT/boost/oil/coolant instruments", "Inspection light"],
+            "supplies": ["Torque paint", "Leak-detection supplies"],
+            "hold_point": "Stop for smoke, high EGT, coolant rise, oil-pressure loss, unstable boost, leaks or clutch slip.",
+            "image_tokens": ["turbo", "validation", "egt", "boost", "road"],
+        },
+    ],
+}
+
 SUBTASK_IMAGE_STOPWORDS: set[str] = {
     "and",
     "the",
@@ -2686,37 +2951,13 @@ def fabrication_design_links_for_part(row: dict[str, Any]) -> list[dict[str, Any
 def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
     specs: list[dict[str, Any]] = []
     if clean(workstream_id) == "eps_vitz_upgrade":
-        spec = dict(EPS_MARKET_SCOUT_SPEC)
-        spec["image"] = static_reference_image_payload(
-            "deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
-            caption="Complete Vitz/Yaris XP90 EPS column set checklist reference",
-            media_id="eps_complete_column_set_reference",
-            matched_tokens=["eps", "vitz", "yaris", "complete", "kit"],
-            match_basis="local_reference_image",
-        )
-        spec["images"] = eps_market_reference_images()
+        spec = dict(J60_HYDRAULIC_STEERING_MARKET_SCOUT_SPEC)
         spec["links"] = [
             link
             for link in [
-                file_link("docs/eps-bilal-ganj-kit-checklist.md", "Full EPS checklist"),
-                file_link("docs/bilal-ganj-detailed-size-specs.md", "Detailed market specs"),
-                file_link("docs/eps-vitz-conversion-fabrication-plan.md", "EPS conversion fabrication plan"),
-                {
-                    "url": "https://allegro.pl/produkt/toyota-yaris-ii-wspomaganie-elektryczne-kierownicy-sterownik-45200-0d100-851971a4-a0e1-4a1d-aa87-f2fd379eed56?offerId=18532958907",
-                    "label": "Yaris II EPS column with controller example",
-                },
-                {
-                    "url": "https://allegro.pl/produkt/wspomaganie-elektryczne-modul-yaris-ii-45200-0d100-00-89650-0d110-5d9fef6b-6861-446c-9b9f-fcec658e7e90",
-                    "label": "Yaris II EPS module/controller example",
-                },
-                {
-                    "url": "https://allegro.pl/produkt/wspomaganie-elektryczne-pompa-452000d090-1129001331-toyota-yaris-ii-05-070d38ef-9211-46e6-82cf-ead49b9f8184?offerId=18244144695",
-                    "label": "Yaris II EPS plugs and label detail example",
-                },
-                {
-                    "url": "https://allegro.pl/oferta/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-15356593558",
-                    "label": "Yaris II EPS loose shaft and U-joint example",
-                },
+                file_link("docs/j60-hydraulic-power-steering-conversion-plan-20260719.md", "J60 hydraulic steering plan"),
+                file_link("docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md", "Component-first steering/turbo instruction"),
+                file_link("docs/master-project-plan.md", "Master project plan"),
             ]
             if link
         ]
@@ -6347,7 +6588,7 @@ def split_legacy_steering_brakes_workstream(
 
     if category_key == "steering" or any(
         text_contains_term(token)
-        for token in ("steering", "eps", "vitz", "column", "u-joint", "ujoint", "assist", "power steering")
+        for token in ("steering", "hydraulic", "j60", "hj60", "box", "pitman", "drag link", "shaft", "pump", "reservoir", "power steering")
     ):
         return "eps_vitz_upgrade"
 
@@ -6653,6 +6894,7 @@ def infer_inventory_group(
         "chassis_rubbers",
         "brake_system",
         "eps_vitz_upgrade",
+        "turbocharger_powertrain",
         "suspension_upgrade",
     }
     mechanical_categories = {
@@ -7017,6 +7259,10 @@ def build_workbook_source_links() -> list[dict[str, Any]]:
     for row in load_csv_optional(WORKBOOK_PK_QUALITY_PATH):
         if norm(row.get("col_1")) == "system":
             continue
+        if norm(row.get("col_1")) == "eps":
+            # Retain the imported workbook as historical source material, but
+            # do not surface EPS fabrication rows after the hydraulic decision.
+            continue
         candidate = source_link_row(
             source_sheet="PK_Quality_Path",
             source_ref=f"pk_quality_path#row_{clean(row.get('excel_row'))}",
@@ -7364,20 +7610,20 @@ CHASSIS_FIXING_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
 )
 
 EPS_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
-    "eps",
-    "vitz",
-    "electric power steering",
-    "assist",
+    "j60",
+    "hj60",
+    "hydraulic",
     "steering",
-    "steering column",
     "steering_and_suspension_linkages",
-    "column",
+    "steering box",
+    "pitman",
+    "drag link",
     "linkage",
+    "shaft",
     "u-joint",
     "ujoint",
-    "adapter",
-    "ecu",
-    "motor",
+    "pump",
+    "reservoir",
 )
 
 SUSPENSION_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
@@ -7800,8 +8046,6 @@ def select_workstream_subtask_images(
         paint_refinish_subtask_image_pool(subtask_id, images) if workstream_id == "paint_refinish" else images
     )
     selected = select_subtask_images_from_payloads(candidate_images, tokens)
-    if workstream_id == "eps_vitz_upgrade":
-        selected = dedupe_payload_images(eps_reference_images_for_subtask(subtask_id) + selected)[:6]
     if workstream_id == "paint_refinish" and subtask_id == "reconcile_returned_painted_parts":
         returned_panel_images = [
             image
@@ -7935,8 +8179,6 @@ def build_workstream_subtask_groups(
         return [build_chassis_before_primer_subtask_group(photo_rows)]
 
     image_pool = [] if workstream_id == "fabrication_handoff" else evidence_images or fallback_workstream_images_from_photo_rows(workstream_id, photo_rows)
-    if workstream_id == "eps_vitz_upgrade":
-        image_pool = dedupe_payload_images(image_pool + eps_workstream_reference_images())
     group = build_standard_workstream_subtask_group(
         workstream_id,
         workstream_row,
@@ -9317,6 +9559,10 @@ def choose_supply_reference_image(
         return ref("engine_mount", f"{item} · engine mount reference image", "engine", "mount")
     if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
         return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
+    if has_any("j60", "hj60", "hydraulic steering", "2h pump-drive", "2h-compatible pump"):
+        # There is no approved J60 hydraulic reference asset yet. A stale EPS
+        # illustration is actively misleading on the replacement steering row.
+        return None
     if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
         return local_photo(
             "deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
@@ -10304,8 +10550,6 @@ def build_dashboard_data() -> dict[str, Any]:
             paint_refinish_whatsapp_rows,
         )
         images = evidence["primary_images"]
-        if ws_id == "eps_vitz_upgrade":
-            images = dedupe_payload_images(images + eps_workstream_reference_images())
         evidence_sets = evidence["evidence_sets"]
         if ws_id == "fabrication_handoff":
             images = []
@@ -10573,6 +10817,15 @@ def build_dashboard_data() -> dict[str, Any]:
             "tags": clean(row.get("tags")),
             "notes": clean(row.get("notes")),
         }
+    image_library = sorted(
+        photo_lookup.values(),
+        key=lambda image: (
+            clean(image.get("captured_date")),
+            clean(image.get("captured_time")),
+            clean(image.get("file_name")),
+        ),
+        reverse=True,
+    )
 
     open_part_rows = [
         row
@@ -10959,6 +11212,7 @@ def build_dashboard_data() -> dict[str, Any]:
         "supplies": supplies_inventory,
         "amir": build_amir_purchase_reference_payload(bilal_ganj_sample_kit_rows),
         "other_builds": other_builds_reference,
+        "images": image_library,
         "contact_register": contact_register_rows,
         "reference_project_ideas": reference_project_idea_rows,
         "whatsapp_j40": {
