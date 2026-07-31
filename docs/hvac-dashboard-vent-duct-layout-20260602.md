@@ -4,7 +4,7 @@ Purpose: convert the new condenser/cabin airflow direction into a buyable vent a
 
 ## 2026-07-31 Dashboard Integration Update
 
-The controlled front-pair integration is now [dashboard_lcd_hvac_fascia_rev_a](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md). It places two removable directional vent carriers below the 9-inch LCD and retains `63.5 mm / 2.5 inch` hose-neck preference. The fascia architecture is ready for quotation and templating, but its vehicle cut, screen aperture and vent apertures remain HOLD until the actual dashboard, LCD, vents and rear duct envelope are measured and owner-approved at 1:1. The other two outlets in the four-outlet plan remain rear/pillar outlets.
+The controlled front-pair integration is now [dashboard_lcd_hvac_fascia_rev_b](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_b/README.md). The right-hand-drive glovebox and instrument/speedometer pressing remain original. The compact CNC insert is confined to the existing radio/ashtray zone; two directional eyeball outlets mount separately below the dash and retain the `63.5 mm / 2.5 inch` hose-neck preference. The design is ready for quotation and templating, but the vehicle, LCD, switch and vent apertures remain HOLD until the actual parts and rear envelope are measured and owner-approved at 1:1. The other two outlets in the four-outlet plan remain rear/pillar outlets.
 
 ## Evidence Position
 

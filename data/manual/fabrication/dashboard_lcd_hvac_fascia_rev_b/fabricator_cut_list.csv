@@ -1,0 +1,5 @@
+part,qty,material,thickness_mm,finish,file,release
+centre fascia template,1,CR4 mild steel,1.5,body-colour low-gloss paint,centre_fascia_template_rev_b.dxf,QUOTE/PROTOTYPE ONLY; outer and LCD geometry HOLD
+removable control strip blank,1,5052-H32 aluminium,2.0,body-colour low-gloss paint,removable_control_strip_blank_rev_b.dxf,outer/fasteners released; switch holes HOLD
+LCD rear clamp blank,1,5052-H32 aluminium,2.0,black,lcd_rear_clamp_blank_rev_b.dxf,outer/fasteners released; rear-body opening HOLD
+under-dash eyeball vent bracket blank,2,5052-H32 aluminium,2.0,satin black,underdash_eyeball_vent_bracket_blank_rev_b.dxf,outer/fasteners released; vent aperture HOLD

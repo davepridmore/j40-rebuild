@@ -14,24 +14,26 @@ Chassis/body rubber order control is not owned here. Use [chassis-rubbers-workst
 
 The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently. The current Longman package lives at [data/manual/fabrication/longman_rubber_order_20260508](../data/manual/fabrication/longman_rubber_order_20260508/README.md), with an interactive 3D visualisation and a package zip generated through the dashboard. The current square-pad 3D quote models live in [data/manual/fabrication/rubber_recreation_rev_a/models_3d](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md); use those rather than the older circular body-pad placeholders when discussing the May 8 Longman rubber order.
 
-## Dashboard 9-inch LCD / HVAC Fascia - Rev A
+## Dashboard 9-inch LCD / HVAC Fascia - Rev B
 
-Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md)
+Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_b](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_b/README.md)
 
-Send-out archive: `deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_a.zip`
+Send-out archive: `deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_b.zip`
 
 Primary files:
-- `j40_dashboard_lcd_hvac_fascia_rev_a_dimension_sheet.pdf`
-- `dashboard_lcd_hvac_fascia_rev_a_dimensioned_front.svg`
-- `dashboard_lcd_hvac_fascia_rev_a_concept.png`
+- `j40_dashboard_lcd_hvac_fascia_rev_b_shop_spec.pdf`
+- `dashboard_lcd_hvac_fascia_rev_b_dimensioned_front.svg`
+- `dashboard_lcd_hvac_fascia_rev_b_photo_overlay.png`
 - `fabricator_cut_list.csv`
 - `measurement_and_release_schedule.csv`
 
 DXF files:
-- `dashboard_main_fascia_rev_a.dxf` - `480 × 320 × 1.5 mm` CR4 steel service fascia, nominally overlapping a `440 × 280 mm` dashboard cut
-- `dashboard_rear_stiffening_frame_rev_a.dxf` - `460 × 300 × 2.0 mm` steel reinforcing ring
-- `lcd_carrier_blank_rev_a.dxf` - `310 × 200 × 2.0 mm` aluminium removable carrier; final screen aperture remains HOLD
-- `hvac_vent_carrier_blank_rev_a.dxf` - `165 × 82 × 2.0 mm` aluminium removable carrier, qty `2`; final louver apertures remain HOLD
+- `centre_fascia_template_rev_b.dxf` - nominal `275 × 220 × 1.5 mm` centre-only fascia template; outer contour and LCD aperture remain HOLD to vehicle/part measurements
+- `removable_control_strip_blank_rev_b.dxf` - `230 × 34 × 2.0 mm` aluminium strip; switch apertures remain HOLD to the bought parts
+- `lcd_rear_clamp_blank_rev_b.dxf` - aluminium clamp blank; actual LCD rear body/mounting remains HOLD
+- `underdash_eyeball_vent_bracket_blank_rev_b.dxf` - aluminium under-dash bracket, qty `2`; vent aperture remains HOLD
+
+Rev A is superseded because it used an oversized full centre replacement and did not correctly lock the right-hand-drive/original-dashboard preservation scope.
 
 Release position:
 - Ready for CNC quotation, full-size vehicle template/scan, 1:1 paper plot, cardboard/cheap-sheet prototype and the released outer blank architecture.

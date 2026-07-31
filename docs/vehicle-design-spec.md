@@ -155,8 +155,8 @@ Target:
 - fuse-box and service access should not be sacrificed for speakers or screen placement
 
 Design interpretation:
-- the selected direction is a service-removable CNC center fascia with a flush 9-inch LCD, two directional A/C outlets below it, rear screen supports, and a rear stiffening ring; fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md`
-- the bought industrial selectors replace the four original pull switches beside the gauge cluster; the new center fascia carries only blower, A/C enable and hazard controls below the vents
+- the selected direction is a restrained, body-colour CNC insert confined to the original centre radio/ashtray zone, with a flush 9-inch LCD and separate under-dash directional A/C outlets; fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_b/README.md`
+- the vehicle is right-hand drive: the original left glovebox, right instrument/speedometer pressing, steering-column notch and four right-side switch positions remain unchanged; a removable centre strip can carry blower, A/C enable, hazard and at most one agreed moved auxiliary function
 - any screen/audio plan must follow the cleaned electrical architecture and final dash packaging
 - visible aftermarket clutter is contrary to the design direction
 

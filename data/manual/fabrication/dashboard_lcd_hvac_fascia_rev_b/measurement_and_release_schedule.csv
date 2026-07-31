@@ -1,0 +1,8 @@
+id,measurement,nominal_or_intent,required_evidence,status
+M1,centre radio/ashtray replacement contour and flat mounting lands,275 x 220 envelope only,1:1 card template and front/rear ruler photos,HOLD
+M2,LCD visible aperture W x H,230 x 132 reference,actual LCD caliper dimensions/model drawing,HOLD
+M3,LCD rear body/mount centres/depth/connector sweep,supplier-specific,"rear rubbing, depth gauge and plug trial",HOLD
+M4,industrial switch threaded bush/anti-rotation/rear depth,16 mm class reference,caliper each bought switch and data label,HOLD
+M5,eyeball vent face/cutout/flange/neck OD/rear depth,63.5 mm hose-neck target,actual vent and hose trial,HOLD
+M6,rear clearance to linkage/wiring/heater/structure,no contact through full travel,rear photos plus physical sweep,HOLD
+M7,"glovebox, speedometer and steering clearances",unchanged,signed 1:1 dash overlay,HOLD
