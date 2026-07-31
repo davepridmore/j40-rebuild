@@ -1,0 +1,9 @@
+id,measurement,nominal_or_intent,required_evidence,status
+M1,"combined ashtray/radio removal boundary, centre contour and flat mounting lands",275 x 225 envelope only; finished face has no ashtray feature,1:1 card template plus front/rear ruler photos and signed removal line,HOLD
+M2,LCD active area/aperture/bezel/rear body/mount/connectors,9-inch 16:9 active 199.2 x 112.1; aperture 202 x 115; bezel envelope 230 x 132 reference,actual LCD model drawing and caliper dimensions,HOLD
+M3,LCD rear body/mount centres/depth/connector sweep,supplier-specific,"rear rubbing, depth gauge and plug trial",HOLD
+M4,seven Schneider selector bushes/anti-rotation/contact blocks,22.3 mm nominal aperture,measure each bought selector and rear stack,HOLD
+M5,four original right-cluster hole centres and rear clearance,reuse 2 x 2 positions,vehicle transfer template and rear photo,HOLD
+M6,eyeball vent face/cutout/flange/neck OD/rear depth,63.5 mm hose-neck target,actual vent and hose trial,HOLD
+M7,"rear clearance, glovebox, instruments, steering and gear lever",unchanged/no contact,signed 1:1 overlay and full physical sweep,HOLD
+M8,selector function/labels and electrical prove-out,3 x 3-position plus 4 x 2-position,"continuity test, relay map, A/C interlock and fuel-stop test",HOLD

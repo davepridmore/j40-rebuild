@@ -1,6 +1,6 @@
 # J40 RHD Centre 9-inch LCD / HVAC Fascia - Rev B
 
-**SUPERSEDED by Rev C. Do not issue this revision: LCD scale and selector count/layout were corrected in `../dashboard_lcd_hvac_fascia_rev_c/README.md`.**
+**SUPERSEDED by Rev D. Do not issue this revision: use `../dashboard_lcd_hvac_fascia_rev_d/README.md` for the corrected flat ashtray/radio face, true 9-inch scale and locked seven-selector map.**
 
 Rev B supersedes the Rev A full-size replacement concept. It starts from the owner's actual dashboard photograph and preserves the original right-hand-drive instrument/speedometer pressing, steering-column notch, four switch holes to its right, left glovebox, instruction plate and small original compartment.
 

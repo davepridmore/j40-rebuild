@@ -1,5 +1,7 @@
 # J40 RHD Centre 9-inch LCD / HVAC Fascia - Rev C
 
+> **SUPERSEDED:** Rev D is the current package. Do not issue Rev C: its visual left an ashtray feature beside the screen and its electrical notes incorrectly described T1/T2. Use [Rev D](../dashboard_lcd_hvac_fascia_rev_d/README.md), which deletes the complete ashtray/radio face, locks all selector positions, and restores T1/T2 to low/high-beam duty.
+
 Rev C corrects LCD scale and the control count. It starts from the owner's actual RHD dashboard photograph, preserves the speedometer/instrument pressing and glovebox, and replaces only the centre radio/ashtray zone.
 
 ## Approved design intent
@@ -19,7 +21,7 @@ The inventory and electrical record agree: four 2-position selectors and three 3
 - 2-position: `SPOTS`, `AUX`, `A/C REQUEST`, `FUEL STOP / CONTROL`.
 - Right cluster: wipers, lights, spots and auxiliary. Centre strip: blower, A/C request and fuel-stop/control. Hazard is separate; indicators remain on the OEM stalk.
 
-All selectors drive fused relay/control circuits rather than high-current loads. Keep relay baseline T1 blower low, T2 blower high, T3 horn, T4 condenser fan, T5 spots, B1 A/C clutch and B2 auxiliary. A/C request must pass the pressure/trinary safety chain before B1. Fuel-stop/control is a release HOLD until ignition-OFF behavior is proven live; retain the manual stop cable.
+All selectors drive fused relay/control circuits rather than high-current loads. The verified relay baseline is T1 low beam, T2 high beam, T3 horn, T4 condenser fan, T5 spots, B1 A/C clutch and B2 auxiliary; blower control is separate. A/C request must pass the pressure/trinary safety chain before B1. Fuel-stop/control is a release HOLD until ignition-OFF behavior is proven live; retain the manual stop cable.
 
 ## CNC release rules
 

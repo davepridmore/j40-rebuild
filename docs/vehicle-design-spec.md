@@ -155,8 +155,8 @@ Target:
 - fuse-box and service access should not be sacrificed for speakers or screen placement
 
 Design interpretation:
-- the selected direction is a restrained, body-colour CNC insert confined to and covering the original centre radio/ashtray zone, with a true-scale 9-inch LCD reference and separate under-dash directional A/C outlets; fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_c/README.md`
-- the vehicle is right-hand drive: the original left glovebox, right instrument/speedometer pressing and steering-column notch remain unchanged; seven purchased 22 mm selectors are arranged as four in the original right-side 2 x 2 positions and three below the LCD, with the hazard kept separate
+- the selected direction is a restrained, body-colour CNC insert that deletes the complete protruding ashtray and adjacent radio face, making that combined centre zone one continuous flat panel around a true-scale 9-inch LCD; separate directional A/C outlets mount below the dash, and fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_d/README.md`
+- the vehicle is right-hand drive: the original left glovebox, right instrument/speedometer pressing and steering-column notch remain unchanged; the original right-side 2 x 2 positions are Wipers and Lights above Spots and Aux, while Blower, A/C Request and provisional Fuel Stop/Control sit left-to-right below the LCD; the hazard stays separate
 - any screen/audio plan must follow the cleaned electrical architecture and final dash packaging
 - visible aftermarket clutter is contrary to the design direction
 

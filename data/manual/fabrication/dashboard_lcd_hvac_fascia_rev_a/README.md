@@ -1,6 +1,6 @@
 # J40 Dashboard 9-inch LCD / HVAC Fascia — Rev A
 
-> **Superseded by Rev B.** Do not send this full-size fascia concept for new work. The current RHD, original-dash-preserving package is `../dashboard_lcd_hvac_fascia_rev_b/README.md`.
+> **Superseded by Rev D.** Do not send this full-size fascia concept for new work. The current RHD, original-dash-preserving package is `../dashboard_lcd_hvac_fascia_rev_d/README.md`.
 
 This package is ready to send to the CNC/fabrication shop for quotation, vehicle templating, a 1:1 paper plot and fabrication of the released blank/carrier architecture. It intentionally does **not** authorize cutting the vehicle or the bought-part apertures until the actual 9-inch LCD, vents, industrial switches and dashboard have been measured and dry-fitted.
 

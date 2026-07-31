@@ -238,7 +238,7 @@ The inventory and electrical record agree: four 2-position selectors and three 3
 - 2-position: `SPOTS`, `AUX`, `A/C REQUEST`, `FUEL STOP / CONTROL`.
 - Right cluster: wipers, lights, spots and auxiliary. Centre strip: blower, A/C request and fuel-stop/control. Hazard is separate; indicators remain on the OEM stalk.
 
-All selectors drive fused relay/control circuits rather than high-current loads. Keep relay baseline T1 blower low, T2 blower high, T3 horn, T4 condenser fan, T5 spots, B1 A/C clutch and B2 auxiliary. A/C request must pass the pressure/trinary safety chain before B1. Fuel-stop/control is a release HOLD until ignition-OFF behavior is proven live; retain the manual stop cable.
+All selectors drive fused relay/control circuits rather than high-current loads. The verified relay baseline is T1 low beam, T2 high beam, T3 horn, T4 condenser fan, T5 spots, B1 A/C clutch and B2 auxiliary; blower control is separate. A/C request must pass the pressure/trinary safety chain before B1. Fuel-stop/control is a release HOLD until ignition-OFF behavior is proven live; retain the manual stop cable.
 
 ## CNC release rules
 
