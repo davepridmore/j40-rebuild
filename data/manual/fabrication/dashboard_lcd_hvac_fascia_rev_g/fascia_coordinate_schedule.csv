@@ -1,0 +1,18 @@
+feature,x_mm,y_mm,width_or_diameter_mm,height_mm,layer,status_note
+nominal full-width envelope,0,0,1260.0,280.0,HOLD_FASCIA_OUTER,template coordinate system only; M1 physical trace controls
+fascia vertical centre datum,630.0,0,,280.0,HOLD_CENTRELINES,master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace
+main lower datum,0,65.0,1260.0,,HOLD_MAIN_LOWER_DATUM,local drops extend below; keep main face shallow
+LCD bezel envelope,518.0,116.0,224.0,136.0,HOLD_LCD_BEZEL_ENVELOPE,manufacturer drawing controls
+LCD aperture,529.0,126.5,202.0,115.0,HOLD_LCD_APERTURE,manufacturer drawing controls
+LCD active image,530.4,127.95,199.2,112.1,HOLD_LCD_ACTIVE_REFERENCE,9-inch / 16:9 mathematical reference only: 228.6 mm diagonal; sample controls
+OEM glovebox transfer envelope,125.0,95.0,315.0,160.0,HOLD_GLOVEBOX_TRANSFER_ENVELOPE,actual asymmetric lid/hinge/latch trace controls
+OEM speedometer transfer envelope,805.0,98.0,210.0,157.0,HOLD_SPEEDOMETER_TRANSFER_ENVELOPE,actual original assembly trace and mounts control
+right control bank envelope,1040.0,145.0,215.0,100.0,HOLD_CONTROL_BANK_ENVELOPE,exact 7 selectors + hazard
+vent 1 visible face,65.0,50.0,87.0,,HOLD_VENT_FACE_ENVELOPE,centre coordinate; all four Y=50.0 exactly; outer face close to usable panel end with 21.5 mm nominal bezel-to-edge metal; never in side return
+vent 1 panel-opening reference,65.0,50.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 2 visible face,555.0,50.0,87.0,,HOLD_VENT_FACE_ENVELOPE,centre coordinate; all four Y=50.0 exactly; inner pair mirrored ±75.0 about fascia/LCD centreline X=630.0
+vent 2 panel-opening reference,555.0,50.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 3 visible face,705.0,50.0,87.0,,HOLD_VENT_FACE_ENVELOPE,centre coordinate; all four Y=50.0 exactly; inner pair mirrored ±75.0 about fascia/LCD centreline X=630.0
+vent 3 panel-opening reference,705.0,50.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 4 visible face,1195.0,50.0,87.0,,HOLD_VENT_FACE_ENVELOPE,centre coordinate; all four Y=50.0 exactly; outer face close to usable panel end with 21.5 mm nominal bezel-to-edge metal; never in side return
+vent 4 panel-opening reference,1195.0,50.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls

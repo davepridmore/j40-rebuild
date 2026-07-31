@@ -28,20 +28,21 @@ Owner reports a major A/C purchase intended to secure the cabin cooling package 
 Control position:
 
 - Treat the purchased under-dash/slimline unit as the active cabin evaporator candidate once order proof or arrival photos are available.
-- The owner authorises the Rev E centre-dash opening once its 1:1 template is placed clear of the glovebox/instruction panel and speedometer pressing. Do not release actual LCD/control/vent apertures, evaporator brackets, drain holes, firewall/bulkhead holes, or final hose crimps until the relevant hardware is physically measured and mocked in the J40.
+- The owner authorises replacing the complete visible dash face to the Rev G architecture, but only after the disposable full-size template has transferred the structural cowl/A-pillar/column boundaries and the retained OEM glovebox and speedometer assemblies. Do not release production metal, LCD/control/vent apertures, evaporator brackets, drain holes, firewall/bulkhead holes, or final hose crimps until the relevant hardware is physically measured and mocked in the J40.
 - The front-pack hose layout must now be released as a complete loop: compressor, condenser, receiver-drier, pressure switch, cabin evaporator/TXV, suction return, service ports, and protected firewall pass-throughs.
 - If the purchased unit includes a blower, controls, or heat function, accept those only after current draw, airflow, drain, outlet face, and under-dash clearance are proven.
 
-## Owner Layout Update - 2026-06-02
+## Owner Layout Update - 2026-08-01 Rev G
 
 Owner reports a condenser has been bought and should sit in the front compartment/front cooling stack. Treat it as the active condenser candidate only after dimensions, fitting side, port type, fan/radiator clearance, drier position, and hose exit direction are proven with photos or dry-fit.
 
 Cabin distribution direction:
 
-- Plan for four directional outlets: two circular satin-silver outlets integrated flush into the lower corners of the Rev E centre fascia and two longer duct runs to small directional outlets just behind the front-door pillar area.
-- Use 2.5 inch vent hose and 2.5 inch hose-neck louvers as the default reference geometry unless the purchased evaporator/plenum proves another outlet size.
-- Front dash outlets should be matched circular directional vents with satin/brushed-silver faces, hidden rear retainers, no exposed front screws, and an approximately 65-70 mm maximum visible diameter. Rear/pillar outlets remain separate pod or eyeball units aimed inward and rearward.
-- The centre opening may be cut from the placed Rev E 1:1 template. Keep the vent cutouts and final duct runs on HOLD until the bought vent dimensions, evaporator outlet count, plenum shape, blower position and bend radius are mocked in the vehicle.
+- Plan for four identical circular satin-silver outlets integrated into the Rev G dashboard on one physical height: one close to each usable flat-face end and two below the central LCD. The LCD centre, fascia centreline and midpoint of the two inner vents are one shared CNC datum; the inner vents are mirrored at equal offsets. Do not put the end pair in the side returns or A-pillars.
+- Use the common `Ø87 mm` visible face / `Ø75 mm` opening family only as a low-cost geometry reference. Buy four matching samples from one batch in Pakistan and measure the face, cutout, retainer, spigot and depth before releasing holes. Prefer 2.5 inch duct only if the measured vent and evaporator outlets support it.
+- Use three integral rounded local lower drops to create vent/duct depth while keeping the rest of the lower dash shallow. Mock all four supported duct branches and prove clearance to the retained glovebox, original cluster, steering column, LCD connectors and service paths.
+- Consolidate exactly seven Schneider selectors in one far-right bank: 3-position `WIPERS`, `LIGHTS`, `BLOWER`; 2-position `SPOTS`, `A/C`, `AUX`, `ENGINE`; add `HAZARD` as a separate red control. `ENGINE` uses the former spare position as a low-current RUN/STOP request subject to EEI-003, authoritative key-OFF shutdown and the retained manual stop cable. Keep cabin thermostat/temperature/blend with the delivered evaporator controller, outside this seven-selector count.
+- Cut only the disposable Rev G fit template before M1-M10 sign-off. Keep the production face, vent cutouts and final duct runs on HOLD until the bought parts, evaporator outlet count, plenum shape, blower position and bend radius are mocked in the vehicle.
 - Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) as the active vent/duct buy spec.
 
 ## Gates
@@ -75,6 +76,7 @@ Cabin distribution direction:
 
 - Size fuses, relays, wire, connectors, and grounds from measured blower, compressor-clutch, and condenser-fan loads.
 - Wire pressure-switch logic through the final relay/fuse plan before charging.
+- Use the public 3-position `BLOWER` selector only as an input to the measured resistor/PWM/relay arrangement and the 2-position `A/C` selector only as a compressor request through thermostat and pressure safeties. Retain or separately mount the delivered unit's thermostat/temperature/blend controller. The `ENGINE` selector is outside the HVAC circuit and remains electrically on HOLD until EEI-003 proves the correct fail-safe interface.
 
 ### `AC-CHARGE-001` - Final Validation
 

@@ -14,34 +14,35 @@ Chassis/body rubber order control is not owned here. Use [chassis-rubbers-workst
 
 The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently. The current Longman package lives at [data/manual/fabrication/longman_rubber_order_20260508](../data/manual/fabrication/longman_rubber_order_20260508/README.md), with an interactive 3D visualisation and a package zip generated through the dashboard. The current square-pad 3D quote models live in [data/manual/fabrication/rubber_recreation_rev_a/models_3d](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md); use those rather than the older circular body-pad placeholders when discussing the May 8 Longman rubber order.
 
-## Dashboard 9-inch LCD / HVAC Fascia - Rev D
+## Dashboard 9-inch LCD / HVAC Fascia - Rev G
 
-Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_d](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_d/README.md)
+Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_g](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_g/README.md)
 
-Send-out archive: `deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_d.zip`
+Send-out archive: `deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_g.zip`
 
 Primary files:
-- `j40_dashboard_lcd_hvac_fascia_rev_d_shop_spec.pdf`
-- `dashboard_lcd_hvac_fascia_rev_d_dimensioned_front.svg`
-- `dashboard_lcd_hvac_fascia_rev_d_photo_overlay.png`
-- `fabricator_cut_list.csv`
+- `j40_dashboard_lcd_hvac_fascia_rev_g_shop_spec.pdf`
+- `dashboard_lcd_hvac_fascia_rev_g_dimensioned_front.svg`
+- `dashboard_lcd_hvac_fascia_rev_g_photo_overlay_bare_shell.png`
+- `dashboard_lcd_hvac_fascia_rev_g_photo_overlay_assembled.png`
+- `fabricator_cut_and_release_schedule.csv`
 - `measurement_and_release_schedule.csv`
 - `switch_position_schedule.csv`
+- `dimensional_provenance_audit.csv`
 
 DXF files:
-- `centre_fascia_template_rev_d.dxf` - nominal `275 x 225 x 1.5 mm` combined ashtray/radio flat-face fascia; outer contour, LCD bezel and aperture remain HOLD
-- `centre_three_selector_strip_blank_rev_d.dxf` - `240 x 40 x 2.0 mm` aluminium strip; three 22.3 mm selector holes and hazard hole remain HOLD
-- `right_cluster_four_selector_transfer_template_rev_d.dxf` - four-hole location template; all geometry must be transferred from the actual original 2 x 2 cluster
-- `lcd_rear_clamp_blank_rev_d.dxf` - aluminium clamp blank; actual LCD rear body/mounting remains HOLD
-- `underdash_eyeball_vent_bracket_blank_rev_d.dxf` - aluminium under-dash bracket, qty `2`; vent aperture remains HOLD
+- `full_width_fit_template_rev_g.dxf` - nominal `1260 x 280 mm` full-face coordinate/template envelope with three local vent drops; M1 physical trace controls the final perimeter
+- `full_width_fascia_master_rev_g.dxf` - same one-piece architecture with every metal/component feature retained on named HOLD layers
+- `lcd_rear_support_reference_rev_g.dxf` - nominal rear-support/reference geometry; actual LCD chassis and mount drawing control
 
-Rev A-C are superseded. Rev D deletes the complete protruding ashtray and radio face, makes the combined zone one flat body-colour panel, preserves the glovebox and speedometer pressing, locks the true 9-inch scale, and names every control position.
+Rev G supersedes Rev A-F. It replaces the complete visible face, deletes the ashtray, transfers the original glovebox and speedometer assemblies, locks a mathematically true 9-inch active-image reference, integrates four same-height vents, and consolidates all controls at the far right.
 
 Release position:
-- Ready for CNC quotation, full-size vehicle template/scan, 1:1 paper plot, cardboard/cheap-sheet prototype and the released outer blank architecture.
-- Do not cut the vehicle or final LCD/selector/vent apertures until M1-M8 are measured from the actual dashboard and bought parts, the rear screen/contact blocks and duct bends clear, and the owner signs the 1:1 layout.
-- Seven selectors are shown. Right cluster: upper-left Wipers, upper-right Lights, lower-left Spots and lower-right Aux. Under the LCD, left to right: Blower, A/C Request and provisional Fuel Stop/Control. The separate red hazard button is not counted among the seven.
-- Functions match the purchased four 2-position plus three 3-position inventory. Fuel-stop/control remains an electrical release HOLD with manual cable retained; A/C request remains subject to the pressure/trinary interlock. T1/T2 remain the low/high-beam relays; the blower uses a dedicated HVAC control circuit.
+- Ready for CNC quotation, full-size vehicle trace/scan, 1:1 plot and disposable prototype only.
+- Do not cut production vehicle metal or final LCD/selector/hazard/vent apertures until M1-M10 are closed against the actual vehicle and bought parts, rear screen/contact blocks and duct bends clear, and the owner signs the physical 1:1 layout.
+- The nominal fascia centreline is `X=630.0`. LCD active image, bezel and aperture share it exactly. Inner vent centres are `X=555.0` and `705.0`, so their midpoint is exactly `X=630.0`; all four vent centres share `Y=50.0`.
+- Exactly seven selectors are shown: top Wipers, Lights, Spots, Aux; bottom Blower, A/C, Engine; the separate red Hazard occupies the eighth bank position and is not counted among the seven.
+- Functions match the purchased four 2-position plus three 3-position inventory. Engine remains an EEI-003 electrical release HOLD with key OFF authoritative and manual cable retained; A/C remains subject to thermostat/pressure/trinary interlocks. T1/T2 remain low/high beam and the original dip control remains in service.
 - Screen mass is carried by rear supports tied into the dashboard structure, not the `1.5 mm` visible fascia alone. Electrical selectors command relays/controller inputs rather than carrying accessory loads directly.
 
 ## Battery Stand Power Carrier - Rev A

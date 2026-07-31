@@ -155,8 +155,9 @@ Target:
 - fuse-box and service access should not be sacrificed for speakers or screen placement
 
 Design interpretation:
-- the selected direction is a restrained, body-colour CNC insert that deletes the complete protruding ashtray and adjacent radio face, making that combined centre zone one continuous flat panel around a true-scale 9-inch LCD; separate directional A/C outlets mount below the dash, and fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_d/README.md`
-- the vehicle is right-hand drive: the original left glovebox, right instrument/speedometer pressing and steering-column notch remain unchanged; the original right-side 2 x 2 positions are Wipers and Lights above Spots and Aux, while Blower, A/C Request and provisional Fuel Stop/Control sit left-to-right below the LCD; the hazard stays separate
+- the selected direction is a restrained, body-colour one-piece CNC replacement for the complete visible dashboard face, deleting the ashtray while transferring the original asymmetric glovebox and original J40 speedometer assembly; fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_g/README.md`
+- the true 9-inch/16:9 LCD is centred on the usable fascia and the two inner A/C outlets are mirrored about exactly the same CNC centreline; four matched circular satin-silver outlets share one physical height in a `1-2-1` layout, using three shallow rounded local lower drops rather than a full-width lower console
+- the vehicle is right-hand drive. Exactly seven Schneider selectors sit together in the far-right 2 x 4 bank: Wipers, Lights, Spots and Aux above Blower, A/C and Engine, with a separate red Hazard in the eighth position. The Engine selector is a low-current RUN/STOP request subject to EEI-003; key OFF remains authoritative and the original manual stop cable remains the emergency fallback
 - any screen/audio plan must follow the cleaned electrical architecture and final dash packaging
 - visible aftermarket clutter is contrary to the design direction
 
