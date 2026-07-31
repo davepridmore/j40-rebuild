@@ -1,0 +1,5 @@
+part,qty,material,thickness_mm,finish,file,release
+main fascia,1,CR4 mild steel,1.5,satin black powder coat,dashboard_main_fascia_rev_a.dxf,RELEASED after vehicle template confirms 480 x 320 fits
+rear stiffening frame,1,mild steel,2.0,epoxy primer + satin black,dashboard_rear_stiffening_frame_rev_a.dxf,RELEASED after rear clearance check
+LCD carrier blank,1,aluminium 5052-H32,2.0,satin black powder coat,lcd_carrier_blank_rev_a.dxf,OUTER/HOLES released; inner aperture HOLD
+HVAC vent carrier blank,2,aluminium 5052-H32,2.0,satin black powder coat,hvac_vent_carrier_blank_rev_a.dxf,OUTER/HOLES released; inner aperture HOLD

@@ -155,7 +155,8 @@ Target:
 - fuse-box and service access should not be sacrificed for speakers or screen placement
 
 Design interpretation:
-- a flush-mounted Android unit is being explored, but this is optional scope
+- the selected direction is a service-removable CNC center fascia with a flush 9-inch LCD, two directional A/C outlets below it, rear screen supports, and a rear stiffening ring; fabrication is controlled by `data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md`
+- the bought industrial selectors replace the four original pull switches beside the gauge cluster; the new center fascia carries only blower, A/C enable and hazard controls below the vents
 - any screen/audio plan must follow the cleaned electrical architecture and final dash packaging
 - visible aftermarket clutter is contrary to the design direction
 

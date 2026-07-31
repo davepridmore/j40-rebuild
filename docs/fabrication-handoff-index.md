@@ -14,6 +14,31 @@ Chassis/body rubber order control is not owned here. Use [chassis-rubbers-workst
 
 The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently. The current Longman package lives at [data/manual/fabrication/longman_rubber_order_20260508](../data/manual/fabrication/longman_rubber_order_20260508/README.md), with an interactive 3D visualisation and a package zip generated through the dashboard. The current square-pad 3D quote models live in [data/manual/fabrication/rubber_recreation_rev_a/models_3d](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md); use those rather than the older circular body-pad placeholders when discussing the May 8 Longman rubber order.
 
+## Dashboard 9-inch LCD / HVAC Fascia - Rev A
+
+Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md)
+
+Send-out archive: `deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_a.zip`
+
+Primary files:
+- `j40_dashboard_lcd_hvac_fascia_rev_a_dimension_sheet.pdf`
+- `dashboard_lcd_hvac_fascia_rev_a_dimensioned_front.svg`
+- `dashboard_lcd_hvac_fascia_rev_a_concept.png`
+- `fabricator_cut_list.csv`
+- `measurement_and_release_schedule.csv`
+
+DXF files:
+- `dashboard_main_fascia_rev_a.dxf` - `480 × 320 × 1.5 mm` CR4 steel service fascia, nominally overlapping a `440 × 280 mm` dashboard cut
+- `dashboard_rear_stiffening_frame_rev_a.dxf` - `460 × 300 × 2.0 mm` steel reinforcing ring
+- `lcd_carrier_blank_rev_a.dxf` - `310 × 200 × 2.0 mm` aluminium removable carrier; final screen aperture remains HOLD
+- `hvac_vent_carrier_blank_rev_a.dxf` - `165 × 82 × 2.0 mm` aluminium removable carrier, qty `2`; final louver apertures remain HOLD
+
+Release position:
+- Ready for CNC quotation, full-size vehicle template/scan, 1:1 paper plot, cardboard/cheap-sheet prototype and the released outer blank architecture.
+- Do not cut the vehicle or final LCD/vent apertures until M1-M10 are measured from the actual dashboard and bought parts, the rear screen supports and duct bends clear, and the owner signs the 1:1 layout.
+- The four bought industrial selectors replacing the original pull switches stay beside the gauge cluster. The new center module carries the 9-inch LCD, two directional front A/C vents, blower and A/C selectors, and a red hazard button.
+- Screen mass is carried by rear supports tied into the dashboard structure, not the `1.5 mm` visible fascia alone. Electrical selectors command relays/controller inputs rather than carrying accessory loads directly.
+
 ## Battery Stand Power Carrier - Rev A
 
 Directory: [data/manual/fabrication/battery_power_carrier_mount_rev_a](../data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md)

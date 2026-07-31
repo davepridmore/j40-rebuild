@@ -1,0 +1,11 @@
+id,measurement,nominal_mm,required_evidence,status
+M1,usable flat dashboard area W x H,at least 480 x 320,cardboard template + ruler photos,HOLD
+M2,proposed dashboard cut W x H,440 x 280,inside/outside marked photos; check seams/flanges,HOLD
+M3,LCD visible face W x H,about 229 x 145,caliper/tape photos and model label,HOLD
+M4,LCD rear chassis W x H x D,supplier-specific,caliper/tape photos including plugs,HOLD
+M5,LCD mounting centres/thread,supplier-specific,rear-face rubbing or drawing,HOLD
+M6,vent flange and cutout W x H,carrier ref 125 x 50,actual part and tape photos,HOLD
+M7,vent hose neck OD and rear depth,63.5 OD target,actual part + hose trial,HOLD
+M8,selector threaded bush/body,22 mm class; Ø22.5 cut,caliper actual bought switch,HOLD
+M9,hazard threaded bush/body,16 mm class; Ø16.2 cut,caliper actual bought switch,HOLD
+M10,rear clear depth at screen/vents,140 min target,straightedge/depth-gauge photos,HOLD

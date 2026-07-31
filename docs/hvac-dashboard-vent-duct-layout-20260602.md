@@ -2,6 +2,10 @@
 
 Purpose: convert the new condenser/cabin airflow direction into a buyable vent and duct plan for the J40 A/C retrofit.
 
+## 2026-07-31 Dashboard Integration Update
+
+The controlled front-pair integration is now [dashboard_lcd_hvac_fascia_rev_a](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_a/README.md). It places two removable directional vent carriers below the 9-inch LCD and retains `63.5 mm / 2.5 inch` hose-neck preference. The fascia architecture is ready for quotation and templating, but its vehicle cut, screen aperture and vent apertures remain HOLD until the actual dashboard, LCD, vents and rear duct envelope are measured and owner-approved at 1:1. The other two outlets in the four-outlet plan remain rear/pillar outlets.
+
 ## Evidence Position
 
 - Live Gmail MCP is not authenticated in this session. The usable Gmail-derived project extract is `data/processed/generated/gmail_project_messages_2026-06-01.json`.
