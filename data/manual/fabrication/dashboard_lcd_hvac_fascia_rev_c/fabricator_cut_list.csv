@@ -1,0 +1,6 @@
+part,qty,material,thickness_mm,finish,file,release
+centre fascia template,1,CR4 mild steel,1.5,body-colour low-gloss paint,centre_fascia_template_rev_c.dxf,QUOTE/PROTOTYPE ONLY; outer and LCD geometry HOLD
+centre three-selector strip blank,1,5052-H32 aluminium,2.0,body-colour low-gloss paint,centre_three_selector_strip_blank_rev_c.dxf,outer/fasteners released; selector and hazard holes HOLD
+right-cluster four-selector transfer template,1,card/acrylic template,2.0,none,right_cluster_four_selector_transfer_template_rev_c.dxf,ALL GEOMETRY HOLD; transfer actual vehicle centres
+LCD rear clamp blank,1,5052-H32 aluminium,2.0,black,lcd_rear_clamp_blank_rev_c.dxf,outer/fasteners released; rear-body opening HOLD
+under-dash eyeball vent bracket blank,2,5052-H32 aluminium,2.0,satin black,underdash_eyeball_vent_bracket_blank_rev_c.dxf,outer/fasteners released; vent aperture HOLD

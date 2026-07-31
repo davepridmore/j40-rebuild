@@ -8,7 +8,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 
 | Package | Workstream | Status | Primary PDF | Notes |
 | --- | --- | --- | --- | --- |
-| `dashboard_lcd_hvac_fascia_rev_b` | Dashboard / infotainment / A/C HVAC | Quote, vehicle template and prototype ready; vehicle/LCD/switch/vent cuts held for measurement | `dashboard_lcd_hvac_fascia_rev_b/j40_dashboard_lcd_hvac_fascia_rev_b_shop_spec.pdf` | RHD original-dash-preserving centre insert: 9-inch LCD, removable industrial-switch strip and two separate under-dash hose-fed eyeball vents. Rev A is superseded. |
+| `dashboard_lcd_hvac_fascia_rev_c` | Dashboard / infotainment / A/C HVAC | Quote, vehicle template and prototype ready; production cuts held for M1-M8 | `dashboard_lcd_hvac_fascia_rev_c/j40_dashboard_lcd_hvac_fascia_rev_c_shop_spec.pdf` | Actual-photo RHD layout: true 9-inch active-area reference, ashtray covered, seven 22 mm selectors (4 right + 3 centre), separate hazard and two hose-fed under-dash vents. Rev A/B are superseded. |
 | `rubber_recreation_rev_a` | Chassis rubbers | Quote and first article ready; final production has station-fit gates | `rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf` | Square body-pad 3D controls, cup washer blanks, oval front-support pad, and released plain underfloor strip drawings. |
 | `suspension_wood_cribbing_rev_a` | Suspension setup | Current timber/workshop cut package | `suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf` | Hardwood cribbing blocks and exact wedge chocks for suspension/brake support setup; includes interactive 3D visualisation. |
 | `front_radiator_two_side_retention_rev_a` | Fabrication / chassis fixing | Template release with measurement hold | `front_radiator_two_side_retention_rev_a/j40_front_radiator_two_side_retention_rev_a_dimension_sheet.pdf` | Right-side radiator retention bracket derived from the measured left chassis-attached bracket; one 4 mm bolt-through saddle right-angle post with top screw return and interactive 3D visualisation. |
@@ -43,7 +43,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 - `tools/generate_relay_mount_rev_d.py`
 - `tools/generate_fabrication_3d_visualisations.py`
 - `tools/generate_battery_power_carrier_mount_rev_a.py`
-- `tools/generate_dashboard_lcd_hvac_fascia_rev_b.py`
+- `tools/generate_dashboard_lcd_hvac_fascia_rev_c.py`
 
 The human handoff summary is `docs/fabrication-handoff-index.md`.
 
