@@ -1,6 +1,6 @@
 # J40 Integrated Radiator and Cooling System
 
-## Pakistan fabricator specification — Rev D
+## Pakistan fabricator specification — Rev E
 
 **Vehicle:** 1978 Toyota Land Cruiser J40  
 **Engine:** Toyota 2H diesel  
@@ -10,42 +10,43 @@
 **Air conditioning:** R134a, operating during the hot-weather tests  
 **Design ambient:** 50°C dry-bulb air measured at the grille/cooling-pack inlet  
 **Heat-soak margin:** 52°C for the short-duration test  
-**Issue date:** 30 July 2026  
+**Issue date:** 1 August 2026
 **Units:** millimetres unless stated otherwise
 
 > **SHOP RULE / KARIGAR KE LIYE:** 50°C grille-air, A/C ON aur approved full-load fuelling par coolant temperature stable rehna chahiye — lagatar barhna FAIL hai. Sirf “4-row” ya free-air CFM claim PASS nahin. Pehle gaari naapain, complete dummy fit karein, phir written approval ke baad final cores banayen.
 
-## 1. What Rev D changes
+## 1. What Rev E changes
 
-Rev D supersedes the previous lower-front triple stack. The charge-air cooler must not sit in front of the condenser or radiator.
+Rev E keeps the Rev D two-air-path thermal architecture, but repackages it around standard Toyota service parts and removes the visible side service tower from the front module. The charge-air cooler must not sit in front of the condenser or radiator.
 
-- **Main front pack:** entirely between the existing welded uprights/original central grille aperture: grille → electric A/C pusher fan assembly → condenser → sealed gap → radiator → full shroud → engine-driven puller fan.
-- **Charge-air pack:** independently mounted aft and outboard of one upright, turned approximately 90° into a side/inner-wing bay: separate fresh-air inlet → sealed duct → charge cooler → dedicated high-static fan → separate hot-air outlet.
+- **Main front pack:** entirely between the existing welded uprights/original central grille aperture: grille → one shallow custom shroud carrying two matching Toyota/Denso pusher rotors → condenser → sealed gap → radiator → full shroud → retained Toyota engine-driven puller fan. The two electric motor centres are level and exactly symmetric about the measured condenser active-fin centreline.
+- **No side service tower:** the receiver-drier sits vertically behind/in the shadow of an existing upright; A/C ports turn rearward; the two fan relays and fuses sit above or behind the carrier crossrail. None of these items may add front-view width or move either fan off-centre.
+- **Charge-air pack:** independently mounted aft and outboard of one upright, turned approximately 90° into a side/inner-wing bay with its smallest dimension across the vehicle: separate fresh-air inlet → sealed duct → charge cooler → dedicated high-static fan → separate hot-air outlet. Target no more than 160 mm lateral projection beyond the selected upright, subject to the full-size M8 template and the selected fan's real depth.
 - The two circuits must not share hot outlet air or recirculate engine-bay air.
 
-> **NO EXTRA FRONT WIDTH:** The radiator, condenser and front-pusher frame finish at the inner faces of the existing welded uprights and use only front-to-rear depth within the central opening. The charge-air cooler is not bolted beside that rectangle and does not widen the grille, front panel or radiator. Its side, angle, ducts and brackets are provisional until the complete full-size M8 template passes on the actual vehicle.
+> **NO EXTRA FRONT WIDTH:** The radiator, condenser and front-pusher frame must remain between the inner faces of the existing welded uprights. The drier, ports, relays and fuses may sit in the rear shadow of an upright or above/behind the carrier crossrail, but they must not project beyond the uprights' existing outer silhouette, cover active fins or widen the central module. The charge-air cooler begins aft of the front-pack plane and must not widen the grille, front panel or radiator. Its 160 mm side-projection target, angle, ducts and brackets are provisional until the complete full-size M8 template passes on the actual vehicle.
 
 This change is required because the previous 500 × 180 intercooler masked about 39% of the nominal radiator face and preheated/restricted the radiator and condenser airflow.
 
-Rev D explicitly supersedes older project instructions for one 12-inch fan, one 14-inch fan, optional 12–14-inch fans, and two nominal 9-inch fans in an upper strip. Fan size and quantity are now selected by **installed airflow and static-pressure performance**, not nominal diameter.
+Rev E explicitly supersedes older project instructions for one 12-inch fan, one 14-inch fan, optional 12–14-inch fans, two nominal 9-inch fans in an upper strip, and any side-mounted front service bay. Fan size and quantity are selected by **installed airflow and static-pressure performance**, not nominal diameter.
 
 ### 1.1 Packaging visual — split-out component groups
 
-![PH01 — split-out Rev D central-pack layers, independent side charge-air module, mounting parts and electrical parts](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph01_photorealistic_complete_pack.png)
+![PH01 — split-out Rev E Toyota-standardised central-pack layers, compact independent side charge-air module and rear/upper service parts](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_e_ph01_standard_toyota_compact_split.png)
 
 ### 1.2 Packaging visual — complete assembly
 
-![PH02 — fully assembled Rev D cooling system; the side charge-air pack is aft/outboard and does not add central front width](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph02_photorealistic_fully_assembled_pack.png)
+![PH02 — fully assembled Rev E cooling system with the twin front fans centred and no side service tower](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_e_ph02_standard_toyota_compact_assembled.png)
 
 ### 1.3 Packaging visual — installed carrier bolted through the existing top holes
 
-![PH03D — proposed installed cooling pack with one visible vertical through-bolt centred on each original top-return hole, a symmetric Toyota/Denso 248 mm fan candidate pair, and the service bay kept outside the centred airflow module](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph03d_installed_top_holes_central_fans.png)
+![PH03E — proposed installed compact cooling pack with each carrier pickup aligned to its original top-return hole and the Toyota/Denso fan pair centred horizontally](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_e_ph03_standard_toyota_compact_installed.png)
 
 ### 1.4 Mounting visual — existing-hole fastener stack
 
 ![PH04 — close-up of both existing top-return holes with bolt head and washer above, sleeved EPDM isolator and carrier pickup pad below, and accessible locking nut](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_ph04_existing_top_hole_mount_closeup.png)
 
-PH01 and PH02 explain component grouping and assembly. PH03D and PH04 use the real chassis photograph as their geometric basis and show the required attachment logic: **one positive vertical through-bolt per side, centred on the original top-return hole, with the carrier pickup directly below**. PH03D also shows the preferred standard-parts candidate: two equal Toyota/Denso 248 mm fan blades and motors, centred in one custom sealed shroud, with the drier/manifold/electrical service bay outside that shroud. The lower saddles carry the cooling-pack weight; the two upper bolts only locate and retain it. These generated images are **not measured fit checks or evidence that the bumper or cooling pack has been fabricated or installed**. Do not scale them. D01–D08, the measured vehicle, the accepted full-size mock-up and the signed M/U/F gates control manufacture.
+PH01 and PH02 explain component grouping and assembly. PH03E and PH04 use the real chassis photographs as their geometric basis and show the required attachment logic: **one positive vertical through-bolt per side, centred on the original top-return hole, with the carrier pickup directly below**. PH03E also shows the preferred standard-parts candidate: two equal Toyota/Denso 248 mm fan blades and motors, level and centred in one custom sealed shroud. The drier is behind an upright and the relays/fuses are above or behind the carrier, so there is no added service-strip width. The lower saddles carry the cooling-pack weight; the two upper bolts only locate and retain it. These generated images are **not measured fit checks or evidence that the bumper or cooling pack has been fabricated or installed**. Do not scale them. D01–D08, the measured vehicle, the accepted full-size mock-up and the signed M/U/F gates control manufacture.
 
 ## 2. Release status
 
@@ -64,10 +65,10 @@ Released now:
 2. the actual component envelopes are mock-fitted with bonnet, grille, guard, A/C and engine accessories represented;
 3. the radiator supplier provides the required thermal/pressure-drop evidence, or a prototype is instrumented and tested;
 4. fan suppliers provide pressure-versus-flow and electrical data;
-5. the owner approves the as-measured Rev D drawing; and
+5. the owner approves the as-measured Rev E drawing; and
 6. the final installed vehicle passes the 50°C acceptance test before the cooling pack is described as 50°C-capable.
 
-Rev D is a **design and acceptance requirement**, not a claim that untested hardware is already proven.
+Rev E is a **design and acceptance requirement**, not a claim that untested hardware is already proven.
 
 ## 3. Duty and non-derate requirement
 
@@ -93,7 +94,7 @@ If later work exceeds 150 bhp crankshaft, changes the turbo/fuelling materially,
 
 ## 4. Shop build summary
 
-| Part | Rev D requirement |
+| Part | Rev E requirement |
 |---|---|
 | Engine radiator | Maximum practical core in M1/M2; net finned frontal area ≥0.250 m² unless a smaller installed-envelope core is independently certified to the full duty |
 | Radiator capacity | ≥115 kW continuous heat rejection at the declared test point; ≥130 kW for 10 minutes |
@@ -112,15 +113,15 @@ Use a standard, locally replaceable part wherever it can meet the measured envel
 
 | System item | Preferred standard/service part | Custom work still required | Release rule |
 |---|---|---|---|
-| Engine radiator and coolant interfaces | Toyota HJ47/2H radiator pattern **16400-68030** or sound original Toyota tanks recored; upper hose **16571-68020** and lower hose **16572-68020** as matching-pattern candidates; verified Toyota-pattern cap and constant-tension clamps | Core construction only if a catalogue radiator cannot meet the measured envelope/duty; local neck or hose adapter only after the physical 2H outlets are copied | Actual neck centres, angles, cap seat/pressure, M1/M2 fit, coolant pressure drop and ≥115/130 kW proof control |
+| Engine radiator and coolant interfaces | Toyota HJ47/2H radiator pattern **16400-68030** or sound original Toyota tanks recored; upper hose **16571-68020**; lower hose **16572-68020**; Toyota cap candidate **16401-41021**; Toyota-pattern constant-tension clamps | Core construction only if a catalogue radiator cannot meet the measured envelope/duty; local neck or hose adapter only after the physical 2H outlets are copied | Actual neck centres, angles, cap seat and verified 2H pressure control. The cap part number is not released until its seat and pressure match. M1/M2 fit, coolant pressure drop and ≥115/130 kW proof control |
 | Front A/C fan motors and blades | Matched Toyota Prado 120 / Lexus GX470 condenser-fan family: assembly references **88590-60040 / -60050 / -60051 / -60060**, motor **88550-12160**, blade **88453-60010**. Published equivalent assembly data: 12 V, 96 W, 8 A, 2,400 rpm and 248 mm blade | One removable, close, full-width sealed shroud with symmetric rings and vehicle-specific mounting ears; the complete donor shroud is not assumed to fit | Candidate only until F4 measured fit and F5 ≥3,000 m³/h at 75 Pa / 13.5 V pass. Prefer ≥3,300 m³/h procurement proof for 10% reserve |
 | A/C condenser | New common **14 × 22 inch nominal** R134a parallel-flow condenser (559 × 356 × 21 mm basis), preferably common #8 inlet / #6 outlet O-ring ports | Four isolated tabs and short port adapters only where the actual hose route requires them | Actual body, seam, manifold, port, ear and service-tool envelopes fit; 50°C A/C test passes |
-| Receiver-drier and pressure control | New Toyota receiver tank/drier **88471-34010** if its ports suit the selected condenser, otherwise a new common serviceable #6 O-ring R134a drier with trinary-switch provision; standard R134a trinary switch and service ports | One removable rubber-lined vertical clamp and short barrier-hose links | New part only—never a used drier. A/C technician confirms port/thread, switch set-points, evacuation, charge and pressures |
+| Receiver-drier and pressure control | New Toyota receiver tank/drier **88471-34010** if its ports suit the selected condenser, otherwise a new common serviceable #6 O-ring R134a drier with trinary-switch provision; standard R134a trinary switch and service ports | One removable rubber-lined vertical clamp **behind/in the shadow of an existing upright**; condenser outlet turns rearward into short barrier-hose links | New part only—never a used drier. It may not add front-view width. A/C technician confirms port/thread, switch set-points, evacuation, charge and pressures |
 | A/C hoses and seals | New standard R134a barrier hose, crimp ferrules, HNBR O-rings and common O-ring fittings | Hose lengths and bends are vehicle-specific | Pressure/leak test, abrasion/heat clearance and tool access pass |
-| Fan connectors and power protection | Matching Toyota/Denso/Sumitomo connector bodies; new terminals, cable seals and automotive cable; standard sealed ISO relays, blade/MAXI fuses and holders | Vehicle-length loom, protected branches and mounting plate | One fuse/relay branch per front motor; ratings follow measured hot steady/start current and voltage-drop test |
+| Fan connectors and power protection | Matching Toyota/Denso/Sumitomo connector bodies with new terminals, seals and automotive cable; Toyota/Denso relay candidate **90987-02027**, one per front motor with matching bases, otherwise sealed ISO 40 A relays; blade/MAXI fuses and holders | Vehicle-length loom and a protected **upper/rear carrier-crossrail plate**, not a side tower | Verify the relay's moulded/contact rating or Toyota EWD against measured hot run/start current. One fuse/relay branch per front motor; voltage-drop test controls |
 | Charge-air pipe joints | Common 57 mm / 2.25-inch aluminium tube and beaded ends, straight/elbow silicone couplers and T-bolt clamps | Vehicle-specific pipe lengths, bends, support tabs and side ducts | M8 template, ≥15 kW cooler proof and complete-route ≤10 kPa pressure drop pass |
 | Fasteners and isolation | Metric M6/M8 class 8.8 zinc-plated hardware, large washers, prevailing-torque nuts, crush sleeves, EPDM isolators and rubber-lined clamps | Handed top pickup pads, lower saddles and structural carrier | U1–U7 transfer and hand-entering bolt checks pass |
-| Side charge-cooler core and fan | Prefer a new catalogue core and sealed catalogue high-static fan with published pressure-flow data | Side/wing brackets, inlet duct, full-core shroud and separate hot outlet | Do not nominate a Toyota donor until M8 is measured. Complete installed path must achieve ≥2,500 m³/h at 75 Pa and the charge-air duty |
+| Side charge-cooler core and fan | Prefer a Toyota/Denso catalogue fan only if its complete envelope and published/tested pressure-flow performance suit; otherwise use the smallest locally serviceable sealed catalogue high-static fan that passes | Compact fore-aft side/wing brackets, inlet duct, full-core shroud and separate hot outlet; smallest dimension lateral | Target ≤160 mm lateral projection past the selected upright, but M8 and ≥2,500 m³/h at 75 Pa through the complete path control. Toyota branding never overrides the charge-air duty |
 
 **Custom-only list:** the removable main carrier/top pickup ears, lower saddles, front twin-fan shroud, mechanical-fan shroud unless the sound Toyota shroud fits, side charge-pack mounts/ducts/shroud, and any measured hose/pipe adapters. Heat exchangers, motors, blades, drier, switches, relays, fuses, connectors, hose, seals, clamps and fasteners should remain replaceable catalogue items.
 
@@ -131,7 +132,7 @@ Use a standard, locally replaceable part wherever it can meet the measured envel
 1. Recore the original copper/brass tanks first only if the tanks, headers, filler neck, drain, overflow and brackets pass inspection and the completed radiator can meet the performance requirement.
 2. A new copper/brass or serviceable aluminium radiator is acceptable. Material and row count do not release the part; verified performance, repairability and fit do.
 3. Target net finned face is at least 0.250 m², for example 540 × 465, 560 × 450, or another shape that fits M1/M2.
-4. The previous 530 × 435 × 64 four-row core is not accepted merely because it is four-row. It may be used only if its certified curve or an instrumented prototype proves the full Rev D duty.
+4. The previous 530 × 435 × 64 four-row core is not accepted merely because it is four-row. It may be used only if its certified curve or an instrumented prototype proves the full Rev E duty.
 5. Keep the core cleanable from both sides. Fit removable stone/insect protection that does not materially restrict airflow.
 6. Allow for Pakistan dust and fin fouling: the vehicle acceptance test is performed with the normal grille/guard/screens fitted, and the clean-core result must retain at least 10% thermal/airflow margin over the minimum requirement.
 
@@ -183,7 +184,7 @@ SAE J1994 or an equivalent documented heat-exchanger method is preferred. If the
 - Select one full-width module or multiple matched sealed automotive pushers to use as much condenser face as practical.
 - Datum the complete pusher module to the **measured active finned-face vertical centreline of the condenser**, not to the outside width of the carrier or chassis opening.
 - With multiple fans, place equal motor centres symmetrically left/right of that centreline and keep the uncovered edge bands equal. A centred full-width module is also acceptable.
-- Any offset requires a recorded physical obstruction such as an actual manifold, port, guard, plug, wire bend or receiver-drier, plus an approved coverage sketch and F5 installed-flow proof. Wiring convenience or appearance alone is not justification.
+- Rev E does not permit an intentional offset: package the ports, drier, plugs and loom behind/above the carrier so the two equal fan motor centres remain level and symmetric. If a measured fixed chassis obstruction makes this impossible, stop and return the design for owner review rather than moving one fan informally.
 - Two common 12-inch or 14-inch fans cannot fit side-by-side within a nominal 559-wide condenser before frames and clearance are added. Use compact matched fans only if their complete F4 envelopes fit and their combined installed curve passes F5; nominal fan diameter is not a release criterion.
 - Required combined installed duty: ≥3,000 m³/h at 75 Pa and 13.5 V through the final grille/guard and condenser/radiator restriction.
 - Free-air CFM is not acceptance evidence. Supplier pressure-versus-flow curves, motor current, starting current and complete outside dimensions are mandatory.
@@ -199,13 +200,13 @@ SAE J1994 or an equivalent documented heat-exchanger method is preferred. If the
 The preferred standard-component candidate is a matched pair from the Toyota Prado 120 / Lexus GX470 condenser-fan family listed in section 4.1. Use the two standard motors, blades and matching plugs in **one custom close shroud**; do not assume two complete Toyota plastic shrouds fit side-by-side.
 
 - Published equivalent blade diameter is 248 mm (nominal 10-inch class).
-- Candidate drawing geometry is two **248 mm swept circles**, minimum **258 mm clear ring openings**, **266 mm motor-centre spacing**, and motor centres at **±133 mm** from the measured active-core centreline.
-- The two ring openings occupy a nominal **524 mm group width**. This appears geometrically possible inside the 559 mm condenser body basis, but the body width is not the active-fin width. F4 must prove the actual active fin face, ring wall, guard, motor, plug, wire bend, port and front-to-rear envelopes before cutting metal.
-- The receiver-drier, hose manifold, relays and fuse holders form a narrow **service bay outside the sealed fan shroud and outside the active-fin face**. They do not count when finding the fan centreline and must not force either motor off-centre or cover useful core.
+- Candidate drawing geometry is two **248 mm swept circles**, minimum **258 mm clear ring openings**, **266 mm motor-centre spacing**, and motor centres at **±133 mm** from the measured active-fin centreline, both at the same measured Y coordinate.
+- Use formula `X-left = W-active/2 − 133` and `X-right = W-active/2 + 133`, measured from the same active-fin datum. If and only if the measured active-fin width is 559 mm, the provisional centres are 146.5 mm and 412.5 mm from its left edge. The two ring openings occupy a nominal **524 mm group width**. The 559 mm catalogue body basis is not proof of a 559 mm active-fin width; F4 must prove the actual active fin face, ring wall, guard, motor, plug, wire bend, port and front-to-rear envelopes before cutting metal.
+- There is **no front-view side service bay**. Mount the drier behind/in the shadow of an upright, turn the condenser outlet/manifold rearward, and place relays/fuses on the upper/rear carrier plate. These parts must remain serviceable without increasing the pack width, covering useful core or changing either fan centre.
 - New parts are preferred for 50°C service. Sound donor motors/blades may be reused only as a matched pair after bearing noise/play, blade damage/run-out, insulation, hot current and connector condition are checked. Fit new terminals, cable seals and cable.
 - This candidate is rejected without penalty if it cannot meet the envelope or ≥3,000 m³/h installed duty. Substitute another standard matched automotive pair or one standard full-width module; do not widen the front pack, cover the core, reduce the turbo duty or accept a free-air-only claim.
 
-> **Karigar rule:** Fan dono barabar hon, condenser ke fin-area ke beech mein hon. Side par drier/relay box alag rahega; us ko fan-centre ka hissa na samjhein. Pehle asli parts rakh kar F4 naapain, phir F5 airflow test.
+> **Karigar rule:** Fan dono barabar hon, ek hi height par hon aur condenser ke fin-area ke bilkul beech mein hon. Drier upright ke peechay aur relay/fuse carrier ke oopar ya peechay lagayen—side par extra tower nahin. Pehle asli parts rakh kar F4 naapain, phir F5 airflow test.
 
 ## 7. A/C condenser and receiver-drier
 
@@ -213,7 +214,7 @@ The preferred standard-component candidate is a matched pair from the Toyota Pra
 - Mount on four independent rubber-isolated tabs. It carries no fan, radiator or structural load.
 - Keep 15 clear to radiator where practical; 10 is the absolute minimum only with proven installed airflow.
 - Seal the perimeter so hot discharge air cannot return to the front face.
-- Mount the receiver-drier vertically in a removable rubber-lined clamp in the side service bay, outside the sealed pusher shroud and active finned face. Keep it sealed until final evacuation/charging.
+- Mount the receiver-drier vertically in a removable rubber-lined clamp behind/in the shadow of one existing upright, outside the sealed pusher shroud and active finned face. Turn the condenser outlet rearward and keep tool access from above or behind. The drier, fittings and service tool sweep must remain inside the front-view upright envelope. Keep it sealed until final evacuation/charging.
 - Prefer a new Toyota receiver/drier **88471-34010** if the physical port/thread and hose route match. Otherwise use a new common #6 O-ring R134a drier with trinary-switch provision. Do not reuse a donor drier.
 - Use new R134a barrier hose, HNBR O-rings, crimp ferrules and service fittings. Used hard parts may be cleaned/reused only if an A/C technician approves them; all soft seals and the drier are new.
 - An A/C technician verifies hoses, trinary switch, refrigerant charge, high/low pressures and 50°C vent performance.
@@ -222,7 +223,7 @@ The preferred standard-component candidate is a matched pair from the Toyota Pra
 
 ### 8.1 Architecture
 
-The charge cooler is not permitted ahead of the radiator or condenser. It is a separately mounted module that begins aft and outboard of one main-pack upright and turns approximately 90° to run rearward in a side/inner-wing bay. It must remain behind the main-pack front plane and must not intrude across the original central aperture. Select the left or right side only after the actual turbo, steering, suspension movement, battery, air cleaner, A/C compressor, bonnet, wing/body envelope, downpipe and service paths are trial-fitted with a full-size template.
+The charge cooler is not permitted ahead of the radiator or condenser. It is a separately mounted module that begins aft and outboard of one main-pack upright and turns approximately 90° to run rearward in a side/inner-wing bay. Put the core face fore-aft and arrange core, shroud and fan so their smallest combined dimension is lateral. The packaging target is no more than 160 mm lateral projection past the selected upright; this is not a release dimension and may be used only if the complete M8 template, airflow and service sweeps pass. It must remain behind the main-pack front plane and must not intrude across the original central aperture. Select the left or right side only after the actual turbo, steering, suspension movement, battery, air cleaner, A/C compressor, bonnet, wing/body envelope, downpipe and service paths are trial-fitted with a full-size template.
 
 The complete side pack requires:
 
@@ -240,7 +241,7 @@ Do not discharge onto the turbo, exhaust, battery, wiring, brake parts or the ma
 
 ### 8.2 Charge cooler rating
 
-| Parameter | Rev D requirement |
+| Parameter | Rev E requirement |
 |---|---|
 | Continuous heat rejection | ≥15 kW after heat soak |
 | Ambient | 50°C dry-bulb fresh air at the side-pack inlet |
@@ -280,7 +281,7 @@ All dimensions below are evidence gates. Measure with the body settled, bonnet c
 | M5 | radiator rear to mechanical fan | ≥20 static through full rotation/movement; 25–30 preferred |
 | M6 | lowest main-pack edge | ≥25 above protected frame/bumper line unless a stronger guard is approved |
 | M7 | radiator/condenser service removal | each item removes separately without cutting, draining unrelated systems or removing body structure |
-| M8 | complete side charge-pack template, envelope and duct path | full-size core, fan, shroud, 90° inlet/outlet ducts, charge pipes, brackets, fasteners, plugs and tool/removal sweeps fit aft/outboard of the selected upright, behind the main-pack front plane and wholly inside the body/inner-wing envelope; zero intrusion across the central aperture; no conflict through steering/suspension/engine movement or with battery, A/C, air cleaner, bonnet/wing, turbo/downpipe or service tools; fresh inlet and separate hot outlet each proven |
+| M8 | complete compact side charge-pack template, envelope and duct path | full-size core, fan, shroud, 90° inlet/outlet ducts, charge pipes, brackets, fasteners, plugs and tool/removal sweeps fit aft/outboard of the selected upright, behind the main-pack front plane and wholly inside the body/inner-wing envelope; smallest pack dimension is lateral and ≤160 mm projection is the target; zero intrusion across the central aperture; no conflict through steering/suspension/engine movement or with battery, A/C, air cleaner, bonnet/wing, turbo/downpipe or service tools; fresh inlet and separate hot outlet each proven |
 | U1-L / U1-R | existing left/right top-return hole diameter and condition | both original holes are sound, round and suitable as pickups; select fastener only after measurement; repair of a damaged chassis tab requires written owner approval |
 | U2 | actual centre-to-centre pitch of the two existing top holes | record with a rigid 1:1 transfer template; do not infer from a photograph or nominal drawing |
 | U3-L / U3-R | hole-to-edge distances and usable top-return width | large washer, isolator and TP-L/TP-R pickup pad are fully supported; trim each handed pad to the actual tab without changing the chassis hole |
@@ -291,7 +292,7 @@ All dimensions below are evidence gates. Measure with the body settled, bonnet c
 | F1 | mechanical fan OD/swept circle | recorded and shroud based on actual sweep |
 | F2 | blade depth/insertion | 35–50% in shroud; ≥15 radial movement clearance |
 | F3 | main fan centre X/Y | recorded on as-built drawing |
-| F4 | front electric module complete envelope and coverage | actual frame, guards, tabs, plugs and wire bends fit M1–M4; record active-face W/H/centreline, motor centres and guard envelopes; default layout is symmetric with equal uncovered edge bands |
+| F4 | front electric module complete envelope and coverage | actual frame, guards, tabs, plugs and wire bends fit M1–M4; record active-face W/H/centreline, both motor centres and guard envelopes; fan centres are level and exactly symmetric, with equal uncovered edge bands; drier/manifold/relay/fuse locations remain behind/above and inside the upright envelope |
 | F5 | front fan installed curve/test | ≥3,000 m³/h at 75 Pa, 13.5 V |
 | F6 | mechanical installed airflow | ≥9,000 m³/h at 125 Pa, 1,500 engine rpm |
 | F7 | side-pack fan installed curve/test | ≥2,500 m³/h at 75 Pa through complete duct/core/outlet |

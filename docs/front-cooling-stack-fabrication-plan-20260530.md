@@ -1,5 +1,7 @@
 # Front Cooling Stack Fabrication Plan - 2026-05-30
 
+> **Superseded cooling layout:** For current manufacture, use the [Rev E integrated cooling-pack specification](J40-integrated-cooling-pack-fabricator-specification-rev-c.md). It replaces this historical plan's lower-front intercooler, optional single pusher and side-mounted drier/electrical direction with a measured-fit main pack, two central matched Toyota/Denso candidate pushers, rear/upper service parts and a compact fore-aft side charge-air pack. Retain this file only for the original support-frame history and electrical-enclosure references.
+
 Purpose: define the fabrication direction for replacing the weak one-sided radiator support with a full front cooling-stack frame that can carry the engine radiator, A/C condenser and turbo intercooler cleanly.
 
 Current integrated fabricator handoff: [j40-integrated-cooling-pack-fabricator-handoff-20260717.md](j40-integrated-cooling-pack-fabricator-handoff-20260717.md). It retains the decided existing upright plus one welded identical mirrored upright and adds separately removable cooling components using small adapter tabs.

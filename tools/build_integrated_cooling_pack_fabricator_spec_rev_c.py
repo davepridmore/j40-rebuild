@@ -2268,12 +2268,12 @@ def build_document():
 
 
 # ---------------------------------------------------------------------------
-# Rev D overrides
+# Rev E overrides
 #
 # The older Rev C implementations above are retained for traceability.  The
 # controlled outputs and stable URLs keep their historical "rev_c" filenames,
-# but the functions below replace the triple-stack design with the Rev D
-# 50°C / independent-charge-cooler architecture.
+# but the functions below replace the triple-stack design with the Rev E
+# 50°C / standard-Toyota-parts / compact independent-charge-cooler architecture.
 # ---------------------------------------------------------------------------
 
 
@@ -2292,8 +2292,8 @@ def finish_drawing_sheet(draw, code, description):
         font=image_font(17),
         fill=hex_colour(MUTED),
     )
-    draw.text((2050, 1570), "REV D", font=image_font(21, True), fill=hex_colour(BLUE))
-    draw.text((2050, 1608), "30 JUL 2026", font=image_font(18, True), fill=hex_colour(INK))
+    draw.text((2050, 1570), "REV E", font=image_font(21, True), fill=hex_colour(BLUE))
+    draw.text((2050, 1608), "01 AUG 2026", font=image_font(18, True), fill=hex_colour(INK))
     draw.text((2250, 1570), code, font=image_font(27, True), fill=hex_colour(NAVY))
 
 
@@ -2305,7 +2305,7 @@ def _air_arrows(draw, x1, x2, ys, colour=CYAN):
 def save_d01_complete_stack():
     image, draw = new_drawing_sheet(
         "D01",
-        "COMPLETE REV D COOLING SYSTEM — TWO INDEPENDENT AIR PATHS",
+        "COMPLETE REV E COOLING SYSTEM — STANDARD PARTS / TWO AIR PATHS",
         "50°C grille ambient • A/C ON • 150 bhp crankshaft cooling-design ceiling • final manufacture remains HOLD.",
     )
     drawing_panel(draw, (45, 185, 1530, 1485), "A — MAIN FRONT PACK", fill="F8FAFC")
@@ -2491,31 +2491,31 @@ def save_d04_component_dimensions():
         PURPLE,
     )
 
-    drawing_panel(draw, (815, 185, 1570, 1475), "B — STANDARD-FAN CANDIDATE", fill="F8FAFC")
+    drawing_panel(draw, (815, 185, 1570, 1475), "B — CENTRED TOYOTA FAN CANDIDATES", fill="F8FAFC")
     # Candidate arrangement: two Toyota/Denso 248 mm blades/motors symmetric
     # about the measured active-fin centreline in one custom sealed shroud.
-    # The narrow service bay is outside that shroud and excluded from centring.
-    module = (845, 440, 1430, 815)
+    # Service parts are mounted behind an upright or above/rear of the carrier;
+    # nothing is allowed to add front-view width or displace either fan.
+    module = (850, 470, 1535, 845)
     rounded(draw, module, "F6EEDB", GOLD, 12, 6)
     centre_x = (module[0] + module[2]) // 2
     for y in range(module[1] - 25, module[3] + 45, 22):
         draw.line((centre_x, y, centre_x, min(y + 12, module[3] + 35)), fill=hex_colour(PURPLE), width=3)
     fan_d = 248
     fan_gap = 18
-    left_fan = (centre_x - fan_gap // 2 - fan_d, 500, centre_x - fan_gap // 2, 500 + fan_d)
-    right_fan = (centre_x + fan_gap // 2, 500, centre_x + fan_gap // 2 + fan_d, 500 + fan_d)
+    left_fan = (centre_x - fan_gap // 2 - fan_d, 535, centre_x - fan_gap // 2, 535 + fan_d)
+    right_fan = (centre_x + fan_gap // 2, 535, centre_x + fan_gap // 2 + fan_d, 535 + fan_d)
     draw_fan(draw, left_fan, "TOYOTA/DENSO\n248 mm")
     draw_fan(draw, right_fan, "TOYOTA/DENSO\n248 mm")
-    service_bay = (1445, 440, 1545, 815)
-    rounded(draw, service_bay, "E8EEF5", BLUE, 10, 5)
-    centred_text(
-        draw,
-        (1452, 450, 1538, 805),
-        "SIDE\nSERVICE\nBAY\n\nDRIER\nPORTS\nRELAYS\nFUSES",
-        image_font(13, True),
-        BLUE,
-    )
-    dimension_h(draw, module[0], service_bay[2], 355, module[1], "F4 COMPLETE W — M1", PURPLE)
+    remote_plate = (900, 285, 1240, 365)
+    rounded(draw, remote_plate, "E8EEF5", BLUE, 9, 4)
+    centred_text(draw, remote_plate, "UPPER / REAR PLATE — 2 RELAYS + 2 FUSES", image_font(14, True), BLUE)
+    drier = (1390, 270, 1442, 425)
+    rounded(draw, drier, "DDECF3", CYAN, 9, 4)
+    centred_text(draw, (1270, 280, 1380, 395), "DRIER\nBEHIND\nUPRIGHT", image_font(13, True), CYAN)
+    arrow(draw, (1380, 345), (1390, 345), CYAN, 4)
+    centred_text(draw, (900, 380, 1490, 430), "SERVICE PARTS ARE REAR/UPPER — ZERO ADDED FRONT WIDTH", image_font(14, True), BLUE)
+    dimension_h(draw, module[0], module[2], 435, module[1], "F4 COMPLETE W — M1", PURPLE)
     dimension_h(
         draw,
         (left_fan[0] + left_fan[2]) // 2,
@@ -2526,41 +2526,45 @@ def save_d04_component_dimensions():
         RED,
         17,
     )
-    dimension_v(draw, module[1], module[3], 1560, service_bay[2], "F4 COMPLETE H — M2", PURPLE, "left")
-    centred_text(draw, (900, 830, 1375, 880), "MEASURED ACTIVE-FIN C/L — SERVICE BAY EXCLUDED", image_font(15, True), PURPLE)
+    dimension_v(draw, module[1], module[3], 1555, module[2], "F4 COMPLETE H — M2", PURPLE, "left")
+    centred_text(draw, (900, 855, 1490, 900), "MEASURED ACTIVE-FIN C/L — BOTH MOTOR CENTRES AT SAME Y", image_font(14, True), PURPLE)
     drawing_note(
         draw,
-        (840, 900, 1545, 1155),
-        "STANDARD CANDIDATE — HOLD",
+        (840, 920, 1545, 1165),
+        "STANDARD TOYOTA CANDIDATE — HOLD",
         "Matched Prado 120 / GX470 family motors/blades: 248 mm swept circles, ≥258 ring openings, "
         "266 motor C-C (±133 from active-fin C/L), 524 ring-group width. One CUSTOM close sealed shroud. "
-        "Complete Toyota donor shrouds are not assumed to fit. Measure active fins, motors, plugs, wires and depth.",
+        "Centres: x = W_active/2 ±133, same y. Complete donor shrouds are not assumed to fit. Measure first.",
         PURPLE,
         "F3ECF8",
     )
     drawing_note(
         draw,
-        (840, 1175, 1545, 1435),
+        (840, 1185, 1545, 1435),
         "F4 FIT + F5 INSTALLED DUTY",
-        "Service bay stays outside sealed shroud/active fins and is not a centring datum. "
+        "No side service tower: drier behind upright; Toyota 90987-02027 candidate relays/fuses upper/rear. "
         "PASS ≥3,000 m³/h at 75 Pa, 13.5 V through final restriction; ≥3,300 procurement target. "
         "Published 96 W / 8 A / 2,400 rpm equivalent data is identification only—not a pressure-flow pass.",
         RED,
         "FDF2F1",
     )
 
-    drawing_panel(draw, (1615, 185, 2355, 1475), "C — SIDE / WING CHARGE PACK", fill="F8FAFC")
-    duct = (1680, 360, 1810, 1110)
-    ic = (1840, 430, 2135, 1050)
-    sidefan = (2160, 520, 2295, 970)
-    rounded(draw, duct, "DDECF3", CYAN, 10, 5)
-    centred_text(draw, duct, "SEALED\nFRESH\nDUCT", image_font(18, True), CYAN)
-    rounded(draw, ic, "E4EEE8", GREEN, 10, 6)
-    centred_text(draw, ic, "AIR-TO-AIR\nCHARGE COOLER\n≥15 kW\n57 mm BASELINE", image_font(22, True), GREEN)
-    rounded(draw, sidefan, "F6EEDB", GOLD, 10, 5)
-    draw_fan(draw, (2172, 620, 2283, 885), "FAN")
-    _air_arrows(draw, 1640, 2320, (300, 1160), GREEN)
-    drawing_note(draw, (1655, 1200, 2315, 1435), "INDEPENDENT PATH", "≥2,500 m³/h at 75 Pa. Separate unrestricted hot-air exit, recirculation seals, stone/dust/water protection, drain and cleaning access.", RED, "FDF2F1")
+    drawing_panel(draw, (1615, 185, 2355, 1475), "C — COMPACT SIDE PACK / PLAN VIEW", fill="F8FAFC")
+    draw.line((1705, 335, 1705, 1160), fill=hex_colour(NAVY), width=8)
+    draw.text((1638, 700), "UPRIGHT", font=image_font(15, True), fill=hex_colour(NAVY))
+    pack = (1750, 420, 1940, 1120)
+    rounded(draw, pack, "F8FAFC", GREEN, 10, 5)
+    duct = (1762, 440, 1797, 1100)
+    ic = (1810, 450, 1870, 1090)
+    sidefan = (1883, 500, 1928, 1040)
+    rounded(draw, duct, "DDECF3", CYAN, 8, 4)
+    rounded(draw, ic, "E4EEE8", GREEN, 8, 5)
+    rounded(draw, sidefan, "F6EEDB", GOLD, 8, 4)
+    centred_text(draw, (1990, 440, 2325, 650), "LONG AXIS FORE–AFT\n\nDUCT  |  ≥15 kW CORE  |  FAN\n\n57 mm PIPELINE BASELINE", image_font(18, True), GREEN)
+    dimension_h(draw, pack[0], pack[2], 350, pack[1], "≤160 LATERAL TARGET*", PURPLE, 16)
+    dimension_v(draw, pack[1], pack[3], 1970, pack[2], "FORE–AFT LENGTH — M8", PURPLE, "left")
+    arrow(draw, (1720, 390), (1970, 390), GREEN, 5)
+    drawing_note(draw, (1655, 1200, 2315, 1435), "M8 CONTROLS — NOT TO SCALE", "Arrange the smallest complete-pack dimension laterally. ≤160 projection is a target, not a release dimension. PASS ≥2,500 m³/h at 75 Pa through the actual inlet/core/shroud/outlet; provide separate hot exit.", RED, "FDF2F1")
     finish_drawing_sheet(draw, "D04", "CONDENSER / INSTALLED-FLOW FAN MODULES / SIDE CHARGE PACK")
     image.save(ASSET / "rev_c_d04_component_dimensions.png", quality=96)
 
@@ -2676,6 +2680,13 @@ def save_d06_side_geometry():
         rounded(draw, (x1, yy1, x2, yy2), fill, colour, 9, 5)
         centred_text(draw, (x1 + 10, yy1 + 10, x2 - 10, yy2 - 10), label, image_font(20, True), colour)
     _air_arrows(draw, 70, 2310, (1005, 1450), GREEN)
+    centred_text(
+        draw,
+        (520, 970, 1950, 1040),
+        "PACKAGE FORE–AFT; SMALLEST COMPLETE DIMENSION LATERAL — ≤160 TARGET, M8 CONTROLS",
+        image_font(17, True),
+        PURPLE,
+    )
     finish_drawing_sheet(draw, "D06", "MAIN PACK DEPTH GATES / SIDE CHARGE-PACK ENVELOPE")
     image.save(ASSET / "rev_c_d06_side_geometry.png", quality=96)
 
@@ -2687,6 +2698,12 @@ def save_d07_fan_wiring():
         "Every motor branch is separately protected; final fuse/wire values follow measured current and voltage drop.",
     )
     drawing_panel(draw, (45, 185, 2355, 1050), "A — POWER DISTRIBUTION", fill="F8FAFC")
+    draw.text(
+        (470, 250),
+        "FRONT RELAYS + FUSES ON UPPER / REAR CARRIER PLATE — NO SIDE TOWER",
+        font=image_font(19, True),
+        fill=hex_colour(BLUE),
+    )
     rounded(draw, (90, 370, 330, 900), LIGHT, BLUE, 12, 5)
     centred_text(draw, (100, 380, 320, 890), "BATTERY /\nALTERNATOR\n13.5 V TEST", image_font(24, True), BLUE)
     branches = [
@@ -2698,7 +2715,8 @@ def save_d07_fan_wiring():
         rounded(draw, (470, y - 100, 690, y + 35), "FDF2F1", RED, 10, 4)
         centred_text(draw, (480, y - 92, 680, y + 27), "FUSE\nFROM MEASURED I", image_font(17, True), RED)
         rounded(draw, (820, y - 100, 1030, y + 35), "F6EEDB", GOLD, 10, 4)
-        centred_text(draw, (830, y - 92, 1020, y + 27), "SEALED\nRELAY", image_font(18, True), GOLD)
+        relay_label = "90987-02027 CAND.\nOR SEALED ISO 40 A" if motor.startswith("FRONT") else "SEALED\nRELAY"
+        centred_text(draw, (830, y - 92, 1020, y + 27), relay_label, image_font(14, True), GOLD)
         rounded(draw, (1170, y - 100, 1470, y + 35), "F6EEDB", GOLD, 10, 4)
         centred_text(draw, (1180, y - 92, 1460, y + 27), motor, image_font(18, True), GOLD)
         rounded(draw, (800, y + 45, 1050, y + 88), "F3ECF8", PURPLE, 8, 3)
@@ -2905,7 +2923,7 @@ def save_dimensioned_drawing_set():
 
 
 DRAWING_SHEETS = [
-    ("D01", "Complete Rev D cooling system", "rev_c_d01_complete_stack.png", "Main radiator/condenser path and independent side/wing charge-air path."),
+    ("D01", "Complete Rev E cooling system", "rev_c_d01_complete_stack.png", "Main radiator/condenser path and compact independent side/wing charge-air path."),
     ("D02", "Performance-controlled radiator", "rev_c_d02_radiator_assembly.png", "Thermal duty, core selection and field-copied interfaces."),
     ("D03", "Radiator component breakdown", "rev_c_d03_radiator_components.png", "Pressure parts, mounts, shroud and assembly sequence."),
     ("D04", "Condenser and electric-fan modules", "rev_c_d04_component_dimensions.png", "Installed-flow front and side modules."),
@@ -2918,7 +2936,7 @@ DRAWING_SHEETS = [
 
 def add_page_number(paragraph):
     paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    run = paragraph.add_run("J40 Cooling System  |  Rev D  |  ")
+    run = paragraph.add_run("J40 Cooling System  |  Rev E  |  ")
     set_run(run, 9, False, MUTED)
     field = OxmlElement("w:fldSimple")
     field.set(qn("w:instr"), "PAGE")
@@ -2926,10 +2944,10 @@ def add_page_number(paragraph):
 
 
 def add_landscape_drawing_appendix(document):
-    add_heading(document, "Appendix A. Controlled Rev D drawing sheets", 1)
+    add_heading(document, "Appendix A. Controlled Rev E drawing sheets", 1)
     add_paragraph(
         document,
-        "These eight sheets show the Rev D architecture. Red values are fixed performance/release limits. "
+        "These eight sheets show the Rev E architecture. Red values are fixed performance/release limits. "
         "Purple dimensions and interfaces are measured from the vehicle or actual component. Written values "
         "control; do not scale the images.",
     )
@@ -2978,13 +2996,13 @@ def build_document():
     r = p.add_run("Toyota 2H • R134a A/C • 50°C continuous design ambient • separate charge-air path")
     set_run(r, 12.5, False, MUTED)
     p = document.add_paragraph()
-    r = p.add_run("REV D  |  30 JULY 2026  |  ALL DIMENSIONS IN mm")
+    r = p.add_run("REV E  |  01 AUGUST 2026  |  ALL DIMENSIONS IN mm")
     set_run(r, 10, True, BLUE)
     add_callout(
         document,
         "DESIGN REQUIREMENT — NOT YET A PROVEN RATING",
         "Final manufacture remains HOLD. The installed vehicle may be described as 50°C-capable only after "
-        "the component evidence, fit gates and full Rev D acceptance test pass.",
+        "the component evidence, fit gates and full Rev E acceptance test pass.",
     )
     add_paragraph(
         document,
@@ -3005,48 +3023,48 @@ def build_document():
     )
 
     document.add_page_break()
-    add_heading(document, "1. Rev D packaging clarification — fixed front width", 1)
+    add_heading(document, "1. Rev E packaging — Toyota parts, centred fans, fixed front width", 1)
     add_callout(
         document,
         "CONTROLLED PACKAGING RULE",
-        "The central radiator / condenser / front-fan stack stays at its fixed width between the two existing "
-        "uprights. The independent charge-air module starts aft and outboard of the RIGHT upright; keep its core "
-        "approximately 90° to the central stack. Do not add front width. M8 is a full-size-template gate, not an "
-        "estimated clearance check.",
+        "The radiator / condenser / twin-fan stack stays between the existing uprights. Both matching Toyota/Denso "
+        "motor centres are level and symmetric about the measured active-fin centreline. The drier sits behind an "
+        "upright; relays/fuses sit above or behind the carrier. The independent charge-air module starts aft/outboard "
+        "with its smallest dimension lateral and a ≤160 mm projection target. M8 is a full-size-template gate.",
         "F3ECF8",
         PURPLE,
     )
-    add_picture(document, ASSET / "rev_d_ph01_photorealistic_complete_pack.png", 6.20)
+    add_picture(document, ASSET / "rev_e_ph01_standard_toyota_compact_split.png", 6.20)
     add_paragraph(
         document,
-        "PH01 — Split-out component visual: central pusher-fan / condenser / radiator / puller-shroud layers, "
-        "independent side charge-air module, removable mounts and required electrical parts. This is a generated "
+        "PH01 — Split-out component visual: standard Toyota/Denso candidates, central pusher / condenser / radiator / "
+        "puller-shroud layers, compact independent charge-air module, mounts and rear/upper electrical parts. This is a generated "
         "layout aid; D01–D08 and the accepted full-size templates control manufacture.",
         after=0,
         italic=True,
     )
 
     document.add_page_break()
-    add_heading(document, "1.1 Rev D component assembly", 2)
-    add_picture(document, ASSET / "rev_d_ph02_photorealistic_fully_assembled_pack.png", 4.20)
+    add_heading(document, "1.1 Rev E component assembly", 2)
+    add_picture(document, ASSET / "rev_e_ph02_standard_toyota_compact_assembled.png", 4.20)
     add_paragraph(
         document,
-        "PH02 — Fully assembled component-pack visual: the central layers stack only front-to-rear, while the "
-        "charge-air module mounts aft/outboard on its own fresh-air and hot-air paths.",
+        "PH02 — Fully assembled visual: two identical front fans are level and centred in one shallow sealed shroud; "
+        "service parts add no side width, while the charge-air module mounts compactly aft/outboard.",
         after=0,
         italic=True,
     )
 
     document.add_page_break()
     add_heading(document, "1.2 Proposed installation on the existing top holes", 2)
-    add_picture(document, ASSET / "rev_d_ph03d_installed_top_holes_central_fans.png", 6.20)
+    add_picture(document, ASSET / "rev_e_ph03_standard_toyota_compact_installed.png", 6.20)
     add_paragraph(
         document,
-        "PH03D — Current proposed installed visual using the real chassis photograph as its geometric base. One "
+        "PH03E — Current proposed installed visual using the real chassis photograph as its geometric base. One "
         "visible vertical through-bolt is centred on each original top-return hole, with the handed carrier pickup "
         "directly below. The two equal Toyota/Denso 248 mm candidate front fans are symmetric about the condenser "
-        "active-core centreline in one custom sealed shroud; the narrow drier/manifold/electrical service bay is "
-        "outside the shroud and excluded from that centre datum. "
+        "active-fin centreline in one custom sealed shroud. The drier is behind an upright and the relay/fuse plate "
+        "is above/rear, so neither adds front-view width or moves a fan. "
         "The lower saddles carry the cooling-pack weight and the two top bolts only locate and retain. "
         "This remains a generated design visual, not a measured fit check or evidence of completed fabrication.",
         after=0,
@@ -3066,18 +3084,18 @@ def build_document():
     )
 
     document.add_page_break()
-    add_heading(document, "1. Rev D decision and release status", 1)
+    add_heading(document, "1.4 Rev E decision and release status", 1)
     add_picture(document, ASSET / "rev_c_d01_complete_stack.png", 5.10)
     add_paragraph(
         document,
-        "Rev D removes the intercooler from the radiator/condenser stack. The previous lower-front core masked "
+        "Rev E retains the separate intercooler air path introduced by Rev D and repackages the front module. The previous lower-front core masked "
         "about 39% of the nominal radiator face and made a 50°C/A/C claim indefensible. The side/wing charge "
         "cooler now has its own sealed fresh inlet, fan and hot-air exit."
     )
     add_callout(
         document,
         "SUPERSEDES OLD FAN INSTRUCTIONS",
-        "Do not use the older one 12-inch, one 14-inch, optional 12–14-inch or two nominal 9-inch instructions. "
+        "Do not use the older one 12-inch, one 14-inch, optional 12–14-inch, two nominal 9-inch or side-service-tower instructions. "
         "Fan selection now follows installed airflow at static pressure and the complete mock-up.",
         "FFF8E8",
         GOLD,
@@ -3138,8 +3156,8 @@ def build_document():
     add_table(document, ["ITEM", "STANDARD / TOYOTA CANDIDATE", "CUSTOM + RELEASE CONTROL"], [
         (
             "Radiator / coolant",
-            "HJ47/2H pattern 16400-68030 or sound original Toyota tanks; hose candidates 16571-68020 upper and 16572-68020 lower; verified Toyota-pattern cap/clamps",
-            "Local core/adapter only if needed. Actual necks, cap seat/pressure, M1/M2, coolant Δp and ≥115/130 kW proof control.",
+            "HJ47/2H pattern 16400-68030 or sound original Toyota tanks; 16571-68020 upper hose; 16572-68020 lower hose; cap candidate 16401-41021; Toyota-pattern clamps.",
+            "Local core/adapter only if needed. Actual necks, cap seat and verified 2H pressure, M1/M2, coolant Δp and ≥115/130 kW proof control.",
         ),
         (
             "Front motors / blades",
@@ -3154,12 +3172,12 @@ def build_document():
         (
             "Drier / A/C service",
             "New Toyota receiver/drier 88471-34010 if ports fit, otherwise new common #6 O-ring R134a drier with trinary provision; new barrier hose, HNBR seals and crimp fittings.",
-            "Vertical rubber-lined clamp and vehicle-length hoses. Never reuse a drier; A/C technician verifies threads, set-points, evacuation, charge and pressures.",
+            "Vertical rubber-lined clamp behind/in the shadow of an upright; outlet turns rearward. It may not add front-view width. Never reuse a drier; A/C technician verifies the system.",
         ),
         (
             "Electrical",
-            "Toyota/Denso/Sumitomo plugs; new terminals/seals/cable; sealed ISO relays and blade/MAXI fuses/holders.",
-            "Vehicle-length loom and protected service plate outside active fins. One fuse/relay branch per motor; size from measured hot run/start current.",
+            "Toyota/Denso/Sumitomo plugs with new terminals/seals/cable; Toyota/Denso relay 90987-02027 candidate per front motor, otherwise sealed ISO 40 A; blade/MAXI fuses/holders.",
+            "Vehicle-length loom and protected upper/rear crossrail plate—not a side tower. Verify relay rating; one fuse/relay branch per motor; size from measured hot run/start current.",
         ),
         (
             "Charge-air joints",
@@ -3173,8 +3191,8 @@ def build_document():
         ),
         (
             "Side core / fan",
-            "Prefer a new catalogue core and sealed catalogue high-static fan with pressure-flow data.",
-            "Side brackets, full duct/shroud and separate hot outlet. Do not name a donor before M8; complete path ≥2,500 m³/h at 75 Pa.",
+            "Prefer a Toyota/Denso catalogue fan only when its complete envelope and pressure-flow proof suit; otherwise use the smallest locally serviceable sealed high-static fan that passes.",
+            "Fore–aft brackets, full duct/shroud and separate hot outlet; smallest dimension lateral, ≤160 mm projection target. M8 and complete-path ≥2,500 m³/h at 75 Pa control.",
         ),
     ], [1500, 4050, 3810], 7.8)
     add_callout(
@@ -3200,7 +3218,7 @@ def build_document():
         ("Core face", "≥0.250 m² net finned face preferred; maximise measured M1/M2"),
         ("Smaller core", "allowed only with valid ≥115 kW continuous and ≥130 kW/10 min installed-condition proof"),
         ("Interfaces", "copy physical sample for tank, 38 OD target necks, centres/angles, filler, overflow, drain and brackets"),
-        ("Cap", "verified 2H pressure/seat only; a higher-pressure cap is not an upgrade"),
+        ("Cap", "Toyota 16401-41021 candidate only after its seat and verified pressure match the 2H; a higher-pressure cap is not an upgrade"),
         ("Coolant circuit", "verify thermostat/bypass, high-point bleed, flow, pressure drop and lower-hose anti-collapse"),
         ("Dust margin", "normal grille/guard/screens fitted; ≥10% clean-core thermal/airflow margin"),
         ("Bench tests", "verified system pressure ≥5 min, no leak/loss; uniform flow; record result"),
@@ -3232,9 +3250,9 @@ def build_document():
         "Any offset needs a recorded physical obstruction plus an approved coverage sketch and installed-flow proof; wiring convenience or styling is not justification.",
         "Two common 12-inch or 14-inch fans do not fit side-by-side within a nominal 559-wide condenser before frames/clearance. Compact matched units or one full-width module still require F4 fit and F5 performance proof.",
         "Preferred standard candidate: matched Prado 120 / GX470 family motors 88550-12160 and blades 88453-60010, referenced by assemblies 88590-60040/-60050/-60051/-60060. Published equivalent data is 248 mm, 12 V, 96 W, 8 A and 2,400 rpm; it is not an airflow curve.",
-        "Candidate geometry: two 248 mm sweeps; ≥258 mm ring openings; 266 mm motor C-C; centres ±133 mm from measured active-fin C/L; 524 mm nominal ring group. F4 must prove actual active fins, guards, motors, plugs, wires, ports and depth.",
+        "Candidate geometry: two 248 mm sweeps; ≥258 mm ring openings; 266 mm motor C-C; centres x = W_active/2 ±133 from the left active-fin edge and at the same y; 524 mm nominal ring group. Use numerical x = 146.5 and 412.5 mm only if measured W_active is actually 559 mm. F4 controls.",
         "Use only the standard motors/blades/plugs in one custom full-width sealed shroud. Do not assume two complete donor shrouds fit.",
-        "Keep drier/manifold/relay/fuse service bay outside the sealed pusher shroud and active fins. Exclude it from the fan centre datum; it may not force either fan off-centre.",
+        "There is no side service tower. Put the drier behind/in the shadow of an upright, turn ports rearward, and put relays/fuses on the upper/rear carrier plate. They may not widen the front module, cover active fins or move either fan.",
         "≥3,000 m³/h installed at 75 Pa and 13.5 V through final restriction. Free-air CFM does not pass.",
         "Prefer supplier/procurement proof of ≥3,300 m³/h installed at the same point for 10% reserve; ≥3,000 remains the hard acceptance minimum.",
         "Independent close frame/shroud; no core ties and no fan load on condenser.",
@@ -3246,7 +3264,7 @@ def build_document():
         document,
         "559 × 356 × 21 nominal parallel-flow condenser; measure all seams, manifolds, ports and ears. Four "
         "independent isolated tabs. Keep 15 clear to radiator preferred; 10 absolute only with proof. Fit the "
-        "drier vertically in the side service bay, outside the sealed pusher shroud and active fin face. Prefer a "
+        "drier vertically behind/in the rear shadow of an existing upright, outside the sealed pusher shroud and active fin face. Prefer a "
         "new Toyota 88471-34010 receiver/drier if its ports match; otherwise use a new common #6 O-ring R134a "
         "drier with trinary provision. Never reuse a donor drier. Use new barrier hose, HNBR seals/crimps and have "
         "the A/C technician verify threads, switch set-points, evacuation, charge, pressures and 50°C performance."
@@ -3262,8 +3280,9 @@ def build_document():
         "Select the side only after the actual turbo, steering, battery, air cleaner, A/C compressor, bonnet, "
         "wing, downpipe and tool paths are trial-fitted. The pack requires a protected fresh-air inlet, sealed "
         "duct, charge cooler, full-core shroud/fan, separate unrestricted hot-air exit, recirculation seals, "
-        "drain and cleaning access. It begins aft and outboard of the RIGHT upright, with the core approximately "
-        "90° to the fixed-width central radiator/condenser/fan stack; it must not increase front-pack width."
+        "drain and cleaning access. It begins aft and outboard of the selected upright, with the core approximately "
+        "90° to the fixed-width central stack. Arrange the long axis fore–aft and the smallest complete-pack dimension "
+        "laterally; target no more than 160 mm projection, subject to M8 and the actual fan depth."
     )
     add_table(document, ["PARAMETER", "REQUIREMENT"], [
         ("Heat rejection", "≥15 kW continuous after heat soak"),
@@ -3273,7 +3292,7 @@ def build_document():
         ("Core Δp", "target ≤5 kPa at rated flow"),
         ("Fan", "≥2,500 m³/h installed at 75 Pa through complete inlet/guard/core/shroud/outlet"),
         ("Proof test", "≥2 × declared maximum boost and never less than 30 psi, using guarded safe method"),
-        ("M8 template gate", "full-size core, fan/shroud, inlet/outlet ducts, clamps, mounts and service-tool envelope; trial-fit aft/outboard of RIGHT upright before manufacture"),
+        ("M8 template gate", "full-size core, fan/shroud, inlet/outlet ducts, clamps, mounts and service-tool envelope; long axis fore–aft, smallest dimension lateral, ≤160 mm projection target; trial-fit before manufacture"),
         ("Connections", "57 mm / 2.25 in beaded baseline; larger only by approved flow/fit review"),
     ], [2200, 7160], 8.3)
     add_callout(
@@ -3319,7 +3338,7 @@ def build_document():
         ("M3", "10 build + actual front fan depth + ≥5 fan/condenser clear + actual condenser depth + 15 preferred gap"),
         ("M4", "M3 + actual radiator depth + 10 vehicle/fabrication tolerance"),
         ("M5", "radiator rear to nearest mechanical-fan point ≥20 static; 25–30 preferred"),
-        ("M8", "full-size template proves complete side inlet/core/fan/outlet path aft/outboard of RIGHT upright; core ~90° to main stack; no added front width"),
+        ("M8", "full-size template proves complete side path aft/outboard of selected upright; long axis fore–aft, smallest dimension lateral, ≤160 projection target; no added front width"),
     ], [1700, 7660], 9.0)
 
     document.add_page_break()
@@ -3327,6 +3346,8 @@ def build_document():
     add_picture(document, ASSET / "rev_c_d07_fan_wiring.png", 6.35)
     add_bullets(document, [
         "Each motor has a correctly sized fuse, sealed relay, weatherproof connector and equal-capacity ground.",
+        "Preferred front-branch relay candidate is Toyota/Denso 90987-02027, one per motor, only after its moulded/contact rating or Toyota EWD is checked against measured hot run/start current; otherwise use sealed ISO 40 A relays.",
+        "Mount the front relays and fuses above or behind the carrier crossrail, protected from heat and splash; do not create a side service tower.",
         "Fuse/wire from measured run/start current, temperature rating and voltage drop; do not copy a generic value.",
         "Side charge fan runs whenever the engine runs unless a documented fail-safe boost/IAT controller passes testing; manual override and fault indication required.",
         "Bench-test polarity: main grille → engine; side fresh inlet → core → separate hot outlet.",
@@ -3344,7 +3365,7 @@ def build_document():
         ("M5", "radiator rear to fan", "≥20 static; 25–30 preferred through movement"),
         ("M6", "lowest main-pack edge", "≥25 above protected line unless stronger guard approved"),
         ("M7", "main-pack service path", "each component removes separately without cutting"),
-        ("M8", "side pack + ducts", "full-size template: aft/outboard of RIGHT upright, core ~90° to main stack, no added front width; no conflict and separate fresh inlet/hot outlet proven"),
+        ("M8", "compact side pack + ducts", "full-size template: aft/outboard of selected upright, long axis fore–aft and smallest dimension lateral; ≤160 projection target; no conflict, added front width or recirculation"),
         ("U1-L/R", "original hole Ø / condition", "both sound and round; select bolt after measurement; no chassis reaming"),
         ("U2", "actual top-hole pitch", "record with one rigid 1:1 template; do not infer from photograph"),
         ("U3-L/R", "hole to edge / tab width", "large washer, isolator and handed pickup pad fully supported"),
@@ -3355,7 +3376,7 @@ def build_document():
         ("F1", "mechanical fan sweep", "record OD/full sweep"),
         ("F2", "blade insertion/clear", "35–50%; ≥15 radial through movement"),
         ("F3", "main fan centre", "record X/Y on as-built"),
-        ("F4", "front fan envelope", "actual active-face W/H/C-L recorded; symmetric candidate rings/motors, complete frame/guards/plugs/wires/service bay fit M1–M4"),
+        ("F4", "front fan envelope", "record active-face W/H/C-L; centres x = W_active/2 ±133 and same y; complete frame/guards/plugs/wires fit M1–M4; drier/electrics behind/above add no width"),
         ("F5", "front installed flow", "≥3,000 m³/h at 75 Pa, 13.5 V"),
         ("F6", "mechanical installed flow", "≥9,000 m³/h at 125 Pa, 1,500 engine rpm"),
         ("F7", "side installed flow", "≥2,500 m³/h at 75 Pa through complete path"),
@@ -3455,7 +3476,7 @@ def build_document():
     add_paragraph(document, "Owner final release: __________________________________  Date: __________")
     add_heading(document, "Controlled references", 2)
     add_bullets(document, [
-        "docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md (controlled Rev D text)",
+        "docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md (controlled Rev E text)",
         "docs/2h-turbo-suitability-and-options-20260717.md",
         "SAE J1994 heat-exchanger heat-transfer/pressure-drop testing.",
         "SAE J1339 engine-cooling fan performance.",
@@ -3464,7 +3485,7 @@ def build_document():
         "Pakistan Meteorological Department, Pakistan Climate 2024.",
     ])
     add_landscape_drawing_appendix(document)
-    document.core_properties.title = "J40 Integrated Radiator and Cooling System — Pakistan Fabricator Specification — Rev D"
+    document.core_properties.title = "J40 Integrated Radiator and Cooling System — Pakistan Fabricator Specification — Rev E"
     document.core_properties.subject = "50°C cooling design with independent charge-air path and all required fans"
     document.core_properties.author = "J40 Project"
     document.core_properties.comments = f"Controlled text source: {SOURCE.name}"
