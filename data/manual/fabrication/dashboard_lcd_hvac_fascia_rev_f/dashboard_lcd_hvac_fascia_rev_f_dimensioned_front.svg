@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+<defs><linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f5f5"/><stop offset="0.45" stop-color="#b8bec1"/><stop offset="1" stop-color="#72797d"/></linearGradient></defs>
+<style>.hold{fill:none;stroke:#a85f00;stroke-width:2;stroke-dasharray:7 5}.txt{font:15px Arial;fill:#20262b}.bold{font:700 18px Arial;fill:#20262b}.small{font:13px Arial;fill:#53606a}.banklabel{font:700 10px Arial;fill:#20262b}.dim{stroke:#aa2020;stroke-width:1.5}</style>
+<rect width="1180" height="760" fill="#f7f8f9"/>
+<text x="55" y="40" class="bold">J40 RHD COMPACT 9-INCH LCD / FOUR-OUTLET DASH - REV F</text>
+<text x="55" y="66" class="small">Centre fascia carries only LCD + two outlets. All seven selectors and the separate hazard control form one bank right of the speedometer.</text>
+
+<rect x="55.0" y="100.0" width="635.5" height="229.4" rx="9.3" fill="#e8e2cc" stroke="#111" stroke-width="2"/>
+<rect x="82.9" y="118.6" width="579.7" height="192.2" rx="4.7" fill="none" stroke="#aa2020" stroke-width="2" stroke-dasharray="10 6"/>
+<rect x="203.8" y="115.5" width="337.9" height="198.4" rx="7" fill="#11161a" stroke="#a85f00" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="216.2" y="125.6" width="313.1" height="178.2" rx="5" fill="#253846" stroke="#e8edf0" stroke-width="1"/>
+<circle cx="130.9" cy="214.7" r="63.6" fill="url(#silver)" stroke="#62696d" stroke-width="2"/><circle cx="130.9" cy="214.7" r="48.1" fill="#292e31" stroke="#101315" stroke-width="2"/><ellipse cx="130.9" cy="214.7" rx="37.2" ry="14.7" fill="#51595d" stroke="#111" stroke-width="2"/><circle cx="614.6" cy="214.7" r="63.6" fill="url(#silver)" stroke="#62696d" stroke-width="2"/><circle cx="614.6" cy="214.7" r="48.1" fill="#292e31" stroke="#101315" stroke-width="2"/><ellipse cx="614.6" cy="214.7" rx="37.2" ry="14.7" fill="#51595d" stroke="#111" stroke-width="2"/><circle cx="69.0" cy="315.5" r="3.5" class="hold"/><circle cx="372.8" cy="315.5" r="3.5" class="hold"/><circle cx="676.6" cy="315.5" r="3.5" class="hold"/><circle cx="69.0" cy="114.0" r="3.5" class="hold"/><circle cx="372.8" cy="114.0" r="3.5" class="hold"/><circle cx="676.6" cy="114.0" r="3.5" class="hold"/>
+<text x="372.8" y="211.6" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13" font-weight="700">TRUE 9-INCH LCD</text>
+<text x="372.8" y="231.8" text-anchor="middle" fill="#d7e0e5" font-family="Arial" font-size="10">active 199.2 x 112.1 | aperture 202 x 115 HOLD</text>
+<text x="130.9" y="303.1" text-anchor="middle" class="banklabel">OUTLET 2 / 4</text>
+<text x="614.6" y="303.1" text-anchor="middle" class="banklabel">OUTLET 3 / 4</text>
+<line x1="55.0" y1="354.4" x2="690.5" y2="354.4" class="dim"/>
+<text x="372.8" y="376.4" text-anchor="middle" class="bold">410 mm RELEASED OUTER BLANK</text>
+<line x1="708.5" y1="100.0" x2="708.5" y2="329.4" class="dim"/>
+<text x="718.5" y="222.4" class="bold">148</text>
+
+<text x="55" y="418" class="bold">RIGHT-OF-SPEEDOMETER CONTROL BANK - 190 x 88 mm REFERENCE ENVELOPE</text>
+<rect x="55.0" y="438.0" width="465.5" height="215.6" rx="8" fill="#e8e2cc" stroke="#111" stroke-width="2"/>
+<circle cx="113.8" cy="496.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="106.8" y1="503.8" x2="123.8" y2="486.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="113.8" y="543.4" text-anchor="middle" class="banklabel">WIPERS</text><circle cx="229.0" cy="496.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="222.0" y1="503.8" x2="239.0" y2="486.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="229.0" y="543.4" text-anchor="middle" class="banklabel">LIGHTS</text><circle cx="344.1" cy="496.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="337.1" y1="503.8" x2="354.1" y2="486.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="344.1" y="543.4" text-anchor="middle" class="banklabel">SPOTS</text><circle cx="459.3" cy="496.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="452.3" y1="503.8" x2="469.3" y2="486.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="459.3" y="543.4" text-anchor="middle" class="banklabel">AUX</text><circle cx="113.8" cy="594.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="106.8" y1="601.8" x2="123.8" y2="584.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="113.8" y="640.1" text-anchor="middle" class="banklabel">BLOWER</text><circle cx="229.0" cy="594.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="222.0" y1="601.8" x2="239.0" y2="584.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="229.0" y="640.1" text-anchor="middle" class="banklabel">A/C</text><circle cx="344.1" cy="594.8" r="27.3" fill="url(#silver)" stroke="#161b1f" stroke-width="2"/><line x1="337.1" y1="601.8" x2="354.1" y2="584.8" stroke="#111" stroke-width="7" stroke-linecap="round"/><text x="344.1" y="640.1" text-anchor="middle" class="banklabel">FUEL STOP</text><circle cx="459.3" cy="594.8" r="19.6" fill="#b51e23" stroke="#161b1f" stroke-width="2"/><text x="459.3" y="640.1" text-anchor="middle" class="banklabel">HAZARD</text>
+<text x="55" y="690" class="small">Top L→R: WIPERS / LIGHTS / SPOTS / AUX. Bottom L→R: BLOWER / A/C / FUEL STOP / HAZARD.</text>
+<text x="55" y="715" class="small">Engrave every label 3 mm high with black infill. Switch/hazard apertures and final vehicle position remain HOLD to actual parts and 1:1 trial.</text>
+
+<rect x="735" y="92" width="405" height="625" rx="8" fill="#fff" stroke="#cbd2d7"/>
+<text x="758" y="128" class="bold">COMPACT PRESERVATION SCOPE</text>
+<text x="758" y="158" class="txt">Delete ashtray and flatten only the centre zone.</text>
+<text x="758" y="183" class="txt">Keep original speedometer pressing and glovebox.</text>
+<text x="758" y="208" class="txt">No control strip below the LCD.</text>
+<text x="758" y="233" class="small">148 mm high: 77 mm / 34% shallower than Rev E.</text>
+
+<text x="758" y="273" class="bold">FOUR INTEGRATED SILVER OUTLETS</text>
+<text x="758" y="303" class="txt">1: far passenger-side dash end</text>
+<text x="758" y="328" class="txt">2 + 3: flanking the LCD in this fascia</text>
+<text x="758" y="353" class="txt">4: far driver-side dash end</text>
+<text x="758" y="380" class="small">Each face Ø82 MAX | rear cut Ø66 REF</text>
+<text x="758" y="403" class="small">Hose-neck target Ø63.5 / 2.5 inch</text>
+<text x="758" y="426" class="small">Flush face; hidden rear retainer; no front screws.</text>
+
+<text x="758" y="466" class="bold">WHAT THE SEVEN SELECTORS DO</text>
+<text x="758" y="494" class="small">WIPERS: park / low / high.</text>
+<text x="758" y="517" class="small">LIGHTS: off / sidelights / headlamps.</text>
+<text x="758" y="540" class="small">SPOTS: energises spot-lamp relay T5.</text>
+<text x="758" y="563" class="small">AUX: reserved accessory relay B2.</text>
+<text x="758" y="586" class="small">BLOWER: cabin fan off / low / high.</text>
+<text x="758" y="609" class="small">A/C: compressor request through safety chain.</text>
+<text x="758" y="632" class="small">FUEL STOP: run / stop intent; live test required.</text>
+<text x="758" y="655" class="small">HAZARD: separate red control; flashes all indicators.</text>
+<text x="758" y="693" class="small">Only CUT_FASCIA_OUTER is released. All HOLD_ geometry</text>
+<text x="758" y="711" class="small">must be replaced from measured parts/templates before cutting.</text>
+</svg>

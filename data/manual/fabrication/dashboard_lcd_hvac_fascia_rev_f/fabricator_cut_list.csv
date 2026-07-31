@@ -1,0 +1,5 @@
+part,qty,material,thickness_mm,finish,file,release
+compact centre fascia,1,CR4 mild steel,1.5,low-gloss body colour,centre_fascia_template_rev_f.dxf,"CUT_FASCIA_OUTER 410 x 148 R6 RELEASED; HOLD_VEHICLE_OPENING is behind-fascia reference only; LCD, two central vents and mounting holes HOLD"
+right-side eight-position control bank,1,CR4 mild steel,1.5,low-gloss body colour; 3 mm labels black infill,right_control_bank_eight_position_template_rev_f.dxf,"QUOTE/HOLD entire part pending 1:1 vehicle fit, seven actual selectors, hazard and rear-stack check"
+outer dash vent pair transfer template,1,card or clear acrylic,2.0,none,outer_dash_vent_pair_transfer_template_rev_f.dxf,TEMPLATE ONLY; both vehicle positions and Ø66 apertures HOLD pending actual vents and duct sweep
+LCD rear clamp reference blank,1,5052-H32 aluminium,2.0,black,lcd_rear_clamp_blank_rev_f.dxf,"QUOTE/HOLD all geometry pending actual LCD body, mounts, connectors and service-removal trial"
