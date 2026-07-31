@@ -719,8 +719,8 @@ SCENES = {
         "camera": [420, 330, 500],
         "target": [0, 70, 0],
         "size": "360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay bottom footprint",
-        "load_path": "The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the relay box's large uncovered bottom face.",
-        "service_intent": "Keep the covered/removable face accessible above the base, transfer bottom-face relay fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.",
+        "load_path": "The flat aluminium base bolts through exposed slots to a removable electrical plate carried by the structural radiator/cooling-stack frame; the insulating sheet sits directly under the relay box's large uncovered bottom face.",
+        "service_intent": "Keep the covered/removable face accessible, transfer bottom-face fixing holes from the actual box after orientation is confirmed, and do not attach the plate to radiator core, fins, tanks, necks, seams, or through-core rods.",
         "boxes": [
             {"name": "Flat aluminium base plate 360 x 245 under relay bottom", "x": 0, "y": 3, "z": 0, "w": 360, "h": 6, "d": 245, "color": "aluminium"},
             {"name": "Exact relay-bottom insulating sheet 300 x 197", "x": 0, "y": 10, "z": 0, "w": 300, "h": 6, "d": 197, "color": "plastic"},

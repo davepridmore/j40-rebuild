@@ -341,9 +341,11 @@ def draw_pdf_page(c: canvas.Canvas, drawing: Drawing) -> None:
     c.drawRightString(page_w - margin, title_y, f"{rev_label} | Units: mm | Site-fit fabrication sheet")
 
     gap = 8 * pdf_mm
-    plot_w = 184 * pdf_mm
+    # Reserve enough left gutter for the rotated overall-height dimension.
+    # Keeping the notes column fixed avoids changing its wrapping.
+    plot_w = 176 * pdf_mm
     notes_w = page_w - (margin * 2) - plot_w - gap
-    plot_x = margin
+    plot_x = 22 * pdf_mm
     plot_y = 40 * pdf_mm
     plot_h = page_h - 62 * pdf_mm
 

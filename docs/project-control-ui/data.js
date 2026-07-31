@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-07-29T07:04:31+05:00",
+  "generated_at": "2026-07-31T19:00:33+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -62,8 +62,8 @@ window.J40_DASHBOARD_DATA = {
     "status_update_whatsapp_new_rows": 0,
     "status_update_manual_rows": 15,
     "status_update_delivery_watchlist_rows": 18,
-    "capture_data_tasks": 120,
-    "capture_data_tasks_now": 104,
+    "capture_data_tasks": 121,
+    "capture_data_tasks_now": 105,
     "supply_rows_tracked": 331,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
@@ -32834,7 +32834,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 282335
+            "bytes": 276447
           },
           "file_count": 27
         },
@@ -32896,7 +32896,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 56136
+            "bytes": 56571
           },
           "file_count": 9
         }
@@ -34259,7 +34259,7 @@ window.J40_DASHBOARD_DATA = {
       "electrical_spec_layout": {
         "scope": "full",
         "title": "Electrical Master - Clear Tracker (As-Built + Remaining Work)",
-        "last_updated": "2026-05-18 09:31",
+        "last_updated": "2026-07-31",
         "purpose": "one-page wiring progress + locked standards + quick lookup",
         "source_refs": [
           "data/manual/workbook_tabs/electrical_master.csv",
@@ -35230,24 +35230,24 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Power Corner",
-            "task": "Main shut-off path to MIDI fuse block and relay feeds assembled",
-            "status": "Done",
-            "done": "Yes",
-            "current_state": "Built in current loom: battery -> breaker -> junction -> MIDI/relay feeds.",
-            "next_action": "Re-torque and inspect during final reassembly.",
-            "dependency": "Tub-off + final assembly",
-            "parts_tools_impact": "No new parts required"
+            "task": "Move MIDI fuse block and relay feeds to radiator-carrier plate",
+            "status": "In Progress",
+            "done": "Partial",
+            "current_state": "Battery -> breaker/cutoff architecture is retained; 2026-07-31 physical relocation to the structural radiator/cooling-stack carrier is approved.",
+            "next_action": "Dry-fit plate, revise cable lengths/supports, then re-torque and voltage-drop test.",
+            "dependency": "Cooling-stack dry-fit + final assembly",
+            "parts_tools_impact": "Plate/fasteners/clips and cable changes only as measured"
           },
           {
             "priority": "A",
             "area": "Relay Feeds",
-            "task": "Branches into relay power/control entries terminated",
-            "status": "Done",
-            "done": "Yes",
-            "current_state": "Primary relay bank power and control entry branches are wired.",
-            "next_action": "Final continuity check before wrap.",
-            "dependency": "Post-weld validation",
-            "parts_tools_impact": "No new parts required"
+            "task": "Relocate terminated relay power/control entries without changing assignment",
+            "status": "In Progress",
+            "done": "Partial",
+            "current_state": "Primary relay bank branches and functional mapping are built; their physical route must move with Relay Rev D.",
+            "next_action": "Label, disconnect, route to radiator carrier, reterminate only as needed, then continuity/function test.",
+            "dependency": "Radiator-carrier plate validation",
+            "parts_tools_impact": "Possible cable/loom protection changes after measurement"
           },
           {
             "priority": "A",
@@ -35451,6 +35451,12 @@ window.J40_DASHBOARD_DATA = {
             "decision": "Ignition-linked stop + manual diesel cutoff cable retained as backup",
             "why_locked": "Preserves safe shutdown and redundancy.",
             "revisit_trigger": "Revisit only after proving ignition-linked stop reliability."
+          },
+          {
+            "standard": "Relay/fuse physical location",
+            "decision": "Mount Relay Rev D and MIDI Rev D on a removable plate carried by the structural radiator/cooling-stack frame; keep breaker/cutoff battery-side",
+            "why_locked": "Uses the radiator design's accessory space while keeping the unprotected battery lead short and preserving circuit assignments.",
+            "revisit_trigger": "Revisit only if dry-fit fails airflow, heat, splash, bonnet, fan, hose, or radiator-removal checks."
           }
         ],
         "relay_quick_lookup": [
@@ -35774,7 +35780,7 @@ window.J40_DASHBOARD_DATA = {
       "images": [],
       "evidence_sets": [],
       "image_count": 0,
-      "reference_token_count": 21,
+      "reference_token_count": 26,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -36059,7 +36065,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 282335
+            "bytes": 276447
           },
           "file_count": 27
         },
@@ -36137,7 +36143,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 87093
+            "bytes": 80498
           },
           "file_count": 13
         },
@@ -36199,7 +36205,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 56136
+            "bytes": 56571
           },
           "file_count": 9
         },
@@ -36309,7 +36315,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 296148
+            "bytes": 298680
           },
           "file_count": 5
         },
@@ -36356,7 +36362,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/turbo_readiness_chassis_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 46730
+            "bytes": 48770
           },
           "file_count": 6
         }
@@ -36372,6 +36378,14 @@ window.J40_DASHBOARD_DATA = {
           "planned_action": "Fabricate/mock up the compact chassis-mounted battery power carrier Rev F only after mapping the battery cavity: use the May 17 actual installed Daewoo DLS120 battery measurement photos as the fixed exclusion block, keep the standard N70/27-class 318 x 180 x 230 envelope as fallback comparison until the final numbers are transcribed, measure front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, bonnet/terminal-height volumes, battery lift-out path, formed chassis saddle geometry, and adjustable body-side offset-bar setting. Trial the widened front access-ladder stack: 660 x 310 spine, 340 x 265 battery tray with removable hold-down, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D vertical 360 x 245 aluminium base attached flat to the main metal service sheet with exact 300 x 197 insulating sheet and the existing covered relay box outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, red relay power pipe entering the relay top hole closest to the battery, relay output power bundle leaving the second top relay hole, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes, and the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure, central battery-to-far-side-cutoff input route, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched branch routes, 80 mm cable gutter, and cable-lug depth templates. May 14 image-based chassis estimate: start with tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central chassis pickup centreline into the edge cavity, adjustable 160-230 mm via offset bars. The active design keeps relay/MIDI/cutoff off the inboard engine/LHD side unless the widened access-ladder mock-up fails by measurement.",
           "evidence_ref": "20260317_235232_gp_3Ojs4Rag|20260411_143135|20260420_221819_gp_YV69fbvA|20260512_100100_user_battery_side_tray_structure_context|20260517_194303_gp_5yuaRoaA|20260517_194313_gp_HolDWYeQ|20260517_194431_gp_4XVycxAg|20260517_194439_gp_K63N2nJw|20260517_194452_gp_ow8njPsw|20260517_194511_gp_QI0Ua2yQ|20260515_112827_gp_kbx0JKSQ|20260515_112836_gp_sFdn9AyA|20260515_112907_gp_wtj4G8tQ|data_manual_fabrication_midi5_enclosure_rev_d|docs_front_engine_bay_mounting_fabrication_plan_20260508|data_manual_fabrication_battery_power_carrier_mount_rev_a|data_manual_fabrication_battery_power_carrier_mount_rev_a_cavity_mapping_plan|data_manual_fabrication_relay_mount_rev_d",
           "notes": "User update 2026-05-16 relay/battery carrier correction: use Relay Rev D in the battery stand power carrier with the flat aluminium base mounted vertically and directly flat to the main metal service sheet; keep the exact insulating sheet and existing covered relay box only. May 17 photos add actual installed Daewoo DLS120 battery ruler views, terminal/hold-down context, and existing tray/mount opening and height measurements; transcribe final case and mount values into the cavity map before cutting. The red relay power pipe enters the relay top hole closest to the battery, and the relay output power bundle exits the second top relay hole. Remove the separate red/black relay cable-boot/output-cluster/loom-card fabrication. Keep MIDI Rev D hinged enclosure from midi5_enclosure_rev_d and slotted body-side offset bars so the battery stand power carrier can be adjusted on the chassis saddle. Keep the widened access ladder at 660 x 310, the 340 x 265 tray around the actual battery datum with the previous 318 x 180 x 230 envelope only as comparison, battery removal after hold-down removal, relay outside the battery footprint on the outboard/access edge, kill switch beside the MIDI enclosure, central battery positive to the far-side cutoff stud first, near-side cutoff output to relay and MIDI fuse 4, 80 mm cable gutter, five grommeted MIDI outputs, and far-side enlarged double-cable output clearance. Chassis fixing is a formed saddle over both rail sides, through-bolted at the one pickup location, with configurable 160-230 mm body-side offset bars."
+        },
+        {
+          "component_job_id": "relay_midi_radiator_carrier_relocation_20260731",
+          "component_group": "electrical_system",
+          "current_status": "approved_pending_carrier_dry_fit",
+          "planned_action": "Move Relay Rev D and MIDI Rev D from the battery-stand access ladder to a removable protected plate on the structural radiator/cooling-stack upright or accessory rail. Keep the master cutoff/breaker battery-side; preserve relay assignments and fuse sizing; measure and support the longer protected feed; prove airflow, fan/shroud, hose, cap, drain, bonnet, grille, heat/splash, lid/cover and radiator-removal clearances; then repeat continuity, earth, function and voltage-drop tests.",
+          "evidence_ref": "user_direction_2026-07-31|docs/front-engine-bay-mounting-fabrication-plan-20260508.md|docs/front-cooling-stack-fabrication-plan-20260530.md|docs/radiator-workstream.md|data/manual/fabrication/relay_mount_rev_d|data/manual/fabrication/midi5_enclosure_rev_d",
+          "notes": "This row supersedes the relay/MIDI physical-location portions of battery_power_carrier_mount_fabrication_20260508. Retain that earlier package only for battery tray, saddle/support, hold-down and battery-side cutoff/breaker. No electrical load or drilling into radiator core, fins, tanks, necks, seams or through-core rods."
         }
       ],
       "issue_jobs": [],
@@ -36410,6 +36424,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "Component Task \u00b7 Battery Power Carrier Mount Fabrication 20260508",
           "status": "actual_battery_and_mount_measurements_imported",
           "detail": "Fabricate/mock up the compact chassis-mounted battery power carrier Rev F only after mapping the battery cavity: use the May 17 actual installed Daewoo DLS120 battery measurement photos as the fixed exclusion block, keep the standard N70/27-class 318 x 180 x 230 envelope as fallback comparison until the final numbers are transcribed, measure front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, bonnet/terminal-height volumes, battery lift-out path, formed chassis saddle geometry, and adjustable body-side offset-bar setting. Trial the widened front access-ladder stack: 660 x 310 spine, 340 x 265 battery tray with removable hold-down, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D vertical 360 x 245 aluminium base attached flat to the main metal service sheet with exact 300 x 197 insulating sheet and the existing covered relay box outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, red relay power pipe entering the relay top hole closest to the battery, relay output power bundle leaving the second top relay hole, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes, and the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure, central battery-to-far-side-cutoff input route, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched branch routes, 80 mm cable gutter, and cable-lug depth templates. May 14 image-based chassis estimate: start with tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central chassis pickup centreline into the edge cavity, adjustable 160-230 mm via offset bars. The active design keeps relay/MIDI/cutoff off the inboard engine/LHD side unless the widened access-ladder mock-up fails by measurement. Notes: User update 2026-05-16 relay/battery carrier correction: use Relay Rev D in the battery stand power carrier with the flat aluminium base mounted vertically and directly flat to the main metal service sheet; keep the exact insulating sheet and existing covered relay box only. May 17 photos add actual installed Daewoo DLS120 battery ruler views, terminal/hold-down context, and existing tray/mount opening and height measurements; transcribe final case and mount values into the cavity map before cutting. The red relay power pipe enters the relay top hole closest to the battery, and the relay output power bundle exits the second top relay hole. Remove the separate red/black relay cable-boot/output-cluster/loom-card fabrication. Keep MIDI Rev D hinged enclosure from midi5_enclosure_rev_d and slotted body-side offset bars so the battery stand power carrier can be adjusted on the chassis saddle. Keep the widened access ladder at 660 x 310, the 340 x 265 tray around the actual battery datum with the previous 318 x 180 x 230 envelope only as comparison, battery removal after hold-down removal, relay outside the battery footprint on the outboard/access edge, kill switch beside the MIDI enclosure, central battery positive to the far-side cutoff stud first, near-side cutoff output to relay and MIDI fuse 4, 80 mm cable gutter, five grommeted MIDI outputs, and far-side enlarged double-cable output clearance. Chassis fixing is a formed saddle over both rail sides, through-bolted at the one pickup location, with configurable 160-230 mm body-side offset bars."
+        },
+        {
+          "label": "Component Task \u00b7 Relay Midi Radiator Carrier Relocation 20260731",
+          "status": "approved_pending_carrier_dry_fit",
+          "detail": "Move Relay Rev D and MIDI Rev D from the battery-stand access ladder to a removable protected plate on the structural radiator/cooling-stack upright or accessory rail. Keep the master cutoff/breaker battery-side; preserve relay assignments and fuse sizing; measure and support the longer protected feed; prove airflow, fan/shroud, hose, cap, drain, bonnet, grille, heat/splash, lid/cover and radiator-removal clearances; then repeat continuity, earth, function and voltage-drop tests. Notes: This row supersedes the relay/MIDI physical-location portions of battery_power_carrier_mount_fabrication_20260508. Retain that earlier package only for battery tray, saddle/support, hold-down and battery-side cutoff/breaker. No electrical load or drilling into radiator core, fins, tanks, necks, seams or through-core rods."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -38193,7 +38212,7 @@ window.J40_DASHBOARD_DATA = {
       "electrical_spec_layout": {
         "scope": "dashboard_focus",
         "title": "Electrical Master - Clear Tracker (As-Built + Remaining Work)",
-        "last_updated": "2026-05-18 09:31",
+        "last_updated": "2026-07-31",
         "purpose": "one-page wiring progress + locked standards + quick lookup",
         "source_refs": [
           "data/manual/workbook_tabs/electrical_master.csv",
@@ -102013,12 +102032,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 120,
-      "now_tasks": 104,
+      "total_tasks": 121,
+      "now_tasks": 105,
       "later_tasks": 16,
       "p0_tasks": 38,
       "photo_tasks": 42,
-      "measurement_tasks": 79
+      "measurement_tasks": 80
     },
     "counts_by_workstream": [
       {
@@ -102074,16 +102093,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "workstream": "fabrication_handoff",
+        "count": 2
+      },
+      {
         "workstream": "interior_controls",
         "count": 2
       },
       {
         "workstream": "suspension_reassembly",
         "count": 2
-      },
-      {
-        "workstream": "fabrication_handoff",
-        "count": 1
       },
       {
         "workstream": "gearbox_oil_service",
@@ -102109,7 +102128,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 36
+        "count": 37
       },
       {
         "task_type": "photo_measurement",
@@ -102143,7 +102162,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 68
+        "count": 69
       },
       {
         "priority": "P2",
@@ -110538,6 +110557,32 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": []
           }
         ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:relay_midi_radiator_carrier_relocation_20260731",
+        "title": "relay_midi_radiator_carrier_relocation_20260731",
+        "workstream": "fabrication_handoff",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "approved_pending_carrier_dry_fit",
+        "location": "workshop_and_auto_electrician",
+        "action": "Move Relay Rev D and MIDI Rev D from the battery-stand access ladder to a removable protected plate on the structural radiator/cooling-stack upright or accessory rail. Keep the master cutoff/breaker battery-side; preserve relay assignments and fuse sizing; measure and support the longer protected feed; prove airflow, fan/shroud, hose, cap, drain, bonnet, grille, heat/splash, lid/cover and radiator-removal clearances; then repeat continuity, earth, function and voltage-drop tests.",
+        "data_needed": "This row supersedes the relay/MIDI physical-location portions of battery_power_carrier_mount_fabrication_20260508. Retain that earlier package only for battery tray, saddle/support, hold-down and battery-side cutoff/breaker. No electrical load or drilling into radiator core, fins, tanks, necks, seams or through-core rods.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "relay_midi_radiator_carrier_relocation_20260731",
+        "notes": "",
+        "evidence_ref": "user_direction_2026-07-31|docs/front-engine-bay-mounting-fabrication-plan-20260508.md|docs/front-cooling-stack-fabrication-plan-20260530.md|docs/radiator-workstream.md|data/manual/fabrication/relay_mount_rev_d|data/manual/fabrication/midi5_enclosure_rev_d",
+        "evidence_images": [],
         "links": [
           {
             "url": "../../data/manual/component_jobs.csv",

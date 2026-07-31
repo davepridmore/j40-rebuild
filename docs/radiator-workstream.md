@@ -173,6 +173,14 @@ Buy locally/by sample instead:
 - `3-5 mm` EPDM/SBR rubber sheet or washers/bushes for radiator isolation.
 - M8/M10 class `8.8` or better through-bolt hardware only after the bracket dry-fit confirms hole size, chassis thickness, and crush-tube/spacer need.
 
+## Electrical Integration Decision - 2026-07-31
+
+- Move Relay Rev D and MIDI Rev D from the battery-stand electrical ladder to a removable plate on the structural radiator/cooling-stack carrier.
+- Keep the master cutoff/breaker battery-side. Route one protected main feed to the front carrier, then retain the existing relay assignments, MIDI fuse positions, and branch logic.
+- The cooling-stack upright/accessory rail carries the plate. Do not drill, clamp, or tie electrical hardware into radiator core, fins, tanks, necks, seams, or through-core rods.
+- Dry-fit lid/cover access, cable bends, drip protection, airflow, fan/shroud, hose, cap, drain, bonnet, grille, and radiator-removal clearance before drilling or coating.
+- After the move, repeat continuity, earth, relay-function, fuse-identification, cranking-voltage-drop, and charging checks.
+
 ## Install Gate: `RAD-INSTALL-001`
 
 Close the radiator workstream only when:
@@ -183,12 +191,14 @@ Close the radiator workstream only when:
 4. Fan and belt clearance is safe after tightening and through engine movement.
 5. New radiator cap, upper/lower hoses, overflow hose, and clamps are installed or explicitly staged with the radiator job.
 6. System is filled, bled, warmed to thermostat opening, checked for leaks, and pressure-tested after install.
-7. Final photos show bracket, radiator, hoses, cap, drain, fan clearance, and no tank/core stress.
+7. The relay/fuse plate is carried only by structural frame/accessory points, with protected cable routing and a deliberate service-disconnect procedure.
+8. Final photos show bracket, radiator, hoses, cap, drain, fan clearance, electrical plate, service access, and no tank/core stress.
 
 ## No-Go Conditions
 
 - Final radiator install before the missing/right-side retention part is dry-fit and photographed.
 - Copying the old extra fabricated leg as the main support design.
 - Hard-clamping, drilling, or welding into an aluminium radiator tank/core without radiator-shop approval.
+- Mounting the relay/fuse plate to the radiator core, fins, tanks, necks, seams, or through-core rods, or allowing its cable load to pull on the radiator.
 - Buying a random FJ40/BJ40/HJ47 radiator without proving hose-neck layout, cap position, drain, bracket locations, core envelope, and fan clearance.
 - Coating the front support area before radiator saddle holes, through-bolt route, and needed bracket tabs are resolved.

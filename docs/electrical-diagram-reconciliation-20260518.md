@@ -16,11 +16,11 @@ The Graffle file was parsed directly and yielded 140 diagram labels. The reconci
 
 ## Confirmed Alignment
 
-- The diagram agrees with the power-corner plan: battery to 100A breaker to MIDI fuse holders and relay bank.
+- The diagram agrees with the power topology: battery to battery-side 100A breaker/cutoff, then a protected feed to the MIDI fuse holders and relay bank. As of 2026-07-31, those holders and relays move physically to a removable plate on the structural radiator/cooling-stack carrier; circuit assignments and protection logic do not change.
 - Relay-bank labels align with the active relay quick lookup: low beam, high beam, horn, condenser fan, spot lamps, A/C clutch, auxiliary, and spare capacity.
 - Front and rear loom labels align with the front trunk, rear loom, ignition, left branch, right branch, and VC loom sections.
 - Engine-side labels align with the May 17 starter, alternator, sender, and fuel-stop reconciliation, but those circuits still require terminal proof.
-- Fabrication handoff packages for the battery power carrier, Relay Rev D, MIDI Rev D, and cutoff/kill-switch guard are consistent with the diagram topology.
+- Fabrication handoff packages for the battery/cutoff carrier, radiator-carrier Relay Rev D/MIDI Rev D plate, and cutoff/kill-switch guard remain consistent with the diagram topology.
 
 ## Open Holds
 

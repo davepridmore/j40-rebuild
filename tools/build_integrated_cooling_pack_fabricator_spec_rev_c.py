@@ -2491,14 +2491,63 @@ def save_d04_component_dimensions():
         PURPLE,
     )
 
-    drawing_panel(draw, (815, 185, 1570, 1475), "B — FRONT PUSHER ASSEMBLY", fill="F8FAFC")
-    module = (930, 370, 1455, 1080)
+    drawing_panel(draw, (815, 185, 1570, 1475), "B — STANDARD-FAN CANDIDATE", fill="F8FAFC")
+    # Candidate arrangement: two Toyota/Denso 248 mm blades/motors symmetric
+    # about the measured active-fin centreline in one custom sealed shroud.
+    # The narrow service bay is outside that shroud and excluded from centring.
+    module = (845, 440, 1430, 815)
     rounded(draw, module, "F6EEDB", GOLD, 12, 6)
-    draw_fan(draw, (970, 420, 1415, 720), "MATCHED PUSHER(S)")
-    draw_fan(draw, (970, 750, 1415, 1030), "MATCHED PUSHER(S)")
-    dimension_h(draw, module[0], module[2], 315, module[1], "F4 COMPLETE W — M1", PURPLE)
-    dimension_v(draw, module[1], module[3], 1500, module[2], "F4 COMPLETE H — M2", PURPLE, "left")
-    drawing_note(draw, (865, 1145, 1525, 1435), "INSTALLED DUTY", "≥3,000 m³/h at 75 Pa, 13.5 V through final grille/guard and condenser/radiator restriction. Free-air CFM does not pass. Full-face close frame/shroud.", RED, "FDF2F1")
+    centre_x = (module[0] + module[2]) // 2
+    for y in range(module[1] - 25, module[3] + 45, 22):
+        draw.line((centre_x, y, centre_x, min(y + 12, module[3] + 35)), fill=hex_colour(PURPLE), width=3)
+    fan_d = 248
+    fan_gap = 18
+    left_fan = (centre_x - fan_gap // 2 - fan_d, 500, centre_x - fan_gap // 2, 500 + fan_d)
+    right_fan = (centre_x + fan_gap // 2, 500, centre_x + fan_gap // 2 + fan_d, 500 + fan_d)
+    draw_fan(draw, left_fan, "TOYOTA/DENSO\n248 mm")
+    draw_fan(draw, right_fan, "TOYOTA/DENSO\n248 mm")
+    service_bay = (1445, 440, 1545, 815)
+    rounded(draw, service_bay, "E8EEF5", BLUE, 10, 5)
+    centred_text(
+        draw,
+        (1452, 450, 1538, 805),
+        "SIDE\nSERVICE\nBAY\n\nDRIER\nPORTS\nRELAYS\nFUSES",
+        image_font(13, True),
+        BLUE,
+    )
+    dimension_h(draw, module[0], service_bay[2], 355, module[1], "F4 COMPLETE W — M1", PURPLE)
+    dimension_h(
+        draw,
+        (left_fan[0] + left_fan[2]) // 2,
+        (right_fan[0] + right_fan[2]) // 2,
+        405,
+        left_fan[1],
+        "266 C-C CAND.",
+        RED,
+        17,
+    )
+    dimension_v(draw, module[1], module[3], 1560, service_bay[2], "F4 COMPLETE H — M2", PURPLE, "left")
+    centred_text(draw, (900, 830, 1375, 880), "MEASURED ACTIVE-FIN C/L — SERVICE BAY EXCLUDED", image_font(15, True), PURPLE)
+    drawing_note(
+        draw,
+        (840, 900, 1545, 1155),
+        "STANDARD CANDIDATE — HOLD",
+        "Matched Prado 120 / GX470 family motors/blades: 248 mm swept circles, ≥258 ring openings, "
+        "266 motor C-C (±133 from active-fin C/L), 524 ring-group width. One CUSTOM close sealed shroud. "
+        "Complete Toyota donor shrouds are not assumed to fit. Measure active fins, motors, plugs, wires and depth.",
+        PURPLE,
+        "F3ECF8",
+    )
+    drawing_note(
+        draw,
+        (840, 1175, 1545, 1435),
+        "F4 FIT + F5 INSTALLED DUTY",
+        "Service bay stays outside sealed shroud/active fins and is not a centring datum. "
+        "PASS ≥3,000 m³/h at 75 Pa, 13.5 V through final restriction; ≥3,300 procurement target. "
+        "Published 96 W / 8 A / 2,400 rpm equivalent data is identification only—not a pressure-flow pass.",
+        RED,
+        "FDF2F1",
+    )
 
     drawing_panel(draw, (1615, 185, 2355, 1475), "C — SIDE / WING CHARGE PACK", fill="F8FAFC")
     duct = (1680, 360, 1810, 1110)
@@ -2525,13 +2574,44 @@ def save_d05_mounting_shroud():
     drawing_panel(draw, (45, 185, 1120, 1480), "A — MAIN PACK SUPPORT", fill="F8FAFC")
     draw.rectangle((180, 300, 260, 1290), fill="#D9E0E6", outline=hex_colour(NAVY), width=5)
     draw.rectangle((900, 300, 980, 1290), fill="#D9E0E6", outline=hex_colour(NAVY), width=5)
+    # The photographed chassis uprights finish in inward horizontal returns with
+    # one existing vertical hole per side.  Show the positive through-bolt
+    # pickup explicitly; the earlier generic rail could be misread as merely
+    # sitting close to those returns.
+    draw.rectangle((220, 285, 470, 350), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((690, 285, 940, 350), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    for bolt_x in (420, 740):
+        draw.ellipse((bolt_x - 24, 270, bolt_x + 24, 298), fill="#63717D", outline=hex_colour(NAVY), width=3)
+        draw.rectangle((bolt_x - 8, 294, bolt_x + 8, 394), fill="#63717D", outline=hex_colour(NAVY), width=2)
+        draw.rectangle((bolt_x - 54, 350, bolt_x + 54, 375), fill="#6B8F71", outline=hex_colour(GREEN), width=3)
+        draw.rectangle((bolt_x - 72, 375, bolt_x + 72, 403), fill="#263746", outline=hex_colour(NAVY), width=3)
+        draw.polygon(
+            [
+                (bolt_x - 24, 405),
+                (bolt_x + 24, 405),
+                (bolt_x + 31, 420),
+                (bolt_x + 18, 438),
+                (bolt_x - 18, 438),
+                (bolt_x - 31, 420),
+            ],
+            fill="#63717D",
+            outline=hex_colour(NAVY),
+        )
     draw.rectangle((305, 380, 855, 1190), outline=hex_colour(BLUE), width=7)
-    draw.rectangle((330, 350, 830, 390), fill="#D9E0E6", outline=hex_colour(NAVY), width=4)
+    draw.rectangle((330, 420, 830, 460), fill="#263746", outline=hex_colour(NAVY), width=4)
     draw.rectangle((330, 1180, 830, 1220), fill="#D9E0E6", outline=hex_colour(NAVY), width=4)
     rounded(draw, (365, 1170, 495, 1280), "E4EEE8", GREEN, 10, 4)
     rounded(draw, (665, 1170, 795, 1280), "E4EEE8", GREEN, 10, 4)
     centred_text(draw, (350, 760, 810, 940), "RADIATOR WEIGHT ON\nLOWER EPDM SADDLES\nUPPER TABS RESTRAIN ONLY", image_font(24, True), BLUE)
     leader_note(draw, (220, 420), (65, 245, 520, 365), "UPRIGHTS", "Inspect welds, distortion, squareness and attachment before paint.", PURPLE)
+    leader_note(
+        draw,
+        (740, 330),
+        (555, 205, 1090, 300),
+        "2 × EXISTING TOP HOLES",
+        "One positive through-bolt per side. Transfer the actual holes; do not drill or slot the chassis returns.",
+        RED,
+    )
     leader_note(draw, (430, 1200), (70, 1310, 540, 1450), "LOWER SADDLE", "3–4 mm steel + 5 mm EPDM; no metal-to-tank contact.", GREEN)
 
     drawing_panel(draw, (1160, 185, 2355, 930), "B — REAR SHROUD / ENGINE FAN", fill="F8FAFC")
@@ -2646,6 +2726,173 @@ def save_d07_fan_wiring():
     image.save(ASSET / "rev_c_d07_fan_wiring.png", quality=96)
 
 
+def save_d08_existing_top_hole_mount():
+    image, draw = new_drawing_sheet(
+        "D08",
+        "EXISTING TOP-HOLE PICKUPS — POSITIVE TWO-BOLT CARRIER ATTACHMENT",
+        "The two photographed chassis-return holes are the master datums. Copy them from the vehicle; never guess their pitch or redrill the returns.",
+    )
+
+    drawing_panel(draw, (45, 185, 1190, 1480), "A — BOTH EXISTING RETURNS / COMPLETE LOAD PATH", fill="F8FAFC")
+
+    # Include the two factual top-return crops so the fabricator can recognise
+    # the exact existing holes being controlled by this sheet.
+    source_photo = ROOT / "photos" / "20260722_000001_user_second_radiator_arm_welded_front_structure.png"
+
+    def paste_crop(crop_box, target_box):
+        if not source_photo.exists():
+            return
+        with Image.open(source_photo) as source:
+            crop = source.convert("RGB").crop(crop_box)
+        tx1, ty1, tx2, ty2 = target_box
+        max_w, max_h = tx2 - tx1, ty2 - ty1
+        scale = min(max_w / crop.width, max_h / crop.height)
+        resized = crop.resize(
+            (max(1, int(crop.width * scale)), max(1, int(crop.height * scale))),
+            Image.Resampling.LANCZOS,
+        )
+        px = int(tx1 + (max_w - resized.width) / 2)
+        py = int(ty1 + (max_h - resized.height) / 2)
+        image.paste(resized, (px, py))
+        draw.rectangle((tx1, ty1, tx2, ty2), outline=hex_colour(NAVY), width=4)
+
+    paste_crop((250, 40, 950, 460), (80, 255, 585, 500))
+    paste_crop((2000, 40, 2900, 460), (650, 255, 1155, 500))
+    centred_text(draw, (80, 505, 585, 540), "PHOTO: LEFT EXISTING TOP HOLE", image_font(16, True), PURPLE)
+    centred_text(draw, (650, 505, 1155, 540), "PHOTO: RIGHT EXISTING TOP HOLE", image_font(16, True), PURPLE)
+
+    # Front elevation: existing chassis metal is grey; the removable carrier is
+    # black.  Both vertical bolts visibly pass through the original returns.
+    draw.rectangle((135, 625, 225, 1325), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((1010, 625, 1100, 1325), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((180, 585, 485, 650), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((750, 585, 1055, 650), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    bolt_centres = (430, 805)
+    for bolt_x in bolt_centres:
+        draw.ellipse((bolt_x - 27, 565, bolt_x + 27, 598), fill="#63717D", outline=hex_colour(NAVY), width=3)
+        draw.rectangle((bolt_x - 8, 594, bolt_x + 8, 730), fill="#63717D", outline=hex_colour(NAVY), width=2)
+        draw.rectangle((bolt_x - 60, 650, bolt_x + 60, 678), fill="#6B8F71", outline=hex_colour(GREEN), width=3)
+        draw.rectangle((bolt_x - 85, 678, bolt_x + 85, 710), fill="#263746", outline=hex_colour(NAVY), width=3)
+        draw.polygon(
+            [
+                (bolt_x - 25, 714),
+                (bolt_x + 25, 714),
+                (bolt_x + 34, 730),
+                (bolt_x + 20, 750),
+                (bolt_x - 20, 750),
+                (bolt_x - 34, 730),
+            ],
+            fill="#63717D",
+            outline=hex_colour(NAVY),
+        )
+    draw.rectangle((320, 735, 915, 790), fill="#263746", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((350, 790, 885, 1210), fill="#E8EEF5", outline=hex_colour(BLUE), width=7)
+    centred_text(
+        draw,
+        (390, 865, 845, 1090),
+        "REMOVABLE COOLING-PACK CARRIER\n\nTOP BOLTS LOCATE / RESTRAIN\nLOWER SADDLES CARRY WEIGHT",
+        image_font(24, True),
+        BLUE,
+    )
+    for saddle_x in (425, 745):
+        rounded(draw, (saddle_x - 70, 1190, saddle_x + 70, 1300), "E4EEE8", GREEN, 10, 4)
+    draw.rectangle((285, 1295, 950, 1345), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    dimension_h(draw, bolt_centres[0], bolt_centres[1], 555, 585, "U2 — ACTUAL HOLE C-C PITCH", PURPLE, 18)
+    dimension_v(draw, 617, 1295, 1140, 1100, "U7 — HOLE PLANE TO SADDLE DATUM", PURPLE, "left")
+    drawing_note(
+        draw,
+        (80, 1365, 1155, 1450),
+        "LOAD RULE",
+        "Set both lower saddles first. Both top bolts must enter freely by hand; never pull the carrier upward or sideways with either bolt.",
+        RED,
+        "FDF2F1",
+    )
+
+    drawing_panel(draw, (1230, 185, 2355, 1010), "B — SECTION THROUGH EITHER EXISTING HOLE", fill="F8FAFC")
+    bolt_x = 1780
+    # M8 head and large washer above the existing return.
+    draw.polygon(
+        [(1735, 285), (1825, 285), (1850, 315), (1825, 345), (1735, 345), (1710, 315)],
+        fill="#63717D",
+        outline=hex_colour(NAVY),
+    )
+    draw.rectangle((1685, 345, 1875, 365), fill="#8E9AA3", outline=hex_colour(NAVY), width=3)
+    draw.rectangle((bolt_x - 10, 340, bolt_x + 10, 680), fill="#63717D", outline=hex_colour(NAVY), width=2)
+    # Existing chassis return and its retained hole.
+    draw.rectangle((1390, 365, 2200, 430), fill="#C8D0D7", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((bolt_x - 15, 365, bolt_x + 15, 430), fill="#FFFFFF", outline=hex_colour(PURPLE), width=3)
+    # Controlled isolation gap with crush sleeve around the bolt.
+    draw.rectangle((1630, 430, 1930, 482), fill="#6B8F71", outline=hex_colour(GREEN), width=4)
+    draw.rectangle((bolt_x - 18, 430, bolt_x + 18, 482), fill="#8E9AA3", outline=hex_colour(NAVY), width=3)
+    # Handed 4 mm top pickup pad and its down-leg / gusset.
+    draw.rectangle((1510, 482, 2050, 525), fill="#263746", outline=hex_colour(NAVY), width=5)
+    draw.rectangle((1988, 520, 2050, 760), fill="#263746", outline=hex_colour(NAVY), width=5)
+    draw.polygon([(1885, 525), (1988, 525), (1988, 630)], fill="#52606A", outline=hex_colour(NAVY))
+    draw.rectangle((1590, 720, 2100, 790), fill="#263746", outline=hex_colour(NAVY), width=5)
+    # Washer and nut under the pickup pad.
+    draw.rectangle((1695, 525, 1865, 548), fill="#8E9AA3", outline=hex_colour(NAVY), width=3)
+    draw.polygon(
+        [(1735, 548), (1825, 548), (1850, 578), (1825, 608), (1735, 608), (1710, 578)],
+        fill="#63717D",
+        outline=hex_colour(NAVY),
+    )
+    draw.line((1345, 398, 1605, 398), fill=hex_colour(PURPLE), width=4)
+    draw.text((1285, 370), "EXISTING CHASSIS\nTOP RETURN — KEEP", font=image_font(18, True), fill=hex_colour(PURPLE))
+    leader_note(
+        draw,
+        (1800, 315),
+        (1915, 240, 2315, 355),
+        "POSITIVE FIXING",
+        "M8 × 1.25 class 8.8 provisional; large washer above, prevailing-torque nut below.",
+        RED,
+    )
+    leader_note(
+        draw,
+        (1900, 455),
+        (1990, 385, 2320, 520),
+        "ISOLATOR",
+        "6 mm EPDM, 60–65 Shore A, with hard steel crush sleeve; no uncontrolled rubber squash.",
+        GREEN,
+    )
+    leader_note(
+        draw,
+        (2030, 520),
+        (2070, 565, 2320, 720),
+        "TP-L / TP-R",
+        "Handed 50 × 50 × 4 top pad, 50-wide down-leg and 30 × 30 × 3 gusset. Weld to carrier only after transfer fit.",
+        BLUE,
+    )
+    dimension_h(draw, 1510, 2050, 850, 790, "50 TOP PAD LENGTH — TRIM TO ACTUAL TAB", RED, 17)
+    drawing_note(
+        draw,
+        (1280, 885, 2305, 975),
+        "HOLE RULE",
+        "Round transferred pad hole only: Ø9.0 +0.2 if the measured chassis hole safely accepts M8. Otherwise revise bolt, pad hole and shouldered sleeve together. No slot or reaming in chassis.",
+        RED,
+        "FDF2F1",
+    )
+
+    drawing_panel(draw, (1230, 1050, 2355, 1480), "C — FIELD TRANSFER / RELEASE CHECK", fill="F8FAFC")
+    drawing_note(
+        draw,
+        (1275, 1120, 1765, 1435),
+        "U1–U7 — MEASURE",
+        "U1-L/R hole Ø + condition\nU2 actual hole C-C pitch\nU3 hole-to-edge + tab width\nU4 left/right elevation difference\nU5 hole-to-carrier offset\nU6 tab thickness + bonnet head clearance\nU7 hole plane to lower-saddle datum",
+        PURPLE,
+        "F3ECF8",
+    )
+    drawing_note(
+        draw,
+        (1795, 1120, 2310, 1435),
+        "KARIGAR FIT SEQUENCE",
+        "1 Set lower saddles and carrier plane.\n2 Copy both holes with one rigid 1:1 transfer template.\n3 Tack TP-L/R under the real returns.\n4 Remove; drill round holes from transfer marks.\n5 Refit: both bolts enter freely by hand.\n6 Check bonnet/cap/hose/tool clearance.\n7 Finish-weld off vehicle; coat after inspection.",
+        GREEN,
+        "E4EEE8",
+    )
+    finish_drawing_sheet(draw, "D08", "EXISTING TOP-RETURN HOLES / TWO POSITIVE PICKUPS / FIELD-TRANSFER CONTROL")
+    image.save(ASSET / "rev_d_d08_existing_top_hole_mount.png", quality=96)
+
+
 def save_dimensioned_drawing_set():
     save_d01_complete_stack()
     save_d02_radiator_assembly()
@@ -2654,6 +2901,7 @@ def save_dimensioned_drawing_set():
     save_d05_mounting_shroud()
     save_d06_side_geometry()
     save_d07_fan_wiring()
+    save_d08_existing_top_hole_mount()
 
 
 DRAWING_SHEETS = [
@@ -2664,6 +2912,7 @@ DRAWING_SHEETS = [
     ("D05", "Mounting, shroud and service access", "rev_c_d05_mounting_shroud.png", "Independent mounts, saddles and mechanical-fan geometry."),
     ("D06", "Main depth and side-pack gates", "rev_c_d06_side_geometry.png", "M3/M4 formula and independent charge-pack M8 path."),
     ("D07", "Fan power and control", "rev_c_d07_fan_wiring.png", "Protected branches, control, fault indication and polarity."),
+    ("D08", "Existing top-hole carrier pickups", "rev_d_d08_existing_top_hole_mount.png", "Two positive through-bolts, handed pickup pads, lower-saddle load path and U1–U7 transfer controls."),
 ]
 
 
@@ -2680,7 +2929,7 @@ def add_landscape_drawing_appendix(document):
     add_heading(document, "Appendix A. Controlled Rev D drawing sheets", 1)
     add_paragraph(
         document,
-        "These seven sheets show the Rev D architecture. Red values are fixed performance/release limits. "
+        "These eight sheets show the Rev D architecture. Red values are fixed performance/release limits. "
         "Purple dimensions and interfaces are measured from the vehicle or actual component. Written values "
         "control; do not scale the images.",
     )
@@ -2772,26 +3021,46 @@ def build_document():
         document,
         "PH01 — Split-out component visual: central pusher-fan / condenser / radiator / puller-shroud layers, "
         "independent side charge-air module, removable mounts and required electrical parts. This is a generated "
-        "layout aid; D01–D07 and the accepted full-size templates control manufacture.",
+        "layout aid; D01–D08 and the accepted full-size templates control manufacture.",
         after=0,
         italic=True,
     )
 
     document.add_page_break()
-    add_heading(document, "1.1 Rev D assembly and proposed vehicle packaging", 2)
+    add_heading(document, "1.1 Rev D component assembly", 2)
     add_picture(document, ASSET / "rev_d_ph02_photorealistic_fully_assembled_pack.png", 4.20)
     add_paragraph(
         document,
         "PH02 — Fully assembled component-pack visual: the central layers stack only front-to-rear, while the "
         "charge-air module mounts aft/outboard on its own fresh-air and hot-air paths.",
-        after=5,
+        after=0,
         italic=True,
     )
-    add_picture(document, ASSET / "rev_d_ph03_installed_vehicle_composite.png", 6.20)
+
+    document.add_page_break()
+    add_heading(document, "1.2 Proposed installation on the existing top holes", 2)
+    add_picture(document, ASSET / "rev_d_ph03d_installed_top_holes_central_fans.png", 6.20)
     add_paragraph(
         document,
-        "PH03 — Proposed later-stage composite using latest winch/crossmember evidence and documented new-bumper "
-        "reference. This is a generated design visual, not evidence of completed fabrication/installation.",
+        "PH03D — Current proposed installed visual using the real chassis photograph as its geometric base. One "
+        "visible vertical through-bolt is centred on each original top-return hole, with the handed carrier pickup "
+        "directly below. The two equal Toyota/Denso 248 mm candidate front fans are symmetric about the condenser "
+        "active-core centreline in one custom sealed shroud; the narrow drier/manifold/electrical service bay is "
+        "outside the shroud and excluded from that centre datum. "
+        "The lower saddles carry the cooling-pack weight and the two top bolts only locate and retain. "
+        "This remains a generated design visual, not a measured fit check or evidence of completed fabrication.",
+        after=0,
+        italic=True,
+    )
+
+    document.add_page_break()
+    add_heading(document, "1.3 Existing-hole attachment close-up", 2)
+    add_picture(document, ASSET / "rev_d_ph04_existing_top_hole_mount_closeup.png", 6.20)
+    add_paragraph(
+        document,
+        "PH04 — Both required fastener stacks: bolt head and large washer above the retained original hole; "
+        "sleeved EPDM isolator and 4 mm handed carrier pad immediately below; accessible washer and locking nut "
+        "underneath. D08 and U1–U7—not this generated image—control the dimensions and physical dry fit.",
         after=0,
         italic=True,
     )
@@ -2821,7 +3090,7 @@ def build_document():
     ])
     add_heading(document, "Final manufacture remains HOLD until", 2)
     add_numbers(document, [
-        "M1–M8 and F1–F7 pass on the actual vehicle.",
+        "M1–M8, U1–U7, F1–F7 and E1 pass on the actual vehicle.",
         "The actual parts/dummies fit with bonnet, grille, guard and accessories represented.",
         "Radiator and fan performance evidence is accepted.",
         "The owner signs the as-measured drawing.",
@@ -2852,11 +3121,71 @@ def build_document():
         ("Radiator", "largest practical M1/M2 core; ≥0.250 m² net finned face preferred; smaller only with valid duty proof"),
         ("Radiator capacity", "≥115 kW continuous at stated point; ≥130 kW/10 min"),
         ("Condenser", "559 × 356 × 21 nominal R134a basis; actual part measured"),
-        ("Front pusher(s)", "≥3,000 m³/h installed at 75 Pa, 13.5 V; close full-face frame"),
+        ("Front pusher(s)", "preferred twin Toyota/Denso 248 mm candidate in one centred custom sealed shroud; ≥3,000 m³/h installed at 75 Pa, 13.5 V"),
         ("Mechanical fan", "retain/rebuild + sealed full shroud; ≥9,000 m³/h installed at 125 Pa, 1,500 engine rpm"),
         ("Charge cooler", "separate side/wing path; ≥15 kW; IAT ≤80°C; complete route Δp ≤10 kPa"),
         ("Charge fan", "dedicated sealed unit; ≥2,500 m³/h installed at 75 Pa through complete duct/core/outlet"),
     ], [2200, 7160], 8.8)
+
+    document.add_page_break()
+    add_heading(document, "3.1 Standard parts first — custom metal only where necessary", 1)
+    add_paragraph(
+        document,
+        "Use locally replaceable catalogue parts wherever they meet the measured envelope and written duty. "
+        "A Toyota part number identifies a candidate only: take the actual part to the vehicle, measure it and "
+        "pass the relevant test before release."
+    )
+    add_table(document, ["ITEM", "STANDARD / TOYOTA CANDIDATE", "CUSTOM + RELEASE CONTROL"], [
+        (
+            "Radiator / coolant",
+            "HJ47/2H pattern 16400-68030 or sound original Toyota tanks; hose candidates 16571-68020 upper and 16572-68020 lower; verified Toyota-pattern cap/clamps",
+            "Local core/adapter only if needed. Actual necks, cap seat/pressure, M1/M2, coolant Δp and ≥115/130 kW proof control.",
+        ),
+        (
+            "Front motors / blades",
+            "Prado 120 / GX470 family 88590-60040/-60050/-60051/-60060; motor 88550-12160; blade 88453-60010. Published equivalent: 12 V, 96 W, 8 A, 2,400 rpm, 248 mm.",
+            "One custom close sealed shroud and mounting ears. Complete donor shrouds not assumed to fit. F4 fit + F5 ≥3,000 m³/h at 75 Pa/13.5 V; ≥3,300 procurement target.",
+        ),
+        (
+            "Condenser",
+            "New common 14 × 22 in nominal R134a parallel-flow, 559 × 356 × 21 basis; common #8/#6 O-ring ports preferred.",
+            "Four isolated tabs/short adapters only. Measure seams, manifolds, ports, ears and tools; pass 50°C A/C test.",
+        ),
+        (
+            "Drier / A/C service",
+            "New Toyota receiver/drier 88471-34010 if ports fit, otherwise new common #6 O-ring R134a drier with trinary provision; new barrier hose, HNBR seals and crimp fittings.",
+            "Vertical rubber-lined clamp and vehicle-length hoses. Never reuse a drier; A/C technician verifies threads, set-points, evacuation, charge and pressures.",
+        ),
+        (
+            "Electrical",
+            "Toyota/Denso/Sumitomo plugs; new terminals/seals/cable; sealed ISO relays and blade/MAXI fuses/holders.",
+            "Vehicle-length loom and protected service plate outside active fins. One fuse/relay branch per motor; size from measured hot run/start current.",
+        ),
+        (
+            "Charge-air joints",
+            "Common 57 mm / 2.25 in beaded aluminium tube, silicone straight/elbow couplers and T-bolt clamps.",
+            "Vehicle-specific pipes/supports. M8 template, ≥15 kW proof and complete route ≤10 kPa control.",
+        ),
+        (
+            "Fasteners / isolation",
+            "Metric M6/M8 class 8.8 zinc hardware, large washers, prevailing-torque nuts, crush sleeves, EPDM isolators and lined clamps.",
+            "Handed pickup pads, lower saddles and structural carrier. U1–U7 and hand-entering bolt checks control.",
+        ),
+        (
+            "Side core / fan",
+            "Prefer a new catalogue core and sealed catalogue high-static fan with pressure-flow data.",
+            "Side brackets, full duct/shroud and separate hot outlet. Do not name a donor before M8; complete path ≥2,500 m³/h at 75 Pa.",
+        ),
+    ], [1500, 4050, 3810], 7.8)
+    add_callout(
+        document,
+        "CUSTOM-ONLY LIST",
+        "Main carrier/top ears, lower saddles, front twin-fan shroud, mechanical shroud unless the sound Toyota "
+        "part fits, side-pack brackets/duct/shroud, vehicle-length loom and measured adapters. Heat exchangers, "
+        "motors, blades, drier, controls, connectors, hose, seals, clamps and fasteners remain service parts.",
+        "F3ECF8",
+        PURPLE,
+    )
 
     document.add_page_break()
     add_heading(document, "4. Engine radiator", 1)
@@ -2899,7 +3228,15 @@ def build_document():
     add_heading(document, "5.2 Front electric pusher assembly", 2)
     add_bullets(document, [
         "One full-width assembly or multiple matched sealed pushers; use practical condenser face area.",
+        "Centre the complete module on the measured condenser active finned-face centreline. With multiple fans, use equal left/right motor offsets and equal uncovered edge bands.",
+        "Any offset needs a recorded physical obstruction plus an approved coverage sketch and installed-flow proof; wiring convenience or styling is not justification.",
+        "Two common 12-inch or 14-inch fans do not fit side-by-side within a nominal 559-wide condenser before frames/clearance. Compact matched units or one full-width module still require F4 fit and F5 performance proof.",
+        "Preferred standard candidate: matched Prado 120 / GX470 family motors 88550-12160 and blades 88453-60010, referenced by assemblies 88590-60040/-60050/-60051/-60060. Published equivalent data is 248 mm, 12 V, 96 W, 8 A and 2,400 rpm; it is not an airflow curve.",
+        "Candidate geometry: two 248 mm sweeps; ≥258 mm ring openings; 266 mm motor C-C; centres ±133 mm from measured active-fin C/L; 524 mm nominal ring group. F4 must prove actual active fins, guards, motors, plugs, wires, ports and depth.",
+        "Use only the standard motors/blades/plugs in one custom full-width sealed shroud. Do not assume two complete donor shrouds fit.",
+        "Keep drier/manifold/relay/fuse service bay outside the sealed pusher shroud and active fins. Exclude it from the fan centre datum; it may not force either fan off-centre.",
         "≥3,000 m³/h installed at 75 Pa and 13.5 V through final restriction. Free-air CFM does not pass.",
+        "Prefer supplier/procurement proof of ≥3,300 m³/h installed at the same point for 10% reserve; ≥3,000 remains the hard acceptance minimum.",
         "Independent close frame/shroud; no core ties and no fan load on condenser.",
         "Multiple motors use separately fused/relayed branches; A/C/trinary control and fail-safe pressure protection.",
         "One-fan-failed test must warn and fail safe; full 50°C A/C performance is not required with a fault.",
@@ -2909,7 +3246,10 @@ def build_document():
         document,
         "559 × 356 × 21 nominal parallel-flow condenser; measure all seams, manifolds, ports and ears. Four "
         "independent isolated tabs. Keep 15 clear to radiator preferred; 10 absolute only with proof. Fit the "
-        "drier vertical/outside airflow and have the A/C technician verify charge, pressures and 50°C performance."
+        "drier vertically in the side service bay, outside the sealed pusher shroud and active fin face. Prefer a "
+        "new Toyota 88471-34010 receiver/drier if its ports match; otherwise use a new common #6 O-ring R134a "
+        "drier with trinary provision. Never reuse a donor drier. Use new barrier hose, HNBR seals/crimps and have "
+        "the A/C technician verify threads, switch set-points, evacuation, charge, pressures and 50°C performance."
     )
 
     add_heading(document, "6. Separate side/wing charge-air pack", 1)
@@ -2948,13 +3288,33 @@ def build_document():
     add_heading(document, "7. Mounting, shroud and packaging", 1)
     add_picture(document, ASSET / "rev_c_d05_mounting_shroud.png", 6.35)
     add_bullets(document, [
-        "Inspect existing formed uprights and their welds/alignment/strength before reuse.",
-        "Use removable rails, weight-bearing lower saddles and rubber/EPDM isolation; upper tabs restrain only.",
+        "Inspect both existing formed uprights, inward top returns, welds and original holes before reuse.",
+        "Use removable rails and rubber-lined lower saddles. The saddles carry all pack weight; upper bolts locate/retain only.",
         "Every exchanger, fan, shroud, duct and drier removes separately without cutting.",
         "No drilling/welding a pressure part or core; no plastic core ties; no forced bolt alignment.",
         "Protect final cores from welding/grinding and all edges from tanks, hoses, wires and fins.",
     ])
-    add_heading(document, "7.1 M3/M4 depth formula", 2)
+
+    document.add_page_break()
+    add_heading(document, "7.1 Existing top-hole carrier pickups", 1)
+    add_picture(document, ASSET / "rev_d_d08_existing_top_hole_mount.png", 6.35)
+    add_bullets(document, [
+        "The two retained original top-return holes are the master upper datums: one positive vertical through-bolt per side.",
+        "No new chassis hole, slot or reaming. Do not use a nearby hook, side clamp, tall post or substitute pickup.",
+        "TP-L/TP-R: handed 4 mm mild-steel pads, nominal 50 × 50 top, 50-wide downleg, 30 × 30 × 3 gusset; trim to each measured return.",
+        "Provisional M8 × 1.25 class 8.8 only if U1 accepts it. Stack: head/large washer; original return; 6 mm EPDM 60–65 Shore A with hard crush sleeve; pickup pad; washer/prevailing nut.",
+        "Transfer both centres with one rigid 1:1 template. With the pack supported on its lower saddles, both bolts must enter freely by hand.",
+    ])
+    add_callout(
+        document,
+        "MANUFACTURE HOLD — U1–U7",
+        "Photographs do not prove hole diameter, pitch, tab thickness, elevation or bonnet/tool clearance. Record "
+        "U1–U7 on the vehicle and owner-approve the as-measured carrier before finish welding.",
+        "FFF8E8",
+        GOLD,
+    )
+
+    add_heading(document, "7.2 M3/M4 depth formula", 2)
     add_table(document, ["GATE", "FORMULA / PASS"], [
         ("M3", "10 build + actual front fan depth + ≥5 fan/condenser clear + actual condenser depth + 15 preferred gap"),
         ("M4", "M3 + actual radiator depth + 10 vehicle/fabrication tolerance"),
@@ -2979,19 +3339,27 @@ def build_document():
     gates = [
         ("M1", "main clear width", "largest practical core; ≥0.250 m² face preferred; tanks/ports/removal fit"),
         ("M2", "saddle to bonnet/latch", "radiator overall H + 10; filler/hose/service paths fit"),
-        ("M3", "front obstruction to radiator front", "formula in section 7.1 using actual component depths"),
+        ("M3", "front obstruction to radiator front", "formula in section 7.2 using actual component depths"),
         ("M4", "front obstruction to radiator rear", "M3 + actual radiator D + 10 tolerance"),
         ("M5", "radiator rear to fan", "≥20 static; 25–30 preferred through movement"),
         ("M6", "lowest main-pack edge", "≥25 above protected line unless stronger guard approved"),
         ("M7", "main-pack service path", "each component removes separately without cutting"),
         ("M8", "side pack + ducts", "full-size template: aft/outboard of RIGHT upright, core ~90° to main stack, no added front width; no conflict and separate fresh inlet/hot outlet proven"),
+        ("U1-L/R", "original hole Ø / condition", "both sound and round; select bolt after measurement; no chassis reaming"),
+        ("U2", "actual top-hole pitch", "record with one rigid 1:1 template; do not infer from photograph"),
+        ("U3-L/R", "hole to edge / tab width", "large washer, isolator and handed pickup pad fully supported"),
+        ("U4", "left/right elevation delta", "record; form carrier/saddles to fit without bolt pull"),
+        ("U5-L/R", "hole to carrier offset", "4 mm pickup directly below each original hole; no post/hook/clamp"),
+        ("U6-L/R", "tab thickness + upper clearance", "bolt head/washer and tool clear bonnet, cap and hose"),
+        ("U7", "top-hole plane to saddle datum", "saddles carry mass; both upper bolts enter freely by hand"),
         ("F1", "mechanical fan sweep", "record OD/full sweep"),
         ("F2", "blade insertion/clear", "35–50%; ≥15 radial through movement"),
         ("F3", "main fan centre", "record X/Y on as-built"),
-        ("F4", "front fan envelope", "complete frame/guards/plugs/wires fit M1–M4"),
+        ("F4", "front fan envelope", "actual active-face W/H/C-L recorded; symmetric candidate rings/motors, complete frame/guards/plugs/wires/service bay fit M1–M4"),
         ("F5", "front installed flow", "≥3,000 m³/h at 75 Pa, 13.5 V"),
         ("F6", "mechanical installed flow", "≥9,000 m³/h at 125 Pa, 1,500 engine rpm"),
         ("F7", "side installed flow", "≥2,500 m³/h at 75 Pa through complete path"),
+        ("E1", "electric fan supply / branches", "record part nos., run/start A, fuses, relays, cable, sealed connectors and loaded V; no hot/drop fault; one branch fault cannot stop every electric fan"),
     ]
     add_table(document, ["ID", "MEASURE", "PASS"], gates, [700, 3100, 5560], 8.35)
     add_callout(
@@ -3006,14 +3374,15 @@ def build_document():
     document.add_page_break()
     add_heading(document, "10. Required fabrication sequence", 1)
     add_numbers(document, [
-        "Inspect/measure the vehicle, accessories and fan; complete M1–M8 and F1–F3.",
+        "Inspect/measure the vehicle, accessories, fan and both original top-return holes; complete M1–M8, U1–U7 and F1–F3.",
         "Obtain radiator, fan and charge-cooler performance curves.",
         "Select the largest practical radiator and side-pack location.",
         "Make complete full-size dummies including tanks, ports, fan motors, guards, plugs, wires, ducts and tools.",
-        "Fit main radiator/condenser/fans and side charge pack independently.",
+        "Make one rigid 1:1 template from both original holes; tack TP-L/TP-R below them, remove carrier, then drill only the two round carrier-pad holes.",
+        "Fit the main pack on its lower saddles; both top bolts must enter freely by hand. Fit the side charge pack independently.",
         "Close bonnet and represent final grille/guard/bumper/winch, A/C, battery, intake, steering, turbo and downpipe.",
-        "Prove movement, protection, cleaning and separate removal paths.",
-        "Photograph gates; issue as-measured/as-selected drawing and evidence pack.",
+        "Prove upper fastener/tool clearance, movement, protection, cleaning and separate removal paths.",
+        "Photograph every M/U/F/E gate and both complete upper fastener stacks; issue the as-measured/as-selected evidence pack.",
         "Obtain written owner release; manufacture/recore, bench-test, install and instrument.",
         "Perform section 11. Do not call the system 50°C-rated until every acceptance item passes.",
     ])
@@ -3065,7 +3434,7 @@ def build_document():
     document.add_page_break()
     add_heading(document, "12. Handover record and signatures", 1)
     records = [
-        ("[ ]", "M1–M8 / F1–F7 as-measured sheet", ""),
+        ("[ ]", "M1–M8 / U1–U7 / F1–F7 / E1 as-measured sheet", ""),
         ("[ ]", "Radiator make/model/envelope", ""),
         ("[ ]", "115/130 kW report + water/air Δp", ""),
         ("[ ]", "Coolant flow/mix/cap/thermostat/bleed/hose", ""),

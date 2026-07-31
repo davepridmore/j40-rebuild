@@ -36,16 +36,17 @@ DXF files:
 - `battery_stand_adjustable_offset_bar_rev_b.dxf` - slotted `360 x 60 x 4 mm` body-side offset bar from the formed chassis saddle/upright bridge toward the battery pocket, qty `2 mirrored`
 - `battery_stand_compact_single_mount_upright_rev_b.dxf` - upright bridge side plate, qty `2 mirrored`
 - `battery_stand_compact_hold_down_crossbar_rev_b.dxf` - service-removable `340 x 38 mm` battery hold-down crossbar, qty `1`
-- `battery_power_compact_front_service_rail_rev_b.dxf` - widened `660 x 310 mm` front/radiator-side access ladder for the vertical Relay Rev D flat base/insulator directly attached to the main sheet, relay top power in/out clearances, relay front control-cable clearance, 80 mm wire gutter, MIDI Rev D enclosure shelf tabs, side-by-side MIDI/kill-switch shelf tabs, cutoff-output split clearance, and five-output MIDI cable fanout, qty `1`
+- `battery_power_compact_front_service_rail_rev_b.dxf` - **superseded/hold**; do not fabricate this former `660 x 310 mm` relay/MIDI battery-stand ladder under the 2026-07-31 layout decision
 - `battery_power_compact_cutoff_tab_rev_b.dxf` - folded 100A breaker/cutoff base/guard, qty `1`
 
 Release position:
+- 2026-07-31 supersession: retain this package only for the battery tray, chassis saddle/support, hold-down, and battery-side cutoff/breaker. Relay Rev D and MIDI Rev D move to a removable plate on the structural radiator/cooling-stack carrier.
 - Rev F standard-battery access update is a prototype/mock-up release for the steel chassis-mounted battery stand.
 - The stand must mount from the one known formed chassis saddle, upright bridge, and slotted body-side offset bars, not the battery tray skin, radiator support strap, or unsupported inner wing.
-- It supports the installed Daewoo DLS120 battery datum captured in the May 17 ruler photos on a removable hold-down tray and carries Relay Rev D outside the battery footprint on the outboard/access edge, using a flat `360 x 245 x 3 mm` aluminium base mounted vertically and directly flat to the main service sheet, plus the exact `300 x 197 mm` insulating sheet under the relay box. The MIDI Rev D hinged enclosure (`210 x 165 x 65 mm` body / `230 x 185 mm` lid / `140 x 85 mm` insulating subplate), 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes sit on the same removable steel assembly.
+- It supports the installed Daewoo DLS120 battery datum captured in the May 17 ruler photos on a removable hold-down tray and retains the 100A breaker/cutoff close to the battery.
 - The tray/front ladder starts around `190 mm` wing-side/outboard from the more central chassis pickup, with the offset bars retaining `160-230 mm` adjustment until dry-fit locks the setting.
-- Battery positive must enter the side-mounted cutoff/kill switch first. The cutoff output then splits into two protected branches: one red relay power pipe into the relay top hole closest to the battery and one to the MIDI common feed at fuse 4 / the second-from-last holder. The relay output power bundle leaves the second top relay hole. The relay package stays as the covered box on the vertical flat base and exact insulator, without extra relay boot or loom-card fabrication above it; the MIDI enclosure must keep five grommeted output holes, with the far-side output hole enlarged for two power cables.
-- Final metal cutting/drilling still needs the May 17 battery dimensions transcribed into the cavity map, the battery-installed cardboard mock-up, hold-down-removed battery lift-out check, formed saddle rail-width/leg-depth/through-bolt measurement, offset-bar setting, cutoff body dimensions, battery-to-cutoff and cutoff-output cable-lug sweeps, bonnet-clearance checks, vertical relay base attachment, relay cover access, top relay input/output hole cable sweep, MIDI lid/fanout clearance, and steering/radiator/fan clearance checks.
+- Battery positive must enter the battery-side cutoff/breaker first. Its protected output runs to the structural cooling-stack electrical plate, where it feeds MIDI fuse 4 and the relay battery-side entry without changing circuit assignments or fuse sizing.
+- Final drilling still needs the battery/cutoff mock-up plus a separate radiator-carrier electrical mock-up proving airflow, fan/shroud, hose, cap, drain, bonnet, grille, heat/splash, relay-cover, MIDI-lid, cable-bend, disconnect, and radiator-removal clearances.
 
 ## Front Radiator Two-Side Retention - Rev A
 
@@ -192,11 +193,11 @@ Primary files:
 - `data/manual/fabrication/relay_mount_rev_d/relay_mount_rev_d_3d_visualisation.svg`
 
 DXF files:
-- `relay_base_plate_rev_d.dxf` - flat `360 x 245 x 3.0 mm` 5052-H32 aluminium base plate with stand-attachment slots
+- `relay_base_plate_rev_d.dxf` - flat `360 x 245 x 3.0 mm` 5052-H32 aluminium base plate with structural-carrier-plate attachment slots
 - `relay_insulating_sheet_rev_d.dxf` - exact `300 x 197 x 3.0 mm` relay-box-bottom-footprint insulating sheet
 
 Order definitions:
-- Base plate: flat aluminium only. Use exposed margins/slots to attach the relay assembly to the battery stand/access ladder.
+- Base plate: flat aluminium only. Use exposed margins/slots to attach the relay assembly to a removable plate on the structural radiator/cooling-stack carrier; never to the core, fins, tanks, necks, seams, or through-core rods.
 - Insulating sheet: sits directly between the already-covered relay/fuse box and the aluminium base. Transfer relay-box fixing holes from the actual enclosure after orientation is confirmed.
 
 Release position: current recommended relay-box fabrication route. Rev D supersedes the folded Rev C relay carrier because the existing relay box is already a covered enclosure.

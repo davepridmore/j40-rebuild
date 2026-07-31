@@ -20,6 +20,6 @@
   </g>
   <text x="25" y="315" class="note">Relay Rev D base plate: flat 3.0 mm 5052-H32 aluminium. No folded box or rear tray is required because the relay unit is already a covered plastic enclosure.</text>
   <text x="25" y="327" class="note">Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm large uncovered bottom face of the relay box.</text>
-  <text x="25" y="339" class="note">The slotted holes are only for attaching this base plate to the battery stand / access ladder; in the battery power carrier the base mounts vertically and directly flat to the main metal service sheet. Final slot selection and bolt size are site-fit.</text>
+  <text x="25" y="339" class="note">The slotted holes attach this base plate to a removable electrical plate on the structural radiator/cooling-stack carrier. Never attach it to the radiator core, fins, tanks, necks, seams, or through-core rods. Final slot selection and bolt size are site-fit.</text>
   <text x="25" y="351" class="note">Transfer any relay-box bottom-face fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.</text>
 </svg>

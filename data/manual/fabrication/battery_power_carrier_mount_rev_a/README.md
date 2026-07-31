@@ -1,5 +1,7 @@
 # J40 Battery Stand Power Carrier Pack - Rev F Standard-Battery Access Update
 
+> **Layout decision — 2026-07-31:** the Relay Rev D and MIDI Rev D fields in this package are superseded. Move them to a removable electrical plate on the structural radiator/cooling-stack carrier. Retain this package only for the battery tray, chassis saddle/support, hold-down, and battery-side cutoff/breaker. Do not fabricate the `660 x 310 mm` electrical access ladder or drill its relay/MIDI holes unless a documented radiator-carrier dry-fit failure reopens this fallback.
+
 This package defines the battery-side power carrier as a compact steel stand that bolts to a formed chassis saddle, then reaches toward the body/wing side through configurable slotted offset bars. The tray and electrical access ladder can be set around the current `190 mm` outboard target while keeping a `160-230 mm` offset adjustment range for dry-fit.
 
 ## Design Intent

@@ -106,6 +106,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Reserve a documented turbo-instrument branch in the new loom: fused ignition-switched supply, gauge illumination/dimming where supported, clean instrument ground, EGT thermocouple extension wiring kept separate from noisy/high-current conductors, and protected sender wiring for boost (if electronic), oil pressure, and coolant temperature.
 - A conventional internally wastegated turbo requires no turbo ECU or electric boost controller. Keep boost control mechanical for the initial build; add no solenoid/controller branch unless a later approved specification explicitly requires it.
 - Any electric intercooler/condenser fan must use a dedicated fused relay circuit sized from measured running and inrush current, with manual/temperature/A-C request logic documented before termination.
+- Physical-layout decision, 2026-07-31: move Relay Rev D and MIDI Rev D from the battery-stand ladder to a removable plate on the structural radiator/cooling-stack carrier. Keep the master breaker/cutoff battery-side, retain the existing circuit assignments and fuse sizing, and revalidate cable length, protection, service disconnect, airflow, heat/splash exposure, and radiator removal before final termination. Nothing electrical mounts to the radiator core, fins, tanks, necks, or seams.
 
 ### Mechanical Baseline (Engine While Stripped)
 

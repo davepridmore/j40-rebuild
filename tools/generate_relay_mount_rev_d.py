@@ -18,7 +18,7 @@ BASE_D = 245
 def relay_base_plate() -> base.Drawing:
     cut_polys = [
         base.Poly([(0, 0), (BASE_W, 0), (BASE_W, BASE_D), (0, BASE_D)]),
-        # Exposed base-plate slots for mounting the relay assembly to the battery-stand ladder.
+        # Exposed slots for mounting the relay assembly to a structural-carrier electrical plate.
         base.rounded_slot_poly(50, 7, 34, 10),
         base.rounded_slot_poly(276, 7, 34, 10),
         base.rounded_slot_poly(50, BASE_D - 17, 34, 10),
@@ -31,7 +31,7 @@ def relay_base_plate() -> base.Drawing:
     notes = [
         "Relay Rev D base plate: flat 3.0 mm 5052-H32 aluminium. No folded box or rear tray is required because the relay unit is already a covered plastic enclosure.",
         "Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm large uncovered bottom face of the relay box.",
-        "The slotted holes are only for attaching this base plate to the battery stand / access ladder; in the battery power carrier the base mounts vertically and directly flat to the main metal service sheet. Final slot selection and bolt size are site-fit.",
+        "The slotted holes attach this base plate to a removable electrical plate on the structural radiator/cooling-stack carrier. Never attach it to the radiator core, fins, tanks, necks, seams, or through-core rods. Final slot selection and bolt size are site-fit.",
         "Transfer any relay-box bottom-face fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.",
     ]
     return base.Drawing("relay_base_plate_rev_d", BASE_W, BASE_D, cut_polys, [], [], [], notes)
@@ -55,7 +55,7 @@ This pack supersedes the folded Rev C relay carrier as the current relay-box fab
 
 The relay/fuse box is already a well-covered plastic enclosure, so Rev D only provides:
 
-1. `relay_base_plate_rev_d` - flat aluminium base that extends beyond the relay box and bolts to the battery stand
+1. `relay_base_plate_rev_d` - flat aluminium base that extends beyond the relay box and bolts to a removable electrical plate on the structural radiator/cooling-stack carrier
 2. `relay_insulating_sheet_rev_d` - exact relay-box-bottom-footprint insulating sheet between the box's large uncovered bottom face and aluminium base
 
 ## Dimensions
@@ -68,9 +68,9 @@ The relay/fuse box is already a well-covered plastic enclosure, so Rev D only pr
 ## Installation Notes
 
 - Mount the relay box by its large uncovered bottom face on the exact-size insulating sheet, then mount both to the aluminium base plate.
-- Use the exposed base-plate slots to attach the assembly to the battery stand or front access ladder; in the battery power carrier this base is mounted vertically and directly flat to the main metal service sheet.
+- Use the exposed base-plate slots to attach the assembly to a removable plate on a structural cooling-stack upright, crossbar, or designed accessory rail. Never attach it to the radiator core, fins, tanks, necks, seams, or through-core rods.
 - Transfer relay-box bottom-face fixing holes from the actual relay enclosure after confirming the final orientation.
-- Keep the relay box cover removable and keep top power exits / end-side loom exits clear.
+- Keep the relay box cover removable and keep top power exits / end-side loom exits clear. Dry-fit airflow, fan/shroud, hose, cap, drain, splash/heat, bonnet, grille, cable-bend, and radiator-removal clearance before drilling.
 - Do not add a folded carrier or rear tray unless the vehicle mock-up proves the flat base cannot be supported.
 """
     (OUT_DIR / "README.md").write_text(text, encoding="utf-8")

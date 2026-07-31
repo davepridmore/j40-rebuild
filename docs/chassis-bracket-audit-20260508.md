@@ -29,8 +29,9 @@ The first register pass is seeded with front radiator/support and battery-side m
 | `front_radiator_bracket_repair_20260508` | `chassis_fixing` | Radiator/support bracket location, fix method, rubber support, fan clearance, and labelled photos. |
 | `front_radiator_two_side_retention_fabrication_20260508` | `chassis_fixing` | Released two-side radiator retention bracket set replacing the one-side/wire-held condition. |
 | `battery_tray_holder_bracket_repair_20260508` | `chassis_fixing` | Battery tray/holder position, clamp path, drain/corrosion isolation, cable clearance, and final weld/bolt choice. |
-| `battery_power_carrier_mount_fabrication_20260508` | `chassis_fixing` | Battery-side support/carrier for the MIDI Rev D hinged enclosure and battery master cutoff/isolator, tied into real structure. |
-| `engine_bay_mounting_scouting_pass_20260508` | `chassis_fixing` | Ruler photos and mock-up checks for radiator holes, battery tray feet, MIDI/cutoff envelope, cable exits, and bonnet clearance. |
+| `battery_power_carrier_mount_fabrication_20260508` | `chassis_fixing` | Battery-side support/carrier for the battery and master cutoff/breaker only, tied into real structure. The former relay/MIDI ladder is superseded. |
+| `relay_midi_radiator_carrier_relocation_20260731` | `chassis_fixing` | Removable Relay Rev D and MIDI Rev D plate on a structural radiator/cooling-stack upright, crossbar, or accessory rail; never on the radiator core, tanks, fins, seams, necks, or through-core rods. |
+| `engine_bay_mounting_scouting_pass_20260508` | `chassis_fixing` | Ruler photos and mock-up checks for radiator-carrier electrical-plate pickups, battery tray feet, cutoff envelope, cable exits, airflow/service clearances, and bonnet clearance. |
 | `auxiliary_chassis_tabs_and_clip_brackets_20260508` | `chassis_fixing` | Required baseline tabs only: line clips, harness clips, earth straps, exhaust hangers, washer/overflow/ancillary supports. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `chassis_fixing` | Exhaust fabricator gets current chassis photos; any hanger/clearance tabs needed on the chassis are mocked up before Raptor. |
 

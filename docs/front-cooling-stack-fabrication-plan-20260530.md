@@ -12,9 +12,9 @@ L4TW delivery spec: [l4tw-front-cooling-stack-delivery-spec-20260531.md](l4tw-fr
 
 ## Decision
 
-Use the existing full-height chassis/front-support upright and weld an identical mirrored upright on the left side. The radiator, A/C condenser, lower-front turbo intercooler, optional upper-band pusher fan, and receiver-drier mount to those uprights as separate serviceable parts.
+Use the existing full-height chassis/front-support upright and weld an identical mirrored upright on the left side. The radiator, A/C condenser, lower-front turbo intercooler, optional upper-band pusher fan, receiver-drier, and removable relay/fuse plate mount to those uprights as separate serviceable parts.
 
-The radiator must not support the condenser or intercooler. The condenser must not support the fan or intercooler. Nothing should be tied through any core or fins.
+The radiator must not support the condenser, intercooler, or electrical plate. The condenser must not support the fan or intercooler. Nothing should be tied through any core or fins, and no electrical bracket may load or be drilled into a radiator tank, neck, seam, or isolated radiator mount.
 
 ## Component Direction
 
@@ -24,6 +24,8 @@ The radiator must not support the condenser or intercooler. The condenser must n
 | Condenser | Start with Snow Cool `MM CONDENSOR` as the local quote item, keeping a `14 x 22 in` parallel-flow R134a envelope target. Use Arsalan `Condenser Kia Sportage new model` as the larger alternate if tape photos prove it fits. |
 | Drier | New R134a receiver-drier with switch port, mounted vertical on the cooling-stack side upright. Buy from Snow Cool/Arsalan only after condenser and fitting sizes are known. |
 | Fan | Optional slim `12V` pusher fan assembly, carried by the frame/fan hoop, not fin-mounted. |
+| Relay box | Reuse Relay Rev D on its `360 x 245 x 3 mm` base and `300 x 197 x 3 mm` insulator, bolted to a removable plate on the structural cooling-stack upright/accessory rail with its cover serviceable. |
+| MIDI fuse enclosure | Reuse MIDI Rev D (`210 x 165 x 65 mm`) on the same structural accessory plate or an adjacent removable plate, protected from splash and heat with the hinged lid, grommets, and cable bends serviceable. |
 | Compressor | Reuse the installed Sanden-type compressor only after compatibility checks pass; replace locally with a `12V` Sanden-style V-pulley unit only if it fails the gate. |
 
 ## Compressor Compatibility Read
@@ -51,7 +53,9 @@ If those checks fail, keep the same front cooling-stack frame and replace the co
 6. Mark condenser tabs from the selected condenser; do not use through-fin mounting rods.
 7. Mount the receiver-drier vertical on the side upright near the condenser outlet.
 8. Confirm compressor discharge and suction fitting routes before hose crimping.
-9. Deburr, corrosion-protect, and final-fit the frame only after all dry-fit checks pass.
+9. Template the relay and MIDI enclosures on a removable structural-carrier plate; prove core airflow, fan/shroud, hose, cap, drain, bonnet, grille, lid/cover, cable-bend, and radiator-removal clearances.
+10. Mark cable supports, protected pass-throughs, earth point, and service-disconnect boundary before coating.
+11. Deburr, corrosion-protect, and final-fit the frame only after all dry-fit checks pass.
 
 ## Hard Holds
 
@@ -59,3 +63,5 @@ If those checks fail, keep the same front cooling-stack frame and replace the co
 - No drier opened to air until final assembly/charge preparation.
 - No primer/Raptor over the front support area until cooling-stack holes, welds, and brackets are validated.
 - No random radiator buy unless necks, cap, drain, bracket spacing, and fan clearance match the vehicle.
+- No electrical-plate holes until the real Relay Rev D and MIDI Rev D parts, cable exits, airflow aperture, heat/splash exposure, and radiator service path have been dry-fitted.
+- No relay/fuse mounting directly to the radiator core, fins, tanks, necks, seams, or rubber-isolated radiator mounts.
