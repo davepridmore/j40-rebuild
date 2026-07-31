@@ -1,0 +1,9 @@
+id,physical_location_viewed_from_cabin,selector_type,function,states,control_or_relay,release
+R-UL,right of speedometer upper-left,3-position maintained,WIPERS,OFF / LOW / HIGH,existing wiper control circuit,function locked; aperture/rear stack HOLD
+R-UR,right of speedometer upper-right,3-position maintained,LIGHTS,OFF / SIDE / HEAD,T1 low-beam and T2 high-beam control logic,function locked; prove lighting logic
+R-LL,right of speedometer lower-left,2-position maintained,SPOTS,OFF / ON,T5 spot-lamp relay trigger,function and existing hole-3 allocation locked
+R-LR,right of speedometer lower-right,2-position maintained,AUX,OFF / ON,B2 auxiliary control,function locked; final accessory/load HOLD
+C-L,under LCD left,3-position maintained,BLOWER,OFF / LOW / HIGH,dedicated HVAC control/relay/resistor,function locked; final load and circuit sizing HOLD
+C-C,under LCD centre,2-position maintained,A/C REQUEST,OFF / ON,B1 A/C clutch request through thermostat/trinary/pressure safety chain,function locked; safety-chain prove-out HOLD
+C-R,under LCD right,2-position maintained,FUEL STOP / CONTROL,prove on vehicle,ignition-linked stop/control with manual cable backup,PROVISIONAL pending device identification and live key-OFF shutdown test
+H,under LCD far-right,separate red pushbutton,HAZARD,OFF / FLASH,existing hazard circuit,separate from seven selectors; indicators remain on OEM stalk

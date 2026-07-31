@@ -28,7 +28,7 @@ Owner reports a major A/C purchase intended to secure the cabin cooling package 
 Control position:
 
 - Treat the purchased under-dash/slimline unit as the active cabin evaporator candidate once order proof or arrival photos are available.
-- Do not cut dash brackets, drain holes, firewall/bulkhead holes, or crimp final hoses until the unit is physically measured and mocked under the J40 dash.
+- The owner authorises the Rev E centre-dash opening once its 1:1 template is placed clear of the glovebox/instruction panel and speedometer pressing. Do not release actual LCD/control/vent apertures, evaporator brackets, drain holes, firewall/bulkhead holes, or final hose crimps until the relevant hardware is physically measured and mocked in the J40.
 - The front-pack hose layout must now be released as a complete loop: compressor, condenser, receiver-drier, pressure switch, cabin evaporator/TXV, suction return, service ports, and protected firewall pass-throughs.
 - If the purchased unit includes a blower, controls, or heat function, accept those only after current draw, airflow, drain, outlet face, and under-dash clearance are proven.
 
@@ -38,10 +38,10 @@ Owner reports a condenser has been bought and should sit in the front compartmen
 
 Cabin distribution direction:
 
-- Plan for four directional outlets: two front dash/lower under-dash outlets and two longer duct runs to small directional outlets just behind the front-door pillar area.
+- Plan for four directional outlets: two circular satin-silver outlets integrated flush into the lower corners of the Rev E centre fascia and two longer duct runs to small directional outlets just behind the front-door pillar area.
 - Use 2.5 inch vent hose and 2.5 inch hose-neck louvers as the default reference geometry unless the purchased evaporator/plenum proves another outlet size.
-- Front dash outlets should be low-profile and period-compatible; rear/pillar outlets should be pod or eyeball style so air can be aimed inward and rearward.
-- Do not cut the dash, buy final vents, or cut long duct runs until the evaporator outlet count, plenum shape, blower position, and bend radius are mocked in the vehicle.
+- Front dash outlets should be matched circular directional vents with satin/brushed-silver faces, hidden rear retainers, no exposed front screws, and an approximately 65-70 mm maximum visible diameter. Rear/pillar outlets remain separate pod or eyeball units aimed inward and rearward.
+- The centre opening may be cut from the placed Rev E 1:1 template. Keep the vent cutouts and final duct runs on HOLD until the bought vent dimensions, evaporator outlet count, plenum shape, blower position and bend radius are mocked in the vehicle.
 - Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) as the active vent/duct buy spec.
 
 ## Gates

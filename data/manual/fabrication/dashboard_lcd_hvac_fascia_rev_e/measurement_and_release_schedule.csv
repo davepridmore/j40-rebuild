@@ -1,0 +1,9 @@
+id,measurement,nominal_or_intent,required_evidence,status
+M1,locate the authorised centre-dash opening while protecting speedometer pressing and glovebox/instruction panel,released fascia blank 410 x 225 R6; proposed vehicle opening 374 x 189; finished face has no ashtray feature,1:1 fascia template fitted to vehicle plus front/rear ruler photos and signed opening line,HOLD - opening location only
+M2,LCD active area/aperture/bezel/rear body/mount/connectors,9-inch 16:9 active 199.2 x 112.1; aperture 202 x 115; bezel envelope 230 x 132 reference,actual LCD model drawing and caliper dimensions,HOLD
+M3,LCD rear body/mount centres/depth/connector sweep,supplier-specific,"rear rubbing, depth gauge and plug trial",HOLD
+M4,seven Schneider selector bushes/anti-rotation/contact blocks,22.3 mm nominal aperture,measure each bought selector and rear stack,HOLD
+M5,four original right-cluster hole centres and rear clearance,reuse 2 x 2 positions,vehicle transfer template and rear photo,HOLD
+M6,"both integrated vent faces, cutouts, retainers, neck OD and rear depth",satin-silver circular face 70 mm maximum; 66 mm reference cutout; 63.5 mm hose-neck target; flush to +0.5 mm,"caliper measurement of both bought vents, rear-retainer installation trial, hose trial and duct sweep",HOLD
+M7,"rear clearance, glovebox, instruments, steering and gear lever",unchanged/no contact,signed 1:1 overlay and full physical sweep,HOLD
+M8,selector function/labels and electrical prove-out,3 x 3-position plus 4 x 2-position,"continuity test, relay map, A/C interlock and fuel-stop test",HOLD

@@ -1,0 +1,5 @@
+part,qty,material,thickness_mm,finish,file,release
+wide centre flat-face fascia with integrated vent references,1,CR4 mild steel,1.5,body-colour low-gloss paint,centre_fascia_template_rev_e.dxf,"CUT_FASCIA_OUTER 410 x 225 R6 RELEASED; MARK_PROPOSED_VEHICLE_CUT 374 x 189 located by fitted template; mounting, LCD, control-strip and both vent circles HOLD"
+centre three-selector strip blank,1,5052-H32 aluminium,2.0,body-colour low-gloss paint,centre_three_selector_strip_blank_rev_e.dxf,outer/fasteners released; selector and hazard holes HOLD
+right-cluster four-selector transfer template,1,card/acrylic template,2.0,none,right_cluster_four_selector_transfer_template_rev_e.dxf,ALL GEOMETRY HOLD; transfer actual vehicle centres
+LCD rear clamp blank,1,5052-H32 aluminium,2.0,black,lcd_rear_clamp_blank_rev_e.dxf,outer/fasteners released; rear-body opening HOLD

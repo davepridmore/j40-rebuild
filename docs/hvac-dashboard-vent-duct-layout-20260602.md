@@ -2,9 +2,9 @@
 
 Purpose: convert the new condenser/cabin airflow direction into a buyable vent and duct plan for the J40 A/C retrofit.
 
-## 2026-07-31 Dashboard Integration Update
+## 2026-08-01 Dashboard Integration Update
 
-The controlled front-pair integration is now [dashboard_lcd_hvac_fascia_rev_d](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_d/README.md). The right-hand-drive glovebox and instrument/speedometer pressing remain original. The complete protruding ashtray and adjacent radio face are removed so the combined centre zone becomes one flat body-colour CNC fascia around a true-scale 9-inch LCD. Three selectors sit under the LCD (Blower, A/C Request, provisional Fuel Stop/Control), while four reuse the original right-side 2 x 2 holes (Wipers and Lights above Spots and Aux). Two directional eyeball outlets mount separately below the dash and retain the `63.5 mm / 2.5 inch` hose-neck preference. Production geometry remains HOLD until the actual parts, right-side hole centres and rear envelope are measured and owner-approved at 1:1. The other two outlets in the four-outlet plan remain rear/pillar outlets.
+The controlled front-pair integration is now [dashboard_lcd_hvac_fascia_rev_e](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_e/README.md). The right-hand-drive glovebox/instruction panel and instrument/speedometer pressing remain original; the owner authorises cutting the remaining centre dash metal as required. The complete ashtray/radio zone is removed and covered by one flat body-colour CNC fascia around a true-scale 9-inch LCD. Two matched circular satin-silver directional outlets are recessed into the lower corners of that fascia, with no hanging bracket or exposed front fixing, and retain the `63.5 mm / 2.5 inch` hose-neck target. Three selectors sit under the LCD (Blower, A/C Request, provisional Fuel Stop/Control), while four reuse the original right-side 2 x 2 zone (Wipers and Lights above Spots and Aux). The fascia outer blank is released; the 1:1 centre-opening template is proposed and may be cut once placed clear of the two protected OEM pressings. Actual LCD, selector, hazard and vent apertures remain HOLD until the bought parts and rear envelope are measured. The other two outlets in the four-outlet plan remain separate rear/pillar pods.
 
 ## Evidence Position
 
@@ -19,7 +19,7 @@ Use a four-outlet cabin plan unless the purchased evaporator case proves it cann
 
 | Outlet group | Quantity | Position | Preferred vent type | Duct rule |
 | --- | --- | --- | --- | --- |
-| Front pair | 2 | Driver/passenger lower dash or very shallow under-dash panel | Low-profile directional louvers, preferably black or paintable | Short, direct 2.5 inch hose runs from evaporator/plenum |
+| Front pair | 2 | Recessed into the lower outside corners of the new centre CNC fascia | Circular directional louvers with satin/brushed-silver visible faces, flush to +0.5 mm | Short, direct 2.5 inch hose runs from evaporator/plenum; no hanging brackets |
 | Rear/pillar pair | 2 | Just behind the front-door pillar / rearward side of front cabin area | Individual directional eyeball/pod vents | Longer 2.5 inch hose runs, supported and swept, not crushed or drooped |
 
 Do not buy random dashboard vents by appearance only. The vent neck OD must match the evaporator outlet/plenum standard. Use 2.5 inch duct as the default because the current reference HVAC components and louvers commonly use 2.5 inch hose. Use 2.0 inch only if the purchased unit physically provides 2.0 inch outlets and the airflow test still passes.
@@ -41,8 +41,8 @@ These are geometry/spec references and import fallbacks. A local Snow Cool/Arsal
 
 Ask suppliers for:
 
-- Four directional automotive A/C vents/louvers with 2.5 inch hose necks: two low-profile front dash/under-dash vents and two smaller pod/eyeball vents for rearward/pillar positions.
-- Black or paintable finish preferred. Avoid shiny chrome if it looks out of period against the J40 dash.
+- Four directional automotive A/C vents/louvers with 2.5 inch hose necks: two circular flush-mount fascia vents and two smaller pod/eyeball vents for rearward/pillar positions.
+- Front-pair visible faces: matched satin/brushed silver, approximately 65-70 mm maximum face diameter, with hidden rear retention and no exposed front screws. Avoid bright mirror chrome. Rear/pillar pods may remain black or paintable.
 - Vent face dimensions, rear neck OD/ID, rear depth, louver movement range, shutoff ability, screw spacing, and photos with a tape measure.
 - 2.5 inch flexible automotive HVAC duct hose, matching adapters, clamps, and any Y connectors needed after the evaporator outlet count is proven.
 - Defrost/demist takeoff parts only after the evaporator/plenum position is known; do not steal all outlet area for face vents if demist is required.
@@ -53,11 +53,11 @@ Reject:
 - Vents with no hose neck or unknown hose size.
 - Thin decorative plastic that cannot clamp a duct hose securely.
 - Long rear runs made with small 2.0 inch hose unless airflow testing proves acceptable.
-- Any dash cut before the purchased evaporator, plenum, blower, duct bend radius, and vent bezels have been cardboard-mocked in the vehicle.
+- Any release of the LCD, control or vent apertures before the actual parts are measured and the evaporator, plenum, blower, duct bend radius and rear clearances are mocked in the vehicle. The centre dash opening itself is owner-authorised when transferred from the 1:1 Rev E template clear of the protected glovebox and speedometer pressings.
 
 ## Shop Call Text
 
-Need four directional A/C outlet vents for an old Land Cruiser hidden A/C installation. Prefer 2.5 inch hose-neck vents. Two should suit the lower dash or a slim under-dash panel for driver/passenger airflow. Two should be small directional pod/eyeball vents that can mount just behind the front-door pillar area, fed by longer duct hoses. Please send tape-measure photos of the face size, rear hose neck, depth behind the panel, screw holes, louver movement, and price. Also quote matching 2.5 inch flexible HVAC duct hose, clamps, and adapters/Y pieces, but final lengths are not cut until the evaporator and vent positions are mocked in the vehicle.
+Need four directional A/C outlet vents for an old Land Cruiser hidden A/C installation. Prefer 2.5 inch hose-neck vents. The front pair must be matched circular satin/brushed-silver units that can sit flush in a CNC dashboard fascia, approximately 65-70 mm maximum visible-face diameter, retained from behind without exposed front screws. The other two should be small directional pod/eyeball vents for positions just behind the front-door pillars, fed by longer duct hoses. Please send tape-measure photos of face diameter, required panel cutout, rear hose-neck OD, rear depth, retainer, louver movement, shutoff and price. Also quote matching 2.5 inch flexible HVAC duct hose, clamps and adapters/Y pieces; final openings and hose lengths wait for physical mock-up.
 
 ## Sources Checked
 
