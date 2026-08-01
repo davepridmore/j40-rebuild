@@ -1,18 +1,23 @@
 feature,x_mm,y_mm,width_or_diameter_mm,height_mm,layer,status_note
-nominal full-width envelope,0,0,1260.0,220.0,HOLD_FASCIA_OUTER,template coordinate system only; M1 physical trace controls
-fascia vertical centre datum,630.0,0,,220.0,HOLD_CENTRELINES,master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace
-main lower datum,0,50.0,1260.0,,HOLD_MAIN_LOWER_DATUM,normal face ends at Y50; only the compact right control channel extends locally to Y0; all four vents remain wholly in the main face
+nominal coordinate extent including local pods,0,-35.0,1260.0,255.0,HOLD_FASCIA_OUTER,255 mm total model extent exists only at local features; template coordinate system only; M1 physical trace controls
+fascia vertical centre datum,630.0,-35.0,,255.0,HOLD_CENTRELINES,master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace
+main lower datum,0,50.0,1260.0,,HOLD_MAIN_LOWER_DATUM,"normal face is 170 mm high and ends at Y50; only two inner-vent pods descend 85 mm to Y-35, plus the local column relief/control edge"
+left inner-vent pod envelope,408.0,-35.0,112.0,85.0,HOLD_FASCIA_OUTER,"rounded local projection only; M8/M9 knee, lever and duct mock-up required"
+right inner-vent pod envelope,740.0,-35.0,112.0,85.0,HOLD_FASCIA_OUTER,rounded local projection only; remains left of nominal steering keep-out; M8/M9 mock-up required
 LCD bezel envelope,518.0,76.0,224.0,136.0,HOLD_LCD_BEZEL_ENVELOPE,manufacturer drawing controls
 LCD aperture,529.0,86.5,202.0,115.0,HOLD_LCD_APERTURE,manufacturer drawing controls
 LCD active image,530.4,87.95,199.2,112.1,HOLD_LCD_ACTIVE_REFERENCE,9-inch / 16:9 mathematical reference only: 228.6 mm diagonal; sample controls
-OEM glovebox transfer envelope,97.0,58.0,315.0,157.0,HOLD_GLOVEBOX_TRANSFER_ENVELOPE,actual asymmetric lid/hinge/latch trace controls
-OEM speedometer transfer envelope,850.0,58.0,210.0,157.0,HOLD_SPEEDOMETER_TRANSFER_ENVELOPE,actual original assembly trace and mounts control
-right control bank envelope,842.0,4.0,309.0,46.0,HOLD_CONTROL_BANK_ENVELOPE,one passenger-to-driver row S1-S8 in lower right channel; exact 7 selectors + hazard; 39 mm pitch; M6/M9 HOLD
-vent 1 visible face,50.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
+OEM glovebox transfer envelope,152.0,65.0,210.0,145.0,HOLD_GLOVEBOX_TRANSFER_ENVELOPE,actual asymmetric lid/hinge/latch trace controls
+OEM speedometer transfer envelope,785.0,88.0,290.0,127.0,HOLD_SPEEDOMETER_TRANSFER_ENVELOPE,actual original assembly trace and mounts control
+steering-column axis,930.0,0,,105.0,HOLD_STEERING_COLUMN_AXIS,nominal alignment with retained cluster centre only; direct M1/M3/M9 trace controls
+steering-column swept keep-out,865.0,0.0,130.0,105.0,HOLD_STEERING_COLUMN_SWEPT_KEEP_OUT,nominal no-component envelope including shroud/stalk movement; not production geometry
+steering-column lower-edge relief,865.0,50.0,130.0,32.0,HOLD_STEERING_COLUMN_RELIEF_EDGE,radiused U-relief intent; replace with direct trace plus signed running clearance
+right control bank envelope,1076.0,3.0,179.0,113.0,HOLD_CONTROL_BANK_ENVELOPE,"two rows at extreme right: S1-S4 top, S5-S8 bottom; exact 7 selectors + hazard; 48 mm horizontal and 58 mm vertical pitch; M6/M8/M9 HOLD"
+vent 1 visible face,50.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"high end outlet; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
 vent 1 panel-opening reference,50.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
-vent 2 visible face,464.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; inner pair mirrored ±166.0 about fascia/LCD centreline X=630.0"
-vent 2 panel-opening reference,464.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
-vent 3 visible face,796.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; inner pair mirrored ±166.0 about fascia/LCD centreline X=630.0"
-vent 3 panel-opening reference,796.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
-vent 4 visible face,1210.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
+vent 2 visible face,464.0,20.0,87.0,,HOLD_VENT_FACE_ENVELOPE,"lowered inner outlet in local pod; Ø87 face spans Y=-23.5..63.5, wholly below LCD bezel bottom Y=76.0; pair mirrored ±166.0 about fascia/LCD centreline X=630.0; pod bottom Y=-35.0; M8/M9 clearance HOLD"
+vent 2 panel-opening reference,464.0,20.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 3 visible face,796.0,20.0,87.0,,HOLD_VENT_FACE_ENVELOPE,"lowered inner outlet in local pod; Ø87 face spans Y=-23.5..63.5, wholly below LCD bezel bottom Y=76.0; pair mirrored ±166.0 about fascia/LCD centreline X=630.0; pod bottom Y=-35.0; M8/M9 clearance HOLD"
+vent 3 panel-opening reference,796.0,20.0,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 4 visible face,1210.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"high end outlet; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
 vent 4 panel-opening reference,1210.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls

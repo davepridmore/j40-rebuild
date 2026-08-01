@@ -24,20 +24,20 @@ DELIVERABLE = ROOT / "deliverables/fabrication_packages/dashboard_lcd_hvac_fasci
 ASSEMBLED_BASE_PHOTO = ROOT / "photos/20260317_165113.jpg"
 BARE_BASE_PHOTO = ROOT / "photos/20260413_040719.jpg"
 ASSEMBLED_VIS_SOURCE = Path(
-    "/Users/davidpridmore/.codex/generated_images/019fb8d3-8269-7eb0-b457-d806a3cefbd4/exec-ac094ef4-d7bc-4092-9939-00fc081013bc.png"
+    "/Users/davidpridmore/.codex/generated_images/019fb8d3-8269-7eb0-b457-d806a3cefbd4/exec-2dc93f5f-cd29-452e-b333-f501e734231d.png"
 )
 BARE_VIS_SOURCE = Path(
-    "/Users/davidpridmore/.codex/generated_images/019fb8d3-8269-7eb0-b457-d806a3cefbd4/exec-ed9c376b-c959-44e7-8db5-2730ce307fe8.png"
+    "/Users/davidpridmore/.codex/generated_images/019fb8d3-8269-7eb0-b457-d806a3cefbd4/exec-71453810-0872-46ae-a8d1-2791b0491835.png"
 )
 SWITCH_REFERENCE_SOURCE = Path(
     "/var/folders/2r/rbnydbl91t9_jcjfhssspzqw0000gn/T/codex-clipboard-ff07d5a4-279b-4983-a817-caf5c2c9b1ad.png"
 )
 
-# Rev H is a full-width, one-piece visible face.  Its main face stops at Y=50.
-# All four vents have now been raised so their visible bezels share the LCD
-# bezel's upper datum and fit wholly in the main face.  Only a shallow rounded service channel carrying the
-# compact controls beneath the OEM cluster extends locally below that edge.
-# This avoids both low vent lobes and a separate full-height switch column.
+# Rev H is a full-width, one-piece visible face. Its normal lower edge is Y=50.
+# The two end vents remain high. The two inner vents are deliberately lower and
+# sit in identical local rounded pods, allowing their rear necks and elbows to
+# project deeper without increasing the complete dashboard height. A separate
+# shallow local channel carries the compact controls at the extreme right.
 # These coordinates remain a quotation /
 # template datum only; the physical vehicle trace at M1 controls the perimeter
 # and every preserved structural edge.
@@ -45,6 +45,7 @@ PANEL_W = 1260.0
 PANEL_H = 220.0
 PANEL_CENTRELINE_X = PANEL_W / 2
 MAIN_LOWER_Y = 50.0
+PANEL_MIN_Y = -35.0
 MATERIAL_THICKNESS = 1.5
 
 # A public early-model reproduction-panel listing gives 1400 x 250 x 100 mm.
@@ -78,41 +79,64 @@ LCD_ACTIVE = (
 # listing dimensions are face Ø87 / panel opening Ø75, but generic variants
 # differ in spigot and retention details.  The cut is explicitly HOLD until one
 # matched four-piece batch has been received and calipered at M7.
-# The end vents sit close to the usable ends of the front face, never in the
-# folded side returns.  The inner pair is centred symmetrically about the LCD.
-# All four outlet tops align with the top of the LCD bezel. They fit in the main
-# face and no longer require lower vent lobes.
+# The end vents sit high and close to the usable ends of the front face, never
+# in the folded side returns. The inner pair is centred symmetrically about the
+# LCD and lowered until each complete Ø87 face sits below the LCD bezel. Their
+# identical pods are the only deep downward extensions.
 VENT_FACE_DIAMETER = 87.0
 VENT_CORE_DIAMETER = 69.0
 VENT_NECK_DIAMETER = 75.0
 OUTER_VENT_CENTRE_INSET = 50.0
 INNER_VENT_CENTRE_OFFSET = 166.0
-VENT_TOP_DATUM_Y = LCD_BEZEL[1] + LCD_BEZEL[3]
-VENT_CENTRE_DATUM_Y = VENT_TOP_DATUM_Y - VENT_FACE_DIAMETER / 2
+OUTER_VENT_TOP_DATUM_Y = LCD_BEZEL[1] + LCD_BEZEL[3]
+OUTER_VENT_CENTRE_Y = OUTER_VENT_TOP_DATUM_Y - VENT_FACE_DIAMETER / 2
+INNER_VENT_CENTRE_Y = 20.0
+INNER_VENT_POD_HALF_W = 56.0
+INNER_VENT_POD_BOTTOM_Y = PANEL_MIN_Y
+MIN_INNER_VENT_LCD_VISIBLE_GAP = 8.0
+MIN_STATIC_REAR_CLEARANCE = 10.0
+MIN_MOVING_COLUMN_CLEARANCE = 20.0
+MIN_DUCT_ROUNDNESS_PERCENT = 90.0
 VENT_CENTRES = (
-    (OUTER_VENT_CENTRE_INSET, VENT_CENTRE_DATUM_Y),
-    (PANEL_CENTRELINE_X - INNER_VENT_CENTRE_OFFSET, VENT_CENTRE_DATUM_Y),
-    (PANEL_CENTRELINE_X + INNER_VENT_CENTRE_OFFSET, VENT_CENTRE_DATUM_Y),
-    (PANEL_W - OUTER_VENT_CENTRE_INSET, VENT_CENTRE_DATUM_Y),
+    (OUTER_VENT_CENTRE_INSET, OUTER_VENT_CENTRE_Y),
+    (PANEL_CENTRELINE_X - INNER_VENT_CENTRE_OFFSET, INNER_VENT_CENTRE_Y),
+    (PANEL_CENTRELINE_X + INNER_VENT_CENTRE_OFFSET, INNER_VENT_CENTRE_Y),
+    (PANEL_W - OUTER_VENT_CENTRE_INSET, OUTER_VENT_CENTRE_Y),
 )
 
-# Reference envelopes only. Exact OEM outlines, hinge/latch axes and mounting
-# holes are transferred from the retained parts during the M1-M3 template stage.
-# The upper components sit in the 170 mm-high main face. Their nominal outlines
-# are visual/clearance envelopes; M2/M3 direct transfers control real geometry.
-GLOVEBOX_ENVELOPE = (97.0, 58.0, 315.0, 157.0)
-SPEEDO_ENVELOPE = (850.0, 58.0, 210.0, 157.0)
+# Reference envelopes only. Perspective and missing scale datums prevent the
+# owner photos from becoming a dimensional drawing. The retained parts and
+# factory openings are directly traced at M2/M3; these nominal envelopes exist
+# only to test the surrounding layout and are never CNC release geometry.
+GLOVEBOX_ENVELOPE = (152.0, 65.0, 210.0, 145.0)
+SPEEDO_ENVELOPE = (785.0, 88.0, 290.0, 127.0)
 
-# Exactly eight visible stations occupy one labelled row in the right lower
-# vent/service channel: seven maintained selectors plus a separate hazard.
-# A one-row arrangement is the lowest-height packaging; flange, anti-rotation,
-# contact-block, steering-column and hand-clearance checks remain M6/M9 HOLD.
-CONTROL_BANK = (842.0, 4.0, 309.0, 46.0)
+# The RHD steering column passes through the lower edge directly beneath the
+# retained cluster. This nominal relief and swept keep-out make the packaging
+# constraint explicit, but M1/M3/M9 must replace them with a direct vehicle
+# trace of the installed column, shroud, stalks, bracket and full movement.
+STEERING_COLUMN_AXIS_X = SPEEDO_ENVELOPE[0] + SPEEDO_ENVELOPE[2] / 2
+STEERING_COLUMN_RELIEF_HALF_W = 65.0
+STEERING_COLUMN_RELIEF_RISE = 32.0
+STEERING_COLUMN_KEEP_OUT = (
+    STEERING_COLUMN_AXIS_X - STEERING_COLUMN_RELIEF_HALF_W,
+    0.0,
+    STEERING_COLUMN_RELIEF_HALF_W * 2,
+    105.0,
+)
+
+# Exactly eight visible stations occupy a compact two-row bank at the extreme
+# right: seven maintained selectors plus a separate hazard. Both rows are kept
+# wholly to the right of the nominal steering-column swept keep-out. Flange,
+# anti-rotation, contact-block, duct and hand-clearance checks remain M6/M8/M9
+# HOLD until the physical components and vehicle are mocked up 1:1.
+CONTROL_BANK = (1076.0, 3.0, 179.0, 113.0)
 
 SELECTOR_DIAMETER = 22.5
 HAZARD_DIAMETER = 16.0
-CONTROL_XS = tuple(860.0 + 39.0 * index for index in range(8))
-CONTROL_Y = 24.0
+CONTROL_COLUMNS = (1096.0, 1144.0, 1192.0, 1240.0)
+CONTROL_TOP_Y = 88.0
+CONTROL_BOTTOM_Y = 30.0
 CONTROL_LABEL_Y_OFFSET = 19.0
 SELECTOR_REAR_ENVELOPE = 68.0
 CONTROL_MAP = (
@@ -128,30 +152,61 @@ CONTROL_MAP = (
 
 
 def control_positions() -> list[tuple[float, float]]:
-    """Passenger/left-to-driver/right order in the single lower channel row."""
-    return [(control_x, CONTROL_Y) for control_x in CONTROL_XS]
+    """Top row S1-S4, then bottom row S5-S8, each left-to-right."""
+    return [
+        *((control_x, CONTROL_TOP_Y) for control_x in CONTROL_COLUMNS),
+        *((control_x, CONTROL_BOTTOM_Y) for control_x in CONTROL_COLUMNS),
+    ]
+
+
+def steering_column_relief_points(segments: int = 18) -> list[tuple[float, float]]:
+    """Right-to-left upper semicircle cut into the lower fascia edge."""
+    return [
+        (
+            STEERING_COLUMN_AXIS_X + STEERING_COLUMN_RELIEF_HALF_W * math.cos(math.pi * index / segments),
+            MAIN_LOWER_Y + STEERING_COLUMN_RELIEF_RISE * math.sin(math.pi * index / segments),
+        )
+        for index in range(segments + 1)
+    ]
+
+
+def inner_vent_pod_lower_points(center_x: float, segments: int = 18) -> list[tuple[float, float]]:
+    """Right-to-left half-ellipse forming one local lower vent pod."""
+    depth = MAIN_LOWER_Y - INNER_VENT_POD_BOTTOM_Y
+    return [
+        (
+            center_x + INNER_VENT_POD_HALF_W * math.cos(math.pi * index / segments),
+            MAIN_LOWER_Y - depth * math.sin(math.pi * index / segments),
+        )
+        for index in range(segments + 1)
+    ]
 
 
 def outer_profile_points() -> list[tuple[float, float]]:
-    """Clockwise nominal template outline with one local control channel.
+    """Clockwise nominal outline with two vent pods and local cut-outs.
 
-    The normal face ends at Y=50. All four raised vents fit wholly above this
-    datum. A compact rounded right-hand channel alone extends to Y=0 for the
-    eight visible control stations beneath the OEM cluster. The overall
-    envelope stays 220 mm while most of the face is only 170 mm high. Curves
-    are deliberately faceted quotation geometry until M1.
+    The normal face ends at Y=50. The fascia rises around the RHD steering
+    column in a radiused U-shaped relief beneath the retained cluster. The two
+    inner-vent pods dip locally to Y=-35, while the compact two-row control bank
+    at the extreme right extends locally to Y=3. Exact perimeter geometry
+    remains M1/M3/M7/M9 HOLD.
     """
+    left_inner_x = VENT_CENTRES[1][0]
+    right_inner_x = VENT_CENTRES[2][0]
     return [
         (0, PANEL_H), (PANEL_W, PANEL_H),
-        (PANEL_W, MAIN_LOWER_Y), (1168, MAIN_LOWER_Y),
-        (1166, 28), (1156, 10), (1138, 0),
-        (850, 0), (832, 10), (822, 28), (820, MAIN_LOWER_Y),
+        (PANEL_W, 12), (1252, 3), (1084, 3), (1076, 12), (1076, MAIN_LOWER_Y),
+        *steering_column_relief_points(),
+        (right_inner_x + INNER_VENT_POD_HALF_W, MAIN_LOWER_Y),
+        *inner_vent_pod_lower_points(right_inner_x),
+        (left_inner_x + INNER_VENT_POD_HALF_W, MAIN_LOWER_Y),
+        *inner_vent_pod_lower_points(left_inner_x),
         (0, MAIN_LOWER_Y),
     ]
 
 
 def glovebox_profile_points() -> list[tuple[float, float]]:
-    return [(97, 72), (107, 58), (392, 58), (412, 74), (412, 192), (395, 212), (117, 215), (97, 198)]
+    return [(152, 75), (162, 65), (342, 65), (362, 78), (362, 190), (345, 208), (172, 210), (152, 195)]
 
 
 def speedometer_profile_points() -> list[tuple[float, float]]:
@@ -161,7 +216,24 @@ def speedometer_profile_points() -> list[tuple[float, float]]:
     upper speedometer window and lower auxiliary windows; M3 direct transfer of
     the actual housing, mounts and rear stack controls every production feature.
     """
-    return [(850, 58), (850, 180), (861, 202), (885, 215), (1023, 215), (1047, 202), (1060, 180), (1060, 58)]
+    x, y, w, h = SPEEDO_ENVELOPE
+    shoulder = 15.0
+    return [
+        (x, y), (x, y + h - 28), (x + shoulder, y + h - 8),
+        (x + 38, y + h), (x + w - 38, y + h),
+        (x + w - shoulder, y + h - 8), (x + w, y + h - 28), (x + w, y),
+    ]
+
+
+def speedometer_window_rects() -> tuple[tuple[float, float, float, float], ...]:
+    """Schematic internal windows derived from the nominal transfer envelope."""
+    x, y, w, h = SPEEDO_ENVELOPE
+    lower_w = (w - 44.0) / 2
+    return (
+        (x + 38.0, y + 55.0, w - 76.0, h - 69.0),
+        (x + 16.0, y + 13.0, lower_w, 32.0),
+        (x + 28.0 + lower_w, y + 13.0, lower_w, 32.0),
+    )
 
 
 def rounded_rect_points(x: float, y: float, w: float, h: float, radius: float, segments: int = 8) -> list[tuple[float, float]]:
@@ -216,6 +288,10 @@ def write_dxf(path: Path, entities: list[list[str]]) -> None:
 def add_component_geometry(entities: list[list[str]]) -> None:
     entities.append(dxf_line("HOLD_MAIN_LOWER_DATUM", 0, MAIN_LOWER_Y, PANEL_W, MAIN_LOWER_Y))
     entities.append(dxf_line("HOLD_CENTRELINES", PANEL_CENTRELINE_X, 0, PANEL_CENTRELINE_X, PANEL_H))
+    kx, ky, kw, kh = STEERING_COLUMN_KEEP_OUT
+    entities.append(dxf_lwpoly("HOLD_STEERING_COLUMN_RELIEF_EDGE", steering_column_relief_points(), closed=False))
+    entities.append(dxf_lwpoly("HOLD_STEERING_COLUMN_SWEPT_KEEP_OUT", rounded_rect_points(kx, ky, kw, kh, 6)))
+    entities.append(dxf_line("HOLD_STEERING_COLUMN_AXIS", STEERING_COLUMN_AXIS_X, ky, STEERING_COLUMN_AXIS_X, ky + kh))
     bx, by, bw, bh = LCD_BEZEL
     ax, ay, aw, ah = LCD_APERTURE
     vx, vy, vw, vh = LCD_ACTIVE
@@ -295,46 +371,53 @@ def write_svg() -> None:
         controls.append(f'<text x="{sx(control_x):.2f}" y="{sy(control_y + CONTROL_LABEL_Y_OFFSET):.2f}" text-anchor="middle" class="control">{label}</text>')
     bx, by, bw, bh = LCD_BEZEL
     ax, ay, aw, ah = LCD_ACTIVE
+    speedo_upper, speedo_lower_left, speedo_lower_right = speedometer_window_rects()
+    speedo_x, speedo_y, speedo_w, speedo_h = SPEEDO_ENVELOPE
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
 <defs><linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3f4f4"/><stop offset=".5" stop-color="#b5bbbe"/><stop offset="1" stop-color="#71787c"/></linearGradient></defs>
 <style>.title{{font:700 22px Verdana;fill:#20262b}}.subtitle{{font:14px Verdana;fill:#53606a}}.label{{font:700 13px Verdana;fill:#20262b}}.small{{font:12px Verdana;fill:#53606a}}.control{{font:700 9px Verdana;fill:#20262b}}.ventno{{font:700 11px Verdana;fill:#e8ecee}}.dim{{stroke:#9c2424;stroke-width:1.5;fill:none}}.hold{{stroke:#aa6500;stroke-width:2;fill:none;stroke-dasharray:7 5}}</style>
 <rect width="1400" height="760" fill="#f7f8f9"/>
 <text x="55" y="42" class="title">J40 RHD FULL-WIDTH 9-INCH LCD / FOUR-OUTLET FASCIA - REV H</text>
-<text x="55" y="68" class="subtitle">170 mm main face with four raised outlets; only the compact labelled right control channel extends locally; all vehicle/interface geometry HOLD.</text>
+<text x="55" y="68" class="subtitle">170 mm normal face; high end outlets; lowered symmetric inner pair in local pods; RHD column relief; all interface geometry HOLD.</text>
 <polygon points="{svg_points(outer_profile_points(), scale, x0, y0)}" fill="#e8e2cc" stroke="#111" stroke-width="2"/>
 <line x1="{sx(0)}" y1="{sy(MAIN_LOWER_Y)}" x2="{sx(PANEL_W)}" y2="{sy(MAIN_LOWER_Y)}" class="hold"/>
+<rect x="{sx(STEERING_COLUMN_KEEP_OUT[0]):.2f}" y="{sy(STEERING_COLUMN_KEEP_OUT[1] + STEERING_COLUMN_KEEP_OUT[3]):.2f}" width="{STEERING_COLUMN_KEEP_OUT[2]*scale:.2f}" height="{STEERING_COLUMN_KEEP_OUT[3]*scale:.2f}" rx="{6*scale:.2f}" class="hold"/>
+<line x1="{sx(STEERING_COLUMN_AXIS_X):.2f}" y1="{sy(STEERING_COLUMN_KEEP_OUT[1]):.2f}" x2="{sx(STEERING_COLUMN_AXIS_X):.2f}" y2="{sy(STEERING_COLUMN_KEEP_OUT[1] + STEERING_COLUMN_KEEP_OUT[3]):.2f}" class="hold"/>
 <polygon points="{svg_points(glovebox_profile_points(), scale, x0, y0)}" fill="#aeb2b2" stroke="#5d6264" stroke-width="2"/>
-<circle cx="{sx(363)}" cy="{sy(130)}" r="7" fill="#24292d"/>
-<text x="{sx(255)}" y="{sy(139)}" text-anchor="middle" class="label">RETAIN OEM GLOVEBOX SHAPE / KNOB / PLATE</text>
+<circle cx="{sx(338)}" cy="{sy(140)}" r="7" fill="#24292d"/>
+<text x="{sx(257)}" y="{sy(139)}" text-anchor="middle" class="label">RETAIN OEM GLOVEBOX</text>
 <rect x="{sx(bx)}" y="{sy(by+bh)}" width="{bw*scale}" height="{bh*scale}" rx="5" fill="#11161a" stroke="#292f33" stroke-width="2"/>
 <rect x="{sx(ax)}" y="{sy(ay+ah)}" width="{aw*scale}" height="{ah*scale}" rx="3" fill="#263e4d" stroke="#dae2e6"/>
 <text x="{sx(LCD_CX)}" y="{sy(LCD_CY)-4}" text-anchor="middle" fill="#fff" font-family="Verdana" font-size="14" font-weight="700">9-INCH / 16:9 ACTIVE REFERENCE</text>
 <text x="{sx(LCD_CX)}" y="{sy(LCD_CY)+14}" text-anchor="middle" fill="#d6e0e5" font-family="Verdana" font-size="10">199.2 × 112.1 mm | 228.6 mm diagonal | aperture HOLD</text>
 <polygon points="{svg_points(speedometer_profile_points(), scale, x0, y0)}" fill="#bfc2bd" stroke="#0d0f10" stroke-width="2"/>
-<rect x="{sx(870)}" y="{sy(126+72)}" width="{170*scale}" height="{72*scale}" rx="{18*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
-<rect x="{sx(866)}" y="{sy(71+39)}" width="{70*scale}" height="{39*scale}" rx="{4*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
-<rect x="{sx(947)}" y="{sy(71+39)}" width="{98*scale}" height="{39*scale}" rx="{4*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
-<rect x="{sx(939)}" y="{sy(90+16)}" width="{7*scale}" height="{16*scale}" rx="{2*scale}" fill="#ede8d7" stroke="#16191b" stroke-width="1"/>
-<text x="{sx(955)}" y="{sy(158)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="10" font-weight="700">SPEED</text>
-<text x="{sx(901)}" y="{sy(87)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="8">FUEL</text>
-<text x="{sx(996)}" y="{sy(87)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="8">TEMP / AMP</text>
-<text x="{sx(955)}" y="{sy(219)}" text-anchor="middle" class="control">RETAIN / TRANSFER ORIGINAL SPEEDOMETER ASSEMBLY</text>
+<rect x="{sx(speedo_upper[0])}" y="{sy(speedo_upper[1]+speedo_upper[3])}" width="{speedo_upper[2]*scale}" height="{speedo_upper[3]*scale}" rx="{14*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
+<rect x="{sx(speedo_lower_left[0])}" y="{sy(speedo_lower_left[1]+speedo_lower_left[3])}" width="{speedo_lower_left[2]*scale}" height="{speedo_lower_left[3]*scale}" rx="{4*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
+<rect x="{sx(speedo_lower_right[0])}" y="{sy(speedo_lower_right[1]+speedo_lower_right[3])}" width="{speedo_lower_right[2]*scale}" height="{speedo_lower_right[3]*scale}" rx="{4*scale}" fill="#292d2e" stroke="#16191b" stroke-width="2"/>
+<rect x="{sx(STEERING_COLUMN_AXIS_X-3.5)}" y="{sy(speedo_y+29)}" width="{7*scale}" height="{16*scale}" rx="{2*scale}" fill="#ede8d7" stroke="#16191b" stroke-width="1"/>
+<text x="{sx(STEERING_COLUMN_AXIS_X)}" y="{sy(speedo_y+80)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="10" font-weight="700">SPEED</text>
+<text x="{sx(speedo_lower_left[0]+speedo_lower_left[2]/2)}" y="{sy(speedo_y+28)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="8">FUEL</text>
+<text x="{sx(speedo_lower_right[0]+speedo_lower_right[2]/2)}" y="{sy(speedo_y+28)}" text-anchor="middle" fill="#ede8d7" font-family="Verdana" font-size="8">TEMP / AMP</text>
+<text x="{sx(STEERING_COLUMN_AXIS_X)}" y="{sy(speedo_y+speedo_h+4)}" text-anchor="middle" class="control">RETAIN / DIRECT-TRANSFER ORIGINAL SPEEDOMETER ASSEMBLY</text>
 {''.join(vent_markup)}
 {''.join(controls)}
 <line x1="{sx(0)}" y1="{sy(0)+40}" x2="{sx(PANEL_W)}" y2="{sy(0)+40}" class="dim"/>
 <text x="{sx(PANEL_CENTRELINE_X)}" y="{sy(0)+62}" text-anchor="middle" class="label">{PANEL_W:.0f} NOMINAL REFERENCE ENVELOPE - M1 PHYSICAL DASH TRACE CONTROLS</text>
-<line x1="{sx(35)}" y1="{sy(VENT_CENTRE_DATUM_Y)}" x2="{sx(PANEL_W-35)}" y2="{sy(VENT_CENTRE_DATUM_Y)}" class="dim" stroke-dasharray="4 4"/>
+<line x1="{sx(0)}" y1="{sy(OUTER_VENT_TOP_DATUM_Y)}" x2="{sx(100)}" y2="{sy(OUTER_VENT_TOP_DATUM_Y)}" class="dim" stroke-dasharray="4 4"/>
+<line x1="{sx(PANEL_W-100)}" y1="{sy(OUTER_VENT_TOP_DATUM_Y)}" x2="{sx(PANEL_W)}" y2="{sy(OUTER_VENT_TOP_DATUM_Y)}" class="dim" stroke-dasharray="4 4"/>
+<line x1="{sx(VENT_CENTRES[1][0]-70)}" y1="{sy(INNER_VENT_CENTRE_Y)}" x2="{sx(VENT_CENTRES[1][0]+70)}" y2="{sy(INNER_VENT_CENTRE_Y)}" class="dim" stroke-dasharray="4 4"/>
+<line x1="{sx(VENT_CENTRES[2][0]-70)}" y1="{sy(INNER_VENT_CENTRE_Y)}" x2="{sx(VENT_CENTRES[2][0]+70)}" y2="{sy(INNER_VENT_CENTRE_Y)}" class="dim" stroke-dasharray="4 4"/>
 <line x1="{sx(PANEL_CENTRELINE_X)}" y1="{sy(0)}" x2="{sx(PANEL_CENTRELINE_X)}" y2="{sy(PANEL_H)}" class="hold"/>
 <text x="{sx(PANEL_CENTRELINE_X)}" y="{sy(PANEL_H)-10}" text-anchor="middle" class="label">CL X={PANEL_CENTRELINE_X:.1f}: LCD CENTRE = INNER-VENT PAIR MIDPOINT</text>
-<text x="{sx(PANEL_CENTRELINE_X)}" y="{sy(VENT_CENTRE_DATUM_Y)-58}" text-anchor="middle" class="label">FOUR VENT TOPS ALIGN WITH LCD BEZEL: TOP Y={VENT_TOP_DATUM_Y:.1f} / CENTRES Y={VENT_CENTRE_DATUM_Y:.1f} | INNER PAIR ±{INNER_VENT_CENTRE_OFFSET:.0f} ABOUT CL | HOLD M7</text>
+<text x="{sx(PANEL_CENTRELINE_X)}" y="{sy(PANEL_MIN_Y)+28}" text-anchor="middle" class="label">INNER VENTS: CENTRES Y={INNER_VENT_CENTRE_Y:.1f}, ±{INNER_VENT_CENTRE_OFFSET:.0f} ABOUT CL; FACE TOP Y={INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2:.1f}, {LCD_BEZEL[1]-(INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2):.1f} BELOW LCD BEZEL | PODS TO Y={INNER_VENT_POD_BOTTOM_Y:.1f} | HOLD M7</text>
 <rect x="55" y="500" width="1290" height="210" rx="9" fill="#fff" stroke="#c8d0d5"/>
 <text x="78" y="535" class="label">RELEASE / FABRICATION INTENT</text>
 <text x="78" y="563" class="small">• Full existing face removed only after M1 full-size template identifies structural cowl, A-pillar and steering-column boundaries.</text>
-<text x="78" y="588" class="small">• Retained glovebox | centred LCD | retained cluster. Four raised outlets occupy otherwise-free side gaps without crossing those components.</text>
-<text x="78" y="613" class="small">• LCD is exactly on fascia CL; inner vents are mirrored ±{INNER_VENT_CENTRE_OFFSET:.0f} mm. Four vent-bezel tops align with the LCD bezel at Y={VENT_TOP_DATUM_Y:.1f}.</text>
-<text x="78" y="638" class="small">• One shallow right control channel carries 7 selectors + red hazard in a single labelled row; Ø22.5 / 68 rear ref; M6/M9 HOLD.</text>
+<text x="78" y="588" class="small">• Retained glovebox | centred LCD | retained cluster. End outlets stay high; only the inner pair drops into two identical rounded local pods.</text>
+<text x="78" y="613" class="small">• LCD and inner-pair midpoint are exactly on fascia CL. Inner faces sit wholly below the LCD bezel and remain mirrored ±{INNER_VENT_CENTRE_OFFSET:.0f} mm.</text>
+<text x="78" y="638" class="small">• RHD column axis X={STEERING_COLUMN_AXIS_X:.1f}; nominal 130 × 105 swept keep-out and U-relief are HOLD to direct M1/M3/M9 trace.</text>
 <text x="78" y="663" class="small">• One-piece 1.5 mm CR4 visible face; rear screen carrier and stiffeners transfer load to retained dashboard structure.</text>
-<text x="78" y="688" class="small">• Orange/dashed/HOLD geometry is quotation and transfer reference only. Production metal cutting awaits M1-M10 sign-off.</text>
+<text x="78" y="688" class="small">• Extreme-right two-row bank: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE/HAZARD; all cuts HOLD.</text>
 </svg>'''
     (OUT / "dashboard_lcd_hvac_fascia_rev_h_dimensioned_front.svg").write_text(svg, encoding="utf-8")
 
@@ -373,6 +456,9 @@ def draw_panel(c: canvas.Canvas, x: float, y: float, scale: float) -> None:
     c.setDash(4, 3)
     c.line(px(0), py(MAIN_LOWER_Y), px(PANEL_W), py(MAIN_LOWER_Y))
     c.line(px(PANEL_CENTRELINE_X), py(0), px(PANEL_CENTRELINE_X), py(PANEL_H))
+    kx, ky, kw, kh = STEERING_COLUMN_KEEP_OUT
+    c.roundRect(px(kx), py(ky), kw * scale * mm, kh * scale * mm, 6 * scale * mm, fill=0, stroke=1)
+    c.line(px(STEERING_COLUMN_AXIS_X), py(ky), px(STEERING_COLUMN_AXIS_X), py(ky + kh))
     c.setDash()
     gp = c.beginPath()
     glove_points = glovebox_profile_points()
@@ -401,12 +487,13 @@ def draw_panel(c: canvas.Canvas, x: float, y: float, scale: float) -> None:
     c.setFillColor(HexColor("#bfc2bd"))
     c.setStrokeColor(HexColor("#111111"))
     c.drawPath(sp, fill=1, stroke=1)
+    speedo_upper, speedo_lower_left, speedo_lower_right = speedometer_window_rects()
     c.setFillColor(HexColor("#292d2e"))
-    c.roundRect(px(870), py(126), 170 * scale * mm, 72 * scale * mm, 18 * scale * mm, fill=1, stroke=1)
-    c.roundRect(px(866), py(71), 70 * scale * mm, 39 * scale * mm, 4 * scale * mm, fill=1, stroke=1)
-    c.roundRect(px(947), py(71), 98 * scale * mm, 39 * scale * mm, 4 * scale * mm, fill=1, stroke=1)
+    c.roundRect(px(speedo_upper[0]), py(speedo_upper[1]), speedo_upper[2] * scale * mm, speedo_upper[3] * scale * mm, 14 * scale * mm, fill=1, stroke=1)
+    c.roundRect(px(speedo_lower_left[0]), py(speedo_lower_left[1]), speedo_lower_left[2] * scale * mm, speedo_lower_left[3] * scale * mm, 4 * scale * mm, fill=1, stroke=1)
+    c.roundRect(px(speedo_lower_right[0]), py(speedo_lower_right[1]), speedo_lower_right[2] * scale * mm, speedo_lower_right[3] * scale * mm, 4 * scale * mm, fill=1, stroke=1)
     c.setFillColor(HexColor("#ede8d7"))
-    c.roundRect(px(939), py(90), 7 * scale * mm, 16 * scale * mm, 2 * scale * mm, fill=1, stroke=1)
+    c.roundRect(px(STEERING_COLUMN_AXIS_X - 3.5), py(SPEEDO_ENVELOPE[1] + 13), 7 * scale * mm, 16 * scale * mm, 2 * scale * mm, fill=1, stroke=1)
     for vent_x, vent_y in VENT_CENTRES:
         c.setFillColor(HexColor("#bbc1c4"))
         c.setStrokeColor(HexColor("#5f666a"))
@@ -439,18 +526,19 @@ def write_pdf() -> None:
     draw_panel(c, 20 * mm, 113 * mm, 0.30)
     c.setFillColor(HexColor("#8b1e1e"))
     c.setFont("Helvetica-Bold", 8)
-    c.drawCentredString(page_w / 2, 106 * mm, f"{PANEL_W:.0f} x {PANEL_H:.0f} nominal coordinate envelope only - the M1 physical dash trace controls the final one-piece perimeter")
+    c.drawCentredString(page_w / 2, 106 * mm, f"Nominal X 0..{PANEL_W:.0f}, Y {PANEL_MIN_Y:.0f}..{PANEL_H:.0f}; normal face is 170 high and only the two vent pods descend {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} - M1 physical trace controls")
     c.setFillColor(HexColor("#20262b"))
     c.setFont("Helvetica-Bold", 10)
     c.drawString(15 * mm, 91 * mm, "LOCKED ARCHITECTURE")
     notes = [
         "Full existing visible dashboard face is replaced by one formed 1.5 mm CR4 face after structural boundaries are transferred; retain cowl, A-pillars, steering-column support and firewall structure.",
         "A 9-inch / 16:9 active-image reference is 199.2 x 112.1 mm = 228.6 mm diagonal. The Sehgal 9-inch listing publishes no chassis/cutout drawing: bezel, aperture, rear body and mounts are HOLD to a bought sample.",
-        f"LCD centre X={PANEL_CENTRELINE_X:.1f}. Inner vent centres X={VENT_CENTRES[1][0]:.1f}/{VENT_CENTRES[2][0]:.1f}; their midpoint is exactly X={PANEL_CENTRELINE_X:.1f} and offsets are equal at ±{INNER_VENT_CENTRE_OFFSET:.1f}. All four vent centres share Y={VENT_CENTRE_DATUM_Y:.1f}; their Ø87 bezel tops align with the LCD bezel at Y={VENT_TOP_DATUM_Y:.1f}.",
+        f"LCD centre X={PANEL_CENTRELINE_X:.1f}. Inner vents are exactly symmetric at X={VENT_CENTRES[1][0]:.1f}/{VENT_CENTRES[2][0]:.1f}, Y={INNER_VENT_CENTRE_Y:.1f}; each Ø87 face ends at Y={INNER_VENT_CENTRE_Y + VENT_FACE_DIAMETER/2:.1f}, {LCD_BEZEL[1]-(INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2):.1f} mm below the LCD bezel bottom Y={LCD_BEZEL[1]:.1f}.",
         "Four matching satin-silver generic vents: published face Ø87 and panel opening Ø75 reference; M7 sample/caliper gate controls the cut.",
-        f"The normal face is {PANEL_H-MAIN_LOWER_Y:.0f} mm high. All four raised vents fit within it; only the compact driver-side control channel extends to the {PANEL_H:.0f} mm overall envelope.",
-        "Original asymmetric glovebox | true 9-inch central LCD | original speedometer. Four raised vents use otherwise-free side gaps and top-align with the LCD bezel.",
-        "One shallow channel beneath the speedometer carries a passenger-to-driver row: WIPERS, LIGHTS, SPOTS, AUX, BLOWER, A/C, ENGINE and separate red HAZARD.",
+        f"The normal face is {PANEL_H-MAIN_LOWER_Y:.0f} mm high. The two identical vent pods alone descend to Y={PANEL_MIN_Y:.0f}; prove their {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local projection against knees, levers and four rear ducts at M8/M9.",
+        f"Outer vents remain high at Y={OUTER_VENT_CENTRE_Y:.1f}, with their tops at the LCD-top datum Y={OUTER_VENT_TOP_DATUM_Y:.1f}. Original glovebox and speedometer stay in their factory openings; M2/M3 direct traces override this schematic.",
+        f"A nominal radiused U-relief at the schematic steering axis X={STEERING_COLUMN_AXIS_X:.1f} clears the RHD column; the installed factory position, trace and swept envelope are M1/M3/M9 HOLD.",
+        "All controls sit fully right of the column keep-out in two compact rows: WIPERS/LIGHTS/SPOTS/AUX above BLOWER/A/C/ENGINE/red HAZARD.",
     ]
     y = 84 * mm
     c.setFont("Helvetica", 7.2)
@@ -480,9 +568,9 @@ def write_pdf() -> None:
     draw_image_fit(c, BARE_BASE_PHOTO, 15 * mm, 51 * mm, 190 * mm, 88 * mm)
     draw_image_fit(c, OUT / "dashboard_lcd_hvac_fascia_rev_h_photo_overlay_bare_shell.png", 215 * mm, 51 * mm, 190 * mm, 88 * mm)
     c.setFont("Helvetica", 7.5)
-    c.drawString(15 * mm, 39 * mm, "Visual check: four raised vents top-aligned with the LCD bezel, shallow right control channel, true 9-inch centre screen, and untouched OEM cluster/glovebox.")
+    c.drawString(15 * mm, 39 * mm, "Visual check: high end vents plus a lowered symmetric inner pair, true 9-inch centre screen, untouched OEM items, RHD column relief and extreme-right controls.")
     c.drawString(15 * mm, 32 * mm, "The oblique driver view naturally foreshortens and partly masks the screen; M4 sample measurement, not apparent photo size, controls the LCD cut.")
-    c.drawString(15 * mm, 25 * mm, f"All four Ø87 bezel tops share Y={VENT_TOP_DATUM_Y:.1f}; centres are Y={VENT_CENTRE_DATUM_Y:.1f}. Outer faces retain 6.5 mm nominal end land. Only controls use the lower channel.")
+    c.drawString(15 * mm, 25 * mm, f"Nominal inner vent Y={INNER_VENT_CENTRE_Y:.1f} in local pods to Y={PANEL_MIN_Y:.0f}; outer vent Y={OUTER_VENT_CENTRE_Y:.1f}; schematic column axis X={STEERING_COLUMN_AXIS_X:.1f}. Photos release no dimension.")
     c.setFillColor(HexColor("#8b1e1e"))
     c.setFont("Helvetica-Bold", 7.8)
     c.drawString(15 * mm, 14 * mm, "VISUALISATIONS ARE DESIGN INTENT ONLY. CNC RELEASE REQUIRES ACTUAL DASH, LCD, VENTS, CONTROLS AND A SIGNED FULL-SIZE TEMPLATE.")
@@ -491,14 +579,17 @@ def write_pdf() -> None:
     # Page 3 - exact controls and electrical implementation.
     c.setFillColor(HexColor("#20262b"))
     c.setFont("Helvetica-Bold", 18)
-    c.drawString(15 * mm, page_h - 16 * mm, "Exact right-channel control schedule and electrical boundaries")
+    c.drawString(15 * mm, page_h - 16 * mm, "Exact extreme-right two-row control schedule and electrical boundaries")
     c.setFont("Helvetica", 8.5)
     c.drawRightString(page_w - 15 * mm, page_h - 16 * mm, "Exactly 7 industrial selectors + 1 separate red hazard")
     style = ParagraphStyle("cell", fontName="Helvetica", fontSize=6.2, leading=7.1, alignment=TA_LEFT, textColor=HexColor("#20262b"))
     header_style = ParagraphStyle("head", fontName="Helvetica-Bold", fontSize=6.4, leading=7.3, textColor=colors.white)
     headers = ["ID", "CABIN POSITION", "LABEL", "HARDWARE / STATES", "PLAIN-LANGUAGE FUNCTION", "ELECTRICAL TARGET / CONSTRAINT"]
     table_rows = [[Paragraph(value, header_style) for value in headers]]
-    locations = [f"single row station {index}/8" for index in range(1, 9)]
+    locations = [
+        "top row 1/4", "top row 2/4", "top row 3/4", "top row 4/4",
+        "bottom row 1/4", "bottom row 2/4", "bottom row 3/4", "bottom row 4/4",
+    ]
     actions = [
         "Parks the wipers in OFF and selects low or high wipe.",
         "Selects lights off, sidelights or headlamps; original dip remains.",
@@ -557,18 +648,21 @@ def write_pdf() -> None:
             "Low-gloss body-colour finish; deburr/radius every edge and epoxy-prime both sides before paint.",
             "Keep the face one visible piece. Concealed rear rails, vent rings, LCD carrier and local doublers may be separate.",
             "Use approx. 15 mm returns where the vehicle permits. Keep the visible lower edge shallow; use concealed rear rails/flanges where a continuous fold is impractical.",
+            "Form a smooth radiused relief around the RHD steering column only from the signed M1/M3 trace. Never cut or relocate its support bracket.",
             "Screen mass goes into a rear bracket tied to retained structure, never the 1.5 mm skin alone.",
             "Provide hidden M5 fasteners at <=150 mm pitch where structure permits and allow cabin-side LCD/vent service removal.",
         ]),
         (147, "HVAC / PACKAGING", [
             "Exactly four matching generic silver outlets with published Ø87 faces / Ø75 panel-opening reference; M7 real-sample data controls.",
-            f"Raise all four outlets into the unused side gaps and align their visible bezel tops with the LCD bezel. Transfer the Y={VENT_TOP_DATUM_Y:.1f} top datum from one laser/level line; no vent lobe is required.",
+            f"Keep the two end outlets high with bezel tops at Y={OUTER_VENT_TOP_DATUM_Y:.1f}. Lower only the symmetric inner pair to centre Y={INNER_VENT_CENTRE_Y:.1f}, with their full faces below the LCD bezel.",
+            f"Form two matching rounded body-colour pods around the inner outlets. Pods descend locally from the normal Y={MAIN_LOWER_Y:.0f} edge to Y={PANEL_MIN_Y:.0f}; do not extend the complete dashboard downward.",
             "Use four branches sized to the sampled vent spigot from a balanced plenum. Confirm hose ID and bend radius after M7; do not assume 3-inch duct.",
             "Do not crush hose or obstruct the glovebox, speedometer, column, wiring, LCD connectors, demist system or service paths.",
-            "Create vent-neck depth rearward within the main face. Verify all four duct bends plus the lower right-channel selector rear stacks against the cluster, column, wiring, knee and levers in the complete mock-up.",
+            f"Use the inner pods for extra rear neck/elbow depth. At M8/M9 prove both {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local drops, all four duct bends and the selector stacks against the cluster, column support, wiring, knees and levers.",
+            f"M8/M9 acceptance minima: visible inner-rim/LCD gap >= {MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f} mm; vent retainer/duct to fixed hardware >= {MIN_STATIC_REAR_CLEARANCE:.0f} mm; to signed moving column/shroud/stalk sweep >= {MIN_MOVING_COLUMN_CLEARANCE:.0f} mm; duct minor axis >= {MIN_DUCT_ROUNDNESS_PERCENT:.0f}% of round ID. Photograph the tightest point with ruler/feeler/caliper.",
         ]),
         (279, "CUT / FINISH SEQUENCE", [
-            "1. Cut the disposable full-size template only. Fit, trim and mark structural keep-outs on the actual vehicle.",
+            "1. Cut the disposable full-size template only. Fit, trim and directly trace the column/shroud/stalk sweep plus all structural keep-outs on the actual vehicle.",
             "2. Mount real glovebox, cluster, LCD, four vents, seven selectors and hazard to the template or cheap-sheet prototype.",
             "3. Prove rear stacks, four ducts, steering/lever/knee clearance, sight lines, glovebox sweep and service removal.",
             "4. Owner signs the perimeter and every actual-part aperture. Fabricator converts approved trace to production toolpaths.",
@@ -590,11 +684,11 @@ def write_pdf() -> None:
     c.setFont("Helvetica-Bold", 10)
     c.drawString(15 * mm, 82 * mm, "M1-M10 RELEASE GATES")
     gates = [
-        "M1 full-width perimeter/structural trace", "M2 OEM glovebox trace, hinge, latch and sweep",
-        "M3 OEM cluster outline, depth, mounts and driver sight line", "M4 LCD maker drawing, active area, aperture and bezel",
+        "M1 perimeter/structure plus column axis, shroud, stalk and sweep trace", "M2 OEM glovebox trace, hinge, latch and sweep",
+        "M3 OEM cluster outline, depth, mounts, column relationship and sight line", "M4 LCD maker drawing, active area, aperture and bezel",
         "M5 LCD rear body, support, connectors and removal", "M6 seven real selectors + hazard: part code, Ø22.5 bush/cut, flange, anti-rotation and 68 mm rear envelope",
-        "M7 four matched vents: face, Ø75 cut, retainer, spigot and depth", "M8 four-duct mock-up, actual hose ID/bend radii, flow and all rear clearances",
-        "M9 signed full-size prototype: driver, controls, glovebox, column, levers and service", "M10 continuity, labels, wiper park/washer, light truth table, blower, A/C safeties, ENGINE key-off/manual fallback, AUX/SPOTS/hazard tests",
+        "M7 four matched vents: face, Ø75 cut, retainer, spigot and depth", "M8 duct mock-up: prove 10 mm fixed / 20 mm moving clearance and >=90% roundness",
+        "M9 signed prototype: prove >=8 mm LCD gap plus driver, column, levers and service", "M10 continuity, labels, wiper park/washer, light truth table, blower, A/C safeties, ENGINE key-off/manual fallback, AUX/SPOTS/hazard tests",
     ]
     for index, gate in enumerate(gates):
         column = 0 if index < 5 else 1
@@ -625,20 +719,28 @@ def write_csvs() -> None:
         writer = csv.writer(handle)
         writer.writerow(["feature", "x_mm", "y_mm", "width_or_diameter_mm", "height_mm", "layer", "status_note"])
         rows = [
-            ["nominal full-width envelope", 0, 0, PANEL_W, PANEL_H, "HOLD_FASCIA_OUTER", "template coordinate system only; M1 physical trace controls"],
-            ["fascia vertical centre datum", PANEL_CENTRELINE_X, 0, "", PANEL_H, "HOLD_CENTRELINES", "master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace"],
-            ["main lower datum", 0, MAIN_LOWER_Y, PANEL_W, "", "HOLD_MAIN_LOWER_DATUM", "normal face ends at Y50; only the compact right control channel extends locally to Y0; all four vents remain wholly in the main face"],
+            ["nominal coordinate extent including local pods", 0, PANEL_MIN_Y, PANEL_W, PANEL_H - PANEL_MIN_Y, "HOLD_FASCIA_OUTER", f"{PANEL_H-PANEL_MIN_Y:.0f} mm total model extent exists only at local features; template coordinate system only; M1 physical trace controls"],
+            ["fascia vertical centre datum", PANEL_CENTRELINE_X, PANEL_MIN_Y, "", PANEL_H - PANEL_MIN_Y, "HOLD_CENTRELINES", "master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace"],
+            ["main lower datum", 0, MAIN_LOWER_Y, PANEL_W, "", "HOLD_MAIN_LOWER_DATUM", f"normal face is 170 mm high and ends at Y50; only two inner-vent pods descend {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm to Y{PANEL_MIN_Y:.0f}, plus the local column relief/control edge"],
+            ["left inner-vent pod envelope", VENT_CENTRES[1][0] - INNER_VENT_POD_HALF_W, PANEL_MIN_Y, 2 * INNER_VENT_POD_HALF_W, MAIN_LOWER_Y - PANEL_MIN_Y, "HOLD_FASCIA_OUTER", "rounded local projection only; M8/M9 knee, lever and duct mock-up required"],
+            ["right inner-vent pod envelope", VENT_CENTRES[2][0] - INNER_VENT_POD_HALF_W, PANEL_MIN_Y, 2 * INNER_VENT_POD_HALF_W, MAIN_LOWER_Y - PANEL_MIN_Y, "HOLD_FASCIA_OUTER", "rounded local projection only; remains left of nominal steering keep-out; M8/M9 mock-up required"],
             ["LCD bezel envelope", LCD_BEZEL[0], LCD_BEZEL[1], LCD_BEZEL[2], LCD_BEZEL[3], "HOLD_LCD_BEZEL_ENVELOPE", "manufacturer drawing controls"],
             ["LCD aperture", LCD_APERTURE[0], LCD_APERTURE[1], LCD_APERTURE[2], LCD_APERTURE[3], "HOLD_LCD_APERTURE", "manufacturer drawing controls"],
             ["LCD active image", LCD_ACTIVE[0], LCD_ACTIVE[1], LCD_ACTIVE[2], LCD_ACTIVE[3], "HOLD_LCD_ACTIVE_REFERENCE", "9-inch / 16:9 mathematical reference only: 228.6 mm diagonal; sample controls"],
             ["OEM glovebox transfer envelope", GLOVEBOX_ENVELOPE[0], GLOVEBOX_ENVELOPE[1], GLOVEBOX_ENVELOPE[2], GLOVEBOX_ENVELOPE[3], "HOLD_GLOVEBOX_TRANSFER_ENVELOPE", "actual asymmetric lid/hinge/latch trace controls"],
             ["OEM speedometer transfer envelope", SPEEDO_ENVELOPE[0], SPEEDO_ENVELOPE[1], SPEEDO_ENVELOPE[2], SPEEDO_ENVELOPE[3], "HOLD_SPEEDOMETER_TRANSFER_ENVELOPE", "actual original assembly trace and mounts control"],
-            ["right control bank envelope", CONTROL_BANK[0], CONTROL_BANK[1], CONTROL_BANK[2], CONTROL_BANK[3], "HOLD_CONTROL_BANK_ENVELOPE", "one passenger-to-driver row S1-S8 in lower right channel; exact 7 selectors + hazard; 39 mm pitch; M6/M9 HOLD"],
+            ["steering-column axis", STEERING_COLUMN_AXIS_X, 0, "", STEERING_COLUMN_KEEP_OUT[3], "HOLD_STEERING_COLUMN_AXIS", "nominal alignment with retained cluster centre only; direct M1/M3/M9 trace controls"],
+            ["steering-column swept keep-out", STEERING_COLUMN_KEEP_OUT[0], STEERING_COLUMN_KEEP_OUT[1], STEERING_COLUMN_KEEP_OUT[2], STEERING_COLUMN_KEEP_OUT[3], "HOLD_STEERING_COLUMN_SWEPT_KEEP_OUT", "nominal no-component envelope including shroud/stalk movement; not production geometry"],
+            ["steering-column lower-edge relief", STEERING_COLUMN_AXIS_X - STEERING_COLUMN_RELIEF_HALF_W, MAIN_LOWER_Y, 2 * STEERING_COLUMN_RELIEF_HALF_W, STEERING_COLUMN_RELIEF_RISE, "HOLD_STEERING_COLUMN_RELIEF_EDGE", "radiused U-relief intent; replace with direct trace plus signed running clearance"],
+            ["right control bank envelope", CONTROL_BANK[0], CONTROL_BANK[1], CONTROL_BANK[2], CONTROL_BANK[3], "HOLD_CONTROL_BANK_ENVELOPE", "two rows at extreme right: S1-S4 top, S5-S8 bottom; exact 7 selectors + hazard; 48 mm horizontal and 58 mm vertical pitch; M6/M8/M9 HOLD"],
         ]
         for index, (vent_x, vent_y) in enumerate(VENT_CENTRES, start=1):
-            face_note = f"centre coordinate; all four Y={VENT_CENTRE_DATUM_Y:.1f} exactly; Ø87 bezel top Y={VENT_TOP_DATUM_Y:.1f}, aligned with LCD bezel top"
+            if index in (1, 4):
+                face_note = f"high end outlet; Ø87 bezel top Y={OUTER_VENT_TOP_DATUM_Y:.1f}, aligned with LCD bezel top"
+            else:
+                face_note = f"lowered inner outlet in local pod; Ø87 face spans Y={vent_y-VENT_FACE_DIAMETER/2:.1f}..{vent_y+VENT_FACE_DIAMETER/2:.1f}, wholly below LCD bezel bottom Y={LCD_BEZEL[1]:.1f}"
             if index in (2, 3):
-                face_note += f"; inner pair mirrored ±{INNER_VENT_CENTRE_OFFSET:.1f} about fascia/LCD centreline X={PANEL_CENTRELINE_X:.1f}"
+                face_note += f"; pair mirrored ±{INNER_VENT_CENTRE_OFFSET:.1f} about fascia/LCD centreline X={PANEL_CENTRELINE_X:.1f}; pod bottom Y={PANEL_MIN_Y:.1f}; M8/M9 clearance HOLD"
             if index in (1, 4):
                 face_note += "; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
             rows.append([f"vent {index} visible face", vent_x, vent_y, VENT_FACE_DIAMETER, "", "HOLD_VENT_FACE_ENVELOPE", face_note])
@@ -659,22 +761,24 @@ def write_csvs() -> None:
                 release = "function/label locked; wiring HOLD until EEI-003 identifies fuel-stop logic and key-off/manual fallback tests pass"
             elif label == "HAZARD":
                 release = "separate from seven selectors; aperture/part HOLD"
-            physical_position = f"single lower-right channel row; station {station_index} of 8 passenger-to-driver"
+            row_name = "top" if station_index <= 4 else "bottom"
+            row_station = station_index if station_index <= 4 else station_index - 4
+            physical_position = f"extreme-right {row_name} row; station {row_station} of 4 left-to-right"
             writer.writerow([control_id, physical_position, control_x, control_y, hardware, label, states, action, electrical, release])
 
     with (OUT / "measurement_and_release_schedule.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
         writer.writerow(["gate", "measurement_or_test", "nominal_intent", "required_evidence", "release_status"])
         writer.writerows([
-            ["M1", "full-width dashboard face perimeter, cowl/A-pillar/column/firewall structural keep-outs, attachment flange and true usable-face centreline", f"{PANEL_H-MAIN_LOWER_Y:.0f} mm normal face plus only the compact right control channel within a {PANEL_W:.0f} x {PANEL_H:.0f} coordinate envelope; not a vehicle dimension", "rigid full-size template fitted and trimmed; front/rear ruler photos; centreline derived from signed usable face; owner-signed perimeter", "HOLD all metal and vehicle cuts"],
+            ["M1", "full-width dashboard perimeter; cowl/A-pillar/firewall structure; steering-column axis, installed angle, shroud OD, stalk/sweep and support; attachment flange; true usable-face centreline", f"{PANEL_H-MAIN_LOWER_Y:.0f} mm normal face; only two 112 mm-wide inner-vent pods descend {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm, with separate local column/control shaping, inside nominal X0..{PANEL_W:.0f}/Y{PANEL_MIN_Y:.0f}..{PANEL_H:.0f}; none are vehicle dimensions", "rigid full-size template fitted and trimmed; direct column/shroud/sweep trace; front/rear ruler photos; centreline derived from signed usable face; owner-signed perimeter", "HOLD all metal and vehicle cuts"],
             ["M2", "OEM glovebox exact asymmetric outline, hinge/latch axes, knob, instruction plate, rear depth and full opening sweep", "preserve original appearance and operation", "direct trace/rubbing, mounted donor, sweep photos and clearance record", "HOLD"],
-            ["M3", "OEM speedometer/cluster exact outline, mounts, depth, cables/wiring and seated-driver sight line", "retain original assembly; relocate only as signed", "direct trace/rubbing, rear depth gauge and driver-view photos", "HOLD"],
+            ["M3", "OEM speedometer/cluster exact factory opening, outline, mounts, depth, cables/wiring, column-axis relationship and seated-driver sight line", f"retain original assembly without relocation; schematic placeholder cluster centre and column axis X={STEERING_COLUMN_AXIS_X:.1f} is not a vehicle dimension", "direct trace/rubbing of the existing factory opening and installed column relationship, rear depth gauge and driver-view photos; copied trace replaces every nominal cluster/axis coordinate", "HOLD"],
             ["M4", "LCD active area, aperture, bezel and corner radii", "9-inch 16:9 active 199.2 x 112.1; 228.6 diagonal; aperture 202 x 115 reference", "manufacturer mechanical drawing and caliper confirmation", "HOLD"],
             ["M5", "LCD rear body, mount centres, mass, connectors, cable bend, cooling and service removal", f"screen centre X{PANEL_CENTRELINE_X:.1f}/Y{LCD_CY:.1f}; exactly coincident with fascia centreline and inner-vent-pair midpoint; separate rear structural carrier", "rear-body rubbing, depth record, bracket mock-up, centreline check and cabin-side removal test", "HOLD"],
-            ["M6", "seven bought Schneider-style selectors and separate hazard: part code, head/lever sweep, bush, flange, anti-rotation and contact-block stack", "single horizontal row; 39 mm pitch; selector panel cut Ø22.5; 68 mm rear envelope; hazard Ø16 reference", "part-code photo plus caliper sheet for every part and 1:1 horizontal right-channel trial including hand clearance", "HOLD"],
+            ["M6", "seven bought Schneider-style selectors and separate hazard: part code, head/lever sweep, bush, flange, anti-rotation and contact-block stack", "two rows of four; 48 mm horizontal and 58 mm vertical pitch; selector panel cut Ø22.5; 68 mm rear envelope; hazard Ø16 reference", "part-code photo plus caliper sheet for every part and 1:1 two-row extreme-right trial including hand clearance", "HOLD"],
             ["M7", "four matched generic vent faces, panel opening, retention, spigot OD and rear depth", "published silver/chrome ABS family: Ø87 face; Ø75 panel-opening reference", "one received four-piece batch, seller drawing/listing, caliper record and fitted retainer trial for all four", "HOLD"],
-            ["M8", "four ducts, plenum balance, actual hose ID/bend radii, selector rear stacks and rear/service clearances", "sampled vent spigot controls duct size; no crushed hose or selector/duct/cluster/column clash", "full rear mock-up, obstruction photos and blower-flow comparison", "HOLD"],
-            ["M9", "complete full-size prototype and driver/service clearances", "one-piece shallow face with only a compact right control channel; OEM glovebox/cluster; LCD and inner-vent-pair midpoint exactly on fascia centreline; all four vent tops aligned with LCD bezel top", "owner-signed seated-driver reach plus knee/lever/column clearance, glovebox sweep, centre/symmetry, top-datum, visibility and removal checks", "HOLD"],
+            ["M8", "four ducts, plenum balance, actual hose ID/bend radii, selector rear stacks, steering-column support and rear/service clearances", f"sampled vent spigot controls duct size; lowered inner outlets use two local pods down to Y={PANEL_MIN_Y:.0f}; ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm to fixed LCD/cluster/support parts, ≥{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm to the signed moving column/shroud/stalk sweep, and duct ovalisation no worse than {MIN_DUCT_ROUNDNESS_PERCENT:.0f}% of round ID", f"full rear 1:1 mock-up with all four ducts, both {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local pod drops, actual retainers/contact stacks and column through full sweep; caliper/feeler photos at the worst points plus duct minor-axis measurements and blower-flow comparison", "HOLD until every stated minimum passes"],
+            ["M9", "complete full-size prototype and driver/service clearances", f"one-piece shallow normal face with two lowered symmetric inner-vent pods; as-built visible V2/V3 rim-to-LCD gap ≥{MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f} mm; V3 hardware/duct keeps ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm to fixed cluster parts and ≥{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm to the signed column/shroud/stalk swept envelope; OEM glovebox/cluster remain in factory openings", "owner-signed seated-driver steering lock-to-lock/stalk sweep, reach, knee/gear/lever/column clearance at both pods, glovebox sweep, centre/symmetry, visibility and removal checks; ruler/feeler photos proving each minimum at the tightest point", "HOLD until every stated minimum passes"],
             ["M10", "labels, continuity, relay/controller mapping and live functions", "exact switch schedule including ENGINE RUN/STOP; key OFF authoritative; manual stop cable retained", "continuity sheet and live wiper park plus washer, OFF/SIDE/HEAD truth table plus dip, measured blower, A/C safety/fan, spots, AUX, isolated hazard, ENGINE run/stop, key-off and manual-cable fallback tests", "HOLD until passed"],
         ])
 
@@ -683,18 +787,37 @@ def write_csvs() -> None:
         writer.writerow(["feature", "reference_value", "provenance", "confidence", "production_release", "required_gate", "source_url"])
         writer.writerows([
             ["public early replacement-panel product envelope", "1400 x 250 x 100 mm", "Reborn FJ 1968-1978 steel dashboard listing; centimetre-resolution product dimension, not installed RHD face datums, bends or aperture coordinates", "PUBLISHED_VENDOR_ENVELOPE", "NOT FOR CNC", "M1 physical full-width trace", PUBLIC_REPRO_PANEL_URL],
-            ["full dashboard visible-face perimeter", f"{PANEL_W:.0f} x {PANEL_H:.0f} nominal coordinate envelope", "Rev H proportional design datum; public vendor envelope is broader product context only and Toyota EPC shows configuration-specific panels", "DESIGN_REFERENCE_ONLY", "HOLD", "M1 physical full-width trace", PUBLIC_REPRO_PANEL_URL],
+            ["full dashboard visible-face perimeter", f"nominal X0..{PANEL_W:.0f}, Y{PANEL_MIN_Y:.0f}..{PANEL_H:.0f}; 170 high normal face plus two local {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm pods", "Rev H proportional design datum; public vendor envelope is broader product context only and Toyota EPC shows configuration-specific panels", "DESIGN_REFERENCE_ONLY", "HOLD", "M1 physical full-width trace", PUBLIC_REPRO_PANEL_URL],
             ["fascia/LCD/inner-vent common centreline", f"X={PANEL_CENTRELINE_X:.1f}; inner vents X={VENT_CENTRES[1][0]:.1f}/{VENT_CENTRES[2][0]:.1f}", f"parametric Rev H constraint: LCD centre equals fascia centreline; inner-pair midpoint equals same centreline; equal offsets ±{INNER_VENT_CENTRE_OFFSET:.1f}", "MATHEMATICALLY_EXACT_IN_NOMINAL_MODEL", "HOLD for physical transfer", "M1 + M5 + M9", ""],
-            ["OEM glovebox", "nominal only envelope in drawing", "Toyota parts fitment family only; no public 1978 RHD lid/hinge dimensional drawing found", "PHYSICAL_TRANSFER_REQUIRED", "HOLD", "M2 direct trace and opening sweep", TOYOTA_EPC_URL],
-            ["OEM speedometer / cluster", "nominal only envelope in drawing", "Toyota parts fitment family only; no public 1978 RHD cluster dimensional drawing found", "PHYSICAL_TRANSFER_REQUIRED", "HOLD", "M3 direct trace, rear depth, mounts and sight line", TOYOTA_EPC_URL],
+            ["OEM glovebox", "210 mm nominal visual envelope = 16.67% of model width", "source-photo proportional measurement; Toyota parts fitment family provides no public 1978 RHD lid/hinge dimensional drawing", "VISUAL_RATIO_ONLY; PHYSICAL_TRANSFER_REQUIRED", "HOLD", "M2 direct trace and opening sweep", TOYOTA_EPC_URL],
+            ["OEM speedometer / cluster", f"{SPEEDO_ENVELOPE[2]:.0f} mm schematic visual envelope = {100*SPEEDO_ENVELOPE[2]/PANEL_W:.2f}% of model width; {SPEEDO_ENVELOPE[2]/GLOVEBOX_ENVELOPE[2]:.2f} x glovebox envelope", "source-photo proportional placeholder only; perspective has no scale datum and Toyota parts fitment family provides no public 1978 RHD cluster dimensional drawing", "VISUAL_RATIO_ONLY; PHYSICAL_TRANSFER_REQUIRED", "HOLD", "M3 direct transfer of the existing factory opening, rear depth, mounts, column relationship and sight line; do not relocate", TOYOTA_EPC_URL],
+            ["steering-column relief and swept keep-out", f"axis X={STEERING_COLUMN_AXIS_X:.1f}; relief width {2*STEERING_COLUMN_RELIEF_HALF_W:.0f}, rise {STEERING_COLUMN_RELIEF_RISE:.0f}; keep-out {STEERING_COLUMN_KEEP_OUT[2]:.0f} x {STEERING_COLUMN_KEEP_OUT[3]:.0f}", "Rev H packaging intent inferred from owner photo; no public vehicle-specific RHD column interface drawing located", "NOMINAL_LAYOUT_ONLY", "HOLD / DO NOT CNC", "M1 + M3 + M8 + M9 direct column/shroud/stalk/sweep trace and 1:1 mock-up", ""],
             ["LCD active-image reference", "199.2 x 112.1; 228.6 diagonal", "mathematical 9-inch 16:9 reference; Sehgal local listing states 9-inch but has no chassis/cutout drawing", "REFERENCE_ONLY", "HOLD", "M4-M5 bought sample and manufacturer drawing", "https://sehgalmotors.pk/products/universal-android-lcd-tab-9-inches-with-wiring-without-main-grip"],
             ["LCD bezel/aperture/support", "224 x 136 / 202 x 115 / 246 x 158 nominal", "design envelope only", "PHYSICAL_TRANSFER_REQUIRED", "HOLD", "M4-M5", ""],
             ["generic silver vent family", "face Ø87; panel opening Ø75", "Joom listing; cross-check only, generic variants have spigot/retainer variation", "PUBLISHED_LISTING_REFERENCE", "HOLD", "M7 received matched four-piece sample batch + calipers", "https://www.joom.com/en/products/68c8f9fa6dffb3012ca80d30"],
-            ["vent x/y centres and common upper alignment", f"centres={VENT_CENTRES}; bezel-top Y={VENT_TOP_DATUM_Y:.1f}", "Rev H layout decision; inner pair is exactly symmetric about LCD/fascia centreline; all four Ø87 bezel tops align with the LCD bezel top; outer faces remain close to usable ends and clear of side returns", "DESIGN_LOCKED", "HOLD for actual vehicle transfer", "M1 + M7 + M9", ""],
-            ["right-channel control row", f"centres X={CONTROL_XS}; Y={CONTROL_Y}; 39 mm pitch", "Rev H compact packaging decision: seven selectors plus hazard in one passenger-to-driver row between the two right vents", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for physical part, duct and driver checks", "M6 + M8 + M9", ""],
+            ["high outer / lowered inner vent layout", f"centres={VENT_CENTRES}; outer bezel-top Y={OUTER_VENT_TOP_DATUM_Y:.1f}; inner face-top Y={INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2:.1f}; pod-bottom Y={PANEL_MIN_Y:.1f}", "Rev H layout decision; inner pair is exactly symmetric about LCD/fascia centreline and clears the LCD vertically; outer faces remain high near usable ends", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for vehicle, bought-part and driver-clearance transfer", "M1 + M7 + M8 + M9", ""],
+            ["extreme-right two-row control bank", f"columns X={CONTROL_COLUMNS}; top Y={CONTROL_TOP_Y}; bottom Y={CONTROL_BOTTOM_Y}; 48 mm horizontal / 58 mm vertical pitch", "Rev H packaging decision: S1-S4 top and S5-S8 bottom, wholly right of the nominal steering-column keep-out", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for physical part, duct, column and driver checks", "M6 + M8 + M9", ""],
             ["Schneider-style selector aperture", "Ø22.5", "Schneider Electric Harmony XB4 published mounting diameter", "VERIFIED_PRODUCT_STANDARD", "HOLD to bought-part confirmation", "M6 part-code photo + calipers", "https://shop.se.com/pro/us/en/product/selector-switch-harmony-xb4-black-22mm-3-positions-stay-put-2no/"],
             ["Schneider-style selector rear envelope", "68", "Schneider Electric Harmony XB4 published complete depth", "VERIFIED_PRODUCT_STANDARD", "HOLD to bought-part confirmation", "M6 part-code photo + rear-stack trial", "https://shop.se.com/pro/us/en/product/selector-switch-harmony-xb4-black-22mm-3-positions-stay-put-2no/"],
             ["hazard aperture", "Ø16 nominal", "no selected/published hazard part drawing", "REFERENCE_ONLY", "HOLD", "M6 actual part", ""],
+        ])
+
+    with (OUT / "visual_ratio_schedule.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow([
+            "ratio_id", "numerator_feature", "numerator_mm", "denominator_feature",
+            "denominator_mm", "ratio", "visual_use", "production_status",
+        ])
+        writer.writerows([
+            ["R1", "LCD active width", LCD_ACTIVE_W, "LCD active height", LCD_ACTIVE_H, f"{LCD_ACTIVE_W/LCD_ACTIVE_H:.6f}", "true 16:9 active-image proportion", "M4 sample/drawing controls"],
+            ["R2", "vent visible face", VENT_FACE_DIAMETER, "LCD bezel width", LCD_BEZEL_W, f"{VENT_FACE_DIAMETER/LCD_BEZEL_W:.6f}", "each vent must read as 38.84% of the screen bezel width", "vent face design lock; M4/M7 physical samples control"],
+            ["R3", "LCD active width", LCD_ACTIVE_W, "vent visible face", VENT_FACE_DIAMETER, f"{LCD_ACTIVE_W/VENT_FACE_DIAMETER:.6f}", "screen active image reads 2.29 vent diameters wide", "visual check only"],
+            ["R4", "selector panel cut", SELECTOR_DIAMETER, "vent visible face", VENT_FACE_DIAMETER, f"{SELECTOR_DIAMETER/VENT_FACE_DIAMETER:.6f}", "selector cut is 25.86% of vent face; visible head still sample-dependent", "M6 bought part controls"],
+            ["R5", "control horizontal pitch", CONTROL_COLUMNS[1] - CONTROL_COLUMNS[0], "vent visible face", VENT_FACE_DIAMETER, f"{(CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0])/VENT_FACE_DIAMETER:.6f}", "compact two-row spacing", "M6/M9 1:1 trial controls"],
+            ["R6", "glovebox visual envelope", GLOVEBOX_ENVELOPE[2], "nominal panel width", PANEL_W, f"{GLOVEBOX_ENVELOPE[2]/PANEL_W:.6f}", "source-photo-calibrated visual proportion", "M2 direct trace controls"],
+            ["R7", "cluster visual envelope", SPEEDO_ENVELOPE[2], "nominal panel width", PANEL_W, f"{SPEEDO_ENVELOPE[2]/PANEL_W:.6f}", "source-photo-calibrated visual proportion", "M3 direct trace controls"],
+            ["R8", "cluster visual envelope", SPEEDO_ENVELOPE[2], "glovebox visual envelope", GLOVEBOX_ENVELOPE[2], f"{SPEEDO_ENVELOPE[2]/GLOVEBOX_ENVELOPE[2]:.6f}", f"schematic retained-item ratio {SPEEDO_ENVELOPE[2]/GLOVEBOX_ENVELOPE[2]:.2f}:1 only", "visual placeholder only; M2/M3 direct traces control"],
+            ["R9", "steering-column relief width", 2 * STEERING_COLUMN_RELIEF_HALF_W, "nominal panel width", PANEL_W, f"{2*STEERING_COLUMN_RELIEF_HALF_W/PANEL_W:.6f}", "visible nominal relief intent under cluster", "HOLD; M1/M3/M9 direct trace controls"],
         ])
 
     with (OUT / "component_procurement_and_sample_plan.csv").open("w", newline="", encoding="utf-8") as handle:
@@ -725,27 +848,19 @@ def write_csvs() -> None:
 def write_prompt_record() -> None:
     text = f"""# Rev H visualisation prompt record
 
-Mode: built-in image generation, local-reference image editing.
+Mode: built-in `image_gen`, local-reference `precise-object-edit`.
 
-## Authoritative architecture
+## Straight-on bare-shell edit prompt
 
-Upper band from passenger/left to driver/right: **original glovebox | centred 9-inch LCD | original speedometer**. Exactly four matching vents occupy the side gaps: one at each extreme and a symmetric inner pair flanking the LCD laterally. Raise all four so the tops of their visible silver bezels align with the top of the LCD bezel. The vents remain wholly in the main face; only one compact right-hand control channel extends below it.
+Precise object edit of this existing straight-on Toyota J40 dashboard visualization. Change only the two inner/centre silver circular A/C outlets and their body-colour rounded pods. Set the final inner-outlet position so their centres are visibly about 1.71 outlet-face diameters lower than the high outer-outlet centres in the dashboard plane, while preserving their exact left/right X positions, equal size, satin-silver rims, dark directional cores, and exact symmetry about the LCD. The final top of each inner silver rim must sit about 0.14 outlet-face diameter below the LCD bezel bottom (the nominal drawing ratio is 12.5/87), with clear body-colour separation. Extend each cream rounded pod downward locally so its bottom remains about 0.13 outlet-face diameter below the rim bottom (nominal ratio 11.5/87). Keep the outer two vents at their current high positions. Do not move, resize, restyle, replace, or redraw the true 9-inch LCD, original Toyota speedometer and auxiliary cluster in its factory opening, original glovebox and black plate, steering-column relief, seven rotary switches, red hazard, labels, vehicle, camera, colour, patina, background, or any other object. Keep exactly 4 vents, exactly 7 rotary selectors, and exactly 1 red hazard. No full-width downward dashboard extension; only the two local vent pods get deeper. Photorealistic, same resolution and composition. The image expresses ratios only; it is never scaled for CNC.
 
-## Bare-shell owner-photo edit
+## Assembled driver-eye edit prompt
 
-Edit the supplied straight-on bare-shell J40 dashboard photograph in place. Preserve the workshop, camera, right-hand-drive body, windscreen/cowl and everything outside the dashboard face. The original glovebox is a visual no-touch region: keep its exact source-photo position, outline, size, colour, silver finish, patina, knob and black instruction plate; do not repaint, clean up, restyle, recolour or move it. The bare-shell photo has no cluster fitted, so copy the correct original Toyota cluster from the assembled owner-photo reference into the existing factory opening, preserving its exact silver bezel, patina, markings, black gauge faces, glass, needles and lower auxiliary windows; do not invent a different meter or alter the opening. Replace only the remaining visible face with one shallow cream/body-colour CNC sheet-metal panel. Remove and cover the ashtray. Install a visibly true 9-inch 16:9 LCD centred at X={PANEL_CENTRELINE_X:.0f}; do not shrink it.
+Precise object edit of this existing assembled driver-eye Toyota J40 dashboard visualization. Change only the two inner/centre silver circular A/C outlets and their body-colour rounded pods. Set the final inner-outlet position so their centres are about 1.71 outlet-face diameters lower than the high outer-outlet centres in the true dashboard plane, preserving their exact left/right X positions in the panel, equal physical size, satin-silver rims, dark directional cores, and exact symmetry about the true panel/LCD centreline despite perspective. The final top of each inner silver rim must sit about 0.14 outlet-face diameter below the LCD bezel bottom in the dashboard plane (nominal ratio 12.5/87), with clear body-colour separation. Extend each cream rounded pod downward locally so its bottom remains about 0.13 outlet-face diameter below the rim bottom (nominal ratio 11.5/87). Keep the outer two vents at their current high positions. Keep the right inner vent and its rear duct visibly clear of the original steering column and shroud. Do not move, resize, restyle, replace, or redraw the true 9-inch LCD, original Toyota speedometer and auxiliary cluster in its factory opening directly above the steering column, original glovebox and black plate, steering wheel, column, column shroud, stalks, seven rotary switches, red hazard, labels, vehicle, camera, colour, patina, background, or any other object. Keep exactly 4 vents, exactly 7 rotary selectors, and exactly 1 red hazard. No full-width downward dashboard extension; only the two local vent pods get deeper. Photorealistic, same resolution, camera and composition. The image expresses ratios only; it is never scaled for CNC.
 
-Use exactly four matching large satin-silver circular directional outlets, approximately Ø87 face. Put one close to each usable face end and the inner two symmetrically to the left and right of the LCD so their midpoint equals the LCD/panel centreline. Raise all four so the top edges of their silver bezels share the LCD-bezel top datum; keep the inner pair outside the LCD with clear metal between. Do not create vent lobes or a lower vent channel. Most of the fascia remains only {PANEL_H-MAIN_LOWER_Y:.0f} mm high; only the compact right control channel uses the {PANEL_H:.0f} mm overall envelope.
+The two approved outputs are copied into this package as the straight-on and assembled Rev H overlays. The supplied selector photograph is copied as `industrial_rotary_selector_reference.png`.
 
-Inside the compact right-hand channel beneath the original speedometer, fit one horizontal passenger-to-driver row using the supplied long-paddle industrial selector reference. Exact order: **WIPERS | LIGHTS | SPOTS | AUX | BLOWER | A/C | ENGINE | red HAZARD**. There are exactly seven chrome/black rotary selectors plus one separate red hazard—not eight selectors. Use small legible engraved labels and no toggles, square plates, spare switches or variable knobs. Do not add extra gauges, vents, screens, ashtrays or a full-width downward extension.
-
-## Assembled owner-photo edit
-
-Apply exactly that approved straight-on fascia to the supplied assembled oblique RHD owner photograph. Preserve perspective, steering wheel/column, seats, pedals, doors, workshop and all non-dashboard content. Treat both retained OEM items as visual no-touch regions: preserve the glovebox and speedometer/auxiliary cluster exactly as photographed, including their source-photo positions, outlines, sizes, colours, silver finish, patina, knob/black plate, markings, gauge faces, glass and needles. Do not repaint, clean up, restyle, recolour, relocate or reinterpret either item. Maintain the exact four top-aligned outlets, true-size central screen, shallow right control channel and single labelled control row. Natural perspective and steering-wheel occlusion are allowed; component count, ordering and relative size are not. Photorealistic owner-vehicle fabrication concept.
-
-Final approved generated sources are copied into this package as the straight-on and assembled Rev H overlays. The supplied selector photograph is copied as `industrial_rotary_selector_reference.png`.
-
-Generated overlays show visual intent only. DXF/CSV dimensions, M1-M10 physical templates and bought-part measurements control fabrication.
+Generated overlays show visual intent only. The nominal drawing sets the inner vent centres at Y={INNER_VENT_CENTRE_Y:.1f} mm and the pod bottoms at Y={PANEL_MIN_Y:.1f} mm. Their nominal visible rim-to-LCD gap is {LCD_BEZEL[1]-(INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2):.1f} mm, but M9 requires at least {MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f} mm as built. DXF/CSV dimensions, direct vehicle traces, M1-M10 physical templates and bought-part measurements control fabrication; M1/M3/M7/M8/M9 must establish the installed column, duct, vent and driver clearances before production cutting.
 """
     (OUT / "visualisation_prompt_record.md").write_text(text, encoding="utf-8")
 
@@ -753,9 +868,9 @@ Generated overlays show visual intent only. DXF/CSV dimensions, M1-M10 physical 
 def write_readme() -> None:
     readme = f"""# J40 RHD full-width 9-inch LCD / four-outlet dashboard - Rev H
 
-Rev H replaces the complete visible dashboard face with one restrained body-colour CNC-formed panel while retaining and transferring the original Toyota speedometer assembly and the original asymmetric glovebox lid, knob, hinges/latch and black instruction plate. The ashtray is deleted. A true 9-inch display reference sits centrally. Exactly four larger silver circular A/C outlets are raised so their bezel tops align with the LCD bezel. All vents remain wholly in the normal {PANEL_H-MAIN_LOWER_Y:.0f} mm-high face; only a compact driver-side control channel extends lower.
+Rev H replaces the complete visible dashboard face with one restrained body-colour CNC-formed panel while retaining and transferring the original Toyota speedometer assembly and the original asymmetric glovebox lid, knob, hinges/latch and black instruction plate. The ashtray is deleted. A true 9-inch display reference sits centrally. Exactly four larger silver circular A/C outlets are used: the two end outlets remain high, while the symmetric inner pair sits wholly below the LCD in two local rounded pods. The normal lower edge is not dropped full-width. It rises around the right-hand-drive steering column in a radiused U-relief, and all controls sit in a compact two-row bank at the extreme right.
 
-This package is ready to send for **quotation and a full-size disposable CNC template**. It is deliberately not a production vehicle-cut release: the nominal {PANEL_W:.0f} x {PANEL_H:.0f} coordinate envelope cannot replace a physical trace of this vehicle. Only `CUT_TEMPLATE_OUTER` in `full_width_fit_template_rev_h.dxf` may be cut now, and only in MDF/card/cheap plastic. Every metal or vehicle feature remains `HOLD_*` until M1-M10 are signed.
+This package is ready to send for **quotation and a full-size disposable CNC template**. It is deliberately not a production vehicle-cut release: the nominal coordinate envelope is X=0…{PANEL_W:.0f} mm and Y={PANEL_MIN_Y:.0f}…{PANEL_H:.0f} mm ({PANEL_W:.0f} x {PANEL_H-PANEL_MIN_Y:.0f} mm overall only where the local pods project) and cannot replace a physical trace of this vehicle. Only `CUT_TEMPLATE_OUTER` in `full_width_fit_template_rev_h.dxf` may be cut now, and only in MDF/card/cheap plastic. Every metal or vehicle feature remains `HOLD_*` until M1-M10 are signed.
 
 ## Locked layout
 
@@ -763,23 +878,24 @@ This package is ready to send for **quotation and a full-size disposable CNC tem
 - One full-width visible face in 1.5 mm CR4 mild steel, low-gloss body colour.
 - Original glovebox and speedometer are retained/reinstalled; their exact shapes and mounts are direct-transfer features, not nominal CNC geometry. In every owner-photo visual they are also **visual no-touch regions**: preserve their original colour, finish, patina, markings, controls and location exactly. The bare-shell visual may add only the correct original cluster copied from the assembled owner-photo reference into its existing factory opening.
 - Screen active-image reference: **199.2 x 112.1 mm**, **228.6 mm / 9.000 inch diagonal**, 16:9. Its centre is constrained to the fascia centreline at nominal **X{PANEL_CENTRELINE_X:.1f}/Y{LCD_CY:.1f}**. This does not establish a real LCD chassis: the local Sehgal 9-inch listing has no mechanical drawing, so its aperture, bezel, rear body, mounts and connectors are M4-M5 HOLD.
-- Four matching generic vents: **Ø87 visible silver/chrome face** and **Ø75 panel-opening reference**, dark directional core, hidden retention. Centre coordinates are {VENT_CENTRES}; all four centres share exactly **Y={VENT_CENTRE_DATUM_Y:.1f}**, placing every Ø87 bezel top at **Y={VENT_TOP_DATUM_Y:.1f}**, exactly aligned with the nominal LCD-bezel top. The inner pair is exactly mirrored at **X={VENT_CENTRES[1][0]:.1f} / {VENT_CENTRES[2][0]:.1f}**, or **±{INNER_VENT_CENTRE_OFFSET:.1f} mm** about the LCD/fascia centreline. Ø75 is **not** a released production cut.
-- The upper band is **OEM glovebox | 9-inch LCD | OEM speedometer**. The four vents occupy the unused side gaps: one near each end and an inner pair symmetric about the LCD. Their visible top edges form one upper datum with the LCD bezel.
+- Four matching generic vents: **Ø87 visible silver/chrome face** and **Ø75 panel-opening reference**, dark directional core, hidden retention. Nominal centres are {VENT_CENTRES}. V1/V4 remain high at **Y={OUTER_VENT_CENTRE_Y:.1f}**, with their Ø87 bezel tops at **Y={OUTER_VENT_TOP_DATUM_Y:.1f}**, aligned with the LCD-bezel top. V2/V3 are lowered to **Y={INNER_VENT_CENTRE_Y:.1f}**; each visible face spans Y={INNER_VENT_CENTRE_Y-VENT_FACE_DIAMETER/2:.1f}…{INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2:.1f} and therefore sits {LCD_BEZEL[1]-(INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2):.1f} mm below the nominal LCD-bezel bottom at Y={LCD_BEZEL[1]:.1f}. Their identical local pods descend to **Y={PANEL_MIN_Y:.1f}**, {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm below the normal Y={MAIN_LOWER_Y:.1f} edge. The inner pair is exactly mirrored at **X={VENT_CENTRES[1][0]:.1f} / {VENT_CENTRES[2][0]:.1f}**, or **±{INNER_VENT_CENTRE_OFFSET:.1f} mm** about the LCD/fascia centreline. Ø75 is **not** a released production cut.
+- The upper band remains **OEM glovebox | centred 9-inch LCD | OEM speedometer**. The outer vents occupy the far ends; the lowered inner pair uses otherwise empty space below and either side of the LCD without overlapping its bezel.
 - The outer visible vent faces sit **6.5 mm** from the nominal usable-face ends; their Ø75 reference cuts retain **12.5 mm**. These tight lands are template/sample controlled and the outlets never move into the side returns.
-- One shallow right control channel beneath the speedometer carries exactly seven industrial rotary selectors plus one separate red hazard in **one horizontal row**. Nominal centres are **39 mm pitch**, passenger-to-driver; Schneider Harmony XB4 reference: **Ø22.5 panel cut** and **68 mm rear envelope**. Head diameter, lever sweep, anti-rotation, rear stack, all four duct paths and driver clearance remain M6/M8/M9 HOLD. Engrave labels 3 mm high with black infill.
+- The nominal RHD steering-column axis is **X={STEERING_COLUMN_AXIS_X:.1f}**, aligned with the retained cluster centre. The lower edge has a **130 mm-wide x 32 mm-rise** radiused U-relief and a nominal **130 x 105 mm** swept keep-out. These dimensions communicate packaging intent only: M1/M3/M9 must directly trace the installed column, shroud, stalks, bracket and full movement before any production cut. No switch, duct, carrier or rear stack may enter the signed keep-out.
+- At the extreme right, fully outside that keep-out, exactly seven industrial rotary selectors plus one separate red hazard form **two rows of four**. Nominal columns are **X={CONTROL_COLUMNS}**, with top **Y={CONTROL_TOP_Y:.0f}** and bottom **Y={CONTROL_BOTTOM_Y:.0f}**: 48 mm horizontal / 58 mm vertical pitch. Schneider Harmony XB4 reference: **Ø22.5 panel cut** and **68 mm rear envelope**. Head/lever sweep, anti-rotation, right-outlet duct route, rear stacks and driver clearance remain M6/M8/M9 HOLD. Engrave labels 3 mm high with black infill.
 
 ## Exact visible controls
 
-| Position (passenger-to-driver) | Label | Hardware / states | What it does |
+| Position | Label | Hardware / states | What it does |
 |---|---|---|---|
-| Station 1 | WIPERS | 3-position: OFF / LOW / HIGH | Parks the wipers in OFF and selects low or high wipe. |
-| Station 2 | LIGHTS | 3-position: OFF / SIDE / HEAD | Selects master exterior-light state; original dip/high-low remains. |
-| Station 3 | SPOTS | 2-position: OFF / ON | Commands T5 spot-lamp relay. |
-| Station 4 | AUX | 2-position: OFF / ON | Commands reserved accessory relay B2. |
-| Station 5 | BLOWER | 3-position: OFF / LOW / HIGH | Sends OFF/LOW/HIGH requests to the measured blower controller. |
-| Station 6 | A/C | 2-position: OFF / ON | Requests B1 compressor cooling through thermostat/trinary/pressure safeties. |
-| Station 7 | ENGINE | 2-position: RUN / STOP | Sends a low-current command through the validated fuel-stop interface; key OFF remains authoritative and the manual cable remains the fallback. |
-| Station 8 | HAZARD | separate red pushbutton: OFF / FLASH | Operates the hazard/flasher circuit. |
+| Top 1/4 | WIPERS | 3-position: OFF / LOW / HIGH | Parks the wipers in OFF and selects low or high wipe. |
+| Top 2/4 | LIGHTS | 3-position: OFF / SIDE / HEAD | Selects master exterior-light state; original dip/high-low remains. |
+| Top 3/4 | SPOTS | 2-position: OFF / ON | Commands T5 spot-lamp relay. |
+| Top 4/4 | AUX | 2-position: OFF / ON | Commands reserved accessory relay B2. |
+| Bottom 1/4 | BLOWER | 3-position: OFF / LOW / HIGH | Sends OFF/LOW/HIGH requests to the measured blower controller. |
+| Bottom 2/4 | A/C | 2-position: OFF / ON | Requests B1 compressor cooling through thermostat/trinary/pressure safeties. |
+| Bottom 3/4 | ENGINE | 2-position: RUN / STOP | Sends a low-current command through the validated fuel-stop interface; key OFF remains authoritative and the manual cable remains the fallback. |
+| Bottom 4/4 | HAZARD | separate red pushbutton: OFF / FLASH | Operates the hazard/flasher circuit. |
 
 The bank contains exactly **7 selectors + 1 hazard**. The formerly unallocated seventh selector is now `ENGINE`, with `RUN / STOP` engraving. It is a command device only: do not route stop-solenoid or motor current through it. Before wiring, EEI-003 must identify whether this vehicle uses an energise-to-run or energise-to-stop device and establish a fail-safe relay/controller interface. Key OFF must always stop the engine, and the original/manual diesel stop cable remains the independent mechanical fallback. The earlier concealed-needle fuel-stop plan is superseded; that part may remain uninstalled or be reassigned only after a separate security review. Also retain the original indicator stalk, dip/high-low control, horn actuation, keyed ignition, winch third lever and identified mechanical cables.
 
@@ -799,14 +915,14 @@ Cabin temperature/blend is deliberately outside the seven-selector allocation. R
 
 ## HVAC packaging
 
-Use four branches from a balanced plenum, sized only after the received vent sample establishes the actual spigot OD and retention depth. Do not assume a 3-inch hose from the Ø75 face-cut reference. Do not crush ducts or block the glovebox, original instruments, steering column, loom, LCD connections, demist system or service removal. Prove that the raised vent necks and all four duct bends clear the LCD carrier, retained components and structure. In the lower right channel, prove that selector contact stacks and lever/head sweep clear both right-hand ducts, cluster, column and driver. Verify knee and lever clearance around the only local extension. Actual bought-vent drawings and the complete rear mock-up control every aperture, retainer, hose ID and bend radius.
+Use four branches from a balanced plenum, sized only after the received vent sample establishes the actual spigot OD and retention depth. Do not assume a 3-inch hose from the Ø75 face-cut reference. Do not crush ducts or block the glovebox, original instruments, steering column, loom, LCD connections, demist system or service removal. The lowered inner pods intentionally create extra rear neck/elbow depth, but their {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local projection is a packaging envelope, not a proved clearance. At M8/M9 mock the two inner vents, all four duct bends, LCD carrier, retained components, selector contact stacks, column/shroud through full sweep, driver knees and every gear/transfer/winch lever position. Acceptance requires an as-built visible V2/V3-rim-to-LCD gap of at least **{MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f} mm**, at least **{MIN_STATIC_REAR_CLEARANCE:.0f} mm** between inner-vent retainers/ducts and fixed LCD/cluster/support hardware, at least **{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm** to the signed moving column/shroud/stalk swept envelope, and no duct minor axis below **{MIN_DUCT_ROUNDNESS_PERCENT:.0f}%** of its round ID. Actual bought-vent drawings and the complete rear mock-up control every aperture, retainer, hose ID and bend radius.
 
 ## Procurement and dimensional provenance
 
 - The cost-conscious reference is the common silver/chrome ABS **Ø87 face / Ø75 opening** generic outlet family. It is a reference listing, not a released part: buy four visually and mechanically matched outlets from a single batch at a local Pakistan automotive A/C counter, then complete M7 calipers before any vent holes are cut. The Joom listing records the published family dimensions; `component_procurement_and_sample_plan.csv` records the source and sample path.
 - The matching Daraz lead is currently unavailable and publishes no usable dimensions, so it is not a source of truth. The Restomod Air Diablo billet outlet is retained only as a premium import fallback; it would require a different M7 cut/duct detail.
 - Sehgal Motors' locally listed 9-inch universal LCD is the procurement baseline, but it publishes no chassis/cutout dimensions. Purchase/borrow a sample or obtain a manufacturer drawing before releasing M4-M5.
-- A public 1968-1978 replacement-panel listing gives **1400 x 250 x 100 mm**, confirming that broad dashboard dimensions are publicly listed. It is a centimetre-resolution vendor product envelope—not an installed 1978 RHD face outline, bend schedule or aperture/datum drawing—and Toyota EPC records configuration-specific panels. Therefore the **{PANEL_W:.0f} x {PANEL_H:.0f}** Rev H coordinate model remains a proportional quote/template datum, not an OEM dimension. M1 physical trace/scan still controls production. `dimensional_provenance_audit.csv` records the source URL and every release boundary.
+- A public 1968-1978 replacement-panel listing gives **1400 x 250 x 100 mm**, confirming that broad dashboard dimensions are publicly listed. It is a centimetre-resolution vendor product envelope—not an installed 1978 RHD face outline, bend schedule or aperture/datum drawing—and Toyota EPC records configuration-specific panels. Therefore the Rev H **X=0…{PANEL_W:.0f} / Y={PANEL_MIN_Y:.0f}…{PANEL_H:.0f}** coordinate model remains a proportional quote/template datum, not an OEM dimension. M1 physical trace/scan still controls production. `dimensional_provenance_audit.csv` records the source URL and every release boundary.
 
 ## CNC layer rules
 
@@ -828,12 +944,12 @@ Use four branches from a balanced plenum, sized only after the received vent sam
 - `full_width_fit_template_rev_h.dxf` - disposable template outer cut plus HOLD component references.
 - `right_control_bank_template_rev_h.dxf` - exact eight visible stations, all HOLD.
 - `lcd_rear_support_reference_rev_h.dxf` - reference only, all HOLD.
-- Seven CSVs covering cut/release, fascia coordinates, switch positions, M1-M10 evidence, dimensional provenance, procurement/sample controls and the HVAC control interface.
+- Eight CSVs covering cut/release, fascia coordinates, switch positions, M1-M10 evidence, dimensional provenance, procurement/sample controls, HVAC control interfaces and visual ratios.
 - `visualisation_prompt_record.md` - reproducible image-edit prompt set and mode.
 
 ## Acceptance
 
-The installed face reads as an original-adjacent J40 dashboard; the OEM glovebox and speedometer function normally and retain their original visible identity; the display proves a 9-inch active diagonal and remains serviceable; the LCD centre lies exactly on the signed fascia centreline; the midpoint of the two inner outlets lies on that same centreline with equal left/right offsets; exactly four matching large outlets receive unobstructed air and their visible bezel tops align with the LCD-bezel top datum; exactly seven labelled selectors plus the separate hazard occupy the signed one-row channel and match the schedule; the main lower edge remains shallow except for the compact right control channel; no duct, rear switch stack or driver contact clashes; no retained structure is weakened; and every M10 electrical/functional test passes without interference, voltage drop, overheating, rattle or unintended operation.
+The installed face reads as an original-adjacent J40 dashboard; the OEM glovebox and speedometer function normally and retain their original visible identity and factory openings; the display proves a 9-inch active diagonal and remains serviceable; the LCD centre lies exactly on the signed fascia centreline; the midpoint of the two lowered inner outlets lies on that same centreline with equal left/right offsets; exactly four matching large outlets receive unobstructed air; the two outer bezel tops align with the LCD-bezel top while both inner faces sit fully below the LCD; exactly seven labelled selectors plus the separate hazard occupy the signed two-row extreme-right bank and match the schedule; the normal lower edge remains at its original shallow datum except for the two local vent pods, column relief and compact control return; M8/M9 prove the {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm pod projections and all stated {MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f}/{MIN_STATIC_REAR_CLEARANCE:.0f}/{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm clearance minima against the actual LCD, cluster, ducts, column, knees and levers; no duct, rear switch stack or driver contact clashes; no retained structure is weakened; and every M10 electrical/functional test passes without interference, voltage drop, overheating, rattle or unintended operation.
 """
     (OUT / "README.md").write_text(readme, encoding="utf-8")
 
@@ -846,7 +962,8 @@ def validate() -> None:
     assert LCD_APERTURE[0] + LCD_APERTURE[2] / 2 == PANEL_CENTRELINE_X
     assert LCD_ACTIVE[0] + LCD_ACTIVE[2] / 2 == PANEL_CENTRELINE_X
     assert len(VENT_CENTRES) == 4
-    assert {y for _, y in VENT_CENTRES} == {VENT_CENTRE_DATUM_Y}
+    assert VENT_CENTRES[0][1] == VENT_CENTRES[3][1] == OUTER_VENT_CENTRE_Y
+    assert VENT_CENTRES[1][1] == VENT_CENTRES[2][1] == INNER_VENT_CENTRE_Y
     assert (VENT_CENTRES[1][0] + VENT_CENTRES[2][0]) / 2 == PANEL_CENTRELINE_X
     assert PANEL_CENTRELINE_X - VENT_CENTRES[1][0] == VENT_CENTRES[2][0] - PANEL_CENTRELINE_X
     assert VENT_FACE_DIAMETER == 87.0 and VENT_NECK_DIAMETER == 75.0
@@ -864,23 +981,51 @@ def validate() -> None:
     assert any(row[1] == "ENGINE" for row in CONTROL_MAP)
     assert not any(row[1] in {"SPARE", "FUEL STOP"} for row in CONTROL_MAP)
     assert MAIN_LOWER_Y == 50.0
-    assert VENT_TOP_DATUM_Y == LCD_BEZEL[1] + LCD_BEZEL[3]
-    assert all(vent_y + VENT_FACE_DIAMETER / 2 == VENT_TOP_DATUM_Y for _, vent_y in VENT_CENTRES)
-    assert all(vent_y - VENT_FACE_DIAMETER / 2 > MAIN_LOWER_Y for _, vent_y in VENT_CENTRES)
+    assert PANEL_MIN_Y == INNER_VENT_POD_BOTTOM_Y == -35.0
+    assert MAIN_LOWER_Y - PANEL_MIN_Y == 85.0
+    assert OUTER_VENT_TOP_DATUM_Y == LCD_BEZEL[1] + LCD_BEZEL[3]
+    assert all(
+        vent_y + VENT_FACE_DIAMETER / 2 == OUTER_VENT_TOP_DATUM_Y
+        for _, vent_y in (VENT_CENTRES[0], VENT_CENTRES[3])
+    )
+    inner_face_bottom = INNER_VENT_CENTRE_Y - VENT_FACE_DIAMETER / 2
+    inner_face_top = INNER_VENT_CENTRE_Y + VENT_FACE_DIAMETER / 2
+    assert inner_face_bottom == -23.5
+    assert INNER_VENT_POD_BOTTOM_Y < inner_face_bottom < MAIN_LOWER_Y
+    assert inner_face_bottom - INNER_VENT_POD_BOTTOM_Y == 11.5
+    assert inner_face_top < LCD_BEZEL[1]
+    assert LCD_BEZEL[1] - inner_face_top == 12.5
+    assert LCD_BEZEL[1] - inner_face_top >= MIN_INNER_VENT_LCD_VISIBLE_GAP
+    assert INNER_VENT_POD_HALF_W > VENT_FACE_DIAMETER / 2
     assert LCD_BEZEL[0] - (VENT_CENTRES[1][0] + VENT_FACE_DIAMETER / 2) == 10.5
     assert (VENT_CENTRES[2][0] - VENT_FACE_DIAMETER / 2) - (LCD_BEZEL[0] + LCD_BEZEL[2]) == 10.5
-    assert GLOVEBOX_ENVELOPE[0] - (VENT_CENTRES[0][0] + VENT_FACE_DIAMETER / 2) == 3.5
-    assert (VENT_CENTRES[1][0] - VENT_FACE_DIAMETER / 2) - (GLOVEBOX_ENVELOPE[0] + GLOVEBOX_ENVELOPE[2]) == 8.5
-    assert SPEEDO_ENVELOPE[0] - (VENT_CENTRES[2][0] + VENT_FACE_DIAMETER / 2) == 10.5
+    assert inner_face_top <= SPEEDO_ENVELOPE[1]
+    assert SPEEDO_ENVELOPE[1] - inner_face_top == 24.5
+    assert SPEEDO_ENVELOPE[1] - inner_face_top >= MIN_STATIC_REAR_CLEARANCE
+    assert VENT_CENTRES[2][0] + VENT_FACE_DIAMETER / 2 <= STEERING_COLUMN_KEEP_OUT[0]
+    assert STEERING_COLUMN_KEEP_OUT[0] - (VENT_CENTRES[2][0] + VENT_FACE_DIAMETER / 2) == 25.5
+    assert STEERING_COLUMN_KEEP_OUT[0] - (VENT_CENTRES[2][0] + VENT_FACE_DIAMETER / 2) >= MIN_MOVING_COLUMN_CLEARANCE
+    assert STEERING_COLUMN_AXIS_X == SPEEDO_ENVELOPE[0] + SPEEDO_ENVELOPE[2] / 2
     positions = control_positions()
     assert len(positions) == 8
-    assert all(abs(positions[index + 1][0] - positions[index][0] - 39.0) < 0.001 for index in range(7))
-    assert all(y == CONTROL_Y for _, y in positions)
-    assert CONTROL_Y + CONTROL_LABEL_Y_OFFSET < MAIN_LOWER_Y
-    assert positions[0][0] - SELECTOR_DIAMETER / 2 - (VENT_CENTRES[2][0] + VENT_FACE_DIAMETER / 2) == 9.25
-    assert (VENT_CENTRES[3][0] - VENT_FACE_DIAMETER / 2) - (positions[-1][0] + HAZARD_DIAMETER / 2) == 25.5
-    assert CONTROL_BANK[0] <= positions[0][0] - SELECTOR_DIAMETER / 2
-    assert CONTROL_BANK[0] + CONTROL_BANK[2] >= positions[-1][0] + HAZARD_DIAMETER / 2
+    assert positions[:4] == [(x, CONTROL_TOP_Y) for x in CONTROL_COLUMNS]
+    assert positions[4:] == [(x, CONTROL_BOTTOM_Y) for x in CONTROL_COLUMNS]
+    assert all(CONTROL_COLUMNS[index + 1] - CONTROL_COLUMNS[index] == 48.0 for index in range(3))
+    assert CONTROL_TOP_Y - CONTROL_BOTTOM_Y == 58.0
+    assert CONTROL_BANK[0] > STEERING_COLUMN_KEEP_OUT[0] + STEERING_COLUMN_KEEP_OUT[2]
+    assert SPEEDO_ENVELOPE[0] + SPEEDO_ENVELOPE[2] <= CONTROL_BANK[0]
+    bank_x0, bank_y0, bank_w, bank_h = CONTROL_BANK
+    bank_x1, bank_y1 = bank_x0 + bank_w, bank_y0 + bank_h
+    for index, (control_x, control_y) in enumerate(positions):
+        radius = (HAZARD_DIAMETER if index == 7 else SELECTOR_DIAMETER) / 2
+        assert bank_x0 <= control_x - radius and control_x + radius <= bank_x1
+        assert bank_y0 <= control_y - radius and control_y + radius <= bank_y1
+    assert CONTROL_TOP_Y + CONTROL_LABEL_Y_OFFSET <= bank_y1
+    assert CONTROL_BOTTOM_Y + CONTROL_LABEL_Y_OFFSET < CONTROL_TOP_Y - SELECTOR_DIAMETER / 2
+    assert OUTER_VENT_CENTRE_Y - VENT_FACE_DIAMETER / 2 > CONTROL_TOP_Y + SELECTOR_DIAMETER / 2
+    profile = outer_profile_points()
+    assert min(x for x, _ in profile) == 0 and max(x for x, _ in profile) == PANEL_W
+    assert min(y for _, y in profile) == PANEL_MIN_Y and max(y for _, y in profile) == PANEL_H
     required = [
         "README.md", "full_width_fascia_master_rev_h.dxf", "full_width_fit_template_rev_h.dxf",
         "right_control_bank_template_rev_h.dxf", "lcd_rear_support_reference_rev_h.dxf",
@@ -890,7 +1035,8 @@ def validate() -> None:
         "fabricator_cut_and_release_schedule.csv", "fascia_coordinate_schedule.csv",
         "switch_position_schedule.csv", "measurement_and_release_schedule.csv",
         "dimensional_provenance_audit.csv", "component_procurement_and_sample_plan.csv",
-        "hvac_control_interface_schedule.csv",
+        "hvac_control_interface_schedule.csv", "visual_ratio_schedule.csv",
+        "industrial_rotary_selector_reference.png",
         "j40_dashboard_lcd_hvac_fascia_rev_h_shop_spec.pdf", "visualisation_prompt_record.md",
     ]
     for name in required:

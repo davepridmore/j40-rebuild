@@ -1,0 +1,10 @@
+ratio_id,numerator_feature,numerator_mm,denominator_feature,denominator_mm,ratio,visual_use,production_status
+R1,LCD active width,199.2,LCD active height,112.1,1.776985,true 16:9 active-image proportion,M4 sample/drawing controls
+R2,vent visible face,87.0,LCD bezel width,224.0,0.388393,each vent must read as 38.84% of the screen bezel width,vent face design lock; M4/M7 physical samples control
+R3,LCD active width,199.2,vent visible face,87.0,2.289655,screen active image reads 2.29 vent diameters wide,visual check only
+R4,selector panel cut,22.5,vent visible face,87.0,0.258621,selector cut is 25.86% of vent face; visible head still sample-dependent,M6 bought part controls
+R5,control horizontal pitch,48.0,vent visible face,87.0,0.551724,compact two-row spacing,M6/M9 1:1 trial controls
+R6,glovebox visual envelope,210.0,nominal panel width,1260.0,0.166667,source-photo-calibrated visual proportion,M2 direct trace controls
+R7,cluster visual envelope,290.0,nominal panel width,1260.0,0.230159,source-photo-calibrated visual proportion,M3 direct trace controls
+R8,cluster visual envelope,290.0,glovebox visual envelope,210.0,1.380952,schematic retained-item ratio 1.38:1 only,visual placeholder only; M2/M3 direct traces control
+R9,steering-column relief width,130.0,nominal panel width,1260.0,0.103175,visible nominal relief intent under cluster,HOLD; M1/M3/M9 direct trace controls
