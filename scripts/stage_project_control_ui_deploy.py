@@ -23,7 +23,10 @@ SCOUT_DOC_LINK_RE = re.compile(r"""scoutDocLink\(\s*["'](?P<path>[^"']+)["']""")
 PUBLIC_FABRICATION_DIR = ROOT / "data" / "manual" / "fabrication"
 PUBLIC_FABRICATION_DOCS = (
     ROOT / "data" / "manual" / "fabrication_handoff_requirements.csv",
+    ROOT / "docs" / "J40-integrated-cooling-pack-fabricator-specification-rev-h.docx",
+    ROOT / "docs" / "J40-integrated-cooling-pack-fabricator-specification-rev-h.md",
     ROOT / "docs" / "fabrication-handoff-index.md",
+    ROOT / "docs" / "j40-rev-h-toyota-donor-cooling-pack-purchase-list-20260801.md",
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
 )
 PUBLIC_MARKET_DOCS = (
