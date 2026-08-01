@@ -248,7 +248,7 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "window_refurbishment": "Windows",
     # Keep the legacy workstream id so existing links and historical rows remain stable.
     "eps_vitz_upgrade": "Steering — J60 Hydraulic",
-    "turbocharger_powertrain": "2H Turbo",
+    "turbocharger_powertrain": "Turbo Build",
     "suspension_upgrade": "Suspension",
 }
 
@@ -2313,8 +2313,27 @@ WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
     ],
 }
 
+TURBO_CONCEPTUAL_IMAGES: list[dict[str, str]] = [
+    {
+        "path": "docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+        "caption": "CONCEPTUAL Rev J — bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+        "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+    },
+    {
+        "path": "docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
+        "caption": "CONCEPTUAL Rev J opposite-side packaging — purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
+        "media_id": "turbo_rev_j_opposite_side_packaging_concept",
+    },
+    {
+        "path": "docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
+        "caption": "CONCEPTUAL Rev J annotated layout — identification aid only; callouts and positions must be reconciled against the vehicle.",
+        "media_id": "turbo_rev_j_annotated_layout_concept",
+    },
+]
+
+
 WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
-    "title": "2H Conservative Turbo Conversion",
+    "title": "Turbo Build",
     "summary": (
         "Assume availability of the selected 2H low-mount CT26-flange manifold and CT26-pattern TD05H 16G "
         "with 7 cm2/.49 A/R housing and internal wastegate. Hardware receipt, engine health and vehicle fit remain gated. "
@@ -2379,23 +2398,7 @@ WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
                 "electrical-box fabrication until new photographs and measured steering, bonnet, body and front-stack datums are recorded."
             ),
             "image_tokens": ["turbo", "steering", "downpipe", "intercooler", "clearance"],
-            "conceptual_images": [
-                {
-                    "path": "docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
-                    "caption": "CONCEPTUAL Rev J — bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
-                    "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
-                },
-                {
-                    "path": "docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
-                    "caption": "CONCEPTUAL Rev J opposite-side packaging — purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
-                    "media_id": "turbo_rev_j_opposite_side_packaging_concept",
-                },
-                {
-                    "path": "docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
-                    "caption": "CONCEPTUAL Rev J annotated layout — identification aid only; callouts and positions must be reconciled against the vehicle.",
-                    "media_id": "turbo_rev_j_annotated_layout_concept",
-                },
-            ],
+            "conceptual_images": TURBO_CONCEPTUAL_IMAGES,
         },
         {
             "title": "Install Monitoring And Protection",
@@ -6082,6 +6085,39 @@ def build_workstream_evidence_sets(
     paint_queue_rows: list[dict[str, str]],
     paint_whatsapp_rows: list[dict[str, str]],
 ) -> dict[str, Any]:
+    if workstream_id == "turbocharger_powertrain":
+        conceptual_images = [
+            {
+                "path": path_for_ui(clean(row.get("path"))),
+                "caption": clean(row.get("caption")),
+                "captured_date": "",
+                "captured_time": "",
+                "media_type": "photo",
+                "component_group": "turbocharger_powertrain",
+                "specific_component": "conceptual_packaging_visual",
+                "stage": "conceptual_pending_measurement",
+                "media_id": clean(row.get("media_id")),
+                "matched_tokens": ["conceptual", "turbo", "packaging"],
+                "match_basis": "controlled_concept_visual",
+                "match_score": 1000,
+            }
+            for row in TURBO_CONCEPTUAL_IMAGES
+        ]
+        return {
+            "primary_images": conceptual_images,
+            "evidence_sets": [
+                {
+                    "key": "turbo_build_conceptual_layout",
+                    "title": "Turbo Build — Rev J Conceptual Layout",
+                    "description": (
+                        "Controlled packaging views only. These are concept-stage references pending fresh "
+                        "vehicle photographs and measured clearances; they are not fabrication evidence."
+                    ),
+                    "images": conceptual_images,
+                }
+            ],
+        }
+
     if workstream_id == "interior_controls":
         dashboard_rows = [
             row
@@ -8067,6 +8103,10 @@ def select_workstream_subtask_images(
     images: list[dict[str, Any]],
     tokens: set[str],
 ) -> list[dict[str, Any]]:
+    if workstream_id == "turbocharger_powertrain":
+        # Turbo imagery is deliberately curated. Generic keyword matches previously
+        # surfaced fasteners, rubber samples, and underside photos in this workstream.
+        return []
     candidate_images = (
         paint_refinish_subtask_image_pool(subtask_id, images) if workstream_id == "paint_refinish" else images
     )
