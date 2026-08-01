@@ -3386,7 +3386,7 @@ def build_document_rev_e_reference():
     add_heading(document, "3.1 Standard parts first — custom metal only where necessary", 1)
     add_paragraph(
         document,
-        "Use locally replaceable catalogue parts wherever they meet the measured envelope and written duty. "
+        "Use standard catalogue parts only where the measured envelope and written duty are met; availability and fit are not assumed. "
         "A Toyota part number identifies a candidate only: take the actual part to the vehicle, measure it and "
         "pass the relevant test before release."
     )
@@ -3754,13 +3754,33 @@ def build_document():
     add_callout(
         document,
         "DESIGN BASIS — NOT A GUARANTEED 50°C OR NO-DERATE RATING",
-        "Rev G is a simple best-effort all-front architecture using locally replaceable Toyota donor/service parts where they suit the measured package. It may be described as 50°C-capable or no-derate only after measured fit, component evidence and the complete-vehicle acceptance test pass.",
+        "Rev G is a simple best-effort all-front architecture using standard service parts where they are locally obtainable or sourceable; the source status is listed immediately below. It may be described as 50°C-capable or no-derate only after measured fit, component evidence and the complete-vehicle acceptance test pass.",
     )
-    add_table(document, ["DESIGN CEILING", "AIR PATH", "RELEASE STATUS"], [(
-        "150 bhp / 112 kW crankshaft cooling-design envelope; not engine approval",
-        "exactly 3 fans: 2 centred electric pushers ahead of all three cores + 1 retained rear engine-driven puller",
-        "HOLD pending physical fit, E2/E2a electrical-enclosure fit/weather checks and installed three-core-stack tests",
-    )], [2800, 4000, 2560], 8.7)
+    p = document.add_paragraph()
+    p.paragraph_format.space_before = Pt(7)
+    p.paragraph_format.space_after = Pt(3)
+    r = p.add_run("START HERE — WHAT TO BUY, RETAIN AND FABRICATE")
+    set_run(r, 11, True, NAVY)
+    add_paragraph(
+        document,
+        "This is not a Prado radiator conversion or a catalogue direct-fit kit. Prado 120/GX470 donor scope is limited to two matched Toyota/Denso front-fan motor, 248 mm blade and plug/pigtail sets.",
+        after=3,
+    )
+    sourcing_table = add_table(document, ["SOURCE CLASS", "QTY / ITEM", "EXACT ITEM / SEARCH REFERENCE", "PAKISTAN ACTION"], [
+        ("BUY USED TOYOTA DONOR", "2 matched front-fan sets", "Prado 120/GX470 Toyota/Denso: assemblies 88590-60040 / -60050 / -60051 / -60060; motor 88550-12160; 248 mm blade 88453-60010; plugs/pigtails", "Breaker/Bilal Ganj route. Match, check hand/depth/rotation and bench-test. No Prado radiator or complete donor shroud."),
+        ("RETAIN / REBUILD EXISTING", "1 rear fan/hub + 2 boxes", "Existing Toyota 2H puller/hub; blade 16361-68030 / -68031. Existing covered Relay Rev D and closed MIDI Rev D boxes", "Already held. Inspect/rebuild and trial-fit the actual closed boxes; replace only if rejected."),
+        ("SAMPLE, THEN LOCAL RECORE", "1 radiator", "HJ47/2H pattern 16400-68030 or sound original tanks. 530 × 435 × 64 is active-core basis only—not finished size", "Local stock unconfirmed. Sample, record complete R0, then release local recore only after hole fixture and dummy pass."),
+        ("SOURCE NEW STANDARD — VERIFY STOCK", "1 each + service hardware", "Condenser 559 × 356 × 21; charge cooler 500 × 180 × 50, 57 mm outlets; drier 88471-34010 only if ports fit; hoses, relays/connectors, M6/M8 hardware, EPDM", "Use local A/C, turbo and hardware suppliers. Stock changes; complete envelopes and ports remain physical-sample first."),
+        ("FABRICATE LOCALLY", "Measured interfaces only", "2 side rails, 2 direct 4 mm top ears, 2 lower saddles, centred twin-pusher shroud, rear shroud if needed, tabs, seals/screen, 2 separate electrical brackets/hoods and adapters", "Only after real parts, rigid top-hole template and full-size dummy pass. No crossbar, shared tray, new chassis hole, slot or forced alignment."),
+    ], [1500, 1500, 3700, 2660], 7.1)
+    for row in sourcing_table.rows:
+        row._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
+    add_paragraph(
+        document,
+        "PURCHASING STATUS — Part numbers identify candidates; Pakistan sourcing describes the expected route, not guaranteed live stock or direct fit. Source samples and make the fixture now. Final parts, drilling and coating remain on HOLD until their physical-fit gates pass.",
+        after=0,
+        italic=True,
+    )
 
     add_heading_new_page(document, "1. Rev G packaging — Toyota donor parts, bracket-first measured fit", 1)
     add_callout(document, "CONTROLLED ARCHITECTURE", "Grille → centred matched Prado 120/GX470-family Denso motor/blade pair in a custom shroud → 500 × 180 × 50 charge cooler → ≥10 mm gap → 559 × 356 × 21 condenser → 15 mm target gap (10 mm absolute minimum) → HJ47/2H-pattern recored/custom radiator using a 530 × 435 × 64 active-core thermal basis only, with complete envelope controlled by R0 → sealed full-face mechanical puller shroud. Rev G has exactly three fans: two front electric pushers and one retained rear engine-driven puller. Prado/GX sourcing is for matched fan motors, blades, connectors and pigtails only; no Prado radiator or direct-fit donor-shroud assumption.", "F3ECF8", PURPLE)

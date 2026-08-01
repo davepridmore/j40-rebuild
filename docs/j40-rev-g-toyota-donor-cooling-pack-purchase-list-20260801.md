@@ -5,6 +5,20 @@
 **Cooling target:** 50°C air at the grille, subject to the installed tests in the controlled fabricator specification
 **Use with:** `J40-integrated-cooling-pack-fabricator-specification-rev-c.md`
 
+## START HERE — simple sourcing summary
+
+This is **not** a Prado radiator conversion or a catalogue direct-fit kit. The only Prado 120/GX470 donor items are **two matched Toyota/Denso front-fan motor, 248 mm blade and plug/pigtail sets**. Part numbers are search/identity references; the real sample and the measurement gate control purchase.
+
+| Source class | Qty / item | Exact standard item or search reference | Pakistan sourcing instruction |
+|---|---|---|---|
+| **BUY USED TOYOTA DONOR** | 2 matched front-fan sets | Prado 120/GX470-family Toyota/Denso motor + 248 mm blade + plug/pigtail. Assembly refs **88590-60040 / -60050 / -60051 / -60060**; motor **88550-12160**; blade **88453-60010** | Practical breaker/Bilal Ganj route. Bring two physically matching sets, check rotation/hand/depth and bench-test before payment. **Do not buy a Prado radiator or complete donor shroud** |
+| **RETAIN / REBUILD EXISTING** | 1 rear fan/hub + 2 electrical boxes | Existing Toyota 2H engine-driven puller/hub; blade refs **16361-68030 / -68031**. Existing covered Relay Rev D and closed MIDI Rev D boxes | Already held on the vehicle/project. Inspect, rebuild where necessary and trial-fit the actual closed boxes. Do not buy replacements unless inspection rejects them |
+| **SAMPLE, THEN LOCAL RECORE** | 1 radiator | HJ47/2H radiator pattern **16400-68030** or sound original tanks. **530 × 435 × 64 mm is the active-core thermal basis only**, not finished radiator size | Exact HJ47/2H local stock is not confirmed. Source a physical pattern/tank sample, record complete R0 and release a competent local radiator shop only after the rigid two-hole fixture and full-size dummy pass |
+| **SOURCE NEW STANDARD — VERIFY STOCK** | 1 each + service hardware | Condenser **559 × 356 × 21 mm**; charge cooler **500 × 180 × 50 mm** with 57 mm outlets; new drier **88471-34010** only if ports fit, otherwise new #6 O-ring equivalent; hoses, relays/connectors, M6/M8 hardware and EPDM | Use local A/C, turbo and automotive-hardware suppliers. Exact stock changes; the specified charge-cooler size and every complete condenser/drier envelope and port remain **physical-sample first** |
+| **FABRICATE LOCALLY** | Measured interfaces only | Two radiator side rails, two 4 mm direct top ears, two lower saddles, centred twin-pusher shroud, rear shroud if the Toyota item cannot fit, exchanger tabs, seals/stone screen, two separate electrical brackets/hoods and measured adapters | Make only after the real parts, rigid top-hole template and full-size dummy pass. No transverse radiator carrier, shared electrical tray, new chassis hole, slot or forced bolt alignment |
+
+> **BUYING STATUS:** samples and measuring material may be sourced now. Final radiator/core, final charge cooler/condenser, final fan purchase, bracket drilling and finish coating remain on HOLD until the physical-fit gates pass. “Pakistan sourcing” describes the expected route, not guaranteed live stock or direct fit.
+
 ## Take these measurements to the parts market first
 
 Bring one rigid 1:1 template that copies **both original top holes together**, marked LEFT / RIGHT / FRONT. Also bring the signed measurements below. Do not buy the final radiator from a catalogue size.
@@ -24,7 +38,7 @@ Existing bracket reference only: **48 mm main face / 410 mm upright / 58 mm inwa
 | Qty | Off-the-shelf / donor item | Candidate and dimensions to check | Before paying |
 |---:|---|---|---|
 | 1 | HJ47/2H radiator or sound tank/pattern sample | Toyota pattern candidate **16400-68030**. The **530 W × 435 H × 64 D mm value is active-core thermal basis only** | Measure complete R0; check filler, drain, neck position/angle, cap seat, tank seams, ears and lower locators. It must fit the rigid fixture; a Prado radiator is not specified |
-| 2 matching sets | Toyota/Denso front fan motor + 248 mm blade + plug/pigtail | Prado 120 / GX470-family candidates; each blade sweep **248 mm**; planned clear shroud ring **≥258 mm**; pair motor C-C **266 mm**; complete motor/guard/plug depth allocation **≤55 mm** | Buy two matching rotations, blade hands, connectors and motor depths. One vehicle may supply only one suitable condenser fan, so two donors may be needed. Bench-test before payment; do not buy the donor shroud |
+| 2 matching sets | Toyota/Denso front fan motor + 248 mm blade + plug/pigtail | Prado 120/GX470-family candidates: assembly refs **88590-60040 / -60050 / -60051 / -60060**; motor **88550-12160**; blade **88453-60010**. Each blade sweep **248 mm**; planned clear shroud ring **≥258 mm**; pair motor C-C **266 mm**; complete motor/guard/plug depth allocation **≤55 mm** | Buy two matching rotations, blade hands, connectors and motor depths. These numbers are search references, not direct-fit approval. One vehicle may supply only one suitable condenser fan, so two donors may be needed. Bench-test before payment; do not buy the donor shroud |
 | 1 set | Toyota 2H rear mechanical fan/hub and usable shroud sample | Fan blade candidates **16361-68030 / 16361-68031**; shroud candidate **16711-47040** | Inspect cracks, runout, hub/bearing/viscous condition and rotation. Retain/rebuild the existing vehicle parts where better |
 | 1 | New parallel-flow R134a condenser | Target body **559 W × 356 H × 21 D mm** (14 × 22 nominal). A locally listed 14 × 23 unit is only a near-size sample | Measure full body, manifolds, ears, ports and tool space against W0/M1–M4; new only |
 | 1 | New bar-and-plate charge-air cooler | Target body **500 W × 180 H × 50 D mm**, **57 mm** beaded outlets | Complete tanks/outlets must stay inside the allowed envelope; confirm rating for ≥30 psi shop test |

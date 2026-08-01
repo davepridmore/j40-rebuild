@@ -9583,6 +9583,7 @@
             </blockquote>
             <div class="cooling-pack-downloads">
               <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.docx" download>Download shop specification (.docx)</a>
+              <a class="item-link cooling-pack-download" href="../../docs/j40-rev-g-toyota-donor-cooling-pack-purchase-list-20260801.md" download>Download simple purchase list (.md)</a>
               <a class="item-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md" download>Download source specification (.md)</a>
             </div>
           </div>
@@ -9597,6 +9598,58 @@
             <div><dt>Front pusher pair</dt><dd>2 × 248 mm / 266 mm C-C</dd><span>Prado/GX motor, blade, connector only</span></div>
             <div><dt>Depth release</dt><dd>215 mm absolute stack basis</dd><span>225 mm installed clearance preferred</span></div>
           </dl>
+        </section>
+
+        <section class="card cooling-pack-section cooling-pack-start-here" id="cooling-pack-start-here">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">Start here · sourcing instruction</p>
+              <h3>What to buy, what to keep, and what the local shop fabricates</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-start-here"), "#", "Copy cooling-pack sourcing summary link")}
+          </div>
+          <div class="cooling-pack-start-rule" role="note">
+            <strong>This is not a Prado radiator conversion or a catalogue direct-fit kit.</strong>
+            <span>The only Prado 120/GX470 donor items are two matched Toyota/Denso front-fan motor, 248 mm blade and plug/pigtail sets. The radiator follows the HJ47/2H pattern and the brackets and shrouds are measured local fabrication.</span>
+          </div>
+          <div class="table-wrap cooling-pack-table-wrap">
+            <table class="cooling-pack-table cooling-pack-source-table">
+              <thead><tr><th>Source class</th><th>Qty / item</th><th>Exact standard item or search reference</th><th>Pakistan sourcing instruction</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="cooling-pack-source-badge is-used">Buy used Toyota donor</span></td>
+                  <td><strong>2 matched front-fan sets</strong></td>
+                  <td>Prado 120/GX470-family Toyota/Denso motor + 248 mm blade + plug/pigtail. Assembly search references <strong>88590-60040 / -60050 / -60051 / -60060</strong>; motor <strong>88550-12160</strong>; blade <strong>88453-60010</strong>.</td>
+                  <td><strong>Practical breaker/Bilal Ganj route.</strong> Bring two physically matching sets, check rotation/hand/depth and bench-test before payment. Part numbers identify candidates only; they do not approve direct fit. <strong>Do not buy a Prado radiator or complete donor shroud.</strong></td>
+                </tr>
+                <tr>
+                  <td><span class="cooling-pack-source-badge is-retain">Retain / rebuild existing</span></td>
+                  <td><strong>1 rear fan/hub + 2 electrical boxes</strong></td>
+                  <td>Existing Toyota 2H engine-driven puller/hub; blade candidates <strong>16361-68030 / -68031</strong>. Existing covered Relay Rev D box and closed MIDI Rev D fuse box.</td>
+                  <td><strong>Already held on the vehicle/project.</strong> Inspect, rebuild where necessary and trial-fit the actual closed boxes. Do not buy replacements unless inspection rejects the existing part.</td>
+                </tr>
+                <tr>
+                  <td><span class="cooling-pack-source-badge is-sample">Sample, then local recore</span></td>
+                  <td><strong>1 radiator</strong></td>
+                  <td>HJ47/2H radiator pattern <strong>16400-68030</strong> or sound original tanks. <strong>530 × 435 × 64 mm is the active-core thermal basis only</strong>, not the finished radiator size.</td>
+                  <td><strong>Exact HJ47/2H local stock is not confirmed.</strong> Source a physical pattern/tank sample, record complete R0, and use a competent local radiator shop. Release the final core only after the rigid two-hole fixture and full-size dummy pass.</td>
+                </tr>
+                <tr>
+                  <td><span class="cooling-pack-source-badge is-new">Source new standard — verify stock</span></td>
+                  <td><strong>1 each + service hardware</strong></td>
+                  <td>Condenser <strong>559 × 356 × 21 mm</strong>; charge cooler <strong>500 × 180 × 50 mm</strong> with 57 mm outlets; new drier <strong>88471-34010</strong> only if ports fit, otherwise new #6 O-ring equivalent; hoses, relays/connectors, M6/M8 hardware and EPDM.</td>
+                  <td><strong>Use local A/C, turbo and automotive-hardware suppliers.</strong> Exact stock changes; the specified charge-cooler size and every complete condenser/drier envelope and port remain <strong>physical-sample first</strong>.</td>
+                </tr>
+                <tr>
+                  <td><span class="cooling-pack-source-badge is-fabricate">Fabricate locally</span></td>
+                  <td><strong>Measured interfaces only</strong></td>
+                  <td>Two radiator side rails, two 4 mm direct top ears, two lower saddles, centred twin-pusher shroud, rear shroud if the Toyota item cannot fit, exchanger tabs, seals/stone screen, two separate electrical brackets/hoods and measured adapters.</td>
+                  <td><strong>Make only after the real parts, rigid top-hole template and full-size dummy pass.</strong> No transverse radiator carrier, shared electrical tray, new chassis hole, slot or forced bolt alignment.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="cooling-pack-simple-rule"><strong>Buyer rule:</strong> “Toyota part number” means a search/identity reference. “Buy” means obtain a physical sample and pass the stated measurement gate; it never means assumed bolt-in fit.</p>
         </section>
 
         <section class="card cooling-pack-section cooling-pack-photorealistic" id="cooling-pack-photorealistic-visuals">
@@ -9674,7 +9727,7 @@
           <div class="detail-header">
             <div>
               <p class="cooling-pack-section-label">Standard Toyota parts first</p>
-              <h3>Use locally replaceable donor parts; custom-make only the measured interfaces</h3>
+              <h3>Use standard service parts where obtainable; custom-make only the measured interfaces</h3>
             </div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-standard-components"), "#", "Copy standard components link")}
           </div>
@@ -9688,7 +9741,7 @@
                 <tr><td><strong>A/C condenser</strong></td><td>New common <strong>14 × 22 in nominal</strong> R134a parallel-flow condenser (559 × 356 × 21 mm basis), preferably common #8 inlet / #6 outlet O-ring ports.</td><td>Four isolated tabs and only the short adapters required by the measured hose route. Its actual body, seams, manifolds, ports, ears and service-tool envelope must fit and pass the 50°C A/C test.</td></tr>
                 <tr><td><strong>Receiver-drier and A/C service parts</strong></td><td>New Toyota receiver-drier <strong>88471-34010</strong> <em>only if its ports fit</em>; otherwise new common serviceable #6 O-ring R134a drier with trinary-switch provision. Use new R134a barrier hose, HNBR seals, crimps, trinary switch and service ports.</td><td>Use one removable rubber-lined vertical clamp and short barrier-hose links. Never reuse a drier; the A/C technician must confirm ports/threads, switch set-points, evacuation, charge and pressures.</td></tr>
                 <tr><td><strong>Electrical fan hardware</strong></td><td>Reuse Relay Rev D on its <strong>360 × 245 × 3 mm</strong> aluminium base with <strong>300 × 197 × 3 mm</strong> insulating sheet as a separate covered box. MIDI Rev D retains its <strong>210 × 165 × 65 mm</strong> enclosure, <strong>230 × 185 mm</strong> lid and 140 × 85 mm mounting plate; every MIDI fuse remains inside the closed, gasketed enclosure and its lid stays shut in normal operation. Keep two independently fused front-fan branches and Toyota/Denso/Sumitomo-compatible connectors.</td><td>Use two independent local structural brackets: one for Relay, one for MIDI, each with its own hood and service sweep. Keep both complete envelopes inside W0/the existing upright front-view silhouette and stagger vertically/depth-wise so MIDI's projected width nests wholly inside the Relay 360 mm envelope—never side-by-side across vehicle width. Route cable exits down/rear. Verify actual-current relay rating, voltage drop and branch isolation at E1; prove exact positions, both cover/lid sweeps, cable bends, drip shields, P-clips, disconnects and removal at E2/E2a before final loom work. No common plate; no formal IP rating is claimed unless purchased-rated or tested. Master cutoff stays battery-side.</td></tr>
-                <tr><td><strong>Charge-air cooler and route</strong></td><td>First trial a physically available Toyota/Denso 500 × 180 × 50 mm / 57 mm-outlet core that fits the duty; otherwise use one common locally replaceable bar-and-plate core. Use common 57 mm (2.25 in) beaded tube, silicone couplers and T-bolt clamps.</td><td>Mount the core centrally ahead of the condenser. Turn the two short pipe routes rearward/inboard at measured lower corners. Make only independent tabs, sealing panels and measured bends; no side fan or side tower.</td></tr>
+                <tr><td><strong>Charge-air cooler and route</strong></td><td>If a Toyota/Denso 500 × 180 × 50 mm / 57 mm-outlet sample is physically in hand, trial it against the stated envelope and duty; otherwise source a commonly serviceable bar-and-plate core to the same envelope and duty. Pakistan stock for this exact size is unconfirmed, so the physical sample controls. Use common 57 mm (2.25 in) beaded tube, silicone couplers and T-bolt clamps.</td><td>Mount the core centrally ahead of the condenser. Turn the two short pipe routes rearward/inboard at measured lower corners. Make only independent tabs, sealing panels and measured bends; no side fan or side tower.</td></tr>
                 <tr><td><strong>Fasteners and isolation</strong></td><td>Standard metric M6/M8 class 8.8 fasteners, large washers, locking nuts and EPDM isolators.</td><td>Two direct top ears/adapters, two lower saddles, twin-pusher shroud, rear shroud, two electrical brackets/hoods, simple air seals/stone screen and measured adapters are the custom-only items. No transverse radiator carrier and no heat-exchanger core carries another component.</td></tr>
               </tbody>
             </table>

@@ -2689,6 +2689,46 @@ code {
   text-transform: uppercase;
 }
 
+.cooling-pack-start-here {
+  border: 2px solid #426e5e;
+  box-shadow: 0 12px 28px rgb(38 76 64 / 10%);
+}
+
+.cooling-pack-start-rule {
+  background: #edf6f1;
+  border: 1px solid #a9c7b8;
+  border-left: 5px solid #345f50;
+  border-radius: 10px;
+  color: #294c40;
+  display: grid;
+  gap: 0.28rem;
+  line-height: 1.48;
+  margin: 0.45rem 0 0.75rem;
+  padding: 0.72rem 0.82rem;
+}
+
+.cooling-pack-source-table th:first-child,
+.cooling-pack-source-table td:first-child {
+  width: 150px;
+}
+
+.cooling-pack-source-badge {
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.25;
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.cooling-pack-source-badge.is-used { background: #e4edf8; color: #274d78; }
+.cooling-pack-source-badge.is-retain { background: #e5f2e9; color: #2d6541; }
+.cooling-pack-source-badge.is-sample { background: #fff0cf; color: #744d00; }
+.cooling-pack-source-badge.is-new { background: #e8e6f8; color: #4d4381; }
+.cooling-pack-source-badge.is-fabricate { background: #f5e6e0; color: #803f29; }
+
 .cooling-pack-band-grid,
 .cooling-pack-spec-grid {
   display: grid;
