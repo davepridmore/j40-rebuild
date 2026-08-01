@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-02T01:10:55+05:00",
+  "generated_at": "2026-08-02T01:41:47+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -36683,8 +36683,8 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "electrical_reset"
       ],
-      "next_action": "Use the on-hand 7 Schneider selectors in the Rev I V13 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
-      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, and all bought-component cuts remain physical measurement holds.",
+      "next_action": "Use the on-hand 7 Schneider selectors in the Rev I V15 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
+      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, the large plate-and-knob glovebox is retained, and the separate smaller ashtray is deleted and closed over. All bought-component cuts remain physical measurement holds.",
       "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting ENGINE.",
       "evidence_source": [
         "photo_inventory",
@@ -37513,7 +37513,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors in the Rev I V13 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
+          "detail": "Use the on-hand 7 Schneider selectors in the Rev I V15 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
         },
         {
           "label": "Classify and tag interior control hardware",
@@ -37603,7 +37603,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, and all bought-component cuts remain physical measurement holds."
+          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, the large plate-and-knob glovebox is retained, and the separate smaller ashtray is deleted and closed over. All bought-component cuts remain physical measurement holds."
         }
       ],
       "involved_parts": [
@@ -70758,7 +70758,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
       "exit_gate": "Compact two-takeoff evaporator package, two high fixed outer/end outlets, retained or dedicated demist, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, balanced-airflow, demist, condensate, and electrical-load checks closed",
-      "notes": "2026-08-02 Rev I V13 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
+      "notes": "2026-08-02 Rev I V15 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
       "evidence_source": [
         "docs/ac-hvac-workstream.md",
         "docs/hvac-evaporator-blower-sourcing-20260514.md",
@@ -76268,7 +76268,7 @@ window.J40_DASHBOARD_DATA = {
           "critical_measurements": "Selector/contact-stack depth; harness plug style; resistor or PWM input logic; blower speed count; thermostat probe routing; separate controller service position; dash and duct clearance",
           "fit_and_test": "Bench-test every blower request and the A/C request through the measured controller/relay/safety chain; confirm no selector carries blower-motor or clutch current and confirm labels/functions before dash closeout",
           "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/hvac_control_interface_schedule.csv",
-          "notes": "Rev I V13 provides the two visible discrete HVAC requests within its compact four-by-two bank; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
+          "notes": "Rev I V15 provides the two visible discrete HVAC requests within its compact four-by-two bank; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
           "evidence_images": []
         },
         {
@@ -76306,13 +76306,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "layout_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Develop Rev I around exactly two matching outlets on one common high datum at the fixed outer/end fascia regions; aim one at the passenger and one at the driver; preserve the OEM glovebox and speedometer as no-touch regions and delete the Rev H inner/lower pair and all pods",
+          "current_action": "Develop Rev I around exactly two matching outlets on one common high datum at the fixed outer/end fascia regions; aim one at the passenger and one at the driver; preserve the large OEM glovebox and speedometer as no-touch regions, close over the separate smaller ashtray, and delete the Rev H inner/lower pair and all pods",
           "exact_recreation_spec": "Two-outlet outer/end layout with the largest practical directional faces and necks compatible with the selected compact evaporator; exact face, cutout, neck and centre coordinates held for physical louver and case measurement; demist remains an original or dedicated separate path",
           "material_spec": "Two identical automotive HVAC louvers from one batch with directional shutoff cores and hidden retention; two fully supported matching end branches; clamps and sealed adapters; no decorative vents without measured hose necks",
           "critical_measurements": "Face and cutout dimensions; neck OD/ID and rear depth; aim range; complete end-branch lengths and bend radius; evaporator takeoff spacing; LCD/glovebox/switch-bank/cluster/column/knee/lever/service clearance; separate demist route",
           "fit_and_test": "Full-size Rev I fascia and complete rear-envelope mock-up; bench airflow and freeze test with both full-length end branches connected; prove useful balanced airflow and that each vent can aim at its occupant; prove demist remains functional; support both branches without crush or more than 10% ovalisation; no production cuts until unit and louver samples are fixed",
           "source_ref": "part_hvac_two_outlet_duct_layout_20260801|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md",
-          "notes": "2026-08-02 Rev I V13 visual direction uses exactly two high outer/end outlets and supersedes the Rev H 1-2-1 vent geometry plus the V9 two-central-outlet study. It targets the installed-photo cluster relationship and original shallow fascia; the signed M1/M3 trace controls exact geometry. The generated Rev H package remains historical; its V1-V4 apertures and duct schedule are not released for fabrication.",
+          "notes": "2026-08-02 Rev I V15 visual direction uses exactly two high outer/end outlets and supersedes the Rev H 1-2-1 vent geometry plus the V9 two-central-outlet study. It targets the installed-photo cluster relationship, original shallow fascia and correct glovebox/ashtray identity; the signed M1/M2/M3 trace controls exact geometry. The generated Rev H package remains historical; its V1-V4 apertures and duct schedule are not released for fabrication.",
           "evidence_images": []
         },
         {
@@ -89450,7 +89450,7 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa",
         "product_link": "",
         "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
-        "notes": "2026-08-02 Rev I V13 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
+        "notes": "2026-08-02 Rev I V15 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
       }
     ],
     "delivery_watchlist": [
