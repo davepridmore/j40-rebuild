@@ -1,0 +1,25 @@
+id,phase,qty,system,candidate_or_material,controlled_dimension_or_requirement,inspection_before_payment,release_gate,status
+A01,A,1,Radiator pattern sample,Toyota HJ47/2H pattern 16400-68030,"530x435x64 active-core thermal basis only; record complete R0 including tanks/seams/filler/drain/ears/locators","Pressure/condition; necks/cap seat/drain; rigid B0 template and complete envelope","B0/H0-L/H0-R/W0/P0/R0 plus BRKT",BUY/BORROW SAMPLE
+A02,A,2 matching sets,Front fan samples,Prado 120/GX470-family Toyota/Denso motor+blade+plug,"248 mm sweep each; >=258 mm rings; 266 mm C-C; <=55 mm complete module depth allocation","Matching rotation/blade hand/connector/depth; no cracks/play/heat damage; bench test","F1 then F3 installed flow",BUY/BORROW SAMPLES
+A03,A,1,Rear mechanical fan sample,"Existing Toyota 2H; candidates 16361-68030/-68031; shroud 16711-47040",Actual complete part,"Blade/runout/hub/bearing/viscous/rotation/engine sweep","F2/F4/M5",BRING NOW
+A04,A,1,A/C condenser,New parallel-flow 14x22 nominal,"Target 559x356x21 mm body","Complete manifolds/seams/ears/ports/tool envelope","W0/M1-M4 and A/C approval",BUY SAMPLE
+A05,A,1,Charge-air cooler,New bar-and-plate,"Target 500x180x50 mm; 57 mm beaded outlets","Complete tanks/outlets; >=30 psi shop-test rating; damage","W0/M1-M4 and T3 plan",BUY SAMPLE
+A06,A,1,Receiver-drier,"88471-34010 if ports fit; otherwise new #6 O-ring R134a with trinary provision",New and sealed,"Port/thread/hose route; never used/open","A/C route approval",BUY SAMPLE
+A07,A,1 set,Relay Rev D,Existing covered assembly,"360x245x3 base; 300x197x3 insulator","Closed cover/latch/sweep; boots; down/rear cable exits","E2 independent bracket",BRING NOW
+A08,A,1 set,MIDI Rev D,Existing closed gasketed fuse box,"210x165x65 body; 230x185 lid; 140x85x5 subplate","Every fuse/holder/live stud inside; lid closes with final cables; glands/fuse access","E2a independent bracket/weather",BRING NOW
+A09,A,1,Rigid bracket fixture,Local ply/steel template,"Copies both original top holes together; 48 face/410 upright/58 return checked","B0/H0-L/H0-R/W0/P0 marked L/R/front; chassis holes unchanged","BRKT dry fit",MAKE NOW
+B01,B,1,Final radiator,HJ47-pattern recore/custom,"530x435x64 active-core basis only if complete R0 fits; >=115 kW continuous; >=130 kW/10 min","Sample interfaces and thermal evidence","B0/H0-L/H0-R/W0/P0/R0/BRKT/full dummy/owner",HOLD
+B02,B,1 each,Hoses and cap,"16571-68020; 16572-68020; 16401-41021 candidates",Actual sample and verified 2H pressure,"Neck OD/angle; hose route; cap seat/pressure","Actual interfaces measured",HOLD
+B03,B,2 matching sets,Final front fans,Accepted Prado/GX Toyota/Denso sample geometry,"248 sweep; >=258 rings; 266 C-C; <=55 depth; target >=3300 m3/h; PASS >=3000 installed at 13.5 V","Identity/condition/bench test","F1 then F3",HOLD
+B04,B,1,Final condenser,New parallel-flow,"559x356x21 target body","Complete envelope/ports accepted","W0/M1-M4",HOLD
+B05,B,1,Final charge cooler,New bar-and-plate,"500x180x50 target; 57 outlets; >=15 kW; IAT <=80 C; route dP <=10 kPa","Pressure rating and complete envelope","W0/M1-M4 then T3",HOLD
+B06,B,as measured,Pipe/hose/service parts,"57 mm bead-ended tube; new R134a barrier hose/HNBR; Toyota-pattern coolant clamps",Measured routes and ratings,"Cleanliness/couplers/clamps/bends/ports","M4/A-C technician",HOLD
+C01,C,1 lot,Direct radiator mount material,"Two 4 mm direct ears; two lower saddles; M8 class 8.8 provisional; 6 mm EPDM 60-65 Shore A; crush sleeves","One ear and saddle per same radiator side rail; no crossbar; no chassis change","B0/H0-L/H0-R/W0/P0/R0/BRKT",HOLD
+C02,C,1 each,Front/rear shrouds,Local fabrication,"Centred twin-ring front; sealed full-face rear; 35-50% blade insertion","Seal/clearance/removal","F1/F2/M5",HOLD
+C03,C,2,Independent electrical brackets,"3 mm 5052-H32 aluminium with 20 mm returns; staggered; one bracket per real box","Non-radiator structural pickup; no shared plate; no top-return/radiator load","E2/E2a",HOLD
+C04,C,2,Independent rain hoods,"1.2-1.5 mm aluminium; 25 mm turned edges; down/rear glands; baffled drain","One hood per box; actual cover/lid sweep and >=25 mm service clearance","E2/E2a plus dry/clean weather check",HOLD
+C05,C,2,Fan relays,"90987-02027 only if rating passes; else sealed ISO automotive >= measured duty",One per motor,"Rating/terminal condition/hot current","E1",HOLD
+C06,C,2,Fuses and holders,Inside closed MIDI Rev D,"One branch per motor sized from measured hot start/run current; all fuse/live parts enclosed","Rating/holder temperature/lid closure","E1/E2a",HOLD
+C07,C,1 lot,Cable/connectors,Automotive cable plus matching Toyota/Denso/Sumitomo repair plugs,"<=0.5 V motor drop unless supplier tighter","New terminals/seals; measured lengths; strain relief","E1",HOLD
+C08,C,1 set,Air seals and stone screen,Local service stock,"No bypass; removable; stays inside upright silhouette","Fit/open area/removal","M6 then F3/F4",HOLD
+C09,C,1 test set,Commissioning instrumentation,"Temperature/pressure/airflow/current/voltage logging",Supports F3/F4/T1-T3,"Calibration/range/sample rate","Approved test plan",HOLD
