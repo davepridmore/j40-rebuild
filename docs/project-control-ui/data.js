@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-01T19:36:58+05:00",
+  "generated_at": "2026-08-02T00:32:06+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -27735,7 +27735,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 260913
+            "bytes": 260917
           },
           "file_count": 38
         }
@@ -32834,7 +32834,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276412
+            "bytes": 276447
           },
           "file_count": 27
         },
@@ -36065,7 +36065,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276412
+            "bytes": 276447
           },
           "file_count": 27
         },
@@ -36143,7 +36143,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 80483
+            "bytes": 80498
           },
           "file_count": 13
         },
@@ -36315,7 +36315,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 298907
+            "bytes": 299153
           },
           "file_count": 5
         },
@@ -36683,8 +36683,8 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "electrical_reset"
       ],
-      "next_action": "Use the on-hand 7 Schneider selectors in the Rev G far-right 2 x 4 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
-      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. CNC geometry makes the LCD centre and inner-vent midpoint identical, but physical panel fit and bought-component cuts remain measurement holds.",
+      "next_action": "Use the on-hand 7 Schneider selectors in the Rev I V11 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
+      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD is centred on the signed usable-fascia centreline, both outer vents share one high datum, and all bought-component cuts remain physical measurement holds.",
       "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting ENGINE.",
       "evidence_source": [
         "photo_inventory",
@@ -37513,7 +37513,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors in the Rev G far-right 2 x 4 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
+          "detail": "Use the on-hand 7 Schneider selectors in the Rev I V11 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
         },
         {
           "label": "Classify and tag interior control hardware",
@@ -37603,7 +37603,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. CNC geometry makes the LCD centre and inner-vent midpoint identical, but physical panel fit and bought-component cuts remain measurement holds."
+          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD is centred on the signed usable-fascia centreline, both outer vents share one high datum, and all bought-component cuts remain physical measurement holds."
         }
       ],
       "involved_parts": [
@@ -70756,12 +70756,13 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset",
         "body_chassis"
       ],
-      "next_action": "Track the shipped AliExpress evaporator, confirm whether the Alibaba Trade Assurance evaporator sample is paid/active, then bench leak-test, airflow-test, and cardboard-mock the cabin unit before buying or crimping the rest of the A/C circuit",
-      "exit_gate": "Hidden evaporator package, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, airflow, demist, condensate, and electrical-load checks closed",
-      "notes": "Dedicated A/C track split from interior, mechanical, and electrical rows on 2026-05-30. AliExpress order 3073062248277489 is an ordered candidate universal 4-hole A/C evaporator/cool-heat 12V unit; accept it only if dimensions, drain, fittings, outlet/plenum, and owner-selected external blower integration pass. Alibaba order 302575831501027345 needs payment/active-status confirmation. Do not crimp hoses or close dash/firewall holes until all component positions are locked. | Gmail import 2026-06-07 adds shipment evidence for AliExpress evaporator order 3073062248277489; package remains pending delivery and physical acceptance checks.",
+      "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
+      "exit_gate": "Compact two-takeoff evaporator package, two high fixed outer/end outlets, retained or dedicated demist, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, balanced-airflow, demist, condensate, and electrical-load checks closed",
+      "notes": "2026-08-01 Rev I V11 direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
       "evidence_source": [
         "docs/ac-hvac-workstream.md",
         "docs/hvac-evaporator-blower-sourcing-20260514.md",
+        "docs/hvac-dashboard-vent-duct-layout-20260602.md",
         "data_manual_hvac_system_requirements",
         "gmail_msg_19e78b8a26f000c1",
         "bank_alert_19e78b8dbe36d812",
@@ -76180,28 +76181,28 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 225,
-      "reference_token_count": 7,
+      "reference_token_count": 8,
       "requirements": [
         {
           "requirement_id": "HVAC-UNIT-001",
-          "requirement_name": "Hidden compact evaporator core/case and outlet plenum for external blowers",
+          "requirement_name": "Compact two-takeoff evaporator core/case and sealed outlet plenum",
           "pipe_id": "",
           "vehicle_location": "Hidden cabin HVAC package behind/under dash",
           "pipe_or_line": "",
-          "replace_scope": "buy_evaporator_core_case_or_fabricate_plenum_for_custom_blowers",
+          "replace_scope": "buy_compact_two_takeoff_evaporator_or_fabricate_sealed_plenum",
           "quantity": "1_core_case_plenum",
           "photo_evidence": [],
           "photo_status": "package_photos_required",
           "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "ordered_candidate_pending_delivery",
+          "acquisition_status": "replacement_required_pending_measurement",
           "installation_status": "not_installed",
-          "current_action": "Track AliExpress order 3073062248277489 and confirm Alibaba order 302575831501027345 status; on arrival measure, leak-test, airflow-test, and under-dash mock before accepting the unit for the custom-blower hidden A/C layout",
-          "exact_recreation_spec": "Preferred compact evaporator core already in a sealed case/plenum with TXV/expansion valve plus drain pan/nipple plus refrigerant fittings plus outlet spigots or a flat face for custom plenum; bare cooling coil acceptable only if shop/fabricator can build sealed plenum plus drain pan plus blower adapter",
-          "material_spec": "New or tested clean R134a-compatible automotive evaporator core/case; intact fins/tubes; TXV/fittings/drain present; no requirement for included 12V blower if external blowers are selected",
-          "critical_measurements": "Coil face WxH; core depth; case/plenum LxWxH; airflow face area; inlet/return area; outlet count/OD/direction or flat plenum face; drain OD/location; refrigerant fitting sizes; external blower adapter face; mounting tab spacing; service cover clearance; glovebox/dash/pedal/EPS clearance",
-          "fit_and_test": "Pressure/vacuum leak test evaporator; water-test drain; bench airflow test with selected external blowers across full coil face; cardboard-mock fit under dash before purchase",
-          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|reference_projects_and_ideas:vitz_manual_ac_donor|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|docs/ac-hvac-workstream.md",
-          "notes": "This was present in the parts/buy-now data but missing from the requirements feed. User clarified on 2026-05-30 that this is the missing cabin-side A/C package and later clarified he wants own blowers so cabin purchase is a smaller evaporator core/case/plenum rather than a full blower box. 2026-05-30 Gmail update: AliExpress universal 4-hole A/C evaporator/cool-heat unit is ordered and paid as a candidate; Alibaba under-dash evaporator order needs payment/active-status confirmation. Keep custom external-blower and hidden-fit gates open until physical inspection.",
+          "current_action": "Measure the real J40 W x H x D service envelope first; source a compact 12V two-takeoff unit; inspect the ordered AliExpress four-hole unit for return/resale/donor use rather than treating arrival as installation approval",
+          "exact_recreation_spec": "Preferred compact R134a evaporator in a sealed case/plenum with two measured duct takeoffs plus TXV/expansion valve plus drain pan/nipple plus refrigerant fittings plus thermostat/freeze control; bare cooling coil acceptable only with a proven sealed two-takeoff plenum and drain plan",
+          "material_spec": "New or tested clean 12V automotive evaporator package; intact fins/tubes; TXV/fittings/drain/freeze control present; integrated or owner-selected blower must deliver airflow across the full coil face",
+          "critical_measurements": "Available in-vehicle W x H x D; case and service-removal envelope; coil face/core depth; return area; two outlet neck OD/ID/direction; fitting side/type and bend clearance; drain location/fall; blower current; mounting tabs; glovebox/cluster/column/knee/lever clearance",
+          "fit_and_test": "Pressure/vacuum leak test; water-test drain; bench current and all-speed airflow/freeze test through both connected ducts; cardboard-mock complete service envelope before purchase",
+          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|docs/ac-hvac-workstream.md",
+          "notes": "2026-08-01 Rev I direction supersedes the four-hole unit as the primary install candidate: use a compact two-takeoff package for the two high fixed outer/end occupant outlets. Do not cap two ports by default; retain a separate original or dedicated demist path.",
           "evidence_images": []
         },
         {
@@ -76217,13 +76218,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "superseded_for_visible_fascia",
           "acquisition_status": "not_required_for_visible_fascia",
           "installation_status": "not_installed",
-          "current_action": "Do not procure as a visible cabin outlet; Rev H HVAC-UNIT-006 controls the four integrated fascia vents. Reconsider only for a concealed service or demist application after the evaporator plenum is fixed",
-          "exact_recreation_spec": "Any retained slim louver component must be concealed and serve a proven service/demist path; it must not add a fifth visible cabin outlet or a separate hang-on panel",
+          "current_action": "Do not procure as a visible cabin outlet; Rev I HVAC-UNIT-006 controls the two high fixed outer/end fascia vents. Reconsider only for a concealed service or demist application after the evaporator plenum is fixed",
+          "exact_recreation_spec": "Any retained slim louver component must be concealed and serve a proven service/demist path; it must not add a third visible cabin outlet or a separate hang-on panel",
           "material_spec": "Automotive plastic or aluminium louver piece with secure shutter and hose adapter only if required for a hidden route",
           "critical_measurements": "Hidden route width/height/depth; outlet and hose OD; throw direction; screw spacing; clearance to knees controls wiring and demist ducting",
-          "fit_and_test": "Mock the concealed route and confirm it does not compete with or duplicate the four Rev H integrated outlets and does not foul pedals or steering or the compact lower driver-side control-channel selector/contact stacks",
+          "fit_and_test": "Mock the concealed route and confirm it does not compete with or duplicate the two Rev I integrated outlets and does not foul pedals or steering or the compact far-right selector/contact stacks",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|HVAC-UNIT-006",
-          "notes": "Superseded on 2026-08-01 for visible cabin delivery: exactly four integrated dashboard outlets are controlled by HVAC-UNIT-006; no extra visible under-dash outlet panel.",
+          "notes": "Superseded on 2026-08-01 for visible cabin delivery: exactly two high fixed outer/end dashboard outlets are controlled by HVAC-UNIT-006; no extra visible under-dash outlet panel.",
           "evidence_images": []
         },
         {
@@ -76250,7 +76251,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "HVAC-UNIT-004",
-          "requirement_name": "Rev H BLOWER/A-C request selectors plus delivered thermostat/blend controller",
+          "requirement_name": "Rev I BLOWER/A-C request selectors plus delivered thermostat/blend controller",
           "pipe_id": "",
           "vehicle_location": "Discrete HVAC controls and concealed variable controller",
           "pipe_or_line": "",
@@ -76261,13 +76262,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "purchase_ready_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Confirm the selected evaporator wiring and controller topology before connecting the Rev H selectors or buying any separate control",
+          "current_action": "Confirm the selected evaporator wiring and controller topology before connecting the Rev I selectors or buying any separate control",
           "exact_recreation_spec": "The visible 3-position BLOWER and 2-position A/C selectors provide low-current discrete requests only; thermostat/freeze temperature and any heat/blend control remain with the delivered unit or a separate discreet serviceable control and do not add another visible fascia panel",
           "material_spec": "12V automotive selector inputs into measured resistor/PWM/relay and safety-interlocked clutch-request circuits; retain the unit-matched thermostat/probe/blend hardware",
           "critical_measurements": "Selector/contact-stack depth; harness plug style; resistor or PWM input logic; blower speed count; thermostat probe routing; separate controller service position; dash and duct clearance",
           "fit_and_test": "Bench-test every blower request and the A/C request through the measured controller/relay/safety chain; confirm no selector carries blower-motor or clutch current and confirm labels/functions before dash closeout",
           "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/hvac_control_interface_schedule.csv",
-          "notes": "Rev H provides the two visible discrete HVAC requests within its eight-station row; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
+          "notes": "Rev I V11 provides the two visible discrete HVAC requests within its compact four-by-two bank; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
           "evidence_images": []
         },
         {
@@ -76289,29 +76290,29 @@ window.J40_DASHBOARD_DATA = {
           "critical_measurements": "Final duct OD/ID; route lengths; bend radius; clamp sizes; defrost outlet dimensions; clearance to wiring and pedal/steering movement",
           "fit_and_test": "Airflow-test each outlet and demist path; no collapsed hose or chafe points after dash fit-up",
           "source_ref": "part_hvac_duct_defrost_hose_kit_20260514|RUB-025|docs/rubber-ordering-spec-20260502.md",
-          "notes": "This remains dependent on the selected hidden unit and outlet panel.",
+          "notes": "This remains dependent on the selected compact two-takeoff unit and both complete outer/end branches; retain an original or dedicated separate demist path.",
           "evidence_images": []
         },
         {
           "requirement_id": "HVAC-UNIT-006",
-          "requirement_name": "Four directional cabin A/C vents and duct runs",
+          "requirement_name": "Two large directional cabin A/C vents and two supported end duct branches",
           "pipe_id": "",
-          "vehicle_location": "Four integrated dashboard outlets in 1-2-1 layout",
+          "vehicle_location": "Two high fixed outer/end dashboard positions",
           "pipe_or_line": "",
-          "replace_scope": "buy_after_evaporator_plenum_mockup",
-          "quantity": "4_vents_plus_duct_runs",
+          "replace_scope": "buy_after_compact_evaporator_outlets_and_full_depth_mockup",
+          "quantity": "2_vents_plus_2_duct_runs",
           "photo_evidence": [],
           "photo_status": "layout_photos_required",
           "spec_status": "layout_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Mock four matched circular dashboard outlets on the Rev H upper alignment: one near each usable flat-face end and two symmetric about and flanking the central LCD; align all \u00d887 bezel tops with the LCD-bezel top; keep the vents wholly within the main face so only the compact lower driver-side control channel extends; preserve the OEM glovebox and speedometer as visual no-touch regions",
-          "exact_recreation_spec": "Four-outlet layout: matched satin-silver directional faces; current reference \u00d887 face / \u00d875 opening and 2.5 inch neck; all four bezel tops aligned to the LCD-bezel top; all geometry held for actual four-piece sample measurement; balanced plenum/adapters/Y pieces only if airflow-tested",
-          "material_spec": "Four identical automotive HVAC louvers from one batch with dark directional cores and hidden retention; flexible matching automotive HVAC duct; clamps; secure adapters; no decorative vents without hose necks",
-          "critical_measurements": "Face diameter; required cutout; rear neck OD/ID; rear depth; retention; louver aim range; duct route lengths; bend radius; clamp clearance; interference with LCD, retained visual no-touch glovebox/speedometer, column, selector/contact stacks, wiring, structure and demist path",
-          "fit_and_test": "Full-size Rev H fascia/rear-envelope mock-up; prove LCD centre and inner-vent midpoint share the same physical centreline; prove all four bezel tops share the LCD-bezel top datum; airflow test all four outlets; prove both right-hand ducts clear the selector heads/levers/contact stacks and driver controls; all branches supported and not drooped or crushed; no production dash cuts until evaporator outlet count/plenum position and actual vents are fixed",
-          "source_ref": "part_hvac_four_outlet_duct_layout_20260602|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md",
-          "notes": "2026-08-01 Rev H direction supersedes the earlier rear/pillar concept: all four outlets are integrated into the replacement dashboard in a 1-2-1 layout, with the inner pair exactly centred about the LCD and all four \u00d887 bezel tops aligned to its top edge.",
+          "current_action": "Develop Rev I around exactly two matching outlets on one common high datum at the fixed outer/end fascia regions; aim one at the passenger and one at the driver; preserve the OEM glovebox and speedometer as no-touch regions and delete the Rev H inner/lower pair and all pods",
+          "exact_recreation_spec": "Two-outlet outer/end layout with the largest practical directional faces and necks compatible with the selected compact evaporator; exact face, cutout, neck and centre coordinates held for physical louver and case measurement; demist remains an original or dedicated separate path",
+          "material_spec": "Two identical automotive HVAC louvers from one batch with directional shutoff cores and hidden retention; two fully supported matching end branches; clamps and sealed adapters; no decorative vents without measured hose necks",
+          "critical_measurements": "Face and cutout dimensions; neck OD/ID and rear depth; aim range; complete end-branch lengths and bend radius; evaporator takeoff spacing; LCD/glovebox/switch-bank/cluster/column/knee/lever/service clearance; separate demist route",
+          "fit_and_test": "Full-size Rev I fascia and complete rear-envelope mock-up; bench airflow and freeze test with both full-length end branches connected; prove useful balanced airflow and that each vent can aim at its occupant; prove demist remains functional; support both branches without crush or more than 10% ovalisation; no production cuts until unit and louver samples are fixed",
+          "source_ref": "part_hvac_two_outlet_duct_layout_20260801|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md",
+          "notes": "2026-08-01 Rev I V11 direction uses exactly two high outer/end outlets and supersedes the Rev H 1-2-1 vent geometry plus the V9 two-central-outlet study. The generated Rev H package remains historical; its V1-V4 apertures and duct schedule are not released for fabrication.",
           "evidence_images": []
         },
         {
@@ -76491,7 +76492,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Track the shipped AliExpress evaporator, confirm whether the Alibaba Trade Assurance evaporator sample is paid/active, then bench leak-test, airflow-test, and cardboard-mock the cabin unit before buying or crimping the rest of the A/C circuit"
+          "detail": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition"
         },
         {
           "label": "Issue checks",
@@ -76516,7 +76517,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Hidden evaporator package, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, airflow, demist, condensate, and electrical-load checks closed"
+          "detail": "No linked package rows found. Exit gate: Compact two-takeoff evaporator package, two high fixed outer/end outlets, retained or dedicated demist, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, balanced-airflow, demist, condensate, and electrical-load checks closed"
         }
       ],
       "involved_parts": [
@@ -89436,7 +89437,7 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "ac_hvac_retrofit",
         "bucket": "",
         "category": "",
-        "item": "Track the shipped AliExpress evaporator, confirm whether the Alibaba Trade Assurance evaporator sample is paid/active, then bench leak-test, airflow-test, and cardboard-mock the cabin unit before buying or crimping the rest of the A/C circuit",
+        "item": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
         "company": "",
         "transaction_number": "",
         "status": "in_progress",
@@ -89446,10 +89447,10 @@ window.J40_DASHBOARD_DATA = {
         "expected_delivery_date": "",
         "amount": "",
         "currency": "",
-        "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa",
+        "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa",
         "product_link": "",
-        "next_action": "Track the shipped AliExpress evaporator, confirm whether the Alibaba Trade Assurance evaporator sample is paid/active, then bench leak-test, airflow-test, and cardboard-mock the cabin unit before buying or crimping the rest of the A/C circuit",
-        "notes": "Dedicated A/C track split from interior, mechanical, and electrical rows on 2026-05-30. AliExpress order 3073062248277489 is an ordered candidate universal 4-hole A/C evaporator/cool-heat 12V unit; accept it only if dimensions, drain, fittings, outlet/plenum, and owner-selected external blower integration pass. Alibaba order 302575831501027345 needs payment/active-status confirmation. Do not crimp hoses or close dash/firewall holes until all component positions are locked. | Gmail import 2026-06-07 adds shipment evidence for AliExpress evaporator order 3073062248277489; package remains pending delivery and physical acceptance checks."
+        "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
+        "notes": "2026-08-01 Rev I V11 direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
       }
     ],
     "delivery_watchlist": [

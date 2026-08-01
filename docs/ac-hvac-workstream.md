@@ -28,23 +28,36 @@ Owner reports a major A/C purchase intended to secure the cabin cooling package 
 Control position:
 
 - Treat the purchased under-dash/slimline unit as the active cabin evaporator candidate once order proof or arrival photos are available.
-- The owner authorises replacing the complete visible dash face to the Rev H architecture, but only after the disposable full-size template has transferred the structural cowl/A-pillar/column boundaries and the retained OEM glovebox and speedometer assemblies. Do not release production metal, LCD/control/vent apertures, evaporator brackets, drain holes, firewall/bulkhead holes, or final hose crimps until the relevant hardware is physically measured and mocked in the J40.
+- At that time the owner authorised replacing the complete visible dash face to the Rev H architecture. That four-outlet architecture is now historical and superseded by Rev I below; its requirement to transfer the structural cowl/A-pillar/column boundaries and retained OEM glovebox and speedometer assemblies with a disposable full-size template remains active. Do not release production metal, LCD/control/vent apertures, evaporator brackets, drain holes, firewall/bulkhead holes, or final hose crimps until the relevant hardware is physically measured and mocked in the J40.
 - The front-pack hose layout must now be released as a complete loop: compressor, condenser, receiver-drier, pressure switch, cabin evaporator/TXV, suction return, service ports, and protected firewall pass-throughs.
 - If the purchased unit includes a blower, controls, or heat function, accept those only after current draw, airflow, drain, outlet face, and under-dash clearance are proven.
 
-## Owner Layout Update - 2026-08-01 Rev H
+## Superseded Owner Layout Record - 2026-08-01 Rev H
 
 Owner reports a condenser has been bought and should sit in the front compartment/front cooling stack. Treat it as the active condenser candidate only after dimensions, fitting side, port type, fan/radiator clearance, drier position, and hose exit direction are proven with photos or dry-fit.
 
-Cabin distribution direction:
+Historical cabin distribution record; do not buy or fabricate from these four-outlet coordinates:
 
-- Plan for four identical circular satin-silver outlets integrated into the Rev H dashboard. Keep the two end outlets high and close to the usable flat-face ends, with nominal centres at `Y=168.5 mm` and their `Ø87 mm` bezel tops aligned to the LCD-bezel top at `Y=212.0 mm`. Lower the inner pair to centres at `Y=20.0 mm`, symmetric at `X=464/796 mm` about the shared LCD/fascia centreline `X=630 mm`; their faces span `Y=-23.5…63.5 mm`, leaving a nominal `12.5 mm` vertical gap below the LCD bezel. Place each inner outlet in its own rounded body-colour pod down to `Y=-35.0 mm`. Do not put the end pair in the side returns or A-pillars.
+- Plan for four identical circular satin-silver outlets integrated into the Rev H dashboard. Keep the two end outlets high and close to the usable flat-face ends, with nominal centres at `Y=168.5 mm` and their `Ø87 mm` bezel tops aligned to the LCD-bezel top at `Y=212.0 mm`. V1 must be wholly on fixed fascia outboard of the direct-traced glovebox: retain at least `10 mm` real fixed-metal land from its bezel to the lid boundary, and keep its aperture, retainer, duct and service land outside the lid perimeter, hinges/latch, opening and complete sweep. Route its supported duct above/outboard of that sweep. Lower the inner pair to centres at `Y=20.0 mm`, symmetric at `X=464/796 mm` about the shared LCD/fascia centreline `X=630 mm`; their faces span `Y=-23.5…63.5 mm`, leaving a nominal `12.5 mm` vertical gap below the LCD bezel. Place each inner outlet in its own rounded body-colour pod down to `Y=-35.0 mm`. Do not put the end pair in the side returns or A-pillars.
 - Use the common `Ø87 mm` visible face / `Ø75 mm` opening family only as a low-cost geometry reference. Buy four matching samples from one batch in Pakistan and measure the face, cutout, retainer, spigot and depth before releasing holes. Prefer 2.5 inch duct only if the measured vent and evaporator outlets support it.
 - Keep the normal fascia lower edge at `Y=50.0 mm`; only the two local inner-vent pods descend 85 mm to `Y=-35.0 mm`, plus the steering-column relief and compact extreme-right control return. Mock all four supported duct branches and prove the two deeper vent necks/elbows and their pods clear the retained glovebox, original cluster, steering column and shroud through full sweep, LCD connectors, selector contact stacks, driver knees, all gear/transfer/winch lever positions and service paths. Before release, measure and photograph at least `8 mm` visible inner-rim-to-LCD clearance, `10 mm` from each inner vent retainer/duct to fixed LCD/cluster/support hardware, and `20 mm` to the signed steering-column/shroud/stalk swept envelope; reject any duct section ovalised below `90%` of its round inside diameter.
 - Consolidate exactly seven Schneider selectors plus a separate red hazard in a compact two-row bank at the extreme right. Use four nominal columns at `X=1096/1144/1192/1240 mm`, top row `Y=88 mm` and bottom row `Y=30 mm` (48 mm horizontal and 58 mm vertical pitch). Top row is `WIPERS | LIGHTS | SPOTS | AUX`; bottom row is `BLOWER | A/C | ENGINE | HAZARD`. `WIPERS`, `LIGHTS`, `BLOWER` are 3-position; `SPOTS`, `AUX`, `A/C`, `ENGINE` are 2-position. `ENGINE` uses the former spare position as a low-current RUN/STOP request subject to EEI-003, authoritative key-OFF shutdown and the retained manual stop cable. Keep cabin thermostat/temperature/blend with the delivered evaporator controller, outside this seven-selector count.
 - Treat the retained glovebox and speedometer as visual no-touch regions as well as functional transfers: preserve their existing position, outline, finish, colour, patina, markings, knob/plate, gauge faces, glass and needles. Do not move, refinish, recolour, restyle or reinterpret either assembly; the replacement fascia must meet their direct-transferred edges.
 - Cut only the disposable Rev H fit template before M1-M10 sign-off. Keep the production face, vent cutouts and final duct runs on HOLD until the bought parts, evaporator outlet count, plenum shape, blower position and bend radius are mocked in the vehicle.
-- Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) as the active vent/duct buy spec.
+- The Rev H four-outlet vent record is retained in [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md); its four-vent purchasing and fabrication instructions are superseded by the Rev I direction below.
+
+## Owner Two-Outlet Revision - 2026-08-01 Rev I Direction
+
+The owner now prefers a smaller cabin package and a factory-height fascia with exactly two occupant outlets. This supersedes only the Rev H four-outlet distribution; retain the central LCD, original glovebox/speedometer transfer, factory column relief and control-bank decisions in Rev I.
+
+- Retain two matched, generously sized directional outlets high at the fixed outer/end regions, one aimable at the passenger and one at the driver. Delete the Rev H inner/lower pair and its pods. Use two supported end branches and prove useful balanced flow, bend radius and service clearance in the full-depth mock-up.
+- Seek a genuinely compact 12V cooling evaporator with two real duct takeoffs, or a compact core/case with a sealed two-takeoff plenum. Do not interpret two decorative front louvers as proof of two duct connections.
+- The ordered AliExpress four-hole unit is no longer the primary final-install candidate because its outlet count and reported package size conflict with this direction. Measure and test it on arrival before deciding whether it can be returned, resold, or retained as donor/spare hardware.
+- Do not cap two outlets on a four-port case as the default solution. That can halve the available discharge area and increase static pressure; accept an adapter only after a sealed-plenum and full-speed airflow/freeze test proves the coil and blower remain healthy.
+- Keep all Rev H vent apertures and duct coordinates on HOLD. Issue a Rev I fascia/console layout only after the vehicle's available `W x H x D` envelope, fitting side, drain fall, service-removal path, and the selected unit and louver necks are physically measured.
+- Preserve windscreen demist separately: retain the original heater/demist path, or provide dedicated small demist takeoffs from the new plenum. The two occupant outlets must not be treated as the only safety-demist provision.
+
+Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) for the active two-outlet gates and the superseded Rev H record.
 
 ## Gates
 
@@ -55,7 +68,7 @@ Cabin distribution direction:
 - Bench airflow-test with the selected external blowers, not only the unit's included blower if present.
 - Cardboard-mock under the J40 dash before cutting brackets, ducts, or drain holes.
 - Confirm the purchased slimline/under-dash unit can route condensate outside the cabin and can connect to barrier hoses without sharp bends or service-blocking fittings.
-- Confirm the evaporator/plenum can support the planned four-outlet distribution without starving demist airflow.
+- Confirm the evaporator/plenum has two usable occupant-vent takeoffs and can support the planned two-outlet distribution without starving the retained or dedicated demist path.
 
 ### `AC-FRONTPACK-001` - Condenser, Drier, Compressor
 

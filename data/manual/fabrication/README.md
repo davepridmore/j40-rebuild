@@ -8,7 +8,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 
 | Package | Workstream | Status | Primary PDF | Notes |
 | --- | --- | --- | --- | --- |
-| `dashboard_lcd_hvac_fascia_rev_g` | Dashboard / infotainment / A/C HVAC | CNC quote/template package ready; every production perimeter/component cut held for M1-M10 | `dashboard_lcd_hvac_fascia_rev_g/j40_dashboard_lcd_hvac_fascia_rev_g_shop_spec.pdf` | Full visible-face replacement for the RHD dashboard, retaining the original asymmetric glovebox and J40 speedometer and deleting the ashtray. True 9-inch active image and inner vent pair share one exact centreline; four same-height silver circular vents use a 1-2-1 layout. Seven selectors are consolidated at far right: Wipers/Lights/Spots/Aux over Blower/A/C/Engine, plus separate red Hazard. Rev A-F are superseded. |
+| `dashboard_lcd_hvac_fascia_rev_i` | Dashboard / infotainment / A/C HVAC | Owner-selected V11; CNC quotation plus full-size/full-depth disposable template only; production metal and vehicle cutting held for M1-M10 | `dashboard_lcd_hvac_fascia_rev_i/README.md` | Complete visible-face replacement at the original shallow dashboard height. Retains the original asymmetric glovebox and complete Toyota speedometer, with the cluster lower lip immediately above the steering-column shroud on their directly traced vehicle axis. Deletes the ashtray, centres a true 9-inch active image, uses exactly two high outer/end silver circular outlets, and provides seven labelled selectors plus a separate red Hazard. Every final perimeter, aperture and behind-dash feature remains controlled by the vehicle trace and bought-component measurements. |
 | `rubber_recreation_rev_a` | Chassis rubbers | Quote and first article ready; final production has station-fit gates | `rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf` | Square body-pad 3D controls, cup washer blanks, oval front-support pad, and released plain underfloor strip drawings. |
 | `suspension_wood_cribbing_rev_a` | Suspension setup | Current timber/workshop cut package | `suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf` | Hardwood cribbing blocks and exact wedge chocks for suspension/brake support setup; includes interactive 3D visualisation. |
 | `front_radiator_two_side_retention_rev_a` | Fabrication / chassis fixing | Template release with measurement hold | `front_radiator_two_side_retention_rev_a/j40_front_radiator_two_side_retention_rev_a_dimension_sheet.pdf` | Right-side radiator retention bracket derived from the measured left chassis-attached bracket; one 4 mm bolt-through saddle right-angle post with top screw return and interactive 3D visualisation. |
@@ -16,6 +16,12 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 | `midi5_enclosure_rev_d` | Electrical reset | Current recommended MIDI holder enclosure | `midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf` | Folded aluminium box with hinged lid, insulating subplate, one fuse-4 input grommet, five output grommets, and enlarged far-side double-cable output hole; includes interactive 3D visualisation. |
 | `relay_mount_rev_d` | Electrical reset | Current recommended relay-box base | `relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf` | Simplified relay support: flat aluminium base plate plus exact relay-bottom-footprint insulating sheet under the existing relay box's large uncovered bottom face; includes interactive 3D visualisation. |
 | `battery_power_carrier_mount_rev_a` | Fabrication / chassis fixing / electrical reset | Prototype/mock-up release for chassis-mounted battery stand and integrated relay/fuse/cutoff carrier | `battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf` | Formed chassis saddle/upright bridge with configurable body-side offset bars, full-height battery support tray/deck, hold-down crossbar, raised front/radiator-side service ladder, vertical Relay Rev D flat base/insulator directly attached to the main sheet, top-front MIDI Rev D enclosure shelf, side-mounted 100A breaker/cutoff base/guard, battery-to-cutoff and cutoff-to-relay/MIDI cable paths, and 3D visualisation files. |
+
+## Superseded Dashboard Packages
+
+| Package | Status | Replacement |
+| --- | --- | --- |
+| `dashboard_lcd_hvac_fascia_rev_g` | Superseded four-outlet quotation/template record; do not use its V1-V4 apertures, coordinates or duct schedule for the current job | `dashboard_lcd_hvac_fascia_rev_i` |
 
 ## Reference / Fallback Electrical Packages
 
@@ -43,7 +49,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 - `tools/generate_relay_mount_rev_d.py`
 - `tools/generate_fabrication_3d_visualisations.py`
 - `tools/generate_battery_power_carrier_mount_rev_a.py`
-- `tools/generate_dashboard_lcd_hvac_fascia_rev_g.py`
+- `tools/generate_dashboard_lcd_hvac_fascia_rev_g.py` — archive-only generator for the superseded four-outlet record
 
 The human handoff summary is `docs/fabrication-handoff-index.md`.
 

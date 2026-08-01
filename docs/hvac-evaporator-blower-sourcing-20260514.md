@@ -2,6 +2,19 @@
 
 Purpose: choose a locally available cabin evaporator direction for the hidden A/C refit after the old aftermarket A/C was removed.
 
+## 2026-08-01 Compact Two-Outlet Revision
+
+The active target is now a compact 12V cooling evaporator with exactly two usable duct takeoffs for two high fixed outer/end dashboard outlets. The previous four-outlet distribution and the assumption that the ordered four-hole AliExpress unit would be the primary cabin package are superseded.
+
+Selection order:
+
+1. Measure the maximum available `W x H x D` envelope in the actual J40, including fitting bends, drain fall, return-air access and a removable service path.
+2. Ask local suppliers for the smallest R134a-compatible 12V unit or sealed core/case that fits that envelope and provides two measured duct takeoffs, TXV, drain, thermostat/freeze control and adequate return-air area.
+3. Require tape-measure photos and a dimensional drawing before deposit. Bench leak, drain, current and all-speed airflow tests remain mandatory.
+4. Inspect the ordered four-hole unit, but do not redesign the console around it merely because it has arrived. Return/resell it if practical, or retain donor parts only if they are independently useful and compatible.
+
+Do not buy by louver count alone: the visible face can conceal a different plenum/outlet arrangement. Do not cap two of four takeoffs without testing the resulting static pressure, coil airflow and freeze control. The demist path remains separate from the two occupant outlets.
+
 ## 2026-05-30 Custom Blower Update
 
 New direction: use owner-selected external blowers. The target is a compact evaporator core/cooling coil already inside a small case or outlet plenum, or a bare core only if a shop can fabricate a sealed plenum and drain pan around it. The part should have TXV/expansion valve provision, refrigerant fittings, drain pan/nipple, and either duct spigots or a flat outlet face that can be adapted to slim cabin vents.
@@ -30,9 +43,9 @@ Release position:
 - Do not let the purchase force a poor visible hang-on installation. If the case is too bulky, use the cooling coil/TXV/drain hardware as donor parts only if a better plenum can be made.
 - Hose crimping waits until the purchased unit, condenser, drier, compressor, service ports, and firewall/bulkhead positions are all fixed in the vehicle.
 
-## 2026-06-02 Vent And Duct Update
+## Superseded 2026-06-02 Four-Outlet Update
 
-The working cabin outlet plan is now four matched circular directional outlets integrated into the replacement dashboard in a `1-2-1` arrangement: one near each usable flat-face end and a central pair below the LCD, all on one physical height. Use [hvac-dashboard-vent-duct-layout-20260602.md](hvac-dashboard-vent-duct-layout-20260602.md) as the vent/louver/duct buy spec.
+The 2026-06-02 working plan used four matched circular directional outlets integrated into the replacement dashboard in a `1-2-1` arrangement: one near each usable flat-face end and a central pair below the LCD. This is retained only as the Rev H record; the compact two-outlet revision at the top of this file controls new sourcing.
 
 This does not release vent purchase yet. The selected evaporator/plenum must first prove outlet count, outlet OD, blower position, drain route, and demist allowance. If the case has four usable 2.5 inch takeoffs, dedicate one to each outlet. If it has only two outlets, use a fabricated balanced plenum or airflow-tested Y splits only after confirming that the longer end-vent branches do not weaken the central pair.
 
@@ -54,7 +67,7 @@ Online buy/reference links, only after measurement and blower-adapter check:
 - INTL `BEU-848-100` supplier/spec page: https://www.intl2008.com/pid18524309/BEU-848-100-Evaporator-Unit-Assembly-HD-OR-12V-Without-Thermostat.htm
 - Alibaba `848 evaporator unit` search page: https://www.alibaba.com/showroom/848-evaporator-unit.html
 
-## Recommendation
+## Superseded Pre-Two-Outlet Recommendation
 
 Preferred direction after the Vitz photo review and custom-blower clarification: stop chasing donor dashboard HVAC cases and source a compact evaporator core/case/plenum by measured model family. Ask first for `BEU-202`, `BEU-404`, or `BEU-848` style cases only if the blower section can be removed, bypassed, or ignored without making the package too bulky, because these have regular rectangular cases and are easier to hide or build a plenum around than a molded OEM dashboard box.
 
@@ -81,8 +94,8 @@ Ask the supplier/shop for:
 - R134a-compatible evaporator/TXV/fittings, or clear fitting sizes for new barrier hoses.
 - Drain nipple with enough fall to route condensate outside the cabin.
 - Case dimensions and photos from all sides before travel or deposit.
-- Coil face width/height, core depth, outlet count and outlet OD, or a flat face that can accept a sealed plenum and 2 to 4 duct takeoffs.
-- Vent plan compatibility: enough outlet area for four integrated dashboard outlets in the `1-2-1` layout, plus demist if required.
+- Coil face width/height, core depth, outlet count and outlet OD, or a flat face that can accept a sealed plenum with exactly two measured occupant-outlet takeoffs.
+- Vent plan compatibility: enough outlet area for both complete high outer/end branches, with useful balanced airflow at both outlets, plus a separate retained or dedicated demist path.
 - External blower compatibility: adapter face, airflow across the full coil face, service access, and measured blower current once the project blowers are selected.
 - Return-air path that can be fitted with a serviceable grille/filter.
 - Bench airflow test with the selected external blowers plus nitrogen pressure/vacuum leak test before payment.

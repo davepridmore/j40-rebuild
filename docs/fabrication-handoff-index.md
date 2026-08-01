@@ -14,7 +14,15 @@ Chassis/body rubber order control is not owned here. Use [chassis-rubbers-workst
 
 The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently. The current Longman package lives at [data/manual/fabrication/longman_rubber_order_20260508](../data/manual/fabrication/longman_rubber_order_20260508/README.md), with an interactive 3D visualisation and a package zip generated through the dashboard. The current square-pad 3D quote models live in [data/manual/fabrication/rubber_recreation_rev_a/models_3d](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md); use those rather than the older circular body-pad placeholders when discussing the May 8 Longman rubber order.
 
-## Dashboard 9-inch LCD / HVAC Fascia - Rev G
+## Dashboard 9-inch LCD / HVAC Fascia - Rev I (active design hold)
+
+Current specification and packaging gate: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md)
+
+Current appearance baseline: [layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/layout_variants_20260801/layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png)
+
+Rev I keeps the original shallow full-width dashboard height, transfers the original Toyota glovebox and complete speedometer cluster, positions the cluster immediately above the original steering-column shroud on their common vehicle-traced axis, centres a true 9-inch active image, uses exactly two high outer/end circular outlets, and retains seven black selectors plus the separate red hazard. It is ready for physical tracing, bought-component measurement, full-size/full-depth mock-up and CNC quotation only. Production vehicle cutting and final component apertures remain HOLD until M1–M10 are signed.
+
+## Dashboard 9-inch LCD / HVAC Fascia - Rev G (superseded four-outlet record)
 
 Directory: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_g](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_g/README.md)
 
@@ -35,7 +43,7 @@ DXF files:
 - `full_width_fascia_master_rev_g.dxf` - same one-piece architecture with every metal/component feature retained on named HOLD layers
 - `lcd_rear_support_reference_rev_g.dxf` - nominal rear-support/reference geometry; actual LCD chassis and mount drawing control
 
-Rev G supersedes Rev A-F. It replaces the complete visible face, deletes the ashtray, transfers the original glovebox and speedometer assemblies, locks a mathematically true 9-inch active-image reference, integrates four same-height vents, and consolidates all controls at the far right.
+Rev G superseded Rev A-F, but is itself superseded by Rev I above. It replaced the complete visible face, deleted the ashtray, transferred the original glovebox and speedometer assemblies, locked a mathematically true 9-inch active-image reference, integrated four same-height vents, and consolidated all controls at the far right. Retain it for design history only; do not send its four-outlet coordinates as the current dashboard job.
 
 Release position:
 - Ready for CNC quotation, full-size vehicle trace/scan, 1:1 plot and disposable prototype only.
