@@ -13,3 +13,22 @@ Precise object edit of this existing assembled driver-eye Toyota J40 dashboard v
 The two approved outputs are copied into this package as the straight-on and assembled Rev H overlays. The supplied selector photograph is copied as `industrial_rotary_selector_reference.png`.
 
 Generated overlays show visual intent only. The nominal drawing sets the inner vent centres at Y=20.0 mm and the pod bottoms at Y=-35.0 mm. Their nominal visible rim-to-LCD gap is 12.5 mm, but M9 requires at least 8 mm as built. DXF/CSV dimensions, direct vehicle traces, M1-M10 physical templates and bought-part measurements control fabrication; M1/M3/M7/M8/M9 must establish the installed column, duct, vent and driver clearances before production cutting.
+
+## 2026-08-01 assembled V4 / steering-column correction record
+
+Output: `layout_variants_20260801/layout_b_column_v4_clearance_assembled.png`.
+
+Mode: built-in `image_gen`, local-reference `precise-object-edit`.
+
+Correction intent: restore **only** the short horizontal matte-black steering-column/shroud section from the wheel hub into the existing factory lower-instrument relief. It must never become a wheel spoke or a diagonal tube. Lower the complete right-hand 2 x 4 control bank enough to show roughly one actual selector-head diameter between the V4 rim and its nearest selector head; preserve the complete control allocation, labels, right edge and all other dashboard identity. Freeze the original glovebox, original speedometer/cluster, true 9-inch LCD, four outlet sizes/finish, factory camera/vehicle, colour and patina. This is a visual correction record, not a dimensional release: the straight-on bare-shell overlay remains the visual placement control, and M6/M8/M9 establish the actual V4 selector and rear-duct clearances.
+
+## 2026-08-01 V5 / visible installed steering-column pair
+
+Outputs:
+
+- `layout_variants_20260801/layout_b_column_v5_clear_assembled.png`
+- `layout_variants_20260801/layout_b_column_v5_straight_on.png`
+
+Mode: built-in `image_gen`, local-reference `precise-object-edit`.
+
+Correction intent: use `photos/20260317_165113.jpg` and `photos/20260323_190047.jpg` as the original-column geometry controls. In the oblique view, show one uninterrupted near-horizontal matte-black column/shroud from the existing wheel hub into the factory radiused relief beneath the OEM cluster. In the straight-on view, install one original-scale right-hand-drive wheel and the same continuous column, with the hub/shaft centreline directly beneath the retained OEM meter. Freeze the approved true 9-inch LCD, original glovebox, four vents, and seven-selector-plus-red-hazard allocation. These images show placement and occlusion only; the signed vehicle trace and M1/M3/M8/M9 mock-up remain controlling.
