@@ -3000,3 +3000,111 @@ code {
     min-height: 0;
   }
 }
+
+/* 2H low-mount turbo build release */
+.turbo-build-hero {
+  background:
+    radial-gradient(circle at 88% 8%, rgb(231 143 75 / 20%), transparent 34%),
+    linear-gradient(135deg, #28221d, #4a3325 58%, #211c18);
+  border-color: #80604a;
+}
+
+.turbo-build-hero .eyebrow,
+.turbo-build-hero .cooling-pack-facts dt {
+  color: #efc29b;
+}
+
+.turbo-build-hero .cooling-pack-lead,
+.turbo-build-hero .cooling-pack-facts span {
+  color: #f1ded0;
+}
+
+.turbo-build-release {
+  background: #bfe2c7;
+  border-radius: 999px;
+  color: #214b2d;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.055em;
+  padding: 0.32rem 0.56rem;
+}
+
+.turbo-build-decision-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0.65rem;
+}
+
+.turbo-build-decision-grid article {
+  background: #faf7f0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.82rem;
+}
+
+.turbo-build-decision-grid h4,
+.turbo-build-steps h4 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.turbo-build-decision-grid p,
+.turbo-build-steps p {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.turbo-build-status {
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 0.28rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.turbo-build-status.is-fixed { background: #e1f0e5; color: #27613a; }
+.turbo-build-status.is-prove { background: #fff0cf; color: #744d00; }
+.turbo-build-status.is-hold { background: #f6dfd7; color: #853d29; }
+
+.turbo-build-steps {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+}
+
+.turbo-build-steps li {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 48px minmax(0, 1fr);
+  padding: 0.82rem 0;
+}
+
+.turbo-build-steps li + li {
+  border-top: 1px solid var(--line);
+}
+
+.turbo-build-step-number {
+  align-items: center;
+  align-self: start;
+  background: #4a3325;
+  border-radius: 50%;
+  color: #fff8ed;
+  display: inline-flex;
+  font-size: 0.73rem;
+  font-weight: 900;
+  height: 38px;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  width: 38px;
+}
+
+@media (max-width: 800px) {
+  .turbo-build-decision-grid {
+    grid-template-columns: 1fr;
+  }
+}

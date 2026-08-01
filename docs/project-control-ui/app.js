@@ -9888,6 +9888,104 @@
     `;
   }
 
+  function renderTurboBuild() {
+    const buildStages = [
+      ["01", "Record the as-fitted baseline", "Confirm and photograph the 2H identity, engine number, injection-pump tag, oil-filter housing, sump, manifolds, engine mounts, steering, A/C and bonnet structure. Record a no-boost road baseline for smoke, coolant temperature and oil pressure."],
+      ["02", "Pass the engine-health gate", "Warm the engine fully. Record all six compression readings, hot oil pressure at idle and test rpm, measured blow-by, cooling-system pressure/flow, injector pattern and pump condition. Stop for a weak cylinder, low oil pressure, heavy blow-by, overheating, injector dribble or unresolved smoke."],
+      ["03", "Freeze the available package", "Reserve the 2H-specific low-mount CT26-flange manifold and the CT26-pattern TD05H 16G with 7 cm² / .49 A/R turbine housing and internal wastegate. Verify the actual supplied flange, wheel specification, actuator pressure, oil ports, coolant ports, clocking range and genuine serial/part markings before payment."],
+      ["04", "Establish steering and body datums", "Fit or hard-mock the final J60 hydraulic steering box, shaft, pump and hoses. Fit the engine on final mounts, refit wings and bonnet, and mark the bonnet inner-brace envelope. Turbo packaging follows these fixed datums."],
+      ["05", "Mock the complete hot side", "Bolt the low-mount manifold and turbo together using temporary hardware. Add the wastegate actuator, compressor elbow, proposed downpipe first bend and removable air-gap heat shield. Clock the housings without loading the centre housing or actuator linkage."],
+      ["06", "Prove clearance before fabrication", "Close the bonnet gently over clay markers. Prove approximately 25 mm minimum static clearance after heat shielding, plus engine-roll allowance. Check wing, steering, A/C, starter, oil filter, wiring, brake/clutch/fuel lines and tool access. Relocate the round air cleaner; do not cut the bonnet until every lower-position alternative has failed."],
+      ["07", "Build lubrication and optional coolant routes", "Measure the selected oil-gallery source and follow the turbo supplier's feed/restrictor requirement. Build a large-bore gravity drain with continuous fall into a sump bung above normal oil level; remove and clean the sump for welding. Plumb coolant only if the exact centre housing requires it, without creating an air trap."],
+      ["08", "Fabricate exhaust and thermal protection", "Build a supported downpipe with a smooth first bend, serviceable joint and flex provision, then the low-restriction single exhaust. Support the exhaust independently of the turbo. Shield the manifold, turbine and downpipe from hydraulics, fuel, wiring, A/C, intake ducting, bonnet and paint."],
+      ["09", "Build clean-air and charge-air systems", "Replace or relocate the round air cleaner with a sealed serviceable unit. Use collapse-resistant compressor-inlet ducting. Route beaded charge pipe through the specified intercooler to the intake, using reinforced couplers, proper clamps, supports and flexible engine-movement joints. Retain a low-restriction crankcase breather/separator."],
+      ["10", "Install monitoring before fuelling", "Fit calibrated pre-turbine EGT, low-range boost, engine oil-pressure and coolant-temperature instruments with visible alarms. Use a fused labelled supply, correct thermocouple extension wire, clean grounds and protected sender routing. Retain factory warning functions where practical."],
+      ["11", "Prime, leak-test and heat-cycle", "Leave fuel at the baseline setting. Disable starting and crank until turbo oil return is proven, then reconnect and idle. Check oil, coolant, exhaust and charge-air leaks; pressure-test the charge route. Complete several heat cycles, re-torque only where specified, inspect witness marks and confirm the wastegate moves freely."],
+      ["12", "Commission at 5–7 psi", "Verify mechanical boost control and progressively load the engine while logging boost, pre-turbine EGT, coolant temperature, hot oil pressure and smoke. Permit diesel-specialist fuelling changes only after stable baseline logs. Stop immediately for unstable boost, smoke, EGT/coolant rise, oil-pressure loss, leaks, contact or clutch slip. Treat 8–10 psi as a later evidence-gated decision, not the initial tune."],
+    ];
+    const bomRows = [
+      ["Core package", "2H low-mount CT26-flange manifold; CT26-pattern TD05H 16G, 7 cm² / .49 A/R, internal wastegate", "Assumed available; inspect exact supplied unit"],
+      ["Mounting", "Correct studs, locking hardware, heat-rated gaskets and supported downpipe", "Select after flange inspection and mock-up"],
+      ["Lubrication", "Measured oil take-off, supplier-compliant feed/restrictor, large gravity drain, sump bung", "No universal restrictor; no drain below oil level"],
+      ["Cooling", "Turbo coolant hoses/fittings only if exact centre housing requires them", "Do not disturb heater or create air traps"],
+      ["Air system", "Remote sealed air cleaner, inlet duct, intercooler, 2.0–2.5 in working-basis charge pipe, beaded ends, reinforced couplers", "Final diameter and routing follow mock-up"],
+      ["Exhaust/heat", "Downpipe, flex provision, single exhaust, independent hangers, removable air-gap shields", "Keep all safety systems outside the heat envelope"],
+      ["Controls", "Wastegate reference hose; calibrated EGT, boost, oil-pressure and coolant-temperature instruments", "Installed and tested before fuel adjustment"],
+      ["Commissioning", "Fresh oil/filter, coolant, leak-test plugs, torque paint and written test sheets", "Log every staged loaded run"],
+    ];
+    const gates = [
+      ["G1", "Engine health", "Six-cylinder compression, hot oil pressure, blow-by, cooling, injectors and pump accepted"],
+      ["G2", "Goods receipt", "Supplied manifold/turbo identity, CT26 pattern, 16G wheel, 7 cm² housing, actuator and ports verified"],
+      ["G3", "Vehicle mock-up", "Steering fitted; drain falls continuously; service access retained; no safety-system conflict"],
+      ["G4", "Bonnet clearance", "Bonnet closes over complete shielded assembly with ~25 mm static clearance and engine-roll allowance"],
+      ["G5", "Static integrity", "Oil/coolant/charge/exhaust leak tests pass; wastegate, gauges and alarms function"],
+      ["G6", "5–7 psi road release", "Stable logged boost, EGT, coolant and oil pressure; acceptable smoke; no leaks, contact or clutch slip"],
+    ];
+
+    root.innerHTML = `
+      <div class="cooling-pack-view turbo-build-view">
+        <section class="cooling-pack-hero turbo-build-hero" id="turbo-build-summary">
+          <div class="cooling-pack-hero-copy">
+            <div class="cooling-pack-kicker-row">
+              <p class="eyebrow">2H low-mount turbo · controlled build release</p>
+              ${renderCopyLinkButton(sectionRoute("turbo-build-summary"), "#", "Copy turbo-build summary link")}
+            </div>
+            <h2>A specific package is now assumed available. Vehicle fit still has to be proved.</h2>
+            <p class="cooling-pack-lead">Proceed on the basis of a <strong>2H-specific low-mount CT26-flange manifold</strong> paired with a <strong>CT26-pattern TD05H 16G, 7 cm² / .49 A/R, internally wastegated turbo</strong>. The manifold-to-head and turbo-to-manifold interfaces are the controlled direction; the converted J40 installation remains mock-up first.</p>
+            <div class="cooling-pack-release">
+              <span class="turbo-build-release">PACKAGE DIRECTION: RELEASED</span>
+              <span>Purchase only after exact goods-receipt inspection. Permanent fabrication waits for engine-health and vehicle-clearance gates.</span>
+            </div>
+            <blockquote>Bonnet cutting is not planned. Use the low mount, relocate the large round air cleaner, and change clocking or pipe routes before considering body alteration.</blockquote>
+            <div class="cooling-pack-downloads">
+              <a class="item-link package-download-link cooling-pack-download" href="../../docs/2h-turbo-recommended-build-process-20260801.md" download>Download detailed build process (.md)</a>
+              <a class="item-link cooling-pack-download" href="../../docs/2h-turbo-suitability-and-options-20260717.md" download>Download engineering basis (.md)</a>
+            </div>
+          </div>
+          <dl class="cooling-pack-facts" aria-label="Turbo package summary">
+            <div><dt>Engine</dt><dd>Toyota 2H</dd><span>4.0 L naturally aspirated base engine</span></div>
+            <div><dt>Turbo</dt><dd>TD05H 16G</dd><span>CT26 pattern · 7 cm² / .49 A/R</span></div>
+            <div><dt>Layout</dt><dd>Low mount</dd><span>Bonnet modification not planned</span></div>
+            <div><dt>Initial boost</dt><dd>5–7 psi</dd><span>Baseline fuel until monitored proof</span></div>
+          </dl>
+        </section>
+
+        <section class="card cooling-pack-section cooling-pack-start-here" id="turbo-build-decision">
+          <div class="detail-header"><div><p class="cooling-pack-section-label">What is fixed and what is not</p><h3>Release boundary</h3></div>${renderCopyLinkButton(sectionRoute("turbo-build-decision"), "#", "Copy release-boundary link")}</div>
+          <div class="turbo-build-decision-grid">
+            <article><span class="turbo-build-status is-fixed">Assumed available</span><h4>Matched physical interfaces</h4><p>2H low-mount head flange, CT26 four-bolt turbo flange, compact internally wastegated TD05H 16G/7 cm² direction.</p></article>
+            <article><span class="turbo-build-status is-prove">Must be proved</span><h4>As-fitted vehicle clearance</h4><p>Steering, bonnet brace, wing, air cleaner, A/C, downpipe, oil drain, heat shields, engine movement and service access.</p></article>
+            <article><span class="turbo-build-status is-hold">Still held</span><h4>Final tune and higher boost</h4><p>Fuelling, exact alarm limits and any 8–10 psi decision remain conditional on health tests and logged commissioning.</p></article>
+          </div>
+        </section>
+
+        <section class="card cooling-pack-section" id="turbo-build-bom">
+          <div class="detail-header"><div><p class="cooling-pack-section-label">Procurement and fabrication scope</p><h3>Complete working bill of materials</h3></div>${renderCopyLinkButton(sectionRoute("turbo-build-bom"), "#", "Copy turbo BOM link")}</div>
+          <div class="table-wrap cooling-pack-table-wrap"><table class="cooling-pack-table"><thead><tr><th>System</th><th>Required scope</th><th>Release note</th></tr></thead><tbody>${bomRows.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+        </section>
+
+        <section class="card cooling-pack-section" id="turbo-build-process">
+          <div class="detail-header"><div><p class="cooling-pack-section-label">Workshop sequence · do not reorder gates</p><h3>Detailed build process</h3></div>${renderCopyLinkButton(sectionRoute("turbo-build-process"), "#", "Copy turbo build-process link")}</div>
+          <ol class="turbo-build-steps">${buildStages.map(([number, title, detail]) => `<li><span class="turbo-build-step-number">${number}</span><div><h4>${title}</h4><p>${detail}</p></div></li>`).join("")}</ol>
+        </section>
+
+        <section class="card cooling-pack-section" id="turbo-build-bonnet">
+          <div class="detail-header"><div><p class="cooling-pack-section-label">Body preservation rule</p><h3>Bonnet and engine-bay clearance procedure</h3></div>${renderCopyLinkButton(sectionRoute("turbo-build-bonnet"), "#", "Copy bonnet-clearance link")}</div>
+          <div class="cooling-pack-band-grid">
+            <article><span class="cooling-pack-band-tag">Expected change</span><p>Remove or relocate the present large round air cleaner and build a sealed remote-filter inlet. Re-clock the compressor and re-route charge pipe as required.</p></article>
+            <article><span class="cooling-pack-band-tag">Not expected</span><p>No bonnet scoop, bulge or cut-out is approved. A high-mount manifold is outside this build direction.</p></article>
+          </div>
+          <div class="cooling-pack-start-rule"><strong>Physical check:</strong><span>Fit the complete turbo, actuator, elbows and final heat-shield thickness. Place clay cones at the highest points, close the bonnet gently, measure the compressed clay, then check engine roll within the mount envelope. Record photographs and the minimum clearance.</span></div>
+        </section>
+
+        <section class="card cooling-pack-section" id="turbo-build-gates">
+          <div class="detail-header"><div><p class="cooling-pack-section-label">Mandatory sign-off</p><h3>Six release gates</h3></div>${renderCopyLinkButton(sectionRoute("turbo-build-gates"), "#", "Copy turbo release-gates link")}</div>
+          <div class="table-wrap cooling-pack-table-wrap"><table class="cooling-pack-table cooling-pack-gate-table"><thead><tr><th>Gate</th><th>Decision</th><th>Pass evidence</th></tr></thead><tbody>${gates.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+          <div class="cooling-pack-release-footer"><strong>No skipped gates.</strong><span>Availability releases the candidate package for inspection; it does not release blind installation, fuelling changes or bonnet modification.</span></div>
+        </section>
+      </div>`;
+  }
+
   function renderOtherBuilds() {
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
@@ -11122,6 +11220,8 @@
       renderer = renderPhotosNeeded;
     } else if (state.activeView === "cooling-pack") {
       renderer = renderCoolingPack;
+    } else if (state.activeView === "turbo-build") {
+      renderer = renderTurboBuild;
     } else if (state.activeView === "other-builds") {
       renderer = renderOtherBuilds;
     }

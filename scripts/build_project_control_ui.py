@@ -2316,8 +2316,9 @@ WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
 WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
     "title": "2H Conservative Turbo Conversion",
     "summary": (
-        "The turbo direction is approved, but hardware remains gated by engine health and a matched package. "
-        "Use a small responsive wastegated unit, intercooling and mandatory monitoring; validate at 5–7 psi "
+        "Assume availability of the selected 2H low-mount CT26-flange manifold and CT26-pattern TD05H 16G "
+        "with 7 cm2/.49 A/R housing and internal wastegate. Hardware receipt, engine health and vehicle fit remain gated. "
+        "Use intercooling and mandatory monitoring; validate at 5–7 psi "
         "before considering 8–10 psi, and finalize the hot side only after J60 steering geometry is proven."
     ),
     "default_tools": ["Compression tester", "Oil-pressure test gauge", "Cooling pressure tester", "EGT and boost logging"],
@@ -2342,17 +2343,17 @@ WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
         {
             "title": "Approve One Matched Turbo Package",
             "priority": "P0",
-            "remaining": "after health pass",
-            "instruction": "Approve exact hardware as one mapped package, not from a generic turbo-class label.",
+            "remaining": "goods-receipt inspection after health pass",
+            "instruction": "Inspect and freeze the selected low-mount package; availability does not waive identity checks.",
             "process_steps": [
-                "Compare mapped response for the confirmed 4.0 L 2H, operating rpm, ambient temperature and altitude.",
-                "Use GT2256/small-GT25 or compact HX30 only as the preferred response range.",
-                "Freeze exact turbo, turbine housing, flange, internal wastegate setting and oil/coolant requirements.",
+                "Confirm the manifold is the Toyota 2H low-mount version with CT26 four-bolt flange.",
+                "Confirm the supplied turbo is CT26-pattern TD05H 16G with 7 cm2/.49 A/R turbine housing.",
+                "Record serial markings, wheel/housing specification, actuator pressure, clocking range and oil/coolant ports.",
                 "Keep initial boost at 5–7 psi; do not release 8–10 psi as the starting target.",
             ],
             "tools": ["Turbo maps", "Engine data sheet", "Specialist review"],
             "supplies": ["Matched-package approval sheet"],
-            "hold_point": "No purchase from advertised horsepower, flange alone or an unverified used turbo claim.",
+            "hold_point": "Reject or hold a supplied unit whose flange, trim, housing, actuator or ports differ from the controlled package.",
             "image_tokens": ["turbo", "wastegate", "manifold", "map", "2h"],
         },
         {
@@ -2365,7 +2366,8 @@ WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
                 "Mock turbo/manifold, supported downpipe, single exhaust and removable air-gap heat shields.",
                 "Reserve continuous-fall sump drain, manufacturer-compliant oil feed and conditional coolant lines.",
                 "Mock sealed air cleaner, intercooler, 2.0–2.5 inch working-basis charge route and crankcase breather.",
-                "Check bonnet, wing, A/C, radiator/condenser/fan, brake/clutch/fuel/electrical and service clearances.",
+                "Relocate the large round air cleaner and check bonnet, wing, A/C, radiator/condenser/fan, brake/clutch/fuel/electrical and service clearances.",
+                "Use clay with the complete actuator, elbows and heat shield fitted; target about 25 mm static bonnet clearance plus engine-roll allowance.",
             ],
             "tools": ["Camera", "Tape measure", "Angle finder", "Mock-up stock"],
             "supplies": ["Clearance card", "Labels", "Temporary supports"],

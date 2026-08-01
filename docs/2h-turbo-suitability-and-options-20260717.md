@@ -4,16 +4,17 @@
 
 The retained Toyota 2H is a plausible candidate for a conservative turbocharger conversion if its measured health is good. The build should target earlier, more usable road torque and reduced altitude power loss—not maximum dyno output.
 
-The preferred starting concept is:
+Assuming the recommended package can be obtained, the controlled starting hardware is now:
 
-- a modern wastegated turbo in the Garrett GT2256 / small GT25 or Holset HX30-class response range;
+- a Toyota `2H`-specific **low-mount** manifold with a `CT26` four-bolt turbo flange;
+- a compact `TD05H 16G` turbo in a CT26-pattern turbine housing, with `7 cm² / .49 A/R` turbine housing and internal wastegate;
 - approximately `5-7 psi` initial boost, with any move toward `8-10 psi` requiring clean logged EGT, coolant temperature, boost control, smoke, and oil-pressure results;
 - an intercooler included in the packaging plan;
 - a free-flowing single exhaust sized and routed by the fabricator after the turbo outlet is fixed;
 - pre-turbine EGT, boost, oil-pressure, and coolant-temperature instrumentation installed before fuelling changes;
 - injection-pump calibration by a diesel specialist only after the air system is complete and leak-free.
 
-This is a preliminary engineering direction, not a parts release. The turbo model, turbine housing, manifold, boost target, and fuelling setting remain open until the checks below are complete.
+This is a package-direction release, not a blind bolt-in release. The manifold-to-head and turbo-to-manifold interfaces are now fixed for planning. The exact supplied unit must pass identity and goods-receipt inspection, while vehicle clearance, engine health, initial boost verification and fuelling remain gated. See [2h-turbo-recommended-build-process-20260801.md](2h-turbo-recommended-build-process-20260801.md).
 
 ## Rev D Cooling Boundary — 50°C Release Requirement
 
@@ -44,10 +45,10 @@ A larger turbo may advertise more peak airflow but can move boost later in the r
 
 | Choice | Indicative hardware direction | Character | Main advantages | Main cautions | Position |
 | --- | --- | --- | --- | --- | --- |
-| A — conservative response | Garrett `GT2256` / equivalent modern wastegated unit, final housing by map and drive-pressure check | Earliest useful boost, strong road drivability | Best match to modest airflow goal; compact packaging; supports low initial boost | Avoid a turbine housing so small that sustained-load backpressure and EGT rise sharply | **Preferred starting point** |
+| A — released low-mount direction | 2H low-mount CT26-flange manifold plus CT26-pattern `TD05H 16G`, `7 cm² / .49 A/R`, internal wastegate | Early road response with documented physical interfaces | Strongest current head/manifold/turbo fit basis; compact low mount reduces bonnet risk | Verify exact supplied trim, actuator, porting and as-fitted vehicle clearance; watch sustained-load drive pressure and EGT | **Selected, subject to gates** |
 | B — balanced headroom | Small `GT25` family or compact `HX30`-class unit, map-verified | Slightly later boost with more airflow margin | Better headroom if later testing supports `8-10 psi`; robust common diesel architecture | More sensitive to turbine housing choice; may sacrifice low-speed response | Shortlist after measurements |
 | C — period/simple conversion | Proven 2H-specific manifold and conventional journal-bearing wastegated turbo kit | Depends heavily on the actual kit | Easier manifold/downpipe solution and potentially easier local service | Many kits use old or poorly documented turbo matches; condition, map, oil restriction, and wastegate control can be unknown | Accept only with full identification and test evidence |
-| D — large power-oriented turbo | Large CT26/HX35-class or similar | Late spool and high peak headroom | Supports power levels outside this plan | Poor fit to the airflow goal; encourages excess fuel and driveline load; packaging and heat burden rise | **Do not pursue for the current objective** |
+| D — large power-oriented turbo | Large original-style CT26/HX35-class or similar | Late spool and high peak headroom | Supports power levels outside this plan | Poor fit to the airflow goal; encourages excess fuel and driveline load; packaging and heat burden rise | **Do not pursue for the current objective** |
 
 Model-family names describe a sizing direction, not interchangeable purchase approvals. Wheel trims, turbine housings, wastegate settings, and counterfeit/rebuilt condition can make two apparently identical turbos behave very differently.
 

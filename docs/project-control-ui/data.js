@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-07-31T19:00:33+05:00",
+  "generated_at": "2026-08-01T19:36:58+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -62,8 +62,8 @@ window.J40_DASHBOARD_DATA = {
     "status_update_whatsapp_new_rows": 0,
     "status_update_manual_rows": 15,
     "status_update_delivery_watchlist_rows": 18,
-    "capture_data_tasks": 121,
-    "capture_data_tasks_now": 105,
+    "capture_data_tasks": 122,
+    "capture_data_tasks_now": 106,
     "supply_rows_tracked": 331,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
@@ -27735,7 +27735,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 260917
+            "bytes": 260913
           },
           "file_count": 38
         }
@@ -32834,7 +32834,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276447
+            "bytes": 276412
           },
           "file_count": 27
         },
@@ -35099,11 +35099,11 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-006",
             "diagram_scope": "Dash control returns and switch triggers",
             "diagram_evidence": "High Beam Trigger, Low Beam Trigger, Spot Lamp Trigger, Horn Trigger, Left/Right Indicator Feed, Hazard Switch, Fuel Stop, AC Request Trigger, Pressure Switch Chain",
-            "workstream_alignment": "Partially matches switch-panel, fuel-stop, AC control, and hazard/stalk workstream records; mechanical mounting and termination are still open.",
+            "workstream_alignment": "Partially matches the Rev G seven-selector bank, separate hazard/OEM stalk functions, engine-stop control and A/C safety chain; mechanical mounting and termination remain open.",
             "reconciliation_status": "partial_match",
-            "action_required": "Complete Schneider selector fit-up, retain hazard/OEM stalk separation, prove fuel-stop behavior with manual backup, and test AC pressure-chain logic.",
+            "action_required": "Complete Schneider selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting ENGINE, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
             "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#rows_13_15_20|data/manual/reference_projects_and_ideas.csv#schneider_selector_layout|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003",
-            "notes": "The diagram validates control intent; it does not close switch mounting or live shutdown tests."
+            "notes": "The diagram validates control intent; it does not close switch mounting, engine-interface selection or live shutdown tests."
           },
           {
             "reconciliation_id": "EDR-007",
@@ -35148,12 +35148,12 @@ window.J40_DASHBOARD_DATA = {
           {
             "reconciliation_id": "EDR-011",
             "diagram_scope": "Engine start charge and stop integration",
-            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, Fuel Stop Switch",
-            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row.",
+            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible ENGINE RUN/STOP selector",
+            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the former spare selector is now assigned to ENGINE.",
             "reconciliation_status": "partial_match",
-            "action_required": "Read terminal markings, replace damaged ends, prove key-on/key-off shutdown, and retain the manual diesel cutoff cable.",
+            "action_required": "Read terminal markings, replace damaged ends, identify energise-to-run versus energise-to-stop, connect only through a fail-safe low-current interface, prove key-OFF shutdown from every selector state, and retain the manual diesel cutoff cable.",
             "evidence_refs": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-001|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-002|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003|data/manual/workbook_tabs/electrical_master.csv#row_15",
-            "notes": "No engine connector should be reconnected from color alone."
+            "notes": "No engine connector should be reconnected from colour alone; the concealed needle-switch plan is superseded."
           },
           {
             "reconciliation_id": "EDR-012",
@@ -35307,35 +35307,35 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install 7 Schneider selectors (4 right cluster, 2 AC cluster, 1 fuel-stop/control)",
+            "task": "Install exactly 7 Schneider selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/ENGINE",
             "status": "In Progress",
             "done": "Yes - all 7 received",
-            "current_state": "All 7 Schneider selectors are now received: 4x 2-way and 3x 3-way. Installation remains in progress until panel mounting and termination are complete.",
-            "next_action": "Complete mounting and terminate switch wiring.",
-            "dependency": "Dash panel machining complete",
-            "parts_tools_impact": "Tools for hole sizing / panel work"
+            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors exactly match the Rev G schedule. The former spare is assigned to visible ENGINE RUN/STOP; HAZARD remains a separate red control. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
+            "next_action": "At Rev G gate M6, record every bought Schneider part/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Do not connect ENGINE until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests are specified.",
+            "dependency": "Rev G full-size dashboard template + M6 clearance/contact validation",
+            "parts_tools_impact": "No selector purchase required; the measured M6 sample controls the cutter and anti-rotation detail\u2014do not release from a generic 22 mm tooling assumption"
           },
           {
             "priority": "A",
             "area": "Dash Fabrication",
-            "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
+            "task": "Machine selector holes to the part-confirmed M6 mounting cut and confirm cluster spacing",
             "status": "Pending",
             "done": "No",
-            "current_state": "Panel prep is required for new selector footprint.",
-            "next_action": "Complete drilling/cutting and edge finishing.",
-            "dependency": "Tooling availability",
-            "parts_tools_impact": "Chuck + correct bit/cutter in Tools tab"
+            "current_state": "Rev G carries a nominal \u00d822.5 mm selector cut only; the bought Schneider bush and anti-rotation feature control the released CNC geometry.",
+            "next_action": "At M6 measure the actual selector bodies/contact stacks and prove the full-size template before drilling/cutting and edge finishing.",
+            "dependency": "M6 bought-part measurement + tooling availability",
+            "parts_tools_impact": "Nominal \u00d822.5 mm tooling only; final cutter follows the measured switch sample"
           },
           {
             "priority": "A",
             "area": "Fuel Stop Control",
-            "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
+            "task": "Use the visible ENGINE RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
             "status": "Pending",
             "done": "No",
-            "current_state": "Manual cutoff retained; ignition-linked behavior must be finalized.",
-            "next_action": "Wire and test shutdown behavior with engine running.",
+            "current_state": "Manual cutoff retained; EEI-003 must identify energise-to-run versus energise-to-stop before any interface is selected.",
+            "next_action": "Wire through the validated relay/interface only; with the engine running prove selector STOP, key OFF from every selector position, loss-of-control-power behavior, and manual-cable shutdown.",
             "dependency": "Switch panel + ignition wiring final",
-            "parts_tools_impact": "No major new parts expected"
+            "parts_tools_impact": "No major new parts expected; B3-B5 remain spare unless the validated interface requires one"
           },
           {
             "priority": "B",
@@ -36065,7 +36065,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276447
+            "bytes": 276412
           },
           "file_count": 27
         },
@@ -36143,7 +36143,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 80498
+            "bytes": 80483
           },
           "file_count": 13
         },
@@ -36315,7 +36315,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 298680
+            "bytes": 298907
           },
           "file_count": 5
         },
@@ -36362,7 +36362,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/turbo_readiness_chassis_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 48770
+            "bytes": 49243
           },
           "file_count": 6
         }
@@ -36683,9 +36683,9 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "electrical_reset"
       ],
-      "next_action": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout",
-      "exit_gate": "All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open",
-      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. User update 2026-05-02 confirms 7 selectors, hole-enlarging tools, separate hazard switch, and a recommended specific 9 inch LCD panel candidate.",
+      "next_action": "Use the on-hand 7 Schneider selectors in the Rev G far-right 2 x 4 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
+      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. CNC geometry makes the LCD centre and inner-vent midpoint identical, but physical panel fit and bought-component cuts remain measurement holds.",
+      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting ENGINE.",
       "evidence_source": [
         "photo_inventory",
         "20260421_192813_gp_0jvYAo8g",
@@ -37471,17 +37471,17 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "interior_dash_switch_fitup",
           "component_group": "interior_cabin",
           "current_status": "in_progress",
-          "planned_action": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels",
+          "planned_action": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels",
           "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
-          "notes": "Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
+          "notes": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
         },
         {
           "component_job_id": "interior_diesel_cutoff_ignition_security",
           "component_group": "electrical_accessories",
           "current_status": "queued",
-          "planned_action": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior",
+          "planned_action": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
           "evidence_ref": "20260420_221819_gp_YV69fbvA|20260421_194401_gp_1dY3fLdw|whatsapp_akber|akber_khan-00858",
-          "notes": "Build_Plan WP03B security integration gate."
+          "notes": "Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first."
         },
         {
           "component_job_id": "old_accessory_wiring",
@@ -37513,7 +37513,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout"
+          "detail": "Use the on-hand 7 Schneider selectors in the Rev G far-right 2 x 4 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
         },
         {
           "label": "Classify and tag interior control hardware",
@@ -37553,7 +37553,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Interior Dash Switch Fitup",
           "status": "in_progress",
-          "detail": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels Notes: Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
+          "detail": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels Notes: Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
         },
         {
           "label": "Component Task \u00b7 Window Rubbers Weatherstrips",
@@ -37578,7 +37578,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Interior Diesel Cutoff Ignition Security",
           "status": "queued",
-          "detail": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior Notes: Build_Plan WP03B security integration gate."
+          "detail": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback Notes: Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first."
         },
         {
           "label": "Component Task \u00b7 Body Rubbers",
@@ -37603,7 +37603,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open"
+          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. CNC geometry makes the LCD centre and inner-vent midpoint identical, but physical panel fit and bought-component cuts remain measurement holds."
         }
       ],
       "involved_parts": [
@@ -39022,11 +39022,11 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-006",
             "diagram_scope": "Dash control returns and switch triggers",
             "diagram_evidence": "High Beam Trigger, Low Beam Trigger, Spot Lamp Trigger, Horn Trigger, Left/Right Indicator Feed, Hazard Switch, Fuel Stop, AC Request Trigger, Pressure Switch Chain",
-            "workstream_alignment": "Partially matches switch-panel, fuel-stop, AC control, and hazard/stalk workstream records; mechanical mounting and termination are still open.",
+            "workstream_alignment": "Partially matches the Rev G seven-selector bank, separate hazard/OEM stalk functions, engine-stop control and A/C safety chain; mechanical mounting and termination remain open.",
             "reconciliation_status": "partial_match",
-            "action_required": "Complete Schneider selector fit-up, retain hazard/OEM stalk separation, prove fuel-stop behavior with manual backup, and test AC pressure-chain logic.",
+            "action_required": "Complete Schneider selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting ENGINE, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
             "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#rows_13_15_20|data/manual/reference_projects_and_ideas.csv#schneider_selector_layout|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003",
-            "notes": "The diagram validates control intent; it does not close switch mounting or live shutdown tests."
+            "notes": "The diagram validates control intent; it does not close switch mounting, engine-interface selection or live shutdown tests."
           },
           {
             "reconciliation_id": "EDR-007",
@@ -39061,12 +39061,12 @@ window.J40_DASHBOARD_DATA = {
           {
             "reconciliation_id": "EDR-011",
             "diagram_scope": "Engine start charge and stop integration",
-            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, Fuel Stop Switch",
-            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row.",
+            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible ENGINE RUN/STOP selector",
+            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the former spare selector is now assigned to ENGINE.",
             "reconciliation_status": "partial_match",
-            "action_required": "Read terminal markings, replace damaged ends, prove key-on/key-off shutdown, and retain the manual diesel cutoff cable.",
+            "action_required": "Read terminal markings, replace damaged ends, identify energise-to-run versus energise-to-stop, connect only through a fail-safe low-current interface, prove key-OFF shutdown from every selector state, and retain the manual diesel cutoff cable.",
             "evidence_refs": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-001|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-002|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003|data/manual/workbook_tabs/electrical_master.csv#row_15",
-            "notes": "No engine connector should be reconnected from color alone."
+            "notes": "No engine connector should be reconnected from colour alone; the concealed needle-switch plan is superseded."
           },
           {
             "reconciliation_id": "EDR-012",
@@ -39134,35 +39134,35 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install 7 Schneider selectors (4 right cluster, 2 AC cluster, 1 fuel-stop/control)",
+            "task": "Install exactly 7 Schneider selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/ENGINE",
             "status": "In Progress",
             "done": "Yes - all 7 received",
-            "current_state": "All 7 Schneider selectors are now received: 4x 2-way and 3x 3-way. Installation remains in progress until panel mounting and termination are complete.",
-            "next_action": "Complete mounting and terminate switch wiring.",
-            "dependency": "Dash panel machining complete",
-            "parts_tools_impact": "Tools for hole sizing / panel work"
+            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors exactly match the Rev G schedule. The former spare is assigned to visible ENGINE RUN/STOP; HAZARD remains a separate red control. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
+            "next_action": "At Rev G gate M6, record every bought Schneider part/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Do not connect ENGINE until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests are specified.",
+            "dependency": "Rev G full-size dashboard template + M6 clearance/contact validation",
+            "parts_tools_impact": "No selector purchase required; the measured M6 sample controls the cutter and anti-rotation detail\u2014do not release from a generic 22 mm tooling assumption"
           },
           {
             "priority": "A",
             "area": "Dash Fabrication",
-            "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
+            "task": "Machine selector holes to the part-confirmed M6 mounting cut and confirm cluster spacing",
             "status": "Pending",
             "done": "No",
-            "current_state": "Panel prep is required for new selector footprint.",
-            "next_action": "Complete drilling/cutting and edge finishing.",
-            "dependency": "Tooling availability",
-            "parts_tools_impact": "Chuck + correct bit/cutter in Tools tab"
+            "current_state": "Rev G carries a nominal \u00d822.5 mm selector cut only; the bought Schneider bush and anti-rotation feature control the released CNC geometry.",
+            "next_action": "At M6 measure the actual selector bodies/contact stacks and prove the full-size template before drilling/cutting and edge finishing.",
+            "dependency": "M6 bought-part measurement + tooling availability",
+            "parts_tools_impact": "Nominal \u00d822.5 mm tooling only; final cutter follows the measured switch sample"
           },
           {
             "priority": "A",
             "area": "Fuel Stop Control",
-            "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
+            "task": "Use the visible ENGINE RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
             "status": "Pending",
             "done": "No",
-            "current_state": "Manual cutoff retained; ignition-linked behavior must be finalized.",
-            "next_action": "Wire and test shutdown behavior with engine running.",
+            "current_state": "Manual cutoff retained; EEI-003 must identify energise-to-run versus energise-to-stop before any interface is selected.",
+            "next_action": "Wire through the validated relay/interface only; with the engine running prove selector STOP, key OFF from every selector position, loss-of-control-power behavior, and manual-cable shutdown.",
             "dependency": "Switch panel + ignition wiring final",
-            "parts_tools_impact": "No major new parts expected"
+            "parts_tools_impact": "No major new parts expected; B3-B5 remain spare unless the validated interface requires one"
           },
           {
             "priority": "B",
@@ -76206,24 +76206,24 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "HVAC-UNIT-002",
-          "requirement_name": "Slim under-dash louver outlet panel and matched vent pieces",
+          "requirement_name": "Slim under-dash louver outlet panel concept\u2014superseded for visible cabin outlets",
           "pipe_id": "",
-          "vehicle_location": "Lower dash outlet face and cabin vents",
+          "vehicle_location": "Concealed HVAC service or demist routing only",
           "pipe_or_line": "",
-          "replace_scope": "buy_or_fabricate_to_selected_unit",
-          "quantity": "1_matched_set",
+          "replace_scope": "repurpose_only_if_hidden_service_or_demist_need_is_proven",
+          "quantity": "0_visible_cabin_panels",
           "photo_evidence": [],
           "photo_status": "supplier_photos_required",
-          "spec_status": "purchase_ready_measurement_hold",
-          "acquisition_status": "not_acquired",
+          "spec_status": "superseded_for_visible_fascia",
+          "acquisition_status": "not_required_for_visible_fascia",
           "installation_status": "not_installed",
-          "current_action": "Select only after the evaporator case/plenum outlet count and selected blower position/flow are fixed",
-          "exact_recreation_spec": "Slim outlet panel or louver set that connects to the selected evaporator plenum and supports cabin airflow plus defrost routing without a bulky visible hang-on unit",
-          "material_spec": "New automotive plastic or aluminium louver pieces with secure shutters and hose adapters",
-          "critical_measurements": "Panel width/height/depth; outlet count and OD; louver throw direction; screw spacing; adapter length; clearance to knees and dash controls",
-          "fit_and_test": "Mock panel under dash; confirm selected blowers can push air to driver/passenger and defrost ducts without fouling pedals or steering",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Do not buy random vents before the evaporator plenum geometry and blower layout are known.",
+          "current_action": "Do not procure as a visible cabin outlet; Rev H HVAC-UNIT-006 controls the four integrated fascia vents. Reconsider only for a concealed service or demist application after the evaporator plenum is fixed",
+          "exact_recreation_spec": "Any retained slim louver component must be concealed and serve a proven service/demist path; it must not add a fifth visible cabin outlet or a separate hang-on panel",
+          "material_spec": "Automotive plastic or aluminium louver piece with secure shutter and hose adapter only if required for a hidden route",
+          "critical_measurements": "Hidden route width/height/depth; outlet and hose OD; throw direction; screw spacing; clearance to knees controls wiring and demist ducting",
+          "fit_and_test": "Mock the concealed route and confirm it does not compete with or duplicate the four Rev H integrated outlets and does not foul pedals or steering or the compact lower driver-side control-channel selector/contact stacks",
+          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|HVAC-UNIT-006",
+          "notes": "Superseded on 2026-08-01 for visible cabin delivery: exactly four integrated dashboard outlets are controlled by HVAC-UNIT-006; no extra visible under-dash outlet panel.",
           "evidence_images": []
         },
         {
@@ -76250,24 +76250,24 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "HVAC-UNIT-004",
-          "requirement_name": "Compact A/C control panel or integrated controls",
+          "requirement_name": "Rev H BLOWER/A-C request selectors plus delivered thermostat/blend controller",
           "pipe_id": "",
-          "vehicle_location": "Dash or concealed HVAC control position",
+          "vehicle_location": "Discrete HVAC controls and concealed variable controller",
           "pipe_or_line": "",
-          "replace_scope": "buy_with_selected_unit_or_separate_panel",
+          "replace_scope": "buy_with_selected_unit_or_retain_delivered_controller",
           "quantity": "1_control_set",
           "photo_evidence": [],
           "photo_status": "supplier_photos_required",
           "spec_status": "purchase_ready_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Confirm whether the selected evaporator includes controls before buying a separate panel",
-          "exact_recreation_spec": "Control set for blower speeds plus thermostat/temperature control plus A/C clutch request; illumination optional only if it integrates cleanly",
-          "material_spec": "12V automotive switches/resistor/thermostat matched to the selected blower and clutch relay current",
-          "critical_measurements": "Panel size; knob/button depth; harness plug style; resistor rating; blower speed count; thermostat probe routing; dash hole/cable clearance",
-          "fit_and_test": "Bench-test blower speeds and clutch-request output through a relay; confirm labels/functions before dash closeout",
-          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
-          "notes": "Separate row keeps controls from being hidden inside the evaporator unit line.",
+          "current_action": "Confirm the selected evaporator wiring and controller topology before connecting the Rev H selectors or buying any separate control",
+          "exact_recreation_spec": "The visible 3-position BLOWER and 2-position A/C selectors provide low-current discrete requests only; thermostat/freeze temperature and any heat/blend control remain with the delivered unit or a separate discreet serviceable control and do not add another visible fascia panel",
+          "material_spec": "12V automotive selector inputs into measured resistor/PWM/relay and safety-interlocked clutch-request circuits; retain the unit-matched thermostat/probe/blend hardware",
+          "critical_measurements": "Selector/contact-stack depth; harness plug style; resistor or PWM input logic; blower speed count; thermostat probe routing; separate controller service position; dash and duct clearance",
+          "fit_and_test": "Bench-test every blower request and the A/C request through the measured controller/relay/safety chain; confirm no selector carries blower-motor or clutch current and confirm labels/functions before dash closeout",
+          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/hvac_control_interface_schedule.csv",
+          "notes": "Rev H provides the two visible discrete HVAC requests within its eight-station row; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
           "evidence_images": []
         },
         {
@@ -76296,7 +76296,7 @@ window.J40_DASHBOARD_DATA = {
           "requirement_id": "HVAC-UNIT-006",
           "requirement_name": "Four directional cabin A/C vents and duct runs",
           "pipe_id": "",
-          "vehicle_location": "Front dash outlets and rearward front-door-pillar outlets",
+          "vehicle_location": "Four integrated dashboard outlets in 1-2-1 layout",
           "pipe_or_line": "",
           "replace_scope": "buy_after_evaporator_plenum_mockup",
           "quantity": "4_vents_plus_duct_runs",
@@ -76305,13 +76305,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "layout_measurement_hold",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Mock two low-profile dash/under-dash outlets and two longer duct-fed directional pod outlets behind the front-door pillar area before buying or cutting",
-          "exact_recreation_spec": "Four-outlet layout: two front directional vents plus two rear/pillar directional vents; default 2.5 inch hose-neck louvers with matching 2.5 inch duct; include adapters/Y pieces only if airflow-tested",
-          "material_spec": "Automotive HVAC louvers/pods in black or paintable finish; flexible 2.5 inch HVAC duct hose; clamps; secure adapters; no decorative vents without hose necks",
-          "critical_measurements": "Vent face width/height; rear neck OD/ID; rear depth; screw spacing; louver aim range; duct route lengths; bend radius; clamp clearance; interference with dash controls, knees, doors, seat travel, wiring, and demist path",
-          "fit_and_test": "Cardboard mock-up; airflow test all four outlets; rear/pillar runs supported and not drooped or crushed; no dash cuts until evaporator outlet count/plenum position is fixed",
+          "current_action": "Mock four matched circular dashboard outlets on the Rev H upper alignment: one near each usable flat-face end and two symmetric about and flanking the central LCD; align all \u00d887 bezel tops with the LCD-bezel top; keep the vents wholly within the main face so only the compact lower driver-side control channel extends; preserve the OEM glovebox and speedometer as visual no-touch regions",
+          "exact_recreation_spec": "Four-outlet layout: matched satin-silver directional faces; current reference \u00d887 face / \u00d875 opening and 2.5 inch neck; all four bezel tops aligned to the LCD-bezel top; all geometry held for actual four-piece sample measurement; balanced plenum/adapters/Y pieces only if airflow-tested",
+          "material_spec": "Four identical automotive HVAC louvers from one batch with dark directional cores and hidden retention; flexible matching automotive HVAC duct; clamps; secure adapters; no decorative vents without hose necks",
+          "critical_measurements": "Face diameter; required cutout; rear neck OD/ID; rear depth; retention; louver aim range; duct route lengths; bend radius; clamp clearance; interference with LCD, retained visual no-touch glovebox/speedometer, column, selector/contact stacks, wiring, structure and demist path",
+          "fit_and_test": "Full-size Rev H fascia/rear-envelope mock-up; prove LCD centre and inner-vent midpoint share the same physical centreline; prove all four bezel tops share the LCD-bezel top datum; airflow test all four outlets; prove both right-hand ducts clear the selector heads/levers/contact stacks and driver controls; all branches supported and not drooped or crushed; no production dash cuts until evaporator outlet count/plenum position and actual vents are fixed",
           "source_ref": "part_hvac_four_outlet_duct_layout_20260602|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md",
-          "notes": "2026-06-02 user direction: two dash outlets plus longer directional outlets just behind the front-door pillar area. Keep dependent on evaporator/plenum geometry and condenser/front-pack layout.",
+          "notes": "2026-08-01 Rev H direction supersedes the earlier rear/pillar concept: all four outlets are integrated into the replacement dashboard in a 1-2-1 layout, with the inner pair exactly centred about the LCD and all four \u00d887 bezel tops aligned to its top edge.",
           "evidence_images": []
         },
         {
@@ -84953,7 +84953,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "key": "2h_conservative_turbo_conversion",
           "title": "2H Conservative Turbo Conversion",
-          "summary": "The turbo direction is approved, but hardware remains gated by engine health and a matched package. Use a small responsive wastegated unit, intercooling and mandatory monitoring; validate at 5\u20137 psi before considering 8\u201310 psi, and finalize the hot side only after J60 steering geometry is proven.",
+          "summary": "Assume availability of the selected 2H low-mount CT26-flange manifold and CT26-pattern TD05H 16G with 7 cm2/.49 A/R housing and internal wastegate. Hardware receipt, engine health and vehicle fit remain gated. Use intercooling and mandatory monitoring; validate at 5\u20137 psi before considering 8\u201310 psi, and finalize the hot side only after J60 steering geometry is proven.",
           "subtasks": [
             {
               "title": "Pass 2H Engine-Health Gate",
@@ -85012,12 +85012,12 @@ window.J40_DASHBOARD_DATA = {
             {
               "title": "Approve One Matched Turbo Package",
               "priority": "P0",
-              "remaining": "after health pass",
-              "instruction": "Approve exact hardware as one mapped package, not from a generic turbo-class label.",
+              "remaining": "goods-receipt inspection after health pass",
+              "instruction": "Inspect and freeze the selected low-mount package; availability does not waive identity checks.",
               "process_steps": [
-                "Compare mapped response for the confirmed 4.0 L 2H, operating rpm, ambient temperature and altitude.",
-                "Use GT2256/small-GT25 or compact HX30 only as the preferred response range.",
-                "Freeze exact turbo, turbine housing, flange, internal wastegate setting and oil/coolant requirements.",
+                "Confirm the manifold is the Toyota 2H low-mount version with CT26 four-bolt flange.",
+                "Confirm the supplied turbo is CT26-pattern TD05H 16G with 7 cm2/.49 A/R turbine housing.",
+                "Record serial markings, wheel/housing specification, actuator pressure, clocking range and oil/coolant ports.",
                 "Keep initial boost at 5\u20137 psi; do not release 8\u201310 psi as the starting target."
               ],
               "tools": [
@@ -85028,7 +85028,7 @@ window.J40_DASHBOARD_DATA = {
               "supplies": [
                 "Matched-package approval sheet"
               ],
-              "hold_point": "No purchase from advertised horsepower, flange alone or an unverified used turbo claim.",
+              "hold_point": "Reject or hold a supplied unit whose flange, trim, housing, actuator or ports differ from the controlled package.",
               "image_tokens": [
                 "turbo",
                 "wastegate",
@@ -85041,25 +85041,85 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-                  "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
-                  "captured_date": "2026-05-03",
-                  "captured_time": "15:38:32",
+                  "path": "../../photos/20260514_131845_gp_ythUacVA.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:45",
                   "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "mixed_fastener_hardware",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260503_153832_gp_0FJJiLHg",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131845_gp_ythUacVA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260514_131834_gp_V4LCu2hw.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:34",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131834_gp_V4LCu2hw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260514_131828_gp_X2MxCSEQ.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:28",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131828_gp_X2MxCSEQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260514_131820_gp_1xufuqnA.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:20",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131820_gp_1xufuqnA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260514_131810_gp_z0Z4XiNw.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:10",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131810_gp_z0Z4XiNw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260514_131802_gp_j8XssFqQ.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
+                  "captured_date": "2026-05-14",
+                  "captured_time": "13:18:02",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260514_131802_gp_j8XssFqQ",
                   "matched_tokens": []
                 }
               ],
               "registered_items": [
                 "Matched wastegated turbocharger for Toyota 2H conservative road build (engine_health_and_map_match_hold; delivery not_ordered; amount missing)",
-                "Matched internal wastegate actuator boost reference hose and control fittings (buy_with_final_turbo; delivery not_ordered; amount missing)",
-                "Front or side-mounted bar-and-plate intercooler matched to 2H airflow and cooling-stack envelope (cooling_stack_measurement_hold; delivery not_ordered; amount missing)",
                 "Toyota 2H turbo exhaust manifold or engineered manifold-adapter assembly (engine_identity_and_mockup_hold; delivery not_ordered; amount missing)",
-                "Boost reference hose manifold barb fittings clamps and restrictor/damper if specified (port_and_instrument_hold; delivery not_ordered; amount missing)",
-                "Calibrated EGT pyrometer gauge with pre-turbine thermocouple probe wiring and alarm (quality_product_selection_hold; delivery not_ordered; amount missing)"
+                "Calibrated EGT pyrometer gauge with pre-turbine thermocouple probe wiring and alarm (quality_product_selection_hold; delivery not_ordered; amount missing)",
+                "Generic 52 mm electronic boost gauge Daraz market lead (do_not_buy_without_accuracy_proof; delivery not_ordered; amount online_listing)",
+                "Matched internal wastegate actuator boost reference hose and control fittings (buy_with_final_turbo; delivery not_ordered; amount missing)",
+                "2H intake-manifold charge-air adapter/plenum connection with boost reference ports (manifold_measurement_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -85072,7 +85132,8 @@ window.J40_DASHBOARD_DATA = {
                 "Mock turbo/manifold, supported downpipe, single exhaust and removable air-gap heat shields.",
                 "Reserve continuous-fall sump drain, manufacturer-compliant oil feed and conditional coolant lines.",
                 "Mock sealed air cleaner, intercooler, 2.0\u20132.5 inch working-basis charge route and crankcase breather.",
-                "Check bonnet, wing, A/C, radiator/condenser/fan, brake/clutch/fuel/electrical and service clearances."
+                "Relocate the large round air cleaner and check bonnet, wing, A/C, radiator/condenser/fan, brake/clutch/fuel/electrical and service clearances.",
+                "Use clay with the complete actuator, elbows and heat shield fitted; target about 25 mm static bonnet clearance plus engine-roll allowance."
               ],
               "tools": [
                 "Camera",
@@ -85175,8 +85236,8 @@ window.J40_DASHBOARD_DATA = {
                 "Front or side-mounted bar-and-plate intercooler matched to 2H airflow and cooling-stack envelope (cooling_stack_measurement_hold; delivery not_ordered; amount missing)",
                 "Mandrel-bend downpipe tubing transition and fabrication stock (turbo_position_and_chassis_route_hold; delivery not_ordered; amount missing)",
                 "Low-restriction single exhaust tubing muffler tailpipe joints and service clamps (full_chassis_and_body_route_hold; delivery not_ordered; amount missing)",
-                "Intercooler mounting brackets rubber isolators spacers and graded fasteners (core_and_front_stack_hold; delivery not_ordered; amount missing)",
-                "Turbo oil-feed line with heat sleeve and supported end fittings (buy_after_turbo_and_route_lock; delivery not_ordered; amount missing)"
+                "Turbo downpipe charge-pipe airbox and heat-shield bracket stock plus graded fasteners and isolators (buy_after_mockup_cut_list; delivery not_ordered; amount missing)",
+                "High-temperature sleeves and reflective barriers for nearby oil fuel brake clutch A-C and electrical routes (buy_after_clearance_map; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -102032,11 +102093,11 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 121,
-      "now_tasks": 105,
+      "total_tasks": 122,
+      "now_tasks": 106,
       "later_tasks": 16,
       "p0_tasks": 38,
-      "photo_tasks": 42,
+      "photo_tasks": 41,
       "measurement_tasks": 80
     },
     "counts_by_workstream": [
@@ -102081,6 +102142,10 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "workstream": "interior_controls",
+        "count": 3
+      },
+      {
         "workstream": "radiator",
         "count": 3
       },
@@ -102094,10 +102159,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "fabrication_handoff",
-        "count": 2
-      },
-      {
-        "workstream": "interior_controls",
         "count": 2
       },
       {
@@ -102132,11 +102193,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 26
+        "count": 25
       },
       {
         "task_type": "template",
-        "count": 17
+        "count": 18
       },
       {
         "task_type": "photo",
@@ -102144,7 +102205,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "decision",
-        "count": 12
+        "count": 13
       },
       {
         "task_type": "data",
@@ -102162,7 +102223,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 69
+        "count": 70
       },
       {
         "priority": "P2",
@@ -111020,16 +111081,67 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:interior_diesel_cutoff_ignition_security",
+        "title": "interior_diesel_cutoff_ignition_security",
+        "workstream": "interior_controls",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "queued",
+        "location": "home",
+        "action": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
+        "data_needed": "Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "interior_diesel_cutoff_ignition_security",
+        "notes": "",
+        "evidence_ref": "20260420_221819_gp_YV69fbvA|20260421_194401_gp_1dY3fLdw|whatsapp_akber|akber_khan-00858",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
+            "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+            "captured_date": "2026-04-20",
+            "captured_time": "22:18:19",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "hidden_diesel_cutoff_switch_hardware",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260420_221819_gp_YV69fbvA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+            "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+            "captured_date": "2026-04-21",
+            "captured_time": "19:44:01",
+            "media_type": "photo",
+            "component_group": "interior_cabin",
+            "specific_component": "dashboard_switch_and_control_hardware",
+            "stage": "electrical_rework",
+            "media_id": "20260421_194401_gp_1dY3fLdw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "component_job:interior_dash_switch_fitup",
         "title": "interior_dash_switch_fitup",
         "workstream": "interior_controls",
-        "task_type": "photo_measurement",
+        "task_type": "template",
         "priority": "P1",
         "timing": "now",
         "status": "in_progress",
         "location": "home",
-        "action": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels",
-        "data_needed": "Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured.",
+        "action": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels",
+        "data_needed": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
