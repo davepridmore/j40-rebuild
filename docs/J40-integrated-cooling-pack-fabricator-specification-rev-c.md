@@ -59,9 +59,11 @@ From the front, the finished package should look like one tidy rectangular facto
 
 Appearance never overrides airflow, service access or safe clearance.
 
-### 1.2 Split-out component visual
+### 1.2 Complete wide split-out component visual
 
-![PH01 — split-out Rev G Toyota-donor-led components](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph01_toyota_donor_split.png)
+![PH01 — complete wide split-out of the Rev G cooling pack](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph01_complete_wide_exploded_v2.png)
+
+PH01 separates the complete inventory widely enough to identify every major part. Read the main row from left to right as the installed front-to-rear airflow order: centred twin electric-pusher module, short central charge cooler, A/C condenser, engine radiator, then the full-face shroud and large engine-driven mechanical puller. The two original uprights, side rails, direct ears, lower saddles, drier, protected electrical enclosures, seals, connectors and fasteners are also shown. The exploded spacing is only for identification; it does **not** authorise side-by-side installed placement or extra vehicle width. PH05/D09 and E2/E2a still control the electrical-box installation.
 
 ### 1.3 Off-vehicle cooling-module assembly
 
@@ -69,11 +71,11 @@ Appearance never overrides airflow, service access or safe clearance.
 
 PH02 intentionally omits the chassis posts and both electrical boxes. PH03/PH04 alone illustrate the existing-hole radiator attachment; PH05/D09 and E2/E2a separately control the upper/rear electrical installation. This prevents an off-vehicle product image from implying a false frame connection or extra side packaging.
 
-### 1.4 Installed visual — existing top holes
+### 1.4 Complete installed visual — existing top holes and rear-fan cutaway
 
-![PH03 — Rev G package proposed on the later J40 front structure](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph03_bracket_correct_installed.png)
+![PH03 — complete Rev G package on the later J40 front structure with a controlled depth cutaway](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph03_complete_stack_cutaway_v2.png)
 
-**What PH03 must show at both top corners:** the existing inward top-return plate and its original round hole remain visible; one vertical M8/washer stack passes through that hole and the sleeved isolator into the independent black 4 mm ear; that ear continues directly to the corresponding radiator side rail. The nearby inboard fastener joins the ear to the rail—it is not a substitute chassis pickup. The lower saddle directly beneath the same rail carries the radiator mass.
+**What PH03 must show:** the normal front portion shows the centred twin pusher module and direct existing-hole mounts; the controlled right-hand cutaway exposes the short charge cooler, condenser, radiator, sealed rear shroud and large retained mechanical fan as separate depth layers. The rear fan remains centred behind the radiator and inside the two-upright silhouette; it is not a side-mounted fan or extra-width annex. At both top corners, the existing inward top-return plate and original round hole remain in use; one vertical M8/washer stack passes through that hole and the sleeved isolator into the independent black 4 mm ear, which continues directly to the corresponding radiator side rail. The nearby inboard fastener joins the ear to the rail—it is not a substitute chassis pickup. The lower saddle directly beneath the same rail carries the radiator mass.
 
 ### 1.5 Existing-hole fastener detail
 
@@ -83,7 +85,7 @@ PH02 intentionally omits the chassis posts and both electrical boxes. PH03/PH04 
 
 ![PH05 — two closed electrical boxes on independent protected mounts](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph05_independent_electrical_mounts.png)
 
-PH01–PH05 are AI design visualisations, not measured evidence. Do not scale them. PH01 and PH02 show all three fans; PH03 is a front installation view, so the rear mechanical fan is mostly hidden. PH03/PH04 show the required attachment logic: at each side, the same M8 through-bolt passes through the original frame top-return hole, sleeved EPDM isolator and short direct radiator ear; that ear is fixed directly to its removable radiator side rail, with a weight-carrying lower saddle beneath the same rail. In PH03 both original top-return plates and both independent black ears are visible in the main image; follow either top bolt downward to see the continuous frame-to-rail path. There is no transverse radiator carrier or intermediate bracket. PH05 is a tight electrical-placement appearance proposal only: the two boxes are above/rear of the top tank, clear of the fin/fan aperture and on visibly separate brackets. D09 requires their complete projected envelopes to nest inside W0/upright width and does not establish dimensions or an IP rating. D08–D10, the actual vehicle, the physical boxes, the rigid two-hole template, the full-size dummy and the signed dimensions control manufacture.
+PH01–PH05 are AI design visualisations, not measured evidence. Do not scale them. PH01 is the wide exploded inventory and PH02 is the assembled off-vehicle module; both show exactly three fans. PH03 combines a normal installed front portion with a controlled cutaway so the three distinct core layers and the large centred rear mechanical puller are visibly accounted for. The cutaway is explanatory only and does not authorise moving the rear fan sideways. PH03/PH04 show the required attachment logic: at each side, the same M8 through-bolt passes through the original frame top-return hole, sleeved EPDM isolator and short direct radiator ear; that ear is fixed directly to its removable radiator side rail, with a weight-carrying lower saddle beneath the same rail. In PH03 both original top-return plates and both independent black ears are visible; follow either top bolt downward to see the continuous frame-to-rail path. There is no transverse radiator carrier or intermediate bracket. PH05 is a tight electrical-placement appearance proposal only: the two boxes are above/rear of the top tank, clear of the fin/fan aperture and on visibly separate brackets. D09 requires their complete projected envelopes to nest inside W0/upright width and does not establish dimensions or an IP rating. D08–D10, the actual vehicle, the physical boxes, the rigid two-hole template, the full-size dummy and the signed dimensions control manufacture.
 
 ## 2. Release status — best effort, not a guarantee
 

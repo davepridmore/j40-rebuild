@@ -9442,9 +9442,9 @@
   function renderCoolingPack() {
     const photorealisticVisuals = [
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph01_toyota_donor_split.png",
-        caption: "PH01 — Rev G split-out proposal: HJ47-pattern recored/custom radiator, slim charge cooler, 14 × 22 condenser, central custom shroud and two matched Prado/GX Denso donor fan motor/blade/connector sets.",
-        specific_component: "Rev G Toyota-donor component split-out proposal",
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph01_complete_wide_exploded_v2.png",
+        caption: "PH01 — Complete wide Rev G split-out proposal. The main row separates the installed front-to-rear order: centred twin Toyota/Denso pusher module, short central 500 × 180 × 50 charge cooler, 559 × 356 × 21 condenser, HJ47/2H-pattern radiator, then the full-face rear shroud and large retained mechanical puller. Uprights, rails, direct ears, lower saddles, drier, protected electrical enclosures, seals, connectors and fasteners are included. Exploded positions identify parts only; PH05/D09 control the compact installed electrical placement.",
+        specific_component: "Complete wide Rev G three-core / three-fan component split-out",
       },
       {
         path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph02_toyota_donor_assembled.png",
@@ -9452,9 +9452,9 @@
         specific_component: "Rev G off-vehicle Toyota-donor cooling module proposal",
       },
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph03_bracket_correct_installed.png",
-        caption: "PH03 — Corrected Rev G installation proposal: both original inward top-return plates and round holes remain visible. At each side, follow the vertical M8/washer stack through that original hole and sleeved EPDM isolator into the independent black 4 mm ear, which continues directly to the radiator side rail. The nearby inboard fastener joins the ear to the rail; it is not a substitute chassis pickup. A lower saddle beneath that same rail carries the weight. No intermediate or transverse radiator carrier.",
-        specific_component: "Rev G direct-side-ear J40 installation proposal",
+        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph03_complete_stack_cutaway_v2.png",
+        caption: "PH03 — Complete Rev G installed proposal with a controlled depth cutaway. The normal front portion shows the centred twin pushers and both original top-hole attachments; the cutaway visibly accounts for the short charge cooler, condenser, main radiator, sealed rear shroud and large engine-driven puller. The mechanical fan remains centred behind the radiator and inside the two uprights—it is not a side annex. Each original top hole uses the direct M8/washer, sleeved-isolator and independent 4 mm ear path to its radiator side rail, with the lower saddle carrying weight.",
+        specific_component: "Complete three-core / three-fan J40 installation cutaway",
       },
       {
         path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph04_direct_side_ear_closeup.png",
@@ -9676,7 +9676,7 @@
             <span>There is no side cooler, side fan, side service tower or extra visible width. Charge pipes turn rearward/inboard at the measured lower corners.</span>
             <span><strong>Depth remains unproven pending M3/M6:</strong> the complete three-core dummy, with real fan motors, guards, plugs, tanks, pipe bends, gaps and tools, controls manufacture.</span>
           </div>
-          <p class="small-muted">Read the five images in order and click any image to inspect it full size: PH01 splits out the layers; PH02 is deliberately off-vehicle and shows only the complete central cooling module; PH03 places it on the later chassis-photo geometry with direct ears below both original top-return holes; PH04 shows one ear and lower-saddle load path; PH05 is a tight upper/rear electrical-placement detail with the two boxes on separate brackets. These are visual proposals, not measured fit evidence. Build only to deterministic Rev G drawings D01–D10, B0/H0-L/H0-R/W0/P0/R0/BRKT, M1–M6, F1–F4, E1–E2a, an approved full-size dummy and the passed T1–T3 tests.</p>
+          <p class="small-muted">Read the five images in order and click any image to inspect it full size: PH01 widely separates the complete inventory and all three heat exchangers / three fans; PH02 is deliberately off-vehicle and shows the assembled central cooling module; PH03 places the complete pack on the later chassis-photo geometry, retains both direct original-top-hole attachments and uses a controlled cutaway to expose the centred rear mechanical fan and every core layer; PH04 shows one ear and lower-saddle load path; PH05 is a tight upper/rear electrical-placement detail with the two boxes on separate brackets. These are visual proposals, not measured fit evidence. Build only to deterministic Rev G drawings D01–D10, B0/H0-L/H0-R/W0/P0/R0/BRKT, M1–M6, F1–F4, E1–E2a, an approved full-size dummy and the passed T1–T3 tests.</p>
           <div class="cooling-pack-photorealistic-grid">
             ${photorealisticVisuals
               .map((visual) =>

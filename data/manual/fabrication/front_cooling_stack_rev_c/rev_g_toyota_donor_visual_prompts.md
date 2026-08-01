@@ -12,17 +12,17 @@
 - The two equal electric pusher fans are centred horizontally. The retained rear engine-driven mechanical puller makes exactly three fans total.
 - Relay Rev D and MIDI Rev D are closed boxes on two separate local structural brackets, each with its own rain hood and service sweep. Both complete envelopes remain inside W0 and the existing uprights' front-view silhouette. They are staggered vertically and/or in depth, with MIDI's projected width wholly within the Relay box's 360 mm envelope—never side-by-side across vehicle width. They do not load the radiator or original top returns.
 
-## PH01 — split-out corrected components
+## PH01 v2 — complete wide split-out components
 
-Photoreal neutral-background exploded layout showing the Toyota-pattern radiator sample, condenser, charge-air cooler, two matching electric pusher modules, retained mechanical puller/shroud, drier, electrical samples and closed boxes. Include two narrow removable radiator rails with one short top ear and one lower saddle per rail, two isolator/bolt sets, and two independent electrical brackets/hoods. Do not show the existing chassis posts as fabricated components. Do not add a cross-car bar, tall tower or common electrical backing plate.
+Wide photoreal neutral-background exploded catalogue layout, with generous horizontal separation. Include both existing chassis uprights only as vehicle-interface references. Read the main row from left to right as the installed front-to-rear order: one centred shroud with two equal 248 mm Toyota/Denso electric pushers; one wide, short 500 × 180 × 50 mm charge cooler; one 559 × 356 × 21 mm condenser; one HJ47/2H-pattern radiator using the 530 × 435 × 64 mm active-core basis; and one sealed full-face rear shroud with the large retained mechanical puller. Show exactly three fans and three separate heat exchangers. Neatly separate the two removable radiator rails, direct ears, lower saddles, isolator/bolt sets, drier, seals, connectors, hose bends, hardware and the two protected electrical enclosures with independent brackets/hoods. Exploded electrical positions are inventory presentation only; PH05/D09 control installed placement. Do not add a narrow vertical side cooler, cross-car carrier, top bridge, tall tower, common electrical plate, extra fan, labels or dimension text.
 
 ## PH02 — off-vehicle central cooling module
 
 Photoreal neutral-background three-quarter product view of the complete central cooling module only. Show two removable radiator side rails, one direct top ear and one lower saddle per rail, centred twin front fans and the rear mechanical fan. Intentionally omit the chassis posts and electrical boxes: PH03/PH04 alone illustrate the original-hole attachment, and PH05/D09/E2 separately control electrical placement. No transverse radiator bar, bridge, mounting tower, side annex or shared electrical plate.
 
-## PH03 — corrected proposal on the actual bracket photograph
+## PH03 v2 — complete installed proposal with centred rear-fan cutaway
 
-Edit the authoritative J40 bracket photograph `photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png` while preserving its camera angle, chassis, engine, tyres and both original bracket posts, inward top returns and round holes. Place the stack between the posts. Make both complete upper connections plainly visible in the main view: at each side, the bolt head and large washer sit concentrically over the existing round hole in the inward top return; the same straight provisional M8 bolt continues through that original hole, the sleeved EPDM isolator and one short 4 mm black ear; the ear continues without a gap to the removable radiator side rail. Show the washer/prevailing nut below the ear where the viewing angle permits, plus the lower saddle beneath that same rail carrying weight. The second inboard fastener may join the ear to its radiator rail; it must not be mistaken for the chassis pickup. Do not substitute a cap, pedestal, pickup tower, adjacent hole, transverse carrier or floating bracket. Do not show electrical boxes in this installed view, add side width or imply that the generated image proves measured fit. D08 is the mandatory construction reference.
+Edit the authoritative J40 bracket photograph `photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png` while preserving the chassis, engine, tyres, both original bracket posts, inward top returns and round holes. Place the complete stack between the posts. Keep most of the image as a normal installed front view, but use one controlled right-hand cutaway/section to expose the exact depth order: centred twin electric-pusher module; short central charge cooler; air gap; condenser; air gap; engine radiator; sealed full-face rear shroud; one large engine-driven mechanical puller. The large rear fan must remain centred behind the radiator and entirely within the two-upright silhouette; reveal it through the cutaway instead of shifting it sideways. Show exactly three fans and three distinct heat exchangers. Make both complete upper connections plainly visible: at each side, the bolt head and large washer sit concentrically over the existing round top-return hole; the same straight provisional M8 bolt continues through that original hole, sleeved EPDM isolator and one short 4 mm black ear; the ear continues directly to the removable radiator side rail. Show the lower saddle beneath that same rail carrying weight. The second inboard fastener may join ear to rail but is not the chassis pickup. Do not substitute a cap, pedestal, pickup tower, adjacent hole, transverse carrier or floating bracket. Do not show electrical boxes in this installed view, add side width, add labels or imply measured fit. D08 is the mandatory construction reference.
 
 ## PH04 — one direct side-ear close-up
 
@@ -34,9 +34,9 @@ Photoreal tight engine-bay electrical-placement detail above and behind the radi
 
 ## Recorded output files
 
-- `work_document_assets/rev_g_ph01_toyota_donor_split.png`
+- `work_document_assets/rev_g_ph01_complete_wide_exploded_v2.png`
 - `work_document_assets/rev_g_ph02_toyota_donor_assembled.png`
-- `work_document_assets/rev_g_ph03_bracket_correct_installed.png`
+- `work_document_assets/rev_g_ph03_complete_stack_cutaway_v2.png`
 - `work_document_assets/rev_g_ph04_direct_side_ear_closeup.png`
 - `work_document_assets/rev_g_ph05_independent_electrical_mounts.png`
 
