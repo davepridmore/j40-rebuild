@@ -1,0 +1,7 @@
+part,qty,material,thickness_mm,finish,source_file,release_status
+full-width disposable fit template,1,MDF/card/cheap plastic,3-6,none,full_width_fit_template_rev_h.dxf,CUT_TEMPLATE_OUTER released for template only; no vehicle or metal cutting
+full-width one-piece visible fascia,1,CR4 mild steel,1.5,low-gloss body colour both sides,full_width_fascia_master_rev_h.dxf,QUOTE/HOLD entire metal part until M1-M10; HOLD_* layers never production paths
+right control bank apertures/engraving,1,integral with visible fascia,1.5,3 mm labels with black infill,right_control_bank_template_rev_h.dxf,"QUOTE/HOLD pending all seven bought selectors, hazard and rear-stack fit"
+LCD rear structural carrier,1,5052-H32 aluminium or CR4 steel,2.0,black,lcd_rear_support_reference_rev_h.dxf,QUOTE/HOLD all geometry pending selected LCD and vehicle structure
+rear full-width stiffener rails / local doublers,1,CR4 mild steel,1.5-2.0,epoxy prime + body colour/black,shop-detail after M1,QUOTE/HOLD; must transfer screen and control loads into retained structure
+HVAC vent retainers / sample-specific branch adaptors,4,supplier hardware / fabricated as needed,supplier-specific,concealed,actual vent data,QUOTE/HOLD pending M7-M8

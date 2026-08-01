@@ -1,0 +1,18 @@
+feature,x_mm,y_mm,width_or_diameter_mm,height_mm,layer,status_note
+nominal full-width envelope,0,0,1260.0,220.0,HOLD_FASCIA_OUTER,template coordinate system only; M1 physical trace controls
+fascia vertical centre datum,630.0,0,,220.0,HOLD_CENTRELINES,master datum: LCD centre and midpoint of inner vent pair must remain coincident after M1 trace
+main lower datum,0,50.0,1260.0,,HOLD_MAIN_LOWER_DATUM,normal face ends at Y50; only the compact right control channel extends locally to Y0; all four vents remain wholly in the main face
+LCD bezel envelope,518.0,76.0,224.0,136.0,HOLD_LCD_BEZEL_ENVELOPE,manufacturer drawing controls
+LCD aperture,529.0,86.5,202.0,115.0,HOLD_LCD_APERTURE,manufacturer drawing controls
+LCD active image,530.4,87.95,199.2,112.1,HOLD_LCD_ACTIVE_REFERENCE,9-inch / 16:9 mathematical reference only: 228.6 mm diagonal; sample controls
+OEM glovebox transfer envelope,97.0,58.0,315.0,157.0,HOLD_GLOVEBOX_TRANSFER_ENVELOPE,actual asymmetric lid/hinge/latch trace controls
+OEM speedometer transfer envelope,850.0,58.0,210.0,157.0,HOLD_SPEEDOMETER_TRANSFER_ENVELOPE,actual original assembly trace and mounts control
+right control bank envelope,842.0,4.0,309.0,46.0,HOLD_CONTROL_BANK_ENVELOPE,one passenger-to-driver row S1-S8 in lower right channel; exact 7 selectors + hazard; 39 mm pitch; M6/M9 HOLD
+vent 1 visible face,50.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
+vent 1 panel-opening reference,50.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 2 visible face,464.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; inner pair mirrored ±166.0 about fascia/LCD centreline X=630.0"
+vent 2 panel-opening reference,464.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 3 visible face,796.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; inner pair mirrored ±166.0 about fascia/LCD centreline X=630.0"
+vent 3 panel-opening reference,796.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
+vent 4 visible face,1210.0,168.5,87.0,,HOLD_VENT_FACE_ENVELOPE,"centre coordinate; all four Y=168.5 exactly; Ø87 bezel top Y=212.0, aligned with LCD bezel top; outer visible face is 6.5 mm from nominal usable-face end and Ø75 reference cut is 12.5 mm from it; M1/M7 control"
+vent 4 panel-opening reference,1210.0,168.5,75.0,,HOLD_VENT_NECK_CUTOUT,published generic reference only; M7 matched sample controls
