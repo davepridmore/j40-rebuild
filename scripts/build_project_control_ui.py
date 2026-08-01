@@ -2359,10 +2359,13 @@ WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
         {
             "title": "Mock Steering, Hot Side And Full Interfaces",
             "priority": "P0",
-            "remaining": "before permanent fabrication",
-            "instruction": "Prove J60 steering first, then package every turbo interface around the accepted steering envelope.",
+            "remaining": "concept review pending fresh photos and measurements",
+            "instruction": (
+                "Use the Rev J visuals only as a conceptual packaging study. Prove J80 steering, bonnet clearance "
+                "and measured component envelopes before releasing any permanent fabrication."
+            ),
             "process_steps": [
-                "Install or physically mock the J60 hydraulic box, shaft, pump and hose envelope before final manifold/downpipe work.",
+                "Install or physically mock the J80 hydraulic box, shaft, pump and hose envelope before final manifold/downpipe work.",
                 "Mock turbo/manifold, supported downpipe, single exhaust and removable air-gap heat shields.",
                 "Reserve continuous-fall sump drain, manufacturer-compliant oil feed and conditional coolant lines.",
                 "Mock sealed air cleaner, intercooler, 2.0–2.5 inch working-basis charge route and crankcase breather.",
@@ -2371,8 +2374,28 @@ WORKSTREAM_SUBTASK_GUIDES["turbocharger_powertrain"] = {
             ],
             "tools": ["Camera", "Tape measure", "Angle finder", "Mock-up stock"],
             "supplies": ["Clearance card", "Labels", "Temporary supports"],
-            "hold_point": "No final hot-side fabrication until steering and all body/front-stack datums are proven.",
+            "hold_point": (
+                "CONCEPTUAL ONLY — not fabrication approved. No final hot-side, radiator-bracket, battery-carrier or "
+                "electrical-box fabrication until new photographs and measured steering, bonnet, body and front-stack datums are recorded."
+            ),
             "image_tokens": ["turbo", "steering", "downpipe", "intercooler", "clearance"],
+            "conceptual_images": [
+                {
+                    "path": "docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+                    "caption": "CONCEPTUAL Rev J — bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+                    "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+                },
+                {
+                    "path": "docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
+                    "caption": "CONCEPTUAL Rev J opposite-side packaging — purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
+                    "media_id": "turbo_rev_j_opposite_side_packaging_concept",
+                },
+                {
+                    "path": "docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
+                    "caption": "CONCEPTUAL Rev J annotated layout — identification aid only; callouts and positions must be reconciled against the vehicle.",
+                    "media_id": "turbo_rev_j_annotated_layout_concept",
+                },
+            ],
         },
         {
             "title": "Install Monitoring And Protection",
@@ -8147,6 +8170,7 @@ def build_standard_workstream_subtask_group(
     default_supplies = list(guide.get("default_supplies") or [])
     for index, source_subtask in enumerate(guide.get("subtasks") or []):
         subtask = dict(source_subtask)
+        conceptual_images = list(subtask.pop("conceptual_images", []) or [])
         subtask_id = clean(subtask.get("id")) or slugify_task_id(clean(subtask.get("title")))
         subtask["id"] = subtask_id
         subtask["status"] = clean(subtask.get("status")) or template_step_status(current_status, index)
@@ -8158,7 +8182,26 @@ def build_standard_workstream_subtask_group(
         subtask["supplies"] = unique_text_items(subtask_supplies)
         subtask["parts"] = unique_text_items(list(subtask.get("parts") or []))
         tokens = subtask_search_tokens(subtask)
-        subtask["images"] = select_workstream_subtask_images(workstream_id, subtask_id, evidence_images, tokens)
+        selected_images = select_workstream_subtask_images(workstream_id, subtask_id, evidence_images, tokens)
+        conceptual_payloads = [
+            {
+                "path": path_for_ui(clean(row.get("path"))),
+                "caption": clean(row.get("caption")),
+                "captured_date": "",
+                "captured_time": "",
+                "media_type": "photo",
+                "component_group": "turbocharger_powertrain",
+                "specific_component": "conceptual_packaging_visual",
+                "stage": "conceptual_pending_measurement",
+                "media_id": clean(row.get("media_id")),
+                "matched_tokens": ["conceptual", "turbo", "packaging"],
+                "match_basis": "controlled_concept_visual",
+                "match_score": 1000,
+            }
+            for row in conceptual_images
+            if clean(row.get("path"))
+        ]
+        subtask["images"] = conceptual_payloads + selected_images
         subtask["registered_items"] = registered_item_lines_for_subtask(part_rows_for_workstream, tokens)
         subtasks.append(subtask)
 
