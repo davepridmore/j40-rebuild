@@ -12,7 +12,7 @@ These PNG files are photorealistic selection aids, not scale drawings. AI-edited
 - Four matching outlets: Ø87 mm visible silver face, Ø75 mm opening reference.
 - Outer outlet centres: X=50 mm and X=1210 mm, Y=168.5 mm.
 - Right controls: exactly seven Ø22.5 mm industrial rotary selectors plus one separate red hazard in a compact 4 × 2 grid.
-- Control labels: WIPERS, LIGHTS, SPOTS, AUX / BLOWER, A/C, ENGINE, HAZARD.
+- Control labels: WIPERS, LIGHTS, SPOTS, AUX. / BLOWER, A/C, ENGINE, HAZARD.
 
 ## Variants
 
@@ -39,6 +39,8 @@ The rejected high-inner-outlet arrangement is intentionally absent: the right in
 - `layout_b_column_v4_clearance_assembled.png` — assembled correction record; not a scale drawing or CNC input.
 - `layout_b_column_v5_clear_assembled.png` — oblique installed view with the original column/shroud visibly continuous from hub to factory relief.
 - `layout_b_column_v5_straight_on.png` — matching frontal installed view with the RHD hub/shaft centreline beneath the original meter.
+- `layout_b_column_v6_switches_clear_assembled.png` — selected oblique V6 view with the full column visually explicit and the complete compact control bank shifted down/right.
+- `layout_b_column_v6_switches_straight_on.png` — matching frontal V6 view with the same revised control-bank location and natural wheel occlusion.
 - `layout_c_central_vent_sill_assembled.png`
 - `layout_c_central_vent_sill_bare_shell.png`
 
@@ -76,7 +78,7 @@ The assembled images show perspective and genuine steering-wheel occlusion. The 
 
 `layout_b_column_v4_clearance_assembled.png` is a precise-object-edit correction record. It restores only the short horizontal matte-black steering-column/shroud segment from the hub into the factory lower-instrument relief; it must not be interpreted as a spoke or diagonal tube. It also lowers the complete 2 × 4 control bank enough to show approximately one actual selector-head diameter between V4 and the nearest selector. All other dashboard identity is frozen.
 
-The straight-on bare-shell overlay remains the visual placement control. With the nominal Ø22.5 selector head, the drawn V4-rim-to-nearest-head gap is **25.75 mm**, so the face layout passes the **≥20 mm** target. The smaller **9 mm** lower-rim-to-control-bank figure is to the conservative rectangular bank/label envelope, not to an actual selector head. The generated `../rear_envelope_fit_audit_20260801.md` and M6/M8/M9 require the bought parts to repeat that ≥20 mm visible-head clearance and prove ≥10 mm rear V4 retainer/neck/elbow/duct clearance to the real contact blocks, terminals and wiring. Do not move V4 farther right: its nominal visible-face / Ø75-reference end lands are already 6.5 / 12.5 mm.
+The V6 straight-on view now supersedes the earlier views for control-bank placement. With the nominal Ø22.5 selector head, the revised model gives **35.75 mm** vertical separation from the V4 lower rim to the nearest nominal head datum and **19 mm** to the conservative bank/label envelope. The generated `../rear_envelope_fit_audit_20260801.md` and M6/M8/M9 still require the bought parts to prove ≥20 mm visible-head clearance and ≥10 mm rear V4 retainer/neck/elbow/duct clearance to the real contact blocks, terminals and wiring. Do not move V4 farther right: its nominal visible-face / Ø75-reference end lands are already 6.5 / 12.5 mm.
 
 ## V5 / installed steering-column pair
 
@@ -88,3 +90,15 @@ The V5 pair makes the column relationship explicit in both useful viewpoints wit
 - These are photorealistic placement/occlusion records only. They do not supersede the Rev H coordinates, the original vehicle column/opening trace, or the M1/M3/M8/M9 full-depth physical checks.
 
 V5 prompt intent: built-in `image_gen`, local-reference `precise-object-edit`; treat owner photos `photos/20260317_165113.jpg` and `photos/20260323_190047.jpg` as the steering geometry controls, visibly connect the hub to the factory relief, align the straight-on hub/shaft beneath the OEM meter, and freeze all approved dashboard components and counts.
+
+## V6 / explicit side-view column and centred compact controls
+
+The V6 pair supersedes V5 as the selected installed visualization.
+
+- The oblique view makes the original matte-black steering column/shroud unambiguous from the existing wheel hub to the retained factory relief directly beneath the OEM speedometer.
+- In both views the complete bank moves as one unit—no function is rearranged—and remains exactly seven black selectors plus one separate red hazard.
+- Nominal control centres are X=1120 / 1160 / 1200 / 1240 mm and Y=78 / 20 mm. The 40 mm horizontal pitch compacts the group and shifts its visual centre right; both rows are 10 mm lower than V5.
+- The bank is centred in a 151 × 103 mm local envelope at X=1104 / Y=3. The lowest dashboard datum remains Y=3 in this zone, so the change uses the existing control channel and adds no dashboard height.
+- Labels remain WIPERS, LIGHTS, SPOTS, AUX. / BLOWER, A/C, ENGINE, HAZARD. The M6 1:1 trial must confirm the bought selector-head diameter, lever sweep, hand clearance and engraving before apertures are released.
+
+V6 prompt intent: built-in `image_gen`, local-reference `precise-object-edit`; preserve all approved components and vehicle identity, change only side-view column legibility and the whole switch-bank translation/compaction, and retain natural steering-wheel occlusion in the straight-on view.

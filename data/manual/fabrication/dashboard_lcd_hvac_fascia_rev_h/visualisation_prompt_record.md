@@ -32,3 +32,14 @@ Outputs:
 Mode: built-in `image_gen`, local-reference `precise-object-edit`.
 
 Correction intent: use `photos/20260317_165113.jpg` and `photos/20260323_190047.jpg` as the original-column geometry controls. In the oblique view, show one uninterrupted near-horizontal matte-black column/shroud from the existing wheel hub into the factory radiused relief beneath the OEM cluster. In the straight-on view, install one original-scale right-hand-drive wheel and the same continuous column, with the hub/shaft centreline directly beneath the retained OEM meter. Freeze the approved true 9-inch LCD, original glovebox, four vents, and seven-selector-plus-red-hazard allocation. These images show placement and occlusion only; the signed vehicle trace and M1/M3/M8/M9 mock-up remain controlling.
+
+## 2026-08-01 V6 / explicit column and centred compact control bank
+
+Outputs:
+
+- `layout_variants_20260801/layout_b_column_v6_switches_clear_assembled.png`
+- `layout_variants_20260801/layout_b_column_v6_switches_straight_on.png`
+
+Mode: built-in `image_gen`, local-reference `precise-object-edit`.
+
+Correction intent: in the oblique view, make the original matte-black column/shroud mechanically explicit from the existing wheel hub to the factory relief directly below the OEM meter. Move the complete control allocation down and right as one compact 2 x 4 group in both views, without rearranging functions. The nominal model now uses columns X=(1120.0, 1160.0, 1200.0, 1240.0), rows Y=78/20, and a 40 mm horizontal pitch. That places the bank centrally inside its existing shallow Y=3 local channel; it does not increase overall dashboard height. Preserve exactly seven black selectors plus one separate red hazard, labelled WIPERS / LIGHTS / SPOTS / AUX. and BLOWER / A/C / ENGINE / HAZARD. Freeze the true 9-inch LCD, four vents, OEM speedometer, OEM glovebox, steering-wheel scale, camera and vehicle identity. The bought head and lever sweep still require the M6 full-size trial before any aperture is released.

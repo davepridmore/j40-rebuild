@@ -7,8 +7,8 @@ Rev H is a coherent **nominal visual/template layout**, not a production-cleared
 ## V4 (top-right outlet) / selector-bank control
 
 - The straight-on bare-shell overlay is the visual placement control for V4; the assembled view is useful only for correcting the column and driver-eye appearance. Neither image is scale evidence.
-- With the reference Ø22.5 selector head, the nominal visible V4-rim-to-nearest-head gap is **25.75 mm**, so the face layout passes the **≥20 mm** target. M6 must repeat this with the bought head and its lever sweep.
-- The smaller lower-V4-rim to top-of-bank figure is **9 mm**. It is to the conservative rectangular bank/label envelope, not to the selector head itself; actual label and hand clearance remain part of M6.
+- With the reference Ø22.5 selector head, the nominal visible V4-rim-to-nearest-head gap is **35.75 mm**, so the face layout passes the **≥20 mm** target. M6 must repeat this with the bought head and its lever sweep.
+- The smaller lower-V4-rim to top-of-bank figure is **19 mm**. It is to the conservative rectangular bank/label envelope, not to the selector head itself; actual label and hand clearance remain part of M6.
 - Do not move V4 farther right. Its nominal visible-face land is already **6.5 mm** and its Ø75 opening-reference land is **12.5 mm** from the usable-face end. M1/M7 must confirm actual retained metal, return and retainer land.
 - M6 must install the purchased selector heads and prove at least **20 mm** from the visible V4 rim to the nearest actual selector head, including label and lever-sweep clearance.
 - M8/M9 must prove at least **10 mm** from the V4 retainer, neck, elbow and duct to the actual selector contact blocks, terminals and wiring. Route and loom retention must be checked at full depth, not inferred from the face drawing.
@@ -37,7 +37,7 @@ The project photographs corroborate the occupied zones behind the face, but none
 | V1 left outer | Face and end land are coherent. | **CONDITIONAL / HOLD.** Prove retainer, neck and elbow against the original glovebox body, hinge/latch and full opening sweep at M2/M7-M9. |
 | V2 left inner | Face clears the LCD; its nominal pod sits close to the glovebox placeholder. | **CRITICAL / HOLD.** The nominal envelopes have only about 1.5 mm vertical separation; directly mock the real glovebox sweep, vent retainer and duct at M2/M7-M9. |
 | V3 right inner | Face clears the LCD and nominal column keep-out. | **CRITICAL / HOLD.** Prove the real column/shroud/stalk/support sweep with at least **20 mm** to moving parts and **10 mm** to fixed hardware at M1/M3/M8-M9. |
-| V4 right outer + control bank | Visible rim to nominal Ø22.5 head is **25.75 mm**, passing the face target. | **CRITICAL / HOLD.** The outlet retainer/neck/elbow/duct must remain at least **10 mm** from the measured 68 mm-reference selector contact stacks, terminals, wiring and retained loom at M6/M8-M9. |
+| V4 right outer + control bank | Visible rim to nominal Ø22.5 head is **35.75 mm**, passing the face target. | **CRITICAL / HOLD.** The outlet retainer/neck/elbow/duct must remain at least **10 mm** from the measured 68 mm-reference selector contact stacks, terminals, wiring and retained loom at M6/M8-M9. |
 | OEM cluster / switch-bank boundary | Visible envelopes are adjacent but do not overlap. | **CONDITIONAL / HOLD.** Prove cluster plugs/harness service loops and every selector stack at full depth; nominal face spacing is not rear clearance. |
 
 ## Ordered HVAC unit status

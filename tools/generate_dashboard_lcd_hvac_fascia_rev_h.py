@@ -41,6 +41,12 @@ COLUMN_V5_ASSEMBLED_VIS_RELATIVE = Path(
 COLUMN_V5_STRAIGHT_VIS_RELATIVE = Path(
     "layout_variants_20260801/layout_b_column_v5_straight_on.png"
 )
+COLUMN_V6_ASSEMBLED_VIS_RELATIVE = Path(
+    "layout_variants_20260801/layout_b_column_v6_switches_clear_assembled.png"
+)
+COLUMN_V6_STRAIGHT_VIS_RELATIVE = Path(
+    "layout_variants_20260801/layout_b_column_v6_switches_straight_on.png"
+)
 LAYOUT_VARIANTS_README_RELATIVE = Path("layout_variants_20260801/README.md")
 
 # Rev H is a full-width, one-piece visible face. Its normal lower edge is Y=50.
@@ -108,14 +114,14 @@ MIN_STATIC_REAR_CLEARANCE = 10.0
 MIN_MOVING_COLUMN_CLEARANCE = 20.0
 MIN_DUCT_ROUNDNESS_PERCENT = 90.0
 # V4 (top-right outlet) remains at the far end of the face.  Its lower rim is
-# only 9 mm above the nominal top of the control-bank envelope.  That is a
+# 19 mm above the nominal top of the compacted control-bank envelope.  That is a
 # useful *visual* datum from the accepted straight-on overlay, not evidence of
 # a safe selector-head or rear-duct clearance.  Do not move it farther right:
 # the visible rim/end land is already 6.5 mm and the Ø75 reference cut/end land
 # is already 12.5 mm.  Actual head/label geometry must prove the larger visible
 # separation below, and the actual retainer/neck/elbow must miss the contact
 # stacks, terminals and wiring at full depth.
-V4_CONTROL_ENVELOPE_NOMINAL_GAP = 9.0
+V4_CONTROL_ENVELOPE_NOMINAL_GAP = 19.0
 MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE = 20.0
 VENT_CENTRES = (
     (OUTER_VENT_CENTRE_INSET, OUTER_VENT_CENTRE_Y),
@@ -146,17 +152,19 @@ STEERING_COLUMN_KEEP_OUT = (
 )
 
 # Exactly eight visible stations occupy a compact two-row bank at the extreme
-# right: seven maintained selectors plus a separate hazard. Both rows are kept
-# wholly to the right of the nominal steering-column swept keep-out. Flange,
-# anti-rotation, contact-block, duct and hand-clearance checks remain M6/M8/M9
-# HOLD until the physical components and vehicle are mocked up 1:1.
-CONTROL_BANK = (1076.0, 3.0, 179.0, 113.0)
+# right: seven maintained selectors plus a separate hazard. Rev H V6 compacts
+# the columns to 40 mm pitch and lowers both rows by 10 mm, centring the group
+# within the existing Y=3 local channel without increasing dashboard height.
+# Both rows remain wholly right of the nominal steering-column swept keep-out.
+# Flange, lever sweep, anti-rotation, contact-block, duct and hand-clearance
+# checks remain M6/M8/M9 HOLD until the actual parts are mocked up 1:1.
+CONTROL_BANK = (1104.0, 3.0, 151.0, 103.0)
 
 SELECTOR_DIAMETER = 22.5
 HAZARD_DIAMETER = 16.0
-CONTROL_COLUMNS = (1096.0, 1144.0, 1192.0, 1240.0)
-CONTROL_TOP_Y = 88.0
-CONTROL_BOTTOM_Y = 30.0
+CONTROL_COLUMNS = (1120.0, 1160.0, 1200.0, 1240.0)
+CONTROL_TOP_Y = 78.0
+CONTROL_BOTTOM_Y = 20.0
 CONTROL_LABEL_Y_OFFSET = 19.0
 SELECTOR_REAR_ENVELOPE = 68.0
 V4_NOMINAL_SELECTOR_HEAD_CLEARANCE = (
@@ -168,7 +176,7 @@ CONTROL_MAP = (
     ("S1", "WIPERS", "3-position maintained", "OFF / LOW / HIGH", "wiper interface; preserve automatic park"),
     ("S2", "LIGHTS", "3-position maintained", "OFF / SIDE / HEAD", "master lighting request; retained dip selects T1/T2"),
     ("S3", "SPOTS", "2-position maintained", "OFF / ON", "T5 spot-lamp relay command"),
-    ("S4", "AUX", "2-position maintained", "OFF / ON", "B2 reserved accessory relay command"),
+    ("S4", "AUX.", "2-position maintained", "OFF / ON", "B2 reserved accessory relay command"),
     ("S5", "BLOWER", "3-position maintained", "OFF / LOW / HIGH", "low-current request to measured HVAC resistor/relay/PWM controller; never blower-motor current"),
     ("S6", "A/C", "2-position maintained", "OFF / ON", "B1 compressor request through evaporator thermostat/freeze control and trinary/pressure safeties"),
     ("S7", "ENGINE", "2-position maintained", "RUN / STOP", "low-current validated fuel-stop interface; key OFF authoritative; manual stop cable fallback"),
@@ -218,9 +226,12 @@ def outer_profile_points() -> list[tuple[float, float]]:
     """
     left_inner_x = VENT_CENTRES[1][0]
     right_inner_x = VENT_CENTRES[2][0]
+    control_x0, _, control_w, _ = CONTROL_BANK
+    control_x1 = control_x0 + control_w
     return [
         (0, PANEL_H), (PANEL_W, PANEL_H),
-        (PANEL_W, 12), (1252, 3), (1084, 3), (1076, 12), (1076, MAIN_LOWER_Y),
+        (PANEL_W, 12), (control_x1, 3), (control_x0, 3),
+        (control_x0 - 8, 12), (control_x0 - 8, MAIN_LOWER_Y),
         *steering_column_relief_points(),
         (right_inner_x + INNER_VENT_POD_HALF_W, MAIN_LOWER_Y),
         *inner_vent_pod_lower_points(right_inner_x),
@@ -442,7 +453,7 @@ def write_svg() -> None:
 <text x="78" y="613" class="small">• LCD and inner-pair midpoint are exactly on fascia CL. Inner faces sit wholly below the LCD bezel and remain mirrored ±{INNER_VENT_CENTRE_OFFSET:.0f} mm.</text>
 <text x="78" y="638" class="small">• RHD column axis X={STEERING_COLUMN_AXIS_X:.1f}; nominal 130 × 105 swept keep-out and U-relief are HOLD to direct M1/M3/M9 trace.</text>
 <text x="78" y="663" class="small">• One-piece 1.5 mm CR4 visible face; rear screen carrier and stiffeners transfer load to retained dashboard structure.</text>
-<text x="78" y="688" class="small">• Extreme-right two-row bank: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE/HAZARD; all cuts HOLD.</text>
+<text x="78" y="688" class="small">• Extreme-right two-row bank: WIPERS/LIGHTS/SPOTS/AUX. over BLOWER/A/C/ENGINE/HAZARD; all cuts HOLD.</text>
 </svg>'''
     (OUT / "dashboard_lcd_hvac_fascia_rev_h_dimensioned_front.svg").write_text(svg, encoding="utf-8")
 
@@ -563,7 +574,7 @@ def write_pdf() -> None:
         f"The normal face is {PANEL_H-MAIN_LOWER_Y:.0f} mm high. The two identical vent pods alone descend to Y={PANEL_MIN_Y:.0f}; prove their {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local projection against knees, levers and four rear ducts at M8/M9.",
         f"Outer vents remain high at Y={OUTER_VENT_CENTRE_Y:.1f}, with their tops at the LCD-top datum Y={OUTER_VENT_TOP_DATUM_Y:.1f}. Original glovebox and speedometer stay in their factory openings; M2/M3 direct traces override this schematic.",
         f"A nominal radiused U-relief at the schematic steering axis X={STEERING_COLUMN_AXIS_X:.1f} clears the RHD column; the installed factory position, trace and swept envelope are M1/M3/M9 HOLD.",
-        "All controls sit fully right of the column keep-out in two compact rows: WIPERS/LIGHTS/SPOTS/AUX above BLOWER/A/C/ENGINE/red HAZARD.",
+        "All controls sit fully right of the column keep-out in two compact rows: WIPERS/LIGHTS/SPOTS/AUX. above BLOWER/A/C/ENGINE/red HAZARD.",
         f"V4 is visually controlled by the straight-on overlay. The nominal Ø22.5 head-to-rim gap is {V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm (>= {MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f}); the smaller {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm gap is to the conservative bank/label envelope. M6 verifies actual heads and M8/M9 prove >= {MIN_STATIC_REAR_CLEARANCE:.0f} rear clearance. Do not move V4 farther right: 6.5/12.5 end lands.",
     ]
     y = 84 * mm
@@ -576,25 +587,25 @@ def write_pdf() -> None:
     c.drawString(15 * mm, 12 * mm, "DO NOT CUT VEHICLE METAL OR ANY HOLD_* APERTURE FROM NOMINAL COORDINATES. CUT ONLY THE DISPOSABLE FIT TEMPLATE BEFORE M1-M10 SIGN-OFF.")
     c.showPage()
 
-    # Page 2 - both owner photographs and matched overlays.
+    # Page 2 - owner-photo bases and the selected V6 visual pair.
     c.setFillColor(HexColor("#20262b"))
     c.setFont("Helvetica-Bold", 18)
-    c.drawString(15 * mm, page_h - 16 * mm, "Owner-photo basis and matching Rev H visual intent")
+    c.drawString(15 * mm, page_h - 16 * mm, "Owner-photo basis and selected Rev H V6 visual intent")
     c.setFont("Helvetica", 8.5)
     c.drawRightString(page_w - 15 * mm, page_h - 16 * mm, "Images establish appearance only - never scale for CNC")
     labels = [
-        ("ASSEMBLED RHD OWNER PHOTO", 15, 263), ("ASSEMBLED REV H OVERLAY", 215, 263),
-        ("BARE-SHELL OWNER PHOTO", 15, 148), ("BARE-SHELL REV H OVERLAY", 215, 148),
+        ("ASSEMBLED RHD OWNER PHOTO", 15, 263), ("SELECTED REV H V6 OBLIQUE", 215, 263),
+        ("BARE-SHELL OWNER PHOTO", 15, 148), ("SELECTED REV H V6 STRAIGHT-ON", 215, 148),
     ]
     c.setFont("Helvetica-Bold", 9)
     for label, x_pos, y_pos in labels:
         c.drawString(x_pos * mm, y_pos * mm, label)
     draw_image_fit(c, ASSEMBLED_BASE_PHOTO, 15 * mm, 166 * mm, 190 * mm, 88 * mm)
-    draw_image_fit(c, OUT / "dashboard_lcd_hvac_fascia_rev_h_photo_overlay_assembled.png", 215 * mm, 166 * mm, 190 * mm, 88 * mm)
+    draw_image_fit(c, OUT / COLUMN_V6_ASSEMBLED_VIS_RELATIVE, 215 * mm, 166 * mm, 190 * mm, 88 * mm)
     draw_image_fit(c, BARE_BASE_PHOTO, 15 * mm, 51 * mm, 190 * mm, 88 * mm)
-    draw_image_fit(c, OUT / "dashboard_lcd_hvac_fascia_rev_h_photo_overlay_bare_shell.png", 215 * mm, 51 * mm, 190 * mm, 88 * mm)
+    draw_image_fit(c, OUT / COLUMN_V6_STRAIGHT_VIS_RELATIVE, 215 * mm, 51 * mm, 190 * mm, 88 * mm)
     c.setFont("Helvetica", 7.5)
-    c.drawString(15 * mm, 39 * mm, "Visual check: high end vents plus a lowered symmetric inner pair, true 9-inch centre screen, untouched OEM items, RHD column relief and extreme-right controls.")
+    c.drawString(15 * mm, 39 * mm, "Selected V6 pair: explicit continuous RHD column/shroud, true 9-inch centre screen, untouched OEM items and the compact control bank moved down/right.")
     c.drawString(15 * mm, 32 * mm, "The oblique driver view naturally foreshortens and partly masks the screen; M4 sample measurement, not apparent photo size, controls the LCD cut.")
     c.drawString(15 * mm, 25 * mm, f"V4 nominal Ø22.5-head gap={V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm; {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm is to the bank/label envelope. Straight-on view + M6/M8/M9 control release.")
     c.setFillColor(HexColor("#8b1e1e"))
@@ -759,7 +770,7 @@ def write_csvs() -> None:
             ["steering-column axis", STEERING_COLUMN_AXIS_X, 0, "", STEERING_COLUMN_KEEP_OUT[3], "HOLD_STEERING_COLUMN_AXIS", "nominal alignment with retained cluster centre only; direct M1/M3/M9 trace controls"],
             ["steering-column swept keep-out", STEERING_COLUMN_KEEP_OUT[0], STEERING_COLUMN_KEEP_OUT[1], STEERING_COLUMN_KEEP_OUT[2], STEERING_COLUMN_KEEP_OUT[3], "HOLD_STEERING_COLUMN_SWEPT_KEEP_OUT", "nominal no-component envelope including shroud/stalk movement; not production geometry"],
             ["steering-column lower-edge relief", STEERING_COLUMN_AXIS_X - STEERING_COLUMN_RELIEF_HALF_W, MAIN_LOWER_Y, 2 * STEERING_COLUMN_RELIEF_HALF_W, STEERING_COLUMN_RELIEF_RISE, "HOLD_STEERING_COLUMN_RELIEF_EDGE", "radiused U-relief intent; replace with direct trace plus signed running clearance"],
-            ["right control bank envelope", CONTROL_BANK[0], CONTROL_BANK[1], CONTROL_BANK[2], CONTROL_BANK[3], "HOLD_CONTROL_BANK_ENVELOPE", f"two rows at extreme right: S1-S4 top, S5-S8 bottom; exact 7 selectors + hazard; 48 mm horizontal and 58 mm vertical pitch; V4 nominal rim-to-bank-envelope gap is only {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm; M6/M8/M9 HOLD"],
+            ["right control bank envelope", CONTROL_BANK[0], CONTROL_BANK[1], CONTROL_BANK[2], CONTROL_BANK[3], "HOLD_CONTROL_BANK_ENVELOPE", f"two rows at extreme right: S1-S4 top, S5-S8 bottom; exact 7 selectors + hazard; {CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0]:.0f} mm horizontal and {CONTROL_TOP_Y-CONTROL_BOTTOM_Y:.0f} mm vertical pitch; V4 nominal rim-to-bank-envelope gap is {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm; M6/M8/M9 HOLD"],
         ]
         for index, (vent_x, vent_y) in enumerate(VENT_CENTRES, start=1):
             if index in (1, 4):
@@ -804,7 +815,7 @@ def write_csvs() -> None:
             ["M3", "OEM speedometer/cluster exact factory opening, outline, mounts, depth, cables/wiring, column-axis relationship and seated-driver sight line", f"retain original assembly without relocation; schematic placeholder cluster centre and column axis X={STEERING_COLUMN_AXIS_X:.1f} is not a vehicle dimension", "direct trace/rubbing of the existing factory opening and installed column relationship, rear depth gauge and driver-view photos; copied trace replaces every nominal cluster/axis coordinate", "HOLD"],
             ["M4", "LCD active area, aperture, bezel and corner radii", "9-inch 16:9 active 199.2 x 112.1; 228.6 diagonal; aperture 202 x 115 reference", "manufacturer mechanical drawing and caliper confirmation", "HOLD"],
             ["M5", "LCD rear body, mount centres, mass, connectors, cable bend, cooling and service removal", f"screen centre X{PANEL_CENTRELINE_X:.1f}/Y{LCD_CY:.1f}; exactly coincident with fascia centreline and inner-vent-pair midpoint; separate rear structural carrier", "rear-body rubbing, depth record, bracket mock-up, centreline check and cabin-side removal test", "HOLD"],
-            ["M6", "seven bought Schneider-style selectors and separate hazard: part code, actual head/lever sweep, bush, flange, anti-rotation and contact-block stack", f"two rows of four; 48 mm horizontal and 58 mm vertical pitch; selector panel cut Ø22.5; 68 mm rear envelope; hazard Ø16 reference; V4 nominal Ø22.5-head-to-rim gap={V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm passes the ≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} face target, while the {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm figure is to the bank/label envelope; actual selector heads/labels still control", "part-code photo plus caliper sheet for every part, including actual head diameter/sweep and contact-block depth; 1:1 two-row extreme-right trial including the V4 visible-rim-to-nearest-selector-head measurement and hand/label clearance", "HOLD"],
+            ["M6", "seven bought Schneider-style selectors and separate hazard: part code, actual head/lever sweep, bush, flange, anti-rotation and contact-block stack", f"two rows of four; {CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0]:.0f} mm horizontal and {CONTROL_TOP_Y-CONTROL_BOTTOM_Y:.0f} mm vertical pitch; selector panel cut Ø22.5; 68 mm rear envelope; hazard Ø16 reference; V4 nominal Ø22.5-head-to-rim gap={V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm passes the ≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} face target, while the {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm figure is to the bank/label envelope; actual selector heads/labels still control", "part-code photo plus caliper sheet for every part, including actual head diameter/sweep and contact-block depth; 1:1 two-row extreme-right trial including the V4 visible-rim-to-nearest-selector-head measurement and hand/label clearance", "HOLD"],
             ["M7", "four matched generic vent faces, panel opening, retention, spigot OD and rear depth", "published silver/chrome ABS family: Ø87 face; Ø75 panel-opening reference; V4 must remain at the current far-right datum because its 6.5 mm visible-rim and 12.5 mm Ø75-cut end lands cannot be reduced", "one received four-piece batch, seller drawing/listing, caliper record and fitted retainer trial for all four, including V4 retainer/neck envelope", "HOLD"],
             ["M8", "four ducts, plenum balance, actual hose ID/bend radii, selector rear stacks, steering-column support and rear/service clearances", f"sampled vent spigot controls duct size; lowered inner outlets use two local pods down to Y={PANEL_MIN_Y:.0f}; ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm to fixed LCD/cluster/support parts, ≥{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm to the signed moving column/shroud/stalk sweep, duct ovalisation no worse than {MIN_DUCT_ROUNDNESS_PERCENT:.0f}% of round ID, and V4 retainer/neck/elbow/duct ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm from selector contact blocks, terminals and wiring", f"full rear 1:1 mock-up with all four ducts, both {MAIN_LOWER_Y-PANEL_MIN_Y:.0f} mm local pod drops, actual V4 retainer/neck/elbow, selector contact stacks/terminals/wiring and column through full sweep; caliper/feeler photos at the worst points plus duct minor-axis measurements and blower-flow comparison", "HOLD until every stated minimum passes"],
             ["M9", "complete full-size prototype and driver/service clearances", f"one-piece shallow normal face with two lowered symmetric inner-vent pods; as-built visible V2/V3 rim-to-LCD gap ≥{MIN_INNER_VENT_LCD_VISIBLE_GAP:.0f} mm; V3 hardware/duct keeps ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm to fixed cluster parts and ≥{MIN_MOVING_COLUMN_CLEARANCE:.0f} mm to the signed column/shroud/stalk swept envelope; V4 must retain ≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} mm visible rim-to-nearest actual selector head and ≥{MIN_STATIC_REAR_CLEARANCE:.0f} mm rear clearance to control contact blocks/terminals/wiring; OEM glovebox/cluster remain in factory openings", "owner-signed full-depth prototype: seated-driver steering lock-to-lock/stalk sweep, reach, knee/gear/lever/column clearance at both pods, glovebox sweep, V4/selector visual clearance, rear V4 duct/control-stack clearance, centre/symmetry, visibility and removal checks; ruler/feeler photos proving each minimum at the tightest point", "HOLD until every stated minimum passes"],
@@ -826,7 +837,7 @@ def write_csvs() -> None:
             ["generic silver vent family", "face Ø87; panel opening Ø75", "Joom listing; cross-check only, generic variants have spigot/retainer variation", "PUBLISHED_LISTING_REFERENCE", "HOLD", "M7 received matched four-piece sample batch + calipers", "https://www.joom.com/en/products/68c8f9fa6dffb3012ca80d30"],
             ["high outer / lowered inner vent layout", f"centres={VENT_CENTRES}; outer bezel-top Y={OUTER_VENT_TOP_DATUM_Y:.1f}; inner face-top Y={INNER_VENT_CENTRE_Y+VENT_FACE_DIAMETER/2:.1f}; pod-bottom Y={PANEL_MIN_Y:.1f}", "Rev H layout decision; inner pair is exactly symmetric about LCD/fascia centreline and clears the LCD vertically; outer faces remain high near usable ends", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for vehicle, bought-part and driver-clearance transfer", "M1 + M7 + M8 + M9", ""],
             ["V4 right-outlet / control-bank relationship", f"nominal Ø22.5 head gap={V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f}; lower V4 rim to bank/label envelope={V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f}; end lands visible/cut=6.5/12.5", f"Straight-on bare-shell overlay controls visual placement only; the nominal head gap passes the ≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} face-layout target, while {V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm is to the conservative bank/label envelope; V4 cannot move farther right without reducing already-minimal end lands", "NOMINAL_VISUAL_RELATION_ONLY", "HOLD", f"M6 actual selector head clearance ≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f}; M7 vent sample; M8-M9 rear retainer/neck/elbow/duct clearance ≥{MIN_STATIC_REAR_CLEARANCE:.0f} to contact blocks/terminals/wiring", ""],
-            ["extreme-right two-row control bank", f"columns X={CONTROL_COLUMNS}; top Y={CONTROL_TOP_Y}; bottom Y={CONTROL_BOTTOM_Y}; 48 mm horizontal / 58 mm vertical pitch", "Rev H packaging decision: S1-S4 top and S5-S8 bottom, wholly right of the nominal steering-column keep-out", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for physical part, duct, column and driver checks", "M6 + M8 + M9", ""],
+            ["extreme-right two-row control bank", f"columns X={CONTROL_COLUMNS}; top Y={CONTROL_TOP_Y}; bottom Y={CONTROL_BOTTOM_Y}; {CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0]:.0f} mm horizontal / {CONTROL_TOP_Y-CONTROL_BOTTOM_Y:.0f} mm vertical pitch", "Rev H V6 packaging decision: S1-S4 top and S5-S8 bottom, compacted and centred in the existing shallow channel, wholly right of the nominal steering-column keep-out", "DESIGN_LOCKED_IN_NOMINAL_MODEL", "HOLD for physical part, lever sweep, duct, column and driver checks", "M6 + M8 + M9", ""],
             ["Schneider-style selector aperture", "Ø22.5", "Schneider Electric Harmony XB4 published mounting diameter", "VERIFIED_PRODUCT_STANDARD", "HOLD to bought-part confirmation", "M6 part-code photo + calipers", "https://shop.se.com/pro/us/en/product/selector-switch-harmony-xb4-black-22mm-3-positions-stay-put-2no/"],
             ["Schneider-style selector rear envelope", "68", "Schneider Electric Harmony XB4 published complete depth", "VERIFIED_PRODUCT_STANDARD", "HOLD to bought-part confirmation", "M6 part-code photo + rear-stack trial", "https://shop.se.com/pro/us/en/product/selector-switch-harmony-xb4-black-22mm-3-positions-stay-put-2no/"],
             ["hazard aperture", "Ø16 nominal", "no selected/published hazard part drawing", "REFERENCE_ONLY", "HOLD", "M6 actual part", ""],
@@ -910,6 +921,17 @@ Outputs:
 Mode: built-in `image_gen`, local-reference `precise-object-edit`.
 
 Correction intent: use `photos/20260317_165113.jpg` and `photos/20260323_190047.jpg` as the original-column geometry controls. In the oblique view, show one uninterrupted near-horizontal matte-black column/shroud from the existing wheel hub into the factory radiused relief beneath the OEM cluster. In the straight-on view, install one original-scale right-hand-drive wheel and the same continuous column, with the hub/shaft centreline directly beneath the retained OEM meter. Freeze the approved true 9-inch LCD, original glovebox, four vents, and seven-selector-plus-red-hazard allocation. These images show placement and occlusion only; the signed vehicle trace and M1/M3/M8/M9 mock-up remain controlling.
+
+## 2026-08-01 V6 / explicit column and centred compact control bank
+
+Outputs:
+
+- `layout_variants_20260801/layout_b_column_v6_switches_clear_assembled.png`
+- `layout_variants_20260801/layout_b_column_v6_switches_straight_on.png`
+
+Mode: built-in `image_gen`, local-reference `precise-object-edit`.
+
+Correction intent: in the oblique view, make the original matte-black column/shroud mechanically explicit from the existing wheel hub to the factory relief directly below the OEM meter. Move the complete control allocation down and right as one compact 2 x 4 group in both views, without rearranging functions. The nominal model now uses columns X={CONTROL_COLUMNS}, rows Y={CONTROL_TOP_Y:.0f}/{CONTROL_BOTTOM_Y:.0f}, and a {CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0]:.0f} mm horizontal pitch. That places the bank centrally inside its existing shallow Y={CONTROL_BANK[1]:.0f} local channel; it does not increase overall dashboard height. Preserve exactly seven black selectors plus one separate red hazard, labelled WIPERS / LIGHTS / SPOTS / AUX. and BLOWER / A/C / ENGINE / HAZARD. Freeze the true 9-inch LCD, four vents, OEM speedometer, OEM glovebox, steering-wheel scale, camera and vehicle identity. The bought head and lever sweep still require the M6 full-size trial before any aperture is released.
 """
     (OUT / "visualisation_prompt_record.md").write_text(text, encoding="utf-8")
 
@@ -993,11 +1015,11 @@ This package is ready to send for **quotation and a full-size disposable CNC tem
 - The upper band remains **OEM glovebox | centred 9-inch LCD | OEM speedometer**. The outer vents occupy the far ends; the lowered inner pair uses otherwise empty space below and either side of the LCD without overlapping its bezel.
 - The outer visible vent faces sit **6.5 mm** from the nominal usable-face ends; their Ø75 reference cuts retain **12.5 mm**. These tight lands are template/sample controlled and the outlets never move into the side returns.
 - The nominal RHD steering-column axis is **X={STEERING_COLUMN_AXIS_X:.1f}**, aligned with the retained cluster centre. The lower edge has a **130 mm-wide x 32 mm-rise** radiused U-relief and a nominal **130 x 105 mm** swept keep-out. These dimensions communicate packaging intent only: M1/M3/M9 must directly trace the installed column, shroud, stalks, bracket and full movement before any production cut. No switch, duct, carrier or rear stack may enter the signed keep-out.
-- At the extreme right, fully outside that keep-out, exactly seven industrial rotary selectors plus one separate red hazard form **two rows of four**. Nominal columns are **X={CONTROL_COLUMNS}**, with top **Y={CONTROL_TOP_Y:.0f}** and bottom **Y={CONTROL_BOTTOM_Y:.0f}**: 48 mm horizontal / 58 mm vertical pitch. Schneider Harmony XB4 reference: **Ø22.5 panel cut** and **68 mm rear envelope**. Head/lever sweep, anti-rotation, right-outlet duct route, rear stacks and driver clearance remain M6/M8/M9 HOLD. Engrave labels 3 mm high with black infill.
+- At the extreme right, fully outside that keep-out, exactly seven industrial rotary selectors plus one separate red hazard form **two rows of four**. Nominal columns are **X={CONTROL_COLUMNS}**, with top **Y={CONTROL_TOP_Y:.0f}** and bottom **Y={CONTROL_BOTTOM_Y:.0f}**: {CONTROL_COLUMNS[1]-CONTROL_COLUMNS[0]:.0f} mm horizontal / {CONTROL_TOP_Y-CONTROL_BOTTOM_Y:.0f} mm vertical pitch. The V6 bank is compacted, shifted right and lowered within the same shallow Y={CONTROL_BANK[1]:.0f} control channel; dashboard height is unchanged. Schneider Harmony XB4 reference: **Ø22.5 panel cut** and **68 mm rear envelope**. Head/lever sweep, anti-rotation, right-outlet duct route, rear stacks and driver clearance remain M6/M8/M9 HOLD. Engrave labels 3 mm high with black infill.
 
 ## V4 / right-side rear-envelope control
 
-The straight-on bare-shell overlay is the controlling visual placement view for the top-right outlet (V4). With the nominal Ø{SELECTOR_DIAMETER:.1f} head, the drawn V4-rim-to-nearest-selector gap is **{V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm**, so it passes the **≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} mm** face-layout target. The smaller **{V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm** relationship is to the conservative rectangular bank/label envelope, not to the selector head. M6 must repeat the head, label and lever-sweep check using the bought controls. M8/M9 must prove at least **{MIN_STATIC_REAR_CLEARANCE:.0f} mm** from V4's actual retainer, neck, elbow and duct to selector contact blocks, terminals and wiring. V4 must not be moved farther right: its nominal end lands are already 6.5 mm visible-face / 12.5 mm Ø75 opening-reference. See `rear_envelope_fit_audit_20260801.md`; the full-depth M1-M9 mock-up controls release.
+The V6 straight-on installed view supersedes the earlier views for control-bank placement; the straight-on bare-shell overlay remains the visual placement control for the fixed top-right outlet (V4). With the nominal Ø{SELECTOR_DIAMETER:.1f} head, the drawn V4-rim-to-nearest-selector gap is **{V4_NOMINAL_SELECTOR_HEAD_CLEARANCE:.2f} mm**, so it passes the **≥{MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE:.0f} mm** face-layout target. The smaller **{V4_CONTROL_ENVELOPE_NOMINAL_GAP:.0f} mm** relationship is to the conservative rectangular bank/label envelope, not to the selector head. M6 must repeat the head, label and lever-sweep check using the bought controls. M8/M9 must prove at least **{MIN_STATIC_REAR_CLEARANCE:.0f} mm** from V4's actual retainer, neck, elbow and duct to selector contact blocks, terminals and wiring. V4 must not be moved farther right: its nominal end lands are already 6.5 mm visible-face / 12.5 mm Ø75 opening-reference. See `rear_envelope_fit_audit_20260801.md`; the full-depth M1-M9 mock-up controls release.
 
 ## Exact visible controls
 
@@ -1006,7 +1028,7 @@ The straight-on bare-shell overlay is the controlling visual placement view for 
 | Top 1/4 | WIPERS | 3-position: OFF / LOW / HIGH | Parks the wipers in OFF and selects low or high wipe. |
 | Top 2/4 | LIGHTS | 3-position: OFF / SIDE / HEAD | Selects master exterior-light state; original dip/high-low remains. |
 | Top 3/4 | SPOTS | 2-position: OFF / ON | Commands T5 spot-lamp relay. |
-| Top 4/4 | AUX | 2-position: OFF / ON | Commands reserved accessory relay B2. |
+| Top 4/4 | AUX. | 2-position: OFF / ON | Commands reserved accessory relay B2. |
 | Bottom 1/4 | BLOWER | 3-position: OFF / LOW / HIGH | Sends OFF/LOW/HIGH requests to the measured blower controller. |
 | Bottom 2/4 | A/C | 2-position: OFF / ON | Requests B1 compressor cooling through thermostat/trinary/pressure safeties. |
 | Bottom 3/4 | ENGINE | 2-position: RUN / STOP | Sends a low-current command through the validated fuel-stop interface; key OFF remains authoritative and the manual cable remains the fallback. |
@@ -1127,7 +1149,7 @@ def validate() -> None:
     assert len(positions) == 8
     assert positions[:4] == [(x, CONTROL_TOP_Y) for x in CONTROL_COLUMNS]
     assert positions[4:] == [(x, CONTROL_BOTTOM_Y) for x in CONTROL_COLUMNS]
-    assert all(CONTROL_COLUMNS[index + 1] - CONTROL_COLUMNS[index] == 48.0 for index in range(3))
+    assert all(CONTROL_COLUMNS[index + 1] - CONTROL_COLUMNS[index] == 40.0 for index in range(3))
     assert CONTROL_TOP_Y - CONTROL_BOTTOM_Y == 58.0
     assert CONTROL_BANK[0] > STEERING_COLUMN_KEEP_OUT[0] + STEERING_COLUMN_KEEP_OUT[2]
     assert SPEEDO_ENVELOPE[0] + SPEEDO_ENVELOPE[2] <= CONTROL_BANK[0]
@@ -1141,7 +1163,7 @@ def validate() -> None:
     assert CONTROL_BOTTOM_Y + CONTROL_LABEL_Y_OFFSET < CONTROL_TOP_Y - SELECTOR_DIAMETER / 2
     assert OUTER_VENT_CENTRE_Y - VENT_FACE_DIAMETER / 2 > CONTROL_TOP_Y + SELECTOR_DIAMETER / 2
     assert OUTER_VENT_CENTRE_Y - VENT_FACE_DIAMETER / 2 - bank_y1 == V4_CONTROL_ENVELOPE_NOMINAL_GAP
-    assert V4_NOMINAL_SELECTOR_HEAD_CLEARANCE == 25.75
+    assert V4_NOMINAL_SELECTOR_HEAD_CLEARANCE == 35.75
     assert V4_NOMINAL_SELECTOR_HEAD_CLEARANCE >= MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE
     assert V4_CONTROL_ENVELOPE_NOMINAL_GAP < MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE
     assert MIN_V4_VISIBLE_SELECTOR_HEAD_CLEARANCE >= MIN_MOVING_COLUMN_CLEARANCE
@@ -1168,6 +1190,8 @@ def validate() -> None:
         CORRECTED_ASSEMBLED_VIS_RELATIVE,
         COLUMN_V5_ASSEMBLED_VIS_RELATIVE,
         COLUMN_V5_STRAIGHT_VIS_RELATIVE,
+        COLUMN_V6_ASSEMBLED_VIS_RELATIVE,
+        COLUMN_V6_STRAIGHT_VIS_RELATIVE,
         LAYOUT_VARIANTS_README_RELATIVE,
     ):
         assert (OUT / relative).exists(), relative
@@ -1184,6 +1208,8 @@ def package() -> None:
             CORRECTED_ASSEMBLED_VIS_RELATIVE,
             COLUMN_V5_ASSEMBLED_VIS_RELATIVE,
             COLUMN_V5_STRAIGHT_VIS_RELATIVE,
+            COLUMN_V6_ASSEMBLED_VIS_RELATIVE,
+            COLUMN_V6_STRAIGHT_VIS_RELATIVE,
         ):
             archive.write(OUT / relative, f"dashboard_lcd_hvac_fascia_rev_h/{relative.as_posix()}")
 
