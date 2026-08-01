@@ -9453,7 +9453,7 @@
       },
       {
         path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph03_bracket_correct_installed.png",
-        caption: "PH03 — Rev G installation proposal on the later chassis: at each side the same M8 bolt passes through the original frame top-return hole, sleeved EPDM isolator and short direct ear fixed to the removable radiator side rail; the enlarged insets show that continuous frame-to-rail connection. A lower saddle beneath each same rail carries the weight. No intermediate or transverse radiator carrier.",
+        caption: "PH03 — Corrected Rev G installation proposal: both original inward top-return plates and round holes remain visible. At each side, follow the vertical M8/washer stack through that original hole and sleeved EPDM isolator into the independent black 4 mm ear, which continues directly to the radiator side rail. The nearby inboard fastener joins the ear to the rail; it is not a substitute chassis pickup. A lower saddle beneath that same rail carries the weight. No intermediate or transverse radiator carrier.",
         specific_component: "Rev G direct-side-ear J40 installation proposal",
       },
       {
