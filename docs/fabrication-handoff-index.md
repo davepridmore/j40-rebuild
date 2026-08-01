@@ -18,9 +18,9 @@ The old rubber package files remain in the repository as supporting reference ma
 
 Current specification and packaging gate: [data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md)
 
-Current appearance baseline: [layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/layout_variants_20260801/layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png)
+Current appearance baseline: [layout_b_column_v13_momo_two_outer_vent_oem_cluster_centered_lcd_straight_on.png](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/layout_variants_20260801/layout_b_column_v13_momo_two_outer_vent_oem_cluster_centered_lcd_straight_on.png)
 
-Rev I keeps the original shallow full-width dashboard height, transfers the original Toyota glovebox and complete speedometer cluster, positions the cluster immediately above the original steering-column shroud on their common vehicle-traced axis, centres a true 9-inch active image, uses exactly two high outer/end circular outlets, and retains seven black selectors plus the separate red hazard. It is ready for physical tracing, bought-component measurement, full-size/full-depth mock-up and CNC quotation only. Production vehicle cutting and final component apertures remain HOLD until M1–M10 are signed.
+Rev I targets the original shallow full-width dashboard height, transfers the original Toyota glovebox and complete speedometer cluster, positions the cluster immediately above the original steering-column shroud on their common vehicle-traced axis, centres a true 9-inch active image on the complete fascia face, uses exactly two high outer/end circular outlets, and retains seven black selectors plus the separate red hazard. V13 is a visual target, not a dimensional drawing. It is ready for physical tracing, bought-component measurement, full-size/full-depth mock-up and CNC quotation only. Production vehicle cutting and final component apertures remain HOLD until M1–M10 are signed.
 
 ## Dashboard 9-inch LCD / HVAC Fascia - Rev G (superseded four-outlet record)
 

@@ -48,7 +48,7 @@ Historical cabin distribution record; do not buy or fabricate from these four-ou
 
 ## Owner Two-Outlet Revision - 2026-08-01 Rev I Direction
 
-The owner now prefers a smaller cabin package and a factory-height fascia with exactly two occupant outlets. This supersedes only the Rev H four-outlet distribution; retain the central LCD, original glovebox/speedometer transfer, factory column relief and control-bank decisions in Rev I.
+The owner now prefers a smaller cabin package and a factory-height fascia with exactly two occupant outlets. The active front-face target is the [Rev I V13 specification](../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md): the LCD active image is centred on the complete fascia face, while the two end outlets are positioned independently on their measured fixed lands. This supersedes only the Rev H four-outlet distribution; retain the original glovebox/speedometer transfer, factory column relief and control-bank decisions in Rev I.
 
 - Retain two matched, generously sized directional outlets high at the fixed outer/end regions, one aimable at the passenger and one at the driver. Delete the Rev H inner/lower pair and its pods. Use two supported end branches and prove useful balanced flow, bend radius and service clearance in the full-depth mock-up.
 - Seek a genuinely compact 12V cooling evaporator with two real duct takeoffs, or a compact core/case with a sealed two-takeoff plenum. Do not interpret two decorative front louvers as proof of two duct connections.

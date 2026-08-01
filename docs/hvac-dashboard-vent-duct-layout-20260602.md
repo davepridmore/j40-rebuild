@@ -11,6 +11,7 @@ Active layout controls:
 | Item | Active requirement |
 | --- | --- |
 | Occupant outlets | Two matched, generously sized directional outlets on one high datum at the fixed outer/end fascia regions, one independently aimable toward the passenger and one toward the driver; no central/lower outlets or pods |
+| LCD / fascia relationship | Centre the true 9-inch active image on the signed complete fascia face in both axes; determine the two vent positions separately from the measured fixed end lands and rear packages, not from their midpoint |
 | Evaporator connection | Two genuine duct takeoffs of measured OD, or a sealed two-takeoff plenum designed for the selected compact core/case |
 | Ducting | Two supported end branches with the largest practical bend radius; prove useful balanced airflow and service clearance with both complete runs connected; no Y split and no capped four-port case unless bench airflow and freeze-control tests pass |
 | Demist | Retain the original heater/demist system or add dedicated small plenum takeoffs; do not count the two face outlets as the only windscreen-clearing provision |

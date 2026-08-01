@@ -1,10 +1,10 @@
 # Symmetric dashboard layout study — 2026-08-01
 
-This folder contains the original paired Rev H four-outlet studies and the later standalone Rev I studies. **V11 is the current owner-selected straight-on appearance direction:** exactly two high outer/end outlets, the original Toyota speedometer and glovebox, a central 9-inch LCD, the purchased MOMO wheel, the original shallow dashboard height, the factory steering-column relief and the complete compact seven-selector-plus-hazard bank. V11 lowers the complete OEM cluster to its owner-confirmed factory position immediately above the column shroud. V9 and V10 are retained only as superseded design history. The controlled current package and space audit are in the [Rev I specification](../../dashboard_lcd_hvac_fascia_rev_i/README.md).
+This folder contains the original paired Rev H four-outlet studies and the later standalone Rev I studies. **V13 is the current owner-selected straight-on appearance direction:** exactly two high outer/end outlets, the original Toyota speedometer and glovebox, a geometrically centred 9-inch LCD, the purchased MOMO wheel, the original-height visual target, the factory steering-column relief and the complete compact seven-selector-plus-hazard bank. V13 begins with the intact cluster-to-column relationship shown in the installed owner photograph and the scallop shown in the straight-on bare-shell photograph; it does not translate the cluster to make room for the screen. V9–V12 are retained only as superseded design history. The controlled current package and space audit are in the [Rev I specification](../../dashboard_lcd_hvac_fascia_rev_i/README.md).
 
 These PNG files are photorealistic selection aids, not scale drawings. AI-edited pixels must never be measured or sent to a CNC toolpath. For Rev I, only bought-component measurements, a perpendicular full-face vehicle trace, a full-size/full-depth template and the M1–M10 release gates control geometry. The Rev H DXF/CSV files control the superseded Rev H record only and must not be reused as Rev I production coordinates.
 
-## Common locked geometry — Rev H variants only; not V9/V10/V11
+## Common locked geometry — Rev H variants only; not V9/V10/V11/V12/V13
 
 - Nominal fascia coordinate width: 1260 mm; centreline: X=630 mm.
 - LCD active image: 199.2 × 112.1 mm, 228.6 mm / 9.000-inch diagonal, 16:9.
@@ -43,7 +43,9 @@ The rejected high-inner-outlet arrangement is intentionally absent: the right in
 - `layout_b_column_v6_switches_straight_on.png` — matching frontal V6 view with the same revised control-bank location and natural wheel occlusion.
 - `layout_b_column_v9_momo_two_central_vent_oem_height_straight_on.png` — superseded Rev I study with two central outlets; retained for design history.
 - `layout_b_column_v10_momo_two_outer_vent_factory_relief_straight_on.png` — superseded outer-vent study; cluster remained too high above the column shroud.
-- `layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png` — **current Rev I visual baseline** with two high outer/end outlets, the complete OEM cluster lowered immediately above the column shroud, a common dial/column/hub axis, compact factory relief and original-height lower silhouette.
+- `layout_b_column_v11_momo_two_outer_vent_lowered_oem_cluster_straight_on.png` — superseded correction study; improved the cluster/column relationship but did not yet reproduce the actual installed cluster height or exact LCD centre.
+- `layout_b_column_v12_momo_two_outer_vent_actual_cluster_centered_lcd_straight_on.png` — superseded alignment study; established the lower cluster/column relationship but simplified the cluster identity and left the LCD fractionally high/right.
+- `layout_b_column_v13_momo_two_outer_vent_oem_cluster_centered_lcd_straight_on.png` — **current Rev I visual baseline** with two high outer/end outlets, a taller OEM-cluster identity at the installed-photo relationship, the compact factory relief, the original-height silhouette target and the 9-inch active image centred on the complete fascia.
 - `layout_c_central_vent_sill_assembled.png`
 - `layout_c_central_vent_sill_bare_shell.png`
 
@@ -65,7 +67,7 @@ The two `layout_b_glovebox_clear_*` images supersede the earlier selected-B visu
 - The nominal model already encodes this relationship: the V1 Ø87 bezel ends at X=93.5 and the glovebox transfer envelope starts at X=152.0, a nominal 58.5 mm separation. Require at least 10 mm real fixed-metal land after the direct vehicle trace. The M2 trace, M7 bought sample and M8/M9 full rear mock-up control release.
 - The assembled view preserves the factory wheel/column and natural occlusion. The paired bare-shell view remains the count and placement control for all four outlets.
 
-## Rev H visualisation record — historical four-outlet variants; not V9/V10/V11
+## Rev H visualisation record — historical four-outlet variants; not V9/V10/V11/V12/V13
 
 Mode: built-in `image_gen`, local-reference `precise-object-edit`.
 
@@ -108,7 +110,7 @@ V6 prompt intent: built-in `image_gen`, local-reference `precise-object-edit`; p
 
 ## V9 / superseded Rev I two-central-outlet study
 
-V9 was an intermediate owner-selected straight-on direction. V10 superseded it for outlet placement; V11 now controls the speedometer/column/lower-edge relationship. V9 does not convert the superseded Rev H DXF/CSV coordinates into Rev I production geometry.
+V9 was an intermediate owner-selected straight-on direction. V10 superseded it for outlet placement; V13 now controls the visual speedometer/column/lower-edge and LCD-centre relationships. V9 does not convert the superseded Rev H DXF/CSV coordinates into Rev I production geometry.
 
 - Replace the visual factory wheel with the procured `INV-0005` MOMO carbon-fibre-pattern three-spoke wheel. The [archived vendor listing](https://www.pakwheels.com/accessories-spare-parts/momo-carbon-fiber-steering-wheel-11011689) identifies a nominal **350 mm diameter** and approximately **90 mm depth**; the actual wheel and required vehicle-specific boss/adapter must be measured on the column before packaging or steering-clearance release.
 - Retain exactly **two** matched circular silver occupant outlets. They are level with one another and mirror-symmetric about the 9-inch LCD/fascia centreline. Delete both former end outlets and all four-outlet branch implications.
@@ -118,17 +120,21 @@ V9 was an intermediate owner-selected straight-on direction. V10 superseded it f
 
 V9 prompt intent: built-in `image_gen`, local-reference precise object editing; use the accepted V6 straight-on owner-photo composition, show the procured MOMO wheel, remove the two outer outlets and lower pods, place only the two remaining centre outlets on one horizontal datum at equal offsets from the LCD centreline, return the fascia to its original shallow height, move the unchanged eight-position control bank clear of wheel occlusion, and restore the OEM glovebox and complete four-lower-gauge Toyota meter identity directly from the accepted source. The generated image is a photorealistic design-selection aid, not a scale drawing.
 
-## V10 / V11 Rev I outer-outlet, factory-height study
+## V10 / V11 / V12 / V13 Rev I outer-outlet, factory-height study
 
-V11 is the current visual baseline. V10 established the two-outer-outlet and original-height composition but left the original cluster too high. V11 translates the complete cluster downward to the owner-confirmed installed relationship: its lower lip is immediately above the steering-column shroud, while the main dial, shroud and wheel hub remain on one vehicle-traced axis.
+V13 is the current visual baseline. V10 established the two-outer-outlet and original-height composition but left the cluster too high. V11 moved it closer to the installed relationship but still left excess body-colour land below the cluster. V12 improved the lower cluster/column relationship but simplified the original cluster and left the LCD fractionally high/right. V13 restores the taller OEM-cluster appearance from the installed-photo datum, preserves the shallow top and normal lower edges, and places the unchanged 9-inch active image on the geometric centre of the complete fascia.
 
-- Use exactly **two** matched large circular silver occupant outlets, level at the high fixed outer ends. There are no central outlets and no lower vent pods.
-- Keep the true 9-inch landscape LCD central. Its active-image reference remains **199.2 × 112.1 mm**, **228.6 mm / 9.000-inch diagonal**; the shown bezel is a visual reference, not a released cutout.
+- Use exactly **two** matched large circular silver occupant outlets, level at the high fixed outer ends. Their centres are controlled separately by the measured fixed end lands and rear duct packages; they do not establish, average or alter the LCD centre. There are no central outlets and no lower vent pods.
+- Keep the true 9-inch landscape LCD central. Its active-image reference remains **199.2 × 112.1 mm**, **228.6 mm / 9.000-inch diagonal**. At M1, place the active-image centre at the midpoint of the signed complete front-face width and the midpoint between the signed top fold and normal lower edge at the LCD station; the shown bezel is a visual reference, not a released cutout.
 - Preserve the original Toyota speedometer and asymmetric glovebox identities and factory locations. The centre of the main speedometer dial, column relief, black column/shroud and steering-wheel hub must lie on the directly traced vehicle centreline.
 - Preserve the original shallow normal lower edge. Only the compact upward-opening factory U/scallop wraps the column; do not add a broad column pod, circular collar or full-width lower extension.
 - Retain exactly **seven black selectors plus one red hazard** in the compact 4 × 2 right bank: `WIPERS | LIGHTS | SPOTS | AUX.` above `BLOWER | A/C | ENGINE | HAZARD`. The selector cut reference is Ø22.5 mm, but the bought heads, anti-rotation features, 68 mm rear stacks, lever sweep and label lands remain M6/M8/M9 HOLD.
 - The MOMO wheel is vendor-listed at nominal **350 mm diameter** and approximately **90 mm depth**. The actual wheel, boss/adapter and installed column position control clearance.
 
-The photographs establish shape and alignment, not millimetre scale. In particular, the nominal 1260 mm face width, 170 mm normal face height, X=930 mm column axis, 130 × 32 mm relief and 130 × 105 mm sweep envelope remain layout assumptions only. Before a CNC metal release, M1 must capture a perpendicular physical trace of the top flange, both ends, normal lower edge, glovebox and cluster openings, and the original column scallop. M3/M6/M8/M9 must then prove the installed column angle and full movement, retained cluster depth, switch rear stacks, two vent necks/ducts, screen body/connectors and service paths in a rigid full-size, full-depth mock-up. Do not derive dimensions from V11 pixels.
+The photographs establish shape and alignment, not millimetre scale. In particular, the nominal 1260 mm face width, 170 mm normal face height, X=930 mm column axis, 130 × 32 mm relief and 130 × 105 mm sweep envelope remain layout assumptions only. Before a CNC metal release, M1 must capture a perpendicular physical trace of the top flange, both ends, normal lower edge, glovebox and cluster openings, the complete installed cluster position and the original column scallop. M3/M6/M8/M9 must then prove the installed column angle and full movement, retained cluster depth, switch rear stacks, two vent necks/ducts, screen body/connectors and service paths in a rigid full-size, full-depth mock-up. Do not derive dimensions, cluster artwork or cut geometry from V13 pixels.
 
 V11 prompt intent: preserve the V10 composition and change only the cluster height; use the installed owner photo as the meter/column/lower-edge control and the bare-shell photo as the scallop-shape control; lower the complete original cluster immediately above the shroud; align the main dial, compact relief, column and hub; retain the shallow normal edge, original glovebox, central 9-inch LCD, two high outer vents, MOMO wheel and exact eight-device control allocation. The generated image is a selection and trace-planning aid, not CNC input.
+
+V12 prompt intent: built-in `image_gen`, local-reference precise object editing; use the installed owner photograph as the immutable speedometer, column-opening and dashboard-height datum; keep the complete OEM cluster at that exact installed position and preserve the top and normal lower edges; move only the unchanged true-9-inch 16:9 LCD so its centre coincides with the midpoint between the two fixed outer vent centres and the complete fascia centre; retain the original glovebox, two high outer vents, MOMO wheel and exact seven-selector-plus-hazard allocation. The generated image is a selection and trace-planning aid, not CNC input.
+
+V13 prompt intent: built-in `image_gen`, local-reference precise object editing; use `photos/20260317_165113.jpg` for intact cluster identity and cluster-to-column relationship, use `photos/20260413_040719.jpg` for the straight-on aperture and deep factory U/scallop, preserve the shallow fascia silhouette and normal lower edge, and move only the unchanged true-9-inch 16:9 LCD onto the complete-face geometric centre. The two end outlets remain governed independently by their measured fixed lands. The generated image is a selection and trace-planning aid; AI-rendered gauge lettering and pixels are not CNC evidence.
