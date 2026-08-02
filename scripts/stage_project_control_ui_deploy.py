@@ -21,13 +21,32 @@ MISSING_MEDIA_FALLBACK = "./assets/image-needed.svg"
 APP_RELATIVE_LITERAL_RE = re.compile(r"""(?P<quote>["'`])(?P<path>\.\./\.\./[^"'`]+)(?P=quote)""")
 SCOUT_DOC_LINK_RE = re.compile(r"""scoutDocLink\(\s*["'](?P<path>[^"']+)["']""")
 PUBLIC_FABRICATION_DIR = ROOT / "data" / "manual" / "fabrication"
+PUBLIC_REV_K_COOLING_PACK_FILES = (
+    ROOT / "docs" / "J40-retained-original-radiator-and-condenser-cooling-pack-specification-rev-k.md",
+    ROOT / "docs" / "j40-rev-k-minimum-purchase-list-20260802.md",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "rev_k_actual_radiator_condenser_visual_prompts.md",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_d17_actual_parts_packaging_dimensions.png",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_d17_actual_parts_packaging_dimensions.svg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_d18_r0_load_path_and_support_dimensions.png",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_d18_r0_load_path_and_support_dimensions.svg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r01_actual_removed_radiator_reference.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r02_actual_full_face_condenser_reference.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r03_condenser_height_drier_mount_reference.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r04_condenser_measurement_reference.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r05_actual_stone_guard_reference.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r06_later_chassis_top_mount_reference.png",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r07_actual_large_fan_context.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r08_actual_radiator_installed_wide.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_r09_actual_radiator_installed_close.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_ph05_supported_assembled.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_ph06_supported_exploded.jpg",
+    ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_ph07_supported_installed.jpg",
+)
 PUBLIC_FABRICATION_DOCS = (
     ROOT / "data" / "manual" / "fabrication_handoff_requirements.csv",
-    ROOT / "docs" / "J40-integrated-cooling-pack-fabricator-specification-rev-h.docx",
-    ROOT / "docs" / "J40-integrated-cooling-pack-fabricator-specification-rev-h.md",
     ROOT / "docs" / "fabrication-handoff-index.md",
-    ROOT / "docs" / "j40-rev-h-toyota-donor-cooling-pack-purchase-list-20260801.md",
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
+    *PUBLIC_REV_K_COOLING_PACK_FILES,
 )
 PUBLIC_MARKET_DOCS = (
     ROOT / "data" / "manual" / "bilal_ganj_sample_fabrication_kits_20260619.csv",

@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-08-02 16:31:54
-- Total media files indexed: 1011 (1000 photos, 11 videos)
+- Generated: 2026-08-02 23:49:03
+- Total media files indexed: 1021 (1010 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -15,11 +15,12 @@
 
 | Stage | File Count |
 | --- | ---: |
+| `ac_hvac_retrofit` | 10 |
 | `baseline_walkaround` | 34 |
 | `brake_system` | 20 |
 | `brake_system_identification` | 4 |
 | `brake_system_reconstruction` | 20 |
-| `chassis_fixing` | 57 |
+| `chassis_fixing` | 51 |
 | `design_hold` | 4 |
 | `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
@@ -29,13 +30,13 @@
 | `fabrication_measurement` | 39 |
 | `fit_check` | 1 |
 | `hardware_refinish` | 44 |
-| `mechanical_baseline` | 34 |
+| `mechanical_baseline` | 32 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `parts_inventory` | 3 |
 | `parts_triage` | 12 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 207 |
+| `reference_material` | 215 |
 | `removed_parts_cataloguing` | 16 |
 | `replacement_pipe_parts_intake` | 2 |
 | `rubber_recreation_measurement` | 7 |
@@ -115,7 +116,7 @@
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
 | `documentation_reference` | `rear_side_seat_layout_reference_20260722` | 1 | 2026-07-22 | `20260722_000004_user_rear_side_seat_reference.png` |
-| `documentation_reference` | `reference_media` | 195 | 2026-04-14 to 2026-08-02 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 203 | 2026-04-14 to 2026-08-02 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
@@ -135,6 +136,7 @@
 | `electrical_system` | `windscreen_washer_pump_replacement_sample_20260723` | 1 | 2026-07-23 | `20260723_013123_gp_JLEfOezg.jpg` |
 | `electrical_system` | `windscreen_wiper_motor_assessment_20260723` | 1 | 2026-07-23 | `20260723_013303_gp_ZzbvMf2A.jpg` |
 | `electrical_system` | `wiper_arms_blades_replacement_sample_20260723` | 1 | 2026-07-23 | `20260723_013155_gp_k26a3Rpw.jpg` |
+| `engine_bay` | `ac_condenser_sample_measurement` | 10 | 2026-05-12 to 2026-05-29 | `20260512_205417_gp_CzJNQsiA.jpg` |
 | `engine_bay` | `battery_side_tray_structure_context` | 1 | 2026-05-12 | `20260512_100100_user_battery_side_tray_structure_context.png` |
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |
 | `engine_bay` | `brake_booster_servo_removed_sample` | 7 | 2026-05-29 | `20260529_021217_gp_YAKcHCyQ.jpg` |
@@ -144,12 +146,12 @@
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `engine_bay` | `engine_powertrain_cleaning_baseline` | 19 | 2026-05-01 to 2026-05-12 | `20260501_194330_gp_CogcrEXA.jpg` |
 | `engine_bay` | `engine_radiator_condition_closeups` | 8 | 2026-05-29 | `20260529_230003_gp_rliSbRjA.jpg` |
-| `engine_bay` | `engine_radiator_sample_measurement` | 4 | 2026-05-29 | `20260529_205200_gp_8G6ZKKEQ.jpg` |
+| `engine_bay` | `engine_radiator_removed_refurbishment_template` | 1 | 2026-08-02 | `20260802_173643_gp_tJNrLg8A.jpg` |
 | `engine_bay` | `existing_battery_mount_tray_measurements` | 4 | 2026-05-17 | `20260517_194431_gp_4XVycxAg.jpg` |
-| `engine_bay` | `front_support_radiator_measurement_set` | 6 | 2026-05-12 | `20260512_205417_gp_CzJNQsiA.jpg` |
 | `engine_bay` | `front_support_radiator_pickups_context` | 6 | 2026-05-12 to 2026-05-29 | `20260512_073210_gp_zP427O2A.jpg` |
 | `engine_bay` | `installed_battery_dimension_reference` | 2 | 2026-05-17 | `20260517_194303_gp_5yuaRoaA.jpg` |
 | `engine_bay` | `oil_filler_breather_tube_identification_20260723` | 1 | 2026-07-23 | `20260723_013311_gp_51vqP4uQ.jpg` |
+| `engine_bay` | `radiator_stone_guard_removed_template` | 1 | 2026-08-02 | `20260802_173652_gp_XFyn0ruQ.jpg` |
 | `engine_bay` | `replacement_pipe_hose_sample_sorting` | 7 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
 | `front_support` | `front_radiator_two_side_retention_20260722` | 1 | 2026-07-22 | `20260722_000001_user_second_radiator_arm_welded_front_structure.png` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |

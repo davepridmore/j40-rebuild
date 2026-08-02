@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">J40 Rev L centred-fan measured packaging and hold drawing</title>
+  <desc id="desc">Front and side layout for a retained radiator, retained condenser, two equal front electric fans, one low charge-air cooler and a retained large rear electric puller.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f3f1eb}.panel{fill:#fff;stroke:#20262d;stroke-width:3}.r0{fill:#a9683e;fill-opacity:.22;stroke:#704226;stroke-width:4}.c0{fill:#91a9b7;fill-opacity:.32;stroke:#3c667c;stroke-width:4}.k0{fill:#db9939;fill-opacity:.62;stroke:#8e570f;stroke-width:4}.frame{fill:#24292e;fill-opacity:.13;stroke:#20262d;stroke-width:4}.fanring{fill:none;stroke:#20262d;stroke-width:10}.rear{fill:#22272b;fill-opacity:.18;stroke:#111519;stroke-width:4}.dim{stroke:#006b55;stroke-width:3;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.hold{stroke:#704596;stroke-width:3;stroke-dasharray:10 7;fill:none;marker-start:url(#purpleArrow);marker-end:url(#purpleArrow)}.centre{stroke:#0f699c;stroke-width:3;stroke-dasharray:12 8}.flow{stroke:#187a52;stroke-width:6;fill:none;marker-end:url(#flowArrow)}.t{font-family:Arial,Helvetica,sans-serif;fill:#172027}.h1{font-size:38px;font-weight:700}.h2{font-size:25px;font-weight:700}.h3{font-size:19px;font-weight:700}.body{font-size:17px}.small{font-size:14px}.dimtext{font-size:18px;font-weight:700;fill:#006b55}.holdtext{font-size:16px;font-weight:700;fill:#704596}.warn{font-size:20px;font-weight:700;fill:#7a250f}.note{fill:#eef3f5;stroke:#54636c;stroke-width:2}.pass{fill:#dff1e4;stroke:#247044;stroke-width:2}.amber{fill:#fff0c7;stroke:#a16600;stroke-width:2}.purple{fill:#eee4fa;stroke:#704596;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0L0 4l8 4z" fill="#006b55"/></marker>
+    <marker id="purpleArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0L0 4l8 4z" fill="#704596"/></marker>
+    <marker id="flowArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5 0 10z" fill="#187a52"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="1100"/>
+  <text class="t h1" x="55" y="60">J40 Rev L — centred front fans and measured pack</text>
+  <text class="t body" x="55" y="94">1:1 dummy starting geometry · final release requires the actual vehicle, actual parts and all HOLD measurements</text>
+  <rect class="amber" x="1160" y="28" width="385" height="72" rx="12"/>
+  <text class="t warn" x="1182" y="59">NOT A FABRICATION DRAWING</text>
+  <text class="t small" x="1182" y="83">Do not scale from this illustration.</text>
+
+  <rect class="panel" x="45" y="125" width="935" height="730" rx="14"/>
+  <text class="t h2" x="75" y="165">Front view — symmetric pair inside retained R0 silhouette</text>
+  <rect class="r0" x="140" y="238" width="750" height="500" rx="8"/>
+  <text class="t h3" x="151" y="265">R0 ≈635 W photographed span × ≈610 H body</text>
+  <rect class="c0" x="188" y="282" width="638" height="381" rx="4"/>
+  <text class="t h3" x="205" y="311">C0 ≈540 × 465 body</text>
+  <line class="centre" x1="515" y1="190" x2="515" y2="778"/>
+  <text class="t h3" x="532" y="220">VEHICLE / PAIR CENTRELINE ±2 mm</text>
+
+  <rect class="frame" x="178" y="330" width="323" height="310" rx="8"/>
+  <rect class="frame" x="529" y="330" width="323" height="310" rx="8"/>
+  <circle class="fanring" cx="339.5" cy="485" r="133"/>
+  <circle class="fanring" cx="690.5" cy="485" r="133"/>
+  <circle cx="339.5" cy="485" r="30" fill="#32383d"/>
+  <circle cx="690.5" cy="485" r="30" fill="#32383d"/>
+  <text class="t h3" x="286" y="490">F1 pusher</text>
+  <text class="t h3" x="637" y="490">F2 pusher</text>
+  <path class="dim" d="M178 682H501"/>
+  <rect x="268" y="650" width="145" height="30" rx="6" fill="#fff" fill-opacity=".82"/>
+  <text class="t dimtext" x="282" y="673">F ≈280*</text>
+  <path class="dim" d="M529 682H852"/>
+  <rect x="619" y="650" width="145" height="30" rx="6" fill="#fff" fill-opacity=".82"/>
+  <text class="t dimtext" x="633" y="673">F ≈280*</text>
+  <path class="dim" d="M501 712H529"/>
+  <rect x="432" y="715" width="168" height="30" rx="6" fill="#fff" fill-opacity=".9"/>
+  <text class="t dimtext" x="447" y="738">g = 10 preferred</text>
+  <path class="dim" d="M178 772H852"/>
+  <text class="t dimtext" x="375" y="767">pair dummy ≈570 mm*</text>
+  <path class="dim" d="M140 806H178"/>
+  <path class="dim" d="M852 806H890"/>
+  <text class="t dimtext" x="112" y="799">≈32.5*</text>
+  <text class="t dimtext" x="844" y="799">≈32.5*</text>
+  <rect class="k0" x="255" y="580" width="520" height="126" rx="8"/>
+  <text class="t h3" x="335" y="651">K0 starting core box 450–500 W × 150–180 H</text>
+  <text class="t small" x="75" y="842">*Photo-derived starting dummy only. Measure Wc, F, Db and Wa on the actual assembly.</text>
+
+  <rect class="panel" x="1005" y="125" width="550" height="730" rx="14"/>
+  <text class="t h2" x="1035" y="165">Side stack — every depth remains HOLD</text>
+  <text class="t small" x="1035" y="194">Front / grille</text>
+  <text class="t small" x="1440" y="194">Engine</text>
+  <path class="flow" d="M1045 220H1495"/>
+  <rect x="1075" y="275" width="18" height="395" fill="#666"/>
+  <text class="t small" transform="translate(1062 545) rotate(-90)">G0 stone guard</text>
+  <rect class="frame" x="1115" y="300" width="58" height="350"/>
+  <text class="t small" transform="translate(1153 570) rotate(-90)">F1/F2 pushers</text>
+  <rect class="k0" x="1200" y="510" width="55" height="140"/>
+  <text class="t small" transform="translate(1237 636) rotate(-90)">K0 low only</text>
+  <rect class="c0" x="1280" y="320" width="38" height="330"/>
+  <text class="t small" transform="translate(1307 570) rotate(-90)">C0 full face</text>
+  <rect class="r0" x="1350" y="275" width="58" height="395"/>
+  <text class="t small" transform="translate(1390 563) rotate(-90)">R0 radiator</text>
+  <rect class="rear" x="1435" y="300" width="70" height="350"/>
+  <circle cx="1470" cy="480" r="27" fill="#22272b"/>
+  <text class="t small" transform="translate(1489 590) rotate(-90)">FL sealed electric puller</text>
+  <path class="hold" d="M1075 715H1505"/>
+  <text class="t holdtext" x="1110" y="745">P0-upper / P0-lower total depth: HOLD</text>
+  <path class="hold" d="M1350 785H1505"/>
+  <text class="t holdtext" x="1165" y="815">R0-to-engine and service clearance: HOLD</text>
+
+  <rect class="note" x="45" y="880" width="520" height="180" rx="12"/>
+  <text class="t h3" x="70" y="914">Front-pair release equations</text>
+  <text class="t body" x="70" y="947">Fit: 2F + g ≤ Wc · M = (Wc − 2F − g) / 2</text>
+  <text class="t body" x="70" y="979">Airflow: 2Db + g ≤ Wa; otherwise prove sealed-plenum coverage.</text>
+  <text class="t small" x="70" y="1007">Wc = carrier width; F = complete frame; Db = blade sweep;</text>
+  <text class="t small" x="70" y="1027">Wa = usable active or sealed-ducted face.</text>
+  <text class="t small" x="70" y="1048">Pair midpoint: measured vehicle centreline ±2 mm.</text>
+
+  <rect class="pass" x="585" y="880" width="465" height="180" rx="12"/>
+  <text class="t h3" x="610" y="914">Finished airflow and electrical requirement</text>
+  <text class="t body" x="610" y="947">Three electric fans: F1 + F2 front pushers; FL rear puller.</text>
+  <text class="t body" x="610" y="979">Three independent covered fuse/relay branches.</text>
+  <text class="t body" x="610" y="1011">≥3,000 m³/h installed at 13.5 V at fan terminals.</text>
+  <text class="t small" x="610" y="1039">Do not sum free-air catalogue ratings. ≥3,300 m³/h preferred.</text>
+
+  <rect class="purple" x="1070" y="880" width="485" height="180" rx="12"/>
+  <text class="t h3" x="1095" y="914">Mandatory HOLD before metal or purchase</text>
+  <text class="t body" x="1095" y="947">True R0/C0/F1/F2/FL W × H × D; W0; P0 upper/lower;</text>
+  <text class="t body" x="1095" y="979">both top-hole XYZ centres B0; saddle/locator centres S0;</text>
+  <text class="t body" x="1095" y="1011">filled R0 mass; every hose, plug, lid and tool/service sweep.</text>
+  <text class="t small" x="1095" y="1039">Opaque 1:1 vehicle dry-fit is mandatory; no side fuse annex.</text>
+</svg>

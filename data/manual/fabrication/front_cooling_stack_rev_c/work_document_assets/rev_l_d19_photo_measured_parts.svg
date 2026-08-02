@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">J40 Rev L photo-measured retained cooling parts</title>
+  <desc id="desc">Dimension-control drawing for the retained radiator, condenser, large electric fan and small electric fan. Values are photo-derived and not released for fabrication.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f1e9}.panel{fill:#fff;stroke:#20262d;stroke-width:3}.ink{stroke:#1e252c;stroke-width:3;fill:none}.thin{stroke:#5d6871;stroke-width:2;fill:none}.fin{stroke:#9ca5aa;stroke-width:1}.tank{fill:#5b5147;stroke:#1e252c;stroke-width:3}.black{fill:#20252a;stroke:#090b0d;stroke-width:3}.guard{fill:none;stroke:#2b3136;stroke-width:9}.fan{fill:#2b3136;stroke:#0c0f11;stroke-width:2}.green{fill:#dff1e4;stroke:#247044;stroke-width:2}.amber{fill:#fff0c7;stroke:#a16600;stroke-width:2}.purple{fill:#eee4fa;stroke:#704596;stroke-width:2}.dim{stroke:#006b55;stroke-width:3;fill:none;marker-start:url(#arrow);marker-end:url(#arrow)}.hold{stroke:#704596;stroke-width:3;stroke-dasharray:9 7;fill:none}.centre{stroke:#0f699c;stroke-width:2;stroke-dasharray:10 7}.t{font-family:Arial,Helvetica,sans-serif;fill:#172027}.h1{font-size:38px;font-weight:700}.h2{font-size:25px;font-weight:700}.h3{font-size:19px;font-weight:700}.body{font-size:17px}.small{font-size:14px}.dimtext{font-size:18px;font-weight:700;fill:#006b55}.holdtext{font-size:16px;font-weight:700;fill:#704596}.warn{font-size:20px;font-weight:700;fill:#7a250f}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M8 0L0 4l8 4z" fill="#006b55"/></marker>
+    <pattern id="fins" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 0V9M4.5 0V9" stroke="#89949a" stroke-width="1"/></pattern>
+  </defs>
+  <rect class="bg" width="1600" height="1100"/>
+  <text class="t h1" x="60" y="62">J40 Rev L — photo-measured retained parts</text>
+  <text class="t body" x="60" y="96">Reference issue · 02 Aug 2026 · dimensions transcribed from supplied tape photographs</text>
+  <rect class="amber" x="1135" y="30" width="405" height="72" rx="12"/>
+  <text class="t warn" x="1160" y="60">NOT FOR CUTTING OR ORDERING</text>
+  <text class="t small" x="1160" y="84">Confirm all amber values square-on on the real parts.</text>
+
+  <rect class="panel" x="45" y="130" width="745" height="430" rx="14"/>
+  <text class="t h2" x="75" y="170">R0 — retained copper/brass engine radiator</text>
+  <rect x="180" y="233" width="400" height="255" fill="url(#fins)" stroke="#20262d" stroke-width="3"/>
+  <rect class="tank" x="163" y="205" width="434" height="42" rx="8"/>
+  <rect class="tank" x="163" y="475" width="434" height="38" rx="8"/>
+  <path class="tank" d="M355 205v-22h52v22z"/>
+  <circle cx="381" cy="178" r="16" fill="#87725d" stroke="#20262d" stroke-width="3"/>
+  <path class="ink" d="M163 223h-34v36M597 223h34v36M163 493h-34v-36M597 493h34v-36"/>
+  <path class="dim" d="M129 521H631"/>
+  <text class="t dimtext" x="255" y="516">≈635 mm photographed span*</text>
+  <path class="dim" d="M112 205V513"/>
+  <text class="t dimtext" transform="translate(96 445) rotate(-90)">≈610 mm body</text>
+  <path class="dim" d="M650 178V513"/>
+  <text class="t dimtext" transform="translate(676 425) rotate(-90)">≈635 mm to cap</text>
+  <text class="t small" x="76" y="548">*Left tape-hook datum to right rail; oblique photo. True rail/ear width remains HOLD.</text>
+
+  <rect class="panel" x="810" y="130" width="745" height="430" rx="14"/>
+  <text class="t h2" x="840" y="170">C0 — retained full-face A/C condenser</text>
+  <rect x="935" y="220" width="420" height="270" fill="url(#fins)" stroke="#20262d" stroke-width="3"/>
+  <rect x="914" y="214" width="22" height="282" fill="#68737a" stroke="#20262d" stroke-width="2"/>
+  <rect x="1355" y="214" width="22" height="282" fill="#68737a" stroke="#20262d" stroke-width="2"/>
+  <rect class="black" x="1390" y="258" width="42" height="190" rx="20"/>
+  <path class="ink" d="M1377 278h48M1377 425h48"/>
+  <path class="dim" d="M914 518H1432"/>
+  <text class="t dimtext" x="1070" y="513">≈540 mm body</text>
+  <path class="dim" d="M888 214V496"/>
+  <text class="t dimtext" transform="translate(873 415) rotate(-90)">≈465 mm body</text>
+  <text class="t small" x="840" y="548">Body is photo-backed for mock-up; brackets, pipes, drier and service sweep remain HOLD.</text>
+
+  <rect class="panel" x="45" y="585" width="745" height="405" rx="14"/>
+  <text class="t h2" x="75" y="625">FL — retained large electric fan and shroud</text>
+  <rect class="black" x="205" y="664" width="420" height="272" rx="12"/>
+  <circle cx="415" cy="800" r="118" fill="#11161a" stroke="#9aa3a8" stroke-width="8"/>
+  <circle cx="415" cy="800" r="33" fill="#777f84" stroke="#111" stroke-width="4"/>
+  <g class="fan">
+    <path d="M415 766c35-74 72-63 54 12-10 39-24 48-54 22z"/>
+    <path d="M443 789c78-25 93 9 21 42-37 17-53 12-59-27z"/>
+    <path d="M438 822c50 65 23 91-35 38-30-27-31-44 1-66z"/>
+    <path d="M403 830c-46 68-80 49-50-22 16-37 30-45 62-22z"/>
+    <path d="M381 803c-79-20-75-58 2-54 40 2 51 14 40 51z"/>
+    <path d="M392 773c-3-82 35-88 55-13 11 39 3 53-37 54z"/>
+  </g>
+  <path class="dim" d="M287 953H543"/>
+  <text class="t dimtext" x="310" y="948">≈450–480 mm ring</text>
+  <path class="hold" d="M185 650H645V949H185z"/>
+  <text class="t holdtext" x="76" y="973">Complete W × H × D, label, polarity, hot current and puller airflow: HOLD</text>
+
+  <rect class="panel" x="810" y="585" width="745" height="405" rx="14"/>
+  <text class="t h2" x="840" y="625">FS — retained small electric front-fan candidate</text>
+  <path class="black" d="M1005 683h350v30h40v175h-40v30h-350v-30h-40V713h40z"/>
+  <circle cx="1180" cy="800" r="98" fill="#11161a" stroke="#9aa3a8" stroke-width="7"/>
+  <circle cx="1180" cy="800" r="28" fill="#777f84" stroke="#111" stroke-width="4"/>
+  <g class="fan">
+    <path d="M1180 771c29-59 61-49 44 13-9 31-21 37-45 16z"/>
+    <path d="M1205 790c64-18 74 12 15 37-30 13-42 7-45-24z"/>
+    <path d="M1199 820c38 53 15 72-29 28-23-23-22-36 5-51z"/>
+    <path d="M1171 826c-41 51-67 33-40-27 14-29 27-34 52-15z"/>
+    <path d="M1152 802c-65-19-59-49 5-42 32 4 40 15 29 44z"/>
+    <path d="M1162 777c1-66 32-69 47-6 8 31 0 42-32 41z"/>
+  </g>
+  <path class="dim" d="M1080 933H1280"/>
+  <text class="t dimtext" x="1093" y="928">≈240–255 mm guard</text>
+  <path class="dim" d="M965 963H1395"/>
+  <text class="t dimtext" x="1097" y="958">≈280 mm frame/tabs*</text>
+  <text class="t small" x="840" y="981">*Oblique photo estimate. Measure frame F, blade sweep Db, plug and cable bend separately.</text>
+
+  <rect class="green" x="55" y="1015" width="350" height="54" rx="9"/>
+  <text class="t h3" x="75" y="1048">GREEN · usable for mock-up</text>
+  <rect class="amber" x="425" y="1015" width="430" height="54" rx="9"/>
+  <text class="t h3" x="445" y="1048">AMBER · photo estimate; remeasure</text>
+  <rect class="purple" x="875" y="1015" width="670" height="54" rx="9"/>
+  <text class="t h3" x="895" y="1048">PURPLE · HOLD; vehicle/part measurement required</text>
+</svg>

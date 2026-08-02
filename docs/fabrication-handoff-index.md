@@ -112,23 +112,57 @@ Release position:
 - Final bending/drilling remains gated by right-side vehicle dry-fit, transferred left-bracket dimensions, screw size, radiator ear offset, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and fan clearance.
 - The Bracket Analysis Register remains the evidence/action register; this package is the Fabrication handoff for making the bracket templates.
 
-## Integrated Radiator & Front Cooling Pack - Rev C.1 (Current)
+## Photo-Measured Retained Cooling Pack — Rev L (Current provisional mock-up issue)
 
-**Current controlled handoff — issued 30 July 2026.** Use this package for the radiator shop, A/C installer and fabrication mock-up. **Final core manufacture remains HOLD** until the documented vehicle measurements, full-size dummy fit and written owner approval are complete.
+**Current controlled handoff — issued 2 August 2026.** Rev L uses the newly imported tape photographs of the actual retained R0 radiator, full-face C0 condenser, large rear electric FL puller and small front FS pusher. It corrects Rev K's mechanical-fan identification and replaces nominal component sizes with photo-derived starting envelopes. These figures release only the first full-size dummy; final steel cutting still requires square direct measurements, templates and a complete opaque vehicle dry-fit.
 
-Controlled specification: [J40-integrated-cooling-pack-fabricator-specification-rev-c.docx](J40-integrated-cooling-pack-fabricator-specification-rev-c.docx) and [source Markdown](J40-integrated-cooling-pack-fabricator-specification-rev-c.md)
+Controlled specification: [Rev L photo-measured shop specification](J40-photo-measured-retained-cooling-pack-specification-rev-l.md)
 
-Dimensioned drawing assets: [data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/)
+Complete procurement list: [Rev L OEM/donor-first parts list](j40-rev-l-complete-oem-donor-parts-list-20260803.md). It covers the retained parts to bring for matching, donor/OEM candidates, all new cooling and A/C service parts, charge pipework, mounting hardware, covered fan electrics, control inputs, consumables and commissioning services.
+
+Controlled visual set: [D19 photo-measured retained parts](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d19_photo_measured_parts.png) and [D20 measured packaging and holds](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d20_measured_packaging_and_holds.png).
+
+Photo-referenced explanatory visualisations: [PH01 opaque assembled pack](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph01_photo_measured_assembled.jpg), [PH02 wide component split-out](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph02_photo_measured_exploded.jpg), [PH03 proposed later-chassis installation](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph03_photo_measured_installed.jpg), and [PH04B corrected engine-bay-side rear-puller view](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph04b_photo_measured_engine_side_corrected.jpg). In PH04B the engine is in the foreground, R0 is forward toward the grille, and FL is physically between R0 and the engine. These AI images explain the arrangement only; D19/D20 and the physical dry-fit control fabrication.
 
 Release position:
-- The Rev C.1 drawing register covers the complete front elevation, radiator orthographic/interface sheet, exploded radiator parts, condenser/intercooler/dual-fan dimensions, mounting/saddles/shroud, side-depth gates, and dual-fan mounting/wiring.
-- **Two matching slim 9-inch 12 V pusher fans are mandatory**, mounted side-by-side above the intercooler. Each fan has its own fused and relayed branch; retain the original engine-driven puller and a close removable shroud.
-- The Rev A optional single-fan provision is **not current** and must not be substituted for the required dual-fan arrangement.
-- Red dimensions are fixed nominal requirements. Purple items and every unlabeled position must be measured on the actual vehicle and released in writing before final core manufacture.
+- Retain and test actual R0, C0, FL, FS and the stone guard. Add only one K0 CAC and, preferably, one exact Toyota/Denso mate for FS. If an exact mate fails fit or availability, use two matching complete front modules and keep FS as the spare.
+- First mock-up envelopes from the tape photographs: R0 approximately `635 W × 610 body H mm` (`≈635 mm` to cap); C0 approximately `540 W × 465 H mm`; FS guard approximately `240–255 mm` with complete frame/tabs starting estimate `≈280 mm`; FL ring approximately `450–480 mm`. All are provisional, not purchase or cut dimensions.
+- Make two `≈280 mm` front-fan dummies with a `10 mm` centre gap: `2 × 280 + 10 = 570 mm`. Against the provisional `≈635 mm` R0 silhouette this gives `≈32.5 mm` equal side margins. Final release uses measured `F`, `Db`, `Wc` and `Wa`, not the photo estimates.
+- Front pair is level and horizontally centred on the **vehicle centreline** within `±2 mm`. Require `2F + g ≤ Wc`, positive equal `M = (Wc − 2F − g) / 2`, and `2Db + g ≤ Wa` or a sealed plenum proven by installed airflow testing.
+- Finished system has exactly three electric fans: the two equal front pushers plus retained FL rear puller. Each has its own covered fused/relay branch aligned with the existing electrical carrier; no side annex.
+- Lower saddles and a full-width crossmember carry R0. Both intended top holes locate/restrain it. B0 hole centres, S0 saddle centres, every complete depth/plug/pipe/tool envelope and vehicle W0 remain HOLD until directly measured.
+- Require complete installed three-fan airflow `≥3,000 m³/h` at `13.5 V` at the fan terminals (`≥3,300 m³/h` preferred) plus the instrumented `50 °C` thermal gates. Never add free-air catalogue ratings.
+
+## Retained Original Radiator + Full-Face A/C Condenser Cooling Pack — Rev K (Superseded / History)
+
+**Superseded by Rev L on 2 August 2026. Do not issue Rev K for fabrication or buying.** Rev K established the retained R0 and full-face C0 architecture, but incorrectly described the photographed rear FL fan as mechanical and relied on earlier nominal sizes. Its AI views remain layer-order history only; Rev L's actual photographs and D19/D20 control the provisional measurements.
+
+Controlled specification: [Rev K source specification](J40-retained-original-radiator-and-condenser-cooling-pack-specification-rev-k.md)
+
+Simplified donor-parts purchase list: [Rev K minimum purchase list](j40-rev-k-minimum-purchase-list-20260802.md)
+
+Visual release and source set: [Rev K prompt log](../data/manual/fabrication/front_cooling_stack_rev_c/rev_k_actual_radiator_condenser_visual_prompts.md), [D17 measurement-control sheet](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_d17_actual_parts_packaging_dimensions.png), [assembled pack](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_ph01_actual_parts_assembled.jpg), [wide exploded view](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_ph02_actual_parts_exploded.jpg), [later-chassis view](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_ph03_actual_parts_installed.jpg), and [opaque engine-side view](../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_ph04_actual_parts_engine_side.jpg).
+
+Release position:
+- Retain and refurbish/recore R0 if its condition and tests earn reuse; retain the complete broad C0 if its pressure, flush, fin and fit checks pass. C0 sits in its own full-face layer directly in front of R0.
+- Add exactly one heat exchanger: a shallow, low-centred K0 turbo charge-air cooler ahead of only the lower central part of C0. Its roughly `450–500 W × 150–180 H × ≤65 D` core is a mock-up starting box, not an order size.
+- Historical Rev K fan instruction is superseded. Current Rev L uses three tested electric fans: two equal front pushers plus retained rear FL electric puller.
+- Attach R0 at both intended top positions using vertical sleeved bolts sized only after the two original horizontal top-return holes and bush stacks are measured. Lower rubber saddles carry the weight; do not use substitute holes or force alignment.
+- Keep the existing covered relay/MIDI carrier inboard and within the cooling-pack silhouette. No cutting, final welding, CAC purchase or 50 °C/turbo claim is released until the opaque 1:1 fixture proves complete envelopes, depth, pipes, latch, grille/bumper, service access, rear-fan sweep and both upper mounts.
+
+## Retained Original Radiator & Fans Cooling Pack — Rev J (Superseded / History)
+
+**Superseded by Rev K on 2 August 2026. Do not issue Rev J for fabrication or buying.** Rev J incorrectly represented the retained A/C condenser as a narrow half-width core beside the CAC. Historical files remain at [Rev J Word handoff](J40-retained-original-radiator-and-fans-cooling-pack-specification-rev-j.docx), [source Markdown](J40-retained-original-radiator-and-fans-cooling-pack-specification-rev-j.md), [purchase list](j40-rev-j-minimum-purchase-list-20260802.md), and [prompt log](../data/manual/fabrication/front_cooling_stack_rev_c/rev_j_existing_parts_visual_prompts.md).
+
+## Existing Radiator Refurbishment & Turbo-Fan Cooling Pack — Rev I (Superseded / History)
+
+**Superseded by the current Rev L photo-measured retained cooling pack on 2 August 2026. Do not issue Rev I for fabrication, buying or fan layout.** It remains design history only; its fixed unequal-front-fan and front-to-rear auxiliary-stack assumptions are not current.
+
+Historical files: [Rev I Word handoff](J40-existing-radiator-refurbishment-and-turbo-fan-specification-rev-i.docx), [source Markdown](J40-existing-radiator-refurbishment-and-turbo-fan-specification-rev-i.md), and [purchase list](j40-rev-i-refurbishment-purchase-list-20260802.md).
 
 ## Front Cooling Stack Frame - Rev A (Legacy / Superseded)
 
-**Superseded by Integrated Radiator & Front Cooling Pack Rev C.1 on 30 July 2026. Do not issue Rev A as the current radiator-shop or fan specification.** It remains only as historical reference for earlier frame work.
+**Superseded by the current Rev L photo-measured retained cooling pack on 2 August 2026. Do not issue Rev A as the current radiator-shop or fan specification.** It remains only as historical reference for earlier frame work.
 
 Directory: [data/manual/fabrication/front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)
 

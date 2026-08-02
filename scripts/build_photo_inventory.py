@@ -4120,6 +4120,83 @@ FILE_OVERRIDES.update(
     }
 )
 
+# Cooling-pack correction after the 2 August 2026 physical-sample intake.
+# The thin aluminium May exchanger has refrigerant pipes and a receiver/drier:
+# it is the A/C condenser, not the copper/brass engine radiator.  The two new
+# photos below are the actual original engine radiator and its stone guard.
+FILE_OVERRIDES.update(
+    {
+        **{
+            file_name: c(
+                "engine_bay",
+                "ac_condenser_sample_measurement",
+                "ac_hvac_retrofit",
+                observed_state,
+                "high",
+                (
+                    "ac_condenser",
+                    "parallel_flow",
+                    "receiver_drier",
+                    "refrigerant_pipe",
+                    "tape_measure",
+                    "measurement",
+                    "sample_match",
+                ),
+                "Physical-feature review confirms this removed thin aluminium unit is the A/C condenser, not the engine radiator. Retain as the A/C sample only; bench-measure and pressure-test before reuse.",
+            )
+            for file_name, observed_state in {
+                "20260512_205417_gp_CzJNQsiA.jpg": "condenser_removed_front_overview",
+                "20260512_205434_gp_QnE3tLvQ.jpg": "condenser_removed_reverse_overview",
+                "20260512_212929_gp_pnlr6x5w.jpg": "condenser_side_height_measurement",
+                "20260512_212947_gp_AdvWGolg.jpg": "condenser_side_and_drier_measurement",
+                "20260512_213008_gp_1U5vulZw.jpg": "condenser_lower_tab_and_pipe_measurement",
+                "20260512_213027_gp_9Cy950Kw.jpg": "condenser_complete_mounting_reference",
+                "20260529_205200_gp_8G6ZKKEQ.jpg": "condenser_width_measurement",
+                "20260529_205224_gp_aQYpMUyg.jpg": "condenser_lower_side_mount_measurement",
+                "20260529_205232_gp_eHbRrOaw.jpg": "condenser_side_height_measurement",
+                "20260529_205240_gp_C2r8CMBQ.jpg": "condenser_side_tank_and_bracket_measurement",
+            }.items()
+        },
+        "20260802_173643_gp_tJNrLg8A.jpg": c(
+            "engine_bay",
+            "engine_radiator_removed_refurbishment_template",
+            "mechanical_baseline",
+            "original_engine_radiator_removed_for_recore",
+            "high",
+            (
+                "radiator",
+                "engine_radiator",
+                "original",
+                "refurbishment",
+                "recore",
+                "mounting_ears",
+                "filler_neck",
+                "overflow",
+                "hose_neck",
+                "sample_match",
+            ),
+            "Actual removed copper/brass engine radiator. This physical R0 sample controls the tank, filler, coolant-neck, drain, side-rail and mounting-ear geometry; replace the tired core and retain or exactly copy only sound parts.",
+        ),
+        "20260802_173652_gp_XFyn0ruQ.jpg": c(
+            "engine_bay",
+            "radiator_stone_guard_removed_template",
+            "mechanical_baseline",
+            "original_radiator_stone_guard_removed",
+            "high",
+            (
+                "radiator",
+                "stone_guard",
+                "expanded_mesh",
+                "removable",
+                "frame",
+                "protection",
+                "pattern",
+            ),
+            "Actual removable expanded-mesh radiator stone guard and frame. Refurbish or reproduce it as an independently removable guard; it is protection, not a heat exchanger.",
+        ),
+    }
+)
+
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")
 SCREENSHOT_DATE_RE = re.compile(r"^Screenshot_(?P<date>\d{8})_")

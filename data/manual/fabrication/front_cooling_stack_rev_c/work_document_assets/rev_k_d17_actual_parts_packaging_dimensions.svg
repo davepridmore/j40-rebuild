@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <defs>
+    <style>
+      .bg{fill:#11161c}.panel{fill:#18212a;stroke:#344352;stroke-width:2}.title{font-family:Verdana;font-size:42px;font-weight:700;fill:#f5f7fa}.sub{font-family:Verdana;font-size:20px;font-weight:400;fill:#bec8d2}.h{font-family:Verdana;font-size:25px;font-weight:700;fill:#fff}.t{font-family:Verdana;font-size:19px;font-weight:400;fill:#e4e9ee}.small{font-family:Verdana;font-size:16px;font-weight:400;fill:#c7d0d9}.tiny{font-family:Verdana;font-size:14px;font-weight:400;fill:#aeb9c4}.fixed{fill:#30c48d}.hold{fill:#ffbe55}.warn{fill:#ff6b6b}.rad{fill:#6d5a48;stroke:#d9b38c;stroke-width:3}.cond{fill:#334453;stroke:#7fa5bd;stroke-width:3}.cac{fill:#c9d2d8;stroke:#f1f5f7;stroke-width:3}.fan{fill:#111820;stroke:#30c48d;stroke-width:4}.frame{fill:none;stroke:#d9e2ea;stroke-width:8}.dim{stroke:#ffbe55;stroke-width:3;fill:none}.datum{stroke:#30c48d;stroke-width:3;stroke-dasharray:10 8;fill:none}.air{stroke:#64b5f6;stroke-width:5;fill:none;marker-end:url(#arrow)}.leader{stroke:#aab7c2;stroke-width:2;fill:none}.bolt{fill:#cfd8df;stroke:#fff;stroke-width:2}.rubber{fill:#1f262d;stroke:#30c48d;stroke-width:2}.tag{font-family:Verdana;font-size:17px;font-weight:700;fill:#0e1419}.tagbox{fill:#ffbe55}.okbox{fill:#30c48d}.redbox{fill:#ff6b6b}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#64b5f6"/></marker>
+    <pattern id="fins" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 0V10M5 0V10" stroke="#a3b0ba" stroke-width="1" opacity=".55"/></pattern>
+  </defs>
+
+  <rect class="bg" width="1600" height="1100"/>
+  <text class="title" x="60" y="70">REV K — RETAINED RADIATOR + FULL-FACE A/C CONDENSER</text>
+  <text class="sub" x="60" y="106">Packaging and measurement-control sheet • millimetres • NOT TO SCALE • DIMENSIONAL HOLD</text>
+
+  <!-- front elevation -->
+  <rect class="panel" x="50" y="145" width="920" height="635" rx="18"/>
+  <text class="h" x="80" y="185">A. FRONT ELEVATION — CENTRAL TWIN FANS, ONE LOW CAC</text>
+  <line class="datum" x1="510" y1="210" x2="510" y2="720"/>
+  <text class="small fixed" x="522" y="235">VEHICLE CL</text>
+  <path class="frame" d="M155 255H865V680H155Z"/>
+  <rect class="rad" x="190" y="280" width="640" height="370" rx="8"/>
+  <rect x="208" y="305" width="604" height="320" fill="url(#fins)"/>
+  <text class="h" x="305" y="330">R0 retained engine radiator</text>
+  <rect class="cond" x="215" y="300" width="590" height="325" rx="6" opacity=".88"/>
+  <path d="M235 320H785V600H235Z" fill="url(#fins)" opacity=".8"/>
+  <rect x="770" y="335" width="21" height="235" rx="10" fill="#12191f" stroke="#7fa5bd" stroke-width="2"/>
+  <text class="t" x="280" y="355">C0 retained full-face condenser</text>
+  <text class="small hold" x="315" y="380">C0 fin face ≈ 480 × 460; measure full envelope</text>
+  <rect class="cac" x="285" y="510" width="450" height="105" rx="5"/>
+  <g stroke="#778590" stroke-width="2"><path d="M300 528H720M300 543H720M300 558H720M300 573H720M300 588H720"/></g>
+  <text class="tag" x="385" y="570">K0 — ONE NEW LOW CAC</text>
+  <circle class="fan" cx="365" cy="423" r="104"/>
+  <circle class="fan" cx="655" cy="423" r="104"/>
+  <g stroke="#30c48d" stroke-width="5"><path d="M365 325V521M267 423H463M296 354L434 492M296 492L434 354"/><path d="M655 325V521M557 423H753M586 354L724 492M586 492L724 354"/></g>
+  <circle fill="#11161c" stroke="#30c48d" stroke-width="4" cx="365" cy="423" r="28"/><circle fill="#11161c" stroke="#30c48d" stroke-width="4" cx="655" cy="423" r="28"/>
+  <text class="small fixed" x="340" y="668">fan-pair midpoint = vehicle CL ±2</text>
+  <path class="dim" d="M155 715V748M865 715V748M155 740H865"/>
+  <path class="dim" d="M155 732L170 740L155 748M865 732L850 740L865 748"/>
+  <text class="t hold" x="331" y="768">W0 CLEAR OPENING — MEASURE ON VEHICLE</text>
+  <path class="dim" d="M105 255H135M105 680H135M115 255V680"/>
+  <path class="dim" d="M107 255L115 270L123 255M107 680L115 665L123 680"/>
+  <text class="t hold" transform="translate(84 605) rotate(-90)">H0 CLEAR OPENING — MEASURE</text>
+
+  <!-- side section -->
+  <rect class="panel" x="995" y="145" width="555" height="635" rx="18"/>
+  <text class="h" x="1025" y="185">B. CENTRELINE SIDE SECTION</text>
+  <text class="small" x="1025" y="215">front / grille</text><text class="small" x="1415" y="215">engine</text>
+  <path class="air" d="M1030 245H1490"/>
+  <rect x="1060" y="280" width="18" height="360" fill="#141a20" stroke="#d9e2ea" stroke-width="3"/><text class="tiny" x="1035" y="665">guard</text>
+  <rect class="fan" x="1100" y="300" width="72" height="320"/><circle class="fan" cx="1136" cy="460" r="30"/><text class="tiny" x="1098" y="665">F1/F2</text>
+  <rect class="cac" x="1195" y="475" width="50" height="145"/><text class="tiny" x="1183" y="665">K0 low</text>
+  <rect class="cond" x="1270" y="295" width="34" height="325"/><text class="tiny" x="1262" y="665">C0</text>
+  <rect class="rad" x="1332" y="270" width="52" height="370"/><text class="tiny" x="1328" y="665">R0</text>
+  <path d="M1405 300H1500V620H1405Z" fill="#101820" stroke="#30c48d" stroke-width="3"/>
+  <circle class="fan" cx="1452" cy="460" r="105"/><g stroke="#30c48d" stroke-width="8"><path d="M1452 355V565M1347 460H1557M1378 386L1526 534M1378 534L1526 386"/></g><circle fill="#11161c" stroke="#30c48d" stroke-width="4" cx="1452" cy="460" r="32"/>
+  <text class="small fixed" x="1378" y="690">FM large rear puller</text>
+  <path class="dim" d="M1048 720V750M1508 720V750M1048 740H1508"/><path class="dim" d="M1048 732L1063 740L1048 748M1508 732L1493 740L1508 748"/>
+  <text class="t hold" x="1055" y="772">P0-lower: measure complete stack + gaps + pipe bends</text>
+
+  <!-- bottom panels -->
+  <rect class="panel" x="50" y="805" width="760" height="245" rx="18"/>
+  <text class="h" x="80" y="845">C. EXACT TOP-HOLE CONNECTION — BOTH SIDES</text>
+  <rect x="95" y="885" width="250" height="28" rx="3" fill="#9ea9b2"/><circle class="bolt" cx="220" cy="899" r="10"/>
+  <rect class="bolt" x="211" y="855" width="18" height="105" rx="7"/>
+  <rect class="rubber" x="185" y="915" width="70" height="25" rx="11"/>
+  <rect x="145" y="940" width="150" height="22" fill="#111820" stroke="#f5f7fa" stroke-width="2"/>
+  <text class="small" x="365" y="888">existing horizontal return plate + original hole</text>
+  <text class="small" x="365" y="919">vertical sleeved bolt + large washer</text>
+  <text class="small" x="365" y="950">EPDM isolator directly onto removable R0 ear</text>
+  <text class="tiny hold" x="365" y="982">Measure hole Ø, centres, XYZ and bush stack before choosing bolt.</text>
+  <text class="tiny fixed" x="365" y="1014">Lower saddles carry weight; top bolts only locate.</text>
+
+  <rect class="panel" x="835" y="805" width="715" height="245" rx="18"/>
+  <text class="h" x="865" y="845">D. RELEASE NUMBERS — WHAT IS FIXED VS HOLD</text>
+  <rect class="okbox" x="870" y="875" width="82" height="28" rx="5"/><text class="tag" x="887" y="895">FIXED</text>
+  <text class="tiny" x="970" y="895">R0 radiator + full-face C0 retained; 1 low CAC; 2 equal front + 1 rear fan</text>
+  <rect class="tagbox" x="870" y="918" width="82" height="28" rx="5"/><text class="tag" x="889" y="938">HOLD</text>
+  <text class="tiny" x="970" y="938">Complete R0/C0 envelopes; W0/H0; P0; fan F/HF/DF; holes; saddles</text>
+  <rect class="tagbox" x="870" y="961" width="82" height="28" rx="5"/><text class="tag" x="889" y="981">START</text>
+  <text class="tiny" x="970" y="981">K0 mock-up ≈ 450–500 W × 150–180 H × ≤65 D — NOT order size</text>
+  <rect class="redbox" x="870" y="1004" width="82" height="28" rx="5"/><text class="tag" x="884" y="1024">STOP</text>
+  <text class="tiny" x="970" y="1024">No cutting/welding or performance claim before opaque mock-up + 50 °C test</text>
+</svg>

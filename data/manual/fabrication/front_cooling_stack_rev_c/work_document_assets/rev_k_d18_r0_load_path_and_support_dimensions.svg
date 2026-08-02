@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <defs>
+    <style>
+      .bg{fill:#11161c}.panel{fill:#18212a;stroke:#344352;stroke-width:2}.title{font-family:Arial,sans-serif;font-size:32px;font-weight:700;fill:#f5f7fa}.sub{font-family:Arial,sans-serif;font-size:19px;fill:#bec8d2}.h{font-family:Arial,sans-serif;font-size:24px;font-weight:700;fill:#fff}.hsmall{font-family:Arial,sans-serif;font-size:19px;font-weight:700;fill:#fff}.t{font-family:Arial,sans-serif;font-size:18px;fill:#e4e9ee}.small{font-family:Arial,sans-serif;font-size:16px;fill:#c7d0d9}.tiny{font-family:Arial,sans-serif;font-size:14px;fill:#aeb9c4}.hold{fill:#ffbe55}.fixed{fill:#30c48d}.warn{fill:#ff6b6b}.upright{fill:#4f5961;stroke:#e2e9ee;stroke-width:3}.r0{fill:#745943;stroke:#e2bb8e;stroke-width:4}.tank{fill:#553f30;stroke:#e2bb8e;stroke-width:3}.cross{fill:#26323a;stroke:#ffbe55;stroke-width:4}.seat{fill:#687783;stroke:#e7edf2;stroke-width:2}.rubber{fill:#101820;stroke:#30c48d;stroke-width:3}.gusset{fill:#3a4650;stroke:#ffbe55;stroke-width:3}.stay{fill:#ccd4da;stroke:#fff;stroke-width:2}.hole{fill:#11161c;stroke:#ffbe55;stroke-width:4}.dim{stroke:#ffbe55;stroke-width:3;fill:none}.dim2{stroke:#30c48d;stroke-width:3;fill:none}.leader{stroke:#aab7c2;stroke-width:2;fill:none}.load{stroke:#64b5f6;stroke-width:6;fill:none;marker-end:url(#bluearrow)}.flow{stroke:#30c48d;stroke-width:5;fill:none;marker-end:url(#greenarrow)}.dash{stroke:#ffbe55;stroke-width:2;stroke-dasharray:9 7;fill:none}.tag{font-family:Arial,sans-serif;font-size:16px;font-weight:700;fill:#0e1419}.tagbox{fill:#ffbe55}.okbox{fill:#30c48d}.redbox{fill:#ff6b6b}
+    </style>
+    <marker id="bluearrow" markerWidth="13" markerHeight="13" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#64b5f6"/></marker>
+    <marker id="greenarrow" markerWidth="13" markerHeight="13" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#30c48d"/></marker>
+    <pattern id="fins" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M1 0V12M6 0V12M11 0V12" stroke="#d6a875" stroke-width="1.5" opacity=".65"/></pattern>
+  </defs>
+
+  <rect class="bg" width="1600" height="1100"/>
+  <text class="title" x="55" y="66">REV K — R0 SUPPORT CRADLE AND TOP RESTRAINTS</text>
+  <text class="sub" x="55" y="101">Fabrication release sheet • millimetres • NOT TO SCALE • all fabricated dimensions HOLD / MEASURE-TO-SELECT</text>
+
+  <rect class="panel" x="45" y="135" width="970" height="630" rx="18"/>
+  <text class="hsmall" x="75" y="177">A. FRONT ELEVATION — FILLED R0 SITS ON A CONTINUOUS LOAD-BEARING CRADLE</text>
+  <text class="tiny hold" x="75" y="205">Top stays locate fore/aft and side-to-side only. They do not carry vertical radiator weight.</text>
+
+  <!-- uprights and chassis tie points -->
+  <path class="upright" d="M165 248H238V660H165Z"/>
+  <path class="upright" d="M822 248H895V660H822Z"/>
+  <circle class="hole" cx="201" cy="282" r="15"/><circle class="hole" cx="858" cy="282" r="15"/>
+  <text class="tiny hold" x="96" y="237">existing horizontal-return holes — MEASURE Ø + XYZ</text>
+  <path class="leader" d="M215 260L140 229"/><path class="leader" d="M844 260L908 229"/>
+  <text class="tiny" x="126" y="692">left side upright → chassis/front support</text>
+  <text class="tiny" x="744" y="692">right side upright → chassis/front support</text>
+
+  <!-- R0 -->
+  <rect class="tank" x="273" y="284" width="74" height="284" rx="9"/><rect class="tank" x="713" y="284" width="74" height="284" rx="9"/>
+  <rect class="r0" x="330" y="274" width="400" height="304" rx="9"/>
+  <rect x="348" y="300" width="364" height="250" fill="url(#fins)"/>
+  <text class="h" x="401" y="380">R0 RETAINED ENGINE</text><text class="h" x="425" y="412">RADIATOR</text>
+  <text class="small hold" x="391" y="445">MR = filled/capped mass — MEASURE</text>
+  <!-- lower R0 locator pins -->
+  <rect class="stay" x="411" y="560" width="20" height="45" rx="6"/><rect class="stay" x="629" y="560" width="20" height="45" rx="6"/>
+  <text class="tiny" x="368" y="625">R0 lower locator pins</text>
+
+  <!-- top isolating locator stays -->
+  <rect class="stay" x="191" y="282" width="20" height="78" rx="6"/><rect class="rubber" x="177" y="348" width="48" height="21" rx="9"/>
+  <path class="leader" d="M201 370L342 315"/><text class="tiny fixed" x="345" y="302">LHS sleeved rubber locator stay</text>
+  <rect class="stay" x="848" y="282" width="20" height="78" rx="6"/><rect class="rubber" x="834" y="348" width="48" height="21" rx="9"/>
+  <path class="leader" d="M858 370L742 315"/><text class="tiny fixed" text-anchor="end" x="738" y="323">RHS sleeved rubber locator stay</text>
+  <text class="tiny warn" x="392" y="246">BOTH TOP HOLES USED — RESTRAINT ONLY, NOT VERTICAL LOAD BEARING</text>
+
+  <!-- cradle -->
+  <rect class="cross" x="210" y="638" width="650" height="54" rx="3"/>
+  <text class="small hold" x="320" y="672">L0 continuous lower crossmember — 40 × 40 × 3 SHS</text>
+  <rect class="seat" x="376" y="610" width="92" height="28" rx="4"/><rect class="seat" x="592" y="610" width="92" height="28" rx="4"/>
+  <path class="rubber" d="M387 610Q387 585 422 585Q457 585 457 610Z"/><path class="rubber" d="M603 610Q603 585 638 585Q673 585 673 610Z"/>
+  <text class="tiny fixed" x="360" y="734">two Toyota-style rubber saddles under the two R0 bottom locators</text>
+  <path class="gusset" d="M238 638L288 638L238 588Z"/><path class="gusset" d="M238 692L288 692L238 742Z"/>
+  <path class="gusset" d="M832 638L782 638L832 588Z"/><path class="gusset" d="M832 692L782 692L832 742Z"/>
+  <text class="tiny hold" x="77" y="745">2 × 4 mm triangular gussets, ~50 mm legs</text><path class="leader" d="M248 720L210 736"/>
+  <text class="tiny hold" x="704" y="745">at each crossmember/upright junction</text><path class="leader" d="M824 720L850 736"/>
+  <!-- dimension L0 -->
+  <path class="dim" d="M210 700V720M860 700V720M210 712H860M210 704L225 712L210 720M860 704L845 712L860 720"/>
+  <text class="t hold" x="412" y="716">L0 clear span — MEASURE</text>
+  <!-- dimension S0 -->
+  <path class="dim2" d="M422 600V560M638 600V560M422 572H638M422 564L436 572L422 580M638 564L624 572L638 580"/>
+  <text class="small fixed" x="445" y="554">S0 saddle centres — MEASURE</text>
+  <!-- load path -->
+  <path class="load" d="M500 500V575M500 575H422V604M500 575H638V604"/>
+  <path class="load" d="M422 625V663M638 625V663M422 675H260M638 675H810"/>
+  <text class="t" x="286" y="524">LOAD PATH: R0 → saddles → crossmember → uprights → chassis</text>
+
+  <rect class="panel" x="1040" y="135" width="515" height="630" rx="18"/>
+  <text class="h" x="1070" y="177">B. SIDE DETAIL — SADDLE CARRIES WEIGHT</text>
+  <text class="small" x="1070" y="210">Section through one R0 lower locator</text>
+  <rect class="upright" x="1080" y="600" width="390" height="85" rx="3"/>
+  <text class="small hold" x="1167" y="650">40 × 40 × 3 SHS crossmember</text>
+  <rect class="seat" x="1190" y="570" width="170" height="30" rx="3"/>
+  <path class="rubber" d="M1210 570Q1210 522 1275 522Q1340 522 1340 570Z"/>
+  <rect class="stay" x="1263" y="408" width="24" height="120" rx="7"/>
+  <rect class="r0" x="1135" y="270" width="290" height="140" rx="10"/>
+  <text class="h" x="1208" y="345">R0 LOWER TANK</text>
+  <path class="load" d="M1275 390V515M1275 575V612"/>
+  <text class="small fixed" x="1080" y="725">Rubber cup captures locator pin; seat supports cup.</text>
+  <text class="small warn" x="1080" y="748">NO tank, seam or fin metal may touch the steel cradle.</text>
+  <path class="leader" d="M1365 541L1460 505"/><text class="tiny" x="1370" y="490">Toyota-pattern</text><text class="tiny" x="1370" y="508">rubber saddle</text>
+  <path class="leader" d="M1355 584L1460 560"/><text class="tiny" x="1370" y="550">flat welded / bolted</text><text class="tiny" x="1370" y="568">saddle seat</text>
+  <path class="leader" d="M1290 451L1460 430"/><text class="tiny" x="1370" y="420">R0 lower locator</text><text class="tiny" x="1370" y="438">pin — verify profile</text>
+
+  <rect class="panel" x="45" y="800" width="735" height="250" rx="18"/>
+  <text class="h" x="75" y="842">C. STARTING SECTION — ONLY AFTER MEASUREMENT</text>
+  <rect class="tagbox" x="75" y="868" width="95" height="29" rx="5"/><text class="tag" x="92" y="888">HOLD</text>
+  <text class="small" x="190" y="889">L0 clear span and S0 centres; actual upright face/attachment; MR filled/capped</text>
+  <rect class="okbox" x="75" y="912" width="95" height="29" rx="5"/><text class="tag" x="90" y="932">START</text>
+  <text class="small" x="190" y="933">40 × 40 × 3 mm mild-steel SHS if L0 ≤ 700 mm AND MR ≤ 35 kg</text>
+  <rect class="tagbox" x="75" y="956" width="95" height="29" rx="5"/><text class="tag" x="90" y="976">CHECK</text>
+  <text class="small" x="190" y="977">2 × 4 mm triangular gussets, ~50 mm legs, at EACH end — or checked removable equivalent</text>
+  <rect class="redbox" x="75" y="1000" width="95" height="29" rx="5"/><text class="tag" x="93" y="1020">STOP</text>
+  <text class="small" x="190" y="1021">If L0 / MR exceeds start condition, or upright attachment is offset/twisted: recalculate and release before fabrication</text>
+
+  <rect class="panel" x="805" y="800" width="750" height="250" rx="18"/>
+  <text class="h" x="835" y="842">D. FABRICATION AND ACCEPTANCE</text>
+  <text class="small fixed" x="835" y="882">1. Build the continuous crossmember and gusseted ends first; attach positively to BOTH uprights.</text>
+  <text class="small fixed" x="835" y="914">2. Place both saddles under R0 locators; confirm load share and drainage before fitting C0/K0/fans.</text>
+  <text class="small fixed" x="835" y="946">3. Fit both top-hole sleeved, rubber-isolated stays only after R0 is fully supported below.</text>
+  <text class="small hold" x="835" y="978">Proof-load EMPTY cradle at 2 × MR for 10 min: no permanent set, crack, loose fastener, saddle shift or upright distortion.</text>
+  <text class="small warn" x="835" y="1015">Do not cut / weld from image. Use opaque vehicle mock-up and measured dimensions before final work.</text>
+</svg>

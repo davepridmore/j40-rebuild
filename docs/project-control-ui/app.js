@@ -5593,7 +5593,7 @@
         qty: "2 independent brackets",
         dimension: "Relay: use the 360 x 245 x 3 mm base and 300 x 197 x 3 mm insulator. MIDI: use the 210 x 165 x 65 mm body, 230 x 185 mm lid and 140 x 85 mm subplate. Final bracket outline follows each real box, its own hood and service sweep; no shared electrical envelope.",
         material: "Two site-fit corrosion-protected local brackets, separate hoods and structural fasteners; retain the existing aluminium relay base and MIDI enclosure.",
-        sourceBasis: "docs/J40-integrated-cooling-pack-fabricator-specification-rev-h.md; data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_d09_independent_electrical_mounts.png (retained Rev G reference)",
+        sourceBasis: "docs/J40-existing-radiator-refurbishment-and-turbo-fan-specification-rev-i.md; data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_i_d13_fan_control_and_centreline.png",
         action: "Template each box separately on non-radiator structure with down/rear cable exits. Prove each hood, lid/cover sweep, cable bend, drip path, P-clips, disconnect, removal, bonnet/grille clearance and no active-fin/sealed-airflow obstruction before drilling. Keep the MIDI lid shut in operation; no formal IP rating is claimed unless purchased-rated or tested.",
         reject: "No common transverse plate; no fixing or load into radiator core, fins, tanks, necks, seams, through-core rods, rubber-isolated radiator mounts or battery stand.",
         notes: "Keep the master cutoff/breaker battery-side. Preserve existing relay assignments and fuse sizing; recalculate cable lengths and repeat continuity, function, and voltage-drop checks after relocation.",
@@ -9461,422 +9461,484 @@
     `;
   }
 
+
   function renderCoolingPack() {
+    // Keep Rev L's measured photographs, photo-referenced visualisations and
+    // controlled drawings together. AI views never release dimensions.
+    const revLAssets = {
+      references: {
+        r01: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
+        r02: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
+        r03: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r03_condenser_height_drier_mount_reference.jpg",
+        r04: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r04_condenser_measurement_reference.jpg",
+        r05: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
+        r06: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r06_later_chassis_top_mount_reference.png",
+        r07: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r07_actual_large_fan_context.jpg",
+        r08: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r08_actual_radiator_installed_wide.jpg",
+        r09: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r09_actual_radiator_installed_close.jpg",
+        r10: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r10_r0_width_tape.jpg",
+        r11: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r11_r0_height_tape.jpg",
+        r12: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
+        r13: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
+        r14: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r14_c0_width_tape.jpg",
+        r15: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r15_c0_height_tape.jpg",
+      },
+      photos: {
+        ph01: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph01_photo_measured_assembled.jpg",
+        ph02: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph02_photo_measured_exploded.jpg",
+        ph03: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph03_photo_measured_installed.jpg",
+        ph04: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_ph04b_photo_measured_engine_side_corrected.jpg",
+      },
+      d19Png: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d19_photo_measured_parts.png",
+      d19Svg: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d19_photo_measured_parts.svg",
+      d20Png: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d20_measured_packaging_and_holds.png",
+      d20Svg: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_d20_measured_packaging_and_holds.svg",
+    };
+    const physicalReferenceVisuals = [
+      {
+        path: revLAssets.references.r01,
+        caption: "R01 — Actual removed original copper/brass R0 engine radiator. This physical part controls its tanks, filler, coolant necks, rails, ears and lower locators; clean, measure and pressure/flow test it before fabrication.",
+        specific_component: "Rev L actual retained R0 engine-radiator master",
+      },
+      {
+        path: revLAssets.references.r02,
+        caption: "R02 — Actual broad retained C0 A/C condenser, including its pipes, receiver/drier and tabs. Keep its full face if it passes flush, pressure, fin and fit checks.",
+        specific_component: "Rev L actual full-face C0 condenser master",
+      },
+      {
+        path: revLAssets.references.r03,
+        caption: "R03 — C0 height, receiver/drier and tab reference. Record the complete envelope, pipe bends and service-tool sweep rather than inferring them from the fin face.",
+        specific_component: "Rev L C0 drier and mounting reference",
+      },
+      {
+        path: revLAssets.references.r04,
+        caption: "R04 — Earlier C0 measurement reference. Rev L's newer tape photographs now control the provisional 540 × 465 mm body estimate; complete pipes, drier, tabs and depth still require direct measurement.",
+        specific_component: "Rev L earlier C0 measurement reference",
+      },
+      {
+        path: revLAssets.references.r05,
+        caption: "R05 — Actual removable expanded-mesh stone guard. Repair if necessary and retain its measured open area, attachments and removal path.",
+        specific_component: "Rev L retained stone-guard master",
+      },
+      {
+        path: revLAssets.references.r06,
+        caption: "R06 — Later chassis with the two intended inward-facing horizontal top-return holes. Transfer them with one rigid template; both must be used.",
+        specific_component: "Rev L intended top-hole reference",
+      },
+      {
+        path: revLAssets.references.r07,
+        caption: "R07 — Earlier engine-side context for the retained rear fan and shroud. The new isolated photograph R12 proves FL is electric, not mechanical; retain it only after label, polarity, condition, current and airflow checks.",
+        specific_component: "Rev L retained rear-fan context",
+      },
+      {
+        path: revLAssets.references.r08,
+        caption: "R08 — Genuine wide installed view of the retained radiator in the original assembled engine bay. This is the real vehicle-scale reference for R0, its full-width rear shroud and its relationship to the engine—not an AI estimate.",
+        specific_component: "Rev L genuine installed radiator scale reference",
+      },
+      {
+        path: revLAssets.references.r09,
+        caption: "R09 — Genuine close installed view of R0 and the original full-width rear fan shroud. It proves the radiator/shroud package existed at this scale in the vehicle, but predates the later grey top-return posts.",
+        specific_component: "Rev L genuine installed radiator close reference",
+      },
+      {
+        path: revLAssets.references.r10,
+        caption: "R10 — New R0 width tape photograph. Approximately 635 mm from the photographed left hook datum to the right rail; the tape continues to about 29 in beyond the radiator. Camera angle and datum control make 635 mm a provisional mock-up dimension, not a cutting dimension.",
+        specific_component: "Rev L photo-measured R0 width reference",
+      },
+      {
+        path: revLAssets.references.r11,
+        caption: "R11 — New R0 height tape photograph. Use approximately 610 mm for the body and 635 mm to the filler-cap top when making the first dummy. Re-measure square to the actual rails before fabrication.",
+        specific_component: "Rev L photo-measured R0 height reference",
+      },
+      {
+        path: revLAssets.references.r12,
+        caption: "R12 — Actual retained FL large electric puller and full shroud. The visible ring is approximately 450–480 mm; exact complete width, height, depth, blade sweep, label, current and airflow remain HOLD.",
+        specific_component: "Rev L actual retained large electric puller",
+      },
+      {
+        path: revLAssets.references.r13,
+        caption: "R13 — Actual retained FS front pusher. The circular guard is approximately 240–255 mm and the complete frame/tabs appear about 280 mm wide. Measure complete F, blade sweep Db, depth and plug bend separately before selecting its mate.",
+        specific_component: "Rev L actual retained small electric pusher sample",
+      },
+      {
+        path: revLAssets.references.r14,
+        caption: "R14 — Actual retained C0 condenser width photograph. Use approximately 540 mm body width only for the first mock-up; tabs, pipe bends, receiver/drier and tool sweep extend the complete envelope.",
+        specific_component: "Rev L photo-measured C0 width reference",
+      },
+      {
+        path: revLAssets.references.r15,
+        caption: "R15 — Actual retained C0 condenser height photograph. Use approximately 465 mm body height only for the first mock-up; direct square measurement and complete depth remain mandatory.",
+        specific_component: "Rev L photo-measured C0 height reference",
+      },
+    ];
     const photorealisticVisuals = [
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph01_complete_wide_exploded_v2.png",
-        caption: "PH01 — Complete wide Rev G split-out proposal. The main row separates the installed front-to-rear order: centred twin Toyota/Denso pusher module, short central 500 × 180 × 50 charge cooler, 559 × 356 × 21 condenser, HJ47/2H-pattern radiator, then the full-face rear shroud and large retained mechanical puller. Uprights, rails, direct ears, lower saddles, drier, protected electrical enclosures, seals, connectors and fasteners are included. Exploded positions identify parts only; PH05/D09 control the compact installed electrical placement.",
-        specific_component: "Complete wide Rev G three-core / three-fan component split-out",
+        path: revLAssets.photos.ph01,
+        caption: "PH01 — Rev L opaque assembled proposal. It visualises the retained stone guard; two identical horizontally centred front pushers; one shallow low-centred K0 CAC; retained full-face C0 condenser; retained weathered R0 radiator; and the retained large electric FL puller in its rear shroud. D19/D20 and the physical dry-fit control every dimension and mounting decision.",
+        specific_component: "Rev L photo-referenced opaque assembled cooling pack",
       },
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph02_toyota_donor_assembled.png",
-        caption: "PH02 — Rev G off-vehicle central cooling-module proposal: two equal centred 248 mm Prado/GX Denso donor pushers, the retained rear mechanical puller, direct top ears and lower saddles. Chassis posts and electrical boxes are intentionally omitted; PH03C/PH04 control the attachment visual and PH05/D09/E2 control the electrical placement.",
-        specific_component: "Rev G off-vehicle Toyota-donor cooling module proposal",
+        path: revLAssets.photos.ph02,
+        caption: "PH02 — Rev L wide component split-out. It shows exactly one stone guard, one twin-pusher carrier, one K0 CAC, one C0 condenser with receiver/drier, one R0 radiator and one large rear electric FL/shroud, plus the lower crossmember, saddles, uprights, covered inboard electrical box and isolated mounting hardware. The spacing is explanatory, not a cutting layout.",
+        specific_component: "Rev L photo-referenced wide component split-out",
       },
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_h_ph03a_interface_opaque_centered.png",
-        caption: "PH03A — Normal opaque front-installed appearance. It shows the complete compact pack with two equal front electric pusher fans, all cores and tanks fully assembled, and no transparent or cutaway area. The retained engine-driven mechanical puller is installed behind the opaque radiator and is therefore intentionally hidden in this front view. This image is an appearance aid only; use PH03C/D10/F1—not image pixels—to set the fan centres and mounting geometry.",
-        specific_component: "Rev H fully opaque front-installed cooling-pack appearance",
+        path: revLAssets.photos.ph03,
+        caption: "PH03 — Rev L proposed later-chassis installation. It shows the pack between the original uprights, R0 carried by the lower saddles/crossmember, both upper top-return holes occupied, the centred front pair and low CAC at the grille side, and the large rear shroud visible behind R0. This AI composite does not prove alignment, width or depth.",
+        specific_component: "Rev L photo-referenced later-chassis installation",
       },
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_h_ph03b_opaque_engine_side_rear.png",
-        caption: "PH03B — Fully opaque engine-side rear view. It shows the one large retained Toyota 2H engine-driven mechanical puller centred in a sealed full-face rear shroud, with the copper/brass radiator immediately ahead of it. The two 248 mm electric pusher fans and the condenser/charge cooler are on the grille side, so their faces are correctly hidden by the opaque radiator. The Relay and MIDI enclosures are closed; no fuse or live stud is exposed. Do not derive exact fan diameter, hose routing, connector placement or mounting dimensions from this illustrative render.",
-        specific_component: "Rev H fully opaque engine-side mechanical-puller view",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_h_ph03_interface_cutaway_centered_final.png",
-        caption: "PH03C — Corrected Rev H installed interface cutaway. The midpoint between the two equal, level front-pusher hubs visibly coincides with the centred rear mechanical-fan hub and the CAR/chassis longitudinal centreline C0. Fabrication remains controlled at C0 − 133 mm and C0 + 133 mm, 266 mm centre-to-centre, with midpoint and hub-height error each within ±2 mm. The cutaway explains the otherwise hidden three-core / three-fan stacking and circuit connections; it is not the normal finished appearance. The image also illustrates both original top-hole M8/sleeved-isolator/direct-ear attachments and the lower saddles that carry radiator weight.",
-        specific_component: "Rev H controlled three-core / three-fan interface cutaway",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph04_direct_side_ear_closeup.png",
-        caption: "PH04 — Direct-side-ear close-up: original top-return hole, M8 bolt and sleeved EPDM isolator locate one short ear immediately below; the lower saddle under that same radiator side rail carries the weight.",
-        specific_component: "Existing-top-hole direct radiator-side-ear close-up",
-      },
-      {
-      path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_ph05_independent_electrical_mounts.png",
-      caption: "PH05 — Rev G electrical-placement detail only: the covered Relay Rev D box is upper/forward and the sealed MIDI enclosure lower/rear, centred one behind the other above/rear of the radiator top tank. Separate local non-radiator brackets and hoods keep both envelopes inside W0/upright width and clear of the active fin/fan aperture. D09 and E2/E2a control exact mounting.",
-      specific_component: "Rev G independent sealed MIDI and covered Relay mounts proposal",
+        path: revLAssets.photos.ph04,
+        caption: "PH04B — Corrected Rev L engine-bay-side proposal. The camera is behind the cooling pack, with the engine and turbo in the near foreground: R0 is forward toward the grille, and the retained large FL electric puller is sealed into the full-face shroud physically between R0 and the engine. Its plug and short loom are visible and it has no belt or pulley. The two front pushers, K0 and C0 are correctly concealed on the far grille side of the opaque radiator. Physical clearance and installed airflow testing remain mandatory.",
+        specific_component: "Rev L corrected engine-bay-side rear electric-puller view",
       },
     ];
     const diagrams = [
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d01_complete_stack.png",
-        caption: "D01 — Rev G controlled layout: all-front elevation and central component order. Nominal dimensions remain subject to the listed release gates.",
-        specific_component: "Rev G complete cooling-system elevation",
+        path: revLAssets.d19Png,
+        caption: "D19 — Rev L photo-measured retained-parts sheet. It records provisional R0 ≈635 mm width, ≈610 mm body height / ≈635 mm to cap, C0 ≈540 × 465 mm body, FS guard ≈240–255 mm / complete module starting estimate ≈280 mm, and FL ring ≈450–480 mm. Amber dimensions are mock-up inputs, not cut sizes.",
+        specific_component: "Rev L photo-measured retained-parts drawing",
       },
       {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d02_radiator_assembly.png",
-        caption: "D02 — Rev G HJ47-pattern radiator assembly: 530 × 435 × 64 mm is active-core thermal basis only; final complete radiator envelope is field-controlled by R0.",
-        specific_component: "Rev G HJ47-pattern radiator assembly orthographic",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d03_radiator_components.png",
-        caption: "D03 — Rev G exploded radiator parts: recored/custom HJ47-pattern unit, not a Prado radiator.",
-        specific_component: "Rev G exploded HJ47-pattern radiator parts",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d04_component_dimensions.png",
-        caption: "D04 — Rev G central charge cooler, condenser and 248 mm twin-fan nominal dimensions.",
-        specific_component: "Rev G compact all-front component dimensions",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d05_mounting_shroud.png",
-        caption: "D05 — Rev G mounting, saddles and custom full-face shroud details; do not reuse a complete donor shroud.",
-        specific_component: "Rev G mounting and custom-shroud details",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d06_side_geometry.png",
-        caption: "D06 — Rev G complete front-to-rear depth stack, gaps and M3 fit gate: 215 mm absolute stack basis / 225 mm preferred installed-clearance envelope.",
-        specific_component: "Rev G all-front side-section and depth gates",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_c_d07_fan_wiring.png",
-        caption: "D07 — Rev G independent twin Prado/GX pusher branches: every fuse, holder and live fuse stud is inside the closed MIDI box; relays remain in the separate covered Relay Rev D box.",
-        specific_component: "Rev G complete fan wiring",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_d_d08_existing_top_hole_mount.png",
-        caption: "D08 — Rev G direct side-ear mounting: short ear directly under each original top-return hole; lower saddle under the same radiator side rail; B0/H0-L/H0-R/W0/P0/R0/BRKT control release.",
-        specific_component: "Rev G direct-side-ear existing-top-hole pickup detail",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_g_d09_independent_electrical_mounts.png",
-        caption: "D09 — Rev G electrical width control: Relay and MIDI use separate local brackets and hoods, but are vertically/depth staggered so both complete front-view envelopes remain inside W0/uprights and the combined projected width is no greater than the Relay 360 mm envelope. Never side-by-side across vehicle width.",
-        specific_component: "Rev G independent electrical brackets and service detail",
-      },
-      {
-        path: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_h_d10_vehicle_centreline_control.png",
-        caption: "D10 — Rev H procurement, fit and vehicle-centreline control. Survey C0 from paired chassis references; locate the two front fan hubs at C0 − 133 mm and C0 + 133 mm. The pair midpoint and hub heights must each agree within ±2 mm.",
-        specific_component: "Rev H vehicle-centred fan and procurement control drawing",
+        path: revLAssets.d20Png,
+        caption: "D20 — Rev L packaging and hold sheet. Two approximately 280 mm dummies plus a 10 mm centre gap make a 570 mm starting pair inside the provisional 635 mm R0 silhouette, leaving about 32.5 mm equal margins. Final F, Db, Wc, Wa, B0, S0 and all depths remain direct-measure HOLD items.",
+        specific_component: "Rev L measured packaging and release-hold drawing",
       },
     ];
     const purchasePhases = [
       {
-        phase: "1 — Sample / mock-up only",
-        status: "Quote and trial-fit; do not release final cores",
-        items: "Inspect/recore the existing 2H radiator; obtain two matched Prado 120/GX470 fan motor, blade and connector samples; obtain one 14 × 22 condenser sample and one 500 × 180 × 50 mm / 57 mm-outlet charge-cooler sample; bring the actual Relay Rev D and MIDI Rev D hardware to the mock-up.",
-        release: "Record complete physical envelopes, part labels and connector condition. First record B0/H0-L/H0-R/W0/P0/R0, make the rigid two-hole BRKT template, then build the full-size dummy. A Prado/GX radiator or complete donor shroud is not an approved purchase item.",
+        phase: "0 — Bring the actual retained parts",
+        status: "Do this before buying",
+        items: "Original R0 radiator, original full-face C0 condenser with pipes/drier/tabs, stone guard, large rear fan/shroud, existing front fan sample and covered relay/MIDI carrier.",
+        release: "Use R10–R15 and D19 for first mock-up sizes, then identify, square-measure and test each actual part. R0, C0, FL and FS remain HOLD until condition, complete envelopes and the vehicle fixture are accepted.",
       },
       {
-        phase: "2 — Buy after measured fit release",
-        status: "Buy only after B0/H0-L/H0-R/W0/P0/R0/BRKT, M1–M6 and F1/F2 pass",
-        items: "Final HJ47-pattern recore/custom radiator; final condenser and charge cooler; matched Prado/GX Denso fan motor/blade/connector pair; new drier/trinary parts, A/C hose/fittings, seals and standard M6/M8 isolation hardware.",
-        release: "Use the measured whole-part envelopes, not fin dimensions alone. Custom-build only the central shroud, two short direct side ears/adapters, lower saddles, seals and measured pipe adapters after the real samples clear the body, engine fan and service routes. Do not make a transverse radiator carrier.",
+        phase: "1 — Match the front fan",
+        status: "Preferred: buy one matching twin",
+        items: "Take the actual FS sample and plug to Toyota/Denso-family Prado, Land Cruiser, Hilux, HiAce and similar breaker stock. The first dummy may use F ≈280 mm, but purchase must match the label and measured complete envelope, blade diameter, depth, tabs, pusher rotation, plug bend and current.",
+        release: "If a genuine matching twin is unavailable, or the pair misses fit/current/airflow/50 °C gates, buy two physically matching complete modules and keep the old fan as a spare. Unequal installed fans are forbidden.",
       },
       {
-        phase: "3 — Electrical / commissioning",
-        status: "Release from measured current and completed installation",
-        items: "Two independent fan relay/fuse branches with every fuse, holder and live fuse stud inside the closed MIDI Rev D box; covered Relay Rev D box, cable, glands, connectors, protection, P-clips and service consumables; coolant, pressure-test media, evacuation/charge materials and logging equipment.",
-        release: "Size relays, fuses and cable from measured start/run current and voltage drop; pass E1 plus individual relay-box and MIDI-box E2 service/weather checks, then T1–T3 at the required 50°C conditions before claiming no cooling derate or increasing boost.",
+        phase: "2 — Release K0 and its complete charge route",
+        status: "Buy only after the 1:1 fixture passes",
+        items: "One shallow wide CAC K0; bead-ended charge pipe; new reinforced silicone couplers and T-bolt clamps; supports, rubber isolators, pressure-test provision and a low K0 cradle/duct.",
+        release: "K0, tanks, ports and every pipe bend must fit low and centred after engine movement and service space are represented. Pressure-test the route; target post-CAC IAT ≤80 °C and route drop ≤10 kPa.",
       },
+      {
+        phase: "3 — Cooling and A/C service parts",
+        status: "Buy new after the port map",
+        items: "New upper/lower/overflow coolant hoses and clamps, approved cap, 2H thermostat/seal, compatible coolant, C0 isolators, new receiver/drier/desiccant, HNBR A/C seals, correct oil/refrigerant and service caps.",
+        release: "Old C0 drier controls geometry only; never fit a used donor drier. Confirm R0 necks/cap pressure, hose bends, refrigerant/oil and all A/C fitting sizes before purchase or recharge.",
+      },
+      {
+        phase: "4 — Mounting and local fabrication",
+        status: "Size from B0/S0 and the dry-fit",
+        items: "Two Toyota-pattern lower saddles; two sleeved upper isolator sets; C0/K0 isolators; class 8.8 fasteners; EPDM seals/edge protection; centred fan carrier; full-width lower crossmember; independent brackets and coating.",
+        release: "Both lower saddles carry R0 and both original top holes locate it. No new chassis hole, side annex, through-core tie or component hung from another core.",
+      },
+      {
+        phase: "5 — Electrical and controls",
+        status: "Release from measured current",
+        items: "Enough new OE-grade sealed relays/bases and covered MIDI/maxi holders/fuses to total three branches, calculated main-feed protection, documented coolant/A/C/high-IAT-or-load control, manual test/override, new cable, earths, terminals, seals and loom protection.",
+        release: "Keep the covered E0 carrier inboard. Fuse/relay/cable sizes and any Toyota/Denso alternator upgrade wait for measured start/run current, voltage drop and the complete hot-idle load test.",
+      },
+      {
+        phase: "6 — Commission and release",
+        status: "Workshop services and test materials",
+        items: "R0/C0/K0 pressure and flow/leak work, cooling flush/fill/bleed, A/C evacuation/recharge, calibrated coolant/IAT/boost/EGT/A/C/electrical logging and installed airflow measurement.",
+        release: "Pass proof load, service/removal, installed airflow, electrical, hot-idle A/C and loaded 50 °C tests before releasing the no-cooling-derate claim.",
+      },
+    ];
+    const completeParts = [
+      ["Front-fan donor set", "1 exact mate to retained FS, or 2 identical replacements", "Toyota/Denso breaker stock with the physical FS label, frame and plug as the master; include matching connector shells/grommets, but use new terminals and cable. If two replacements are used, retain FS as the spare.", "The finished vehicle always has two equal front fans. Purchase only after complete F × H × D, Db, tabs, plug bend, pusher direction, current, Wc and Wa pass."],
+      ["K0 charge-air set", "1 core + complete routed installation", "Pressure-tested Toyota turbo-diesel donor core if it fits; otherwise new core. Add bead-ended pipe, new reinforced silicone couplers, T-bolt clamps, supports, isolators and test ports/plugs.", "Starting core only 450–500 W × 150–180 H × ≤65 D mm; complete envelope and route follow the opaque dry-fit."],
+      ["R0 rubber mounting", "2 lower saddles + 2 upper isolator/sleeve sets", "New Toyota/J40-pattern rubbers preferred; otherwise new sample-matched automotive EPDM with steel crush sleeves, washers and locking hardware.", "Match R0 locator pins plus B0/S0. Lower saddles carry weight; both top holes locate/restrain only."],
+      ["Coolant service pack", "1 complete set", "New Toyota/OE upper, lower and overflow hoses; constant-tension clamps; approved-pressure cap; Toyota 2H thermostat/seal; compatible coolant and deionised water if needed.", "Exact IDs, bends, cap pressure and thermostat geometry come from the real R0/2H system—never an unknown donor cap, thermostat or hose."],
+      ["A/C service pack", "1 complete opened-circuit set", "New Denso/Toyota/OE receiver/drier or service element, HNBR O-rings/seals, caps and the confirmed oil/refrigerant. New C0 isolators if existing rubber is not proven.", "The photographed old drier is a geometry sample only. Never install a used donor drier; evacuate, leak-test and charge by specified mass."],
+      ["Three protected fan branches", "Total 3 relay + 3 covered fuse positions", "New Toyota/Denso, Hella/Bosch, Littelfuse/Bussmann or equivalent OE-grade relays, bases, MIDI/maxi holders/fuses and calculated main-feed protection. Retain only proven E0 pieces.", "Ratings come from measured start/run current, cable ampacity and voltage drop. Every live stud stays under the inboard lid."],
+      ["Controls and loom", "1 documented control set + calculated cable/earth set", "Documented Toyota/Denso switch/input where thresholds fit, otherwise a reputable sealed controller; add A/C request, high-IAT/load/fault response, manual test, new automotive cable, connectors, lugs, heat-shrink, conduit and P-clips.", "Sensor failure must not silently remove cooling; test polarity, voltage, current and temperature on all three branches."],
+      ["Brackets, seals and fasteners", "One complete measured vehicle set", "New class 8.8 fasteners, washers, locking nuts, sleeves/spacers, C0/K0 isolators, EPDM foam/seals, edge trim, heat/anti-chafe protection, structural steel/gussets and corrosion coating.", "Final sizes follow B0/S0 and the vehicle drawing. No self-tapper in a structural support, no through-core tie and no unsleeved bolt crushing rubber."],
+      ["Condition-only alternatives", "Only as a failed test requires", "Replacement R0/C0/FL, two-new-fan pair, Toyota overflow bottle, or higher-output Toyota/Denso alternator with matching mount/pulley and protected charge cable.", "Do not pre-buy. Alternator is released only if complete hot-idle voltage with fans, A/C, lights and vehicle loads fails."],
     ];
     const fitGates = [
-      ["C0", "Vehicle longitudinal centreline", "Establish from paired undamaged chassis/frame references and transfer to the aperture, rigid fixture and fan-shroud template. Do not derive C0 from a radiator, condenser, photograph, grille crop, fuse box or A/C fitting."],
-      ["M1", "Clear width", "Measure between upright inner faces at top, centre and bottom. A 559 mm complete condenser needs M1 ≥569 mm after the 5 mm hard clearance each side; every tank, bracket, fan guard, plug and wire bend must also fit."],
-      ["M2", "Clear height", "Measure the actual complete module with bonnet latch, grille and lower protection represented. The 435 mm active-core basis and every complete tank, seam, filler, drain, ear and saddle must remain inside the available aperture; no nominal height releases manufacture."],
-      ["M3", "Complete stack depth", "Measure grille/guard to the locked radiator plane at several heights. The actual complete pusher module + actual charge cooler + gaps + actual condenser + complete R0 radiator dummy, including tanks, seams, filler, drain, ears, locators, plugs, guards and wire bends, must fit the 215 mm absolute stack basis. The 530 × 435 × 64 mm figure is an active-core thermal/depth basis only, not a radiator dummy or finished envelope. A measured 225 mm installed-clearance envelope is preferred; any smaller measured envelope needs written proof of every body, plug, guard and engine-movement clearance before release."],
-      ["M4", "Pipe and service routes", "Prove 57 mm charge pipes turn rearward at the lower corners and A/C fittings/tools remain accessible without extra front width, rubbing or sharp bends. Record complete fitting and tool envelopes, not core dimensions alone."],
-      ["M5", "Mechanical fan clearance", "At least 20 mm static axial blade clearance and 15 mm radial clearance through engine movement; 25–30 mm axial is preferred."],
-      ["M6", "Full-size vehicle dummy", "Final grille, bonnet and bumper/guard close; the assembly is central and symmetric; every module removes separately."],
-      ["B0", "Top-hole datum", "Make one rigid 1:1 two-hole template from the original inward top-return holes. Record centre-to-centre, hole diameter/condition, edge distance, tab thickness and elevation; do not infer this from a photo."],
-      ["H0-L / H0-R", "Left/right hole plane to saddle seat", "Measure each original top-hole plane to the lower saddle seat on the same radiator side rail. Saddles carry the weight; the top M8 bolts only locate and retain."],
-      ["W0", "Upright aperture", "Record minimum clear width between inner faces of both uprights at top, middle and bottom, including weld beads. Existing bracket basis is 48 mm main face, 410 mm upright and 58 mm inward top return; this does not state the radiator height."],
-      ["P0", "Rail fore-aft plane", "Measure original inward return/post plane to the radiator side-rail plane. Both short ears must sit directly below their original holes with at least 5 mm hard clearance; no pulling into alignment."],
-      ["R0", "Complete radiator envelope", "Record the donor/recored radiator’s complete W × H × D including tanks, seams, filler, drain, ears and lower locators. 530 × 435 × 64 mm is active-core thermal basis only, not a finished-radiator envelope or fit claim."],
-      ["BRKT", "Direct side-ear dummy", "Build a full-size two-rail dummy with one short ear under each original top hole and one lower saddle under each same rail. Both M8 bolts must hand-enter with zero pull; prove removal and ≥5 mm hard rail/post clearance. No chassis modification, slot, ream or transverse radiator carrier."],
-      ["F1", "Front-fan envelope and vehicle centring", "Two equal 248 mm Prado/GX Toyota/Denso donor motors/blades/connectors only; ≥258 mm rings; 266 mm C-C; hub centres C0 − 133 mm / C0 + 133 mm; pair midpoint within ±2 mm of C0; hub heights within ±2 mm; no contact through vibration. A complete donor shroud is not an approved fit assumption."],
-      ["F2", "Mechanical fan and shroud", "Full-face sealed shroud, 35–50% blade insertion and movement clearance all pass."],
-      ["F3", "Front installed airflow", "Twin pushers deliver ≥3,000 m³/h at 13.5 V through the final grille, stone screen and all three cores."],
-      ["F4", "Mechanical installed airflow", "Retained puller delivers ≥9,000 m³/h at 1,500 engine rpm through the complete three-core stack."],
-      ["E1", "Electrical proof", "Correct polarity, two independent fused/relayed branches, acceptable voltage drop/current/temperature, and adequate hot-idle alternator output."],
-      ["E2", "Independent electrical brackets", "Mock the covered Relay Rev D box and closed MIDI Rev D five-fuse enclosure on two separate local structural brackets. Keep each complete box, hood, bracket, cable bend and service sweep inside W0/the upright front-view silhouette. Stagger vertically and/or in depth so MIDI's projected width lies wholly within the Relay 360 mm base envelope; never side-by-side across vehicle width. Each gets its own hood and down/rear cable exit. Neither may load the radiator or obstruct active fins, sealed airflow or module removal."],
-      ["E2a", "Individual weather/service proof", "For each box separately, prove its lid/cover sweep, cable bend, glands, drip path, P-clips, disconnect, removal path and bonnet/grille clearance with the real box installed. Hose-spray/dust-check both final hoods, then open both boxes and record dry, clean interiors. No formal IP claim unless purchased-rated or tested."],
-      ["T1", "50°C hot idle", "A/C and cabin blower maximum for 30 minutes; coolant and A/C pressures stable, with no recirculation, leak or electrical heating."],
-      ["T2", "50°C loaded operation", "Low-speed climb and sustained load pass; 115 kW equivalent remains stable for 60 minutes and 130 kW equivalent for 10 minutes."],
-      ["T3", "Charge-air proof", "Charge cooler meets ≥15 kW target, manifold IAT ≤80°C and complete turbo-to-manifold pressure loss ≤10 kPa with no leak."],
+      ["R0", "Retained engine radiator", "Photo start: about 635 mm from the photographed left hook datum to right rail; about 610 mm body height and 635 mm to cap. These are provisional. Record square complete W × H × D, active core Wa, tanks, seams, filler, both coolant necks, overflow, drain, rails, ears and lower locators; then pressure/flow test."],
+      ["B0", "Both intended top holes", "Make one rigid 1:1 template from the two existing holes in the inward-facing horizontal top-return plates. Record centre-to-centre, diameter, plate thickness, edge distance and elevation."],
+      ["H0-L / H0-R", "Hole plane to lower support", "Measure each top-hole plane to its same-side lower saddle and full-width chassis-tied lower crossmember. The crossmember and saddles carry R0 weight; upper stays locate/restrain only."],
+      ["P0", "Top-return to R0 ear plane", "Each short black R0 ear sits directly beneath its grey horizontal plate through a sleeved isolator. The two stays provide fore/aft restraint and location only; no side-face substitute, visual air gap, forced alignment or new chassis hole."],
+      ["W0 / Wc / Wa", "Usable widths", "Measure W0 between vehicle obstructions, Wc for the centred carrier inside both W0 and the R0 silhouette, and Wa as the usable active or sealed-ducted face. Include welds, ports, plugs, guards, cable bends and service sweep. No side annex is authorised."],
+      ["F0", "Existing FS electric fan sample", "Photo start: guard about 240–255 mm and complete frame/tabs about 280 mm. Record complete F × H × D, blade sweep Db, label, plug bend, tabs, pusher rotation, start/run current and bench condition before purchase."],
+      ["FP", "Matched-pair fit and centring", "Use two equal complete modules. With M = (Wc − 2F − g) / 2 and g = 10 mm preferred, require 2F + g ≤ Wc, equal positive margins within 2 mm, pair midpoint on vehicle centreline within 2 mm, and 2Db + g ≤ Wa—or prove a sealed plenum by installed testing. Photo-start dummy: 2 × 280 + 10 = 570 mm with about 32.5 mm margins inside provisional 635 mm."],
+      ["FA", "Complete installed airflow", "All three electric fans together must deliver ≥3,000 m³/h at 13.5 V at the fan terminals through the finished guard, K0 overlap, C0, R0 and sealed FL shroud; ≥3,300 m³/h preferred. Never add free-air catalogue ratings."],
+      ["A0", "Full-face C0 and low-centred K0", "Retained C0 sits directly ahead of retained R0. One new K0 sits low and centred ahead of only C0's lower central area, with independent removable support and sealing."],
+      ["S1", "R0 lower support", "Two rubber saddles carry R0 on a full-width lower crossmember tied to both side uprights. Prove crossmember strength, attachment, clearance and no load path through C0, K0, fans or electrical hardware."],
+      ["M3", "Complete depth and service mock-up", "Use real fans, guard, tanks, plugs, pipe bends, A/C tools, C0, R0, lower crossmember, rear FL shroud and engine movement in an opaque 1:1 fixture. Bonnet, latch, grille and bumper/guard must close."],
+      ["FL", "Retained rear electric puller", "Photo start: shroud height about 610 mm and ring about 450–480 mm. Record label, complete W × H × D, blade sweep, plug bend, polarity, start/run current and installed airflow. Retain only if condition and test results pass; do not reverse it casually."],
+      ["E1", "Electrical proof", "Three independent protected branches, correct polarity, acceptable voltage drop/current/temperature and sufficient hot-idle alternator output. Covered relay/MIDI carrier remains aligned with the existing system inside the current front-view silhouette."],
+      ["T1–T3", "50 °C thermal acceptance", "Prove stable hot-idle A/C, loaded 115 kW continuous / 130 kW for 10 min radiator duty, post-CAC IAT ≤80 °C and CAC route pressure drop ≤10 kPa at the agreed 150 bhp test point."],
     ];
+    const physicalCards = physicalReferenceVisuals
+      .map((visual) => renderFigureImage(visual, visual.caption, {
+        figureClass: "cooling-pack-photorealistic-figure",
+        buttonClass: "image-open-btn",
+        imageClass: "cooling-pack-photorealistic-image",
+        captionClass: "cooling-pack-photorealistic-caption",
+      }))
+      .join("");
+    const photoCards = photorealisticVisuals
+      .map((visual) => renderFigureImage(visual, visual.caption, {
+        figureClass: "cooling-pack-photorealistic-figure",
+        buttonClass: "image-open-btn",
+        imageClass: "cooling-pack-photorealistic-image",
+        captionClass: "cooling-pack-photorealistic-caption",
+      }))
+      .join("");
+    const purchaseRows = purchasePhases
+      .map((purchase) => "<tr><td><strong>" + escapeHtml(purchase.phase) + "</strong><br><span class=\"small-muted\">" + escapeHtml(purchase.status) + "</span></td><td>" + escapeHtml(purchase.items) + "</td><td>" + escapeHtml(purchase.release) + "</td></tr>")
+      .join("");
+    const completePartRows = completeParts
+      .map((part) => "<tr><td><strong>" + escapeHtml(part[0]) + "</strong></td><td>" + escapeHtml(part[1]) + "</td><td>" + escapeHtml(part[2]) + "</td><td>" + escapeHtml(part[3]) + "</td></tr>")
+      .join("");
+    const gateRows = fitGates
+      .map((gate) => "<tr><td><strong>" + escapeHtml(gate[0]) + "</strong></td><td>" + escapeHtml(gate[1]) + "</td><td>" + escapeHtml(gate[2]) + "</td></tr>")
+      .join("");
 
     root.innerHTML = `
       <div class="cooling-pack-view">
         <section class="cooling-pack-hero" id="cooling-pack-summary">
           <div class="cooling-pack-hero-copy">
             <div class="cooling-pack-kicker-row">
-              <p class="eyebrow">Fabricator issue · Rev H · 1 August 2026</p>
+              <p class="eyebrow">Photo-measured provisional issue · Rev L · 2 August 2026</p>
               ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy cooling-pack summary link")}
             </div>
-            <h2>J40 Integrated Radiator &amp; Front Cooling Pack</h2>
-            <p class="cooling-pack-lead">A simple, clean-looking, best-effort all-front package for the Toyota 2H, R134a A/C and a conservative future turbo installation. The two front fan hubs are controlled from the car itself: survey vehicle centreline C0, then set the hubs at C0 − 133 mm and C0 + 133 mm. Use Prado 120/GX470 donor parts only for the two matched front fan motors, blades and connectors; the radiator remains an HJ47-pattern recored/custom unit on two direct side rails. The 50°C and no-cooling-derate claims remain conditional until the real three-core assembly passes every bracket-fit, airflow and thermal acceptance gate.</p>
+            <h2>J40 Retained-Original Radiator &amp; Full-Face Condenser Cooling Pack</h2>
+            <p class="cooling-pack-lead"><strong>Retain the photographed R0 radiator, full-face C0 condenser, large rear electric FL puller and small front electric FS pusher.</strong> Add exactly one shallow, low-centred K0 turbo charge-air cooler and, preferably, one exact Toyota/Denso mate for FS. The two equal front fans sit level and horizontally central to the vehicle; FL stays sealed behind R0.</p>
             <div class="cooling-pack-release">
-              <span class="cooling-pack-hold">50°C CLAIM / FINAL MANUFACTURE: HOLD</span>
-              <span>Released for quotation, sample-part sourcing, measurements and full-size mock-up. Final cores and coating wait for measured vehicle fit; logged thermal and charge-air proof release the performance claim.</span>
+              <span class="cooling-pack-hold">50 °C CLAIM / FINAL MANUFACTURE: HOLD</span>
+              <span>The photo dimensions now release a first full-size dummy: R0 ≈635 mm wide × ≈610 mm body high, C0 ≈540 × 465 mm body, and a starting front pair of 2 × ≈280 mm with a 10 mm gap. Final cutting and the no-cooling-derate claim still require square measurements, mounting/depth proof, installed airflow, electrical and 50 °C acceptance.</span>
             </div>
             <blockquote>
-              <strong>Karigar ke liye:</strong> Pehle chassis ke dono taraf ke theek reference se gaari ki beech wali line <strong>C0</strong> nikaal kar aperture aur shroud template par mark karein. Dono front fan hub C0 se barabar <strong>133 mm left aur 133 mm right</strong> hon, dono aik height par ±2 mm, aur pair ka beech C0 se ±2 mm ke andar ho. Radiator, fuse box ya A/C fitting dekh kar fan pair ko side par na karein. Kul teen fans hain: do front electric pushers aur radiator ke peechay aik retained engine-driven puller. Intercooler ke do 57 mm charge-air ports sirf turbo se cooler aur cooler se engine intake ke liye hain; condenser ki do chhoti A/C fittings sirf refrigerant ke liye hain. Radiator ke upper aur lower coolant hose neck, filler/cap, overflow aur drain alag service points hain. Radiator ki har side rail ke neeche lower rubber saddle weight uthaye; usi rail ka aik chhota ear existing top-return hole ke bilkul neeche M8 bolt se locate ho—koi cross-car carrier nahin. Existing post basis 48 mm face, 410 mm upright aur 58 mm inward return hai; pehle C0/B0/H0-L/H0-R/W0/P0/R0 naapain aur BRKT dummy pass karein. Covered Relay Rev D aur band/gasketed MIDI Rev D box alag, staggered local structural brackets aur alag rain hoods par lagain—radiator, battery stand ya shared plate par nahin. Pehle gaari naapain aur poora cardboard/plywood dummy fit karein; phir final cores banayen.
+              <strong>Karigar ke liye:</strong> Tasveer wala purana copper/brass radiator <strong>R0</strong>, poora A/C condenser <strong>C0</strong>, peechay ka bara <strong>electric FL</strong> fan/shroud aur aagay ka chhota <strong>FS</strong> electric fan rakho. Sirf aik naya intercooler <strong>K0</strong> neeche centre mein ho. FS ka bilkul aik-jaisa Toyota/Denso fan dhoondo; dono aagay walay fans gaari ki centre-line par barabar hon. Pehli dummy ke liye R0 635 × 610 mm, C0 540 × 465 mm aur fans 280 + 10 + 280 = 570 mm samjho—final steel kaatnay se pehlay asli parts ko seedha naapna lazmi hai. R0 ka wazan do lower rubber saddles aur dono uprights se bandhay full-width crossmember par ho; dono asal top holes sirf location/restraint dein.
             </blockquote>
             <div class="cooling-pack-downloads">
-              <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-h.docx" download>Download Rev H shop specification (.docx)</a>
-              <a class="item-link cooling-pack-download" href="../../docs/j40-rev-h-toyota-donor-cooling-pack-purchase-list-20260801.md" download>Download Rev H simple purchase list (.md)</a>
-              <a class="item-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-h.md" download>Download Rev H source specification (.md)</a>
+              <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-photo-measured-retained-cooling-pack-specification-rev-l.md" download>Download Rev L measured shop specification (.md)</a>
+              <a class="item-link cooling-pack-download" href="../../docs/j40-rev-l-complete-oem-donor-parts-list-20260803.md" download>Download complete OEM/donor-first parts list (.md)</a>
             </div>
           </div>
-          <dl class="cooling-pack-facts" aria-label="Key cooling-pack dimensions">
-            <div><dt>Ambient release</dt><dd>50°C + A/C on</dd><span>52°C soak / hot restart</span></div>
-            <div><dt>Radiator duty</dt><dd>≥115 kW continuous</dd><span>≥130 kW for 10 min</span></div>
-            <div><dt>Front electric air</dt><dd>≥3,000 m³/h</dd><span>13.5 V through all 3 cores</span></div>
-            <div><dt>Charge-air duty</dt><dd>≥15 kW</dd><span>central core; IAT ≤80°C</span></div>
-            <div><dt>Condenser basis</dt><dd>559 × 356 × 21 mm</dd><span>14 × 22 in nominal</span></div>
-            <div><dt>Charge cooler basis</dt><dd>500 × 180 × 50 mm</dd><span>2 × 57 mm beaded charge-air ports</span></div>
-            <div><dt>Radiator active-core basis</dt><dd>530 × 435 × 64 mm</dd><span>thermal basis only; complete W × H × D is R0-controlled</span></div>
-            <div><dt>Front pusher pair</dt><dd>C0 − 133 / C0 + 133 mm</dd><span>2 × 248 mm; 266 mm C-C; midpoint ±2 mm</span></div>
-            <div><dt>Depth release</dt><dd>215 mm absolute stack basis</dd><span>225 mm installed clearance preferred</span></div>
+          ${renderFigureImage(physicalReferenceVisuals[7], "Genuine installed radiator reference: actual R0 and its full-width rear shroud at real scale in the original engine bay. This predates the later grey mounting posts, whose alignment still requires a physical dry-fit.", {
+            figureClass: "cooling-pack-hero-figure",
+            buttonClass: "image-open-btn",
+            imageClass: "cooling-pack-hero-image",
+            captionClass: "cooling-pack-hero-caption",
+          })}
+        </section>
+
+        <section class="cooling-pack-visual-band" aria-label="Rev L cooling pack key facts">
+          <dl class="cooling-pack-facts">
+            <div><dt>Retained core stack</dt><dd>C0 → R0</dd><span>original full-face condenser directly ahead of original radiator</span></div>
+            <div><dt>New heat exchanger</dt><dd>1 low-centred K0</dd><span>overlaps only the lower central C0 area</span></div>
+            <div><dt>Photo envelope</dt><dd>R0 ≈635 × 610 mm</dd><span>body start size; ≈635 mm to cap; verify square</span></div>
+            <div><dt>Retained C0 body</dt><dd>≈540 × 465 mm</dd><span>pipes, tabs, drier and depth still direct-measure HOLD</span></div>
+            <div><dt>Installed fans</dt><dd>3 electric</dd><span>2 equal front pushers + retained rear FL puller</span></div>
+            <div><dt>Front dummy</dt><dd>≈570 mm pair</dd><span>280 + 10 + 280; ≈32.5 mm margins in provisional 635 mm silhouette</span></div>
+            <div><dt>R0 support</dt><dd>2 saddles + crossmember</dd><span>full-width chassis-tied support; top stays locate only</span></div>
+            <div><dt>Ambient acceptance</dt><dd>50 °C</dd><span>instrumented test required</span></div>
           </dl>
         </section>
 
         <section class="card cooling-pack-section cooling-pack-start-here" id="cooling-pack-start-here">
           <div class="detail-header">
             <div>
-              <p class="cooling-pack-section-label">Start here · sourcing instruction</p>
-              <h3>What to buy, what to keep, and what the local shop fabricates</h3>
+              <p class="cooling-pack-section-label">Start here · the simple answer</p>
+              <h3>Reuse R0, C0, FL and FS; add one matching FS mate and one K0</h3>
             </div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-start-here"), "#", "Copy cooling-pack sourcing summary link")}
           </div>
           <div class="cooling-pack-start-rule" role="note">
-            <strong>This is not a Prado radiator conversion or a catalogue direct-fit kit.</strong>
-            <span>The only Prado 120/GX470 donor items are two matched Toyota/Denso front-fan motor, 248 mm blade and plug/pigtail sets. The radiator follows the HJ47/2H pattern and the brackets and shrouds are measured local fabrication.</span>
+            <strong>Do not build three water radiators.</strong>
+            <span>R0 handles engine coolant, C0 handles refrigerant and K0 handles turbo charge air. Retained C0 remains full face directly ahead of R0; only K0 is new, low and centred.</span>
           </div>
           <div class="table-wrap cooling-pack-table-wrap">
             <table class="cooling-pack-table cooling-pack-source-table">
-              <thead><tr><th>Source class</th><th>Qty / item</th><th>Exact standard item or search reference</th><th>Pakistan sourcing instruction</th></tr></thead>
+              <thead><tr><th>Class</th><th>Qty / item</th><th>Instruction</th><th>Release condition</th></tr></thead>
               <tbody>
-                <tr>
-                  <td><span class="cooling-pack-source-badge is-used">Buy used Toyota donor</span></td>
-                  <td><strong>2 matched front-fan sets</strong></td>
-                  <td>Prado 120/GX470-family Toyota/Denso motor + 248 mm blade + plug/pigtail. Assembly search references <strong>88590-60040 / -60050 / -60051 / -60060</strong>; motor <strong>88550-12160</strong>; blade <strong>88453-60010</strong>.</td>
-                  <td><strong>Practical breaker/Bilal Ganj route.</strong> Bring two physically matching sets, check rotation/hand/depth and bench-test before payment. Part numbers identify candidates only; they do not approve direct fit. <strong>Do not buy a Prado radiator or complete donor shroud.</strong></td>
-                </tr>
-                <tr>
-                  <td><span class="cooling-pack-source-badge is-retain">Retain / rebuild existing</span></td>
-                  <td><strong>1 rear fan/hub + 2 electrical boxes</strong></td>
-                  <td>Existing Toyota 2H engine-driven puller/hub; blade candidates <strong>16361-68030 / -68031</strong>. Existing covered Relay Rev D box and closed MIDI Rev D fuse box.</td>
-                  <td><strong>Already held on the vehicle/project.</strong> Inspect, rebuild where necessary and trial-fit the actual closed boxes. Do not buy replacements unless inspection rejects the existing part.</td>
-                </tr>
-                <tr>
-                  <td><span class="cooling-pack-source-badge is-sample">Sample, then local recore</span></td>
-                  <td><strong>1 radiator</strong></td>
-                  <td>HJ47/2H radiator pattern <strong>16400-68030</strong> or sound original tanks. <strong>530 × 435 × 64 mm is the active-core thermal basis only</strong>, not the finished radiator size.</td>
-                  <td><strong>Exact HJ47/2H local stock is not confirmed.</strong> Source a physical pattern/tank sample, record complete R0, and use a competent local radiator shop. Release the final core only after the rigid two-hole fixture and full-size dummy pass.</td>
-                </tr>
-                <tr>
-                  <td><span class="cooling-pack-source-badge is-new">Source new standard — verify stock</span></td>
-                  <td><strong>1 each + service hardware</strong></td>
-                  <td>Condenser <strong>559 × 356 × 21 mm</strong> with two A/C fittings; black charge cooler <strong>500 × 180 × 50 mm</strong> with two 57 mm charge-air ports; radiator upper/lower coolant hoses, filler/cap, overflow and drain; new drier <strong>88471-34010</strong> only if ports fit, otherwise new #6 O-ring equivalent; hoses, relays/connectors, M6/M8 hardware and EPDM.</td>
-                  <td><strong>Use local A/C, turbo and automotive-hardware suppliers.</strong> Exact stock changes; the specified charge-cooler size and every complete condenser/drier envelope and port remain <strong>physical-sample first</strong>.</td>
-                </tr>
-                <tr>
-                  <td><span class="cooling-pack-source-badge is-fabricate">Fabricate locally</span></td>
-                  <td><strong>Measured interfaces only</strong></td>
-                  <td>One chassis-derived C0 datum fixture; two radiator side rails, two 4 mm direct top ears, two lower saddles, vehicle-centred twin-pusher shroud, rear shroud if the Toyota item cannot fit, exchanger tabs, seals/stone screen, two separate electrical brackets/hoods and measured adapters.</td>
-                  <td><strong>Make only after the real parts, rigid top-hole template and full-size dummy pass.</strong> No transverse radiator carrier, shared electrical tray, new chassis hole, slot or forced bolt alignment.</td>
-                </tr>
+                <tr><td><span class="cooling-pack-source-badge is-retain">Retain / refurbish</span></td><td><strong>1 R0 engine radiator</strong></td><td>Keep its sound Toyota tanks, filler, cap seat, overflow, coolant necks, rails, ears and lower locator geometry. Clean, pressure/flow test and recore only if earned by condition or duty.</td><td>The measured physical R0 and vehicle fixture control; no generic clean-sheet or Prado radiator substitution.</td></tr>
+                <tr><td><span class="cooling-pack-source-badge is-retain">Retain / approve</span></td><td><strong>1 original full-face C0 condenser</strong></td><td>Clean, pressure-test, flush and fin/port/fit check its complete pipes and tabs. Retain the old drier/manifold only as the geometry sample; fit a new compatible receiver/drier/desiccant and new disturbed-joint seals when the A/C circuit is opened.</td><td>C0 remains directly in front of R0. Replace only if it fails, preserving the measured full-face envelope and interfaces; never install a used donor drier.</td></tr>
+                <tr><td><span class="cooling-pack-source-badge is-new">Add one</span></td><td><strong>1 shallow wide K0 CAC</strong></td><td>Release tanks, ports and pipe bends only after the low-centred fixture is measured.</td><td>Pressure test; target post-CAC IAT ≤80 °C and complete route pressure drop ≤10 kPa.</td></tr>
+                <tr><td><span class="cooling-pack-source-badge is-used">Toyota/Denso donor</span></td><td><strong>1 matching fan preferred</strong></td><td>Use the accepted existing complete electric fan and plug as the shop sample. Prado/Land Cruiser/Hilux/HiAce breaker stock is a practical search pool, not guaranteed direct fit.</td><td>If no genuine twin passes, install two physically matching modules and retain the old fan as spare. Never install unequal front fans.</td></tr>
+                <tr><td><span class="cooling-pack-source-badge is-retain">Retain / test</span></td><td><strong>1 large rear electric FL fan/shroud</strong></td><td>Record label, polarity, complete envelope, blade sweep, plug bend, hot current and installed airflow; inspect blade, motor, bearings and shroud.</td><td>It remains electric fan 3 of 3 and pulls air through R0 toward the engine only if it passes.</td></tr>
+                <tr><td><span class="cooling-pack-source-badge is-fabricate">Fabricate locally</span></td><td><strong>Independent removable supports</strong></td><td>Centred twin-fan carrier, low K0 cradle/duct, C0 brackets, full-width chassis-tied lower R0 crossmember with two saddles, two short top location stays and necessary shroud/electrical brackets.</td><td>R0 load goes only through the crossmember/saddles; no side annex, new chassis holes or component hung from a core.</td></tr>
               </tbody>
             </table>
           </div>
-          <p class="cooling-pack-simple-rule"><strong>Buyer rule:</strong> “Toyota part number” means a search/identity reference. “Buy” means obtain a physical sample and pass the stated measurement gate; it never means assumed bolt-in fit.</p>
+        </section>
+
+        <section class="card cooling-pack-section cooling-pack-photorealistic" id="cooling-pack-physical-samples">
+          <div class="detail-header">
+            <div>
+              <p class="cooling-pack-section-label">R01 to R15 · actual parts, installed scale and new tape measurements</p>
+              <h3>The retained physical parts control the build</h3>
+            </div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-physical-samples"), "#", "Copy physical sample link")}
+          </div>
+          <div class="cooling-pack-photorealistic-note" role="note">
+            <strong>Real photographs, not renders.</strong> R08/R09 show R0 genuinely installed at real scale; R10/R11 add provisional width and height; R12/R13 isolate the retained electric fans; R14/R15 measure C0. R06 shows the later grey posts without R0. No photo combines those states, so fit to the later holes remains unproven until R0 is dry-fitted and photographed on both lower saddles with both upper stays installed without forcing.
+          </div>
+          <div class="cooling-pack-photorealistic-grid">${physicalCards}</div>
         </section>
 
         <section class="card cooling-pack-section cooling-pack-photorealistic" id="cooling-pack-photorealistic-visuals">
           <div class="detail-header">
             <div>
-              <p class="cooling-pack-section-label">PH01 · PH02 · PH03A · PH03B · PH03C · PH04 · PH05</p>
-              <h3>Component parts, assembled pack and positive existing-hole vehicle mounting</h3>
+              <p class="cooling-pack-section-label">Rev L · PH01–PH03 + corrected PH04B · photo-referenced explanatory visualisations</p>
+              <h3>Assembled, split-out, later-chassis and engine-side views</h3>
             </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-photorealistic-visuals"), "#", "Copy photorealistic fabrication visuals link")}
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-photorealistic-visuals"), "#", "Copy Rev L visualisation link")}
           </div>
           <div class="cooling-pack-photorealistic-note" role="note">
-            <strong>AI visual proposals only.</strong> PH03A is the normal opaque front appearance, PH03B is the opaque engine-side rear view, and PH03C is the explanatory cutaway / centring view. The remaining Rev G visuals/drawings are retained layout references. The Rev H controlled specification, measured vehicle and thermal test log control manufacture. Do not scale an AI image or use it to release a core, direct radiator ear, fan position, duct or electrical bracket.
+            <strong>AI-generated from the actual retained-part and chassis photographs.</strong> These four matched Rev L views explain the complete opaque assembly, the wide component split-out, its proposed later-chassis position and the retained rear electric puller. They do not prove fit or release dimensions. R01–R15, D19/D20, direct square measurements, the rigid two-hole template and the opaque 1:1 vehicle dry-fit control fabrication.
           </div>
           <div class="cooling-pack-no-extra-width" role="note">
-            <strong>Positive top pickup — existing holes are the master datums.</strong>
-            <span>Use one M8 through-bolt per side through the original inward top-return hole: bolt head and large washer above; sleeved EPDM isolator; one short removable radiator-side ear directly below; washer and locking nut below.</span>
-            <span>The lower rubber-lined saddles carry all radiator weight under those same two side rails. The two upper bolts only locate and retain the radiator.</span>
-            <span><strong>No new chassis holes, slots, reaming or forced alignment:</strong> transfer both holes from a rigid 1:1 template, drill only the two short ears/adapters, and require both bolts to enter freely by hand. Existing post basis: 48 mm face / 410 mm upright / 58 mm inward return.</span>
+            <strong>Both intended top holes are mandatory—but they do not carry R0 weight.</strong>
+            <span>At each side, the grey upright ends in an inward-facing horizontal top-return plate. Put the short black R0 ear directly beneath it, with no visual air gap.</span>
+            <span>One sleeved rubber-isolated vertical stay and large washer use each exact existing hole. The two stays provide fore/aft restraint and location only; size the hardware after measuring the holes and bush stack.</span>
+            <span>Drill only the removable ears after transferring the rigid B0 template. Do not side-bolt, slot, ream, add a chassis hole or pull R0 into alignment. A full-width lower crossmember tied to both side uprights carries R0 through two lower rubber saddles.</span>
           </div>
           <div class="cooling-pack-no-extra-width" role="note">
-            <strong>No extra front width.</strong>
-            <span><strong>Vehicle centreline controls the fan shroud:</strong> establish C0 from paired chassis references, then locate the two front hubs at C0 − 133 mm and C0 + 133 mm. The pair midpoint and hub heights must each agree within ±2 mm. Repackage other items around this shroud; no accessory may move it sideways.</span>
-            <span>The radiator, condenser, charge cooler and front pusher frame stay entirely between the existing welded uprights / original central aperture and stack only front-to-rear.</span>
-            <span>The receiver-drier and A/C ports sit behind/in the shadow of an upright. The covered Relay Rev D box and closed, gasketed MIDI Rev D fuse enclosure use two separate local structural brackets, each with its own shallow rain hood, down/rear cable exit and service sweep. Keep both complete envelopes inside W0/the uprights' existing front-view silhouette; stagger vertically and/or in depth so MIDI's projected width is wholly within the Relay 360 mm envelope—never place them side-by-side across vehicle width. They must not cover active fins, change either fan centre, load the radiator/isolated mounts or occupy the battery stand. Exact locations remain an E2/E2a measured hold. The MIDI lid stays shut in normal operation; no formal IP rating is claimed unless purchased-rated or tested. The master cutoff remains battery-side.</span>
-            <span>There is no side cooler, side fan, side service tower or extra visible width. Charge pipes turn rearward/inboard at the measured lower corners.</span>
-            <span><strong>Depth remains unproven pending M3/M6:</strong> the complete three-core dummy, with real fan motors, guards, plugs, tanks, pipe bends, gaps and tools, controls manufacture.</span>
+            <strong>Centred fans, independent supports and no extra side width.</strong>
+            <span>Measure two accepted equal modules. Use <code>M = (Wc − 2F − g) / 2</code>, with g = 10 mm preferred. Require <code>2F + g ≤ Wc</code>; left/right margins must match within 2 mm, pair midpoint must be on the vehicle centreline within 2 mm, and hubs must be level within 2 mm.</span>
+            <span>Also require <code>2Db + g ≤ Wa</code>, where Db is blade sweep and Wa is usable active or sealed-ducted width—or prove a sealed plenum by installed airflow testing. The photo-start dummy is 280 + 10 + 280 = 570 mm, not a purchase size.</span>
+            <span>C0 remains full face directly ahead of R0. K0 is the only new core and stays low-centred inside W0. C0, K0, fan carrier and covered relay/MIDI carrier have independent removable brackets and carry no R0 load.</span>
           </div>
-          <p class="small-muted">Read the seven images in order and click any image to inspect it full size: retained Rev G PH01 widely separates the complete inventory and all three heat exchangers / three fans; PH02 is deliberately off-vehicle and shows the assembled central cooling module; Rev H PH03A shows the normal opaque front-installed appearance, in which the rear fan is naturally hidden; PH03B looks forward from the engine side and therefore shows that large mechanical puller while the two grille-side electric fans are naturally hidden; PH03C is the controlled explanatory cutaway that makes all three fan positions, every core layer, the six main circuit connections and the existing-hole attachment logic visible together; PH04 shows one ear and lower-saddle load path; PH05 is a tight upper/rear electrical-placement detail with the two boxes on separate brackets. These are visual proposals, not measured fit evidence. PH03C/D10/F1—not PH03A or PH03B pixels—control the centring interpretation. Build only to the Rev H controlled specification, C0/B0/H0-L/H0-R/W0/P0/R0/BRKT, M1–M6, F1–F4, E1–E2a, an approved full-size dummy and the passed T1–T3 tests.</p>
-          <div class="cooling-pack-photorealistic-grid">
-            ${photorealisticVisuals
-              .map((visual) =>
-                renderFigureImage(visual, visual.caption, {
-                  figureClass: "cooling-pack-photorealistic-figure",
-                  buttonClass: "image-open-btn",
-                  imageClass: "cooling-pack-photorealistic-image",
-                  captionClass: "cooling-pack-photorealistic-caption",
-                })
-              )
-              .join("")}
-          </div>
+          <div class="cooling-pack-photorealistic-grid">${photoCards}</div>
         </section>
 
         <section class="card cooling-pack-section" id="cooling-pack-layout">
           <div class="detail-header">
             <div>
-              <p class="cooling-pack-section-label">What the shop builds</p>
-              <h3>Stack arrangement and required fans</h3>
+              <p class="cooling-pack-section-label">What the shop assembles</p>
+              <h3>Three circuits, retained full-face C0 → R0, exactly three fans</h3>
             </div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-layout"), "#", "Copy stack arrangement link")}
           </div>
           <div class="cooling-pack-band-grid">
             <article>
-              <span class="cooling-pack-band-tag">One central air path</span>
-              <p><strong>Exactly three fans: grille → two 248 mm Prado/GX donor electric pushers at C0 − 133 mm / C0 + 133 mm (266 mm C-C) → 500 × 180 × 50 mm charge cooler with two 57 mm charge-air ports → ≥10 mm gap → 559 × 356 × 21 mm condenser with two A/C fittings → 15 mm target gap → HJ47-pattern recored/custom radiator with a 530 × 435 × 64 mm active-core thermal basis → sealed shroud → retained rear engine-driven mechanical puller.</strong></p>
+              <span class="cooling-pack-band-tag">Air path · grille to engine</span>
+              <p><strong>Stone guard → two matching electric pushers → shallow low-centred K0 → retained full-face C0 condenser → retained full-face R0 engine radiator → sealed rear shroud → retained large electric FL puller → engine.</strong></p>
             </article>
             <article>
-              <span class="cooling-pack-band-tag">Simple factory-style appearance</span>
-              <p><strong>One rectangular module, two equal black fan rings symmetric about vehicle C0 and no visible side annex.</strong> Drier remains upper/rear; the covered Relay Rev D box and closed, gasketed MIDI Rev D fuse enclosure use separate staggered local brackets and individual hoods, outside active airflow.</p>
+              <span class="cooling-pack-band-tag">Why this corrected stack</span>
+              <p>It keeps the two photographed original broad heat exchangers in their correct full-face layers. K0 adds only a low central overlap, pending depth, airflow, A/C-service and thermal proof.</p>
             </article>
           </div>
           <div class="table-wrap cooling-pack-table-wrap">
             <table class="cooling-pack-table">
-              <thead><tr><th>Component</th><th>Required baseline</th><th>Fan decision</th></tr></thead>
+              <thead><tr><th>Heat exchanger</th><th>Fluid and job</th><th>Position / fan coverage</th></tr></thead>
               <tbody>
-                <tr><td><strong>Engine radiator</strong></td><td><strong>Connection count: two engine-coolant hose necks (upper and lower), plus filler/cap, overflow connection and drain.</strong> HJ47/2H-pattern recored/custom copper/brass or equivalent. <strong>530 × 435 × 64 mm is active-core thermal basis only</strong> (0.231 m² gross face); it is not a complete radiator size or a fit claim. Record complete tank/seam/neck/filler/overflow/drain/ear/locator envelope at R0 and use two direct side rails, short ears and lower saddles. It is <strong>not</strong> a Prado radiator. Thermal duty—not a claimed net-fin-area figure—controls acceptance: prove ≥115 kW continuous and ≥130 kW for 10 min with both upstream cores represented.</td><td>Fan 3 of 3: retain/rebuild the rear engine-driven puller with removable sealed full-face shroud; ≥9,000 m³/h installed through the complete stack at 1,500 rpm.</td></tr>
-                <tr><td><strong>A/C condenser</strong></td><td>New common 14 × 22 in nominal, 559 × 356 × 21 mm R134a parallel-flow condenser on four independent rubber-isolated mounts; complete envelope must pass M1 ≥569 mm and M2/M3/M4.</td><td>Shares the centred twin-pusher module and rear mechanical puller; no separate condenser-only fan.</td></tr>
-                <tr><td><strong>Turbo charge cooler</strong></td><td>One 500 × 180 × 50 mm slim horizontal core with 57 mm beaded outlets. ≥15 kW target; complete charge route ≤10 kPa drop.</td><td>Shares the same three baseline fans: two centred front electric pushers plus retained rear mechanical puller. No fourth/additional fan without a new controlled revision.</td></tr>
-                <tr><td><strong>Cabin evaporator</strong></td><td>A/C installer to supply and verify.</td><td>Requires its cabin blower; outside radiator-shop metalwork.</td></tr>
+                <tr><td><strong>Retained R0</strong></td><td>Engine coolant. Two main coolant hose necks plus filler/cap, overflow and drain.</td><td>Full face behind C0. Two lower rubber saddles on a full-width chassis-tied crossmember carry its weight; top stays locate only.</td></tr>
+                <tr><td><strong>Retained C0 condenser</strong></td><td>R134a refrigerant. It cannot cool engine water or turbo charge air.</td><td>Full face directly in front of R0, on independent removable brackets with its original pipes, drier and tabs represented.</td></tr>
+                <tr><td><strong>K0 CAC / intercooler</strong></td><td>Compressed turbo intake air. It is the only newly added heat exchanger.</td><td>Low-centred ahead of only C0's lower central area, on its own shallow removable cradle and duct.</td></tr>
               </tbody>
             </table>
           </div>
-          <p class="cooling-pack-simple-rule"><strong>Simple rule:</strong> Har part apni bracket par, rubber ke saath, aur alag se nikal sakay. Core par koi load nahin.</p>
-        </section>
-
-        <section class="card cooling-pack-section" id="cooling-pack-standard-components">
-          <div class="detail-header">
-            <div>
-              <p class="cooling-pack-section-label">Standard Toyota parts first</p>
-              <h3>Use standard service parts where obtainable; custom-make only the measured interfaces</h3>
-            </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-standard-components"), "#", "Copy standard components link")}
-          </div>
-          <p class="small-muted"><strong>Important:</strong> “Toyota candidate” means bring the actual part to the vehicle, measure it and pass the listed gate. A part number is a starting point for sourcing, not permission to cut metal or to claim airflow.</p>
-          <div class="table-wrap cooling-pack-table-wrap">
-            <table class="cooling-pack-table">
-              <thead><tr><th>System</th><th>Preferred standard component</th><th>Custom work and release condition</th></tr></thead>
-              <tbody>
-                <tr><td><strong>Radiator and hoses</strong></td><td>HJ47 / 2H radiator pattern <strong>16400-68030</strong> as a sample/source route; upper hose <strong>16571-68020</strong>; lower hose <strong>16572-68020</strong>; cap candidate <strong>16401-41021</strong>; Toyota-pattern constant-tension clamps. The 530 × 435 × 64 mm figure is active-core thermal basis only.</td><td>Record R0 before ordering: complete W × H × D including tanks, seams, filler, drain, ears and lower locators. Use a local recore/custom HJ47-pattern assembly or copied neck/hose adapter only if its complete envelope and duty pass B0/H0-L/H0-R/W0/P0/R0/BRKT. Do not substitute a Prado radiator. Verify actual neck centres, angles, cap seat and the 2H system's correct pressure before using the candidate cap; then prove hose fit, pressure drop and 115/130 kW thermal duty.</td></tr>
-                <tr><td><strong>Front pusher pair</strong></td><td><strong>Donor scope only:</strong> matched Toyota Prado 120 / Lexus GX470 condenser-fan <strong>motors, blades and connectors</strong>: assembly references <strong>88590-60040 / -60050 / -60051 / -60060</strong>, motor <strong>88550-12160</strong>, blade <strong>88453-60010</strong>. Published-equivalent blade diameter 248 mm.</td><td>Reuse two equal motors, blades and plugs in <strong>one removable, sealed, symmetric custom shroud</strong>. Do not buy or fit a complete Prado/GX donor shroud as a direct replacement. Establish vehicle centreline C0 from paired chassis references; use ≥258 mm rings and put the hubs at C0 − 133 mm / C0 + 133 mm (266 mm C-C), with pair midpoint and hub-height mismatch each ≤2 mm. F3 must prove ≥3,000 m³/h installed through the final three-core stack at 13.5 V.</td></tr>
-                <tr><td><strong>A/C condenser</strong></td><td>New common <strong>14 × 22 in nominal</strong> R134a parallel-flow condenser (559 × 356 × 21 mm basis), preferably common #8 inlet / #6 outlet O-ring ports.</td><td>Four isolated tabs and only the short adapters required by the measured hose route. Its actual body, seams, manifolds, ports, ears and service-tool envelope must fit and pass the 50°C A/C test.</td></tr>
-                <tr><td><strong>Receiver-drier and A/C service parts</strong></td><td>New Toyota receiver-drier <strong>88471-34010</strong> <em>only if its ports fit</em>; otherwise new common serviceable #6 O-ring R134a drier with trinary-switch provision. Use new R134a barrier hose, HNBR seals, crimps, trinary switch and service ports.</td><td>Use one removable rubber-lined vertical clamp and short barrier-hose links. Never reuse a drier; the A/C technician must confirm ports/threads, switch set-points, evacuation, charge and pressures.</td></tr>
-                <tr><td><strong>Electrical fan hardware</strong></td><td>Reuse Relay Rev D on its <strong>360 × 245 × 3 mm</strong> aluminium base with <strong>300 × 197 × 3 mm</strong> insulating sheet as a separate covered box. MIDI Rev D retains its <strong>210 × 165 × 65 mm</strong> enclosure, <strong>230 × 185 mm</strong> lid and 140 × 85 mm mounting plate; every MIDI fuse remains inside the closed, gasketed enclosure and its lid stays shut in normal operation. Keep two independently fused front-fan branches and Toyota/Denso/Sumitomo-compatible connectors.</td><td>Use two independent local structural brackets: one for Relay, one for MIDI, each with its own hood and service sweep. Keep both complete envelopes inside W0/the existing upright front-view silhouette and stagger vertically/depth-wise so MIDI's projected width nests wholly inside the Relay 360 mm envelope—never side-by-side across vehicle width. Route cable exits down/rear. Verify actual-current relay rating, voltage drop and branch isolation at E1; prove exact positions, both cover/lid sweeps, cable bends, drip shields, P-clips, disconnects and removal at E2/E2a before final loom work. No common plate; no formal IP rating is claimed unless purchased-rated or tested. Master cutoff stays battery-side.</td></tr>
-                <tr><td><strong>Charge-air cooler and route</strong></td><td>If a Toyota/Denso 500 × 180 × 50 mm / 57 mm-outlet sample is physically in hand, trial it against the stated envelope and duty; otherwise source a commonly serviceable bar-and-plate core to the same envelope and duty. Pakistan stock for this exact size is unconfirmed, so the physical sample controls. Use common 57 mm (2.25 in) beaded tube, silicone couplers and T-bolt clamps.</td><td>Mount the core centrally ahead of the condenser. Turn the two short pipe routes rearward/inboard at measured lower corners. Make only independent tabs, sealing panels and measured bends; no side fan or side tower.</td></tr>
-                <tr><td><strong>Fasteners and isolation</strong></td><td>Standard metric M6/M8 class 8.8 fasteners, large washers, locking nuts and EPDM isolators.</td><td>Two direct top ears/adapters, two lower saddles, twin-pusher shroud, rear shroud, two electrical brackets/hoods, simple air seals/stone screen and measured adapters are the custom-only items. No transverse radiator carrier and no heat-exchanger core carries another component.</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="cooling-pack-simple-rule"><strong>Karigar rule:</strong> Pehle standard part asli gaari par rakhain aur gate pass karein; phir sirf bracket, shroud, duct aur adapter banayen. Donor shroud ko zabardasti fit na karein.</p>
+          <p class="cooling-pack-simple-rule"><strong>Simple rule:</strong> Har core apni removable rubber-isolated bracket par ho. Koi core doosray core, fan ya fuse box ka wazan na uthaye.</p>
         </section>
 
         <section class="card cooling-pack-section" id="cooling-pack-purchase-list">
           <div class="detail-header">
             <div>
-              <p class="cooling-pack-section-label">Rev H purchasing release</p>
-              <h3>Buy standard Toyota donor parts in phases; release custom work from measurement</h3>
+              <p class="cooling-pack-section-label">Rev L complete OEM/donor-first procurement</p>
+              <h3>Bring, measure, source and fabricate—without missing the small parts</h3>
             </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-purchase-list"), "#", "Copy cooling-pack purchase list link")}
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-purchase-list"), "#", "Copy purchase sequence link")}
           </div>
-          <p class="small-muted"><strong>Purchasing rule:</strong> Prado 120/GX470 is the source route for two matched fan motors, blades and connectors only. It does not approve a Prado radiator, a complete donor shroud or any unmeasured direct fit. Record the actual donor vehicle, label, complete envelope and condition before payment.</p>
           <div class="table-wrap cooling-pack-table-wrap">
             <table class="cooling-pack-table">
-              <thead><tr><th>Phase / status</th><th>Items to source</th><th>Release check before the next purchase</th></tr></thead>
-              <tbody>
-                ${purchasePhases.map((purchase) => `<tr><td><strong>${escapeHtml(purchase.phase)}</strong><br><span class="small-muted">${escapeHtml(purchase.status)}</span></td><td>${escapeHtml(purchase.items)}</td><td>${escapeHtml(purchase.release)}</td></tr>`).join("")}
-              </tbody>
+              <thead><tr><th>Phase / status</th><th>Items</th><th>Release before payment or fabrication</th></tr></thead>
+              <tbody>${purchaseRows}</tbody>
+            </table>
+          </div>
+          <div class="cooling-pack-start-rule" role="note">
+            <strong>Donor where it helps; new where age creates risk.</strong>
+            <span>Use Toyota/Denso donor stock for the exact fan module, matching connector housings/grommets and optional overflow bottle. Use new receiver/drier, O-rings, hoses, couplers, clamps, cap, thermostat, coolant, high-current cable, terminals, relays and fuses.</span>
+          </div>
+          <div class="table-wrap cooling-pack-table-wrap">
+            <table class="cooling-pack-table cooling-pack-source-table">
+              <thead><tr><th>Installed group</th><th>Quantity</th><th>Preferred source / complete contents</th><th>Dimension or release gate</th></tr></thead>
+              <tbody>${completePartRows}</tbody>
             </table>
           </div>
           <div class="cooling-pack-release-footer">
-            <strong>Current purchasing status: sample/mock-up only.</strong>
-            <span>Final radiator, final fan purchase, shroud/direct-ear/saddle drilling and coating remain HOLD until actual samples and the full-size dummy pass C0/B0/H0-L/H0-R/W0/P0/R0/BRKT, M1–M6, F1/F2 and E2/E2a. Airflow and 50°C performance remain HOLD until F3/F4 and T1–T3 pass.</span>
+            <strong>Current fan-purchase status: physical matching HOLD.</strong>
+            <span>R13 now shows FS: guard ≈240–255 mm and complete frame/tabs starting estimate ≈280 mm. Make two 280 mm dummies for packaging, but buy only after FS is square-measured and an exact Toyota/Denso mate passes F, Db, depth, tabs, plug bend, polarity, current and installed-flow checks.</span>
           </div>
         </section>
 
         <section class="card cooling-pack-section" id="cooling-pack-diagrams">
           <div class="detail-header">
             <div>
-            <p class="cooling-pack-section-label">Rev H control drawing + retained Rev G drawing set · 1 Aug 2026</p>
-              <h3>Complete dimensioned radiator and cooling-pack drawings</h3>
+              <p class="cooling-pack-section-label">Rev L controlled drawings · D19 and D20</p>
+              <h3>Photo measurements, centred packaging and remaining holds</h3>
             </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-diagrams"), "#", "Copy cooling-pack diagrams link")}
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-diagrams"), "#", "Copy Rev L diagram link")}
           </div>
           <div class="cooling-pack-drawing-notes" role="note">
-            <span><b class="drawing-key drawing-key-fixed"></b><strong>Red</strong> = fixed nominal requirement.</span>
-            <span><b class="drawing-key drawing-key-measure"></b><strong>Purple</strong> = measure on vehicle / written approval.</span>
-            <span>All unlabeled positions are field-measured. Dimensions are in millimetres. <strong>Final core manufacture: HOLD.</strong></span>
+            <span><b class="drawing-key drawing-key-fixed"></b><strong>Green</strong> = retained actual part / confirmed architecture.</span>
+            <span><b class="drawing-key drawing-key-measure"></b><strong>Amber</strong> = provisional photo-derived mock-up dimension.</span>
+            <span><strong>Purple HOLD</strong> = direct square measurement or test still required. Dimensions are millimetres; no image releases cutting.</span>
           </div>
-          <p class="small-muted">Rev H D10 is the vehicle-centreline/procurement/fit-control drawing; D01–D09 are retained Rev G layout references. Click any drawing to inspect it full size. The C0 survey, deterministic drawings, full-size vehicle mock-up and written approval control final manufacture; AI visuals do not.</p>
           <div class="cooling-pack-gallery">${renderGallery(diagrams)}</div>
         </section>
 
         <section class="cooling-pack-spec-grid" id="cooling-pack-specifications">
           <article class="card cooling-pack-spec-card">
-            <p class="cooling-pack-section-label">Main-pack airflow</p>
-            <h3>Installed airflow—not free-air marketing</h3>
+            <p class="cooling-pack-section-label">Matching front fan pair</p>
+            <h3>Equal size and horizontally central</h3>
             <ul>
-              <li>Mechanical puller + sealed full-face shroud: ≥9,000 m³/h installed through all three cores at 1,500 engine rpm.</li>
-              <li>Fans 1 and 2 of 3: a matched 248 mm Prado 120/GX470 Toyota/Denso donor motor, blade and connector pair in one custom sealed shroud with ≥258 mm clear rings. Survey vehicle centreline C0 from paired chassis references; place the hubs at C0 − 133 mm and C0 + 133 mm (266 mm C-C). The pair midpoint must be within ±2 mm of C0 and hub heights within ±2 mm. The complete donor shroud is not a fit-approved part. Installed duty is ≥3,000 m³/h at 13.5 V through the final grille, screen and all three cores.</li>
-              <li>No sideways fan offset is released in Rev H. Repackage the drier, A/C manifold, charge pipes and electrical brackets around the C0-centred shroud; if this cannot be done inside W0, stop at F1 and revise the package before fabrication.</li>
-              <li>Record make, model, installed test basis, steady current, start current and loaded voltage for every fan.</li>
-              <li>No component may obscure the main core or be supported by another heat exchanger.</li>
+              <li>Reuse the existing fan only if it passes condition, rotation, current and airflow checks and a true matching complete Toyota/Denso twin is found.</li>
+              <li>Fallback is two physically matching complete modules; retain the old unit as a service spare.</li>
+              <li>Photo-start dummy: two ≈280 mm modules plus a 10 mm gap = ≈570 mm, giving ≈32.5 mm equal margins inside the provisional ≈635 mm R0 silhouette.</li>
+              <li>Final: require 2F + g ≤ Wc and M = (Wc − 2F − g) / 2 positive/equal; pair midpoint on vehicle centreline ±2 mm. Require 2Db + g ≤ Wa or a tested sealed plenum.</li>
+              <li>Complete installed three-fan airflow: ≥3,000 m³/h at 13.5 V at fan terminals; ≥3,300 m³/h preferred. Never sum free-air ratings.</li>
             </ul>
           </article>
           <article class="card cooling-pack-spec-card">
-            <p class="cooling-pack-section-label">Central charge-cooler layer</p>
-            <h3>One slim core; no third electric fan</h3>
+            <p class="cooling-pack-section-label">Retained rear fan</p>
+            <h3>Large electric FL puller stays sealed and functional</h3>
             <ul>
-              <li>≥15 kW heat rejection at 50°C fresh inlet, 0.20 kg/s charge flow and 130°C nominal compressor outlet.</li>
-              <li>Manifold IAT ≤80°C at stabilised rated full load; pressure-test to ≥2× declared boost, minimum 30 psi.</li>
-              <li>The central twin pushers and rear mechanical puller serve this core, condenser and radiator together: exactly three fans total. No fourth/additional fan is permitted unless a new controlled revision approves the packaging change.</li>
-              <li>Nominal core basis is 500 W × 180 H × 50 D with 57 mm beaded outlets, but the physical sample and complete three-core dummy control.</li>
-              <li>Keep both tanks/outlets between the uprights, turn the pipes rearward/inboard at measured lower corners, and seal edge bypass.</li>
+              <li>R12 proves FL is electric. Retain it only after label, polarity, bearing, blade, shroud, hot current and installed airflow checks; reject cracks, welds, looseness, distortion or contact marks.</li>
+              <li>Use its removable sealed full-face shroud around R0. Prove plug/cable, motor, service-tool and all axial/radial clearances.</li>
+              <li>It pulls air toward the engine. Its diameter may extend beyond either individual auxiliary core because R0 spans both zones behind them.</li>
             </ul>
           </article>
           <article class="card cooling-pack-spec-card">
-            <p class="cooling-pack-section-label">Mechanical fan and shroud</p>
-            <h3>Retain the engine-driven puller</h3>
+            <p class="cooling-pack-section-label">Existing covered electrical system</p>
+            <h3>No side-mounted fuse annex</h3>
             <ul>
-              <li>Reject cracked, welded, loose, distorted or contact-marked blades.</li>
-              <li>Full-face rigid removable shroud, sealed around radiator perimeter.</li>
-              <li>Blade depth 35–50% inside the shroud opening; perimeter seals must force air through the radiator.</li>
-              <li>At least 15 radial clearance through checked engine movement.</li>
-              <li>Radiator rear face to nearest blade ≥20 static; 25–30 preferred.</li>
+              <li>Retain the relay and MIDI/fuse carrier alignment inside the current cooling-pack front-view silhouette.</li>
+              <li>Keep every fuse and live stud under a closed cover, with down/rear cable exits, drip control and a proven lid/service sweep.</li>
+              <li>Use three independently protected fan branches—front FS, its front mate and rear FL—sized from measured start/run current and voltage drop.</li>
+              <li>Nothing electrical loads R0, C0, K0, a core, the R0 lower crossmember/saddles or the battery stand.</li>
             </ul>
           </article>
-          <article class="card cooling-pack-spec-card cooling-pack-never-card">
-            <p class="cooling-pack-section-label">Turbo and release boundary</p>
-            <h3>No cooling derate—but no blank cheque for boost</h3>
+          <article class="card cooling-pack-spec-card">
+            <p class="cooling-pack-section-label">50 °C and turbo duty</p>
+            <h3>Comfortable margin must be proven</h3>
             <ul>
-              <li>After T1–T3 pass, the cooling system must not require boost reduction within the 150 bhp crank thermal-design envelope.</li>
-              <li>Initial calibration stays at 5–7 psi. Consider 8–10 psi only after logged coolant, IAT, EGT, oil, smoke, boost and driveline evidence.</li>
-              <li>This cooling specification does not approve 150 bhp, arbitrary boost, fuelling, turbo speed, exhaust drive pressure, clutch or driveline capacity.</li>
+              <li>Radiator target: ≥115 kW continuous and ≥130 kW for 10 minutes at the defined 50 °C acceptance duty.</li>
+              <li>Post-CAC IAT ≤80 °C and complete charge route pressure drop ≤10 kPa at the agreed 150 bhp/boost point.</li>
+              <li>After T1–T3 pass, cooling must not require boost or engine-load derate inside that accepted envelope.</li>
+              <li>The cooling release does not independently approve boost, fuelling, EGT, turbo speed or driveline capacity.</li>
             </ul>
           </article>
           <article class="card cooling-pack-spec-card cooling-pack-never-card">
             <p class="cooling-pack-section-label">Never do this</p>
-            <h3>Core and mounting prohibitions</h3>
+            <h3>Fabrication prohibitions</h3>
             <ul>
-              <li>No drilling or welding into a tank, header, tube, core or fin.</li>
-              <li>No plastic ties through any heat-exchanger core.</li>
-              <li>No component or fan carried by another heat exchanger.</li>
-              <li>No electrical enclosure or plate on the radiator, its isolated mounts or the battery stand; the covered Relay Rev D box and closed MIDI fuse enclosure use two independent staggered local structural brackets with their own hoods, outside active fin/sealed airflow.</li>
-              <li>No guessed neck positions, cap pressure, port threads or fan current.</li>
-              <li>No forced bolt alignment; every component must remove separately without cutting.</li>
-              <li>No new chassis holes, slots or reaming in the two existing inward top-return holes; drill only the two short removable radiator ears/adapters after template transfer. No transverse radiator carrier.</li>
+              <li>No unequal installed front fans and no unapproved fourth fan without a new controlled revision.</li>
+              <li>No side-by-side C0/K0 layout, narrow condenser, extra side tower or additional heat exchanger.</li>
+              <li>No drilling, welding or ties through tanks, headers, tubes, cores or fins.</li>
+              <li>No side-face substitute for either intended top hole; no new chassis hole, slot, reaming or forced bolt alignment.</li>
+              <li>R0 must sit on two lower rubber saddles carried by a full-width chassis-tied crossmember; C0, K0, fans and electrical hardware must be independently bracketed and carry no R0 load.</li>
             </ul>
           </article>
         </section>
@@ -9885,38 +9947,37 @@
           <div class="detail-header">
             <div>
               <p class="cooling-pack-section-label">Release control</p>
-              <h3>Mandatory measurements before final manufacture</h3>
+              <h3>Mandatory measurements and tests</h3>
             </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-gates"), "#", "Copy mandatory fit gates link")}
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-gates"), "#", "Copy Rev L release gates link")}
           </div>
-          <p class="small-muted">Measure with both uprights represented, body settled, grille/front panel and bonnet latch installed or accurately represented, and the engine fan present. Put a tape or ruler in every evidence photo.</p>
+          <p class="small-muted">Use the retained parts and actual vehicle with grille/front panel, bonnet/latch, bumper/guard, hoses, ports, covered electrical carrier, tools and engine movement represented. Put a ruler in every evidence photograph.</p>
           <div class="table-wrap cooling-pack-table-wrap">
             <table class="cooling-pack-table cooling-pack-gate-table">
               <thead><tr><th>ID</th><th>Check</th><th>PASS requirement</th></tr></thead>
-              <tbody>
-                ${fitGates.map(([id, check, requirement]) => `<tr><td><strong>${escapeHtml(id)}</strong></td><td>${escapeHtml(check)}</td><td>${escapeHtml(requirement)}</td></tr>`).join("")}
-              </tbody>
+              <tbody>${gateRows}</tbody>
             </table>
           </div>
           <div class="cooling-pack-release-footer">
-            <strong>Do not order final cores from these nominal dimensions alone.</strong>
-            <span>Pass B0/H0-L/H0-R/W0/P0/R0/BRKT, M1 ≥569 mm, M2–M6, F1–F4 and E1–E2a; build the full-size three-core dummy with its two direct radiator side rails/ears/lower saddles and two independent electrical brackets to the 215 mm stack basis; prove the 225 mm preferred installed-clearance envelope where available; close the bonnet/grille/bumper; prove removal paths, ≥5 mm hard rail/post clearance and both hand-entering top bolts; then pass T1–T3 before claiming 50°C / no-cooling-derate performance.</span>
+            <strong>Fit is not yet guaranteed by an image.</strong>
+            <span>The tape photos tighten the first mock-up but do not prove final fit. Manufacture waits for square R0/C0/FS/FL envelopes, W0/Wc/Wa, B0 two-hole and S0 saddle templates, P0, all depths/plug/pipe/tool sweeps, lower-crossmember proof and an opaque full-size vehicle fixture. Performance waits for installed three-fan airflow and instrumented 50 °C testing.</span>
           </div>
         </section>
 
         <section class="card cooling-pack-section cooling-pack-files" id="cooling-pack-files">
           <div class="detail-header">
             <div>
-              <p class="cooling-pack-section-label">Controlled handoff</p>
-              <h3>Download the controlled cooling-pack specification</h3>
+              <p class="cooling-pack-section-label">Controlled Rev L handoff</p>
+              <h3>Send this package to the local radiator fabricator</h3>
             </div>
-            ${renderCopyLinkButton(sectionRoute("cooling-pack-files"), "#", "Copy cooling-pack downloads link")}
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-files"), "#", "Copy cooling-pack download link")}
           </div>
-          <p>The Rev H Word document is the fabricator handoff: complete construction rules, centreline dimensions, tests, sequence, acceptance checks and a sign-off sheet. Print it or send it directly to the radiator shop.</p>
+          <p>The Rev L specification, complete OEM/donor-first parts list, photo-measured D19 sheet and packaging/hold D20 sheet control the retained R0, C0, FL and FS; one new low-centred K0 and complete charge route; the preferred exact FS mate; all cooling, A/C, mounting and electrical service parts; independent brackets; and the R0 lower crossmember/saddles. <strong>Rev K is superseded:</strong> its mechanical-fan description and nominal proportions are not active fabrication directions.</p>
           <div class="cooling-pack-downloads">
-            <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-h.docx" download>Download Rev H shop specification (.docx)</a>
-            <a class="item-link cooling-pack-download" href="../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-h.md" download>Download Rev H source specification (.md)</a>
-            <a class="item-link cooling-pack-download" href="../../docs/j40-rev-h-toyota-donor-cooling-pack-purchase-list-20260801.md" download>Download Rev H donor-parts purchase list (.md)</a>
+            <a class="item-link package-download-link cooling-pack-download" href="../../docs/J40-photo-measured-retained-cooling-pack-specification-rev-l.md" download>Download Rev L measured shop specification (.md)</a>
+            <a class="item-link cooling-pack-download" href="../../docs/j40-rev-l-complete-oem-donor-parts-list-20260803.md" download>Download complete OEM/donor-first parts list (.md)</a>
+            <a class="item-link cooling-pack-download" href="${revLAssets.d19Svg}" download>Download D19 measured-parts drawing (.svg)</a>
+            <a class="item-link cooling-pack-download" href="${revLAssets.d20Svg}" download>Download D20 packaging/holds drawing (.svg)</a>
           </div>
         </section>
       </div>
