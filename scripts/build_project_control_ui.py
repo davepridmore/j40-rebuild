@@ -2761,6 +2761,18 @@ FABRICATION_PACKAGE_CURATED_ARCHIVES: set[str] = {
 }
 
 
+# A package hero is an appearance/orientation aid shown directly on the portal.
+# It is kept separate from scale-controlled drawings so a raster render cannot
+# be mistaken for dimensional or CNC authority.
+FABRICATION_PACKAGE_HERO_IMAGES: dict[str, tuple[str, str, str]] = {
+    "dashboard_lcd_hvac_fascia_rev_i": (
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_photorealistic_corrected_outer_vents.png",
+        "V35 photorealistic dashboard appearance preview",
+        "Non-dimensional appearance preview only. Do not scale pixels or derive CNC coordinates; use the signed M1–M9 traces, actual components, coordinate schedule and scale-controlled elevation.",
+    ),
+}
+
+
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "dashboard_lcd_hvac_fascia_rev_i": [
         (
@@ -3957,6 +3969,18 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
             visual_links.append(link)
             visual_repo_paths.append(repo_path)
 
+    hero_image: dict[str, Any] | None = None
+    hero_repo_path = ""
+    hero_definition = FABRICATION_PACKAGE_HERO_IMAGES.get(package_id)
+    if hero_definition is not None:
+        hero_repo_path, hero_label, hero_notes = hero_definition
+        hero_image = file_link(hero_repo_path, hero_label)
+        if hero_image is not None:
+            hero_image["notes"] = hero_notes
+            hero_image["non_dimensional"] = True
+        else:
+            hero_repo_path = ""
+
     model_repo_paths = package_repo_paths(package_dir, row.get("model_files", ""))
     if package_id in {"longman_rubber_order_20260508", "rubber_recreation_rev_a"}:
         for repo_path, _label in RUBBER_3D_MODEL_LINKS:
@@ -3983,7 +4007,14 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
     archive_link = package_archive_link(
         package_id,
         package_dir,
-        [*primary_repo_paths, *visual_repo_paths, *model_repo_paths, *dxf_repo_paths, *svg_repo_paths],
+        [
+            *primary_repo_paths,
+            *([hero_repo_path] if hero_repo_path else []),
+            *visual_repo_paths,
+            *model_repo_paths,
+            *dxf_repo_paths,
+            *svg_repo_paths,
+        ],
     )
 
     return {
@@ -3996,12 +4027,18 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         "notes": clean(row.get("notes")),
         "package_dir": package_dir,
         "primary_links": primary_links,
+        "hero_image": hero_image,
         "visual_links": visual_links,
         "model_links": model_links,
         "dxf_links": dxf_links,
         "svg_links": svg_links,
         "archive_link": archive_link,
-        "file_count": len(primary_links) + len(visual_links) + len(model_links) + len(dxf_links) + len(svg_links),
+        "file_count": len(primary_links)
+        + (1 if hero_image else 0)
+        + len(visual_links)
+        + len(model_links)
+        + len(dxf_links)
+        + len(svg_links),
     }
 
 

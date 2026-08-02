@@ -3467,12 +3467,34 @@
 
   function renderPackageVisualPreviews(row) {
     const modes = packageVisualModes(row);
-    if (!modes.length) {
+    const hero = row && row.hero_image && cleanString(row.hero_image.url) ? row.hero_image : null;
+    if (!hero && !modes.length) {
       return "";
     }
-    const sequenceId = createVisualSequence();
+    const sequenceId = modes.length ? createVisualSequence() : "";
+    const heroLabel = cleanString(hero && hero.label) || "Appearance preview";
+    const heroNotes = cleanString(hero && hero.notes);
     return `
       <div class="fabrication-visual-grid">
+        ${
+          hero
+            ? `
+              <div class="fabrication-visual-preview fabrication-visual-preview-static">
+                <div class="fabrication-visual-label">
+                  <strong>${escapeHtml(heroLabel)}</strong>
+                  <span>${hero.non_dimensional ? "non-dimensional appearance preview" : "static preview"}</span>
+                </div>
+                <div class="fabrication-visual-viewport">
+                  <a class="fabrication-visual-static-link" href="${escapeHtml(hero.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(heroLabel)} full size">
+                    <img class="fabrication-visual-static-image" src="${escapeHtml(hero.url)}" alt="${escapeHtml(heroLabel)}" loading="lazy" decoding="async">
+                    <span>Open full image</span>
+                  </a>
+                </div>
+                ${heroNotes ? `<p class="fabrication-visual-note">${escapeHtml(heroNotes)}</p>` : ""}
+              </div>
+            `
+            : ""
+        }
         ${modes
           .map((mode) => {
             const title = `${cleanString(row && row.title) || "Fabrication package"} · ${mode.label}`;
@@ -3555,13 +3577,13 @@
             ${chip(`${quoteRows} Quote/First Article`)}
           </div>
         </div>
-        <p class="small-muted">Use the embedded 3D view for assembly orientation, then download the package archive or individual PDF/DXF/SVG files for fabrication.</p>
+        <p class="small-muted">Use visual previews for layout and assembly orientation. Use only the controlled dimensions, signed measurements and released PDF/DXF/SVG files for fabrication.</p>
         <div class="fabrication-package-list">
           ${rows
             .map((row) => {
               const visualPreviews = renderPackageVisualPreviews(row);
               return `
-                <section class="fabrication-package-row ${visualPreviews ? "" : "fabrication-package-row-no-visual"}">
+                <section class="fabrication-package-row ${visualPreviews ? "" : "fabrication-package-row-no-visual"} ${row.hero_image ? "fabrication-package-row-has-hero" : ""}">
                   ${visualPreviews}
                   <div class="fabrication-package-body">
                     <div class="fabrication-package-heading">
@@ -3584,7 +3606,7 @@
                     ${renderPackageDrawingPreviews(row)}
                     <div class="fabrication-file-rows">
                       ${renderPackageDownload(row.archive_link)}
-                      ${renderPackageLinks("3D Visual", row.visual_links)}
+                      ${renderPackageLinks(row.hero_image ? "Controlled visuals + evidence" : "3D Visual", row.visual_links)}
                       ${renderPackageLinks("3D Models", row.model_links)}
                       ${renderPackageLinks("Docs + Data", row.primary_links)}
                       ${renderPackageLinks("Cut DXF", row.dxf_links)}

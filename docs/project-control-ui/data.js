@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-02T16:48:43+05:00",
+  "generated_at": "2026-08-02T16:57:21+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -27591,6 +27591,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: bilal_ganj_bill_breakdown_20260710.csv"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
@@ -32751,6 +32752,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: README.md"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html",
@@ -32861,6 +32863,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_mount_rev_d_3d_visualisation.html",
@@ -35826,6 +35829,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.html",
@@ -35888,6 +35892,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_rev_d_3d_visualisation.html",
@@ -35982,6 +35987,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: README.md"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html",
@@ -36108,6 +36114,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: measurement_basis.csv"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.html",
@@ -36170,6 +36177,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_mount_rev_d_3d_visualisation.html",
@@ -36264,6 +36272,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: 20260710_115730_gp_ytcZloOQ"
             }
           ],
+          "hero_image": null,
           "visual_links": [],
           "model_links": [],
           "dxf_links": [],
@@ -36307,6 +36316,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: engine_electrical_inputs_reconciliation_20260517.csv"
             }
           ],
+          "hero_image": null,
           "visual_links": [],
           "model_links": [],
           "dxf_links": [],
@@ -36354,6 +36364,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: 2h-turbo-suitability-and-options-20260717.md"
             }
           ],
+          "hero_image": null,
           "visual_links": [],
           "model_links": [],
           "dxf_links": [],
@@ -36409,6 +36420,12 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: switch_position_schedule.csv"
             }
           ],
+          "hero_image": {
+            "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_photorealistic_corrected_outer_vents.png",
+            "label": "V35 photorealistic dashboard appearance preview",
+            "notes": "Non-dimensional appearance preview only. Do not scale pixels or derive CNC coordinates; use the signed M1\u2013M9 traces, actual components, coordinate schedule and scale-controlled elevation.",
+            "non_dimensional": true
+          },
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png",
@@ -36478,9 +36495,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 26534338
+            "bytes": 28968760
           },
-          "file_count": 23
+          "file_count": 24
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -85809,6 +85826,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
+          "hero_image": null,
           "visual_links": [
             {
               "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.html",
