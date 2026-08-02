@@ -28,7 +28,7 @@ Four `50 mm` outlets provide `7,854 mm²` total nominal flow area. Two `70 mm` o
 
 ### Dashboard-outlet interface
 
-The two `70 mm OD` plenum spigots are the donor-side duct standard, not the dashboard-louver mounting size. The Rev I V32 dashboard target family is:
+The two `70 mm OD` plenum spigots are the donor-side duct standard, not the dashboard-louver mounting size. The active Rev I V35 target replaces only the ashtray/centre area with a removable, zero-drop cassette; the OEM glovebox, cluster, RHD column scallop, full-width lower edge and formed contours remain unchanged. Any future cassette-only extension requires physical measurement and owner approval. Its dashboard target family is:
 
 | Dashboard interface | Target/reference | Rule |
 | --- | ---: | --- |

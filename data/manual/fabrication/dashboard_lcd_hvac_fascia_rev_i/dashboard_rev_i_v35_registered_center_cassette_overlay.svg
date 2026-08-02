@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4080" height="1884" viewBox="0 0 4080 1884">
+  <defs>
+    <linearGradient id="panelPaint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1eedf"/>
+      <stop offset="0.55" stop-color="#e4dfca"/>
+      <stop offset="1" stop-color="#cec7ae"/>
+    </linearGradient>
+    <radialGradient id="chrome" cx="35%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.22" stop-color="#d9dee1"/>
+      <stop offset="0.55" stop-color="#68727a"/>
+      <stop offset="0.78" stop-color="#f6f7f8"/>
+      <stop offset="1" stop-color="#5b6267"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15354f"/>
+      <stop offset="0.48" stop-color="#07121c"/>
+      <stop offset="1" stop-color="#226d91"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity="0.38"/>
+    </filter>
+    <g id="selector">
+      <circle r="31" fill="url(#chrome)" stroke="#2e3438" stroke-width="3"/>
+      <circle r="23" fill="#111315" stroke="#050607" stroke-width="2"/>
+      <g transform="rotate(-37)">
+        <rect x="-9" y="-12" width="18" height="53" rx="7" fill="#111315" stroke="#050607" stroke-width="2"/>
+        <rect x="-2.5" y="-5" width="5" height="33" rx="2.5" fill="#d9d4c8" opacity="0.9"/>
+      </g>
+    </g>
+    <g id="vent">
+      <circle r="88" fill="url(#chrome)" stroke="#4a4f52" stroke-width="4"/>
+      <circle r="72" fill="#090c0e" stroke="#14191d" stroke-width="5"/>
+      <ellipse rx="58" ry="21" cy="-23" fill="#2b3033" stroke="#030405" stroke-width="4"/>
+      <ellipse rx="58" ry="21" cy="23" fill="#2b3033" stroke="#030405" stroke-width="4"/>
+      <path d="M-53 -21 Q0 0 53 -21" fill="none" stroke="#555d61" stroke-width="4" opacity="0.75"/>
+      <path d="M-53 21 Q0 0 53 21" fill="none" stroke="#555d61" stroke-width="4" opacity="0.75"/>
+    </g>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif}
+      .lock{fill:none;stroke:#00e7ff;stroke-width:8;stroke-dasharray:23 15}
+      .datum{fill:none;stroke:#ffcf43;stroke-width:7;stroke-dasharray:24 15}
+      .caption{fill:#fff;font-weight:700;paint-order:stroke;stroke:#111;stroke-width:6;stroke-linejoin:round}
+      .small{font-size:25px}.medium{font-size:32px}.large{font-size:42px}
+      .label{fill:#202426;font-size:16px;font-weight:700;text-anchor:middle}
+      .state{fill:#3c4144;font-size:12px;font-weight:700;text-anchor:middle}
+    </style>
+  </defs>
+
+  <!-- Exact project photograph. Nothing outside the centre overlay and two vent faces is repainted. -->
+  <image x="0" y="0" width="4080" height="1884" xlink:href="dashboard_rev_i_v35_registered_source_20260413.jpg"/>
+
+  <!-- Retained OEM traces: registration guides only, not CNC curves. -->
+  <path class="lock" d="M790 297 C825 278 1132 277 1162 307 C1185 332 1207 534 1175 575 C1144 611 834 604 795 573 C765 547 766 330 790 297 Z"/>
+  <text x="980" y="269" class="caption medium" text-anchor="middle">OEM GLOVEBOX — UNCHANGED</text>
+
+  <path class="lock" d="M2095 269 C2165 238 2518 236 2582 282 C2624 313 2634 593 2591 632 C2556 663 2495 650 2467 670 C2437 691 2439 750 2394 774 C2351 747 2352 692 2320 670 C2290 650 2110 674 2073 630 C2037 588 2040 309 2095 269 Z"/>
+  <line x1="2394" y1="224" x2="2394" y2="812" class="datum"/>
+  <text x="2394" y="207" class="caption medium" text-anchor="middle">OEM CLUSTER + COLUMN AXIS — UNCHANGED</text>
+
+  <!-- The removable centre cassette follows the photographed face and lower contour. It does not lower either end. -->
+  <path d="M1188 287 Q1188 275 1203 275 L1984 270 Q2011 270 2011 297 L2011 690 Q2011 713 1987 710 L1215 645 Q1188 642 1188 616 Z"
+        fill="url(#panelPaint)" stroke="#807b69" stroke-width="7" filter="url(#shadow)"/>
+  <path d="M1194 635 C1405 654 1778 693 2004 704" class="datum"/>
+  <text x="1594" y="739" class="caption small" text-anchor="middle">CENTRE CASSETTE FOLLOWS OEM LOWER CONTOUR — NO DROP-DOWN POD</text>
+
+  <!-- Provisional 9-inch module shown at the exact 211.10:126.50 outline ratio.
+       At this local overlay scale 430 px = 211.10 mm, so height = 257.674 px.
+       Actual purchased module and M4/M5 templates still control production. -->
+  <rect x="1430" y="277" width="430" height="257.674" rx="14" fill="#171a1c" stroke="#575d61" stroke-width="8"/>
+  <rect x="1442.42" y="291.96" width="405.17" height="227.91" rx="7" fill="url(#screen)" stroke="#1e87b8" stroke-width="3"/>
+  <path d="M1466 482 C1535 410 1592 445 1655 366 C1715 297 1777 392 1823 349" fill="none" stroke="#4ed0ff" stroke-width="9"/>
+  <circle cx="1655" cy="366" r="10" fill="#fff"/>
+  <text x="1645" y="401" fill="#fff" font-size="43" font-weight="700" text-anchor="middle">9-INCH LCD</text>
+  <text x="1645" y="447" fill="#c8eaff" font-size="17" text-anchor="middle">MODULE 211.10 × 126.50 · ACTIVE 198.91 × 111.89</text>
+
+  <!-- Seven bought black/chrome selectors plus the separate red hazard, all in one line. -->
+  <g>
+    <text x="1365" y="551" class="label">WIPERS</text><use xlink:href="#selector" x="1365" y="590"/><text x="1365" y="640" class="state">OFF·LOW·HIGH</text>
+    <text x="1445" y="551" class="label">LIGHTS</text><use xlink:href="#selector" x="1445" y="590"/><text x="1445" y="640" class="state">OFF·SIDE·HEAD</text>
+    <text x="1525" y="551" class="label">SPOTS</text><use xlink:href="#selector" x="1525" y="590"/><text x="1525" y="640" class="state">OFF·ON</text>
+    <text x="1605" y="551" class="label">AUX</text><use xlink:href="#selector" x="1605" y="590"/><text x="1605" y="640" class="state">OFF·ON</text>
+    <text x="1685" y="551" class="label">BLOWER</text><use xlink:href="#selector" x="1685" y="590"/><text x="1685" y="640" class="state">OFF·LOW·HIGH</text>
+    <text x="1765" y="551" class="label">A/C</text><use xlink:href="#selector" x="1765" y="590"/><text x="1765" y="640" class="state">OFF·ON</text>
+    <text x="1845" y="551" class="label">FUEL STOP</text><use xlink:href="#selector" x="1845" y="590"/><text x="1845" y="640" class="state">RUN·STOP</text>
+    <text x="1925" y="551" class="label">HAZARD</text>
+    <circle cx="1925" cy="590" r="31" fill="url(#chrome)" stroke="#2e3438" stroke-width="3"/>
+    <circle cx="1925" cy="590" r="23" fill="#c52d24" stroke="#59100c" stroke-width="3"/>
+    <path d="M1925 575 L1942 605 L1908 605 Z" fill="none" stroke="#fff" stroke-width="4"/>
+    <text x="1925" y="640" class="state">OFF·ON</text>
+  </g>
+
+  <!-- Ø87 target faces centred in the two retained clear outer lands:
+       left between fascia end and glovebox, right between cluster and fascia end.
+       Rear fit remains a physical-buck hold. -->
+  <g transform="translate(538 413)"><use xlink:href="#vent"/></g>
+  <g transform="translate(2949 469)"><use xlink:href="#vent"/></g>
+  <path d="M538 413 L2949 469" class="datum"/>
+  <path d="M286 413 H790 M286 393 V433 M790 393 V433" class="datum"/>
+  <path d="M2634 469 H3264 M2634 449 V489 M3264 449 V489" class="datum"/>
+  <text x="538" y="526" class="caption small" text-anchor="middle">Ø87 · CENTRED IN OUTER LAND</text>
+  <text x="2949" y="582" class="caption small" text-anchor="middle">Ø87 · CENTRED IN OUTER LAND</text>
+
+  <!-- Existing vertical relationships are trace-controlled, never inferred from this perspective image. -->
+  <path d="M1017 603 L1017 625 M1002 603 L1032 603 M1002 625 L1032 625" class="datum"/>
+  <text x="1043" y="620" class="caption small">G1 OEM GLOVEBOX GAP — TRACE UNCHANGED</text>
+  <path d="M2638 635 L2638 746 M2623 635 L2653 635 M2623 746 L2653 746" class="datum"/>
+  <text x="2670" y="699" class="caption small">C1 OEM CLUSTER / COLUMN RELATION — TRACE UNCHANGED</text>
+
+  <!-- Existing lower edge is highlighted, including its perspective rise/fall and formed end contours. -->
+  <path d="M557 630 C820 624 1035 627 1190 637 C1450 654 1775 690 2010 710 C2250 729 2510 747 2705 754 C2905 760 3108 772 3264 783" class="lock"/>
+  <text x="3280" y="824" class="caption small" text-anchor="end">RETAIN EXISTING LOWER EDGE + END CONTOURS</text>
+
+  <g transform="translate(120 1320)">
+    <rect width="2650" height="430" rx="28" fill="#11181d" fill-opacity="0.88" stroke="#d3dde3" stroke-width="3"/>
+    <text x="45" y="64" fill="#fff" class="large" font-weight="700">V35 PHOTO-REGISTERED DESIGN CHECK</text>
+    <text x="45" y="116" fill="#dce7ed" class="medium">PHOTO GAP AUDIT (px only): end→glovebox 504 · glovebox→cluster 830 · cluster→end 630.</text>
+    <text x="45" y="166" fill="#dce7ed" class="medium">VENT CHECK: each outer land is split exactly — 252 px per side at passenger vent; 315 px per side at driver vent.</text>
+    <text x="45" y="216" fill="#dce7ed" class="medium">OEM contours remain source pixels; only the centre cassette changes, with one control row and no full-width height increase.</text>
+    <text x="45" y="280" fill="#ffd86a" class="medium" font-weight="700">PHOTO PIXELS ARE REGISTRATION EVIDENCE, NOT CNC MILLIMETRES.</text>
+    <text x="45" y="326" fill="#ffd86a" class="medium">The LCD outline is drawn at the exact 211.10:126.50 ratio; actual M4 hardware controls its aperture.</text>
+    <text x="45" y="376" fill="#ff9f86" class="medium">Production HOLD: M1–M9 trace, actual controls/LCD, outlet retention and complete rear-depth buck are still required.</text>
+  </g>
+</svg>

@@ -1,9 +1,9 @@
-id,row,column,visible_hardware,label,maintained_positions,front_label_states,function,electrical_boundary,release_status
-S1,top,1,long-handle black/chrome industrial selector,WIPERS,3,OFF / LOW / HIGH,wiper request including park logic,low-current relay/controller input only; washer remains separate,M6 contact truth table and rear-envelope HOLD
-S2,top,2,long-handle black/chrome industrial selector,LIGHTS,3,OFF / SIDE / HEAD,side/headlamp request,low-current relay input only; OEM dip and horn remain on column,M6 contact truth table and rear-envelope HOLD
-S3,top,3,long-handle black/chrome industrial selector,SPOTS,2,OFF / ON,spot-lamp request,low-current fused relay input only,M6 contact truth table and rear-envelope HOLD
-S4,top,4,long-handle black/chrome industrial selector,AUX,2,OFF / ON,auxiliary switched-accessory request,low-current fused relay input only,M6 contact truth table and rear-envelope HOLD
-S5,bottom,1,long-handle black/chrome industrial selector,BLOWER,3,OFF / LOW / HIGH,cabin blower request,low-current input to measured resistor/PWM/relay interface; no motor current through selector; donor medium tap remains unused unless a separate bench-proven redesign is approved,M6/M8 bought-part contact truth table and airflow interlock HOLD
-S6,bottom,2,long-handle black/chrome industrial selector,A/C,2,OFF / ON,compressor request,low-current request through thermostat pressure and blower-airflow safeties,M6/M8 bench truth table and safety-chain HOLD
-S7,bottom,3,long-handle black/chrome industrial selector,FUEL STOP,2,RUN / STOP,diesel fuel-stop request,validated low-current interface only; key OFF authoritative; manual stop cable retained,EEI-003 and M6/M10 functional proof HOLD
-H1,bottom,4,separate red maintained hazard control,HAZARD,2,OFF / ON,hazard flasher request,separate fused hazard circuit,M6/M10 isolation and functional proof HOLD
+id,row,column,x_mm,y_mm,visible_hardware,label,maintained_positions,front_label_states,function,electrical_boundary,release_status
+S1,single,1,545.0,177.0,bought Schneider Harmony/XB4-family black long-lever selector,WIPERS,3,OFF / LOW / HIGH,wiper request including park logic,low-current relay/controller input only; washer remains separate,HOLD M6 actual part and rear buck
+S2,single,2,585.0,177.0,bought Schneider Harmony/XB4-family black long-lever selector,LIGHTS,3,OFF / SIDE / HEAD,side/headlamp request,low-current relay input only; OEM dip and horn remain on column,HOLD M6 actual part and rear buck
+S3,single,3,625.0,177.0,bought Schneider Harmony-family black selector,SPOTS,2,OFF / ON,spot-lamp request,low-current fused relay input only,HOLD M6 actual part and rear buck
+S4,single,4,665.0,177.0,bought Schneider Harmony-family black selector,AUX,2,OFF / ON,auxiliary switched-accessory request,low-current fused relay input only,HOLD M6 actual part and rear buck
+S5,single,5,705.0,177.0,bought Schneider Harmony/XB4-family black long-lever selector,BLOWER,3,OFF / LOW / HIGH,cabin blower request,low-current input to measured resistor/PWM/relay interface; no motor current through selector,HOLD M6 actual part and rear buck
+S6,single,6,745.0,177.0,bought Schneider Harmony-family black selector,A/C,2,OFF / ON,compressor request,low-current request through thermostat pressure and blower-airflow safeties,HOLD M6 actual part and rear buck
+S7,single,7,785.0,177.0,bought Schneider Harmony-family black selector,FUEL STOP,2,RUN / STOP,diesel fuel-stop request,validated low-current interface only; key OFF authoritative; manual stop cable retained,HOLD M6 actual part and rear buck
+H1,single,8,825.0,177.0,separate red hazard control,HAZARD,2,OFF / ON,hazard flasher request,separate fused hazard circuit; not an eighth black selector,HOLD M6 actual part and rear buck

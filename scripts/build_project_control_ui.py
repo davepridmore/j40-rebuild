@@ -2755,12 +2755,12 @@ FABRICATION_PACKAGE_ARCHIVE_EXCLUDES: dict[str, set[str]] = {
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "dashboard_lcd_hvac_fascia_rev_i": [
         (
-            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_inboard_high_87mm_outlets.png",
-            "Selected V32 straight-on dashboard design",
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png",
+            "Selected V35 registered centre-cassette dashboard baseline",
         ),
         (
-            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v25_exact_height_column_overlay.png",
-            "Factory-height and steering-axis alignment overlay",
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_front_elevation.svg",
+            "V35 provisional exact-scale front elevation (quotation only)",
         ),
         (
             "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
@@ -2771,12 +2771,12 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
             "Fillable CNC measurement schedule",
         ),
         (
-            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_provisional_assumption_cnc_spec.md",
-            "V32-Q1 assumption-based quotation CNC spec",
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_quotation_cnc_spec.md",
+            "V35 centre-cassette quotation CNC specification",
         ),
         (
-            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_provisional_coordinates.csv",
-            "V32-Q1 provisional coordinate schedule",
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_coordinates.csv",
+            "V35 provisional coordinate schedule",
         ),
         (
             "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",

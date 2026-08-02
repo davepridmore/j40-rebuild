@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600mm" height="460mm" viewBox="-100 -100 1600 460">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 z" fill="#34495e"/></marker>
+    <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke="#a66f32" stroke-width="2"/></pattern>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17222c}.face{fill:#eee8da;stroke:#283b4d;stroke-width:3}.oem{fill:url(#hatch);fill-opacity:.32;stroke:#a66f32;stroke-width:2;stroke-dasharray:9 6}.cass{fill:#d9eef7;stroke:#0076a7;stroke-width:2.5}.screen{fill:#1a2630;stroke:#35a7d8;stroke-width:2}.active{fill:none;stroke:#65d0ff;stroke-width:1.5}.vent{fill:#dfe5e8;stroke:#4f5962;stroke-width:3}.rear{fill:none;stroke:#e07b24;stroke-width:1.5;stroke-dasharray:7 5}.selector{fill:#15191c;stroke:#c4ccd1;stroke-width:2}.hazard{fill:#c22c25;stroke:#c4ccd1;stroke-width:2}.datum{stroke:#5f8294;stroke-width:1;stroke-dasharray:6 5}.dim{fill:none;stroke:#34495e;stroke-width:1.4;marker-start:url(#arrow);marker-end:url(#arrow)}.ext{stroke:#758799;stroke-width:1}.t{font-size:20px}.s{font-size:14px}.xs{font-size:11px}.note{font-size:13px;fill:#6e461e}.screenText{fill:#fff}.screenSubtext{fill:#bde9ff}
+    </style>
+  </defs>
+  <text x="0" y="-78" class="t">J40 dashboard Rev I V35 — provisional exact-scale front elevation (mm)</text>
+  <text x="0" y="-55" class="s">X passenger-to-driver (RHD); Y down; Z rear. New geometry is scale-controlled; OEM zones are trace-lock placeholders, not profiles.</text>
+
+  <rect x="0" y="0" width="1400" height="250" rx="18" class="face"/>
+  <line x1="700" y1="0" x2="700" y2="250" class="datum"/><line x1="0" y1="125" x2="1400" y2="125" class="datum"/>
+  <!-- Deliberately schematic OEM locations: original physical profiles remain untouched and must be traced. -->
+  <path d="M225 35 H480 Q500 35 500 55 V190 H225 Z" class="oem"/><text x="362" y="93" text-anchor="middle" class="s">OEM GLOVEBOX</text><text x="362" y="114" text-anchor="middle" class="xs">TRACE-LOCK / UNCHANGED</text>
+  <path d="M870 28 H1045 V184 H1010 Q990 184 985 213 Q980 184 960 184 H870 Z" class="oem"/><text x="958" y="87" text-anchor="middle" class="s">OEM CLUSTER</text><text x="985" y="224" text-anchor="middle" class="xs">RHD COLUMN + SCALLOP LOCKED</text>
+
+  <circle cx="112.5" cy="70" r="43.5" class="vent"/><circle cx="112.5" cy="70" r="37.5" class="rear"/><text x="112.5" y="74" text-anchor="middle" class="xs">Ø87</text>
+  <circle cx="1222.5" cy="70" r="43.5" class="vent"/><circle cx="1222.5" cy="70" r="37.5" class="rear"/><text x="1222.5" y="74" text-anchor="middle" class="xs">Ø87</text>
+  <text x="112.5" y="124" text-anchor="middle" class="xs">Ø75 rear target</text><text x="1222.5" y="124" text-anchor="middle" class="xs">Ø75 rear target</text>
+  <line x1="0" y1="145" x2="225" y2="145" class="dim"/><text x="112.5" y="140" text-anchor="middle" class="xs">centred in 225 outer land</text>
+  <line x1="1045" y1="145" x2="1400" y2="145" class="dim"/><text x="1222.5" y="140" text-anchor="middle" class="xs">centred in 355 outer land</text>
+
+  <rect x="510" y="5" width="350" height="210" rx="18" class="cass"/><text x="685" y="204" text-anchor="middle" class="xs">REMOVABLE CENTRE CASSETTE — 0 mm DOWNWARD EXTENSION</text>
+  <rect x="579.45" y="12" width="211.10" height="126.50" rx="3" class="screen"/><rect x="585.545" y="19.305" width="198.91" height="111.89" rx="2" class="active"/>
+  <text x="685" y="72" text-anchor="middle" class="t screenText">9-INCH LCD</text><text x="685" y="94" text-anchor="middle" class="s screenText">module 211.10 × 126.50</text><text x="685" y="115" text-anchor="middle" class="xs screenSubtext">active 198.91 × 111.89</text>
+  <g>
+    <circle cx="545" cy="177" r="15" class="selector"/><circle cx="585" cy="177" r="15" class="selector"/><circle cx="625" cy="177" r="15" class="selector"/><circle cx="665" cy="177" r="15" class="selector"/><circle cx="705" cy="177" r="15" class="selector"/><circle cx="745" cy="177" r="15" class="selector"/><circle cx="785" cy="177" r="15" class="selector"/><circle cx="825" cy="177" r="15" class="hazard"/>
+    <text x="545" y="153" text-anchor="middle" class="xs">WIPERS</text><text x="585" y="153" text-anchor="middle" class="xs">LIGHTS</text><text x="625" y="153" text-anchor="middle" class="xs">SPOTS</text><text x="665" y="153" text-anchor="middle" class="xs">AUX</text><text x="705" y="153" text-anchor="middle" class="xs">BLOWER</text><text x="745" y="153" text-anchor="middle" class="xs">A/C</text><text x="785" y="153" text-anchor="middle" class="xs">FUEL</text><text x="825" y="153" text-anchor="middle" class="xs">HAZARD</text>
+    <text x="545" y="202" text-anchor="middle" class="xs">3-pos</text><text x="585" y="202" text-anchor="middle" class="xs">3-pos</text><text x="625" y="202" text-anchor="middle" class="xs">2-pos</text><text x="665" y="202" text-anchor="middle" class="xs">2-pos</text><text x="705" y="202" text-anchor="middle" class="xs">3-pos</text><text x="745" y="202" text-anchor="middle" class="xs">2-pos</text><text x="785" y="202" text-anchor="middle" class="xs">RUN/STOP</text><text x="825" y="202" text-anchor="middle" class="xs">2-pos</text>
+  </g>
+
+  <line x1="510" y1="5" x2="510" y2="-32" class="ext"/><line x1="860" y1="5" x2="860" y2="-32" class="ext"/><line x1="510" y1="-18" x2="860" y2="-18" class="dim"/><text x="685" y="-25" text-anchor="middle" class="s">350 candidate free centre field / cassette</text>
+  <line x1="545" y1="177" x2="585" y2="177" class="dim"/><text x="565" y="171" text-anchor="middle" class="xs">40 pitch</text>
+  <line x1="579.45" y1="143" x2="579.45" y2="235" class="ext"/><line x1="790.55" y1="143" x2="790.55" y2="235" class="ext"/><line x1="579.45" y1="228" x2="790.55" y2="228" class="dim"/><text x="685" y="223" text-anchor="middle" class="s">211.10 LCD module</text>
+  <line x1="0" y1="-12" x2="0" y2="-70" class="ext"/><line x1="1400" y1="-12" x2="1400" y2="-70" class="ext"/><line x1="0" y1="-48" x2="1400" y2="-48" class="dim"/><text x="700" y="-55" text-anchor="middle" class="s">1400 quotation plotting envelope — REPLACE WITH M1 TRACE</text>
+  <text x="0" y="290" class="note">Dashed orange Ø75 circles are rear-mount targets only: do not machine them until M7 actual vent retention/coupon is signed.</text>
+  <text x="0" y="312" class="note">The screen centre is (685,75.25), the centre of the candidate free centre field — not the overall-face midpoint (700,125).</text>
+  <text x="0" y="334" class="note">Production HOLD: M1 must replace the schematic land boundaries and preserve G1/C1 gaps, OEM lower edge and formed contours unchanged.</text>
+</svg>
