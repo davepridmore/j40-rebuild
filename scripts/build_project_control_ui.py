@@ -3201,6 +3201,7 @@ def package_archive_link(package_id: str, package_dir: str, extra_repo_paths: It
         return None
     link["download"] = True
     link["bytes"] = archive_path.stat().st_size
+    link["file_count"] = len(archive_sources)
     return link
 
 
@@ -4033,12 +4034,16 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         "dxf_links": dxf_links,
         "svg_links": svg_links,
         "archive_link": archive_link,
-        "file_count": len(primary_links)
-        + (1 if hero_image else 0)
-        + len(visual_links)
-        + len(model_links)
-        + len(dxf_links)
-        + len(svg_links),
+        "file_count": (
+            int(archive_link.get("file_count", 0))
+            if archive_link
+            else len(primary_links)
+            + (1 if hero_image else 0)
+            + len(visual_links)
+            + len(model_links)
+            + len(dxf_links)
+            + len(svg_links)
+        ),
     }
 
 

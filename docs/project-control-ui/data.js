@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-02T17:05:01+05:00",
+  "generated_at": "2026-08-02T17:11:39+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -27736,9 +27736,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 260917
+            "bytes": 260917,
+            "file_count": 37
           },
-          "file_count": 38
+          "file_count": 37
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -32836,7 +32837,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 277843
+            "bytes": 277843,
+            "file_count": 27
           },
           "file_count": 27
         },
@@ -32899,9 +32901,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 56571
+            "bytes": 56571,
+            "file_count": 8
           },
-          "file_count": 9
+          "file_count": 8
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -35865,7 +35868,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42182
+            "bytes": 42182,
+            "file_count": 11
           },
           "file_count": 11
         },
@@ -35936,9 +35940,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 75010
+            "bytes": 75010,
+            "file_count": 10
           },
-          "file_count": 11
+          "file_count": 10
         },
         {
           "requirement_id": "FAB-ELEC-004",
@@ -36071,7 +36076,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 277843
+            "bytes": 277843,
+            "file_count": 27
           },
           "file_count": 27
         },
@@ -36150,7 +36156,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 80498
+            "bytes": 80498,
+            "file_count": 13
           },
           "file_count": 13
         },
@@ -36213,9 +36220,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 56571
+            "bytes": 56571,
+            "file_count": 8
           },
-          "file_count": 9
+          "file_count": 8
         },
         {
           "requirement_id": "FAB-RPO-001",
@@ -36281,9 +36289,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/bilal_ganj_wire_pipe_reproduction_20260706.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 54131
+            "bytes": 54131,
+            "file_count": 4
           },
-          "file_count": 11
+          "file_count": 4
         },
         {
           "requirement_id": "FAB-TURBO-001",
@@ -36325,9 +36334,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 301701
+            "bytes": 301701,
+            "file_count": 4
           },
-          "file_count": 5
+          "file_count": 4
         },
         {
           "requirement_id": "FAB-TURBO-002",
@@ -36373,7 +36383,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/turbo_readiness_chassis_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 47158
+            "bytes": 47158,
+            "file_count": 6
           },
           "file_count": 6
         },
@@ -36495,9 +36506,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28969776
+            "bytes": 28969947,
+            "file_count": 17
           },
-          "file_count": 24
+          "file_count": 17
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -85862,7 +85874,8 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42182
+            "bytes": 42182,
+            "file_count": 11
           },
           "file_count": 11
         }
