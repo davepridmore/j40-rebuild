@@ -29,6 +29,10 @@ tmp/
 *.inspect.ndjson
 ~$*
 
+# Locally generated CNC hand-off archive; the portal build recreates and stages
+# its curated download, so the generated binary must not be added to Git.
+deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip
+
 # Local staging inboxes and transient working files.
 data/inbox/photos/
 data/inbox/takeout/

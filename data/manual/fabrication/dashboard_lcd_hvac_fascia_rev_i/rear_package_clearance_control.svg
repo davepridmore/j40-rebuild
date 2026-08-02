@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#16324f"/></marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#102a43}.sub{font:700 15px Arial,sans-serif;fill:#b42318}.h{font:700 18px Arial,sans-serif;fill:#102a43}.t{font:15px Arial,sans-serif;fill:#243b53}.small{font:13px Arial,sans-serif;fill:#486581}.dim{stroke:#16324f;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}.guide{stroke:#829ab1;stroke-width:1;stroke-dasharray:5 5}.hold{fill:#fff4e5;stroke:#d97706;stroke-width:2}.part{fill:#d9eaf7;stroke:#166088;stroke-width:2}.fascia{fill:#eee7da;stroke:#725f45;stroke-width:3}.obs{fill:#e6e6e6;stroke:#59636e;stroke-width:2}.clear{fill:#d9f4e5;stroke:#18864b;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="660" fill="#fbfcfe"/>
+  <text x="50" y="48" class="title">Rev I V35 rear-package clearance control</text>
+  <text x="50" y="76" class="sub">CONTROL DIAGRAM — NOT VEHICLE GEOMETRY — PRODUCTION HOLD</text>
+
+  <text x="50" y="120" class="h">Local side section at each component</text>
+  <rect x="220" y="150" width="28" height="315" rx="4" class="fascia"/>
+  <text x="170" y="492" class="t">Finished fascia</text>
+  <text x="170" y="512" class="t">rear plane: Z=0</text>
+  <line x1="248" y1="130" x2="248" y2="530" class="guide"/>
+
+  <rect x="248" y="185" width="365" height="95" rx="10" class="part"/>
+  <text x="274" y="218" class="h">LCD installed package</text>
+  <text x="274" y="242" class="t">chassis + carrier + heat sink + fasteners</text>
+  <text x="274" y="264" class="t">+ mated plug + cable bend/loop + removal sweep</text>
+
+  <rect x="248" y="335" width="150" height="82" rx="41" class="part"/>
+  <path d="M398 357 C470 357 500 385 540 406" fill="none" stroke="#166088" stroke-width="24"/>
+  <text x="265" y="325" class="h">Complete outlet package</text>
+  <text x="432" y="448" class="small">retainer + spigot + clamp + hose + first bend</text>
+
+  <rect x="785" y="150" width="28" height="315" class="clear"/>
+  <rect x="813" y="150" width="225" height="315" class="obs"/>
+  <text x="835" y="190" class="h">Nearest fixed</text>
+  <text x="835" y="214" class="h">obstruction</text>
+  <text x="835" y="244" class="small">Measure its perpendicular Z</text>
+  <text x="835" y="264" class="small">over the complete installed</text>
+  <text x="835" y="284" class="small">and removal envelope.</text>
+  <text x="770" y="492" class="small">≥10 mm fixed clearance</text>
+
+  <line x1="248" y1="548" x2="785" y2="548" class="dim"/>
+  <text x="350" y="577" class="t">Z_AVAILABLE — measured perpendicular to the local rear face</text>
+  <line x1="248" y1="112" x2="613" y2="112" class="dim"/>
+  <text x="312" y="103" class="t">P_LCD_INSTALLED,Q ≤115 mm (quotation assumption only)</text>
+
+  <rect x="50" y="600" width="1100" height="42" rx="8" class="hold"/>
+  <text x="70" y="626" class="t">Production pass: P_INSTALLED ≤ min(Z_FIXED) − 10 mm, and ≥20 mm from every moving column/shroud/stalk envelope.</text>
+</svg>

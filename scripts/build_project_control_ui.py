@@ -2751,6 +2751,15 @@ FABRICATION_PACKAGE_ARCHIVE_EXCLUDES: dict[str, set[str]] = {
     },
 }
 
+# Most package archives include every file in their package directory.  Rev I
+# has many superseded local render iterations, so its public hand-off archive is
+# deliberately limited to the current primary/visual paths passed to
+# package_archive_link().  This keeps the portal download controlled and small
+# without committing a generated ZIP.
+FABRICATION_PACKAGE_CURATED_ARCHIVES: set[str] = {
+    "dashboard_lcd_hvac_fascia_rev_i",
+}
+
 
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "dashboard_lcd_hvac_fascia_rev_i": [
@@ -2785,6 +2794,30 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
             "Outlet receipt and interface schedule",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_audit_20260802.md",
+            "2026-08-02 rear-clearance photo audit and LCD depth control",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_evidence_20260802.csv",
+            "Rear-clearance photo evidence schedule",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_package_clearance_control.svg",
+            "Rear-package clearance control diagram (quotation only)",
+        ),
+        (
+            "photos/20260802_145250_gp_4wxWxPmA.jpg",
+            "Rear measurement photo 1 — oblique, unregistered context only",
+        ),
+        (
+            "photos/20260802_145305_gp_bepTxJOA.jpg",
+            "Rear measurement photo 2 — zero/start out of frame",
+        ),
+        (
+            "photos/20260802_145316_gp_tJASS8hQ.jpg",
+            "Rear measurement photo 3 — oblique, unregistered context only",
         ),
         (
             "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
@@ -3122,7 +3155,11 @@ def package_archive_link(package_id: str, package_dir: str, extra_repo_paths: It
     archive_sources: dict[str, Path] = {}
     excluded_repo_paths = FABRICATION_PACKAGE_ARCHIVE_EXCLUDES.get(package, set())
     package_path = resolve_repo_path(directory)
-    if package_path.exists() and package_path.is_dir():
+    if (
+        package not in FABRICATION_PACKAGE_CURATED_ARCHIVES
+        and package_path.exists()
+        and package_path.is_dir()
+    ):
         for path in sorted(item for item in package_path.rglob("*") if item.is_file()):
             repo_path = repo_relative_path(path)
             if repo_path in excluded_repo_paths:

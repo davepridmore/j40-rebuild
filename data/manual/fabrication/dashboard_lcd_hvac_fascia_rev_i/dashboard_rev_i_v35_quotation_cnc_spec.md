@@ -14,7 +14,7 @@ The photo-registered concept is [dashboard_rev_i_v35_registered_center_cassette_
 
 ## Datum and provisional coordinate model
 
-All V35 coordinates are in millimetres. `X` runs **passenger to driver** (left to right in the RHD front elevation); `Y` runs down; `Z` runs rearward from the finished front face. The coordinate model is photo-informed and quotation-only:
+All V35 coordinates are in millimetres. `X` runs **passenger to driver** (left to right in the RHD front elevation); `Y` runs down; the front-layout model uses `Z` rearward from the finished front face. For component-depth inspection, establish a separate local `Z=0` on the **finished rear fascia surface** at the component and measure perpendicular to that surface. Do not mix these two Z origins. The coordinate model is photo-informed and quotation-only:
 
 | Datum / field | Provisional value | Meaning and restriction |
 | --- | ---: | --- |
@@ -50,6 +50,7 @@ The different G1 and C1 pixel readings are expected because the photograph is ob
 | LCD active image | 198.91 W × 111.89 H mm | Size is supplied; its offset inside the actual module is not assumed for the final aperture. |
 | LCD location | module centre (685.0, 75.25); centred on the free centre field | M1 field trace and M4 module confirmation. |
 | LCD opening | 202 W × 115 H provisional visible opening | Do not cut until M4 confirms the actual bezel/touch-border and carrier. |
+| LCD complete installed rear projection | 115 mm maximum for quotation/buck; integral chassis/body including any integral rear heat sink target ≤80 mm | `ASSUMED_UNVERIFIED`, derived conservatively from the 2026-08-02 photo audit. It is not a production maximum; M5/M9 controls. |
 | Control line | seven bought Schneider Harmony/XB4-family black maintained selectors (4 × 2-position, 3 × 3-position) plus separate red HAZARD, all in one compact line below LCD | M6 actual part codes, handles, lever sweeps, keys, clamps, contact blocks and rear stack. |
 | Selector presentation | Ø30 provisional heads at 40 mm pitch | Appearance and spacing only; check actual anti-rotation and handle sweep at M6. |
 | Selector aperture | Ø22.5 provisional, based on the 22 mm family and earlier 22.3 mm nominal schedule | Not a production diameter; M6 controls thread, keyway, clamp and finished-sheet fit. |
@@ -57,6 +58,24 @@ The different G1 and C1 pixel readings are expected because the photograph is ob
 | Outer vents | Ø87 face target; Ø75 rear mounting diameter target; each face centred in its available outer land | M1 establishes the actual land boundaries; M7 measures the supplied parts and retention. Complete rear envelope is unverified. |
 
 LCD size audit: the supplied active-area values give a calculated diagonal of **228.22 mm / 8.985 in**, consistent with a nominal 9-inch display. The module outline aspect is **211.10 ÷ 126.50 = 1.66877**; both the registered overlay and scale-controlled elevation use that outline ratio. The 202 × 115 mm visible opening remains provisional and must not be mistaken for either the module outline or active area.
+
+### LCD installed-depth control
+
+The supplied **5.0 mm** value is the generic panel/module thickness only. It is not the installed depth of a usable screen assembly. Define `P_LCD_INSTALLED` as the largest perpendicular rearward projection from the finished rear fascia to any part of the module/chassis, carrier, mounts, fasteners, heat sink and ventilation keep-out, largest fully mated plug/adapter, cable bend radius, retained service loop, or cabin-side removal sweep.
+
+For quotation and construction of the rigid depth buck only:
+
+- `P_LCD_INSTALLED,Q ≤ 115 mm`;
+- target `P_LCD_CHASSIS ≤ 80 mm`, where `P_LCD_CHASSIS` includes the integral screen chassis/body and any integral rear heat sink; and
+- reserve at least 35 mm inside that 115 mm envelope for the external carrier/mounts, fasteners, largest fully mated connector, cable bend/service loop and removal tolerance.
+
+These are `ASSUMED_UNVERIFIED` limits derived from the smallest apparent 125–130 mm local span in the [2026-08-02 rear-clearance photo audit](rear_clearance_photo_audit_20260802.md), rounded down to 125 mm and reduced by the required 10 mm fixed clearance. The photograph is oblique and unregistered, so it cannot release a production maximum.
+
+For production, map the perpendicular available depth `Z_FIXED(x,y)` over the complete actual LCD installed and service/removal envelope, then require:
+
+`P_LCD_INSTALLED,PROD ≤ min[Z_FIXED(x,y)] − 10 mm`.
+
+Also maintain at least 20 mm to the signed moving column/shroud/stalk envelope. The smaller result controls. Replace the 115 mm quotation cap with the measured M5 limit and actual-part M9 buck proof before production release.
 
 The defined line centres are X=545, 585, 625, 665, 705, 745, 785 and 825 at Y=177. The seven black selectors occupy the first seven centres in the allocation below; the red HAZARD is at X=825. At Ø30 heads this makes a 310 mm visible-control envelope, leaving provisional 20 mm margins on both sides inside the 350 mm cassette. These margins are not a substitute for M6 lever-sweep measurements. No selector rear depth is asserted in V35: the previously sketched 68 mm reserve has been removed because the complete bought handle/body/contact-block stack has not yet been measured.
 
@@ -79,16 +98,22 @@ Each retained outer land receives only one target Ø87 visible vent face. For th
 
 The minimum nominal front land for an Ø87 face is Ø107 (10 mm clear all around). If either measured midpoint cannot provide that land without touching the fascia end contour, glovebox zone or cluster/column zone, stop and reposition from the physical trace; do not trim a retained OEM feature.
 
-The complete rear envelope is **NOT VERIFIED**. The apparent louvre-body depth does not account for its retainer, anti-rotation feature, spigot, clamp, hose outside diameter, first bend, duct support, removal path, looms, glovebox box/sweep, cluster package, braces or moving column/stalk envelope. The rear buck must prove all of those with both vents, LCD, wiring and controls installed at once.
+The complete rear envelope is **NOT VERIFIED**. Two of the photos imported on 2026-08-02 show oblique local rays of about 125–130 mm and 160–170 mm. The third shows a 270–280 mm endpoint reading, not a span, because its tape zero/start is outside the frame. The nominal approximately 22 mm louver body is therefore **provisionally plausible / not contradicted** on the photographed local ray. However, none of those rays is perpendicular to a declared finished-rear-fascia datum or registered to either planned vent centre. They do not prove the retained outer lands.
+
+Define `P_VENT_INSTALLED` as the greatest perpendicular rearward projection of the louver body, retention and anti-rotation hardware, adapter/spigot, clamp, hose OD, first bend, duct support, full aim/shutoff sweep and cabin-side removal path. At each marked actual centre and across the complete rear swept envelope require:
+
+`P_VENT_INSTALLED ≤ min[Z_FIXED(x,y)] − 10 mm`,
+
+with at least 20 mm to the moving column/shroud/stalk envelope. The full [photo audit](rear_clearance_photo_audit_20260802.md), [evidence schedule](rear_clearance_photo_evidence_20260802.csv) and [control diagram](rear_package_clearance_control.svg) are controlled quotation evidence. The rear buck must prove both complete vent branches with the LCD, wiring, controls, glovebox, cluster and steering envelope installed at once.
 
 ## Mandatory physical gates
 
 Production remains HOLD until every applicable gate passes; the minimum non-negotiable gates are:
 
 1. **M1 — fascia/free-centre-field trace:** signed 1:1 trace of the complete existing visible face, both end boundaries, lower edge, folds, centre openings and true unobstructed centre field. Record `G1` glovebox-to-lower-edge gap, the `C1` cluster/lower-lip/column relationship, and the four outer-land boundaries used to calculate the two vent midpoints.
-2. **M4 — LCD trace:** actual module/bezel/cutout, mounting pattern, connector/wire-bend, heat and cabin-side removal measurements.
+2. **M4/M5 — LCD trace and depth:** actual module/bezel/cutout, mounting pattern, connector/wire-bend, heat and cabin-side removal measurements; perpendicular `Z_FIXED` depth map at chassis corners, centre, mounts, connector and cable-turn zone; complete actual `P_LCD_INSTALLED`. Replace the 115 mm quotation cap before production release.
 3. **M6 — control trace:** each purchased selector and the hazard: body, thread, key, clamp, head, lever sweep, terminal orientation, rear depth and label proof.
-4. **Rear buck:** rigid full-depth mock-up proving the LCD, all eight controls, both complete vent-to-duct assemblies, glovebox operation, cluster package and complete moving steering envelope simultaneously.
+4. **M7/M9 vent-site survey and rear buck:** mark both actual vent centres, map perpendicular available depth over each complete retention/duct swept envelope, measure each assembled `P_VENT_INSTALLED`, then prove the LCD, all eight controls, both complete vent-to-duct assemblies, glovebox operation, cluster package and complete moving steering envelope simultaneously in a rigid full-depth mock-up.
 
 Also complete M2 glovebox/ashtray trace, M3 cluster/column/scallop trace, M7 vent retention and total rear package, and the vehicle-specific duct-route survey before releasing any affected cut.
 
@@ -103,6 +128,6 @@ When the physical gates are signed, issue a separate production DXF/PDF with loc
 - OEM fascia envelope and features: **LOCKED / UNCHANGED**.
 - Centre-only cassette and zero-drop layout: **accepted design direction for quotation**.
 - One-line selector/hazard allocation: **provisional, HOLD M6**.
-- LCD location and opening: **provisional, HOLD M1/M4**.
-- Two outer vent faces: **provisional, HOLD M7 and rear buck**.
+- LCD location and opening: **provisional, HOLD M1/M4**. Complete rear projection: **115 mm quotation/buck cap and ≤80 mm chassis target only; production maximum HOLD M5/M9**.
+- Two outer vent faces: **provisional**. Approximately 22 mm body-only fit: **plausible / no contradiction in the imported local-cavity photos**. Complete outlet/retainer/duct fit at both actual centres: **NOT PROVEN, HOLD M7 and rear buck**.
 - Production vehicle cut and production CNC: **HOLD pending M1, M4, M6 and rear buck (plus associated M2/M3/M7/duct evidence).**
