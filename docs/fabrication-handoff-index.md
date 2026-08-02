@@ -49,7 +49,7 @@ Rev G superseded Rev A-F, but is itself superseded by Rev I above. It replaced t
 
 Release position:
 - Ready for CNC quotation, full-size vehicle trace/scan, 1:1 plot and disposable prototype only.
-- Do not cut production vehicle metal or final LCD/selector/hazard/vent apertures until M1-M10 are closed against the actual vehicle and bought parts, rear screen/contact blocks and duct bends clear, and the owner signs the physical 1:1 layout.
+- Do not cut production vehicle metal or final LCD/selector/hazard/vent apertures until M1-M9 are closed against the actual vehicle and bought parts, rear screen/contact blocks and duct bends clear, and the owner signs the physical 1:1 layout. Close M10 after installation as the electrical/HVAC functional commissioning gate before vehicle handoff.
 - The nominal fascia centreline is `X=630.0`. LCD active image, bezel and aperture share it exactly. Inner vent centres are `X=555.0` and `705.0`, so their midpoint is exactly `X=630.0`; all four vent centres share `Y=50.0`.
 - Exactly seven selectors are shown: top Wipers, Lights, Spots, Aux; bottom Blower, A/C, Engine; the separate red Hazard occupies the eighth bank position and is not counted among the seven.
 - Functions matched the purchased four 2-position plus three 3-position inventory. The historical `ENGINE` label is now named `FUEL STOP` in Rev I and remains an EEI-003 electrical release HOLD with key OFF authoritative and manual cable retained; A/C remains subject to thermostat/pressure/trinary interlocks. T1/T2 remain low/high beam and the original dip control remains in service.
