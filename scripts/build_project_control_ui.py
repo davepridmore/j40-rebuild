@@ -2753,6 +2753,44 @@ FABRICATION_PACKAGE_ARCHIVE_EXCLUDES: dict[str, set[str]] = {
 
 
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
+    "dashboard_lcd_hvac_fascia_rev_i": [
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_inboard_high_87mm_outlets.png",
+            "Selected V32 straight-on dashboard design",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v25_exact_height_column_overlay.png",
+            "Factory-height and steering-axis alignment overlay",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+            "Exact CNC measurement checklist",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv",
+            "Fillable CNC measurement schedule",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_provisional_assumption_cnc_spec.md",
+            "V32-Q1 assumption-based quotation CNC spec",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v32_provisional_coordinates.csv",
+            "V32-Q1 provisional coordinate schedule",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+            "87 mm outlet CNC interface addendum",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
+            "Outlet receipt and interface schedule",
+        ),
+        (
+            "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+            "Seven-selector and hazard allocation",
+        ),
+    ],
     "longman_rubber_order_20260508": [
         (
             "data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
