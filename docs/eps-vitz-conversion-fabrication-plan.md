@@ -1,6 +1,6 @@
 # Yaris-First EPS Conversion Fabrication Plan - General Adapter Route
 
-> **Superseded 2026-07-19.** The active route is now the RHD J60/HJ60 hydraulic conversion in [j60-hydraulic-power-steering-conversion-plan-20260719.md](j60-hydraulic-power-steering-conversion-plan-20260719.md). Do not procure or fabricate this EPS package unless the steering decision is explicitly reopened.
+> **Superseded; route updated 2026-08-02.** The active direction is the RHD J80 hydraulic conversion in [j80-hydraulic-power-steering-conversion-plan-20260802.md](j80-hydraulic-power-steering-conversion-plan-20260802.md). Do not procure or fabricate this EPS package unless the steering decision is explicitly reopened.
 
 Date: 2026-05-22
 Scope: planning and fabrication controls for fitting a column-assist EPS unit into the J40 through a new General EPS Adapter. The active sourcing plan is now **Yaris-first** for Pakistan availability: first scout local Pakistan Yaris sedan EPS donor/installer packages, then older Yaris/Belta XP90-family sets, with Vitz XP90 as fallback if a complete matched set appears. The adapter remains the controlling vehicle-side interface.

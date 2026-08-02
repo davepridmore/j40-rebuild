@@ -30,7 +30,7 @@ Manual sources now give a clear candidate path, but they also show why the fitte
 
 Use the H41/H42 4-speed row only if the workshop confirms the current gearbox is that older 4-speed family by case marks, top-cover/shift layout, transfer interface, and shift pattern. If the gearbox is a later H41, H55F, or unknown swap, use the matching manual sheet instead. Capacity differences are enough that "Land Cruiser gearbox oil" is not a safe purchase description.
 
-Current identification update, 2026-05-29: use the WhatsApp-confirmed basis from `mcp_whatsapp_j40_messages.csv:1797` (`2026-05-17T11:47:47Z`, TLC 40 Series Owners): "Your J40 has 2h engine with 5 speed gear. It was sold by Jahanzeb". Treat the H55F 5-speed row as the active candidate unless case/top-cover marks prove a different 5-speed swap. If H55F is confirmed, buy SAE75W-90 gear oil, API GL-4 or GL-5, quantity 5 L, plus matched drain/fill plug washers. Do not use the older H41/H42 4-speed SAE90 / 3.1 L row for this gearbox.
+Current identification update, 2026-08-02: classify the fitted gearbox as Toyota H55F five-speed with high confidence. The existing whole-assembly photographs show the Toyota H41/H55F-family case and transfer-adaptor layout; owner confirmation and `mcp_whatsapp_j40_messages.csv:1797` (`2026-05-17T11:47:47Z`, TLC 40 Series Owners) establish five forward gears. Use the H55F row: buy SAE75W-90 gear oil, API GL-4 or GL-5, quantity 5 L, plus matched drain/fill plug washers. Do not use the older H41/H42 4-speed SAE90 / 3.1 L row. The visible `33111`, `BYD`, and `3` marks do not supply a unique gearbox assembly serial.
 
 Lookup sources:
 
@@ -49,13 +49,13 @@ Required buying package:
 Vendor or runner text:
 
 ```text
-Need manual gearbox oil service consumables for the gearbox currently fitted to a 1978 Toyota Land Cruiser J40 with WhatsApp-confirmed 2H diesel and 5-speed gear. Quote the H55F 5-speed candidate: SAE75W-90 gear oil, API GL-4 or GL-5, 4.9 L capacity, buy 5 L after case/top-cover marks confirm H55F or the matching 5-speed manual spec. Supply new drain/fill plug sealing washers matched to the actual plugs and a filler pump or hose if the workshop does not supply one. Do not substitute differential/hypoid LSD oil, engine oil, brake fluid, or transfer-case oil. Before refill, drain oil into a clean pan, inspect the oil sample, plug magnet, and debris; stop if water or heavy metal is found.
+Need manual gearbox oil service consumables for the high-confidence identified H55F five-speed fitted to a 1978 Toyota Land Cruiser J40 with 2H diesel. Quote SAE75W-90 gear oil, API GL-4 or GL-5, 4.9 L capacity; buy 5 L. Supply new drain/fill plug sealing washers matched to the actual plugs and a filler pump or hose if the workshop does not supply one. Do not substitute differential/hypoid LSD oil, engine oil, brake fluid, or transfer-case oil. Before refill, drain oil into a clean pan, inspect the oil sample, plug magnet, and debris; stop if water or heavy metal is found.
 ```
 
 Purchase hold:
 
 - If gearbox model, oil grade, or fill quantity is unknown, collect prices/photos only. Do not pay.
-- Because WhatsApp history confirms 2H engine with 5-speed gear, use the H55F 5-speed candidate until proven otherwise: SAE75W-90, API GL-4 or GL-5, 4.9 L capacity, buy 5 L after confirmation.
+- The whole-assembly photographs plus confirmed five-forward-speed operation identify the gearbox as H55F with high confidence: SAE75W-90, API GL-4 or GL-5, 4.9 L capacity; buy 5 L.
 - Do not count Liqui Moly Touring High Tech SHPD-Motor Oil 15W-40 as gearbox oil; it is engine oil unless the fitted gearbox manual explicitly calls for engine oil.
 - If the seller offers generic axle/differential oil as a substitute, reject it unless the fitted gearbox manual explicitly allows it.
 - If drain/fill plug washers cannot be matched, photograph and measure the plug seat before buying.

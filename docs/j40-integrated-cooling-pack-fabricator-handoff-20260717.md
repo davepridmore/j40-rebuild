@@ -1,5 +1,7 @@
 # J40 Integrated Cooling Pack — Fabricator Handoff — Rev B
 
+> **SUPERSEDED — DO NOT BUILD TO THIS LAYOUT:** The current controlled direction is the [Rev F simple all-front specification](J40-integrated-cooling-pack-fabricator-specification-rev-c.md). Rev F replaces this document's fixed core sizes, lower-front intercooler and earlier fan assumptions with exactly two centred front electric pushers plus the retained rear engine-driven mechanical puller. Relay Rev D and MIDI Rev D share one removable protected plate fixed only to structural cooling-stack carrier metal; the master cutoff remains battery-side. Keep this file only for historical measurements and support-frame context.
+
 ## Release status
 
 This document releases a full-size mock-up and quotation. It does **not** release final core manufacture until the seven `M` dimensions in the measurement sheet have been recorded on the vehicle.

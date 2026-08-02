@@ -159,6 +159,16 @@ Release position:
 
 ## 2H Turbo-Readiness Chassis Provisions - Rev A
 
+Current controlled build process: [2h-turbo-recommended-build-process-20260801.md](2h-turbo-recommended-build-process-20260801.md)
+
+Illustrative build-sequence assets: [docs/images/turbo-2h-controlled-build](images/turbo-2h-controlled-build/README.md)
+
+Current packaging matrix: [data/manual/fabrication/turbo_packaging_rev_a](../data/manual/fabrication/turbo_packaging_rev_a/README.md)
+
+Visual guide archive: `deliverables/fabrication_packages/2h_turbo_controlled_build_visuals_rev_d_20260802.zip`
+
+The current guide uses a four-step sequence for goods-receipt inspection, full-vehicle steering/hot-side mock-up, a paired near-side/opposite-side Rev H packaging study using recognisable real component forms, and monitored static commissioning. The current study removes the unused compact-air-cleaner alternative and provisional side/wing cooler; the archive retains the earlier cardboard-envelope studies as visual history. The relocation matrix makes retain/move/add/decision actions explicit. Every image is non-dimensional and cannot close an identity, clearance, fabrication or test gate.
+
 Directory: [data/manual/fabrication/turbo_readiness_chassis_rev_a](../data/manual/fabrication/turbo_readiness_chassis_rev_a/README.md)
 
 Control spec: [turbo-readiness-chassis-welder-fabrication-spec-20260717.md](turbo-readiness-chassis-welder-fabrication-spec-20260717.md)
@@ -174,7 +184,7 @@ DXF files:
 Release position:
 - **Superseded as a current welder handout on 2026-07-19.** Use [chassis-welder-steering-turbo-component-first-instruction-20260719.md](chassis-welder-steering-turbo-component-first-instruction-20260719.md).
 - Released now: clean/inspect/photograph the existing steering-box mount and continue unrelated approved chassis work.
-- No J60 steering or turbo conversion-specific welding is released until the actual matched component sets are present for trial fit.
+- No J80 steering, battery-carrier lock or turbo conversion-specific welding is released until the actual matched component sets are present for trial fit. Use `docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md`; the older J60 handout is historical.
 - Conditional after physical component trial fit: steering mounting/reinforcement, line/loom relocation tabs, exhaust-hanger interfaces, heat-shield interfaces and removable airbox/breather/charge-support interfaces.
 - Explicitly excluded: manifold, turbo support, downpipe, complete exhaust, sump/oil-return work and charge-pipe fabrication.
 

@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-07-29 06:20:41
+- Generated: 2026-08-02 16:40:15
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
@@ -9,13 +9,14 @@
 
 - `direct_photo_evidence`: 65
 - `indirect_photo_evidence_only`: 4
-- `no_photo_evidence`: 19
+- `no_photo_evidence`: 21
 
 ## Per-Component Results
 
 | Component Job | Status | Direct | Indirect | Direct Components | Notes |
 | --- | --- | ---: | ---: | --- | --- |
 | `cabin_fuse_relay_donor_samples_20260710` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `fitted_late_j40_hydraulic_steering_identification_20260802` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `front_bumper_recreation_welding_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_bench_inspection_rebuild` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_complete_set_acquisition` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
@@ -25,6 +26,7 @@
 | `j60_hydraulic_vehicle_trial_fit` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `passenger_footwell_floor_section_replacement_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `rear_bumper_recreation_welding_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `relay_midi_radiator_carrier_relocation_20260731` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `removed_parts_replace_exclude_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_bump_stop_rust_treatment_preparation_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_engine_health_release_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |

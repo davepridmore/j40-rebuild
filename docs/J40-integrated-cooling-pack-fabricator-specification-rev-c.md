@@ -3,8 +3,8 @@
 ## Pakistan fabricator specification — Rev G, Toyota-donor-led all-front package
 
 - **Vehicle:** 1978 Toyota Land Cruiser J40
-- **Engine:** Toyota 2H diesel
-- **Gearbox basis:** H55F / 5-speed manual candidate
+- **Engine:** Toyota `2H-117299` 3.980-litre inline-six, 12-valve OHV naturally aspirated diesel; owner-supplied block-stamp photograph controls identity
+- **Gearbox basis:** fitted 5-speed manual, exact type unconfirmed; H55F is not released by the engine serial
 - **Cooling design ceiling:** up to 150 bhp / 112 kW at the crankshaft, subject to tuning limits
 - **Turbo commissioning:** start at 5–7 psi; consider 8–10 psi only after logged evidence
 - **Air conditioning:** R134a, operating during hot-weather tests
@@ -20,8 +20,8 @@ This is **not** a Prado radiator conversion or a catalogue direct-fit kit. The o
 | Source class | Qty / item | Exact standard item or search reference | Pakistan sourcing instruction |
 |---|---|---|---|
 | **BUY USED TOYOTA DONOR** | 2 matched front-fan sets | Prado 120/GX470-family Toyota/Denso motor + 248 mm blade + plug/pigtail. Assembly refs **88590-60040 / -60050 / -60051 / -60060**; motor **88550-12160**; blade **88453-60010** | Practical breaker/Bilal Ganj route. Bring two physically matching sets, check rotation/hand/depth and bench-test before payment. **Do not buy a Prado radiator or complete donor shroud** |
-| **RETAIN / REBUILD EXISTING** | 1 rear fan/hub + 2 electrical boxes | Existing Toyota 2H engine-driven puller/hub; blade refs **16361-68030 / -68031**. Existing covered Relay Rev D and closed MIDI Rev D boxes | Already held on the vehicle/project. Inspect, rebuild where necessary and trial-fit the actual closed boxes. Do not buy replacements unless inspection rejects them |
-| **SAMPLE, THEN LOCAL RECORE** | 1 radiator | HJ47/2H radiator pattern **16400-68030** or sound original tanks. **530 × 435 × 64 mm is the active-core thermal basis only**, not finished radiator size | Exact HJ47/2H local stock is not confirmed. Source a physical pattern/tank sample, record complete R0 and release a competent local radiator shop only after the rigid two-hole fixture and full-size dummy pass |
+| **RETAIN / REBUILD EXISTING** | 1 rear fan/hub + 2 electrical boxes | Existing as-fitted 2H puller/hub; 2H blade references **16361-68030 / -68031** are candidate cross-checks. Existing covered Relay Rev D and closed MIDI Rev D boxes | Already held on the vehicle/project. Inspect, identify, rebuild where necessary and trial-fit the actual parts. Buy by 2H reference only after every interface proves identical |
+| **SAMPLE, THEN LOCAL RECORE** | 1 radiator | Actual removed radiator and 2H interfaces control. HJ47/2H pattern **16400-68030** or tanks are relevant comparison samples. **530 × 435 × 64 mm is the active-core thermal basis only**, not finished radiator size | Source or retain a physical pattern/tank sample, record complete R0 and actual 2H neck/hose/fan/cap interfaces, then release a competent local radiator shop only after the rigid two-hole fixture and full-size dummy pass |
 | **SOURCE NEW STANDARD — VERIFY STOCK** | 1 each + service hardware | Condenser **559 × 356 × 21 mm**; charge cooler **500 × 180 × 50 mm** with 57 mm outlets; new drier **88471-34010** only if ports fit, otherwise new #6 O-ring equivalent; hoses, relays/connectors, M6/M8 hardware and EPDM | Use local A/C, turbo and automotive-hardware suppliers. Exact stock changes; the specified charge-cooler size and every complete condenser/drier envelope and port remain **physical-sample first** |
 | **FABRICATE LOCALLY** | Measured interfaces only | Two radiator side rails, two 4 mm direct top ears, two lower saddles, centred twin-pusher shroud, rear shroud if the Toyota item cannot fit, exchanger tabs, seals/stone screen, two separate electrical brackets/hoods and measured adapters | Make only after the real parts, rigid top-hole template and full-size dummy pass. No transverse radiator carrier, shared electrical tray, new chassis hole, slot or forced bolt alignment |
 
@@ -107,7 +107,7 @@ This is a best-effort design target. It is **not proof** that the unbuilt packag
 |---|---|
 | Ambient | 50°C dry-bulb at the grille inlet; short 52°C heat-soak check |
 | Vehicle | Bonnet closed; final grille, bumper/guard/winch and normal dust screen fitted; loaded operating weight |
-| Engine | Final approved turbo, fuel and exhaust configuration, up to the 150 bhp cooling-design ceiling |
+| Engine | Final approved 2H turbo, fuel and exhaust configuration; `150 bhp` is only the cooling-system capacity envelope and is not engine power or boost approval |
 | A/C | ON and stabilised, with final condenser, refrigerant charge and cabin blower |
 | Radiator | ≥115 kW continuous target and ≥130 kW for 10 minutes, with upstream charge-cooler and condenser heat/restriction represented |
 | Charge cooler | ≥15 kW at 50°C inlet, 0.20 kg/s charge flow and 130°C nominal compressor outlet |
@@ -124,7 +124,7 @@ The all-front layout adds heat and restriction ahead of the radiator. A free-air
 
 | Part | Preferred working basis | Release condition |
 |---|---|---|
-| Engine radiator | Toyota HJ47/2H pattern; **530 W × 435 H × 64 D is the active-core thermal basis only**, not finished radiator size | Record R0 as complete W × H × D including tanks, seams, filler, drain, ears and lower locators. R0 must fit signed W0/H0-L/H0-R/P0 and the full-size dummy. If the active-core basis cannot be packaged inside R0, repackage and re-prove thermal duty; ≥115 kW continuous and ≥130 kW/10 min target |
+| Engine radiator | Actual removed radiator and `2H-117299` interfaces control; HJ47/2H pattern is a relevant comparison lead. **530 W × 435 H × 64 D is the active-core thermal basis only**, not finished radiator size | Record R0 as complete W × H × D including tanks, seams, filler, drain, ears and lower locators, plus actual 2H neck centres/angles, hoses, fan and cap seat. R0 must fit signed W0/H0-L/H0-R/P0 and the full-size dummy. If the active-core basis cannot be packaged inside R0, repackage and re-prove thermal duty; ≥115 kW continuous and ≥130 kW/10 min target |
 | A/C condenser | Common 14 × 22 inch nominal R134a parallel-flow unit; 559 W × 356 H × 21 D basis | Complete body, manifolds, ports, ears and tool envelope fit inside M1/M2/M3; A/C test passes |
 | Charge cooler | One new common bar-and-plate body exactly 500 W × 180 H × 50 D; 57 mm / 2.25 in beaded outlets | Complete tanks, outlets and pipe bends remain between uprights; ≥15 kW, ≤80°C IAT and ≤10 kPa route loss proven |
 | Front electric fans | Two matched Prado 120/GX470-family Toyota/Denso 248 mm blades, motors, connectors and pigtails in one custom sealed shroud | Two ≥258 mm clear rings, exactly 266 mm motor C-C; on 559 mm datum x=146.5/412.5, y=178; ≥3,000 m³/h installed through all three cores |
@@ -140,7 +140,7 @@ The all-front layout adds heat and restriction ahead of the radiator. A free-air
 
 | System | Preferred standard/service part | Local custom work |
 |---|---|---|
-| Radiator and coolant | Toyota HJ47/2H radiator pattern **16400-68030**, or sound original tanks recored; upper hose **16571-68020**; lower hose **16572-68020**; cap candidate **16401-41021**; Toyota-pattern constant-tension clamps | Core only if the catalogue/sample route cannot meet fit and duty; copy physical neck centres/angles and verify cap seat/pressure |
+| Radiator and coolant | Actual removed radiator, 2H outlets and verified Toyota 2H manual data control. HJ47/2H references **16400-68030**, **16571-68020**, **16572-68020** and cap **16401-41021** are candidate comparison/sample leads | Core only if the physical-sample route can meet fit and duty; copy measured neck centres/angles and verify hose ID, fan clearance, cap seat and 2H-system pressure before purchase |
 | Front fan pair | Matched Toyota Prado 120 / Lexus GX470-family references: assemblies **88590-60040 / -60050 / -60051 / -60060**, motor **88550-12160**, blade **88453-60010**; published-equivalent blade diameter 248 mm | One shallow full-face, between-uprights sealed symmetric shroud and vehicle-specific removable ears; do not force-fit a donor shroud |
 | Condenser | New common 14 × 22 inch nominal R134a parallel-flow condenser, preferably common #8 inlet / #6 outlet O-ring ports | Four isolated tabs and only the short adapters required by the measured hose route |
 | Drier and A/C parts | New Toyota receiver-drier **88471-34010** only if ports suit; otherwise new common #6 O-ring R134a drier with trinary-switch provision; new barrier hose, HNBR seals and service ports | Rubber-lined vertical clamp behind an upright and measured hose links; never reuse an old drier |
@@ -227,7 +227,7 @@ If M3 is smaller than the complete dummy, stop and select a thinner standard fan
 - Recore sound original copper/brass tanks first if they pass pressure/condition inspection and the finished unit can meet duty.
 - New copper/brass or serviceable aluminium is acceptable. Row count and material do not replace performance evidence.
 - Copy the original/sample neck centres, angles, filler seat, overflow, drain and bracket datums. Target neck OD is 38 mm only until the actual hose/engine connection is measured.
-- Use the verified 2H cap pressure; a higher-pressure cap is not a cooling upgrade.
+- Use the verified Toyota 2H manual/as-fitted cap pressure; a higher-pressure cap is not a cooling upgrade.
 - Verify thermostat, bypass, bleed/fill method and lower-hose suction stability.
 - Pressure-test for at least five minutes at the verified system test pressure with no leak, sweating or attributable loss; then flow-test for uniform tube flow.
 - Supplier evidence should state coolant flow/temperatures, coolant pressure loss, full-stack air inlet temperature, installed airflow/face velocity, air-side restriction, voltage/engine speed and test duration.

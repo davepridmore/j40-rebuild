@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1300" viewBox="0 0 2400 1300" font-family="Verdana">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.45"/></filter>
+    <style>
+      .title { font-size: 38px; font-weight: bold; fill: #f8fafc; }
+      .subtitle { font-size: 20px; fill: #b9c7d6; }
+      .label { font-size: 22px; font-weight: bold; fill: #f8fafc; }
+      .small { font-size: 18px; fill: #cbd5e1; }
+      .line { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .dot { stroke: #0b1725; stroke-width: 3; }
+      .box { fill: #13263a; stroke: #526a80; stroke-width: 2; rx: 10; filter: url(#shadow); }
+    </style>
+  </defs>
+  <rect width="2400" height="1300" fill="#091522"/>
+  <text x="40" y="55" class="title">J40 2H TURBO ENGINE BAY — COMPONENT IDENTIFICATION</text>
+  <text x="40" y="90" class="subtitle">Front-aligned radiator with the existing two-sided holder bars • planning visual, not a dimensional release</text>
+  <image href="14-front-aligned-radiator-holder-bars.png" x="350" y="160" width="1672" height="941"/>
+  <rect x="348" y="158" width="1676" height="945" fill="none" stroke="#9fb3c8" stroke-width="3"/>
+
+  <!-- Left callouts -->
+  <g>
+    <rect class="box" x="20" y="135" width="305" height="70"/><rect x="20" y="135" width="8" height="70" fill="#5eead4"/>
+    <text class="label" x="42" y="178">1  Left radiator holder bar</text>
+    <polyline class="line" stroke="#5eead4" points="325,170 430,170 560,438"/><circle class="dot" fill="#5eead4" cx="560" cy="438" r="8"/>
+
+    <rect class="box" x="20" y="220" width="305" height="70"/><rect x="20" y="220" width="8" height="70" fill="#5eead4"/>
+    <text class="label" x="42" y="263">2  Radiator core / top tank</text>
+    <polyline class="line" stroke="#5eead4" points="325,255 450,255 760,550"/><circle class="dot" fill="#5eead4" cx="760" cy="550" r="8"/>
+
+    <rect class="box" x="20" y="305" width="305" height="70"/><rect x="20" y="305" width="8" height="70" fill="#5eead4"/>
+    <text class="label" x="42" y="348">3  Right radiator holder bar</text>
+    <polyline class="line" stroke="#5eead4" points="325,340 470,340 1000,620"/><circle class="dot" fill="#5eead4" cx="1000" cy="620" r="8"/>
+
+    <rect class="box" x="20" y="390" width="305" height="84"/><rect x="20" y="390" width="8" height="84" fill="#5eead4"/>
+    <text class="label" x="42" y="423">4  Rear shroud + mechanical</text><text class="label" x="70" y="451">puller fan (behind core)</text>
+    <polyline class="line" stroke="#5eead4" points="325,432 485,432 900,585"/><circle class="dot" fill="#5eead4" cx="900" cy="585" r="8"/>
+
+    <rect class="box" x="20" y="489" width="305" height="70"/><rect x="20" y="489" width="8" height="70" fill="#60a5fa"/>
+    <text class="label" x="42" y="532">5  Round steel air cleaner</text>
+    <polyline class="line" stroke="#60a5fa" points="325,524 480,524 760,350"/><circle class="dot" fill="#60a5fa" cx="760" cy="350" r="8"/>
+
+    <rect class="box" x="20" y="574" width="305" height="70"/><rect x="20" y="574" width="8" height="70" fill="#60a5fa"/>
+    <text class="label" x="42" y="617">6  Filtered turbo intake duct</text>
+    <polyline class="line" stroke="#60a5fa" points="325,609 500,609 935,375"/><circle class="dot" fill="#60a5fa" cx="935" cy="375" r="8"/>
+
+    <rect class="box" x="20" y="659" width="305" height="70"/><rect x="20" y="659" width="8" height="70" fill="#e2e8f0"/>
+    <text class="label" x="42" y="702">7  Toyota 2H diesel engine</text>
+    <polyline class="line" stroke="#e2e8f0" points="325,694 510,694 1060,455"/><circle class="dot" fill="#e2e8f0" cx="1060" cy="455" r="8"/>
+
+    <rect class="box" x="20" y="744" width="305" height="70"/><rect x="20" y="744" width="8" height="70" fill="#e2e8f0"/>
+    <text class="label" x="42" y="787">8  Injector pump and lines</text>
+    <polyline class="line" stroke="#e2e8f0" points="325,779 525,779 1125,510"/><circle class="dot" fill="#e2e8f0" cx="1125" cy="510" r="8"/>
+
+    <rect class="box" x="20" y="829" width="305" height="70"/><rect x="20" y="829" width="8" height="70" fill="#f59e0b"/>
+    <text class="label" x="42" y="872">9  Alternator</text>
+    <polyline class="line" stroke="#f59e0b" points="325,864 540,864 1010,750"/><circle class="dot" fill="#f59e0b" cx="1010" cy="750" r="8"/>
+  </g>
+
+  <!-- Right callouts -->
+  <g>
+    <rect class="box" x="2050" y="135" width="330" height="70"/><rect x="2372" y="135" width="8" height="70" fill="#fb7185"/>
+    <text class="label" x="2072" y="178">10  Brake/clutch hydraulics</text>
+    <polyline class="line" stroke="#fb7185" points="2050,170 1940,170 875,265"/><circle class="dot" fill="#fb7185" cx="875" cy="265" r="8"/>
+
+    <rect class="box" x="2050" y="220" width="330" height="70"/><rect x="2372" y="220" width="8" height="70" fill="#f59e0b"/>
+    <text class="label" x="2072" y="263">11  DLS120 battery</text>
+    <polyline class="line" stroke="#f59e0b" points="2050,255 1940,255 1600,350"/><circle class="dot" fill="#f59e0b" cx="1600" cy="350" r="8"/>
+
+    <rect class="box" x="2050" y="305" width="330" height="70"/><rect x="2372" y="305" width="8" height="70" fill="#f59e0b"/>
+    <text class="label" x="2072" y="348">12  MIDI fuse enclosure</text>
+    <polyline class="line" stroke="#f59e0b" points="2050,340 1940,340 1740,490"/><circle class="dot" fill="#f59e0b" cx="1740" cy="490" r="8"/>
+
+    <rect class="box" x="2050" y="390" width="330" height="70"/><rect x="2372" y="390" width="8" height="70" fill="#f59e0b"/>
+    <text class="label" x="2072" y="433">13  Relay / fuse box</text>
+    <polyline class="line" stroke="#f59e0b" points="2050,425 1940,425 1685,650"/><circle class="dot" fill="#f59e0b" cx="1685" cy="650" r="8"/>
+
+    <rect class="box" x="2050" y="475" width="330" height="84"/><rect x="2372" y="475" width="8" height="84" fill="#f59e0b"/>
+    <text class="label" x="2072" y="508">14  Battery cutoff and</text><text class="label" x="2112" y="536">protected distribution</text>
+    <polyline class="line" stroke="#f59e0b" points="2050,517 1940,517 1510,850"/><circle class="dot" fill="#f59e0b" cx="1510" cy="850" r="8"/>
+
+    <rect class="box" x="2050" y="574" width="330" height="70"/><rect x="2372" y="574" width="8" height="70" fill="#c084fc"/>
+    <text class="label" x="2072" y="617">15  Turbocharger</text>
+    <polyline class="line" stroke="#c084fc" points="2050,609 1920,609 1220,655"/><circle class="dot" fill="#c084fc" cx="1220" cy="655" r="8"/>
+
+    <rect class="box" x="2050" y="659" width="330" height="70"/><rect x="2372" y="659" width="8" height="70" fill="#60a5fa"/>
+    <text class="label" x="2072" y="702">16  Charge-air pipework</text>
+    <polyline class="line" stroke="#60a5fa" points="2050,694 1920,694 1180,940"/><circle class="dot" fill="#60a5fa" cx="1180" cy="940" r="8"/>
+
+    <rect class="box" x="2050" y="744" width="330" height="70"/><rect x="2372" y="744" width="8" height="70" fill="#34d399"/>
+    <text class="label" x="2072" y="787">17  A/C compressor</text>
+    <polyline class="line" stroke="#34d399" points="2050,779 1920,779 1350,650"/><circle class="dot" fill="#34d399" cx="1350" cy="650" r="8"/>
+
+    <rect class="box" x="2050" y="829" width="330" height="70"/><rect x="2372" y="829" width="8" height="70" fill="#34d399"/>
+    <text class="label" x="2072" y="872">18  J80 steering hydraulics</text>
+    <polyline class="line" stroke="#34d399" points="2050,864 1920,864 1390,775"/><circle class="dot" fill="#34d399" cx="1390" cy="775" r="8"/>
+  </g>
+
+  <g transform="translate(350 1140)">
+    <text class="small" x="0" y="0">SYSTEM KEY:</text>
+    <circle cx="150" cy="-7" r="8" fill="#5eead4"/><text class="small" x="168" y="0">cooling/support</text>
+    <circle cx="365" cy="-7" r="8" fill="#60a5fa"/><text class="small" x="383" y="0">intake/charge</text>
+    <circle cx="580" cy="-7" r="8" fill="#e2e8f0"/><text class="small" x="598" y="0">engine/fuel</text>
+    <circle cx="765" cy="-7" r="8" fill="#f59e0b"/><text class="small" x="783" y="0">electrical</text>
+    <circle cx="920" cy="-7" r="8" fill="#c084fc"/><text class="small" x="938" y="0">turbo</text>
+    <circle cx="1050" cy="-7" r="8" fill="#34d399"/><text class="small" x="1068" y="0">accessories/steering</text>
+  </g>
+  <text x="350" y="1220" class="small">Confirm radiator ear positions, lower saddles, rubber isolation, bonnet clearance, fan spacing and all hose/cable sweeps on the physical vehicle before fabrication.</text>
+</svg>

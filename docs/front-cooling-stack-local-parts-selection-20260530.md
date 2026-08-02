@@ -1,5 +1,7 @@
 # Front Cooling Stack Local Parts Selection - 2026-05-30
 
+> **SUPERSEDED — DO NOT BUY OR BUILD TO THIS LAYOUT:** The current controlled source is the [Rev F integrated cooling-pack specification](J40-integrated-cooling-pack-fabricator-specification-rev-c.md). It specifies exactly two centred front electric pushers plus the retained rear engine-driven mechanical puller, with no fourth/additional fan without a new controlled revision. Relay Rev D and MIDI Rev D share one removable protected plate fixed only to structural cooling-stack carrier metal, outside active fin/sealed airflow; the master cutoff remains battery-side. Retain this file only for historical supplier leads and donor references.
+
 Purpose: select Pakistan-local parts for the J40 front cooling stack and A/C loop, using buyable supplier items while keeping fitment gates explicit where listings do not publish dimensions.
 
 Fabrication package: [front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)

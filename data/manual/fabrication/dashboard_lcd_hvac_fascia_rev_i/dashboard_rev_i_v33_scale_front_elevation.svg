@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600mm" height="520mm" viewBox="-100 -120 1600 520">
+  <defs>
+    <pattern id="traceHatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#9a6a32" stroke-width="2"/>
+    </pattern>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#30445a"/>
+    </marker>
+    <style>
+      .face{fill:#eee7d6;stroke:#263746;stroke-width:3}
+      .new{fill:#d9edf7;stroke:#0077a8;stroke-width:2}
+      .active{fill:#1d2732;stroke:#45a9d6;stroke-width:1.5}
+      .vent{fill:#dfe4e8;stroke:#4f5962;stroke-width:3}
+      .cut{fill:none;stroke:#e07b24;stroke-width:1.5;stroke-dasharray:7 5}
+      .trace{fill:url(#traceHatch);fill-opacity:.30;stroke:#9a6a32;stroke-width:2;stroke-dasharray:10 7}
+      .switch{fill:#15191c;stroke:#c0c7cc;stroke-width:3}
+      .hazard{fill:#b72525;stroke:#c0c7cc;stroke-width:3}
+      .dim{fill:none;stroke:#30445a;stroke-width:1.5;marker-start:url(#arrow);marker-end:url(#arrow)}
+      .ext{stroke:#718096;stroke-width:1}
+      .datum{stroke:#658091;stroke-width:1;stroke-dasharray:6 6}
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17222c}
+      .t{font-size:20px}.s{font-size:15px}.xs{font-size:12px}.note{font-size:14px;fill:#633f18}.blue{fill:#006f99}
+    </style>
+  </defs>
+
+  <text x="0" y="-82" class="t">J40 dashboard Rev I V33 — exact-scale new-component front elevation (mm)</text>
+  <text x="0" y="-55" class="s">1400 × 250 face is quotation-only. Brown zones are placeholders for signed 1:1 vehicle traces; do not digitise their drawn outlines.</text>
+
+  <rect x="0" y="0" width="1400" height="250" rx="18" class="face"/>
+  <line x1="700" y1="0" x2="700" y2="250" class="datum"/>
+  <line x1="0" y1="125" x2="1400" y2="125" class="datum"/>
+
+  <!-- OEM trace-lock zones are deliberately schematic, not cut profiles. -->
+  <path d="M235,34 H470 Q490,34 500,55 V190 H225 V62 Q225,44 235,34 Z" class="trace"/>
+  <text x="362" y="92" text-anchor="middle" class="s">OEM GLOVEBOX</text>
+  <text x="362" y="114" text-anchor="middle" class="xs">IMPORT SIGNED M2 TRACE</text>
+  <text x="362" y="134" text-anchor="middle" class="xs">shape / aperture / hardware / sweep</text>
+
+  <path d="M830,25 H1032 Q1045,25 1045,40 V184 H1012 Q997,184 992,204 L985,235 L978,204 Q973,184 958,184 H830 Z" class="trace"/>
+  <text x="932" y="78" text-anchor="middle" class="s">OEM CLUSTER</text>
+  <text x="932" y="100" text-anchor="middle" class="xs">IMPORT SIGNED M3 TRACE</text>
+  <text x="985" y="218" text-anchor="middle" class="xs">COLUMN AXIS + U/SCALLOP TRACE-LOCK</text>
+
+  <!-- Exact new-component geometry. -->
+  <circle cx="135" cy="70" r="43.5" class="vent"/>
+  <circle cx="135" cy="70" r="37.75" class="cut"/>
+  <circle cx="1265" cy="70" r="43.5" class="vent"/>
+  <circle cx="1265" cy="70" r="37.75" class="cut"/>
+  <line x1="135" y1="70" x2="1265" y2="70" class="datum"/>
+  <text x="135" y="74" text-anchor="middle" class="xs">Ø87</text>
+  <text x="1265" y="74" text-anchor="middle" class="xs">Ø87</text>
+
+  <rect x="594.45" y="61.75" width="211.10" height="126.50" rx="3" class="new"/>
+  <rect x="600.545" y="69.055" width="198.91" height="111.89" rx="2" class="active"/>
+  <text x="700" y="119" text-anchor="middle" class="t" fill="#fff">9-INCH LCD</text>
+  <text x="700" y="143" text-anchor="middle" class="s" fill="#fff">active 198.91 × 111.89</text>
+
+  <g>
+    <circle cx="1060" cy="137.5" r="15" class="switch"/><circle cx="1110" cy="137.5" r="15" class="switch"/>
+    <circle cx="1160" cy="137.5" r="15" class="switch"/><circle cx="1210" cy="137.5" r="15" class="switch"/>
+    <circle cx="1060" cy="190" r="15" class="switch"/><circle cx="1110" cy="190" r="15" class="switch"/>
+    <circle cx="1160" cy="190" r="15" class="switch"/><circle cx="1210" cy="190" r="15" class="hazard"/>
+    <text x="1060" y="117" text-anchor="middle" class="xs">WIPERS</text><text x="1110" y="117" text-anchor="middle" class="xs">LIGHTS</text>
+    <text x="1160" y="117" text-anchor="middle" class="xs">SPOTS</text><text x="1210" y="117" text-anchor="middle" class="xs">AUX</text>
+    <text x="1060" y="224" text-anchor="middle" class="xs">BLOWER</text><text x="1110" y="224" text-anchor="middle" class="xs">A/C</text>
+    <text x="1160" y="224" text-anchor="middle" class="xs">FUEL STOP</text><text x="1210" y="224" text-anchor="middle" class="xs">HAZARD</text>
+  </g>
+
+  <!-- Dimensioning. -->
+  <line x1="0" y1="-15" x2="0" y2="-70" class="ext"/><line x1="1400" y1="-15" x2="1400" y2="-70" class="ext"/>
+  <line x1="0" y1="-42" x2="1400" y2="-42" class="dim"/><text x="700" y="-48" text-anchor="middle" class="s">1400 ASSUMED QUOTATION WIDTH — REPLACE AT M1</text>
+  <line x1="-15" y1="0" x2="-70" y2="0" class="ext"/><line x1="-15" y1="250" x2="-70" y2="250" class="ext"/>
+  <line x1="-42" y1="0" x2="-42" y2="250" class="dim"/><text x="-53" y="125" text-anchor="middle" class="s" transform="rotate(-90 -53 125)">250 ASSUMED VISIBLE FACE HEIGHT</text>
+  <line x1="594.45" y1="197" x2="594.45" y2="230" class="ext"/><line x1="805.55" y1="197" x2="805.55" y2="230" class="ext"/>
+  <line x1="594.45" y1="214" x2="805.55" y2="214" class="dim"/><text x="700" y="208" text-anchor="middle" class="s">211.10 module</text>
+  <line x1="815" y1="61.75" x2="842" y2="61.75" class="ext"/><line x1="815" y1="188.25" x2="842" y2="188.25" class="ext"/>
+  <line x1="828" y1="61.75" x2="828" y2="188.25" class="dim"/><text x="841" y="125" class="s" transform="rotate(-90 841 125)">126.50</text>
+
+  <text x="0" y="292" class="note">ORANGE DASHED Ø75.50 = conditional coupon only; actual vent retention controls production aperture.</text>
+  <text x="0" y="316" class="note">LCD, vent and switch geometry above is numerically scaled. OEM hatched shapes are location-context placeholders only.</text>
+  <text x="0" y="340" class="note">Production HOLD: replace face envelope and all OEM profiles with signed M1–M3 traces; confirm bought parts at M4–M8; pass full-depth M9 buck.</text>
+  <text x="0" y="372" class="s blue">Selected quotation centres: LCD (700,125); vents (135,70) and (1265,70); switches X 1060/1110/1160/1210 at Y 137.5/190.</text>
+</svg>

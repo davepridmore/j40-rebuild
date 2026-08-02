@@ -1,6 +1,8 @@
 # J40 Front Cooling Stack Frame - Rev A / Integrated Pack Rev B
 
-The current fabricator handoff adds the turbo intercooler while retaining the decided matching structural uprights:
+> **SUPERSEDED HISTORICAL PACKAGE — DO NOT BUILD TO THIS LAYOUT:** Current manufacture is controlled by the [Rev F simple all-front specification](../../../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md). Rev F uses exactly two centred front electric pushers plus the retained rear engine-driven mechanical puller, and puts Relay Rev D and MIDI Rev D together on one removable protected structural-carrier plate with the master cutoff battery-side. The Rev B lower-front-intercooler geometry, optional fan and nominal dimensions below are retained only as support-frame history; do not use them to release cores or brackets.
+
+Historical context only. The current controlled fabricator handoff is the [Rev F specification](../../../../docs/J40-integrated-cooling-pack-fabricator-specification-rev-c.md); these older links are retained for support-frame history:
 
 - [integrated cooling-pack handoff](../../../../docs/j40-integrated-cooling-pack-fabricator-handoff-20260717.md)
 - [dimension schedule](integrated_cooling_pack_dimensions_rev_b.csv)

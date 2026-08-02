@@ -2,7 +2,7 @@
 
 **Status 2026-07-19: planning reference only; do not hand this package to the chassis welder now.**
 
-Current welder instruction: `docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md`. No steering- or turbo-conversion bracket is released until the complete J60 steering set or selected turbo/manifold hardware is physically present for trial fitting.
+Current welder instruction: `docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md`. No steering, battery-carrier or turbo-conversion bracket is released until the complete identified J80 steering set and selected turbo/manifold hardware are physically present for trial fitting.
 
 Chassis-welder release for vehicle-side provisions needed by the future Toyota 2H turbo installation. The 2H is already attached and remains installed; engine removal is not part of this package.
 

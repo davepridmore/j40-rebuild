@@ -2,6 +2,12 @@
 
 Rev D starts with the owner's actual right-hand-drive dashboard photograph and makes the centre change explicit: the entire protruding ashtray is removed, the adjacent radio openings are absorbed, and the combined zone becomes one continuous flat body-colour face. The glovebox/instruction panel and speedometer/instrument pressing stay original.
 
+## Visual issue rule
+
+Every dashboard design revision must be applied to both owner photographs: the assembled-dashboard view for original context, driver sight line and steering-wheel occlusion, and the straight-on bare-shell view for an unobstructed component-count and placement check. The two views must show the same fascia, LCD, seven-selector arrangement, hazard control and two A/C outlets. If a component is hidden by the steering wheel in the assembled view, the bare-shell view controls its location and count.
+
+Both A/C outlets must be conspicuous in every issued visual: one removable, hose-fed directional eyeball vent below each lower corner of the centre fascia. They are separate under-dash brackets, not openings in the CNC fascia.
+
 ## Locked visual and fabrication scope
 
 - Delete the complete ashtray door, body, lip, seam and recess. No ashtray outline or separate blank remains in the finished face.
@@ -68,7 +74,9 @@ DXF layers named HOLD_* are not production toolpaths. They provide nominal inten
 
 - j40_dashboard_lcd_hvac_fascia_rev_d_shop_spec.pdf — three-page CNC brief, before/after actual-photo basis, exact selector map and electrical release schedule.
 - dashboard_lcd_hvac_fascia_rev_d_dimensioned_front.svg — nominal front layout with 9-inch scale and labels.
-- dashboard_lcd_hvac_fascia_rev_d_photo_overlay.png — corrected edit of the owner's actual RHD dashboard; do not scale.
+- dashboard_lcd_hvac_fascia_rev_d_photo_overlay_assembled.png — latest concept applied to the assembled original dashboard, with both bracketed A/C vents visible; do not scale.
+- dashboard_lcd_hvac_fascia_rev_d_photo_overlay_bare_shell.png — the same concept applied to the straight-on bare shell, with all seven selectors and both vents unobstructed; do not scale.
+- dashboard_lcd_hvac_fascia_rev_d_photo_overlay.png — earlier single-view Rev D reference retained for traceability; superseded for visual review by the paired views above.
 - Five Rev D DXFs — quote/template blanks with explicit CUT and HOLD layers.
 - fabricator_cut_list.csv, measurement_and_release_schedule.csv and switch_position_schedule.csv — production controls.
 

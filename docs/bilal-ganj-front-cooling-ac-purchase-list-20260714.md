@@ -1,5 +1,7 @@
 # Bilal Ganj Front Cooling and A/C Purchase List - 2026-07-14
 
+> **SUPERSEDED HISTORICAL BUYING BASIS — DO NOT PURCHASE TO THIS LAYOUT:** Use the [controlled Rev F simple all-front specification](J40-integrated-cooling-pack-fabricator-specification-rev-c.md) for the current assembly, exact three-fan arrangement (two centred front electric pushers plus retained rear engine-driven mechanical puller), charge cooler, depth stack, Relay Rev D/MIDI Rev D carrier plate and acceptance gates. This older list remains useful only for local supplier leads and sample-part references; its single-pusher layout, estimated fit statements and buy quantities are superseded.
+
 Purpose: buy a complete new radiator and A/C condenser installation for the 1978 J40 with Toyota 2H engine, using parts available new in Bilal Ganj and local fabrication. This is the shop-facing specification. The old radiator remains the pattern for neck position, neck angle, cap position, drain, and hose routing.
 
 ## Purchase Decision

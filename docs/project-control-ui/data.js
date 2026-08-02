@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-02T01:41:47+05:00",
+  "generated_at": "2026-08-02T16:48:43+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -51,19 +51,19 @@ window.J40_DASHBOARD_DATA = {
   },
   "summary": {
     "workstreams_in_scope": 21,
-    "workstreams_active": 12,
-    "workstream_evidence_images": 1263,
+    "workstreams_active": 11,
+    "workstream_evidence_images": 1266,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 103,
-    "parts_ordered_pending_delivery": 7,
+    "parts_ordered_pending_delivery": 8,
     "urgent_part_actions": 10,
     "sample_fabrication_kits": 4,
     "status_update_gmail_records": 14,
     "status_update_whatsapp_new_rows": 0,
     "status_update_manual_rows": 15,
     "status_update_delivery_watchlist_rows": 18,
-    "capture_data_tasks": 122,
-    "capture_data_tasks_now": 106,
+    "capture_data_tasks": 124,
+    "capture_data_tasks_now": 107,
     "supply_rows_tracked": 331,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
@@ -32834,7 +32834,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276447
+            "bytes": 277843
           },
           "file_count": 27
         },
@@ -35099,9 +35099,9 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-006",
             "diagram_scope": "Dash control returns and switch triggers",
             "diagram_evidence": "High Beam Trigger, Low Beam Trigger, Spot Lamp Trigger, Horn Trigger, Left/Right Indicator Feed, Hazard Switch, Fuel Stop, AC Request Trigger, Pressure Switch Chain",
-            "workstream_alignment": "Partially matches the Rev G seven-selector bank, separate hazard/OEM stalk functions, engine-stop control and A/C safety chain; mechanical mounting and termination remain open.",
+            "workstream_alignment": "Partially matches the Rev I V17 seven-selector bank, separate hazard/OEM stalk functions, fuel-stop control and A/C safety chain; mechanical mounting and termination remain open.",
             "reconciliation_status": "partial_match",
-            "action_required": "Complete Schneider selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting ENGINE, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
+            "action_required": "Complete bought-selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting FUEL STOP, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
             "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#rows_13_15_20|data/manual/reference_projects_and_ideas.csv#schneider_selector_layout|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003",
             "notes": "The diagram validates control intent; it does not close switch mounting, engine-interface selection or live shutdown tests."
           },
@@ -35148,8 +35148,8 @@ window.J40_DASHBOARD_DATA = {
           {
             "reconciliation_id": "EDR-011",
             "diagram_scope": "Engine start charge and stop integration",
-            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible ENGINE RUN/STOP selector",
-            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the former spare selector is now assigned to ENGINE.",
+            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible FUEL STOP RUN/STOP selector",
+            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the exact on-hand seven-selector inventory is fully allocated with no spare.",
             "reconciliation_status": "partial_match",
             "action_required": "Read terminal markings, replace damaged ends, identify energise-to-run versus energise-to-stop, connect only through a fail-safe low-current interface, prove key-OFF shutdown from every selector state, and retain the manual diesel cutoff cable.",
             "evidence_refs": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-001|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-002|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003|data/manual/workbook_tabs/electrical_master.csv#row_15",
@@ -35169,11 +35169,11 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-013",
             "diagram_scope": "Legacy EPS and glow plug high-current branches",
             "diagram_evidence": "EPS, Glow Plug System",
-            "workstream_alignment": "The EPS branch is superseded by the approved J60 hydraulic steering route; the glow-plug branch remains active and must be verified from measured current.",
+            "workstream_alignment": "The EPS branch is superseded by the fitted hydraulic steering route; the glow-plug branch remains active and must be verified from measured current.",
             "reconciliation_status": "superseded_in_part",
             "action_required": "Remove the EPS 60A branch and controller-routing assumptions from the final electrical architecture; verify glow-plug current draw and confirm its fuse and cable sizing under load.",
-            "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#row_12|docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-            "notes": "Retain the old diagram only as historical evidence. J60 hydraulic steering needs no EPS controller or EPS high-current electrical branch."
+            "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#row_12|docs/vehicle-design-spec.md",
+            "notes": "Retain the old diagram only as historical evidence. The fitted engine-driven hydraulic steering needs no EPS controller or EPS high-current electrical branch."
           },
           {
             "reconciliation_id": "EDR-014",
@@ -35307,13 +35307,13 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install exactly 7 Schneider selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/ENGINE",
+            "task": "Install exactly 7 selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/FUEL STOP",
             "status": "In Progress",
-            "done": "Yes - all 7 received",
-            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors exactly match the Rev G schedule. The former spare is assigned to visible ENGINE RUN/STOP; HAZARD remains a separate red control. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
-            "next_action": "At Rev G gate M6, record every bought Schneider part/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Do not connect ENGINE until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests are specified.",
-            "dependency": "Rev G full-size dashboard template + M6 clearance/contact validation",
-            "parts_tools_impact": "No selector purchase required; the measured M6 sample controls the cutter and anti-rotation detail\u2014do not release from a generic 22 mm tooling assumption"
+            "done": "All 7 selectors received; no additional selector purchase required",
+            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors are received and all are allocated. The 3-position units serve WIPERS/LIGHTS/BLOWER with BLOWER labelled OFF/LOW/HIGH. The 2-position units serve SPOTS/A/C/AUX/FUEL STOP. The donor blower medium tap remains unused unless a separate bench-proven controller redesign is approved. FUEL STOP is visible RUN/STOP; HAZARD remains separate. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
+            "next_action": "At Rev I gate M6, record every selector/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Bench-prove OFF/LOW/HIGH BLOWER requests and the A/C airflow/safety interlock; do not connect FUEL STOP until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests.",
+            "dependency": "Rev I full-size dashboard template + M6 clearance/contact validation",
+            "parts_tools_impact": "No selector purchase; actual seven samples control cutter and anti-rotation detail"
           },
           {
             "priority": "A",
@@ -35321,7 +35321,7 @@ window.J40_DASHBOARD_DATA = {
             "task": "Machine selector holes to the part-confirmed M6 mounting cut and confirm cluster spacing",
             "status": "Pending",
             "done": "No",
-            "current_state": "Rev G carries a nominal \u00d822.5 mm selector cut only; the bought Schneider bush and anti-rotation feature control the released CNC geometry.",
+            "current_state": "Rev I carries a nominal \u00d822.5 mm selector cut reference only; the bought selector bush and anti-rotation feature control the released CNC geometry.",
             "next_action": "At M6 measure the actual selector bodies/contact stacks and prove the full-size template before drilling/cutting and edge finishing.",
             "dependency": "M6 bought-part measurement + tooling availability",
             "parts_tools_impact": "Nominal \u00d822.5 mm tooling only; final cutter follows the measured switch sample"
@@ -35329,7 +35329,7 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Fuel Stop Control",
-            "task": "Use the visible ENGINE RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
+            "task": "Use the visible FUEL STOP RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
             "status": "Pending",
             "done": "No",
             "current_state": "Manual cutoff retained; EEI-003 must identify energise-to-run versus energise-to-stop before any interface is selected.",
@@ -36065,7 +36065,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 276447
+            "bytes": 277843
           },
           "file_count": 27
         },
@@ -36315,7 +36315,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/2h_turbo_integration_20260717.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 299153
+            "bytes": 301701
           },
           "file_count": 5
         },
@@ -36325,8 +36325,8 @@ window.J40_DASHBOARD_DATA = {
           "package_id": "turbo_readiness_chassis_rev_a",
           "title": "2H turbo-readiness chassis welder provisions Rev A",
           "current_status": "superseded_planning_reference_do_not_send",
-          "release_position": "No conversion-specific welding is released. Wait until the complete J60 steering set and selected turbo/manifold hardware are physically present for trial fit. Current welder sheet permits only existing steering-mount cleaning/crack inspection, temporary corrosion protection in likely future fabrication zones and unrelated already-approved chassis work.",
-          "notes": "Do not hand the detailed Rev A planning package to the welder now. No J60 steering plates/holes/sleeves/gussets and no turbo/downpipe/intercooler/hanger/shield/support tabs until actual components are trial-fitted.",
+          "release_position": "No steering-conversion welding is released. Measure the fitted late-J40 hydraulic baseline, then trial-fit the exact acquired RHD J60/HJ60 box, shaft, pitman/linkage, 2H pump circuit and selected turbo/manifold hardware together. Existing steering-mount cleaning, crack inspection, temporary corrosion protection and unrelated approved chassis work remain permissible.",
+          "notes": "Do not hand the detailed Rev A planning package to the welder now. Do not procure a J80 box. No J60 mount fabrication or turbo/downpipe/intercooler/hanger/shield/support tabs are released until the actual J60 and turbo components are inspected and trial-fitted.",
           "package_dir": "data/manual/fabrication/turbo_readiness_chassis_rev_a",
           "primary_links": [
             {
@@ -36346,8 +36346,8 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec: chassis-welder-steering-turbo-component-first-instruction-20260719.md"
             },
             {
-              "url": "../../docs/turbo-readiness-chassis-welder-fabrication-spec-20260717.md",
-              "label": "Source spec: turbo-readiness-chassis-welder-fabrication-spec-20260717.md"
+              "url": "../../docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
+              "label": "Source spec: j60-hydraulic-power-steering-conversion-plan-20260719.md"
             },
             {
               "url": "../../docs/2h-turbo-suitability-and-options-20260717.md",
@@ -36362,9 +36362,125 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/turbo_readiness_chassis_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 49243
+            "bytes": 47158
           },
           "file_count": 6
+        },
+        {
+          "requirement_id": "FAB-HVAC-001",
+          "system": "fabrication_handoff",
+          "package_id": "dashboard_lcd_hvac_fascia_rev_i",
+          "title": "J40 RHD centre-cassette 9-inch LCD dashboard Rev I V35",
+          "current_status": "quotation_release_production_measurement_hold",
+          "release_position": "Owner-selected V35 is released for visual review, supplier quotation, a 1:1 disposable centre-cassette template, full-depth buck and fit coupons only. Preserve the original Toyota cluster and RHD column/scallop, original asymmetric glovebox, full-width lower edge and formed end contours at their direct-traced positions. Replace only the ashtray/centre area with a removable zero-drop cassette; centre the true 9-inch module in that measured free field; put seven bought selectors plus the separate hazard in one line below it; and centre each of two \u00d887-class outer vents independently between its fascia end and nearest retained component. Production metal and vehicle cutting remain HOLD until the signed physical traces, actual components, vent coupons and simultaneous full-depth mock-up are complete.",
+          "notes": "Quotation-only assumptions are explicit: the 1400 x 250 mm face is a plotting envelope and not a measured vehicle perimeter; CR4 is provisionally 1.5 mm; the supplied LCD module is 211.10 x 126.50 x 5.0 with active image 198.91 x 111.89; two vents target \u00d887 faces and \u00d875 rear interfaces; and control apertures are provisional \u00d822.5 mm. OEM geometry, centre-cassette cut/flanges, actual LCD aperture, complete selector stacks, vent retention/spigots and every rear duct/service envelope remain physical trace and measurement holds.",
+          "package_dir": "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+              "label": "Source spec: cnc_measurement_and_survey_checklist.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_quotation_cnc_spec.md",
+              "label": "Source spec: dashboard_rev_i_v35_quotation_cnc_spec.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_coordinates.csv",
+              "label": "Source spec: dashboard_rev_i_v35_provisional_coordinates.csv"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_front_elevation.svg",
+              "label": "Source spec: dashboard_rev_i_v35_provisional_front_elevation.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+              "label": "Source spec: ac_outlet_87mm_cnc_addendum.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
+              "label": "Source spec: ac_outlet_interface_schedule.csv"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+              "label": "Source spec: switch_position_schedule.csv"
+            }
+          ],
+          "visual_links": [
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png",
+              "label": "Selected V35 registered centre-cassette dashboard baseline"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_front_elevation.svg",
+              "label": "V35 provisional exact-scale front elevation (quotation only)"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+              "label": "Exact CNC measurement checklist"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv",
+              "label": "Fillable CNC measurement schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_quotation_cnc_spec.md",
+              "label": "V35 centre-cassette quotation CNC specification"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_coordinates.csv",
+              "label": "V35 provisional coordinate schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+              "label": "87 mm outlet CNC interface addendum"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
+              "label": "Outlet receipt and interface schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_audit_20260802.md",
+              "label": "2026-08-02 rear-clearance photo audit and LCD depth control"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_evidence_20260802.csv",
+              "label": "Rear-clearance photo evidence schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_package_clearance_control.svg",
+              "label": "Rear-package clearance control diagram (quotation only)"
+            },
+            {
+              "url": "../../photos/20260802_145250_gp_4wxWxPmA.jpg",
+              "label": "Rear measurement photo 1 \u2014 oblique, unregistered context only"
+            },
+            {
+              "url": "../../photos/20260802_145305_gp_bepTxJOA.jpg",
+              "label": "Rear measurement photo 2 \u2014 zero/start out of frame"
+            },
+            {
+              "url": "../../photos/20260802_145316_gp_tJASS8hQ.jpg",
+              "label": "Rear measurement photo 3 \u2014 oblique, unregistered context only"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+              "label": "Seven-selector and hazard allocation"
+            }
+          ],
+          "model_links": [],
+          "dxf_links": [],
+          "svg_links": [],
+          "archive_link": {
+            "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
+            "label": "Download package (.zip)",
+            "download": true,
+            "bytes": 26534338
+          },
+          "file_count": 23
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -36683,9 +36799,9 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "electrical_reset"
       ],
-      "next_action": "Use the on-hand 7 Schneider selectors in the Rev I V15 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout",
-      "exit_gate": "All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, the large plate-and-knob glovebox is retained, and the separate smaller ashtray is deleted and closed over. All bought-component cuts remain physical measurement holds.",
-      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting ENGINE.",
+      "next_action": "Use the on-hand 7 Schneider selectors plus separate red hazard in the Rev I V35 single line below the LCD; template-fit complete rear clearances and capture the exact 9-inch LCD chassis/cutout before centre-cassette closeout",
+      "exit_gate": "All 7 bought selectors are allocated with no spare and no additional selector purchase: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate HAZARD in one line. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The LCD module is centred on the physically measured free centre field of the removable zero-drop cassette. Each of the two outer vents is centred independently in its measured land. The directly traced original cluster, column/scallop, glovebox, full-width lower edge and formed contours remain unchanged; only the ashtray/centre area is replaced. All bought-component cuts remain physical measurement holds.",
+      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting FUEL STOP.",
       "evidence_source": [
         "photo_inventory",
         "20260421_192813_gp_0jvYAo8g",
@@ -37471,15 +37587,15 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "interior_dash_switch_fitup",
           "component_group": "interior_cabin",
           "current_status": "in_progress",
-          "planned_action": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels",
+          "planned_action": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels",
           "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
-          "notes": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
+          "notes": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
         },
         {
           "component_job_id": "interior_diesel_cutoff_ignition_security",
           "component_group": "electrical_accessories",
           "current_status": "queued",
-          "planned_action": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
+          "planned_action": "Integrate the visible FUEL STOP RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
           "evidence_ref": "20260420_221819_gp_YV69fbvA|20260421_194401_gp_1dY3fLdw|whatsapp_akber|akber_khan-00858",
           "notes": "Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first."
         },
@@ -37513,7 +37629,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors in the Rev I V15 compact far-right 4 x 2 bank, plus separate red hazard; template-fit rear clearances and capture the exact 9 inch LCD chassis/cutout before fascia closeout"
+          "detail": "Use the on-hand 7 Schneider selectors plus separate red hazard in the Rev I V35 single line below the LCD; template-fit complete rear clearances and capture the exact 9-inch LCD chassis/cutout before centre-cassette closeout"
         },
         {
           "label": "Classify and tag interior control hardware",
@@ -37553,7 +37669,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Interior Dash Switch Fitup",
           "status": "in_progress",
-          "detail": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels Notes: Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
+          "detail": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels Notes: Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
         },
         {
           "label": "Component Task \u00b7 Window Rubbers Weatherstrips",
@@ -37578,7 +37694,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Interior Diesel Cutoff Ignition Security",
           "status": "queued",
-          "detail": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback Notes: Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first."
+          "detail": "Integrate the visible FUEL STOP RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback Notes: Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first."
         },
         {
           "label": "Component Task \u00b7 Body Rubbers",
@@ -37603,7 +37719,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 selectors are allocated: WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE, with HAZARD separate. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The LCD active image is centred in both axes on the complete signed factory-height fascia trace, both outer vents share one high datum independently of the LCD centre, the large plate-and-knob glovebox is retained, and the separate smaller ashtray is deleted and closed over. All bought-component cuts remain physical measurement holds."
+          "detail": "At least one linked package is blocked. Exit gate: All 7 bought selectors are allocated with no spare and no additional selector purchase: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate HAZARD in one line. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The LCD module is centred on the physically measured free centre field of the removable zero-drop cassette. Each of the two outer vents is centred independently in its measured land. The directly traced original cluster, column/scallop, glovebox, full-width lower edge and formed contours remain unchanged; only the ashtray/centre area is replaced. All bought-component cuts remain physical measurement holds."
         }
       ],
       "involved_parts": [
@@ -39022,9 +39138,9 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-006",
             "diagram_scope": "Dash control returns and switch triggers",
             "diagram_evidence": "High Beam Trigger, Low Beam Trigger, Spot Lamp Trigger, Horn Trigger, Left/Right Indicator Feed, Hazard Switch, Fuel Stop, AC Request Trigger, Pressure Switch Chain",
-            "workstream_alignment": "Partially matches the Rev G seven-selector bank, separate hazard/OEM stalk functions, engine-stop control and A/C safety chain; mechanical mounting and termination remain open.",
+            "workstream_alignment": "Partially matches the Rev I V17 seven-selector bank, separate hazard/OEM stalk functions, fuel-stop control and A/C safety chain; mechanical mounting and termination remain open.",
             "reconciliation_status": "partial_match",
-            "action_required": "Complete Schneider selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting ENGINE, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
+            "action_required": "Complete bought-selector fit-up, preserve wiper park/washer and hazard/OEM stalk separation, identify EEI-003 before connecting FUEL STOP, prove key-OFF/manual-stop behavior, and test A/C pressure-chain logic.",
             "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#rows_13_15_20|data/manual/reference_projects_and_ideas.csv#schneider_selector_layout|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003",
             "notes": "The diagram validates control intent; it does not close switch mounting, engine-interface selection or live shutdown tests."
           },
@@ -39061,8 +39177,8 @@ window.J40_DASHBOARD_DATA = {
           {
             "reconciliation_id": "EDR-011",
             "diagram_scope": "Engine start charge and stop integration",
-            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible ENGINE RUN/STOP selector",
-            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the former spare selector is now assigned to ENGINE.",
+            "diagram_evidence": "Starter Solenoid, Alternator, Diesel Solenoid Trigger, Fuel Stop, visible FUEL STOP RUN/STOP selector",
+            "workstream_alignment": "Partially matches EEI-001 through EEI-003 plus the pending fuel-stop control row; the exact on-hand seven-selector inventory is fully allocated with no spare.",
             "reconciliation_status": "partial_match",
             "action_required": "Read terminal markings, replace damaged ends, identify energise-to-run versus energise-to-stop, connect only through a fail-safe low-current interface, prove key-OFF shutdown from every selector state, and retain the manual diesel cutoff cable.",
             "evidence_refs": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-001|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-002|data/manual/engine_electrical_inputs_reconciliation_20260517.csv#EEI-003|data/manual/workbook_tabs/electrical_master.csv#row_15",
@@ -39134,13 +39250,13 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install exactly 7 Schneider selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/ENGINE",
+            "task": "Install exactly 7 selectors in one far-right bank: 3-position WIPERS/LIGHTS/BLOWER; 2-position SPOTS/A/C/AUX/FUEL STOP",
             "status": "In Progress",
-            "done": "Yes - all 7 received",
-            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors exactly match the Rev G schedule. The former spare is assigned to visible ENGINE RUN/STOP; HAZARD remains a separate red control. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
-            "next_action": "At Rev G gate M6, record every bought Schneider part/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Do not connect ENGINE until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests are specified.",
-            "dependency": "Rev G full-size dashboard template + M6 clearance/contact validation",
-            "parts_tools_impact": "No selector purchase required; the measured M6 sample controls the cutter and anti-rotation detail\u2014do not release from a generic 22 mm tooling assumption"
+            "done": "All 7 selectors received; no additional selector purchase required",
+            "current_state": "Inventory reconciled: 3x 3-position and 4x 2-position selectors are received and all are allocated. The 3-position units serve WIPERS/LIGHTS/BLOWER with BLOWER labelled OFF/LOW/HIGH. The 2-position units serve SPOTS/A/C/AUX/FUEL STOP. The donor blower medium tap remains unused unless a separate bench-proven controller redesign is approved. FUEL STOP is visible RUN/STOP; HAZARD remains separate. OEM indicator/dip/horn, keyed ignition, washer input, cabin thermostat/blend controller and winch lever remain outside this bank.",
+            "next_action": "At Rev I gate M6, record every selector/contact-block code and stack depth; template-fit, label and terminate only low-current relay/controller commands. Bench-prove OFF/LOW/HIGH BLOWER requests and the A/C airflow/safety interlock; do not connect FUEL STOP until EEI-003 proves the fuel-stop device logic and key-OFF/manual-cable fail-safe tests.",
+            "dependency": "Rev I full-size dashboard template + M6 clearance/contact validation",
+            "parts_tools_impact": "No selector purchase; actual seven samples control cutter and anti-rotation detail"
           },
           {
             "priority": "A",
@@ -39148,7 +39264,7 @@ window.J40_DASHBOARD_DATA = {
             "task": "Machine selector holes to the part-confirmed M6 mounting cut and confirm cluster spacing",
             "status": "Pending",
             "done": "No",
-            "current_state": "Rev G carries a nominal \u00d822.5 mm selector cut only; the bought Schneider bush and anti-rotation feature control the released CNC geometry.",
+            "current_state": "Rev I carries a nominal \u00d822.5 mm selector cut reference only; the bought selector bush and anti-rotation feature control the released CNC geometry.",
             "next_action": "At M6 measure the actual selector bodies/contact stacks and prove the full-size template before drilling/cutting and edge finishing.",
             "dependency": "M6 bought-part measurement + tooling availability",
             "parts_tools_impact": "Nominal \u00d822.5 mm tooling only; final cutter follows the measured switch sample"
@@ -39156,7 +39272,7 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Fuel Stop Control",
-            "task": "Use the visible ENGINE RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
+            "task": "Use the visible FUEL STOP RUN/STOP selector as a low-current request while ensuring ignition OFF reliably stops the diesel; retain manual cable backup",
             "status": "Pending",
             "done": "No",
             "current_state": "Manual cutoff retained; EEI-003 must identify energise-to-run versus energise-to-stop before any interface is selected.",
@@ -41729,7 +41845,7 @@ window.J40_DASHBOARD_DATA = {
       "id": "gearbox_top_cover",
       "title": "Gearbox",
       "phase": "05b_gearbox_top_cover",
-      "status": "in_progress",
+      "status": "in_progress_h55f_high_confidence_top_cover_match_pending",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "pro_led",
@@ -41739,7 +41855,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Complete GB-TOP-CAPTURE-001, identify the fitted gearbox and top-cover casting, disassemble the shift tower under clean conditions, then decide repair/replacement before buying detents, bushes, shift-seat parts, or a replacement cover",
       "exit_gate": "Top cover and shift tower are inspected, repaired or replaced as needed, refitted with correct gasket/sealant and oil, and static plus yard shift validation passes with post-test leak checks",
-      "notes": "Dedicated transmission top-cover and shift-tower track split from generic parts buying. Existing top cover is reported poor; first decision is service current cover versus controlled repair/weld versus matched replacement cover.",
+      "notes": "Existing whole-assembly photographs identify the Toyota H41/H55F-family housing and transfer-adaptor layout; confirmed five-forward-speed operation distinguishes H55F with high confidence. Visible 33111, BYD and 3 marks are not a unique assembly serial. Existing top cover is reported poor; replacement parts remain on physical-match hold.",
       "evidence_source": [
         "docs_gearbox_top_cover_workstream",
         "docs_parts_list_cleanup_decisions_20260504",
@@ -41748,7 +41864,9 @@ window.J40_DASHBOARD_DATA = {
         "20260430_233755_gp_DO69MLAA",
         "20260512_072812_gp_gZLxKAXA",
         "20260512_072817_gp_MkI6uZkA",
-        "20260512_073344_gp_EH3pnE2Q"
+        "20260512_073344_gp_EH3pnE2Q",
+        "20260802_155201_gp_7kDxst8A",
+        "20260802_155235_gp_DlyN5h5A"
       ],
       "images": [
         {
@@ -47170,7 +47288,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 225,
-      "reference_token_count": 8,
+      "reference_token_count": 10,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -47202,7 +47320,7 @@ window.J40_DASHBOARD_DATA = {
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "in_progress",
+          "status": "in_progress_h55f_high_confidence_top_cover_match_pending",
           "detail": "Complete GB-TOP-CAPTURE-001, identify the fitted gearbox and top-cover casting, disassemble the shift tower under clean conditions, then decide repair/replacement before buying detents, bushes, shift-seat parts, or a replacement cover"
         },
         {
@@ -47230,7 +47348,7 @@ window.J40_DASHBOARD_DATA = {
       "id": "gearbox_oil_service",
       "title": "Gearbox Oil",
       "phase": "05c_gearbox_oil_service",
-      "status": "queued",
+      "status": "queued_h55f_consumables_released",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "pro_led",
@@ -47238,9 +47356,9 @@ window.J40_DASHBOARD_DATA = {
         "mechanical_baseline",
         "gearbox_top_cover"
       ],
-      "next_action": "Identify the fitted gearbox and manual oil spec, confirm the fill plug opens, drain into a clean pan, inspect oil and plug debris, then refill only with the correct gearbox oil and matched plug sealing washers",
+      "next_action": "Confirm the fill plug opens, drain the identified H55F into a clean pan, inspect oil and plug debris, then refill with SAE75W-90 API GL-4 or GL-5 gearbox oil and matched plug sealing washers",
       "exit_gate": "Gearbox oil grade and quantity are recorded, oil/debris inspection is acceptable or escalated, correct oil is filled, drain/fill plugs are sealed, static and yard shift checks pass, and post-test leak checks are clear",
-      "notes": "Dedicated drain-inspect-refill track split from the top-cover repair track. WhatsApp history confirms 2H engine with 5-speed gear, so H55F is the active oil candidate until case/top-cover marks prove a different 5-speed swap. This is a specific buying requirement for oil, plug washers, sample capture, and refill tools; do not buy generic differential or transfer-case oil as a substitute.",
+      "notes": "H55F is identified with high confidence from the Toyota H41/H55F-family case layout plus confirmed five-forward-speed operation. Release 5 L SAE75W-90 API GL-4 or GL-5 and matched plug washers; preserve oil/debris inspection and leak-check gates. Do not substitute differential or transfer-case oil.",
       "evidence_source": [
         "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac7917c65ffdf01e2f1ac6687691ab93_37911810572503_lid",
         "docs_gearbox_oil_service_workstream",
@@ -48197,12 +48315,12 @@ window.J40_DASHBOARD_DATA = {
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "queued",
-          "detail": "Identify the fitted gearbox and manual oil spec, confirm the fill plug opens, drain into a clean pan, inspect oil and plug debris, then refill only with the correct gearbox oil and matched plug sealing washers"
+          "status": "queued_h55f_consumables_released",
+          "detail": "Confirm the fill plug opens, drain the identified H55F into a clean pan, inspect oil and plug debris, then refill with SAE75W-90 API GL-4 or GL-5 gearbox oil and matched plug sealing washers"
         },
         {
           "label": "Identify fitted gearbox",
-          "status": "queued",
+          "status": "in_progress",
           "detail": "Record gearbox code/casting or manual match before buying oil."
         },
         {
@@ -48336,7 +48454,7 @@ window.J40_DASHBOARD_DATA = {
                 "case"
               ],
               "id": "identify_gearbox_and_oil_spec",
-              "status": "queued",
+              "status": "in_progress",
               "parts": [],
               "images": [
                 {
@@ -70758,7 +70876,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
       "exit_gate": "Compact two-takeoff evaporator package, two high fixed outer/end outlets, retained or dedicated demist, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, balanced-airflow, demist, condensate, and electrical-load checks closed",
-      "notes": "2026-08-02 Rev I V15 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
+      "notes": "2026-08-02 Rev I V17 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the directly traced original large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
       "evidence_source": [
         "docs/ac-hvac-workstream.md",
         "docs/hvac-evaporator-blower-sourcing-20260514.md",
@@ -76263,12 +76381,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "Confirm the selected evaporator wiring and controller topology before connecting the Rev I selectors or buying any separate control",
-          "exact_recreation_spec": "The visible 3-position BLOWER and 2-position A/C selectors provide low-current discrete requests only; thermostat/freeze temperature and any heat/blend control remain with the delivered unit or a separate discreet serviceable control and do not add another visible fascia panel",
+          "exact_recreation_spec": "The visible 3-position BLOWER selector provides OFF/LOW/HIGH low-current requests and the 2-position A/C selector provides a compressor request only; the donor medium-speed tap remains unused unless a separate bench-proven controller redesign is approved; thermostat/freeze temperature and any heat/blend control remain with the delivered unit or a separate discreet serviceable control and do not add another visible fascia panel",
           "material_spec": "12V automotive selector inputs into measured resistor/PWM/relay and safety-interlocked clutch-request circuits; retain the unit-matched thermostat/probe/blend hardware",
-          "critical_measurements": "Selector/contact-stack depth; harness plug style; resistor or PWM input logic; blower speed count; thermostat probe routing; separate controller service position; dash and duct clearance",
-          "fit_and_test": "Bench-test every blower request and the A/C request through the measured controller/relay/safety chain; confirm no selector carries blower-motor or clutch current and confirm labels/functions before dash closeout",
-          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_h/hvac_control_interface_schedule.csv",
-          "notes": "Rev I V15 provides the two visible discrete HVAC requests within its compact four-by-two bank; variable or proprietary HVAC inputs remain separately serviceable and concealed.",
+          "critical_measurements": "Selector/contact-stack depth; harness plug style; resistor or PWM input logic; three visible blower states; thermostat probe routing; separate controller service position; dash and duct clearance",
+          "fit_and_test": "Bench-test OFF LOW and HIGH blower requests and the A/C request through the measured controller/relay/safety chain; confirm compressor request cannot energise without proven blower airflow; confirm no selector carries blower-motor or clutch current and confirm labels/functions before dash closeout",
+          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+          "notes": "Rev I V35 places the two visible discrete HVAC requests in the single control line below the LCD; variable or proprietary HVAC inputs and compressor/blower interlocking remain separately serviceable and concealed.",
           "evidence_images": []
         },
         {
@@ -76285,34 +76403,34 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "Wait for evaporator position and vent layout before cutting or ordering duct lengths",
-          "exact_recreation_spec": "2.5 inch or selected-size flexible duct plus vent adapters and defrost/demist hose pieces routed from the HVAC box to cabin vents and windscreen outlets",
-          "material_spec": "Automotive HVAC duct hose and adapters that tolerate cabin heat and vibration",
-          "critical_measurements": "Final duct OD/ID; route lengths; bend radius; clamp sizes; defrost outlet dimensions; clearance to wiring and pedal/steering movement",
+          "exact_recreation_spec": "Two measured flexible end branches plus sealed serviceable adapters from the compact HVAC box to the cabin outlets, with separate defrost/demist hose pieces; do not select hose from the outlet's nominal 75 mm mounting interface",
+          "material_spec": "Automotive HVAC duct hose and adapters that tolerate cabin heat and vibration; retain 70 mm donor-plenum branches only if the measured outlet-spigot interface is proven or bridged by a smooth sealed adapter",
+          "critical_measurements": "Actual outlet-spigot OD and ID, bead or clamp land, straight engagement and projection; plenum-port OD and ID; final duct OD and ID; route lengths; bend radius; clamp sizes; defrost outlet dimensions; clearance to wiring and pedal/steering movement",
           "fit_and_test": "Airflow-test each outlet and demist path; no collapsed hose or chafe points after dash fit-up",
-          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514|RUB-025|docs/rubber-ordering-spec-20260502.md",
-          "notes": "This remains dependent on the selected compact two-takeoff unit and both complete outer/end branches; retain an original or dedicated separate demist path.",
+          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514|RUB-025|docs/rubber-ordering-spec-20260502.md|docs/hvac-ebu404-two-outlet-conversion-design-20260802.md",
+          "notes": "This remains dependent on the selected compact two-takeoff unit and both complete outer/end branches; retain an original or dedicated separate demist path and hold duct purchase until the received outlet spigot is measured.",
           "evidence_images": []
         },
         {
           "requirement_id": "HVAC-UNIT-006",
           "requirement_name": "Two large directional cabin A/C vents and two supported end duct branches",
           "pipe_id": "",
-          "vehicle_location": "Two high fixed outer/end dashboard positions",
+          "vehicle_location": "Two outer dashboard positions centred in their clear lands",
           "pipe_or_line": "",
           "replace_scope": "buy_after_compact_evaporator_outlets_and_full_depth_mockup",
-          "quantity": "2_vents_plus_2_duct_runs",
+          "quantity": "2_installed_vents_plus_2_matched_spares_plus_2_duct_runs",
           "photo_evidence": [],
           "photo_status": "layout_photos_required",
           "spec_status": "layout_measurement_hold",
-          "acquisition_status": "not_acquired",
+          "acquisition_status": "4_ordered_0_received",
           "installation_status": "not_installed",
-          "current_action": "Develop Rev I around exactly two matching outlets on one common high datum at the fixed outer/end fascia regions; aim one at the passenger and one at the driver; preserve the large OEM glovebox and speedometer as no-touch regions, close over the separate smaller ashtray, and delete the Rev H inner/lower pair and all pods",
-          "exact_recreation_spec": "Two-outlet outer/end layout with the largest practical directional faces and necks compatible with the selected compact evaporator; exact face, cutout, neck and centre coordinates held for physical louver and case measurement; demist remains an original or dedicated separate path",
-          "material_spec": "Two identical automotive HVAC louvers from one batch with directional shutoff cores and hidden retention; two fully supported matching end branches; clamps and sealed adapters; no decorative vents without measured hose necks",
-          "critical_measurements": "Face and cutout dimensions; neck OD/ID and rear depth; aim range; complete end-branch lengths and bend radius; evaporator takeoff spacing; LCD/glovebox/switch-bank/cluster/column/knee/lever/service clearance; separate demist route",
-          "fit_and_test": "Full-size Rev I fascia and complete rear-envelope mock-up; bench airflow and freeze test with both full-length end branches connected; prove useful balanced airflow and that each vent can aim at its occupant; prove demist remains functional; support both branches without crush or more than 10% ovalisation; no production cuts until unit and louver samples are fixed",
-          "source_ref": "part_hvac_two_outlet_duct_layout_20260801|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md",
-          "notes": "2026-08-02 Rev I V15 visual direction uses exactly two high outer/end outlets and supersedes the Rev H 1-2-1 vent geometry plus the V9 two-central-outlet study. It targets the installed-photo cluster relationship, original shallow fascia and correct glovebox/ashtray identity; the signed M1/M2/M3 trace controls exact geometry. The generated Rev H package remains historical; its V1-V4 apertures and duct schedule are not released for fabrication.",
+          "current_action": "Develop Rev I around exactly two matching outlets on one common physical height datum; centre the passenger vent between the fascia end and retained glovebox boundary and the driver vent between the retained cluster boundary and fascia end; preserve the OEM glovebox, cluster, column/scallop, lower edge and formed contours; replace only the ashtray/centre area with the cassette; and delete the Rev H inner/lower pair and all pods",
+          "exact_recreation_spec": "Provisional supplied-reference family: \u00d887 mm visible face, target maximum \u00d875 mm rear mounting interface and no more than approximately 22 mm from the finished rear fascia plane to the end of the louver body; production aperture, retainer, spigot and centre coordinates remain held for received-part and vehicle measurement; demist remains an original or dedicated separate path",
+          "material_spec": "Four matching automotive HVAC louvers from the ordered batch: select the closest two for installation and bag two as service spares; directional shutoff cores and hidden retention; two fully supported matching end branches; clamps and sealed adapters; no decorative vents without measured hose spigots",
+          "critical_measurements": "Every vent's face OD; mounting-boss maximum OD and ovality at multiple clock and axial positions; retention architecture; actual panel-hole fit and anti-rotation features; retainer envelope; body projection from the finished rear fascia plane; spigot OD and ID, projection, engagement and bead or clamp land; aim and shutoff sweep; complete end-branch lengths and bend radius; evaporator takeoff spacing; LCD/glovebox/control-line/cluster/column/knee/lever/service clearance; separate demist route",
+          "fit_and_test": "Full-size Rev I fascia and complete rear-envelope mock-up; same-1.5-mm-CR4 same-finish aperture coupon; bench airflow and freeze test with both full-length end branches connected; prove useful balanced airflow and that each vent can aim at its occupant; prove demist remains functional; support both branches without crush or more than 10% ovalisation; no production cut until the received parts and coupon are approved",
+          "source_ref": "part_hvac_two_outlet_duct_layout_20260801|docs/hvac-dashboard-vent-duct-layout-20260602.md|docs/ac-hvac-workstream.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+          "notes": "2026-08-02 Rev I V35 is the active quotation direction. It uses exactly two outer outlets, each at the midpoint of its separately measured retained land; the photo-registered midpoints are visual evidence only. The common physical height datum and both complete rear packages remain subject to the signed fascia trace and simultaneous full-depth buck. The \u00d887 / \u00d875 / approximately 22 mm values are provisional target interfaces, not a released panel hole or hose size. M1/M2/M3 traces, received-part M7 measurements and the approved coupon control production geometry.",
           "evidence_images": []
         },
         {
@@ -76407,7 +76525,7 @@ window.J40_DASHBOARD_DATA = {
           "requirement_id": "HVAC-ENGINE-004",
           "requirement_name": "A/C compressor plus bracket and belt alignment",
           "pipe_id": "",
-          "vehicle_location": "2H engine accessory drive and compressor mount",
+          "vehicle_location": "2H-117299 engine accessory drive and compressor mount",
           "pipe_or_line": "",
           "replace_scope": "inspect_existing_then_restore_or_replace",
           "quantity": "1_compressor_mount_package",
@@ -76416,13 +76534,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "inspect_before_buy",
           "acquisition_status": "inspect_existing_before_buy",
           "installation_status": "not_installed",
-          "current_action": "Inspect existing Sanden-type compressor and engine-specific bracket before buying replacement",
-          "exact_recreation_spec": "Compact Sanden-type automotive compressor or proven on-hand unit plus 2H-specific bracket/spacers/adjuster/idler and final belt solution",
+          "current_action": "Inspect existing Sanden-type compressor and the actual as-fitted 2H-engine bracket before buying replacement",
+          "exact_recreation_spec": "Compact Sanden-type automotive compressor or proven on-hand unit plus measured 2H-specific/as-fitted bracket/spacers/adjuster/idler and final belt solution",
           "material_spec": "Reuse only if clutch voltage plus pulley plus ports plus shaft seal plus oil/refrigerant compatibility pass inspection; otherwise buy rebuilt/new compatible compressor",
           "critical_measurements": "Pulley groove type; belt section and final belt length; bracket hole spacing; pulley alignment; compressor ear spacing; port style; clutch voltage/current; service clearance",
           "fit_and_test": "Spin and clutch-test compressor; verify pulley alignment with straightedge; pressure/leak check system after hose fabrication",
           "source_ref": "docs/parts-list-cleanup-decisions-20260504.md|data/manual/j40_costs_cost_tabs_tidy.csv:Parts8-9|data/manual/j40_costs_cost_tabs_tidy.csv:Parts163",
-          "notes": "Workbook rows said reuse/inspect but the dashboard requirements had no HVAC compressor gate.",
+          "notes": "Owner-supplied block-stamp photograph records 2H-117299; existing hardware remains sample-driven for interface confirmation.",
           "evidence_images": []
         },
         {
@@ -76502,12 +76620,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "12 part rows still require price confirmation/order placement."
+          "detail": "11 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "1 part rows are ordered and awaiting delivery."
+          "detail": "2 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -76557,6 +76675,51 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "air",
               "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
+          "workstream": "ac_hvac_retrofit",
+          "item": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "amount": "4569",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "AL.Zain Mart / Daraz",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
+          "evidence_ref": "user_update_2026-08-02_four_ac_outlets_purchased|gmail_order_246057471480938",
+          "product_link": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+          "notes": "Daraz order 246057471480938 confirmed 2026-08-02 from AL.Zain Mart: purchased two line items of the selected 2 Grills variant at PKR 2199 each, giving four physical circular vents. Subtotal PKR 4398; shipping PKR 165; platform fee PKR 6; paid order total PKR 4569. Standard-delivery window 2026-08-05 through 2026-08-08. Inventory state is ordered quantity 4 / received quantity 0 until physically checked. Install the best-matched pair and retain the other pair as matched service spares. Listing identifies a chrome outer finish for Suzuki Cultus/Celerio 2017-2024 but does not publish trustworthy fabrication dimensions or prove solid metal construction; treat the silver surround as chrome-finish material pending receipt inspection. On arrival measure all four visible ODs, panel cutout/barrel ODs, retaining details, rear depths, neck/spigot IDs and ODs, shutoff and aiming range before releasing fascia apertures or duct adapters.",
+          "links": [
+            {
+              "url": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+              "label": "daraz.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+            "caption": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents \u00b7 rust/metal treatment reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "wax_grease_remover",
+            "matched_tokens": [
+              "rust"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -76960,46 +77123,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
-          "workstream": "ac_hvac_retrofit",
-          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-          "product_link": "",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -82398,8 +82521,8 @@ window.J40_DASHBOARD_DATA = {
     {
       "id": "eps_vitz_upgrade",
       "title": "Steering \u2014 J60 Hydraulic",
-      "phase": "06a_j60_hydraulic_steering",
-      "status": "approved_component_acquisition_and_trial_fit_gate",
+      "phase": "06a_j60_hydraulic_steering_upgrade",
+      "status": "active_component_first_exact_identity_hold",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "pro_led",
@@ -82408,12 +82531,17 @@ window.J40_DASHBOARD_DATA = {
         "mechanical_baseline",
         "fabrication_handoff"
       ],
-      "next_action": "Identify the as-fitted J40 steering and chassis interfaces; source a complete RHD J60/HJ60 hydraulic box-side set with matched pitman arm, collapsible shaft/couplers and drag-link parts plus a complete 2H-compatible pump/bracket/pulley/reservoir set; bench inspect or rebuild all used units and physically trial-fit the complete system before releasing chassis fabrication or final hoses.",
-      "exit_gate": "Complete identified and inspected/rebuilt J60/HJ60 and 2H pump-drive sets are trial-fitted; measured mounting, reinforcement, shaft, linkage, belt and hose fabrication cards are approved; the installed system is leak-free, aligned and validated lock-to-lock and on a staged road check; the proven steering envelope is released to turbo fabrication.",
-      "notes": "Decision updated 2026-07-19: RHD J60/HJ60 hydraulic steering supersedes the earlier Vitz/Yaris column-EPS plan. The legacy workstream id remains only for portal-link and historical-row stability. No chassis drilling, welding, adapter plates or final hoses until the complete identified package is acquired, inspected/rebuilt and physically trial-fitted. Steering geometry is proved first; the turbo manifold, downpipe and heat protection must route around it.",
+      "next_action": "Use the identified fitted late-J40 hydraulic gear as the interface baseline; acquire a complete exact RHD J60/HJ60 box, matched pitman/linkage and collapsible shaft/couplers plus the compatible 2H pump/bracket/pulley/reservoir set; bench inspect or rebuild, then trial-fit the whole system before releasing chassis, hose or turbo fabrication.",
+      "exit_gate": "The fitted baseline is measured; the exact J60/HJ60 set is identified and inspected/rebuilt; mounting, reinforcement, shaft, linkage, belt and hose cards are approved; pump flow/pressure/relief is matched; battery and turbo envelopes coexist; and the installed system passes leak-free lock-to-lock, suspension-travel, alignment and staged road validation.",
+      "notes": "The August 2 photos identify the installed baseline as a later J40-family factory-type hydraulic gear with high confidence; it is not original as-built to the 1978 chassis. Owner reconfirms the planned upgrade is RHD J60/HJ60, not J80. Raised 25050 is only a casting identifier. Exact donor and conversion interfaces remain component-first holds. Engine is 2H-117299 and gearbox is H55F with high confidence.",
       "evidence_source": [
+        "20260802_162808_gp_GOspt97A",
+        "20260802_162817_gp_CfqJ2n3g",
+        "20260802_162823_gp_SeAas27w",
+        "20260802_162831_gp_LhiuuNHQ",
+        "20260802_162842_gp_WqCKQt3g",
+        "photo_import_20260802T163143",
         "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-        "docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
         "docs/master-project-plan.md"
       ],
       "images": [],
@@ -82426,7 +82554,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 0,
-      "reference_token_count": 4,
+      "reference_token_count": 10,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -82504,50 +82632,50 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "j60_hydraulic_bench_inspection_rebuild",
           "component_group": "steering_overhaul",
-          "current_status": "planned_before_trial_fit",
-          "planned_action": "Bench inspect or professionally rebuild the hydraulic steering box and pump; confirm matching splines, mounting integrity, shaft play, smooth operation, leakage condition, pulley alignment and serviceability before vehicle release.",
+          "current_status": "planned_after_exact_j60_acquisition",
+          "planned_action": "Bench-inspect or rebuild the acquired J60/HJ60 box and pump set; check shafts, bearings, sector adjustment, seals, ports, relief, pressure and flow before vehicle trial fit.",
           "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-          "notes": "Cracked welded seized rough leaking or unmatched components block trial fit."
+          "notes": "Do not fabricate or crimp final hoses around an unidentified or untested used box."
         },
         {
           "component_job_id": "j60_hydraulic_complete_set_acquisition",
           "component_group": "steering_procurement",
-          "current_status": "approved_quote_and_identification_gate",
-          "planned_action": "Source one complete RHD J60/HJ60 box-side set with matched pitman arm, collapsible shaft/couplers and drag-link parts plus one complete 2H-compatible pump, bracket, pulley, reservoir and fitting-reference set; capture identity, condition, seller and return evidence.",
+          "current_status": "approved_component_first_exact_identity_hold",
+          "planned_action": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting.",
           "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-          "notes": "A loose box or incomplete mixed package is quote-only."
+          "notes": "The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route."
         },
         {
           "component_job_id": "j60_hydraulic_existing_interface_capture",
           "component_group": "steering_layout",
-          "current_status": "planned_scope_lock",
-          "planned_action": "Identify and photograph the as-fitted J40 steering box, frame mounting area, column/shaft route, axle/linkage geometry, steering stops and nearby service interfaces; record mounting faces, centerlines, splines and clearances before selecting parts.",
-          "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-          "notes": "No donor selection or fabrication is released from assumed J40/J60 fit."
+          "current_status": "in_progress_fitted_j40_hydraulic_baseline_identified",
+          "planned_action": "Measure and record the fitted late-J40 hydraulic gear, pedestal/frame attachment, input shaft/coupler, sector/pitman and drag-link geometry, lock-to-lock travel, ports and hose routes as the baseline overlay for the planned RHD J60/HJ60 conversion.",
+          "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|20260802_162808_gp_GOspt97A|20260802_162817_gp_CfqJ2n3g|20260802_162823_gp_SeAas27w|20260802_162831_gp_LhiuuNHQ|20260802_162842_gp_WqCKQt3g",
+          "notes": "Photo-shape identification is high confidence; dimensions, complete 44110 identity and mechanical condition remain open."
         },
         {
           "component_job_id": "j60_hydraulic_measured_install_validation",
           "component_group": "steering_validation",
-          "current_status": "blocked_on_trial_fit_release",
-          "planned_action": "Issue the measured mounting, reinforcement, shaft, linkage, belt and hose fabrication card; install, fill, bleed, align and validate lock-to-lock, at yard speed and on staged road checks; then publish the proven steering envelope to turbo fabrication.",
+          "current_status": "planned_after_j60_trial_fit_release",
+          "planned_action": "Install the approved measured J60/HJ60 system and validate mount integrity, shaft articulation, pitman/linkage geometry, bump/rebound, stops, alignment, leaks, pump behavior and staged road performance before turbo closeout.",
           "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/2h-turbo-suitability-and-options-20260717.md",
-          "notes": "Any bind play leak hose contact alignment fault or uncertain fastener blocks road use and turbo hot-side release."
+          "notes": "Safety and clearance signoff is required before loaded road or turbo validation."
         },
         {
           "component_job_id": "j60_hydraulic_vehicle_trial_fit",
           "component_group": "steering_fabrication",
-          "current_status": "component_first_hold",
-          "planned_action": "Physically mock the complete box, shaft/couplers, pitman, drag-link route, pump/brackets/pulley, reservoir and hose envelopes on the J40; turn lock-to-lock and prove chassis, axle, engine, brake, clutch and service clearances before drilling, welding, plates or final hoses.",
+          "current_status": "planned_after_complete_set_and_bench_pass",
+          "planned_action": "Overlay and trial-fit the exact J60/HJ60 box, matched pitman/linkage, collapsible shaft/couplers, 2H pump drive and hose envelopes against the measured fitted-J40 baseline; prove frame, battery, turbo, axle and service clearances before releasing permanent fabrication.",
           "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
-          "notes": "No permanent chassis fabrication or hose release before accepted complete-system trial fit."
+          "notes": "No assumed J60 template or J80 geometry is a fabrication release."
         }
       ],
       "issue_jobs": [],
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "approved_component_acquisition_and_trial_fit_gate",
-          "detail": "Identify the as-fitted J40 steering and chassis interfaces; source a complete RHD J60/HJ60 hydraulic box-side set with matched pitman arm, collapsible shaft/couplers and drag-link parts plus a complete 2H-compatible pump/bracket/pulley/reservoir set; bench inspect or rebuild all used units and physically trial-fit the complete system before releasing chassis fabrication or final hoses."
+          "status": "active_component_first_exact_identity_hold",
+          "detail": "Use the identified fitted late-J40 hydraulic gear as the interface baseline; acquire a complete exact RHD J60/HJ60 box, matched pitman/linkage and collapsible shaft/couplers plus the compatible 2H pump/bracket/pulley/reservoir set; bench inspect or rebuild, then trial-fit the whole system before releasing chassis, hose or turbo fabrication."
         },
         {
           "label": "Identify the fitted J40 steering and chassis interfaces",
@@ -82596,28 +82724,28 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Component Task \u00b7 J60 Hydraulic Complete Set Acquisition",
-          "status": "approved_quote_and_identification_gate",
-          "detail": "Source one complete RHD J60/HJ60 box-side set with matched pitman arm, collapsible shaft/couplers and drag-link parts plus one complete 2H-compatible pump, bracket, pulley, reservoir and fitting-reference set; capture identity, condition, seller and return evidence. Notes: A loose box or incomplete mixed package is quote-only."
-        },
-        {
-          "label": "Component Task \u00b7 J60 Hydraulic Measured Install Validation",
-          "status": "blocked_on_trial_fit_release",
-          "detail": "Issue the measured mounting, reinforcement, shaft, linkage, belt and hose fabrication card; install, fill, bleed, align and validate lock-to-lock, at yard speed and on staged road checks; then publish the proven steering envelope to turbo fabrication. Notes: Any bind play leak hose contact alignment fault or uncertain fastener blocks road use and turbo hot-side release."
-        },
-        {
-          "label": "Component Task \u00b7 J60 Hydraulic Vehicle Trial Fit",
-          "status": "component_first_hold",
-          "detail": "Physically mock the complete box, shaft/couplers, pitman, drag-link route, pump/brackets/pulley, reservoir and hose envelopes on the J40; turn lock-to-lock and prove chassis, axle, engine, brake, clutch and service clearances before drilling, welding, plates or final hoses. Notes: No permanent chassis fabrication or hose release before accepted complete-system trial fit."
-        },
-        {
-          "label": "Component Task \u00b7 J60 Hydraulic Bench Inspection Rebuild",
-          "status": "planned_before_trial_fit",
-          "detail": "Bench inspect or professionally rebuild the hydraulic steering box and pump; confirm matching splines, mounting integrity, shaft play, smooth operation, leakage condition, pulley alignment and serviceability before vehicle release. Notes: Cracked welded seized rough leaking or unmatched components block trial fit."
+          "status": "approved_component_first_exact_identity_hold",
+          "detail": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting. Notes: The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route."
         },
         {
           "label": "Component Task \u00b7 J60 Hydraulic Existing Interface Capture",
-          "status": "planned_scope_lock",
-          "detail": "Identify and photograph the as-fitted J40 steering box, frame mounting area, column/shaft route, axle/linkage geometry, steering stops and nearby service interfaces; record mounting faces, centerlines, splines and clearances before selecting parts. Notes: No donor selection or fabrication is released from assumed J40/J60 fit."
+          "status": "in_progress_fitted_j40_hydraulic_baseline_identified",
+          "detail": "Measure and record the fitted late-J40 hydraulic gear, pedestal/frame attachment, input shaft/coupler, sector/pitman and drag-link geometry, lock-to-lock travel, ports and hose routes as the baseline overlay for the planned RHD J60/HJ60 conversion. Notes: Photo-shape identification is high confidence; dimensions, complete 44110 identity and mechanical condition remain open."
+        },
+        {
+          "label": "Component Task \u00b7 J60 Hydraulic Vehicle Trial Fit",
+          "status": "planned_after_complete_set_and_bench_pass",
+          "detail": "Overlay and trial-fit the exact J60/HJ60 box, matched pitman/linkage, collapsible shaft/couplers, 2H pump drive and hose envelopes against the measured fitted-J40 baseline; prove frame, battery, turbo, axle and service clearances before releasing permanent fabrication. Notes: No assumed J60 template or J80 geometry is a fabrication release."
+        },
+        {
+          "label": "Component Task \u00b7 J60 Hydraulic Bench Inspection Rebuild",
+          "status": "planned_after_exact_j60_acquisition",
+          "detail": "Bench-inspect or rebuild the acquired J60/HJ60 box and pump set; check shafts, bearings, sector adjustment, seals, ports, relief, pressure and flow before vehicle trial fit. Notes: Do not fabricate or crimp final hoses around an unidentified or untested used box."
+        },
+        {
+          "label": "Component Task \u00b7 J60 Hydraulic Measured Install Validation",
+          "status": "planned_after_j60_trial_fit_release",
+          "detail": "Install the approved measured J60/HJ60 system and validate mount integrity, shaft articulation, pitman/linkage geometry, bump/rebound, stops, alignment, leaks, pump behavior and staged road performance before turbo closeout. Notes: Safety and clearance signoff is required before loaded road or turbo validation."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -82637,14 +82765,14 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Complete identified and inspected/rebuilt J60/HJ60 and 2H pump-drive sets are trial-fitted; measured mounting, reinforcement, shaft, linkage, belt and hose fabrication cards are approved; the installed system is leak-free, aligned and validated lock-to-lock and on a staged road check; the proven steering envelope is released to turbo fabrication."
+          "detail": "No linked package rows found. Exit gate: The fitted baseline is measured; the exact J60/HJ60 set is identified and inspected/rebuilt; mounting, reinforcement, shaft, linkage, belt and hose cards are approved; pump flow/pressure/relief is matched; battery and turbo envelopes coexist; and the installed system passes leak-free lock-to-lock, suspension-travel, alignment and staged road validation."
         }
       ],
       "involved_parts": [
         {
           "entry_id": "part_power_steering_upgrade",
           "workstream": "eps_vitz_upgrade",
-          "item": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package",
+          "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
           "status": "researching",
           "procurement_stage": "complete_set_identity_and_trial_fit_hold",
           "payment_status": "not_paid",
@@ -82652,30 +82780,33 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Land Cruiser specialist / J60 breaker / hydraulic steering rebuilder",
+          "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
-          "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
+          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
           "product_link": "",
-          "notes": "Approved route supersedes the earlier Vitz/Yaris EPS plan. Quote a complete identified RHD J60/HJ60 box, matched pitman, collapsible shaft/couplers and drag-link parts together with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. Do not release chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry is fixed before turbo hot-side fabrication.",
+          "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before turbo hot-side fabrication.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package \u00b7 exact inventory image required",
-            "captured_date": "",
-            "captured_time": "",
+            "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "12:02:20",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_120220_gp_jD9H5Nag",
+            "matched_tokens": [
+              "20260802"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 26
           }
         }
       ],
@@ -82794,7 +82925,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -82904,7 +83035,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -83018,7 +83149,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -83131,7 +83262,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -83245,7 +83376,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -83255,9 +83386,9 @@ window.J40_DASHBOARD_DATA = {
     },
     {
       "id": "turbocharger_powertrain",
-      "title": "2H Turbo",
+      "title": "Turbo Build",
       "phase": "09_optional_upgrades",
-      "status": "approved_direction_engine_health_gate",
+      "status": "identity_and_engine_health_hold",
       "priority": "high",
       "primary_location": "mixed",
       "owner_mode": "mixed",
@@ -83268,27 +83399,138 @@ window.J40_DASHBOARD_DATA = {
         "fabrication_handoff",
         "eps_vitz_upgrade"
       ],
-      "next_action": "Run the 2H identity, compression, hot-oil-pressure, blow-by, cooling, injector/pump and baseline-smoke tests now. After a pass, approve one mapped GT2256/small-GT25 or compact-HX30-class internally wastegated package, mock the full system only after J60 steering geometry is proven, and reserve all oil, intake, intercooler, exhaust, breather, boost-reference and monitoring interfaces before body/front-stack closeout.",
-      "exit_gate": "Engine-health gate passed; exact matched turbo package approved; steering-first clearance and every mechanical/fluid/pneumatic/electrical interface are documented and leak-tested; pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring is calibrated; staged 5-7 psi validation is complete without smoke, heat, lubrication, clutch or driveline failure; any 8-10 psi decision is separately supported by logged specialist validation.",
-      "notes": "Approved direction, preliminary engineering only: do not order turbo hardware before the engine-health and matched-package gates. Prefer a responsive wastegated GT2256/small-GT25 or compact-HX30-class package, intercooling and a free-flow single exhaust. The mechanical internal wastegate needs no ECU; electrical scope is mandatory EGT/boost/oil/coolant monitoring and protection plus any separately justified fan relay. Start at 5-7 psi. Steering is physically proven first and the turbo hot side routes around it.",
+      "next_action": "Record the engine as 2H-117299 from the owner-supplied stamp photograph; photograph the castings and interfaces, then run 2H-manual compression, hot-oil-pressure, blow-by, head-sealing, cooling, injector/pump and baseline-smoke tests. After a pass, use the low-mount CT26-flange manifold with the map-matched CT26-pattern TD05H 16G package, mock it only after the planned J60/HJ60 steering system and battery/service envelopes are proven, and reserve every oil, intake, intercooler, exhaust, breather, boost-reference and monitoring interface.",
+      "exit_gate": "Identity and engine-health gates passed; exact 2H matched turbo package approved; steering-first clearance and every interface are documented and leak-tested; pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring is calibrated; staged 5-7 psi validation at baseline fuelling is complete without smoke, heat, lubrication, head-sealing, clutch or driveline failure; 8-10 psi requires a separate written engine-builder release after data review.",
+      "notes": "Corrected 2026-08-02 from the supplied stamp photograph: engine is 2H-117299. Retain the low-mount CT26-flange/CT26-pattern TD05H 16G direction subject to goods-receipt, engine-health, map-match and final J60 steering-envelope gates. Intercooling and EGT/boost/oil/coolant monitoring remain mandatory. Commission at 5-7 psi with baseline fuelling; 8-10 psi has no standing approval.",
       "evidence_source": [
         "user_direction_2026-07-17",
+        "user_engine_serial_117299_2026-08-02",
         "docs/2h-turbo-suitability-and-options-20260717.md",
         "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
         "docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
         "docs/master-project-plan.md",
         "data/manual/expenses.csv"
       ],
-      "images": [],
-      "evidence_sets": [
+      "images": [
         {
-          "key": "primary",
-          "title": "Primary Evidence Set",
-          "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
-          "images": []
+          "path": "../../docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+          "caption": "CONCEPTUAL Rev J \u2014 bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "turbocharger_powertrain",
+          "specific_component": "conceptual_packaging_visual",
+          "stage": "conceptual_pending_measurement",
+          "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+          "matched_tokens": [
+            "conceptual",
+            "turbo",
+            "packaging"
+          ],
+          "match_basis": "controlled_concept_visual",
+          "match_score": 1000
+        },
+        {
+          "path": "../../docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
+          "caption": "CONCEPTUAL Rev J opposite-side packaging \u2014 purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "turbocharger_powertrain",
+          "specific_component": "conceptual_packaging_visual",
+          "stage": "conceptual_pending_measurement",
+          "media_id": "turbo_rev_j_opposite_side_packaging_concept",
+          "matched_tokens": [
+            "conceptual",
+            "turbo",
+            "packaging"
+          ],
+          "match_basis": "controlled_concept_visual",
+          "match_score": 1000
+        },
+        {
+          "path": "../../docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
+          "caption": "CONCEPTUAL Rev J annotated layout \u2014 identification aid only; callouts and positions must be reconciled against the vehicle.",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "turbocharger_powertrain",
+          "specific_component": "conceptual_packaging_visual",
+          "stage": "conceptual_pending_measurement",
+          "media_id": "turbo_rev_j_annotated_layout_concept",
+          "matched_tokens": [
+            "conceptual",
+            "turbo",
+            "packaging"
+          ],
+          "match_basis": "controlled_concept_visual",
+          "match_score": 1000
         }
       ],
-      "image_count": 0,
+      "evidence_sets": [
+        {
+          "key": "turbo_build_conceptual_layout",
+          "title": "Turbo Build \u2014 Rev J Conceptual Layout",
+          "description": "Controlled packaging views only. These are concept-stage references pending fresh vehicle photographs and measured clearances; they are not fabrication evidence.",
+          "images": [
+            {
+              "path": "../../docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+              "caption": "CONCEPTUAL Rev J \u2014 bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+              "captured_date": "",
+              "captured_time": "",
+              "media_type": "photo",
+              "component_group": "turbocharger_powertrain",
+              "specific_component": "conceptual_packaging_visual",
+              "stage": "conceptual_pending_measurement",
+              "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+              "matched_tokens": [
+                "conceptual",
+                "turbo",
+                "packaging"
+              ],
+              "match_basis": "controlled_concept_visual",
+              "match_score": 1000
+            },
+            {
+              "path": "../../docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
+              "caption": "CONCEPTUAL Rev J opposite-side packaging \u2014 purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
+              "captured_date": "",
+              "captured_time": "",
+              "media_type": "photo",
+              "component_group": "turbocharger_powertrain",
+              "specific_component": "conceptual_packaging_visual",
+              "stage": "conceptual_pending_measurement",
+              "media_id": "turbo_rev_j_opposite_side_packaging_concept",
+              "matched_tokens": [
+                "conceptual",
+                "turbo",
+                "packaging"
+              ],
+              "match_basis": "controlled_concept_visual",
+              "match_score": 1000
+            },
+            {
+              "path": "../../docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
+              "caption": "CONCEPTUAL Rev J annotated layout \u2014 identification aid only; callouts and positions must be reconciled against the vehicle.",
+              "captured_date": "",
+              "captured_time": "",
+              "media_type": "photo",
+              "component_group": "turbocharger_powertrain",
+              "specific_component": "conceptual_packaging_visual",
+              "stage": "conceptual_pending_measurement",
+              "media_id": "turbo_rev_j_annotated_layout_concept",
+              "matched_tokens": [
+                "conceptual",
+                "turbo",
+                "packaging"
+              ],
+              "match_basis": "controlled_concept_visual",
+              "match_score": 1000
+            }
+          ]
+        }
+      ],
+      "image_count": 3,
       "reference_token_count": 8,
       "requirements": [],
       "pipe_requirements": [],
@@ -83361,8 +83603,8 @@ window.J40_DASHBOARD_DATA = {
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "approved_direction_engine_health_gate",
-          "detail": "Run the 2H identity, compression, hot-oil-pressure, blow-by, cooling, injector/pump and baseline-smoke tests now. After a pass, approve one mapped GT2256/small-GT25 or compact-HX30-class internally wastegated package, mock the full system only after J60 steering geometry is proven, and reserve all oil, intake, intercooler, exhaust, breather, boost-reference and monitoring interfaces before body/front-stack closeout."
+          "status": "identity_and_engine_health_hold",
+          "detail": "Record the engine as 2H-117299 from the owner-supplied stamp photograph; photograph the castings and interfaces, then run 2H-manual compression, hot-oil-pressure, blow-by, head-sealing, cooling, injector/pump and baseline-smoke tests. After a pass, use the low-mount CT26-flange manifold with the map-matched CT26-pattern TD05H 16G package, mock it only after the planned J60/HJ60 steering system and battery/service envelopes are proven, and reserve every oil, intake, intercooler, exhaust, breather, boost-reference and monitoring interface."
         },
         {
           "label": "Pass the 2H engine-health gate",
@@ -83447,7 +83689,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Engine-health gate passed; exact matched turbo package approved; steering-first clearance and every mechanical/fluid/pneumatic/electrical interface are documented and leak-tested; pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring is calibrated; staged 5-7 psi validation is complete without smoke, heat, lubrication, clutch or driveline failure; any 8-10 psi decision is separately supported by logged specialist validation."
+          "detail": "No linked package rows found. Exit gate: Identity and engine-health gates passed; exact 2H matched turbo package approved; steering-first clearance and every interface are documented and leak-tested; pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring is calibrated; staged 5-7 psi validation at baseline fuelling is complete without smoke, heat, lubrication, head-sealing, clutch or driveline failure; 8-10 psi requires a separate written engine-builder release after data review."
         }
       ],
       "involved_parts": [
@@ -84298,34 +84540,29 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_turbocharger_matched_2h_20260717",
           "workstream": "turbocharger_powertrain",
-          "item": "Matched wastegated turbocharger for Toyota 2H conservative road build",
+          "item": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build",
           "status": "planned",
-          "procurement_stage": "engine_health_and_map_match_hold",
+          "procurement_stage": "engine_health_goods_receipt_and_map_match_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Garrett authorised distributor / GCG Turbo / verified diesel turbo specialist",
+          "vendor": "Verified diesel turbo specialist / inspected package supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_turbocharger_matched_2h_20260717",
-          "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
+          "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|docs/2h-turbo-recommended-build-process-20260801.md",
           "product_link": "",
-          "notes": "Select only after engine tests and mapped comparison at 4.0 L, intended rpm, ambient temperature, altitude and 5-7 psi initial target. GT2256/small-GT25 or compact HX30 sizing direction only; exact part number, compressor map, turbine housing, flange, wastegate setting and oil requirements must be approved as one package.",
-          "links": [
-            {
-              "url": "https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-              "label": "borgwarner.com"
-            }
-          ],
+          "notes": "Controlled direction is the low-mount 2H CT26-flange manifold with a CT26-pattern TD05H 16G documented as 7 cm2 / approximately .49 A/R and internally wastegated. Before payment verify genuine identity, wheel and housing specifications, compressor map, actuator base pressure, flange, oil/coolant ports and clocking. Commission at 5-7 psi with baseline fuelling only after 2H-117299 health and vehicle-clearance gates; 8-10 psi requires separate written specialist release.",
+          "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "Matched wastegated turbocharger for Toyota 2H conservative road build \u00b7 AC compressor reference image",
+            "caption": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build \u00b7 AC compressor reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -84952,8 +85189,8 @@ window.J40_DASHBOARD_DATA = {
       "operation_panels": [],
       "subtask_groups": [
         {
-          "key": "2h_conservative_turbo_conversion",
-          "title": "2H Conservative Turbo Conversion",
+          "key": "turbo_build",
+          "title": "Turbo Build",
           "summary": "Assume availability of the selected 2H low-mount CT26-flange manifold and CT26-pattern TD05H 16G with 7 cm2/.49 A/R housing and internal wastegate. Hardware receipt, engine health and vehicle fit remain gated. Use intercooling and mandatory monitoring; validate at 5\u20137 psi before considering 8\u201310 psi, and finalize the hot side only after J60 steering geometry is proven.",
           "subtasks": [
             {
@@ -84987,23 +85224,10 @@ window.J40_DASHBOARD_DATA = {
               "id": "pass_2h_engine_health_gate",
               "status": "in_progress",
               "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-                  "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
-                  "captured_date": "2026-05-03",
-                  "captured_time": "15:38:32",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "mixed_fastener_hardware",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260503_153832_gp_0FJJiLHg",
-                  "matched_tokens": []
-                }
-              ],
+              "images": [],
               "registered_items": [
                 "2H intake-manifold charge-air adapter/plenum connection with boost reference ports (manifold_measurement_hold; delivery not_ordered; amount missing)",
-                "Matched wastegated turbocharger for Toyota 2H conservative road build (engine_health_and_map_match_hold; delivery not_ordered; amount missing)",
+                "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build (engine_health_goods_receipt_and_map_match_hold; delivery not_ordered; amount missing)",
                 "Engine oil-gallery take-off adapter tee and gauge/sender provision for turbo feed (oil_pressure_port_measurement_hold; delivery not_ordered; amount missing)",
                 "Calibrated EGT pyrometer gauge with pre-turbine thermocouple probe wiring and alarm (quality_product_selection_hold; delivery not_ordered; amount missing)",
                 "Calibrated engine oil-pressure gauge sender adapter and warning provision (engine_port_and_range_hold; delivery not_ordered; amount missing)",
@@ -85040,82 +85264,9 @@ window.J40_DASHBOARD_DATA = {
               "id": "approve_one_matched_turbo_package",
               "status": "queued",
               "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260514_131845_gp_ythUacVA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:45",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131845_gp_ythUacVA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131834_gp_V4LCu2hw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:34",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131834_gp_V4LCu2hw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131828_gp_X2MxCSEQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:28",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131828_gp_X2MxCSEQ",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131820_gp_1xufuqnA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:20",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131820_gp_1xufuqnA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131810_gp_z0Z4XiNw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:10",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131810_gp_z0Z4XiNw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131802_gp_j8XssFqQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:02",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131802_gp_j8XssFqQ",
-                  "matched_tokens": []
-                }
-              ],
+              "images": [],
               "registered_items": [
-                "Matched wastegated turbocharger for Toyota 2H conservative road build (engine_health_and_map_match_hold; delivery not_ordered; amount missing)",
+                "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build (engine_health_goods_receipt_and_map_match_hold; delivery not_ordered; amount missing)",
                 "Toyota 2H turbo exhaust manifold or engineered manifold-adapter assembly (engine_identity_and_mockup_hold; delivery not_ordered; amount missing)",
                 "Calibrated EGT pyrometer gauge with pre-turbine thermocouple probe wiring and alarm (quality_product_selection_hold; delivery not_ordered; amount missing)",
                 "Generic 52 mm electronic boost gauge Daraz market lead (do_not_buy_without_accuracy_proof; delivery not_ordered; amount online_listing)",
@@ -85126,10 +85277,10 @@ window.J40_DASHBOARD_DATA = {
             {
               "title": "Mock Steering, Hot Side And Full Interfaces",
               "priority": "P0",
-              "remaining": "before permanent fabrication",
-              "instruction": "Prove J60 steering first, then package every turbo interface around the accepted steering envelope.",
+              "remaining": "concept review pending fresh photos and measurements",
+              "instruction": "Use the Rev J visuals only as a conceptual packaging study. Prove J80 steering, bonnet clearance and measured component envelopes before releasing any permanent fabrication.",
               "process_steps": [
-                "Install or physically mock the J60 hydraulic box, shaft, pump and hose envelope before final manifold/downpipe work.",
+                "Install or physically mock the J80 hydraulic box, shaft, pump and hose envelope before final manifold/downpipe work.",
                 "Mock turbo/manifold, supported downpipe, single exhaust and removable air-gap heat shields.",
                 "Reserve continuous-fall sump drain, manufacturer-compliant oil feed and conditional coolant lines.",
                 "Mock sealed air cleaner, intercooler, 2.0\u20132.5 inch working-basis charge route and crankcase breather.",
@@ -85147,7 +85298,7 @@ window.J40_DASHBOARD_DATA = {
                 "Labels",
                 "Temporary supports"
               ],
-              "hold_point": "No final hot-side fabrication until steering and all body/front-stack datums are proven.",
+              "hold_point": "CONCEPTUAL ONLY \u2014 not fabrication approved. No final hot-side, radiator-bracket, battery-carrier or electrical-box fabrication until new photographs and measured steering, bonnet, body and front-stack datums are recorded.",
               "image_tokens": [
                 "turbo",
                 "steering",
@@ -85160,85 +85311,67 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260514_131845_gp_ythUacVA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:45",
+                  "path": "../../docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+                  "caption": "CONCEPTUAL Rev J \u2014 bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+                  "captured_date": "",
+                  "captured_time": "",
                   "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131845_gp_ythUacVA",
-                  "matched_tokens": []
+                  "component_group": "turbocharger_powertrain",
+                  "specific_component": "conceptual_packaging_visual",
+                  "stage": "conceptual_pending_measurement",
+                  "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+                  "matched_tokens": [
+                    "conceptual",
+                    "turbo",
+                    "packaging"
+                  ],
+                  "match_basis": "controlled_concept_visual",
+                  "match_score": 1000
                 },
                 {
-                  "path": "../../photos/20260514_131834_gp_V4LCu2hw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:34",
+                  "path": "../../docs/images/turbo-2h-controlled-build/13-purchased-scale-electrical-opposite-side.png",
+                  "caption": "CONCEPTUAL Rev J opposite-side packaging \u2014 purchased-size MIDI fuse and relay boxes; placement remains subject to measured clearance.",
+                  "captured_date": "",
+                  "captured_time": "",
                   "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131834_gp_V4LCu2hw",
-                  "matched_tokens": []
+                  "component_group": "turbocharger_powertrain",
+                  "specific_component": "conceptual_packaging_visual",
+                  "stage": "conceptual_pending_measurement",
+                  "media_id": "turbo_rev_j_opposite_side_packaging_concept",
+                  "matched_tokens": [
+                    "conceptual",
+                    "turbo",
+                    "packaging"
+                  ],
+                  "match_basis": "controlled_concept_visual",
+                  "match_score": 1000
                 },
                 {
-                  "path": "../../photos/20260514_131828_gp_X2MxCSEQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:28",
+                  "path": "../../docs/images/turbo-2h-controlled-build/15-front-aligned-radiator-annotated.png",
+                  "caption": "CONCEPTUAL Rev J annotated layout \u2014 identification aid only; callouts and positions must be reconciled against the vehicle.",
+                  "captured_date": "",
+                  "captured_time": "",
                   "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131828_gp_X2MxCSEQ",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131820_gp_1xufuqnA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:20",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131820_gp_1xufuqnA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131810_gp_z0Z4XiNw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:10",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131810_gp_z0Z4XiNw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131802_gp_j8XssFqQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:02",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131802_gp_j8XssFqQ",
-                  "matched_tokens": []
+                  "component_group": "turbocharger_powertrain",
+                  "specific_component": "conceptual_packaging_visual",
+                  "stage": "conceptual_pending_measurement",
+                  "media_id": "turbo_rev_j_annotated_layout_concept",
+                  "matched_tokens": [
+                    "conceptual",
+                    "turbo",
+                    "packaging"
+                  ],
+                  "match_basis": "controlled_concept_visual",
+                  "match_score": 1000
                 }
               ],
               "registered_items": [
                 "Turbine manifold and downpipe formed heat shields with air gap stand-offs and edge protection (final_hot_side_geometry_hold; delivery not_ordered; amount missing)",
                 "Front or side-mounted bar-and-plate intercooler matched to 2H airflow and cooling-stack envelope (cooling_stack_measurement_hold; delivery not_ordered; amount missing)",
+                "Turbo downpipe charge-pipe airbox and heat-shield bracket stock plus graded fasteners and isolators (buy_after_mockup_cut_list; delivery not_ordered; amount missing)",
                 "Mandrel-bend downpipe tubing transition and fabrication stock (turbo_position_and_chassis_route_hold; delivery not_ordered; amount missing)",
                 "Low-restriction single exhaust tubing muffler tailpipe joints and service clamps (full_chassis_and_body_route_hold; delivery not_ordered; amount missing)",
-                "Turbo downpipe charge-pipe airbox and heat-shield bracket stock plus graded fasteners and isolators (buy_after_mockup_cut_list; delivery not_ordered; amount missing)",
-                "High-temperature sleeves and reflective barriers for nearby oil fuel brake clutch A-C and electrical routes (buy_after_clearance_map; delivery not_ordered; amount missing)"
+                "Imported universal aluminium intercooler pipe hose and clamp kit market lead (do_not_buy_wrong_diameter; delivery not_ordered; amount online_listing)"
               ]
             },
             {
@@ -85272,85 +85405,12 @@ window.J40_DASHBOARD_DATA = {
               "id": "install_monitoring_and_protection",
               "status": "queued",
               "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260514_131834_gp_V4LCu2hw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:34",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131834_gp_V4LCu2hw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-                  "captured_date": "2026-05-17",
-                  "captured_time": "19:36:16",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260517_193616_gp_1ye19BZA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-                  "captured_date": "2026-05-17",
-                  "captured_time": "19:36:12",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260517_193612_gp_JmbfR0Tw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-                  "captured_date": "2026-05-17",
-                  "captured_time": "19:35:59",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260517_193559_gp_NEpk1hpg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-                  "captured_date": "2026-05-17",
-                  "captured_time": "19:35:39",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260517_193539_gp_E0cR9I0A",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
-                  "captured_date": "2026-05-17",
-                  "captured_time": "19:35:03",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260517_193503_gp_N9nHjqXw",
-                  "matched_tokens": []
-                }
-              ],
+              "images": [],
               "registered_items": [
                 "Calibrated EGT pyrometer gauge with pre-turbine thermocouple probe wiring and alarm (quality_product_selection_hold; delivery not_ordered; amount missing)",
                 "2H intake-manifold charge-air adapter/plenum connection with boost reference ports (manifold_measurement_hold; delivery not_ordered; amount missing)",
                 "Gauge mounting panel fused wiring terminals loom protection grommets labels and connectors (dash_layout_and_gauge_selection_hold; delivery not_ordered; amount missing)",
-                "Matched wastegated turbocharger for Toyota 2H conservative road build (engine_health_and_map_match_hold; delivery not_ordered; amount missing)",
+                "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build (engine_health_goods_receipt_and_map_match_hold; delivery not_ordered; amount missing)",
                 "Calibrated coolant-temperature gauge sender and matched adapter (sender_location_and_thread_hold; delivery not_ordered; amount missing)",
                 "Calibrated engine oil-pressure gauge sender adapter and warning provision (engine_port_and_range_hold; delivery not_ordered; amount missing)"
               ]
@@ -85387,87 +85447,14 @@ window.J40_DASHBOARD_DATA = {
               "id": "validate_at_5_7_psi",
               "status": "queued",
               "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260514_131845_gp_ythUacVA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:45",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131845_gp_ythUacVA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131834_gp_V4LCu2hw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:34",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131834_gp_V4LCu2hw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131828_gp_X2MxCSEQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:28",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131828_gp_X2MxCSEQ",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131820_gp_1xufuqnA.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:20",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131820_gp_1xufuqnA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131810_gp_z0Z4XiNw.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:10",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131810_gp_z0Z4XiNw",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260514_131802_gp_j8XssFqQ.jpg",
-                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-05-14",
-                  "captured_date": "2026-05-14",
-                  "captured_time": "13:18:02",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "frame_floor_underside_and_lines",
-                  "stage": "underside_inspection",
-                  "media_id": "20260514_131802_gp_j8XssFqQ",
-                  "matched_tokens": []
-                }
-              ],
+              "images": [],
               "registered_items": [
+                "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build (engine_health_goods_receipt_and_map_match_hold; delivery not_ordered; amount missing)",
                 "High-temperature sleeves and reflective barriers for nearby oil fuel brake clutch A-C and electrical routes (buy_after_clearance_map; delivery not_ordered; amount missing)",
                 "Turbo downpipe charge-pipe airbox and heat-shield bracket stock plus graded fasteners and isolators (buy_after_mockup_cut_list; delivery not_ordered; amount missing)",
                 "Turbo exhaust hanger brackets pins heat-rated rubber isolators and fasteners (buy_after_exhaust_mockup; delivery not_ordered; amount missing)",
                 "Boost reference hose manifold barb fittings clamps and restrictor/damper if specified (port_and_instrument_hold; delivery not_ordered; amount missing)",
-                "Generic 52 mm electronic boost gauge Daraz market lead (do_not_buy_without_accuracy_proof; delivery not_ordered; amount online_listing)",
-                "Matched internal wastegate actuator boost reference hose and control fittings (buy_with_final_turbo; delivery not_ordered; amount missing)"
+                "Generic 52 mm electronic boost gauge Daraz market lead (do_not_buy_without_accuracy_proof; delivery not_ordered; amount online_listing)"
               ]
             }
           ]
@@ -89450,7 +89437,7 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa",
         "product_link": "",
         "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
-        "notes": "2026-08-02 Rev I V15 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
+        "notes": "2026-08-02 Rev I V17 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the directly traced original large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
       }
     ],
     "delivery_watchlist": [
@@ -89916,7 +89903,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "17 rows still in purchase_ready."
+        "detail": "16 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -89926,7 +89913,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "7 rows ordered and waiting to arrive."
+        "detail": "8 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -90023,7 +90010,7 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "engine_health_and_map_match_hold",
+        "stage": "engine_health_goods_receipt_and_map_match_hold",
         "count": 1
       },
       {
@@ -90068,7 +90055,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 6
+        "count": 7
       },
       {
         "stage": "partial_receipt_lines_recorded_remaining_sort_open",
@@ -90080,7 +90067,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 17
+        "count": 16
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -90611,6 +90598,50 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "2026-08-08",
+        "amount": "4569",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "AL.Zain Mart / Daraz",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-08-02_four_ac_outlets_purchased|gmail_order_246057471480938",
+        "product_link": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+        "notes": "Daraz order 246057471480938 confirmed 2026-08-02 from AL.Zain Mart: purchased two line items of the selected 2 Grills variant at PKR 2199 each, giving four physical circular vents. Subtotal PKR 4398; shipping PKR 165; platform fee PKR 6; paid order total PKR 4569. Standard-delivery window 2026-08-05 through 2026-08-08. Inventory state is ordered quantity 4 / received quantity 0 until physically checked. Install the best-matched pair and retain the other pair as matched service spares. Listing identifies a chrome outer finish for Suzuki Cultus/Celerio 2017-2024 but does not publish trustworthy fabrication dimensions or prove solid metal construction; treat the silver surround as chrome-finish material pending receipt inspection. On arrival measure all four visible ODs, panel cutout/barrel ODs, retaining details, rear depths, neck/spigot IDs and ODs, shutoff and aiming range before releasing fascia apertures or duct adapters.",
+        "links": [
+          {
+            "url": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+            "label": "daraz.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_brake_master_reservoir_refresh",
         "workstream": "brake_system",
         "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x1; reservoir/proportioning still inspect",
@@ -90912,6 +90943,49 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "air",
             "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
+        "workstream": "ac_hvac_retrofit",
+        "item": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "4569",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "AL.Zain Mart / Daraz",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-08-02_four_ac_outlets_purchased|gmail_order_246057471480938",
+        "product_link": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+        "notes": "Daraz order 246057471480938 confirmed 2026-08-02 from AL.Zain Mart: purchased two line items of the selected 2 Grills variant at PKR 2199 each, giving four physical circular vents. Subtotal PKR 4398; shipping PKR 165; platform fee PKR 6; paid order total PKR 4569. Standard-delivery window 2026-08-05 through 2026-08-08. Inventory state is ordered quantity 4 / received quantity 0 until physically checked. Install the best-matched pair and retain the other pair as matched service spares. Listing identifies a chrome outer finish for Suzuki Cultus/Celerio 2017-2024 but does not publish trustworthy fabrication dimensions or prove solid metal construction; treat the silver surround as chrome-finish material pending receipt inspection. On arrival measure all four visible ODs, panel cutout/barrel ODs, retaining details, rear depths, neck/spigot IDs and ODs, shutoff and aiming range before releasing fascia apertures or duct adapters.",
+        "links": [
+          {
+            "url": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+            "label": "daraz.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -91295,44 +91369,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "relay",
           "matched_tokens": [
             "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
-        "workstream": "ac_hvac_retrofit",
-        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-        "product_link": "",
-        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -93204,7 +93240,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_power_steering_upgrade",
         "workstream": "eps_vitz_upgrade",
-        "item": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package",
+        "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
         "status": "researching",
         "procurement_stage": "complete_set_identity_and_trial_fit_hold",
         "payment_status": "not_paid",
@@ -93212,28 +93248,31 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Land Cruiser specialist / J60 breaker / hydraulic steering rebuilder",
+        "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
         "supply_type": "part",
-        "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
+        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
         "product_link": "",
-        "notes": "Approved route supersedes the earlier Vitz/Yaris EPS plan. Quote a complete identified RHD J60/HJ60 box, matched pitman, collapsible shaft/couplers and drag-link parts together with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. Do not release chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry is fixed before turbo hot-side fabrication.",
+        "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before turbo hot-side fabrication.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package \u00b7 exact inventory image required",
-          "captured_date": "",
-          "captured_time": "",
+          "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+          "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+          "captured_date": "2026-08-02",
+          "captured_time": "12:02:20",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "component_group": "documentation_reference",
+          "specific_component": "reference_media",
+          "stage": "reference_material",
+          "media_id": "20260802_120220_gp_jD9H5Nag",
+          "matched_tokens": [
+            "20260802"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 26
         }
       },
       {
@@ -94870,32 +94909,27 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_turbocharger_matched_2h_20260717",
         "workstream": "turbocharger_powertrain",
-        "item": "Matched wastegated turbocharger for Toyota 2H conservative road build",
+        "item": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build",
         "status": "planned",
-        "procurement_stage": "engine_health_and_map_match_hold",
+        "procurement_stage": "engine_health_goods_receipt_and_map_match_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Garrett authorised distributor / GCG Turbo / verified diesel turbo specialist",
+        "vendor": "Verified diesel turbo specialist / inspected package supplier",
         "supply_type": "part",
-        "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
+        "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|docs/2h-turbo-recommended-build-process-20260801.md",
         "product_link": "",
-        "notes": "Select only after engine tests and mapped comparison at 4.0 L, intended rpm, ambient temperature, altitude and 5-7 psi initial target. GT2256/small-GT25 or compact HX30 sizing direction only; exact part number, compressor map, turbine housing, flange, wastegate setting and oil requirements must be approved as one package.",
-        "links": [
-          {
-            "url": "https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-            "label": "borgwarner.com"
-          }
-        ],
+        "notes": "Controlled direction is the low-mount 2H CT26-flange manifold with a CT26-pattern TD05H 16G documented as 7 cm2 / approximately .49 A/R and internally wastegated. Before payment verify genuine identity, wheel and housing specifications, compressor map, actuator base pressure, flange, oil/coolant ports and clocking. Commission at 5-7 psi with baseline fuelling only after 2H-117299 health and vehicle-clearance gates; 8-10 psi requires separate written specialist release.",
+        "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "Matched wastegated turbocharger for Toyota 2H conservative road build \u00b7 AC compressor reference image",
+          "caption": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build \u00b7 AC compressor reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -95493,7 +95527,24 @@ window.J40_DASHBOARD_DATA = {
       {
         "workstream": "turbocharger_powertrain",
         "open_count": 36,
-        "image": null
+        "image": {
+          "path": "../../docs/images/turbo-2h-controlled-build/17-bonnet-clear-radiator-brackets.png",
+          "caption": "CONCEPTUAL Rev J \u2014 bonnet-clear radiator brackets, polished engine-side pipework and completed routing; pending physical measurements.",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "turbocharger_powertrain",
+          "specific_component": "conceptual_packaging_visual",
+          "stage": "conceptual_pending_measurement",
+          "media_id": "turbo_rev_j_bonnet_clear_radiator_brackets_concept",
+          "matched_tokens": [
+            "conceptual",
+            "turbo",
+            "packaging"
+          ],
+          "match_basis": "controlled_concept_visual",
+          "match_score": 1000
+        }
       },
       {
         "workstream": "brake_system",
@@ -102094,12 +102145,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 122,
-      "now_tasks": 106,
-      "later_tasks": 16,
-      "p0_tasks": 38,
+      "total_tasks": 124,
+      "now_tasks": 107,
+      "later_tasks": 17,
+      "p0_tasks": 40,
       "photo_tasks": 41,
-      "measurement_tasks": 80
+      "measurement_tasks": 83
     },
     "counts_by_workstream": [
       {
@@ -102151,6 +102202,10 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "workstream": "steering_brakes_suspension",
+        "count": 3
+      },
+      {
         "workstream": "suspension_upgrade",
         "count": 3
       },
@@ -102181,20 +102236,16 @@ window.J40_DASHBOARD_DATA = {
       {
         "workstream": "procurement",
         "count": 1
-      },
-      {
-        "workstream": "steering_brakes_suspension",
-        "count": 1
       }
     ],
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 37
+        "count": 38
       },
       {
         "task_type": "photo_measurement",
-        "count": 25
+        "count": 27
       },
       {
         "task_type": "template",
@@ -102202,7 +102253,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo",
-        "count": 16
+        "count": 14
       },
       {
         "task_type": "decision",
@@ -102214,13 +102265,13 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "inspection",
-        "count": 4
+        "count": 5
       }
     ],
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 38
+        "count": 40
       },
       {
         "priority": "P1",
@@ -102232,6 +102283,93 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "tasks": [
+      {
+        "task_id": "component_job:fitted_late_j40_hydraulic_steering_identification_20260802",
+        "title": "fitted_late_j40_hydraulic_steering_identification_20260802",
+        "workstream": "steering_brakes_suspension",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "later",
+        "status": "identified_high_confidence_exact_service_number_and_condition_open",
+        "location": "workshop_steering_specialist",
+        "action": "Treat the fitted steering gear as a Toyoda Koki late-40-Series factory-type hydraulic unit; clean and inspect it, search all machined/tag surfaces for a complete 44110-xxxxx identity, record port threads and hose routing, verify pedestal/frame attachment, input shaft/coupler, sector shaft, pitman arm and linkage geometry, then bench-test or rebuild as required before matching the 2H pump/reservoir circuit and releasing turbo clearances.",
+        "data_needed": "Five new views show the long cylindrical housing, circular four-bolt input/valve head, hydraulic ports, vertical sector/pitman output, Toyoda Koki mark and J40-style pedestal installation. This supports a later factory J40-family hydraulic gear retrofit and does not support the previously proposed J80 identity. The 1978 chassis predates this factory hydraulic arrangement, so it is J40-type rather than original to this vehicle. Raised 25050 is a casting identifier, not a serial or complete Toyota service number; exact 44110-xxxxx identity remains open. Preserve the fitted route unless condition or geometry fails inspection; do not release J80 box procurement or irreversible chassis fabrication.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "fitted_late_j40_hydraulic_steering_identification_20260802",
+        "notes": "",
+        "evidence_ref": "20260802_162808_gp_GOspt97A|20260802_162817_gp_CfqJ2n3g|20260802_162823_gp_SeAas27w|20260802_162831_gp_LhiuuNHQ|20260802_162842_gp_WqCKQt3g|photo_import_20260802T163143",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260802_162808_gp_GOspt97A.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:08",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162808_gp_GOspt97A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162817_gp_CfqJ2n3g.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:17",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162817_gp_CfqJ2n3g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162823_gp_SeAas27w.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:23",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162823_gp_SeAas27w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162831_gp_LhiuuNHQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:31",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162831_gp_LhiuuNHQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162842_gp_WqCKQt3g.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:42",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162842_gp_WqCKQt3g",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
       {
         "task_id": "component_job:passenger_footwell_floor_section_replacement_20260719",
         "title": "passenger_footwell_floor_section_replacement_20260719",
@@ -104942,13 +105080,13 @@ window.J40_DASHBOARD_DATA = {
         "task_id": "component_job:j60_hydraulic_bench_inspection_rebuild",
         "title": "j60_hydraulic_bench_inspection_rebuild",
         "workstream": "eps_vitz_upgrade",
-        "task_type": "decision",
+        "task_type": "inspection",
         "priority": "P0",
         "timing": "now",
-        "status": "planned_before_trial_fit",
+        "status": "planned_after_exact_j60_acquisition",
         "location": "qualified_steering_specialist",
-        "action": "Bench inspect or professionally rebuild the hydraulic steering box and pump; confirm matching splines, mounting integrity, shaft play, smooth operation, leakage condition, pulley alignment and serviceability before vehicle release.",
-        "data_needed": "Cracked welded seized rough leaking or unmatched components block trial fit.",
+        "action": "Bench-inspect or rebuild the acquired J60/HJ60 box and pump set; check shafts, bearings, sector adjustment, seals, ports, relief, pressure and flow before vehicle trial fit.",
+        "data_needed": "Do not fabricate or crimp final hoses around an unidentified or untested used box.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -104971,10 +105109,10 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "blocked_on_trial_fit_release",
+        "status": "planned_after_j60_trial_fit_release",
         "location": "workshop_and_steering_specialist",
-        "action": "Issue the measured mounting, reinforcement, shaft, linkage, belt and hose fabrication card; install, fill, bleed, align and validate lock-to-lock, at yard speed and on staged road checks; then publish the proven steering envelope to turbo fabrication.",
-        "data_needed": "Any bind play leak hose contact alignment fault or uncertain fastener blocks road use and turbo hot-side release.",
+        "action": "Install the approved measured J60/HJ60 system and validate mount integrity, shaft articulation, pitman/linkage geometry, bump/rebound, stops, alignment, leaks, pump behavior and staged road performance before turbo closeout.",
+        "data_needed": "Safety and clearance signoff is required before loaded road or turbo validation.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -104994,13 +105132,13 @@ window.J40_DASHBOARD_DATA = {
         "task_id": "component_job:j60_hydraulic_complete_set_acquisition",
         "title": "j60_hydraulic_complete_set_acquisition",
         "workstream": "eps_vitz_upgrade",
-        "task_type": "photo",
+        "task_type": "photo_measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "approved_quote_and_identification_gate",
+        "status": "approved_component_first_exact_identity_hold",
         "location": "market_scout",
-        "action": "Source one complete RHD J60/HJ60 box-side set with matched pitman arm, collapsible shaft/couplers and drag-link parts plus one complete 2H-compatible pump, bracket, pulley, reservoir and fitting-reference set; capture identity, condition, seller and return evidence.",
-        "data_needed": "A loose box or incomplete mixed package is quote-only.",
+        "action": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting.",
+        "data_needed": "The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -105020,21 +105158,82 @@ window.J40_DASHBOARD_DATA = {
         "task_id": "component_job:j60_hydraulic_existing_interface_capture",
         "title": "j60_hydraulic_existing_interface_capture",
         "workstream": "eps_vitz_upgrade",
-        "task_type": "photo",
+        "task_type": "photo_measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "planned_scope_lock",
+        "status": "in_progress_fitted_j40_hydraulic_baseline_identified",
         "location": "workshop",
-        "action": "Identify and photograph the as-fitted J40 steering box, frame mounting area, column/shaft route, axle/linkage geometry, steering stops and nearby service interfaces; record mounting faces, centerlines, splines and clearances before selecting parts.",
-        "data_needed": "No donor selection or fabrication is released from assumed J40/J60 fit.",
+        "action": "Measure and record the fitted late-J40 hydraulic gear, pedestal/frame attachment, input shaft/coupler, sector/pitman and drag-link geometry, lock-to-lock travel, ports and hose routes as the baseline overlay for the planned RHD J60/HJ60 conversion.",
+        "data_needed": "Photo-shape identification is high confidence; dimensions, complete 44110 identity and mechanical condition remain open.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "j60_hydraulic_existing_interface_capture",
         "notes": "",
-        "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-        "evidence_images": [],
+        "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|20260802_162808_gp_GOspt97A|20260802_162817_gp_CfqJ2n3g|20260802_162823_gp_SeAas27w|20260802_162831_gp_LhiuuNHQ|20260802_162842_gp_WqCKQt3g",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260802_162808_gp_GOspt97A.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:08",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162808_gp_GOspt97A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162817_gp_CfqJ2n3g.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:17",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162817_gp_CfqJ2n3g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162823_gp_SeAas27w.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:23",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162823_gp_SeAas27w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162831_gp_LhiuuNHQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:31",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162831_gp_LhiuuNHQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260802_162842_gp_WqCKQt3g.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "16:28:42",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_162842_gp_WqCKQt3g",
+            "matched_tokens": []
+          }
+        ],
         "links": [
           {
             "url": "../../data/manual/component_jobs.csv",
@@ -107142,6 +107341,32 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_release_actions.csv",
             "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:j60_hydraulic_steering_route_decision_20260719",
+        "title": "j60_hydraulic_steering_route_decision_20260719",
+        "workstream": "steering_brakes_suspension",
+        "task_type": "decision",
+        "priority": "P0",
+        "timing": "now",
+        "status": "approved_active_component_first_route",
+        "location": "market_then_workshop",
+        "action": "Replace the identified fitted late-J40 factory-type hydraulic gear with a complete matched RHD J60/HJ60 hydraulic steering system after interface survey, exact component identification, bench inspection/rebuild and full vehicle trial fit.",
+        "data_needed": "Owner reconfirmed on 2026-08-02 that J60 replacement is the upgrade plan. Fitted-box identification describes the current baseline only; J80 is superseded.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "j60_hydraulic_steering_route_decision_20260719",
+        "notes": "",
+        "evidence_ref": "user_update_2026-07-19_j60_replacement_steering_decision|user_clarification_2026-08-02_j60_upgrade_remains_plan|docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
           }
         ]
       },
@@ -111090,7 +111315,7 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "queued",
         "location": "home",
-        "action": "Integrate the visible ENGINE RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
+        "action": "Integrate the visible FUEL STOP RUN/STOP selector through the validated EEI-003 low-current fuel-stop interface; prove authoritative key-off, loss-of-power behavior and retained manual-stop fallback",
         "data_needed": "Build_Plan WP03B security integration gate. Do not wire from colour or assume energise-to-run/energise-to-stop logic; identify the device and prove every shutdown path first.",
         "blocks": "",
         "record_result_in": "",
@@ -111141,8 +111366,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "in_progress",
         "location": "home",
-        "action": "Template-fit exactly seven Schneider selectors in the Rev G far-right 2 x 4 bank, verify rear clearances/contact blocks, and complete durable function labels",
-        "data_needed": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the nominal \u00d822.5 mounting cut and anti-rotation detail. Allocation is WIPERS/LIGHTS/SPOTS/AUX over BLOWER/A/C/ENGINE plus separate red HAZARD. ENGINE uses the former spare selector; the concealed needle-switch plan is superseded. The exact LCD chassis/cutout/mount model still must be captured before production cutting.",
+        "action": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels",
+        "data_needed": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -114770,8 +114995,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 108,
-        "in_process": 14,
-        "still_required": 83,
+        "in_process": 15,
+        "still_required": 82,
         "total": 205
       }
     ],
@@ -122746,6 +122971,51 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents",
+          "vendor": "AL.Zain Mart / Daraz",
+          "amount": "4569",
+          "currency": "PKR",
+          "workstream": "ac_hvac_retrofit",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-08-02_four_ac_outlets_purchased|gmail_order_246057471480938",
+          "product_link": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+          "notes": "Daraz order 246057471480938 confirmed 2026-08-02 from AL.Zain Mart: purchased two line items of the selected 2 Grills variant at PKR 2199 each, giving four physical circular vents. Subtotal PKR 4398; shipping PKR 165; platform fee PKR 6; paid order total PKR 4569. Standard-delivery window 2026-08-05 through 2026-08-08. Inventory state is ordered quantity 4 / received quantity 0 until physically checked. Install the best-matched pair and retain the other pair as matched service spares. Listing identifies a chrome outer finish for Suzuki Cultus/Celerio 2017-2024 but does not publish trustworthy fabrication dimensions or prove solid metal construction; treat the silver surround as chrome-finish material pending receipt inspection. On arrival measure all four visible ODs, panel cutout/barrel ODs, retaining details, rear depths, neck/spigot IDs and ODs, shutoff and aiming range before releasing fascia apertures or duct adapters.",
+          "links": [
+            {
+              "url": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+              "label": "daraz.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+            "caption": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents \u00b7 rust/metal treatment reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "wax_grease_remover",
+            "matched_tokens": [
+              "rust"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -123273,9 +123543,9 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
           "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package",
-          "vendor": "Land Cruiser specialist / J60 breaker / hydraulic steering rebuilder",
+          "inventory_group": "electrical",
+          "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
+          "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
           "amount": "",
           "currency": "PKR",
           "workstream": "eps_vitz_upgrade",
@@ -123284,26 +123554,29 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "complete_set_identity_and_trial_fit_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
+          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
           "product_link": "",
-          "notes": "Approved route supersedes the earlier Vitz/Yaris EPS plan. Quote a complete identified RHD J60/HJ60 box, matched pitman, collapsible shaft/couplers and drag-link parts together with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. Do not release chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry is fixed before turbo hot-side fabrication.",
+          "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before turbo hot-side fabrication.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package \u00b7 exact inventory image required",
-            "captured_date": "",
-            "captured_time": "",
+            "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+            "captured_date": "2026-08-02",
+            "captured_time": "12:02:20",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260802_120220_gp_jD9H5Nag",
+            "matched_tokens": [
+              "20260802"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 26
           }
         },
         {
@@ -125010,46 +125283,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-          "vendor": "Coolsun / local automotive A/C supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "ac_hvac_retrofit",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-          "product_link": "",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -127138,6 +127371,46 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_turbocharger_matched_2h_20260717",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build",
+          "vendor": "Verified diesel turbo specialist / inspected package supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "turbocharger_powertrain",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "engine_health_goods_receipt_and_map_match_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|docs/2h-turbo-recommended-build-process-20260801.md",
+          "product_link": "",
+          "notes": "Controlled direction is the low-mount 2H CT26-flange manifold with a CT26-pattern TD05H 16G documented as 7 cm2 / approximately .49 A/R and internally wastegated. Before payment verify genuine identity, wheel and housing specifications, compressor map, actuator base pressure, flange, oil/coolant ports and clocking. Commission at 5-7 psi with baseline fuelling only after 2H-117299 health and vehicle-clearance gates; 8-10 psi requires separate written specialist release.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+            "caption": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build \u00b7 AC compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "ac_compressor",
+            "matched_tokens": [
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_turbo_egt_gauge_probe_20260717",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -127629,51 +127902,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "generic_part",
             "matched_tokens": [
               "part"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_turbocharger_matched_2h_20260717",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Matched wastegated turbocharger for Toyota 2H conservative road build",
-          "vendor": "Garrett authorised distributor / GCG Turbo / verified diesel turbo specialist",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "turbocharger_powertrain",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "engine_health_and_map_match_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-          "product_link": "",
-          "notes": "Select only after engine tests and mapped comparison at 4.0 L, intended rpm, ambient temperature, altitude and 5-7 psi initial target. GT2256/small-GT25 or compact HX30 sizing direction only; exact part number, compressor map, turbine housing, flange, wastegate setting and oil requirements must be approved as one package.",
-          "links": [
-            {
-              "url": "https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-              "label": "borgwarner.com"
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-            "caption": "Matched wastegated turbocharger for Toyota 2H conservative road build \u00b7 AC compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "ac_compressor",
-            "matched_tokens": [
-              "compressor"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -128949,6 +129177,46 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_power_steering_upgrade",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
+        "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "eps_vitz_upgrade",
+        "status_group": "in_process",
+        "status_detail": "researching",
+        "procurement_stage": "complete_set_identity_and_trial_fit_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|docs/chassis-welder-j80-steering-turbo-component-first-instruction-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
+        "product_link": "",
+        "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before turbo hot-side fabrication.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+          "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
+          "captured_date": "2026-08-02",
+          "captured_time": "12:02:20",
+          "media_type": "photo",
+          "component_group": "documentation_reference",
+          "specific_component": "reference_media",
+          "stage": "reference_material",
+          "media_id": "20260802_120220_gp_jD9H5Nag",
+          "matched_tokens": [
+            "20260802"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 26
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_rear_brake_line_cable_clips",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -129253,43 +129521,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_power_steering_upgrade",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package",
-        "vendor": "Land Cruiser specialist / J60 breaker / hydraulic steering rebuilder",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "eps_vitz_upgrade",
-        "status_group": "in_process",
-        "status_detail": "researching",
-        "procurement_stage": "complete_set_identity_and_trial_fit_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md|docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md",
-        "product_link": "",
-        "notes": "Approved route supersedes the earlier Vitz/Yaris EPS plan. Quote a complete identified RHD J60/HJ60 box, matched pitman, collapsible shaft/couplers and drag-link parts together with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. Do not release chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry is fixed before turbo hot-side fabrication.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Complete RHD J60/HJ60 hydraulic steering set plus Toyota 2H pump-drive package \u00b7 exact inventory image required",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -129500,6 +129731,51 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "generic_part",
           "matched_tokens": [
             "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents",
+        "vendor": "AL.Zain Mart / Daraz",
+        "amount": "4569",
+        "currency": "PKR",
+        "workstream": "ac_hvac_retrofit",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-08-02_four_ac_outlets_purchased|gmail_order_246057471480938",
+        "product_link": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+        "notes": "Daraz order 246057471480938 confirmed 2026-08-02 from AL.Zain Mart: purchased two line items of the selected 2 Grills variant at PKR 2199 each, giving four physical circular vents. Subtotal PKR 4398; shipping PKR 165; platform fee PKR 6; paid order total PKR 4569. Standard-delivery window 2026-08-05 through 2026-08-08. Inventory state is ordered quantity 4 / received quantity 0 until physically checked. Install the best-matched pair and retain the other pair as matched service spares. Listing identifies a chrome outer finish for Suzuki Cultus/Celerio 2017-2024 but does not publish trustworthy fabrication dimensions or prove solid metal construction; treat the silver surround as chrome-finish material pending receipt inspection. On arrival measure all four visible ODs, panel cutout/barrel ODs, retaining details, rear depths, neck/spigot IDs and ODs, shutoff and aiming range before releasing fascia apertures or duct adapters.",
+        "links": [
+          {
+            "url": "https://www.daraz.pk/products/suzuki-cultus-dashboard-ac-grill-side-grill-2018-2024-chrome-suzuki-cultus-2017-2024-avk-dashboard-ac-grill-vent-chrome-1-grill-pc-suzuki-cultus-celerio-side-ac-grill-sides-ac-wings-2017-2023-i607758031.html",
+            "label": "daraz.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
+          "caption": "Suzuki Cultus/Celerio circular chrome dashboard A/C grille outlets - 2-grille packs x2 / 4 physical vents \u00b7 rust/metal treatment reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "wax_grease_remover",
+          "matched_tokens": [
+            "rust"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -139073,46 +139349,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
-        "vendor": "Coolsun / local automotive A/C supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "ac_hvac_retrofit",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
-        "product_link": "",
-        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_hvac_trinary_switch_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -139804,6 +140040,46 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "generic_part",
           "matched_tokens": [
             "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_turbocharger_matched_2h_20260717",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build",
+        "vendor": "Verified diesel turbo specialist / inspected package supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "turbocharger_powertrain",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "engine_health_goods_receipt_and_map_match_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|docs/2h-turbo-recommended-build-process-20260801.md",
+        "product_link": "",
+        "notes": "Controlled direction is the low-mount 2H CT26-flange manifold with a CT26-pattern TD05H 16G documented as 7 cm2 / approximately .49 A/R and internally wastegated. Before payment verify genuine identity, wheel and housing specifications, compressor map, actuator base pressure, flange, oil/coolant ports and clocking. Commission at 5-7 psi with baseline fuelling only after 2H-117299 health and vehicle-clearance gates; 8-10 psi requires separate written specialist release.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "CT26-pattern TD05H 16G wastegated turbo for Toyota 2H-117299 conservative road build \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -140724,51 +141000,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "generic_part",
           "matched_tokens": [
             "part"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_turbocharger_matched_2h_20260717",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Matched wastegated turbocharger for Toyota 2H conservative road build",
-        "vendor": "Garrett authorised distributor / GCG Turbo / verified diesel turbo specialist",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "turbocharger_powertrain",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "engine_health_and_map_match_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/2h-turbo-suitability-and-options-20260717.md|https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-        "product_link": "",
-        "notes": "Select only after engine tests and mapped comparison at 4.0 L, intended rpm, ambient temperature, altitude and 5-7 psi initial target. GT2256/small-GT25 or compact HX30 sizing direction only; exact part number, compressor map, turbine housing, flange, wastegate setting and oil requirements must be approved as one package.",
-        "links": [
-          {
-            "url": "https://www.borgwarner.com/aftermarket/boosting-technologies/news/2022/05/20/matchbot-a-shortcut-method",
-            "label": "borgwarner.com"
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
-          "caption": "Matched wastegated turbocharger for Toyota 2H conservative road build \u00b7 AC compressor reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "ac_compressor",
-          "matched_tokens": [
-            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -147403,6 +147634,366 @@ window.J40_DASHBOARD_DATA = {
   },
   "images": [
     {
+      "media_id": "20260802_162842_gp_WqCKQt3g",
+      "file_name": "20260802_162842_gp_WqCKQt3g.jpg",
+      "path": "../../photos/20260802_162842_gp_WqCKQt3g.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:42",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_162831_gp_LhiuuNHQ",
+      "file_name": "20260802_162831_gp_LhiuuNHQ.jpg",
+      "path": "../../photos/20260802_162831_gp_LhiuuNHQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:31",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_162823_gp_SeAas27w",
+      "file_name": "20260802_162823_gp_SeAas27w.jpg",
+      "path": "../../photos/20260802_162823_gp_SeAas27w.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:23",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_162817_gp_CfqJ2n3g",
+      "file_name": "20260802_162817_gp_CfqJ2n3g.jpg",
+      "path": "../../photos/20260802_162817_gp_CfqJ2n3g.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:17",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_162808_gp_GOspt97A",
+      "file_name": "20260802_162808_gp_GOspt97A.jpg",
+      "path": "../../photos/20260802_162808_gp_GOspt97A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:08",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_155235_gp_DlyN5h5A",
+      "file_name": "20260802_155235_gp_DlyN5h5A.jpg",
+      "path": "../../photos/20260802_155235_gp_DlyN5h5A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:52:35",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_155201_gp_7kDxst8A",
+      "file_name": "20260802_155201_gp_7kDxst8A.jpg",
+      "path": "../../photos/20260802_155201_gp_7kDxst8A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:52:01",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_154850_gp_4l4LsrLw",
+      "file_name": "20260802_154850_gp_4l4LsrLw.jpg",
+      "path": "../../photos/20260802_154850_gp_4l4LsrLw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:48:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_150418_gp_o8BB8EXg",
+      "file_name": "20260802_150418_gp_o8BB8EXg.jpeg",
+      "path": "../../photos/20260802_150418_gp_o8BB8EXg.jpeg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:04:18",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_145316_gp_tJASS8hQ",
+      "file_name": "20260802_145316_gp_tJASS8hQ.jpg",
+      "path": "../../photos/20260802_145316_gp_tJASS8hQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:53:16",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_145305_gp_bepTxJOA",
+      "file_name": "20260802_145305_gp_bepTxJOA.jpg",
+      "path": "../../photos/20260802_145305_gp_bepTxJOA.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:53:05",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_145250_gp_4wxWxPmA",
+      "file_name": "20260802_145250_gp_4wxWxPmA.jpg",
+      "path": "../../photos/20260802_145250_gp_4wxWxPmA.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:52:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_122452_gp_AHwC1qEQ",
+      "file_name": "20260802_122452_gp_AHwC1qEQ.jpg",
+      "path": "../../photos/20260802_122452_gp_AHwC1qEQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:52",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_122442_gp_APOfsZEg",
+      "file_name": "20260802_122442_gp_APOfsZEg.jpg",
+      "path": "../../photos/20260802_122442_gp_APOfsZEg.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:42",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_122414_gp_Fp9lcwMw",
+      "file_name": "20260802_122414_gp_Fp9lcwMw.jpg",
+      "path": "../../photos/20260802_122414_gp_Fp9lcwMw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:14",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_122402_gp_4BGhxe7A",
+      "file_name": "20260802_122402_gp_4BGhxe7A.jpg",
+      "path": "../../photos/20260802_122402_gp_4BGhxe7A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:02",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121421_gp_gT43YL0w",
+      "file_name": "20260802_121421_gp_gT43YL0w.jpg",
+      "path": "../../photos/20260802_121421_gp_gT43YL0w.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:14:21",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121357_gp_54c9qu2A",
+      "file_name": "20260802_121357_gp_54c9qu2A.jpg",
+      "path": "../../photos/20260802_121357_gp_54c9qu2A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:57",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121347_gp_k2Hr70aQ",
+      "file_name": "20260802_121347_gp_k2Hr70aQ.jpg",
+      "path": "../../photos/20260802_121347_gp_k2Hr70aQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:47",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121335_gp_BTJcCLzQ",
+      "file_name": "20260802_121335_gp_BTJcCLzQ.jpg",
+      "path": "../../photos/20260802_121335_gp_BTJcCLzQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:35",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121320_gp_sziiQLMg",
+      "file_name": "20260802_121320_gp_sziiQLMg.jpg",
+      "path": "../../photos/20260802_121320_gp_sziiQLMg.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:20",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121315_gp_imxd3umw",
+      "file_name": "20260802_121315_gp_imxd3umw.jpg",
+      "path": "../../photos/20260802_121315_gp_imxd3umw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:15",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_121251_gp_14I3gJyw",
+      "file_name": "20260802_121251_gp_14I3gJyw.jpg",
+      "path": "../../photos/20260802_121251_gp_14I3gJyw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:12:51",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
+      "media_id": "20260802_120220_gp_jD9H5Nag",
+      "file_name": "20260802_120220_gp_jD9H5Nag.jpg",
+      "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:02:20",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    {
       "media_id": "20260723_055107_gp_e0sQOMzg",
       "file_name": "20260723_055107_gp_e0sQOMzg.jpg",
       "path": "../../photos/20260723_055107_gp_e0sQOMzg.jpg",
@@ -152392,10 +152983,10 @@ window.J40_DASHBOARD_DATA = {
       "component_group": "interior_cabin",
       "specific_component": "j40_removed_steering_column_set",
       "stage": "eps_vitz_upgrade",
-      "observed_state": "existing_column_interface_reference",
+      "observed_state": "removed_column_reference",
       "confidence": "high",
-      "tags": "j40|steering|steering_column|column_switch|wiring|hydraulic_steering|layout_reference",
-      "notes": "Google Photos May 12 removed J40 steering column/switch assembly; use as the vehicle-side reference when recording the column, collapsible shaft/coupler and wiring interfaces for the J60 hydraulic trial fit."
+      "tags": "j40|steering|steering_column|column_switch|wiring|eps_conversion|layout_reference",
+      "notes": "Google Photos May 12 removed J40 steering column/switch assembly; use as vehicle-side reference for EPS column graft planning, wiring cleanup, and upper-column retention decisions."
     },
     {
       "media_id": "20260512_205434_gp_QnE3tLvQ",
@@ -162623,8 +163214,8 @@ window.J40_DASHBOARD_DATA = {
       "source_date": "2026-04-17",
       "evidence_ref": "mcp_whatsapp_number_2_true_120363428021017660_g_us_ac524b3be32ae7c614a137b19418cc6d_190950068514824_lid|mcp_whatsapp_number_2_false_120363428021017660_g_us_ac657f3d5ae4187db81572147ff40f99_40265368764638_lid",
       "contact_refs": "atif_eps_vitz",
-      "summary": "Historical donor idea only. The 2026-07-19 decision replaced column EPS with a complete RHD J60/HJ60 hydraulic steering package and 2H-compatible pump drive.",
-      "next_action": "Do not scout or buy the EPS stack. Follow the J60 hydraulic complete-set identification, inspection/rebuild and vehicle trial-fit gate."
+      "summary": "Historical donor idea only. The active decision is a component-first RHD J60/HJ60 hydraulic steering upgrade, using the identified fitted J40-type gear as the interface baseline.",
+      "next_action": "Do not scout or buy the EPS or J80 stack. Acquire a complete matched RHD J60/HJ60 set for identification, inspection/rebuild and vehicle trial fit."
     },
     {
       "idea_id": "vitz_manual_ac_donor",
@@ -163317,7 +163908,6 @@ window.J40_DASHBOARD_DATA = {
       "dry_fit_repair_prime_paint",
       "engine_front_cooling_overview",
       "existing_charge_wiring_rework_required",
-      "existing_column_interface_reference",
       "existing_engine_input_identified_rework_required",
       "existing_engine_input_route_context",
       "existing_engine_input_unverified",
@@ -163409,6 +163999,7 @@ window.J40_DASHBOARD_DATA = {
       "refinished_off_vehicle",
       "refinished_off_vehicle_received",
       "remade_hold_down_springs_and_used_pins_fit_check_pending",
+      "removed_column_reference",
       "removed_from_fixture",
       "removed_from_fixture_side_view",
       "removed_from_vehicle",
@@ -172949,10 +173540,10 @@ window.J40_DASHBOARD_DATA = {
       "component_group": "interior_cabin",
       "specific_component": "j40_removed_steering_column_set",
       "stage": "eps_vitz_upgrade",
-      "observed_state": "existing_column_interface_reference",
+      "observed_state": "removed_column_reference",
       "confidence": "high",
-      "tags": "j40|steering|steering_column|column_switch|wiring|hydraulic_steering|layout_reference",
-      "notes": "Google Photos May 12 removed J40 steering column/switch assembly; use as the vehicle-side reference when recording the column, collapsible shaft/coupler and wiring interfaces for the J60 hydraulic trial fit."
+      "tags": "j40|steering|steering_column|column_switch|wiring|eps_conversion|layout_reference",
+      "notes": "Google Photos May 12 removed J40 steering column/switch assembly; use as vehicle-side reference for EPS column graft planning, wiring cleanup, and upper-column retention decisions."
     },
     "20260512_212929_gp_pnlr6x5w": {
       "media_id": "20260512_212929_gp_pnlr6x5w",
@@ -177925,6 +178516,366 @@ window.J40_DASHBOARD_DATA = {
       "path": "../../photos/20260723_055107_gp_e0sQOMzg.jpg",
       "captured_date": "2026-07-23",
       "captured_time": "05:51:07",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_120220_gp_jD9H5Nag": {
+      "media_id": "20260802_120220_gp_jD9H5Nag",
+      "file_name": "20260802_120220_gp_jD9H5Nag.jpg",
+      "path": "../../photos/20260802_120220_gp_jD9H5Nag.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:02:20",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121251_gp_14I3gJyw": {
+      "media_id": "20260802_121251_gp_14I3gJyw",
+      "file_name": "20260802_121251_gp_14I3gJyw.jpg",
+      "path": "../../photos/20260802_121251_gp_14I3gJyw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:12:51",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121315_gp_imxd3umw": {
+      "media_id": "20260802_121315_gp_imxd3umw",
+      "file_name": "20260802_121315_gp_imxd3umw.jpg",
+      "path": "../../photos/20260802_121315_gp_imxd3umw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:15",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121320_gp_sziiQLMg": {
+      "media_id": "20260802_121320_gp_sziiQLMg",
+      "file_name": "20260802_121320_gp_sziiQLMg.jpg",
+      "path": "../../photos/20260802_121320_gp_sziiQLMg.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:20",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121335_gp_BTJcCLzQ": {
+      "media_id": "20260802_121335_gp_BTJcCLzQ",
+      "file_name": "20260802_121335_gp_BTJcCLzQ.jpg",
+      "path": "../../photos/20260802_121335_gp_BTJcCLzQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:35",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121347_gp_k2Hr70aQ": {
+      "media_id": "20260802_121347_gp_k2Hr70aQ",
+      "file_name": "20260802_121347_gp_k2Hr70aQ.jpg",
+      "path": "../../photos/20260802_121347_gp_k2Hr70aQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:47",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121357_gp_54c9qu2A": {
+      "media_id": "20260802_121357_gp_54c9qu2A",
+      "file_name": "20260802_121357_gp_54c9qu2A.jpg",
+      "path": "../../photos/20260802_121357_gp_54c9qu2A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:13:57",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_121421_gp_gT43YL0w": {
+      "media_id": "20260802_121421_gp_gT43YL0w",
+      "file_name": "20260802_121421_gp_gT43YL0w.jpg",
+      "path": "../../photos/20260802_121421_gp_gT43YL0w.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:14:21",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_122402_gp_4BGhxe7A": {
+      "media_id": "20260802_122402_gp_4BGhxe7A",
+      "file_name": "20260802_122402_gp_4BGhxe7A.jpg",
+      "path": "../../photos/20260802_122402_gp_4BGhxe7A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:02",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_122414_gp_Fp9lcwMw": {
+      "media_id": "20260802_122414_gp_Fp9lcwMw",
+      "file_name": "20260802_122414_gp_Fp9lcwMw.jpg",
+      "path": "../../photos/20260802_122414_gp_Fp9lcwMw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:14",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_122442_gp_APOfsZEg": {
+      "media_id": "20260802_122442_gp_APOfsZEg",
+      "file_name": "20260802_122442_gp_APOfsZEg.jpg",
+      "path": "../../photos/20260802_122442_gp_APOfsZEg.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:42",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_122452_gp_AHwC1qEQ": {
+      "media_id": "20260802_122452_gp_AHwC1qEQ",
+      "file_name": "20260802_122452_gp_AHwC1qEQ.jpg",
+      "path": "../../photos/20260802_122452_gp_AHwC1qEQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "12:24:52",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_145250_gp_4wxWxPmA": {
+      "media_id": "20260802_145250_gp_4wxWxPmA",
+      "file_name": "20260802_145250_gp_4wxWxPmA.jpg",
+      "path": "../../photos/20260802_145250_gp_4wxWxPmA.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:52:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_145305_gp_bepTxJOA": {
+      "media_id": "20260802_145305_gp_bepTxJOA",
+      "file_name": "20260802_145305_gp_bepTxJOA.jpg",
+      "path": "../../photos/20260802_145305_gp_bepTxJOA.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:53:05",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_145316_gp_tJASS8hQ": {
+      "media_id": "20260802_145316_gp_tJASS8hQ",
+      "file_name": "20260802_145316_gp_tJASS8hQ.jpg",
+      "path": "../../photos/20260802_145316_gp_tJASS8hQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "14:53:16",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_150418_gp_o8BB8EXg": {
+      "media_id": "20260802_150418_gp_o8BB8EXg",
+      "file_name": "20260802_150418_gp_o8BB8EXg.jpeg",
+      "path": "../../photos/20260802_150418_gp_o8BB8EXg.jpeg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:04:18",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_154850_gp_4l4LsrLw": {
+      "media_id": "20260802_154850_gp_4l4LsrLw",
+      "file_name": "20260802_154850_gp_4l4LsrLw.jpg",
+      "path": "../../photos/20260802_154850_gp_4l4LsrLw.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:48:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_155201_gp_7kDxst8A": {
+      "media_id": "20260802_155201_gp_7kDxst8A",
+      "file_name": "20260802_155201_gp_7kDxst8A.jpg",
+      "path": "../../photos/20260802_155201_gp_7kDxst8A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:52:01",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_155235_gp_DlyN5h5A": {
+      "media_id": "20260802_155235_gp_DlyN5h5A",
+      "file_name": "20260802_155235_gp_DlyN5h5A.jpg",
+      "path": "../../photos/20260802_155235_gp_DlyN5h5A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "15:52:35",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_162808_gp_GOspt97A": {
+      "media_id": "20260802_162808_gp_GOspt97A",
+      "file_name": "20260802_162808_gp_GOspt97A.jpg",
+      "path": "../../photos/20260802_162808_gp_GOspt97A.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:08",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_162817_gp_CfqJ2n3g": {
+      "media_id": "20260802_162817_gp_CfqJ2n3g",
+      "file_name": "20260802_162817_gp_CfqJ2n3g.jpg",
+      "path": "../../photos/20260802_162817_gp_CfqJ2n3g.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:17",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_162823_gp_SeAas27w": {
+      "media_id": "20260802_162823_gp_SeAas27w",
+      "file_name": "20260802_162823_gp_SeAas27w.jpg",
+      "path": "../../photos/20260802_162823_gp_SeAas27w.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:23",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_162831_gp_LhiuuNHQ": {
+      "media_id": "20260802_162831_gp_LhiuuNHQ",
+      "file_name": "20260802_162831_gp_LhiuuNHQ.jpg",
+      "path": "../../photos/20260802_162831_gp_LhiuuNHQ.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:31",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260802_162842_gp_WqCKQt3g": {
+      "media_id": "20260802_162842_gp_WqCKQt3g",
+      "file_name": "20260802_162842_gp_WqCKQt3g.jpg",
+      "path": "../../photos/20260802_162842_gp_WqCKQt3g.jpg",
+      "captured_date": "2026-08-02",
+      "captured_time": "16:28:42",
       "media_type": "photo",
       "component_group": "documentation_reference",
       "specific_component": "reference_media",

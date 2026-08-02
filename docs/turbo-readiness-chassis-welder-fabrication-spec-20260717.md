@@ -5,7 +5,7 @@ Package: `turbo_readiness_chassis_rev_a`
 Owner: chassis/body welding workstream
 Status: released for inspection, measurement, cooling-stack structure and conditional vehicle-side provisions only
 
-> **Superseded as a current welder handout on 2026-07-19.** Do not send this detailed planning document to the chassis welder now. Use [chassis-welder-steering-turbo-component-first-instruction-20260719.md](chassis-welder-steering-turbo-component-first-instruction-20260719.md). The practical decision is to perform no conversion-specific welding until the complete J60 steering hardware and selected turbo/manifold components are physically present for trial fitting. Retain this document only as later engineering/inspection reference.
+> **Superseded as a current welder handout.** Do not send this detailed planning document or the J80 conversion sheet to the chassis welder. Measure the fitted late-J40 hydraulic baseline, then use [chassis-welder-steering-turbo-component-first-instruction-20260719.md](chassis-welder-steering-turbo-component-first-instruction-20260719.md) for the owner-confirmed J60/HJ60 upgrade. Perform no conversion welding until the actual J60 and selected turbo/manifold components are trial-fitted. Retain this document only as later engineering/inspection reference.
 
 ## 1. Purpose
 

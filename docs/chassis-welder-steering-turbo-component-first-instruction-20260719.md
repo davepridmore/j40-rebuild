@@ -1,5 +1,7 @@
 # J40 Chassis Welder Instruction — J60 Power Steering and 2H Turbo
 
+> **Reactivated 2026-08-02.** This is the active steering/turbo component-first instruction. The fitted late-J40 hydraulic gear is the measured baseline; the planned replacement is the RHD J60/HJ60 system. Do not use the superseded J80 sheet.
+
 Date: 2026-07-19
 Vehicle state: Toyota 2H engine installed; body/chassis access currently available
 Instruction status: **use this sheet now**

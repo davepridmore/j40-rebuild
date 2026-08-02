@@ -5794,10 +5794,10 @@
 
     return [
       {
-        id: "j60-hydraulic-steering",
-        title: "J60 Hydraulic Steering",
-        description: "Source a complete RHD J60/HJ60 box-side set and 2H pump-drive set; inspect/rebuild and physically trial-fit before any chassis fabrication or final hoses.",
-        chips: ["RHD complete set", "Trial-fit before fabrication", "Steering before turbo"],
+        id: "j80-hydraulic-steering",
+        title: "J80 Hydraulic Steering",
+        description: "Source the exact RHD J80 box with its matched pitman, shaft/couplers and linkage solution plus a 2H pump-drive set; inspect/rebuild and physically trial-fit before chassis fabrication or final hoses.",
+        chips: ["Exact RHD J80 set", "Trial-fit before fabrication", "Battery/steering envelope first"],
         parts: steeringParts,
         marketSpecs: attachScoutImage(
           dedupeScoutRows(steeringMarketSpecs),
@@ -9906,7 +9906,7 @@
       ["01", "Record the as-fitted baseline", "Confirm and photograph the 2H identity, engine number, injection-pump tag, oil-filter housing, sump, manifolds, engine mounts, steering, A/C and bonnet structure. Record a no-boost road baseline for smoke, coolant temperature and oil pressure."],
       ["02", "Pass the engine-health gate", "Warm the engine fully. Record all six compression readings, hot oil pressure at idle and test rpm, measured blow-by, cooling-system pressure/flow, injector pattern and pump condition. Stop for a weak cylinder, low oil pressure, heavy blow-by, overheating, injector dribble or unresolved smoke."],
       ["03", "Freeze the available package", "Reserve the 2H-specific low-mount CT26-flange manifold and the CT26-pattern TD05H 16G with 7 cm² / .49 A/R turbine housing and internal wastegate. Verify the actual supplied flange, wheel specification, actuator pressure, oil ports, coolant ports, clocking range and genuine serial/part markings before payment."],
-      ["04", "Establish steering and body datums", "Fit or hard-mock the final J60 hydraulic steering box, shaft, pump and hoses. Fit the engine on final mounts, refit wings and bonnet, and mark the bonnet inner-brace envelope. Turbo packaging follows these fixed datums."],
+      ["04", "Establish steering and body datums", "Fit or hard-mock the exact RHD J80 hydraulic steering box, matched pitman/linkage, collapsible shaft, 2H pump and hose envelopes. Keep the battery in its photographed orientation unless a separate measured 90-degree fit card passes. Fit the engine on final mounts, refit wings and bonnet, and mark the bonnet inner-brace envelope. Turbo packaging follows these fixed datums."],
       ["05", "Mock the complete hot side", "Bolt the low-mount manifold and turbo together using temporary hardware. Add the wastegate actuator, compressor elbow, proposed downpipe first bend and removable air-gap heat shield. Clock the housings without loading the centre housing or actuator linkage."],
       ["06", "Prove clearance before fabrication", "Close the bonnet gently over clay markers. Prove approximately 25 mm minimum static clearance after heat shielding, plus engine-roll allowance. Check wing, steering, A/C, starter, oil filter, wiring, brake/clutch/fuel lines and tool access. Relocate the round air cleaner; do not cut the bonnet until every lower-position alternative has failed."],
       ["07", "Build lubrication and optional coolant routes", "Measure the selected oil-gallery source and follow the turbo supplier's feed/restrictor requirement. Build a large-bore gravity drain with continuous fall into a sump bung above normal oil level; remove and clean the sump for welding. Plumb coolant only if the exact centre housing requires it, without creating an air trap."],

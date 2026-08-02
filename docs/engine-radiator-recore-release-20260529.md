@@ -8,7 +8,7 @@ Use the old engine radiator as the master pattern and send it with Amir to a rad
 
 1. If the tanks, filler neck, hose necks, drain, and mounting brackets are sound: recore the original radiator with a new heavy-duty copper/brass core.
 2. If the tanks, necks, or brackets are weak, cracked, plastic, badly corroded, or poorly repaired: build a complete new copper/brass radiator from the old radiator as the pattern.
-3. Do not buy a random FJ40/BJ40/HJ47 radiator by listing photo alone. The fitted 2H/HJ47-style hose layout, fan clearance, cap position, and bracket locations control the part.
+3. Do not buy a random FJ40/BJ40/HJ47 radiator by listing photo alone. The actual `2H-117299` hose layout, fan clearance, cap position, and bracket locations control the part; HJ47/2H references are relevant comparison leads, but the removed sample still controls this converted vehicle.
 
 Important fitment finding: the front-of-car fabrication is required to keep the radiator properly located in the vehicle. The extra fabricated support leg on the old radiator is evidence that the radiator was not installed correctly. Use the old radiator for hose-neck, tank, cap, drain, core-envelope, and bracket-location reference, but do not blindly copy the extra leg as the final support design. Final installation should sit on the proper lower pads and side/top mounts; if the vehicle-side mounts are missing, bent, or misaligned, fix the vehicle bracket/retention separately.
 
@@ -32,7 +32,7 @@ Payment/release is blocked until Amir sends the required video evidence in [amir
 Amir should give the shop the old radiator and ask for this exact scope:
 
 ```text
-Please pressure-test and flow-test this engine radiator. Use it as the exact pattern for a 1978 Toyota Land Cruiser J40 with 2H/HJ47-style cooling layout.
+Please pressure-test and flow-test this engine radiator. Use the actual removed radiator and measured `2H-117299` engine interfaces as the exact pattern for this converted 1978 Toyota Land Cruiser J40; use 2H/HJ47 catalog data as a cross-check, not a substitute for the sample.
 
 If the tanks, filler neck, hose necks, drain, and brackets are reusable, recore it with a new heavy-duty copper/brass core. If any tank/neck/bracket is not reliable, quote a complete new copper/brass radiator made from this sample.
 

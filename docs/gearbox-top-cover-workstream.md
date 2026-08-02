@@ -34,7 +34,7 @@ Out of scope unless inspection fails: full geartrain teardown, synchro replaceme
 
 | Evidence | Use |
 | --- | --- |
-| `mcp_whatsapp_j40_messages.csv:1797` | TLC 40 Series Owners message on 2026-05-17 says the J40 has a 2H engine with 5-speed gear and was sold by Jahanzeb; treat H55F as the gearbox candidate until case/top-cover marks prove otherwise. |
+| `mcp_whatsapp_j40_messages.csv:1797` plus existing whole-assembly gearbox photographs | TLC 40 Series Owners message on 2026-05-17 and the owner establish five forward gears; the photographs show the Toyota H41/H55F-family case and transfer-adaptor layout. Together these identify H55F with high confidence, although no unique assembly serial is readable. |
 | `docs/parts-list-cleanup-decisions-20260504.md` | Source instruction to split gearbox top-cover service into its own workstream and inspect/repair/replace the poor top cover before buying service parts. |
 | [20260430_215915_gp_ycQ395Gg.jpg](../photos/20260430_215915_gp_ycQ395Gg.jpg) | Gearbox/bellhousing case and clutch-linkage area context. |
 | [20260430_215939_gp_EjZ7u1ow.jpg](../photos/20260430_215939_gp_EjZ7u1ow.jpg) | Bellhousing/gearbox case, linkage, wiring, and route context. |
@@ -44,8 +44,10 @@ Out of scope unless inspection fails: full geartrain teardown, synchro replaceme
 | [20260512_072812_gp_gZLxKAXA.jpg](../photos/20260512_072812_gp_gZLxKAXA.jpg) | Gearbox/powertrain underside view for cleaning baseline and leak-source inspection. |
 | [20260512_072817_gp_MkI6uZkA.jpg](../photos/20260512_072817_gp_MkI6uZkA.jpg) | Transmission/transfer and chassis-rail underside view. |
 | [20260512_073344_gp_EH3pnE2Q.jpg](../photos/20260512_073344_gp_EH3pnE2Q.jpg) | Gearbox/transmission case close-up for degreasing baseline and leak/seal inspection. |
+| [20260802_155201_gp_7kDxst8A.jpg](../photos/20260802_155201_gp_7kDxst8A.jpg) | Close view of the fitted transmission housing showing the raised `BYD` casting mark. |
+| [20260802_155235_gp_DlyN5h5A.jpg](../photos/20260802_155235_gp_DlyN5h5A.jpg) | Clearer transmission-housing view showing raised `BYD` with a separate raised `3`. These are recorded as casting/foundry identifiers, not a stamped serial or confirmed gearbox model code. |
 
-Current evidence is enough to justify opening a controlled workstream, but not enough to release parts. A top-side close-up capture pack is still required.
+The accumulated photographs identify the housing as the Toyota H41/H55F family, and confirmed five-forward-speed operation distinguishes it as H55F with high confidence. `33111`, `BYD`, and `3` are casting/part marks rather than a unique stamped assembly serial. Release H55F oil-service consumables, but keep replacement top-cover/shift-tower parts on a physical-match hold until the exact cover casting, bolt pattern, shift-tower layout and transfer-lever arrangement are recorded.
 
 ## Timing
 

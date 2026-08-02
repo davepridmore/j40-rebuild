@@ -1,30 +1,64 @@
-# Toyota 2H Low-Mount Turbo — Controlled Build Process
+# Toyota 2H (Serial 117299) Low-Mount Turbo — Controlled Build Process
+
+> **Identity update 2026-08-02:** the owner-supplied block-stamp photograph shows `2H 117299`. Record the fitted engine as `2H-117299`; continue to measure all as-fitted interfaces because this is a converted J40.
 
 ## Released Package Direction
 
-Plan on the recommended hardware being available:
+Plan around this controlled starting direction:
 
-- Toyota `2H`-specific **low-mount** exhaust manifold;
-- `CT26` four-bolt turbo mounting pattern;
-- compact `TD05H 16G` turbo with `7 cm² / .49 A/R` turbine housing;
+- a Toyota `2H`-specific low-mount exhaust manifold;
+- a CT26 four-bolt turbo mounting pattern;
+- a compact CT26-pattern `TD05H 16G` with documented `7 cm² / approximately .49 A/R` turbine housing;
 - internal mechanical wastegate;
-- `5-7 psi` initial boost calibration;
+- `5-7 psi` initial calibration at baseline fuelling;
 - intercooling and pre-turbine EGT, boost, oil-pressure and coolant-temperature monitoring.
 
-This releases a package direction, not blind bolt-in fit. The manifold-to-head and turbo-to-manifold interfaces have strong documented fit support. Steering, bonnet, wing, air-cleaner, A/C, downpipe, oil-drain, heat and service clearances remain physical verification points on this converted J40.
+This releases a package direction, not blind bolt-in fit. The 2H head/manifold, intake, oil gallery, sump, steering, bonnet, air-cleaner, A/C, downpipe, heat and service interfaces all require physical verification on this converted J40.
+
+## Visual Build Sequence
+
+> **Illustrative planning aids only — not dimensional drawings or evidence of fit.** The generated images below communicate inspection order, packaging intent and commissioning discipline. The actual supplied components, right-hand-drive steering conversion, engine position, body panels, cooling pack and service envelopes control the build.
+
+### 1. Inspect and identify the complete package
+
+![Illustrative workbench inspection of the low-mount manifold, compact internally wastegated turbo and connection hardware](images/turbo-2h-controlled-build/01-package-receipt-inspection.png)
+
+Use this layout discipline for Stage 3: keep every part visible, measure both sides of each interface, photograph markings and record the actuator, clocking and oil/coolant-port details. The image is not proof of a specific flange, runner count, housing or supplied-part identity; verify the physical package against the written Gate G2 checks.
+
+### 2. Mock the complete vehicle before permanent fabrication
+
+![Illustrative engine-bay mock-up showing the steering, low-mounted turbo, downpipe route, body datums and clay-clearance checks](images/turbo-2h-controlled-build/02-full-engine-bay-mockup.png)
+
+Use this as the Stage 4–6 relationship check: final steering geometry first; then manifold, turbo, supported downpipe, heat shielding, air cleaner and charge route; then bonnet/body closure and engine-roll allowance. It does not release the pictured pipe routes or bracket positions.
+
+### 2A. Add every known component before choosing relocations
+
+![Near-side engine-bay packaging study with the real round air cleaner, Rev H radiator pack, chassis-supported battery and separate protected electrical mounts](images/turbo-2h-controlled-build/06-real-components-rev-h-packaging-near-side.png)
+
+![Opposite-side companion view of the same real-component Rev H packaging study](images/turbo-2h-controlled-build/07-real-components-rev-h-packaging-opposite-side.png)
+
+Use these paired views with the [engine-bay component relocation matrix](../data/manual/fabrication/turbo_packaging_rev_a/engine_bay_component_relocation_matrix.csv). They show the current black round steel air cleaner in a provisional relocated envelope; the Rev H engine-side radiator, full-face shroud and retained mechanical puller; the DLS120 battery on its chassis-supported steel stand with only the cutoff/breaker beside it; and Relay Rev D/MIDI Rev D as separate closed, staggered high/rear packages. The unused compact-air-cleaner alternative and provisional side/wing cooler have been removed. For this visual direction, charge cooling is contained in the hidden grille-side Rev H stack with the A/C condenser and two pushers. Steering is frozen before turbo/downpipe work.
+
+These images are intentionally crowded so omissions become obvious. The photographed component forms improve recognition, but their pictured positions remain conceptual and non-dimensional. Measure the real hardware and record service removal, tool sweep, hose/cable bend and engine/steering movement before choosing a destination or releasing fabrication.
+
+### 3. Commission statically with monitoring before road load
+
+![Illustrative static commissioning setup with the vehicle chocked, engine bay open and monitoring equipment in use](images/turbo-2h-controlled-build/03-static-commissioning.png)
+
+Use this as the Stage 10–12 process cue: calibrated EGT, boost, oil-pressure and coolant-temperature monitoring must work before fuelling changes; prime and leak-test at baseline fuel; heat-cycle and inspect; then begin controlled `5-7 psi` validation. The pictured gauge panel is illustrative and does not define the final instrument count, ranges or mounting position.
 
 ## Non-Negotiable Build Rules
 
 1. Do not alter fuelling before the complete air, oil, exhaust, cooling and monitoring systems pass static tests.
-2. Do not fabricate the hot side until the final J60 hydraulic-steering envelope is fitted or hard-mocked.
+2. Do not fabricate the hot side or lock the battery-carrier position until the planned RHD J60/HJ60 hydraulic-steering box, shaft, linkage and hose envelopes are fitted or hard-mocked.
 3. Do not weld the sump in place. Remove it, weld the drain bung above normal oil level, clean it completely and refit it with a verified seal.
 4. Do not support the exhaust from the turbo or manifold. Use independent brackets/hangers and flex provision.
 5. Do not cut or bulge the bonnet as the first packaging solution. Keep the turbo low, relocate the air cleaner, re-clock housings and revise pipe routes first.
-6. Do not begin at `8-10 psi`. Commission at `5-7 psi`; higher boost requires logged evidence and a new release decision.
+6. Commission within `5-7 psi` at baseline fuelling. Any move toward `8-10 psi` requires logged evidence and a new written engine-builder/diesel-specialist release.
 
 ## Stage 1 — Identify and Record the Baseline
 
-1. Photograph the 2H engine number/code, injection-pump tag, injector type, manifold face, oil-filter housing, vacuum-pump arrangement, sump and both sides of the fitted engine.
+1. Record the supplied stamp photograph as `2H-117299`, then photograph relevant block/head castings, injection-pump tag, injector type, manifold face, oil-filter housing, vacuum-pump arrangement, sump and both sides of the fitted engine.
 2. Confirm the engine is on its final mounts and record mount condition.
 3. Record the installed steering, A/C compressor and hose envelope, starter, alternator, battery, brake/clutch hydraulics, fuel lines and wiring routes.
 4. Photograph the bonnet inner reinforcement and wing geometry with the engine bay assembled.
@@ -48,11 +82,11 @@ This releases a package direction, not blind bolt-in fit. The manifold-to-head a
 
 At goods receipt, confirm rather than infer:
 
-- manifold is specifically for the Toyota 2H head and is the low-mount version;
-- turbo inlet and manifold use the same CT26 four-bolt pattern;
-- turbo is TD05H with the ordered 16G compressor specification;
-- turbine housing is marked/documented as `7 cm²` or approximately `.49 A/R`;
-- wastegate is internal, moves freely and has a documented base pressure compatible with the `5-7 psi` start target;
+- manifold is specifically for the measured Toyota 2H head ports and stud pattern and is the low-mount version;
+- the physical turbine inlet and manifold use the same CT26 four-bolt pattern;
+- turbo is documented as TD05H with the ordered 16G compressor and `7 cm² / approximately .49 A/R` turbine specification;
+- compressor and turbine maps/documentation cover the 2H commissioning demand and intended duty;
+- wastegate is internal, moves freely and has a base pressure compatible with the `5-7 psi` initial target;
 - compressor and turbine housings can be clocked without compromising centre-housing orientation or actuator operation;
 - oil feed/drain threads and coolant-port requirements are identified;
 - turbine outlet, gaskets, studs and downpipe interface are physically measured;
@@ -62,7 +96,7 @@ At goods receipt, confirm rather than infer:
 
 ## Stage 4 — Establish Fixed Vehicle Datums
 
-1. Fit or hard-mock the final J60 steering box, column/shaft, pump, brackets and pressure/return hose envelopes.
+1. Measure the fitted Toyoda Koki late-40-Series factory-type hydraulic gear as the baseline, then fit or hard-mock the selected RHD J60/HJ60 box, matched pitman/linkage, collapsible shaft/couplers, physically verified 2H pump/bracket/pulley drive, and pressure/return hose envelopes. Match measured pump flow, pressure and relief to the selected J60 box.
 2. Fit the engine and gearbox on final mounts.
 3. Refit the relevant wing panels and bonnet with the real hinges, catches and bump rubbers.
 4. Mark the bonnet reinforcement, steering, engine-movement and service-tool envelopes.
@@ -151,15 +185,15 @@ Use a fused ignition-switched branch, clean grounds, protected sender wiring, co
 
 **Gate G5:** Static integrity, monitoring and heat-cycle checks must all pass before road load.
 
-## Stage 12 — Commission at 5–7 PSI
+## Stage 12 — Commission Within 3–5 PSI
 
-1. Verify the mechanical wastegate limits boost to the initial `5-7 psi` range.
+1. Verify the mechanical wastegate limits boost to the `5-7 psi` commissioning range.
 2. Begin with short, low-load runs and progress load in defined steps.
 3. Log engine speed/load condition, boost, pre-turbine EGT, coolant temperature, hot oil pressure and visible smoke at each step.
 4. Stop for unstable/creeping boost, excessive smoke, EGT or coolant rise, oil-pressure loss, leakage, abnormal noise, pipe/body contact or clutch slip.
 5. Reinspect and heat-cycle after the first loaded run and again after the initial road-validation period.
 6. Permit small diesel-specialist pump adjustments only after baseline logs are stable and the charge system is leak-free.
-7. Do not approve `8-10 psi` from seat-of-the-pants impressions. It requires clean logged thermal/lubrication/smoke results, acceptable exhaust drive pressure where measured, and clutch/driveline acceptance.
+7. Do not exceed `5 psi` from seat-of-the-pants impressions. Any increase requires clean logged thermal/lubrication/smoke results, acceptable exhaust drive pressure, head-sealing assessment, clutch/driveline acceptance and a new written engine-builder release.
 
 **Gate G6:** Road release is limited to the proven configuration and recorded `5-7 psi` calibration.
 

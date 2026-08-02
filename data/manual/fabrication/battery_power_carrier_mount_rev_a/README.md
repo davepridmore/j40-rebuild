@@ -4,14 +4,22 @@
 
 This package defines the battery-side power carrier as a compact steel stand that bolts to a formed chassis saddle, then reaches toward the body/wing side through configurable slotted offset bars. The tray and electrical access ladder can be set around the current `190 mm` outboard target while keeping a `160-230 mm` offset adjustment range for dry-fit.
 
+## Battery Orientation Decision — 2026-08-02
+
+- The May 17 ruler photographs support an approximate DLS120 case footprint of `300 x 205 mm`. In its current/as-photographed orientation it is contained by the proposed `340 x 265 mm` tray, leaving `40 mm` and `60 mm` total plan allowance across the two axes before hold-downs and edge stops.
+- Rotating only the battery 90 degrees on the unchanged tray is rejected: the rotated `205 x 300 mm` footprint exceeds the tray's `265 mm` short side by `35 mm`.
+- Rotating the **whole tray/carrier** would create an approximately `265 x 340 mm` bay demand. The photographs do **not** provide the two-axis installed cavity, bonnet, terminal/cable, hold-down, lift-out or J80 steering-corridor measurements needed to approve that alternative.
+- Keep the battery and tray in the current/as-photographed orientation as the packaging baseline. Whole-carrier rotation is a **measurement hold**, not a confirmed fit.
+- Before locking the offset bars or drilling the tray, record front-rear and inboard-outboard clear rectangles at tray level, case-top level and terminal/cable level; then check a `265 x 340 mm` whole-carrier card, hold-down access, cable bend radius, vertical lift-out, bonnet clay clearance, and the J80 steering box/shaft/port/hose service envelope.
+
 ## Design Intent
 
 - Mount the stand from the known chassis pickup with a formed saddle over the chassis rail, upright bridge plates, and body-side adjustable offset bars rather than a fixed one-piece sideways carrier.
-- Support the installed Daewoo DLS120 battery measured in the May 17 ruler photos on the `340 x 265 mm` tray with removable hold-down and vertical lift-out clearance. Keep the previous standard N70/27-class `318 x 180 x 230 mm` envelope only as a comparison until the final case and terminal dimensions are transcribed into `component_layout.csv`.
+- Support the installed Daewoo DLS120 battery, approximately `300 x 205 mm` in plan from the May 17 ruler photos, on the `340 x 265 mm` tray with removable hold-down and vertical lift-out clearance. Case/terminal height remains a direct-measurement hold; the previous standard N70/27-class `318 x 180 x 230 mm` envelope is comparison only.
 - Use the simplified Relay Rev D fabrication on the outboard/access edge: mount the `360 x 245 x 3 mm` aluminium base vertically and flat to the main metal service sheet, then place the exact `300 x 197 mm` insulating sheet and existing covered relay box on that vertical base.
 - Use the MIDI Rev D hinged aluminium enclosure on the top/front shelf: `210 x 165 x 65 mm` enclosure floor, `230 x 185 mm` lid, `140 x 85 mm` insulating subplate, fuse 4 input grommet, five output grommets, and an enlarged far-side output grommet for two power cables.
 - Keep the 100A breaker/cutoff beside the MIDI enclosure, with the far-side cutoff stud fed from the battery and the near-side switched stud splitting to relay and MIDI.
-- Keep the inboard engine/LHD steering side as a service and clearance envelope except for protected cable clips or pass-through routing.
+- Keep the inboard engine/RHD J80 steering side and the lower chassis-rail corridor as a service and clearance envelope except for protected cable clips or pass-through routing.
 
 ## Chassis Offset
 
@@ -39,7 +47,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 ## Mock-Up Hold
 
 - Make cardboard cards from the May 17 actual battery measurements, the `340 x 265 mm` tray, formed saddle, adjustable offset bars at `160 / 190 / 230 mm`, Relay Rev D vertical base attached flat to the main sheet plus relay cover/removal volume, MIDI Rev D hinged enclosure with lid swing, cutoff base/guard, and cable-lug sweep blocks.
-- Test the whole tray/access-ladder assembly shifted toward the wing-side edge cavity from the chassis saddle. Reject any placement that enters the engine/LHD steering shaft/box/service sweep, hydraulic line path, alternator service space, bonnet clearance, radiator/fan envelope, or safe battery terminal service area.
+- Test the whole tray/access-ladder assembly shifted toward the wing-side edge cavity from the chassis saddle. Reject any placement that enters the engine/RHD J80 steering shaft/box/pitman/service sweep, hydraulic port/line path, alternator service space, bonnet clearance, radiator/fan envelope, or safe battery terminal service area.
 - Do not final-drill the chassis saddle, offset bars, relay base, MIDI enclosure, or cutoff tab until the filled cavity map and installed dry-fit photos prove service access with the battery installed.
 
 ## 3D Visualisation

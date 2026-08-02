@@ -7,7 +7,7 @@ This document defines the intended end-state of the J40 as a vehicle, not just a
 ## Design Position
 
 - Vehicle: 1978 Toyota Land Cruiser J40
-- Chat-confirmed basis: ex-military J40, converted to diesel, Toyota 2H engine, 5-speed gearbox, previously associated with/sold by Jahanzeb.
+- Current controlled basis: ex-military J40 converted to diesel, with the fitted engine positively identified from the owner-supplied block-stamp photograph as Toyota `2H`, serial `117299` (`2H-117299`): 3,980 cc, inline-six, 12-valve OHV, naturally aspirated diesel. Classify the fitted gearbox as Toyota `H55F` five-speed with high confidence: the existing whole-assembly photographs show the Toyota H41/H55F-family case and transfer-adaptor layout, while owner confirmation and the earlier WhatsApp/video record establish five forward gears. A unique gearbox assembly serial has not been captured; visible `33111`, `BYD`, and separate `3` marks are casting/part marks, not a serial. The August 2 steering photographs identify the as-fitted unit by housing, valve-head, port, sector-shaft, pitman-arm and pedestal-mount geometry as a Toyoda Koki late-40-Series factory-type hydraulic steering gear with high confidence. It is not original as-built equipment for this 1978 chassis, but is consistent with a later J40-family retrofit; the raised `25050` is a casting identifier, not a serial or complete Toyota service number. Exact `44110-xxxxx` identity remains unconfirmed.
 - Design mode: OE-adjacent restoration with selective usability upgrades
 - Intended use: reliable road-going classic 4x4 with improved drivability, lower cabin noise, cleaner wiring, and a more coherent interior
 - Design rule: preserve the character of the truck while removing obvious hacks, noise, water ingress, and avoidable drivability pain
@@ -18,6 +18,7 @@ Evidence basis:
 - `mcp_whatsapp_j40_messages.csv:1781` / `2026-05-17T11:06:16Z`, TLC 40 Series Owners: group member says it belonged to Jahanzaib from Lahore.
 - `mcp_whatsapp_j40_messages.csv:1797` / `2026-05-17T11:47:47Z`, TLC 40 Series Owners: group member says "Your J40 has 2h engine with 5 speed gear. It was sold by Jahanzeb".
 - `mcp_whatsapp_j40_messages.csv:1802` / `2026-05-17T12:10:28Z`, TLC 40 Series Owners: group member says Jahanzeb left the group after selling it.
+- Owner-supplied block-stamp photograph received 2026-08-02 shows the `2H` engine code followed by serial `117299`. Record the engine as `2H-117299`. The supplied description places it in early-to-mid-1980s production, but no factory serial-to-date record is held in the project, so the build year remains an estimate rather than a procurement datum.
 
 ## Design North Star
 
@@ -88,6 +89,7 @@ Design interpretation:
 - current bias is toward keeping the existing engine
 - mechanical baseline should deliver confidence, not necessarily originality purity
 - replacement-engine thinking remains exploratory and off the current baseline path
+- use Toyota 2H workshop data and the measured as-fitted interfaces for engine-specific service parts, brackets, hoses and turbo hardware; the serial confirms the engine family but does not by itself prove every accessory or conversion interface
 
 ### 4. Steering, Brakes, and Ride
 
@@ -100,11 +102,11 @@ Proposed design hierarchy:
 1. steering rebuild and wear-item correction
 2. ordered Ironman Foamcell kit content check and suspension installation
 3. brake baseline
-4. RHD J60/HJ60 hydraulic power-steering conversion using a component-in-hand frame plate, shaft, linkage and 2H pump package
+4. replace the fitted late-40-Series factory-type hydraulic gear with a component-in-hand RHD J60/HJ60 steering-box upgrade, matched pitman/linkage and collapsible shaft; retain the current unit as the as-fitted baseline and match the 2H pump drive, reservoir and hoses to the selected J60 box
 5. final ride-height, caster, and alignment validation
 
 Design interpretation:
-- power steering is a real design goal, not just a repair item; the active route is a RHD J60/HJ60 hydraulic steering-box conversion with a 2H-compatible pump, superseding the prior column-EPS plan
+- power steering is already present as a later J40-family factory-type retrofit, but the planned upgrade remains a RHD J60/HJ60 hydraulic box conversion. The current box identification establishes the baseline; it does not cancel the J60 plan. The J80 route is superseded
 - the Ironman Foamcell kit is now the suspension baseline
 - front disc brakes fit the “usable classic” direction
 - full spring / 4-link conversion is explicitly outside the baseline design
@@ -201,8 +203,9 @@ In practical terms, that means:
 | Body restoration | Repair removable panels individually to a consistent standard | `proposed` |
 | Roof | Remove, correct channels/water issues, refinish properly | `proposed` |
 | Chassis/floor | Repair and protect before finish layers | `proposed` |
-| Engine | Keep current engine pending inspection evidence | `proposed` |
-| Steering | Rebuild baseline, pursue column-assist EPS through the General EPS Adapter route if packaging validates | `proposed` |
+| Engine | Retain and baseline Toyota `2H-117299`, 3,980 cc naturally aspirated inline-six diesel; use the stamp photo as identity evidence and measure all conversion interfaces | `identified_health_gate` |
+| Turbo | Pursue the 2H low-mount CT26-flange / CT26-pattern TD05H 16G direction only after engine-health, goods-receipt and vehicle-clearance gates; commission at `5-7 psi` | `conditional_package_direction` |
+| Steering | Baseline is the fitted Toyoda Koki late-40-Series factory-type hydraulic gear, exact service number open. Planned upgrade is a component-first RHD J60/HJ60 box, matched pitman/linkage and collapsible shaft with a measured, pressure/flow-matched 2H pump circuit; J80 is superseded | `j60_upgrade_component_gate` |
 | Brakes | Upgrade toward more confidence-inspiring road use | `proposed` |
 | Suspension | Ironman Foamcell kit ordered; track two shipments and validate fitment | `ordered` |
 | Full suspension conversion | Out of baseline scope | `deferred` |
@@ -239,7 +242,7 @@ In practical terms, that means:
 
 - What visual finish direction is intended for the exterior: preserve current palette, return to stock-adjacent color, or choose a new classic-appropriate finish?
 - Are bench seats actually wanted after packaging/ergonomics review, or just being considered?
-- Does the General EPS Adapter mock-up prove electric assist is safe/serviceable enough to proceed, or should the project fall back to rebuilt manual steering plus geometry cleanup?
+- Which exact RHD J60/HJ60 box, pitman arm, shaft/couplers and measured drag-link solution will be acquired, and how do they overlay the identified fitted J40-type gear and chassis interfaces?
 - Does the truck want a discreet hidden modern screen, or would a more period dashboard treatment be better?
 - What is the acceptable line between OE-adjacent and modernized in visible cabin elements?
 
@@ -250,4 +253,4 @@ In practical terms, that means:
 3. Decide whether the interior target is bench-seat based or current-seat based.
 4. Create a paint and finish brief once more body evidence is available.
 5. Create a wiring architecture sheet once the strip-down exposes the actual live circuits.
-6. Create a steering/brake decision memo after baseline inspection, including General EPS Adapter mock-up evidence before any irreversible steering fabrication.
+6. Complete the fitted J40-type hydraulic-gear interface survey, then acquire and bench-inspect the complete matched RHD J60/HJ60 conversion set before releasing any chassis, linkage or hose fabrication.

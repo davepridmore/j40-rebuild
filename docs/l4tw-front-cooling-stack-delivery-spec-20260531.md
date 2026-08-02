@@ -1,5 +1,7 @@
 # L4TW Front Cooling Stack Delivery Specification - 2026-05-31
 
+> **SUPERSEDED — DO NOT BUILD OR PURCHASE TO THIS LAYOUT:** The current controlled source is the [Rev F integrated cooling-pack specification](J40-integrated-cooling-pack-fabricator-specification-rev-c.md). It requires exactly two centred front electric pushers plus the retained rear engine-driven mechanical puller, with no fourth/additional fan without a new controlled revision. Relay Rev D and MIDI Rev D share one removable protected plate fixed only to structural cooling-stack carrier metal, outside active fin/sealed airflow; the master cutoff remains battery-side. This document is historical supplier/delivery context only.
+
 Purpose: define the specific delivery requirements for the J40/2H front cooling stack and A/C front pack. This is the build target for the fabricator and A/C shop; price is secondary to fit, cooling performance, serviceability, and evidence.
 
 Fabrication package: [front_cooling_stack_rev_a](../data/manual/fabrication/front_cooling_stack_rev_a/README.md)

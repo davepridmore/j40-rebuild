@@ -1,6 +1,6 @@
 # Yaris-First EPS Kit Market Checklist (Bilal Ganj / Montgomery Road)
 
-> **Superseded 2026-07-19 — do not use for purchasing.** The active route is the RHD J60/HJ60 hydraulic conversion in [j60-hydraulic-power-steering-conversion-plan-20260719.md](j60-hydraulic-power-steering-conversion-plan-20260719.md).
+> **Superseded — do not use for purchasing.** The active route is the component-first RHD J60/HJ60 hydraulic upgrade recorded in [j60-hydraulic-power-steering-conversion-plan-20260719.md](j60-hydraulic-power-steering-conversion-plan-20260719.md), using the fitted late-J40 hydraulic unit as the measured baseline; do not scout EPS or J80 conversion parts.
 
 Date: 2026-05-22  
 Scope: Market scouting and pre-payment buy/no-buy decision only.

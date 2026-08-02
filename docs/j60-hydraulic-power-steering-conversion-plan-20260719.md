@@ -1,12 +1,14 @@
 # J40 to J60 Hydraulic Power-Steering Conversion Plan
 
+> **Reactivated 2026-08-02.** The five-view photo intake identifies the fitted unit as a later J40-family factory-type hydraulic gear; the owner confirms the RHD J60/HJ60 replacement remains the planned upgrade. The intervening J80 route is superseded. Keep this J60 route component-first: do not fabricate from assumed mounting, shaft, pitman or linkage dimensions.
+
 Date: 2026-07-19
 Vehicle: right-hand-drive J40, Toyota 2H installed
 Status: active steering-conversion route; component acquisition and trial fit required before fabrication
 
 ## Decision
 
-Convert the J40 from its current manual steering arrangement to hydraulic power steering using a **right-hand-drive 60-series Land Cruiser steering box**, a 2H-compatible hydraulic pump drive, and a component-in-hand chassis mounting conversion.
+Replace the J40's fitted later-40-Series factory-type hydraulic steering gear with a **right-hand-drive 60-series Land Cruiser steering box**, a 2H-compatible hydraulic pump drive, and a component-in-hand chassis mounting conversion.
 
 This supersedes the Yaris/Vitz column-EPS route. Do not buy or fabricate EPS parts unless this decision is explicitly reopened.
 
@@ -20,7 +22,7 @@ Hydraulic circuit:
 
 `reservoir → 2H-mounted pump → rated high-pressure hose → J60 steering box → return hose → optional cooler → reservoir`
 
-The J60 box conversion should remove dependence on the original J40 manual steering box/relay arrangement where the selected conversion geometry requires it. Do not retain or delete the original centre arm/relay parts until the complete new linkage is physically laid out and approved.
+The J60 box conversion should replace the fitted J40-type hydraulic gear and any baseline linkage parts that are incompatible with the approved J60 geometry. Do not discard, retain in service or modify the current pitman/linkage components until the complete new linkage is physically laid out and approved.
 
 ## Stage 1 — Confirm the Truck Before Buying
 

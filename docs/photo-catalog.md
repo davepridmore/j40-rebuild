@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-07-25 18:34:11
-- Total media files indexed: 987 (976 photos, 11 videos)
+- Generated: 2026-08-02 16:31:54
+- Total media files indexed: 1011 (1000 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -35,7 +35,7 @@
 | `parts_inventory` | 3 |
 | `parts_triage` | 12 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 183 |
+| `reference_material` | 207 |
 | `removed_parts_cataloguing` | 16 |
 | `replacement_pipe_parts_intake` | 2 |
 | `rubber_recreation_measurement` | 7 |
@@ -115,7 +115,7 @@
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
 | `documentation_reference` | `rear_side_seat_layout_reference_20260722` | 1 | 2026-07-22 | `20260722_000004_user_rear_side_seat_reference.png` |
-| `documentation_reference` | `reference_media` | 171 | 2026-04-14 to 2026-07-23 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 195 | 2026-04-14 to 2026-08-02 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
