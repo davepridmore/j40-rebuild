@@ -1,13 +1,13 @@
-# J40 dashboard Rev I V32 — production CNC measurement checklist
+# J40 dashboard Rev I V35 — production CNC measurement checklist
 
-This is the field-survey list needed to convert the selected V32 dashboard into an exact, production-cuttable CNC model. Record the results in `cnc_measurement_schedule.csv` and attach a photograph, scan, drawing or signed template for every completed row.
+This is the field-survey list needed to convert the selected V35 centre-cassette dashboard into an exact, production-cuttable CNC model. Record the results in `cnc_measurement_schedule.csv` and attach a photograph, scan, drawing or signed template for every completed row.
 
-The separate `dashboard_rev_i_v32_provisional_assumption_cnc_spec.md` is deliberately a **quotation-only assumption model**. It can be used to estimate material, programming, forming and prototype costs; it must not be used to cut the vehicle or the production steel fascia.
+The current `dashboard_rev_i_v35_quotation_cnc_spec.md` and its scale-controlled provisional elevation are deliberately **quotation-only assumption models**. They can be used to estimate material, programming, forming and prototype costs; they must not be used to cut the vehicle or production metal.
 
 ## Survey setup and coordinate system
 
 - Install the original glovebox, complete speedometer cluster, steering column/shroud/stalks, purchased wheel and boss before tracing.
-- Remove the ashtray only after its aperture and surrounding structure are recorded. The final panel closes this aperture without a seam or lid.
+- Remove the ashtray only after its aperture and surrounding structure are recorded. The V35 removable centre cassette covers and bridges this traced centre service opening; retain its designed service seam and concealed fixings.
 - Hold a rigid flat survey frame parallel to the intended finished fascia plane. Establish `Z = 0` at the finished front surface.
 - Use the signed top-left point of the complete finished fascia face as origin: `X = 0`, `Y = 0`. `X` increases from passenger side to driver side on this RHD vehicle; `Y` increases downward; `Z` increases rearward.
 - Mark the complete-face midpoint, steering-shaft axis and at least four body reference targets that will survive panel removal. Record both diagonals so the trace can be checked for scale and squareness.
@@ -70,7 +70,7 @@ Every dimension is measured at least twice. A second person checks the origin, o
 26. Lever/handle sweep for each 2- and 3-position selector and the required hand/finger clearance.
 27. Contact-block rear envelope, terminal positions, wire entry, service loop and removal direction for each control.
 28. Repeat the same measurement set for the separate red hazard control.
-29. Confirm engraved/printed label extents and centre-to-centre pitch for the fixed 4 x 2 layout.
+29. Confirm engraved/printed label extents, centre-to-centre pitch and edge margins for the single line of seven selectors plus separate red hazard.
 30. Record electrical contact truth tables for every selected position before loom manufacture.
 
 ### M7 — all four received circular A/C outlets
@@ -112,4 +112,4 @@ Every dimension is measured at least twice. A second person checks the origin, o
 - Final flat pattern and formed-part drawing showing material, grain, bends, radii, K-factor/bend allowance, tolerances, finish and feature IDs.
 - Final DXF in millimetres at 1:1 plus a human-readable PDF. The CNC supplier must compare DXF extents to the stated overall dimensions before cutting.
 
-Production release requires every row marked `production_blocker` in the schedule to be `measured_pass` or `approved_by_coupon`. Blank cells, V32 pixels and assumed coordinates are not measurement evidence.
+Production release requires every row marked `production_blocker` in the schedule to be `measured_pass` or `approved_by_coupon`. Blank cells, raster-render pixels and assumed coordinates are not measurement evidence.

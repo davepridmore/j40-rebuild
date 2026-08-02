@@ -10,7 +10,7 @@
 - Default cassette downward extension is **0 mm**: its lower edge remains above the existing full-width lower edge. A later extension, if measurements make one necessary, is centre-only, no larger than the measured shortfall, and needs written owner approval after the physical survey. It must never alter the lower edge or either end contour.
 - There are exactly two outer vents, one passenger-side and one driver-side. No centre vents and no additional vent holes are included.
 
-The photo-registered concept is [dashboard_rev_i_v35_registered_center_cassette_overlay.svg](dashboard_rev_i_v35_registered_center_cassette_overlay.svg). It is a visual registration aid only. The scale-controlled provisional front elevation is [dashboard_rev_i_v35_provisional_front_elevation.svg](dashboard_rev_i_v35_provisional_front_elevation.svg), with the matching [coordinate schedule](dashboard_rev_i_v35_provisional_coordinates.csv).
+The [V35 photorealistic dashboard](dashboard_rev_i_v35_photorealistic_corrected_outer_vents.png) is an appearance preview only. Do not scale, trace or derive any CNC coordinate from the raster image. The photo-registered concept is [dashboard_rev_i_v35_registered_center_cassette_overlay.svg](dashboard_rev_i_v35_registered_center_cassette_overlay.svg); it is a registration aid, not production geometry. The scale-controlled provisional front elevation is [dashboard_rev_i_v35_provisional_front_elevation.svg](dashboard_rev_i_v35_provisional_front_elevation.svg), with the matching [coordinate schedule](dashboard_rev_i_v35_provisional_coordinates.csv). Production authority remains the signed M1–M9 vehicle/component evidence and the resulting released DXF/PDF.
 
 ## Datum and provisional coordinate model
 
@@ -48,7 +48,7 @@ The different G1 and C1 pixel readings are expected because the photograph is ob
 | --- | --- | --- |
 | LCD module | 211.10 W × 126.50 H mm | M4 physical drawing/calipers, bezel, fasteners, connectors and removal path. |
 | LCD active image | 198.91 W × 111.89 H mm | Size is supplied; its offset inside the actual module is not assumed for the final aperture. |
-| LCD location | module centre (685.0, 75.25); centred on the free centre field | M1 field trace and M4 module confirmation. |
+| LCD location | module centre (685.0, 75.25); X-centred on the free centre field and raised within it to reserve the Y=177 one-line control bank | M1 field trace and M4 module confirmation. |
 | LCD opening | 202 W × 115 H provisional visible opening | Do not cut until M4 confirms the actual bezel/touch-border and carrier. |
 | LCD complete installed rear projection | 115 mm maximum for quotation/buck; integral chassis/body including any integral rear heat sink target ≤80 mm | `ASSUMED_UNVERIFIED`, derived conservatively from the 2026-08-02 photo audit. It is not a production maximum; M5/M9 controls. |
 | Control line | seven bought Schneider Harmony/XB4-family black maintained selectors (4 × 2-position, 3 × 3-position) plus separate red HAZARD, all in one compact line below LCD | M6 actual part codes, handles, lever sweeps, keys, clamps, contact blocks and rear stack. |

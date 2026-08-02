@@ -36,6 +36,6 @@
   <line x1="579.45" y1="143" x2="579.45" y2="235" class="ext"/><line x1="790.55" y1="143" x2="790.55" y2="235" class="ext"/><line x1="579.45" y1="228" x2="790.55" y2="228" class="dim"/><text x="685" y="223" text-anchor="middle" class="s">211.10 LCD module</text>
   <line x1="0" y1="-12" x2="0" y2="-70" class="ext"/><line x1="1400" y1="-12" x2="1400" y2="-70" class="ext"/><line x1="0" y1="-48" x2="1400" y2="-48" class="dim"/><text x="700" y="-55" text-anchor="middle" class="s">1400 quotation plotting envelope — REPLACE WITH M1 TRACE</text>
   <text x="0" y="290" class="note">Dashed orange Ø75 circles are rear-mount targets only: do not machine them until M7 actual vent retention/coupon is signed.</text>
-  <text x="0" y="312" class="note">The screen centre is (685,75.25), the centre of the candidate free centre field — not the overall-face midpoint (700,125).</text>
+  <text x="0" y="312" class="note">Screen centre (685,75.25): X-centred on the free field (field centre 685,110), raised to clear the one-line controls.</text>
   <text x="0" y="334" class="note">Production HOLD: M1 must replace the schematic land boundaries and preserve G1/C1 gaps, OEM lower edge and formed contours unchanged.</text>
 </svg>

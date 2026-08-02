@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-02T16:57:21+05:00",
+  "generated_at": "2026-08-02T17:05:01+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -36383,7 +36383,7 @@ window.J40_DASHBOARD_DATA = {
           "package_id": "dashboard_lcd_hvac_fascia_rev_i",
           "title": "J40 RHD centre-cassette 9-inch LCD dashboard Rev I V35",
           "current_status": "quotation_release_production_measurement_hold",
-          "release_position": "Owner-selected V35 is released for visual review, supplier quotation, a 1:1 disposable centre-cassette template, full-depth buck and fit coupons only. Preserve the original Toyota cluster and RHD column/scallop, original asymmetric glovebox, full-width lower edge and formed end contours at their direct-traced positions. Replace only the ashtray/centre area with a removable zero-drop cassette; centre the true 9-inch module in that measured free field; put seven bought selectors plus the separate hazard in one line below it; and centre each of two \u00d887-class outer vents independently between its fascia end and nearest retained component. Production metal and vehicle cutting remain HOLD until the signed physical traces, actual components, vent coupons and simultaneous full-depth mock-up are complete.",
+          "release_position": "Owner-selected V35 is released for visual review, supplier quotation, a 1:1 disposable centre-cassette template, full-depth buck and fit coupons only. Preserve the original Toyota cluster and RHD column/scallop, original asymmetric glovebox, full-width lower edge and formed end contours at their direct-traced positions. Replace only the ashtray/centre area with a removable zero-drop cassette; X-centre the true 9-inch module in that measured free field and raise it within the field to retain the one-line controls below; put seven bought selectors plus the separate hazard in that line; and centre each of two \u00d887-class outer vents independently between its fascia end and nearest retained component. Production metal and vehicle cutting remain HOLD until the signed physical traces, actual components, vent coupons and simultaneous full-depth mock-up are complete.",
           "notes": "Quotation-only assumptions are explicit: the 1400 x 250 mm face is a plotting envelope and not a measured vehicle perimeter; CR4 is provisionally 1.5 mm; the supplied LCD module is 211.10 x 126.50 x 5.0 with active image 198.91 x 111.89; two vents target \u00d887 faces and \u00d875 rear interfaces; and control apertures are provisional \u00d822.5 mm. OEM geometry, centre-cassette cut/flanges, actual LCD aperture, complete selector stacks, vent retention/spigots and every rear duct/service envelope remain physical trace and measurement holds.",
           "package_dir": "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i",
           "primary_links": [
@@ -36495,7 +36495,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28968760
+            "bytes": 28969776
           },
           "file_count": 24
         }
