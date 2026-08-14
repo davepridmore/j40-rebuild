@@ -1,0 +1,12 @@
+control_id,required_record,method,acceptance,blocks
+B0,"Original upper hole XYZ diameters planes and access","Rigid non-racking template from fixed chassis datums","Both holes repeat on vehicle and template; dated photos/drawing",T0 final outline and drilling
+S0,"R0 locator XYZ diameters saddle centres and installed rubber height","Rigid template with selected R1 physical sample","Both locators seat naturally with shared load and no metal/core contact",X1 final geometry
+U0-L,"LH X0-to-existing-upright pickup face/hole XYZ parent section condition attachment plane weld/HAZ exclusion obstacles drainage tool/removal sweep","Rigid local interface template plus material/weld inspection","Repeatable attachment face accepted by competent structural reviewer",X2-L
+U0-R,"RH X0-to-existing-upright pickup face/hole XYZ parent section condition attachment plane weld/HAZ exclusion obstacles drainage tool/removal sweep","Rigid local interface template plus material/weld inspection","Repeatable attachment face accepted by competent structural reviewer",X2-R
+L0,"Clear crossmember span including both end-connection envelopes","Direct measure between U0 datums with B0/S0 installed","Recorded on dated drawing with tolerance",X0 section/length and structural calculation
+MR,"R0 filled and capped installed mass","Calibrated scale with cap hoses/retained fittings represented as drawing states","Recorded value and test setup",Structural design and 2xMR proof load
+R0,"Complete radiator envelope cap necks drain ears locators rails FL seal face","Direct physical measurement and rigid templates","All functional/service interfaces on drawing",X1 T0 F2 hoses
+C0,"Complete condenser body tabs ports pipes drier and tool sweep","Direct physical measurement with service tools","No strained pipe and full removal path",C1 F1
+FS,"Complete fan frame tabs guard motor plug cable bend direction and current","Direct physical measurement plus bench electrical test","One complete pusher fits centred on C0 usable face",F1 and electrical sizing
+FL,"Complete shroud frame tabs motor plug cable bend direction current and R0 seal face","Direct physical measurement plus bench electrical/airflow test","Puller fits and seals without core load",F2 and electrical sizing
+VEH,"Grille bumper bonnet/latch steering suspension tow structure engine movement hoses wiring and tool sweeps","Opaque 1:1 dry fit on vehicle","No interference through installation service or movement",All final fabrication

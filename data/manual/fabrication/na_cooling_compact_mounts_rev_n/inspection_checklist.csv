@@ -1,0 +1,21 @@
+gate,inspection,pass_requirement,evidence,status
+A,Parts identified,"R0 C0 G0 FS FL and all mounting interfaces tagged/oriented","Photo register and baseline sheet",OPEN
+A,R0 baseline,"Pressure/flow and retained-metal condition recorded","Radiator-shop report",OPEN
+A,C0 baseline,"Condition/contamination/leak route recorded","A/C-shop report",OPEN
+A,Fan baseline,"FS/FL voltage start/run current rotation direction and frame condition recorded","Electrical test sheet",OPEN
+B,Templates,"B0 S0 U0-L U0-R repeat from fixed datums","Signed templates and dated drawing",OPEN
+B,Mass/span,"MR and L0 including end geometry recorded","Scale record and dated drawing",OPEN
+B,Vehicle sweep,"Grille bonnet/latch steering suspension tow engine service/tool envelopes recorded","Opaque dry-fit photos and drawing",OPEN
+C,Existing structure,"Both uprights parent sections weld toes and HAZ accepted; no unapproved cut/drill/slot/ream","Inspection/NDT record as released",OPEN
+C,Upright projection exception,"Any named non-structural projection alteration has U0 and written structural release controlling cut line retained ligament/edge distance weld/HAZ exclusion repair drainage and corrosion protection; otherwise N/A","Exception release and before/after record or signed N/A",OPEN
+C,X2 compactness,"X2-L/R terminate at released load/fastener/gusset/tool/drainage envelope with no unused long projection","Signed drawing and bare-metal photos",OPEN
+C,Structural release,"X0 X1 X2 T0 parent connections welds fasteners and torque accepted for road loads shock vibration and fatigue","Competent-person signed calculation/drawing",OPEN
+D,Lower seating,"Both R1 saddles fully seat and share load; no tank seam or metal/core contact","Dry-fit record",OPEN
+D,Upper neutrality,"T0 tightening does not lift twist or unload R0","Witness/measurement record",OPEN
+D,Independent carriers,"C1 F1 F2 G1 and E1 are independently supported/removable","Dry-fit record",OPEN
+D,Proof,"A total static 2 x MR distributed between both S0 saddle centres in the released loaded-radiator distribution for 10 minutes causes no set crack movement looseness or upright distortion; fixture prevents local point-loading","Proof-load sheet with distribution/fixture and before/after measurements",OPEN
+E,Finish,"Edges deburred; drains/earths/threads/mating faces clear; no overspray on cores/rubbers","Finish inspection photos",OPEN
+E,Hardware,"New R1/R2/I1/S1 installed; H1 grades lengths locking and torques match drawings","Assembly/torque sheet",OPEN
+F,Electrical,"FS/FL independent circuits pass voltage drop current direction and temperature checks","Commissioning log",OPEN
+F,Thermal/A-C,"NA road/load cooling and intended-ambient hot-idle A/C remain stable","Logged road and A/C test",OPEN
+F,First journey,"No leaks rub settling witness-mark movement or loose hardware after cool-down","Reinspection sign-off",OPEN

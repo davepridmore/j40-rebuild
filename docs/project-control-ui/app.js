@@ -9986,9 +9986,9 @@
 
   function renderCoolingPack() {
     const assets = {
-      hero: "./assets/cooling-na-rev-m/na-stack-guarded-single-pusher.png",
-      bench: "./assets/cooling-na-rev-m/na-restored-parts-bench-layout.png",
-      cradle: "./assets/cooling-na-rev-m/na-chassis-mount-dry-fit.png",
+      hero: "./assets/cooling-na-rev-n/na-stack-compact-attachments-finished.png",
+      bench: "./assets/cooling-na-rev-n/na-fabricated-mounting-parts-bench.png",
+      cradle: "./assets/cooling-na-rev-n/na-compact-chassis-mount-dry-fit.png",
       rear: "./assets/cooling-na-rev-m/na-rear-puller-finished.png",
       r0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
       c0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
@@ -9996,30 +9996,34 @@
       fl: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
       fs: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
       chassis: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r06_later_chassis_top_mount_reference.png",
-      guide: "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-m-20260814.md",
-      prompts: "../../docs/J40-naturally-aspirated-cooling-pack-image-prompts-20260814.md",
+      guide: "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-n-20260815.md",
+      prompts: "../../docs/J40-naturally-aspirated-cooling-pack-image-prompts-20260815.md",
+      packReadme: "../../data/manual/fabrication/na_cooling_compact_mounts_rev_n/README.md",
+      cutList: "../../data/manual/fabrication/na_cooling_compact_mounts_rev_n/fabricator_cut_list.csv",
+      measurementBasis: "../../data/manual/fabrication/na_cooling_compact_mounts_rev_n/measurement_basis.csv",
+      inspectionChecklist: "../../data/manual/fabrication/na_cooling_compact_mounts_rev_n/inspection_checklist.csv",
     };
 
     const generatedVisuals = [
       {
         path: assets.hero,
-        caption: "Illustrative generated view — finished grille-side stack. G0 is outermost; exactly one small FS A/C pusher sits behind it on an independent carrier. No turbo, intercooler or second front fan. The actual measured drawing and dry fit control every bracket and gap.",
-        specific_component: "Rev M guarded naturally aspirated cooling stack illustration",
+        caption: "Illustrative generated view — finished naturally aspirated stack with G0 outermost, exactly one FS A/C pusher, and compact X2 end attachments at the retained chassis uprights. No turbo, intercooler, second front fan or cut-down upright. The released drawing and dry fit control every bracket and gap.",
+        specific_component: "Rev N naturally aspirated stack with compact end attachments",
       },
       {
         path: assets.bench,
-        caption: "Illustrative generated view — restored-parts bench sequence: guard, one FS pusher, C0, R0, FL/shroud, hoses, isolated mounts and electrical hardware. It is a finish and completeness reference, not a parts-identification or dimensional release.",
-        specific_component: "Rev M restored cooling parts bench illustration",
+        caption: "Illustrative generated view — fixed bench sequence G0 → one FS → C0 → R0 → FL, with the fabricated mounting set X0, paired X1 seats, compact paired X2 end brackets, paired T0 ears, C1, F1, F2, G1 and E1. It is a completeness reference, not a dimensional release.",
+        specific_component: "Rev N restored cooling pack and fabricated mounting-parts illustration",
       },
       {
         path: assets.cradle,
-        caption: "Illustrative generated view — bare-metal cradle dry fit. Two lower rubber saddles carry R0; short sleeved upper fittings locate it. Final ear thickness, crossmember section, holes, gussets and clearances come only from B0/S0, L0/MR, calculation and the released drawing.",
-        specific_component: "Rev M chassis cradle dry-fit illustration",
+        caption: "Illustrative generated view — bare-metal dry fit with the July-welded uprights left intact. X0 carries the lower saddles and compact mirror-handed X2-L/X2-R brackets make the removable end joints at U0-released faces. Final sections, holes, bends, gussets, fasteners and clearances come only from B0/S0/U0, L0/MR, calculation and the released drawing.",
+        specific_component: "Rev N compact X2 chassis-mount dry-fit illustration",
       },
       {
         path: assets.rear,
         caption: "Illustrative generated view — tidy engine-side finish with the retained large FL puller sealed behind R0, independent support, moulded hoses, covered electrical protection and clipped loom. Physical fan tests and service-clearance checks remain mandatory.",
-        specific_component: "Rev M rear puller finished installation illustration",
+        specific_component: "Retained Rev M rear-puller finish illustration (unchanged by Rev N mount revision)",
       },
     ];
 
@@ -10027,7 +10031,7 @@
       { path: assets.r0, caption: "Actual retained R0 copper/brass radiator. Its tanks, necks, rails, ears and lower locators—not a render—control the recore jig and B0/S0 relationships.", specific_component: "Actual R0 radiator master" },
       { path: assets.c0, caption: "Actual retained full-face C0 condenser with pipe, bracket and receiver-drier geometry. The old drier is a pattern only; install a new compatible unit and new disturbed-joint seals.", specific_component: "Actual C0 condenser master" },
       { path: assets.g0, caption: "Actual removable G0 expanded-mesh guard. Preserve its open area and make its support independent and service-removable.", specific_component: "Actual G0 stone guard master" },
-      { path: assets.fs, caption: "Actual FS small front-fan candidate. Rev M uses one unit only, centred on C0’s usable face after complete-frame, direction, current and airflow checks.", specific_component: "Actual FS single A/C pusher candidate" },
+      { path: assets.fs, caption: "Actual FS small front-fan candidate. Rev N uses one unit only, centred on C0’s usable face after complete-frame, direction, current and airflow checks.", specific_component: "Actual FS single A/C pusher candidate" },
       { path: assets.fl, caption: "Actual FL large electric rear puller and full shroud. Retain only after blade, bearing, frame, direction, current and installed-airflow acceptance.", specific_component: "Actual FL rear puller master" },
       { path: assets.chassis, caption: "Actual later chassis top-pickup context. Capture both existing holes with rigid B0; inspect the welded structure and make no new chassis holes.", specific_component: "Actual chassis pickup evidence" },
     ];
@@ -10056,11 +10060,12 @@
       },
       {
         number: "02",
-        title: "Measure the real vehicle and make B0/S0",
+        title: "Measure the real vehicle and make B0/S0/U0",
         lead: "Freeze datums and service envelopes before cutting steel.",
         bullets: [
           "Make rigid B0 from both original upper chassis holes and rigid S0 from both R0 lower locators/saddle centres; record diameter, XYZ and installed rubber height.",
-          "Record lower clear span L0, filled/capped radiator mass MR, complete R0/C0/FS/FL envelopes, pipes, plugs, cable bends, bonnet/latch, engine movement and every tool sweep.",
+          "Make rigid U0-L/U0-R templates of the existing lower-crossmember attachment faces: record hole/face XYZ and diameters, local parent section and condition, attachment plane, weld/HAZ exclusion, obstacles, drainage, and removal/tool sweep.",
+          "Record lower clear span L0 including both end-connection envelopes, filled/capped radiator mass MR, complete R0/C0/FS/FL envelopes, pipes, plugs, cable bends, bonnet/latch, engine movement and every tool sweep.",
           "Build an opaque 1:1 stack and issue one dated, toleranced drawing from fixed chassis datums—not chained dimensions from bent edges.",
         ],
         gate: "No final purchase, hole, weld or paint until the measured release drawing passes.",
@@ -10100,14 +10105,16 @@
       },
       {
         number: "06",
-        title: "Fabricate the lower cradle",
-        lead: "All filled-radiator weight travels through two new rubber saddles into both uprights.",
+        title: "Fabricate X0 and the compact X2 ends",
+        lead: "Reduce the removable end attachments—not the retained welded uprights.",
         bullets: [
-          "Load path: R0 lower locators → two Toyota/J40-pattern saddles → formed seats → full-width crossmember → both structural uprights.",
+          "Load path: R0 lower locators → two Toyota/J40-pattern saddles → paired X1 seats → full-width X0 crossmember → compact mirror-handed X2-L/X2-R removable end brackets → U0-released structural pickups.",
           "40 × 40 × 3 mm mild-steel SHS is packaging/prototype stock only when L0 ≤ 700 mm and MR ≤ 35 kg—not an automatic release. In every case, competent structural sign-off must cover vertical, fore/aft and lateral road loads, shock, fatigue, end connections, chassis interfaces, welds, fasteners and torque.",
-          "Inspect existing welded arms and HAZ. Form level S0 seats with drainage and full rubber support; no tank, seam or metal-to-metal contact.",
+          "Make each X2 only as large as the released load path, edge distance, fastener access and gusset geometry require; preserve drainage and removal. Exact plate/section, blank, bends, holes, gussets, fasteners, torque and any approved weld remain drawing HOLD.",
+          "Inspect the existing July-welded arms, weld toes and HAZ. Do not shorten, notch, drill or otherwise alter the parent upright or its weld/HAZ. A clearly non-structural surplus projection may be trimmed only under a written U0-based structural release that controls the cut line, remaining ligament, edge distance, closure, drainage and corrosion protection.",
+          "Form level X1 seats at S0 with drainage and full rubber support; no tank, seam or metal-to-metal contact.",
         ],
-        gate: "Competent structural release first; then, before paint, the additional 2 × MR / 10-minute proof must show zero permanent set, crack, looseness, saddle movement or upright distortion.",
+        gate: "U0 and the competent structural release must accept X0/X1/X2 and the existing pickups first; then, before paint, a total static 2 × MR distributed between both S0 centres per the released loaded-radiator distribution for 10 minutes must show zero permanent set, crack, looseness, saddle movement or upright distortion.",
       },
       {
         number: "07",
@@ -10115,7 +10122,7 @@
         lead: "The upper fittings restrain; they never carry or pull the radiator.",
         bullets: [
           "Settle R0 naturally on both saddles, then transfer B0 into two short removable ears from the released structural drawing.",
-          "At each original hole fit a new EPDM bush, correct steel crush sleeve, broad washer, zinc class 8.8 bolt and locking nut. Sleeve length controls compression.",
+          "At each original hole fit a new EPDM bush, correct steel crush sleeve, broad washer, released zinc class 8.8 bolt and locking nut. Sleeve length controls compression.",
           "Build separate isolated supports for C0, FS, FL/shroud and G0. Seal FL to the R0 frame with closed-cell EPDM while keeping fins, drainage and service points open.",
         ],
         gate: "Tightening upper hardware does not lift, twist or unload either lower saddle.",
@@ -10178,16 +10185,20 @@
     ];
 
     const fabricationRows = [
-      ["X0", "1", "Full-width lower crossmember", "40 × 40 × 3 mm SHS is packaging/prototype stock only if L0 ≤ 700 mm and MR ≤ 35 kg. Competent structural release is mandatory for dynamic loads, fatigue, end/chassis connections, welds, fasteners and torque."],
-      ["X1", "2", "Lower saddle seats", "Level/reinforced at S0 centres, drainage preserved, full rubber contact."],
-      ["R1", "2", "Lower radiator saddles", "New Toyota/J40-pattern rubber matched to pin diameter, cup depth, installed height and load area."],
-      ["T0", "2", "Upper locating ears", "Short/removable; drill from B0 after R0 seats naturally. Thickness and shape remain drawing HOLD."],
-      ["R2", "2 sets", "Upper isolation hardware", "Automotive EPDM bush, correct steel crush sleeve, broad washers, zinc class 8.8 bolt and locknut."],
-      ["C1", "As measured", "C0 brackets", "Independent/removable with EPDM isolation and shoulder/crush sleeves; preserve all pipes/tool sweep."],
-      ["F1", "1 set", "Single FS carrier", "Centre the complete pusher frame on usable C0 face; independent of guard and condenser."],
-      ["F2", "1 set", "FL support and seal", "Independent rear support plus continuous closed-cell EPDM perimeter seal; no core load."],
-      ["G1", "1 set", "G0 stand-offs", "Rubber-faced, removable, accessible locking fasteners and edge protection."],
-      ["H1", "1 set", "General hardware", "Matching zinc class 8.8; final sizes, torque and locking method from released drawing."],
+      ["X0", "1", "MAKE · full-width lower crossmember", "Conditional 40 × 40 × 3 mm mild-steel SHS is mock-up stock only if L0 ≤ 700 mm and MR ≤ 35 kg. Final section and both end connections require competent structural release."],
+      ["X1-L/R", "2", "MAKE · lower saddle seats", "Released steel plate/section; level and reinforced at S0 centres, drainage preserved, full rubber contact. Dimensions and welds remain HOLD."],
+      ["X2-L/R", "2", "MAKE · compact crossmember-to-upright end brackets", "Mirror-handed removable/gusseted joints at U0-released existing pickup faces. Plate/section, blank, bends, holes, gusset, fasteners, torque and any approved welds remain HOLD; no new hole, slot, ream or forced alignment."],
+      ["T0-L/R", "2", "MAKE · upper locating ears", "Short and removable; drill from B0 only after R0 seats naturally. Released plate/section; thickness and shape remain HOLD. They locate and restrain only."],
+      ["C1", "As measured", "MAKE · independent C0 brackets", "Released compatible steel/aluminium design with isolators and shoulder/crush sleeves; preserve pipes, ports and tool sweep."],
+      ["F1", "1 set", "MAKE · single FS carrier", "Released section; centre the complete pusher frame on usable C0 face, independent of guard and condenser."],
+      ["F2", "1 set", "MAKE · FL support and seal frame", "Released section; independent rear support plus continuous closed-cell EPDM perimeter seal, with no load on R0 core or tanks."],
+      ["G1", "1 set", "MAKE · G0 stand-offs", "Released section; rubber-faced, removable, accessible locking fasteners and edge protection."],
+      ["E1", "1 set", "MAKE · protected electrical carrier", "Released aligned inboard carrier with removable splash-resistant lid, rear/down exits, drainage and service access."],
+      ["R1", "2", "BUY · lower radiator saddles", "New Toyota/J40-pattern rubber matched to pin diameter, cup depth, installed height and load area."],
+      ["R2", "2 sets", "BUY · upper isolation hardware", "New automotive EPDM bush, correct steel crush sleeve, broad washers, released zinc class 8.8 bolt and locknut."],
+      ["I1", "As measured", "BUY · carrier isolators", "New compatible rubber isolators with shoulder/crush sleeves at every released C0/FS/FL/G0 point."],
+      ["H1", "1 set", "BUY · general hardware", "Matching released zinc class 8.8 hardware; final sizes, torque and locking method from the released drawing. No washer-stack spacer."],
+      ["S1", "1 set", "BUY · seals and edge protection", "Closed-cell EPDM shroud seal, EPDM anti-chafe and edge trim selected for the released interfaces."],
     ];
 
     const partsGroups = [
@@ -10198,15 +10209,15 @@
           "R0 tanks, filler/cap neck, hose necks, rails, ears and locators; assume a new core in the budget.",
           "C0 full-face condenser and sound pipes/brackets; old drier is reference geometry only.",
           "G0 guard, one complete FS pusher, and FL complete rear puller/shroud.",
-          "Existing structural arms/uprights only after weld/HAZ and geometry acceptance.",
+          "Existing structural arms/uprights intact only after U0, parent-section, weld/HAZ and geometry acceptance; they are not trim stock.",
         ],
       },
       {
         label: "Buy new",
         tone: "new",
         items: [
-          "Two J40-pattern lower saddles; upper EPDM bushes, fitted crush sleeves, washers and locking class 8.8 hardware.",
-          "All carrier isolators/sleeves, edge trim, closed-cell EPDM shroud seal and anti-chafe material.",
+          "R1: two J40-pattern lower saddles; R2: upper EPDM bushes, fitted crush sleeves, broad washers and released locking class 8.8 hardware.",
+          "I1 carrier isolators/sleeves, S1 edge trim/closed-cell EPDM shroud seal/anti-chafe material, and H1 matching released hardware.",
           "Receiver-drier, HNBR seal set/caps, moulded coolant hoses, overflow hose and constant-tension clamps.",
           "Approved cap, Toyota 2H thermostat/seal, known compatible coolant and deionised water.",
           "Two sealed relays, two covered fuses, measured-current cable, connectors, terminals, earths, loom, heat-shrink, grommets and P-clips.",
@@ -10216,8 +10227,8 @@
         label: "Fabricate after release",
         tone: "fabricate",
         items: [
-          "Conditional 40 × 40 × 3 mm mild-steel SHS for packaging/mock-up only; final crossmember, seats, ears and carriers follow the measured drawing and competent structural release.",
-          "Independent C0, FS, FL and G0 brackets; no through-core ties or parts hung from another core.",
+          "X0 lower crossmember, paired X1 saddle seats and compact mirror-handed X2-L/X2-R removable end brackets; conditional 40 × 40 × 3 mm SHS is packaging/mock-up stock only.",
+          "Paired T0 upper locating ears plus independent C1 condenser brackets, F1 single-FS carrier, F2 rear-puller support, G1 guard stand-offs and E1 electrical carrier, all after measured/structural release.",
           "Matching expanded mesh only if G0’s insert cannot be safely restored.",
         ],
       },
@@ -10241,8 +10252,8 @@
 
     const releaseGates = [
       ["A", "Component integrity", "R0 pressure/flow, C0 leak/cleanliness, and FS/FL electrical/direction records all pass."],
-      ["B", "Measured geometry", "B0, S0, L0, MR, complete component envelopes and vehicle/tool/movement sweeps are on a dated drawing."],
-      ["C", "Structure", "Competent road-load/fatigue/connection release, weld/HAZ inspection and the additional 2 × MR / 10-minute cradle proof all pass before coating."],
+      ["B", "Measured geometry", "B0, S0, U0-L/U0-R, L0 including end connections, MR, complete component envelopes and vehicle/tool/movement sweeps are on a dated drawing."],
+      ["C", "Structure", "The existing welded pickups are accepted intact; X0/X1/X2/T0, road-load/fatigue/connection design, weld/HAZ inspection and the total static 2 × MR proof distributed between both S0 centres all pass before coating."],
       ["D", "Opaque dry fit", "Natural saddle seating, neutral upper locators, independent supports and all service/removal paths pass."],
       ["E", "Finish and assembly", "No rust/overspray/blocked fins; new rubbers, service parts, fluids and matching hardware are verified."],
       ["F", "Installed performance", "Independent fan circuits, hot-idle A/C and NA road/load cooling logs pass without progressive rise."],
@@ -10270,20 +10281,24 @@
         <section class="na-cooling-hero" id="cooling-pack-summary">
           <div class="na-cooling-hero-copy">
             <div class="na-cooling-kicker-row">
-              <p class="eyebrow">Rev M · naturally aspirated 2H · controlled shop guide</p>
+              <p class="eyebrow">Rev N · naturally aspirated 2H · compact-mount shop guide</p>
               ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy naturally aspirated cooling summary link")}
             </div>
             <h2 class="na-cooling-title">Restore the retained cooling pack around one A/C pusher and one radiator puller.</h2>
             <p class="na-cooling-lead na-cooling-lede">The turbo and intercooler are removed from scope. Keep <strong>one small front FS pusher</strong> for the full-face A/C condenser and retain the <strong>large rear FL puller/shroud</strong> as the radiator fan—but only after both pass condition, current, direction and installed-airflow tests.</p>
-            <div class="na-cooling-decision-row na-cooling-decision-chips" aria-label="Rev M architecture decisions">
+            <div class="na-cooling-decision-row na-cooling-decision-chips" aria-label="Rev N architecture decisions">
               <span class="na-cooling-decision-chip is-stop">No turbo</span><span class="na-cooling-decision-chip is-stop">No K0/intercooler</span><span class="na-cooling-decision-chip is-stop">No second front fan</span><span class="na-cooling-decision-chip">1 front A/C pusher</span><span class="na-cooling-decision-chip">1 rear radiator puller</span>
             </div>
             <div class="na-cooling-release-banner" role="note">
               <strong>Architecture fixed · fabrication dimensions held</strong>
-              <span>B0/S0 templates, L0 span, filled mass MR, actual component envelopes, structural calculation and the physical dry fit must release every hole, bracket and gap.</span>
+              <span>B0/S0/U0 templates, L0 span and end joints, filled mass MR, actual component envelopes, structural calculation and the physical dry fit must release every hole, bracket and gap.</span>
             </div>
             <div class="na-cooling-downloads na-cooling-download-actions">
-              <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev M shop guide (.md)</a>
+              <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev N shop guide (.md)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.packReadme}" download>Fabricator pack index (.md)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.cutList}" download>Make / buy schedule (.csv)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.measurementBasis}" download>Measurement sheet (.csv)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.inspectionChecklist}" download>Inspection checklist (.csv)</a>
               <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Image provenance &amp; prompts (.md)</a>
             </div>
           </div>
@@ -10301,11 +10316,11 @@
             ${architecture.map(([number, title, detail]) => `<li><span>${escapeHtml(number)}</span><div><strong>${escapeHtml(title)}</strong><small>${escapeHtml(detail)}</small></div></li>`).join("")}
           </ol>
           <div class="na-cooling-rules-grid">
-            <article><strong>R0 weight path</strong><p>Both lower locators → two new J40-pattern rubber saddles → full-width crossmember → both structural uprights. Upper fittings locate only.</p></article>
+            <article><strong>R0 weight path</strong><p>Both lower locators → two new J40-pattern rubber saddles → X1 seats → X0 crossmember → compact X2-L/X2-R end brackets → U0-released structural pickups. Upper T0 fittings locate only.</p></article>
             <article><strong>Independent supports</strong><p>C0, FS, FL/shroud and G0 each use isolated removable brackets. No through-core ties, structural self-tappers or heat exchanger hung from another.</p></article>
             <article><strong>Performance closes scope</strong><p>One front fan is the controlled design. Correct direction, voltage drop, sealing and distribution before proposing another fan under a new revision.</p></article>
           </div>
-          <div class="na-cooling-danger" role="alert"><strong>Never fabricate from the images.</strong><span>Every generated view is illustrative. Actual parts, B0/S0, measured drawings, proof test and the vehicle dry fit control.</span></div>
+          <div class="na-cooling-danger" role="alert"><strong>Never fabricate from the images.</strong><span>Every generated view is illustrative. Actual parts, B0/S0/U0, measured drawings, structural release, proof test and the vehicle dry fit control.</span></div>
         </section>
 
         <section class="card na-cooling-section" id="cooling-pack-visuals">
@@ -10338,8 +10353,9 @@
             <div><p class="na-cooling-section-label">Fabrication and chassis fittings</p><h3>Controlled load path, isolation and removable hardware</h3></div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-fabrication"), "#", "Copy chassis fabrication specification link")}
           </div>
+          <div class="na-cooling-danger" role="note"><strong>Make the attachment compact, not the chassis weaker.</strong><span>X2-L/X2-R reduce the removable end-bracket envelope at U0-released pickup faces. The July-welded upright, its parent load path, weld toes and heat-affected zones stay intact unless a separately written structural release proves a named projection non-structural and controls the complete cut and repair.</span></div>
           <div class="na-cooling-formula" role="note">
-            <span>R0 lower locators</span><b>→</b><span>2 new rubber saddles</span><b>→</b><span>formed seats</span><b>→</b><span>full-width crossmember</span><b>→</b><span>both uprights</span>
+            <span>R0 lower locators</span><b>→</b><span>2 new R1 saddles</span><b>→</b><span>X1 seats</span><b>→</b><span>X0 crossmember</span><b>→</b><span>X2 end brackets</span><b>→</b><span>U0 pickups</span>
           </div>
           <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
             <table class="na-cooling-table na-cooling-data-table">
@@ -10347,10 +10363,10 @@
               <tbody>${fabricationTableRows}</tbody>
             </table>
           </div>
-          <div class="na-cooling-proof"><strong>Structural release + mandatory pre-paint proof</strong><span>A competent person must first release the road-load, fatigue, connection, weld, fastener and torque design. Then apply 2 × filled/capped radiator mass MR at the two saddle centres for 10 minutes. The proof supplements the calculation; any permanent set, crack, looseness, saddle movement or upright distortion is a fail.</span></div>
+          <div class="na-cooling-proof"><strong>Structural release + mandatory pre-paint proof</strong><span>A competent person must first release the road-load, fatigue, X2 connection, weld, fastener and torque design. Then apply a total static proof load of 2 × filled/capped radiator mass MR, distributed between the two S0 saddle centres in the released loaded-radiator distribution for 10 minutes, using a fixture that prevents local point-loading. The proof supplements the calculation; any permanent set, crack, looseness, saddle movement or upright distortion is a fail.</span></div>
           <div class="na-cooling-prohibited">
             <h4>Fabrication prohibitions</h4>
-            <p>No new chassis holes; no slots or reaming; no forced bolt pull; no side-bolt substitute; no washer-stack spacers; no unsleeved rubber joint; no radiator weight on upper ears, tanks, seams, fins or solder; no through-core tie.</p>
+            <p>No new chassis holes; no slots or reaming; no forced bolt pull; no side-bolt substitute; no washer-stack spacers; no unsleeved rubber joint; no radiator weight on upper ears, tanks, seams, fins or solder; no through-core tie. X2 may use only U0-released existing structural pickups—never steering, suspension, bumper, tow or thin/non-structural sheet. Do not cut, shorten, notch or drill an upright, weld toe or HAZ outside the narrow written exception above.</p>
           </div>
         </section>
 
@@ -10404,12 +10420,16 @@
 
         <section class="card na-cooling-section na-cooling-files" id="cooling-pack-files">
           <div>
-            <p class="na-cooling-section-label">Controlled Rev M handoff</p>
+            <p class="na-cooling-section-label">Controlled Rev N handoff</p>
             <h3>Give the shops the guide, actual parts, templates and test sheets</h3>
-            <p>The portal is the readable execution view. The downloadable Rev M guide carries the full sequence, specifications, chemicals and acceptance wording. The prompt record identifies every generated visual and its limitation.</p>
+            <p>The portal is the readable execution view. The Rev N guide and compact-mount fabricator pack carry the full sequence, make/buy schedule, measurement basis, inspection gates, chemicals and acceptance wording. The prompt record identifies every generated visual and its limitation.</p>
           </div>
           <div class="na-cooling-downloads na-cooling-download-actions">
-            <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev M shop guide (.md)</a>
+            <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev N shop guide (.md)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.packReadme}" download>Fabricator pack index (.md)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.cutList}" download>Make / buy schedule (.csv)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.measurementBasis}" download>Measurement sheet (.csv)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.inspectionChecklist}" download>Inspection checklist (.csv)</a>
             <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Download image prompts (.md)</a>
           </div>
         </section>
