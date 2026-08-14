@@ -9462,7 +9462,7 @@
   }
 
 
-  function renderCoolingPack() {
+  function renderCoolingPackRevLLegacy() {
     // Keep Rev L's measured photographs, photo-referenced visualisations and
     // controlled drawings together. AI views never release dimensions.
     const revLAssets = {
@@ -9978,6 +9978,439 @@
             <a class="item-link cooling-pack-download" href="../../docs/j40-rev-l-complete-oem-donor-parts-list-20260803.md" download>Download complete OEM/donor-first parts list (.md)</a>
             <a class="item-link cooling-pack-download" href="${revLAssets.d19Svg}" download>Download D19 measured-parts drawing (.svg)</a>
             <a class="item-link cooling-pack-download" href="${revLAssets.d20Svg}" download>Download D20 packaging/holds drawing (.svg)</a>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
+  function renderCoolingPack() {
+    const assets = {
+      hero: "./assets/cooling-na-rev-m/na-stack-guarded-single-pusher.png",
+      bench: "./assets/cooling-na-rev-m/na-restored-parts-bench-layout.png",
+      cradle: "./assets/cooling-na-rev-m/na-chassis-mount-dry-fit.png",
+      rear: "./assets/cooling-na-rev-m/na-rear-puller-finished.png",
+      r0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
+      c0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
+      g0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
+      fl: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
+      fs: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
+      chassis: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r06_later_chassis_top_mount_reference.png",
+      guide: "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-m-20260814.md",
+      prompts: "../../docs/J40-naturally-aspirated-cooling-pack-image-prompts-20260814.md",
+    };
+
+    const generatedVisuals = [
+      {
+        path: assets.hero,
+        caption: "Illustrative generated view — finished grille-side stack. G0 is outermost; exactly one small FS A/C pusher sits behind it on an independent carrier. No turbo, intercooler or second front fan. The actual measured drawing and dry fit control every bracket and gap.",
+        specific_component: "Rev M guarded naturally aspirated cooling stack illustration",
+      },
+      {
+        path: assets.bench,
+        caption: "Illustrative generated view — restored-parts bench sequence: guard, one FS pusher, C0, R0, FL/shroud, hoses, isolated mounts and electrical hardware. It is a finish and completeness reference, not a parts-identification or dimensional release.",
+        specific_component: "Rev M restored cooling parts bench illustration",
+      },
+      {
+        path: assets.cradle,
+        caption: "Illustrative generated view — bare-metal cradle dry fit. Two lower rubber saddles carry R0; short sleeved upper fittings locate it. Final ear thickness, crossmember section, holes, gussets and clearances come only from B0/S0, L0/MR, calculation and the released drawing.",
+        specific_component: "Rev M chassis cradle dry-fit illustration",
+      },
+      {
+        path: assets.rear,
+        caption: "Illustrative generated view — tidy engine-side finish with the retained large FL puller sealed behind R0, independent support, moulded hoses, covered electrical protection and clipped loom. Physical fan tests and service-clearance checks remain mandatory.",
+        specific_component: "Rev M rear puller finished installation illustration",
+      },
+    ];
+
+    const retainedEvidence = [
+      { path: assets.r0, caption: "Actual retained R0 copper/brass radiator. Its tanks, necks, rails, ears and lower locators—not a render—control the recore jig and B0/S0 relationships.", specific_component: "Actual R0 radiator master" },
+      { path: assets.c0, caption: "Actual retained full-face C0 condenser with pipe, bracket and receiver-drier geometry. The old drier is a pattern only; install a new compatible unit and new disturbed-joint seals.", specific_component: "Actual C0 condenser master" },
+      { path: assets.g0, caption: "Actual removable G0 expanded-mesh guard. Preserve its open area and make its support independent and service-removable.", specific_component: "Actual G0 stone guard master" },
+      { path: assets.fs, caption: "Actual FS small front-fan candidate. Rev M uses one unit only, centred on C0’s usable face after complete-frame, direction, current and airflow checks.", specific_component: "Actual FS single A/C pusher candidate" },
+      { path: assets.fl, caption: "Actual FL large electric rear puller and full shroud. Retain only after blade, bearing, frame, direction, current and installed-airflow acceptance.", specific_component: "Actual FL rear puller master" },
+      { path: assets.chassis, caption: "Actual later chassis top-pickup context. Capture both existing holes with rigid B0; inspect the welded structure and make no new chassis holes.", specific_component: "Actual chassis pickup evidence" },
+    ];
+
+    const architecture = [
+      ["01", "Grille", "Clean air entry; preserve bonnet/latch and service space."],
+      ["02", "G0 guard", "Outermost removable stone protection."],
+      ["03", "One FS pusher", "Single centred A/C condenser fan; pushes rearward."],
+      ["04", "C0 condenser", "Retained full-face A/C heat exchanger."],
+      ["05", "R0 radiator", "Lower-saddle weight path; upper fittings locate only."],
+      ["06", "FL puller", "Large sealed radiator fan; pulls toward the engine."],
+      ["07", "Engine", "Naturally aspirated 2H; no charge-air hardware."],
+    ];
+
+    const steps = [
+      {
+        number: "01",
+        title: "Tag, photograph and baseline-test",
+        lead: "Prove what is worth restoring before spending on finish.",
+        bullets: [
+          "Tag R0, C0, G0, FS and FL with orientation and vehicle centreline; photograph every face, label, port, crack, solder joint and mount with a scale.",
+          "Cap every open coolant/refrigerant connection. Record R0 pressure/flow, C0 specialist condition/leak status, and both fans’ voltage, start/run current, rotation and airflow direction.",
+          "Reject unsafe blades, unrepairable shrouds, cracked manifolds, thinned tanks or failed structural tabs before cosmetic work.",
+        ],
+        gate: "Baseline test sheet and retain/repair/replace decisions signed.",
+      },
+      {
+        number: "02",
+        title: "Measure the real vehicle and make B0/S0",
+        lead: "Freeze datums and service envelopes before cutting steel.",
+        bullets: [
+          "Make rigid B0 from both original upper chassis holes and rigid S0 from both R0 lower locators/saddle centres; record diameter, XYZ and installed rubber height.",
+          "Record lower clear span L0, filled/capped radiator mass MR, complete R0/C0/FS/FL envelopes, pipes, plugs, cable bends, bonnet/latch, engine movement and every tool sweep.",
+          "Build an opaque 1:1 stack and issue one dated, toleranced drawing from fixed chassis datums—not chained dimensions from bent edges.",
+        ],
+        gate: "No final purchase, hole, weld or paint until the measured release drawing passes.",
+      },
+      {
+        number: "03",
+        title: "Recore and restore R0",
+        lead: "Use a copper/brass radiator specialist and preserve the original interfaces.",
+        bullets: [
+          "Jig the tanks, necks, rails, ears and locators. Budget for a new naturally aspirated-duty core because the photographed core is tired; remove the historical added support leg after recording it.",
+          "Use inhibited copper/brass/solder-compatible cleaning—no abrasive blasting or DIY strong acid/caustic. Recore squarely without moving cap, drain, necks, B0/S0 geometry or FL sealing face.",
+          "Repeat pressure/flow testing, mask all sealing surfaces and apply only a thin radiator-shop heat-exchanger coating. No powder coat, filler or thick core paint.",
+        ],
+        gate: "Written post-work pressure/flow results, straight open fins and clean solder.",
+      },
+      {
+        number: "04",
+        title: "Clean, test and re-seal C0",
+        lead: "Treat the retained condenser as an A/C pressure component, not a paint part.",
+        bullets: [
+          "Identify refrigerant, oil and seal system; keep ports capped. Clean with neutral aluminium-safe coil cleaner, low-pressure clean-side rinse and careful fin combing.",
+          "Flush only by an approved closed procedure and leak-test with dry nitrogen or approved forming gas at the applicable service pressure—never oxygen or wet shop air.",
+          "Preserve the full face, pipes and tool sweeps. Install a new compatible receiver-drier, HNBR seals/O-rings and caps at final assembly; do not reuse the old drier.",
+        ],
+        gate: "Clean straight face, capped ports and written specialist leak result.",
+      },
+      {
+        number: "05",
+        title: "Restore G0 and qualify both fan systems",
+        lead: "One front A/C pusher plus one rear radiator puller—each complete and tested.",
+        bullets: [
+          "Jig/repair the guard, match mesh pitch and open area if replacement is needed, and finish it in thin satin/semi-gloss black without bridged apertures.",
+          "FS must be one complete centred pusher in its designed orientation. FL must be the complete engineward puller/shroud. Inspect blades, shafts, bearings, tabs, plugs, cable bends and current.",
+          "Use plastic-safe detergent; do not paint blades, motors, vents, labels, plugs or rubbers. Renew terminals/seals and give each fan its own protected circuit.",
+        ],
+        gate: "Correct direction, safe current, no crack/wobble/rub and credible installed airflow.",
+      },
+      {
+        number: "06",
+        title: "Fabricate the lower cradle",
+        lead: "All filled-radiator weight travels through two new rubber saddles into both uprights.",
+        bullets: [
+          "Load path: R0 lower locators → two Toyota/J40-pattern saddles → formed seats → full-width crossmember → both structural uprights.",
+          "40 × 40 × 3 mm mild-steel SHS is packaging/prototype stock only when L0 ≤ 700 mm and MR ≤ 35 kg—not an automatic release. In every case, competent structural sign-off must cover vertical, fore/aft and lateral road loads, shock, fatigue, end connections, chassis interfaces, welds, fasteners and torque.",
+          "Inspect existing welded arms and HAZ. Form level S0 seats with drainage and full rubber support; no tank, seam or metal-to-metal contact.",
+        ],
+        gate: "Competent structural release first; then, before paint, the additional 2 × MR / 10-minute proof must show zero permanent set, crack, looseness, saddle movement or upright distortion.",
+      },
+      {
+        number: "07",
+        title: "Make upper locators and independent carriers",
+        lead: "The upper fittings restrain; they never carry or pull the radiator.",
+        bullets: [
+          "Settle R0 naturally on both saddles, then transfer B0 into two short removable ears from the released structural drawing.",
+          "At each original hole fit a new EPDM bush, correct steel crush sleeve, broad washer, zinc class 8.8 bolt and locking nut. Sleeve length controls compression.",
+          "Build separate isolated supports for C0, FS, FL/shroud and G0. Seal FL to the R0 frame with closed-cell EPDM while keeping fins, drainage and service points open.",
+        ],
+        gate: "Tightening upper hardware does not lift, twist or unload either lower saddle.",
+      },
+      {
+        number: "08",
+        title: "Dry-fit the complete pack in bare metal",
+        lead: "Prove every relationship while changes are still cheap and visible.",
+        bullets: [
+          "Assemble grille → G0 → one FS → C0 → R0 → FL → engine with real rubbers, plugs, bends, hoses, lines and service tools represented.",
+          "Confirm FS is centred on C0’s usable face and pushes rearward; confirm FL pulls rearward and its shroud seals without loading the core.",
+          "Prove bonnet/latch and engine movement plus logical removal of G0, FS, C0, R0 and FL. Photograph every released gap and freeze coordinates only after sign-off.",
+        ],
+        gate: "Fabricator and owner sign the bare-metal fit drawing before coating.",
+      },
+      {
+        number: "09",
+        title: "Prepare and coat the ferrous parts",
+        lead: "Create a gleaming, restrained OEM-style finish without harming heat transfer.",
+        bullets: [
+          "Deburr/radius exposed edges, remove spatter without flattening structural welds, degrease and mechanically clean. Use phosphoric treatment only on isolated ferrous steel.",
+          "Apply one compatible 2K epoxy-primer/2K polyurethane satin or semi-gloss system. Mask drains, threads, earths, rubber seats, mating faces, fins and all fluid interfaces.",
+          "After full cure, clear holes/drains and cavity-wax eligible closed steel. Install new rubber and matching zinc hardware only after curing.",
+        ],
+        gate: "No bare rust, overspray, blocked aperture/fin/drain, coated earth or wet-paint rubber interface.",
+      },
+      {
+        number: "10",
+        title: "Install plumbing and complete the A/C circuit",
+        lead: "Buy age-sensitive service parts new and only after the port map is fixed.",
+        bullets: [
+          "Fit new measured moulded upper/lower/overflow hoses, constant-tension clamps behind the beads, approved cap, Toyota 2H thermostat/seal and one compatible long-life coolant chemistry with deionised water.",
+          "Keep the new drier sealed until connection. Lubricate new HNBR O-rings only with the identified refrigerant oil; evacuate, leak-check and recharge to the actual system specification.",
+          "Align clamps, preserve cap/drain/union access and support every pipe so no manifold, core or hose neck carries bracket load.",
+        ],
+        gate: "Cold leak checks pass; coolant and A/C service records identify every fluid and quantity.",
+      },
+      {
+        number: "11",
+        title: "Wire two independent fan branches",
+        lead: "FS follows A/C/pressure demand; FL follows coolant temperature.",
+        bullets: [
+          "Each fan receives its own sealed relay, covered fuse, cable sized from measured run/inrush current, protected earth and service-test function.",
+          "Use A/C request plus appropriate high-side-pressure logic for FS; use coolant-temperature control for FL. Do not run either through an unidentified donor circuit.",
+          "Use sealed connectors, proper crimps, adhesive heat-shrink, black abrasion loom, grommets and rubber-lined P-clips. Route exits rear/down with drip control.",
+        ],
+        gate: "Record terminal voltage, voltage drop, start/run current, fuse/relay/cable temperature and charging voltage.",
+      },
+      {
+        number: "12",
+        title: "Heat-cycle, hot-idle test and road-release",
+        lead: "Performance—not fan count or appearance—closes the work.",
+        bullets: [
+          "Bleed coolant, test each fan independently, inspect for leak/rub/vibration and verify FL control through a full idle heat cycle.",
+          "At hot idle in the intended ambient duty (historically up to 50 °C), log ambient, refrigerant, high/low pressures, condenser temperatures, centre-vent temperature and FS state against the real system specification.",
+          "Road/load-log naturally aspirated coolant temperature, speed/load and fan state. If A/C struggles, first fix direction, voltage drop, sealing, bypass and distribution; a second fan requires a new revision.",
+        ],
+        gate: "No boil, purge, progressive coolant rise or progressive A/C high-side escalation; cool-down and first-journey reinspection pass.",
+      },
+    ];
+
+    const fabricationRows = [
+      ["X0", "1", "Full-width lower crossmember", "40 × 40 × 3 mm SHS is packaging/prototype stock only if L0 ≤ 700 mm and MR ≤ 35 kg. Competent structural release is mandatory for dynamic loads, fatigue, end/chassis connections, welds, fasteners and torque."],
+      ["X1", "2", "Lower saddle seats", "Level/reinforced at S0 centres, drainage preserved, full rubber contact."],
+      ["R1", "2", "Lower radiator saddles", "New Toyota/J40-pattern rubber matched to pin diameter, cup depth, installed height and load area."],
+      ["T0", "2", "Upper locating ears", "Short/removable; drill from B0 after R0 seats naturally. Thickness and shape remain drawing HOLD."],
+      ["R2", "2 sets", "Upper isolation hardware", "Automotive EPDM bush, correct steel crush sleeve, broad washers, zinc class 8.8 bolt and locknut."],
+      ["C1", "As measured", "C0 brackets", "Independent/removable with EPDM isolation and shoulder/crush sleeves; preserve all pipes/tool sweep."],
+      ["F1", "1 set", "Single FS carrier", "Centre the complete pusher frame on usable C0 face; independent of guard and condenser."],
+      ["F2", "1 set", "FL support and seal", "Independent rear support plus continuous closed-cell EPDM perimeter seal; no core load."],
+      ["G1", "1 set", "G0 stand-offs", "Rubber-faced, removable, accessible locking fasteners and edge protection."],
+      ["H1", "1 set", "General hardware", "Matching zinc class 8.8; final sizes, torque and locking method from released drawing."],
+    ];
+
+    const partsGroups = [
+      {
+        label: "Retain only after test",
+        tone: "retain",
+        items: [
+          "R0 tanks, filler/cap neck, hose necks, rails, ears and locators; assume a new core in the budget.",
+          "C0 full-face condenser and sound pipes/brackets; old drier is reference geometry only.",
+          "G0 guard, one complete FS pusher, and FL complete rear puller/shroud.",
+          "Existing structural arms/uprights only after weld/HAZ and geometry acceptance.",
+        ],
+      },
+      {
+        label: "Buy new",
+        tone: "new",
+        items: [
+          "Two J40-pattern lower saddles; upper EPDM bushes, fitted crush sleeves, washers and locking class 8.8 hardware.",
+          "All carrier isolators/sleeves, edge trim, closed-cell EPDM shroud seal and anti-chafe material.",
+          "Receiver-drier, HNBR seal set/caps, moulded coolant hoses, overflow hose and constant-tension clamps.",
+          "Approved cap, Toyota 2H thermostat/seal, known compatible coolant and deionised water.",
+          "Two sealed relays, two covered fuses, measured-current cable, connectors, terminals, earths, loom, heat-shrink, grommets and P-clips.",
+        ],
+      },
+      {
+        label: "Fabricate after release",
+        tone: "fabricate",
+        items: [
+          "Conditional 40 × 40 × 3 mm mild-steel SHS for packaging/mock-up only; final crossmember, seats, ears and carriers follow the measured drawing and competent structural release.",
+          "Independent C0, FS, FL and G0 brackets; no through-core ties or parts hung from another core.",
+          "Matching expanded mesh only if G0’s insert cannot be safely restored.",
+        ],
+      },
+    ];
+
+    const chemicalRows = [
+      ["Water-based degreaser", "Steel brackets, guard, washable externals", "Substrate-compatible; pH-neutral/non-caustic around aluminium", "Do not immerse motors/connectors or leave ports open"],
+      ["Inhibited radiator cleaner/descaler", "R0 specialist cleaning", "Explicit copper/brass/actual-solder compatibility; follow SDS", "No DIY strong acid, caustic or abrasive blast"],
+      ["Neutral condenser/coil cleaner", "C0 fins", "Aluminium-safe, low residue; low-pressure clean-side rinse", "No harsh alkaline brightener or pressure jet"],
+      ["Deionised water", "Final rinse and specified coolant mix", "Clean container; coolant-maker ratio", "No unknown tap water where chemistry forbids it"],
+      ["70–90% IPA", "Final compatible bracket wipe after degreasing", "Spot-test and allow full evaporation", "Do not soak rubber, labels, motors or live electrics"],
+      ["Phosphoric steel prep", "Local isolated ferrous rust only", "Mechanically clean first; neutralise/rinse per system", "Keep off aluminium, core, copper/brass, solder and rubber"],
+      ["2K epoxy + 2K polyurethane", "Ferrous cradle, guard and brackets", "One compatible satin/semi-gloss coating system", "Not on fins, mesh apertures, threads, earths or rubber seats"],
+      ["Thin radiator coating", "R0 only", "Radiator-shop heat-exchanger product/application", "No powder coat, filler or thick primer"],
+      ["Cavity wax", "Eligible closed steel after full cure", "Compatible wand product; keep drains open", "Keep off earths, rubbers, threads and cores"],
+      ["EPDM-safe silicone aid or dilute soap", "Rubber assembly where needed", "Verify compatibility; minimal residue", "No petroleum grease on EPDM"],
+      ["Dielectric grease", "Connector seal lips/boots", "Light film after sound crimping", "Never pack between contact faces"],
+      ["Identified refrigerant oil", "New HNBR A/C seals", "Exact oil/refrigerant match; A/C specialist", "Never mix oils or reuse the old drier"],
+      ["Compatible long-life coolant", "Final cooling fill", "One known family and maker procedure", "Never mix unknown coolant families"],
+    ];
+
+    const releaseGates = [
+      ["A", "Component integrity", "R0 pressure/flow, C0 leak/cleanliness, and FS/FL electrical/direction records all pass."],
+      ["B", "Measured geometry", "B0, S0, L0, MR, complete component envelopes and vehicle/tool/movement sweeps are on a dated drawing."],
+      ["C", "Structure", "Competent road-load/fatigue/connection release, weld/HAZ inspection and the additional 2 × MR / 10-minute cradle proof all pass before coating."],
+      ["D", "Opaque dry fit", "Natural saddle seating, neutral upper locators, independent supports and all service/removal paths pass."],
+      ["E", "Finish and assembly", "No rust/overspray/blocked fins; new rubbers, service parts, fluids and matching hardware are verified."],
+      ["F", "Installed performance", "Independent fan circuits, hot-idle A/C and NA road/load cooling logs pass without progressive rise."],
+    ];
+
+    const stepCards = steps.map((step) => `
+      <article class="na-cooling-step-card">
+        <header>
+          <span class="na-cooling-step-number">${escapeHtml(step.number)}</span>
+          <div><p class="na-cooling-step-kicker">Controlled sequence</p><h4>${escapeHtml(step.title)}</h4><p>${escapeHtml(step.lead)}</p></div>
+        </header>
+        <ul>${step.bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        <footer><strong>Release gate</strong><span>${escapeHtml(step.gate)}</span></footer>
+      </article>
+    `).join("");
+
+    const fabricationTableRows = fabricationRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
+    const chemicalTableRows = chemicalRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
+    const gateCards = releaseGates.map(([id, title, detail]) => `
+      <article class="na-cooling-gate-card"><span>${escapeHtml(id)}</span><div><h4>${escapeHtml(title)}</h4><p>${escapeHtml(detail)}</p></div></article>
+    `).join("");
+
+    root.innerHTML = `
+      <div class="na-cooling-guide na-cooling-view">
+        <section class="na-cooling-hero" id="cooling-pack-summary">
+          <div class="na-cooling-hero-copy">
+            <div class="na-cooling-kicker-row">
+              <p class="eyebrow">Rev M · naturally aspirated 2H · controlled shop guide</p>
+              ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy naturally aspirated cooling summary link")}
+            </div>
+            <h2 class="na-cooling-title">Restore the retained cooling pack around one A/C pusher and one radiator puller.</h2>
+            <p class="na-cooling-lead na-cooling-lede">The turbo and intercooler are removed from scope. Keep <strong>one small front FS pusher</strong> for the full-face A/C condenser and retain the <strong>large rear FL puller/shroud</strong> as the radiator fan—but only after both pass condition, current, direction and installed-airflow tests.</p>
+            <div class="na-cooling-decision-row na-cooling-decision-chips" aria-label="Rev M architecture decisions">
+              <span class="na-cooling-decision-chip is-stop">No turbo</span><span class="na-cooling-decision-chip is-stop">No K0/intercooler</span><span class="na-cooling-decision-chip is-stop">No second front fan</span><span class="na-cooling-decision-chip">1 front A/C pusher</span><span class="na-cooling-decision-chip">1 rear radiator puller</span>
+            </div>
+            <div class="na-cooling-release-banner" role="note">
+              <strong>Architecture fixed · fabrication dimensions held</strong>
+              <span>B0/S0 templates, L0 span, filled mass MR, actual component envelopes, structural calculation and the physical dry fit must release every hole, bracket and gap.</span>
+            </div>
+            <div class="na-cooling-downloads na-cooling-download-actions">
+              <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev M shop guide (.md)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Image provenance &amp; prompts (.md)</a>
+            </div>
+          </div>
+          <div class="na-cooling-hero-media">
+            ${renderGallery([generatedVisuals[0]])}
+          </div>
+        </section>
+
+        <section class="card na-cooling-section na-cooling-start" id="cooling-pack-air-path">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Start here · released layer order</p><h3>One clean naturally aspirated cooling and A/C stack</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-air-path"), "#", "Copy cooling-pack air-path link")}
+          </div>
+          <ol class="na-cooling-air-path">
+            ${architecture.map(([number, title, detail]) => `<li><span>${escapeHtml(number)}</span><div><strong>${escapeHtml(title)}</strong><small>${escapeHtml(detail)}</small></div></li>`).join("")}
+          </ol>
+          <div class="na-cooling-rules-grid">
+            <article><strong>R0 weight path</strong><p>Both lower locators → two new J40-pattern rubber saddles → full-width crossmember → both structural uprights. Upper fittings locate only.</p></article>
+            <article><strong>Independent supports</strong><p>C0, FS, FL/shroud and G0 each use isolated removable brackets. No through-core ties, structural self-tappers or heat exchanger hung from another.</p></article>
+            <article><strong>Performance closes scope</strong><p>One front fan is the controlled design. Correct direction, voltage drop, sealing and distribution before proposing another fan under a new revision.</p></article>
+          </div>
+          <div class="na-cooling-danger" role="alert"><strong>Never fabricate from the images.</strong><span>Every generated view is illustrative. Actual parts, B0/S0, measured drawings, proof test and the vehicle dry fit control.</span></div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-visuals">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Photorealistic finish and sequence references</p><h3>Four workshop states—from restored parts to final installation</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-visuals"), "#", "Copy cooling-pack visual guide link")}
+          </div>
+          <p class="na-cooling-visual-note">Reference-led ImageGen illustrations · not dimension, product, hole or fit evidence. Captions state the controlled limitation.</p>
+          <div class="na-cooling-image-grid">${renderGallery(generatedVisuals)}</div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-evidence">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Physical retained-part evidence</p><h3>These actual parts—not the generated views—control the work</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-evidence"), "#", "Copy retained-part evidence link")}
+          </div>
+          <div class="na-cooling-evidence-grid">${renderGallery(retainedEvidence)}</div>
+        </section>
+
+        <section class="na-cooling-process" id="cooling-pack-process">
+          <div class="na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Step-by-step shop sequence · gates cannot be reordered</p><h3>Restore, fabricate, finish and commission</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-process"), "#", "Copy cooling-pack process link")}
+          </div>
+          <div class="na-cooling-step-grid na-cooling-steps">${stepCards}</div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-fabrication">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Fabrication and chassis fittings</p><h3>Controlled load path, isolation and removable hardware</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-fabrication"), "#", "Copy chassis fabrication specification link")}
+          </div>
+          <div class="na-cooling-formula" role="note">
+            <span>R0 lower locators</span><b>→</b><span>2 new rubber saddles</span><b>→</b><span>formed seats</span><b>→</b><span>full-width crossmember</span><b>→</b><span>both uprights</span>
+          </div>
+          <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
+            <table class="na-cooling-table na-cooling-data-table">
+              <thead><tr><th>Ref</th><th>Qty</th><th>Fitting / fabrication</th><th>Controlled requirement</th></tr></thead>
+              <tbody>${fabricationTableRows}</tbody>
+            </table>
+          </div>
+          <div class="na-cooling-proof"><strong>Structural release + mandatory pre-paint proof</strong><span>A competent person must first release the road-load, fatigue, connection, weld, fastener and torque design. Then apply 2 × filled/capped radiator mass MR at the two saddle centres for 10 minutes. The proof supplements the calculation; any permanent set, crack, looseness, saddle movement or upright distortion is a fail.</span></div>
+          <div class="na-cooling-prohibited">
+            <h4>Fabrication prohibitions</h4>
+            <p>No new chassis holes; no slots or reaming; no forced bolt pull; no side-bolt substitute; no washer-stack spacers; no unsleeved rubber joint; no radiator weight on upper ears, tanks, seams, fins or solder; no through-core tie.</p>
+          </div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-parts">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Parts and materials</p><h3>Retain selectively, buy age-sensitive items new, fabricate after release</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-parts"), "#", "Copy cooling-pack parts list link")}
+          </div>
+          <div class="na-cooling-parts-grid">
+            ${partsGroups.map((group) => `<article class="na-cooling-parts-card is-${escapeHtml(group.tone)}"><span>${escapeHtml(group.label)}</span><ul>${group.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>`).join("")}
+          </div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-chemicals">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Chemicals, coatings and consumables</p><h3>Clean and protect each substrate without trading appearance for function</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-chemicals"), "#", "Copy chemicals schedule link")}
+          </div>
+          <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
+            <table class="na-cooling-table na-cooling-data-table na-cooling-chem-table">
+              <thead><tr><th>Product class</th><th>Use</th><th>Selection / control</th><th>Do not do</th></tr></thead>
+              <tbody>${chemicalTableRows}</tbody>
+            </table>
+          </div>
+          <div class="na-cooling-safety" role="note"><strong>Shop safety and environmental control</strong><span>Follow every SDS. 2K products may contain hazardous isocyanates and can require professional spray controls/supplied air. Never weld near chlorinated cleaner residue, pressure-test A/C with oxygen, introduce wet shop air, or vent refrigerant.</span></div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-controls">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Two-fan electrical architecture</p><h3>Separate controls, protection and recorded voltage drop</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-controls"), "#", "Copy fan-control specification link")}
+          </div>
+          <div class="na-cooling-controls-grid">
+            <article><span>FS · front condenser pusher</span><h4>A/C request + pressure logic</h4><p>One centred fan pushes grille-to-engine across C0. Use a dedicated sealed relay, covered fuse and earth. Pressure logic prevents blind operation against an abnormal high-side condition.</p></article>
+            <article><span>FL · rear radiator puller</span><h4>Coolant-temperature control</h4><p>The complete sealed shroud pulls toward the engine. Use a separate sealed relay, covered fuse and earth plus safe service-test control.</p></article>
+            <article><span>Both branches</span><h4>Size from measured current</h4><p>Record terminal voltage, start/run current and voltage drop. Select cable/fuse/relay from measured current and inrush, then verify temperatures at hot idle with normal loads.</p></article>
+          </div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-gates">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Release record</p><h3>Six gates between a tidy assembly and a trusted one</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-gates"), "#", "Copy cooling-pack release gates link")}
+          </div>
+          <div class="na-cooling-gates-grid">${gateCards}</div>
+          <div class="na-cooling-release-footer">
+            <strong>Final installed acceptance</strong>
+            <span>Cooling and A/C circuits remain leak-free; FS pushes and FL pulls; both circuits pass electrical checks; naturally aspirated road/load cooling and intended-ambient hot-idle A/C remain stable without progressive temperature or pressure rise; the first-journey reinspection finds no rub, leak, settling or witness-mark movement.</span>
+          </div>
+        </section>
+
+        <section class="card na-cooling-section na-cooling-files" id="cooling-pack-files">
+          <div>
+            <p class="na-cooling-section-label">Controlled Rev M handoff</p>
+            <h3>Give the shops the guide, actual parts, templates and test sheets</h3>
+            <p>The portal is the readable execution view. The downloadable Rev M guide carries the full sequence, specifications, chemicals and acceptance wording. The prompt record identifies every generated visual and its limitation.</p>
+          </div>
+          <div class="na-cooling-downloads na-cooling-download-actions">
+            <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev M shop guide (.md)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Download image prompts (.md)</a>
           </div>
         </section>
       </div>
@@ -11316,8 +11749,6 @@
       renderer = renderPhotosNeeded;
     } else if (state.activeView === "cooling-pack") {
       renderer = renderCoolingPack;
-    } else if (state.activeView === "turbo-build") {
-      renderer = renderTurboBuild;
     } else if (state.activeView === "other-builds") {
       renderer = renderOtherBuilds;
     }

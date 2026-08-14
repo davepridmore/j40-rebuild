@@ -3154,3 +3154,983 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Naturally aspirated cooling + A/C guide: intentionally self-contained so it
+   can coexist with the earlier cooling and turbo workstream treatments. */
+.na-cooling-guide {
+  --na-ink: #e9e2d6;
+  --na-muted: #afa99d;
+  --na-panel: #1b221f;
+  --na-panel-raised: #252d29;
+  --na-line: rgba(235, 226, 211, 0.16);
+  --na-copper: #db7546;
+  --na-moss: #a6c99a;
+  --na-safety: #f4c76b;
+  background: #101512;
+  border: 1px solid #253029;
+  border-radius: 18px;
+  color: var(--na-ink);
+  display: grid;
+  gap: 1.25rem;
+  isolation: isolate;
+  margin: 0.7rem 0;
+  overflow: hidden;
+  padding: clamp(1rem, 2.4vw, 2rem);
+  position: relative;
+}
+
+.na-cooling-guide::before {
+  background: radial-gradient(circle at 82% 3%, rgba(219, 117, 70, 0.24), transparent 31%),
+    radial-gradient(circle at 6% 26%, rgba(166, 201, 154, 0.11), transparent 26%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.na-cooling-guide h2,
+.na-cooling-guide h3,
+.na-cooling-guide h4,
+.na-cooling-guide p {
+  margin-top: 0;
+}
+
+.na-cooling-guide h2,
+.na-cooling-guide h3,
+.na-cooling-guide h4 {
+  color: #fff9ed;
+}
+
+.na-cooling-hero {
+  border-bottom: 1px solid var(--na-line);
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
+  padding-bottom: 1.15rem;
+}
+
+.na-cooling-kicker {
+  color: var(--na-moss);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.na-cooling-title {
+  font-size: clamp(2rem, 5vw, 4.4rem);
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+  margin-bottom: 0.65rem;
+  max-width: 12ch;
+}
+
+.na-cooling-lede {
+  color: var(--na-muted);
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  line-height: 1.6;
+  margin-bottom: 0;
+  max-width: 60ch;
+}
+
+.na-cooling-hero-meta {
+  align-content: end;
+  border-left: 1px solid var(--na-line);
+  display: grid;
+  gap: 0.65rem;
+  padding-left: 1rem;
+}
+
+.na-cooling-hero-meta strong {
+  color: var(--na-copper);
+  display: block;
+  font-size: 0.76rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.na-cooling-hero-meta span {
+  color: var(--na-muted);
+  font-size: 0.88rem;
+}
+
+.na-cooling-decision-chips,
+.na-cooling-download-actions,
+.na-cooling-gates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.na-cooling-decision-chip {
+  background: rgba(166, 201, 154, 0.12);
+  border: 1px solid rgba(166, 201, 154, 0.38);
+  border-radius: 999px;
+  color: #dcebd4;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.4rem 0.7rem;
+}
+
+.na-cooling-decision-chip.is-stop,
+.na-cooling-gate.is-stop {
+  background: rgba(219, 117, 70, 0.14);
+  border-color: rgba(219, 117, 70, 0.46);
+  color: #ffd6c3;
+}
+
+.na-cooling-decision-chip.is-check,
+.na-cooling-gate.is-check {
+  background: rgba(244, 199, 107, 0.13);
+  border-color: rgba(244, 199, 107, 0.45);
+  color: #ffe4a8;
+}
+
+.na-cooling-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.na-cooling-section-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: space-between;
+}
+
+.na-cooling-section-heading h3 {
+  font-size: clamp(1.18rem, 2.2vw, 1.6rem);
+  letter-spacing: -0.025em;
+  margin-bottom: 0;
+}
+
+.na-cooling-section-heading p,
+.na-cooling-caption,
+.na-cooling-card p,
+.na-cooling-step-card p,
+.na-cooling-callout p {
+  color: var(--na-muted);
+  margin-bottom: 0;
+}
+
+.na-cooling-image-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.na-cooling-image-card {
+  background: var(--na-panel);
+  border: 1px solid var(--na-line);
+  border-radius: 13px;
+  grid-column: span 4;
+  margin: 0;
+  overflow: hidden;
+}
+
+.na-cooling-image-card.is-featured {
+  grid-column: span 6;
+}
+
+.na-cooling-image-card img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.na-cooling-image-card figcaption {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.7rem 0.8rem 0.8rem;
+}
+
+.na-cooling-image-card strong {
+  color: #fff9ed;
+  font-size: 0.86rem;
+}
+
+.na-cooling-caption {
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.na-cooling-air-path {
+  background: linear-gradient(105deg, #27362d, #1a211e 52%, #39291f);
+  border: 1px solid var(--na-line);
+  border-radius: 13px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.na-cooling-air-stage {
+  align-items: center;
+  color: #eef4e9;
+  display: flex;
+  flex: 1 0 150px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  gap: 0.55rem;
+  padding: 0.85rem;
+}
+
+.na-cooling-air-stage + .na-cooling-air-stage::before {
+  color: var(--na-copper);
+  content: "→";
+  font-size: 1.15rem;
+}
+
+.na-cooling-air-stage small {
+  color: var(--na-muted);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.na-cooling-callout {
+  background: rgba(244, 199, 107, 0.09);
+  border-left: 4px solid var(--na-safety);
+  border-radius: 0 11px 11px 0;
+  padding: 0.85rem 0.95rem;
+}
+
+.na-cooling-callout.is-warning {
+  background: rgba(219, 117, 70, 0.11);
+  border-left-color: var(--na-copper);
+}
+
+.na-cooling-callout h4 {
+  font-size: 0.86rem;
+  margin-bottom: 0.28rem;
+}
+
+.na-cooling-steps {
+  counter-reset: na-cooling-step;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.na-cooling-step-card {
+  background: var(--na-panel);
+  border: 1px solid var(--na-line);
+  border-radius: 13px;
+  counter-increment: na-cooling-step;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 2.9rem minmax(0, 1fr);
+  padding: 0.85rem;
+}
+
+.na-cooling-step-card::before {
+  align-items: center;
+  background: #32463a;
+  border: 1px solid rgba(166, 201, 154, 0.48);
+  border-radius: 50%;
+  color: #f3f8ed;
+  content: counter(na-cooling-step, decimal-leading-zero);
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 2.35rem;
+  justify-content: center;
+  width: 2.35rem;
+}
+
+.na-cooling-step-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.na-cooling-data-table-wrap {
+  border: 1px solid var(--na-line);
+  border-radius: 13px;
+  overflow-x: auto;
+}
+
+.na-cooling-data-table {
+  border-collapse: collapse;
+  min-width: 680px;
+  width: 100%;
+}
+
+.na-cooling-data-table th,
+.na-cooling-data-table td {
+  border-bottom: 1px solid var(--na-line);
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.na-cooling-data-table th {
+  background: #2a332e;
+  color: #e4ebdf;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.na-cooling-data-table td {
+  color: #ccc7bc;
+  font-size: 0.86rem;
+}
+
+.na-cooling-data-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.na-cooling-gate {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--na-line);
+  border-radius: 999px;
+  color: #e7e2d7;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.42rem 0.7rem;
+}
+
+.na-cooling-download-action {
+  background: var(--na-copper);
+  border: 1px solid var(--na-copper);
+  border-radius: 8px;
+  color: #1a1713;
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 0.55rem 0.72rem;
+  text-decoration: none;
+}
+
+.na-cooling-download-action:hover {
+  background: #f29260;
+  border-color: #f29260;
+}
+
+.na-cooling-download-action.is-secondary {
+  background: transparent;
+  border-color: rgba(233, 226, 214, 0.36);
+  color: var(--na-ink);
+}
+
+@media (max-width: 760px) {
+  .na-cooling-guide {
+    border-radius: 0;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+  }
+
+  .na-cooling-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .na-cooling-hero-meta {
+    border-left: 0;
+    border-top: 1px solid var(--na-line);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 0;
+    padding-top: 0.8rem;
+  }
+
+  .na-cooling-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .na-cooling-image-card,
+  .na-cooling-image-card.is-featured {
+    grid-column: span 12;
+  }
+
+  .na-cooling-step-card {
+    grid-template-columns: 2.45rem minmax(0, 1fr);
+    padding: 0.72rem;
+  }
+
+  .na-cooling-air-stage {
+    flex-basis: 132px;
+  }
+}
+
+/* Rev M naturally aspirated cooling guide — portal-specific composition. */
+.na-cooling-guide .card.na-cooling-section {
+  background: linear-gradient(145deg, rgba(37, 45, 41, 0.98), rgba(25, 31, 28, 0.98));
+  border-color: var(--na-line);
+  color: var(--na-ink);
+  padding: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+.na-cooling-guide .eyebrow,
+.na-cooling-section-label,
+.na-cooling-step-kicker {
+  color: var(--na-moss);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.na-cooling-hero {
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.na-cooling-hero-copy,
+.na-cooling-hero-media,
+.na-cooling-files > div {
+  min-width: 0;
+}
+
+.na-cooling-kicker-row {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.na-cooling-title {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  line-height: 0.98;
+  max-width: 18ch;
+}
+
+.na-cooling-lead strong {
+  color: #fff9ed;
+}
+
+.na-cooling-decision-row,
+.na-cooling-downloads {
+  margin-top: 0.9rem;
+}
+
+.na-cooling-release-banner {
+  background: rgba(244, 199, 107, 0.09);
+  border: 1px solid rgba(244, 199, 107, 0.38);
+  border-radius: 11px;
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.85rem;
+}
+
+.na-cooling-release-banner strong {
+  color: var(--na-safety);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.na-cooling-release-banner span,
+.na-cooling-visual-note,
+.na-cooling-files p {
+  color: var(--na-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.na-cooling-hero-media .gallery {
+  height: 100%;
+}
+
+.na-cooling-hero-media .gallery figure {
+  align-self: stretch;
+  background: var(--na-panel);
+  border-color: var(--na-line);
+  display: grid;
+  grid-template-rows: minmax(230px, 1fr) auto;
+}
+
+.na-cooling-hero-media .gallery img {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 230px;
+}
+
+.na-cooling-guide .gallery figure {
+  background: var(--na-panel);
+  border-color: var(--na-line);
+}
+
+.na-cooling-guide .gallery figcaption {
+  color: var(--na-muted);
+  line-height: 1.45;
+  padding: 0.65rem 0.72rem 0.75rem;
+}
+
+.na-cooling-image-grid > .gallery {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.na-cooling-image-grid > .gallery figure:first-child {
+  grid-column: span 2;
+}
+
+.na-cooling-image-grid > .gallery figure:first-child img {
+  aspect-ratio: 16 / 8;
+}
+
+.na-cooling-evidence-grid > .gallery {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.na-cooling-visual-note {
+  border-left: 3px solid var(--na-safety);
+  margin: 0;
+  padding-left: 0.7rem;
+}
+
+.na-cooling-section-heading {
+  align-items: flex-start;
+}
+
+.na-cooling-section-heading h3,
+.na-cooling-files h3 {
+  font-size: clamp(1.18rem, 2.2vw, 1.6rem);
+  letter-spacing: -0.025em;
+  margin: 0.12rem 0 0;
+}
+
+.na-cooling-guide .copy-link-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--na-line);
+  color: var(--na-muted);
+}
+
+.na-cooling-air-path {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.na-cooling-air-path li {
+  align-items: center;
+  display: flex;
+  flex: 1 0 145px;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.85rem 0.7rem;
+  position: relative;
+}
+
+.na-cooling-air-path li + li::before {
+  color: var(--na-copper);
+  content: "→";
+  font-size: 1rem;
+  font-weight: 900;
+  left: -0.18rem;
+  position: absolute;
+}
+
+.na-cooling-air-path li > span {
+  align-items: center;
+  background: rgba(166, 201, 154, 0.14);
+  border: 1px solid rgba(166, 201, 154, 0.34);
+  border-radius: 999px;
+  color: var(--na-moss);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.66rem;
+  font-weight: 900;
+  height: 1.9rem;
+  justify-content: center;
+  width: 1.9rem;
+}
+
+.na-cooling-air-path li div {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.na-cooling-air-path li strong {
+  color: #eef4e9;
+  font-size: 0.8rem;
+}
+
+.na-cooling-air-path li small {
+  color: var(--na-muted);
+  font-size: 0.69rem;
+  line-height: 1.35;
+}
+
+.na-cooling-rules-grid,
+.na-cooling-parts-grid,
+.na-cooling-controls-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.na-cooling-rules-grid article,
+.na-cooling-parts-card,
+.na-cooling-controls-grid article {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--na-line);
+  border-radius: 11px;
+  padding: 0.78rem;
+}
+
+.na-cooling-rules-grid strong,
+.na-cooling-controls-grid h4 {
+  color: #fff9ed;
+}
+
+.na-cooling-rules-grid p,
+.na-cooling-controls-grid p,
+.na-cooling-parts-card li {
+  color: var(--na-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0.25rem 0 0;
+}
+
+.na-cooling-danger,
+.na-cooling-proof,
+.na-cooling-safety {
+  align-items: flex-start;
+  background: rgba(219, 117, 70, 0.11);
+  border-left: 4px solid var(--na-copper);
+  border-radius: 0 11px 11px 0;
+  display: grid;
+  gap: 0.22rem;
+  padding: 0.8rem 0.9rem;
+}
+
+.na-cooling-danger strong,
+.na-cooling-proof strong,
+.na-cooling-safety strong {
+  color: #ffd6c3;
+  font-size: 0.82rem;
+}
+
+.na-cooling-danger span,
+.na-cooling-proof span,
+.na-cooling-safety span {
+  color: var(--na-muted);
+  font-size: 0.82rem;
+  line-height: 1.48;
+}
+
+.na-cooling-process {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.25rem 0;
+}
+
+.na-cooling-step-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.na-cooling-step-card {
+  counter-increment: none;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 0;
+  overflow: hidden;
+}
+
+.na-cooling-step-card::before {
+  content: none;
+  display: none;
+}
+
+.na-cooling-step-card header {
+  align-items: flex-start;
+  background: linear-gradient(110deg, rgba(166, 201, 154, 0.08), transparent 62%);
+  border-bottom: 1px solid var(--na-line);
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.85rem;
+}
+
+.na-cooling-step-number {
+  align-items: center;
+  background: #32463a;
+  border: 1px solid rgba(166, 201, 154, 0.48);
+  border-radius: 50%;
+  color: #f3f8ed;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 2.35rem;
+  justify-content: center;
+  width: 2.35rem;
+}
+
+.na-cooling-step-card header p:last-child {
+  line-height: 1.45;
+  margin-top: 0.2rem;
+}
+
+.na-cooling-step-card ul,
+.na-cooling-parts-card ul {
+  margin: 0;
+  padding: 0.75rem 1rem 0.75rem 1.9rem;
+}
+
+.na-cooling-step-card li {
+  color: #d2cdc2;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.na-cooling-step-card li + li {
+  margin-top: 0.36rem;
+}
+
+.na-cooling-step-card footer {
+  align-items: baseline;
+  background: rgba(244, 199, 107, 0.07);
+  border-top: 1px solid var(--na-line);
+  display: flex;
+  gap: 0.55rem;
+  padding: 0.62rem 0.85rem;
+}
+
+.na-cooling-step-card footer strong {
+  color: var(--na-safety);
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.na-cooling-step-card footer span {
+  color: var(--na-muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.na-cooling-formula {
+  align-items: center;
+  background: linear-gradient(100deg, #27362d, #1c231f);
+  border: 1px solid var(--na-line);
+  border-radius: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.78rem;
+}
+
+.na-cooling-formula span {
+  background: rgba(166, 201, 154, 0.1);
+  border: 1px solid rgba(166, 201, 154, 0.28);
+  border-radius: 7px;
+  color: #e5efdf;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.38rem 0.52rem;
+}
+
+.na-cooling-formula b {
+  color: var(--na-copper);
+}
+
+.na-cooling-data-table-wrap {
+  background: rgba(12, 16, 14, 0.28);
+}
+
+.na-cooling-data-table th,
+.na-cooling-data-table td {
+  border-left: 0;
+  border-right: 0;
+}
+
+.na-cooling-proof {
+  background: rgba(244, 199, 107, 0.09);
+  border-left-color: var(--na-safety);
+}
+
+.na-cooling-proof strong {
+  color: var(--na-safety);
+}
+
+.na-cooling-prohibited {
+  background: rgba(219, 117, 70, 0.07);
+  border: 1px solid rgba(219, 117, 70, 0.3);
+  border-radius: 11px;
+  padding: 0.75rem 0.85rem;
+}
+
+.na-cooling-prohibited h4 {
+  color: #ffd6c3;
+  font-size: 0.82rem;
+  margin-bottom: 0.25rem;
+}
+
+.na-cooling-prohibited p {
+  color: var(--na-muted);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.na-cooling-parts-card > span,
+.na-cooling-controls-grid article > span {
+  color: var(--na-moss);
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.na-cooling-parts-card.is-new {
+  border-top: 3px solid var(--na-moss);
+}
+
+.na-cooling-parts-card.is-retain {
+  border-top: 3px solid var(--na-copper);
+}
+
+.na-cooling-parts-card.is-fabricate {
+  border-top: 3px solid var(--na-safety);
+}
+
+.na-cooling-controls-grid h4 {
+  font-size: 0.95rem;
+  margin: 0.3rem 0 0;
+}
+
+.na-cooling-gates-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.na-cooling-gate-card {
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--na-line);
+  border-radius: 11px;
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.75rem;
+}
+
+.na-cooling-gate-card > span {
+  align-items: center;
+  background: rgba(244, 199, 107, 0.13);
+  border: 1px solid rgba(244, 199, 107, 0.42);
+  border-radius: 50%;
+  color: var(--na-safety);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.na-cooling-gate-card h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.na-cooling-gate-card p {
+  color: var(--na-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin: 0.18rem 0 0;
+}
+
+.na-cooling-release-footer {
+  background: linear-gradient(110deg, rgba(166, 201, 154, 0.1), rgba(244, 199, 107, 0.06));
+  border: 1px solid rgba(166, 201, 154, 0.28);
+  border-radius: 11px;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 0.9rem;
+}
+
+.na-cooling-release-footer strong {
+  color: var(--na-moss);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.na-cooling-release-footer span {
+  color: #d2cdc2;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.na-cooling-files {
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.na-cooling-files .na-cooling-downloads {
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.na-cooling-download-action:focus-visible,
+.na-cooling-guide .copy-link-btn:focus-visible {
+  outline: 3px solid var(--na-safety);
+  outline-offset: 2px;
+}
+
+@media (max-width: 980px) {
+  .na-cooling-hero,
+  .na-cooling-files {
+    grid-template-columns: 1fr;
+  }
+
+  .na-cooling-hero-media .gallery figure {
+    grid-template-rows: auto auto;
+  }
+
+  .na-cooling-hero-media .gallery img {
+    aspect-ratio: 16 / 8;
+    min-height: 0;
+  }
+
+  .na-cooling-rules-grid,
+  .na-cooling-parts-grid,
+  .na-cooling-controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .na-cooling-files .na-cooling-downloads {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .na-cooling-title {
+    font-size: clamp(1.85rem, 10vw, 2.8rem);
+    max-width: none;
+  }
+
+  .na-cooling-image-grid > .gallery,
+  .na-cooling-evidence-grid > .gallery,
+  .na-cooling-step-grid,
+  .na-cooling-gates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .na-cooling-image-grid > .gallery figure:first-child {
+    grid-column: auto;
+  }
+
+  .na-cooling-image-grid > .gallery figure:first-child img,
+  .na-cooling-hero-media .gallery img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .na-cooling-step-card footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .na-cooling-download-action {
+    text-align: center;
+    width: 100%;
+  }
+}

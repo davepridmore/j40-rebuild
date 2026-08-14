@@ -227,10 +227,31 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "ac_hvac_retrofit",
     "brake_system",
     "eps_vitz_upgrade",
-    "turbocharger_powertrain",
     "suspension_upgrade",
     "interior_weatherproofing",
     "final_assembly_validation",
+)
+
+# The owner retired the turbo conversion on 2026-08-14. Source CSV rows and
+# historical documents stay untouched for traceability, but these records must
+# not be emitted into any active portal workstream, task, fabrication, supply,
+# ordering, or status view.
+RETIRED_WORKSTREAM_IDS: frozenset[str] = frozenset({"turbocharger_powertrain"})
+RETIRED_RECORD_ID_PREFIXES: tuple[str, ...] = (
+    "part_turbo_",
+    "service_turbo_",
+    "turbo_",
+    "fab-turbo-",
+)
+RETIRED_PORTAL_RECORD_IDS: frozenset[str] = frozenset(
+    {
+        "eei-009",
+        "eei-010",
+        "eei-011",
+        "eei-012",
+        "eei-013",
+        "edr-018",
+    }
 )
 
 WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
@@ -331,7 +352,8 @@ J60_HYDRAULIC_STEERING_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "The approved route is RHD J60/HJ60 hydraulic steering, not Vitz/Yaris column EPS. Source the box-side "
         "and 2H pump-side hardware as identified matched sets. Do not release chassis drilling, welding, adapter "
         "plates or final hoses from catalogue assumptions; first bench-inspect the complete set and physically "
-        "trial-fit it on the J40. The steering package establishes the geometry that the turbo hot side must avoid."
+        "trial-fit it on the J40. The accepted steering package becomes the fixed clearance envelope for final "
+        "cooling, exhaust and body reassembly."
     ),
     "must_include": [
         "RHD J60/HJ60 hydraulic steering box with readable casting or identification evidence.",
@@ -896,7 +918,7 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Trial-fit the complete steering system", "Mock box, shaft, linkage and pump drive on the J40 before chassis drilling, welding, plates or final hoses are released."),
         ("Freeze the measured fabrication card", "Only after successful trial fit, record mounting, reinforcement, shaft, drag-link, hose and belt-alignment dimensions."),
         ("Install and validate the hydraulic system", "Complete controlled fabrication, rated hoses, fluid fill/bleed, alignment and lock-to-lock clearance checks before staged road validation."),
-        ("Release the turbo hot-side envelope second", "Prove steering geometry first; the turbo, manifold, downpipe and heat shields must route around the installed steering system."),
+        ("Publish the proven steering envelope", "Record the final frame, shaft, linkage, pump, hose and service-clearance envelope for cooling, exhaust and body reassembly."),
     ],
     "turbocharger_powertrain": [
         ("Pass the 2H engine-health gate", "Confirm engine identity, six-cylinder compression, hot oil pressure, measured blow-by, cooling stability, injector/pump condition and baseline smoke before releasing hardware."),
@@ -2222,7 +2244,8 @@ WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
     "summary": (
         "Use a complete RHD J60/HJ60 hydraulic steering package with a 2H-compatible pump drive. "
         "Inspect/rebuild and physically trial-fit the complete system before releasing any chassis fabrication "
-        "or final hoses; prove steering first, then route the turbo hot side around it."
+        "or final hoses; prove every final chassis, cooling, exhaust and service clearance against the accepted "
+        "steering envelope."
     ),
     "default_tools": ["Phone/camera", "Tape measure", "Calipers", "Angle finder", "Straight edge", "Torque wrench"],
     "default_supplies": ["Identification tags", "Measurement sheet", "Temporary mock-up fasteners", "Paint marker"],
@@ -2269,7 +2292,7 @@ WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
                 "Mock the box, shaft/couplers, pitman and drag-link route on the chassis.",
                 "Mock pump brackets, pulley/belt plane, reservoir and hose paths on the 2H.",
                 "Turn lock-to-lock and check frame, axle, suspension, brake/clutch, engine and service clearances.",
-                "Recreate body/bonnet/wing datums needed for later turbo clearance.",
+                "Recreate body/bonnet/wing plus cooling and exhaust datums needed for final clearance proof.",
             ],
             "tools": ["Inspection light", "Temporary fasteners", "Straight edge", "Angle finder", "Torque wrench"],
             "supplies": ["Mock-up spacers", "Tags", "Measurement card"],
@@ -2296,19 +2319,19 @@ WORKSTREAM_SUBTASK_GUIDES["eps_vitz_upgrade"] = {
         {
             "title": "Install, Bleed And Validate",
             "priority": "P0",
-            "remaining": "before road use and turbo hot-side release",
-            "instruction": "Treat the conversion as safety-critical and prove it before turbo routing is finalized.",
+            "remaining": "before road use and final reassembly release",
+            "instruction": "Treat the conversion as safety-critical and prove it before final reassembly is released.",
             "process_steps": [
                 "Complete approved mounting, shaft/linkage work, pump drive, reservoir and rated hose installation.",
                 "Fill and bleed with the specified fluid; inspect pump behavior, aeration and every joint for leaks.",
                 "Check lock-to-lock freedom, steering stops, shaft collapse path, fastener locking and alignment.",
                 "Run static, yard-speed and staged road checks with reinspection and re-torque.",
-                "Publish the proven steering envelope to the turbo fabricator; manifold, downpipe and heat shields must clear it.",
+                "Publish the proven steering envelope to the final assembly record; exhaust, cooling and body parts must clear it.",
             ],
             "tools": ["Torque wrench", "Inspection light", "Wheel chocks", "Alignment equipment"],
             "supplies": ["Specified fluid", "Rated hoses", "Torque paint", "Inspection sheet"],
-            "hold_point": "Any bind, play, leak, hose contact, alignment fault or uncertain fastener blocks road use and turbo hot-side release.",
-            "image_tokens": ["hydraulic", "steering", "hose", "validation", "turbo", "clearance"],
+            "hold_point": "Any bind, play, leak, hose contact, alignment fault or uncertain fastener blocks road use and final reassembly.",
+            "image_tokens": ["hydraulic", "steering", "hose", "validation", "clearance"],
         },
     ],
 }
@@ -2496,6 +2519,36 @@ def is_hidden_whatsapp_chat(row: dict[str, Any]) -> bool:
 
 def split_pipe(value: str) -> list[str]:
     return [token.strip() for token in clean(value).split("|") if token.strip()]
+
+
+def is_retired_portal_row(row: dict[str, Any]) -> bool:
+    """Return True when a historical row belongs only to a retired workstream."""
+    for key in ("workstream", "workstream_id", "target_workstream", "system"):
+        if norm(row.get(key)) in RETIRED_WORKSTREAM_IDS:
+            return True
+
+    for key in (
+        "entry_id",
+        "component_job_id",
+        "requirement_id",
+        "package_id",
+        "material_id",
+        "work_package_id",
+        "input_id",
+        "reconciliation_id",
+    ):
+        record_id = norm(row.get(key))
+        if record_id in RETIRED_PORTAL_RECORD_IDS:
+            return True
+        if record_id.startswith(RETIRED_RECORD_ID_PREFIXES):
+            return True
+
+    linked_workstreams = {norm(value) for value in split_pipe(row.get("linked_workstreams", ""))}
+    return bool(linked_workstreams) and linked_workstreams.issubset(RETIRED_WORKSTREAM_IDS)
+
+
+def active_portal_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [row for row in rows if not is_retired_portal_row(row)]
 
 
 def first_non_empty(row: dict[str, str], keys: list[str]) -> str:
@@ -3067,7 +3120,6 @@ def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
             link
             for link in [
                 file_link("docs/j60-hydraulic-power-steering-conversion-plan-20260719.md", "J60 hydraulic steering plan"),
-                file_link("docs/chassis-welder-steering-turbo-component-first-instruction-20260719.md", "Component-first steering/turbo instruction"),
                 file_link("docs/master-project-plan.md", "Master project plan"),
             ]
             if link
@@ -3430,9 +3482,9 @@ def firewall_pass_through_payload(
 def load_electrical_spec_layout(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
     master_rows = load_csv_optional(WORKBOOK_ELECTRICAL_MASTER_PATH)
     template_rows = load_csv_optional(WORKBOOK_ELECTRICAL_TEMPLATES_PATH)
-    engine_input_rows = load_csv_optional(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH)
+    engine_input_rows = active_portal_rows(load_csv_optional(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH))
     firewall_hole_rows = load_csv_optional(CABIN_ENGINE_FIREWALL_HOLES_SURVEY_PATH)
-    diagram_reconciliation_rows = load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH)
+    diagram_reconciliation_rows = active_portal_rows(load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH))
     if not master_rows and not template_rows and not engine_input_rows and not firewall_hole_rows and not diagram_reconciliation_rows:
         return {}
 
@@ -6626,12 +6678,18 @@ def build_workstream_evidence_sets(
 
 
 def collect_workstreams(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    by_id = {clean(row.get("workstream_id")): row for row in rows}
+    by_id = {
+        clean(row.get("workstream_id")): row
+        for row in rows
+        if not is_retired_portal_row(row)
+    }
     selected_ids: list[str] = [ws_id for ws_id in PRIMARY_WORKSTREAM_IDS if ws_id in by_id]
 
     if len(selected_ids) < 5:
         for row in rows:
             ws_id = clean(row.get("workstream_id"))
+            if is_retired_portal_row(row):
+                continue
             if ws_id in selected_ids:
                 continue
             if ws_id in {"site_setup", "legal_admin", "optional_upgrades"}:
@@ -10599,9 +10657,9 @@ def workstream_part_row_payload(
 
 
 def build_dashboard_data() -> dict[str, Any]:
-    workstream_rows = load_csv(WORKSTREAM_STATUS_PATH)
-    package_rows = load_csv(REASSEMBLY_PACKAGES_PATH)
-    component_rows = load_csv(COMPONENT_JOBS_PATH)
+    workstream_rows = active_portal_rows(load_csv(WORKSTREAM_STATUS_PATH))
+    package_rows = active_portal_rows(load_csv(REASSEMBLY_PACKAGES_PATH))
+    component_rows = active_portal_rows(load_csv(COMPONENT_JOBS_PATH))
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
     replacement_pipe_requirement_rows = load_csv_optional(REPLACEMENT_PIPE_SPECS_PATH)
     replacement_pipe_photo_intake_rows = load_csv_optional(REPLACEMENT_PIPE_PHOTO_INTAKE_PATH)
@@ -10618,8 +10676,8 @@ def build_dashboard_data() -> dict[str, Any]:
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
     hvac_system_requirement_rows = load_csv_optional(HVAC_SYSTEM_REQUIREMENTS_PATH)
-    fabrication_requirement_rows = load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH)
-    fabrication_raw_material_rows = load_csv_optional(FABRICATION_RAW_MATERIAL_ESTIMATES_PATH)
+    fabrication_requirement_rows = active_portal_rows(load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH))
+    fabrication_raw_material_rows = active_portal_rows(load_csv_optional(FABRICATION_RAW_MATERIAL_ESTIMATES_PATH))
     chassis_bracket_register_rows = load_csv_optional(CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
@@ -10644,12 +10702,12 @@ def build_dashboard_data() -> dict[str, Any]:
         pipe_original_part_evidence_index,
         rubber_original_part_evidence_index,
     )
-    expense_rows = load_csv(EXPENSES_PATH)
-    procurement_queue_rows = load_csv_optional(PROCUREMENT_QUEUE_PATH)
-    orders_receipts_audit_rows = load_csv_optional(ORDERS_RECEIPTS_AUDIT_QUEUE_PATH)
+    expense_rows = active_portal_rows(load_csv(EXPENSES_PATH))
+    procurement_queue_rows = active_portal_rows(load_csv_optional(PROCUREMENT_QUEUE_PATH))
+    orders_receipts_audit_rows = active_portal_rows(load_csv_optional(ORDERS_RECEIPTS_AUDIT_QUEUE_PATH))
     fastener_estimate_rows = load_csv_optional(FASTENER_PHOTO_COUNT_ESTIMATES_PATH)
     fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows)
-    buy_now_rows = load_csv(BUY_NOW_PATH)
+    buy_now_rows = active_portal_rows(load_csv(BUY_NOW_PATH))
     bilal_ganj_sample_kit_rows = load_csv_optional(BILAL_GANJ_SAMPLE_KITS_PATH)
     supplies_inventory = build_supplies_inventory(expense_rows, fastener_estimate_rows)
     workbook_source_links = build_workbook_source_links()
@@ -11460,7 +11518,9 @@ def build_dashboard_data() -> dict[str, Any]:
                     "keywords": sorted(profile["keywords"]),
                 }
                 for ws_id, profile in WORKSTREAM_IMAGE_PROFILES.items()
+                if ws_id not in RETIRED_WORKSTREAM_IDS
             },
+            "retired_workstream_ids": sorted(RETIRED_WORKSTREAM_IDS),
         },
     }
     return data
