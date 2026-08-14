@@ -1,5 +1,7 @@
 # J40 Front Radiator Two-Side Retention Pack - Rev A
 
+> **SUPERSEDED — DO NOT FABRICATE.** The owner's 15 August 2026 physical-state correction confirms the radiator arms are loose and not attached. The 410 mm height, 4 mm material and 618 mm developed template below are historical only. Rev O now controls: measure the actual chassis connector interfaces, then shorten/rework or replace the loose arms to end at the highest required functional attachment. See `../na_cooling_connector_arms_rev_o/README.md`.
+
 This package now uses a single 4 mm mild-steel formed-angle radiator post with a chassis-straddling saddle at the bottom. The existing-side radiator bracket measurements are imported; the remaining hold is right-side transfer and dry-fit, not the basic bracket dimensions.
 
 ## Design Intent

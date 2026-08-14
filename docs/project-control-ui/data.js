@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-15T01:27:12+05:00",
+  "generated_at": "2026-08-15T02:51:54+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -60,10 +60,10 @@ window.J40_DASHBOARD_DATA = {
     "sample_fabrication_kits": 4,
     "status_update_gmail_records": 14,
     "status_update_whatsapp_new_rows": 0,
-    "status_update_manual_rows": 15,
+    "status_update_manual_rows": 14,
     "status_update_delivery_watchlist_rows": 18,
-    "capture_data_tasks": 121,
-    "capture_data_tasks_now": 104,
+    "capture_data_tasks": 122,
+    "capture_data_tasks_now": 106,
     "supply_rows_tracked": 295,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
@@ -6481,16 +6481,16 @@ window.J40_DASHBOARD_DATA = {
       "id": "chassis_fixing",
       "title": "Chassis Fixing",
       "phase": "03b_chassis_fixing",
-      "status": "targeted_structural_welding_reported_complete_post_weld_validation_pending",
+      "status": "targeted_structural_repairs_mixed_radiator_arm_fabrication_reopened",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "mixed",
       "depends_on": [
         "body_chassis"
       ],
-      "next_action": "Inspect and photograph the reported-complete suspension grinder-cut repair, newly welded second radiator arm and both ends of the reinstated major structural crossbar. Confirm weld condition, chassis/radiator geometry, driveline and pipe clearance, then restore primer/top protection at every heat-affected area.",
-      "exit_gate": "Chassis has no unresolved structural defects or missing required welded brackets, all bracket analysis/design/implementation/validation tasks are closed, and cleaned/prepped surfaces are protected with documented coating stack",
-      "notes": "The earlier bracket and coating history remains valid. July 22 user evidence now moves the three targeted welder actions to physical-work reported complete: grinder-cut repair, second radiator arm and major structural-bar reinstatement. The workstream stays open for post-weld inspection, as-built geometry and clearance checks, radiator dry fit with isolators, and primer/Raptor restoration; the photos are progress evidence, not structural acceptance.",
+      "next_action": "Inspect and photograph the reported-complete suspension grinder-cut repair and both ends of the reinstated major structural crossbar. Separately template the actual radiator chassis connectors and fabricate the confirmed-loose A0/A1 arm pair under Rev O; then confirm weld condition, chassis/radiator geometry, driveline and pipe clearance and restore primer/top protection.",
+      "exit_gate": "Chassis has no unresolved structural defects or missing required brackets, the shortened radiator arms and holders pass measured/structural release, all bracket validation tasks are closed, and cleaned/prepped surfaces are protected with the documented coating stack",
+      "notes": "Owner correction on 2026-08-15 supersedes the July reported-welded radiator-arm interpretation: both radiator arms are loose and unattached. The grinder-cut repair and major structural-bar report remain subject to post-work QA; radiator-arm fabrication is reopened under Rev O with A0-D connector templates, dry fit, proof and coating gates.",
       "evidence_source": [
         "photo_inventory",
         "20260422_picker_batch",
@@ -6517,7 +6517,8 @@ window.J40_DASHBOARD_DATA = {
         "comms_review_2026-07-22_axle_repair_bumpers",
         "20260722_000001_user_second_radiator_arm_welded_front_structure",
         "20260722_000002_user_front_structure_winch_crossmember_update",
-        "20260722_000003_user_major_structural_crossbar_reinstalled"
+        "20260722_000003_user_major_structural_crossbar_reinstalled",
+        "docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md"
       ],
       "images": [
         {
@@ -10694,7 +10695,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 135,
-      "reference_token_count": 93,
+      "reference_token_count": 94,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -10713,10 +10714,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "register_id": "CBR-001",
           "station": "front_support",
-          "side": "left_chassis_radiator_side",
-          "component_or_function": "Left chassis-attached radiator bracket",
-          "current_condition": "left_chassis_bracket_measurements_imported",
-          "evidence_level": "direct_measurement_photo",
+          "side": "left_chassis_radiator_connector",
+          "component_or_function": "Left radiator chassis-connector context",
+          "current_condition": "owner_correction_requires_physical_A0_D_template",
+          "evidence_level": "historical_measurement_photo_plus_owner_physical_state",
           "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA",
           "evidence_ref_list": [
             "20260512_213129_gp_IVnd8hWQ",
@@ -10737,14 +10738,14 @@ window.J40_DASHBOARD_DATA = {
             "20260430_215957_gp_2iBbUagw",
             "20260430_220004_gp_C9oYiYmA"
           ],
-          "photo_read": "May 12 21:31-21:32 tape-measure photos now show the existing left-side chassis-attached radiator bracket/upright, including vertical height, top-tab offset, front opening, and fan/pulley clearance envelope. Removed-radiator photos still provide side/lower tab geometry; exact hole diameters, hole-centre map, metal thickness, and isolator contact still need template confirmation.",
-          "decision": "Use the measured left chassis bracket/upright as the primary datum for a similar right-side radiator retention bracket, while preserving the current radiator plane and fan clearance.",
-          "coating_gate": "blocks_final_primer_raptor_until_weld_or_bolt_pickups_released",
-          "next_action": "Create a labelled left-to-right transfer sketch/template from the left bracket photos: upright height, top-tab offset, base bolts, hole diameters, hole centres, edge distances, lower support contact, isolator/rubber contact area, and fan clearance.",
-          "design_release_needed": "yes",
+          "photo_read": "May photos provide historical front-opening and fan/pulley context, but the owner confirms both radiator arms are now loose and unattached. The photos do not release an installed upright height, connector hole map, material thickness or isolator contact.",
+          "decision": "Create A0-D-L directly from the actual structural connector; use the loose left arm only as an inspectable blank/pattern and purpose-size it to the released connector, radiator plane and fan clearance.",
+          "coating_gate": "blocks_final_primer_raptor_until_connector_arm_and_holder_release",
+          "next_action": "Record connector face/axis, section/condition, hole centres and diameters, edge/bearing area, fastener access, drainage and tool sweep; then issue the A0-L/A1-L drawing from the physical template.",
+          "design_release_needed": "no",
           "implementation_owner": "workshop_to_fabricator",
-          "status": "left_measurement_imported_right_template_required",
-          "notes": "Treat the left-side bracket as the pattern reference only after confirming the right-side pickup metal is sound; do not hard-clamp the radiator tank or core.",
+          "status": "left_connector_template_required",
+          "notes": "Owner correction dated 2026-08-15 supersedes the old attached-upright interpretation. No photo-scaled height or blind left-to-right transfer.",
           "evidence_images": [
             {
               "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
@@ -10955,10 +10956,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "register_id": "CBR-010",
           "station": "front_support",
-          "side": "left_chassis_radiator_side_reference",
-          "component_or_function": "Left radiator bracket measurement datum for right-side fabrication",
-          "current_condition": "measured_left_reference_available",
-          "evidence_level": "direct_measurement_photo",
+          "side": "radiator_connector_reference",
+          "component_or_function": "Historical left-side photo context for paired connector-arm fabrication",
+          "current_condition": "historical_context_only_physical_templates_required",
+          "evidence_level": "historical_measurement_photo_plus_owner_physical_state",
           "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context",
           "evidence_ref_list": [
             "20260512_213129_gp_IVnd8hWQ",
@@ -10966,14 +10967,14 @@ window.J40_DASHBOARD_DATA = {
             "20260512_213214_gp_xZKluAkg",
             "20260512_100000_user_front_support_radiator_pickups_context"
           ],
-          "photo_read": "Dedicated May 12 measurement set for the existing left chassis-attached radiator bracket: vertical upright height, top-tab/offset view, and front-opening/fan-plane clearance are visible with a tape measure.",
-          "decision": "Use this left-side measured bracket as the starting pattern for the similar right-side bracket; mirror the functional geometry only after confirming radiator position, isolator contact, and right-side chassis pickup condition.",
-          "coating_gate": "blocks_final_primer_raptor_until_right_side_template_released",
-          "next_action": "Use these four images as the left reference set, then make a cardboard or flat-bar right-side template and photograph it in place with ruler before cutting steel.",
-          "design_release_needed": "yes",
+          "photo_read": "The May set shows opening and clearance context; it does not prove the current arm attachment state or release a left-to-right copy. Owner confirmation on 2026-08-15 establishes that both arm pieces are loose.",
+          "decision": "Template A0-D-L and A0-D-R independently at the real connectors; use common section/style only where the two measured interfaces permit a mirror-handed pair.",
+          "coating_gate": "blocks_final_primer_raptor_until_both_connector_templates_released",
+          "next_action": "Make rigid left and right connector templates, photograph them with scale, then issue separate arm-end coordinates and a common radiator-plane datum before cutting either loose blank.",
+          "design_release_needed": "no",
           "implementation_owner": "workshop_to_fabricator",
-          "status": "right_side_template_required_from_left_reference",
-          "notes": "The reference is for geometry and clearance; final right-side holes must be measured on the vehicle rather than blindly copied.",
+          "status": "paired_connector_templates_required",
+          "notes": "Do not derive final height, holes or cut line from the photo or blindly copy one side. Rev O controls.",
           "evidence_images": [
             {
               "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
@@ -11029,39 +11030,25 @@ window.J40_DASHBOARD_DATA = {
           "register_id": "CBR-002",
           "station": "front_support",
           "side": "right_radiator_side",
-          "component_or_function": "Right-side radiator retention arm",
-          "current_condition": "right_side_arm_reported_welded_post_weld_and_radiator_fit_validation_pending",
-          "evidence_level": "direct_update_photo",
-          "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_100100_user_battery_side_tray_structure_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260722_000001_user_second_radiator_arm_welded_front_structure",
+          "component_or_function": "Shortened right radiator connector arm",
+          "current_condition": "right_arm_loose_connector_template_and_fabrication_release_pending",
+          "evidence_level": "owner_physical_state_correction",
+          "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context|20260722_000001_user_second_radiator_arm_welded_front_structure",
           "evidence_ref_list": [
             "20260512_213129_gp_IVnd8hWQ",
             "20260512_213144_gp_2rlycKHA",
             "20260512_213214_gp_xZKluAkg",
             "20260512_100000_user_front_support_radiator_pickups_context",
-            "20260512_212929_gp_pnlr6x5w",
-            "20260512_212947_gp_AdvWGolg",
-            "20260512_213008_gp_1U5vulZw",
-            "20260512_213027_gp_9Cy950Kw",
-            "20260512_205417_gp_CzJNQsiA",
-            "20260512_205434_gp_QnE3tLvQ",
-            "20260512_100100_user_battery_side_tray_structure_context",
-            "20260512_073210_gp_zP427O2A",
-            "20260512_073303_gp_hNyAiN1g",
-            "20260422_004423_gp_B1N5ThVw",
-            "20260422_004429_gp_4emWbTrA",
-            "20260422_004436_gp_yjCPMWTg",
-            "20260430_215957_gp_2iBbUagw",
-            "20260430_220004_gp_C9oYiYmA",
             "20260722_000001_user_second_radiator_arm_welded_front_structure"
           ],
-          "photo_read": "July 22 user update and front-structure image show the second/right-side radiator arm installed. The evidence closes fabrication but does not prove the weld, height/plane, top-hole alignment, lower pickup, isolation or fan clearance.",
-          "decision": "Keep the installed arm if post-weld inspection and radiator dry fit pass; do not fabricate another arm unless a specific as-built defect is found.",
-          "coating_gate": "blocks_final_primer_raptor_until_post_weld_and_radiator_fit_validation",
-          "next_action": "Inspect the arm attachment and compare both sides; fit the radiator with rubber isolation and verify top/lower pickups, fan/shroud/hose/bonnet clearance, then restore primer/top protection.",
+          "photo_read": "Owner correction on 2026-08-15 confirms the radiator arms are loose and not attached; the July image/report is historical context and does not release an installed arm.",
+          "decision": "Measure A0-D-R at the actual structural connector; inspect the loose blank; then bench-shorten/rework or replace it as a purpose-sized A0-R/A1-R assembly ending at the highest required functional interface.",
+          "coating_gate": "blocks_final_primer_raptor_until_structural_dry_fit_and_proof_release",
+          "next_action": "Complete connector template, structural drawing, bare-metal fit, total 2 x MR proof, radiator/isolator and guard/fan/bonnet clearance, then restore the released coating stack.",
           "design_release_needed": "no",
           "implementation_owner": "workshop",
-          "status": "installed_validation_pending",
-          "notes": "The left measured bracket remains the geometry datum. Physical radiator fit and clearance override a visual symmetry assumption.",
+          "status": "loose_arm_fabrication_release_pending",
+          "notes": "Rev O supersedes the old 410 mm/4 mm post and X2 adapter concepts. No photograph-scaled dimension, new chassis hole, forced alignment or unused tall projection.",
           "evidence_images": [
             {
               "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
@@ -11109,174 +11096,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "front_support_radiator_pickups_context",
               "stage": "chassis_fixing",
               "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:29:29",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_212929_gp_pnlr6x5w",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:29:47",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_212947_gp_AdvWGolg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:30:08",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_213008_gp_1U5vulZw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:30:27",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_213027_gp_9Cy950Kw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "20:54:17",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_205417_gp_CzJNQsiA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "20:54:34",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_205434_gp_QnE3tLvQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_100100_user_battery_side_tray_structure_context.png",
-              "caption": "Battery Side Tray Structure Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "10:01:00",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "battery_side_tray_structure_context",
-              "stage": "chassis_fixing",
-              "media_id": "20260512_100100_user_battery_side_tray_structure_context",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-              "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:32:10",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "front_support_radiator_pickups_context",
-              "stage": "chassis_fixing",
-              "media_id": "20260512_073210_gp_zP427O2A",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:33:03",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "chassis_fixing",
-              "media_id": "20260512_073303_gp_hNyAiN1g",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:23",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004423_gp_B1N5ThVw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260422_004429_gp_4emWbTrA.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:29",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004429_gp_4emWbTrA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260422_004436_gp_yjCPMWTg.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:36",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004436_gp_yjCPMWTg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-              "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-              "captured_date": "2026-04-30",
-              "captured_time": "21:59:57",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-              "stage": "mechanical_inspection",
-              "media_id": "20260430_215957_gp_2iBbUagw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-              "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-              "captured_date": "2026-04-30",
-              "captured_time": "22:00:04",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-              "stage": "mechanical_inspection",
-              "media_id": "20260430_220004_gp_C9oYiYmA",
               "matched_tokens": []
             },
             {
@@ -11943,36 +11762,26 @@ window.J40_DASHBOARD_DATA = {
           "register_id": "CBR-009",
           "station": "front_engine_bay",
           "side": "radiator_and_battery_added_structure",
-          "component_or_function": "Added structure layout for radiator retention and battery stand",
-          "current_condition": "radiator_arm_installed_battery_structure_separate_scope",
-          "evidence_level": "new_direct_photo",
-          "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context|20260512_100100_user_battery_side_tray_structure_context|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|20260722_000001_user_second_radiator_arm_welded_front_structure",
+          "component_or_function": "Separate radiator connector-arm and battery-stand scopes",
+          "current_condition": "radiator_arms_loose_battery_structure_separate_scope",
+          "evidence_level": "owner_physical_state_correction",
+          "evidence_refs": "20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|20260512_100000_user_front_support_radiator_pickups_context|20260512_100100_user_battery_side_tray_structure_context|20260722_000001_user_second_radiator_arm_welded_front_structure",
           "evidence_ref_list": [
             "20260512_213129_gp_IVnd8hWQ",
             "20260512_213144_gp_2rlycKHA",
             "20260512_213214_gp_xZKluAkg",
             "20260512_100000_user_front_support_radiator_pickups_context",
             "20260512_100100_user_battery_side_tray_structure_context",
-            "20260512_212929_gp_pnlr6x5w",
-            "20260512_212947_gp_AdvWGolg",
-            "20260512_213008_gp_1U5vulZw",
-            "20260512_213027_gp_9Cy950Kw",
-            "20260512_205417_gp_CzJNQsiA",
-            "20260512_205434_gp_QnE3tLvQ",
-            "20260512_073210_gp_zP427O2A",
-            "20260512_073303_gp_hNyAiN1g",
-            "20260512_073314_gp_GyAXZWBg",
-            "20260512_073547_gp_SNtwIVyA",
             "20260722_000001_user_second_radiator_arm_welded_front_structure"
           ],
-          "photo_read": "The radiator retention arm is now reported installed. Battery structure remains a separate design/inspection scope; the radiator and battery load paths must not be combined casually.",
-          "decision": "Validate the as-built radiator arm independently and continue any battery-stand work only under its own pickup, load, clearance and corrosion-control release.",
-          "coating_gate": "blocks_final_primer_raptor_if_radiator_validation_or_battery_welded_pickups_remain",
-          "next_action": "Dry-fit and release the radiator arm; separately photograph and template any still-required battery stand without changing the radiator structure.",
+          "photo_read": "Owner correction confirms both radiator arms are loose and not attached. Battery structure remains a separate design/inspection scope; radiator and battery load paths must not be combined casually.",
+          "decision": "Design the radiator A0/A1 pair directly from the real connector templates and continue any battery-stand work only under its own pickup load clearance and corrosion-control release.",
+          "coating_gate": "blocks_final_primer_raptor_if_radiator_fabrication_or_battery_pickups_remain",
+          "next_action": "Dry-fit and structurally release the shortened radiator arms plus G0/R0 holders; separately template any battery stand without making it part of the radiator carrier.",
           "design_release_needed": "yes",
           "implementation_owner": "workshop_to_fabricator",
-          "status": "radiator_installed_validation_pending_battery_scope_separate",
-          "notes": "Do not combine radiator support and battery mass into one flexible bracket; common structure is allowed only with separated load paths and no fan/steering/exhaust interference.",
+          "status": "radiator_arm_fabrication_pending_battery_scope_separate",
+          "notes": "Do not combine radiator support and battery mass into one flexible bracket; shared structure is allowed only under a calculation with separated load paths and no fan/steering/exhaust interference.",
           "evidence_images": [
             {
               "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
@@ -12035,126 +11844,6 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:29:29",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_212929_gp_pnlr6x5w",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:29:47",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_212947_gp_AdvWGolg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:30:08",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_213008_gp_1U5vulZw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "21:30:27",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_213027_gp_9Cy950Kw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "20:54:17",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_205417_gp_CzJNQsiA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-              "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "20:54:34",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "ac_condenser_sample_measurement",
-              "stage": "ac_hvac_retrofit",
-              "media_id": "20260512_205434_gp_QnE3tLvQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-              "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:32:10",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "front_support_radiator_pickups_context",
-              "stage": "chassis_fixing",
-              "media_id": "20260512_073210_gp_zP427O2A",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:33:03",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "chassis_fixing",
-              "media_id": "20260512_073303_gp_hNyAiN1g",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
-              "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:33:14",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-              "stage": "mechanical_baseline",
-              "media_id": "20260512_073314_gp_GyAXZWBg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260512_073547_gp_SNtwIVyA.jpg",
-              "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-              "captured_date": "2026-05-12",
-              "captured_time": "07:35:47",
-              "media_type": "photo",
-              "component_group": "engine_bay",
-              "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-              "stage": "mechanical_baseline",
-              "media_id": "20260512_073547_gp_SNtwIVyA",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
               "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
               "captured_date": "2026-07-22",
@@ -12211,10 +11900,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "chassis_bracket_analysis_register_20260508",
           "component_group": "chassis_underside",
-          "current_status": "as_built_repairs_recorded_validation_pending",
-          "planned_action": "Update the bracket register to show the grinder-cut repair, second radiator arm and reinstated structural crossbar as physically complete; link the July 22 photos and retain post-weld inspection, geometry, clearance and coating as open validation actions.",
-          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|docs_chassis_bracket_analysis_register_20260508|data_manual_chassis_bracket_analysis_register_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled",
-          "notes": "The register now distinguishes physical fabrication from safety release. The known jobs are fabricated; the remaining work is as-built QA and any separately proven functional bracket found in the final survey."
+          "current_status": "register_corrected_radiator_arm_fabrication_pending",
+          "planned_action": "Update the bracket register so the grinder-cut repair and reinstated structural crossbar remain reported-complete/QA-pending while both radiator arms are recorded as loose and unattached. Link the July context and the 2026-08-15 owner correction; require Rev O connector templates, geometry, proof, clearance and coating gates.",
+          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|docs_chassis_bracket_analysis_register_20260508|data_manual_chassis_bracket_analysis_register_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+          "notes": "The register distinguishes historical photo inference from owner-confirmed physical state. Structural-repair QA remains open; A0/A1 arm and G0/R0 holder fabrication is not complete until Rev O release."
         },
         {
           "component_job_id": "chassis_bracket_design_release_20260508",
@@ -12227,10 +11916,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "chassis_bracket_fabrication_install_20260508",
           "component_group": "chassis_underside",
-          "current_status": "targeted_welding_reported_complete_post_weld_qa_pending",
-          "planned_action": "Treat the suspension grinder-cut repair, second radiator arm and reinstated major round-tube crossbar as physically fabricated. Inspect each weld and heat-affected zone, verify the released geometry and clearances, and restore primer/top protection before final chassis/front-support coating closure.",
-          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|docs_chassis_bracket_audit_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|comms_review_2026-07-22_axle_repair_bumpers|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled",
-          "notes": "The July 22 user report closes the targeted fabrication actions: grinder-cut repair, second radiator arm welding and major structural-bar reinstatement. This is not structural acceptance; post-weld inspection, radiator/driveline geometry and clearance checks, and coating touch-in remain open. Do not add generic auxiliary brackets without a released function and template."
+          "current_status": "structural_repair_qa_and_rev_o_radiator_fabrication_pending",
+          "planned_action": "Treat the suspension grinder-cut repair and reinstated major round-tube crossbar as reported fabricated and inspect their welds/heat-affected zones. Treat both radiator arms as loose, unattached blanks: template the connectors and bench-shorten/rework or replace them under Rev O before dry fit, proof and coating.",
+          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|docs_chassis_bracket_audit_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|comms_review_2026-07-22_axle_repair_bumpers|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+          "notes": "Owner correction supersedes the July radiator-arm completion claim. No generic auxiliary bracket or tall arm projection is released: A0/A1, G1/G2 and R0-E/R3 require templates, drawing, dry fit and inspection."
         },
         {
           "component_job_id": "chassis_bracket_validation_release_20260508",
@@ -12243,10 +11932,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "chassis_frame_and_crossmembers",
           "component_group": "chassis_underside",
-          "current_status": "targeted_structural_welding_reported_complete_post_weld_qa_and_coating_pending",
-          "planned_action": "Inspect the reported-complete suspension grinder-cut repair, the newly welded second radiator arm and both ends of the reinstated major round-tube structural crossbar. Confirm geometry, weld continuity, driveline/line clearance and fastener condition, then clean heat-affected areas and restore the specified primer/top protection before chassis closeout.",
-          "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-12_front_underprep_majority_done_raptor_next|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000002_user_front_structure_winch_crossmember_update|20260722_000003_user_major_structural_crossbar_reinstalled",
-          "notes": "User reports the targeted physical welding is now complete: the grinder-cut repair was fixed, the second radiator arm was welded in, and the major structural bar was reinstated. The July 22 photos support those work reports but do not constitute structural release. Final status remains open for close weld/heat-affected-zone inspection at every end, chassis and radiator geometry checks, clearance checks around the transmission/driveline and pipes, and primer/Raptor touch-in."
+          "current_status": "structural_repairs_mixed_radiator_arm_fabrication_reopened",
+          "planned_action": "Inspect the reported-complete suspension grinder-cut repair and both ends of the reinstated major round-tube structural crossbar. Treat the radiator arms separately as confirmed-loose parts: template the actual connectors and fabricate purpose-sized A0/A1 arms under Rev O. Confirm geometry, weld continuity, driveline/line clearance and fastener condition, then restore protection before closeout.",
+          "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-12_front_underprep_majority_done_raptor_next|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000002_user_front_structure_winch_crossmember_update|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+          "notes": "Owner correction on 2026-08-15 supersedes the July reported-welded radiator-arm interpretation: both arms are loose and unattached. The grinder-cut repair and structural bar remain on post-work QA; the radiator arms now require A0-D templates, structural drawing, dry fit, proof and finish under Rev O."
         },
         {
           "component_job_id": "chassis_hard_lines_and_brackets",
@@ -12259,10 +11948,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "chassis_missing_welded_bracket_survey_20260508",
           "component_group": "chassis_underside",
-          "current_status": "targeted_welding_reported_complete_remaining_bracket_audit_pending",
-          "planned_action": "Record the grinder-cut repair, second radiator arm and major structural crossbar as fabricated, then perform the final underside/front-support survey for any other proven missing, loose, wire-tied or unsafe functional bracket before coating closure. Do not invent generic tabs without a demonstrated function.",
-          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled",
-          "notes": "July 22 reports close the three known welder actions, but the old broad estimate of 10-15 possible additions was never a released fabrication list. Final survey should close only proven functional brackets and keep optional/unidentified additions out of scope."
+          "current_status": "structural_repair_qa_and_radiator_arm_fabrication_pending",
+          "planned_action": "Record the grinder-cut repair and major structural crossbar as reported fabricated; record both radiator arms as loose and reopen them under Rev O. Perform the final underside/front-support survey for proven missing, loose, wire-tied or unsafe functional brackets. Do not invent generic tabs without a demonstrated function.",
+          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+          "notes": "The July radiator-arm report is superseded by the owner\u2019s 2026-08-15 physical-state correction. Close only proven structural repairs; purpose-size the loose arms from A0-D and fabricate only the released G0/R0 holders."
         },
         {
           "component_job_id": "chassis_rear_half_primer_application_20260704",
@@ -12358,8 +12047,8 @@ window.J40_DASHBOARD_DATA = {
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "targeted_structural_welding_reported_complete_post_weld_validation_pending",
-          "detail": "Inspect and photograph the reported-complete suspension grinder-cut repair, newly welded second radiator arm and both ends of the reinstated major structural crossbar. Confirm weld condition, chassis/radiator geometry, driveline and pipe clearance, then restore primer/top protection at every heat-affected area."
+          "status": "targeted_structural_repairs_mixed_radiator_arm_fabrication_reopened",
+          "detail": "Inspect and photograph the reported-complete suspension grinder-cut repair and both ends of the reinstated major structural crossbar. Separately template the actual radiator chassis connectors and fabricate the confirmed-loose A0/A1 arm pair under Rev O; then confirm weld condition, chassis/radiator geometry, driveline and pipe clearance and restore primer/top protection."
         },
         {
           "label": "Finish dry mechanical cleanup",
@@ -12442,11 +12131,6 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Validate the grinder-cut repair, both radiator-arm attachments and both ends of the reinstated structural crossbar for weld quality, alignment, rail condition and component/line clearance. Trial-fit the radiator, then clean and touch in every heat-affected primer/top-protection area before final coating closure. Notes: This is the closeout step. Physical welding is reported complete across all three targeted jobs, but primer/Raptor release still requires no crack, undercut, porosity, incomplete fusion, heat distortion, loose attachment, unsafe clearance or unprotected bare steel at the worked stations."
         },
         {
-          "label": "Component Task \u00b7 Chassis Bracket Analysis Register 20260508",
-          "status": "as_built_repairs_recorded_validation_pending",
-          "detail": "Update the bracket register to show the grinder-cut repair, second radiator arm and reinstated structural crossbar as physically complete; link the July 22 photos and retain post-weld inspection, geometry, clearance and coating as open validation actions. Notes: The register now distinguishes physical fabrication from safety release. The known jobs are fabricated; the remaining work is as-built QA and any separately proven functional bracket found in the final survey."
-        },
-        {
           "label": "Component Task \u00b7 Battery Tray Holder Bracket Repair 20260508",
           "status": "battery_and_tray_measurements_imported",
           "detail": "Upgrade the weak battery tray/holder support rather than simply refitting the old mount; confirm battery size, tray support legs, clamp path, cable/bonnet/engine clearance, drain/corrosion isolation, and final weld/bolt method before primer/Raptor Notes: Battery holder was added in the same WhatsApp exchange as a likely required bracket. May 17 photos add installed Daewoo DLS120 battery ruler views plus existing tray/mount opening and height measurements; final release still needs underside foot condition, pickup dry-fit/template photos, and corrosion/drain closeout before cutting metal."
@@ -12487,6 +12171,11 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Use the July 4 rear-half primer evidence as the base state and start Raptor/top protection on the rear/back section on 2026-07-13, while separately priming the newly prepared front-underneath areas. Notes: Photos show brush-applied grey primer on the rear half of the chassis, including rear rails, rear crossmember/tube, and several brackets. This is not a full chassis coating signoff; front/uncoated zones, axle/brake assemblies, inner dark faces if not sound old coating, holes/threads, and stand-contact areas still need follow-up before final protection. | User update 2026-07-12 broadens the primer status beyond the rear half: most chassis is primed; remaining front-underneath prep and post-weld touch-in are the active holds. | User update 2026-07-12: rear/back chassis section is ready to move from primer evidence into Raptor/top-protection start, while front underside receives primer after the extra prep work."
         },
         {
+          "label": "Component Task \u00b7 Chassis Bracket Analysis Register 20260508",
+          "status": "register_corrected_radiator_arm_fabrication_pending",
+          "detail": "Update the bracket register so the grinder-cut repair and reinstated structural crossbar remain reported-complete/QA-pending while both radiator arms are recorded as loose and unattached. Link the July context and the 2026-08-15 owner correction; require Rev O connector templates, geometry, proof, clearance and coating gates. Notes: The register distinguishes historical photo inference from owner-confirmed physical state. Structural-repair QA remains open; A0/A1 arm and G0/R0 holder fabrication is not complete until Rev O release."
+        },
+        {
           "label": "Component Task \u00b7 Chassis Bracket Design Release 20260508",
           "status": "released_repairs_reported_complete_as_built_validation_pending",
           "detail": "Archive the released welder geometry as the as-built checking basis. Do not issue further cutting or welding unless post-weld inspection identifies a specific defect; validate the existing repair/arm/crossbar and restore corrosion protection. Notes: The design release has been executed. Unknown or optional brackets remain hold/no-weld; the current gate is as-built weld/geometry/clearance inspection rather than further fabrication."
@@ -12519,7 +12208,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "in_progress",
-          "detail": "Linked package execution is active. Exit gate: Chassis has no unresolved structural defects or missing required welded brackets, all bracket analysis/design/implementation/validation tasks are closed, and cleaned/prepped surfaces are protected with documented coating stack"
+          "detail": "Linked package execution is active. Exit gate: Chassis has no unresolved structural defects or missing required brackets, the shortened radiator arms and holders pass measured/structural release, all bracket validation tasks are closed, and cleaned/prepped surfaces are protected with the documented coating stack"
         }
       ],
       "involved_parts": [
@@ -32837,7 +32526,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 277843,
+            "bytes": 278558,
             "file_count": 27
           },
           "file_count": 27
@@ -35926,7 +35615,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 277843,
+            "bytes": 278558,
             "file_count": 27
           },
           "file_count": 27
@@ -35934,82 +35623,65 @@ window.J40_DASHBOARD_DATA = {
         {
           "requirement_id": "FAB-RAD-001",
           "system": "fabrication_handoff",
-          "package_id": "front_radiator_two_side_retention_rev_a",
-          "title": "Front radiator two-side retention bracket Rev A",
-          "current_status": "measured_template_right_side_dry_fit_required",
-          "release_position": "Right-side radiator retention bracket/template pack derived from the measured existing chassis-attached radiator bracket. Current concept is one 4 mm mild-steel formed-angle saddle post: 48 mm measured main face, 410 mm upright/post height, 618 mm developed main-face template length, perpendicular return flange, full-depth 58 mm top return carried back to the far edge of the angle section, 70 mm chassis bridge allowance, 80 mm far-side saddle leg, one top screw point, and clean near/far lower saddle legs with no side ears that straddle both sides of the chassis/front-support section so a through-bolt can pass through both legs and the chassis. Final drilling/bending remains gated by right-side dry-fit, radiator ear offset, chassis width, through-bolt route, crush-tube/spacer decision, isolator stack, and fan clearance.",
-          "notes": "User update 2026-05-13: use a bolt-through saddle over the chassis rather than welding the bracket to the chassis. Existing-side measurements are imported; only right-side transfer/dry-fit remains before final hole drilling.",
-          "package_dir": "data/manual/fabrication/front_radiator_two_side_retention_rev_a",
+          "package_id": "na_cooling_connector_arms_rev_o",
+          "title": "Naturally aspirated cooling connector arms and holders Rev O",
+          "current_status": "measured_structural_release_hold",
+          "release_position": "Current central naturally aspirated handoff: exactly one FS A/C pusher; short mirror-handed A0 arms sized to A0-D connector templates; X0/X1 lower cradle; G1/G2 guard holders; R0-E/R3 radiator holders; independent C1/F1/F2 carriers. CL0 controls guard/condenser/fan centre offsets at no more than 2 mm. Final dimensions materials holes welds hardware and torque remain HOLD until signed templates structural release and opaque dry fit.",
+          "notes": "Rev O supersedes Rev A nominal 410 mm / 4 mm tall-post geometry and Rev N X2 adapters. Do not use generated images or historical nominal dimensions to cut or buy material. Exactly one central FS; no turbo intercooler or second pusher.",
+          "package_dir": "data/manual/fabrication/na_cooling_connector_arms_rev_o",
           "primary_links": [
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md",
+              "url": "../../data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
               "label": "README"
             },
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/j40_front_radiator_two_side_retention_rev_a_dimension_sheet.pdf",
-              "label": "PDF"
-            },
-            {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+              "url": "../../data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
               "label": "Cut list"
             },
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/inspection_checklist.csv",
+              "url": "../../data/manual/fabrication/na_cooling_connector_arms_rev_o/inspection_checklist.csv",
               "label": "Inspection checklist"
             },
             {
-              "url": "../../docs/front-engine-bay-mounting-fabrication-plan-20260508.md",
-              "label": "Source spec: front-engine-bay-mounting-fabrication-plan-20260508.md"
+              "url": "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+              "label": "Source spec: J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md"
             },
             {
-              "url": "../../data/manual/chassis_bracket_analysis_register_20260508.csv",
-              "label": "Source spec: chassis_bracket_analysis_register_20260508.csv"
-            },
-            {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/measurement_basis.csv",
+              "url": "../../data/manual/fabrication/na_cooling_connector_arms_rev_o/measurement_basis.csv",
               "label": "Source spec: measurement_basis.csv"
             }
           ],
-          "hero_image": null,
+          "hero_image": {
+            "url": "../../docs/project-control-ui/assets/cooling-na-rev-o/na-connector-arm-holder-parts-bench.png",
+            "label": "Rev O connector-arm and cooling-holder parts preview",
+            "notes": "Illustrative non-dimensional preview only. Do not scale pixels or derive cuts, holes or bracket geometry; use A0-D/B0/S0/G0-H/R0-H templates, the actual parts and the released structural drawing.",
+            "non_dimensional": true
+          },
           "visual_links": [
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.html",
-              "label": "Assembled 3D visualisation"
+              "url": "../../docs/project-control-ui/assets/cooling-na-rev-o/na-stack-short-connector-arms-finished.png",
+              "label": "Illustrative finished naturally aspirated cooling stack"
             },
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.svg",
-              "label": "Assembled static 3D visualisation"
+              "url": "../../docs/project-control-ui/assets/cooling-na-rev-o/na-short-arm-chassis-dry-fit.png",
+              "label": "Illustrative connector-sized arm dry fit"
             },
             {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.html",
-              "label": "Fabrication-read 3D visualisation"
-            },
-            {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.svg",
-              "label": "Fabrication-read static 3D visualisation"
+              "url": "../../docs/project-control-ui/assets/cooling-na-rev-o/na-guard-radiator-holder-detail.png",
+              "label": "Illustrative grille/stone-guard and R0 holder detail"
             }
           ],
           "model_links": [],
-          "dxf_links": [
-            {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_saddle_right_angle_post_rev_a.dxf",
-              "label": "front_radiator_saddle_right_angle_post_rev_a.dxf"
-            }
-          ],
-          "svg_links": [
-            {
-              "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_saddle_right_angle_post_rev_a.svg",
-              "label": "front_radiator_saddle_right_angle_post_rev_a.svg"
-            }
-          ],
+          "dxf_links": [],
+          "svg_links": [],
           "archive_link": {
-            "url": "../../deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip",
+            "url": "../../deliverables/fabrication_packages/na_cooling_connector_arms_rev_o.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 80498,
-            "file_count": 13
+            "bytes": 11279989,
+            "file_count": 9
           },
-          "file_count": 13
+          "file_count": 9
         },
         {
           "requirement_id": "FAB-ELEC-003",
@@ -36356,7 +36028,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
           "workstream": "fabrication_handoff",
-          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+          "item": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads",
           "status": "fabrication_controlled",
           "procurement_stage": "fabrication_quote_ready",
           "payment_status": "not_paid",
@@ -36368,27 +36040,27 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
           "product_link": "",
-          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm only for replaceable G0 guard-holder contact/edge pads and battery anti-chafe pads. It does not replace R1 moulded lower radiator saddles, R2/R3-I sleeved bushes/isolators, released carrier isolators, or the chassis-rubber order. Amir must send photos/video of rubber thickness and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+            "caption": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads \u00b7 rubber bumpers and isolators reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "body_mount_rubber_kit_reference",
+            "media_id": "body_rubber_bumpers_isolators_reference",
             "matched_tokens": [
-              "body",
-              "mount"
+              "rubber",
+              "isolators"
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
@@ -36397,7 +36069,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
           "workstream": "fabrication_handoff",
-          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials",
           "status": "fabrication_controlled",
           "procurement_stage": "fabrication_quote_ready",
           "payment_status": "not_paid",
@@ -36409,27 +36081,28 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
           "product_link": "",
-          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500, plus 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge and EPS adapter trials. Add short mild-steel tube/sleeve stock only after final bolt size is chosen. Rev O radiator arms and holders are excluded: do not buy any 50 x 50 x 4 mm post stock or other arm/holder material until A0-D/CL0/G0-H/R0-H templates and the structural drawing release exact stock. Amir must send tape/caliper proof of grade/section/thickness/length/condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "radiator_heater_hose_current_car_crop_20260503",
+            "media_id": "eps_complete_column_set_reference",
             "matched_tokens": [
-              "radiator",
-              "hose"
+              "eps",
+              "complete",
+              "kit"
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
@@ -36477,8 +36150,8 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [],
               "registered_items": [
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
               ]
             },
             {
@@ -36523,8 +36196,8 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [],
               "registered_items": [
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
               ]
             },
             {
@@ -36564,8 +36237,8 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [],
               "registered_items": [
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (fabrication_quote_ready; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)"
+                "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads (fabrication_quote_ready; delivery not_ordered; amount estimate)",
+                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials (fabrication_quote_ready; delivery not_ordered; amount estimate)"
               ]
             }
           ]
@@ -64866,7 +64539,7 @@ window.J40_DASHBOARD_DATA = {
       "id": "radiator",
       "title": "Radiator",
       "phase": "05d_radiator_replacement",
-      "status": "second_arm_welded_fit_validation_pending",
+      "status": "loose_arms_connector_and_holder_fabrication_release_pending",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "mixed",
@@ -64875,48 +64548,17 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing",
         "fabrication_handoff"
       ],
-      "next_action": "Inspect the added opposite-side radiator holder arm, then dry-fit radiator retention with rubber isolation and verify pickup alignment plus fan/shroud/hose clearance before final radiator install.",
-      "exit_gate": "Radiator is shop-tested or rebuilt/new by sample, mounted on correct lower pads and two-side rubber-isolated retention, hoses/cap/overflow/drain/fan clearance are verified, and fill bleed leak plus pressure checks pass",
-      "notes": "Dedicated radiator replacement/recore workstream split from generic mechanical baseline on 2026-05-30. It owns the old-sample radiator-shop decision, bad added-leg rejection, removable retention/adapter route, cap/hose coordination, final coolant fill, and bench/installed leak validation. Owner update 2026-07-29 confirms the missing opposite-side radiator holder/support bar has been added. Physical fabrication is complete; weld QA, two-sided geometry, isolated radiator dry fit, clearance checks and coating touch-in remain pending.",
+      "next_action": "Measure A0-D/CL0/G0-H/R0-H and inspect the two loose radiator-arm blanks, then shorten/rework or replace them to match the actual chassis connectors. After the G0-H/R0-H/CL0 templates and signed structural drawing release, fabricate G1/G2 and applicable R0-E/R3 holders; dry-fit with rubber isolation and verify central alignment plus fan/shroud/hose/bonnet clearance before coating and final install.",
+      "exit_gate": "Radiator is shop-tested or recored, mounted with its filled weight on two correct lower saddles through structurally released shortened arms, independently retained by measured guard/radiator/fan holders, and hoses/cap/overflow/drain/fan clearance plus fill/bleed/leak/pressure checks pass",
+      "notes": "Owner correction on 2026-08-15 supersedes the July reported-welded interpretation: both radiator arms are currently loose and not attached. Fabrication is not complete. Rev O controls connector templates, purpose-sized A0/A1 arms, CL0 central alignment, G1/G2 guard holders, R0-H-derived radiator holders, dry fit, structural proof and finish.",
       "evidence_source": [
-        "docs/radiator-workstream.md",
+        "docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+        "data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
         "docs/engine-radiator-recore-release-20260529.md",
-        "docs/amir-refurbishment-video-gates-20260529.md",
-        "data_manual_component_jobs_engine_radiator_recore_or_new_20260529",
         "20260529_radiator_photo_batches",
-        "user_update_2026-07-12_experienced_welder_chassis_front_prep",
-        "20260722_000001_user_second_radiator_arm_welded_front_structure",
-        "user_update_2026-07-29_structural_front_bumper_winch_rear_bumper_status"
+        "20260722_000001_user_second_radiator_arm_welded_front_structure"
       ],
       "images": [
-        {
-          "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
-          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:44:29",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_radiator_support",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004429_gp_4emWbTrA_2",
-          "matched_tokens": [
-            "20260422_004429_gp_4emwbtra"
-          ]
-        },
-        {
-          "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
-          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:44:36",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "front_frame_horns_bumper_and_radiator_support",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004436_gp_yjCPMWTg_2",
-          "matched_tokens": [
-            "20260422_004436_gp_yjcpmwtg"
-          ]
-        },
         {
           "path": "../../photos/20260422_004423_gp_B1N5ThVw_2.jpg",
           "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -65148,6 +64790,18 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": []
         },
         {
+          "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
+          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:29",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_radiator_support",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004429_gp_4emWbTrA_2",
+          "matched_tokens": []
+        },
+        {
           "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
@@ -65313,6 +64967,18 @@ window.J40_DASHBOARD_DATA = {
           "specific_component": "floor_pan_rust_zones",
           "stage": "rust_assessment",
           "media_id": "20260423_183704_gp_a5qmyeOA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
+          "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:36",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "front_frame_horns_bumper_and_radiator_support",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004436_gp_yjCPMWTg_2",
           "matched_tokens": []
         },
         {
@@ -67603,34 +67269,6 @@ window.J40_DASHBOARD_DATA = {
           "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
           "images": [
             {
-              "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:29",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004429_gp_4emWbTrA_2",
-              "matched_tokens": [
-                "20260422_004429_gp_4emwbtra"
-              ]
-            },
-            {
-              "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
-              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "00:44:36",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "front_frame_horns_bumper_and_radiator_support",
-              "stage": "underside_inspection",
-              "media_id": "20260422_004436_gp_yjCPMWTg_2",
-              "matched_tokens": [
-                "20260422_004436_gp_yjcpmwtg"
-              ]
-            },
-            {
               "path": "../../photos/20260422_004423_gp_B1N5ThVw_2.jpg",
               "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -67861,6 +67499,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
+              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_radiator_support",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004429_gp_4emWbTrA_2",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
               "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -68026,6 +67676,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "floor_pan_rust_zones",
               "stage": "rust_assessment",
               "media_id": "20260423_183704_gp_a5qmyeOA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260422_004436_gp_yjCPMWTg_2.jpg",
+              "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:44:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "front_frame_horns_bumper_and_radiator_support",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004436_gp_yjCPMWTg_2",
               "matched_tokens": []
             },
             {
@@ -70312,7 +69974,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 225,
-      "reference_token_count": 44,
+      "reference_token_count": 29,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -70342,26 +70004,26 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "front_radiator_bracket_repair_20260508",
           "component_group": "front_support",
-          "current_status": "second_arm_welded_radiator_dry_fit_and_coating_pending",
-          "planned_action": "Inspect the newly welded second radiator arm and compare both sides for height, lateral position and fastener alignment. Trial-fit the radiator with the correct rubber isolation, verify fan/shroud/hose and bonnet clearance, then clean and re-prime the worked front-support area before final coating.",
-          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142752|20260422_004423_gp_B1N5ThVw|20260430_215957_gp_2iBbUagw|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|docs_chassis_bracket_audit_20260508|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure",
-          "notes": "User update and July 22 image now support the second-arm welding as physically complete. Remaining release holds are weld/heat-affected-zone QA, radiator top and lower pickup alignment, rubber isolation, fan/shroud/hose/bonnet clearance, fastener capture and corrosion-protection touch-in."
+          "current_status": "loose_arm_connector_and_holder_release_pending",
+          "planned_action": "Record both radiator arms as loose; measure A0-D-L/R CL0 G0-H and R0-H; inspect and bench-shorten/rework or replace the arms to match the actual chassis connectors. After the G0-H/R0-H/CL0 templates and signed structural drawing release, fabricate G1/G2 and applicable R0-E/R3 holders; then dry-fit with correct isolation and verify central alignment plus fan/shroud/hose/bonnet clearance before coating.",
+          "evidence_ref": "mcp_whatsapp_akber_20260508_142600|20260422_004423_gp_B1N5ThVw|20260512_100000_user_front_support_radiator_pickups_context|20260722_000001_user_second_radiator_arm_welded_front_structure|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
+          "notes": "Owner correction on 2026-08-15 supersedes the reported-welded interpretation: the arms are loose and not attached. Rev O requires datum-derived purpose-sized A0/A1 arms, CL0 central alignment, G1/G2 guard holders and R0-H-derived radiator holders; final sizes remain on measured/structural release hold."
         },
         {
           "component_job_id": "front_radiator_two_side_retention_fabrication_20260508",
           "component_group": "front_support",
-          "current_status": "second_arm_welded_alignment_and_radiator_fit_validation_pending",
-          "planned_action": "Use the visible two-arm structure as the as-built basis. Inspect the new arm attachment, then install the radiator only after confirming both top screw transfers, lower support, rubber isolation, side-to-side geometry and fan/shroud/hose clearance.",
-          "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure",
-          "notes": "The earlier no-weld default was superseded by the approved experienced-welder route. July 22 evidence reports the second/right-side arm welded in. Do not mark the radiator retention system complete until the radiator and isolator stack physically fit, the fan and shroud remain concentric with safe clearance, hoses do not rub or strain, and the bare/welded metal is protected."
+          "current_status": "shortened_connector_arms_and_measured_holders_pending",
+          "planned_action": "Use actual connector and component templates rather than the old tall-post geometry. Make a mirror-handed connector-sized A0/A1 arm pair: each A1 mates at the A0-D connector bearing plane and reaches only the highest released functional interface, leaving no unused upper projection. Carry radiator weight only through X0/X1/R1; locate it with neutral R3-U; and independently support G0 with G1/G2.",
+          "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260512_100000_user_front_support_radiator_pickups_context|20260722_000001_user_second_radiator_arm_welded_front_structure|20260802_173643_gp_tJNrLg8A|20260802_173652_gp_XFyn0ruQ|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
+          "notes": "Both arms are loose and not attached. The 410 mm/4 mm Rev A dimensions and Rev N X2 adapters are superseded. Final material section height holes bends gussets welds fasteners torque and all guard/radiator-holder geometry remain HOLD until A0-D/B0/S0/CL0/G0-H/R0-H and structural release are signed."
         }
       ],
       "issue_jobs": [],
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "second_arm_welded_fit_validation_pending",
-          "detail": "Inspect the added opposite-side radiator holder arm, then dry-fit radiator retention with rubber isolation and verify pickup alignment plus fan/shroud/hose clearance before final radiator install."
+          "status": "loose_arms_connector_and_holder_fabrication_release_pending",
+          "detail": "Measure A0-D/CL0/G0-H/R0-H and inspect the two loose radiator-arm blanks, then shorten/rework or replace them to match the actual chassis connectors. After the G0-H/R0-H/CL0 templates and signed structural drawing release, fabricate G1/G2 and applicable R0-E/R3 holders; dry-fit with rubber isolation and verify central alignment plus fan/shroud/hose/bonnet clearance before coating and final install."
         },
         {
           "label": "Issue checks",
@@ -70374,14 +70036,14 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Send the old engine radiator with Amir as the master pattern; pressure-test and flow-test it, recore if tanks/brackets are sound, otherwise build a new copper/brass radiator by sample; if the bought aluminium radiator is used, dry-fit first and fabricate only a removable rubber-isolated adapter/cradle if the radiator fundamentals are correct; preserve hose necks, cap, overflow, drain, corrected mounts, shroud/fan clearance, and bench-test before refit Notes: Decision locked after radiator versus A/C condenser clarification. Do not buy a random listing radiator blind; old sample geometry controls, but the extra fabricated support leg shows the previous install was wrong and must not be copied as the main support. If an aluminium radiator has already been bought, use it only after dry-fit proves core/tank/neck/cap/drain/fan/hose fit; any added metal piece must be a removable rubber-isolated adapter/cradle between vehicle support and radiator ears/rails, not a hard leg loading the tank/core. Payment/final collection is blocked until Amir sends the radiator video gate: sample identity, measurements, shop decision, pressure/leak test, core/build proof, corrected mounting proof, and final acceptance video. Coordinate with radiator cap, hose set, front radiator retention bracket, coolant fill, bleed, and pressure test."
         },
         {
-          "label": "Component Task \u00b7 Front Radiator Two Side Retention Fabrication 20260508",
-          "status": "second_arm_welded_alignment_and_radiator_fit_validation_pending",
-          "detail": "Use the visible two-arm structure as the as-built basis. Inspect the new arm attachment, then install the radiator only after confirming both top screw transfers, lower support, rubber isolation, side-to-side geometry and fan/shroud/hose clearance. Notes: The earlier no-weld default was superseded by the approved experienced-welder route. July 22 evidence reports the second/right-side arm welded in. Do not mark the radiator retention system complete until the radiator and isolator stack physically fit, the fan and shroud remain concentric with safe clearance, hoses do not rub or strain, and the bare/welded metal is protected."
+          "label": "Component Task \u00b7 Front Radiator Bracket Repair 20260508",
+          "status": "loose_arm_connector_and_holder_release_pending",
+          "detail": "Record both radiator arms as loose; measure A0-D-L/R CL0 G0-H and R0-H; inspect and bench-shorten/rework or replace the arms to match the actual chassis connectors. After the G0-H/R0-H/CL0 templates and signed structural drawing release, fabricate G1/G2 and applicable R0-E/R3 holders; then dry-fit with correct isolation and verify central alignment plus fan/shroud/hose/bonnet clearance before coating. Notes: Owner correction on 2026-08-15 supersedes the reported-welded interpretation: the arms are loose and not attached. Rev O requires datum-derived purpose-sized A0/A1 arms, CL0 central alignment, G1/G2 guard holders and R0-H-derived radiator holders; final sizes remain on measured/structural release hold."
         },
         {
-          "label": "Component Task \u00b7 Front Radiator Bracket Repair 20260508",
-          "status": "second_arm_welded_radiator_dry_fit_and_coating_pending",
-          "detail": "Inspect the newly welded second radiator arm and compare both sides for height, lateral position and fastener alignment. Trial-fit the radiator with the correct rubber isolation, verify fan/shroud/hose and bonnet clearance, then clean and re-prime the worked front-support area before final coating. Notes: User update and July 22 image now support the second-arm welding as physically complete. Remaining release holds are weld/heat-affected-zone QA, radiator top and lower pickup alignment, rubber isolation, fan/shroud/hose/bonnet clearance, fastener capture and corrosion-protection touch-in."
+          "label": "Component Task \u00b7 Front Radiator Two Side Retention Fabrication 20260508",
+          "status": "shortened_connector_arms_and_measured_holders_pending",
+          "detail": "Use actual connector and component templates rather than the old tall-post geometry. Make a mirror-handed connector-sized A0/A1 arm pair: each A1 mates at the A0-D connector bearing plane and reaches only the highest released functional interface, leaving no unused upper projection. Carry radiator weight only through X0/X1/R1; locate it with neutral R3-U; and independently support G0 with G1/G2. Notes: Both arms are loose and not attached. The 410 mm/4 mm Rev A dimensions and Rev N X2 adapters are superseded. Final material section height holes bends gussets welds fasteners torque and all guard/radiator-holder geometry remain HOLD until A0-D/B0/S0/CL0/G0-H/R0-H and structural release are signed."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -70401,7 +70063,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Radiator is shop-tested or rebuilt/new by sample, mounted on correct lower pads and two-side rubber-isolated retention, hoses/cap/overflow/drain/fan clearance are verified, and fill bleed leak plus pressure checks pass"
+          "detail": "No linked package rows found. Exit gate: Radiator is shop-tested or recored, mounted with its filled weight on two correct lower saddles through structurally released shortened arms, independently retained by measured guard/radiator/fan holders, and hoses/cap/overflow/drain/fan clearance plus fill/bleed/leak/pressure checks pass"
         }
       ],
       "involved_parts": [
@@ -86049,14 +85711,14 @@ window.J40_DASHBOARD_DATA = {
     {
       "material_id": "fab_ms4_battery_radiator_current",
       "workstream": "fabrication_handoff",
-      "package_or_scope": "battery_power_carrier_mount_rev_a|front_radiator_two_side_retention_rev_a|eps_general_adapter",
+      "package_or_scope": "battery_power_carrier_mount_rev_a|eps_general_adapter",
       "procurement_entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
       "raw_material": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock",
-      "estimate_to_buy": "1 plate at least 700 x 450 mm; nearest stock size 1000 x 500 acceptable; plus 50 x 50 x 4 mm 90-degree mild-steel angle 1 m for radiator post and 40 x 40 x 4 mm 90-degree mild-steel angle 2 m for battery stand/upright/EPS adapter cradle mock-up if available; add short crush-tube/sleeve stock after final bolt size is chosen",
-      "stock_basis": "Battery compact formed chassis saddle nominal 220 x 230 flat pattern, adjustable offset bars 2x 360 x 60, compact upright bridge flat/gusset plates 2x 110 x 220 if angle route does not replace them, radiator saddle formed-angle post preferably from pre-formed 90-degree angle/L-section stock, EPS General Adapter datum plate/firewall doubler/high-load tabs/cradle trials, structural angle for bridge/frame/adapter trials, trial allowance",
-      "covered_fabrication": "Chassis-bolted battery stand formed saddle/upright bridge/adjustable offset bars, bolt-through right-side radiator saddle/post bracket, and measured EPS General Adapter datum/doubler/saddle/cradle trial allowance",
+      "estimate_to_buy": "1 plate at least 700 x 450 mm; nearest stock size 1000 x 500 acceptable; plus 40 x 40 x 4 mm 90-degree mild-steel angle 2 m for battery stand/upright/EPS adapter cradle mock-up if available; add short crush-tube/sleeve stock after final bolt size is chosen",
+      "stock_basis": "Battery compact formed chassis saddle nominal 220 x 230 flat pattern, adjustable offset bars 2x 360 x 60, compact upright bridge flat/gusset plates 2x 110 x 220 if angle route does not replace them, EPS General Adapter datum plate/firewall doubler/high-load tabs/cradle trials, structural angle for bridge/frame/adapter trials, trial allowance",
+      "covered_fabrication": "Chassis-bolted battery stand formed saddle/upright bridge/adjustable offset bars and measured EPS General Adapter datum/doubler/saddle/cradle trial allowance",
       "release_status": "purchase_ready_estimate",
-      "notes": "Covers the current one-pickup compact battery carrier route with a formed chassis saddle plus adjustable body-side offset bars, simplified bolt-through formed-angle radiator saddle/post bracket trial allowance, and measured EPS General Adapter trial/released pieces. Right-side radiator post is a prerequisite before final radiator installation. Ask a steel stockholder / loha market / sheet-metal fabricator first for pre-formed 90-degree L-section/angle stock for the radiator post, stand frame, and adapter cradle; keep the plate fallback for the chassis saddle, offset bars, EPS datum/doubler plates, and any flat upright/gusset plates. Amir must collect tape/caliper proof before payment if buying stock directly."
+      "notes": "Covers the current one-pickup compact battery carrier and measured EPS General Adapter trial/released pieces only. Rev O radiator arms and holders are not included: their material grade section thickness length and quantity remain HOLD until A0-D/CL0/G0-H/R0-H templates and the signed structural drawing release them. Ask a steel stockholder / loha market / sheet-metal fabricator for the battery-stand and adapter stock; keep plate for the chassis saddle, offset bars, EPS datum/doubler plates and any released flat upright/gusset plates. Amir must collect tape/caliper proof before payment if buying stock directly."
     },
     {
       "material_id": "fab_al3_electrical_plates_current",
@@ -86085,14 +85747,14 @@ window.J40_DASHBOARD_DATA = {
     {
       "material_id": "fab_epdm_small_isolators",
       "workstream": "fabrication_handoff|chassis_fixing",
-      "package_or_scope": "front_radiator_two_side_retention_rev_a|battery_power_carrier_mount_rev_a",
+      "package_or_scope": "na_cooling_connector_arms_rev_o|battery_power_carrier_mount_rev_a",
       "procurement_entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-      "raw_material": "3-5 mm EPDM/SBR sheet",
+      "raw_material": "3-5 mm EPDM/SBR anti-chafe sheet",
       "estimate_to_buy": "1 sheet at least 300 x 300 mm",
-      "stock_basis": "Radiator screw washer/bush trimming plus battery mat/anti-chafe pad trimming allowance",
-      "covered_fabrication": "Radiator top-screw isolation washers/bushes, battery carrier anti-chafe pads, small service isolators",
+      "stock_basis": "G0 guard-holder contact-pad and edge anti-chafe trimming plus battery mat/anti-chafe pad allowance",
+      "covered_fabrication": "Replaceable G0 guard-holder contact pads and battery carrier anti-chafe pads",
       "release_status": "purchase_ready_estimate",
-      "notes": "Does not replace or duplicate the chassis-rubber Longman/body-mount order route; the radiator bracket itself is a single bolt-through steel saddle/post."
+      "notes": "This sheet does not replace R1 moulded lower radiator saddles, R2/R3-I sleeved bushes/isolators, any carrier isolator selected by the released drawing, or the Longman/body-mount order route."
     },
     {
       "material_id": "fab_hardwood_cribbing_existing",
@@ -86968,28 +86630,6 @@ window.J40_DASHBOARD_DATA = {
         "product_link": "",
         "next_action": "",
         "notes": "AliExpress order 3073111533377489 confirmed 2026-05-27: 5PCS NITTO Male Coupling Air ... x1, total PKR 3072. Product title is truncated in the email; verify exact profile/thread/quantity and leak-free fit on receipt. | Gmail import 2026-06-07: AliExpress package PK015448775R for the NITTO male coupling fittings reached destination-country local transit by 2026-06-05 after customs clearance; still pending delivery and thread/profile/leak checks. | Gmail delivery email 2026-06-08 (message 19ea6d913a442f6b) says AliExpress package PK015448775R was successfully delivered and lists 5PCS NITTO Male Coupling Air Fitting x1. Close delivery tracking; still confirm actual quantity 5, Nitto/Japanese profile, thread type such as 1/4 BSP or NPT, seal method, and leak-free fit. These are male plugs and do not replace the compressor-side female Nitto socket needed for the current hose mismatch."
-      },
-      {
-        "table": "workstream_status",
-        "row_id": "radiator",
-        "phase": "05d_radiator_replacement",
-        "workstream": "radiator",
-        "bucket": "",
-        "category": "",
-        "item": "Inspect the added opposite-side radiator holder arm, then dry-fit radiator retention with rubber isolation and verify pickup alignment plus fan/shroud/hose clearance before final radiator install.",
-        "company": "",
-        "transaction_number": "",
-        "status": "second_arm_welded_fit_validation_pending",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "expected_delivery_date": "",
-        "amount": "",
-        "currency": "",
-        "evidence_ref": "docs/radiator-workstream.md|docs/engine-radiator-recore-release-20260529.md|docs/amir-refurbishment-video-gates-20260529.md|data_manual_component_jobs_engine_radiator_recore_or_new_20260529|20260529_radiator_photo_batches|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure|user_update_2026-07-29_structural_front_bumper_winch_rear_bumper_status",
-        "product_link": "",
-        "next_action": "Inspect the added opposite-side radiator holder arm, then dry-fit radiator retention with rubber isolation and verify pickup alignment plus fan/shroud/hose clearance before final radiator install.",
-        "notes": "Dedicated radiator replacement/recore workstream split from generic mechanical baseline on 2026-05-30. It owns the old-sample radiator-shop decision, bad added-leg rejection, removable retention/adapter route, cap/hose coordination, final coolant fill, and bench/installed leak validation. Owner update 2026-07-29 confirms the missing opposite-side radiator holder/support bar has been added. Physical fabrication is complete; weld QA, two-sided geometry, isolated radiator dry fit, clearance checks and coating touch-in remain pending."
       },
       {
         "table": "workstream_status",
@@ -90720,7 +90360,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
         "workstream": "fabrication_handoff",
-        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+        "item": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads",
         "status": "fabrication_controlled",
         "procurement_stage": "fabrication_quote_ready",
         "payment_status": "not_paid",
@@ -90730,27 +90370,27 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "local rubber sheet supplier / Longman fallback",
         "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
         "product_link": "",
-        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm only for replaceable G0 guard-holder contact/edge pads and battery anti-chafe pads. It does not replace R1 moulded lower radiator saddles, R2/R3-I sleeved bushes/isolators, released carrier isolators, or the chassis-rubber order. Amir must send photos/video of rubber thickness and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+          "caption": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads \u00b7 rubber bumpers and isolators reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "body_mount_rubber_kit_reference",
+          "media_id": "body_rubber_bumpers_isolators_reference",
           "matched_tokens": [
-            "body",
-            "mount"
+            "rubber",
+            "isolators"
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
@@ -90759,7 +90399,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
         "workstream": "fabrication_handoff",
-        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials",
         "status": "fabrication_controlled",
         "procurement_stage": "fabrication_quote_ready",
         "payment_status": "not_paid",
@@ -90769,27 +90409,28 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "local steel stockholder / sheet-metal shop",
         "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
         "product_link": "",
-        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500, plus 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge and EPS adapter trials. Add short mild-steel tube/sleeve stock only after final bolt size is chosen. Rev O radiator arms and holders are excluded: do not buy any 50 x 50 x 4 mm post stock or other arm/holder material until A0-D/CL0/G0-H/R0-H templates and the structural drawing release exact stock. Amir must send tape/caliper proof of grade/section/thickness/length/condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "radiator_heater_hose_current_car_crop_20260503",
+          "media_id": "eps_complete_column_set_reference",
           "matched_tokens": [
-            "radiator",
-            "hose"
+            "eps",
+            "complete",
+            "kit"
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
@@ -91684,17 +91325,17 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "radiator",
         "open_count": 2,
         "image": {
-          "path": "../../photos/20260422_004429_gp_4emWbTrA_2.jpg",
+          "path": "../../photos/20260422_004423_gp_B1N5ThVw_2.jpg",
           "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
           "captured_date": "2026-04-22",
-          "captured_time": "00:44:29",
+          "captured_time": "00:44:23",
           "media_type": "photo",
           "component_group": "chassis_underside",
           "specific_component": "front_frame_horns_bumper_and_radiator_support",
           "stage": "underside_inspection",
-          "media_id": "20260422_004429_gp_4emWbTrA_2",
+          "media_id": "20260422_004423_gp_B1N5ThVw_2",
           "matched_tokens": [
-            "20260422_004429_gp_4emwbtra"
+            "20260422_004423_gp_b1n5thvw"
           ]
         }
       },
@@ -98141,12 +97782,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 121,
-      "now_tasks": 104,
-      "later_tasks": 17,
-      "p0_tasks": 40,
-      "photo_tasks": 41,
-      "measurement_tasks": 80
+      "total_tasks": 122,
+      "now_tasks": 106,
+      "later_tasks": 16,
+      "p0_tasks": 39,
+      "photo_tasks": 39,
+      "measurement_tasks": 83
     },
     "counts_by_workstream": [
       {
@@ -98163,7 +97804,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "chassis_fixing",
-        "count": 9
+        "count": 11
       },
       {
         "workstream": "brake_system",
@@ -98194,10 +97835,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
-        "workstream": "radiator",
-        "count": 3
-      },
-      {
         "workstream": "steering_brakes_suspension",
         "count": 3
       },
@@ -98207,6 +97844,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "fabrication_handoff",
+        "count": 2
+      },
+      {
+        "workstream": "radiator",
         "count": 2
       },
       {
@@ -98237,19 +97878,19 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 27
+        "count": 26
       },
       {
         "task_type": "template",
-        "count": 18
+        "count": 22
       },
       {
         "task_type": "photo",
-        "count": 14
+        "count": 13
       },
       {
         "task_type": "decision",
-        "count": 13
+        "count": 12
       },
       {
         "task_type": "data",
@@ -98263,15 +97904,15 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 40
+        "count": 39
       },
       {
         "priority": "P1",
-        "count": 67
+        "count": 70
       },
       {
         "priority": "P2",
-        "count": 14
+        "count": 13
       }
     ],
     "tasks": [
@@ -99447,57 +99088,6 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "frame_floor_underside_and_lines",
             "stage": "underside_inspection",
             "media_id": "20260331_224423",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:chassis_bracket_analysis_register_20260508",
-        "title": "chassis_bracket_analysis_register_20260508",
-        "workstream": "chassis_fixing",
-        "task_type": "photo",
-        "priority": "P0",
-        "timing": "now",
-        "status": "as_built_repairs_recorded_validation_pending",
-        "location": "workshop_post_weld_audit",
-        "action": "Update the bracket register to show the grinder-cut repair, second radiator arm and reinstated structural crossbar as physically complete; link the July 22 photos and retain post-weld inspection, geometry, clearance and coating as open validation actions.",
-        "data_needed": "The register now distinguishes physical fabrication from safety release. The known jobs are fabricated; the remaining work is as-built QA and any separately proven functional bracket found in the final survey.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "chassis_bracket_analysis_register_20260508",
-        "notes": "",
-        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|docs_chassis_bracket_analysis_register_20260508|data_manual_chassis_bracket_analysis_register_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
-            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
-            "captured_date": "2026-07-22",
-            "captured_time": "00:00:01",
-            "media_type": "photo",
-            "component_group": "front_support",
-            "specific_component": "front_radiator_two_side_retention_20260722",
-            "stage": "welding_update",
-            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260722_000003_user_major_structural_crossbar_reinstalled.png",
-            "caption": "Major Round Tube Structural Crossbar Reinstatement 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
-            "captured_date": "2026-07-22",
-            "captured_time": "00:00:03",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "major_round_tube_structural_crossbar_reinstatement_20260722",
-            "stage": "welding_update",
-            "media_id": "20260722_000003_user_major_structural_crossbar_reinstalled",
             "matched_tokens": []
           }
         ],
@@ -104213,6 +103803,171 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:chassis_bracket_analysis_register_20260508",
+        "title": "chassis_bracket_analysis_register_20260508",
+        "workstream": "chassis_fixing",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "register_corrected_radiator_arm_fabrication_pending",
+        "location": "workshop_register_and_fabrication_audit",
+        "action": "Update the bracket register so the grinder-cut repair and reinstated structural crossbar remain reported-complete/QA-pending while both radiator arms are recorded as loose and unattached. Link the July context and the 2026-08-15 owner correction; require Rev O connector templates, geometry, proof, clearance and coating gates.",
+        "data_needed": "The register distinguishes historical photo inference from owner-confirmed physical state. Structural-repair QA remains open; A0/A1 arm and G0/R0 holder fabrication is not complete until Rev O release.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_bracket_analysis_register_20260508",
+        "notes": "",
+        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142840|docs_chassis_bracket_audit_20260508|docs_chassis_bracket_analysis_register_20260508|data_manual_chassis_bracket_analysis_register_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
+            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:01",
+            "media_type": "photo",
+            "component_group": "front_support",
+            "specific_component": "front_radiator_two_side_retention_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260722_000003_user_major_structural_crossbar_reinstalled.png",
+            "caption": "Major Round Tube Structural Crossbar Reinstatement 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "major_round_tube_structural_crossbar_reinstatement_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000003_user_major_structural_crossbar_reinstalled",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:chassis_bracket_fabrication_install_20260508",
+        "title": "chassis_bracket_fabrication_install_20260508",
+        "workstream": "chassis_fixing",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "structural_repair_qa_and_rev_o_radiator_fabrication_pending",
+        "location": "workshop_post_repair_and_radiator_fabrication_validation_pending",
+        "action": "Treat the suspension grinder-cut repair and reinstated major round-tube crossbar as reported fabricated and inspect their welds/heat-affected zones. Treat both radiator arms as loose, unattached blanks: template the connectors and bench-shorten/rework or replace them under Rev O before dry fit, proof and coating.",
+        "data_needed": "Owner correction supersedes the July radiator-arm completion claim. No generic auxiliary bracket or tall arm projection is released: A0/A1, G1/G2 and R0-E/R3 require templates, drawing, dry fit and inspection.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_bracket_fabrication_install_20260508",
+        "notes": "",
+        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|docs_chassis_bracket_audit_20260508|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|comms_review_2026-07-22_axle_repair_bumpers|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
+            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:01",
+            "media_type": "photo",
+            "component_group": "front_support",
+            "specific_component": "front_radiator_two_side_retention_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260722_000003_user_major_structural_crossbar_reinstalled.png",
+            "caption": "Major Round Tube Structural Crossbar Reinstatement 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "major_round_tube_structural_crossbar_reinstatement_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000003_user_major_structural_crossbar_reinstalled",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:chassis_frame_and_crossmembers",
+        "title": "chassis_frame_and_crossmembers",
+        "workstream": "chassis_fixing",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "structural_repairs_mixed_radiator_arm_fabrication_reopened",
+        "location": "workshop_structural_and_radiator_fabrication_release_pending",
+        "action": "Inspect the reported-complete suspension grinder-cut repair and both ends of the reinstated major round-tube structural crossbar. Treat the radiator arms separately as confirmed-loose parts: template the actual connectors and fabricate purpose-sized A0/A1 arms under Rev O. Confirm geometry, weld continuity, driveline/line clearance and fastener condition, then restore protection before closeout.",
+        "data_needed": "Owner correction on 2026-08-15 supersedes the July reported-welded radiator-arm interpretation: both arms are loose and unattached. The grinder-cut repair and structural bar remain on post-work QA; the radiator arms now require A0-D templates, structural drawing, dry fit, proof and finish under Rev O.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_frame_and_crossmembers",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-12_front_underprep_majority_done_raptor_next|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|20260722_000001_user_second_radiator_arm_welded_front_structure|20260722_000002_user_front_structure_winch_crossmember_update|20260722_000003_user_major_structural_crossbar_reinstalled|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
+            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:01",
+            "media_type": "photo",
+            "component_group": "front_support",
+            "specific_component": "front_radiator_two_side_retention_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260722_000002_user_front_structure_winch_crossmember_update.png",
+            "caption": "Front Winch Crossmember Structure Context 20260722 \u00b7 Structural Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_winch_crossmember_structure_context_20260722",
+            "stage": "structural_update",
+            "media_id": "20260722_000002_user_front_structure_winch_crossmember_update",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260722_000003_user_major_structural_crossbar_reinstalled.png",
+            "caption": "Major Round Tube Structural Crossbar Reinstatement 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "major_round_tube_structural_crossbar_reinstatement_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000003_user_major_structural_crossbar_reinstalled",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "component_job:engine_bay_mounting_scouting_pass_20260508",
         "title": "engine_bay_mounting_scouting_pass_20260508",
         "workstream": "chassis_fixing",
@@ -107878,273 +107633,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "component_job:front_radiator_two_side_retention_fabrication_20260508",
-        "title": "front_radiator_two_side_retention_fabrication_20260508",
-        "workstream": "radiator",
-        "task_type": "decision",
-        "priority": "P1",
-        "timing": "now",
-        "status": "second_arm_welded_alignment_and_radiator_fit_validation_pending",
-        "location": "workshop_radiator_fit_validation_pending",
-        "action": "Use the visible two-arm structure as the as-built basis. Inspect the new arm attachment, then install the radiator only after confirming both top screw transfers, lower support, rubber isolation, side-to-side geometry and fan/shroud/hose clearance.",
-        "data_needed": "The earlier no-weld default was superseded by the approved experienced-welder route. July 22 evidence reports the second/right-side arm welded in. Do not mark the radiator retention system complete until the radiator and isolator stack physically fit, the fan and shroud remain concentric with safe clearance, hoses do not rub or strain, and the bare/welded metal is protected.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_radiator_two_side_retention_fabrication_20260508",
-        "notes": "",
-        "evidence_ref": "20260422_004423_gp_B1N5ThVw|20260422_004429_gp_4emWbTrA|20260422_004436_gp_yjCPMWTg|20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|20260512_073547_gp_SNtwIVyA|docs_front_engine_bay_mounting_fabrication_plan_20260508|docs/fabrication-metal-stock-list-20260514.md|docs/amir-montgomery-road-shopping-list-20260527.md|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004423_gp_B1N5ThVw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004429_gp_4emWbTrA.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:29",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004429_gp_4emWbTrA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004436_gp_yjCPMWTg.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004436_gp_yjCPMWTg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "22:00:04",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_220004_gp_C9oYiYmA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "10:00:00",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:32:10",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073210_gp_zP427O2A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:03",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073303_gp_hNyAiN1g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073314_gp_GyAXZWBg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073547_gp_SNtwIVyA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:35:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073547_gp_SNtwIVyA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:17",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_205417_gp_CzJNQsiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:34",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_205434_gp_QnE3tLvQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_212929_gp_pnlr6x5w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_212947_gp_AdvWGolg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:08",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_213008_gp_1U5vulZw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:27",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_213027_gp_9Cy950Kw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213129_gp_IVnd8hWQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:44",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213144_gp_2rlycKHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:32:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213214_gp_xZKluAkg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
-            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
-            "captured_date": "2026-07-22",
-            "captured_time": "00:00:01",
-            "media_type": "photo",
-            "component_group": "front_support",
-            "specific_component": "front_radiator_two_side_retention_20260722",
-            "stage": "welding_update",
-            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:engine_radiator_recore_or_new_20260529",
         "title": "engine_radiator_recore_or_new_20260529",
         "workstream": "radiator",
@@ -108341,6 +107829,69 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "engine_radiator_condition_closeups",
             "stage": "mechanical_baseline",
             "media_id": "20260529_230050_gp_ZqjySFHg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:front_radiator_bracket_repair_20260508",
+        "title": "front_radiator_bracket_repair_20260508",
+        "workstream": "radiator",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "loose_arm_connector_and_holder_release_pending",
+        "location": "workshop_fabrication_release_pending",
+        "action": "Record both radiator arms as loose; measure A0-D-L/R CL0 G0-H and R0-H; inspect and bench-shorten/rework or replace the arms to match the actual chassis connectors. After the G0-H/R0-H/CL0 templates and signed structural drawing release, fabricate G1/G2 and applicable R0-E/R3 holders; then dry-fit with correct isolation and verify central alignment plus fan/shroud/hose/bonnet clearance before coating.",
+        "data_needed": "Owner correction on 2026-08-15 supersedes the reported-welded interpretation: the arms are loose and not attached. Rev O requires datum-derived purpose-sized A0/A1 arms, CL0 central alignment, G1/G2 guard holders and R0-H-derived radiator holders; final sizes remain on measured/structural release hold.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_radiator_bracket_repair_20260508",
+        "notes": "",
+        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|20260422_004423_gp_B1N5ThVw|20260512_100000_user_front_support_radiator_pickups_context|20260722_000001_user_second_radiator_arm_welded_front_structure|docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
+            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "front_frame_horns_bumper_and_radiator_support",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004423_gp_B1N5ThVw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
+            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
+            "captured_date": "2026-05-12",
+            "captured_time": "10:00:00",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "front_support_radiator_pickups_context",
+            "stage": "chassis_fixing",
+            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
+            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
+            "captured_date": "2026-07-22",
+            "captured_time": "00:00:01",
+            "media_type": "photo",
+            "component_group": "front_support",
+            "specific_component": "front_radiator_two_side_retention_20260722",
+            "stage": "welding_update",
+            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
             "matched_tokens": []
           }
         ],
@@ -110484,225 +110035,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/rubber_hose_component_audit.csv",
             "label": "Rubber Hose Component Audit"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:front_radiator_bracket_repair_20260508",
-        "title": "front_radiator_bracket_repair_20260508",
-        "workstream": "radiator",
-        "task_type": "photo_measurement",
-        "priority": "P2",
-        "timing": "later",
-        "status": "second_arm_welded_radiator_dry_fit_and_coating_pending",
-        "location": "workshop_radiator_fit_validation_pending",
-        "action": "Inspect the newly welded second radiator arm and compare both sides for height, lateral position and fastener alignment. Trial-fit the radiator with the correct rubber isolation, verify fan/shroud/hose and bonnet clearance, then clean and re-prime the worked front-support area before final coating.",
-        "data_needed": "User update and July 22 image now support the second-arm welding as physically complete. Remaining release holds are weld/heat-affected-zone QA, radiator top and lower pickup alignment, rubber isolation, fan/shroud/hose/bonnet clearance, fastener capture and corrosion-protection touch-in.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_radiator_bracket_repair_20260508",
-        "notes": "",
-        "evidence_ref": "mcp_whatsapp_akber_20260508_142600|mcp_whatsapp_akber_20260508_142752|20260422_004423_gp_B1N5ThVw|20260430_215957_gp_2iBbUagw|20260512_100000_user_front_support_radiator_pickups_context|20260512_073210_gp_zP427O2A|20260512_073303_gp_hNyAiN1g|20260512_073314_gp_GyAXZWBg|docs_chassis_bracket_audit_20260508|docs_front_engine_bay_mounting_fabrication_plan_20260508|20260512_205417_gp_CzJNQsiA|20260512_205434_gp_QnE3tLvQ|20260512_212929_gp_pnlr6x5w|20260512_212947_gp_AdvWGolg|20260512_213008_gp_1U5vulZw|20260512_213027_gp_9Cy950Kw|20260512_213129_gp_IVnd8hWQ|20260512_213144_gp_2rlycKHA|20260512_213214_gp_xZKluAkg|docs/radiator-workstream.md|user_update_2026-07-12_experienced_welder_chassis_front_prep|20260722_000001_user_second_radiator_arm_welded_front_structure",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260422_004423_gp_B1N5ThVw.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004423_gp_B1N5ThVw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_100000_user_front_support_radiator_pickups_context.png",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "10:00:00",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_100000_user_front_support_radiator_pickups_context",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073210_gp_zP427O2A.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:32:10",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073210_gp_zP427O2A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073303_gp_hNyAiN1g.jpg",
-            "caption": "Front Frame Horns Bumper And Radiator Support \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:03",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "front_frame_horns_bumper_and_radiator_support",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_073303_gp_hNyAiN1g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_073314_gp_GyAXZWBg.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Baseline \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:33:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_baseline",
-            "media_id": "20260512_073314_gp_GyAXZWBg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205417_gp_CzJNQsiA.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:17",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_205417_gp_CzJNQsiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_205434_gp_QnE3tLvQ.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "20:54:34",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_205434_gp_QnE3tLvQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212929_gp_pnlr6x5w.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_212929_gp_pnlr6x5w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_212947_gp_AdvWGolg.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:29:47",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_212947_gp_AdvWGolg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213008_gp_1U5vulZw.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:08",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_213008_gp_1U5vulZw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213027_gp_9Cy950Kw.jpg",
-            "caption": "Ac Condenser Sample Measurement \u00b7 Ac Hvac Retrofit \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:30:27",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "ac_condenser_sample_measurement",
-            "stage": "ac_hvac_retrofit",
-            "media_id": "20260512_213027_gp_9Cy950Kw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213129_gp_IVnd8hWQ.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:29",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213129_gp_IVnd8hWQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213144_gp_2rlycKHA.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:31:44",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213144_gp_2rlycKHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_213214_gp_xZKluAkg.jpg",
-            "caption": "Front Support Radiator Pickups Context \u00b7 Chassis Fixing \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "21:32:14",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "front_support_radiator_pickups_context",
-            "stage": "chassis_fixing",
-            "media_id": "20260512_213214_gp_xZKluAkg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260722_000001_user_second_radiator_arm_welded_front_structure.png",
-            "caption": "Front Radiator Two Side Retention 20260722 \u00b7 Welding Update \u00b7 2026-07-22",
-            "captured_date": "2026-07-22",
-            "captured_time": "00:00:01",
-            "media_type": "photo",
-            "component_group": "front_support",
-            "specific_component": "front_radiator_two_side_retention_20260722",
-            "stage": "welding_update",
-            "media_id": "20260722_000001_user_second_radiator_arm_welded_front_structure",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
           }
         ]
       },
@@ -122512,7 +121844,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
           "supply_type": "part",
           "inventory_group": "electrical",
-          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+          "item": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads",
           "vendor": "local rubber sheet supplier / Longman fallback",
           "amount": "",
           "currency": "PKR",
@@ -122522,27 +121854,27 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "fabrication_quote_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
           "product_link": "",
-          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm only for replaceable G0 guard-holder contact/edge pads and battery anti-chafe pads. It does not replace R1 moulded lower radiator saddles, R2/R3-I sleeved bushes/isolators, released carrier isolators, or the chassis-rubber order. Amir must send photos/video of rubber thickness and condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+            "caption": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads \u00b7 rubber bumpers and isolators reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "body_mount_rubber_kit_reference",
+            "media_id": "body_rubber_bumpers_isolators_reference",
             "matched_tokens": [
-              "body",
-              "mount"
+              "rubber",
+              "isolators"
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
@@ -122553,7 +121885,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
           "supply_type": "part",
           "inventory_group": "electrical",
-          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials",
           "vendor": "local steel stockholder / sheet-metal shop",
           "amount": "",
           "currency": "PKR",
@@ -122563,27 +121895,28 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "fabrication_quote_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
           "product_link": "",
-          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500, plus 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge and EPS adapter trials. Add short mild-steel tube/sleeve stock only after final bolt size is chosen. Rev O radiator arms and holders are excluded: do not buy any 50 x 50 x 4 mm post stock or other arm/holder material until A0-D/CL0/G0-H/R0-H templates and the structural drawing release exact stock. Amir must send tape/caliper proof of grade/section/thickness/length/condition before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "radiator_heater_hose_current_car_crop_20260503",
+            "media_id": "eps_complete_column_set_reference",
             "matched_tokens": [
-              "radiator",
-              "hose"
+              "eps",
+              "complete",
+              "kit"
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
@@ -133083,7 +132416,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
         "supply_type": "part",
         "inventory_group": "electrical",
-        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
+        "item": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads",
         "vendor": "local rubber sheet supplier / Longman fallback",
         "amount": "",
         "currency": "PKR",
@@ -133093,27 +132426,27 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "fabrication_quote_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
         "product_link": "",
-        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route. | User direction 2026-05-29: quote-ready under fabrication control because the right-side radiator strap/post requires rubber isolation. Amir must send photos/video of rubber thickness and condition before payment.",
+        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm only for replaceable G0 guard-holder contact/edge pads and battery anti-chafe pads. It does not replace R1 moulded lower radiator saddles, R2/R3-I sleeved bushes/isolators, released carrier isolators, or the chassis-rubber order. Amir must send photos/video of rubber thickness and condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+          "caption": "3-5 mm EPDM/SBR sheet for G0 guard-holder and battery anti-chafe pads \u00b7 rubber bumpers and isolators reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "body_mount_rubber_kit_reference",
+          "media_id": "body_rubber_bumpers_isolators_reference",
           "matched_tokens": [
-            "body",
-            "mount"
+            "rubber",
+            "isolators"
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
@@ -133124,7 +132457,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
         "supply_type": "part",
         "inventory_group": "electrical",
-        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
+        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials",
         "vendor": "local steel stockholder / sheet-metal shop",
         "amount": "",
         "currency": "PKR",
@@ -133134,27 +132467,28 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "fabrication_quote_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
         "product_link": "",
-        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting. | User direction 2026-05-29: right-side radiator strap/post is prerequisite before final radiator installation. Quote-ready under fabrication control: source from steel stockholder / loha market / sheet-metal fabricator, not auto parts counter; Amir must send tape/caliper proof of angle leg width, thickness, length, and condition before payment.",
+        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500, plus 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge and EPS adapter trials. Add short mild-steel tube/sleeve stock only after final bolt size is chosen. Rev O radiator arms and holders are excluded: do not buy any 50 x 50 x 4 mm post stock or other arm/holder material until A0-D/CL0/G0-H/R0-H templates and the structural drawing release exact stock. Amir must send tape/caliper proof of grade/section/thickness/length/condition before payment.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and EPS adapter trials \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "radiator_heater_hose_current_car_crop_20260503",
+          "media_id": "eps_complete_column_set_reference",
           "matched_tokens": [
-            "radiator",
-            "hose"
+            "eps",
+            "complete",
+            "kit"
           ],
           "match_basis": "local_reference_image",
           "match_score": 700

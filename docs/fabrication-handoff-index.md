@@ -6,7 +6,7 @@ All package dimensions are in `mm`. For each package, send the package PDF for h
 
 Dashboard UI: open the `Fabrication` workstream in `docs/project-control-ui/` for clickable package links, status gates, and first-article steps.
 
-Raw material procurement: use [fabrication-raw-materials-procurement-estimate-20260513.md](fabrication-raw-materials-procurement-estimate-20260513.md), [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md), and `data/manual/fabrication_raw_material_estimates.csv`. The matching raw-stock rows have been added to the procurement ledger, including the `3.0 mm` and `4.0 mm` pre-formed `90-degree` angle/L-section asks and separate tub repair sheet/plate stock so battery/radiator fabrication steel is not consumed by body patches.
+Raw material procurement: use [fabrication-raw-materials-procurement-estimate-20260513.md](fabrication-raw-materials-procurement-estimate-20260513.md), [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md), and `data/manual/fabrication_raw_material_estimates.csv`. Existing `3.0 mm` and `4.0 mm` stock asks cover the named battery/EPS work only. Rev O radiator-arm and holder stock is a do-not-buy HOLD until A0-D/CL0/G0-H/R0-H templates and the signed structural drawing release exact material, section, thickness, length and quantity.
 
 ## Chassis Rubber Boundary
 
@@ -89,7 +89,25 @@ Release position:
 - Battery positive must enter the battery-side cutoff/breaker first. Its protected output runs to the structural cooling-stack electrical plate, where it feeds MIDI fuse 4 and the relay battery-side entry without changing circuit assignments or fuse sizing.
 - Final drilling still needs the battery/cutoff mock-up plus a separate radiator-carrier electrical mock-up proving airflow, fan/shroud, hose, cap, drain, bonnet, grille, heat/splash, relay-cover, MIDI-lid, cable-bend, disconnect, and radiator-removal clearances.
 
-## Front Radiator Two-Side Retention - Rev A
+## Naturally Aspirated Cooling Connector Arms and Holders - Rev O
+
+Directory: [data/manual/fabrication/na_cooling_connector_arms_rev_o](../data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md)
+
+Control spec: [J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md](J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md)
+
+Primary files:
+- `data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md`
+- `data/manual/fabrication/na_cooling_connector_arms_rev_o/measurement_basis.csv`
+- `data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv`
+- `data/manual/fabrication/na_cooling_connector_arms_rev_o/inspection_checklist.csv`
+
+Release position:
+- Current central naturally aspirated handoff with exactly one FS A/C pusher.
+- A0/A1 arm dimensions and stock remain HOLD until the actual connector templates and competent-person structural drawing are signed.
+- CL0 requires the repaired G0 perimeter, C0 usable fin field and single FS axis to meet their specified central datums within `2 mm`.
+- G1/G2 guard holders and R0-E/R3 radiator holders remain separate from the radiator weight path and heat-exchanger cores.
+
+## Front Radiator Two-Side Retention - Rev A (superseded historical package)
 
 Directory: [data/manual/fabrication/front_radiator_two_side_retention_rev_a](../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md)
 
@@ -108,7 +126,8 @@ DXF files:
 - `front_radiator_saddle_right_angle_post_rev_a.dxf` - 4 mm bolt-through saddle right-angle post, qty `1`
 
 Release position:
-- Rev A is a template release for one simple steel post: 90 degree top return with one radiator screw point, plus lower legs that straddle the chassis/front-support section.
+- Rev A is superseded by Rev O. Its nominal dimensions, stock and geometry are not valid for purchase or fabrication.
+- Historically, Rev A was a template release for one simple steel post: 90 degree top return with one radiator screw point, plus lower legs that straddle the chassis/front-support section.
 - Final bending/drilling remains gated by right-side vehicle dry-fit, transferred left-bracket dimensions, screw size, radiator ear offset, chassis width, through-bolt route, crush-tube/spacer decision, rubber washer/bush stack, and fan clearance.
 - The Bracket Analysis Register remains the evidence/action register; this package is the Fabrication handoff for making the bracket templates.
 

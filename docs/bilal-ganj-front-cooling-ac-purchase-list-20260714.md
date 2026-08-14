@@ -130,7 +130,7 @@ Do not crimp final A/C hoses until the compressor, condenser, drier, firewall/bu
 
 | ID | Qty | Material | Required specification |
 | --- | ---: | --- | --- |
-| FAB-01 | 2, site-cut | Full-height uprights | `50 x 50 x 4 mm` mild-steel angle. The earlier `410 mm` post measurement is reference only; cut from chassis/front support to the actual top plane. |
+| FAB-01 | 2 matched | Connector-sized A0 radiator arms | Rework the accepted loose blanks or buy certified weldable stock only after A0-D templates and the structural drawing release exact material, section, thickness and length. No `410 mm` / `4 mm` carryover or unused upper projection; prove CL0 central dry fit before coating. |
 | FAB-02 | About 1.5 m | Removable crossbar/tab stock | `25 x 25 x 3 mm` angle or `30 x 3 mm` flat bar for condenser and fan supports. Do not obstruct the drain, cap, bonnet latch, or airflow. |
 | FAB-03 | As needed | Component tabs | `3 mm` mild steel or `4 mm` aluminum, radiused and deburred, with slotted adjustment only where access remains secure. |
 | FAB-04 | 1 set | M6 hardware | Class `8.8` zinc-plated bolts, large washers, Nyloc nuts, rubber isolators, and spacers for fan/condenser/drier. |

@@ -7,11 +7,13 @@
 - Primary gates: `RAD-RET-001`, `RAD-CAPTURE-001`, `RAD-SHOP-001`, `RAD-INSTALL-001`
 - Related docs: [bilal-ganj-front-cooling-ac-purchase-list-20260714.md](bilal-ganj-front-cooling-ac-purchase-list-20260714.md), [engine-radiator-recore-release-20260529.md](engine-radiator-recore-release-20260529.md), [front-engine-bay-mounting-fabrication-plan-20260508.md](front-engine-bay-mounting-fabrication-plan-20260508.md), [fabrication-handoff-index.md](fabrication-handoff-index.md), [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md), [photo-catalog.md](photo-catalog.md), [component-jobs-photo-reconciliation.md](component-jobs-photo-reconciliation.md)
 
+> **Current authority — Rev O, 2026-08-15:** use [J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md](J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md) and [na_cooling_connector_arms_rev_o](../data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md). The vehicle is naturally aspirated, uses exactly one central front A/C pusher, and the two arm blanks are loose rather than welded to the chassis. Rev O supersedes the turbo/intercooler arrangement, the nominal `410 mm` / `4 mm` tall-post geometry and Rev N adapter brackets. The historical material below is retained for provenance only and must not release cutting, drilling, purchasing or installation.
+
 ## Decision
 
 Treat the radiator as a dedicated workstream because it crosses three separate scopes: vehicle-side front-support fabrication, radiator shop recore/new-build decision, and final cooling-system fitment.
 
-**Status update 2026-07-22:** the owner reports the second/right-side radiator retention arm has been welded in, and the current front-structure photo shows both upright arms. Close the fabrication action but keep installation acceptance open. Inspect the new weld and heat-affected metal, compare the arms for height/plane/hole alignment, dry-fit the actual radiator with rubber isolation, verify fan/shroud/hose/bonnet clearance, then restore primer/top protection. Do not re-fabricate the arm unless that inspection or dry fit finds a defect.
+**Status correction 2026-08-15:** both radiator arms are loose and are not attached to the chassis. Inspect, measure and either bench-rework or replace them as a matched connector-sized A0-L/A0-R pair. Each A1 end mates at its measured A0-D connector bearing plane, and each arm reaches only its highest released functional interface. CL0 centrally locates the repaired guard, full-face condenser and single A/C fan. Final material, section, thickness, holes, welds, fasteners and torque remain on measured/structural release hold.
 
 The reason for the front-of-car fabrication is to keep the radiator properly located in the vehicle. The immediate fabrication job was not a radiator-shop repair to the core or tanks; it was the missing/right-side vehicle-side retention piece that matches the existing side and holds the radiator in place. The earlier measurements and template remain the as-built checking basis rather than an instruction to make another arm.
 
@@ -27,9 +29,9 @@ This is a best-effort fabrication basis, not a fit or 50°C guarantee. Final cor
 
 If the aluminium radiator route is already in play, it is accepted only after dry-fit proves the core, tanks, necks, cap, drain, fan clearance, and hose layout are correct. Any added metal part must be a removable rubber-isolated adapter/cradle between the vehicle support and radiator mounting ears/rails, not a hard leg welded or bolted to the tank/core.
 
-## Active Fabricated Part: `RAD-RET-001`
+## Superseded Historical Fabricated Part: `RAD-RET-001`
 
-Source package: [front_radiator_two_side_retention_rev_a](../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md)
+Historical source package: [front_radiator_two_side_retention_rev_a](../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md). Do not fabricate or buy from its nominal dimensions; use Rev O above.
 
 Function: vehicle-side front support retention. This part's job is to locate and restrain the radiator in the car so vibration, hose tension, fan clearance, and body movement are controlled by proper lower pads plus side/top retention, not by a loose wire, one-sided bracket, or a hard leg attached to the radiator body.
 
