@@ -2775,34 +2775,34 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
             "Radiator bracket README",
         ),
     ],
-    "na_cooling_connector_arms_rev_o": [
+    "na_cooling_connector_arms_rev_p": [
         (
-            "deliverables/fabrication_packages/na_cooling_connector_arms_rev_o.zip",
-            "Rev O naturally aspirated cooling connector-arm and holder package ZIP",
+            "deliverables/fabrication_packages/na_cooling_connector_arms_rev_p.zip",
+            "Rev P naturally aspirated cooling connector-arm and holder package ZIP",
         ),
         (
-            "docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md",
-            "Rev O restoration and fabrication guide",
+            "docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md",
+            "Rev P restoration and fabrication guide",
         ),
         (
-            "docs/J40-naturally-aspirated-cooling-pack-image-prompts-rev-o-20260815.md",
-            "Rev O generated-image prompt and authority record",
+            "docs/J40-naturally-aspirated-cooling-pack-image-prompts-rev-p-20260816.md",
+            "Rev P generated-image prompt and authority record",
         ),
         (
-            "data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md",
-            "Rev O fabricator-pack README",
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/README.md",
+            "Rev P fabricator-pack README",
         ),
         (
-            "data/manual/fabrication/na_cooling_connector_arms_rev_o/measurement_basis.csv",
-            "Rev O measurement basis CSV",
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/measurement_basis.csv",
+            "Rev P measurement basis CSV",
         ),
         (
-            "data/manual/fabrication/na_cooling_connector_arms_rev_o/fabricator_cut_list.csv",
-            "Rev O make/buy and cut-list CSV",
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/fabricator_cut_list.csv",
+            "Rev P make/buy and cut-list CSV",
         ),
         (
-            "data/manual/fabrication/na_cooling_connector_arms_rev_o/inspection_checklist.csv",
-            "Rev O inspection and release checklist CSV",
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/inspection_checklist.csv",
+            "Rev P inspection and release checklist CSV",
         ),
     ],
     "relay_mount_rev_c": [
@@ -2820,7 +2820,7 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
     "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
     "service_local_3d_printing_fabrication_prototypes": ("midi5_enclosure_rev_d", "relay_mount_rev_d"),
-    "front_radiator_two_side_retention_fabrication_20260508": ("na_cooling_connector_arms_rev_o",),
+    "front_radiator_two_side_retention_fabrication_20260508": ("na_cooling_connector_arms_rev_p",),
     "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "relay_mount_rev_d"),
 }
 
@@ -2853,26 +2853,26 @@ FABRICATION_PACKAGE_HERO_IMAGES: dict[str, tuple[str, str, str]] = {
         "V35 photorealistic dashboard appearance preview",
         "Non-dimensional appearance preview only. Do not scale pixels or derive CNC coordinates; use the signed M1–M9 traces, actual components, coordinate schedule and scale-controlled elevation.",
     ),
-    "na_cooling_connector_arms_rev_o": (
-        "docs/project-control-ui/assets/cooling-na-rev-o/na-connector-arm-holder-parts-bench.png",
-        "Rev O connector-arm and cooling-holder parts preview",
-        "Illustrative non-dimensional preview only. Do not scale pixels or derive cuts, holes or bracket geometry; use A0-D/B0/S0/G0-H/R0-H templates, the actual parts and the released structural drawing.",
+    "na_cooling_connector_arms_rev_p": (
+        "docs/project-control-ui/assets/cooling-na-rev-p/na-stack-short-connector-arms-finished.png",
+        "Rev P connector-arm and cooling-holder parts preview",
+        "Illustrative non-dimensional preview only. Do not scale pixels or derive cuts, holes or bracket geometry; use A0-D/B0/S0/G0-H/R0-H templates, the actual parts and the released structural drawing. CL0 directly verifies complete G0 perimeter-frame, FS frame/rotor and C0 fin-field centres to VCL; local aperture/C0 checks do not tolerance-stack.",
     ),
 }
 
 
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
-    "na_cooling_connector_arms_rev_o": [
+    "na_cooling_connector_arms_rev_p": [
         (
-            "docs/project-control-ui/assets/cooling-na-rev-o/na-stack-short-connector-arms-finished.png",
-            "Illustrative finished naturally aspirated cooling stack",
+            "docs/project-control-ui/assets/cooling-na-rev-p/na-connector-arm-holder-parts-bench.png",
+            "Illustrative connector-arm and holder parts bench",
         ),
         (
-            "docs/project-control-ui/assets/cooling-na-rev-o/na-short-arm-chassis-dry-fit.png",
+            "docs/project-control-ui/assets/cooling-na-rev-p/na-short-arm-chassis-dry-fit.png",
             "Illustrative connector-sized arm dry fit",
         ),
         (
-            "docs/project-control-ui/assets/cooling-na-rev-o/na-guard-radiator-holder-detail.png",
+            "docs/project-control-ui/assets/cooling-na-rev-p/na-guard-radiator-holder-detail.png",
             "Illustrative grille/stone-guard and R0 holder detail",
         ),
     ],

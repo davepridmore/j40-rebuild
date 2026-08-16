@@ -1,6 +1,6 @@
 # Front Engine-Bay Mounting Fabrication Plan - 2026-05-08
 
-> **Radiator supersession — 2026-08-15:** the current cooling-mount authority is [J40 Naturally Aspirated Cooling Pack Restoration Guide Rev O](J40-naturally-aspirated-cooling-pack-restoration-guide-rev-o-20260815.md) with the [Rev O fabricator pack](../data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md). Both arm blanks are loose. Size the matched arms to the measured chassis connectors and highest required interface; centrally align G0/C0/one FS under CL0. Do not use this document's historical `410 mm`, `4 mm`, full-height-post or radiator-stock asks for cutting or purchase.
+> **Radiator supersession — 2026-08-16:** the current cooling-mount authority is [J40 Naturally Aspirated Cooling Pack Restoration Guide Rev P](J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md) with the [Rev P fabricator pack](../data/manual/fabrication/na_cooling_connector_arms_rev_p/README.md). Both arm blanks are loose. Size the matched arms to the measured chassis connectors and highest required interface; directly centre the complete removable G0 perimeter frame, complete FS frame/rotor datum and C0 usable fin field on VCL within ±2 mm laterally. Separately check G0-to-fixed vehicle-grille/body-aperture and FS-to-C0 X/Z within ±2 mm; do not tolerance-stack. Do not use this document's historical `410 mm`, `4 mm`, full-height-post or radiator-stock asks for cutting or purchase.
 
 This plan splits the vague "missing bracket" concern into concrete front engine-bay fabrication jobs: radiator two-side retention, battery tray support, a battery-side master cutoff/breaker, and a removable radiator-carrier electrical plate for Relay Rev D and MIDI Rev D.
 
@@ -29,7 +29,7 @@ Linked bracket register: [chassis-bracket-analysis-register-20260508.md](chassis
 
 Preferred outcome: a serviceable two-side radiator retention set that replaces the wire-held/one-side condition without moving the radiator into the fan, belt, hose, or bonnet-close envelope.
 
-Current package: [na_cooling_connector_arms_rev_o](../data/manual/fabrication/na_cooling_connector_arms_rev_o/README.md). The Rev A post description below is provenance only and is superseded for fabrication and procurement.
+Current package: [na_cooling_connector_arms_rev_p](../data/manual/fabrication/na_cooling_connector_arms_rev_p/README.md). The Rev A post description below is provenance only and is superseded for fabrication and procurement.
 
 Prerequisite: fabricate or dry-fit the right-side strap/post before final radiator installation. The metal stock route is controlled by [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md): start with `50 x 50 x 4 mm` mild-steel angle/L-section, `1 m`, plus rubber isolation from `3-5 mm` EPDM/SBR sheet. If the angle does not match the measured `48-50 mm` radiator-post face, use the nearest 4 mm angle only after a dry-fit video proves the radiator ear and vehicle support can be joined without pulling the radiator out of plane.
 
