@@ -10059,6 +10059,9 @@
       d02: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d02_guard_and_radiator_holders.svg",
       d03: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d03_heat_exchanger_and_fan_carriers.svg",
       d04: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d04_electrical_and_release_matrix.svg",
+      splitOut: "../../data/manual/fabrication/na_cooling_pack_rev_q/rev_q_ph01_split_out_off_vehicle.png",
+      installed: "../../data/manual/fabrication/na_cooling_pack_rev_q/rev_q_ph02_assembled_in_vehicle.png",
+      visualReadme: "../../data/manual/fabrication/na_cooling_pack_rev_q/README.md",
     };
 
     const originalComponentMasters = [
@@ -10477,6 +10480,167 @@
         </figcaption>
       </figure>
     `).join("");
+
+    root.innerHTML = `
+      <div class="na-cooling-guide na-cooling-view na-simple-page">
+        <section class="na-simple-hero" id="cooling-pack-summary">
+          <div class="na-simple-hero-copy">
+            <div class="na-cooling-kicker-row">
+              <p class="eyebrow">Rev Q · naturally aspirated 2H · practical shop plan</p>
+              ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy cooling-pack summary link")}
+            </div>
+            <h2>Restore five original parts. Make the carriers. Install one complete pack.</h2>
+            <p>Keep the original radiator, condenser, stone guard, one small front pusher and the large rear puller/shroud. The page now separates the job into three clear actions; full controlled detail is available only when the shop needs it.</p>
+            <div class="na-simple-hero-actions">
+              <a class="item-link package-download-link" href="${assets.packZip}" download>Download fabricator pack</a>
+              <a class="item-link" href="${assets.guide}" download>Open full shop guide</a>
+            </div>
+          </div>
+          <figure class="na-simple-hero-photo">
+            <img src="${assets.installed}" alt="Photorealistic reference view of the complete cooling pack assembled in the Toyota J40" loading="eager">
+            <figcaption><strong>In vehicle · complete assembly</strong><span>Reference-constrained photorealistic view. The controlled dimensions and original-part photographs below govern the work.</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="card na-simple-order" aria-labelledby="cooling-pack-order-title">
+          <div class="na-simple-section-heading">
+            <p class="na-cooling-section-label">One stack · front to rear</p>
+            <h3 id="cooling-pack-order-title">Guard → one small fan → condenser → radiator → large shrouded fan</h3>
+          </div>
+          <ol>
+            ${architecture.slice(1, 6).map(([number, title, detail]) => `<li><span>${escapeHtml(number)}</span><strong>${escapeHtml(title)}</strong><small>${escapeHtml(detail)}</small></li>`).join("")}
+          </ol>
+        </section>
+
+        <section class="na-simple-views" aria-labelledby="cooling-pack-views-title">
+          <div class="na-simple-section-heading">
+            <p class="na-cooling-section-label">Two views only</p>
+            <h3 id="cooling-pack-views-title">Separated for identification. Assembled for installation.</h3>
+            <p>No mixed dry-fit view is used.</p>
+          </div>
+          <div class="na-simple-view-grid">
+            <figure>
+              <div class="na-simple-view-label">Off vehicle · every part separated</div>
+              <img src="${assets.splitOut}" alt="Photorealistic split-out view showing the stone guard, small fan, condenser, radiator, large shrouded fan and fabricated carriers separately off the vehicle" loading="lazy">
+              <figcaption>Use this view to identify the layer order and the separately removable carriers.</figcaption>
+            </figure>
+            <figure>
+              <div class="na-simple-view-label">In vehicle · fully assembled</div>
+              <img src="${assets.installed}" alt="Photorealistic view showing the complete cooling pack assembled in the vehicle" loading="lazy">
+              <figcaption>Use this view to understand the finished arrangement and service access.</figcaption>
+            </figure>
+          </div>
+          <div class="na-simple-caution"><strong>Visuals show intent, not cut dimensions.</strong><span>They are proportion-constrained renderings based on the original photographs. Fabricate only from the signed measurement sheets and full-size Rev P drawings.</span></div>
+        </section>
+
+        <section class="card na-simple-spec" id="cooling-pack-measurements">
+          <div class="na-simple-section-heading">
+            <p class="na-cooling-section-label">Working envelope</p>
+            <h3>Four sizes to start the full-size mock-up</h3>
+          </div>
+          <div class="na-simple-spec-grid">
+            <article><span>R0 radiator</span><strong>610 mm body</strong><small>≈635 mm to cap · span ≈635 mm provisional</small></article>
+            <article><span>C0 condenser</span><strong>540 × 465 mm</strong><small>Body only · map pipes, drier and all tabs</small></article>
+            <article><span>FL rear puller</span><strong>≈450–480 mm</strong><small>Provisional ring · measure the complete shroud</small></article>
+            <article><span>FS front pusher</span><strong>≈240–255 mm</strong><small>Provisional ring · complete frame may reach ≈280 mm</small></article>
+          </div>
+          <p class="na-simple-spec-note">Depths, mount centres, connector ends, holes, tabs and vehicle clearances remain HOLD until measured square on the tagged originals.</p>
+        </section>
+
+        <section class="na-simple-workflow" aria-labelledby="cooling-pack-workflow-title">
+          <div class="na-simple-section-heading">
+            <p class="na-cooling-section-label">The job in three actions</p>
+            <h3 id="cooling-pack-workflow-title">Restore. Fabricate. Assemble.</h3>
+          </div>
+          <div class="na-simple-workflow-grid">
+            <article><span>01</span><h4>Restore the five originals</h4><p>Test first, repair each tagged part correctly, then prove it again before finish.</p><a href="#cooling-pack-restoration">Open restoration procedures</a></article>
+            <article><span>02</span><h4>Fabricate 13 controlled references</h4><p>Template the actual vehicle and parts, issue the drawing, dry-fit bare metal, proof, then coat.</p><a href="#cooling-pack-fabrication">Open fabrication specification</a></article>
+            <article><span>03</span><h4>Assemble front to rear</h4><p>Build independent load paths and carriers, wire two separate fan branches, then commission.</p><a href="#cooling-pack-assembly">Open assembly instructions</a></article>
+          </div>
+        </section>
+
+        <section class="na-simple-details" aria-label="Detailed cooling-pack instructions">
+          <details class="card na-simple-disclosure" id="cooling-pack-restoration">
+            <summary><span><small>01 · full controlled detail</small><strong>Restore every retained part</strong></span><b>Open</b></summary>
+            <div class="na-simple-disclosure-body">
+              <p class="na-simple-intro">Each original gets its own inspection, cleaning, repair, finish and acceptance record. Replace age-sensitive rubbers, seals, drier, hoses, clamps, relays, fuses and damaged hardware; do not cosmetically restore them.</p>
+              <div class="na-cooling-restoration-grid">${restorationCards}</div>
+              <div class="na-simple-subsection" id="cooling-pack-process">
+                <h3>Controlled shop sequence</h3>
+                <div class="na-cooling-step-grid na-cooling-steps">${stepCards}</div>
+              </div>
+            </div>
+          </details>
+
+          <details class="card na-simple-disclosure" id="cooling-pack-fabrication">
+            <summary><span><small>02 · full controlled detail</small><strong>Fabricate every support and carrier</strong></span><b>Open</b></summary>
+            <div class="na-simple-disclosure-body">
+              <div class="na-simple-caution"><strong>Functional drawings, not cut-ready drawings.</strong><span>Green geometry is photo-backed envelope context. Purple dimensions and coordinates stay on HOLD until the named direct template and signed release drawing exist.</span></div>
+              <div class="na-cooling-drawing-grid">${fabricationDrawingCards}</div>
+              <div class="na-cooling-formula" role="note">
+                <span>R0 locators</span><b>→</b><span>R1 saddles</span><b>→</b><span>X1 seats</span><b>→</b><span>X0 crossmember</span><b>→</b><span>short A0 arms</span><b>→</b><span>A1 connectors</span>
+              </div>
+              <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
+                <table class="na-cooling-table na-cooling-data-table na-cooling-fabrication-table">
+                  <thead><tr><th>Ref</th><th>Qty</th><th>Stock / material basis</th><th>Fabrication operations</th><th>Interface / load rule</th><th>Release acceptance</th></tr></thead>
+                  <tbody>${fabricationTableRows}</tbody>
+                </table>
+              </div>
+              <div class="na-cooling-proof"><strong>Mandatory before paint</strong><span>Obtain competent structural release, then apply a total static proof load of 2 × filled/capped radiator mass MR across both S0 saddle centres for 10 minutes. Any permanent set, crack, looseness, saddle movement or connector distortion is a fail.</span></div>
+            </div>
+          </details>
+
+          <details class="card na-simple-disclosure" id="cooling-pack-assembly">
+            <summary><span><small>03 · full controlled detail</small><strong>Assemble, wire and commission</strong></span><b>Open</b></summary>
+            <div class="na-simple-disclosure-body">
+              <p class="na-simple-intro">Assemble only from the signed measured drawing and tagged physical parts. Never slot a hole, invent a bracket or pull a component into alignment during installation.</p>
+              <ol class="na-cooling-assembly-list">${assemblyCards}</ol>
+              <div class="na-simple-subsection" id="cooling-pack-controls">
+                <h3>Two independent fan circuits</h3>
+                <div class="na-cooling-controls-grid">
+                  <article><span>FS · front pusher</span><h4>A/C request + pressure logic</h4><p>Dedicated sealed relay, covered fuse and earth. Confirm rearward airflow.</p></article>
+                  <article><span>FL · rear puller</span><h4>Coolant-temperature control</h4><p>Separate sealed relay, covered fuse and earth plus safe service-test control.</p></article>
+                  <article><span>Both branches</span><h4>Size from measured current</h4><p>Record start/run current, terminal voltage and voltage drop; size cable, relay and fuse from evidence.</p></article>
+                </div>
+              </div>
+              <div class="na-simple-subsection" id="cooling-pack-gates">
+                <h3>Release gates</h3>
+                <div class="na-cooling-gates-grid">${gateCards}</div>
+              </div>
+            </div>
+          </details>
+
+          <details class="card na-simple-disclosure" id="cooling-pack-parts">
+            <summary><span><small>Supporting schedules</small><strong>Measurements, original photographs, parts and chemicals</strong></span><b>Open</b></summary>
+            <div class="na-simple-disclosure-body">
+              <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
+                <table class="na-cooling-table na-cooling-data-table">
+                  <thead><tr><th>Envelope</th><th>Photo-backed value</th><th>Status</th><th>Control</th></tr></thead>
+                  <tbody>${photoDimensionTableRows}</tbody>
+                </table>
+              </div>
+              <div class="na-simple-subsection"><h3>Original component identity masters</h3><p>These real photographs—not the generated visualisations—control component identity.</p><div class="na-cooling-evidence-grid">${renderGallery(originalComponentMasters)}</div></div>
+              <div class="na-simple-subsection"><h3>Measurement evidence</h3><div class="na-cooling-evidence-grid">${renderGallery(retainedEvidence)}</div></div>
+              <div class="na-simple-subsection"><h3>Parts and materials</h3><div class="na-cooling-parts-grid">${partsGroups.map((group) => `<article class="na-cooling-parts-card is-${escapeHtml(group.tone)}"><span>${escapeHtml(group.label)}</span><ul>${group.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>`).join("")}</div></div>
+              <div class="na-simple-subsection" id="cooling-pack-chemicals"><h3>Chemicals and coatings</h3><div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap"><table class="na-cooling-table na-cooling-data-table na-cooling-chem-table"><thead><tr><th>Product class</th><th>Use</th><th>Selection / control</th><th>Do not do</th></tr></thead><tbody>${chemicalTableRows}</tbody></table></div></div>
+            </div>
+          </details>
+        </section>
+
+        <section class="card na-simple-files" id="cooling-pack-files">
+          <div><p class="na-cooling-section-label">Shop handoff</p><h3>Download the controlled source files</h3><p>Give the shops the guide, the real tagged parts, templates and inspection sheets. The visualisations explain arrangement only.</p></div>
+          <div class="na-cooling-downloads na-cooling-download-actions">
+            <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Rev P shop guide (.md)</a>
+            <a class="item-link package-download-link na-cooling-download-action" href="${assets.packZip}" download>Fabricator pack (.zip)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.cutList}" download>Make / buy schedule (.csv)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.measurementBasis}" download>Measurement sheet (.csv)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.inspectionChecklist}" download>Inspection checklist (.csv)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.visualReadme}" download>Visual prompts and controls (.md)</a>
+          </div>
+        </section>
+      </div>
+    `;
+    return;
 
     root.innerHTML = `
       <div class="na-cooling-guide na-cooling-view">
