@@ -2786,10 +2786,6 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
             "Rev P restoration and fabrication guide",
         ),
         (
-            "docs/J40-naturally-aspirated-cooling-pack-image-prompts-rev-p-20260816.md",
-            "Rev P generated-image prompt and authority record",
-        ),
-        (
             "data/manual/fabrication/na_cooling_connector_arms_rev_p/README.md",
             "Rev P fabricator-pack README",
         ),
@@ -2804,6 +2800,22 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/na_cooling_connector_arms_rev_p/inspection_checklist.csv",
             "Rev P inspection and release checklist CSV",
+        ),
+        (
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d01_lower_support_and_connector_arms.svg",
+            "D01 lower-support and connector-arm controlled drawing",
+        ),
+        (
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d02_guard_and_radiator_holders.svg",
+            "D02 guard and radiator-holder controlled drawing",
+        ),
+        (
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d03_heat_exchanger_and_fan_carriers.svg",
+            "D03 heat-exchanger and fan-carrier controlled drawing",
+        ),
+        (
+            "data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d04_electrical_and_release_matrix.svg",
+            "D04 electrical and fabrication-release controlled drawing",
         ),
     ],
     "relay_mount_rev_c": [
@@ -2855,9 +2867,9 @@ FABRICATION_PACKAGE_HERO_IMAGES: dict[str, tuple[str, str, str]] = {
         "Non-dimensional appearance preview only. Do not scale pixels or derive CNC coordinates; use the signed M1–M9 traces, actual components, coordinate schedule and scale-controlled elevation.",
     ),
     "na_cooling_connector_arms_rev_p": (
-        "docs/project-control-ui/assets/cooling-na-rev-p/na-stack-short-connector-arms-finished.png",
-        "Rev P connector-arm and cooling-holder parts preview",
-        "Illustrative non-dimensional preview only. Do not scale pixels or derive cuts, holes or bracket geometry; use A0-D/B0/S0/G0-H/R0-H templates, the actual parts and the released structural drawing. CL0 directly verifies complete G0 perimeter-frame, FS frame/rotor and C0 fin-field centres to VCL; local aperture/C0 checks do not tolerance-stack.",
+        "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
+        "R0 actual retained radiator identity master",
+        "Actual retained-component photograph. Do not scale pixels or infer hidden geometry; use the physical R0, the tape-evidence photographs, A0-D/B0/S0/G0-H/R0-H templates and the controlled D01-D04 drawings.",
     ),
 }
 
@@ -2865,16 +2877,36 @@ FABRICATION_PACKAGE_HERO_IMAGES: dict[str, tuple[str, str, str]] = {
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "na_cooling_connector_arms_rev_p": [
         (
-            "docs/project-control-ui/assets/cooling-na-rev-p/na-connector-arm-holder-parts-bench.png",
-            "Illustrative connector-arm and holder parts bench",
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
+            "C0 actual retained condenser identity master",
         ),
         (
-            "docs/project-control-ui/assets/cooling-na-rev-p/na-short-arm-chassis-dry-fit.png",
-            "Illustrative connector-sized arm dry fit",
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
+            "G0 actual retained stone-guard identity master",
         ),
         (
-            "docs/project-control-ui/assets/cooling-na-rev-p/na-guard-radiator-holder-detail.png",
-            "Illustrative grille/stone-guard and R0 holder detail",
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
+            "FS actual retained single-pusher identity master",
+        ),
+        (
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
+            "FL actual retained radiator-puller identity master",
+        ),
+        (
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r10_r0_width_tape.jpg",
+            "R0 photographed provisional span tape evidence",
+        ),
+        (
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r11_r0_height_tape.jpg",
+            "R0 photographed body and cap-height tape evidence",
+        ),
+        (
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r14_c0_width_tape.jpg",
+            "C0 photographed width tape evidence",
+        ),
+        (
+            "data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r15_c0_height_tape.jpg",
+            "C0 photographed height tape evidence",
         ),
     ],
     "dashboard_lcd_hvac_fascia_rev_i": [
