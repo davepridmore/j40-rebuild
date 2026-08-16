@@ -10059,9 +10059,9 @@
       d02: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d02_guard_and_radiator_holders.svg",
       d03: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d03_heat_exchanger_and_fan_carriers.svg",
       d04: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d04_electrical_and_release_matrix.svg",
-      splitOut: "../../data/manual/fabrication/na_cooling_pack_rev_q/rev_q_ph01_split_out_off_vehicle.png",
-      installed: "../../data/manual/fabrication/na_cooling_pack_rev_q/rev_q_ph02_assembled_in_vehicle.png",
-      visualReadme: "../../data/manual/fabrication/na_cooling_pack_rev_q/README.md",
+      splitOut: "../../data/manual/fabrication/na_cooling_pack_rev_r/rev_r_ph01_original_parts_split_out.png",
+      installed: "../../data/manual/fabrication/na_cooling_pack_rev_r/rev_r_ph02_fully_installed_in_vehicle.png",
+      visualReadme: "../../data/manual/fabrication/na_cooling_pack_rev_r/README.md",
     };
 
     const originalComponentMasters = [
@@ -10087,7 +10087,7 @@
       },
       {
         path: assets.fl,
-        caption: "FL original — retained large puller in its actual full shroud, including the broad blades, motor, ribs, frame and wiring. The complete shroud and seal land control F2.",
+        caption: "FL original — retained large puller in its actual open rectangular perimeter frame, including the broad blades, motor, ring, ribs and wiring. The complete physical frame and seal land control F2.",
         specific_component: "FL actual rear-puller identity master",
       },
     ];
@@ -10486,26 +10486,22 @@
         <section class="na-simple-hero" id="cooling-pack-summary">
           <div class="na-simple-hero-copy">
             <div class="na-cooling-kicker-row">
-              <p class="eyebrow">Rev Q · naturally aspirated 2H · practical shop plan</p>
+              <p class="eyebrow">Rev R · naturally aspirated 2H · practical shop plan</p>
               ${renderCopyLinkButton(sectionRoute("cooling-pack-summary"), "#", "Copy cooling-pack summary link")}
             </div>
             <h2>Restore five original parts. Make the carriers. Install one complete pack.</h2>
-            <p>Keep the original radiator, condenser, stone guard, one small front pusher and the large rear puller/shroud. The page now separates the job into three clear actions; full controlled detail is available only when the shop needs it.</p>
+            <p>Keep the original radiator, condenser, irregular stone guard, one small front pusher and the large rear puller in its open frame. Start with the two unambiguous photographs below; open the controlled detail only when the shop needs it.</p>
             <div class="na-simple-hero-actions">
               <a class="item-link package-download-link" href="${assets.packZip}" download>Download fabricator pack</a>
               <a class="item-link" href="${assets.guide}" download>Open full shop guide</a>
             </div>
           </div>
-          <figure class="na-simple-hero-photo">
-            <img src="${assets.installed}" alt="Photorealistic reference view of the complete cooling pack assembled in the Toyota J40" loading="eager">
-            <figcaption><strong>In vehicle · complete assembly</strong><span>Reference-constrained photorealistic view. The controlled dimensions and original-part photographs below govern the work.</span></figcaption>
-          </figure>
         </section>
 
         <section class="card na-simple-order" aria-labelledby="cooling-pack-order-title">
           <div class="na-simple-section-heading">
             <p class="na-cooling-section-label">One stack · front to rear</p>
-            <h3 id="cooling-pack-order-title">Guard → one small fan → condenser → radiator → large shrouded fan</h3>
+            <h3 id="cooling-pack-order-title">Guard → one small fan → condenser → radiator → large rear puller</h3>
           </div>
           <ol>
             ${architecture.slice(1, 6).map(([number, title, detail]) => `<li><span>${escapeHtml(number)}</span><strong>${escapeHtml(title)}</strong><small>${escapeHtml(detail)}</small></li>`).join("")}
@@ -10516,18 +10512,18 @@
           <div class="na-simple-section-heading">
             <p class="na-cooling-section-label">Two views only</p>
             <h3 id="cooling-pack-views-title">Separated for identification. Assembled for installation.</h3>
-            <p>No mixed dry-fit view is used.</p>
+            <p>Each photograph shows one state only. There is no mixed dry-fit or half-installed view.</p>
           </div>
           <div class="na-simple-view-grid">
             <figure>
               <div class="na-simple-view-label">Off vehicle · every part separated</div>
-              <img src="${assets.splitOut}" alt="Photorealistic split-out view showing the stone guard, small fan, condenser, radiator, large shrouded fan and fabricated carriers separately off the vehicle" loading="lazy">
-              <figcaption>Use this view to identify the layer order and the separately removable carriers.</figcaption>
+              <img src="${assets.splitOut}" alt="Photorealistic split-out view of the five original cooling-pack parts, all separately off the vehicle" loading="eager">
+              <figcaption>Exactly five restored originals, kept separate and shown at a common relative scale for identity and proportion.</figcaption>
             </figure>
             <figure>
               <div class="na-simple-view-label">In vehicle · fully assembled</div>
-              <img src="${assets.installed}" alt="Photorealistic view showing the complete cooling pack assembled in the vehicle" loading="lazy">
-              <figcaption>Use this view to understand the finished arrangement and service access.</figcaption>
+              <img src="${assets.installed}" alt="Photorealistic view of the complete cooling pack fixed in its final installed position in the Toyota J40" loading="eager">
+              <figcaption>Every layer is fixed in its final vehicle position; no component is loose, lowered or exploded away from the stack.</figcaption>
             </figure>
           </div>
           <div class="na-simple-caution"><strong>Visuals show intent, not cut dimensions.</strong><span>They are proportion-constrained renderings based on the original photographs. Fabricate only from the signed measurement sheets and full-size Rev P drawings.</span></div>
