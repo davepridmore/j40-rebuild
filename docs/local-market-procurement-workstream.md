@@ -17,10 +17,11 @@ This is no longer an active workstream. The old Local Market lane was removed be
 | Sample-matched pins, spacers, brackets | `body_chassis` / `fabrication_handoff` | `part_body_specialty_brackets_retainer_plates` and fabrication handoff rows |
 | Brake-opening consumables | `brake_system` | `BR-SYS-002` workstream safety gate; no active local-market buy. |
 | Mechanical service parts | `mechanical_baseline` | service rows in `data/manual/procurement_queue.csv` |
+| Replacement steering market scout | `eps_vitz_upgrade` | Closed 2026-08-16: replacement steering is in hand. Record identity, completeness and condition, then bench-check and trial-fit it before fabrication. |
 | Hose and pipe pack | `replacement_pipes` / `mechanical_baseline` | [longman-pipe-hose-order-spec-20260512.md](longman-pipe-hose-order-spec-20260512.md) |
-| Brake booster / servo reman quote | `brake_system` | Closed 2026-07-29: existing booster confirmed good; cosmetic tidy only, no replacement/rebuild scout. |
+| Brake booster / servo reman quote | `brake_system` | Closed 2026-08-16: no replacement scout; retain the existing booster and refurbish it only if the owner chooses or fitted testing justifies the work. |
 | Hardwood cribbing cut set | `suspension_upgrade` | [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md) |
-| Toolbench / workbench | `site_setup` | `tool_local_toolbench` in expenses and procurement queue |
+| Toolbench / workbench | `site_setup` | Closed 2026-08-16: cheap benches purchased; no further market scout. |
 
 ## Rule
 

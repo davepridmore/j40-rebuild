@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-08-02 23:49:03
+- Generated: 2026-08-16 16:30:50
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
@@ -9,15 +9,20 @@
 
 - `direct_photo_evidence`: 65
 - `indirect_photo_evidence_only`: 4
-- `no_photo_evidence`: 21
+- `no_photo_evidence`: 29
 
 ## Per-Component Results
 
 | Component Job | Status | Direct | Indirect | Direct Components | Notes |
 | --- | --- | ---: | ---: | --- | --- |
 | `cabin_fuse_relay_donor_samples_20260710` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `cavity_wax_station_release_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `cooling_pack_hybrid_restoration_decision_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `engine_manifold_and_side_cover_refresh_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `fitted_late_j40_hydraulic_steering_identification_20260802` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `front_brake_sumitomo_refresh_decision_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `front_bumper_recreation_welding_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `handbrake_line_measurement_release_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_bench_inspection_rebuild` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_complete_set_acquisition` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_existing_interface_capture` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
@@ -25,9 +30,12 @@
 | `j60_hydraulic_steering_route_decision_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `j60_hydraulic_vehicle_trial_fit` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `passenger_footwell_floor_section_replacement_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `pipe_support_adapter_prototype_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `rear_brake_pivot_hardware_identity_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `rear_bumper_recreation_welding_20260719` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `relay_midi_radiator_carrier_relocation_20260731` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `removed_parts_replace_exclude_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `suspension_bump_stop_direct_bolt_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_bump_stop_rust_treatment_preparation_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_engine_health_release_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_hot_side_fabrication_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |

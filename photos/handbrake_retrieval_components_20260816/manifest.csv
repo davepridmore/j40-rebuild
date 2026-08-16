@@ -1,0 +1,42 @@
+component_id,component_name,source_photo,evidence_role,confidence,action
+R01,Control-end anchor,20260723_013050_gp_rSLoiGNw.jpg,Loose old short cable/link showing rectangular loop terminal and swaged stop,medium,Retrieve special anchor/terminal and retain old link as pattern
+R01,Control-end anchor,20260514_095846_gp_a9olRp5g.jpg,Installed forward/control-side cable-end arrangement,medium,Match the actual lever-side connection before fabrication
+R02,Primary adjustment assembly,20260522_210729_gp_Csn9ztFA.jpg,Old threaded adjuster and sheath abutment beside equalizer,high,Retrieve complete non-generic adjuster assembly
+R02,Primary adjustment assembly,20260514_095856_gp_vjZG4NtQ.jpg,Installed chassis-side threaded sheath abutment,high,Retrieve and record installed orientation
+R02,Primary adjustment assembly,20260710_103424_gp_Ab1ltlRw.jpg,Removed threaded adjustment/anchor hardware,high,Retrieve all shaped and integral pieces; exclude loose generic nuts
+R03,Oval compensator/equalizer,20260522_210729_gp_Csn9ztFA.jpg,Old compensator with cable paths visible,high,Retrieve complete plate/stack
+R03,Oval compensator/equalizer,20260514_100003_gp_Vr2QI7ig.jpg,Installed axle-mounted equalizer area,high,Record orientation before dismantling
+R03,Oval compensator/equalizer,20260710_103424_gp_Ab1ltlRw.jpg,Removed oval plate clearly visible,high,Retrieve oval plate
+R04,Rear reaction/equalizer bracket,20260514_100003_gp_Vr2QI7ig.jpg,Installed triangular axle-side reaction bracket,high,Retrieve bracket and record mounting face
+R04,Rear reaction/equalizer bracket,20260522_210729_gp_Csn9ztFA.jpg,Old bracket/equalizer assembly close-up,high,Retrieve complete shaped bracket
+R04,Rear reaction/equalizer bracket,20260710_103424_gp_Ab1ltlRw.jpg,Removed shaped bracket pieces,medium,Separate handbrake brackets from unrelated parts
+R05,Rectangular yoke/retainer,20260705_022559_gp_YyIEayQQ.jpg,Isolated special rectangular wire yoke,high,Retrieve; this is special linkage hardware rather than a generic clip
+R05,Rectangular yoke/retainer,20260704_232054_gp_1mnxabPQ.jpg,Yoke shown with removed cable and drum hardware,high,Use as association/orientation reference
+R06,Special cable-end terminals,20260723_013050_gp_rSLoiGNw.jpg,Rectangular loop and swaged block on old short cable/link,high,Retrieve or preserve attached sample for replication
+R06,Special cable-end terminals,20260522_210729_gp_Csn9ztFA.jpg,Old swaged cable ends at central mechanism,high,Do not cut off or discard before dimensions are recorded
+R07,Sheath interface fittings,20260522_210729_gp_Csn9ztFA.jpg,Threaded and shouldered old sheath interfaces,high,Retrieve reusable fittings or duplicate exactly
+R07,Sheath interface fittings,20260514_095856_gp_vjZG4NtQ.jpg,Installed chassis-side threaded abutment,high,Record thread and bracket seating dimensions
+R07,Sheath interface fittings,20260514_095826_gp_fg74oFMQ.jpg,Drum/backing-plate sheath entry,medium,Match standard drum interface and installed seat
+R08,Intermediate casing locators,20260512_072730_gp_jSK3r3bg.jpg,Outer casing route along rear axle/leaf area,high,Retrieve any integral locator sleeves and record route
+R08,Intermediate casing locators,20260514_095820_gp_nuP5s76A.jpg,Axle casing with intermediate sleeve/locator,high,Retrieve shaped locator pieces
+R08,Intermediate casing locators,20260514_095836_gp_tmRy9fqg.jpg,Central casing locator/junction area,high,Record position before removal
+R09,Return/tension springs,20260512_072723_gp_r9KEkOdg.jpg,Installed rear drum return spring and actuator,high,Retrieve functional handbrake spring
+R09,Return/tension springs,20260514_095953_gp_BXoQkXnw.jpg,Installed drum-side spring arrangement,high,Retrieve and identify side
+R09,Return/tension springs,20260514_100008_gp_bq1VQUXQ.jpg,Opposite rear drum spring arrangement,high,Retrieve and identify side
+R09,Return/tension springs,20260710_103434_gp_go5dJG6w.jpg,Removed spring assortment,medium,Select only springs proven to belong to handbrake linkage
+R10,LH/RH drum interfaces,20260512_072723_gp_r9KEkOdg.jpg,One installed rear drum cable lever/actuator interface,high,Retrieve complete interface as left/right sample
+R10,LH/RH drum interfaces,20260514_095953_gp_BXoQkXnw.jpg,Installed drum-side cable lever and return spring,high,Retrieve complete interface and label side
+R10,LH/RH drum interfaces,20260514_100008_gp_bq1VQUXQ.jpg,Opposite installed drum-side interface,high,Retrieve complete interface and label side
+R10,LH/RH drum interfaces,20260705_022544_gp_Fgy5X7pw.jpg,Removed drum parking-brake lever/actuator,high,Keep as standard drum-end pattern
+R11,Unique mounting hardware,20260710_103424_gp_Ab1ltlRw.jpg,Removed shaped brackets and mounts,medium,Retrieve only handbrake-specific shaped hardware
+R11,Unique mounting hardware,20260704_232054_gp_1mnxabPQ.jpg,Mixed brake hardware showing shaped cable pieces,medium,Exclude wheel cylinder and generic fasteners
+R11,Unique mounting hardware,20260705_022544_gp_Fgy5X7pw.jpg,Removed special drum actuator hardware,high,Keep with corresponding drum side
+REF90,Old cable measurement reference,20260723_015049_gp_6p0esrng.jpg,Old cable/sheath laid against tape at full length,high,Preserve old cable as fabrication pattern
+REF90,Old cable measurement reference,20260723_015054_gp_qopK7wmw.jpg,Intermediate sleeve position against tape,high,Use for dimensional transcription
+REF90,Old cable measurement reference,20260723_015100_gp_Ddhu3qng.jpg,Second intermediate sleeve position against tape,high,Use for dimensional transcription
+REF90,Old cable measurement reference,20260723_015104_gp_gVKMKGbw.jpg,Threaded sheath abutment position against tape,high,Use for dimensional transcription
+REF90,Old cable measurement reference,20260723_015110_gp_4a43AawA.jpg,Old cable terminal and overall endpoint near 329 cm,high,Verify directly before manufacture
+EXCLUDED,Wrong or unverified replacement,20260712_011332_gp_eRcLMeyg.jpg,Clean complete purchased/replacement cable assembly,high,Keep isolated; do not use as original dimensional authority
+EXCLUDED,Wrong or unverified replacement,20260723_024940_gp_XyosHiqg.jpg,Clean complete replacement cable with spring and bracket,high,Keep isolated; fit is not proven
+EXCLUDED,Wrong or unverified replacement,20260723_024950_gp_Kwkjc7bg.jpg,Clean replacement threaded end measured near 73.5 inches,high,Do not transfer this dimension to the fabrication specification
+EXCLUDED,Wrong or unverified replacement,20260704_231547_gp_q267TkIw.jpg,Coiled replacement-looking cable with new fittings,medium,Quarantine until provenance and fit are confirmed
