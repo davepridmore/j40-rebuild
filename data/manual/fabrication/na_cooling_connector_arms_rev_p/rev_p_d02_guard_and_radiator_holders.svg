@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Rev P D02 stone guard and radiator holder fabrication control</title>
+  <desc id="desc">Fabrication control for G1, G2, R0-E and R3 holders using actual part templates. Shapes are schematic and final dimensions remain held.</desc>
+  <defs>
+    <style>.bg{fill:#f3f0e7}.ink{fill:#17231e}.muted{fill:#58645e}.line{fill:none;stroke:#24352d;stroke-width:4}.thin{fill:none;stroke:#65766d;stroke-width:2}.hold{fill:#7d3fa0}.green{fill:#315f48}.amber{fill:#8a5c24}.steel{fill:#d6ddd8;stroke:#24352d;stroke-width:4}.rubber{fill:#303a35;stroke:#111;stroke-width:3}.mesh{fill:url(#mesh);stroke:#24352d;stroke-width:5}.title{font:700 38px Arial,sans-serif}.h2{font:700 25px Arial,sans-serif}.h3{font:700 19px Arial,sans-serif}.body{font:17px Arial,sans-serif}.small{font:14px Arial,sans-serif}.label{font:700 15px Arial,sans-serif;letter-spacing:1px}.mono{font:700 16px ui-monospace,SFMono-Regular,monospace}</style>
+    <pattern id="mesh" width="22" height="14" patternUnits="userSpaceOnUse"><path d="M0 7L11 0 22 7 11 14Z" fill="none" stroke="#65766d" stroke-width="1.4"/></pattern>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d8d3c9" stroke-width="1"/></pattern>
+  </defs>
+  <rect class="bg" width="1600" height="1100"/><rect width="1600" height="1100" fill="url(#grid)" opacity=".55"/><rect x="42" y="38" width="1516" height="1024" rx="18" fill="#fffdf8" stroke="#24352d" stroke-width="3"/>
+  <text x="82" y="100" class="title ink">REV P · D02 — GUARD + RADIATOR HOLDERS</text><text x="82" y="136" class="body muted">G1-L/R · G2-L/R · R0-E · R3-U-L/R · optional R3-L-L/R | trace every contact from G0-H or R0-H</text>
+  <rect x="1264" y="66" width="246" height="78" rx="9" fill="#f0e6f6" stroke="#7d3fa0" stroke-width="3"/><text x="1288" y="99" class="label hold">FABRICATION STATUS</text><text x="1288" y="127" class="h3 hold">FINAL GEOMETRY: HOLD</text>
+
+  <rect x="78" y="180" width="720" height="610" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="108" y="222" class="h2 ink">G0 HOLDER SYSTEM · actual irregular frame controls</text>
+  <path d="M170 315L645 286 709 323 687 690 610 715 160 680 137 560 151 405Z" class="mesh"/>
+  <path d="M153 306L703 278" class="line"/><circle cx="225" cy="302" r="8" fill="#fff" stroke="#24352d" stroke-width="3"/><circle cx="620" cy="282" r="8" fill="#fff" stroke="#24352d" stroke-width="3"/>
+  <path d="M200 681v42h100v-62" class="steel"/><path d="M553 688v35h100v-52" class="steel"/><rect x="210" y="667" width="80" height="18" class="rubber"/><rect x="563" y="676" width="80" height="18" class="rubber"/>
+  <path d="M190 322v-44h90v50" class="steel"/><path d="M579 300v-44h90v50" class="steel"/><rect x="200" y="310" width="70" height="17" class="rubber"/><rect x="589" y="289" width="70" height="17" class="rubber"/>
+  <text x="105" y="751" class="h3 ink">G1-L/R lower cradles</text><text x="494" y="751" class="h3 ink">G2-L/R keepers</text>
+  <text x="108" y="778" class="small muted">Broad EPDM on sound perimeter · mesh free · low-point drainage · tool-accessible removal</text>
+  <line x1="429" y1="258" x2="429" y2="734" stroke="#8a5c24" stroke-width="3" stroke-dasharray="11 8"/><text x="443" y="270" class="label amber">DIRECT VCL DATUM</text>
+
+  <rect x="826" y="180" width="684" height="610" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="856" y="222" class="h2 ink">R0 RETENTION · weight stays on lower saddles</text>
+  <rect x="969" y="291" width="397" height="322" rx="12" fill="#e4eee7" stroke="#315f48" stroke-width="4" stroke-dasharray="11 8"/><rect x="995" y="326" width="345" height="235" fill="#cad9cf" stroke="#315f48" stroke-width="2"/>
+  <rect x="1320" y="267" width="38" height="27" rx="7" fill="#cad9cf" stroke="#315f48" stroke-width="3"/><text x="1016" y="359" class="h3 green">R0 PHOTO MASTER</text><text x="1016" y="386" class="body green">≈610 mm body</text><text x="1016" y="411" class="body green">≈635 mm cap</text>
+  <path d="M953 350h-60v-55h103" class="steel"/><path d="M1382 350h60v-55h-103" class="steel"/><circle cx="960" cy="351" r="17" class="rubber"/><circle cx="1375" cy="351" r="17" class="rubber"/><text x="847" y="275" class="h3 ink">R3-U-L</text><text x="1385" y="275" class="h3 ink">R3-U-R</text>
+  <path d="M1010 614q0 44 42 44h26q42 0 42-44" class="rubber"/><path d="M1216 614q0 44 42 44h26q42 0 42-44" class="rubber"/>
+  <path d="M954 521h-70v85h92" class="steel"/><path d="M1382 521h70v85h-92" class="steel" stroke-dasharray="10 7"/>
+  <text x="847" y="636" class="small muted">R3-L optional only if dry fit proves need</text><text x="1107" y="709" class="label" fill="#c0563f">ZERO VERTICAL LOAD AT R3</text>
+  <text x="856" y="753" class="small muted">R0-E is radiator-shop work only: jig sound rail/ear, protect core, then repeat pressure + flow tests.</text>
+
+  <rect x="78" y="820" width="1432" height="200" rx="14" fill="#eef1ec" stroke="#aab3ad" stroke-width="2"/><text x="108" y="860" class="h2 ink">HOLDER RELEASE MATRIX</text>
+  <text x="108" y="898" class="body ink">G1/G2 — G0-H + CL0; complete repaired perimeter centre ±2 mm to VCL and separately ±2 mm X/Z to usable aperture centre.</text>
+  <text x="108" y="928" class="body ink">R0-E — R0-H jig; sound side rail/reinforcement only; never tank, seam, tube, fin or core. Post-hot-work pressure/flow test.</text>
+  <text x="108" y="958" class="body ink">R3-U — B0/R0-H after natural R1 seating; fitted crush sleeve controls compression. R3-L — fabricate only with signed justification.</text>
+  <text x="108" y="988" class="body ink">All — radiused edges, EPDM isolation, drainage, accessible positive locking, independent removal and no contact with active fin area.</text>
+  <text x="82" y="1048" class="small muted">REV P D02 · 16 AUG 2026 · silhouettes show function only; actual G0/R0 photographs and direct templates control part identity and geometry</text>
+</svg>

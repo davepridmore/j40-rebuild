@@ -10,7 +10,22 @@
 
 Rev P supersedes Rev O. It retains Rev O’s shortened-arm and holder design, and replaces the former chained centring rule with one common vehicle-longitudinal centre datum for the complete G0 guard and single FS front-fan installation. Rev O recorded the owner’s 15 August correction that the radiator uprights/arms are **loose and not attached to the chassis**. The earlier July description of a completed welded radiator arm remains historical progress evidence, not the current as-built state. Rev P therefore retains the deletion of X2 adapter brackets and the pair of shortened arms made directly to the real chassis connectors.
 
-Generated images identify parts and intent; they are not dimensioned drawings. The four tape-measure photographs listed in section 5.1 establish the limited mock-up baselines stated there, but they do not release final cut geometry, holes, brackets, depth or vehicle fit. The old 410 mm / 4 mm Rev A upright package is superseded and must not be used for final cutting.
+The actual retained-component photographs for R0, C0, G0, FS and FL control visual identity. Former AI workshop renders have been withdrawn from the controlled portal because their component forms did not match the originals. The four tape-measure photographs listed in section 5.1 establish the limited mock-up baselines stated there, but they do not release final cut geometry, holes, brackets, depth or vehicle fit. The old 410 mm / 4 mm Rev A upright package is superseded and must not be used for final cutting.
+
+## Controlled visual and drawing basis
+
+Use the five original component photographs to identify the parts and inspect their real tanks, rails, ears, tabs, pipes, perimeter frames, shrouds and wiring. A photograph does not release any hidden face, hole centre, depth or service envelope.
+
+The fabrication handoff includes four controlled functional drawings:
+
+| Sheet | Fabricated references covered | Purpose |
+| --- | --- | --- |
+| D01 — lower support and connector arms | X0, X1-L/R, A0-L/R, A1-L/R | Load path, mirror-handed connector ends, measurement controls and 2 × MR proof requirement |
+| D02 — guard and radiator holders | G1-L/R, G2-L/R, R0-E, R3-U-L/R, optional R3-L-L/R | Perimeter-only G0 support, neutral R0 upper retention and radiator-shop ear control |
+| D03 — heat-exchanger and fan carriers | C1, F1, F2 | Controlled layer order, exactly one FS pusher, one FL puller and independent removability |
+| D04 — electrical and release matrix | E1 and all 13 fabricated-reference groups | Two independent fan circuits and the direct evidence required before fabrication release |
+
+The sheets define interfaces, load paths, assembly relationships, measurement controls and acceptance gates. They are not cut-ready manufacturing drawings. Every unreleased section, thickness, length, bend, hole centre, weld, fastener and torque remains **HOLD** until the named direct-measurement record and signed competent-person drawing exist.
 
 ## 1. Released architecture and load paths
 
@@ -77,7 +92,7 @@ Set G1/G2 as a mirror-handed pair wherever the measured interfaces permit. Their
 
 ## 4. R0 radiator-holder specification
 
-R0 is shown black in the illustrative generated image; that finish and the depicted holders do not prove the actual as-built condition. Record the actual radiator first using R0-H and classify every ear/tab as original, later-added, repairable, replace, or unused.
+The actual R0 photograph—not a render—controls radiator identity. Its current dark/oxidised surface is condition evidence, not a coating instruction, and the photograph does not prove any hidden holder. Record R0 first using R0-H and classify every ear/tab as original, later-added, repairable, replace or unused.
 
 ### R0-E radiator-side ears/tabs
 

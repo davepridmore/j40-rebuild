@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Rev P D04 electrical carrier and fabrication release matrix</title>
+  <desc id="desc">Two independent fan circuits and release controls for every fabricated cooling-pack item.</desc>
+  <defs><style>.bg{fill:#f3f0e7}.ink{fill:#17231e}.muted{fill:#58645e}.hold{fill:#7d3fa0}.green{fill:#315f48}.line{fill:none;stroke:#24352d;stroke-width:4}.wire1{fill:none;stroke:#c0563f;stroke-width:6}.wire2{fill:none;stroke:#315f48;stroke-width:6}.box{fill:#fffdf8;stroke:#24352d;stroke-width:3}.title{font:700 38px Arial,sans-serif}.h2{font:700 25px Arial,sans-serif}.h3{font:700 19px Arial,sans-serif}.body{font:17px Arial,sans-serif}.small{font:14px Arial,sans-serif}.label{font:700 15px Arial,sans-serif;letter-spacing:1px}.mono{font:700 15px ui-monospace,SFMono-Regular,monospace}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d8d3c9" stroke-width="1"/></pattern></defs>
+  <rect class="bg" width="1600" height="1100"/><rect width="1600" height="1100" fill="url(#grid)" opacity=".55"/><rect x="42" y="38" width="1516" height="1024" rx="18" fill="#fffdf8" stroke="#24352d" stroke-width="3"/>
+  <text x="82" y="100" class="title ink">REV P · D04 — E1 ELECTRICAL CARRIER + RELEASE MATRIX</text><text x="82" y="136" class="body muted">two independent fan branches · ratings come from measured current and applicable circuit design; all fabrication coordinates remain held</text>
+  <rect x="1264" y="66" width="246" height="78" rx="9" fill="#f0e6f6" stroke="#7d3fa0" stroke-width="3"/><text x="1288" y="99" class="label hold">FABRICATION STATUS</text><text x="1288" y="127" class="h3 hold">FINAL GEOMETRY: HOLD</text>
+
+  <rect x="78" y="180" width="1432" height="310" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="108" y="222" class="h2 ink">E1 FUNCTIONAL SCHEMATIC · serviceable, covered and drainable</text>
+  <rect x="115" y="280" width="130" height="86" rx="10" class="box"/><text x="145" y="316" class="h3 ink">BATTERY</text><text x="148" y="343" class="small muted">protected feed</text>
+  <path d="M245 305H335" class="wire1"/><path d="M245 345H335" class="wire2"/>
+  <rect x="335" y="264" width="135" height="65" rx="9" class="box"/><text x="366" y="303" class="h3 ink">FUSE FS</text><rect x="335" y="343" width="135" height="65" rx="9" class="box"/><text x="366" y="382" class="h3 ink">FUSE FL</text>
+  <path d="M470 296H560" class="wire1"/><path d="M470 375H560" class="wire2"/>
+  <rect x="560" y="264" width="150" height="65" rx="9" class="box"/><text x="587" y="303" class="h3 ink">RELAY FS</text><rect x="560" y="343" width="150" height="65" rx="9" class="box"/><text x="587" y="382" class="h3 ink">RELAY FL</text>
+  <path d="M710 296H842" class="wire1"/><path d="M710 375H842" class="wire2"/>
+  <rect x="842" y="264" width="175" height="65" rx="9" class="box"/><text x="871" y="292" class="h3 ink">ONE FS</text><text x="871" y="315" class="small muted">front pusher</text><rect x="842" y="343" width="175" height="65" rx="9" class="box"/><text x="871" y="371" class="h3 ink">FL</text><text x="871" y="394" class="small muted">rear puller</text>
+  <path d="M1017 296h85v104" class="wire1"/><path d="M1017 375h85v25" class="wire2"/><line x1="1071" y1="400" x2="1133" y2="400" stroke="#24352d" stroke-width="5"/><line x1="1083" y1="416" x2="1121" y2="416" stroke="#24352d" stroke-width="5"/><line x1="1094" y1="432" x2="1110" y2="432" stroke="#24352d" stroke-width="5"/>
+  <rect x="1180" y="260" width="285" height="177" rx="12" fill="#eef1ec" stroke="#24352d" stroke-width="3"/><text x="1205" y="294" class="label green">CONTROL INPUTS</text><text x="1205" y="327" class="body ink">FS · A/C request + appropriate</text><text x="1205" y="352" class="body ink">high-side-pressure logic</text><text x="1205" y="390" class="body ink">FL · coolant-temperature control</text><text x="1205" y="421" class="small muted">Each branch retains a service-test function.</text>
+  <text x="108" y="463" class="small muted">Covered live terminals · rear/down loom exits · grommets + P-clips · protected earth · labels · cable/fuse/relay sized from measured inrush/run current and voltage drop</text>
+
+  <rect x="78" y="520" width="1432" height="500" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="108" y="560" class="h2 ink">ALL FABRICATED REFERENCES · mandatory release datum</text>
+  <g class="small ink">
+    <text x="108" y="603" class="mono">X0</text><text x="250" y="603">L0 + MR + S0 + structural section/joints + 2 × MR fixture</text>
+    <text x="108" y="633" class="mono">X1-L/R</text><text x="250" y="633">S0 + selected R1 installed height + load area + drainage</text>
+    <text x="108" y="663" class="mono">A0-L/R</text><text x="250" y="663">A0-D-L/R + highest functional interface + material/condition + structural calculation</text>
+    <text x="108" y="693" class="mono">A1-L/R</text><text x="250" y="693">actual connector faces/axes/holes/bearing + edge distance + joint/fastener release</text>
+    <text x="108" y="723" class="mono">G1-L/R</text><text x="250" y="723">G0-H + CL0 + EPDM contact + drainage + removal vector</text>
+    <text x="108" y="753" class="mono">G2-L/R</text><text x="250" y="753">G0-H + CL0 + anti-lift function + positive accessible locking</text>
+    <text x="108" y="783" class="mono">R0-E</text><text x="250" y="783">R0-H jig + sound rail/reinforcement + radiator-specialist hot-work release</text>
+    <text x="108" y="813" class="mono">R3-U-L/R</text><text x="250" y="813">B0 + R0-H after natural R1 seating + neutral sleeved-EPDM joint</text>
+    <text x="108" y="843" class="mono">R3-L-L/R</text><text x="250" y="843">R0-H + signed need from dry fit; lateral/fore-aft restraint only</text>
+    <text x="830" y="603" class="mono">C1</text><text x="970" y="603">complete C0 map + CL0 + pipes/ports/tool sweep</text>
+    <text x="830" y="633" class="mono">F1</text><text x="970" y="633">complete FS/C0 maps + CL0 + pusher direction</text>
+    <text x="830" y="663" class="mono">F2</text><text x="970" y="663">complete FL/R0-H maps + seal land + engine/service sweep</text>
+    <text x="830" y="693" class="mono">E1</text><text x="970" y="693">electrical/service/drainage map + measured current</text>
+  </g>
+  <rect x="825" y="733" width="640" height="224" rx="12" fill="#eef1ec" stroke="#aab3ad" stroke-width="2"/><text x="850" y="770" class="label green">SIGN-OFF SEQUENCE</text><text x="850" y="805" class="body ink">A · component tests + retain/repair decisions</text><text x="850" y="836" class="body ink">B · direct measurements + rigid templates</text><text x="850" y="867" class="body ink">C · structural drawing + bare-metal 1:1 dry fit</text><text x="850" y="898" class="body ink">D · proof + coating + final assembly</text><text x="850" y="929" class="body ink">E · electrical, hot-idle and road/load commissioning</text>
+  <rect x="108" y="884" width="660" height="73" rx="10" fill="#f0e6f6" stroke="#7d3fa0" stroke-width="3"/><text x="133" y="916" class="label hold">HOLD — NO CUT / DRILL / WELD / BUY BEFORE SIGN-OFF</text><text x="133" y="944" class="small muted">A photographed envelope can start the fixture; it cannot release an attachment coordinate.</text>
+  <text x="82" y="1048" class="small muted">REV P D04 · 16 AUG 2026 · acceptance records: terminal voltage, voltage drop, start/run current, charging voltage and hot component temperature</text>
+</svg>

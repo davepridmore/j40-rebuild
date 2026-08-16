@@ -3694,6 +3694,7 @@ code {
   aspect-ratio: auto;
   height: 100%;
   min-height: 230px;
+  object-fit: contain;
 }
 
 .na-cooling-guide .gallery figure {
@@ -3724,6 +3725,11 @@ code {
   aspect-ratio: 16 / 8;
 }
 
+.na-cooling-image-grid > .gallery img {
+  background: #e9e5dc;
+  object-fit: contain;
+}
+
 .na-cooling-evidence-grid > .gallery {
   display: grid;
   gap: 0.7rem;
@@ -3737,6 +3743,113 @@ code {
   border-left: 3px solid var(--na-safety);
   margin: 0;
   padding-left: 0.7rem;
+}
+
+.na-cooling-drawing-intro {
+  align-items: flex-start;
+  background: rgba(166, 201, 154, 0.07);
+  border: 1px solid rgba(166, 201, 154, 0.25);
+  border-radius: 11px;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.78rem 0.85rem;
+}
+
+.na-cooling-drawing-intro > div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.na-cooling-drawing-intro strong,
+.na-cooling-drawing-intro span {
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.na-cooling-drawing-intro strong {
+  color: #fff9ed;
+}
+
+.na-cooling-drawing-intro span {
+  color: var(--na-muted);
+}
+
+.na-cooling-drawing-intro > span {
+  color: var(--na-safety);
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.na-cooling-drawing-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
+  width: 100%;
+}
+
+.na-cooling-drawing-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--na-line);
+  border-radius: 12px;
+  display: grid;
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.na-cooling-drawing-image {
+  background: #f3f0e7;
+  display: block;
+  min-width: 0;
+  padding: 0.35rem;
+}
+
+.na-cooling-drawing-image img {
+  aspect-ratio: 16 / 11;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+
+.na-cooling-drawing-card figcaption {
+  border-top: 1px solid var(--na-line);
+  display: grid;
+  gap: 0.28rem;
+  padding: 0.78rem 0.85rem 0.85rem;
+}
+
+.na-cooling-drawing-card figcaption > span {
+  color: var(--na-safety);
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.na-cooling-drawing-card figcaption > strong {
+  color: #fff9ed;
+  font-size: 0.98rem;
+}
+
+.na-cooling-drawing-card figcaption p {
+  color: var(--na-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.na-cooling-drawing-card figcaption a {
+  color: var(--na-moss);
+  font-size: 0.76rem;
+  font-weight: 800;
+  justify-self: start;
+  margin-top: 0.16rem;
 }
 
 .na-cooling-section-heading {
@@ -4494,7 +4607,8 @@ code {
   .na-cooling-rules-grid,
   .na-cooling-parts-grid,
   .na-cooling-controls-grid,
-  .na-cooling-restoration-grid {
+  .na-cooling-restoration-grid,
+  .na-cooling-drawing-grid {
     grid-template-columns: 1fr;
   }
 
@@ -4536,6 +4650,7 @@ code {
   }
 
   .na-cooling-scale-intro,
+  .na-cooling-drawing-intro,
   .na-cooling-assembly-step > div > div {
     align-items: flex-start;
     flex-direction: column;

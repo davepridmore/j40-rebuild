@@ -4,6 +4,19 @@ This is the controlled fabrication handoff for the naturally aspirated cooling-p
 
 Rev P supersedes Rev O. It retains Rev O's shortened connector arms and holder scope while replacing the former chained centring rule with direct vehicle-centreline control. Rev O already superseded the Rev N X2-adapter arrangement and the nominal 410 mm / 4 mm dimensions in `front_radiator_two_side_retention_rev_a`; none of those older values may be used for final cutting, drilling or material purchase.
 
+## Controlled visual and drawing basis
+
+The five actual retained-component photographs for R0, C0, G0, FS and FL control component identity, surface condition and the interfaces that must be measured. Former AI workshop renders have been withdrawn from the controlled portal because their component forms did not match the originals. Never recreate a tab, rail, pipe, shroud, guard perimeter or mounting feature from an illustration.
+
+Four functional fabrication sheets cover every fabricated reference in this handoff:
+
+- `rev_p_d01_lower_support_and_connector_arms.svg` — X0, X1-L/R, A0-L/R and A1-L/R.
+- `rev_p_d02_guard_and_radiator_holders.svg` — G1-L/R, G2-L/R, R0-E, R3-U-L/R and optional R3-L-L/R.
+- `rev_p_d03_heat_exchanger_and_fan_carriers.svg` — C1, F1 and F2, including the controlled one-FS stack order.
+- `rev_p_d04_electrical_and_release_matrix.svg` — E1, the two independent fan branches and the release evidence for all 13 fabricated-reference groups.
+
+These are interface, load-path, assembly and release-control drawings—not cut-ready manufacturing drawings. Every unreleased section, thickness, cut length, bend, hole centre, weld, fastener and torque is marked or governed as **HOLD** until the named direct-measurement record and signed competent-person drawing exist.
+
 ## Controlled load path
 
 `R0 → R1 lower saddles → X1 seats → X0 crossmember → shortened A0-L/A0-R arms with A1 connector ends → verified chassis connectors`
@@ -50,5 +63,9 @@ The controlled tape photographs now pre-populate the first full-size fixture: R0
 - `fabricator_cut_list.csv` — complete make/buy mounting schedule; all final dimensions held.
 - `measurement_basis.csv` — mandatory measurement and template record.
 - `inspection_checklist.csv` — fabrication, proof, finish and installation gates.
+- `rev_p_d01_lower_support_and_connector_arms.svg` — controlled lower-support and connector-arm drawing.
+- `rev_p_d02_guard_and_radiator_holders.svg` — controlled guard and radiator-holder drawing.
+- `rev_p_d03_heat_exchanger_and_fan_carriers.svg` — controlled condenser and fan-carrier drawing.
+- `rev_p_d04_electrical_and_release_matrix.svg` — controlled electrical drawing and fabrication release matrix.
 
 The controlling narrative is `docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md`.
