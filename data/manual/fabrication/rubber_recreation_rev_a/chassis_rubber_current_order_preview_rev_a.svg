@@ -109,10 +109,10 @@
   <g transform="translate(426,556)">
     <rect class="note-box" x="0" y="0" width="740" height="190" rx="8"/>
     <text class="panel-title" x="18" y="32">Bump-stop May 31 front-shape rule</text>
-    <text class="small" x="18" y="60">Exact front-stop photos now control: rubber through-holes, broad rounded/tapered</text>
-    <text class="small" x="18" y="82">body, central fixture/channel interface, and flat strike area.</text>
-    <text class="small" x="18" y="104">Rear/back stops are the same shape made longer; final BL/BW/P/D/fixture-channel/X-Y/G/F</text>
-    <text class="small" x="18" y="126">values still come from calipers, fixture support photos, and vehicle bracket/strike-pad measurements.</text>
+    <text class="small" x="18" y="60">Photo nominal: H ~70 long sample; fixture length ~110; rubber span ~65;</text>
+    <text class="small" x="18" y="82">metal mounting-hole pitch P ~90. Holes are in exposed metal fixture ears.</text>
+    <text class="small" x="18" y="104">Nearest-5-mm identification/first-fit values only; direct caliper/thread-gauge measurements</text>
+    <text class="small" x="18" y="126">still release BW/D/thread/fixture-channel/X-Y/G/F. Right-front target remains 60 H.</text>
     <text class="small" x="18" y="148">Do not use the earlier flat-back-plate placeholder or a simple cut block.</text>
     <text class="tiny" x="18" y="170">Order as 3 things: 80 mm body pads, front-support/body-support rubbers, and bump stops.</text>
   </g>

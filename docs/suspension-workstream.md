@@ -1,12 +1,19 @@
 # Suspension Workstream - Ironman Foam Cell Kit
 
-- Updated: 2026-07-23
+- Updated: 2026-08-16
 - Workstreams: `steering_brakes_suspension`, `suspension_upgrade`
-- Current state: main Ironman kit received; separate front damper pair pending; grinder-cut weld repair reported complete; four bump stops received but not installed
+- Current state: suspension kit selection locked; vehicle fitment checked; grinder damage repaired; main Ironman kit received; separate front damper pair still requires physical receipt confirmation; four bump stops received but not installed
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
 - Order evidence: `data/manual/procurement_queue.csv`, `data/manual/orders_receipts_audit_queue.csv`, `data/manual/workstream_status.csv`
 - Merged brake execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md)
 - Comms refresh: 2026-07-22 WhatsApp refresh fell back to the existing export because both configured profiles were disconnected; the newest indexed message remains `2026-06-13`. Searches of the connected Gmail account and the locally imported project-mail archive through `2026-07-20` found no email confirming the grinder repair, vehicle-bumper installation, bump-stop installation, or `24635FE` delivery. See [communication-review-20260722-axle-repair-bumpers.md](communication-review-20260722-axle-repair-bumpers.md).
+
+## 2026-08-16 Suspension Status Update
+
+- The suspension kit selection is locked.
+- Vehicle fitment has been checked. Installation, loaded-height torque, alignment, and road validation remain separate open work.
+- The grinder mistake has been fixed and is no longer an installation blocker. Keep the repaired area in the normal pre-install visual and corrosion-protection check.
+- This update does not add receipt evidence for the separate `24635FE` front damper pair, so that physical receipt check remains open.
 
 ## 2026-07-22 Field Update
 
@@ -18,7 +25,7 @@
 
 ## Decision
 
-The suspension path is now the Ironman Foam Cell set. The main shipment has arrived, but the separate `24635FE` front damper pair is still pending. The previous local fabricated leaf-spring path, OME/EMU shock path, Bilstein path, separate generic bush path, separate shackle path, and separate U-bolt path stay out of active buying unless the Ironman receipt check proves a missing, damaged, or incorrect component.
+The suspension path is the locked Ironman Foam Cell set, and vehicle fitment has been checked. The main shipment has arrived, but the separate `24635FE` front damper pair still requires physical receipt confirmation. The previous local fabricated leaf-spring path, OME/EMU shock path, Bilstein path, separate generic bush path, separate shackle path, and separate U-bolt path stay out of active buying unless the Ironman receipt check proves a missing, damaged, or incorrect component.
 
 Do not start final installation until both shipments are physically present: the main Ironman kit and the separate front damper pair.
 
@@ -73,7 +80,7 @@ No torque sheet means no installation.
 2. Count the kit against the incoming-set table and the supplier invoice.
 3. Preserve all old springs, shackles, pins, plates, and U-bolts until the Ironman kit is fully installed and validated.
 4. Confirm all chassis spring hangers, shackle mounts, steering-box mount area, axle spring pads, and U-bolt plates are clean and crack-free.
-5. Photograph and inspect the reported-complete grinder-cut weld repair before loading the suspension. Stop for rework if there is cracking, undercut, porosity, incomplete fusion, distortion, damaged adjacent metal, or an unresolved line/clearance issue; restore corrosion protection only after acceptance.
+5. Include the completed grinder-damage repair in the normal pre-install visual check and restore any disturbed corrosion protection. Stop only if that check finds a new defect, distortion, damaged adjacent metal, or a line/clearance issue.
 6. Confirm brake flexible hoses, brake hard lines, parking-brake cables, breather hose, and wiring have slack at expected full droop.
 7. If the rear differential/axle package is being done in the same window, confirm `DIFF-CAPTURE-001` photo tools, drain/fill access, drain pan, correct gear-oil basis, carrier gasket or approved sealant, breather check parts, dial indicator/gear marking compound, and axle-seal/bearing/pinion-seal contingency path.
 8. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, sealed fresh DOT 3 brake fluid, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.

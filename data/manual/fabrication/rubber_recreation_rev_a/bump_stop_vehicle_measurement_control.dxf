@@ -223,7 +223,7 @@ TEXT
 40
 4
 1
-J40 bump stop supplied-flat-plate measurement control - not a final cut profile
+J40 bump stop photo-derived nominal control - verify before production
 0
 TEXT
 8
@@ -235,7 +235,7 @@ TEXT
 40
 3
 1
-2X RUBBER THROUGH-HOLES + FIXTURE/STUDS: measure from samples, fixture, and bracket
+2X METAL FIXTURE-EAR MOUNTING HOLES: measure diameter/thread from fixture and holder
 0
 TEXT
 8
@@ -247,7 +247,7 @@ TEXT
 40
 3
 1
-P = centre-to-centre pitch between rubber holes/studs; D = rubber through-hole/thread size
+P ~90 photo nominal; D/thread = direct measurement only
 0
 TEXT
 8
@@ -259,7 +259,7 @@ TEXT
 40
 3
 1
-BL/BW/P/D/fixture-channel/X-Y/G/F release from samples, fixture, bracket, and strike pad.
+PHOTO NOMINAL: H~70 LONG SAMPLE; FIXTURE L~110; RUBBER SPAN~65; P~90. VERIFY ALL.
 0
 TEXT
 8

@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-08-16 16:30:50
+- Generated: 2026-08-16 20:36:39
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
@@ -9,7 +9,7 @@
 
 - `direct_photo_evidence`: 65
 - `indirect_photo_evidence_only`: 4
-- `no_photo_evidence`: 29
+- `no_photo_evidence`: 30
 
 ## Per-Component Results
 
@@ -37,6 +37,7 @@
 | `removed_parts_replace_exclude_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_bump_stop_direct_bolt_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_bump_stop_rust_treatment_preparation_20260723` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `toolbench_market_scout_close_20260816` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_engine_health_release_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_hot_side_fabrication_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `turbo_instrument_electrical_integration_20260717` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#24313a"/>
+    </marker>
+    <style>
+      .title { font: 700 25px Arial, sans-serif; fill: #172126; }
+      .sub { font: 600 17px Arial, sans-serif; fill: #34444d; }
+      .note { font: 14px Arial, sans-serif; fill: #34444d; }
+      .small { font: 12px Arial, sans-serif; fill: #4d5a61; }
+      .dim { stroke: #24313a; stroke-width: 1.2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .ext { stroke: #7c898f; stroke-width: 1; stroke-dasharray: 3 3; }
+      .face { fill: #efe8d1; stroke: #7f755b; stroke-width: 2; }
+      .gap { fill: #111416; stroke: #050708; stroke-width: 1.5; }
+      .screen { fill: #101417; stroke: #000; stroke-width: 2; }
+      .glass { fill: #22323b; stroke: #050708; stroke-width: 2; }
+      .control { fill: #171b1d; stroke: #000; stroke-width: 1.5; }
+      .hazard { fill: #b32621; stroke: #62120f; stroke-width: 1.5; }
+      .steel { fill: #8a9398; stroke: #3d474c; stroke-width: 2; }
+      .body { fill: #56636a; stroke: #20272b; stroke-width: 2; }
+      .centre { stroke: #b57822; stroke-width: 1; stroke-dasharray: 7 5; }
+      .plane { stroke: #b32621; stroke-width: 2; stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="650" fill="#ffffff"/>
+
+  <text x="55" y="45" class="title">Rev I V37 — flush-inset 9-inch screen</text>
+  <text x="55" y="72" class="note">Mock-up geometry only. Screen front and local dashboard face share Z=0; physical receiver trace controls production.</text>
+
+  <text x="80" y="103" class="sub">Front elevation — 350 × 210 removable cassette</text>
+  <rect x="80" y="120" width="525" height="315" rx="5" class="face"/>
+
+  <!-- Aperture: local X 59, Y 10.5, W 232, H 134 at 1.5 px/mm -->
+  <rect x="168.5" y="135.75" width="348" height="201" rx="8" class="gap"/>
+  <!-- Screen nose: local X 60.5, Y 12, W 229, H 131 -->
+  <rect x="170.75" y="138" width="343.5" height="196.5" rx="7" class="screen"/>
+  <rect x="185" y="151.5" width="315" height="169.5" rx="3" class="glass"/>
+  <line x1="342.5" y1="120" x2="342.5" y2="435" class="centre"/>
+
+  <!-- Eight control heads at local X 35...315, Y 177, nominal diameter 30 -->
+  <circle cx="132.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="192.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="252.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="312.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="372.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="432.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="492.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="552.5" cy="385.5" r="22.5" class="hazard"/>
+
+  <text x="253" y="132" class="small">232 × 134 provisional aperture</text>
+  <text x="267" y="236" class="note" fill="#d8e6ec">229 × 131 screen nose</text>
+  <text x="213" y="353" class="small">1.5 nominal black reveal on all four sides</text>
+  <text x="205" y="418" class="small">40 pitch · Y=177 · nominal Ø30 heads</text>
+  <text x="163" y="470" class="note">No hood · no bevelled pocket · no projecting trim · local face remains continuous</text>
+
+  <text x="690" y="103" class="sub">Horizontal section — through screen centre</text>
+  <text x="690" y="128" class="small">Cabin/front at left; rear package at right. Diagrammatic depths; actual unit trace controls.</text>
+
+  <!-- Coplanar finished surfaces -->
+  <line x1="780" y1="160" x2="780" y2="500" class="plane"/>
+  <text x="704" y="525" class="small">shared finished plane Z=0</text>
+  <path d="M780 180 L780 275 L785 275 L785 385 L780 385 L780 480" stroke="#7f755b" stroke-width="10" fill="none"/>
+  <line x1="780" y1="275" x2="780" y2="385" stroke="#101417" stroke-width="9"/>
+  <text x="694" y="332" class="small">screen front</text>
+  <text x="695" y="212" class="small">1.5 CR4 face</text>
+
+  <!-- Nose, chassis, cradle, rails -->
+  <rect x="785" y="267" width="39" height="126" rx="2" class="screen"/>
+  <rect x="824" y="285" width="111" height="90" rx="3" class="body"/>
+  <path d="M815 257 L842 257 L842 403 L815 403" fill="none" stroke="#3d474c" stroke-width="8"/>
+  <rect x="846" y="242" width="18" height="28" class="steel"/>
+  <rect x="846" y="390" width="18" height="28" class="steel"/>
+  <text x="844" y="324" class="small" fill="#f5f7f8">37 D chassis</text>
+  <text x="794" y="414" class="small">13 D nose</text>
+  <text x="877" y="446" class="small">removable U-cradle</text>
+
+  <!-- Flush callout -->
+  <line x1="745" y1="250" x2="815" y2="250" class="dim"/>
+  <text x="705" y="241" class="note">straightedge: 0 step</text>
+  <path d="M760 245 L802 245" stroke="#b57822" stroke-width="5"/>
+
+  <!-- Shim and support callouts -->
+  <path d="M960 214 L857 254" stroke="#b57822" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1180" y="210" class="note" text-anchor="end">M4 rail joint + 0.5 mm shims</text>
+  <path d="M960 468 L837 398" stroke="#b57822" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1180" y="472" class="note" text-anchor="end">four exact OEM M3 points</text>
+  <path d="M960 359 L929 356" stroke="#b57822" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1180" y="363" class="note" text-anchor="end">open rear; plug + ventilation keep-out</text>
+
+  <text x="690" y="558" class="note">Flushness target: 0.0 mm; accept up to 0.5 mm behind; never proud.</text>
+  <text x="690" y="584" class="note">Recessed EPDM backs the 1.5 mm reveal; no visible surface bead.</text>
+  <text x="690" y="610" class="note">Final aperture and mounts: HOLD for received-unit M4 trace.</text>
+</svg>

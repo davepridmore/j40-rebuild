@@ -116,11 +116,11 @@
       <path class="dim" d="M244 2 L244 196"/>
       <text class="small" x="260" y="104">70 H</text>
       <path class="dim" d="M66 -18 L188 -18"/>
-      <text class="small" x="96" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">rubber through-holes + fixture channel</text>
+      <text class="small" x="96" y="-28">P ~90 photo</text>
+      <text class="tiny" x="20" y="-4">metal mounting ears + fixture channel</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes are sample-proven rubber through-holes; silver is the central fixture/channel</text>
-    <text class="tiny" x="18" y="266">Rubber body, hole pitch, fixture/channel, and strike offset release from samples plus brackets</text>
+    <text class="tiny" x="18" y="248">Photo nominal: fixture L ~110; rubber span ~65; metal-hole pitch ~90; long H ~70</text>
+    <text class="tiny" x="18" y="266">Nearest-5-mm first-fit values; caliper/thread-gauge remaining fixture and vehicle dimensions</text>
   </g>
 
   <g transform="translate(464,388)">
@@ -136,10 +136,10 @@
       <path class="dim" d="M244 4 L244 172"/>
       <text class="small" x="260" y="94">60 H</text>
       <path class="dim" d="M70 -18 L184 -18"/>
-      <text class="small" x="96" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">rubber through-holes + fixture channel</text>
+      <text class="small" x="96" y="-28">P ~90 photo</text>
+      <text class="tiny" x="20" y="-4">metal mounting ears + fixture channel</text>
     </g>
-    <text class="tiny" x="18" y="248">Same May 31 front-stop holes and fixture/channel at 60 H</text>
+    <text class="tiny" x="18" y="248">Same ~110/~65/~90 photo-nominal layout at controlled 60 H</text>
     <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
   </g>
 

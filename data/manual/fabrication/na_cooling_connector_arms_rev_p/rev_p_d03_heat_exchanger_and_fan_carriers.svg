@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Rev P D03 independent condenser and fan carriers</title>
+  <desc id="desc">Fabrication control for C1, F1 and F2 and the one-pusher one-puller naturally aspirated stack. Actual component photographs and direct templates control final geometry.</desc>
+  <defs><style>.bg{fill:#f3f0e7}.ink{fill:#17231e}.muted{fill:#58645e}.hold{fill:#7d3fa0}.green{fill:#315f48}.amber{fill:#8a5c24}.line{fill:none;stroke:#24352d;stroke-width:4}.steel{fill:#d6ddd8;stroke:#24352d;stroke-width:4}.title{font:700 38px Arial,sans-serif}.h2{font:700 25px Arial,sans-serif}.h3{font:700 19px Arial,sans-serif}.body{font:17px Arial,sans-serif}.small{font:14px Arial,sans-serif}.label{font:700 15px Arial,sans-serif;letter-spacing:1px}.mono{font:700 16px ui-monospace,SFMono-Regular,monospace}</style><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d8d3c9" stroke-width="1"/></pattern><marker id="air" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5 0 9Z" fill="#315f48"/></marker></defs>
+  <rect class="bg" width="1600" height="1100"/><rect width="1600" height="1100" fill="url(#grid)" opacity=".55"/><rect x="42" y="38" width="1516" height="1024" rx="18" fill="#fffdf8" stroke="#24352d" stroke-width="3"/>
+  <text x="82" y="100" class="title ink">REV P · D03 — HEAT-EXCHANGER + FAN CARRIERS</text><text x="82" y="136" class="body muted">C1 · F1 · F2 | independent carriers; one FS front pusher + one FL rear puller; no intercooler or second front fan</text>
+  <rect x="1264" y="66" width="246" height="78" rx="9" fill="#f0e6f6" stroke="#7d3fa0" stroke-width="3"/><text x="1288" y="99" class="label hold">FABRICATION STATUS</text><text x="1288" y="127" class="h3 hold">FINAL GEOMETRY: HOLD</text>
+
+  <rect x="78" y="180" width="1432" height="320" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="108" y="222" class="h2 ink">CONTROLLED AIR PATH · front at left</text>
+  <g transform="translate(120 260)">
+    <path d="M0 103h180" fill="none" stroke="#315f48" stroke-width="8" marker-end="url(#air)"/>
+    <rect x="220" y="15" width="55" height="176" rx="10" fill="#49544f" stroke="#24352d" stroke-width="4"/><text x="230" y="207" class="h3 ink">G0</text>
+    <circle cx="375" cy="103" r="72" fill="#d9e7dc" stroke="#315f48" stroke-width="5"/><circle cx="375" cy="103" r="17" fill="#315f48"/><path d="M375 86c43-38 43 19 10 22M391 109c30 51-25 38-30 2M359 108c-56-13-14-51 13-30" fill="none" stroke="#315f48" stroke-width="17" stroke-linecap="round"/><text x="356" y="207" class="h3 ink">FS</text>
+    <rect x="480" y="26" width="62" height="154" fill="#9aa7a0" stroke="#24352d" stroke-width="4"/><text x="493" y="207" class="h3 ink">C0</text>
+    <rect x="651" y="0" width="78" height="206" fill="#c8d5cc" stroke="#315f48" stroke-width="5"/><text x="676" y="225" class="h3 ink">R0</text>
+    <rect x="827" y="5" width="86" height="196" rx="18" fill="#303a35" stroke="#17231e" stroke-width="5"/><circle cx="870" cy="103" r="59" fill="#d9e7dc" stroke="#315f48" stroke-width="4"/><circle cx="870" cy="103" r="17" fill="#315f48"/><path d="M870 86c43-38 43 19 10 22M886 109c30 51-25 38-30 2M854 108c-56-13-14-51 13-30" fill="none" stroke="#315f48" stroke-width="17" stroke-linecap="round"/><text x="856" y="220" class="h3 ink">FL</text>
+    <path d="M945 103h188" fill="none" stroke="#315f48" stroke-width="8" marker-end="url(#air)"/><text x="978" y="80" class="label green">TO ENGINE</text>
+    <text x="327" y="-7" class="label amber">PUSHES REARWARD</text><text x="809" y="-7" class="label amber">PULLS REARWARD</text>
+  </g>
+
+  <rect x="78" y="530" width="454" height="408" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="108" y="572" class="h2 ink">C1 · C0 CARRIER</text>
+  <rect x="196" y="633" width="226" height="170" fill="#cfd7d2" stroke="#24352d" stroke-width="4"/><path d="M196 650h-52v-47M422 650h52v-47M196 788h-52v46M422 788h52v46" class="steel"/>
+  <circle cx="158" cy="614" r="11" fill="#303a35"/><circle cx="460" cy="614" r="11" fill="#303a35"/><circle cx="158" cy="823" r="11" fill="#303a35"/><circle cx="460" cy="823" r="11" fill="#303a35"/>
+  <text x="108" y="864" class="body ink">Template sound tabs, pipes, drier/manifold</text><text x="108" y="892" class="body ink">and complete tool/removal sweep.</text><text x="108" y="921" class="mono hold">TAB / HOLE / DEPTH MAP — HOLD</text>
+
+  <rect x="573" y="530" width="454" height="408" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="603" y="572" class="h2 ink">F1 · ONE FS CARRIER</text>
+  <rect x="681" y="637" width="240" height="166" rx="14" class="steel"/><circle cx="801" cy="720" r="72" fill="#d9e7dc" stroke="#315f48" stroke-width="5"/><circle cx="801" cy="720" r="17" fill="#315f48"/><path d="M801 701c43-38 43 19 10 22M817 724c30 51-25 38-30 2M785 723c-56-13-14-51 13-30" fill="none" stroke="#315f48" stroke-width="17" stroke-linecap="round"/>
+  <line x1="801" y1="611" x2="801" y2="829" stroke="#8a5c24" stroke-width="3" stroke-dasharray="10 8"/><text x="603" y="864" class="body ink">Complete frame/rotor datum—not ring alone.</text><text x="603" y="892" class="body ink">Direct to VCL and separately to C0 centre.</text><text x="603" y="921" class="mono hold">FS FRAME / CL0 / DEPTH — HOLD</text>
+
+  <rect x="1068" y="530" width="442" height="408" rx="14" fill="#f8f6ef" stroke="#aab3ad" stroke-width="2"/><text x="1098" y="572" class="h2 ink">F2 · FL SHROUD CARRIER</text>
+  <rect x="1160" y="619" width="258" height="213" rx="18" fill="#303a35" stroke="#17231e" stroke-width="5"/><rect x="1173" y="632" width="232" height="187" rx="13" fill="none" stroke="#c0563f" stroke-width="8" stroke-dasharray="11 7"/><circle cx="1289" cy="725" r="77" fill="#d9e7dc" stroke="#315f48" stroke-width="5"/><circle cx="1289" cy="725" r="18" fill="#315f48"/>
+  <text x="1098" y="864" class="body ink">Continuous closed-cell EPDM seal land.</text><text x="1098" y="892" class="body ink">Clear drain, cap, hoses, plug and blade sweep.</text><text x="1098" y="921" class="mono hold">FL / R0-H / SERVICE MAP — HOLD</text>
+
+  <rect x="78" y="964" width="1432" height="56" rx="10" fill="#eef1ec" stroke="#aab3ad" stroke-width="2"/><text x="106" y="999" class="body ink">ACCEPT: C0 lateral centre ≤±2 mm to VCL · FS ≤±2 mm to VCL and separately ≤±2 mm X/Z to C0 · FL sealed airflow, zero R0 load</text>
+  <text x="82" y="1048" class="small muted">REV P D03 · 16 AUG 2026 · use actual C0/FS/FL photographs for identity and complete direct templates for final carrier geometry</text>
+</svg>

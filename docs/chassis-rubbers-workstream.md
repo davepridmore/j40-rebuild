@@ -87,8 +87,8 @@ The Longman request should be presented as three supplier-facing order groups, w
 | `FS-OVAL` | Released for quote / first article | `2` | 3D envelope `96 L x 64 W x 15 T mm`; capsule ends `R32`; outer edge break `0.5-1.0 mm`; two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Caliper-confirm hole centres, thickness, insert/boss/relief construction before final pair. |
 | `FS-STRIP-L` | Released for quote / first article | `1 cut from stock` | Cut `420 L x 38 W x 8 T mm` from a shared `2 m` order of `38 x 8 mm` plain strip stock after dry-fit; plan corners `R1.5`; top/bottom edge break `0.5-1.0 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, allow for a non-perfectly-straight run, then apply only proven end/edge trim; keep spare stock for similar strip landings; reuse or trace the slotted steel retainer separately if needed. |
 | `FS-STRIP-R` | Released for quote / first article | `1 cut from stock` | Same `420 L x 38 W x 8 T mm` cut piece from the shared `38 x 8 mm` stock unless the right side proves a handed or non-straight trim. | Same first-article dry-fit and retainer rule as left. |
-| `BUMP-60010-LONG` | First article required | `3` | Same May 31 exact front-stop body shape, through-hole pattern, central fixture/channel interface, broad rounded/tapered body, and flat strike area, made longer for the `70 +/-1 mm` long-family height. | May 31 front-stop photos control the visible shape. May 29 fixture photos, removed metal fixture, vehicle bracket, and axle strike pad control BL/BW/P/D/X-Y/G/F and fixture-channel dimensions; make one first article before remaining long stops. |
-| `BUMP-60020-SHORT` | First article required | `1` | Exact front/right-front bump stop from the May 31 photos at `60 +/-1 mm`, with the same through-hole rubber body, fixture/channel interface, and contact face. | May 31 front-stop photos plus right-front bracket and axle strike pad control rubber footprint, through-hole pattern, fixture/channel interface, and contact face. |
+| `BUMP-60010-LONG` | First article required | `3` | Same May 31 front-stop family: broad rounded/tapered rubber body on a metal backing/fixture with two exposed mounting ears and a flat strike area. Photo-survey nominals are `70 mm` long-family height, `110 mm` metal fixture length, `65 mm` rubber span along the hole axis, and `90 mm` metal mounting-hole pitch. | Treat the photo values as identification and first-fit dimensions to roughly the nearest `5 mm`, not manufacturing tolerances. Directly measure hole diameter, holder thread, fixture width/thickness/channel, vehicle bracket and axle strike-pad `X/Y/G/F`; make one first article before the remaining long stops. |
+| `BUMP-60020-SHORT` | First article required | `1` | Exact front/right-front member of the same metal-backed family at the separately controlled `60 +/-1 mm` height; use the provisional `110 mm` fixture length, `65 mm` rubber span and `90 mm` metal-hole pitch only for first-fit screening. | The photographed `~70 mm` worn sample does not release the short height. Confirm the right-front station, hole diameter, holder thread, fixture/channel and full-bump clearance directly before manufacture or installation. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Not captured yet | Hold | Possible long/full-width flat body or panel liner strips. | Do not order until the pieces are found or a vehicle station proves a continuous flat anti-squeak liner is required. |
 | `EXH-HGR-90917` | Optional later hold | Hold | Teardrop exhaust hanger cushion from sample or genuine part reference. | Needs intact sample/proper tracing before production. |
 
@@ -116,8 +116,9 @@ The old strip rows and body-rubber rows had been mixed up with bump-stop evidenc
 - `20260528_185826_gp_FoyeBPUg` and `20260528_185833_gp_gZBjUjPg` are strip/retainer landing context only. They do not release rubber holes, slots, bonding, handed trim, or bump-stop geometry.
 - `20260528_193054_gp_UFyTb44w`, `20260528_193143_gp_Cn3OWzZQ`, and `20260528_193228_gp_PLATNsFQ` are loose body-mount rubber/cup stack context only. They show round/cup fragments with tape, but the photo angles do not reopen the active single `80 x 80 x 24` square pad route.
 - `20260528_193200_gp_HICSdovA` and `20260528_193253_gp_f0eQuSFA` are loose rectangular strip/block section context only. They do not release a new length, hole pattern, slot pattern, bonding, or handed trim.
-- `20260531_171824_gp_HmSS2ChQ`, `20260531_171833_gp_Vw96I7Mg`, `20260531_171859_gp_i6bRyQKA`, `20260531_171903_gp_jNI1gfYA`, and `20260531_171935_gp_BYfhqiWg` are the active exact front-stop photos. Use them for the front-stop body, through-hole landing, fixture plate, height/profile, and mould shape.
-- `20260529_223605_gp_CklgF0cQ` and `20260529_223701_gp_wYPExcAA` are supporting removed-fixture evidence. They confirm rubber through-holes, broad rounded body, and central fixture/channel interface, but the May 31 front-stop photos are now the active shape master.
+- `20260531_171824_gp_HmSS2ChQ`, `20260531_171859_gp_i6bRyQKA`, `20260531_171903_gp_jNI1gfYA`, and `20260531_171935_gp_BYfhqiWg` are the usable exact front-stop measurement photos. They support provisional photo-survey nominals of `65 mm` molded-rubber span along the mounting-hole axis, `110 mm` metal backing/fixture length, `90 mm` metal mounting-hole pitch, and `70 mm` long-family sample height. These readings are to roughly the nearest `5 mm` and require direct verification before manufacture.
+- `20260531_171833_gp_Vw96I7Mg` is an unrelated laptop image and is excluded from bump-stop evidence.
+- `20260529_223605_gp_CklgF0cQ` and `20260529_223701_gp_wYPExcAA` are supporting removed-fixture evidence. They confirm the broad rounded body, metal-backed mounting arrangement, and central fixture/channel interface, but the usable May 31 front-stop photos are the active shape master.
 
 ## Photo Measurement Audit
 
@@ -232,11 +233,12 @@ Record:
 
 | ID | Measurement | Use |
 | --- | --- | --- |
-| `BL` | Rubber body / fixture landing length | Rubber body outline, mould base, and fixture seat |
+| `BL` | Metal fixture overall length (`~110 mm` from the photo survey) | Fixture envelope and bracket landing |
 | `BW` | Rubber body / fixture landing width | Rubber body width and central fixture/channel clearance |
-| `P` | Rubber through-hole and fixture bolt/stud pitch centre-to-centre | Rubber hole pattern plus fixture alignment |
-| `D` | Rubber through-hole diameter or stud/bolt thread | Rubber clearance and fixture fastener control |
-| `X/Y` | Strike-pad centre offset from rubber-hole/fixture/bracket features | Contact face location |
+| `RB` | Molded-rubber span along the mounting-hole axis (`~65 mm` from the photo survey) | Rubber body identification and mould-envelope screening |
+| `P` | Metal fixture-ear mounting-hole pitch centre-to-centre (`~90 mm` from the photo survey) | Fixture alignment; verify directly before drilling or manufacture |
+| `D` | Metal fixture-ear hole diameter and internally threaded holder size/pitch | Fastener control; not released by the photographs |
+| `X/Y` | Strike-pad centre offset from fixture/bracket features | Contact face location |
 | `G` | Loaded stop gap | Ride-height clearance |
 | `F` | Near-full-bump clearance | Confirms stop acts before hard limits |
 
@@ -244,7 +246,7 @@ Record:
 
 - Longman provides compound family and Shore A target.
 - Body/front-support rubber averages Shore A `55-65`.
-- Bump-stop rubber averages Shore A `65-75`, or PU `75-85` only if the May 31 front-stop through-hole layout, central fixture/channel interface, rebound recovery, and progressive shape are correct.
+- Bump-stop rubber averages Shore A `65-75`, or PU `75-85` only if the May 31 metal-backed fixture-ear mounting layout, central fixture/channel interface, rebound recovery, and progressive shape are correct.
 - Faces on body pads are flat and parallel within `0.5 mm`.
 - Holes are clean, not burnt or torn.
 - Bump-stop first articles pass 50 percent compression without cracking, retention failure, or permanent collapse; after 30 minutes unloaded, height recovers to at least 90 percent.

@@ -3069,7 +3069,6 @@
                   const acquiredImages = evidence
                     ? dedupeImages(Array.isArray(evidence.evidence_images) ? evidence.evidence_images : [])
                     : [];
-                  const acquiredImage = acquiredImages[0] || null;
                   const sourcingDescription = cleanString(row.quantity || row.exact_recreation_spec);
                   return `
                     <tr>
@@ -3082,15 +3081,26 @@
                       </td>
                       <td>
                         ${
-                          evidence && acquiredImage
+                          evidence && acquiredImages.length
                             ? `
                               <div class="replacement-pipe-acquired">
-                                ${renderFigureImage(acquiredImage, evidence.comparison_note || `${row.pipe_or_line || pipeId} old/new comparison`, {
-                                  figureClass: "replacement-pipe-acquired-figure",
-                                  imageClass: "replacement-pipe-acquired-image",
-                                  captionClass: "replacement-pipe-acquired-caption",
-                                  caption: evidence.comparison_note || "Received replacement photographed beside the old pattern.",
-                                })}
+                                ${acquiredImages
+                                  .map((image, imageIndex) =>
+                                    renderFigureImage(
+                                      image,
+                                      evidence.comparison_note || `${row.pipe_or_line || pipeId} old/new comparison`,
+                                      {
+                                        figureClass: "replacement-pipe-acquired-figure",
+                                        imageClass: "replacement-pipe-acquired-image",
+                                        captionClass: "replacement-pipe-acquired-caption",
+                                        caption:
+                                          imageIndex === 0
+                                            ? evidence.comparison_note || "Received replacement photographed beside the old pattern."
+                                            : "Additional selected comparison or specification-detail view.",
+                                      },
+                                    ),
+                                  )
+                                  .join("")}
                               </div>
                             `
                             : `
@@ -10029,11 +10039,6 @@
 
   function renderCoolingPack() {
     const assets = {
-      hero: "./assets/cooling-na-rev-p/na-stack-short-connector-arms-finished.png",
-      bench: "./assets/cooling-na-rev-p/na-connector-arm-holder-parts-bench.png",
-      cradle: "./assets/cooling-na-rev-p/na-short-arm-chassis-dry-fit.png",
-      holders: "./assets/cooling-na-rev-p/na-guard-radiator-holder-detail.png",
-      rear: "./assets/cooling-na-rev-m/na-rear-puller-finished.png",
       r0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
       c0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
       g0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
@@ -10045,52 +10050,58 @@
       c0HeightTape: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r15_c0_height_tape.jpg",
       chassis: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r06_later_chassis_top_mount_reference.png",
       guide: "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md",
-      prompts: "../../docs/J40-naturally-aspirated-cooling-pack-image-prompts-rev-p-20260816.md",
       packReadme: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/README.md",
       cutList: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/fabricator_cut_list.csv",
       measurementBasis: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/measurement_basis.csv",
       inspectionChecklist: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/inspection_checklist.csv",
+      packZip: "../../deliverables/fabrication_packages/na_cooling_connector_arms_rev_p.zip",
+      d01: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d01_lower_support_and_connector_arms.svg",
+      d02: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d02_guard_and_radiator_holders.svg",
+      d03: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d03_heat_exchanger_and_fan_carriers.svg",
+      d04: "../../data/manual/fabrication/na_cooling_connector_arms_rev_p/rev_p_d04_electrical_and_release_matrix.svg",
     };
 
-    const generatedVisuals = [
+    const originalComponentMasters = [
       {
-        path: assets.hero,
-        caption: "Illustrative generated view — finished naturally aspirated stack with G0 outermost, exactly one FS A/C pusher and short A0-L/A0-R arms whose lower A1 ends mate at the measured chassis connectors and whose upper ends stop at the highest released functional interface. No turbo, intercooler, second front fan or redundant arm projection. A0-D/B0/S0/CL0/G0-H/R0-H and the released drawing control every bracket, centre coordinate and gap.",
-        specific_component: "Rev P naturally aspirated stack with connector-sized arms",
+        path: assets.r0,
+        caption: "R0 original — retained copper/brass radiator with its real top tank, filler cap, right-side hose neck, rails, ears and lower locators. Restore and template this part; do not substitute geometry from an illustration.",
+        specific_component: "R0 actual radiator identity master",
       },
       {
-        path: assets.bench,
-        caption: "Illustrative generated view — fixed bench sequence G0 → one FS → C0 → R0 → FL with X0/X1, short A0 arms and A1 connector ends, G1/G2 guard holders, R3 radiator holders and independent fan/condenser carriers. It is a parts-completeness reference, not a dimensional release.",
-        specific_component: "Rev P restored cooling pack and connector/holder parts illustration",
+        path: assets.c0,
+        caption: "C0 original — retained full-face condenser with its actual brackets, pipework and receiver-drier/manifold. Its complete physical envelope controls C1 and the service sweep.",
+        specific_component: "C0 actual condenser identity master",
       },
       {
-        path: assets.cradle,
-        caption: "Illustrative generated view — bare-metal dry fit of the loose arm blanks shortened or remade as mirror-handed A0-L/A0-R arms. Each lower A1 end mates at its actual A0-D-measured chassis connector; each upper end stops at the highest released functional interface. The final section, height, holes, gussets, fasteners and clearances come only from templates, calculation and the released drawing.",
-        specific_component: "Rev P short connector-arm chassis dry-fit illustration",
+        path: assets.g0,
+        caption: "G0 original — retained irregular expanded-mesh stone guard with its long upper bar, perimeter frame and existing hole pattern. G1/G2 must follow this repaired frame, not a rectangular generic mesh panel.",
+        specific_component: "G0 actual stone-guard identity master",
       },
       {
-        path: assets.holders,
-        caption: "Illustrative generated detail — G1 lower cradles and G2 upper keepers retain the stone guard at its perimeter; R3-U neutral upper keepers and optional R3-L side stabilisers locate R0 (shown black only in this illustrative render) while its full weight remains on the two R1 lower saddles. R0-E is radiator-shop work only and F2 supports the rear shroud independently.",
-        specific_component: "Rev P stone-guard and R0 radiator-holder detail",
+        path: assets.fs,
+        caption: "FS original — retained small standalone plastic fan with its real ring, radial supports, motor and irregular mounting tabs. Rev P uses exactly one, in front-pusher orientation.",
+        specific_component: "FS actual single-pusher identity master",
       },
       {
-        path: assets.rear,
-        caption: "Illustrative generated view — tidy engine-side finish with the retained large FL puller sealed behind R0, independent support, moulded hoses, covered electrical protection and clipped loom. Physical fan tests and service-clearance checks remain mandatory.",
-        specific_component: "Retained rear-puller finish illustration (unchanged by Rev P arm/holder revision)",
+        path: assets.fl,
+        caption: "FL original — retained large puller in its actual full shroud, including the broad blades, motor, ribs, frame and wiring. The complete shroud and seal land control F2.",
+        specific_component: "FL actual rear-puller identity master",
       },
     ];
 
     const retainedEvidence = [
-      { path: assets.r0, caption: "Actual retained R0 copper/brass radiator. Its tanks, necks, rails, ears and lower locators—not a render—control the recore jig and B0/S0 relationships.", specific_component: "Actual R0 radiator master" },
       { path: assets.r0HeightTape, caption: "Controlled R0 vertical tape evidence. It establishes approximately 610 mm from the bottom to the top tank and approximately 635 mm to the filler/cap as LOCKED FOR MOCK-UP. Final ear, keeper and vehicle-clearance geometry still comes from square R0-H measurement.", specific_component: "R0 height tape · 610 mm body / 635 mm cap" },
       { path: assets.r0WidthTape, caption: "Controlled but oblique R0 horizontal tape evidence. Approximately 635 mm runs from the photographed left hook datum to the right rail; this is PROVISIONAL, not WR. The 29-inch mark lies beyond the radiator. Measure true rail-to-rail and maximum-ear width square-on.", specific_component: "R0 span tape · approximately 635 mm provisional" },
-      { path: assets.c0, caption: "Actual retained full-face C0 condenser with pipe, bracket and receiver-drier geometry. The old drier is a pattern only; install a new compatible unit and new disturbed-joint seals.", specific_component: "Actual C0 condenser master" },
       { path: assets.c0WidthTape, caption: "Controlled C0 width tape evidence. Approximately 540 mm is LOCKED FOR MOCK-UP for the body including the photographed right drier/manifold area; it does not include every projecting bracket, pipe or tool sweep.", specific_component: "C0 width tape · approximately 540 mm" },
       { path: assets.c0HeightTape, caption: "Controlled C0 height tape evidence. Approximately 465 mm is LOCKED FOR MOCK-UP. Direct square measurement must still capture the complete tabs, pipes, drier/manifold, depth and service envelope before C1/F1 fabrication.", specific_component: "C0 height tape · approximately 465 mm" },
-      { path: assets.g0, caption: "Actual removable G0 expanded-mesh guard, distinct from the fixed vehicle grille/body opening. Preserve its open area and make its perimeter-frame support independent and service-removable.", specific_component: "Actual G0 stone guard master" },
-      { path: assets.fs, caption: "Actual FS small front-fan candidate. Rev P uses one front unit only: CL0 holds its complete frame/rotor datum directly within ±2 mm laterally of VCL and separately within ±2 mm X/Z of C0’s usable-fin-field centre; do not tolerance-stack.", specific_component: "Actual FS single A/C pusher candidate" },
-      { path: assets.fl, caption: "Actual FL large electric rear puller and full shroud. Retain only after blade, bearing, frame, direction, current and installed-airflow acceptance.", specific_component: "Actual FL rear puller master" },
       { path: assets.chassis, caption: "Historical chassis pickup context only. The owner confirms the radiator arms are presently loose and unattached; capture each actual connector with A0-D before sizing the arms. This photo releases no arm height, hole or cut line.", specific_component: "Historical chassis connector context—not dimensional evidence" },
+    ];
+
+    const fabricationDrawings = [
+      { path: assets.d01, sheet: "D01", refs: "X0 · X1-L/R · A0-L/R · A1-L/R", title: "Lower support and connector arms", caption: "Front-elevation load path, mirror-handed connector-end concept, measurement controls and 2 × MR proof requirement." },
+      { path: assets.d02, sheet: "D02", refs: "G1-L/R · G2-L/R · R0-E · R3-U/L", title: "Stone-guard and radiator holders", caption: "Perimeter-only G0 support, neutral R0 upper retention, optional side stabilisation and radiator-shop ear control." },
+      { path: assets.d03, sheet: "D03", refs: "C1 · F1 · F2", title: "Independent condenser and fan carriers", caption: "Controlled layer order, one FS pusher, one FL puller, independent removability, centre controls and service envelopes." },
+      { path: assets.d04, sheet: "D04", refs: "E1 · all 13 fabricated references", title: "Electrical carrier and release matrix", caption: "Two independent protected fan branches plus the direct measurement needed to release every fabricated item." },
     ];
 
     const photoDimensionRows = [
@@ -10190,7 +10201,7 @@
         lead: "The guard and heat exchangers each get a separate, removable retention system.",
         bullets: [
           "For removable G0—not the fixed vehicle grille/body opening—make two rubber-faced G1 lower perimeter cradles and two removable G2 upper keepers. Use G0-H and CL0 to hold the complete repaired perimeter-frame centre directly within ±2 mm laterally of VCL and separately within ±2 mm X/Z of the usable fixed-aperture centre; do not tolerance-stack. Clamp only the sound frame, preserve mesh open area, drainage and a tool-accessible removal path, and use no through-core ties or self-tappers.",
-          "For R0 (shown black only in the illustrative render), radiator-shop repair or reproduce only sound rail-mounted ears/tabs as R0-E—never weld or braze a holder to a tank, seam or core. Seat all weight on the two R1 lower saddles; then fit two neutral R3-U upper keepers with EPDM bushes and crush sleeves so tightening cannot lift or twist R0.",
+          "For R0, use the actual radiator and R0-H map: radiator-shop repair or reproduce only sound rail-mounted ears/tabs as R0-E—never weld or braze a holder to a tank, seam or core. Seat all weight on the two R1 lower saddles; then fit two neutral R3-U upper keepers with EPDM bushes and crush sleeves so tightening cannot lift or twist R0.",
           "Use R3-L lower side stabilisers only if R0-H and the dry fit prove they are needed; they resist fore/aft or lateral motion but carry no vertical weight. Do not reproduce the historical long added leg. Keep C1, F1 and the sealed F2 rear-shroud frame independently isolated from R0 and G0.",
         ],
         gate: "G0 removes without disturbing a heat exchanger; R0 remains fully seated with neutral R3-U hardware; every retained or new holder has a released drawing, rubber interface and accessible locking fastener.",
@@ -10453,6 +10464,19 @@
     const gateCards = releaseGates.map(([id, title, detail]) => `
       <article class="na-cooling-gate-card"><span>${escapeHtml(id)}</span><div><h4>${escapeHtml(title)}</h4><p>${escapeHtml(detail)}</p></div></article>
     `).join("");
+    const fabricationDrawingCards = fabricationDrawings.map((drawing) => `
+      <figure class="na-cooling-drawing-card">
+        <a class="na-cooling-drawing-image" href="${drawing.path}" download aria-label="Download ${escapeHtml(drawing.sheet)} ${escapeHtml(drawing.title)} SVG">
+          <img src="${drawing.path}" alt="${escapeHtml(drawing.sheet)} ${escapeHtml(drawing.title)} controlled fabrication diagram" loading="lazy">
+        </a>
+        <figcaption>
+          <span>${escapeHtml(drawing.sheet)} · ${escapeHtml(drawing.refs)}</span>
+          <strong>${escapeHtml(drawing.title)}</strong>
+          <p>${escapeHtml(drawing.caption)}</p>
+          <a href="${drawing.path}" download>Download full-size SVG</a>
+        </figcaption>
+      </figure>
+    `).join("");
 
     root.innerHTML = `
       <div class="na-cooling-guide na-cooling-view">
@@ -10473,15 +10497,16 @@
             </div>
             <div class="na-cooling-downloads na-cooling-download-actions">
               <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev P shop guide (.md)</a>
+              <a class="item-link package-download-link na-cooling-download-action" href="${assets.packZip}" download>Download complete fabricator pack (.zip)</a>
               <a class="item-link na-cooling-download-action is-secondary" href="${assets.packReadme}" download>Fabricator pack index (.md)</a>
               <a class="item-link na-cooling-download-action is-secondary" href="${assets.cutList}" download>Make / buy schedule (.csv)</a>
               <a class="item-link na-cooling-download-action is-secondary" href="${assets.measurementBasis}" download>Measurement sheet (.csv)</a>
               <a class="item-link na-cooling-download-action is-secondary" href="${assets.inspectionChecklist}" download>Inspection checklist (.csv)</a>
-              <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Image provenance &amp; prompts (.md)</a>
+              <a class="item-link na-cooling-download-action is-secondary" href="${assets.d01}" download>Fabrication drawings (.svg)</a>
             </div>
           </div>
           <div class="na-cooling-hero-media">
-            ${renderGallery([generatedVisuals[0]])}
+            ${renderGallery([originalComponentMasters[0]])}
           </div>
         </section>
 
@@ -10498,16 +10523,16 @@
             <article><strong>Independent supports</strong><p>G0 uses G1/G2 perimeter holders; R0 uses its lower saddles plus R3 keepers. C0, FS and FL/shroud each use isolated removable brackets. No through-core ties, structural self-tappers or heat exchanger hung from another.</p></article>
             <article><strong>Performance closes scope</strong><p>One front fan is the controlled design. Correct direction, voltage drop, sealing and distribution before proposing another fan under a new revision.</p></article>
           </div>
-          <div class="na-cooling-danger" role="alert"><strong>Use photographs only to the stated confidence.</strong><span>The controlled tape photos release the listed R0/C0 envelope values for mock-up only; every generated view is illustrative. Actual parts, A0-D/B0/S0/CL0/G0-H/R0-H templates, measured drawings, structural release, proof test and the vehicle dry fit control final fabrication.</span></div>
+          <div class="na-cooling-danger" role="alert"><strong>Actual retained parts control visual identity.</strong><span>The former AI workshop renders have been withdrawn because their component forms did not match R0, C0, G0, FS and FL. The original photographs below now control identity; tape photos release only the stated mock-up envelopes. Actual parts, A0-D/B0/S0/CL0/G0-H/R0-H templates, signed drawings, proof test and the vehicle dry fit control final fabrication.</span></div>
         </section>
 
         <section class="card na-cooling-section" id="cooling-pack-visuals">
           <div class="detail-header na-cooling-section-heading">
-            <div><p class="na-cooling-section-label">Photorealistic finish and sequence references</p><h3>Five workshop states—from restored parts to final installation</h3></div>
+            <div><p class="na-cooling-section-label">Original retained-component masters</p><h3>Five actual parts—not approximated workshop renders</h3></div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-visuals"), "#", "Copy cooling-pack visual guide link")}
           </div>
-          <p class="na-cooling-visual-note">Reference-led ImageGen illustrations · not dimension, product, hole or fit evidence. Captions state the controlled limitation.</p>
-          <div class="na-cooling-image-grid">${renderGallery(generatedVisuals)}</div>
+          <p class="na-cooling-visual-note">These repository photographs are the controlled appearance and component-identity references. Restore these parts and template their actual frames, rails, tabs, pipes, guards and shrouds. Do not infer a hidden face, hole or depth from a single view.</p>
+          <div class="na-cooling-image-grid">${renderGallery(originalComponentMasters)}</div>
         </section>
 
         <section class="card na-cooling-section" id="cooling-pack-evidence">
@@ -10585,6 +10610,11 @@
             <div><p class="na-cooling-section-label">Complete fabrication specification · 13 controlled references</p><h3>Stock basis, operations, interface rule and acceptance for every made part</h3></div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-fabrication"), "#", "Copy chassis fabrication specification link")}
           </div>
+          <div class="na-cooling-drawing-intro">
+            <div><strong>Four fabrication sheets cover the complete made-part scope.</strong><span>Open or download each full-size SVG. Green geometry is photo-backed envelope context; purple labels are unreleased dimensions or coordinates that remain HOLD until the named direct template and signed drawing are complete.</span></div>
+            <span>FUNCTIONAL SCHEMATICS · NOT CUT-READY</span>
+          </div>
+          <div class="na-cooling-drawing-grid">${fabricationDrawingCards}</div>
           <div class="na-cooling-danger" role="note"><strong>Purpose-size the loose arms before coating.</strong><span>The owner confirms A0-L/A0-R are loose and not attached. Shorten accepted blanks—or reproduce them—so each lower A1 end mates at its A0-D-measured chassis connector and each upper end stops at the highest released functional interface, with no redundant projection, while retaining the released bearing area, edge distance, tool access, gusset run-out and drainage.</span></div>
           <div class="na-cooling-formula" role="note">
             <span>R0 lower locators</span><b>→</b><span>2 new R1 saddles</span><b>→</b><span>X1 seats</span><b>→</b><span>X0 crossmember</span><b>→</b><span>short A0 arms</span><b>→</b><span>A1 / actual connectors</span>
@@ -10663,15 +10693,19 @@
           <div>
             <p class="na-cooling-section-label">Controlled Rev P handoff</p>
             <h3>Give the shops the guide, actual parts, templates and test sheets</h3>
-            <p>The portal is the readable execution view. The Rev P guide and connector-arm/holder fabricator pack carry the full sequence, direct-VCL/no-stacking acceptance rule, make/buy schedule, measurement basis, inspection gates, chemicals and acceptance wording. The prompt record identifies every generated visual and its non-dimensional limitation.</p>
+            <p>The portal is the readable execution view. The Rev P guide and fabricator pack carry the four fabrication sheets, full sequence, direct-VCL/no-stacking acceptance rule, make/buy schedule, measurement basis, inspection gates, chemicals and acceptance wording. The original retained-part photographs—not generated substitutes—control component identity.</p>
           </div>
           <div class="na-cooling-downloads na-cooling-download-actions">
             <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev P shop guide (.md)</a>
+            <a class="item-link package-download-link na-cooling-download-action" href="${assets.packZip}" download>Download complete fabricator pack (.zip)</a>
             <a class="item-link na-cooling-download-action is-secondary" href="${assets.packReadme}" download>Fabricator pack index (.md)</a>
             <a class="item-link na-cooling-download-action is-secondary" href="${assets.cutList}" download>Make / buy schedule (.csv)</a>
             <a class="item-link na-cooling-download-action is-secondary" href="${assets.measurementBasis}" download>Measurement sheet (.csv)</a>
             <a class="item-link na-cooling-download-action is-secondary" href="${assets.inspectionChecklist}" download>Inspection checklist (.csv)</a>
-            <a class="item-link na-cooling-download-action is-secondary" href="${assets.prompts}" download>Download image prompts (.md)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.d01}" download>D01 support + arms (.svg)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.d02}" download>D02 guard + R0 holders (.svg)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.d03}" download>D03 C0 + fan carriers (.svg)</a>
+            <a class="item-link na-cooling-download-action is-secondary" href="${assets.d04}" download>D04 electrics + release matrix (.svg)</a>
           </div>
         </section>
       </div>

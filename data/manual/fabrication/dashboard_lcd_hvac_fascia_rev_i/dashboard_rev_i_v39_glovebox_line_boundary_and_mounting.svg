@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .bg{fill:#17191d}.dash{fill:#e8ddc4;stroke:#342f28;stroke-width:4}.oem{fill:#bcb9b0;stroke:#4c4942;stroke-width:4}.panel{fill:#efe3ca;stroke:#11151a;stroke-width:5}.screen{fill:#101317;stroke:#555b61;stroke-width:4}.note{font:18px sans-serif;fill:#eef1f3}.small{font:14px sans-serif;fill:#cbd0d4}.label{font:bold 20px sans-serif;fill:#fff}.guide{fill:none;stroke:#e9a83a;stroke-width:3;stroke-dasharray:9 7}.dim{fill:none;stroke:#68c2d4;stroke-width:2}.control{fill:#111;stroke:#777;stroke-width:2}.hazard{fill:#a72c26;stroke:#4e1713;stroke-width:2}.metal{fill:#d1c6ac;stroke:#514b41;stroke-width:3}.frame{fill:#4b5054;stroke:#111;stroke-width:3}.epdm{fill:#111}.wood{fill:#8e5b37;stroke:#20150f;stroke-width:3}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#68c2d4"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="label" x="35" y="42">V39 visible boundary rule — shape comes from the retained J40 features</text>
+  <text class="small" x="35" y="67">Diagrammatic only. Trace the vehicle; do not scale this SVG for cutting.</text>
+
+  <path class="dash" d="M35 105 H1165 V430 H35 Z"/>
+  <path class="oem" d="M105 145 Q120 125 150 125 H350 Q382 128 394 160 L420 375 Q416 395 385 400 H125 Q90 395 88 365 Z"/>
+  <text class="label" x="165" y="275">OEM GLOVEBOX</text>
+  <path class="oem" d="M850 130 Q900 105 965 120 Q1035 128 1060 190 L1082 340 Q1078 385 1038 400 H858 Q825 390 820 355 L835 180 Q838 150 850 130 Z"/>
+  <text class="label" x="878" y="265">OEM CLUSTER</text>
+
+  <path class="panel" d="M410 112 H842 Q832 145 826 185 L814 350 Q809 390 795 410 H438 Q426 384 424 350 L404 180 Q401 142 410 112 Z"/>
+  <rect class="screen" x="497" y="145" width="232" height="134" rx="3"/>
+  <circle class="control" cx="467" cy="352" r="14"/><circle class="control" cx="511" cy="352" r="14"/><circle class="control" cx="555" cy="352" r="14"/><circle class="control" cx="599" cy="352" r="14"/>
+  <circle class="control" cx="643" cy="352" r="14"/><circle class="control" cx="687" cy="352" r="14"/><circle class="control" cx="731" cy="352" r="14"/><circle class="hazard" cx="775" cy="352" r="14"/>
+
+  <path class="guide" d="M410 112 Q397 145 404 180 L424 350 Q426 384 438 410"/>
+  <path class="guide" d="M842 112 Q832 145 826 185 L814 350 Q809 390 795 410"/>
+  <path class="dim" marker-end="url(#arrow)" d="M450 90 L405 120"/><text class="note" x="250" y="92">2–3 mm gap tracks glovebox seam</text>
+  <path class="dim" marker-end="url(#arrow)" d="M955 85 L839 120"/><text class="note" x="875" y="70">tracks cluster seam</text>
+  <text class="note" x="454" y="312">flush screen + retained control row</text>
+  <text class="small" x="448" y="435">top and bottom terminate on existing dashboard lines; zero downward extension</text>
+
+  <text class="label" x="35" y="492">Flush section — visible seam and structural cut are not the same line</text>
+  <path class="metal" d="M55 555 H370 V578 H55 Z M565 555 H890 V578 H565 Z"/>
+  <path class="panel" d="M390 555 H545 V578 H390 Z"/>
+  <rect class="epdm" x="374" y="559" width="12" height="15"/><rect class="epdm" x="549" y="559" width="12" height="15"/>
+  <path class="frame" d="M335 578 H380 V620 H410 V642 H350 V600 H335 Z"/>
+  <path class="frame" d="M555 578 H600 V600 H585 V642 H525 V620 H555 Z"/>
+  <rect class="screen" x="423" y="555" width="90" height="19"/>
+  <path class="frame" d="M432 574 V650 H504 V574 H492 V630 H444 V574 Z"/>
+  <path class="dim" marker-end="url(#arrow)" d="M373 535 H386"/><text class="small" x="285" y="525">2–3 mm visible gap</text>
+  <path class="dim" marker-end="url(#arrow)" d="M304 657 L365 612"/><text class="small" x="55" y="682">retained 15 mm minimum / 20 mm preferred original-steel land</text>
+  <path class="dim" marker-end="url(#arrow)" d="M690 658 L573 617"/><text class="small" x="705" y="664">rear perimeter frame + offset Z-tabs</text>
+  <text class="note" x="920" y="558">All three faces coplanar</text>
+  <text class="small" x="920" y="585">retained dash</text><text class="small" x="920" y="608">removable insert</text><text class="small" x="920" y="631">Pioneer screen face</text>
+</svg>
