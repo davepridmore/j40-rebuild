@@ -3569,6 +3569,129 @@
     `;
   }
 
+  function fabricationPackageById(packages, packageId) {
+    const rows = Array.isArray(packages) ? packages : [];
+    return rows.find((row) => cleanString(row && row.package_id) === packageId) || null;
+  }
+
+  function fabricationPackageLink(row, fileName) {
+    const pools = [
+      row && row.primary_links,
+      row && row.visual_links,
+      row && row.model_links,
+      row && row.dxf_links,
+      row && row.svg_links,
+    ];
+    return (
+      pools
+        .flatMap((links) => (Array.isArray(links) ? links : []))
+        .find((link) => fileLeafFromLink(link) === fileName) || null
+    );
+  }
+
+  function fabricationPackageLinks(row, definitions) {
+    return definitions
+      .map(([fileName, label]) => {
+        const link = fabricationPackageLink(row, fileName);
+        return link ? { ...link, label } : null;
+      })
+      .filter(Boolean);
+  }
+
+  function renderDashboardSelectedDesign(packages) {
+    const row = fabricationPackageById(packages, "dashboard_lcd_hvac_fascia_rev_i");
+    if (!row) {
+      return "";
+    }
+    const overlay = fabricationPackageLink(row, "dashboard_rev_i_v35_registered_center_cassette_overlay.png");
+    const designRow = {
+      ...row,
+      release_position:
+        "Owner-selected Rev I V35 centre-cassette design. Preserve the OEM cluster, RHD column/scallop, asymmetric glovebox, full-width lower edge and formed outer/end contours; replace only the ashtray/centre area with the removable zero-drop cassette.",
+      notes:
+        "The photorealistic image communicates the selected appearance. The registered overlay controls design placement. Neither image is cutting authority.",
+      primary_links: [],
+      visual_links: overlay ? [{ ...overlay, label: "Registered V35 centre-cassette design overlay" }] : [],
+      model_links: [],
+      dxf_links: [],
+      svg_links: [],
+      archive_link: null,
+    };
+    return renderFabricationPackages([designRow], {
+      heading: "1 · Selected Dashboard Design",
+      summary:
+        "Rev I V35 is the approved visual direction: factory-height RHD dashboard, retained Toyota identity, two matching outer vents, a true 9-inch LCD and one line of seven selectors plus the separate hazard.",
+    });
+  }
+
+  function renderDashboardFabricationSpecification(packages) {
+    const row = fabricationPackageById(packages, "dashboard_lcd_hvac_fascia_rev_i");
+    if (!row) {
+      return "";
+    }
+    const productionAuthority = fabricationPackageLinks(row, [
+      ["cnc_measurement_and_survey_checklist.md", "Exact CNC measurement and survey checklist"],
+      ["cnc_measurement_schedule.csv", "M1-M10 measurement and release schedule"],
+      ["README.md", "Rev I V35 controlled package README"],
+    ]);
+    const quotationFiles = fabricationPackageLinks(row, [
+      ["dashboard_rev_i_v35_quotation_cnc_spec.md", "Quotation / prototype CNC specification"],
+      ["dashboard_rev_i_v35_provisional_coordinates.csv", "Provisional quotation coordinates"],
+      ["dashboard_rev_i_v35_provisional_front_elevation.svg", "1:1 quotation elevation"],
+    ]);
+    const interfaceFiles = fabricationPackageLinks(row, [
+      ["ac_outlet_87mm_cnc_addendum.md", "Outer-vent CNC interface addendum"],
+      ["ac_outlet_interface_schedule.csv", "Outlet receipt and interface schedule"],
+      ["rear_package_clearance_control.svg", "Rear-package clearance control"],
+      ["switch_position_schedule.csv", "Seven-selector and hazard allocation"],
+    ]);
+    return `
+      <article class="card dashboard-fabrication-spec-card">
+        <div class="detail-header">
+          <h3>2 · Exact Fabrication / Cutting Specification</h3>
+          <div class="chip-row">
+            ${chip("Quotation + Template Released")}
+            ${chip("Production Cutting Hold")}
+          </div>
+        </div>
+        <p class="section-subtitle">The render is never measured. Exact production geometry comes from the signed vehicle trace, actual purchased components, completed coordinate schedule and simultaneous full-depth buck.</p>
+        <dl class="fabrication-definition-rows">
+          <div class="fabrication-definition-row"><dt>Change boundary</dt><dd>Replace only the traced ashtray/centre opening with one removable zero-drop cassette. Do not cut or move the OEM cluster, RHD column/scallop, glovebox, full-width lower edge, formed end contours, hinges or structural flanges.</dd></div>
+          <div class="fabrication-definition-row"><dt>Quote material</dt><dd>One 1.5 mm CR4 mild-steel centre cassette, low-gloss body-colour finish, deburred/radiused edges and serviceable concealed fixings/captive nuts. Final material, grain, bend radii, K-factor and allowance are locked on the signed formed-part drawing.</dd></div>
+          <div class="fabrication-definition-row"><dt>Visible layout</dt><dd>True 9-inch 16:9 LCD centred in the measured free centre field; one line below it: WIPERS, LIGHTS, SPOTS, AUX, BLOWER, A/C, FUEL STOP, then the separate red HAZARD. One matching circular outlet in each measured outer land; no centre or lower outlets.</dd></div>
+          <div class="fabrication-definition-row"><dt>Measured datums</dt><dd>M1-M3 lock the complete fascia, glovebox/ashtray, cluster, steering axis and scallop. M4-M7 lock the actual LCD, seven selectors, hazard and four received outlets. Every production-blocker row must be measured_pass or approved_by_coupon.</dd></div>
+          <div class="fabrication-definition-row"><dt>Rear proof</dt><dd>M8 maps the evaporator, demist and complete duct routes. M9 proves the LCD, controls, selected vent pair, ducts, glovebox, cluster and moving steering envelope together in a rigid full-depth buck.</dd></div>
+          <div class="fabrication-definition-row"><dt>Clearance</dt><dd>At least 10 mm to fixed structure after tolerance, trim and service movement; at least 20 mm to the complete moving column/shroud/stalk envelope. Glovebox and all cabin-side service/removal paths must operate without contact.</dd></div>
+          <div class="fabrication-definition-row"><dt>Cutting issue</dt><dd>Release a final millimetre DXF at 1:1 plus a dimensioned PDF only after M1-M9 sign-off. Include TRACE_LOCK, RETAINED_OEM, CENTRE_SERVICE_CUT, CASSETTE_OUTLINE, COMPONENT_CUTS, FORM_LINES, KEEP_OUT and INSPECTION layers; supplier verifies DXF extents before cutting.</dd></div>
+          <div class="fabrication-definition-row"><dt>Current hold</dt><dd>The 1400 × 250 mm plotting envelope, LCD 211.10 × 126.50 × 5.0 mm study envelope, 115 mm quotation rear cap, ≤80 mm LCD-chassis target, Ø87/Ø75/approximately 22 mm outlet targets and Ø22.5 selector apertures are quotation assumptions—not released vehicle or production-metal cuts.</dd></div>
+        </dl>
+        <div class="fabrication-file-rows">
+          ${renderPackageLinks("Exact production-CNC authority", productionAuthority)}
+          ${renderPackageLinks("Quotation / paper-template / buck files", quotationFiles)}
+          ${renderPackageLinks("Component interfaces + inspection", interfaceFiles)}
+          ${renderPackageDownload(row.archive_link)}
+        </div>
+      </article>
+    `;
+  }
+
+  function renderDashboardPackageEvidence(packages) {
+    const row = fabricationPackageById(packages, "dashboard_lcd_hvac_fascia_rev_i");
+    if (!row) {
+      return "";
+    }
+    return renderPackageLinks(
+      "Visual photo audits + unregistered measurement context",
+      fabricationPackageLinks(row, [
+        ["rear_clearance_photo_audit_20260802.md", "Rear-clearance photo audit"],
+        ["rear_clearance_photo_evidence_20260802.csv", "Rear-clearance photo evidence schedule"],
+        ["20260802_145250_gp_4wxWxPmA.jpg", "Rear measurement photo 1 · oblique context"],
+        ["20260802_145305_gp_bepTxJOA.jpg", "Rear measurement photo 2 · zero out of frame"],
+        ["20260802_145316_gp_tJASS8hQ.jpg", "Rear measurement photo 3 · oblique context"],
+      ])
+    );
+  }
+
   function rowMatchesWorkstream(row, workstreamId) {
     const target = cleanString(workstreamId);
     return splitMultiValue(row && row.workstream).includes(target);
@@ -7617,10 +7740,24 @@
     const simpleChassisRubbers = active.id === "chassis_rubbers";
     const hideEvidenceMedia = simpleChassisRubbers || active.id === "fabrication_handoff";
     const showFabricationPackages = active.id !== "chassis_fixing";
+    const isDashboardWorkstream = active.id === "interior_controls";
     const showOperationPanels =
       !simpleChassisRubbers && (active.id === "chassis_fixing" || !(active.subtask_groups && active.subtask_groups.length));
+    const evidenceMediaCard = hideEvidenceMedia
+      ? ""
+      : `
+        <article class="card">
+          <h3>${isDashboardWorkstream ? "Existing Dashboard Photos & Evidence Dump" : "Evidence Media"}</h3>
+          <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.${isDashboardWorkstream ? " These references follow the selected design and controlled fabrication specification because they document the old dashboard and survey context; they do not define cut geometry." : ""}</p>
+          ${isDashboardWorkstream ? renderDashboardPackageEvidence(active.fabrication_packages) : ""}
+          ${renderEvidenceSets(filteredEvidenceSets)}
+        </article>
+      `;
 
     detailNode.innerHTML = `
+      ${isDashboardWorkstream ? renderDashboardSelectedDesign(active.fabrication_packages) : ""}
+      ${isDashboardWorkstream ? renderDashboardFabricationSpecification(active.fabrication_packages) : ""}
+
       <article class="card">
         <div class="detail-header">
           <h2>${escapeHtml(active.title)}</h2>
@@ -7645,27 +7782,12 @@
       ${renderChassisBracketAnalysisRegister(active)}
       ${renderFabricationRawMaterials(active)}
       ${
-        showFabricationPackages
-          ? renderFabricationPackages(
-              active.fabrication_packages,
-              active.id === "interior_controls"
-                ? {
-                    heading: "Selected Dashboard Design",
-                    summary:
-                      "Rev I V35 is the owner-selected visual and quotation baseline. Its preview is non-dimensional; production metal and vehicle cutting stay on hold until the M1-M9 physical measurements and full-depth mock-up are signed off.",
-                  }
-                : {}
-            )
+        showFabricationPackages && !isDashboardWorkstream
+          ? renderFabricationPackages(active.fabrication_packages)
           : ""
       }
 
-      ${hideEvidenceMedia ? "" : `
-        <article class="card">
-          <h3>Evidence Media</h3>
-          <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.</p>
-          ${renderEvidenceSets(filteredEvidenceSets)}
-        </article>
-      `}
+      ${isDashboardWorkstream ? "" : evidenceMediaCard}
 
       ${simpleChassisRubbers ? "" : renderSubtaskGroups(active.subtask_groups)}
       ${showOperationPanels ? renderOperationPanels(active.operation_panels) : ""}
@@ -7813,6 +7935,8 @@
           </article>
         </div>
       `}
+
+      ${isDashboardWorkstream ? evidenceMediaCard : ""}
     `;
   }
 
@@ -9915,6 +10039,10 @@
       g0: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
       fl: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
       fs: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
+      r0WidthTape: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r10_r0_width_tape.jpg",
+      r0HeightTape: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r11_r0_height_tape.jpg",
+      c0WidthTape: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r14_c0_width_tape.jpg",
+      c0HeightTape: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r15_c0_height_tape.jpg",
       chassis: "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r06_later_chassis_top_mount_reference.png",
       guide: "../../docs/J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md",
       prompts: "../../docs/J40-naturally-aspirated-cooling-pack-image-prompts-rev-p-20260816.md",
@@ -9954,11 +10082,25 @@
 
     const retainedEvidence = [
       { path: assets.r0, caption: "Actual retained R0 copper/brass radiator. Its tanks, necks, rails, ears and lower locators—not a render—control the recore jig and B0/S0 relationships.", specific_component: "Actual R0 radiator master" },
+      { path: assets.r0HeightTape, caption: "Controlled R0 vertical tape evidence. It establishes approximately 610 mm from the bottom to the top tank and approximately 635 mm to the filler/cap as LOCKED FOR MOCK-UP. Final ear, keeper and vehicle-clearance geometry still comes from square R0-H measurement.", specific_component: "R0 height tape · 610 mm body / 635 mm cap" },
+      { path: assets.r0WidthTape, caption: "Controlled but oblique R0 horizontal tape evidence. Approximately 635 mm runs from the photographed left hook datum to the right rail; this is PROVISIONAL, not WR. The 29-inch mark lies beyond the radiator. Measure true rail-to-rail and maximum-ear width square-on.", specific_component: "R0 span tape · approximately 635 mm provisional" },
       { path: assets.c0, caption: "Actual retained full-face C0 condenser with pipe, bracket and receiver-drier geometry. The old drier is a pattern only; install a new compatible unit and new disturbed-joint seals.", specific_component: "Actual C0 condenser master" },
+      { path: assets.c0WidthTape, caption: "Controlled C0 width tape evidence. Approximately 540 mm is LOCKED FOR MOCK-UP for the body including the photographed right drier/manifold area; it does not include every projecting bracket, pipe or tool sweep.", specific_component: "C0 width tape · approximately 540 mm" },
+      { path: assets.c0HeightTape, caption: "Controlled C0 height tape evidence. Approximately 465 mm is LOCKED FOR MOCK-UP. Direct square measurement must still capture the complete tabs, pipes, drier/manifold, depth and service envelope before C1/F1 fabrication.", specific_component: "C0 height tape · approximately 465 mm" },
       { path: assets.g0, caption: "Actual removable G0 expanded-mesh guard, distinct from the fixed vehicle grille/body opening. Preserve its open area and make its perimeter-frame support independent and service-removable.", specific_component: "Actual G0 stone guard master" },
       { path: assets.fs, caption: "Actual FS small front-fan candidate. Rev P uses one front unit only: CL0 holds its complete frame/rotor datum directly within ±2 mm laterally of VCL and separately within ±2 mm X/Z of C0’s usable-fin-field centre; do not tolerance-stack.", specific_component: "Actual FS single A/C pusher candidate" },
       { path: assets.fl, caption: "Actual FL large electric rear puller and full shroud. Retain only after blade, bearing, frame, direction, current and installed-airflow acceptance.", specific_component: "Actual FL rear puller master" },
       { path: assets.chassis, caption: "Historical chassis pickup context only. The owner confirms the radiator arms are presently loose and unattached; capture each actual connector with A0-D before sizing the arms. This photo releases no arm height, hole or cut line.", specific_component: "Historical chassis connector context—not dimensional evidence" },
+    ];
+
+    const photoDimensionRows = [
+      ["R0 body height", "≈610 mm", "LOCKED FOR MOCK-UP", "Bottom to top tank; recheck square before final R0-E/R3 work."],
+      ["R0 cap / highest point", "≈635 mm", "LOCKED FOR MOCK-UP", "Reserve cap-removal hand/tool space above this envelope."],
+      ["R0 photographed span", "≈635 mm", "PROVISIONAL", "Left hook datum to right rail; not WR and not a final width."],
+      ["C0 body", "≈540 × 465 mm", "LOCKED FOR MOCK-UP", "Includes photographed right drier/manifold area; complete projections still need mapping."],
+      ["FL ring / shroud", "≈450–480 mm ring", "PROVISIONAL", "Measure complete width, height, depth, motor, plug and seal face."],
+      ["FS ring / frame", "≈240–255 mm ring; frame up to ≈280 mm", "PROVISIONAL", "One FS in Rev P; complete frame and rotor datum control F1/CL0."],
+      ["Depths + mount coordinates", "Not established", "HOLD", "No image releases holes, saddles, connectors, brackets, depth or vehicle fit."],
     ];
 
     const architecture = [
@@ -9988,6 +10130,7 @@
         title: "Template the connectors, radiator and guard",
         lead: "Freeze datums and service envelopes before cutting steel.",
         bullets: [
+          "Start the opaque 1:1 fixture with the released photo-backed baselines: R0 approximately 610 mm to the top tank and 635 mm to the cap, and C0 approximately 540 × 465 mm. Treat the photographed R0 635 mm span and both fan envelopes as provisional only. If a later square measurement differs, record both and let the signed direct measurement supersede the photograph.",
           "Make A0-D-L/A0-D-R rigid templates of the actual chassis connectors and B0/S0 templates of the R0 upper holes and lower locator/saddle centres. Establish CL0 from fixed datums: project VCL at G0, FS and C0 planes; independently record complete G0 perimeter-frame, complete FS frame/rotor and C0 usable-fin-field lateral offsets to VCL, then G0-to-fixed body-aperture and FS-to-C0 local X/Z offsets. Each limit is ±2 mm; do not tolerance-stack. Record connector section, face/axis, hole diameters and XYZ, bearing area, edge distances, fastener access and installed rubber height.",
           "Make G0-H from the guard perimeter/attachment points and R0-H from every sound R0 rail, ear, tab and locator. Classify each possible existing or later-added holder/tab as retain, repair, reproduce or reject; the historical long added radiator leg is pattern evidence only.",
           "Record lower clear span L0 including both A0/A1 connection envelopes, filled/capped radiator mass MR, complete R0/C0/FS/FL envelopes, pipes, plugs, cable bends, bonnet/latch, engine movement and every tool sweep.",
@@ -10110,24 +10253,114 @@
     ];
 
     const fabricationRows = [
-      ["X0", "1", "MAKE · full-width lower crossmember", "Conditional 40 × 40 × 3 mm mild-steel SHS is mock-up stock only if L0 ≤ 700 mm and MR ≤ 35 kg. Final section and both end connections require competent structural release."],
-      ["X1-L/R", "2", "MAKE · lower saddle seats", "Released steel plate/section; level and reinforced at S0 centres, drainage preserved, full rubber contact. Dimensions and welds remain HOLD."],
-      ["A0-L/R", "2 assemblies", "MAKE · short connector arms", "Shorten accepted loose blanks or reproduce them so each lower A1 end mates at its A0-D-measured chassis connector and each upper end stops at the highest released functional interface, with no unused projection. Final section, cut line, closure, holes and welds require structural release."],
-      ["A1-L/R", "2", "MAKE · arm-to-chassis connector ends", "Mirror-handed interface plates/clevises/sleeves as dictated by A0-D. Bearing area, edge distance, bends, gussets, fasteners, torque and welds remain HOLD; no new chassis hole, slot, ream or forced alignment."],
-          ["G1-L/R", "2", "MAKE · lower grille/stone-guard cradles", "Rubber-faced support under the sound removable G0 perimeter frame. G0-H/CL0 requires the complete repaired G0 perimeter-frame centre directly within ±2 mm laterally of VCL and, separately, within ±2 mm in X/Z of the usable fixed vehicle-grille/body-aperture centre; no tolerance stacking. Preserve drainage, clearance and independent removal."],
-          ["G2-L/R", "2", "MAKE · upper grille/stone-guard keepers", "Compact removable anti-lift/anti-rattle keepers at G0-H/CL0 points with accessible locking fasteners and EPDM anti-chafe. Retain the direct G0 perimeter-frame-to-VCL ±2 mm lateral requirement and the separate fixed-aperture X/Z check; no tolerance stacking."],
-      ["R0-E", "As required", "REPAIR/MAKE · radiator rail ears or tabs", "Radiator-shop work on sound side rail or approved reinforcement only; preserve B0/R0-H. Never attach to a tank, seam, tube, fin or core face."],
-      ["R3-U-L/R", "2", "MAKE · neutral upper radiator keepers", "Short removable locators installed only after R0 seats on both R1 saddles; EPDM bush, fitted crush sleeve and broad washers. They carry no vertical weight."],
-      ["R3-L-L/R", "0 or 2", "MAKE IF RELEASED · lower side stabilisers", "Only if R0-H/dry fit proves a need. Rubber-isolated fore/aft or lateral restraint with zero vertical load; do not reproduce the historical long added leg."],
-      ["C1", "As measured", "MAKE · independent C0 brackets", "Released compatible steel/aluminium design with isolators and shoulder/crush sleeves; CL0 holds the usable-fin-field lateral centre within 2 mm of vehicle centre plane while preserving pipes, ports and tool sweep."],
-          ["F1", "1 set", "MAKE · single FS carrier", "Released section; CL0 requires the complete FS frame/rotor datum directly within ±2 mm laterally of VCL and, separately, within ±2 mm in X/Z of the C0 usable-fin-field centre. No tolerance stacking; retain complete frame/tabs/guard/plug clearance independent of G0 and condenser."],
-      ["F2", "1 set", "MAKE · FL support and seal frame", "Released section; independent rear support plus continuous closed-cell EPDM perimeter seal, with no load on R0 core or tanks."],
-      ["E1", "1 set", "MAKE · protected electrical carrier", "Released aligned inboard carrier with removable splash-resistant lid, rear/down exits, drainage and service access."],
-      ["R1", "2", "BUY · lower radiator saddles", "New Toyota/J40-pattern rubber matched to pin diameter, cup depth, installed height and load area."],
-      ["R2/R3-I", "2 sets", "BUY · upper radiator isolation hardware", "New automotive EPDM bush, correct steel crush sleeve, broad washers, released zinc class 8.8 bolt and locknut for R3-U."],
-      ["I1", "As measured", "BUY · carrier isolators", "New compatible rubber isolators with shoulder/crush sleeves at every released C0/FS/FL/G0 point."],
-      ["H1", "1 set", "BUY · general hardware", "Matching released zinc class 8.8 hardware; final sizes, torque and locking method from the released drawing. No washer-stack spacer."],
-      ["S1", "1 set", "BUY · seals and edge protection", "Closed-cell EPDM shroud seal, EPDM anti-chafe and edge trim selected for the released interfaces."],
+      ["X0", "1", "Conditional 40 × 40 × 3 mm mild-steel SHS is mock-up stock only when L0 ≤ 700 mm and MR ≤ 35 kg; otherwise section is HOLD.", "Template full L0 including both end-connection envelopes; cut square, provide drainage/closure as released, add X1 load-spreading details, weld only to the signed WPS/drawing, then deburr.", "Carries both X1 seats into the paired A0 arms without touching R0 tanks, fins or solder.", "Structural calculation and connection design signed; weld/fit inspection passes; 2 × MR proof shows zero permanent set, cracking, loosening or connector movement."],
+      ["X1-L/R", "2", "Released compatible plate/section; thickness, gussets and weld sizes remain HOLD until S0 and MR are measured.", "Form two level, drainable saddle seats at the measured S0 centres; radius edges; provide full-area support beneath each new R1 rubber saddle.", "Equal load share into X0; no metal-to-metal contact and no load on a tank seam.", "Both saddles sit fully, level and unpinched under the loaded radiator; proof and dry-fit records pass."],
+      ["A0-L/R", "2 assemblies", "Condition-approved loose blanks or released replacement section; 40 × 40 × 3 mm SHS is not an automatic release.", "Fixture mirror-handed from A0-D; shorten to the highest functional joint with no unused projection; preserve connector engagement, bearing area, edge distance, tool access, gusset run-out and drainage; close/finish ends only as drawn.", "Upper ends support X0; lower A1 ends mate only with the measured chassis connectors.", "Section, corrosion, old holes and prior welds pass; symmetry, plumb/level, connector fit, calculation, weld inspection and proof all pass."],
+      ["A1-L/R", "2", "Released plate, clevis or sleeve stock derived from the two rigid A0-D connector templates; thickness and fasteners are HOLD.", "Cut/form mirror-handed ends, drill/ream only to released coordinates off-vehicle, add sleeves/gussets and welds exactly as drawn; provide fastener and tool clearance.", "Full bearing on the actual connector faces/axes; no new chassis hole, slot, forced pull, washer-stack spacer or thin-sheet substitute.", "Fastener class, locking and torque are recorded; edge distance, bearing, welds and connector alignment pass without preload distortion."],
+      ["G1-L/R", "2", "Released light-gauge steel or compatible alloy with bonded/retained EPDM contact faces.", "Template from G0-H; form lower perimeter cradles with radiused edges, drainage and accessible removal; keep all metal clear of mesh and heat exchangers.", "Supports only the sound G0 perimeter frame and leaves G0 independently removable.", "Complete G0 frame centre is within ±2 mm laterally of VCL and separately within ±2 mm X/Z of the usable fixed aperture; no tolerance stacking or rattle."],
+      ["G2-L/R", "2", "Released matching stock, EPDM anti-chafe, locking hardware and any crush sleeves shown on the drawing.", "Form compact removable anti-lift keepers at G0-H points; deburr, isolate and orient fasteners for tool access.", "Locates the G0 perimeter without crushing mesh, blocking airflow or sharing a C0/FS mount.", "G0 is secure and rattle-free yet removes without disturbing any heat exchanger; CL0 checks remain within the independent ±2 mm limits."],
+      ["R0-E", "As required", "Radiator-shop compatible rail/tab material only; the specialist must approve the sound rail or reinforcement before heat is applied.", "Jig R0; repair or reproduce only the released rail ears/tabs to R0-H/B0; protect the core and pressure-test after hot work.", "Attachment is to a sound side rail or approved reinforcement—never a tank, seam, tube, fin or core face.", "Post-work pressure/flow results pass; geometry remains square; each ear has full rubber-isolated fit and no solder distress."],
+      ["R3-U-L/R", "2", "Released steel keeper, new EPDM bushes, fitted steel crush sleeves, broad washers and matching locking class 8.8 hardware.", "Form short removable keepers from R0-H; sleeve each bush so bolt torque cannot compress or lift R0; coat only after bare-metal fit.", "Neutral upper location only after both lower locators are fully seated in R1; zero vertical weight.", "Bolts reach recorded torque on the sleeves while R0 remains naturally seated, square and removable with normal tools."],
+      ["R3-L-L/R", "0 or 2", "Fabricate only if the signed R0-H dry fit proves a lower stabiliser is necessary; otherwise omit.", "Form compact rubber-isolated side restraints with drainage and tool access; do not copy the historical long added leg.", "Resists released fore/aft or lateral motion only; zero vertical load and no tank/core contact.", "Loaded R0 stays seated and cannot rub, but the stabilisers can be removed without disturbing the crossmember or radiator shop interfaces."],
+      ["C1", "As measured", "Released compatible steel/aluminium stock selected with galvanic isolation; I1 isolators and fitted sleeves at every hard point.", "Template every sound C0 tab, pipe, drier/manifold and tool sweep; cut/form an independent removable carrier; add drains, isolation and accessible locking fasteners.", "Carries C0 only and keeps its full face, ports and pipes clear of G0, FS, R0 and their carriers.", "C0 usable-fin-field lateral centre is directly within ±2 mm of VCL; complete-envelope clearance, leak-test state and service removal pass."],
+      ["F1", "1 set", "Released section and I1 isolators/sleeves sized from the complete FS frame, tabs, guard, motor, plug and cable bend.", "Template one FS only; form a removable carrier that retains the designed pusher orientation, protects the plug and leaves the C0 fin field unobstructed.", "FS is independent of G0 and C0; complete frame/rotor datum is checked directly to VCL and locally to C0.", "Within ±2 mm laterally of VCL and separately within ±2 mm X/Z of C0 usable-fin-field centre; direction, clearance, current and no-rub tests pass."],
+      ["F2", "1 set", "Released section plus continuous closed-cell EPDM perimeter seal and I1 isolation hardware.", "Template the complete FL shroud, motor, tabs, plug and blade sweep; make a removable rear carrier and continuous seal landing without bridging drains.", "Supports FL/shroud independently; seal bears on the released radiator perimeter without loading tanks, core or solder.", "Full blade clearance, engine-movement/tool sweep, pull direction and sealed installed-airflow test pass; R0 remains unstressed."],
+      ["E1", "1 set", "Released coated steel/aluminium carrier with removable splash-resistant cover, grommets, P-clips and drainage.", "Lay out two separate relay/fuse branches; form an inboard serviceable carrier, rear/down cable exits, covered live terminals and labelled test access.", "No electrical load through donor wiring or structural earth through a painted joint; loom is isolated from heat, edges, fans and pipes.", "Cover removes with normal tools; drainage, cable bend, fuse/relay ratings, earth path, voltage drop and hot-idle temperature records pass."],
+    ];
+
+    const restorationParts = [
+      {
+        ref: "R0",
+        title: "Copper/brass radiator",
+        steps: [
+          "Tag orientation; cap openings; photograph tanks, necks, rails, ears, locators, solder joints and historical added leg. Record cold pressure and flow baselines.",
+          "Have a copper/brass radiator specialist jig the interfaces, strip with inhibited solder-compatible chemistry and decide rail/tab repairs from R0-H. No blasting, strong DIY acid/caustic or heat at a tank/core seam outside specialist control.",
+          "Recore for naturally aspirated 2H duty while preserving cap, drain, hose necks, B0/S0, rails and FL seal face. Do not reproduce the historical long support leg.",
+          "Straighten fins, repeat pressure/flow tests, mask every sealing face and apply only a thin heat-exchanger coating—no powder coat, filler or thick primer.",
+        ],
+        acceptance: "Written post-work pressure/flow result, square tanks/rails, open fins, clean solder and unchanged measured interfaces.",
+      },
+      {
+        ref: "C0",
+        title: "Full-face A/C condenser",
+        steps: [
+          "Identify refrigerant, oil and seal system; cap both ports and record the complete body, tabs, pipes, drier/manifold, depth and tool envelope before cleaning.",
+          "Apply neutral aluminium-safe coil cleaner, rinse from the clean side at low pressure and comb fins without pulling on pipes or manifolds.",
+          "Flush only by the approved closed specialist procedure; leak-test with dry nitrogen or approved forming gas at the applicable service pressure—never oxygen or wet shop air.",
+          "Keep capped until assembly; replace the receiver-drier, all disturbed HNBR seals/O-rings and caps new. Do not paint the fin field or reuse the old drier.",
+        ],
+        acceptance: "Written leak result, clean straight usable face, sound tabs/pipes, capped ports and mapped service/tool clearance.",
+      },
+      {
+        ref: "G0",
+        title: "Removable stone guard",
+        steps: [
+          "Tag vehicle centreline and every attachment point; build G0-H; inspect the complete perimeter for twist, cracked welds, lost mesh and unsafe sharp edges.",
+          "Jig the perimeter square, repair sound frame welds and replace only failed mesh with matching pitch, wire/gauge and open area. Keep drainage and the full airflow aperture.",
+          "Deburr without thinning structural welds; degrease, mechanically clean ferrous corrosion and apply the compatible thin 2K satin/semi-gloss system.",
+          "Clear every mesh opening and drain after cure; add EPDM anti-chafe only at released G1/G2 contacts and verify tool-accessible removal.",
+        ],
+        acceptance: "Square, rigid and rattle-free perimeter; no bridged aperture, sharp edge or heat-exchanger contact; independent removal passes.",
+      },
+      {
+        ref: "FS",
+        title: "Single front A/C pusher",
+        steps: [
+          "Record complete frame/rotor datum, tabs, guard, motor, plug and cable bend; inspect blades, guard, bearing/shaft play, corrosion and cracked plastic.",
+          "Baseline voltage, start/run current, rotation and free-air direction. Reject unsafe blades, cracked load tabs, seized/noisy bearings or excessive current before cosmetic work.",
+          "Clean with plastic-safe detergent and low-pressure air; renew only approved terminals, seals and damaged loom protection. Do not paint blades, motor, vents, label, plug or rubber.",
+          "Test in its designed front-pusher orientation and then in the F1 carrier with the full C0 restriction represented.",
+        ],
+        acceptance: "Exactly one FS; rearward push, safe current, no wobble/rub, sound tabs/plug and credible installed airflow.",
+      },
+      {
+        ref: "FL",
+        title: "Rear puller and full shroud",
+        steps: [
+          "Record complete shroud, blade ring, motor, tabs, plug, cable bend and seal landing; inspect cracks, missing fasteners, shaft play and blade-to-shroud clearance.",
+          "Baseline voltage, start/run current, rotation and airflow. Reject an unsafe blade, distorted shroud, noisy bearing, loose motor or excessive current.",
+          "Clean with plastic-safe detergent; repair only approved shroud/tab material and renew terminals/seals/loom protection. Keep blades, motor, vents, label and plug unpainted.",
+          "Install new closed-cell EPDM perimeter seal on the released F2 landing and test with the shroud supported independently from R0.",
+        ],
+        acceptance: "Rearward pull, full blade clearance, safe current, no vibration/rub and sealed installed airflow without load on R0.",
+      },
+      {
+        ref: "A0-L/R",
+        title: "Loose radiator-arm blanks",
+        steps: [
+          "Tag left/right and orientation; measure section, wall, straightness, corrosion loss, old holes, prior welds and end condition. Record both against A0-D.",
+          "Clean to inspectable metal without erasing crack/corrosion evidence; use NDT where the competent structural reviewer requires it.",
+          "Retain only sound stock, then shorten and convert through the released A0/A1 fabrication row. If any blank fails, use it only as a pattern and reproduce both sides as required by the signed design.",
+          "After bare-metal fit, proof and weld inspection, mechanically prepare, epoxy-prime, satin/semi-gloss topcoat, clear drains/holes and cavity-wax eligible closed sections.",
+        ],
+        acceptance: "Traceable retain/reject decision, mirror-handed released geometry, clean drainage and zero proof-test damage or coating over a defect.",
+      },
+      {
+        ref: "Existing tabs / holders",
+        title: "Rails, ears, guard and radiator fittings",
+        steps: [
+          "Tag every existing tab, ear, added bracket and rubber interface; map it into R0-H/G0-H and classify retain, repair, reproduce or reject.",
+          "Reject cracked, badly thinned, distorted, tank/core-attached or geometrically redundant pieces. Historical added parts are pattern evidence only.",
+          "Repair only after the controlling specialist/structural release; reproduce through R0-E, G1/G2 or R3 rows using new rubber, sleeves and matching hardware.",
+          "Dry-fit bare metal, confirm neutral/no-load retention, then coat ferrous pieces with masked threads, earths, rubber seats, drains and mating faces.",
+        ],
+        acceptance: "Every retained or new fitting has a reference, drawing, rubber interface, accessible locking fastener and recorded no-load function.",
+      },
+    ];
+
+    const assemblySteps = [
+      ["01", "Release the assembly set", "Place the signed drawing, A0-D/B0/S0/CL0/G0-H/R0-H sheets, R0/C0 test certificates, structural release, coating cure record and torque schedule at the vehicle. Do not assemble from the photographs alone.", "All prerequisites at Gates A–C are signed and every part is tagged to its reference."],
+      ["02", "Install X0/X1/A0/A1 bare structure", "Fit the mirror-handed A1 ends to the measured chassis connectors without forcing alignment; install the short A0 arms, full-width X0 and level X1 seats with released fasteners/locking. Check drainage and access before torque witness marks.", "Structure sits square with full connector bearing, no chassis distortion and recorded fastener torque."],
+      ["03", "Fit the two R1 saddles and seat R0", "Place new matched R1 rubbers fully in X1, then lower R0 vertically so both locators bottom naturally and share load. Do not lever through fins, necks, tank seams or solder.", "R0 stands square, all weight is on both saddles and neither rubber is pinched, displaced or metal-bound."],
+      ["04", "Add neutral R3 retention", "Install R3-U bushes, fitted crush sleeves, broad washers and released locking hardware only after R0 is seated. Add R3-L stabilisers only if the released drawing calls for them.", "Torque is carried by the sleeves; R0 neither lifts nor twists; upper and optional side fittings carry zero vertical load."],
+      ["05", "Install F2 and the FL puller/shroud", "Attach F2 independently, apply the continuous closed-cell EPDM perimeter seal and install the complete FL shroud with blade, plug, cable and engine-movement clearances represented.", "Seal is continuous without blocked drains; FL pulls rearward, clears throughout its sweep and applies no load to R0."],
+      ["06", "Install C1 and C0", "Fit the independent isolated C1 carrier, then C0 with its complete tabs, pipes and drier/manifold protected. Keep ports capped until final line connection and preserve union/tool access.", "C0 usable-fin-field centre is within the released direct CL0 limit; no bracket or pipe is preloaded and C0 removes independently."],
+      ["07", "Install F1 and exactly one FS", "Mount one complete FS in designed pusher orientation on its independent isolated carrier. Check complete frame/rotor datum directly to VCL and separately to the C0 usable-fin-field centre—never derive one from the other.", "Both independent ±2 mm checks pass, FS pushes rearward and its guard, tabs, plug, cable and blade sweep clear G0/C0."],
+      ["08", "Install G1/G2 and G0 outermost", "Seat the repaired G0 perimeter in the two rubber-faced G1 cradles; fit the two removable G2 keepers without crushing mesh or blocking airflow.", "Complete G0 frame meets the direct VCL and fixed-aperture ±2 mm checks, is rattle-free and removes without disturbing FS or C0."],
+      ["09", "Connect coolant and A/C plumbing", "Fit measured moulded coolant hoses, overflow, constant-tension clamps, approved cap and thermostat. Open C0 only when installing the new sealed drier and lubricated new HNBR seals; evacuate, leak-check and charge to the identified system specification.", "No neck/manifold load, cold leaks or blocked cap/drain/union access; fluid types and quantities are recorded."],
+      ["10", "Wire and protect both fan branches", "Connect FS and FL to separate sealed relays, covered fuses, measured-current cable and protected earths on E1. Clip loom rear/down, grommet every edge and provide service-test control.", "Polarity/direction, terminal voltage, voltage drop, start/run current, charging voltage and hot component temperatures are recorded and pass."],
+      ["11", "Close the clearance and service audit", "Cycle bonnet/latch, represent engine movement, turn/inspect every fan sweep and check hoses, pipes, plug bends, drains, fastener tools and the planned removal order G0 → FS → C0 → R0/FL. Apply final torque witnesses.", "No rub, trapped loom, blocked drain, inaccessible service point or shared load path; photographs record every released gap."],
+      ["12", "Fill, commission and reinspect", "Bleed coolant, test each fan independently, complete full hot-idle heat/A/C logs and naturally aspirated road/load logging. Cool fully, inspect for leaks/settling, then repeat after the first journey.", "No progressive coolant temperature or A/C high-side rise, purge, rub, leak, vibration or witness-mark movement; Gates E–F close."],
     ];
 
     const partsGroups = [
@@ -10181,7 +10414,7 @@
 
     const releaseGates = [
       ["A", "Component integrity", "R0 pressure/flow, C0 leak/cleanliness, and FS/FL electrical/direction records all pass."],
-      ["B", "Measured geometry + centre", "A0-D, B0, S0, CL0, G0-H, R0-H, L0 including end connections, MR, complete component envelopes and vehicle/tool/movement sweeps are on a dated drawing; all applicable CL0 offsets are ≤ 2 mm."],
+      ["B", "Measured geometry + centre", "The 610/635 mm R0 and 540 × 465 mm C0 photo baselines seed the first fixture; square A0-D, B0, S0, CL0, G0-H, R0-H, L0 including end connections, MR, complete envelopes and vehicle/tool/movement sweeps control final fabrication on a dated drawing; all applicable CL0 offsets are ≤ 2 mm."],
       ["C", "Structure", "X0/X1/A0/A1, both chassis connectors, road-load/fatigue/connection design, weld/fastener inspection and the total static 2 × MR proof distributed between both S0 centres all pass before coating."],
           ["D", "Holders and opaque dry fit", "G1/G2 and R0-E/R3 are released; the complete G0 perimeter-frame centre and complete FS frame/rotor datum each pass direct ±2 mm lateral VCL checks, while G0-to-fixed-aperture and FS-to-C0 X/Z checks pass separately with no tolerance stacking. Natural saddle seating, neutral upper locators, independent supports and all service/removal paths pass."],
       ["E", "Finish and assembly", "No rust/overspray/blocked fins; new rubbers, service parts, fluids and matching hardware are verified."],
@@ -10199,8 +10432,24 @@
       </article>
     `).join("");
 
+    const restorationCards = restorationParts.map((part) => `
+      <article class="na-cooling-restoration-card">
+        <header><span>${escapeHtml(part.ref)}</span><div><p class="na-cooling-step-kicker">Retained-part procedure</p><h4>${escapeHtml(part.title)}</h4></div></header>
+        <ol>${part.steps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
+        <footer><strong>Accept</strong><span>${escapeHtml(part.acceptance)}</span></footer>
+      </article>
+    `).join("");
+
+    const assemblyCards = assemblySteps.map(([number, title, instruction, acceptance]) => `
+      <li class="na-cooling-assembly-step">
+        <span class="na-cooling-assembly-number">${escapeHtml(number)}</span>
+        <div><h4>${escapeHtml(title)}</h4><p>${escapeHtml(instruction)}</p><div><strong>Accept</strong><span>${escapeHtml(acceptance)}</span></div></div>
+      </li>
+    `).join("");
+
     const fabricationTableRows = fabricationRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
     const chemicalTableRows = chemicalRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
+    const photoDimensionTableRows = photoDimensionRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("");
     const gateCards = releaseGates.map(([id, title, detail]) => `
       <article class="na-cooling-gate-card"><span>${escapeHtml(id)}</span><div><h4>${escapeHtml(title)}</h4><p>${escapeHtml(detail)}</p></div></article>
     `).join("");
@@ -10219,8 +10468,8 @@
               <span class="na-cooling-decision-chip is-stop">No turbo</span><span class="na-cooling-decision-chip is-stop">No K0/intercooler</span><span class="na-cooling-decision-chip is-stop">No second front fan</span><span class="na-cooling-decision-chip">1 front A/C pusher</span><span class="na-cooling-decision-chip">1 rear radiator puller</span>
             </div>
             <div class="na-cooling-release-banner" role="note">
-              <strong>Loose arms confirmed · connector and holder geometry held</strong>
-              <span>A0-D/B0/S0/CL0/G0-H/R0-H templates, L0 span and end joints, filled mass MR, actual component envelopes, structural calculation and the physical dry fit must release every cut, hole, bracket and gap. CL0 directly checks G0 perimeter, FS frame/rotor and C0 fin-field centres to VCL; G0-to-fixed-body-aperture and FS-to-C0 local checks do not tolerance-stack.</span>
+              <strong>Photo-backed envelope released · connector and holder geometry held</strong>
+              <span>The first full-size fixture may use R0 at approximately 610 mm body / 635 mm cap height and C0 at approximately 540 × 465 mm. A0-D/B0/S0/CL0/G0-H/R0-H templates, L0 span/end joints, MR, depths, complete envelopes, structural calculation and the physical dry fit still release every final cut, hole, bracket and gap.</span>
             </div>
             <div class="na-cooling-downloads na-cooling-download-actions">
               <a class="item-link package-download-link na-cooling-download-action" href="${assets.guide}" download>Download Rev P shop guide (.md)</a>
@@ -10249,7 +10498,7 @@
             <article><strong>Independent supports</strong><p>G0 uses G1/G2 perimeter holders; R0 uses its lower saddles plus R3 keepers. C0, FS and FL/shroud each use isolated removable brackets. No through-core ties, structural self-tappers or heat exchanger hung from another.</p></article>
             <article><strong>Performance closes scope</strong><p>One front fan is the controlled design. Correct direction, voltage drop, sealing and distribution before proposing another fan under a new revision.</p></article>
           </div>
-          <div class="na-cooling-danger" role="alert"><strong>Never fabricate from the images.</strong><span>Every generated view is illustrative. Actual parts, A0-D/B0/S0/CL0/G0-H/R0-H templates, measured drawings, structural release, proof test and the vehicle dry fit control.</span></div>
+          <div class="na-cooling-danger" role="alert"><strong>Use photographs only to the stated confidence.</strong><span>The controlled tape photos release the listed R0/C0 envelope values for mock-up only; every generated view is illustrative. Actual parts, A0-D/B0/S0/CL0/G0-H/R0-H templates, measured drawings, structural release, proof test and the vehicle dry fit control final fabrication.</span></div>
         </section>
 
         <section class="card na-cooling-section" id="cooling-pack-visuals">
@@ -10263,10 +10512,64 @@
 
         <section class="card na-cooling-section" id="cooling-pack-evidence">
           <div class="detail-header na-cooling-section-heading">
-            <div><p class="na-cooling-section-label">Physical retained-part evidence</p><h3>These actual parts—not the generated views—control the work</h3></div>
+            <div><p class="na-cooling-section-label">Photo-backed dimensions and retained-part evidence</p><h3>The tape photographs now fix the first mock-up envelope</h3></div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-evidence"), "#", "Copy retained-part evidence link")}
           </div>
+          <p class="na-cooling-visual-note">Only the values and confidence states below are released from the photographs. Square direct measurements supersede them for final fabrication.</p>
+          <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
+            <table class="na-cooling-table na-cooling-data-table">
+              <thead><tr><th>Part / datum</th><th>Photo-backed baseline</th><th>Status</th><th>Shop use / remaining control</th></tr></thead>
+              <tbody>${photoDimensionTableRows}</tbody>
+            </table>
+          </div>
+          <div class="na-cooling-scale-intro">
+            <div><strong>Common relative scale · 0.48 CSS px per measured mm</strong><span>The outer photo envelopes below share one numerical screen scale. Browser zoom and display density change physical on-screen size; the dimension labels remain controlling.</span></div>
+            <span class="na-cooling-scale-key">Solid = locked for mock-up · dashed/range = provisional</span>
+          </div>
+          <div class="na-cooling-scale-scroll" tabindex="0" role="region" aria-label="Common-scale retained cooling component photographs">
+            <div class="na-cooling-scale-board">
+              <figure class="na-cooling-scale-item is-r0">
+                <div class="na-cooling-scale-photo" style="width:305px;height:305px">
+                  <img src="${assets.r0}" alt="Actual retained R0 radiator clipped inside its common-scale envelope" loading="lazy">
+                  <span class="na-cooling-scale-code">R0</span>
+                  <span class="na-cooling-scale-body-line" aria-hidden="true"></span>
+                </div>
+                <figcaption><strong>≈635 W × 635 H mm overall</strong><span>Width is provisional; cap height is locked. Body-to-top-tank line ≈610 mm.</span></figcaption>
+              </figure>
+              <figure class="na-cooling-scale-item is-c0">
+                <div class="na-cooling-scale-photo" style="width:259px;height:223px">
+                  <img src="${assets.c0}" alt="Actual retained C0 condenser clipped inside its common-scale body envelope" loading="lazy">
+                  <span class="na-cooling-scale-code">C0</span>
+                </div>
+                <figcaption><strong>≈540 W × 465 H mm body</strong><span>Locked for mock-up; pipes, tabs, drier/manifold and service sweep remain outside this controlled body box.</span></figcaption>
+              </figure>
+              <figure class="na-cooling-scale-item is-fl">
+                <div class="na-cooling-scale-photo is-provisional" style="width:230px;height:230px">
+                  <img src="${assets.fl}" alt="Actual FL fan photograph clipped to its provisional 480 millimetre ring envelope" loading="lazy">
+                  <span class="na-cooling-scale-code">FL</span><span class="na-cooling-scale-range" aria-hidden="true"></span>
+                </div>
+                <figcaption><strong>≈450–480 mm ring</strong><span>Provisional range; tile uses the 480 mm upper baseline. Complete shroud, tabs, motor, plug and depth are still HOLD.</span></figcaption>
+              </figure>
+              <figure class="na-cooling-scale-item is-fs">
+                <div class="na-cooling-scale-photo is-provisional" style="width:122px;height:122px">
+                  <img src="${assets.fs}" alt="Actual FS fan photograph clipped to its provisional 255 millimetre ring envelope" loading="lazy">
+                  <span class="na-cooling-scale-code">FS</span><span class="na-cooling-scale-range" aria-hidden="true"></span>
+                </div>
+                <figcaption><strong>≈240–255 mm ring</strong><span>Provisional range; tile uses 255 mm. Complete frame/tabs may reach ≈280 mm and remain to be measured.</span></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="na-cooling-proof"><strong>What “size-accurate” means here</strong><span>Each outer box is scaled from the stated photo-backed envelope and every photograph keeps its original aspect ratio while being clipped inside that box; the photos are not stretched or perspective-rectified. Only R0/C0 mock-up values are released. Measure square complete W/H/D, mount centres, pipes, tabs and service sweeps before any final fit drawing.</span></div>
           <div class="na-cooling-evidence-grid">${renderGallery(retainedEvidence)}</div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-restoration">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Explicit retained-part restoration</p><h3>One controlled procedure and acceptance record for every retained part</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-restoration"), "#", "Copy retained-part restoration procedures link")}
+          </div>
+          <p class="na-cooling-visual-note">These procedures cover every retained component in the Rev P stack plus the loose arm blanks and candidate old fittings. Age-sensitive rubbers, seals, drier, hoses, clamps, relays, fuses and damaged hardware are replaced new—not cosmetically restored.</p>
+          <div class="na-cooling-restoration-grid">${restorationCards}</div>
         </section>
 
         <section class="na-cooling-process" id="cooling-pack-process">
@@ -10279,7 +10582,7 @@
 
         <section class="card na-cooling-section" id="cooling-pack-fabrication">
           <div class="detail-header na-cooling-section-heading">
-            <div><p class="na-cooling-section-label">Fabrication and chassis fittings</p><h3>Controlled load path, isolation and removable hardware</h3></div>
+            <div><p class="na-cooling-section-label">Complete fabrication specification · 13 controlled references</p><h3>Stock basis, operations, interface rule and acceptance for every made part</h3></div>
             ${renderCopyLinkButton(sectionRoute("cooling-pack-fabrication"), "#", "Copy chassis fabrication specification link")}
           </div>
           <div class="na-cooling-danger" role="note"><strong>Purpose-size the loose arms before coating.</strong><span>The owner confirms A0-L/A0-R are loose and not attached. Shorten accepted blanks—or reproduce them—so each lower A1 end mates at its A0-D-measured chassis connector and each upper end stops at the highest released functional interface, with no redundant projection, while retaining the released bearing area, edge distance, tool access, gusset run-out and drainage.</span></div>
@@ -10287,16 +10590,25 @@
             <span>R0 lower locators</span><b>→</b><span>2 new R1 saddles</span><b>→</b><span>X1 seats</span><b>→</b><span>X0 crossmember</span><b>→</b><span>short A0 arms</span><b>→</b><span>A1 / actual connectors</span>
           </div>
           <div class="table-wrap na-cooling-table-wrap na-cooling-data-table-wrap">
-            <table class="na-cooling-table na-cooling-data-table">
-              <thead><tr><th>Ref</th><th>Qty</th><th>Fitting / fabrication</th><th>Controlled requirement</th></tr></thead>
+            <table class="na-cooling-table na-cooling-data-table na-cooling-fabrication-table">
+              <thead><tr><th>Ref</th><th>Qty</th><th>Stock / material basis</th><th>Fabrication operations</th><th>Interface / load rule</th><th>Release acceptance</th></tr></thead>
               <tbody>${fabricationTableRows}</tbody>
             </table>
           </div>
           <div class="na-cooling-proof"><strong>Structural release + mandatory pre-paint proof</strong><span>A competent person must first release the road-load, fatigue, A0/A1 connector, weld, fastener and torque design. Then apply a total static proof load of 2 × filled/capped radiator mass MR, distributed between the two S0 saddle centres in the released loaded-radiator distribution for 10 minutes, using a fixture that prevents local point-loading. The proof supplements the calculation; any permanent set, crack, looseness, saddle movement or connector distortion is a fail.</span></div>
           <div class="na-cooling-prohibited">
             <h4>Fabrication prohibitions</h4>
-            <p>No dimension from a photo; no new chassis holes; no slots or reaming; no forced bolt pull; no side-bolt substitute; no washer-stack spacer; no unsleeved rubber joint; no radiator weight on R3, tanks, seams, fins or solder; no through-core tie. A1 may use only the A0-D-verified connector—never steering, suspension, bumper, tow or thin/non-structural sheet. Do not cut an installed chassis member to compensate for an overlong loose arm.</p>
+            <p>No final cut, hole, bracket, depth or vehicle-fit decision from a photo; only the stated mock-up baselines may be carried forward. No new chassis holes; no slots or reaming; no forced bolt pull; no side-bolt substitute; no washer-stack spacer; no unsleeved rubber joint; no radiator weight on R3, tanks, seams, fins or solder; no through-core tie. A1 may use only the A0-D-verified connector—never steering, suspension, bumper, tow or thin/non-structural sheet. Do not cut an installed chassis member to compensate for an overlong loose arm.</p>
           </div>
+        </section>
+
+        <section class="card na-cooling-section" id="cooling-pack-assembly">
+          <div class="detail-header na-cooling-section-heading">
+            <div><p class="na-cooling-section-label">Explicit assembly instructions · controlled order</p><h3>Build the released structure inward-to-outward, then plumb, wire and commission</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cooling-pack-assembly"), "#", "Copy cooling-pack assembly instructions link")}
+          </div>
+          <div class="na-cooling-danger" role="note"><strong>Assembly cannot release missing fabrication geometry.</strong><span>Use the photographed envelopes to prepare the first full-size fixture, then assemble only from the signed measured drawing and the actual tagged parts. Do not create a bracket, slot a hole or pull a component into alignment during installation.</span></div>
+          <ol class="na-cooling-assembly-list">${assemblyCards}</ol>
         </section>
 
         <section class="card na-cooling-section" id="cooling-pack-parts">

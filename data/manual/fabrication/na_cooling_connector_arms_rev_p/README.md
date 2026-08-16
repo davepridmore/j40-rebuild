@@ -20,6 +20,10 @@ The actual loose arm blanks may be reworked only after identity, material, thick
 
 `CL0` is a fixed-datum centre record, not a visual judgement. Project the vehicle longitudinal centre plane (`VCL`) at the G0, FS and C0 mounting planes. Hold the complete repaired G0 perimeter-frame outer-envelope centre, complete mounted FS frame/rotor datum and C0 usable-fin-field lateral centreline each within `±2 mm` laterally of VCL. Separately, hold G0 within `±2 mm X/Z` of the measured usable fixed vehicle-grille aperture centre and FS within `±2 mm X/Z` of the C0 usable-fin-field centre. The fixed vehicle grille/body opening is not G0; G0 is the removable expanded-mesh stone guard. Represent all frames, tabs, guards, plugs, cable bends and service envelopes, but do not substitute those clearance envelopes for the perimeter-frame or frame/rotor centring datums. Measure every direct VCL offset independently: no tolerance stacking. If the complete assemblies cannot satisfy both the direct and local limits, revise G1/G2, C1 or F1 before release; do not approve an offset by eye.
 
+## Photo-backed mock-up baseline
+
+The controlled tape photographs now pre-populate the first full-size fixture: R0 body height is approximately `610 mm`, R0 cap/highest point is approximately `635 mm`, and the C0 body is approximately `540 × 465 mm`. These three readings are **LOCKED FOR MOCK-UP**, not final fabrication dimensions. The photographed R0 horizontal span of approximately `635 mm`, FL ring of approximately `450–480 mm`, and FS ring/frame of approximately `240–255 mm` / up to about `280 mm` are **PROVISIONAL**. Depths, holes, lower-saddle centres, connectors, brackets and vehicle fit remain **HOLD**. The signed square direct measurements in `measurement_basis.csv` supersede any photo reading for final fabrication.
+
 ## Holder scope
 
 - `G1-L/R`: lower rubber-faced grille/stone-guard cradles for the sound G0 perimeter frame.
@@ -31,7 +35,7 @@ The actual loose arm blanks may be reworked only after identity, material, thick
 
 ## Handoff sequence
 
-1. Complete `measurement_basis.csv` from the actual chassis connectors, guard, R0 radiator and retained components.
+1. Load the photo-backed mock-up baselines already recorded in `measurement_basis.csv`, then replace/complete the final records from square direct measurement of the actual chassis connectors, guard, R0 radiator and retained components.
 2. Make rigid A0-D-L/R, B0, S0, CL0, G0-H and R0-H templates from fixed vehicle datums, projecting VCL directly at the G0, FS and C0 planes.
 3. Inspect the two loose arm blanks and record retain/rework/replace decisions.
 4. Produce a competent-person structural calculation and drawing for X0/X1/A0/A1, connector bearing, welds, fasteners, torque and proof fixture.
