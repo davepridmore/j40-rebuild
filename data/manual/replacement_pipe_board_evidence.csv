@@ -1,0 +1,3 @@
+pipe_id,acquisition_status,media_ids,comparison_note,source_ref
+RP-COOL-002,acquired_route_check_pending,20260712_163133_gp_KjVxhYfQ|20260712_012946_gp_GJur42bg,New lower-radiator-hose candidate photographed beside the old hose set; confirm both end IDs and molded sweep during dry-fit.,data/manual/replacement_pipe_large_assignment_20260712.csv|docs/bilal-ganj-large-pipe-routing-20260712.md
+RP-COOL-006,acquired_route_check_pending,20260712_163133_gp_KjVxhYfQ|20260712_012946_gp_GJur42bg,New connector and coupler candidates photographed beside the old route pieces; select by old sample and confirm the route during dry-fit.,data/manual/replacement_pipe_large_assignment_20260712.csv|docs/bilal-ganj-large-pipe-routing-20260712.md

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-16T17:07:52+05:00",
+  "generated_at": "2026-08-16T17:23:51+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -18,6 +18,7 @@ window.J40_DASHBOARD_DATA = {
     "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
     "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
     "replacement_pipe_photo_intake": "data/manual/replacement_pipe_photo_intake.csv",
+    "replacement_pipe_board_evidence": "data/manual/replacement_pipe_board_evidence.csv",
     "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
     "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
     "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
@@ -1167,6 +1168,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -3116,6 +3118,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -5890,6 +5893,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -10713,6 +10717,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -18161,6 +18166,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -29222,6 +29228,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -32398,6 +32405,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -35343,6 +35351,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -37007,6 +37016,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -39888,6 +39898,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -46842,6 +46853,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -47833,6 +47845,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -54305,6 +54318,86 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
               "stage": "mechanical_inspection",
               "media_id": "20260430_233755_gp_DO69MLAA",
+              "matched_tokens": []
+            }
+          ]
+        }
+      ],
+      "replacement_pipe_board_evidence": [
+        {
+          "pipe_id": "RP-COOL-002",
+          "acquisition_status": "acquired_route_check_pending",
+          "media_ids": [
+            "20260712_163133_gp_KjVxhYfQ",
+            "20260712_012946_gp_GJur42bg"
+          ],
+          "comparison_note": "New lower-radiator-hose candidate photographed beside the old hose set; confirm both end IDs and molded sweep during dry-fit.",
+          "source_ref": [
+            "data/manual/replacement_pipe_large_assignment_20260712.csv",
+            "docs/bilal-ganj-large-pipe-routing-20260712.md"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260712_163133_gp_KjVxhYfQ.jpg",
+              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
+              "captured_date": "2026-07-12",
+              "captured_time": "16:31:33",
+              "media_type": "photo",
+              "component_group": "replacement_pipes",
+              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
+              "stage": "replacement_pipe_parts_intake",
+              "media_id": "20260712_163133_gp_KjVxhYfQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260712_012946_gp_GJur42bg.jpg",
+              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
+              "captured_date": "2026-07-12",
+              "captured_time": "01:29:46",
+              "media_type": "photo",
+              "component_group": "replacement_pipes",
+              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
+              "stage": "replacement_pipe_parts_intake",
+              "media_id": "20260712_012946_gp_GJur42bg",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "pipe_id": "RP-COOL-006",
+          "acquisition_status": "acquired_route_check_pending",
+          "media_ids": [
+            "20260712_163133_gp_KjVxhYfQ",
+            "20260712_012946_gp_GJur42bg"
+          ],
+          "comparison_note": "New connector and coupler candidates photographed beside the old route pieces; select by old sample and confirm the route during dry-fit.",
+          "source_ref": [
+            "data/manual/replacement_pipe_large_assignment_20260712.csv",
+            "docs/bilal-ganj-large-pipe-routing-20260712.md"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260712_163133_gp_KjVxhYfQ.jpg",
+              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
+              "captured_date": "2026-07-12",
+              "captured_time": "16:31:33",
+              "media_type": "photo",
+              "component_group": "replacement_pipes",
+              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
+              "stage": "replacement_pipe_parts_intake",
+              "media_id": "20260712_163133_gp_KjVxhYfQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260712_012946_gp_GJur42bg.jpg",
+              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
+              "captured_date": "2026-07-12",
+              "captured_time": "01:29:46",
+              "media_type": "photo",
+              "component_group": "replacement_pipes",
+              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
+              "stage": "replacement_pipe_parts_intake",
+              "media_id": "20260712_012946_gp_GJur42bg",
               "matched_tokens": []
             }
           ]
@@ -70230,6 +70323,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -76174,6 +76268,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -79768,6 +79863,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -82190,6 +82286,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -83268,6 +83365,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -84140,6 +84238,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
@@ -85448,6 +85547,7 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
+      "replacement_pipe_board_evidence": [],
       "replacement_pipe_order_release_specs": [],
       "longman_pipe_hose_order_specs": [],
       "replacement_pipe_release_actions": [],
