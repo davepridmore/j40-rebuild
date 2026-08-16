@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#20242a}.head{font:700 18px Arial,sans-serif;fill:#20242a}.txt{font:15px Arial,sans-serif;fill:#20242a}.small{font:13px Arial,sans-serif;fill:#3c4650}.dash{fill:#e8dcc5;stroke:#3b4148;stroke-width:4}.glove{fill:#aeb0af;stroke:#3b4148;stroke-width:4}.new{fill:#f5ecda;stroke:#c43b28;stroke-width:7}.screen{fill:#15191d;stroke:#050607;stroke-width:5}.guide{fill:none;stroke:#c43b28;stroke-width:7}.hidden{fill:none;stroke:#2775a6;stroke-width:6;stroke-dasharray:12 9}.leader{fill:none;stroke:#48535e;stroke-width:2}.metal{fill:#d4d9dd;stroke:#333b42;stroke-width:3}.gap{fill:#21262b}.frame{fill:#4f7892;stroke:#254b62;stroke-width:3}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#48535e"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#f7f8f8"/>
+  <text x="45" y="48" class="title">Rev I V42 — glovebox-to-speedometer boundary study</text>
+  <text x="45" y="78" class="small">Concept only — direct vehicle trace controls every production edge</text>
+
+  <text x="45" y="125" class="head">Front boundary rule</text>
+  <path class="dash" d="M50 160 L760 145 L1125 135 L1145 435 L765 455 L55 500 Z"/>
+  <path class="glove" d="M170 215 Q225 178 465 180 Q565 182 635 228 L665 346 Q650 415 575 442 L245 460 Q170 445 150 375 Z"/>
+  <path class="new" d="M650 154 L1210 132 L1230 430 L742 456 Q704 418 685 374 Q670 339 671 300 Q668 236 650 154 Z"/>
+  <rect class="screen" x="775" y="205" width="285" height="160" rx="7"/>
+  <text x="860" y="293" style="font:700 23px Arial,sans-serif;fill:#f4f4f4">9-inch screen</text>
+  <g fill="#252a2f">
+    <rect x="790" y="386" width="22" height="38" rx="3"/><rect x="825" y="386" width="22" height="38" rx="3"/>
+    <rect x="860" y="386" width="22" height="38" rx="3"/><rect x="895" y="386" width="22" height="38" rx="3"/>
+    <rect x="930" y="386" width="22" height="38" rx="3"/><rect x="965" y="386" width="22" height="38" rx="3"/>
+    <rect x="1000" y="386" width="22" height="38" rx="3"/><rect x="1035" y="386" width="22" height="38" rx="3" fill="#b62421"/>
+  </g>
+  <text x="255" y="325" class="head">OEM glovebox retained</text>
+  <path class="leader" d="M645 235 L570 118 L430 118" marker-end="url(#arrow)"/>
+  <text x="190" y="112" class="txt">Visible joint follows glovebox line</text>
+  <path class="leader" d="M820 153 L810 103 L985 103" marker-end="url(#arrow)"/>
+  <text x="824" y="96" class="txt">Upper joint follows factory fold</text>
+  <path class="leader" d="M820 451 L805 515 L1030 515" marker-end="url(#arrow)"/>
+  <text x="810" y="540" class="txt">Lower joint follows factory lower line</text>
+  <path class="leader" d="M1080 177 L1180 177" marker-end="url(#arrow)"/>
+  <text x="1000" y="170" class="small">right termination not shown</text>
+  <text x="758" y="478" class="small">Ashtray, central opening and lower slot removed inside this one section</text>
+
+  <text x="45" y="598" class="head">Typical joint section — schematic</text>
+  <rect x="55" y="635" width="290" height="16" class="metal"/>
+  <rect x="381" y="635" width="290" height="16" class="metal"/>
+  <rect x="345" y="635" width="36" height="16" class="gap"/>
+  <path class="frame" d="M295 650 L295 700 L430 700 L430 650 L405 650 L405 677 L320 677 L320 650 Z"/>
+  <text x="64" y="625" class="small">retained original dash skin</text>
+  <text x="469" y="625" class="small">new coplanar replacement skin</text>
+  <text x="303" y="727" class="small">continuous hidden backing/Z-frame</text>
+  <path class="leader" d="M363 630 L363 590" marker-end="url(#arrow)"/>
+  <text x="278" y="578" class="small">2–3 mm target finished gap</text>
+  <path class="hidden" d="M285 616 L440 616"/>
+  <text x="720" y="630" class="head">Release conditions</text>
+  <text x="720" y="658" class="txt">• Full vehicle trace including right termination</text>
+  <text x="720" y="684" class="txt">• Glovebox, cluster and column service proven</text>
+  <text x="720" y="710" class="txt">• Actual Pioneer trace and full-depth rear buck</text>
+</svg>

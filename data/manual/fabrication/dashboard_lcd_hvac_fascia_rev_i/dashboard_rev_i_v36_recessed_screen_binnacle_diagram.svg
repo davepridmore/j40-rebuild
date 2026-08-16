@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#24313a"/>
+    </marker>
+    <style>
+      .title { font: 700 25px Arial, sans-serif; fill: #172126; }
+      .sub { font: 600 17px Arial, sans-serif; fill: #34444d; }
+      .note { font: 14px Arial, sans-serif; fill: #34444d; }
+      .small { font: 12px Arial, sans-serif; fill: #4d5a61; }
+      .dim { stroke: #24313a; stroke-width: 1.2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .ext { stroke: #7c898f; stroke-width: 1; stroke-dasharray: 3 3; }
+      .face { fill: #efe8d1; stroke: #7f755b; stroke-width: 2; }
+      .mouth { fill: #d3c8a8; stroke: #7f755b; stroke-width: 2; }
+      .reveal { fill: #788087; stroke: #20272b; stroke-width: 2; }
+      .screen { fill: #101417; stroke: #000; stroke-width: 2; }
+      .glass { fill: #22323b; stroke: #050708; stroke-width: 2; }
+      .control { fill: #171b1d; stroke: #000; stroke-width: 1.5; }
+      .hazard { fill: #b32621; stroke: #62120f; stroke-width: 1.5; }
+      .rail { fill: #8a9398; stroke: #3d474c; stroke-width: 2; }
+      .body { fill: #56636a; stroke: #20272b; stroke-width: 2; }
+      .centre { stroke: #b57822; stroke-width: 1; stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <text x="55" y="45" class="title">Rev I V36 — recessed 9-inch screen proposal</text>
+  <text x="55" y="72" class="note">Provisional mock-up geometry only. Dimensions in millimetres; physical receiver and vehicle trace control production.</text>
+
+  <text x="80" y="103" class="sub">Front elevation — 350 × 210 centre cassette</text>
+  <rect x="80" y="120" width="525" height="315" rx="5" class="face"/>
+
+  <!-- Front mouth: local X 51.5, Y 5, W 247, H 149 at 1.5 px/mm -->
+  <rect x="157.25" y="127.5" width="370.5" height="223.5" rx="14" class="mouth"/>
+  <!-- Inner reveal: X 58.5, Y 17, W 233, H 135 -->
+  <rect x="167.75" y="145.5" width="349.5" height="202.5" rx="9" class="reveal"/>
+  <!-- Screen nose: X 60.5, Y 19, W 229, H 131 -->
+  <rect x="170.75" y="148.5" width="343.5" height="196.5" rx="7" class="screen"/>
+  <rect x="185" y="162" width="315" height="167" rx="3" class="glass"/>
+  <line x1="342.5" y1="120" x2="342.5" y2="435" class="centre"/>
+
+  <!-- Eight control heads at local X 35...315, Y 177, nominal diameter 30 -->
+  <circle cx="132.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="192.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="252.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="312.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="372.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="432.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="492.5" cy="385.5" r="22.5" class="control"/>
+  <circle cx="552.5" cy="385.5" r="22.5" class="hazard"/>
+
+  <line x1="157.25" y1="111" x2="527.75" y2="111" class="dim"/>
+  <line x1="157.25" y1="116" x2="157.25" y2="127.5" class="ext"/>
+  <line x1="527.75" y1="116" x2="527.75" y2="127.5" class="ext"/>
+  <text x="309" y="105" class="note">247 mouth</text>
+
+  <line x1="167.75" y1="362" x2="517.25" y2="362" class="dim"/>
+  <text x="300" y="380" class="note">233 inner reveal</text>
+  <text x="271" y="235" class="note" fill="#d8e6ec">229 × 131 screen nose</text>
+  <text x="205" y="418" class="small">40 pitch · Y=177 · nominal Ø30 heads</text>
+  <text x="165" y="470" class="note">Top brow 12 · side cheeks 7 · lower rise 2 · nominal shadow gap 2 all round</text>
+
+  <text x="690" y="103" class="sub">Vertical centre section — adjustable depth</text>
+  <text x="690" y="128" class="small">Front of vehicle / cabin side at left; rear package at right</text>
+
+  <!-- Dashboard face plane -->
+  <path d="M760 150 L760 500" stroke="#7f755b" stroke-width="10" fill="none"/>
+  <text x="700" y="525" class="small">dash face Z=0</text>
+
+  <!-- Asymmetric throat to screen plane; 3 px/mm, 15 mm = 45 px -->
+  <path d="M760 170 L805 206 L805 423 L760 429 Z" class="mouth"/>
+  <line x1="805" y1="206" x2="805" y2="423" stroke="#050708" stroke-width="7"/>
+  <text x="820" y="316" class="note">screen glass</text>
+
+  <!-- Display nose and chassis are schematic; final offsets come from actual trace -->
+  <rect x="809" y="195" width="39" height="239" rx="3" class="screen"/>
+  <rect x="848" y="228" width="111" height="174" rx="3" class="body"/>
+  <rect x="842" y="216" width="12" height="198" class="rail"/>
+  <text x="865" y="258" class="small" fill="#f5f7f8">188 × 108 × 37</text>
+  <text x="875" y="278" class="small" fill="#f5f7f8">published chassis</text>
+  <text x="814" y="452" class="small">13 D nose (published)</text>
+
+  <!-- Depth dimension -->
+  <line x1="760" y1="475" x2="805" y2="475" class="dim"/>
+  <line x1="760" y1="437" x2="760" y2="486" class="ext"/>
+  <line x1="805" y1="427" x2="805" y2="486" class="ext"/>
+  <text x="765" y="468" class="note">15 target</text>
+
+  <!-- Adjustable rail indication -->
+  <line x1="842" y1="187" x2="842" y2="150" class="ext"/>
+  <line x1="796" y1="154" x2="850" y2="154" class="dim"/>
+  <text x="806" y="146" class="small">12 / 15 / 18 setback positions</text>
+
+  <path d="M841 300 L812 300" stroke="#b57822" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="970" y="311" class="note">removable U-cradle on rear rails</text>
+  <path d="M968 307 L858 307" stroke="#b57822" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="690" y="558" class="note">Do not seal the rear: retain ventilation, plug clearance and loom strain relief.</text>
+  <text x="690" y="584" class="note">Use round OEM M3 holes; put fore/aft slots only in the M4 cradle-to-rail joints.</text>
+  <text x="690" y="610" class="note">Final carrier plane, corner radii and mounting coordinates: HOLD for received-unit M4 trace.</text>
+</svg>

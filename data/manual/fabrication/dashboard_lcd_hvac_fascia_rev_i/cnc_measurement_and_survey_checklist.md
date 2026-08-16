@@ -55,14 +55,16 @@ Every dimension is measured at least twice. A second person checks the origin, o
 17. Column shroud, stalks, boss, purchased wheel and hands-on controls through their complete tilt/rotation/operation swept envelopes.
 18. Knee/leg clearance envelope at pedals and normal driving position.
 
-### M4/M5 — purchased 9-inch LCD and its carrier
+### M4/M5 — purchased Pioneer DMH-AP6650BT and its carrier
 
-19. Manufacturer part number/drawing and measured module width, height, depth and corner radii.
-20. Active-image width/height and its four offsets from the module edges; verify the 228.6 mm diagonal.
+The seller and manufacturer publish an approximately 188 W × 108 H × 37 D mm main chassis. Treat that as a planning input only: it does not establish the display/bezel outline, visible aperture, mounts, connector package or complete installed projection.
+
+19. Confirm the received model/part number and controlled drawing if available; measure the display/bezel outer width, height, corner radii and projection separately from the main chassis.
+20. Active-image width/height and its four offsets from the display edges; verify the marketed 9-inch diagonal rather than assuming the provisional 198.91 × 111.89 mm rectangle.
 21. Required visible aperture/bezel overlap, touch dead border and acceptable edge reveal.
 22. Mounting-hole/thread/clip pattern, carrier thickness and installation/removal direction.
-23. Rear chassis, heat sink and connector positions; cable plug bodies, minimum bend radii and service loops.
-24. Ventilation/drain requirements and required clearance from metal, HVAC ducting and wiring.
+23. Confirm the approximately 188 × 108 × 37 mm main chassis and map the rear chassis, heat sink and every connector used by the installed loom—including phone USB, microphone, front/rear/subwoofer RCA, reverse-camera/trigger, power/speaker loom and amplifier remote where fitted—with plug bodies, minimum bend radii and service loops.
+24. Ventilation/drain requirements and required clearance from metal, HVAC ducting and wiring; commission initially on the receiver's four speaker channels while reserving a serviceable RCA/remote/power path for an optional compact external amplifier.
 
 ### M6 — seven selectors and separate hazard control
 

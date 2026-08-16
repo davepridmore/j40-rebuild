@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
   <title id="title">J40 bump stop vehicle measurement control</title>
-  <desc id="desc">Measurement diagram for J40 bump-stop rubber controlled by the May 29 removed samples: rubber through-holes, central fixture/channel interface, and vehicle bracket measurements.</desc>
+  <desc id="desc">J40 bump-stop measurement diagram showing photo-derived nominal dimensions, metal fixture-ear mounting holes, and the remaining direct-measurement controls.</desc>
   <rect width="900" height="540" fill="#f7f7f4"/>
   <style>
     .label { font: 15px Arial, sans-serif; fill: #222; }
@@ -28,7 +28,7 @@
     </marker>
   </defs>
 
-  <text x="34" y="42" class="title">Bump Stop Fabrication Control - Measure Samples, Fixture, And Vehicle</text>
+  <text x="34" y="42" class="title">Bump Stop Control - Photo Nominals Plus Direct Verification</text>
 
   <text x="58" y="88" class="label">Side view</text>
   <rect x="84" y="115" width="210" height="30" rx="3" class="rubber"/>
@@ -39,7 +39,7 @@
   <line x1="92" y1="380" x2="286" y2="380" class="guide"/>
   <path d="M318 145 L318 295" class="dim"/>
   <text x="330" y="226" class="label">H</text>
-  <text x="330" y="248" class="small">70 mm: 48304-60010</text>
+  <text x="330" y="248" class="small">~70 photo: long-family sample</text>
   <text x="330" y="264" class="small">60 mm: 48304-60020</text>
   <path d="M300 331 L300 380" class="dim"/>
   <text x="318" y="359" class="label">G</text>
@@ -47,37 +47,38 @@
   <line x1="190" y1="295" x2="190" y2="380" class="axis"/>
   <text x="203" y="350" class="small">strike-pad centreline</text>
 
-  <text x="496" y="88" class="label">Plan view at rubber through-holes / vehicle bracket</text>
-  <text x="496" y="108" class="small">Red holes are rubber-through-hole controls; silver shape is central fixture/channel</text>
-  <rect x="500" y="130" width="282" height="136" rx="8" class="rubber"/>
-  <rect x="585" y="160" width="112" height="76" rx="9" class="steel"/>
-  <text x="590" y="154" class="tiny">central fixture/channel projection</text>
+  <text x="496" y="88" class="label">Plan view at metal backing / fixture ears</text>
+  <text x="496" y="108" class="small">Red holes are in exposed metal ears; black is the narrower rubber body</text>
+  <rect x="500" y="160" width="282" height="76" rx="8" class="steel"/>
+  <rect x="558" y="130" width="166" height="136" rx="8" class="rubber"/>
+  <rect x="604" y="170" width="74" height="56" rx="7" class="part"/>
+  <text x="584" y="154" class="tiny">rubber body / central fixture-channel</text>
 
-  <circle cx="555" cy="198" r="15" class="hole"/>
-  <circle cx="727" cy="198" r="15" class="hole"/>
-  <line x1="538" y1="198" x2="572" y2="198" class="hole-axis"/>
-  <line x1="555" y1="181" x2="555" y2="215" class="hole-axis"/>
-  <line x1="710" y1="198" x2="744" y2="198" class="hole-axis"/>
-  <line x1="727" y1="181" x2="727" y2="215" class="hole-axis"/>
-  <text x="525" y="239" class="tiny">rubber through-hole 1</text>
-  <text x="685" y="239" class="tiny">rubber through-hole 2</text>
+  <circle cx="526" cy="198" r="15" class="hole"/>
+  <circle cx="757" cy="198" r="15" class="hole"/>
+  <line x1="509" y1="198" x2="543" y2="198" class="hole-axis"/>
+  <line x1="526" y1="181" x2="526" y2="215" class="hole-axis"/>
+  <line x1="740" y1="198" x2="774" y2="198" class="hole-axis"/>
+  <line x1="757" y1="181" x2="757" y2="215" class="hole-axis"/>
+  <text x="500" y="255" class="tiny">metal mounting ear 1</text>
+  <text x="688" y="255" class="tiny">metal mounting ear 2</text>
 
-  <path d="M555 105 L727 105" class="dim"/>
-  <text x="620" y="96" class="label">P</text>
-  <text x="586" y="119" class="small">hole pitch, centre to centre</text>
-  <path d="M555 284 L585 284" class="dim"/>
-  <text x="563" y="307" class="label">D</text>
-  <text x="500" y="326" class="small">D = rubber through-hole or fitted bolt/stud thread size</text>
-  <path d="M588 279 C596 248 578 217 560 203" class="callout"/>
+  <path d="M526 105 L757 105" class="dim"/>
+  <text x="606" y="96" class="label">P ~90 photo nominal</text>
+  <text x="588" y="119" class="small">metal-hole pitch, centre to centre</text>
+  <path d="M558 284 L724 284" class="dim"/>
+  <text x="585" y="307" class="small">rubber span ~65 photo nominal</text>
+  <text x="500" y="326" class="small">D / holder thread = direct caliper and thread-gauge measurement</text>
+  <path d="M548 315 C568 270 548 218 531 203" class="callout"/>
 
   <path d="M500 352 L782 352" class="dim"/>
-  <text x="633" y="377" class="label">BL</text>
+  <text x="580" y="377" class="label">metal fixture length ~110 photo nominal</text>
   <path d="M805 130 L805 266" class="dim"/>
-  <text x="819" y="204" class="label">BW</text>
+  <text x="819" y="204" class="label">BW measure</text>
 
   <rect x="54" y="440" width="792" height="82" rx="6" class="callout-box"/>
-  <text x="72" y="462" class="small">The May 29 removed samples now control both bump-stop construction: broad rounded/tapered rubber body, two rubber through-holes,</text>
-  <text x="72" y="480" class="small">central fixture/channel interface, and flat strike area. Trace or reuse the removed metal fixture separately.</text>
-  <text x="72" y="498" class="small">Release BL/BW/P/D/fixture-channel/X-Y/G/F from sample calipers, removed fixture, cleaned brackets, and axle strike pads.</text>
-  <text x="72" y="516" class="small">Height H: 70 +/-1 mm for BUMP-60010 long stops, 60 +/-1 mm for BUMP-60020 right front.</text>
+  <text x="72" y="462" class="small">Photo nominal (nearest 5 mm): long sample H ~70; metal fixture length ~110; rubber span ~65; metal-hole pitch P ~90.</text>
+  <text x="72" y="480" class="small">Use these for identification and first-fit screening only. Photo 20260531_171833 is unrelated and excluded.</text>
+  <text x="72" y="498" class="small">Directly release BW/D/thread/fixture-channel/X-Y/G/F from calipers, thread gauge, fixture, holder, bracket, and strike pad.</text>
+  <text x="72" y="516" class="small">Targets after release: H 70 +/-1 for BUMP-60010 long stops; H 60 +/-1 for BUMP-60020 right front.</text>
 </svg>

@@ -24,7 +24,7 @@
 
   <rect x="510" y="5" width="350" height="210" rx="18" class="cass"/><text x="685" y="204" text-anchor="middle" class="xs">REMOVABLE CENTRE CASSETTE — 0 mm DOWNWARD EXTENSION</text>
   <rect x="579.45" y="12" width="211.10" height="126.50" rx="3" class="screen"/><rect x="585.545" y="19.305" width="198.91" height="111.89" rx="2" class="active"/>
-  <text x="685" y="72" text-anchor="middle" class="t screenText">9-INCH LCD</text><text x="685" y="94" text-anchor="middle" class="s screenText">module 211.10 × 126.50</text><text x="685" y="115" text-anchor="middle" class="xs screenSubtext">active 198.91 × 111.89</text>
+  <text x="685" y="72" text-anchor="middle" class="s screenText">PIONEER DMH-AP6650BT</text><text x="685" y="94" text-anchor="middle" class="xs screenText">provisional face 211.10 × 126.50</text><text x="685" y="115" text-anchor="middle" class="xs screenSubtext">published chassis ≈188 × 108 × 37</text>
   <g>
     <circle cx="545" cy="177" r="15" class="selector"/><circle cx="585" cy="177" r="15" class="selector"/><circle cx="625" cy="177" r="15" class="selector"/><circle cx="665" cy="177" r="15" class="selector"/><circle cx="705" cy="177" r="15" class="selector"/><circle cx="745" cy="177" r="15" class="selector"/><circle cx="785" cy="177" r="15" class="selector"/><circle cx="825" cy="177" r="15" class="hazard"/>
     <text x="545" y="153" text-anchor="middle" class="xs">WIPERS</text><text x="585" y="153" text-anchor="middle" class="xs">LIGHTS</text><text x="625" y="153" text-anchor="middle" class="xs">SPOTS</text><text x="665" y="153" text-anchor="middle" class="xs">AUX</text><text x="705" y="153" text-anchor="middle" class="xs">BLOWER</text><text x="745" y="153" text-anchor="middle" class="xs">A/C</text><text x="785" y="153" text-anchor="middle" class="xs">FUEL</text><text x="825" y="153" text-anchor="middle" class="xs">HAZARD</text>
@@ -33,7 +33,7 @@
 
   <line x1="510" y1="5" x2="510" y2="-32" class="ext"/><line x1="860" y1="5" x2="860" y2="-32" class="ext"/><line x1="510" y1="-18" x2="860" y2="-18" class="dim"/><text x="685" y="-25" text-anchor="middle" class="s">350 candidate free centre field / cassette</text>
   <line x1="545" y1="177" x2="585" y2="177" class="dim"/><text x="565" y="171" text-anchor="middle" class="xs">40 pitch</text>
-  <line x1="579.45" y1="143" x2="579.45" y2="235" class="ext"/><line x1="790.55" y1="143" x2="790.55" y2="235" class="ext"/><line x1="579.45" y1="228" x2="790.55" y2="228" class="dim"/><text x="685" y="223" text-anchor="middle" class="s">211.10 LCD module</text>
+  <line x1="579.45" y1="143" x2="579.45" y2="235" class="ext"/><line x1="790.55" y1="143" x2="790.55" y2="235" class="ext"/><line x1="579.45" y1="228" x2="790.55" y2="228" class="dim"/><text x="685" y="223" text-anchor="middle" class="s">211.10 face placeholder</text>
   <line x1="0" y1="-12" x2="0" y2="-70" class="ext"/><line x1="1400" y1="-12" x2="1400" y2="-70" class="ext"/><line x1="0" y1="-48" x2="1400" y2="-48" class="dim"/><text x="700" y="-55" text-anchor="middle" class="s">1400 quotation plotting envelope — REPLACE WITH M1 TRACE</text>
   <text x="0" y="290" class="note">Dashed orange Ø75 circles are rear-mount targets only: do not machine them until M7 actual vent retention/coupon is signed.</text>
   <text x="0" y="312" class="note">Screen centre (685,75.25): X-centred on the free field (field centre 685,110), raised to clear the one-line controls.</text>

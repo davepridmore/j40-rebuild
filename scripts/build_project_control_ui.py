@@ -932,6 +932,8 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     "suspension_upgrade": [
         ("Capture measured suspension baseline", "Record ride height, shackle angles, and current travel/clearance before parts lock."),
         ("Lock complete upgrade kit", "Freeze springs, shocks, bushes, shackles, and hardware as one coherent package."),
+        ("Check vehicle fitment", "Confirm the selected suspension package fits the vehicle before workshop installation."),
+        ("Repair grinder damage", "Close the grinder-damage repair before the suspension carries workshop or road loads."),
         ("Execute install with loaded-torque procedure", "Install and torque pivot hardware at loaded ride height to avoid premature bushing failure."),
         ("Close alignment and road-validation gate", "Complete alignment and road checks, then log residual tuning items before signoff."),
     ],
@@ -947,6 +949,14 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Execute full functional checks", "Validate electrical, mechanical, and chassis functions end-to-end."),
         ("Close road-validation gate", "Road-check and log residual defects before declaring baseline complete."),
     ],
+}
+
+WORKSTREAM_COMPLETED_SEQUENCE_LABELS: dict[str, set[str]] = {
+    "suspension_upgrade": {
+        "Lock complete upgrade kit",
+        "Check vehicle fitment",
+        "Repair grinder damage",
+    },
 }
 
 WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
@@ -2030,9 +2040,54 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "image_tokens": ["suspension", "leaf", "spring", "shackle", "shock"],
             },
             {
-                "title": "Receive And Lock Complete Ironman Kit",
+                "title": "Kit Selection Locked",
                 "priority": "P0",
-                "remaining": "main kit plus front dampers",
+                "remaining": "complete",
+                "status": "completed",
+                "instruction": "The selected Ironman suspension package is locked; keep later receipt checks separate from the selection decision.",
+                "process_steps": [
+                    "Retain the selected Ironman part-number schedule as the controlled suspension package.",
+                    "Do not reopen alternate spring, damper, bush, shackle, or U-bolt buying without evidence that the selected package is incomplete or incorrect.",
+                ],
+                "tools": ["Controlled parts schedule"],
+                "supplies": ["Ironman order record"],
+                "hold_point": "Reopen the selection only if physical receipt or installation evidence proves a mismatch.",
+                "image_tokens": ["ironman", "suspension", "procurement"],
+            },
+            {
+                "title": "Vehicle Fitment Checked",
+                "priority": "P0",
+                "remaining": "complete",
+                "status": "completed",
+                "instruction": "Owner-confirmed vehicle fitment check is complete; installation, alignment, and road validation remain separate work.",
+                "process_steps": [
+                    "Preserve the fitment confirmation with the suspension workstream record.",
+                    "Use the normal installation checks for orientation, travel, hose slack, steering clearance, and bump-stop engagement.",
+                ],
+                "tools": ["Fitment record"],
+                "supplies": ["None"],
+                "hold_point": "A new mismatch found during physical installation must be recorded before work continues.",
+                "image_tokens": ["suspension", "leaf", "shock", "fitment"],
+            },
+            {
+                "title": "Grinder Damage Repaired",
+                "priority": "P0",
+                "remaining": "complete",
+                "status": "completed",
+                "instruction": "The grinder mistake is fixed and no longer blocks suspension installation.",
+                "process_steps": [
+                    "Retain the repaired area in the normal pre-install visual inspection.",
+                    "Touch in corrosion protection if workshop handling exposes bare metal.",
+                ],
+                "tools": ["Inspection light"],
+                "supplies": ["Primer/topcoat for normal touch-in if required"],
+                "hold_point": "Stop only if the normal pre-install check finds a new defect or damage.",
+                "image_tokens": ["suspension", "repair", "weld", "grinder"],
+            },
+            {
+                "title": "Verify Complete Ironman Kit Receipt",
+                "priority": "P0",
+                "remaining": "front damper receipt confirmation",
                 "instruction": "Treat the Ironman order as incomplete until the main kit and separate front 24635FE dampers are counted.",
                 "process_steps": [
                     "Lay out the shipment and photograph every box, label, part number, and hardware bag.",
@@ -6950,11 +7005,14 @@ def workstream_steps(
     )
 
     template_steps = WORKSTREAM_REQUIRED_SEQUENCE.get(clean(workstream_row.get("workstream_id")), [])
+    completed_template_labels = WORKSTREAM_COMPLETED_SEQUENCE_LABELS.get(
+        clean(workstream_row.get("workstream_id")), set()
+    )
     for index, (label, detail) in enumerate(template_steps):
         steps.append(
             {
                 "label": label,
-                "status": template_step_status(current_status, index),
+                "status": "completed" if label in completed_template_labels else template_step_status(current_status, index),
                 "detail": detail,
             }
         )

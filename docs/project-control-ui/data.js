@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-16T21:31:47+05:00",
+  "generated_at": "2026-08-16T21:53:53+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -56,16 +56,16 @@ window.J40_DASHBOARD_DATA = {
     "workstream_evidence_images": 1264,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 70,
-    "parts_ordered_pending_delivery": 8,
+    "parts_ordered_pending_delivery": 9,
     "urgent_part_actions": 16,
     "sample_fabrication_kits": 4,
     "status_update_gmail_records": 40,
     "status_update_whatsapp_new_rows": 207,
     "status_update_manual_rows": 9,
     "status_update_delivery_watchlist_rows": 15,
-    "capture_data_tasks": 125,
-    "capture_data_tasks_now": 107,
-    "supply_rows_tracked": 298,
+    "capture_data_tasks": 124,
+    "capture_data_tasks_now": 106,
+    "supply_rows_tracked": 299,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
     "whatsapp_j40_media_items": 436,
@@ -17608,7 +17608,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "1",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -17623,12 +17622,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm pending caliper/vehicle release; validate the received part against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike area, cleaned left-front chassis-side bracket, and axle strike pad before installation",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; usable photos show a metal-backed molded-rubber body with two exposed mounting ears central fixture/channel broad rounded/tapered body and flat strike area; photo-survey values are approximately 110 mm fixture length 65 mm rubber span along the mounting-hole axis and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
-          "critical_measurements": "Caliper the received stop and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on the current chassis-side bracket and axle strike pad before fit",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper the received stop and fixture; measure transverse width hole diameter/thread plate/channel X-Y G and F. Holder is internally threaded; confirm pitch engagement non-bottoming and bolt grade before fit.",
+          "fit_and_test": "Metal mounting holes align with holder/bracket; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stop contacts before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "May 31 photos remain the shape/fixture acceptance master. July 12 photos record a received stop set. Clarification 2026-07-22: this stop is not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as an unrelated laptop image. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -17640,18 +17639,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -17750,7 +17737,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "1",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -17765,12 +17751,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump testing releases another height; validate the received part against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike area, cleaned right-front chassis-side bracket, and axle strike pad before installation",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump testing releases another height; the photographed 70 mm long-family sample does not release short height; shared photo-survey screening values are approximately 110 mm fixture length 65 mm rubber span and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
-          "critical_measurements": "Caliper the received stop and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on the current right-front chassis-side bracket and axle strike pad; do not accept a 70 mm long stop here without a deliberate full-bump clearance release",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper the right-front stop and fixture; measure transverse width hole diameter/thread plate/channel X-Y G and F. Holder is internally threaded; confirm pitch engagement non-bottoming and bolt grade; do not substitute the 70 mm long stop without full-bump release.",
+          "fit_and_test": "Metal mounting holes align with holder/bracket; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stop contacts before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Right-front height remains 60 mm until vehicle release. July 12 photos record a received stop set. Clarification 2026-07-22: this stop is not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Right-front height remains 60 mm. Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as unrelated. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -17782,18 +17768,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -17892,7 +17866,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "2",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -17907,12 +17880,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; validate the received pair against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike areas, cleaned rear chassis-side brackets, and axle strike pads before installation",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; usable photos show a metal-backed molded-rubber body with two exposed mounting ears central fixture/channel broad rounded/tapered body and flat strike area; photo-survey values are approximately 110 mm fixture length 65 mm rubber span and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; matched rear pair; no tyre rubber or simple cut blocks",
-          "critical_measurements": "Caliper both received rear stops and removed fixtures; measure BL/BW/P/D/fixture-channel/X-Y/G/F at both rear chassis-side stations after the Ironman ride-height plan",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper both received rear stops and fixtures; measure transverse width hole diameter/thread plate/channel X-Y G and F at each station. Holders are internally threaded; confirm pitch engagement non-bottoming and bolt grade before fit.",
+          "fit_and_test": "Metal mounting holes align with holders/brackets; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stops contact before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Use as a matched rear/back pair after final ride-height and axle-travel checks. July 12 photos record a received stop set. Clarification 2026-07-22: these rear stops are not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Use as a matched rear pair after ride-height and axle-travel checks. Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as unrelated. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -17924,18 +17897,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -18908,7 +18869,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "1",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -18923,12 +18883,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm pending caliper/vehicle release; validate the received part against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike area, cleaned left-front chassis-side bracket, and axle strike pad before installation",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; usable photos show a metal-backed molded-rubber body with two exposed mounting ears central fixture/channel broad rounded/tapered body and flat strike area; photo-survey values are approximately 110 mm fixture length 65 mm rubber span along the mounting-hole axis and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
-          "critical_measurements": "Caliper the received stop and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on the current chassis-side bracket and axle strike pad before fit",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper the received stop and fixture; measure transverse width hole diameter/thread plate/channel X-Y G and F. Holder is internally threaded; confirm pitch engagement non-bottoming and bolt grade before fit.",
+          "fit_and_test": "Metal mounting holes align with holder/bracket; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stop contacts before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "May 31 photos remain the shape/fixture acceptance master. July 12 photos record a received stop set. Clarification 2026-07-22: this stop is not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as an unrelated laptop image. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -18940,18 +18900,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -19050,7 +18998,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "1",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -19065,12 +19012,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump testing releases another height; validate the received part against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike area, cleaned right-front chassis-side bracket, and axle strike pad before installation",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm unless full-bump testing releases another height; the photographed 70 mm long-family sample does not release short height; shared photo-survey screening values are approximately 110 mm fixture length 65 mm rubber span and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber or simple cut block",
-          "critical_measurements": "Caliper the received stop and removed fixture; measure BL/BW/P/D/fixture-channel/X-Y/G/F on the current right-front chassis-side bracket and axle strike pad; do not accept a 70 mm long stop here without a deliberate full-bump clearance release",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper the right-front stop and fixture; measure transverse width hole diameter/thread plate/channel X-Y G and F. Holder is internally threaded; confirm pitch engagement non-bottoming and bolt grade; do not substitute the 70 mm long stop without full-bump release.",
+          "fit_and_test": "Metal mounting holes align with holder/bracket; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stop contacts before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Right-front height remains 60 mm until vehicle release. July 12 photos record a received stop set. Clarification 2026-07-22: this stop is not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Right-front height remains 60 mm. Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as unrelated. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -19082,18 +19029,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -19192,7 +19127,6 @@ window.J40_DASHBOARD_DATA = {
           "quantity": "2",
           "photo_evidence": [
             "20260531_171824_gp_HmSS2ChQ",
-            "20260531_171833_gp_Vw96I7Mg",
             "20260531_171859_gp_i6bRyQKA",
             "20260531_171903_gp_jNI1gfYA",
             "20260531_171935_gp_BYfhqiWg",
@@ -19207,12 +19141,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "received_2026-07-12",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; validate the received pair against the May 31 molded-rubber shape, two through-holes, central fixture/channel interface, broad rounded/tapered body, flat strike areas, cleaned rear chassis-side brackets, and axle strike pads before installation",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each and rear pair height match <=1 mm; usable photos show a metal-backed molded-rubber body with two exposed mounting ears central fixture/channel broad rounded/tapered body and flat strike area; photo-survey values are approximately 110 mm fixture length 65 mm rubber span and 90 mm hole pitch",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; matched rear pair; no tyre rubber or simple cut blocks",
-          "critical_measurements": "Caliper both received rear stops and removed fixtures; measure BL/BW/P/D/fixture-channel/X-Y/G/F at both rear chassis-side stations after the Ironman ride-height plan",
-          "fit_and_test": "Rubber through-holes align with fixture/bracket, bolts/studs pass by hand, central fixture/channel is captured without tearing or rocking, stop contacts before shock/tyre/spring/brake-hose hard limit, and 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
+          "critical_measurements": "Photo values are identity/fit screening only. Caliper both received rear stops and fixtures; measure transverse width hole diameter/thread plate/channel X-Y G and F at each station. Holders are internally threaded; confirm pitch engagement non-bottoming and bolt grade before fit.",
+          "fit_and_test": "Metal mounting holes align with holders/brackets; bolts pass by hand without forcing or bottoming; fixture/channel is captured without tearing or rocking; stops contact before shock/tyre/spring/brake-hose hard limit; 50 percent compression test gives >=90 percent height recovery after 30 min; rear hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Use as a matched rear/back pair after final ride-height and axle-travel checks. July 12 photos record a received stop set. Clarification 2026-07-22: these rear stops are not installed or scheduled; the installation update concerned the separate vehicle bumpers.",
+          "notes": "Use as a matched rear pair after ride-height and axle-travel checks. Photo readings are to roughly the nearest 5 mm and are not manufacturing tolerances. 20260531_171833 is excluded as unrelated. July 12 photos record the received stop set.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -19224,18 +19158,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -19985,17 +19907,17 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BUMP-60010-LONG",
           "part": "Rear/back bump-stop rubbers - same front shape longer",
-          "vehicle_location": "Axle-to-chassis bump-stop brackets: rear-left and rear-right long-family stations, plus any Toyota-controlled front-left long station if confirmed.",
+          "vehicle_location": "Axle-to-chassis bump-stop brackets: rear-left and rear-right long-family stations, plus the Toyota-controlled front-left long station.",
           "required_qty": "3",
           "optional_spare_qty": "0",
-          "spec": "May 31 exact front-stop molded rubber body made longer: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
-          "envelope_3d_mm": "70 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
-          "edge_profile": "Same rounded/asymmetric/tapered front-stop body stretched taller; no sharp rectangular block and no flat-plate placeholder",
-          "holes_or_inserts": "Rubber through-hole pitch/diameter, central fixture/interface, base footprint, and strike offset come from May 31 front-stop photos, May 29 fixture-support photos, removed metal fixture, and vehicle measurements",
+          "spec": "Usable May 31 front-stop molded rubber body made longer: metal backing/fixture with two exposed mounting ears, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+          "envelope_3d_mm": "70 H external height; photo-survey screening values approximately 110 fixture length x 65 molded-rubber span along mounting-hole axis with 90 mounting-hole pitch; transverse width hole diameter/thread fixture channel and strike-face X/Y require direct measurement",
+          "edge_profile": "Same rounded/asymmetric/tapered front-stop body stretched taller; no sharp rectangular block",
+          "holes_or_inserts": "Mounting pitch is photo-provisional only; caliper hole diameter and identify the internally threaded holder before selecting hardware; confirm central fixture/interface base footprint and strike offset directly",
           "material": "NR/SBR bump-stop rubber Shore A 70 +/-5; reproduce any sample-proven insert/fixture retention method",
           "release_state": "first_article_required",
-          "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171833_gp_Vw96I7Mg|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
-          "notes": "May 31 front-stop photos are the active shape master. Rear/back stops use the same shape made longer; May 29 photos support fixture/interface only.",
+          "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
+          "notes": "Photo readings are nominal to about the nearest 5 mm and are not manufacturing tolerances. Rear/back stops use the same shape made longer. 20260531_171833 is excluded as an unrelated laptop image.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -20007,18 +19929,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -20101,14 +20011,14 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Exact May 31 front-stop molded rubber construction at the short height: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
-          "envelope_3d_mm": "60 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+          "spec": "Same metal-backed May 31 front-stop molded rubber construction at the short height: two exposed mounting ears, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+          "envelope_3d_mm": "60 H external height remains Toyota-family control; the photographed 70 sample does not release short height; shared photo-survey screening values are approximately 110 fixture length x 65 rubber span with 90 mounting-hole pitch pending direct verification",
           "edge_profile": "Same rounded/tapered front-stop family at the short height",
-          "holes_or_inserts": "Same rubber-through-hole, fixture/channel, base, and contact rules as long stop; right-front vehicle measurements control final contact offset",
+          "holes_or_inserts": "Same metal mounting-ear fixture/channel base and contact rules as long stop; caliper hole diameter identify holder thread and confirm right-front contact offset directly",
           "material": "Same compound family as BUMP-60010-LONG; reproduce any sample-proven insert/fixture retention method",
           "release_state": "first_article_required",
-          "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171833_gp_Vw96I7Mg|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
-          "notes": "May 31 front-stop photos are the active shape master. Right-front short height remains externally controlled by 48304-60020 references until vehicle full-bump checks confirm final release.",
+          "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
+          "notes": "Photo readings are nominal to about the nearest 5 mm and are not manufacturing tolerances. Right-front height remains externally controlled by 48304-60020. 20260531_171833 is excluded as unrelated.",
           "evidence_images": [
             {
               "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -20120,18 +20030,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "suspension_bump_stop_removed_samples",
               "stage": "rubber_recreation_measurement",
               "media_id": "20260531_171824_gp_HmSS2ChQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-              "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-              "captured_date": "2026-05-31",
-              "captured_time": "17:18:33",
-              "media_type": "photo",
-              "component_group": "chassis_underside",
-              "specific_component": "suspension_bump_stop_removed_samples",
-              "stage": "rubber_recreation_measurement",
-              "media_id": "20260531_171833_gp_Vw96I7Mg",
               "matched_tokens": []
             },
             {
@@ -20283,13 +20181,13 @@ window.J40_DASHBOARD_DATA = {
           "required_for_current_build": "YES",
           "route": "longman_custom_rubber_order",
           "quantity_to_order": "Three supplier-facing Longman order groups: 1) simple 80 x 80 body pads - 30 x one active 80 x 80 x 24 body pad; smaller 22 mm body-rubber line removed; 2) front support/body-support rubbers - 2 x FS-OVAL plus 1 x FS-STRIP-L and 1 x FS-STRIP-R; 3) bump stops - 3 x BUMP-60010-LONG and 1 x BUMP-60020-SHORT using the May 31 exact front-stop shape with rear/back stops made longer; full-width flat liners still on hold until identified",
-          "ordering_spec": "Use docs/longman-rubber-order-spec-20260508.md and data/manual/longman_rubber_order_specs.csv as the current order-line control. Present the supplier request as three order things, while keeping the detailed part IDs for drawing and first-article control. Main body pads are one square flat custom isolator size with explicit 3D envelope of 80 L x 80 W x 24 H, R1.5 plan corners, top/bottom edge break or chamfer, and 18.0 mm through bore for Toyota 90560-12009 style sleeves. The smaller 22 mm BM-ISO-SM line is removed from the active order. The extra body-pad pieces are dry-fit allowance for stations that prove they need two simple 80 x 80 pads stacked; they are not a release for ribbed, sculpted, or station-specific body-rubber profiles. FS-OVAL is a 96 L x 64 W x 15 T capsule with R32 ends and 0.5-1.0 edge break. FS-STRIP-L/R are released as plain underfloor body-support strips at 420 L x 38 W x 8 T with R1.5 corners and 0.5-1.0 edge break. Bump-stop rubber follows the May 31 exact front-stop photos: rubber through-holes, central fixture/channel interface, broad rounded/tapered body, and flat strike area; rear/back stops are the same shape made longer; final dimensions come from front-stop photos/sample, fixture, and vehicle brackets.",
+          "ordering_spec": "Use docs/longman-rubber-order-spec-20260508.md and data/manual/longman_rubber_order_specs.csv as the current order-line control. Present the supplier request as three order things, while keeping the detailed part IDs for drawing and first-article control. Main body pads are one square flat custom isolator size with explicit 3D envelope of 80 L x 80 W x 24 H, R1.5 plan corners, top/bottom edge break or chamfer, and 18.0 mm through bore for Toyota 90560-12009 style sleeves. The smaller 22 mm BM-ISO-SM line is removed from the active order. The extra body-pad pieces are dry-fit allowance for stations that prove they need two simple 80 x 80 pads stacked; they are not a release for ribbed, sculpted, or station-specific body-rubber profiles. FS-OVAL is a 96 L x 64 W x 15 T capsule with R32 ends and 0.5-1.0 edge break. FS-STRIP-L/R are released as plain underfloor body-support strips at 420 L x 38 W x 8 T with R1.5 corners and 0.5-1.0 edge break. Bump-stop rubber follows the May 31 photos: broad rounded/tapered body on a metal backing/fixture with exposed mounting ears and flat strike area. Photo-survey nominals are 70 mm long-family sample height, 110 mm metal fixture length, 65 mm rubber span along the hole axis, and 90 mm metal-ear mounting-hole pitch, all to roughly the nearest 5 mm for identification and first-fit screening. Rear/back stops use the same family made longer; the short right-front height remains separately controlled at 60 mm.",
           "material_spec": "New automotive mount-grade black rubber; EPDM or NR/SBR; Shore A 60 +/-5 for body/front-support pieces; bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; no tyre rubber, crumb rubber, mixed offcuts, used rubber, or unmarked salvage rubber",
-          "measurements_required_before_order": "Confirm flat footprint, free height, Toyota 90560-12009 style sleeve fit, front oval hole spacing, installed stack height, only any local side trim for the strip pair, any proven two-pad body-mount station, and May 31 front-stop/fixture/vehicle BL/BW/P/D/fixture-channel/X-Y/G/F values.",
+          "measurements_required_before_order": "Confirm flat footprint, free height, Toyota 90560-12009 style sleeve fit, front oval hole spacing, installed stack height, only any local side trim for the strip pair, any proven two-pad body-mount station, and bump-stop metal-ear hole diameter, internally threaded holder size/pitch, fixture width/thickness/channel, bracket fit, X/Y/G/F values, bolt engagement and non-bottoming. The photo-derived 110/65/90/70 mm values are not manufacturing tolerances.",
           "pre_order_gate": "Longman can quote the three order groups now: one active 80 x 80 x 24 body-pad size with extra dry-fit stacking spares, front support/body-support rubbers, and May 31 front-stop-based bump-stop first articles. Only full-width liners remain on identification hold.",
           "source_rows": "chassis_rubber_requirements CR-MAIN-001/002/CR-FRONT-001/002/003/004; longman_rubber_order_specs BM-ISO-LG/FS-OVAL/FS-STRIP-L/FS-STRIP-R/BODY-LINER-FULL-WIDTH-HOLD",
           "linked_files": "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; docs/chassis-rubbers-workstream.md; data/manual/chassis_rubber_requirements.csv",
-          "notes": "Current order is simplified to three supplier-facing things: one 80 mm body-pad size, front support/body-support rubbers, and bump stops. The smaller 22 mm body-rubber line is removed, extra simple 80 mm pads cover dry-fit stacking only where needed, the strip release is a custom flat underfloor support liner pair, and bump-stop controls now come from the May 31 exact front-stop photos plus the removed metal fixture and vehicle bracket measurements."
+          "notes": "Current order is simplified to three supplier-facing things: one 80 mm body-pad size, front support/body-support rubbers, and bump stops. The smaller 22 mm body-rubber line is removed, extra simple 80 mm pads cover dry-fit stacking only where needed, the strip release is a custom flat underfloor support liner pair, and bump-stop controls now come from the May 31 usable images plus the removed metal fixture and vehicle bracket measurements; exclude unrelated image 20260531_171833_gp_Vw96I7Mg."
         },
         {
           "rubber_order_id": "RUB-002",
@@ -20683,10 +20581,10 @@ window.J40_DASHBOARD_DATA = {
           "required_for_current_build": "CONDITIONAL",
           "route": "fabricate_by_vehicle_bracket_measurement",
           "quantity_to_order": "Front/rear bump stops if missing, cracked, oil-soaked, too decayed to copy, or too short/tall after Ironman ride-height check",
-          "ordering_spec": "Use docs/bump-stop-fabrication-spec-20260504.md. May 31 exact front-stop photos control construction: broad rounded/tapered rubber body, two through-holes in the rubber, central fixture/channel interface, and flat strike area. Rear/back stops use the same shape made longer. Long stop 48304-60010 positions are 70 mm free height unless vehicle testing says otherwise. Short right-front 48304-60020 is 60 mm free height. Rubber body footprint, through-hole pattern, fixture/channel detail, contact face offset, loaded gap, and full-bump clearance are released from the front-stop photos/sample, removed fixture, actual vehicle brackets, and strike pads.",
+          "ordering_spec": "Use docs/bump-stop-fabrication-spec-20260504.md. May 31 usable photos control construction: broad rounded/tapered rubber body on a metal backing/fixture with two exposed mounting ears and a flat strike area. Photo-derived nominal dimensions are 70 mm long-family sample height, 110 mm metal fixture length, 65 mm molded-rubber span along the mounting-hole axis, and 90 mm metal-ear hole pitch. These are identification and first-fit values to roughly the nearest 5 mm, not manufacturing tolerances. Rear/back stops use the same family made longer. Long stop 48304-60010 positions remain 70 mm free height unless vehicle testing says otherwise; short right-front 48304-60020 remains 60 mm. Exclude unrelated laptop image 20260531_171833_gp_Vw96I7Mg.",
           "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 with sample-proven fixture/insert retention where present; matched rear pair; do not mix left/right heights",
-          "measurements_required_before_order": "Caliper May 31 front-stop sample/photos and removed fixture; measure cleaned bracket BL/BW, rubber through-hole pitch P, hole/thread D, central fixture/channel, strike-pad X/Y offset, loaded gap G, and full-bump limiting clearance F at each station",
-          "pre_order_gate": "Inspect after Ironman kit is received and ride-height plan is known; do not use the old rubber as final dimension master, but do use the May 31 front-stop photos as construction evidence.",
+          "measurements_required_before_order": "Directly measure metal-ear hole diameter, internally threaded holder size/pitch, metal fixture width/thickness/channel, cleaned bracket fit, strike-pad X/Y offset, loaded gap G and full-bump limiting clearance F at each station; confirm bolt engagement and non-bottoming. Do not infer fastener grade from yellow zinc colour.",
+          "pre_order_gate": "Inspect after Ironman kit is received and ride-height plan is known; use the photo nominals for identification and first-article screening only, then release manufacture and installation from direct measurements and vehicle testing.",
           "source_rows": "parts row 148; suspension Ironman workstream; bump-stop fabrication spec",
           "linked_files": "data/manual/workbook_tabs/parts.csv; docs/bilal-ganj-detailed-size-specs.md; docs/bump-stop-fabrication-spec-20260504.md; data/manual/bump_stop_fabrication_specs.csv",
           "notes": "Do not buy universal stops or 70 mm right-front aftermarket stops until suspension height and axle travel are understood."
@@ -27264,7 +27162,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
           "release_position": "Longman quote pack is presented as 3 supplier-facing things: one 80 x 80 x 24 body-pad size, front support/body-support rubbers, and bump stops. The smaller 22 mm body-rubber line is removed. Detailed controls remain the retained body-pad control, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops updated to the May 31 exact front-stop construction, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. Supplier request is 3 things; detailed SVG/DXF controls remain for the retained 80 x 80 x 24 body pad, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing. Bump-stop design now follows the May 31 exact front-stop photos: rubber through-holes, central fixture/channel interface, broad rounded/tapered body, rear/back same shape longer, and vehicle-measured final dimensions. | July 10 photo intake adds square/round rubber pads, metal-cup isolator sample, rectangular bumpers/isolators, and bolt/spring/rubber stack samples. Measure installed station, OD/ID/thickness, cup/sleeve/washer geometry, and hardness before changing the Longman order; bill/cost source is still missing. | Bilal Ganj Urdu receipt 2026-07-10 confirms rubber-line costs: cover foam rubber x4 PKR 10000 and body packing x2 PKR 3000. Use these as purchased sample/part evidence, not final fitment release without station labels and dimensions.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. Supplier request is 3 things; detailed SVG/DXF controls remain for the retained 80 x 80 x 24 body pad, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing. The May 31 photo survey shows a broad rounded/tapered rubber body on a metal backing/fixture with exposed mounting ears: approximately 70 mm long-family sample height, 110 mm metal fixture length, 65 mm rubber span along the hole axis, and 90 mm metal-ear hole pitch. These are identification and first-fit values to roughly the nearest 5 mm; directly measure hole diameter, internally threaded holder size/pitch, fixture width/thickness/channel and vehicle X/Y/G/F before manufacturing or drilling. Exclude 20260531_171833_gp_Vw96I7Mg because it is an unrelated laptop image. Rear/back uses the same family made longer; the separately controlled right-front height remains 60 mm. | July 10 photo intake adds square/round rubber pads, metal-cup isolator sample, rectangular bumpers/isolators, and bolt/spring/rubber stack samples. Measure installed station, OD/ID/thickness, cup/sleeve/washer geometry, and hardness before changing the Longman order; bill/cost source is still missing. | Bilal Ganj Urdu receipt 2026-07-10 confirms rubber-line costs: cover foam rubber x4 PKR 10000 and body packing x2 PKR 3000. Use these as purchased sample/part evidence, not final fitment release without station labels and dimensions.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -27445,7 +27343,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 260917,
+            "bytes": 263454,
             "file_count": 37
           },
           "file_count": 37
@@ -35977,7 +35875,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28969947,
+            "bytes": 28975973,
             "file_count": 17
           },
           "file_count": 17
@@ -37166,7 +37064,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28969947,
+            "bytes": 28975973,
             "file_count": 17
           },
           "file_count": 17
@@ -54352,6 +54250,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected old/new molded radiator-hose comparison. Treat as the lower/main radiator candidate until both ends and the molded sweep are confirmed during dry-fit.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -54377,6 +54276,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected new black overflow hose beside the aged transparent original. Confirm nipple fit and coolant-compatible EPDM before installation.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -54403,6 +54303,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected old/new comparisons for the two medium heater or breather routes. Match each by both endpoints and diameter before fitting.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -54440,6 +54341,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected overview shows the replacement formed metal coolant tubes beside the retained old route pieces. Final bend clocking and endpoints still require dry-fit.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -54465,6 +54367,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected intake overview shows the replacement rubber connector pieces beside the older hose set. Match each connector to its old sample before trimming.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -54492,6 +54395,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "comparison_note": "Selected ARCHOR DN10 old/new comparison plus full-length and marking views. Confirm vacuum and oil compatibility; the visible rating does not release it for coolant or diesel.",
           "source_ref": [
+            "data/raw/imports/google_photos/20260816T203637/manifest.csv",
             "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
@@ -83193,16 +83097,16 @@ window.J40_DASHBOARD_DATA = {
       "id": "suspension_upgrade",
       "title": "Suspension",
       "phase": "06b_suspension_upgrade",
-      "status": "post_weld_validation_front_dampers_and_bump_stop_fit_pending",
+      "status": "in_progress_front_damper_receipt_and_install_pending",
       "priority": "high",
       "primary_location": "workshop",
       "owner_mode": "pro_led",
       "depends_on": [
         "chassis_fixing"
       ],
-      "next_action": "Inspect and re-protect the reported-complete grinder-cut repair, confirm the 24635FE front damper pair and kit contents, prepare/paint the bump-stop metal fixtures, then install the Ironman kit and direct-bolt bump stops; final pivot torque at normal ride height, align and recheck at 50 km / 500 km.",
+      "next_action": "With the kit specification locked, vehicle fitment checked, and grinder damage repaired, confirm the separate 24635FE front damper pair and complete kit contents; then prepare/paint the bump-stop metal fixtures, install the Ironman kit and direct-bolt bump stops, torque pivots at normal ride height, align, and recheck at 50 km / 500 km.",
       "exit_gate": "Upgraded suspension and bump stops are contents-checked installed aligned road-tested and rechecked with no safety-critical defects or full-bump interference",
-      "notes": "The main PKR 575,000 Ironman kit is received; the 24635FE front damper pair remains to be physically confirmed. Verify TOY001B x2, TOY002B x2, 24635FE x2, 24636FE x2, 415UBK x4, 713UK, 343LH/RH, 346 x2 and 3523 before install. Repaired grinder damage still needs post-weld inspection and geometry/coating signoff. New bump-stop attachment decision: remove/protect rubber, de-rust the metal pieces, 2K epoxy-prime and chassis-black topcoat, cure, then assemble bolt head -> M8 spring washer -> bump-stop backing plate -> threaded chassis holder, with no nut. Confirm bolt length does not bottom, keep drains clear, avoid deforming the plate and match both sides. Final spring/shackle pivot torque only at normal ride height with body/working weight.",
+      "notes": "Owner update 2026-08-16 confirms the suspension kit selection is locked, vehicle fitment has been checked, and the grinder mistake has been fixed. The main PKR 575,000 Ironman kit is received; the 24635FE front damper pair remains to be physically confirmed. Verify TOY001B x2, TOY002B x2, 24635FE x2, 24636FE x2, 415UBK x4, 713UK, 343LH/RH, 346 x2 and 3523 before install. Retain a normal pre-install visual and corrosion-protection check at the repaired area, but do not show the repair or fitment as an open blocker. New bump-stop attachment decision: remove/protect rubber, de-rust the metal pieces, 2K epoxy-prime and chassis-black topcoat, cure, then assemble bolt head -> M8 spring washer -> bump-stop backing plate -> threaded chassis holder, with no nut. Confirm bolt length does not bottom, keep drains clear, avoid deforming the plate and match both sides. Final spring/shackle pivot torque only at normal ride height with body/working weight.",
       "evidence_source": [
         "whatsapp_akber",
         "akber_khan-00855",
@@ -83214,7 +83118,8 @@ window.J40_DASHBOARD_DATA = {
         "user_update_2026-07-22_axle_grinder_cut_repair_reported_complete",
         "comms_review_2026-07-22_axle_repair_bumpers",
         "docs/bump-stop-fabrication-spec-20260504.md",
-        "codex_history_20260816_bump_stop_and_ironman_decisions"
+        "codex_history_20260816_bump_stop_and_ironman_decisions",
+        "user_update_2026-08-16_suspension_kit_fitment_repair_status"
       ],
       "images": [
         {
@@ -83608,34 +83513,34 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "suspension_grinder_damage_weld_repair_20260712",
           "component_group": "suspension_upgrade",
-          "current_status": "repair_reported_successful_post_weld_validation_pending",
-          "planned_action": "Inspect and photograph the successfully repaired suspension grinder-cut area; confirm weld condition and bracket/hanger geometry, clean and re-prime the repair, and release suspension installation only after photo/fitment signoff.",
-          "evidence_ref": "user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|user_update_2026-07-29_structural_front_bumper_winch_rear_bumper_status",
-          "notes": "Owner update 2026-07-29 confirms the suspension cut was successfully fixed. Physical repair is complete; safety closeout still requires post-weld inspection, geometry confirmation, corrosion-protection restoration and photo/fitment signoff before final suspension installation, alignment or road validation."
+          "current_status": "completed",
+          "planned_action": "Closed: the grinder mistake has been repaired and fitment has been checked. Retain the repaired area in the normal pre-install visual and corrosion-protection check.",
+          "evidence_ref": "user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|user_update_2026-07-29_structural_front_bumper_winch_rear_bumper_status|user_update_2026-08-16_suspension_kit_fitment_repair_status",
+          "notes": "Owner update 2026-08-16 confirms the grinder mistake is fixed and the fitment check is complete. The repair is no longer an open suspension-install blocker; ordinary pre-install visual and coating checks remain part of workmanship QA."
         },
         {
           "component_job_id": "suspension_upgrade_fitment_and_alignment",
           "component_group": "suspension_upgrade",
-          "current_status": "blocked_on_welder_repair_before_install",
-          "planned_action": "Hold final suspension installation/alignment until the experienced welder corrects the angle-grinder damage, the repair is inspected/primed, and spring hanger/bracket geometry is confirmed; then proceed with torque-under-load, alignment, and road rechecks.",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream|user_update_2026-07-12_experienced_welder_chassis_front_prep",
-          "notes": "Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled. | User update 2026-07-12: suspension install is now gated by the experienced-welder repair of the grinder mistake."
+          "current_status": "fitment_checked_installation_alignment_pending",
+          "planned_action": "Fitment check is complete. Confirm remaining kit receipt and installation controls, then proceed with loaded-ride-height torque, alignment, and 50 km / 500 km road rechecks.",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-08-16_suspension_kit_fitment_repair_status",
+          "notes": "Owner update 2026-08-16 closes the fitment-check and grinder-repair blockers. Final installation, loaded torque, alignment, and road validation remain open; complete-kit receipt still requires physical confirmation of the separate 24635FE front damper pair."
         },
         {
           "component_job_id": "suspension_upgrade_spec_and_kit_lock",
           "component_group": "suspension_upgrade",
-          "current_status": "closed_ordered_kit",
-          "planned_action": "Closed: Ironman kit path is already ordered, and geometry is treated as effectively the same as the current setup. No separate ride-height/geometry fitment lock remains.",
-          "evidence_ref": "whatsapp_akber|akber_khan-00855|akber_khan-00858|docs_suspension_workstream",
-          "notes": "User update 2026-05-04: remove redundant Ironman geometry actions. Continue with receipt check, torque sheet, safe support, hanger inspection, alignment, and recheck records through suspension_upgrade_fitment_and_alignment."
+          "current_status": "completed",
+          "planned_action": "Closed: Ironman kit selection is locked and vehicle fitment has been checked. No separate ride-height/geometry fitment lock remains.",
+          "evidence_ref": "whatsapp_akber|akber_khan-00855|akber_khan-00858|docs_suspension_workstream|user_update_2026-08-16_suspension_kit_fitment_repair_status",
+          "notes": "Owner update 2026-08-16 confirms the suspension kit is locked and fitment has been checked. Continue with receipt check, torque sheet, safe support, hanger inspection, installation, alignment, and recheck records through suspension_upgrade_fitment_and_alignment."
         }
       ],
       "issue_jobs": [],
       "steps": [
         {
           "label": "Execute current workstream action",
-          "status": "post_weld_validation_front_dampers_and_bump_stop_fit_pending",
-          "detail": "Inspect and re-protect the reported-complete grinder-cut repair, confirm the 24635FE front damper pair and kit contents, prepare/paint the bump-stop metal fixtures, then install the Ironman kit and direct-bolt bump stops; final pivot torque at normal ride height, align and recheck at 50 km / 500 km."
+          "status": "in_progress_front_damper_receipt_and_install_pending",
+          "detail": "With the kit specification locked, vehicle fitment checked, and grinder damage repaired, confirm the separate 24635FE front damper pair and complete kit contents; then prepare/paint the bump-stop metal fixtures, install the Ironman kit and direct-bolt bump stops, torque pivots at normal ride height, align, and recheck at 50 km / 500 km."
         },
         {
           "label": "Capture measured suspension baseline",
@@ -83644,8 +83549,18 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Lock complete upgrade kit",
-          "status": "queued",
+          "status": "completed",
           "detail": "Freeze springs, shocks, bushes, shackles, and hardware as one coherent package."
+        },
+        {
+          "label": "Check vehicle fitment",
+          "status": "completed",
+          "detail": "Confirm the selected suspension package fits the vehicle before workshop installation."
+        },
+        {
+          "label": "Repair grinder damage",
+          "status": "completed",
+          "detail": "Close the grinder-damage repair before the suspension carries workshop or road loads."
         },
         {
           "label": "Execute install with loaded-torque procedure",
@@ -83674,18 +83589,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Component Task \u00b7 Suspension Upgrade Fitment And Alignment",
-          "status": "blocked_on_welder_repair_before_install",
-          "detail": "Hold final suspension installation/alignment until the experienced welder corrects the angle-grinder damage, the repair is inspected/primed, and spring hanger/bracket geometry is confirmed; then proceed with torque-under-load, alignment, and road rechecks. Notes: Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled. | User update 2026-07-12: suspension install is now gated by the experienced-welder repair of the grinder mistake."
-        },
-        {
-          "label": "Component Task \u00b7 Suspension Upgrade Spec And Kit Lock",
-          "status": "closed_ordered_kit",
-          "detail": "Closed: Ironman kit path is already ordered, and geometry is treated as effectively the same as the current setup. No separate ride-height/geometry fitment lock remains. Notes: User update 2026-05-04: remove redundant Ironman geometry actions. Continue with receipt check, torque sheet, safe support, hanger inspection, alignment, and recheck records through suspension_upgrade_fitment_and_alignment."
-        },
-        {
-          "label": "Component Task \u00b7 Suspension Grinder Damage Weld Repair 20260712",
-          "status": "repair_reported_successful_post_weld_validation_pending",
-          "detail": "Inspect and photograph the successfully repaired suspension grinder-cut area; confirm weld condition and bracket/hanger geometry, clean and re-prime the repair, and release suspension installation only after photo/fitment signoff. Notes: Owner update 2026-07-29 confirms the suspension cut was successfully fixed. Physical repair is complete; safety closeout still requires post-weld inspection, geometry confirmation, corrosion-protection restoration and photo/fitment signoff before final suspension installation, alignment or road validation."
+          "status": "fitment_checked_installation_alignment_pending",
+          "detail": "Fitment check is complete. Confirm remaining kit receipt and installation controls, then proceed with loaded-ride-height torque, alignment, and 50 km / 500 km road rechecks. Notes: Owner update 2026-08-16 closes the fitment-check and grinder-repair blockers. Final installation, loaded torque, alignment, and road validation remain open; complete-kit receipt still requires physical confirmation of the separate 24635FE front damper pair."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -83984,9 +83889,323 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
-              "title": "Receive And Lock Complete Ironman Kit",
+              "title": "Kit Selection Locked",
               "priority": "P0",
-              "remaining": "main kit plus front dampers",
+              "remaining": "complete",
+              "status": "completed",
+              "instruction": "The selected Ironman suspension package is locked; keep later receipt checks separate from the selection decision.",
+              "process_steps": [
+                "Retain the selected Ironman part-number schedule as the controlled suspension package.",
+                "Do not reopen alternate spring, damper, bush, shackle, or U-bolt buying without evidence that the selected package is incomplete or incorrect."
+              ],
+              "tools": [
+                "Controlled parts schedule"
+              ],
+              "supplies": [
+                "Ironman order record"
+              ],
+              "hold_point": "Reopen the selection only if physical receipt or installation evidence proves a mismatch.",
+              "image_tokens": [
+                "ironman",
+                "suspension",
+                "procurement"
+              ],
+              "id": "kit_selection_locked",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260422_004301_gp_SU89hisw.jpg",
+                  "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:43:01",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_spring_hanger_and_crossmember",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004301_gp_SU89hisw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:21",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004921_gp_bHLJcrEw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004918.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:18",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004918",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004909_gp_IC7fzX9A.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:09",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004909_gp_IC7fzX9A",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004906.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:06",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004906",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004904_gp_idPFK8Og.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:04",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004904_gp_idPFK8Og",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Ironman Foamcell suspension kit - main shipment (front dampers separate) (received; delivery received; amount confirmed)",
+                "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Vehicle Fitment Checked",
+              "priority": "P0",
+              "remaining": "complete",
+              "status": "completed",
+              "instruction": "Owner-confirmed vehicle fitment check is complete; installation, alignment, and road validation remain separate work.",
+              "process_steps": [
+                "Preserve the fitment confirmation with the suspension workstream record.",
+                "Use the normal installation checks for orientation, travel, hose slack, steering clearance, and bump-stop engagement."
+              ],
+              "tools": [
+                "Fitment record"
+              ],
+              "supplies": [
+                "None"
+              ],
+              "hold_point": "A new mismatch found during physical installation must be recorded before work continues.",
+              "image_tokens": [
+                "suspension",
+                "leaf",
+                "shock",
+                "fitment"
+              ],
+              "id": "vehicle_fitment_checked",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:21",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004921_gp_bHLJcrEw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004918.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:18",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004918",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004909_gp_IC7fzX9A.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:09",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004909_gp_IC7fzX9A",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004906.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:06",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004906",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004904_gp_idPFK8Og.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:04",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004904_gp_idPFK8Og",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004901.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:01",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004901",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Ironman Foamcell suspension kit - main shipment (front dampers separate) (received; delivery received; amount confirmed)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Grinder Damage Repaired",
+              "priority": "P0",
+              "remaining": "complete",
+              "status": "completed",
+              "instruction": "The grinder mistake is fixed and no longer blocks suspension installation.",
+              "process_steps": [
+                "Retain the repaired area in the normal pre-install visual inspection.",
+                "Touch in corrosion protection if workshop handling exposes bare metal."
+              ],
+              "tools": [
+                "Inspection light"
+              ],
+              "supplies": [
+                "Primer/topcoat for normal touch-in if required"
+              ],
+              "hold_point": "Stop only if the normal pre-install check finds a new defect or damage.",
+              "image_tokens": [
+                "suspension",
+                "repair",
+                "weld",
+                "grinder"
+              ],
+              "id": "grinder_damage_repaired",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260422_004301_gp_SU89hisw.jpg",
+                  "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:43:01",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_spring_hanger_and_crossmember",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004301_gp_SU89hisw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:21",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004921_gp_bHLJcrEw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004918.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:18",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004918",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004909_gp_IC7fzX9A.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:09",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004909_gp_IC7fzX9A",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004906.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:06",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004906",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260324_004904_gp_idPFK8Og.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:04",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004904_gp_idPFK8Og",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Ironman Foamcell suspension kit - main shipment (front dampers separate) (received; delivery received; amount confirmed)",
+                "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Verify Complete Ironman Kit Receipt",
+              "priority": "P0",
+              "remaining": "front damper receipt confirmation",
               "instruction": "Treat the Ironman order as incomplete until the main kit and separate front 24635FE dampers are counted.",
               "process_steps": [
                 "Lay out the shipment and photograph every box, label, part number, and hardware bag.",
@@ -84015,7 +84234,7 @@ window.J40_DASHBOARD_DATA = {
                 "leaf",
                 "procurement"
               ],
-              "id": "receive_and_lock_complete_ironman_kit",
+              "id": "verify_complete_ironman_kit_receipt",
               "status": "queued",
               "parts": [],
               "images": [
@@ -97074,7 +97293,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "8 rows ordered and waiting to arrive."
+        "detail": "9 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -97084,10 +97303,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "candidate_photos_added_cost_missing",
-        "count": 1
-      },
-      {
-        "stage": "deferred_optional",
         "count": 1
       },
       {
@@ -97108,7 +97323,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 7
+        "count": 8
       },
       {
         "stage": "partial_receipt_lines_recorded_remaining_sort_open",
@@ -98168,6 +98383,50 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "filter_service",
           "matched_tokens": [
             "filter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_android_unit",
+        "workstream": "optional_upgrades",
+        "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+        "status": "purchased",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "DMC Dragon",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-08-16_pioneer_dmh_ap6650bt_purchase|dmcdragon_product_page",
+        "product_link": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+        "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver. Published main-chassis dimensions are approximately 188 W x 108 H x 37 D mm; exact display/bezel outline, mounting interface, connector and cable-service envelope still require M4/M5 measurement. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android navigation. Built-in amplifier is 22 W RMS x4 at 4 ohms, with 4 V front/rear/subwoofer RCA pre-outs for an optional compact external amplifier. Purchase price, payment state, delivery/receipt and transaction number were not supplied and remain to be confirmed.",
+        "links": [
+          {
+            "url": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+            "label": "dmcdragon.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+          "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "underseat_subwoofer",
+          "matched_tokens": [
+            "subwoofer"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -101329,36 +101588,41 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_android_unit",
         "workstream": "optional_upgrades",
-        "item": "Android unit",
-        "status": "planned",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
+        "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+        "status": "purchased",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "SehgalMotors.PK",
+        "vendor": "DMC Dragon",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
-        "product_link": "",
-        "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
-        "links": [],
+        "evidence_ref": "user_update_2026-08-16_pioneer_dmh_ap6650bt_purchase|dmcdragon_product_page",
+        "product_link": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+        "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver. Published main-chassis dimensions are approximately 188 W x 108 H x 37 D mm; exact display/bezel outline, mounting interface, connector and cable-service envelope still require M4/M5 measurement. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android navigation. Built-in amplifier is 22 W RMS x4 at 4 ohms, with 4 V front/rear/subwoofer RCA pre-outs for an optional compact external amplifier. Purchase price, payment state, delivery/receipt and transaction number were not supplied and remain to be confirmed.",
+        "links": [
+          {
+            "url": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+            "label": "dmcdragon.com"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/android_head_unit.jpg",
-          "caption": "Android unit \u00b7 Android head unit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+          "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "android_head_unit",
+          "media_id": "underseat_subwoofer",
           "matched_tokens": [
-            "android"
+            "subwoofer"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -107700,17 +107964,17 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BUMP-60010-LONG",
         "part": "Rear/back bump-stop rubbers - same front shape longer",
-        "vehicle_location": "Axle-to-chassis bump-stop brackets: rear-left and rear-right long-family stations, plus any Toyota-controlled front-left long station if confirmed.",
+        "vehicle_location": "Axle-to-chassis bump-stop brackets: rear-left and rear-right long-family stations, plus the Toyota-controlled front-left long station.",
         "required_qty": "3",
         "optional_spare_qty": "0",
-        "spec": "May 31 exact front-stop molded rubber body made longer: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
-        "envelope_3d_mm": "70 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
-        "edge_profile": "Same rounded/asymmetric/tapered front-stop body stretched taller; no sharp rectangular block and no flat-plate placeholder",
-        "holes_or_inserts": "Rubber through-hole pitch/diameter, central fixture/interface, base footprint, and strike offset come from May 31 front-stop photos, May 29 fixture-support photos, removed metal fixture, and vehicle measurements",
+        "spec": "Usable May 31 front-stop molded rubber body made longer: metal backing/fixture with two exposed mounting ears, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+        "envelope_3d_mm": "70 H external height; photo-survey screening values approximately 110 fixture length x 65 molded-rubber span along mounting-hole axis with 90 mounting-hole pitch; transverse width hole diameter/thread fixture channel and strike-face X/Y require direct measurement",
+        "edge_profile": "Same rounded/asymmetric/tapered front-stop body stretched taller; no sharp rectangular block",
+        "holes_or_inserts": "Mounting pitch is photo-provisional only; caliper hole diameter and identify the internally threaded holder before selecting hardware; confirm central fixture/interface base footprint and strike offset directly",
         "material": "NR/SBR bump-stop rubber Shore A 70 +/-5; reproduce any sample-proven insert/fixture retention method",
         "release_state": "first_article_required",
-        "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171833_gp_Vw96I7Mg|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
-        "notes": "May 31 front-stop photos are the active shape master. Rear/back stops use the same shape made longer; May 29 photos support fixture/interface only.",
+        "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
+        "notes": "Photo readings are nominal to about the nearest 5 mm and are not manufacturing tolerances. Rear/back stops use the same shape made longer. 20260531_171833 is excluded as an unrelated laptop image.",
         "evidence_images": [
           {
             "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -107722,18 +107986,6 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "suspension_bump_stop_removed_samples",
             "stage": "rubber_recreation_measurement",
             "media_id": "20260531_171824_gp_HmSS2ChQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-            "captured_date": "2026-05-31",
-            "captured_time": "17:18:33",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "suspension_bump_stop_removed_samples",
-            "stage": "rubber_recreation_measurement",
-            "media_id": "20260531_171833_gp_Vw96I7Mg",
             "matched_tokens": []
           },
           {
@@ -107816,14 +108068,14 @@ window.J40_DASHBOARD_DATA = {
         "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Exact May 31 front-stop molded rubber construction at the short height: two through-holes in the rubber, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
-        "envelope_3d_mm": "60 H external height remains Toyota-family control; rubber body L x W, through-hole pitch/diameter, fixture channel, and strike-face X/Y are sample/vehicle-measured before mould release",
+        "spec": "Same metal-backed May 31 front-stop molded rubber construction at the short height: two exposed mounting ears, central fixture/channel interface, broad rounded/tapered body, and flat strike area.",
+        "envelope_3d_mm": "60 H external height remains Toyota-family control; the photographed 70 sample does not release short height; shared photo-survey screening values are approximately 110 fixture length x 65 rubber span with 90 mounting-hole pitch pending direct verification",
         "edge_profile": "Same rounded/tapered front-stop family at the short height",
-        "holes_or_inserts": "Same rubber-through-hole, fixture/channel, base, and contact rules as long stop; right-front vehicle measurements control final contact offset",
+        "holes_or_inserts": "Same metal mounting-ear fixture/channel base and contact rules as long stop; caliper hole diameter identify holder thread and confirm right-front contact offset directly",
         "material": "Same compound family as BUMP-60010-LONG; reproduce any sample-proven insert/fixture retention method",
         "release_state": "first_article_required",
-        "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171833_gp_Vw96I7Mg|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
-        "notes": "May 31 front-stop photos are the active shape master. Right-front short height remains externally controlled by 48304-60020 references until vehicle full-bump checks confirm final release.",
+        "photo_refs": "20260531_171824_gp_HmSS2ChQ|20260531_171859_gp_i6bRyQKA|20260531_171903_gp_jNI1gfYA|20260531_171935_gp_BYfhqiWg|20260529_223605_gp_CklgF0cQ|20260529_223701_gp_wYPExcAA",
+        "notes": "Photo readings are nominal to about the nearest 5 mm and are not manufacturing tolerances. Right-front height remains externally controlled by 48304-60020. 20260531_171833 is excluded as unrelated.",
         "evidence_images": [
           {
             "path": "../../photos/20260531_171824_gp_HmSS2ChQ.jpg",
@@ -107835,18 +108087,6 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "suspension_bump_stop_removed_samples",
             "stage": "rubber_recreation_measurement",
             "media_id": "20260531_171824_gp_HmSS2ChQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260531_171833_gp_Vw96I7Mg.jpg",
-            "caption": "Suspension Bump Stop Removed Samples \u00b7 Rubber Recreation Measurement \u00b7 2026-05-31",
-            "captured_date": "2026-05-31",
-            "captured_time": "17:18:33",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "suspension_bump_stop_removed_samples",
-            "stage": "rubber_recreation_measurement",
-            "media_id": "20260531_171833_gp_Vw96I7Mg",
             "matched_tokens": []
           },
           {
@@ -107992,12 +108232,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 125,
-      "now_tasks": 107,
+      "total_tasks": 124,
+      "now_tasks": 106,
       "later_tasks": 18,
-      "p0_tasks": 38,
-      "photo_tasks": 37,
-      "measurement_tasks": 86
+      "p0_tasks": 37,
+      "photo_tasks": 36,
+      "measurement_tasks": 87
     },
     "counts_by_workstream": [
       {
@@ -108033,10 +108273,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 5
       },
       {
-        "workstream": "suspension_upgrade",
-        "count": 4
-      },
-      {
         "workstream": "electrical_reset",
         "count": 3
       },
@@ -108054,6 +108290,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "steering_brakes_suspension",
+        "count": 3
+      },
+      {
+        "workstream": "suspension_upgrade",
         "count": 3
       },
       {
@@ -108084,7 +108324,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 39
+        "count": 40
       },
       {
         "task_type": "photo_measurement",
@@ -108096,11 +108336,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo",
-        "count": 13
+        "count": 12
       },
       {
         "task_type": "decision",
-        "count": 12
+        "count": 11
       },
       {
         "task_type": "data",
@@ -108114,7 +108354,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 38
+        "count": 37
       },
       {
         "priority": "P1",
@@ -112910,32 +113150,6 @@ window.J40_DASHBOARD_DATA = {
         "source_row_id": "j60_hydraulic_steering_route_decision_20260719",
         "notes": "",
         "evidence_ref": "user_update_2026-07-19_j60_replacement_steering_decision|user_clarification_2026-08-02_j60_upgrade_remains_plan|docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:suspension_grinder_damage_weld_repair_20260712",
-        "title": "suspension_grinder_damage_weld_repair_20260712",
-        "workstream": "suspension_upgrade",
-        "task_type": "photo",
-        "priority": "P0",
-        "timing": "now",
-        "status": "repair_reported_successful_post_weld_validation_pending",
-        "location": "workshop_post_weld_validation_pending",
-        "action": "Inspect and photograph the successfully repaired suspension grinder-cut area; confirm weld condition and bracket/hanger geometry, clean and re-prime the repair, and release suspension installation only after photo/fitment signoff.",
-        "data_needed": "Owner update 2026-07-29 confirms the suspension cut was successfully fixed. Physical repair is complete; safety closeout still requires post-weld inspection, geometry confirmation, corrosion-protection restoration and photo/fitment signoff before final suspension installation, alignment or road validation.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "suspension_grinder_damage_weld_repair_20260712",
-        "notes": "",
-        "evidence_ref": "user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-07-22_axle_grinder_cut_repair_reported_complete|user_update_2026-07-29_structural_front_bumper_winch_rear_bumper_status",
         "evidence_images": [],
         "links": [
           {
@@ -119584,32 +119798,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "component_job:suspension_upgrade_fitment_and_alignment",
-        "title": "suspension_upgrade_fitment_and_alignment",
-        "workstream": "suspension_upgrade",
-        "task_type": "decision",
-        "priority": "P1",
-        "timing": "now",
-        "status": "blocked_on_welder_repair_before_install",
-        "location": "workshop",
-        "action": "Hold final suspension installation/alignment until the experienced welder corrects the angle-grinder damage, the repair is inspected/primed, and spring hanger/bracket geometry is confirmed; then proceed with torque-under-load, alignment, and road rechecks.",
-        "data_needed": "Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled. | User update 2026-07-12: suspension install is now gated by the experienced-welder repair of the grinder mistake.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "suspension_upgrade_fitment_and_alignment",
-        "notes": "",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream|user_update_2026-07-12_experienced_welder_chassis_front_prep",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:suspension_bump_stop_direct_bolt_20260816",
         "title": "suspension_bump_stop_direct_bolt_20260816",
         "workstream": "suspension_upgrade",
@@ -119653,6 +119841,32 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": []
           }
         ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:suspension_upgrade_fitment_and_alignment",
+        "title": "suspension_upgrade_fitment_and_alignment",
+        "workstream": "suspension_upgrade",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "fitment_checked_installation_alignment_pending",
+        "location": "workshop",
+        "action": "Fitment check is complete. Confirm remaining kit receipt and installation controls, then proceed with loaded-ride-height torque, alignment, and 50 km / 500 km road rechecks.",
+        "data_needed": "Owner update 2026-08-16 closes the fitment-check and grinder-repair blockers. Final installation, loaded torque, alignment, and road validation remain open; complete-kit receipt still requires physical confirmation of the separate 24635FE front damper pair.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "suspension_upgrade_fitment_and_alignment",
+        "notes": "",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream|user_update_2026-07-12_experienced_welder_chassis_front_prep|user_update_2026-08-16_suspension_kit_fitment_repair_status",
+        "evidence_images": [],
         "links": [
           {
             "url": "../../data/manual/component_jobs.csv",
@@ -120336,9 +120550,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 109,
-        "in_process": 14,
-        "still_required": 60,
-        "total": 183
+        "in_process": 16,
+        "still_required": 59,
+        "total": 184
       }
     ],
     "rows_by_status": {
@@ -128353,6 +128567,41 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_235",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+          "vendor": "DMC Dragon",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "in_process",
+          "status_detail": "ordered_or_paid",
+          "procurement_stage": "",
+          "payment_status": "Unknown",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver; published main chassis approximately 188 W x 108 H x 37 D mm. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android. Built-in amplifier 22 W RMS x4 at 4 ohms; 4 V front/rear/subwoofer RCA pre-outs support an optional compact external amplifier. Price, payment, receipt and exact display/bezel/mount/service-envelope measurements remain to be confirmed.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+            "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "underseat_subwoofer",
+            "matched_tokens": [
+              "subwoofer"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "source": "expenses",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
           "supply_type": "part",
@@ -128920,6 +129169,51 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_android_unit",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+          "vendor": "DMC Dragon",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "optional_upgrades",
+          "status_group": "in_process",
+          "status_detail": "purchased",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-08-16_pioneer_dmh_ap6650bt_purchase|dmcdragon_product_page",
+          "product_link": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+          "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver. Published main-chassis dimensions are approximately 188 W x 108 H x 37 D mm; exact display/bezel outline, mounting interface, connector and cable-service envelope still require M4/M5 measurement. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android navigation. Built-in amplifier is 22 W RMS x4 at 4 ohms, with 4 V front/rear/subwoofer RCA pre-outs for an optional compact external amplifier. Purchase price, payment state, delivery/receipt and transaction number were not supplied and remain to be confirmed.",
+          "links": [
+            {
+              "url": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+              "label": "dmcdragon.com"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+            "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "underseat_subwoofer",
+            "matched_tokens": [
+              "subwoofer"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -132544,46 +132838,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_android_unit",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Android unit",
-          "vendor": "SehgalMotors.PK",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "optional_upgrades",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "deferred_optional",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
-          "product_link": "",
-          "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/android_head_unit.jpg",
-            "caption": "Android unit \u00b7 Android head unit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "android_head_unit",
-            "matched_tokens": [
-              "android"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -133129,6 +133383,51 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_android_unit",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+        "vendor": "DMC Dragon",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "optional_upgrades",
+        "status_group": "in_process",
+        "status_detail": "purchased",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-08-16_pioneer_dmh_ap6650bt_purchase|dmcdragon_product_page",
+        "product_link": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+        "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver. Published main-chassis dimensions are approximately 188 W x 108 H x 37 D mm; exact display/bezel outline, mounting interface, connector and cable-service envelope still require M4/M5 measurement. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android navigation. Built-in amplifier is 22 W RMS x4 at 4 ohms, with 4 V front/rear/subwoofer RCA pre-outs for an optional compact external amplifier. Purchase price, payment state, delivery/receipt and transaction number were not supplied and remain to be confirmed.",
+        "links": [
+          {
+            "url": "https://dmcdragon.com/pioneer-dmh-ap6650bt-9in-screen-apple-carplay/",
+            "label": "dmcdragon.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+          "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "underseat_subwoofer",
+          "matched_tokens": [
+            "subwoofer"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_rear_brake_line_cable_clips",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -133603,6 +133902,41 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "generic_substance",
           "matched_tokens": [
             "substance"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_235",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto",
+        "vendor": "DMC Dragon",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "in_process",
+        "status_detail": "ordered_or_paid",
+        "procurement_stage": "",
+        "payment_status": "Unknown",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "User purchase update 2026-08-16. Selected shallow tablet-style receiver; published main chassis approximately 188 W x 108 H x 37 D mm. Navigation is phone-projected through Apple CarPlay/Android Auto, not standalone Android. Built-in amplifier 22 W RMS x4 at 4 ohms; 4 V front/rear/subwoofer RCA pre-outs support an optional compact external amplifier. Price, payment, receipt and exact display/bezel/mount/service-envelope measurements remain to be confirmed.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/underseat_subwoofer.jpg",
+          "caption": "Pioneer DMH-AP6650BT 9-inch multimedia receiver with Apple CarPlay and Android Auto \u00b7 under-seat subwoofer reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "underseat_subwoofer",
+          "matched_tokens": [
+            "subwoofer"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -142768,46 +143102,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "accessory_belt",
           "matched_tokens": [
             "belt"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_android_unit",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Android unit",
-        "vendor": "SehgalMotors.PK",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "optional_upgrades",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_seed|akber_khan-00318|fj40-00279|fj40-00280|user_update_2026-05-02_dashboard_switch_lcd_update",
-        "product_link": "",
-        "notes": "9 inch, flush-mounted, integrated into the dash panel. User update 2026-05-02: a specific 9 inch LCD panel has been recommended; capture exact model/link, dimensions, mounting depth, power draw, and camera inputs before purchase. Keep deferred_optional until baseline dash/electrical fit-up is proven.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/android_head_unit.jpg",
-          "caption": "Android unit \u00b7 Android head unit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "android_head_unit",
-          "matched_tokens": [
-            "android"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700

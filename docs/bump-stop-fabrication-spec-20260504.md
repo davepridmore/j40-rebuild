@@ -4,7 +4,9 @@ Scope: replacement bump stops for the leaf-spring axle-to-chassis stops where To
 
 Status correction `2026-07-22`: a new four-stop set is in hand from the July 12 intake, but installation is not reported or scheduled. The owner's front/rear installation update referred to the separate vehicle bumpers. This document remains the received-part identity, dimensional, fixture, and eventual full-bump acceptance control; local fabrication is a fallback only if a received part fails those checks. When fitted, mount the stops through the correct separate chassis-side brackets/metal fixtures above the axles, not under the spring packs or U-bolt plates.
 
-This is not a Toyota engineering/mould drawing. Toyota almost certainly had a formal drawing for `48304-60010` and `48304-60020`, but the public OEM/catalog pages checked do not expose the mould dimensions, compound recipe, internal reinforcement detail, metal fixture relationship, or load/deflection curve. Treat the Toyota numbers and known application/height data as external controls. The May 31 exact front bump-stop photos now control the visible local shape: a broad molded rubber body with two through-holes in the rubber, rounded/asymmetric sides, a central metal fixture/insert interface, and a flat strike face. Rear/back stops use the same front-stop shape and fixture pattern, made longer to the `70 mm` family height. Final station release still comes from calipers, the removed metal fixture, current vehicle brackets, axle strike pads, and first-article tests.
+Measurement transcription `2026-08-16`: the usable May 31 tape-measure photos have now been read into the provisional dimensional register below. They support approximately `70 mm` sample height, `110 mm` metal backing/fixture length along the mounting-hole axis, `65 mm` rubber-body span along that axis, and `90 mm` mounting-hole pitch. These are photo-survey nominals, read to roughly the nearest `5 mm`, not manufacturing tolerances. Hole diameter, thread, transverse width, plate thickness, fixture-channel detail, station offsets, loaded gap, and full-bump clearance still require direct measurement. `photos/20260531_171833_gp_Vw96I7Mg.jpg` is an unrelated laptop image and is excluded from the evidence set.
+
+This is not a Toyota engineering/mould drawing. Toyota almost certainly had a formal drawing for `48304-60010` and `48304-60020`, but the public OEM/catalog pages checked do not expose the mould dimensions, compound recipe, internal reinforcement detail, metal fixture relationship, or load/deflection curve. Treat the Toyota numbers and known application/height data as external controls. The May 31 exact front bump-stop photos now control the visible local shape: a broad molded rubber body carried by a metal backing/fixture with two exposed mounting ears, rounded/asymmetric sides, a central metal fixture/insert interface, and a flat strike face. Rear/back stops use the same front-stop shape and fixture pattern, made longer to the `70 mm` family height. Final station release still comes from calipers, the removed metal fixture, current vehicle brackets, axle strike pads, and first-article tests.
 
 If a Toyota dealer, NOS part, or genuine sample becomes available, use it as the preferred master before cutting a mould. Until then, the fabricator must reproduce the Toyota-style progressive stop, not invent a square rubber block.
 
@@ -32,9 +34,9 @@ Links:
 
 ## Sample-Controlled Shape To Reproduce
 
-The correct fabrication target is now the exact front-stop photo set shown in `photos/20260531_171824_gp_HmSS2ChQ.jpg`, `photos/20260531_171833_gp_Vw96I7Mg.jpg`, `photos/20260531_171859_gp_i6bRyQKA.jpg`, `photos/20260531_171903_gp_jNI1gfYA.jpg`, and `photos/20260531_171935_gp_BYfhqiWg.jpg`. The May 29 removed-sample photos are supporting fixture and construction evidence only. The rear/back stops are the same body, through-hole layout, fixture/channel interface, and strike-face design made longer to the `70 mm` family height. It is not a plain rubber block, and it is not the earlier placeholder rubber bonded to a separate flat backing plate with holes only in steel. Use the May 31 front-stop photos, the May 29 fixture-support photos, the removed metal fixture, the cleaned vehicle brackets, the axle strike pads, and any usable NOS/genuine sample to control the visible form:
+The correct fabrication target is now the usable front-stop photo set shown in `photos/20260531_171824_gp_HmSS2ChQ.jpg`, `photos/20260531_171859_gp_i6bRyQKA.jpg`, `photos/20260531_171903_gp_jNI1gfYA.jpg`, and `photos/20260531_171935_gp_BYfhqiWg.jpg`. The May 29 removed-sample photos are supporting fixture and construction evidence only. The rear/back stops are the same body, metal-backed mounting pattern, fixture/channel interface, and strike-face design made longer to the `70 mm` family height. It is not a plain rubber block. Use the May 31 front-stop photos, the May 29 fixture-support photos, the removed metal fixture, the cleaned vehicle brackets, the axle strike pads, and any usable NOS/genuine sample to control the visible form:
 
-- Molded rubber body with two through-holes visible in the rubber body. The holes are now part of the rubber design because the removed samples prove them.
+- Molded rubber body carried by a metal backing/fixture with two exposed mounting ears. The usable photos show the mounting holes in the metal ears outside the rubber body; they do not prove through-holes in the rubber.
 - Broad low body with rounded/asymmetric plan corners and battered/tapered sides copied from the better surviving sample faces, then cleaned up into a mouldable shape.
 - Central metal fixture/insert interface or raised channel visible in the side view; trace the removed metal fixture and reproduce the rubber channel/relief that receives it.
 - Flat/worn strike area on the lower rubber body that must land squarely on the axle strike pad.
@@ -43,14 +45,14 @@ The correct fabrication target is now the exact front-stop photo set shown in `p
 
 Fabricator deliverables before mould release:
 
-1. Sketch or CAD view of the side profile, plan view, rubber-through-hole layout, central fixture channel/insert interface, removed metal fixture trace, and rubber strike face.
+1. Sketch or CAD view of the side profile, plan view, metal mounting-hole layout, central fixture channel/insert interface, removed metal fixture trace, and rubber strike face.
 2. Material declaration: rubber/PU family, Shore A target, any internal metal/reinforcement or fixture-retention method, and expected recovery.
 3. Removed-sample plus vehicle measurement sheet with `BL`, `BW`, `P`, `D`, `X/Y`, `G`, `F`, and central fixture/channel values for each station.
 4. First-article photos on the vehicle and a basic compression/recovery test result.
 
 ## Fabrication Route
 
-Use a molded or cast progressive bump-stop rubber copied from the May 31 exact front-stop photo set, with the sample-proven rubber through-holes and central metal fixture/insert interface. Rear/back stops use that same shape family at the longer `70 mm` height. Do not cut a simple solid cuboid from sheet rubber and do not rely on ordinary glue-only attachment.
+Use a molded or cast progressive bump-stop rubber copied from the May 31 exact front-stop photo set, with the sample-proven metal backing/fixture and central metal fixture/insert interface. Rear/back stops use that same shape family at the longer `70 mm` height. Do not cut a simple solid cuboid from sheet rubber and do not rely on ordinary glue-only attachment.
 
 Preferred material:
 
@@ -66,7 +68,7 @@ Acceptable local fallback:
 - Cast automotive polyurethane only if the fabricator cannot mould rubber and can keep the same progressive geometry, fixture/captive construction, and rebound recovery.
 - Hardness target `80 +/-5 Shore A` for PU.
 - Make the four stops as one batch and trial-fit before accepting final production.
-- PU fallback must still use the May 31 front-stop rounded/tapered body, rubber through-holes, central fixture/interface detail, correct height, and strike-face location. A cast square block is not acceptable.
+- PU fallback must still use the May 31 front-stop rounded/tapered body, metal-backed mounting pattern, central fixture/interface detail, correct height, and strike-face location. A cast square block is not acceptable.
 
 ## Vehicle-Controlled Mould Dimensions
 
@@ -74,25 +76,40 @@ The old rubber is now construction evidence, not a finished dimension master. Re
 
 | Measurement ID | Measurement | How to take it | Controls |
 | --- | --- | --- | --- |
-| `BL` | Rubber body / fixture landing length | Caliper the better surviving sample, the removed metal fixture, and cleaned bracket landing. | Rubber body outline, mould base, and fixture seat. |
+| `BL` | Metal backing/fixture overall length along the mounting-hole axis | Use the photo-survey nominal below for screening; caliper the better surviving sample, the removed metal fixture, and cleaned bracket landing for release. | Metal backing outline, mould base, and fixture seat. |
 | `BW` | Rubber body / fixture landing width | Caliper the better surviving sample and usable bracket/fixture width at the seating face. | Rubber body width and central fixture/channel clearance. |
-| `P` | Rubber through-hole and fixture bolt/stud pitch | Measure centre-to-centre across the sample rubber holes and confirm against the removed metal fixture and vehicle bracket holes/studs. | Rubber hole pattern plus fixture alignment. |
-| `D` | Rubber through-hole diameter and fitted bolt/stud/thread size | Measure the sample rubber holes and identify the fitted bolt/stud thread with a thread gauge. | Rubber clearance and fixture fastener control. |
-| `X/Y` | Strike-pad centre offset | With the axle under the stop, mark the centre of the axle contact pad relative to the rubber through-holes and fixture/bracket bolt features. | Rubber contact face location. |
+| `P` | Metal fixture mounting-hole pitch | Use the photo-survey nominal below for screening; measure centre-to-centre across the two metal mounting ears and confirm against the vehicle holder. | Fixture alignment. |
+| `D` | Metal mounting-hole diameter and fitted bolt/stud/thread size | Caliper the metal holes and identify the fitted thread with a thread gauge. Do not infer this dimension from bolt colour or the oblique tape photos. | Hole clearance, thread engagement, and fastener control. |
+| `X/Y` | Strike-pad centre offset | With the axle under the stop, mark the centre of the axle contact pad relative to the metal mounting holes and fixture/bracket bolt features. | Rubber contact face location. |
 | `G` | Loaded stop gap | With the Ironman suspension fitted, tyres on ground, normal vehicle load, measure mount face to axle strike pad. | Ride-height clearance check. |
 | `F` | Full-bump limiting clearance | Jack the axle upward safely until the earliest limit is near: shock bottoming, tyre/body contact, spring/shackle bind, brake hose strain, or metal contact. | Confirms the stop touches before any hard limit. |
 | `C` | Compressed stop allowance | Compress first article on a press to `50%` height and check no cracking, delamination, or permanent collapse. | Progressive compression and rebound acceptance. |
 
+### Photo-Derived Dimensional Register
+
+| Dimension | Provisional nominal | Photo evidence | Confidence / release rule |
+| --- | ---: | --- | --- |
+| Long-family sample free height | `~70 mm` | `20260531_171935_gp_BYfhqiWg` | High read confidence; worn sample and tape alignment mean this is an identity check only. Released production height remains `70 +/-1 mm` from the Toyota-family control. |
+| Metal backing/fixture overall length along mounting-hole axis (`BL`) | `~110 mm` | `20260531_171859_gp_i6bRyQKA`, `20260531_171903_gp_jNI1gfYA` | Moderate confidence; oblique views. Use to identify/screen the received part, then verify with calipers before fabrication. |
+| Molded-rubber span along mounting-hole axis | `~65 mm` | `20260531_171824_gp_HmSS2ChQ` | Moderate-to-high confidence; tape is close to square-on. This is the rubber span between the exposed metal ears, not the transverse body width. |
+| Metal mounting-hole pitch (`P`) | `~90 mm c-c` | `20260531_171859_gp_i6bRyQKA`, `20260531_171903_gp_jNI1gfYA` | Moderate confidence; estimated from two oblique tape views. Confirm directly on the received stop and threaded holder before selecting hardware. |
+| Metal mounting-hole diameter (`D`) | `not released` | Hole openings are visible, but the tape views do not resolve diameter accurately. | Caliper required. Do not use a visual estimate as an `M8` confirmation. |
+| Fitted holder thread | `not released` | No measurement photo shows a thread gauge or known bolt diameter/pitch. | Identify with a known fastener or thread gauge; confirm adequate engagement and no bottoming. |
+| Transverse body/fixture width (`BW`) | `not released` | No square-on tape view across the transverse axis. | Caliper required. |
+| Plate thickness, fixture/channel detail, `X/Y`, `G`, `F`, and `C` | `not released` | Not dimensionally resolved by the available tape photos. | Direct part/vehicle measurement and first-article test required. |
+
+The approximation symbol above means a photo reading to about the nearest `5 mm`; it is not a `+/-5 mm` manufacturing tolerance. Do not scale dimensions from the apparent pixel size of the oblique photos.
+
 Geometry release rules:
 
-- The `P` and `D` dimensions on `data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg` / `.dxf` are now rubber-through-hole plus fixture/bracket controls. These drawings are measurement controls only; they are not a released final cut profile until the samples, fixture, and bracket values are recorded.
+- The `P` and `D` dimensions on `data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg` / `.dxf` are metal mounting-hole plus fixture/bracket controls. These drawings are measurement controls only; they are not a released final cut profile until the direct sample, fixture, and bracket values are recorded.
 - Base footprint: copy the May 31 exact front-stop family, then confirm it seats with the removed metal fixture and vehicle bracket with `0.5-1.0 mm` practical edge clearance where needed.
-- Mounting holes/studs: use the sample rubber holes, removed metal fixture, and vehicle `P` and `D`; feature location tolerance `+/-0.5 mm`. Holes belong through the rubber because the removed samples prove that construction.
+- Mounting holes/studs: use the metal backing/fixture ears and vehicle `P` and `D`; feature location tolerance `+/-0.5 mm` applies only after direct measurement release. The photos do not show or prove holes through the rubber body.
 - Rubber height: `70 +/-1 mm` for `BUMP-60010-FL` and both `BUMP-60010-R`; `60 +/-1 mm` for `BUMP-60020-FR`. Height changes only stretch the same front-stop body family; do not create a separate rear shape.
 - Matched rear pair: rear left and rear right free height must match within `1 mm`, and hardness readings must be within `5 Shore A`.
 - Contact face: centred on the axle strike pad within `+/-5 mm`; face must be radiused/tapered, not a sharp-edged block.
 - Side profile: taper the body so compression is progressive and so the rubber does not foul the mount, U-bolts, spring pack, shock, or tyre through axle movement.
-- Vehicle bracket and removed metal fixture: clean and inspect before mould release. Repair chassis/bracket/fixture metal only under a separate metal-fabrication release; the bump-stop part itself is the molded rubber sample family with its proven through-holes and central fixture interface.
+- Vehicle bracket and removed metal fixture: clean and inspect before mould release. Repair chassis/bracket/fixture metal only under a separate metal-fabrication release; the bump-stop part itself is the molded rubber sample family with its metal-backed mounting ears and central fixture interface.
 
 ## First Article Test
 
@@ -100,7 +117,7 @@ Make one `70 mm` long stop first and one `60 mm` right-front stop first. Do not 
 
 Acceptance:
 
-1. The rubber through-holes align with the removed metal fixture and vehicle bracket, bolts/studs pass by hand, and the central fixture/interface is captured without tearing or rocking.
+1. The metal mounting holes align with the vehicle holder/bracket, bolts/studs pass by hand without forcing or bottoming, and the central fixture/interface is captured without tearing or rocking.
 2. Contact face lands on the axle strike pad within `+/-5 mm`.
 3. Stop engages before shock bottoming, tyre/body contact, spring/shackle bind, brake hose strain, or metal-to-metal contact.
 4. Compressed to `50%` of free height on a press, the rubber shows no cracking, tearing, bond/captive failure, or permanent collapse.
@@ -137,11 +154,11 @@ Use these only as station/context references. They are not dimension masters; fi
 | `photos/20260422_004254_gp_SplHLSYA.jpg` | Body-off underside context for spring/shackle/axle clearance. |
 | `photos/20260422_004423_gp_B1N5ThVw.jpg` | Front frame-horn and suspension context; use only for orientation. |
 | `photos/20260531_171824_gp_HmSS2ChQ.jpg` | Exact front bump-stop face/width measurement with tape; active mould-shape reference. |
-| `photos/20260531_171833_gp_Vw96I7Mg.jpg` | Companion exact front bump-stop face/width measurement. |
-| `photos/20260531_171859_gp_i6bRyQKA.jpg` | Exact front bump-stop base/fixture plate length and through-hole landing measurement. |
+| `photos/20260531_171833_gp_Vw96I7Mg.jpg` | Excluded: unrelated laptop image; not bump-stop evidence. |
+| `photos/20260531_171859_gp_i6bRyQKA.jpg` | Front bump-stop metal fixture overall length and mounting-hole pitch measurement. |
 | `photos/20260531_171903_gp_jNI1gfYA.jpg` | Companion exact front bump-stop base/fixture plate measurement. |
 | `photos/20260531_171935_gp_BYfhqiWg.jpg` | Exact front bump-stop side height/profile measurement; rear/back stops use this same shape made longer. |
-| `photos/20260529_223605_gp_CklgF0cQ.jpg` | Supporting removed-sample face/plan view after unscrewing from metal fixture; confirms rubber through-holes and broad rounded body. |
+| `photos/20260529_223605_gp_CklgF0cQ.jpg` | Supporting removed-sample face/plan view; confirms the broad rounded body and metal-backed mounting arrangement. |
 | `photos/20260529_223701_gp_wYPExcAA.jpg` | Supporting removed-sample side view for central fixture/channel interface, not the active shape master. |
 
 Before mould release, take station-fit photo sets for front-left, front-right, rear-left, and rear-right, each with a ruler/caliper on the bracket holes and a side view of the axle strike pad. These photos verify mounting and clearance; they do not replace the May 31 front-stop shape master.

@@ -46,36 +46,37 @@ The different G1 and C1 pixel readings are expected because the photograph is ob
 
 | Item | V35 provisional requirement | Release condition |
 | --- | --- | --- |
-| LCD module | 211.10 W × 126.50 H mm | M4 physical drawing/calipers, bezel, fasteners, connectors and removal path. |
-| LCD active image | 198.91 W × 111.89 H mm | Size is supplied; its offset inside the actual module is not assumed for the final aperture. |
+| Purchased receiver | Pioneer DMH-AP6650BT; published main chassis approximately 188 W × 108 H × 37 D mm | Purchased 2026-08-16. Price, payment, delivery/receipt and transaction details remain unconfirmed. Published chassis dimensions do not release the front geometry or complete installation envelope; M4/M5 physical confirmation is mandatory. |
+| LCD/display face | 211.10 W × 126.50 H mm design placeholder | This is not a published Pioneer outline dimension. Replace using M4 physical drawing/calipers, bezel, fasteners, connectors and removal path. |
+| LCD active image | 198.91 W × 111.89 H mm design placeholder | Its actual size and offset inside the Pioneer display are not assumed for the final aperture. |
 | LCD location | module centre (685.0, 75.25); X-centred on the free centre field and raised within it to reserve the Y=177 one-line control bank | M1 field trace and M4 module confirmation. |
 | LCD opening | 202 W × 115 H provisional visible opening | Do not cut until M4 confirms the actual bezel/touch-border and carrier. |
-| LCD complete installed rear projection | 115 mm maximum for quotation/buck; integral chassis/body including any integral rear heat sink target ≤80 mm | `ASSUMED_UNVERIFIED`, derived conservatively from the 2026-08-02 photo audit. It is not a production maximum; M5/M9 controls. |
+| LCD complete installed rear projection | 115 mm maximum for quotation/buck; Pioneer main chassis published at approximately 37 mm depth and nominally within the retained ≤80 mm chassis/body target | The 37 mm figure excludes unverified carrier, fasteners, fully mated connectors, cable bends/service loops, ventilation and removal sweep. The 115 mm value remains `ASSUMED_UNVERIFIED`, not a production maximum; M5/M9 controls. |
 | Control line | seven bought Schneider Harmony/XB4-family black maintained selectors (4 × 2-position, 3 × 3-position) plus separate red HAZARD, all in one compact line below LCD | M6 actual part codes, handles, lever sweeps, keys, clamps, contact blocks and rear stack. |
 | Selector presentation | Ø30 provisional heads at 40 mm pitch | Appearance and spacing only; check actual anti-rotation and handle sweep at M6. |
 | Selector aperture | Ø22.5 provisional, based on the 22 mm family and earlier 22.3 mm nominal schedule | Not a production diameter; M6 controls thread, keyway, clamp and finished-sheet fit. |
 | Hazard | separate red 2-position control, eighth position in the line | It is not an eighth black selector. |
 | Outer vents | Ø87 face target; Ø75 rear mounting diameter target; each face centred in its available outer land | M1 establishes the actual land boundaries; M7 measures the supplied parts and retention. Complete rear envelope is unverified. |
 
-LCD size audit: the supplied active-area values give a calculated diagonal of **228.22 mm / 8.985 in**, consistent with a nominal 9-inch display. The module outline aspect is **211.10 ÷ 126.50 = 1.66877**; both the registered overlay and scale-controlled elevation use that outline ratio. The 202 × 115 mm visible opening remains provisional and must not be mistaken for either the module outline or active area.
+LCD size audit: the placeholder active-area values give a calculated diagonal of **228.22 mm / 8.985 in**, consistent with a nominal 9-inch display. The placeholder face aspect is **211.10 ÷ 126.50 = 1.66877**; both the registered overlay and scale-controlled elevation use that ratio. None of the 211.10 × 126.50 mm face, 198.91 × 111.89 mm active image or 202 × 115 mm visible opening is an official Pioneer screen outline; replace all three from the received unit at M4.
 
 ### LCD installed-depth control
 
-The supplied **5.0 mm** value is the generic panel/module thickness only. It is not the installed depth of a usable screen assembly. Define `P_LCD_INSTALLED` as the largest perpendicular rearward projection from the finished rear fascia to any part of the module/chassis, carrier, mounts, fasteners, heat sink and ventilation keep-out, largest fully mated plug/adapter, cable bend radius, retained service loop, or cabin-side removal sweep.
+The Pioneer main chassis is published at approximately **37 mm** deep. That is not the installed depth of a usable receiver assembly and must not be confused with the provisional front-face geometry. Define `P_LCD_INSTALLED` as the largest perpendicular rearward projection from the finished rear fascia to any part of the display/module/chassis, carrier, mounts, fasteners, heat sink and ventilation keep-out, largest fully mated plug/adapter, cable bend radius, retained service loop, or cabin-side removal sweep.
 
 For quotation and construction of the rigid depth buck only:
 
 - `P_LCD_INSTALLED,Q ≤ 115 mm`;
-- target `P_LCD_CHASSIS ≤ 80 mm`, where `P_LCD_CHASSIS` includes the integral screen chassis/body and any integral rear heat sink; and
-- reserve at least 35 mm inside that 115 mm envelope for the external carrier/mounts, fasteners, largest fully mated connector, cable bend/service loop and removal tolerance.
+- retain `P_LCD_CHASSIS ≤ 80 mm`, where the published approximately 37 mm Pioneer main chassis nominally complies; and
+- treat the nominal 78 mm remaining inside the 115 mm envelope as unverified budget for the external carrier/mounts, fasteners, largest fully mated connector, cable bend/service loop, ventilation and removal tolerance.
 
-These are `ASSUMED_UNVERIFIED` limits derived from the smallest apparent 125–130 mm local span in the [2026-08-02 rear-clearance photo audit](rear_clearance_photo_audit_20260802.md), rounded down to 125 mm and reduced by the required 10 mm fixed clearance. The photograph is oblique and unregistered, so it cannot release a production maximum.
+The 115 mm quotation envelope remains an `ASSUMED_UNVERIFIED` limit derived from the smallest apparent 125–130 mm local span in the [2026-08-02 rear-clearance photo audit](rear_clearance_photo_audit_20260802.md), rounded down to 125 mm and reduced by the required 10 mm fixed clearance. The photograph is oblique and unregistered, and the 37 mm Pioneer chassis dimension excludes the connected service package, so neither value can release a production maximum.
 
 For production, map the perpendicular available depth `Z_FIXED(x,y)` over the complete actual LCD installed and service/removal envelope, then require:
 
 `P_LCD_INSTALLED,PROD ≤ min[Z_FIXED(x,y)] − 10 mm`.
 
-Also maintain at least 20 mm to the signed moving column/shroud/stalk envelope. The smaller result controls. Replace the 115 mm quotation cap with the measured M5 limit and actual-part M9 buck proof before production release.
+Also maintain at least 20 mm to the signed moving column/shroud/stalk envelope. The smaller result controls. Replace the 115 mm quotation cap with the measured M5 limit and actual-part M9 buck proof before production release. M4/M5 must use the received DMH-AP6650BT and its installed loom; a seller-page image or chassis-only specification is not sufficient.
 
 The defined line centres are X=545, 585, 625, 665, 705, 745, 785 and 825 at Y=177. The seven black selectors occupy the first seven centres in the allocation below; the red HAZARD is at X=825. At Ø30 heads this makes a 310 mm visible-control envelope, leaving provisional 20 mm margins on both sides inside the 350 mm cassette. These margins are not a substitute for M6 lever-sweep measurements. No selector rear depth is asserted in V35: the previously sketched 68 mm reserve has been removed because the complete bought handle/body/contact-block stack has not yet been measured.
 
