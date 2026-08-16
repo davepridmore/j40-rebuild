@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-16T16:31:19+05:00",
+  "generated_at": "2026-08-16T17:07:52+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -54,17 +54,17 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 8,
     "workstream_evidence_images": 1264,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 67,
+    "parts_open_rows": 70,
     "parts_ordered_pending_delivery": 8,
-    "urgent_part_actions": 10,
+    "urgent_part_actions": 16,
     "sample_fabrication_kits": 4,
     "status_update_gmail_records": 40,
     "status_update_whatsapp_new_rows": 207,
     "status_update_manual_rows": 9,
     "status_update_delivery_watchlist_rows": 15,
-    "capture_data_tasks": 128,
-    "capture_data_tasks_now": 111,
-    "supply_rows_tracked": 295,
+    "capture_data_tasks": 125,
+    "capture_data_tasks_now": 107,
+    "supply_rows_tracked": 298,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 5,
     "whatsapp_j40_media_items": 436,
@@ -35359,9 +35359,9 @@ window.J40_DASHBOARD_DATA = {
           "system": "suspension_upgrade",
           "package_id": "suspension_wood_cribbing_rev_a",
           "title": "Suspension wood cribbing Rev A",
-          "current_status": "suspension_reference",
-          "release_position": "Backup drawing pack for the suspension cribbing buy: 8 rectangular blocks plus 4 wedge chocks.",
-          "notes": "Shop ask is owned by suspension_upgrade through docs/suspension-wood-cribbing-merchant-spec.md; this package is the drawing backup. Supplemental cribbing/chocks only; not a substitute for rated stands.",
+          "current_status": "completed",
+          "release_position": "Fabrication complete and closed; retain the Rev A pack as the reference for the received set of 8 rectangular blocks plus 4 wedge chocks.",
+          "notes": "User confirmed fabrication closeout on 2026-08-16. Retain the package as the as-built/reference drawing backup for the received suspension-owned cribbing set. Supplemental cribbing/chocks only; not a substitute for rated stands.",
           "package_dir": "data/manual/fabrication/suspension_wood_cribbing_rev_a",
           "primary_links": [
             {
@@ -35421,7 +35421,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42182,
+            "bytes": 42304,
             "file_count": 11
           },
           "file_count": 11
@@ -36271,15 +36271,21 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "electrical_reset"
       ],
-      "next_action": "Use the on-hand 7 Schneider selectors plus separate red hazard in the Rev I V35 single line below the LCD; template-fit complete rear clearances and capture the exact 9-inch LCD chassis/cutout before centre-cassette closeout",
-      "exit_gate": "All 7 bought selectors are allocated with no spare and no additional selector purchase: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate HAZARD in one line. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The LCD module is centred on the physically measured free centre field of the removable zero-drop cassette. Each of the two outer vents is centred independently in its measured land. The directly traced original cluster, column/scallop, glovebox, full-width lower edge and formed contours remain unchanged; only the ashtray/centre area is replaced. All bought-component cuts remain physical measurement holds.",
-      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. Prove EEI-003, key-OFF authority and manual-stop fallback before connecting FUEL STOP.",
+      "next_action": "Work from the owner-selected Rev I V35 package: complete and sign M1-M9 using the vehicle and actual LCD, selectors, and outlets; release the 1:1 paper template and full-depth rear buck before any production metal or vehicle cutting",
+      "exit_gate": "Rev I V35 is confirmed as the selected centre-cassette baseline. The original cluster, RHD column/scallop, glovebox, full-width lower edge, and formed outer/end contours remain unchanged; only the ashtray/centre area is replaced by a removable zero-drop cassette. The measured free centre field controls the 9-inch LCD; each of the two outer vents is centred independently in its measured land. All 7 bought selectors are allocated with no spare: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. Production cutting remains on HOLD until the signed M1-M9 trace, actual-component measurements, and full-depth buck prove fit, clearance, serviceability, and removal. M10 electrical and functional commissioning closes vehicle handoff.",
+      "notes": "The V35 render is a non-dimensional appearance preview; the registered overlay and provisional exact-scale elevation are quotation aids only. Release paper-template, full-depth rear-buck, fit-coupon, and quotation work now, but keep production metal and vehicle cutting on HOLD until M1-M9 close. For FUEL STOP, prove EEI-003, key-OFF authority, and the original manual-stop fallback before connection.",
       "evidence_source": [
         "photo_inventory",
         "20260421_192813_gp_0jvYAo8g",
         "20260421_194401_gp_1dY3fLdw",
         "20260420_221819_gp_YV69fbvA",
-        "user_update_2026-05-02_dashboard_switch_lcd_update"
+        "user_update_2026-05-02_dashboard_switch_lcd_update",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_photorealistic_corrected_outer_vents.png",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv"
       ],
       "images": [
         {
@@ -36997,7 +37003,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 29,
-      "reference_token_count": 17,
+      "reference_token_count": 23,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -37011,7 +37017,131 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
-      "fabrication_packages": [],
+      "fabrication_packages": [
+        {
+          "requirement_id": "FAB-HVAC-001",
+          "system": "fabrication_handoff",
+          "package_id": "dashboard_lcd_hvac_fascia_rev_i",
+          "title": "J40 RHD centre-cassette 9-inch LCD dashboard Rev I V35",
+          "current_status": "quotation_release_production_measurement_hold",
+          "release_position": "Owner-selected V35 is released for visual review, supplier quotation, a 1:1 disposable centre-cassette template, full-depth buck and fit coupons only. Preserve the original Toyota cluster and RHD column/scallop, original asymmetric glovebox, full-width lower edge and formed end contours at their direct-traced positions. Replace only the ashtray/centre area with a removable zero-drop cassette; X-centre the true 9-inch module in that measured free field and raise it within the field to retain the one-line controls below; put seven bought selectors plus the separate hazard in that line; and centre each of two \u00d887-class outer vents independently between its fascia end and nearest retained component. Production metal and vehicle cutting remain HOLD until the signed physical traces, actual components, vent coupons and simultaneous full-depth mock-up are complete.",
+          "notes": "Quotation-only assumptions are explicit: the 1400 x 250 mm face is a plotting envelope and not a measured vehicle perimeter; CR4 is provisionally 1.5 mm; the supplied LCD module is 211.10 x 126.50 x 5.0 with active image 198.91 x 111.89; two vents target \u00d887 faces and \u00d875 rear interfaces; and control apertures are provisional \u00d822.5 mm. OEM geometry, centre-cassette cut/flanges, actual LCD aperture, complete selector stacks, vent retention/spigots and every rear duct/service envelope remain physical trace and measurement holds.",
+          "package_dir": "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+              "label": "Source spec: cnc_measurement_and_survey_checklist.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_quotation_cnc_spec.md",
+              "label": "Source spec: dashboard_rev_i_v35_quotation_cnc_spec.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_coordinates.csv",
+              "label": "Source spec: dashboard_rev_i_v35_provisional_coordinates.csv"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_front_elevation.svg",
+              "label": "Source spec: dashboard_rev_i_v35_provisional_front_elevation.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+              "label": "Source spec: ac_outlet_87mm_cnc_addendum.md"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
+              "label": "Source spec: ac_outlet_interface_schedule.csv"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+              "label": "Source spec: switch_position_schedule.csv"
+            }
+          ],
+          "hero_image": {
+            "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_photorealistic_corrected_outer_vents.png",
+            "label": "V35 photorealistic dashboard appearance preview",
+            "notes": "Non-dimensional appearance preview only. Do not scale pixels or derive CNC coordinates; use the signed M1\u2013M9 traces, actual components, coordinate schedule and scale-controlled elevation.",
+            "non_dimensional": true
+          },
+          "visual_links": [
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png",
+              "label": "Selected V35 registered centre-cassette dashboard baseline"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_front_elevation.svg",
+              "label": "V35 provisional exact-scale front elevation (quotation only)"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_and_survey_checklist.md",
+              "label": "Exact CNC measurement checklist"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv",
+              "label": "Fillable CNC measurement schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_quotation_cnc_spec.md",
+              "label": "V35 centre-cassette quotation CNC specification"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_provisional_coordinates.csv",
+              "label": "V35 provisional coordinate schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_87mm_cnc_addendum.md",
+              "label": "87 mm outlet CNC interface addendum"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
+              "label": "Outlet receipt and interface schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_audit_20260802.md",
+              "label": "2026-08-02 rear-clearance photo audit and LCD depth control"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_clearance_photo_evidence_20260802.csv",
+              "label": "Rear-clearance photo evidence schedule"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/rear_package_clearance_control.svg",
+              "label": "Rear-package clearance control diagram (quotation only)"
+            },
+            {
+              "url": "../../photos/20260802_145250_gp_4wxWxPmA.jpg",
+              "label": "Rear measurement photo 1 \u2014 oblique, unregistered context only"
+            },
+            {
+              "url": "../../photos/20260802_145305_gp_bepTxJOA.jpg",
+              "label": "Rear measurement photo 2 \u2014 zero/start out of frame"
+            },
+            {
+              "url": "../../photos/20260802_145316_gp_tJASS8hQ.jpg",
+              "label": "Rear measurement photo 3 \u2014 oblique, unregistered context only"
+            },
+            {
+              "url": "../../data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+              "label": "Seven-selector and hazard allocation"
+            }
+          ],
+          "model_links": [],
+          "dxf_links": [],
+          "svg_links": [],
+          "archive_link": {
+            "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
+            "label": "Download package (.zip)",
+            "download": true,
+            "bytes": 28969947,
+            "file_count": 17
+          },
+          "file_count": 17
+        }
+      ],
       "chassis_bracket_analysis_register": [],
       "market_specs": [],
       "linked_packages": [
@@ -37059,9 +37189,9 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "interior_dash_switch_fitup",
           "component_group": "interior_cabin",
           "current_status": "in_progress",
-          "planned_action": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels",
-          "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
-          "notes": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
+          "planned_action": "Close Rev I V35 M4-M9: measure the actual LCD, selector stacks, and chosen outlets; fit the 1:1 centre-cassette template and full-depth rear buck; then release the first article with the seven selectors plus separate hazard in the selected single line",
+          "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
+          "notes": "Rev I V35 is the owner-selected centre-cassette baseline. All 7 selectors are allocated with no spare: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. The measured M6 sample controls the provisional \u00d822.5 mounting cut, anti-rotation detail, and full rear contact-block stack; the actual M5 LCD controls its aperture, mounts, connectors, and service envelope. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. Production metal and vehicle cutting remain on HOLD until signed M1-M9 evidence and the full-depth buck prove the complete package."
         },
         {
           "component_job_id": "interior_diesel_cutoff_ignition_security",
@@ -37101,27 +37231,27 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors plus separate red hazard in the Rev I V35 single line below the LCD; template-fit complete rear clearances and capture the exact 9-inch LCD chassis/cutout before centre-cassette closeout"
+          "detail": "Work from the owner-selected Rev I V35 package: complete and sign M1-M9 using the vehicle and actual LCD, selectors, and outlets; release the 1:1 paper template and full-depth rear buck before any production metal or vehicle cutting"
         },
         {
-          "label": "Classify and tag interior control hardware",
+          "label": "Freeze the Rev I V35 design authority",
           "status": "in_progress",
-          "detail": "All dash switches, knobs, and control items should be tagged and catalogued."
+          "detail": "Use the owner-selected centre-cassette package as the visual and quotation baseline while preserving every retained OEM contour and feature."
         },
         {
-          "label": "Define switch function map",
+          "label": "Close M1-M7 physical inputs",
           "status": "queued",
-          "detail": "Each control needs a confirmed function, label text, and circuit assignment."
+          "detail": "Capture signed fascia, cluster, column, glovebox, LCD, selector, and outlet measurements from the vehicle and actual parts."
         },
         {
-          "label": "Complete dash-fit and mounting checks",
+          "label": "Prove the M8-M9 rear package",
           "status": "queued",
-          "detail": "Confirm hole sizes, clearances, and mechanical fit before final mounting."
+          "detail": "Use a full-depth cassette and duct buck to verify clearances, service loops, removal paths, and the zero-drop lower edge."
         },
         {
-          "label": "Close wiring integration and test",
+          "label": "Release the first article, then commission M10",
           "status": "queued",
-          "detail": "Wire each control into the final harness plan and verify operation."
+          "detail": "Release only the approved template or first article before metal cutting, then wire, label, and function-test the installed controls."
         },
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
@@ -37141,7 +37271,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Interior Dash Switch Fitup",
           "status": "in_progress",
-          "detail": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels Notes: Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting."
+          "detail": "Close Rev I V35 M4-M9: measure the actual LCD, selector stacks, and chosen outlets; fit the 1:1 centre-cassette template and full-depth rear buck; then release the first article with the seven selectors plus separate hazard in the selected single line Notes: Rev I V35 is the owner-selected centre-cassette baseline. All 7 selectors are allocated with no spare: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. The measured M6 sample controls the provisional \u00d822.5 mounting cut, anti-rotation detail, and full rear contact-block stack; the actual M5 LCD controls its aperture, mounts, connectors, and service envelope. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. Production metal and vehicle cutting remain on HOLD until signed M1-M9 evidence and the full-depth buck prove the complete package."
         },
         {
           "label": "Component Task \u00b7 Window Rubbers Weatherstrips",
@@ -37191,7 +37321,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 bought selectors are allocated with no spare and no additional selector purchase: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate HAZARD in one line. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The LCD module is centred on the physically measured free centre field of the removable zero-drop cassette. Each of the two outer vents is centred independently in its measured land. The directly traced original cluster, column/scallop, glovebox, full-width lower edge and formed contours remain unchanged; only the ashtray/centre area is replaced. All bought-component cuts remain physical measurement holds."
+          "detail": "At least one linked package is blocked. Exit gate: Rev I V35 is confirmed as the selected centre-cassette baseline. The original cluster, RHD column/scallop, glovebox, full-width lower edge, and formed outer/end contours remain unchanged; only the ashtray/centre area is replaced by a removable zero-drop cassette. The measured free centre field controls the 9-inch LCD; each of the two outer vents is centred independently in its measured land. All 7 bought selectors are allocated with no spare: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. Production cutting remains on HOLD until the signed M1-M9 trace, actual-component measurements, and full-depth buck prove fit, clearance, serviceability, and removal. M10 electrical and functional commissioning closes vehicle handoff."
         }
       ],
       "involved_parts": [
@@ -37315,43 +37445,41 @@ window.J40_DASHBOARD_DATA = {
       "operation_panels": [],
       "subtask_groups": [
         {
-          "key": "dashboard_and_controls",
-          "title": "Dashboard And Controls",
-          "summary": "Dash switch cataloguing, function assignment, fit-up, and electrical integration.",
+          "key": "rev_i_v35_dashboard_and_controls",
+          "title": "Rev I V35 Dashboard And Controls",
+          "summary": "Owner-selected centre-cassette dashboard: physical measurement closure, full-depth mock-up, first-article release, and electrical commissioning.",
           "subtasks": [
             {
-              "title": "Classify And Tag Control Hardware",
+              "title": "Freeze The Rev I V35 Design Baseline",
               "priority": "P0",
-              "remaining": "all dash controls",
-              "instruction": "Identify each switch, knob, warning lamp, and control before drilling or wiring.",
+              "remaining": "design-authority signoff",
+              "instruction": "Treat Rev I V35 as the selected appearance and quotation baseline without promoting its render or provisional elevation to production geometry.",
               "process_steps": [
-                "Lay out all dashboard/control hardware and photograph labels, pins, and mounting hardware.",
-                "Assign each item a control ID and intended function.",
-                "Record hole diameter, mounting depth, connector type, and current condition.",
-                "Separate confirmed controls from unknown, duplicate, or optional controls.",
-                "Bag each control with its nut, bezel, and connector parts."
+                "Review the Rev I package README, registered centre-cassette overlay, and non-dimensional V35 appearance preview together.",
+                "Mark the OEM cluster, RHD column scallop, glovebox, full-width lower edge, and formed outer/end contours as retained direct-trace geometry.",
+                "Limit replacement work to the ashtray/centre area and keep the removable cassette at zero extension and zero drop.",
+                "Lock the visible arrangement to one centred 9-inch LCD, two high outer outlets, seven selectors, and the separate red hazard.",
+                "Record that rendered proportions and lettering are review aids only; signed M1-M9 evidence controls fabrication."
               ],
               "tools": [
+                "Dashboard package",
                 "Camera",
-                "Calipers",
-                "Multimeter",
                 "Marker"
               ],
               "supplies": [
-                "Labels",
-                "Zip bags",
-                "Contact cleaner",
-                "Small parts tray"
+                "Design signoff sheet",
+                "Protective tape",
+                "Labels"
               ],
-              "hold_point": "No dashboard holes or wiring branches are finalized for unknown controls.",
+              "hold_point": "No alternative layout or change to retained OEM geometry proceeds without owner approval and a package revision.",
               "image_tokens": [
-                "switch",
-                "control",
                 "dashboard",
-                "button",
-                "knob"
+                "fascia",
+                "cluster",
+                "glovebox",
+                "switch"
               ],
-              "id": "classify_and_tag_control_hardware",
+              "id": "freeze_the_rev_i_v35_design_baseline",
               "status": "in_progress",
               "parts": [],
               "images": [
@@ -37384,121 +37512,16 @@ window.J40_DASHBOARD_DATA = {
                   ]
                 },
                 {
-                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "07:47:09",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_bulkhead",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260422_074709_gp_o4wiXyjA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260413_040719.jpg",
-                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-                  "captured_date": "2026-04-13",
-                  "captured_time": "04:07:19",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_cabin",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260413_040719",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "path": "../../photos/20260323_190005.jpg",
+                  "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
                   "captured_date": "2026-03-23",
-                  "captured_time": "21:10:28",
+                  "captured_time": "19:00:05",
                   "media_type": "photo",
                   "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "specific_component": "dashboard_lower_structure",
                   "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "media_id": "20260323_190005",
                   "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:06",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211006_gp_lhopOh5A",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (candidate_photos_added_cost_missing; delivery not_ordered; amount missing)"
-              ]
-            },
-            {
-              "title": "Define Switch Function Map",
-              "priority": "P0",
-              "remaining": "before harness build",
-              "instruction": "Lock what each control does and which circuit it belongs to.",
-              "process_steps": [
-                "List each required function: ignition, lights, hazards, wipers, heater, fuel stop/security, and accessories.",
-                "Assign one physical control to each function and mark optional controls as deferred.",
-                "Confirm switch rating, pinout, illumination behavior, and fuse/relay need.",
-                "Update the wiring tracker with wire size, fuse value source, and connector plan.",
-                "Label the control and matching loom branch with the same ID."
-              ],
-              "tools": [
-                "Multimeter",
-                "Power supply/test battery with fuse",
-                "Wiring tracker"
-              ],
-              "supplies": [
-                "Labels",
-                "Heat shrink ID sleeves",
-                "Fuses/relays as planned",
-                "Connector housings"
-              ],
-              "hold_point": "A circuit cannot be wired until its switch function, protection, and connector are defined.",
-              "image_tokens": [
-                "switch",
-                "wiring",
-                "dash",
-                "control",
-                "connector"
-              ],
-              "id": "define_switch_function_map",
-              "status": "queued",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:44:01",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_194401_gp_1dY3fLdw",
-                  "matched_tokens": [
-                    "20260421_194401_gp_1dy3fldw"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:28:13",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
-                  "matched_tokens": [
-                    "20260421_192813_gp_0jvyao8g"
-                  ]
                 },
                 {
                   "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
@@ -37534,18 +37557,6 @@ window.J40_DASHBOARD_DATA = {
                   "specific_component": "dashboard_and_cabin_stripdown",
                   "stage": "stripdown_cataloguing",
                   "media_id": "20260323_211028_gp_7IYxU7Wg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:06",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211006_gp_lhopOh5A",
                   "matched_tokens": []
                 }
               ],
@@ -37555,39 +37566,41 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
-              "title": "Complete Dash Fit And Mounting Checks",
-              "priority": "P1",
-              "remaining": "before fascia closeout",
-              "instruction": "Check physical fit before paint, trim, or wiring makes rework expensive.",
+              "title": "Close M1-M7 Physical Measurements",
+              "priority": "P0",
+              "remaining": "all production-blocking traces and actual-part dimensions",
+              "instruction": "Replace every provisional fascia, aperture, component, and outlet assumption with signed vehicle or actual-part evidence.",
               "process_steps": [
-                "Mock the switch/control layout in the actual dash panel or template.",
-                "Check rear clearance for wiring, nuts, heater ducts, column, and glovebox/trim.",
-                "Drill or file holes only after layout is approved.",
-                "Deburr, prime exposed metal edges, and fit grommets or edge protection where needed.",
-                "Install controls finger-tight and photograph final allocation."
+                "Complete the M1 fascia perimeter, folds, fixing, material, and no-cut survey from the vehicle.",
+                "Direct-trace the retained glovebox and factory cluster at M2, then capture the assembled column, shroud, stalk, boss, wheel, and swept envelope at M3.",
+                "Measure the free centre field and cassette opening at M4, including the true zero-drop lower-edge constraint.",
+                "Measure the selected 9-inch LCD chassis, cutout, mounts, connectors, cable bend, and removal envelope at M5.",
+                "Measure a complete selector/contact-block stack at M6 and both chosen outlet assemblies at M7; attach photographs and signoff in the measurement schedule."
               ],
               "tools": [
-                "Step drill",
-                "Files",
-                "Deburring tool",
+                "Straight edge",
                 "Calipers",
-                "Inspection mirror"
+                "Depth rods",
+                "Angle finder",
+                "Radius gauges",
+                "Camera"
               ],
               "supplies": [
-                "Edge primer",
-                "Grommets",
-                "Control nuts/washers",
-                "Protective tape"
+                "1:1 trace material",
+                "Masking tape",
+                "Measurement labels",
+                "Witness coupons"
               ],
-              "hold_point": "Controls mount without forcing, twisting wiring, or fouling the dash structure.",
+              "hold_point": "Production metal, component apertures, and vehicle cutting remain on HOLD until M1-M7 are measured, evidenced, and signed.",
               "image_tokens": [
                 "dashboard",
                 "fascia",
-                "switch",
-                "control",
-                "fit"
+                "measurement",
+                "lcd",
+                "vent",
+                "switch"
               ],
-              "id": "complete_dash_fit_and_mounting_checks",
+              "id": "close_m1_m7_physical_measurements",
               "status": "queued",
               "parts": [],
               "images": [
@@ -37674,16 +37687,136 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
-              "title": "Wire, Label, And Function Test",
+              "title": "Prove M8-M9 Full-Depth Package",
               "priority": "P0",
-              "remaining": "after harness branch build",
-              "instruction": "Integrate controls into protected, labelled circuits and test before closeout.",
+              "remaining": "paper template and rigid rear buck",
+              "instruction": "Validate the selected layout at full depth before any irreversible cut or production-CNC release.",
               "process_steps": [
-                "Build each branch with strain relief, heat shrink, and service loop.",
-                "Crimp with the correct die and tug-test each terminal.",
-                "Route wiring away from sharp edges, heater movement, pedals, and column movement.",
-                "Test continuity, switch function, fuse behavior, and relay operation.",
-                "Photograph final routing and label positions before trim covers them."
+                "Plot and fit the 1:1 disposable centre-cassette template, with all retained features registered to the signed trace.",
+                "Build a rigid full-depth buck using the actual LCD, complete selector stacks, chosen outlets, retainers, adapters, connectors, and service loops.",
+                "Route both supported HVAC branches and prove first bends, support points, aim range, shutoff, demist separation, and removal access.",
+                "Sweep the column, shroud, stalks, wheel, glovebox, and every service path through their complete operating envelopes.",
+                "Photograph the installed buck from front and rear and record pass/fail evidence against M8 and M9."
+              ],
+              "tools": [
+                "Template plot",
+                "Inspection mirror",
+                "Depth gauge",
+                "Camera",
+                "Hand tools"
+              ],
+              "supplies": [
+                "Cardboard/template board",
+                "Rigid buck material",
+                "Temporary fasteners",
+                "Protective tape"
+              ],
+              "hold_point": "The first article cannot be released until M8-M9 prove fit, clearance, serviceability, and removal with no interference.",
+              "image_tokens": [
+                "dashboard",
+                "fascia",
+                "mockup",
+                "clearance",
+                "duct",
+                "lcd"
+              ],
+              "id": "prove_m8_m9_full_depth_package",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "07:47:09",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_bulkhead",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260422_074709_gp_o4wiXyjA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:44:01",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_194401_gp_1dY3fLdw",
+                  "matched_tokens": [
+                    "20260421_194401_gp_1dy3fldw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:28:13",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
+                  "matched_tokens": [
+                    "20260421_192813_gp_0jvyao8g"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260413_040719.jpg",
+                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+                  "captured_date": "2026-04-13",
+                  "captured_time": "04:07:19",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_cabin",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260413_040719",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:28",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:06",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211006_gp_lhopOh5A",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (candidate_photos_added_cost_missing; delivery not_ordered; amount missing)",
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Release First Article, Wire, And Commission",
+              "priority": "P0",
+              "remaining": "after M1-M9 signoff",
+              "instruction": "Release the measured first article, then integrate and commission the seven selectors plus separate hazard at M10.",
+              "process_steps": [
+                "Issue the controlled first-article files only after every M1-M9 blocker is closed; inspect the first article against the signed trace before production repetition.",
+                "Fit WIPERS, LIGHTS, SPOTS, AUX, BLOWER, A/C, FUEL STOP, then the separate red HAZARD in the selected single line.",
+                "Wire every selector as a low-current relay/controller request with protected branches, strain relief, service loops, and durable labels.",
+                "Verify continuity, protection, relay logic, indicator behavior, HVAC operation, and unobstructed service/removal access.",
+                "Prove EEI-003, key-OFF authority, and the original manual-stop fallback before connecting FUEL STOP; record M10 photographs and signoff."
               ],
               "tools": [
                 "Ratchet crimper",
@@ -37700,15 +37833,16 @@ window.J40_DASHBOARD_DATA = {
                 "Loom tape",
                 "Labels"
               ],
-              "hold_point": "Every fitted control must work and be labelled before dash closure.",
+              "hold_point": "Vehicle handoff waits until the measured first article passes fit inspection and every fitted control passes M10 commissioning.",
               "image_tokens": [
                 "wiring",
                 "dashboard",
+                "lcd",
                 "loom",
                 "connector",
                 "switch"
               ],
-              "id": "wire_label_and_function_test",
+              "id": "release_first_article_wire_and_commission",
               "status": "queued",
               "parts": [],
               "images": [
@@ -40198,6 +40332,86 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_engine_exhaust_manifold_gasket_set_20260816",
+          "workstream": "mechanical_baseline",
+          "item": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware",
+          "status": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_engine_exhaust_manifold_gasket_set_20260816",
+          "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+          "product_link": "",
+          "notes": "Buy six new manifold-to-head gaskets matched to the fitted 2H head and manifold ports. Keep any optional turbo-flange gasket separate, and do not remove the manifold until the complete sealing set is on hand.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_engine_pushrod_cover_gasket_set_20260816",
+          "workstream": "mechanical_baseline",
+          "item": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020",
+          "status": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_engine_pushrod_cover_gasket_set_20260816",
+          "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+          "product_link": "",
+          "notes": "Buy one gasket for each of the two 2H pushrod/tappet side covers, using 11253-68010 and 11253-68020 as controlled references. Match both covers before opening the engine.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020 \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_mech_air_filter",
           "workstream": "mechanical_baseline",
           "item": "Air filter element",
@@ -40638,11 +40852,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Engine oil - Liqui Moly Touring High Tech SHPD 15W-40 5L; oil filter tracked separately (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020 (purchase_required_sample_match; delivery not_ordered; amount missing)",
                 "Accessory belt set (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines (purchase_ready_measured_stock; delivery not_ordered; amount missing)",
-                "Engine oil filter - Guard GDO-135 candidate for 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel filter (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (sample_route_photos_added_cost_missing; delivery not_ordered; amount missing)"
+                "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware (purchase_required_sample_match; delivery not_ordered; amount missing)",
+                "Engine oil filter - Guard GDO-135 candidate for 2H (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -48722,7 +48936,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 12,
-      "reference_token_count": 29,
+      "reference_token_count": 32,
       "requirements": [
         {
           "requirement_id": "RP-COOL-001",
@@ -64508,10 +64722,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "replacement_pipe_ordering_matrix",
           "component_group": "replacement_pipes",
-          "current_status": "bilal_ganj_photo_intake_added_price_pending",
-          "planned_action": "Maintain the curated replacement pipe matrix by vehicle location, direct pipe/location photo evidence, and recreation/order spec",
-          "evidence_ref": "data_replacement_pipe_ordering_specs|20260430_220004_gp_C9oYiYmA|20260430_215957_gp_2iBbUagw|20260422_004306_gp_vGlNr2UA|20260422_004311_gp_994KQ0Pw|20260430_215939_gp_EjZ7u1ow|20260502_005740_gp_Qiat03EQ|docs_engine_hose_tube_replacement_specs|docs_brake_workstream|docs_replacement_pipes_workstream|20260710_111909_gp_wjJFiGHA|20260710_111922_gp_fitRdwig|20260710_115709_gp_WMDUdgpw|20260710_115725_gp_mPuwEjYw|20260710_115730_gp_ytcZloOQ|photo_import_20260710T232017",
-          "notes": "Pipe-only control row. Body rubbers, grommet assortments, clamp-only rows, generic chassis status images, and optional HVAC duct/drain items are intentionally excluded. | July 10 Bilal Ganj/photo intake adds threaded fitting close-ups plus engine hose/pipe route samples. Exact circuit, thread, material, and pressure rating must be identified before assignment to brake/fuel/coolant/A/C rows; bill and line prices remain pending."
+          "current_status": "closed",
+          "planned_action": "Ordering/acquisition complete: retain the original assemblies as patterns and assign the received replacement set to exact circuits before installation.",
+          "evidence_ref": "data_replacement_pipe_ordering_specs|20260430_220004_gp_C9oYiYmA|20260430_215957_gp_2iBbUagw|20260422_004306_gp_vGlNr2UA|20260422_004311_gp_994KQ0Pw|20260430_215939_gp_EjZ7u1ow|20260502_005740_gp_Qiat03EQ|docs_engine_hose_tube_replacement_specs|docs_brake_workstream|docs_replacement_pipes_workstream|20260710_111909_gp_wjJFiGHA|20260710_111922_gp_fitRdwig|20260710_115709_gp_WMDUdgpw|20260710_115725_gp_mPuwEjYw|20260710_115730_gp_ytcZloOQ|photo_import_20260710T232017|20260502_004044_gp_Hx4Yo0Qg|20260712_012946_gp_GJur42bg|20260712_163133_gp_KjVxhYfQ|docs/replacement-pipes-old-new-comparison-20260816.md|user_update_2026-08-16_replacement_pipes_received",
+          "notes": "Owner requested mark-off on 2026-08-16. The ordering/acquisition job is closed because the replacement pipe, hose, and clamp set is in hand; the linked comparison preserves the original assemblies as the old pattern evidence and the July 12 intake as the received-set evidence. This is not installation signoff: exact circuit assignment, material/diameter/thread confirmation, routing, fitment, pressure/service suitability, and installed validation remain controlled by the open replacement-pipes workstream."
         }
       ],
       "issue_jobs": [],
@@ -64550,11 +64764,6 @@ window.J40_DASHBOARD_DATA = {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
-        },
-        {
-          "label": "Component Task \u00b7 Replacement Pipe Ordering Matrix",
-          "status": "bilal_ganj_photo_intake_added_price_pending",
-          "detail": "Maintain the curated replacement pipe matrix by vehicle location, direct pipe/location photo evidence, and recreation/order spec Notes: Pipe-only control row. Body rubbers, grommet assortments, clamp-only rows, generic chassis status images, and optional HVAC duct/drain items are intentionally excluded. | July 10 Bilal Ganj/photo intake adds threaded fitting close-ups plus engine hose/pipe route samples. Exact circuit, thread, material, and pressure rating must be identified before assignment to brake/fuel/coolant/A/C rows; bill and line prices remain pending."
         },
         {
           "label": "Component Task \u00b7 Pipe Support Adapter Prototype 20260816",
@@ -70249,7 +70458,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
       "exit_gate": "Compact two-takeoff evaporator package, two high fixed outer/end outlets, retained or dedicated demist, condenser, drier, compressor/bracket, barrier hoses, drain, controls, and wiring are installed with vacuum/leak/charge, balanced-airflow, demist, condensate, and electrical-load checks closed",
-      "notes": "2026-08-02 Rev I V17 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the directly traced original large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked.",
+      "notes": "Rev I V35 supersedes the earlier Rev I V17 and Rev H/V9 vent layouts. It keeps exactly two high outer/end directional outlets, each independently centred in its physically measured retained land, while the removable zero-drop centre cassette carries the LCD and controls. The signed vehicle trace and actual outlet assemblies control exact geometry. Measure before buying; do not cap two of four evaporator ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until M7-M9 prove the complete outlets, ducts, supports, first bends, clearance, and removal paths.",
       "evidence_source": [
         "docs/ac-hvac-workstream.md",
         "docs/hvac-evaporator-blower-sourcing-20260514.md",
@@ -70258,7 +70467,9 @@ window.J40_DASHBOARD_DATA = {
         "gmail_msg_19e78b8a26f000c1",
         "bank_alert_19e78b8dbe36d812",
         "gmail_msg_19e76240ad0d5bc6",
-        "gmail_msg_19e8cd7d9efb4afa"
+        "gmail_msg_19e8cd7d9efb4afa",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md",
+        "data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv"
       ],
       "images": [
         {
@@ -75672,7 +75883,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 225,
-      "reference_token_count": 8,
+      "reference_token_count": 10,
       "requirements": [
         {
           "requirement_id": "HVAC-UNIT-001",
@@ -77030,7 +77241,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 11,
-      "reference_token_count": 74,
+      "reference_token_count": 73,
       "requirements": [
         {
           "requirement_id": "BR-CAPTURE-001",
@@ -79190,7 +79401,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Master cylinder reservoir booster and firewall",
           "pipe_or_line": "",
-          "replace_scope": "replace_or_professionally_rebuild_after_sample_match",
+          "replace_scope": "reuse_or_optional_professional_refurbishment_only",
           "quantity": "1",
           "photo_evidence": [
             "20260504_user_booster_photo",
@@ -79202,17 +79413,17 @@ window.J40_DASHBOARD_DATA = {
             "20260529_030653_gp_7dCQk4QA",
             "20260529_030700_gp_8qu2Rliw"
           ],
-          "photo_status": "removed_booster_servo_sample_photos_show_replacement_required",
-          "spec_status": "removed_sample_measure_and_id_pending",
-          "acquisition_status": "not_acquired",
+          "photo_status": "existing_unit_owner_accepted",
+          "spec_status": "owner_decision_closed_scout_optional_refurbishment_only",
+          "acquisition_status": "existing_unit_on_hand",
           "installation_status": "not_installed",
-          "current_action": "Use the removed booster/servo as the sample for local quote or rebuild. Replace or professionally rebuild the servo; do not reuse the photographed unit as-is. Confirm diameter/depth, stud spacing, master seat/depth, pushrod, clevis, check valve/grommet, vacuum nipple orientation, and vacuum hold before payment or fit.",
-          "exact_recreation_spec": "Target direct-replacement family is tandem / dual diaphragm brake booster for 9/1975-7/1980 J40 with front discs and rear drums: Toyota 44610-60050. Also quote compatible interchange 44610-60100 / 44610-60180 only if supplier confirms same mounting, pushrod, clevis, master-cylinder seat/depth, check-valve/grommet, and clearance. Prefer new or professionally remanufactured; local used only after bench vacuum hold test.",
-          "material_spec": "Vacuum brake booster/servo with new check-valve grommet and check valve if not included; brake-fluid-compatible master rear seal/gasket as needed; no welded/modified booster shell",
-          "critical_measurements": "OEM/brand/part markings, booster diameter/depth, firewall stud pattern, master-cylinder stud spacing and pilot, pushrod length/depth, pedal clevis thread/pin, check-valve grommet OD, vacuum nipple orientation, clearance to clutch master and bonnet",
-          "fit_and_test": "Vacuum hold with no leakdown/hiss; pedal assist present; no brake-fluid contamination; pushrod free play set; no dragging brakes after road test",
-          "source_ref": "docs_brake_parts_pakistan_acquisition|docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|photo_import_20260529T031000|user_update_2026-05-29_brake_all_parts_replacement_evidence",
-          "notes": "New explicit row added 2026-05-04 after user confirmed front discs/rear drums and asked for Pakistan/local-market sourcing. Do not buy 44610-60040 single/drum booster or later 44610-60160 unless sample-matched and approved. | May 29 removed booster/servo photos show corrosion, aged rubber, and sample-match details; owner confirmed the brake evidence supports replacing all brake parts, with the old servo kept only as a pattern/core.",
+          "current_action": "Do not source a replacement booster. Retain the existing unit and refurbish it professionally only if the owner elects to do so or fitted testing identifies a specific fault.",
+          "exact_recreation_spec": "Existing fitted/removed booster is the controlled unit. If refurbished, preserve its firewall and master-cylinder interfaces, pushrod/free-play, clevis geometry and check-valve orientation; historical 44610-60050 references are identification context only, not an active buying instruction.",
+          "material_spec": "Existing booster; new brake-compatible seals, boot, check-valve grommet and service parts only if included in a professional refurbishment.",
+          "critical_measurements": "Booster diameter/depth, stud patterns, master seat/depth, pushrod/free-play, clevis, check valve/grommet and vacuum nipple orientation.",
+          "fit_and_test": "Vacuum hold with no hiss or leakdown; correct pedal assist and free play; no contamination, dragging brakes or leaks after bleed, static stop and controlled low-speed test.",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|photo_import_20260529T031000|user_update_2026-08-16_booster_scout_closed_optional_refurbishment_only",
+          "notes": "Owner decision 2026-08-16 closes replacement and rebuild scouting: at most refurbish the existing booster. Final system acceptance tests remain required.",
           "evidence_images": [
             {
               "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
@@ -79490,6 +79701,69 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             }
           ]
+        },
+        {
+          "requirement_id": "BR-REAR-011",
+          "requirement_name": "Rear stepped shoe-pivot pin and retaining washer/ring set",
+          "pipe_id": "",
+          "vehicle_location": "Left and right rear drum shoe pivot locations",
+          "pipe_or_line": "",
+          "replace_scope": "replace_missing_sample_matched_hardware",
+          "quantity": "1_stepped_pin_plus_2_c_washers_plus_2_e_rings",
+          "photo_evidence": [
+            "20260524_025547_gp_yCvA0bxA",
+            "20260524_025532_gp_YlEZxOmQ",
+            "20260524_025515_gp_zEaIZo5Q"
+          ],
+          "photo_status": "project_history_identity_locked_physical_sample_fit_pending",
+          "spec_status": "required_exact_parts_identified_sample_fit_pending",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Buy one fitted-pattern stepped pivot pin, two Toyota 90213-07010 7 mm C washers and two Toyota 96160-00500 5 mm E-rings; sample-match the surviving pin, backing plate and groove positions before payment.",
+          "exact_recreation_spec": "One remaining stepped shoe-pivot pin plus one C washer and one E-ring per rear side. Do not substitute a generic bolt, 90249-08068, or generic handbrake hardware.",
+          "material_spec": "New plated or hardened brake hardware of the correct fitted pattern; no soft generic fastener substitutions.",
+          "critical_measurements": "Pin step diameters and length, thread, shoulder, groove positions, washer/ring ID and thickness, backing-plate and shoe fit.",
+          "fit_and_test": "Both rear shoes pivot and retain correctly, hardware clears the hub/drum, sides mirror correctly, shoes return fully and the assembled brakes pass adjustment and controlled road tests.",
+          "source_ref": "rear_brake_pivot_hardware_identity_20260816|docs/rear-brake-shoe-fitment-and-purchase-control-20260722.md|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+          "notes": "User's exact remaining quantity is one pin, two C washers and two E washers/E-rings. Project history identifies the Toyota references, but the physical sample controls final fit.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025547_gp_yCvA0bxA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025532_gp_YlEZxOmQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:32",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025532_gp_YlEZxOmQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025515_gp_zEaIZo5Q.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:15",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025515_gp_zEaIZo5Q",
+              "matched_tokens": []
+            }
+          ]
         }
       ],
       "pipe_requirements": [],
@@ -79506,66 +79780,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_station_closure": [],
       "fabrication_packages": [],
       "chassis_bracket_analysis_register": [],
-      "market_specs": [
-        {
-          "id": "brake_booster_servo_44610_60050_market_scout",
-          "title": "Brake Booster / Servo Local Market Scout",
-          "scope": "Pakistan local-market quote only",
-          "quantity": "1 booster assembly",
-          "plain_stall_request": "Need a brake servo / brake booster for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes. Primary part number is Toyota 44610-60050. Please quote only until the old booster is sample-matched and vacuum-tested.",
-          "buy_target": "Primary target is the 9/1975-7/1980 J40/FJ40/BJ40 tandem or dual-diaphragm booster family, Toyota 44610-60050. Quote 44610-60100 or 44610-60180 only if the shop proves the mounting, pushrod, clevis, master-cylinder seat/depth, check-valve grommet, nipple direction, and firewall clearance match the old unit.",
-          "must_include": [
-            "Booster/servo shell with intact mounting studs and no welded or modified shell.",
-            "Correct pedal pushrod and clevis, or confirmed reuse of the existing clevis with matching thread and pin.",
-            "Correct master-cylinder mounting pattern, pilot/seat, and pushrod depth for the fitted master cylinder.",
-            "Vacuum check valve and grommet included, or a matching new check valve/grommet quoted separately.",
-            "Seller identifies whether the unit is new, professionally remanufactured, or used local-market stock."
-          ],
-          "bench_test": [
-            "Bench vacuum-test the booster before payment; it must hold vacuum without hiss or leakdown.",
-            "Inspect inside the master-cylinder side for brake-fluid contamination from a leaking master cylinder.",
-            "Check pushrod movement and return; no sticking, bent rod, broken clevis, or loose shell crimp.",
-            "Confirm check-valve direction and that the vacuum nipple matches the planned reinforced booster hose.",
-            "After installation, set pushrod free play and confirm no brake drag after repeated pedal applications."
-          ],
-          "reject_if": [
-            "Seller offers a single/drum booster such as 44610-60040 as a direct replacement.",
-            "Seller offers the later 44610-60160/1980s listing without physically proving sample fit.",
-            "Used unit cannot be vacuum-tested before payment, hisses, leaks down, or contains brake fluid.",
-            "Firewall studs, master studs, pushrod/clevis, check valve/grommet, or shell depth do not match the old sample.",
-            "Universal booster requires cutting, welding, unknown pedal-ratio changes, or unproven brake-line changes."
-          ],
-          "capture_before_leaving": [
-            "Seller name, phone number, market/stall location, quoted price in PKR, and return/test terms.",
-            "Photos of the front, rear, side depth, firewall studs, master-cylinder face, pushrod, clevis, and check valve.",
-            "Any part number, brand label, donor vehicle claim, remanufacturer label, or warranty card.",
-            "Short video or photo evidence of the vacuum hold test if buying used or remanufactured local stock.",
-            "Photo comparing old and replacement boosters side by side before payment, if the old sample is available."
-          ],
-          "price_guidance": {
-            "rule": "Quote only in Bilal Ganj, Montgomery Road, Land Cruiser House, and brake-servo rebuild shops first. Record local PKR price and condition. Import fallback exists, but local used/reman must be rejected unless it passes sample-match and vacuum tests."
-          },
-          "decision_rule": "Buy locally only after sample match and vacuum test pass. Otherwise record quote/reject evidence and use an import fallback for the 44610-60050 family.",
-          "links": [
-            {
-              "url": "../../docs/brake-parts-pakistan-acquisition-20260503.md",
-              "label": "Pakistan brake buying text"
-            },
-            {
-              "url": "../../docs/brake-parts-acquisition-spec-20260503.md",
-              "label": "Brake acquisition spec"
-            },
-            {
-              "url": "https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682",
-              "label": "Land Cruiser House lead"
-            },
-            {
-              "url": "https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/",
-              "label": "44610-60050 import fallback"
-            }
-          ]
-        }
-      ],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP04",
@@ -79583,10 +79798,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "brake_booster_servo_refurbishment_20260529",
           "component_group": "brakes",
-          "current_status": "functionally_confirmed_cosmetic_tidy_pending",
-          "planned_action": "Tidy the booster cosmetically without disturbing the shell joint, pushrod, clevis, boot, check valve, grommet, studs, or functional settings; preserve the normal master-cylinder interface, bleed, static-stop, and controlled low-speed checks as part of final brake-system assembly",
-          "evidence_ref": "20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md|docs/amir-refurbishment-video-gates-20260529.md|user_update_2026-07-19_brake_booster_work_done|user_update_2026-07-29_brake_booster_confirmed_fine_cosmetic_tidy_only",
-          "notes": "Owner confirms on 2026-07-29 that the booster is fine and needs cosmetic tidying only. Close the booster repair/replacement and functional-acceptance concern. Cosmetic work must not open, weld, heat-distort, contaminate, or alter the booster, pushrod/free-play, check valve, grommet, boot, clevis, or mounting interfaces. Final assembled brake-system checks remain part of the wider brake workstream, not an open defect against the booster."
+          "current_status": "closed_scout_optional_refurbishment_only",
+          "planned_action": "Close replacement and refurbishment scouting. Retain the existing booster and refurbish it professionally only if the owner elects to do so or fitted testing identifies a specific fault; otherwise preserve and refit it for the normal brake-system acceptance checks.",
+          "evidence_ref": "20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|docs/amir-refurbishment-video-gates-20260529.md|user_update_2026-08-16_booster_scout_closed_optional_refurbishment_only",
+          "notes": "Owner decision 2026-08-16: at most refurbish the existing booster. No replacement, exchange, or rebuild market scout remains open. Final vacuum-assist, leak, bleed, static-stop, free-play and low-speed tests remain under the overall brake-system release."
         },
         {
           "component_job_id": "brake_hydraulic_refresh_and_bias_decision",
@@ -79615,10 +79830,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "front_brake_sumitomo_refresh_decision_20260816",
           "component_group": "brakes",
-          "current_status": "system_route_locked_sample_measurement_pending",
-          "planned_action": "Retain and rebuild the fitted late-J40/FJ55 Sumitomo four-piston front brakes; sample-match pads and 302x20 mm-class rotors, renew pins, springs, clips, flex hoses, caliper seals or exact calipers, fluid and any damaged short hard lines.",
-          "evidence_ref": "docs/brake-parts-acquisition-spec-20260503.md|codex_history_20260816_identify_front_brake_replacements",
-          "notes": "Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. The removed pad, rotor and fitted caliper measurements remain purchase authority."
+          "current_status": "system_route_locked_parts_confirmed_required_sample_measurement_pending",
+          "planned_action": "Buy one matched front pad axle set; 4 retaining pins, 2 anti-rattle springs and 2 pin clips; two new vented front rotors; two lower wheel flex hoses plus the upper/frame hose only if fitted. Professionally rebuild both original Sumitomo four-piston calipers with new pistons where needed, new seals, dust boots and bleed screws, or buy a matched new/remanufactured LH/RH pair. Finish with a complete fresh DOT 3 flush and refill.",
+          "evidence_ref": "docs/brake-parts-acquisition-spec-20260503.md|codex_history_20260816_identify_front_brake_replacements|user_update_2026-08-16_confirmed_required_brake_parts",
+          "notes": "Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. Removed pad, rotor, hose and fitted caliper measurements remain purchase authority. DOT 3 stock is already recorded on hand; do not duplicate-buy it unless the sealed stock proves insufficient or unsuitable."
         },
         {
           "component_job_id": "front_caliper_holder_fit_check_20260712",
@@ -79717,14 +79932,14 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Control the as-fitted rear-wheel handbrake as one front cable plus two rear branches; close the 21-point master sheet, identify the ambiguous short linkage and count hidden hardware before releasing any of the 19 component lines. Notes: The factory 1978 prop-shaft brake catalogue is not the as-fitted authority. Daraz order 243701549680938 is wrong-size and incomplete and is rejected; no new handbrake orders have been placed."
         },
         {
+          "label": "Component Task \u00b7 Brake Booster Servo Refurbishment 20260529",
+          "status": "closed_scout_optional_refurbishment_only",
+          "detail": "Close replacement and refurbishment scouting. Retain the existing booster and refurbish it professionally only if the owner elects to do so or fitted testing identifies a specific fault; otherwise preserve and refit it for the normal brake-system acceptance checks. Notes: Owner decision 2026-08-16: at most refurbish the existing booster. No replacement, exchange, or rebuild market scout remains open. Final vacuum-assist, leak, bleed, static-stop, free-play and low-speed tests remain under the overall brake-system release."
+        },
+        {
           "label": "Component Task \u00b7 Front Caliper Holder Fit Check 20260712",
           "status": "donor_candidate_parts_in_hand_fit_check_required",
           "detail": "Fit-check the donor front caliper holders/carriers from another car against the fitted Sumitomo front-disc setup before installation; confirm side orientation, bolt spacing, thread condition, rotor centering, pad sweep, caliper alignment, hose/bridge-pipe clearance, and torque spec. Notes: Owner reports a set of caliper holders from another car seems usable. Treat as used safety-critical donor hardware until cleaned, inspected, crack-free, correctly handed, and proven aligned on the vehicle. No distinct caliper-holder photo was in the July 12 picker batch."
-        },
-        {
-          "label": "Component Task \u00b7 Brake Booster Servo Refurbishment 20260529",
-          "status": "functionally_confirmed_cosmetic_tidy_pending",
-          "detail": "Tidy the booster cosmetically without disturbing the shell joint, pushrod, clevis, boot, check valve, grommet, studs, or functional settings; preserve the normal master-cylinder interface, bleed, static-stop, and controlled low-speed checks as part of final brake-system assembly Notes: Owner confirms on 2026-07-29 that the booster is fine and needs cosmetic tidying only. Close the booster repair/replacement and functional-acceptance concern. Cosmetic work must not open, weld, heat-distort, contaminate, or alter the booster, pushrod/free-play, check valve, grommet, boot, clevis, or mounting interfaces. Final assembled brake-system checks remain part of the wider brake workstream, not an open defect against the booster."
         },
         {
           "label": "Component Task \u00b7 Rear Parking Brake Attachment Hardware 20260527",
@@ -79763,8 +79978,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Component Task \u00b7 Front Brake Sumitomo Refresh Decision 20260816",
-          "status": "system_route_locked_sample_measurement_pending",
-          "detail": "Retain and rebuild the fitted late-J40/FJ55 Sumitomo four-piston front brakes; sample-match pads and 302x20 mm-class rotors, renew pins, springs, clips, flex hoses, caliper seals or exact calipers, fluid and any damaged short hard lines. Notes: Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. The removed pad, rotor and fitted caliper measurements remain purchase authority."
+          "status": "system_route_locked_parts_confirmed_required_sample_measurement_pending",
+          "detail": "Buy one matched front pad axle set; 4 retaining pins, 2 anti-rattle springs and 2 pin clips; two new vented front rotors; two lower wheel flex hoses plus the upper/frame hose only if fitted. Professionally rebuild both original Sumitomo four-piston calipers with new pistons where needed, new seals, dust boots and bleed screws, or buy a matched new/remanufactured LH/RH pair. Finish with a complete fresh DOT 3 flush and refill. Notes: Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. Removed pad, rotor, hose and fitted caliper measurements remain purchase authority. DOT 3 stock is already recorded on hand; do not duplicate-buy it unless the sealed stock proves insufficient or unsuitable."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -80109,6 +80324,47 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+          "workstream": "brake_system",
+          "item": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2",
+          "status": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Local Toyota / Land Cruiser brake parts counter / brake hardware supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+          "evidence_ref": "BR-REAR-011|rear_brake_pivot_hardware_identity_20260816|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+          "product_link": "",
+          "notes": "Buy the exact stepped rear shoe-pivot pin plus two 7 mm C washers and two 5 mm E-rings. Carry the original/sample and do not substitute a generic bolt or an unverified circlip stack.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+            "caption": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2 \u00b7 shoulder pins sleeves and spacers reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_shoulder_pins_sleeves_spacers_reference",
+            "matched_tokens": [
+              "sleeves",
+              "spacers"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -80859,8 +81115,8 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
           "workstream": "brake_system",
-          "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
-          "status": "planned",
+          "item": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips",
+          "status": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
@@ -80871,9 +81127,9 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
-          "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+          "notes": "Confirmed required 2026-08-16: sample-match and buy one complete kit containing exactly 4 retaining pins, 2 anti-rattle springs and 2 pin clips. Count every component separately at receipt; the recorded USD 8.00 remains a reference estimate, not an order.",
           "links": [
             {
               "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
@@ -80886,7 +81142,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+            "caption": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -80904,8 +81160,8 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_front_disc_pad_axle_set_sumitomo_20260530",
           "workstream": "brake_system",
-          "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
-          "status": "planned",
+          "item": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers",
+          "status": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
@@ -80916,9 +81172,9 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
-          "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+          "notes": "Confirmed required 2026-08-16: buy one matched front axle set only after the removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; recorded USD 39.99 remains a reference estimate, not an order.",
           "links": [
             {
               "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
@@ -80931,7 +81187,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+            "caption": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -80949,43 +81205,22 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_front_brake_hose_pair",
           "workstream": "brake_system",
-          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-          "status": "planned",
+          "item": "Front flexible hoses - lower wheel hoses x2 plus upper/frame hose x1 only if fitted",
+          "status": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+          "vendor": "Montgomery Road brake hydraulic hose shop / Toyota-Land Cruiser parts counter",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_front_brake_hose_pair",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
+          "notes": "Confirmed required 2026-08-16: replace both lower wheel hoses and the upper/frame hose only if that third hose is fitted. Buy or make complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
+          "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -81008,23 +81243,23 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_front_rotor_service_pair",
+          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
           "workstream": "brake_system",
-          "item": "Front rotor replacement pair - measure old rotors for exact match",
-          "status": "planned",
+          "item": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair",
+          "status": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "vendor": "Land Cruiser parts shop / professional brake caliper rebuilder",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_front_rotor_service_pair",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
+          "notes": "Confirmed required 2026-08-16. Prefer a professional rebuild of both original Sumitomo four-piston calipers with new pistons wherever inspection requires them, plus new seals, dust boots and bleed screws. If either body cannot be safely rebuilt, buy a matched new/remanufactured LH/RH pair; release only after sample match and bench test.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -81032,7 +81267,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+            "caption": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair \u00b7 local inventory photo \u00b7 Land Cruiser parts shop / professional brake caliper rebuilder",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -81048,23 +81283,23 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+          "entry_id": "part_front_rotor_service_pair",
           "workstream": "brake_system",
-          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-          "status": "planned",
+          "item": "Front vented rotors - two new matched rotors replaced as a pair",
+          "status": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "vendor": "Local Toyota / Land Cruiser parts counter / brake parts shop",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "source_ref": "part_front_rotor_service_pair",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
+          "notes": "Confirmed required 2026-08-16: buy two new matching vented front rotors and replace them as a pair. Use Toyota 43512-60011 only as a reference until the old rotor measurements and hub, dust-shield, caliper and wheel clearances prove the exact family.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -81072,7 +81307,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+            "caption": "Front vented rotors - two new matched rotors replaced as a pair \u00b7 local inventory photo \u00b7 Local Toyota / Land Cruiser parts counter / brake parts shop",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -81774,10 +82009,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake wheel-end attachment hardware and spring set - clevis/equalizer/return springs/clips (lever_springs_received_remaining_hardware_open; delivery not_ordered; amount missing)",
-                "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips (runner_spec_controlled; delivery not_ordered; amount estimate)",
-                "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 (runner_spec_controlled; delivery not_ordered; amount estimate)",
-                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (received_candidate; delivery needs_location_match; amount missing)"
+                "Brake flex-hose retaining U-clips and bracket hardware pack (received_candidate; delivery needs_location_match; amount missing)",
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (buy_spare_set_sample_match_before_install; delivery not_ordered; amount missing)",
+                "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips (runner_spec_controlled; delivery not_ordered; amount estimate)",
+                "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers (runner_spec_controlled; delivery not_ordered; amount estimate)"
               ]
             },
             {
@@ -81951,7 +82186,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 0,
-      "reference_token_count": 8,
+      "reference_token_count": 9,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -81967,59 +82202,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_station_closure": [],
       "fabrication_packages": [],
       "chassis_bracket_analysis_register": [],
-      "market_specs": [
-        {
-          "id": "j60_hydraulic_steering_market_scout",
-          "title": "J60 Hydraulic Steering Acquisition Gate",
-          "scope": "Complete-set identification and quote only until trial-fit release",
-          "quantity": "1 complete matched RHD J60/HJ60 hydraulic steering package",
-          "plain_stall_request": "I need a complete right-hand-drive J60/HJ60 hydraulic power-steering set: steering box, matched pitman arm, collapsible shaft and couplers, drag-link parts, plus a Toyota 2H-compatible pump, brackets, pulley, reservoir and hoses. Keep every part together for inspection and trial fit.",
-          "buy_target": "The approved route is RHD J60/HJ60 hydraulic steering, not Vitz/Yaris column EPS. Source the box-side and 2H pump-side hardware as identified matched sets. Do not release chassis drilling, welding, adapter plates or final hoses from catalogue assumptions; first bench-inspect the complete set and physically trial-fit it on the J40. The accepted steering package becomes the fixed clearance envelope for final cooling, exhaust and body reassembly.",
-          "must_include": [
-            "RHD J60/HJ60 hydraulic steering box with readable casting or identification evidence.",
-            "Matched pitman arm, collapsible/intermediate shaft, couplers, U-joints and fastening hardware.",
-            "Drag-link parts suitable for measuring the final J40 linkage route after trial fit.",
-            "Toyota 2H-compatible pump, engine brackets, pulley, reservoir and mounting hardware.",
-            "Pressure and return fittings or hose-end references retained for measured hose fabrication.",
-            "Photos and measurements of splines, mounting faces, port threads, pulley alignment and clearances."
-          ],
-          "bench_test": [
-            "Inspect the box for cracks, damaged mounting ears, shaft play, roughness, leaks and sector/input wear.",
-            "Confirm pitman and shaft splines fully match their mating parts; reject hammered or welded joints.",
-            "Inspect pump shaft, pulley, reservoir and brackets as one 2H drive-alignment package.",
-            "Rebuild or professionally inspect serviceable used units before permanent installation.",
-            "Trial-fit the complete steering layout on the vehicle before any chassis or hose fabrication is released."
-          ],
-          "reject_if": [
-            "The steering box is left-hand-drive, unidentified, cracked, welded, seized or materially incomplete.",
-            "Pitman arm, shaft/couplers, pump brackets, pulley or reservoir are missing from a claimed complete set.",
-            "Seller proposes a Vitz/Yaris EPS column, loose hydraulic box or mixed unmatched parts as the approved route.",
-            "Mounting, spline, port or 2H pulley alignment cannot be documented before purchase release.",
-            "Permanent drilling, welding, plates or final hoses are requested before physical vehicle trial fit."
-          ],
-          "capture_before_leaving": [
-            "Seller, location, contact, price, return terms and donor claim.",
-            "Box identification, mounting face, sector/input splines, pitman arm and shaft/coupler layout.",
-            "Pump, bracket, pulley, belt-plane, reservoir and port/fitting details.",
-            "One full-set photo showing every included component and fastener.",
-            "Bench-inspection result and any rebuild quote or warranty."
-          ],
-          "price_guidance": {
-            "rule": "Quote complete matched sets first; do not pay complete-package money for missing box-side or 2H pump-drive hardware."
-          },
-          "decision_rule": "Release purchase only when the RHD J60/HJ60 identity, complete contents, condition evidence and return terms are acceptable. Release fabrication only after the complete rebuilt/inspected package passes J40 trial fit.",
-          "links": [
-            {
-              "url": "../../docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-              "label": "J60 hydraulic steering plan"
-            },
-            {
-              "url": "../../docs/master-project-plan.md",
-              "label": "Master project plan"
-            }
-          ]
-        }
-      ],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -82033,10 +82216,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "j60_hydraulic_complete_set_acquisition",
           "component_group": "steering_procurement",
-          "current_status": "approved_component_first_exact_identity_hold",
-          "planned_action": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting.",
-          "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-          "notes": "The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route."
+          "current_status": "closed_replacement_steering_in_hand_identity_fit_check_pending",
+          "planned_action": "Close the market scout. Inventory and positively identify the replacement steering now in hand, then bench-inspect and trial-fit the complete box, pitman/input parts, linkage/shaft interfaces and compatible 2H pump drive before any chassis or hose work.",
+          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|user_update_2026-08-16_replacement_steering_in_hand",
+          "notes": "Owner reports replacement steering in hand on 2026-08-16. No further market scouting is required; exact identity, condition, completeness, hydraulic matching and full vehicle fit still control installation."
         },
         {
           "component_job_id": "j60_hydraulic_existing_interface_capture",
@@ -82117,8 +82300,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Component Task \u00b7 J60 Hydraulic Complete Set Acquisition",
-          "status": "approved_component_first_exact_identity_hold",
-          "detail": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting. Notes: The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route."
+          "status": "closed_replacement_steering_in_hand_identity_fit_check_pending",
+          "detail": "Close the market scout. Inventory and positively identify the replacement steering now in hand, then bench-inspect and trial-fit the complete box, pitman/input parts, linkage/shaft interfaces and compatible 2H pump drive before any chassis or hose work. Notes: Owner reports replacement steering in hand on 2026-08-16. No further market scouting is required; exact identity, condition, completeness, hydraulic matching and full vehicle fit still control installation."
         },
         {
           "label": "Component Task \u00b7 J60 Hydraulic Existing Interface Capture",
@@ -82165,41 +82348,43 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_power_steering_upgrade",
           "workstream": "eps_vitz_upgrade",
-          "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
-          "status": "researching",
-          "procurement_stage": "complete_set_identity_and_trial_fit_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
+          "item": "Replacement hydraulic steering assembly - on hand; identity and fit verification pending",
+          "status": "received_candidate",
+          "procurement_stage": "received_identity_and_trial_fit_pending",
+          "payment_status": "unknown",
+          "delivery_status": "received",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
+          "vendor": "on-hand replacement steering",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
-          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
+          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv|user_update_2026-08-16_replacement_steering_in_hand",
           "product_link": "",
-          "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before final cooling, exhaust and body reassembly.",
+          "notes": "Market scout closed 2026-08-16 because replacement steering is in hand. Purchase price, vendor and exact donor identity have not been captured. Record all casting/part marks and included pieces, inspect condition, pressure/flow match the pump drive, and complete vehicle trial fit before chassis work or final hoses.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260802_114417_gp_Ccn6bYNg.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
-            "captured_date": "2026-08-02",
-            "captured_time": "11:44:17",
+            "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "18:58:26",
             "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260802_114417_gp_Ccn6bYNg",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_185826_gp_FoyeBPUg",
             "matched_tokens": [
-              "20260802"
+              "hand",
+              "fit",
+              "2026"
             ],
             "match_basis": "inventory_match",
-            "match_score": 26
+            "match_score": 42
           }
         }
       ],
@@ -82318,7 +82503,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Replacement hydraulic steering assembly - on hand; identity and fit verification pending (received_identity_and_trial_fit_pending; delivery received; amount missing)"
               ]
             },
             {
@@ -82428,7 +82613,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Replacement hydraulic steering assembly - on hand; identity and fit verification pending (received_identity_and_trial_fit_pending; delivery received; amount missing)"
               ]
             },
             {
@@ -82542,7 +82727,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Replacement hydraulic steering assembly - on hand; identity and fit verification pending (received_identity_and_trial_fit_pending; delivery received; amount missing)"
               ]
             },
             {
@@ -82655,7 +82840,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Replacement hydraulic steering assembly - on hand; identity and fit verification pending (received_identity_and_trial_fit_pending; delivery received; amount missing)"
               ]
             },
             {
@@ -82768,7 +82953,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package (complete_set_identity_and_trial_fit_hold; delivery not_ordered; amount missing)"
+                "Replacement hydraulic steering assembly - on hand; identity and fit verification pending (received_identity_and_trial_fit_pending; delivery received; amount missing)"
               ]
             }
           ]
@@ -83099,9 +83284,9 @@ window.J40_DASHBOARD_DATA = {
           "system": "suspension_upgrade",
           "package_id": "suspension_wood_cribbing_rev_a",
           "title": "Suspension wood cribbing Rev A",
-          "current_status": "suspension_reference",
-          "release_position": "Backup drawing pack for the suspension cribbing buy: 8 rectangular blocks plus 4 wedge chocks.",
-          "notes": "Shop ask is owned by suspension_upgrade through docs/suspension-wood-cribbing-merchant-spec.md; this package is the drawing backup. Supplemental cribbing/chocks only; not a substitute for rated stands.",
+          "current_status": "completed",
+          "release_position": "Fabrication complete and closed; retain the Rev A pack as the reference for the received set of 8 rectangular blocks plus 4 wedge chocks.",
+          "notes": "User confirmed fabrication closeout on 2026-08-16. Retain the package as the as-built/reference drawing backup for the received suspension-owned cribbing set. Supplemental cribbing/chocks only; not a substitute for rated stands.",
           "package_dir": "data/manual/fabrication/suspension_wood_cribbing_rev_a",
           "primary_links": [
             {
@@ -83161,7 +83346,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42182,
+            "bytes": 42304,
             "file_count": 11
           },
           "file_count": 11
@@ -96254,10 +96439,10 @@ window.J40_DASHBOARD_DATA = {
         "expected_delivery_date": "",
         "amount": "",
         "currency": "",
-        "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa",
+        "evidence_ref": "docs/ac-hvac-workstream.md|docs/hvac-evaporator-blower-sourcing-20260514.md|docs/hvac-dashboard-vent-duct-layout-20260602.md|data_manual_hvac_system_requirements|gmail_msg_19e78b8a26f000c1|bank_alert_19e78b8dbe36d812|gmail_msg_19e76240ad0d5bc6|gmail_msg_19e8cd7d9efb4afa|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/ac_outlet_interface_schedule.csv",
         "product_link": "",
         "next_action": "Measure the J40 cabin package and service envelope, then source and mock a compact 12V two-takeoff evaporator with both complete supported branches to the two high fixed outer/end occupant outlets; inspect the shipped four-hole unit for return/resale/donor disposition",
-        "notes": "2026-08-02 Rev I V17 visual direction supersedes the four-hole AliExpress unit as the primary install candidate and replaces Rev H's four cabin vents plus V9's central pair with two high outer/end directional outlets. It targets the original shallow fascia, restores the photo-derived installed cluster-to-column relationship, retains the directly traced original large OEM glovebox, deletes and closes over the separate smaller ashtray, and centres the LCD on the complete face; the signed vehicle trace controls exact geometry. Measure before buying; do not cap two of four ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until all physical positions are locked."
+        "notes": "Rev I V35 supersedes the earlier Rev I V17 and Rev H/V9 vent layouts. It keeps exactly two high outer/end directional outlets, each independently centred in its physically measured retained land, while the removable zero-drop centre cassette carries the LCD and controls. The signed vehicle trace and actual outlet assemblies control exact geometry. Measure before buying; do not cap two of four evaporator ports without airflow/freeze testing; preserve a separate demist path; do not crimp hoses or cut production fascia until M7-M9 prove the complete outlets, ducts, supports, first bends, clearance, and removal paths."
       }
     ],
     "delivery_watchlist": [
@@ -96671,10 +96856,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "complete_set_identity_and_trial_fit_hold",
-        "count": 1
-      },
-      {
         "stage": "deferred_optional",
         "count": 1
       },
@@ -96719,8 +96900,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "stage": "purchase_required_sample_match",
+        "count": 3
+      },
+      {
         "stage": "received_candidate",
         "count": 8
+      },
+      {
+        "stage": "received_identity_and_trial_fit_pending",
+        "count": 1
       },
       {
         "stage": "return_exchange_required",
@@ -96744,6 +96933,38 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "counts_by_next_action": [
+      {
+        "next_action": "Carry the original stepped pivot and sample-match every retaining piece; do not substitute a generic bolt",
+        "count": 1
+      },
+      {
+        "next_action": "Confirm both cover shapes and buy one of each reference before opening the engine",
+        "count": 1
+      },
+      {
+        "next_action": "Measure the old rotor and buy two new matching vented rotors as a pair",
+        "count": 1
+      },
+      {
+        "next_action": "Quote both-original rebuild with pistons as needed, seals, dust boots and bleed screws; otherwise quote a matched new/reman LH/RH pair",
+        "count": 1
+      },
+      {
+        "next_action": "Remove and label samples; match length end fittings seats bracket grooves and clips before order",
+        "count": 1
+      },
+      {
+        "next_action": "Sample-match and order one complete kit; count all eight pieces at receipt",
+        "count": 1
+      },
+      {
+        "next_action": "Sample-match the fitted 2H ports and buy all six manifold-to-head gaskets before removal",
+        "count": 1
+      },
+      {
+        "next_action": "Sample-match the removed pad and order one matched axle set",
+        "count": 1
+      },
       {
         "next_action": "confirm_price_then_order",
         "count": 17
@@ -96930,6 +97151,208 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
+        "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+        "workstream": "brake_system",
+        "item": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair",
+        "status": "required",
+        "procurement_stage": "runner_spec_controlled",
+        "next_action": "Quote both-original rebuild with pistons as needed, seals, dust boots and bleed screws; otherwise quote a matched new/reman LH/RH pair",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Land Cruiser parts shop / professional brake caliper rebuilder",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-002|user_update_2026-08-16_front_brake_parts_confirmed_required",
+        "product_link": "",
+        "notes": "Confirmed required 2026-08-16. Prefer a professional rebuild of both original Sumitomo four-piston calipers with new pistons wherever inspection requires them, plus new seals, dust boots and bleed screws. If either body cannot be safely rebuilt, buy a matched new/remanufactured LH/RH pair; release only after sample match and bench test.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
+        "workstream": "brake_system",
+        "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
+        "status": "required",
+        "procurement_stage": "runner_spec_controlled",
+        "next_action": "Sample-match and order one complete kit; count all eight pieces at receipt",
+        "amount": "8.00",
+        "amount_status": "estimate",
+        "currency": "USD",
+        "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-001|user_update_2026-08-16_front_brake_parts_confirmed_required",
+        "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+        "notes": "Confirmed required 2026-08-16: sample-match and buy one complete kit containing exactly 4 retaining pins, 2 anti-rattle springs and 2 pin clips. Count every component separately at receipt; the recorded USD 8.00 remains a reference estimate, not an order.",
+        "links": [
+          {
+            "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
+            "label": "cruiserteq.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 brake line/hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_front_disc_pad_axle_set_sumitomo_20260530",
+        "workstream": "brake_system",
+        "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+        "status": "required",
+        "procurement_stage": "runner_spec_controlled",
+        "next_action": "Sample-match the removed pad and order one matched axle set",
+        "amount": "39.99",
+        "amount_status": "estimate",
+        "currency": "USD",
+        "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-001|user_update_2026-08-16_front_brake_parts_confirmed_required",
+        "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+        "notes": "Confirmed required 2026-08-16: buy one matched front axle set only after the removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; recorded USD 39.99 remains a reference estimate, not an order.",
+        "links": [
+          {
+            "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
+            "label": "btbprod.com"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 brake line/hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_front_brake_hose_pair",
+        "workstream": "brake_system",
+        "item": "Front flexible hoses - lower wheel hoses x2 plus upper/frame hose x1 only if fitted",
+        "status": "required",
+        "procurement_stage": "runner_spec_controlled",
+        "next_action": "Remove and label samples; match length end fittings seats bracket grooves and clips before order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Montgomery Road brake hydraulic hose shop / Toyota-Land Cruiser parts counter",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-004|user_update_2026-08-16_front_brake_parts_confirmed_required",
+        "product_link": "",
+        "notes": "Confirmed required 2026-08-16: replace both lower wheel hoses and the upper/frame hose only if that third hose is fitted. Buy or make complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+          "caption": "Front flexible brake hose pair - current car cropped caliper-side flex hose fitting context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_front_brake_hose_pair"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_front_rotor_service_pair",
+        "workstream": "brake_system",
+        "item": "Front vented rotors - new matched pair x2",
+        "status": "required",
+        "procurement_stage": "runner_spec_controlled",
+        "next_action": "Measure the old rotor and buy two new matching vented rotors as a pair",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Local Toyota / Land Cruiser parts counter / brake parts shop",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-003|user_update_2026-08-16_front_brake_parts_confirmed_required",
+        "product_link": "",
+        "notes": "Confirmed required 2026-08-16: buy two new matching vented front rotors and replace them as a pair. Use Toyota 43512-60011 only as a reference until the old rotor measurements and hub, dust-shield, caliper and wheel clearances prove the exact family.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Front vented rotors - new matched pair x2 \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
         "entry_id": "part_daraz_kobe_heat_resistant_matt_black_spray_20260704",
         "workstream": "brake_system",
         "item": "Kobe heat-resistant matt black silicone spray topcoat candidate - qty 1",
@@ -96964,6 +97387,45 @@ window.J40_DASHBOARD_DATA = {
             "shoes"
           ],
           "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+        "workstream": "brake_system",
+        "item": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2",
+        "status": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "next_action": "Carry the original stepped pivot and sample-match every retaining piece; do not substitute a generic bolt",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Local Toyota / Land Cruiser brake parts counter / brake hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-011|rear_brake_pivot_hardware_identity_20260816|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+        "product_link": "",
+        "notes": "Buy the exact stepped rear shoe-pivot pin plus two 7 mm C washers and two 5 mm E-rings. Carry the original/sample and do not substitute a generic bolt or an unverified circlip stack.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+          "caption": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2 \u00b7 shoulder pins sleeves and spacers reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_shoulder_pins_sleeves_spacers_reference",
+          "matched_tokens": [
+            "sleeves",
+            "spacers"
+          ],
+          "match_basis": "local_reference_image",
           "match_score": 700
         }
       },
@@ -98411,6 +98873,45 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+        "workstream": "brake_system",
+        "item": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2",
+        "status": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Local Toyota / Land Cruiser brake parts counter / brake hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-011|rear_brake_pivot_hardware_identity_20260816|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+        "product_link": "",
+        "notes": "Buy the exact stepped rear shoe-pivot pin plus two 7 mm C washers and two 5 mm E-rings. Carry the original/sample and do not substitute a generic bolt or an unverified circlip stack.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+          "caption": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2 \u00b7 shoulder pins sleeves and spacers reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_shoulder_pins_sleeves_spacers_reference",
+          "matched_tokens": [
+            "sleeves",
+            "spacers"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
         "workstream": "brake_system",
         "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
@@ -98801,19 +99302,19 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_caliper_rebuild_or_replace_pair",
         "workstream": "brake_system",
-        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-        "status": "planned",
+        "item": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair",
+        "status": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+        "vendor": "Land Cruiser parts shop / professional brake caliper rebuilder",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
+        "notes": "Confirmed required 2026-08-16. Prefer a professional rebuild of both original Sumitomo four-piston calipers with new pistons wherever inspection requires them, plus new seals, dust boots and bleed screws. If either body cannot be safely rebuilt, buy a matched new/remanufactured LH/RH pair; release only after sample match and bench test.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -98821,7 +99322,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "caption": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair \u00b7 local inventory photo \u00b7 Land Cruiser parts shop / professional brake caliper rebuilder",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -98839,8 +99340,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
         "workstream": "brake_system",
-        "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
-        "status": "planned",
+        "item": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips",
+        "status": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
@@ -98849,9 +99350,9 @@ window.J40_DASHBOARD_DATA = {
         "currency": "USD",
         "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
-        "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+        "notes": "Confirmed required 2026-08-16: sample-match and buy one complete kit containing exactly 4 retaining pins, 2 anti-rattle springs and 2 pin clips. Count every component separately at receipt; the recorded USD 8.00 remains a reference estimate, not an order.",
         "links": [
           {
             "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
@@ -98864,7 +99365,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+          "caption": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -98882,8 +99383,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_disc_pad_axle_set_sumitomo_20260530",
         "workstream": "brake_system",
-        "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
-        "status": "planned",
+        "item": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers",
+        "status": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
@@ -98892,9 +99393,9 @@ window.J40_DASHBOARD_DATA = {
         "currency": "USD",
         "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
-        "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+        "notes": "Confirmed required 2026-08-16: buy one matched front axle set only after the removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; recorded USD 39.99 remains a reference estimate, not an order.",
         "links": [
           {
             "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
@@ -98907,7 +99408,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "caption": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -98925,41 +99426,20 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_brake_hose_pair",
         "workstream": "brake_system",
-        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-        "status": "planned",
+        "item": "Front flexible hoses - lower wheel hoses x2 plus upper/frame hose x1 only if fitted",
+        "status": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+        "vendor": "Montgomery Road brake hydraulic hose shop / Toyota-Land Cruiser parts counter",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
+        "notes": "Confirmed required 2026-08-16: replace both lower wheel hoses and the upper/frame hose only if that third hose is fitted. Buy or make complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
+        "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -98984,19 +99464,19 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_front_rotor_service_pair",
         "workstream": "brake_system",
-        "item": "Front rotor replacement pair - measure old rotors for exact match",
-        "status": "planned",
+        "item": "Front vented rotors - two new matched rotors replaced as a pair",
+        "status": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+        "vendor": "Local Toyota / Land Cruiser parts counter / brake parts shop",
         "supply_type": "part",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
+        "notes": "Confirmed required 2026-08-16: buy two new matching vented front rotors and replace them as a pair. Use Toyota 43512-60011 only as a reference until the old rotor measurements and hub, dust-shield, caliper and wheel clearances prove the exact family.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -99004,7 +99484,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "caption": "Front vented rotors - two new matched rotors replaced as a pair \u00b7 local inventory photo \u00b7 Local Toyota / Land Cruiser parts counter / brake parts shop",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -99853,39 +100333,41 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_power_steering_upgrade",
         "workstream": "eps_vitz_upgrade",
-        "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
-        "status": "researching",
-        "procurement_stage": "complete_set_identity_and_trial_fit_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
+        "item": "Replacement hydraulic steering assembly - on hand; identity and fit verification pending",
+        "status": "received_candidate",
+        "procurement_stage": "received_identity_and_trial_fit_pending",
+        "payment_status": "unknown",
+        "delivery_status": "received",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
+        "vendor": "on-hand replacement steering",
         "supply_type": "part",
-        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
+        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv|user_update_2026-08-16_replacement_steering_in_hand",
         "product_link": "",
-        "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before final cooling, exhaust and body reassembly.",
+        "notes": "Market scout closed 2026-08-16 because replacement steering is in hand. Purchase price, vendor and exact donor identity have not been captured. Record all casting/part marks and included pieces, inspect condition, pressure/flow match the pump drive, and complete vehicle trial fit before chassis work or final hoses.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260802_114417_gp_Ccn6bYNg.jpg",
-          "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
-          "captured_date": "2026-08-02",
-          "captured_time": "11:44:17",
+          "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "18:58:26",
           "media_type": "photo",
-          "component_group": "documentation_reference",
-          "specific_component": "reference_media",
-          "stage": "reference_material",
-          "media_id": "20260802_114417_gp_Ccn6bYNg",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_185826_gp_FoyeBPUg",
           "matched_tokens": [
-            "20260802"
+            "hand",
+            "fit",
+            "2026"
           ],
           "match_basis": "inventory_match",
-          "match_score": 26
+          "match_score": 42
         }
       },
       {
@@ -100424,6 +100906,82 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_engine_exhaust_manifold_gasket_set_20260816",
+        "workstream": "mechanical_baseline",
+        "item": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware",
+        "status": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+        "supply_type": "part",
+        "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+        "product_link": "",
+        "notes": "Buy six new manifold-to-head gaskets matched to the fitted 2H head and manifold ports. Keep any optional turbo-flange gasket separate, and do not remove the manifold until the complete sealing set is on hand.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_engine_pushrod_cover_gasket_set_20260816",
+        "workstream": "mechanical_baseline",
+        "item": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020",
+        "status": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+        "supply_type": "part",
+        "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+        "product_link": "",
+        "notes": "Buy one gasket for each of the two 2H pushrod/tappet side covers, using 11253-68010 and 11253-68020 as controlled references. Match both covers before opening the engine.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020 \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_mech_accessory_belt_set",
         "workstream": "mechanical_baseline",
         "item": "Accessory belt set",
@@ -100720,7 +101278,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 22,
+        "open_count": 23,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -100754,7 +101312,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "mechanical_baseline",
-        "open_count": 9,
+        "open_count": 11,
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
@@ -103233,117 +103791,7 @@ window.J40_DASHBOARD_DATA = {
         ]
       }
     ],
-    "market_specs": [
-      {
-        "id": "j60_hydraulic_steering_market_scout",
-        "title": "J60 Hydraulic Steering Acquisition Gate",
-        "scope": "Complete-set identification and quote only until trial-fit release",
-        "quantity": "1 complete matched RHD J60/HJ60 hydraulic steering package",
-        "plain_stall_request": "I need a complete right-hand-drive J60/HJ60 hydraulic power-steering set: steering box, matched pitman arm, collapsible shaft and couplers, drag-link parts, plus a Toyota 2H-compatible pump, brackets, pulley, reservoir and hoses. Keep every part together for inspection and trial fit.",
-        "buy_target": "The approved route is RHD J60/HJ60 hydraulic steering, not Vitz/Yaris column EPS. Source the box-side and 2H pump-side hardware as identified matched sets. Do not release chassis drilling, welding, adapter plates or final hoses from catalogue assumptions; first bench-inspect the complete set and physically trial-fit it on the J40. The accepted steering package becomes the fixed clearance envelope for final cooling, exhaust and body reassembly.",
-        "must_include": [
-          "RHD J60/HJ60 hydraulic steering box with readable casting or identification evidence.",
-          "Matched pitman arm, collapsible/intermediate shaft, couplers, U-joints and fastening hardware.",
-          "Drag-link parts suitable for measuring the final J40 linkage route after trial fit.",
-          "Toyota 2H-compatible pump, engine brackets, pulley, reservoir and mounting hardware.",
-          "Pressure and return fittings or hose-end references retained for measured hose fabrication.",
-          "Photos and measurements of splines, mounting faces, port threads, pulley alignment and clearances."
-        ],
-        "bench_test": [
-          "Inspect the box for cracks, damaged mounting ears, shaft play, roughness, leaks and sector/input wear.",
-          "Confirm pitman and shaft splines fully match their mating parts; reject hammered or welded joints.",
-          "Inspect pump shaft, pulley, reservoir and brackets as one 2H drive-alignment package.",
-          "Rebuild or professionally inspect serviceable used units before permanent installation.",
-          "Trial-fit the complete steering layout on the vehicle before any chassis or hose fabrication is released."
-        ],
-        "reject_if": [
-          "The steering box is left-hand-drive, unidentified, cracked, welded, seized or materially incomplete.",
-          "Pitman arm, shaft/couplers, pump brackets, pulley or reservoir are missing from a claimed complete set.",
-          "Seller proposes a Vitz/Yaris EPS column, loose hydraulic box or mixed unmatched parts as the approved route.",
-          "Mounting, spline, port or 2H pulley alignment cannot be documented before purchase release.",
-          "Permanent drilling, welding, plates or final hoses are requested before physical vehicle trial fit."
-        ],
-        "capture_before_leaving": [
-          "Seller, location, contact, price, return terms and donor claim.",
-          "Box identification, mounting face, sector/input splines, pitman arm and shaft/coupler layout.",
-          "Pump, bracket, pulley, belt-plane, reservoir and port/fitting details.",
-          "One full-set photo showing every included component and fastener.",
-          "Bench-inspection result and any rebuild quote or warranty."
-        ],
-        "price_guidance": {
-          "rule": "Quote complete matched sets first; do not pay complete-package money for missing box-side or 2H pump-drive hardware."
-        },
-        "decision_rule": "Release purchase only when the RHD J60/HJ60 identity, complete contents, condition evidence and return terms are acceptable. Release fabrication only after the complete rebuilt/inspected package passes J40 trial fit.",
-        "links": [
-          {
-            "url": "../../docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-            "label": "J60 hydraulic steering plan"
-          },
-          {
-            "url": "../../docs/master-project-plan.md",
-            "label": "Master project plan"
-          }
-        ]
-      },
-      {
-        "id": "brake_booster_servo_44610_60050_market_scout",
-        "title": "Brake Booster / Servo Local Market Scout",
-        "scope": "Pakistan local-market quote only",
-        "quantity": "1 booster assembly",
-        "plain_stall_request": "Need a brake servo / brake booster for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes. Primary part number is Toyota 44610-60050. Please quote only until the old booster is sample-matched and vacuum-tested.",
-        "buy_target": "Primary target is the 9/1975-7/1980 J40/FJ40/BJ40 tandem or dual-diaphragm booster family, Toyota 44610-60050. Quote 44610-60100 or 44610-60180 only if the shop proves the mounting, pushrod, clevis, master-cylinder seat/depth, check-valve grommet, nipple direction, and firewall clearance match the old unit.",
-        "must_include": [
-          "Booster/servo shell with intact mounting studs and no welded or modified shell.",
-          "Correct pedal pushrod and clevis, or confirmed reuse of the existing clevis with matching thread and pin.",
-          "Correct master-cylinder mounting pattern, pilot/seat, and pushrod depth for the fitted master cylinder.",
-          "Vacuum check valve and grommet included, or a matching new check valve/grommet quoted separately.",
-          "Seller identifies whether the unit is new, professionally remanufactured, or used local-market stock."
-        ],
-        "bench_test": [
-          "Bench vacuum-test the booster before payment; it must hold vacuum without hiss or leakdown.",
-          "Inspect inside the master-cylinder side for brake-fluid contamination from a leaking master cylinder.",
-          "Check pushrod movement and return; no sticking, bent rod, broken clevis, or loose shell crimp.",
-          "Confirm check-valve direction and that the vacuum nipple matches the planned reinforced booster hose.",
-          "After installation, set pushrod free play and confirm no brake drag after repeated pedal applications."
-        ],
-        "reject_if": [
-          "Seller offers a single/drum booster such as 44610-60040 as a direct replacement.",
-          "Seller offers the later 44610-60160/1980s listing without physically proving sample fit.",
-          "Used unit cannot be vacuum-tested before payment, hisses, leaks down, or contains brake fluid.",
-          "Firewall studs, master studs, pushrod/clevis, check valve/grommet, or shell depth do not match the old sample.",
-          "Universal booster requires cutting, welding, unknown pedal-ratio changes, or unproven brake-line changes."
-        ],
-        "capture_before_leaving": [
-          "Seller name, phone number, market/stall location, quoted price in PKR, and return/test terms.",
-          "Photos of the front, rear, side depth, firewall studs, master-cylinder face, pushrod, clevis, and check valve.",
-          "Any part number, brand label, donor vehicle claim, remanufacturer label, or warranty card.",
-          "Short video or photo evidence of the vacuum hold test if buying used or remanufactured local stock.",
-          "Photo comparing old and replacement boosters side by side before payment, if the old sample is available."
-        ],
-        "price_guidance": {
-          "rule": "Quote only in Bilal Ganj, Montgomery Road, Land Cruiser House, and brake-servo rebuild shops first. Record local PKR price and condition. Import fallback exists, but local used/reman must be rejected unless it passes sample-match and vacuum tests."
-        },
-        "decision_rule": "Buy locally only after sample match and vacuum test pass. Otherwise record quote/reject evidence and use an import fallback for the 44610-60050 family.",
-        "links": [
-          {
-            "url": "../../docs/brake-parts-pakistan-acquisition-20260503.md",
-            "label": "Pakistan brake buying text"
-          },
-          {
-            "url": "../../docs/brake-parts-acquisition-spec-20260503.md",
-            "label": "Brake acquisition spec"
-          },
-          {
-            "url": "https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682",
-            "label": "Land Cruiser House lead"
-          },
-          {
-            "url": "https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/",
-            "label": "44610-60050 import fallback"
-          }
-        ]
-      }
-    ]
+    "market_specs": []
   },
   "longman_order_sheets": {
     "pipe_hose": [
@@ -107313,12 +107761,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 128,
-      "now_tasks": 111,
-      "later_tasks": 17,
-      "p0_tasks": 41,
-      "photo_tasks": 39,
-      "measurement_tasks": 88
+      "total_tasks": 125,
+      "now_tasks": 107,
+      "later_tasks": 18,
+      "p0_tasks": 38,
+      "photo_tasks": 37,
+      "measurement_tasks": 86
     },
     "counts_by_workstream": [
       {
@@ -107327,7 +107775,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "replacement_pipes",
-        "count": 25
+        "count": 24
       },
       {
         "workstream": "window_refurbishment",
@@ -107339,7 +107787,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 9
+        "count": 8
       },
       {
         "workstream": "body_chassis",
@@ -107354,15 +107802,15 @@ window.J40_DASHBOARD_DATA = {
         "count": 5
       },
       {
-        "workstream": "eps_vitz_upgrade",
-        "count": 4
-      },
-      {
         "workstream": "suspension_upgrade",
         "count": 4
       },
       {
         "workstream": "electrical_reset",
+        "count": 3
+      },
+      {
+        "workstream": "eps_vitz_upgrade",
         "count": 3
       },
       {
@@ -107409,19 +107857,19 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 26
+        "count": 24
       },
       {
         "task_type": "template",
         "count": 23
       },
       {
-        "task_type": "decision",
+        "task_type": "photo",
         "count": 13
       },
       {
-        "task_type": "photo",
-        "count": 13
+        "task_type": "decision",
+        "count": 12
       },
       {
         "task_type": "data",
@@ -107435,7 +107883,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 41
+        "count": 38
       },
       {
         "priority": "P1",
@@ -107447,6 +107895,32 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "tasks": [
+      {
+        "task_id": "component_job:front_brake_sumitomo_refresh_decision_20260816",
+        "title": "front_brake_sumitomo_refresh_decision_20260816",
+        "workstream": "brake_system",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "later",
+        "status": "system_route_locked_parts_confirmed_required_sample_measurement_pending",
+        "location": "workshop_and_brake_specialist",
+        "action": "Buy one matched front pad axle set; 4 retaining pins, 2 anti-rattle springs and 2 pin clips; two new vented front rotors; two lower wheel flex hoses plus the upper/frame hose only if fitted. Professionally rebuild both original Sumitomo four-piston calipers with new pistons where needed, new seals, dust boots and bleed screws, or buy a matched new/remanufactured LH/RH pair. Finish with a complete fresh DOT 3 flush and refill.",
+        "data_needed": "Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. Removed pad, rotor, hose and fitted caliper measurements remain purchase authority. DOT 3 stock is already recorded on hand; do not duplicate-buy it unless the sealed stock proves insufficient or unsuitable.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_brake_sumitomo_refresh_decision_20260816",
+        "notes": "",
+        "evidence_ref": "docs/brake-parts-acquisition-spec-20260503.md|codex_history_20260816_identify_front_brake_replacements|user_update_2026-08-16_confirmed_required_brake_parts",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
       {
         "task_id": "component_job:fitted_late_j40_hydraulic_steering_identification_20260802",
         "title": "fitted_late_j40_hydraulic_steering_identification_20260802",
@@ -107552,143 +108026,6 @@ window.J40_DASHBOARD_DATA = {
         "source_row_id": "passenger_footwell_floor_section_replacement_20260719",
         "notes": "",
         "evidence_ref": "user_update_2026-07-19_passenger_foot_area_cut_out_reweld_required",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:brake_booster_servo_refurbishment_20260529",
-        "title": "brake_booster_servo_refurbishment_20260529",
-        "workstream": "brake_system",
-        "task_type": "decision",
-        "priority": "P0",
-        "timing": "now",
-        "status": "functionally_confirmed_cosmetic_tidy_pending",
-        "location": "Amir runner / brake servo rebuilder / Land Cruiser House / local brake specialist",
-        "action": "Tidy the booster cosmetically without disturbing the shell joint, pushrod, clevis, boot, check valve, grommet, studs, or functional settings; preserve the normal master-cylinder interface, bleed, static-stop, and controlled low-speed checks as part of final brake-system assembly",
-        "data_needed": "Owner confirms on 2026-07-29 that the booster is fine and needs cosmetic tidying only. Close the booster repair/replacement and functional-acceptance concern. Cosmetic work must not open, weld, heat-distort, contaminate, or alter the booster, pushrod/free-play, check valve, grommet, boot, clevis, or mounting interfaces. Final assembled brake-system checks remain part of the wider brake workstream, not an open defect against the booster.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "brake_booster_servo_refurbishment_20260529",
-        "notes": "",
-        "evidence_ref": "20260529_021217_gp_YAKcHCyQ|20260529_021225_gp_AzCLYJgQ|20260529_021239_gp_RiMXwHXA|20260529_021243_gp_utTmUzJw|20260529_030646_gp_SAs7gfRg|20260529_030653_gp_7dCQk4QA|20260529_030700_gp_8qu2Rliw|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md|docs/amir-refurbishment-video-gates-20260529.md|user_update_2026-07-19_brake_booster_work_done|user_update_2026-07-29_brake_booster_confirmed_fine_cosmetic_tidy_only",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260529_021217_gp_YAKcHCyQ.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "02:12:17",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_021217_gp_YAKcHCyQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_021225_gp_AzCLYJgQ.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "02:12:25",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_021225_gp_AzCLYJgQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_021239_gp_RiMXwHXA.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "02:12:39",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_021239_gp_RiMXwHXA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_021243_gp_utTmUzJw.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "02:12:43",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_021243_gp_utTmUzJw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_030646_gp_SAs7gfRg.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "03:06:46",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_030646_gp_SAs7gfRg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_030653_gp_7dCQk4QA.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "03:06:53",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_030653_gp_7dCQk4QA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260529_030700_gp_8qu2Rliw.jpg",
-            "caption": "Brake Booster Servo Removed Sample \u00b7 Brake System \u00b7 2026-05-29",
-            "captured_date": "2026-05-29",
-            "captured_time": "03:07:00",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "brake_booster_servo_removed_sample",
-            "stage": "brake_system",
-            "media_id": "20260529_030700_gp_8qu2Rliw",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:front_brake_sumitomo_refresh_decision_20260816",
-        "title": "front_brake_sumitomo_refresh_decision_20260816",
-        "workstream": "brake_system",
-        "task_type": "measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "system_route_locked_sample_measurement_pending",
-        "location": "workshop_and_brake_specialist",
-        "action": "Retain and rebuild the fitted late-J40/FJ55 Sumitomo four-piston front brakes; sample-match pads and 302x20 mm-class rotors, renew pins, springs, clips, flex hoses, caliper seals or exact calipers, fluid and any damaged short hard lines.",
-        "data_needed": "Do not pursue a Prado conversion. Inspect carriers, shields, hubs and bearings before deciding to replace them. The removed pad, rotor and fitted caliper measurements remain purchase authority.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "front_brake_sumitomo_refresh_decision_20260816",
-        "notes": "",
-        "evidence_ref": "docs/brake-parts-acquisition-spec-20260503.md|codex_history_20260816_identify_front_brake_replacements",
         "evidence_images": [],
         "links": [
           {
@@ -110294,32 +110631,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "component_job:j60_hydraulic_complete_set_acquisition",
-        "title": "j60_hydraulic_complete_set_acquisition",
-        "workstream": "eps_vitz_upgrade",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "approved_component_first_exact_identity_hold",
-        "location": "market_scout",
-        "action": "Acquire a complete matched RHD J60/HJ60 steering package: positively identified box, matched pitman arm, collapsible shaft/couplers, measured drag-link solution, compatible 2H pump drive/reservoir and hose-end samples; do not buy a bare unidentified casting.",
-        "data_needed": "The J60 upgrade remains the owner-confirmed plan. Require donor/model evidence, all identifiers and complete-set photos before purchase; J80 is not the active route.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "j60_hydraulic_complete_set_acquisition",
-        "notes": "",
-        "evidence_ref": "docs/j60-hydraulic-power-steering-conversion-plan-20260719.md",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:j60_hydraulic_existing_interface_capture",
         "title": "j60_hydraulic_existing_interface_capture",
         "workstream": "eps_vitz_upgrade",
@@ -111531,165 +111842,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_release_actions.csv",
             "label": "Replacement Pipe Release Actions"
-          }
-        ]
-      },
-      {
-        "task_id": "component_job:replacement_pipe_ordering_matrix",
-        "title": "replacement_pipe_ordering_matrix",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "bilal_ganj_photo_intake_added_price_pending",
-        "location": "repo_documentation",
-        "action": "Maintain the curated replacement pipe matrix by vehicle location, direct pipe/location photo evidence, and recreation/order spec",
-        "data_needed": "Pipe-only control row. Body rubbers, grommet assortments, clamp-only rows, generic chassis status images, and optional HVAC duct/drain items are intentionally excluded. | July 10 Bilal Ganj/photo intake adds threaded fitting close-ups plus engine hose/pipe route samples. Exact circuit, thread, material, and pressure rating must be identified before assignment to brake/fuel/coolant/A/C rows; bill and line prices remain pending.",
-        "blocks": "",
-        "record_result_in": "",
-        "source_label": "Component Jobs",
-        "source_path": "data/manual/component_jobs.csv",
-        "source_row_id": "replacement_pipe_ordering_matrix",
-        "notes": "",
-        "evidence_ref": "data_replacement_pipe_ordering_specs|20260430_220004_gp_C9oYiYmA|20260430_215957_gp_2iBbUagw|20260422_004306_gp_vGlNr2UA|20260422_004311_gp_994KQ0Pw|20260430_215939_gp_EjZ7u1ow|20260502_005740_gp_Qiat03EQ|docs_engine_hose_tube_replacement_specs|docs_brake_workstream|docs_replacement_pipes_workstream|20260710_111909_gp_wjJFiGHA|20260710_111922_gp_fitRdwig|20260710_115709_gp_WMDUdgpw|20260710_115725_gp_mPuwEjYw|20260710_115730_gp_ytcZloOQ|photo_import_20260710T232017",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "22:00:04",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_220004_gp_C9oYiYmA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:57",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215957_gp_2iBbUagw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004306_gp_vGlNr2UA.jpg",
-            "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:43:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_rail_body_mount_and_hard_line_detail",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004306_gp_vGlNr2UA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260422_004311_gp_994KQ0Pw.jpg",
-            "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:43:11",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_rail_body_mount_and_hard_line_detail",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004311_gp_994KQ0Pw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
-            "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
-            "captured_date": "2026-04-30",
-            "captured_time": "21:59:39",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
-            "stage": "mechanical_inspection",
-            "media_id": "20260430_215939_gp_EjZ7u1ow",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260502_005740_gp_Qiat03EQ.jpg",
-            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:57:40",
-            "media_type": "photo",
-            "component_group": "engine_bay",
-            "specific_component": "replacement_pipe_hose_sample_sorting",
-            "stage": "mechanical_baseline",
-            "media_id": "20260502_005740_gp_Qiat03EQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260710_111909_gp_wjJFiGHA.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-10",
-            "captured_date": "2026-07-10",
-            "captured_time": "11:19:09",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260710_111909_gp_wjJFiGHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260710_111922_gp_fitRdwig.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-10",
-            "captured_date": "2026-07-10",
-            "captured_time": "11:19:22",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260710_111922_gp_fitRdwig",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260710_115709_gp_WMDUdgpw.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-10",
-            "captured_date": "2026-07-10",
-            "captured_time": "11:57:09",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260710_115709_gp_WMDUdgpw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260710_115725_gp_mPuwEjYw.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-10",
-            "captured_date": "2026-07-10",
-            "captured_time": "11:57:25",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260710_115725_gp_mPuwEjYw",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260710_115730_gp_ytcZloOQ.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-10",
-            "captured_date": "2026-07-10",
-            "captured_time": "11:57:30",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260710_115730_gp_ytcZloOQ",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/component_jobs.csv",
-            "label": "Component Jobs"
           }
         ]
       },
@@ -116696,15 +116848,15 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "in_progress",
         "location": "home",
-        "action": "Template-fit exactly seven bought selectors plus the separate hazard in the Rev I V35 single line below the LCD, verify complete rear clearances/contact blocks, and complete durable function labels",
-        "data_needed": "Build_Plan WP03A control-fit gate; all 7 selectors and nominal 22 mm tooling are available, but the measured M6 sample controls the provisional \u00d822.5 mounting cut and anti-rotation detail. Allocation in one line is WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. There is no spare and no additional four-position selector purchase; the donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. The exact LCD chassis/cutout/mount model still must be captured before production cutting.",
+        "action": "Close Rev I V35 M4-M9: measure the actual LCD, selector stacks, and chosen outlets; fit the 1:1 centre-cassette template and full-depth rear buck; then release the first article with the seven selectors plus separate hazard in the selected single line",
+        "data_needed": "Rev I V35 is the owner-selected centre-cassette baseline. All 7 selectors are allocated with no spare: WIPERS 3-position / LIGHTS 3-position / SPOTS 2-position / AUX 2-position / BLOWER 3-position OFF/LOW/HIGH / A/C 2-position / FUEL STOP 2-position RUN/STOP, followed by the separate red HAZARD. The measured M6 sample controls the provisional \u00d822.5 mounting cut, anti-rotation detail, and full rear contact-block stack; the actual M5 LCD controls its aperture, mounts, connectors, and service envelope. The donor blower medium tap remains unused unless a separate controller redesign is approved and bench-proven. Production metal and vehicle cutting remain on HOLD until signed M1-M9 evidence and the full-depth buck prove the complete package.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "interior_dash_switch_fitup",
         "notes": "",
-        "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
+        "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/README.md|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/dashboard_rev_i_v35_registered_center_cassette_overlay.png|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/cnc_measurement_schedule.csv|data/manual/fabrication/dashboard_lcd_hvac_fascia_rev_i/switch_position_schedule.csv",
         "evidence_images": [
           {
             "path": "../../photos/20260421_192813_gp_0jvYAo8g.jpg",
@@ -119952,10 +120104,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "supply_type": "part",
-        "previously": 108,
-        "in_process": 15,
-        "still_required": 57,
-        "total": 180
+        "previously": 109,
+        "in_process": 14,
+        "still_required": 60,
+        "total": 183
       }
     ],
     "rows_by_status": {
@@ -123658,6 +123810,48 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_power_steering_upgrade",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Replacement hydraulic steering assembly - on hand; identity and fit verification pending",
+          "vendor": "on-hand replacement steering",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "eps_vitz_upgrade",
+          "status_group": "previously",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_identity_and_trial_fit_pending",
+          "payment_status": "unknown",
+          "delivery_status": "received",
+          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv|user_update_2026-08-16_replacement_steering_in_hand",
+          "product_link": "",
+          "notes": "Market scout closed 2026-08-16 because replacement steering is in hand. Purchase price, vendor and exact donor identity have not been captured. Record all casting/part marks and included pieces, inspect condition, pressure/flow match the pump drive, and complete vehicle trial fit before chassis work or final hoses.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+            "captured_date": "2026-05-28",
+            "captured_time": "18:58:26",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260528_185826_gp_FoyeBPUg",
+            "matched_tokens": [
+              "hand",
+              "fit",
+              "2026"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 42
           }
         },
         {
@@ -128499,46 +128693,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_power_steering_upgrade",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
-          "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "eps_vitz_upgrade",
-          "status_group": "in_process",
-          "status_detail": "researching",
-          "procurement_stage": "complete_set_identity_and_trial_fit_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
-          "product_link": "",
-          "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before final cooling, exhaust and body reassembly.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260802_114417_gp_Ccn6bYNg.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
-            "captured_date": "2026-08-02",
-            "captured_time": "11:44:17",
-            "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260802_114417_gp_Ccn6bYNg",
-            "matched_tokens": [
-              "20260802"
-            ],
-            "match_basis": "inventory_match",
-            "match_score": 26
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_ironman_front_dampers_separate_shipment",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -130576,19 +130730,19 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_caliper_rebuild_or_replace_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-          "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "item": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair",
+          "vendor": "Land Cruiser parts shop / professional brake caliper rebuilder",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
+          "status_detail": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
+          "notes": "Confirmed required 2026-08-16. Prefer a professional rebuild of both original Sumitomo four-piston calipers with new pistons wherever inspection requires them, plus new seals, dust boots and bleed screws. If either body cannot be safely rebuilt, buy a matched new/remanufactured LH/RH pair; release only after sample match and bench test.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -130596,7 +130750,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+            "caption": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair \u00b7 local inventory photo \u00b7 Land Cruiser parts shop / professional brake caliper rebuilder",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -130616,19 +130770,19 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
+          "item": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips",
           "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "amount": "8.00",
           "currency": "USD",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
+          "status_detail": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
-          "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+          "notes": "Confirmed required 2026-08-16: sample-match and buy one complete kit containing exactly 4 retaining pins, 2 anti-rattle springs and 2 pin clips. Count every component separately at receipt; the recorded USD 8.00 remains a reference estimate, not an order.",
           "links": [
             {
               "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
@@ -130641,7 +130795,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+            "caption": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -130661,19 +130815,19 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+          "item": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers",
           "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
           "amount": "39.99",
           "currency": "USD",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
+          "status_detail": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
-          "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+          "notes": "Confirmed required 2026-08-16: buy one matched front axle set only after the removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; recorded USD 39.99 remains a reference estimate, not an order.",
           "links": [
             {
               "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
@@ -130686,7 +130840,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+            "caption": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -130706,41 +130860,20 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_brake_hose_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-          "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+          "item": "Front flexible hoses - lower wheel hoses x2 plus upper/frame hose x1 only if fitted",
+          "vendor": "Montgomery Road brake hydraulic hose shop / Toyota-Land Cruiser parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
+          "status_detail": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
+          "notes": "Confirmed required 2026-08-16: replace both lower wheel hoses and the upper/frame hose only if that third hose is fitted. Buy or make complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
+          "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
@@ -130767,19 +130900,19 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_front_rotor_service_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Front rotor replacement pair - measure old rotors for exact match",
-          "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "item": "Front vented rotors - two new matched rotors replaced as a pair",
+          "vendor": "Local Toyota / Land Cruiser parts counter / brake parts shop",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
+          "status_detail": "required",
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
           "product_link": "",
-          "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
+          "notes": "Confirmed required 2026-08-16: buy two new matching vented front rotors and replace them as a pair. Use Toyota 43512-60011 only as a reference until the old rotor measurements and hub, dust-shield, caliper and wheel clearances prove the exact family.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -130787,7 +130920,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+            "caption": "Front vented rotors - two new matched rotors replaced as a pair \u00b7 local inventory photo \u00b7 Local Toyota / Land Cruiser parts counter / brake parts shop",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -130901,6 +131034,47 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "exact_order_evidence",
             "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2",
+          "vendor": "Local Toyota / Land Cruiser brake parts counter / brake hardware supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-REAR-011|rear_brake_pivot_hardware_identity_20260816|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+          "product_link": "",
+          "notes": "Buy the exact stepped rear shoe-pivot pin plus two 7 mm C washers and two 5 mm E-rings. Carry the original/sample and do not substitute a generic bolt or an unverified circlip stack.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+            "caption": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2 \u00b7 shoulder pins sleeves and spacers reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_shoulder_pins_sleeves_spacers_reference",
+            "matched_tokens": [
+              "sleeves",
+              "spacers"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -132018,6 +132192,86 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_engine_exhaust_manifold_gasket_set_20260816",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware",
+          "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+          "product_link": "",
+          "notes": "Buy six new manifold-to-head gaskets matched to the fitted 2H head and manifold ports. Keep any optional turbo-flange gasket separate, and do not remove the manifold until the complete sealing set is on hand.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_engine_pushrod_cover_gasket_set_20260816",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020",
+          "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "required",
+          "procurement_stage": "purchase_required_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+          "product_link": "",
+          "notes": "Buy one gasket for each of the two 2H pushrod/tappet side covers, using 11253-68010 and 11253-68020 as controlled references. Match both covers before opening the engine.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020 \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -132640,46 +132894,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_power_steering_upgrade",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Exact RHD J80 steering box with matched pitman/shaft/linkage plus Toyota 2H pump-drive package",
-        "vendor": "Land Cruiser specialist / J80 breaker / hydraulic steering rebuilder",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "eps_vitz_upgrade",
-        "status_group": "in_process",
-        "status_detail": "researching",
-        "procurement_stage": "complete_set_identity_and_trial_fit_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv",
-        "product_link": "",
-        "notes": "Active route supersedes both the earlier Vitz/Yaris EPS and J60 assumptions. Quote the exact identified RHD J80 box, matched pitman, collapsible shaft/couplers and measured drag-link solution with a 2H-compatible pump, brackets, pulley, reservoir and fitting references. Inspect/rebuild before vehicle trial fit. No chassis drilling, welding, adapter plates or final hoses until the complete package is physically proven; steering geometry and battery/service envelopes are fixed before final cooling, exhaust and body reassembly.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260802_114417_gp_Ccn6bYNg.jpg",
-          "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-08-02",
-          "captured_date": "2026-08-02",
-          "captured_time": "11:44:17",
-          "media_type": "photo",
-          "component_group": "documentation_reference",
-          "specific_component": "reference_media",
-          "stage": "reference_material",
-          "media_id": "20260802_114417_gp_Ccn6bYNg",
-          "matched_tokens": [
-            "20260802"
-          ],
-          "match_basis": "inventory_match",
-          "match_score": 26
         }
       },
       {
@@ -137186,6 +137400,48 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_power_steering_upgrade",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Replacement hydraulic steering assembly - on hand; identity and fit verification pending",
+        "vendor": "on-hand replacement steering",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "eps_vitz_upgrade",
+        "status_group": "previously",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_identity_and_trial_fit_pending",
+        "payment_status": "unknown",
+        "delivery_status": "received",
+        "evidence_ref": "docs/j80-hydraulic-power-steering-conversion-plan-20260802.md|data/manual/j80_power_steering_component_gate_20260802.csv|user_update_2026-08-16_replacement_steering_in_hand",
+        "product_link": "",
+        "notes": "Market scout closed 2026-08-16 because replacement steering is in hand. Purchase price, vendor and exact donor identity have not been captured. Record all casting/part marks and included pieces, inspect condition, pressure/flow match the pump drive, and complete vehicle trial fit before chassis work or final hoses.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260528_185826_gp_FoyeBPUg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-28",
+          "captured_date": "2026-05-28",
+          "captured_time": "18:58:26",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260528_185826_gp_FoyeBPUg",
+          "matched_tokens": [
+            "hand",
+            "fit",
+            "2026"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 42
         }
       },
       {
@@ -143387,19 +143643,19 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_caliper_rebuild_or_replace_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-        "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+        "item": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair",
+        "vendor": "Land Cruiser parts shop / professional brake caliper rebuilder",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
+        "status_detail": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Reference family Toyota 47730-60021 RH / 47750-60021 LH, fixed Sumitomo 4-piston design with 34/43 mm piston catalog reference on a 20 mm disc family. Prefer professional rebuild of the original calipers if bodies, bores, pistons, bleeders, and bridge pipes pass inspection; otherwise buy matched rebuilt/new Sumitomo-family calipers. Pay only after side-by-side sample match or rebuild bench test approval.",
+        "notes": "Confirmed required 2026-08-16. Prefer a professional rebuild of both original Sumitomo four-piston calipers with new pistons wherever inspection requires them, plus new seals, dust boots and bleed screws. If either body cannot be safely rebuilt, buy a matched new/remanufactured LH/RH pair; release only after sample match and bench test.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -143407,7 +143663,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "caption": "Front Sumitomo four-piston calipers - professionally rebuild both originals or buy matched LH/RH pair \u00b7 local inventory photo \u00b7 Land Cruiser parts shop / professional brake caliper rebuilder",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -143427,19 +143683,19 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_disc_pad_pin_hardware_kit_sumitomo_20260530",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips",
+        "item": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips",
         "vendor": "CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
         "amount": "8.00",
         "currency": "USD",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
+        "status_detail": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
-        "notes": "Orderable component row for the pad retaining hardware kit. CruiserTeq BR06158K current web reference is USD 8.00 and includes 4 brake pad anti-rattle pins, 2 anti-rattle springs, and 2 pin clips for 9/1975-1/1990 factory front disc Land Cruisers. Man-A-Fre MT 12342 is the backup kit reference. Physical kit contents are split in data/manual/front_disc_component_order_options.csv so receipt check can verify pins, springs, and clips separately. Pay only after old pin/spring/clip style and caliper/pad fit match.",
+        "notes": "Confirmed required 2026-08-16: sample-match and buy one complete kit containing exactly 4 retaining pins, 2 anti-rattle springs and 2 pin clips. Count every component separately at receipt; the recorded USD 8.00 remains a reference estimate, not an order.",
         "links": [
           {
             "url": "https://cruiserteq.com/front-caliper-hardware-kit-fits-9-1975-1-1990-4x-5x-6x-7x-with-factory-front-disc-brakes-br06158k/",
@@ -143452,7 +143708,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front brake pad retaining hardware kit - 4 pins 2 anti-rattle springs 2 clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
+          "caption": "Front brake pad retaining hardware kit - 4 pins / 2 anti-rattle springs / 2 pin clips \u00b7 exact order evidence \u00b7 CruiserTeq / Man-A-Fre / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -143472,19 +143728,19 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_disc_pad_axle_set_sumitomo_20260530",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170",
+        "item": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers",
         "vendor": "BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
         "amount": "39.99",
         "currency": "USD",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
+        "status_detail": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|user_update_2026-05-30_split_front_pad_hardware_components|data/manual/front_disc_component_order_options.csv",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|data/manual/front_disc_component_order_options.csv|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
-        "notes": "Orderable component row for the front pad axle set. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; BTB current web reference is USD 39.99 for aftermarket 04491-60010-A and CruiserParts reference is USD 54.99 for a Toyota pad kit. Autostore Pakistan shows a generic Land Cruiser front pad listing around PKR 6600 but with later OEM numbers, so use it as local price/search context only. Pay only after removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match.",
+        "notes": "Confirmed required 2026-08-16: buy one matched front axle set only after the removed pad outline, backing ears, thickness, and rotor/caliper clearance prove the exact match. Reference family 04491-60010 / 04491-60030 / 04465-35170 / 04465-YZZC0; recorded USD 39.99 remains a reference estimate, not an order.",
         "links": [
           {
             "url": "https://btbprod.com/product/fj40-fj45-fj55-fj60-fj62-performance-front-disc-brake-pad-04491-60010-set-1970-1971-1972-1973-1974-1975-1976-1977-1978-1979-1980-1981-1982-1983-1984-1985-1986-1987-1988-1989-1990/",
@@ -143497,7 +143753,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc brake pad axle set - Sumitomo fixed-caliper reference 04491-60010/04465-35170 \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
+          "caption": "Front disc brake pad axle set - one matched axle set for Sumitomo fixed calipers \u00b7 exact order evidence \u00b7 BTB Products / CruiserParts / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -143517,41 +143773,20 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_brake_hose_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-        "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+        "item": "Front flexible hoses - lower wheel hoses x2 plus upper/frame hose x1 only if fitted",
+        "vendor": "Montgomery Road brake hydraulic hose shop / Toyota-Land Cruiser parts counter",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
+        "status_detail": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Replace every fitted front flex hose: lower wheel hoses x2 using 553-102 as reference, 9 1/4 in DOT rubber, plus front upper/frame hose x1 using 553-101 as reference, 10 3/8 in DOT rubber with retaining clip, only if that hose is fitted. Buy or make only complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
+        "notes": "Confirmed required 2026-08-16: replace both lower wheel hoses and the upper/frame hose only if that third hose is fitted. Buy or make complete crimped DOT/SAE J1401 or OEM-equivalent assemblies matched to old hose free length, end fittings, thread/seat, bracket groove, clip, and full-lock/droop clearance.",
+        "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
@@ -143578,19 +143813,19 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_front_rotor_service_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Front rotor replacement pair - measure old rotors for exact match",
-        "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+        "item": "Front vented rotors - two new matched rotors replaced as a pair",
+        "vendor": "Local Toyota / Land Cruiser parts counter / brake parts shop",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
+        "status_detail": "required",
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-08-16_front_brake_parts_confirmed_required",
         "product_link": "",
-        "notes": "REQUIRED P0 under Amir/local runner. Ask for new front rotor pair using Toyota 43512-60011 as the reference: vented disc, 302 mm OD, 20 mm nominal thickness, 19 mm minimum, 100 mm center bore, 139.7 mm PCD, 48 mm height, 6 mounting holes plus 2 service/auxiliary holes. Buy two only after old rotor measurement and hub/dust-shield/caliper/wheel clearance confirm the family. Old rotors are measurement samples only.",
+        "notes": "Confirmed required 2026-08-16: buy two new matching vented front rotors and replace them as a pair. Use Toyota 43512-60011 only as a reference until the old rotor measurements and hub, dust-shield, caliper and wheel clearances prove the exact family.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -143598,7 +143833,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "caption": "Front vented rotors - two new matched rotors replaced as a pair \u00b7 local inventory photo \u00b7 Local Toyota / Land Cruiser parts counter / brake parts shop",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -143988,6 +144223,47 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_rear_brake_pivot_pin_c_e_washers_20260816",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2",
+        "vendor": "Local Toyota / Land Cruiser brake parts counter / brake hardware supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-REAR-011|rear_brake_pivot_hardware_identity_20260816|user_update_2026-08-16_rear_brake_pivot_hardware_required",
+        "product_link": "",
+        "notes": "Buy the exact stepped rear shoe-pivot pin plus two 7 mm C washers and two 5 mm E-rings. Carry the original/sample and do not substitute a generic bolt or an unverified circlip stack.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+          "caption": "Rear brake stepped shoe-pivot hardware - pin x1 / 7 mm C washers 90213-07010 x2 / 5 mm E-rings 96160-00500 x2 \u00b7 shoulder pins sleeves and spacers reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_shoulder_pins_sleeves_spacers_reference",
+          "matched_tokens": [
+            "sleeves",
+            "spacers"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_rear_center_brake_flex_hose",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -144096,6 +144372,86 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "ac_compressor",
           "matched_tokens": [
             "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_engine_exhaust_manifold_gasket_set_20260816",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware",
+        "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+        "product_link": "",
+        "notes": "Buy six new manifold-to-head gaskets matched to the fitted 2H head and manifold ports. Keep any optional turbo-flange gasket separate, and do not remove the manifold until the complete sealing set is on hand.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Toyota 2H exhaust manifold-to-head gasket set - six port gaskets plus required sealing hardware \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_engine_pushrod_cover_gasket_set_20260816",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020",
+        "vendor": "Toyota / Land Cruiser diesel parts supplier / engine gasket specialist",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "required",
+        "procurement_stage": "purchase_required_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "engine_manifold_and_side_cover_refresh_20260816|codex_history_20260816_exhaust_manifold_and_pushrod_cover_decisions|user_update_2026-08-16_engine_gaskets_required",
+        "product_link": "",
+        "notes": "Buy one gasket for each of the two 2H pushrod/tappet side covers, using 11253-68010 and 11253-68020 as controlled references. Match both covers before opening the engine.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Toyota 2H pushrod / tappet side-cover gasket pair - 11253-68010 and 11253-68020 \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700

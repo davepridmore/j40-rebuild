@@ -842,10 +842,10 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close paint quality gate", "Only close the track when all planned parts are returned and signed off for refit."),
     ],
     "interior_controls": [
-        ("Classify and tag interior control hardware", "All dash switches, knobs, and control items should be tagged and catalogued."),
-        ("Define switch function map", "Each control needs a confirmed function, label text, and circuit assignment."),
-        ("Complete dash-fit and mounting checks", "Confirm hole sizes, clearances, and mechanical fit before final mounting."),
-        ("Close wiring integration and test", "Wire each control into the final harness plan and verify operation."),
+        ("Freeze the Rev I V35 design authority", "Use the owner-selected centre-cassette package as the visual and quotation baseline while preserving every retained OEM contour and feature."),
+        ("Close M1-M7 physical inputs", "Capture signed fascia, cluster, column, glovebox, LCD, selector, and outlet measurements from the vehicle and actual parts."),
+        ("Prove the M8-M9 rear package", "Use a full-depth cassette and duct buck to verify clearances, service loops, removal paths, and the zero-drop lower edge."),
+        ("Release the first article, then commission M10", "Release only the approved template or first article before metal cutting, then wire, label, and function-test the installed controls."),
     ],
     "chassis_fixing": [
         ("Finish dry mechanical cleanup", "Wire cup non-flat geometry first, then strip/flap cleanup on flatter sections without thinning bracket edges or pitted rail lips; these are angle-grinder consumables, so verify existing stock before rebuying."),
@@ -1205,78 +1205,78 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "interior_controls": {
-        "title": "Dashboard And Controls",
-        "summary": "Dash switch cataloguing, function assignment, fit-up, and electrical integration.",
-        "default_tools": ["Multimeter", "Continuity tester", "Crimper", "Step drill", "Calipers"],
-        "default_supplies": ["Heat shrink", "Terminals", "Loom tape", "Labels", "Grommets"],
+        "title": "Rev I V35 Dashboard And Controls",
+        "summary": "Owner-selected centre-cassette dashboard: physical measurement closure, full-depth mock-up, first-article release, and electrical commissioning.",
+        "default_tools": ["Camera", "Straight edge", "Calipers", "Depth rods", "Inspection mirror", "Multimeter", "Crimper"],
+        "default_supplies": ["Template board", "Masking tape", "Labels", "Heat shrink", "Terminals", "Loom tape", "Grommets"],
         "subtasks": [
             {
-                "title": "Classify And Tag Control Hardware",
+                "title": "Freeze The Rev I V35 Design Baseline",
                 "priority": "P0",
-                "remaining": "all dash controls",
-                "instruction": "Identify each switch, knob, warning lamp, and control before drilling or wiring.",
+                "remaining": "design-authority signoff",
+                "instruction": "Treat Rev I V35 as the selected appearance and quotation baseline without promoting its render or provisional elevation to production geometry.",
                 "process_steps": [
-                    "Lay out all dashboard/control hardware and photograph labels, pins, and mounting hardware.",
-                    "Assign each item a control ID and intended function.",
-                    "Record hole diameter, mounting depth, connector type, and current condition.",
-                    "Separate confirmed controls from unknown, duplicate, or optional controls.",
-                    "Bag each control with its nut, bezel, and connector parts.",
+                    "Review the Rev I package README, registered centre-cassette overlay, and non-dimensional V35 appearance preview together.",
+                    "Mark the OEM cluster, RHD column scallop, glovebox, full-width lower edge, and formed outer/end contours as retained direct-trace geometry.",
+                    "Limit replacement work to the ashtray/centre area and keep the removable cassette at zero extension and zero drop.",
+                    "Lock the visible arrangement to one centred 9-inch LCD, two high outer outlets, seven selectors, and the separate red hazard.",
+                    "Record that rendered proportions and lettering are review aids only; signed M1-M9 evidence controls fabrication.",
                 ],
-                "tools": ["Camera", "Calipers", "Multimeter", "Marker"],
-                "supplies": ["Labels", "Zip bags", "Contact cleaner", "Small parts tray"],
-                "hold_point": "No dashboard holes or wiring branches are finalized for unknown controls.",
-                "image_tokens": ["switch", "control", "dashboard", "button", "knob"],
+                "tools": ["Dashboard package", "Camera", "Marker"],
+                "supplies": ["Design signoff sheet", "Protective tape", "Labels"],
+                "hold_point": "No alternative layout or change to retained OEM geometry proceeds without owner approval and a package revision.",
+                "image_tokens": ["dashboard", "fascia", "cluster", "glovebox", "switch"],
             },
             {
-                "title": "Define Switch Function Map",
+                "title": "Close M1-M7 Physical Measurements",
                 "priority": "P0",
-                "remaining": "before harness build",
-                "instruction": "Lock what each control does and which circuit it belongs to.",
+                "remaining": "all production-blocking traces and actual-part dimensions",
+                "instruction": "Replace every provisional fascia, aperture, component, and outlet assumption with signed vehicle or actual-part evidence.",
                 "process_steps": [
-                    "List each required function: ignition, lights, hazards, wipers, heater, fuel stop/security, and accessories.",
-                    "Assign one physical control to each function and mark optional controls as deferred.",
-                    "Confirm switch rating, pinout, illumination behavior, and fuse/relay need.",
-                    "Update the wiring tracker with wire size, fuse value source, and connector plan.",
-                    "Label the control and matching loom branch with the same ID.",
+                    "Complete the M1 fascia perimeter, folds, fixing, material, and no-cut survey from the vehicle.",
+                    "Direct-trace the retained glovebox and factory cluster at M2, then capture the assembled column, shroud, stalk, boss, wheel, and swept envelope at M3.",
+                    "Measure the free centre field and cassette opening at M4, including the true zero-drop lower-edge constraint.",
+                    "Measure the selected 9-inch LCD chassis, cutout, mounts, connectors, cable bend, and removal envelope at M5.",
+                    "Measure a complete selector/contact-block stack at M6 and both chosen outlet assemblies at M7; attach photographs and signoff in the measurement schedule.",
                 ],
-                "tools": ["Multimeter", "Power supply/test battery with fuse", "Wiring tracker"],
-                "supplies": ["Labels", "Heat shrink ID sleeves", "Fuses/relays as planned", "Connector housings"],
-                "hold_point": "A circuit cannot be wired until its switch function, protection, and connector are defined.",
-                "image_tokens": ["switch", "wiring", "dash", "control", "connector"],
+                "tools": ["Straight edge", "Calipers", "Depth rods", "Angle finder", "Radius gauges", "Camera"],
+                "supplies": ["1:1 trace material", "Masking tape", "Measurement labels", "Witness coupons"],
+                "hold_point": "Production metal, component apertures, and vehicle cutting remain on HOLD until M1-M7 are measured, evidenced, and signed.",
+                "image_tokens": ["dashboard", "fascia", "measurement", "lcd", "vent", "switch"],
             },
             {
-                "title": "Complete Dash Fit And Mounting Checks",
-                "priority": "P1",
-                "remaining": "before fascia closeout",
-                "instruction": "Check physical fit before paint, trim, or wiring makes rework expensive.",
+                "title": "Prove M8-M9 Full-Depth Package",
+                "priority": "P0",
+                "remaining": "paper template and rigid rear buck",
+                "instruction": "Validate the selected layout at full depth before any irreversible cut or production-CNC release.",
                 "process_steps": [
-                    "Mock the switch/control layout in the actual dash panel or template.",
-                    "Check rear clearance for wiring, nuts, heater ducts, column, and glovebox/trim.",
-                    "Drill or file holes only after layout is approved.",
-                    "Deburr, prime exposed metal edges, and fit grommets or edge protection where needed.",
-                    "Install controls finger-tight and photograph final allocation.",
+                    "Plot and fit the 1:1 disposable centre-cassette template, with all retained features registered to the signed trace.",
+                    "Build a rigid full-depth buck using the actual LCD, complete selector stacks, chosen outlets, retainers, adapters, connectors, and service loops.",
+                    "Route both supported HVAC branches and prove first bends, support points, aim range, shutoff, demist separation, and removal access.",
+                    "Sweep the column, shroud, stalks, wheel, glovebox, and every service path through their complete operating envelopes.",
+                    "Photograph the installed buck from front and rear and record pass/fail evidence against M8 and M9.",
                 ],
-                "tools": ["Step drill", "Files", "Deburring tool", "Calipers", "Inspection mirror"],
-                "supplies": ["Edge primer", "Grommets", "Control nuts/washers", "Protective tape"],
-                "hold_point": "Controls mount without forcing, twisting wiring, or fouling the dash structure.",
-                "image_tokens": ["dashboard", "fascia", "switch", "control", "fit"],
+                "tools": ["Template plot", "Inspection mirror", "Depth gauge", "Camera", "Hand tools"],
+                "supplies": ["Cardboard/template board", "Rigid buck material", "Temporary fasteners", "Protective tape"],
+                "hold_point": "The first article cannot be released until M8-M9 prove fit, clearance, serviceability, and removal with no interference.",
+                "image_tokens": ["dashboard", "fascia", "mockup", "clearance", "duct", "lcd"],
             },
             {
-                "title": "Wire, Label, And Function Test",
+                "title": "Release First Article, Wire, And Commission",
                 "priority": "P0",
-                "remaining": "after harness branch build",
-                "instruction": "Integrate controls into protected, labelled circuits and test before closeout.",
+                "remaining": "after M1-M9 signoff",
+                "instruction": "Release the measured first article, then integrate and commission the seven selectors plus separate hazard at M10.",
                 "process_steps": [
-                    "Build each branch with strain relief, heat shrink, and service loop.",
-                    "Crimp with the correct die and tug-test each terminal.",
-                    "Route wiring away from sharp edges, heater movement, pedals, and column movement.",
-                    "Test continuity, switch function, fuse behavior, and relay operation.",
-                    "Photograph final routing and label positions before trim covers them.",
+                    "Issue the controlled first-article files only after every M1-M9 blocker is closed; inspect the first article against the signed trace before production repetition.",
+                    "Fit WIPERS, LIGHTS, SPOTS, AUX, BLOWER, A/C, FUEL STOP, then the separate red HAZARD in the selected single line.",
+                    "Wire every selector as a low-current relay/controller request with protected branches, strain relief, service loops, and durable labels.",
+                    "Verify continuity, protection, relay logic, indicator behavior, HVAC operation, and unobstructed service/removal access.",
+                    "Prove EEI-003, key-OFF authority, and the original manual-stop fallback before connecting FUEL STOP; record M10 photographs and signoff.",
                 ],
                 "tools": ["Ratchet crimper", "Heat gun", "Multimeter", "Test lamp", "Fuse-protected test lead"],
                 "supplies": ["Automotive wire", "Terminals", "Heat shrink", "Loom sleeve", "Loom tape", "Labels"],
-                "hold_point": "Every fitted control must work and be labelled before dash closure.",
-                "image_tokens": ["wiring", "dashboard", "loom", "connector", "switch"],
+                "hold_point": "Vehicle handoff waits until the measured first article passes fit inspection and every fitted control passes M10 commissioning.",
+                "image_tokens": ["wiring", "dashboard", "lcd", "loom", "connector", "switch"],
             },
         ],
     },
@@ -3163,36 +3163,7 @@ def fabrication_design_links_for_part(row: dict[str, Any]) -> list[dict[str, Any
 
 def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
     specs: list[dict[str, Any]] = []
-    if clean(workstream_id) == "eps_vitz_upgrade":
-        spec = dict(J60_HYDRAULIC_STEERING_MARKET_SCOUT_SPEC)
-        spec["links"] = [
-            link
-            for link in [
-                file_link("docs/j60-hydraulic-power-steering-conversion-plan-20260719.md", "J60 hydraulic steering plan"),
-                file_link("docs/master-project-plan.md", "Master project plan"),
-            ]
-            if link
-        ]
-        specs.append(spec)
-    if clean(workstream_id) == "brake_system":
-        spec = dict(BRAKE_BOOSTER_MARKET_SCOUT_SPEC)
-        spec["links"] = [
-            link
-            for link in [
-                file_link("docs/brake-parts-pakistan-acquisition-20260503.md", "Pakistan brake buying text"),
-                file_link("docs/brake-parts-acquisition-spec-20260503.md", "Brake acquisition spec"),
-                {
-                    "url": "https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682",
-                    "label": "Land Cruiser House lead",
-                },
-                {
-                    "url": "https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/",
-                    "label": "44610-60050 import fallback",
-                },
-            ]
-            if link
-        ]
-        specs.append(spec)
+    # Owner closed the steering and brake-booster market scouts on 2026-08-16.
     if clean(workstream_id) == "gearbox_oil_service":
         specs.append(
             {
@@ -4171,6 +4142,12 @@ def fabrication_packages_for_workstream(
         selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "chassis_rubbers"]
     elif ws_id == "suspension_upgrade":
         selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "suspension_upgrade"]
+    elif ws_id == "interior_controls":
+        selected_rows = [
+            row
+            for row in fabrication_rows
+            if clean(row.get("package_id")) == "dashboard_lcd_hvac_fascia_rev_i"
+        ]
     else:
         selected_rows = []
 

@@ -2,6 +2,8 @@
 
 This is the controlled cut package for the hardwood support blocks and wedge chocks needed before the Ironman suspension and brake work window.
 
+Status: fabrication completed and closed on 2026-08-16. Retain this Rev A package as the reference for the received set.
+
 ## Send To Scout / Timber Merchant
 
 - `j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf`

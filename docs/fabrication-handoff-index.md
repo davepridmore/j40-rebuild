@@ -259,6 +259,7 @@ DXF files:
 - `swc_wedge_chock_rev_a.dxf` - wedge chock side/top/end profile, qty `4`
 
 Release position:
+- Fabrication completed and closed on user confirmation dated `2026-08-16`; retain Rev A as the received-set reference.
 - Drawing backup for the suspension-owned cribbing buy in [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md).
 - Control dimensions are metric: blocks `300 x 150 x 75 mm`; wedges `200 x 100 mm` base with `75 mm` rear height and `25 mm` nose height.
 - These are supplemental cribbing/chocks only and must not be treated as substitutes for rated jack stands or axle support.

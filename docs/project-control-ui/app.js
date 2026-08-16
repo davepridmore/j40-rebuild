@@ -3560,24 +3560,33 @@
     `;
   }
 
-  function renderFabricationPackages(packages) {
+  function renderFabricationPackages(packages, options = {}) {
     const rows = Array.isArray(packages) ? packages : [];
     if (!rows.length) {
       return "";
     }
+    const heading = cleanString(options.heading) || "Fabrication Packages";
+    const summary =
+      cleanString(options.summary) ||
+      "Use visual previews for layout and assembly orientation. Use only the controlled dimensions, signed measurements and released PDF/DXF/SVG files for fabrication.";
     const currentRows = rows.filter((row) => cleanString(row.current_status) === "current_release").length;
-    const quoteRows = rows.filter((row) => cleanString(row.current_status) === "quote_first_article_ready").length;
+    const quoteRows = rows.filter((row) => {
+      const status = cleanString(row.current_status);
+      return status.includes("quote") || status.includes("quotation");
+    }).length;
+    const holdRows = rows.filter((row) => cleanString(row.current_status).includes("hold")).length;
     return `
       <article class="card fabrication-packages-card">
         <div class="detail-header">
-          <h3>Fabrication Packages</h3>
+          <h3>${escapeHtml(heading)}</h3>
           <div class="chip-row">
             ${chip(`${rows.length} Packages`)}
-            ${chip(`${currentRows} Current`)}
-            ${chip(`${quoteRows} Quote/First Article`)}
+            ${currentRows ? chip(`${currentRows} Current`) : ""}
+            ${quoteRows ? chip(`${quoteRows} Quote/First Article`) : ""}
+            ${holdRows ? chip(`${holdRows} Production Hold`) : ""}
           </div>
         </div>
-        <p class="small-muted">Use visual previews for layout and assembly orientation. Use only the controlled dimensions, signed measurements and released PDF/DXF/SVG files for fabrication.</p>
+        <p class="small-muted">${escapeHtml(summary)}</p>
         <div class="fabrication-package-list">
           ${rows
             .map((row) => {
@@ -5816,30 +5825,6 @@
 
     return [
       {
-        id: "j80-hydraulic-steering",
-        title: "J80 Hydraulic Steering",
-        description: "Source the exact RHD J80 box with its matched pitman, shaft/couplers and linkage solution plus a 2H pump-drive set; inspect/rebuild and physically trial-fit before chassis fabrication or final hoses.",
-        chips: ["Exact RHD J80 set", "Trial-fit before fabrication", "Battery/steering envelope first"],
-        parts: steeringParts,
-        marketSpecs: attachScoutImage(
-          dedupeScoutRows(steeringMarketSpecs),
-          steeringParts,
-          null
-        ),
-      },
-      {
-        id: "brake-booster",
-        title: "Brake Booster",
-        description: "Quote the correct J40 brake servo only; sample-match and vacuum-test before payment.",
-        chips: ["44610-60050 target", "Vacuum-test", "Quote first"],
-        parts: brakeBoosterParts,
-        marketSpecs: attachScoutImage(
-          fallbackMarketSpec(brakeMarketSpecs, brakeFallbackSpec),
-          brakeBoosterImageRows,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster")
-        ),
-      },
-      {
         id: "additional-fuse-box",
         title: "Additional Fuse Box",
         description: "Compact OEM-style cabin fuse box with sound terminals and identifiable feeds. Final wiring, cables, terminals, sleeving, and protection are new-only.",
@@ -5849,23 +5834,6 @@
           [fuseBoxMarketSpec],
           fuseBoxImageRows,
           scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "user-supplied compact old-OEM fuse box photo", "compact_cabin_fuse_box_user_photo_20260504")
-        ),
-      },
-      {
-        id: "workshop-fabrication-support",
-        title: "Workshop Support",
-        description: "Quote card for the remaining local workshop support item.",
-        chips: ["Toolbench", "Workbench", "Mounting-ready top"],
-        parts: workshopSupportParts,
-        marketSpecs: [
-          ...attachScoutImage(
-            [toolbenchMarketSpec],
-            toolbenchImageRows,
-            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "Toolbench/workbench reference image", "toolbench")
-          ),
-        ],
-        exactSpecRows: workshopSupportExactRows.filter((row) =>
-          cleanString(row && row.sourceBasis).includes("tool_local_toolbench")
         ),
       },
     ];
@@ -7738,7 +7706,20 @@
       ${renderWorkstreamRequirements(active)}
       ${renderChassisBracketAnalysisRegister(active)}
       ${renderFabricationRawMaterials(active)}
-      ${showFabricationPackages ? renderFabricationPackages(active.fabrication_packages) : ""}
+      ${
+        showFabricationPackages
+          ? renderFabricationPackages(
+              active.fabrication_packages,
+              active.id === "interior_controls"
+                ? {
+                    heading: "Selected Dashboard Design",
+                    summary:
+                      "Rev I V35 is the owner-selected visual and quotation baseline. Its preview is non-dimensional; production metal and vehicle cutting stay on hold until the M1-M9 physical measurements and full-depth mock-up are signed off.",
+                  }
+                : {}
+            )
+          : ""
+      }
 
       ${hideEvidenceMedia ? "" : `
         <article class="card">
