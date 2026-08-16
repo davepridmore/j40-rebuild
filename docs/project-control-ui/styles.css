@@ -1519,7 +1519,10 @@ th {
 }
 
 .replacement-pipe-acquired {
-  max-width: 760px;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  max-width: 960px;
 }
 
 .replacement-pipe-acquired-figure {
