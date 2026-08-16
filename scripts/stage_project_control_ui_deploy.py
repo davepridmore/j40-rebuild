@@ -42,16 +42,16 @@ PUBLIC_REV_K_COOLING_PACK_FILES = (
     ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_ph06_supported_exploded.jpg",
     ROOT / "data" / "manual" / "fabrication" / "front_cooling_stack_rev_c" / "work_document_assets" / "rev_k_ph07_supported_installed.jpg",
 )
-PUBLIC_REV_M_NA_COOLING_GUIDE_FILES = (
-    ROOT / "docs" / "J40-naturally-aspirated-cooling-pack-restoration-guide-rev-m-20260814.md",
-    ROOT / "docs" / "J40-naturally-aspirated-cooling-pack-image-prompts-20260814.md",
+PUBLIC_REV_P_NA_COOLING_GUIDE_FILES = (
+    ROOT / "docs" / "J40-naturally-aspirated-cooling-pack-restoration-guide-rev-p-20260816.md",
+    ROOT / "docs" / "J40-naturally-aspirated-cooling-pack-image-prompts-rev-p-20260816.md",
 )
 PUBLIC_FABRICATION_DOCS = (
     ROOT / "data" / "manual" / "fabrication_handoff_requirements.csv",
     ROOT / "docs" / "fabrication-handoff-index.md",
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
     *PUBLIC_REV_K_COOLING_PACK_FILES,
-    *PUBLIC_REV_M_NA_COOLING_GUIDE_FILES,
+    *PUBLIC_REV_P_NA_COOLING_GUIDE_FILES,
 )
 PUBLIC_MARKET_DOCS = (
     ROOT / "data" / "manual" / "bilal_ganj_sample_fabrication_kits_20260619.csv",

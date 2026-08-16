@@ -10,7 +10,7 @@
 
 Rev P supersedes Rev O. It retains Rev O’s shortened-arm and holder design, and replaces the former chained centring rule with one common vehicle-longitudinal centre datum for the complete G0 guard and single FS front-fan installation. Rev O recorded the owner’s 15 August correction that the radiator uprights/arms are **loose and not attached to the chassis**. The earlier July description of a completed welded radiator arm remains historical progress evidence, not the current as-built state. Rev P therefore retains the deletion of X2 adapter brackets and the pair of shortened arms made directly to the real chassis connectors.
 
-Photographs and generated images identify parts and intent; they are not dimensioned drawings. The old 410 mm / 4 mm Rev A upright package is superseded and must not be used for final cutting.
+Generated images identify parts and intent; they are not dimensioned drawings. The four tape-measure photographs listed in section 5.1 establish the limited mock-up baselines stated there, but they do not release final cut geometry, holes, brackets, depth or vehicle fit. The old 410 mm / 4 mm Rev A upright package is superseded and must not be used for final cutting.
 
 ## 1. Released architecture and load paths
 
@@ -103,7 +103,33 @@ R0 is shown black in the illustrative generated image; that finish and the depic
 - F2 is an independent removable carrier aligned to R0’s side-rail/seal map. It carries FL and its shroud without loading the tanks, core or soldered ears.
 - Seal the shroud perimeter to the radiator frame with closed-cell automotive EPDM while leaving fins, cap, drain, hoses and fasteners serviceable.
 
-## 5. Mandatory measurement controls
+## 5. Photo-backed baseline and mandatory measurement controls
+
+### 5.1 Released photo-backed mock-up baseline
+
+Rev P carries forward only the physical part readings below from the Rev L measurement-photo record. Rev L's turbo/intercooler and twin-front-fan architecture remains superseded; these retained-part dimensions survive because R0, C0, FS and FL are the same photographed components.
+
+All values are approximate tape readings, not catalogue dimensions. **LOCKED FOR MOCK-UP** authorises a full-size card/opaque fixture envelope only. **PROVISIONAL** is useful for planning but must be replaced by a square direct measurement. Neither status authorises a final metal cut, attachment hole or purchased core/fan.
+
+| Part / datum | Photo-backed baseline | Status and permitted use |
+| --- | --- | --- |
+| R0 body height | approximately **610 mm** from bottom to top tank | **LOCKED FOR MOCK-UP.** Use for the first full-size fixture; recheck square before final ear/keeper fabrication. |
+| R0 highest point | approximately **635 mm** at filler/cap | **LOCKED FOR MOCK-UP.** Reserve this height plus cap-removal hand/tool space in the vehicle envelope. |
+| R0 photographed horizontal span | approximately **635 mm** from the photographed left hook datum to the right rail | **PROVISIONAL.** This is not WR: the photo is oblique, the hook is not a controlled face and the visible 29-inch mark lies beyond R0. Measure true rail-to-rail and maximum-ear width square-on. |
+| R0 active face | visually about **590 × 510 mm** | **ESTIMATE ONLY.** Do not order a core or size a fan from this visual estimate. |
+| C0 body | approximately **540 mm wide × 465 mm high** | **LOCKED FOR MOCK-UP.** The width includes the photographed right drier/manifold area but not every projecting left bracket, pipe or tool sweep. |
+| FL large electric fan | ring approximately **450–480 mm**; shroud height roughly follows the 610 mm R0 body | **PROVISIONAL.** Measure the complete shroud/frame, motor, plug and depth. |
+| FS small electric fan | ring approximately **240–255 mm**; complete tabs/frame may reach about **280 mm** | **PROVISIONAL.** Rev P uses one FS; its complete frame—not ring/blade diameter—controls F1 and CL0. |
+| Depths and mount coordinates | not established by the photographs | **HOLD.** No photo releases stack depth, top-hole centres, lower-saddle centres, connector geometry or vehicle fit. |
+
+Controlled measurement photographs:
+
+- [R0 horizontal tape](../photos/20260802_232550_gp_0Sn0iJxA.jpg)
+- [R0 body and cap height](../photos/20260802_232632_gp_4XXz0OKw.jpg)
+- [C0 width](../photos/20260802_233104_gp_pZK04oCw.jpg)
+- [C0 height](../photos/20260802_233119_gp_Vdim807g.jpg)
+
+### 5.2 Remaining direct-measurement controls
 
 Do not make final metal, buy final hoses, drill, weld or coat until these records are complete:
 
@@ -128,7 +154,7 @@ Tag and photograph R0, C0, G0, FS, FL, both loose arm blanks and every bracket. 
 
 ### Step 2 — Measure connectors, holders and service envelopes
 
-Produce A0-D-L/R, B0, S0, CL0, G0-H and R0-H. Record L0/MR and component/vehicle envelopes on one dated drawing from fixed chassis datums. Make full-size card/rigid templates and an opaque stack.
+Start the full-size fixture with the section 5.1 photo baselines: R0 at approximately 610 mm body height and 635 mm cap height, and C0 at approximately 540 × 465 mm. Then produce A0-D-L/R, B0, S0, CL0, G0-H and R0-H by square direct measurement of the actual parts. Record L0/MR and complete component/vehicle envelopes on one dated drawing from fixed chassis datums. Make full-size card/rigid templates and an opaque stack. If a direct square measurement differs from a photo baseline, record both and let the signed direct measurement supersede the photo reading.
 
 **Gate:** every proposed bracket has an assigned function and measured interface.
 
@@ -182,7 +208,7 @@ Install measured new moulded coolant hoses, overflow hose, constant-tension clam
 
 ## 7. Fabricated parts schedule
 
-All final numerical dimensions remain **HOLD** until their named control map and signed drawing are complete.
+The section 5.1 photo-backed values are released for the first full-size fixture only. All final cut dimensions, mount coordinates, depths, material sizes and purchased-part interfaces remain **HOLD** until their named control map and signed drawing are complete.
 
 | Ref | Qty | Fabricated item | Provisional material guidance | Final control |
 | --- | ---: | --- | --- | --- |
