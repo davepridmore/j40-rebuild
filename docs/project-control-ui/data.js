@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-08-16T20:50:08+05:00",
+  "generated_at": "2026-08-16T21:53:53+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -35573,23 +35573,43 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "hero_image": {
-            "url": "../../docs/project-control-ui/assets/cooling-na-rev-p/na-stack-short-connector-arms-finished.png",
-            "label": "Rev P connector-arm and cooling-holder parts preview",
-            "notes": "Illustrative non-dimensional preview only. Do not scale pixels or derive cuts, holes or bracket geometry; use A0-D/B0/S0/G0-H/R0-H templates, the actual parts and the released structural drawing. CL0 directly verifies complete G0 perimeter-frame, FS frame/rotor and C0 fin-field centres to VCL; local aperture/C0 checks do not tolerance-stack.",
+            "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r01_actual_removed_radiator_reference.jpg",
+            "label": "R0 actual retained radiator identity master",
+            "notes": "Actual retained-component photograph. Do not scale pixels or infer hidden geometry; use the physical R0, the tape-evidence photographs, A0-D/B0/S0/G0-H/R0-H templates and the controlled D01-D04 drawings.",
             "non_dimensional": true
           },
           "visual_links": [
             {
-              "url": "../../docs/project-control-ui/assets/cooling-na-rev-p/na-connector-arm-holder-parts-bench.png",
-              "label": "Illustrative connector-arm and holder parts bench"
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r02_actual_full_face_condenser_reference.jpg",
+              "label": "C0 actual retained condenser identity master"
             },
             {
-              "url": "../../docs/project-control-ui/assets/cooling-na-rev-p/na-short-arm-chassis-dry-fit.png",
-              "label": "Illustrative connector-sized arm dry fit"
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_k_r05_actual_stone_guard_reference.jpg",
+              "label": "G0 actual retained stone-guard identity master"
             },
             {
-              "url": "../../docs/project-control-ui/assets/cooling-na-rev-p/na-guard-radiator-holder-detail.png",
-              "label": "Illustrative grille/stone-guard and R0 holder detail"
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r13_small_electric_fan.jpg",
+              "label": "FS actual retained single-pusher identity master"
+            },
+            {
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r12_large_electric_fan.jpg",
+              "label": "FL actual retained radiator-puller identity master"
+            },
+            {
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r10_r0_width_tape.jpg",
+              "label": "R0 photographed provisional span tape evidence"
+            },
+            {
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r11_r0_height_tape.jpg",
+              "label": "R0 photographed body and cap-height tape evidence"
+            },
+            {
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r14_c0_width_tape.jpg",
+              "label": "C0 photographed width tape evidence"
+            },
+            {
+              "url": "../../data/manual/fabrication/front_cooling_stack_rev_c/work_document_assets/rev_l_r15_c0_height_tape.jpg",
+              "label": "C0 photographed height tape evidence"
             }
           ],
           "model_links": [],
@@ -35599,10 +35619,10 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/na_cooling_connector_arms_rev_p.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 10742699,
-            "file_count": 9
+            "bytes": 4135969,
+            "file_count": 18
           },
-          "file_count": 9
+          "file_count": 18
         },
         {
           "requirement_id": "FAB-ELEC-003",
@@ -35855,7 +35875,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28975127,
+            "bytes": 28975973,
             "file_count": 17
           },
           "file_count": 17
@@ -37044,7 +37064,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/dashboard_lcd_hvac_fascia_rev_i.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 28975127,
+            "bytes": 28975973,
             "file_count": 17
           },
           "file_count": 17
