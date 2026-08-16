@@ -3069,7 +3069,6 @@
                   const acquiredImages = evidence
                     ? dedupeImages(Array.isArray(evidence.evidence_images) ? evidence.evidence_images : [])
                     : [];
-                  const acquiredImage = acquiredImages[0] || null;
                   const sourcingDescription = cleanString(row.quantity || row.exact_recreation_spec);
                   return `
                     <tr>
@@ -3082,15 +3081,26 @@
                       </td>
                       <td>
                         ${
-                          evidence && acquiredImage
+                          evidence && acquiredImages.length
                             ? `
                               <div class="replacement-pipe-acquired">
-                                ${renderFigureImage(acquiredImage, evidence.comparison_note || `${row.pipe_or_line || pipeId} old/new comparison`, {
-                                  figureClass: "replacement-pipe-acquired-figure",
-                                  imageClass: "replacement-pipe-acquired-image",
-                                  captionClass: "replacement-pipe-acquired-caption",
-                                  caption: evidence.comparison_note || "Received replacement photographed beside the old pattern.",
-                                })}
+                                ${acquiredImages
+                                  .map((image, imageIndex) =>
+                                    renderFigureImage(
+                                      image,
+                                      evidence.comparison_note || `${row.pipe_or_line || pipeId} old/new comparison`,
+                                      {
+                                        figureClass: "replacement-pipe-acquired-figure",
+                                        imageClass: "replacement-pipe-acquired-image",
+                                        captionClass: "replacement-pipe-acquired-caption",
+                                        caption:
+                                          imageIndex === 0
+                                            ? evidence.comparison_note || "Received replacement photographed beside the old pattern."
+                                            : "Additional selected comparison or specification-detail view.",
+                                      },
+                                    ),
+                                  )
+                                  .join("")}
                               </div>
                             `
                             : `

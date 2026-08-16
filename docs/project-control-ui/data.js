@@ -54328,37 +54328,111 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "RP-COOL-002",
           "acquisition_status": "acquired_route_check_pending",
           "media_ids": [
-            "20260712_163133_gp_KjVxhYfQ",
-            "20260712_012946_gp_GJur42bg"
+            "20260723_055100_gp_X5l447Ow"
           ],
-          "comparison_note": "New lower-radiator-hose candidate photographed beside the old hose set; confirm both end IDs and molded sweep during dry-fit.",
+          "comparison_note": "Selected old/new molded radiator-hose comparison. Treat as the lower/main radiator candidate until both ends and the molded sweep are confirmed during dry-fit.",
           "source_ref": [
-            "data/manual/replacement_pipe_large_assignment_20260712.csv",
-            "docs/bilal-ganj-large-pipe-routing-20260712.md"
+            "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
             {
-              "path": "../../photos/20260712_163133_gp_KjVxhYfQ.jpg",
-              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
-              "captured_date": "2026-07-12",
-              "captured_time": "16:31:33",
+              "path": "../../photos/20260723_055100_gp_X5l447Ow.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:51:00",
               "media_type": "photo",
-              "component_group": "replacement_pipes",
-              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
-              "stage": "replacement_pipe_parts_intake",
-              "media_id": "20260712_163133_gp_KjVxhYfQ",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055100_gp_X5l447Ow",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "pipe_id": "RP-COOL-003",
+          "acquisition_status": "acquired_route_check_pending",
+          "media_ids": [
+            "20260723_055053_gp_Nbrk41Tw"
+          ],
+          "comparison_note": "Selected new black overflow hose beside the aged transparent original. Confirm nipple fit and coolant-compatible EPDM before installation.",
+          "source_ref": [
+            "tools/build_pipe_replacement_guide.py"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260723_055053_gp_Nbrk41Tw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:50:53",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055053_gp_Nbrk41Tw",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "pipe_id": "RP-COOL-004",
+          "acquisition_status": "acquired_route_check_pending",
+          "media_ids": [
+            "20260723_055044_gp_kapiWhpQ",
+            "20260723_055040_gp_KIqpzvmw"
+          ],
+          "comparison_note": "Selected old/new comparisons for the two medium heater or breather routes. Match each by both endpoints and diameter before fitting.",
+          "source_ref": [
+            "tools/build_pipe_replacement_guide.py"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260723_055044_gp_kapiWhpQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:50:44",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055044_gp_kapiWhpQ",
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260712_012946_gp_GJur42bg.jpg",
-              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
-              "captured_date": "2026-07-12",
-              "captured_time": "01:29:46",
+              "path": "../../photos/20260723_055040_gp_KIqpzvmw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:50:40",
               "media_type": "photo",
-              "component_group": "replacement_pipes",
-              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
-              "stage": "replacement_pipe_parts_intake",
-              "media_id": "20260712_012946_gp_GJur42bg",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055040_gp_KIqpzvmw",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "pipe_id": "RP-COOL-005",
+          "acquisition_status": "acquired_route_check_pending",
+          "media_ids": [
+            "20260723_055107_gp_e0sQOMzg"
+          ],
+          "comparison_note": "Selected overview shows the replacement formed metal coolant tubes beside the retained old route pieces. Final bend clocking and endpoints still require dry-fit.",
+          "source_ref": [
+            "tools/build_pipe_replacement_guide.py"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260723_055107_gp_e0sQOMzg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:51:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055107_gp_e0sQOMzg",
               "matched_tokens": []
             }
           ]
@@ -54367,37 +54441,74 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "RP-COOL-006",
           "acquisition_status": "acquired_route_check_pending",
           "media_ids": [
-            "20260712_163133_gp_KjVxhYfQ",
-            "20260712_012946_gp_GJur42bg"
+            "20260723_050653_gp_Xi9hFFpw"
           ],
-          "comparison_note": "New connector and coupler candidates photographed beside the old route pieces; select by old sample and confirm the route during dry-fit.",
+          "comparison_note": "Selected intake overview shows the replacement rubber connector pieces beside the older hose set. Match each connector to its old sample before trimming.",
           "source_ref": [
-            "data/manual/replacement_pipe_large_assignment_20260712.csv",
-            "docs/bilal-ganj-large-pipe-routing-20260712.md"
+            "tools/build_pipe_replacement_guide.py"
           ],
           "evidence_images": [
             {
-              "path": "../../photos/20260712_163133_gp_KjVxhYfQ.jpg",
-              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
-              "captured_date": "2026-07-12",
-              "captured_time": "16:31:33",
+              "path": "../../photos/20260723_050653_gp_Xi9hFFpw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:06:53",
               "media_type": "photo",
-              "component_group": "replacement_pipes",
-              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
-              "stage": "replacement_pipe_parts_intake",
-              "media_id": "20260712_163133_gp_KjVxhYfQ",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_050653_gp_Xi9hFFpw",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "pipe_id": "RP-VAC-001",
+          "acquisition_status": "acquired_suitability_check_pending",
+          "media_ids": [
+            "20260723_055049_gp_gDhxAOhg",
+            "20260723_055032_gp_WF9QPyuA",
+            "20260723_054008_gp_fJeietsQ"
+          ],
+          "comparison_note": "Selected ARCHOR DN10 old/new comparison plus full-length and marking views. Confirm vacuum and oil compatibility; the visible rating does not release it for coolant or diesel.",
+          "source_ref": [
+            "tools/build_pipe_replacement_guide.py"
+          ],
+          "evidence_images": [
+            {
+              "path": "../../photos/20260723_055049_gp_gDhxAOhg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:50:49",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055049_gp_gDhxAOhg",
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260712_012946_gp_GJur42bg.jpg",
-              "caption": "Bilal Ganj Replacement Pipe Hose Set 20260712 \u00b7 Replacement Pipe Parts Intake \u00b7 2026-07-12",
-              "captured_date": "2026-07-12",
-              "captured_time": "01:29:46",
+              "path": "../../photos/20260723_055032_gp_WF9QPyuA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:50:32",
               "media_type": "photo",
-              "component_group": "replacement_pipes",
-              "specific_component": "bilal_ganj_replacement_pipe_hose_set_20260712",
-              "stage": "replacement_pipe_parts_intake",
-              "media_id": "20260712_012946_gp_GJur42bg",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_055032_gp_WF9QPyuA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260723_054008_gp_fJeietsQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-07-23",
+              "captured_date": "2026-07-23",
+              "captured_time": "05:40:08",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260723_054008_gp_fJeietsQ",
               "matched_tokens": []
             }
           ]
