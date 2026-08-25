@@ -10970,6 +10970,105 @@
       </div>`;
   }
 
+  function renderCabinFloor() {
+    const assets = {
+      photoreal: "./assets/cabin-floor-20260825/j40_front_cabin_photoreal_transmission_view_20260825_v1.png",
+      measuredPlan: "./assets/cabin-floor-20260825/j40_front_floor_measured_doghouse_trace_20260825_v2.png",
+      measuredProfile: "./assets/cabin-floor-20260825/j40_front_doghouse_measured_side_profile_20260825_v1.png",
+      rearBench: "./assets/cabin-floor-20260825/j40_rear_tub_measured_side_bench_layout_20260825_v1.png",
+    };
+    const heroImage = {
+      path: assets.photoreal,
+      file_name: "j40_front_cabin_photoreal_transmission_view_20260825_v1.png",
+      caption: "Photorealistic design intent: replacement floor and high front doghouse tapering to the shortest practical seat-side tail.",
+      component_group: "Bodywork",
+      specific_component: "Front cabin floor and transmission cover",
+      stage: "design_reference",
+      confidence: "concept_only",
+      notes: "Reference-derived appearance study. Final fabrication remains controlled by square measurements, drivetrain clearance, seat position, lever travel, service access and the physical dry fit.",
+    };
+    const measuredSheets = [
+      {
+        path: assets.measuredPlan,
+        file_name: "j40_front_floor_measured_doghouse_trace_20260825_v2.png",
+        caption: "Measured front-floor plan: broad firewall end, rapid shoulders and compact squared tail.",
+        component_group: "Bodywork",
+        specific_component: "Front cabin floor and transmission cover",
+        stage: "fabrication_measurement",
+        confidence: "approximate",
+        notes: "Photo-derived concept dimensions. Confirm every cut line and endpoint square on the vehicle.",
+      },
+      {
+        path: assets.measuredProfile,
+        file_name: "j40_front_doghouse_measured_side_profile_20260825_v1.png",
+        caption: "Measured side profile: maximum clearance at the firewall, then a controlled step and low short rear run.",
+        component_group: "Bodywork",
+        specific_component: "Front cabin floor and transmission cover",
+        stage: "fabrication_measurement",
+        confidence: "approximate",
+        notes: "Photo-derived envelope only. Verify drivetrain movement, lever travel and removable-cover access before fabrication release.",
+      },
+      {
+        path: assets.rearBench,
+        file_name: "j40_rear_tub_measured_side_bench_layout_20260825_v1.png",
+        caption: "Rear-tub layout: symmetric side benches over the wheel boxes with the centre aisle and rear entry kept clear.",
+        component_group: "Bodywork",
+        specific_component: "Rear tub side bench seating",
+        stage: "design_reference",
+        confidence: "concept_only",
+        notes: "Confirm cushion thickness, occupant clearance, mounts, belt structure and rear-door swing on the vehicle.",
+      },
+    ];
+
+    root.innerHTML = `
+      <div class="cabin-floor-view">
+        <section class="cabin-floor-hero" id="cabin-floor-summary">
+          <div class="cabin-floor-hero-copy">
+            <div class="detail-header">
+              <div><p class="eyebrow">Cabin fabrication study · 25 August 2026</p></div>
+              ${renderCopyLinkButton(sectionRoute("cabin-floor-summary"), "#", "Copy cabin-and-floor summary link")}
+            </div>
+            <h2>High where the drivetrain needs it. Narrow, low and short where the seats need it.</h2>
+            <p>The proposed replacement floor uses a removable squared engine/transmission cover that follows the actual mechanical envelope. Its forward body stays high and broad beneath the dashboard, then pulls inward quickly to preserve front-seat and foot clearance.</p>
+            <div class="cabin-floor-principles" aria-label="Cabin floor design priorities">
+              <span>Full replacement floor</span>
+              <span>Removable bolted cover</span>
+              <span>Maximum seat-side clearance</span>
+              <span>Clear rear centre aisle</span>
+            </div>
+            <div class="cabin-floor-notice" role="note"><strong>Fabrication control</strong><span>These sheets are photo-derived concept geometry, not a cut-ready release. Confirm all dimensions square on the stripped body with the drivetrain, shifters, seats and mounts in their final positions.</span></div>
+          </div>
+          <div class="cabin-floor-hero-media">${renderGallery([heroImage])}</div>
+        </section>
+
+        <section class="card cabin-floor-section" id="cabin-floor-measured-sheets">
+          <div class="detail-header">
+            <div><p class="cabin-floor-label">Measured trace set</p><h3>Front plan, side profile and rear bench arrangement</h3></div>
+            ${renderCopyLinkButton(sectionRoute("cabin-floor-measured-sheets"), "#", "Copy measured cabin-floor sheets link")}
+          </div>
+          <p class="section-subtitle">Open any sheet for its full-resolution trace master. Dimension labels are approximate photographic reads and retain their on-vehicle verification gates.</p>
+          <div class="cabin-floor-sheet-grid">${renderGallery(measuredSheets)}</div>
+        </section>
+
+        <section class="cabin-floor-control-grid" id="cabin-floor-controls">
+          <article class="card"><p class="cabin-floor-label">Forward envelope</p><h3>Keep the height</h3><p>The broad section rises close to the underside of the dashboard and clears the bellhousing and upper gearbox rather than forcing a shallow cover.</p></article>
+          <article class="card"><p class="cabin-floor-label">Seat-side envelope</p><h3>Lose width and length fast</h3><p>Short angled shoulders lead into the lowest practical tail, with the squared rear cap ending ahead of the seat line and flat replacement floor on both sides.</p></article>
+          <article class="card"><p class="cabin-floor-label">Rear tub</p><h3>Protect the aisle</h3><p>Side benches sit over the wheel boxes so the centre passage and rear entry remain unobstructed. Belt structure and final cushion geometry still require physical approval.</p></article>
+        </section>
+
+        <section class="card cabin-floor-downloads" id="cabin-floor-downloads">
+          <div><p class="cabin-floor-label">Saved masters</p><h3>Download the published image set</h3></div>
+          <div class="link-row">
+            <a class="item-link package-download-link" href="${assets.photoreal}" download>Photoreal transmission view (.png)</a>
+            <a class="item-link" href="${assets.measuredPlan}" download>Measured plan (.png)</a>
+            <a class="item-link" href="${assets.measuredProfile}" download>Measured side profile (.png)</a>
+            <a class="item-link" href="${assets.rearBench}" download>Rear bench layout (.png)</a>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
   function renderOtherBuilds() {
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
@@ -12190,6 +12289,8 @@
       renderer = renderStatusUpdate;
     } else if (state.activeView === "vehicle-map") {
       renderer = renderVehicleMap;
+    } else if (state.activeView === "cabin-floor") {
+      renderer = renderCabinFloor;
     } else if (state.activeView === "parts") {
       renderer = renderParts;
     } else if (state.activeView === "scout") {

@@ -27,7 +27,7 @@ so video controls and media loading behave like the deployed dashboard.
 
 The portal supports stable hash links:
 
-- `#overview`, `#vehicle-map`, `#parts`, `#scout`, `#tasks`, `#images`, `#photos-needed`, `#other-builds`
+- `#overview`, `#vehicle-map`, `#cabin-floor`, `#parts`, `#scout`, `#tasks`, `#images`, `#photos-needed`, `#other-builds`
 - `#workstreams/<workstream_id>` for a specific workstream
 - `#parts/item/<entry_id>` for a specific part or inventory row
 - `#<view>/section/<section_id>` and `#workstreams/<workstream_id>/section/<section_id>` for page sections
